@@ -1,2 +1,2 @@
 # eamena-arches-dev
-development reposiory
+development repository

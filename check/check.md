@@ -32,7 +32,7 @@
         - [x] DB pwd > *DB password Accepted*
       - [x] conf files > *`/etc/postgresql/xx/main` Accessed*
       - [x] data files > *`/var/lib/postgresql/xx/main` Accessed*
-- [ ] Website 
+- [x] Website 
 
 
 ### :computer: Iraq

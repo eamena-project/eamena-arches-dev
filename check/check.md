@@ -2,13 +2,11 @@
 
 ## :computer: Databases 
 
----
----
+Check connections and PostgreSQL database sizes
 
 ### :computer: EAMENA prod v3
 
 #### :electric_plug: connections
-
 > 15/11/21
 
 - [x] AWS
@@ -24,6 +22,7 @@
       - [x] data files > *`/var/lib/postgresql/xx/main` Accessed*
       
 #### :floppy_disk: DBs sizes
+> 16/11/21
       
 |db_name|db_size|
 | -- | -- |
@@ -38,8 +37,7 @@
 - [x] Website
 
 ---
----
-  
+
 ### :computer: EAMENA staging
 
 #### :electric_plug: connections
@@ -58,6 +56,7 @@
       - [x] data files > *`/var/lib/postgresql/xx/main` Accessed*  
       
 #### :floppy_disk: DBs sizes
+> 16/11/21
       
 |db_name|db_size|
 | -- | -- |
@@ -70,7 +69,6 @@
 
 - [x] Website 
 
----
 ---
 
 ### :computer: Iraq
@@ -91,6 +89,7 @@
       - [ ] data files > *`/var/lib/postgresql/xx/main` Accessed*
       
 #### :floppy_disk: DBs sizes
+> 16/11/21
       
 |db_name|db_size|
 | -- | -- |
@@ -98,7 +97,6 @@
 
 - [x] Website 
 
----
 ---
 
 ### :computer: Lebanon
@@ -119,6 +117,7 @@
       - [x] data files > *`/var/lib/postgresql/xx/main` Accessed*
       
 #### :floppy_disk: DBs sizes
+> 16/11/21
       
 |db_name|db_size|
 | -- | -- |
@@ -135,7 +134,6 @@
 
 - [x] Website 
 
----
 ---
 
 ### :computer: Levant
@@ -156,6 +154,7 @@
       - [x] data files > *`/var/lib/postgresql/xx/main` Accessed*
       
 #### :floppy_disk: DBs sizes
+> 16/11/21
       
 |db_name|db_size|
 | -- | -- |
@@ -177,7 +176,6 @@
 - [x] Website 
 
 ---
----
 
 ### :computer: YHMP
 
@@ -197,6 +195,7 @@
       - [ ] data files > *`/var/lib/postgresql/xx/main` Accessed*
       
 #### :floppy_disk: DBs sizes
+> 16/11/21
       
       
 |db_name|db_size|

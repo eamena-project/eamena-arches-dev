@@ -109,9 +109,9 @@ Check connections and PostgreSQL database sizes
   - [x] Storage > Volumes > *Attached*
   - [x] Public IPv4 DNS > *Server Acceded with PuTTY/Filezilla*
   - [x] AMI > *Platform/Name/Location retrieved*
-    - [ ] PostgreSQL
-      - [ ] PgAdmin > *PgAdmin Accessed*
-        - [ ] DBs names > *DBs names Accepted*
+    - [x] PostgreSQL
+      - [x] PgAdmin > *PgAdmin Accessed*
+        - [x] DBs names > *DBs names Accepted*
         - [x] DB pwd > *DB password Accepted*
       - [x] conf files > *`/etc/postgresql/xx/main` Accessed*
       - [x] data files > *`/var/lib/postgresql/xx/main` Accessed*

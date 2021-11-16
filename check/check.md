@@ -12,7 +12,7 @@
   - [x] AMI > *Platform/Name/Location retrieved*
     - [x] PostgreSQL
       - [x] PgAdmin > *PgAdmin Accessed*
-        - [x] DB name > *DB name Accepted*
+        - [x] DBs names > *DBs names Accepted*
         - [x] DB pwd > *DB password Accepted*
       - [x] conf files > *`/etc/postgresql/xx/main` Accessed*
       - [x] data files > *`/var/lib/postgresql/xx/main` Accessed*
@@ -26,9 +26,9 @@
   - [x] Storage > Volumes > *Attached*
   - [x] Public IPv4 DNS > *Server Acceded with PuTTY/Filezilla*
   - [x] AMI > *Platform/Name/Location retrieved*
-    - [ ] PostgreSQL
-      - [ ] PgAdmin > *PgAdmin Accessed*
-        - [ ] DB name > *DB name Accepted*
+    - [x] PostgreSQL
+      - [x] PgAdmin > *PgAdmin Accessed*
+        - [x] DBs names > *DBs names Accepted*
         - [x] DB pwd > *DB password Accepted*
       - [x] conf files > *`/etc/postgresql/xx/main` Accessed*
       - [x] data files > *`/var/lib/postgresql/xx/main` Accessed*
@@ -45,7 +45,7 @@
   - [ ] AMI > *Platform/Name/Location retrieved*
     - [ ] PostgreSQL
       - [ ] PgAdmin > *PgAdmin Accessed*
-        - [x] DB name > *DB name Accepted*
+        - [x] DBs names > *DBs names Accepted*
         - [x] DB pwd > *DB password Accepted*
       - [ ] conf files > *`/etc/postgresql/xx/main` Accessed*
       - [ ] data files > *`/var/lib/postgresql/xx/main` Accessed*
@@ -54,14 +54,14 @@
 ### :computer: Lebanon
 > 15/11/21
 
-- [ ] AWS
+- [x] AWS
   - [x] Instance state > *Running*
   - [x] Storage > Volumes > *Attached*
   - [x] Public IPv4 DNS > *Server Acceded with PuTTY/Filezilla*
   - [x] AMI > *Platform/Name/Location retrieved*
     - [ ] PostgreSQL
       - [ ] PgAdmin > *PgAdmin Accessed*
-        - [ ] DB name > *DB name Accepted*
+        - [ ] DBs names > *DBs names Accepted*
         - [x] DB pwd > *DB password Accepted*
       - [x] conf files > *`/etc/postgresql/xx/main` Accessed*
       - [x] data files > *`/var/lib/postgresql/xx/main` Accessed*
@@ -70,14 +70,14 @@
 ### :computer: Levant
 > 15/11/21
 
-- [ ] AWS
+- [x] AWS
   - [x] Instance state > *Running*
   - [x] Storage > Volumes > *Attached*
   - [x] Public IPv4 DNS > *Server Acceded with PuTTY/Filezilla*
   - [x] AMI > *Platform/Name/Location retrieved*
-    - [ ] PostgreSQL
-      - [ ] PgAdmin > *PgAdmin Accessed*
-        - [ ] DB name > *DB name Accepted*
+    - [x] PostgreSQL
+      - [x] PgAdmin > *PgAdmin Accessed*
+        - [x] DBs names > *DBs names Accepted*
         - [x] DB pwd > *DB password Accepted*
       - [x] conf files > *`/etc/postgresql/xx/main` Accessed*
       - [x] data files > *`/var/lib/postgresql/xx/main` Accessed*
@@ -86,14 +86,14 @@
 ### :computer: YHMP
 > 15/11/21
 
-- [ ] AWS
+- [x] AWS
   - [x] Instance state > *Running*
   - [x] Storage > Volumes > *Attached*
   - [x] Public IPv4 DNS > *Server Acceded with PuTTY/Filezilla*
   - [x] AMI > *Platform/Name/Location retrieved*
-    - [ ] PostgreSQL
-      - [ ] PgAdmin > *PgAdmin Accessed*
-        - [x] DB name > *DB name Accepted*
+    - [x] PostgreSQL
+      - [x] PgAdmin > *PgAdmin Accessed*
+        - [x] DBs names > *DBs names Accepted*
         - [x] DB pwd > *DB password Accepted*
       - [ ] conf files > *`/etc/postgresql/xx/main` Accessed*
       - [ ] data files > *`/var/lib/postgresql/xx/main` Accessed*

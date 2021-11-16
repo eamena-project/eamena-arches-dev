@@ -2,6 +2,9 @@
 
 ## :computer: Databases 
 
+---
+---
+
 ### :computer: EAMENA prod v3
 
 #### :electric_plug: connections
@@ -32,7 +35,10 @@
 |template0|7809 kB|
 
       
-- [x] Website 
+- [x] Website
+
+---
+---
   
 ### :computer: EAMENA staging
 
@@ -64,6 +70,8 @@
 
 - [x] Website 
 
+---
+---
 
 ### :computer: Iraq
 
@@ -89,6 +97,9 @@
 |?|?|
 
 - [x] Website 
+
+---
+---
 
 ### :computer: Lebanon
 
@@ -123,6 +134,9 @@
 
 
 - [x] Website 
+
+---
+---
 
 ### :computer: Levant
 
@@ -161,6 +175,9 @@
 |template0|6233 kB|      
   
 - [x] Website 
+
+---
+---
 
 ### :computer: YHMP
 

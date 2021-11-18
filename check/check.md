@@ -72,6 +72,7 @@ Check connections and PostgreSQL database sizes
 
 |eamena|
 | -- |
+|public|
 |stagingEAMENA|
 |stagingEAMENA_EGYPT|
 |stagingEAMENA_IRAQ|

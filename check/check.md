@@ -1,12 +1,8 @@
 # CHECKS
 
-## :computer: Databases 
+Check connections
 
-Check connections and PostgreSQL database sizes
-
-### :computer: EAMENA prod v3
-
-#### :electric_plug: connections
+## :electric_plug: EAMENA prod v3
 > 15/11/21
 
 - [x] AWS
@@ -20,27 +16,11 @@ Check connections and PostgreSQL database sizes
         - [x] DB pwd > *DB password Accepted*
       - [x] conf files > *`/etc/postgresql/xx/main` Accessed*
       - [x] data files > *`/var/lib/postgresql/xx/main` Accessed*
-      
-#### :floppy_disk: DBs sizes
-> 16/11/21
-      
-|db_name|db_size|
-| -- | -- |
-|eamena|6102 MB|
-|postgres|16 MB|
-|template_postgis|16 MB|
-|training|16 MB|
-|template1|7953 kB|
-|template0|7809 kB|
-
-      
 - [x] Website > https://database.eamena.org
 
 ---
 
-### :computer: EAMENA staging
-
-#### :electric_plug: connections
+#### :electric_plug: EAMENA staging
 > 15/11/21
 
 - [ ] AWS
@@ -54,43 +34,11 @@ Check connections and PostgreSQL database sizes
         - [x] DB pwd > *DB password Accepted*
       - [x] conf files > *`/etc/postgresql/xx/main` Accessed*
       - [x] data files > *`/var/lib/postgresql/xx/main` Accessed*  
-      
-#### :floppy_disk: DBs sizes
-> 16/11/21
-      
-|db_name|db_size|
-| -- | -- |
-|eamena|5819 MB|
-|postgres|16 MB|
-|template_postgis|16 MB|
-|training|16 MB|
-|template1|7937 kB|
-|template0|7793 kB|
-
-#### schemas
-> 18/11/21
-
-|eamena|
-| -- |
-|public|
-|stagingEAMENA|
-|stagingEAMENA_EGYPT|
-|stagingEAMENA_IRAQ|
-|stagingEAMENA_JORDAN|
-|stagingEAMENA_LEBANON|
-|stagingEAMENA_LIBYA|
-|stagingEAMENA_PALESTINE|
-|stagingEAMENA_TUNISIA|
-|stagingEAMENA_YEMEN|
-
-
 - [x] Website > [eamena.training](http://eamena.training/)
 
 ---
 
-### :computer: Iraq
-
-#### :electric_plug: connections
+#### :electric_plug: Iraq
 > 15/11/21
 
 - [ ] AWS
@@ -104,21 +52,11 @@ Check connections and PostgreSQL database sizes
         - [x] DB pwd > *DB password Accepted*
       - [ ] conf files > *`/etc/postgresql/xx/main` Accessed*
       - [ ] data files > *`/var/lib/postgresql/xx/main` Accessed*
-      
-#### :floppy_disk: DBs sizes
-> 16/11/21
-      
-|db_name|db_size|
-| -- | -- |
-|?|?|
-
-- [x] Website 
+- [x] Website > [iraq.eamena.training](https://iraq.eamena.training/)
 
 ---
 
-### :computer: Lebanon
-
-#### :electric_plug: connections
+#### :electric_plug: Lebanon
 > 15/11/21
 
 - [x] AWS
@@ -132,30 +70,11 @@ Check connections and PostgreSQL database sizes
         - [x] DB pwd > *DB password Accepted*
       - [x] conf files > *`/etc/postgresql/xx/main` Accessed*
       - [x] data files > *`/var/lib/postgresql/xx/main` Accessed*
-      
-#### :floppy_disk: DBs sizes
-> 16/11/21
-      
-|db_name|db_size|
-| -- | -- |
-|arches_eamena|10 GB|
-|eamena_main_v2|7288 MB|
-|postgres|11 MB|
-|template_postgis_20|11 MB|
-|training|11 MB|
-|arches|11 MB|
-|template1|6346 kB|
-|eamena|6346 kB|
-|template0|6346 kB|
-
-
-- [x] Website 
+- [x] Website > [lebanon.eamena.training](https://lebanon.eamena.training/ )
 
 ---
 
-### :computer: Levant
-
-#### :electric_plug: connections
+#### :electric_plug: Levant
 > 15/11/21
 
 - [x] AWS
@@ -169,34 +88,11 @@ Check connections and PostgreSQL database sizes
         - [x] DB pwd > *DB password Accepted*
       - [x] conf files > *`/etc/postgresql/xx/main` Accessed*
       - [x] data files > *`/var/lib/postgresql/xx/main` Accessed*
-      
-#### :floppy_disk: DBs sizes
-> 16/11/21
-      
-|db_name|db_size|
-| -- | -- |
-|arches_eamena_bu|5579 MB|
-|arches_eamena|4670 MB|
-|eamena_northafrica|243 MB|
-|eamena_northafrica_temp2|32 MB|
-|eamena_northafrica_temp|32 MB|
-|arches_eamena_na|17 MB|
-|arches_eamena_na_test|17 MB|
-|test_arches|11 MB|
-|postgres|11 MB|
-|arches|11 MB|
-|template_postgis_20|11 MB|
-|training|11 MB|
-|template1|6233 kB|
-|template0|6233 kB|      
-  
-- [x] Website 
+- [x] Website > [levant.eamena.training](http://levant.eamena.training/)
 
 ---
 
-### :computer: YHMP
-
-#### :electric_plug: connections
+#### :electric_plug: YHMP
 > 15/11/21
 
 - [x] AWS
@@ -210,13 +106,4 @@ Check connections and PostgreSQL database sizes
         - [x] DB pwd > *DB password Accepted*
       - [ ] conf files > *`/etc/postgresql/xx/main` Accessed*
       - [ ] data files > *`/var/lib/postgresql/xx/main` Accessed*
-      
-#### :floppy_disk: DBs sizes
-> 16/11/21
-      
-      
-|db_name|db_size|
-| -- | -- |
-|?|?|
-    
-- [ ] Website
+- [ ] Website > [iraq.eamena.training](https://iraq.eamena.training/)

@@ -4,6 +4,8 @@
 
 ### Week 4-5
 
+*updates on paper*
+
 ### Week 6
 
 * last Friday: AAug. Taking note, passing to my own archive

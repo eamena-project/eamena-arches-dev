@@ -34,7 +34,7 @@ Check connections and PostgreSQL database sizes
 |template0|7809 kB|
 
       
-- [x] Website
+- [x] Website > https://database.eamena.org
 
 ---
 
@@ -67,7 +67,23 @@ Check connections and PostgreSQL database sizes
 |template1|7937 kB|
 |template0|7793 kB|
 
-- [x] Website 
+#### schemas
+> 18/11/21
+
+|eamena|
+| -- |
+|stagingEAMENA|
+|stagingEAMENA_EGYPT|
+|stagingEAMENA_IRAQ|
+|stagingEAMENA_JORDAN|
+|stagingEAMENA_LEBANON|
+|stagingEAMENA_LIBYA|
+|stagingEAMENA_PALESTINE|
+|stagingEAMENA_TUNISIA|
+|stagingEAMENA_YEMEN|
+
+
+- [x] Website > [eamena.training](http://eamena.training/)
 
 ---
 

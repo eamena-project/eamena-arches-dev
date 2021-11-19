@@ -11,7 +11,7 @@ Check PostgreSQL database schemas
 
 |schemas|
 | -- |
-|public|
+|[public](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/check/check_db_schema_table.md#page_facing_up-tables)|
 |stagingEAMENA|
 |stagingEAMENA_EGYPT|
 |stagingEAMENA_IRAQ|

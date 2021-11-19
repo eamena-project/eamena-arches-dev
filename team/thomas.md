@@ -31,3 +31,9 @@
   - mapbox navigation
   
   - size
+  
+### Week 7
+
+* bulks (x2)
+
+* expertise of the Jordan server

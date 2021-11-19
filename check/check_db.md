@@ -9,7 +9,7 @@ Check PostgreSQL database names and sizes
       
 |db_name|db_size|
 | -- | -- |
-|eamena|6102 MB|
+|[eamena](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/check/check_db_schema.md#page_with_curl-schemas)|6102 MB|
 |postgres|16 MB|
 |template_postgis|16 MB|
 |training|16 MB|

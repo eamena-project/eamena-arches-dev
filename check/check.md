@@ -10,7 +10,7 @@ Check connections
   - [x] Storage > Volumes > *Attached*
   - [x] Public IPv4 DNS > *Server Acceded with PuTTY/Filezilla*
   - [x] AMI > *Platform/Name/Location retrieved*
-    - [x] PostgreSQL
+    - [x] [DB PostgreSQL](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/check/check_db.md#floppy_disk-databases)
       - [x] PgAdmin > *PgAdmin Accessed*
         - [x] DBs names > *DBs names Accepted*
         - [x] DB pwd > *DB password Accepted*
@@ -28,7 +28,7 @@ Check connections
   - [x] Storage > Volumes > *Attached*
   - [x] Public IPv4 DNS > *Server Acceded with PuTTY/Filezilla*
   - [x] AMI > *Platform/Name/Location retrieved*
-    - [x] PostgreSQL
+    - [x] DB PostgreSQL
       - [x] PgAdmin > *PgAdmin Accessed*
         - [x] DBs names > *DBs names Accepted*
         - [x] DB pwd > *DB password Accepted*
@@ -46,7 +46,7 @@ Check connections
   - [x] Storage > Volumes > *Attached*
   - [x] Public IPv4 DNS > *Server Acceded with PuTTY/Filezilla*
   - [ ] AMI > *Platform/Name/Location retrieved*
-    - [ ] PostgreSQL
+    - [ ] DB PostgreSQL
       - [ ] PgAdmin > *PgAdmin Accessed*
         - [x] DBs names > *DBs names Accepted*
         - [x] DB pwd > *DB password Accepted*
@@ -64,7 +64,7 @@ Check connections
   - [x] Storage > Volumes > *Attached*
   - [x] Public IPv4 DNS > *Server Acceded with PuTTY/Filezilla*
   - [x] AMI > *Platform/Name/Location retrieved*
-    - [x] PostgreSQL
+    - [x] DB PostgreSQL
       - [x] PgAdmin > *PgAdmin Accessed*
         - [x] DBs names > *DBs names Accepted*
         - [x] DB pwd > *DB password Accepted*
@@ -82,7 +82,7 @@ Check connections
   - [x] Storage > Volumes > *Attached*
   - [x] Public IPv4 DNS > *Server Acceded with PuTTY/Filezilla*
   - [x] AMI > *Platform/Name/Location retrieved*
-    - [x] PostgreSQL
+    - [x] DB PostgreSQL
       - [x] PgAdmin > *PgAdmin Accessed*
         - [x] DBs names > *DBs names Accepted*
         - [x] DB pwd > *DB password Accepted*
@@ -100,7 +100,7 @@ Check connections
   - [x] Storage > Volumes > *Attached*
   - [x] Public IPv4 DNS > *Server Acceded with PuTTY/Filezilla*
   - [x] AMI > *Platform/Name/Location retrieved*
-    - [x] PostgreSQL
+    - [x] DB PostgreSQL
       - [x] PgAdmin > *PgAdmin Accessed*
         - [x] DBs names > *DBs names Accepted*
         - [x] DB pwd > *DB password Accepted*

@@ -20,7 +20,7 @@ Check connections
 
 ---
 
-#### :electric_plug: EAMENA staging
+## :electric_plug: EAMENA staging
 > 15/11/21
 
 - [ ] AWS
@@ -38,7 +38,7 @@ Check connections
 
 ---
 
-#### :electric_plug: Iraq
+## :electric_plug: Iraq
 > 15/11/21
 
 - [ ] AWS
@@ -56,7 +56,7 @@ Check connections
 
 ---
 
-#### :electric_plug: Lebanon
+## :electric_plug: Lebanon
 > 15/11/21
 
 - [x] AWS
@@ -74,7 +74,7 @@ Check connections
 
 ---
 
-#### :electric_plug: Levant
+## :electric_plug: Levant
 > 15/11/21
 
 - [x] AWS
@@ -92,7 +92,7 @@ Check connections
 
 ---
 
-#### :electric_plug: YHMP
+## :electric_plug: YHMP
 > 15/11/21
 
 - [x] AWS

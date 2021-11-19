@@ -2,7 +2,7 @@
 
 Check PostgreSQL database names and sizes
 
-## :electric_plug: EAMENA prod v3
+## :electric_plug: [EAMENA prod v3](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/check/check.md#electric_plug-eamena-prod-v3)
 
 ### :floppy_disk: *databases*
 > 16/11/21

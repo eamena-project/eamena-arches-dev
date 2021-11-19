@@ -2,7 +2,11 @@
 
 Check PostgreSQL database schemas
 
-## :page_with_curl: EAMENA prod v3
+## :electric_plug: EAMENA prod v3
+
+### :floppy_disk: eamena
+
+#### :page_with_curl: *schemas*
 > 18/11/21
 
 |schemas|

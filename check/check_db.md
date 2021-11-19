@@ -2,7 +2,9 @@
 
 Check PostgreSQL database names and sizes
 
-## :floppy_disk: EAMENA prod v3
+## :electric_plug: EAMENA prod v3
+
+### :floppy_disk: *databases*
 > 16/11/21
       
 |db_name|db_size|
@@ -16,7 +18,9 @@ Check PostgreSQL database names and sizes
 
 ---
       
-#### :floppy_disk: EAMENA staging
+## :electric_plug: EAMENA staging
+
+### :floppy_disk: *databases*
 > 16/11/21
       
 |db_name|db_size|
@@ -30,7 +34,9 @@ Check PostgreSQL database names and sizes
 
 ---
       
-#### :floppy_disk: Iraq
+## :electric_plug: Iraq
+
+### :floppy_disk: *databases*
 > 16/11/21
       
 |db_name|db_size|
@@ -38,8 +44,10 @@ Check PostgreSQL database names and sizes
 |?|?|
 
 ---
-      
-#### :floppy_disk: Lebanon
+
+## :electric_plug: Lebanon
+
+### :floppy_disk: *databases*
 > 16/11/21
       
 |db_name|db_size|
@@ -56,7 +64,9 @@ Check PostgreSQL database names and sizes
 
 ---
       
-#### :floppy_disk: Levant
+## :electric_plug: Levant
+
+### :floppy_disk: *databases*
 > 16/11/21
       
 |db_name|db_size|
@@ -78,7 +88,10 @@ Check PostgreSQL database names and sizes
 
 ---
       
-#### :floppy_disk: YHMP
+## :electric_plug: YHMP
+
+### :floppy_disk: *databases*
+
 > 16/11/21
       
 |db_name|db_size|

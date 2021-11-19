@@ -34,6 +34,8 @@
   
 ### Week 7
 
-* bulks (x2)
+* bulks (x4)
+
+* purchase glitch (Letty)
 
 * expertise of the Jordan server

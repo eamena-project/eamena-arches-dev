@@ -5,4 +5,4 @@
 
 * bulk
 
-  - [render output summary](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/output/bulk/render_bu_summary.md#render-bu-summary)
+  - [render output summary](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/output/bulk/BU.md)

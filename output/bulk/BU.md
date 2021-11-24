@@ -1,4 +1,4 @@
-# Bulk Upload (BU)  <img src="output/bulk/bu.png" width='100px' align="right"/>
+# Bulk Upload (BU)  <img src="img/bu.png" width='100px' align="right"/>
 
 ## BU process
 > step-by-step BU procedure from the user-side
@@ -8,7 +8,7 @@
 
 - put the BUs worksheets on a **folder** named YYYY-MM-DD-Name (ex: 2021-11-23-Bijan). If you run various BUs processes the same day, you will have to name your folders with different suffixes (ex: 2021-11-22-Bijan, 2021-11-22a-Bijan)
 
-- put these folders on **your OneDrive**, and send a Slack message to the DB Manager **with the link to this folder** 
+- put these folders on **your OneDrive**, and send a Slack message to the DB Manager with the **name of the BUs files** and the **link to this folder** 
 
 - if **the BU does not work**, because there are errors, the DB Manager will send you an error report in the form of a error JSON file named in the same way as your BU files (ex: [`E61N31-22-Bijan.json`](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/output/bulk/Bulks/2021-11-21-Bijan/E61N31-21-Bijan.json))
 

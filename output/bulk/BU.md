@@ -14,7 +14,7 @@
 
   - following the recommendations of the error JSON file, you will have to correct the content of your file. Once done, change the name of your file to something explicit, for example like adding `-rev` at the end of the file name (ex: `E61N31-22-Bijan.xlsx` -> `E61N31-22-Bijan-rev.xlsx`)
 
-- if **the BU works**, the DB Manager will send you a confirmation, and the JSON output will be uploaded into the same OneDrive folder as your BUs worksheets 
+- if **the BU works**, the DB Manager will send you a confirmation, and the JSON output will be uploaded into the **same OneDrive folder** as your BUs worksheets 
 
   - if you ask to we will send you a [BU summary](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/output/bulk/BU.md#bu-summary) in the form of a JSON file named in the same way as your BU files and `-sum` (ex: [`E61N31-22-Bijan-rev-sum.json`](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/output/bulk/Bulks/2021-11-21-Bijan/E61N31-21-Bijan-rev-sum.json))
 

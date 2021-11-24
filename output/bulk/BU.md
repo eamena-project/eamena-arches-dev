@@ -1,4 +1,4 @@
-# Bulk Upload (BU)
+# Bulk Upload (BU)  <img src="img/output/bulk/bu.png" width='100px' align="right"/>
 
 ## BU process
 > step-by-step BU procedure from the user-side

@@ -34,8 +34,12 @@
   
 ### Week 7
 
-* bulks (x4)
+* bulks (Bijan, MichaelF)
 
 * purchase glitch (Letty)
 
 * expertise of the Jordan server
+
+* cloning EAMENA -> Jordan dataset
+
+

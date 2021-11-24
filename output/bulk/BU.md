@@ -15,7 +15,7 @@ To gain some precious minutes on the repeated BU processes, avoid renaming error
 
 - following the recommendations of the error JSON file, you will have to correct the content of your file. Once done, change the name to something explicit, like adding `-rev` at the end of the file name (ex: `E61N31-22-Bijan.xlsx` -> `E61N31-22-Bijan-rev.xlsx`)
 
-- if **the BU works**, I will send you a confirmation, and -- if you ask me to -- we can send you a [BU summary](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/output/bulk/BU.md#bu-summary) in the form of a JSON file named in the same way as your BU files + sum (ex: [`E61N31-22-Bijan-rev-sum.json`](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/output/bulk/Bulks/2021-11-21-Bijan/E61N31-21-Bijan-rev-sum.json))
+- if **the BU works**, I will send you a confirmation, and -- if you ask me to -- we can send you a [BU summary](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/output/bulk/BU.md#bu-summary) in the form of a JSON file named in the same way as your BU files and `-sum` (ex: [`E61N31-22-Bijan-rev-sum.json`](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/output/bulk/Bulks/2021-11-21-Bijan/E61N31-21-Bijan-rev-sum.json))
 
 - once you received the confirmation that your BU has been uploaded into the DB, move your BU sheet into an archives folder 
 

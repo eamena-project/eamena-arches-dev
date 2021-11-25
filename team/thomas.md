@@ -34,12 +34,26 @@
   
 ### Week 7
 
-* bulks (Bijan, MichaelF)
-
-* purchase glitch (Letty)
-
 * expertise of the Jordan server
 
-* cloning EAMENA -> Jordan dataset
+* purchasing the Palestine DB private key, and the SoA server
+
+* meeting on DB with Marea
+
+* meeting on IT with KI
+
+* meeting of the SoA
+
+* purchasing glitches (Letty, Ash)
+
+* preparing a framework for the bulk, the issues, the outputs, the trainings (GH, Slack)
+
+* preparing the clone of EAMENA for the Jordan training (KI, Galen Mancico)
+
+* bulks (Bijan, MichaelF)
+
+* switch from my personal computer -> lab computer (implies lost of bookmarks, access codes, etc.)
+
+
 
 

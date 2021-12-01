@@ -9,7 +9,9 @@ Check PostgreSQL table names and column names
 
 #### :page_with_curl: [public](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/check/check_db_schema.md#page_with_curl-schemas)
 
-##### :page_facing_up: [tables](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/check/check_db_schema_table.md#page_facing_up-tables)
+##### :bookmark_tabs: [tables](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/check/check_db_schema_table.md#page_facing_up-tables)
+
+###### :page_facing_up: *colnames*
 
 |table_name|columns|
 |--|--|

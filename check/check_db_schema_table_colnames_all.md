@@ -1,4 +1,4 @@
-|**table_name|columns|
+|table_name|columns|
 |--|--|
 |**auth_group**|name, id|
 |**auth_group_permissions**|permission_id, group_id, id|

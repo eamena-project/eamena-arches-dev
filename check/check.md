@@ -23,7 +23,7 @@ Check connections
 ## :electric_plug: EAMENA staging
 > 15/11/21
 
-- [ ] AWS
+- [x] AWS
   - [x] Instance state > *Running*
   - [x] Storage > Volumes > *Attached*
   - [x] Public IPv4 DNS > *Server Acceded with PuTTY/Filezilla*
@@ -34,7 +34,7 @@ Check connections
         - [x] DB pwd > *DB password Accepted*
       - [x] conf files > *`/etc/postgresql/xx/main` Accessed*
       - [x] data files > *`/var/lib/postgresql/xx/main` Accessed*  
-- [x] Website > [eamena.training](http://eamena.training/)
+- [ ] Website > [eamena.training](http://eamena.training/)
 
 ---
 
@@ -106,4 +106,4 @@ Check connections
         - [x] DB pwd > *DB password Accepted*
       - [ ] conf files > *`/etc/postgresql/xx/main` Accessed*
       - [ ] data files > *`/var/lib/postgresql/xx/main` Accessed*
-- [ ] Website > [iraq.eamena.training](https://iraq.eamena.training/)
+- [ ] Website > [database.yhmp.online](https://database.yhmp.online/)

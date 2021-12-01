@@ -54,6 +54,18 @@
 
 * switch from my personal computer -> lab computer (implies lost of bookmarks, access codes, etc.)
 
+### Week 8
+
+* installing Arches on Windows & Ubuntu
+
+* preparing the CPF Jordan (5-10 Dec)
+
+  - contact with Galen Mancico, and other CPF trainers (Sayantani, Will)
+  
+  - preparing the dataset
+  
+
+  
 
 
 

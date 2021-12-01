@@ -1,3 +1,16 @@
+# CHECKS
+
+Check PostgreSQL table names and column names
+
+
+## :electric_plug: [EAMENA prod v3](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/check/check.md#electric_plug-eamena-prod-v3)
+
+### :floppy_disk: [eamena](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/check/check_db.md#floppy_disk-databases)
+
+#### :page_with_curl: [public](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/check/check_db_schema.md#page_with_curl-schemas)
+
+##### :page_facing_up: [tables](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/check/check_db_schema_table.md#page_facing_up-tables)
+
 |table_name|columns|
 |--|--|
 |**auth_group**|name, id|

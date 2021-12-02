@@ -1,9 +1,4 @@
--- SELECT nodes.nodeid, geojson_geometries.geom
--- FROM nodes, geojson_geometries
--- WHERE nodes.nodeid = geojson_geometries.nodeid
--- AND ST_Overlaps(JORDAN_GEOM, geojson_geometries.geom)
--- LIMIT 20
-
+-- select a sample of Jordan data
 -- by Galen Mancino
 select resource_instances.resourceinstanceid, resource_x_resource.resourceinstanceidfrom, resource_instances.graphid from resource_instances
 inner join resource_x_resource on resource_instances.resourceinstanceid = resource_x_resource.resourceinstanceidfrom

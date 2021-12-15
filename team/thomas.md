@@ -105,7 +105,7 @@
   
   - filling/restructuring the Google Doc reference document and the EAMENA NAS server (keys, configuration files, etc.)
   
-  - connection with RStudio, and first SQL queries, for on-the-fly data extraction
+  - connection with RStudio, and [first SQL queries](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/select), for on-the-fly data extraction
   
   - new Slack channels (`training-amman-2021`, and `oxford-it-consult`)
   

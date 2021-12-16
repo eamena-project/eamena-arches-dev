@@ -66,7 +66,7 @@
 
 #### Week 9
 
-* Amman, Jordan (3-11th Dec) CPF training (5-9th Dec)
+* Amman, Jordan (3-11th Dec) CPF training (5-9th Dec), part 1/2
 
   - support Galen Mancico with IT resources (AWS training instances, connections, slides, etc.), trainees help
   
@@ -93,7 +93,7 @@
 
 * integration of the BU process in Oxford
 
-  - > 20 BU worksheets
+  - more than 20 BU worksheets
   
   - creation of a [reference document on GitHub](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/output/bulk/BU.md#bulk-upload-bu--)
   
@@ -103,15 +103,20 @@
   
   - audit of [connections/DB/tables/etc.](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/check/check.md#checks)
   
-  - filling/restructuring the Google Doc reference document and the EAMENA NAS server (keys, configuration files, etc.)
+  - enhancement of the Google Doc reference document and the EAMENA NAS server (keys, configuration files, etc.)
   
   - connection with RStudio, and [first SQL queries](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/select), for on-the-fly data extraction
   
   - new Slack channels (`training-amman-2021`, and `oxford-it-consult`)
   
-* Amman, Jordan (3-11th Dec) CPF training (5-9th Dec)
+* Amman, Jordan (3-11th Dec) CPF training (5-9th Dec), part 1/2
+
+  - preparing part 2/2, mid-February (enhancement of the documentation, etc.)
 
 * Various meetings (EAMENA, Arcadia Arches Users, database-MarEA, IT-KI)
+
+* Preparing and submitting a session to the [CAA22 annual conference](https://2022.caaconference.org/call-for-sessions/) - Oxford
+
 
   
 

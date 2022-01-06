@@ -88,7 +88,7 @@
 
 ---
 
-### Monthly report
+### ManCom Monthly report
 > 3rd Nov - 16th Dec
 
 * integration of the BU process in Oxford
@@ -118,7 +118,25 @@
 * Preparing and submitting a session to the [CAA22 annual conference](https://2022.caaconference.org/call-for-sessions/) - Oxford
 
 
-  
+---
+
+## 2022
+
+### Weekly
+
+#### Week x
+
+* Exchanges of messages with Mike Fisher and Bijan to try solve the issue of the YHMP database
+
+* added new Slack plug-in [TeamGantt](https://www.teamgantt.com/) for project management (eg, Arches v5.2 -> v7)
+
+  - will start tests with William
+
+* first draft of a session abstract proposal for the forthcoming CAA22 (Oxford)
+
+* Overview of the [Cantaloupe image server](https://cantaloupe-project.github.io/) (Arches 6+ compliant), and overview of the *International Image Interoperability Framework* (IIIF) 
+
+  - useful to register historical and non-georeferenced images (eg, Manar-Al-Athar archive, diagonal views of APAAME archive, etc.) with: tags, metadata, deepzoom, etc. (eg: [CellXplorer](https://courses.edx.org/courses/course-v1:HarvardX+MCB64.1x+2T2016/d16e07a5cec442eeb7cd9dfcb695dce0/))
 
 
 

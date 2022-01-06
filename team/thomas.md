@@ -126,13 +126,13 @@
 
 #### Week x
 
-* Exchanges of messages with Mike Fisher and Bijan to try solve the issue of the YHMP database
+* Exchanges of messages with Mike Fisher and Bijan to try to solve the issue of the YHMP database
 
 * added new Slack plug-in [TeamGantt](https://www.teamgantt.com/) for project management (eg, Arches v5.2 -> v7)
 
   - will start tests with William
 
-* first draft of a session abstract proposal for the forthcoming CAA22 (Oxford)
+* a first draft of a session abstract proposal for the forthcoming CAA22 (Oxford)
 
 * Overview of the [Cantaloupe image server](https://cantaloupe-project.github.io/) (Arches 6+ compliant), and overview of the *International Image Interoperability Framework* (IIIF) 
 

@@ -93,7 +93,7 @@ INSTALLED_APPS = (
     'project',
 )
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['my_host']
 
 SYSTEM_SETTINGS_LOCAL_PATH = os.path.join(APP_ROOT, 'system_settings', 'System_Settings.json')
 WSGI_APPLICATION = 'project.wsgi.application'

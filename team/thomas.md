@@ -124,7 +124,7 @@
 
 ### Weekly
 
-#### Week x
+#### Week 0
 
 * Exchanges of messages with Mike Fisher and Bijan to try to solve the issue of the YHMP database
 
@@ -138,5 +138,23 @@
 
   - useful to register historical and non-georeferenced images (eg, Manar-Al-Athar archive, diagonal views of APAAME archive, etc.) with: tags, metadata, deepzoom, etc. (eg: [CellXplorer](https://courses.edx.org/courses/course-v1:HarvardX+MCB64.1x+2T2016/d16e07a5cec442eeb7cd9dfcb695dce0/))
 
+---
+
+### ManCom Monthly report
+> 16th Dec 21 - 12th Jan 22
+
+* Preparing Jordan training part 2/2
+
+* Trying to solve the YHMP database issue with Mike Fisher and Bijan
+
+* Preparing a session abstract to the [CAA22 annual conference](https://2022.caaconference.org/call-for-sessions/) - Oxford, with Bijan  (EAMENA) Crystal El Safadi (MarEA), Ash Smith (MarEA)
+
+* added new Slack plug-in [TeamGantt](https://www.teamgantt.com/) for project management (eg, Arches v5.2 -> v7)
+
+* Overview of the [Cantaloupe image server](https://cantaloupe-project.github.io/) (Arches 6+ compliant), and overview of the *International Image Interoperability Framework* (IIIF) 
+
+  - useful to register historical and non-georeferenced images (eg, Manar-Al-Athar archive, diagonal views of APAAME archive, etc.) with: tags, metadata, deepzoom, etc. (eg: [CellXplorer](https://courses.edx.org/courses/course-v1:HarvardX+MCB64.1x+2T2016/d16e07a5cec442eeb7cd9dfcb695dce0/))
+
+---
 
 

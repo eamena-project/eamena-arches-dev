@@ -48,7 +48,8 @@ def hr_rec_qual(graph_layout, hr):
 
 def hr_rec_qual_grad(hr_recq):
     """
-    Plot a radar chart (ie, spider chart) showing the recording quality of a HR
+    Plot a radar chart (ie, spider chart) showing the recording quality of a HR.
+    ex: https://knowhow.visual-paradigm.com/openapi/radar-chart/
     """
     pass
     return None

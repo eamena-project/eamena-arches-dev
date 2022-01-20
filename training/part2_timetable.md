@@ -8,12 +8,13 @@ This online training will take place online (app to be defined). It is the secon
     + PuTTY installed
     + Filezilla installed
 
-
----
-Day 1 (2 x 3 hours)
 ---
 
-## Use available documentation
+## Slot 1 (3-hours)
+
+Use available documentation. Install AWS server, Arches core, HTTP Apache, and project
+
+### Documentation
 
 * Part 1 slides:
   - day 1: https://docs.google.com/presentation/d/1k9JMuj5oSZXHO3Z9RSVMogn4CUSJ1EK8Plus8sK7xDo/edit#slide=id.g103cf15c0a6_0_296
@@ -26,8 +27,7 @@ Day 1 (2 x 3 hours)
   - dropbox: https://www.dropbox.com/home/EAMENA/Trainings/2112CPFJordan
   - GitHub: https://github.com/eamena-oxford
 
-
-### Arches
+#### Arches
 
 * project: https://www.archesproject.org/
 * documentation: https://arches.readthedocs.io/en/stable/
@@ -35,15 +35,11 @@ Day 1 (2 x 3 hours)
 * GitHub: https://github.com/archesproject/arches
 * development: https://www.archesproject.org/development/
 
+#### EAMENA
 
-### EAMENA
+* *to be completed*
 
-
-
-
-## IT
-
-### Install
+### Installations
 
 #### AWS server
 
@@ -67,6 +63,12 @@ Day 1 (2 x 3 hours)
 #### EAMENA model
 
 * install EAMENA package
+
+---
+
+## Slot 2 (3-hours)
+
+Understand the administration of an Arches-powered database management platform.  
 
 ### Read Arches/EAMENA
 
@@ -94,11 +96,11 @@ Day 1 (2 x 3 hours)
 
 ### Django Admin
 
----
-Day 2 (3 hour)
+* *to be completed*
+
 ---
 
-## IT
+## Slot 3 (3-hours)
 
 ### Write and Run Arches/EAMENA
 
@@ -110,5 +112,7 @@ Day 2 (3 hour)
   - export business data
   
 * edit Cards
+
+* *to be completed*
   
 

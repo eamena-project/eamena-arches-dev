@@ -120,7 +120,7 @@
 
 ---
 
-## 2022
+## *Hilary* term 2022
 
 ### Weekly
 
@@ -157,4 +157,19 @@
 
 ---
 
+#### Week 1
+
+* Preparation of the CPF Jordan training for Arches-powered database management
+
+  - DBs preparation with Reuben Osborne (KI)
+
+  - provisional [timetable](https://doodle.com/poll/2abvb5q9mgupecrv?utm_source=poll&utm_medium=link)
+  
+  - provisional [program](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/training/part2_timetable.md#jordan-training-22)
+
+* Meeting (Wednesday) in Southampton with Ash Smith (MarEA)
+
+  - Overview of Ash IT methods
+
+  - Planned to use GitHub to develop source code management, starting with the HR record quality measurement and representation (function in prep.: [hr_quality_rec.py](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/functions/)
 

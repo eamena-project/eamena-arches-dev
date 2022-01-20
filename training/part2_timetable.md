@@ -1,6 +1,11 @@
 # Jordan training 2/2
 
-This online training will take place online (app to be defined). It is the second part of Database Management training for Arches-powered platform, EAMENA compliant, for cultural heritage management. The previous part (part 1) took place in person, in Amman, Jordan (5/11/21 - 9/11/21)
+This is the second part of Database Management training for Arches-powered platform, EAMENA compliant, for cultural heritage management. The previous part (part 1) took place in person, in Amman, Jordan (5/11/21 - 9/11/21). This part 2  consists of 3 different slots of 3-hours each:
+1. Slot 1: Documentation and installation
+2. Slot 2: Navigate through administration tools
+3. Slot 3: Edit as a Database Manager
+
+This online training will take place online (app to be defined)
 
 * Requirements before the start of this the training:
   - one person for each country (Jordan, Lebanon, Palestine) with:
@@ -112,6 +117,12 @@ Understand the administration of an Arches-powered database management platform.
   - export business data
   
 * edit Cards
+
+* moving Arches/project 
+  - between to different AWS accounts
+  - between AWS and local server
+
+
 
 * *to be completed*
   

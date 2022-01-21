@@ -1,6 +1,3 @@
-# Test permalink
-
-
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ## main Linux commands
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -21,4 +18,11 @@ sudo vim environment
 # use $project_name to cd to the root of the project (APP_ROOT)
 /home/archesadmin/$project_name/$project_name/
 
+## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+## main configuration files
+## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# 000-default.conf
+/etc/apache2/sites-available/
 
+# settings.py
+/home/archesadmin/$project_name/$project_name/

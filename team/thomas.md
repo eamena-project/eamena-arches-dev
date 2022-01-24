@@ -171,5 +171,5 @@
 
   - Overview of Ash IT methods
 
-  - Planned to use GitHub to develop source code management, starting with the HR record quality measurement and representation (function in prep.: [hr_quality_rec.py](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/functions/)
+  - Planned to use GitHub to develop source code management, starting with the HR record quality measurement and representation (function in prep.: [hr_quality_rec.py](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/functions/))
 

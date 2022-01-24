@@ -26,7 +26,7 @@ TEMPLATES[0]['DIRS'].insert(0, os.path.join(APP_ROOT, 'templates'))
 LOCALE_PATHS.append(os.path.join(APP_ROOT, 'locale'))
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'gba+rts$7&iq10xv&z+*8&w_5($@8!px2e1ns*0#kczi8bem(g'
+SECRET_KEY = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True

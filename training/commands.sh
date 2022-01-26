@@ -20,18 +20,21 @@ sudo vim environment
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # replace $project_name by the name of your project
-# move to the root of the project (APP_ROOT)
-cd /home/archesadmin/$project_name/$project_name/ # PuTTY
-/home/archesadmin/$project_name/$project_name/    # FileZilla (Remote site)
+# root of the project (APP_ROOT)
+cd /home/archesadmin/$project_name/$project_name    # PuTTY
+/home/archesadmin/$project_name/$project_name       # FileZilla (Remote site)
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ## main configuration files
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# 000-default.conf
-/etc/apache2/sites-available/
 
-# settings.py
-/home/archesadmin/$project_name/$project_name/
+# settings.py and settings_local.py
+cd /home/archesadmin/$project_name/$project_name    # PuTTY
+/home/archesadmin/$project_name/$project_name       # FileZilla (Remote site)
+
+# 000-default.conf
+cd /etc/apache2/sites-available                     # PuTTY
+/etc/apache2/sites-available                        # FileZilla (Remote site)
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ## understanding Python

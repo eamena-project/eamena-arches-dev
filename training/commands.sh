@@ -1,5 +1,5 @@
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -##
-# Welcome to Aches/EAMENA Database Manager training !          #
+# Welcome to the Aches/EAMENA Database Manager training !      #
 # This document resume some IT commands                        #
 #                               credit: University of Oxford   #
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #

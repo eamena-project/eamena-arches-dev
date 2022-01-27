@@ -8,16 +8,31 @@
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ## main Linux commands
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-cd                    # change directory
-chmod                 #
-ls                    # list folder and files
-man function_name     #
-pwd                   # current directory
-source                #
+cd                            # change directory
+chmod                         #
+ls                            # list folder and files
+ls -a                         # list hidden folder and files
+ls -la                        # list folder and files + permissions + owners (hidden and visible)
+man command_name              # command documentation
+pwd                           # current directory
+source                        # read and execute the content of a file
+su user_name                  # change user
+
+## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+## Ubuntu: understanding permissions and ownerships
+## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# add the project name in a 'permanent' environmental variable
+cd /home/archesadmin/jordan_project/jordan_project/static/img
+# list files and folders permissions and ownerships
+ls -la
+# ...
+# drwxrwxr-x  4 archesadmin www-data  4096 Jan 17 11:59 landing
+# ..
+su archesadmin
 
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-## use environmental variable to navigate into the directory
+## Ubuntu: use of environmental variables
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # add the project name in a 'permanent' environmental variable
 cd /etc
@@ -50,7 +65,7 @@ ubuntu@ip-172-31-46-153:~$ cd /home/archesadmin/
 # activate Python virtual environment
 ubuntu@ip-172-31-46-153:/home/archesadmin$ source env/bin/activate
 # got to settings.py directory
-(env) ubuntu@ip-172-31-46-153:/home/archesadmin$ cd $project_name/$project_name/
+(env) ubuntu@ip-172-31-46-153:/home/archesadmin$ cd $project_name/$project_name
 # run Python
 (env) ubuntu@ip-172-31-46-153:/home/archesadmin/$project_name/$project_name$ python
 Python 3.8.10 (default, Nov 26 2021, 20:14:08)
@@ -61,11 +76,11 @@ Type "help", "copyright", "credits" or "license" for more information.
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ## understanding APP_ROOT
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-ubuntu@ip-172-31-46-153:~$ cd /home/archesadmin/
+ubuntu@ip-172-31-46-153:~$ cd /home/archesadmin
 # activate Python virtual environment
 ubuntu@ip-172-31-46-153:/home/archesadmin$ source env/bin/activate
 # got to settings.py directory
-(env) ubuntu@ip-172-31-46-153:/home/archesadmin$ cd $project_name/$project_name/
+(env) ubuntu@ip-172-31-46-153:/home/archesadmin$ cd $project_name/$project_name
 # run Python
 (env) ubuntu@ip-172-31-46-153:/home/archesadmin/$project_name/$project_name$ python
 Python 3.8.10 (default, Nov 26 2021, 20:14:08)
@@ -82,8 +97,11 @@ Type "help", "copyright", "credits" or "license" for more information.
 # >>> print(MEDIA_ROOT)
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-## understanding APP_ROOT
+## customize homepage of the Arches/EAMENA
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# move to the landing/ folder
-/home/archesadmin/$project_name/$project_name/static/img/                       # FileZilla (Remote site)
+# move to the landing/ project folder
+/home/archesadmin/$project_name/$project_name/static/img/landing                # FileZilla (Remote site)
+
+# move to the templates/ project folder
+/home/archesadmin/$project_name/$project_name/templates                         # FileZilla (Remote site)
 

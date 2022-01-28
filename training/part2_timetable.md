@@ -8,8 +8,11 @@ This part 2  consists of 3 different slots of 3-hours each:
   2. Slot 2: Overview of Database Management tools
 
   3. Slot 3: Edit as a Database Manager
-
-<center>This online training will take place online (Zoom)<\center>
+  
+  
+<center>This online training will take place online (Zoom)<\center>  
+  
+  
 
 * Requirements before the start of this the training, for the lead person:
 

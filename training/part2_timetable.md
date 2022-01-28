@@ -1,17 +1,29 @@
-# Jordan training 2/2
+# Arches/EAMENA Database Manager CPF Training (part 2/2)
 
-This is the second part of Database Management training for Arches-powered platform, EAMENA compliant, for cultural heritage management. The previous part (part 1) took place in person, in Amman, Jordan (5/11/21 - 9/11/21). This part 2  consists of 3 different slots of 3-hours each:
-1. Slot 1: Documentation and installation
-2. Slot 2: Navigate through administration tools
-3. Slot 3: Edit as a Database Manager
+This is the second part of Database Management training for Arches-powered platform, EAMENA compliant, for cultural heritage management. The previous part (part 1) took place in person, in Amman, Jordan (5/11/21 - 9/11/21). 
 
-This online training will take place online (app to be defined)
+This part 2  consists of 3 different slots of 3-hours each:
+  1. Slot 1: Documentation and installation
 
-* Requirements before the start of this the training:
-  - one person for each country (Jordan, Lebanon, Palestine) with:
+  2. Slot 2: Overview of Database Management tools
+
+  3. Slot 3: Edit as a Database Manager
+
+<center>This online training will take place online (Zoom)<\center>
+
+* Requirements before the start of this the training, for the lead person:
+
     + its computer IP (for AWS firewall)
-    + PuTTY installed
-    + Filezilla installed
+    
+    + an IDE for code edition
+      - Microsoft VS Code, *or*
+      - Sublime, *or*
+      - Notepad++, *or*
+      - etc.
+      
+    + PuTTY SSH client for terminal commands 
+    
+    + Filezilla SSH client for file transfert
 
 ---
 
@@ -21,16 +33,28 @@ Use available documentation. Install AWS server, Arches core, HTTP Apache, and p
 
 ### Documentation
 
+#### Arches/EAMENA Database Manager CPF Training
+
+##### Part 2/2
+
+* Requirements installation tuto: https://www.dropbox.com/s/s6xej8epozk06x7/prerequisites.pptx?dl=0
+
+* Part 2 slides:
+  - https://docs.google.com/presentation/d/1Si44scv7N9XxaGBCKYyRMorDnrj6gc362ZHQ-622cfM/edit#slide=id.g10fd25b5a2f_0_73
+ 
+* GitHub: https://github.com/eamena-oxford
+  - IT helper commands:https://github.com/eamena-oxford/eamena-arches-dev/blob/8987710b6370521e7259ead0bad1fad673ef4bf0/training/commands.sh
+  
+* Dropbox: https://www.dropbox.com/home/EAMENA/Trainings/2112CPFJordan
+
+##### Part 1/2
+
 * Part 1 slides:
   - day 1: https://docs.google.com/presentation/d/1k9JMuj5oSZXHO3Z9RSVMogn4CUSJ1EK8Plus8sK7xDo/edit#slide=id.g103cf15c0a6_0_296
   - day 2: https://docs.google.com/presentation/d/1zsqCzLDIotaShU9OUXg4tMWfaTrMF5fF5bZoLuhavKs/edit#slide=id.p
   - day 3: https://docs.google.com/presentation/d/16wjDpFGCn20tQcDdjrchhp9ZJiJvJsL6dKlF_rH-QjI/edit#slide=id.p
   - day 4: https://docs.google.com/presentation/d/1ki9Uefiop3SG3qOrLHUYrjzTekoaLXK5Iy2bMiFR0kM/edit#slide=id.p
   - day 5: https://docs.google.com/presentation/d/1G_2cqayQZDrL68W9Fcs1UIKRaSBW1k8YhnkKAysJ-zM/edit#slide=id.p
-  
-* University of Oxford
-  - dropbox: https://www.dropbox.com/home/EAMENA/Trainings/2112CPFJordan
-  - GitHub: https://github.com/eamena-oxford
 
 #### Arches
 
@@ -40,9 +64,6 @@ Use available documentation. Install AWS server, Arches core, HTTP Apache, and p
 * GitHub: https://github.com/archesproject/arches
 * development: https://www.archesproject.org/development/
 
-#### EAMENA
-
-* *to be completed*
 
 ### Installations
 
@@ -75,7 +96,7 @@ Use available documentation. Install AWS server, Arches core, HTTP Apache, and p
 
 Understand the administration of an Arches-powered database management platform.  
 
-### Read Arches/EAMENA
+### Overview of Database Management tools
 
 #### EAMENA model
 
@@ -107,7 +128,7 @@ Understand the administration of an Arches-powered database management platform.
 
 ## Slot 3 (3-hours)
 
-### Write and Run Arches/EAMENA
+### Edit as a Database Manager
 
 * load packages
   - import_business_data

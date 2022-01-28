@@ -11,7 +11,9 @@
 ## main Linux commands
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 cd                            # change directory
-chmod                         #
+chgrp                         # change files/folder groups
+chmod                         # change files/folders access permission
+chown                         # change files/folder owners
 ls                            # list folder and files
 ls -a                         # list hidden folder and files
 ls -la                        # list folder and files + permissions + owners (hidden and visible)
@@ -33,13 +35,13 @@ cd /etc
 sudo vim environment
 # insert  (ESC + I) the following variables:
 # your project name, replace 'xxxx' by your country name
-project_name="xxxx_project"
+export project_name="xxxx_project"
 # your Arches user name (app admin)
-username="archesadmin"
-# save and quit
+export username="archesadmin"
+# save and quit (ESC + :wq)
 
 # make environment variables visibles (excecutable) by anyone
-sudo chmod 745 environment
+sudo chmod 745 environment      # useful ?
 
 # check out
 # call the variables (echo)
@@ -51,7 +53,7 @@ cd /home/$username/$project_name/$project_name
 # .. moves to your Arches project root folder
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-## Ubuntu: authorised a Arches user to connect via SSH
+## Ubuntu: authorised the Arches admin user to connect via SSH
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # see current permissions of SSH authorized keys                                # PuTTY
 cd ~/.ssh
@@ -79,6 +81,16 @@ ls -la
 su $username
 
 
+## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+## customize homepage of the Arches/EAMENA
+## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+# move to the landing/ project folder
+/home/$username/$project_name/$project_name/static/img/landing                  # FileZilla (Remote site)
+cd /home/$username/$project_name/$project_name/static/img/landing               # PuTTY
+# move to the templates/ project folder
+/home/$username/$project_name/$project_name/templates                           # FileZilla (Remote site)
+cd /home/$username/$project_name/$project_name/templates                        # PuTTY
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # replace $project_name by the name of your project
@@ -136,14 +148,4 @@ Type "help", "copyright", "credits" or "license" for more information.
 # >>> MEDIA_ROOT =  os.path.join(APP_ROOT)
 # >>> print(MEDIA_ROOT)
 
-## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-## customize homepage of the Arches/EAMENA
-## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-
-# move to the landing/ project folder
-/home/$username/$project_name/$project_name/static/img/landing                # FileZilla (Remote site)
-
-# move to the templates/ project folder
-/home/$username/$project_name/$project_name/templates                         # FileZilla (Remote site)
 

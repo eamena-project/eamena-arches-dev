@@ -22,6 +22,10 @@ pwd                           # current directory
 source                        # read and execute the content of a file
 sudo                          # do as superuser
 su user_name                  # change user
+# for Apache server - - - - - - - - - - - - - - - - - - - - - -
+service apache2 restart       # restart server
+service apache2 status        # check status (active/inactive)
+
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ## Ubuntu: use of environmental variables
@@ -52,21 +56,37 @@ echo $project_name
 cd /home/$username/$project_name/$project_name
 # .. moves to your Arches project root folder
 
+
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ## Ubuntu: authorised the Arches admin user to connect via SSH
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # see current permissions of SSH authorized keys                                # PuTTY
 cd ~/.ssh
 ls -l
+# switch user from ubuntu to archesadmin
+su archesadmin
+# create a new .ssh/ folder in archesadmin/
+mkdir /home/$username/.ssh
 # copy the authorized_keys file that contains your public key
 sudo cp /home/ubuntu/.ssh/authorized_keys /home/$username/.ssh/authorized_keys
-# move to this copy
-cd /home/$username/
 # change file ownership from ubuntu to Arches user
 sudo chown -R $username:$username /home/$username/.ssh
 
 # check out
+cd /home/$username/.ssh
 ls -al
+
+
+## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+## Ubuntu: restart and check status of Apache web server
+## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# superuser
+sudo su
+# restart server
+service apache2 restart
+# check status (active/inactive)
+service apache2 status
+
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ## Ubuntu: understanding permissions and ownerships

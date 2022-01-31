@@ -61,6 +61,8 @@ cd /home/$username/$project_name/$project_name
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ## Ubuntu: authorised the Arches admin user to connect via SSH
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# create directory, copy file, change permissions
+
 # see current permissions of SSH authorized keys                                # PuTTY
 cd ~/.ssh
 ls -l
@@ -81,6 +83,8 @@ ls -al
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ## Ubuntu: restart and check status of Apache web server
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#
+
 # do as superuser
 sudo su
 # restart server
@@ -92,6 +96,8 @@ service apache2 status
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ## Ubuntu: understanding permissions and ownerships
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#
+
 # move to img/ folder
 cd /home/$username/$project_name/$project_name/static/img
 # list files' and folders' permissions and ownerships
@@ -105,6 +111,13 @@ su $username
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ## Customize the homepage of the Arches/EAMENA
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# move files from remote site (download) and local site (upload)
+
+## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# move to the root of the project (= Python APP_ROOT variable)
+cd /home/$username/$project_name/$project_name                                  # PuTTY
+# In FileZilla, replace $username and $project_name by the variable values
+/home/$username/$project_name/$project_name                                     # FileZilla
 
 # move to the landing/ project folder
 /home/$username/$project_name/$project_name/static/img/landing                  # FileZilla
@@ -112,12 +125,6 @@ cd /home/$username/$project_name/$project_name/static/img/landing               
 # move to the templates/ project folder
 /home/$username/$project_name/$project_name/templates                           # FileZilla
 cd /home/$username/$project_name/$project_name/templates                        # PuTTY
-
-## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# move to the root of the project (= Python APP_ROOT variable)
-cd /home/$username/$project_name/$project_name                                  # PuTTY
-# In FileZilla, replace $username and $project_name by the variable values
-/home/$username/$project_name/$project_name                                     # FileZilla
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ## main configuration files

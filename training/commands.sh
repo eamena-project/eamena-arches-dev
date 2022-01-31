@@ -10,6 +10,7 @@
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ## main Linux commands
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+cat                           # print the content of a file
 cd                            # change directory
 chgrp                         # change files/folder group
 chmod                         # change files/folders access permission
@@ -128,6 +129,10 @@ cd /home/$username/$project_name/$project_name/templates                        
 /home/$username/$project_name/$project_name/static/img/landing                  # FileZilla
 # In FileZilla, replace $username and $project_name by the variable values
 cd /home/$username/$project_name/$project_name/static/img/landing               # PuTTY
+
+# move to the sites-available/ folder
+/etc/apache2/sites-available                                                    # FileZilla
+cd /etc/apache2/sites-available                                                 # PuTTY
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ## main configuration files

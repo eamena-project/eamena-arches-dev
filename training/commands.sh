@@ -103,33 +103,33 @@ su $username
 
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-## customize homepage of the Arches/EAMENA
+## Customize the homepage of the Arches/EAMENA
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 # move to the landing/ project folder
-/home/$username/$project_name/$project_name/static/img/landing                  # FileZilla (Remote site)
+/home/$username/$project_name/$project_name/static/img/landing                  # FileZilla
 cd /home/$username/$project_name/$project_name/static/img/landing               # PuTTY
 # move to the templates/ project folder
-/home/$username/$project_name/$project_name/templates                           # FileZilla (Remote site)
+/home/$username/$project_name/$project_name/templates                           # FileZilla
 cd /home/$username/$project_name/$project_name/templates                        # PuTTY
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# replace $project_name by the name of your project
-# root of the project (APP_ROOT)
-cd /home/$username/$project_name/$project_name                                # PuTTY
-/home/$username/$project_name/$project_name                                   # FileZilla (Remote site)
+# move to the root of the project (= Python APP_ROOT variable)
+cd /home/$username/$project_name/$project_name                                  # PuTTY
+# In FileZilla, replace $username and $project_name by the variable values
+/home/$username/$project_name/$project_name                                     # FileZilla
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ## main configuration files
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 # settings.py and settings_local.py
-cd /home/$username/$project_name/$project_name                                # PuTTY
-/home/$username/$project_name/$project_name                                   # FileZilla (Remote site)
+cd /home/$username/$project_name/$project_name                                  # PuTTY
+/home/$username/$project_name/$project_name                                     # FileZilla
 
 # 000-default.conf
 cd /etc/apache2/sites-available                                                 # PuTTY
-/etc/apache2/sites-available                                                    # FileZilla (Remote site)
+/etc/apache2/sites-available                                                    # FileZilla
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ## understanding Python

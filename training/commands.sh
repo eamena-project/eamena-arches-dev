@@ -42,7 +42,7 @@ sudo vim environment
 export project_name="xxxx_project"
 # your Arches user name (app admin)
 export username="archesadmin"
-# save and quit (ESC + :wq)
+# save/write and quit (ESC + :wq)
 
 # make environment variables visibles (excecutable) by anyone
 sudo chmod 745 environment      # useful ?
@@ -72,7 +72,7 @@ sudo cp /home/ubuntu/.ssh/authorized_keys /home/$username/.ssh/authorized_keys
 # change file ownership from ubuntu to Arches user
 sudo chown -R $username:$username /home/$username/.ssh
 
-# check out
+# check out permissions
 cd /home/$username/.ssh
 ls -al
 
@@ -80,7 +80,7 @@ ls -al
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ## Ubuntu: restart and check status of Apache web server
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# superuser
+# do as superuser
 sudo su
 # restart server
 service apache2 restart

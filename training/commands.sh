@@ -82,9 +82,9 @@ ls -al
 
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-## Ubuntu: restart and check status of Apache web server
+## Ubuntu: restart and check status of Apache server
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-#
+# restart and check status of the Apache HTTP Server web server
 
 # do as superuser
 sudo su

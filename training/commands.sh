@@ -119,12 +119,13 @@ cd /home/$username/$project_name/$project_name                                  
 # In FileZilla, replace $username and $project_name by the variable values
 /home/$username/$project_name/$project_name                                     # FileZilla
 
-# move to the landing/ project folder
-/home/$username/$project_name/$project_name/static/img/landing                  # FileZilla
-cd /home/$username/$project_name/$project_name/static/img/landing               # PuTTY
 # move to the templates/ project folder
 /home/$username/$project_name/$project_name/templates                           # FileZilla
 cd /home/$username/$project_name/$project_name/templates                        # PuTTY
+
+# move to the landing/ project folder
+/home/$username/$project_name/$project_name/static/img/landing                  # FileZilla
+cd /home/$username/$project_name/$project_name/static/img/landing               # PuTTY
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ## main configuration files

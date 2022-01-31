@@ -15,8 +15,9 @@ chgrp                         # change files/folder group
 chmod                         # change files/folders access permission
 chown                         # change files/folder owner
 ls                            # list folder and files
-ls -a                         # list hidden folder and files
-ls -la                        # list folder and files + permissions + owners (hidden and visible)
+ls -a                         # list hidden and visible folders and files
+ls -l                         # list folders and files + permissions + owners (visible)
+ls -la                        # list folders and files + permissions + owners (hidden and visible)
 man command_name              # command documentation
 pwd                           # current directory
 source                        # read and execute the content of a file

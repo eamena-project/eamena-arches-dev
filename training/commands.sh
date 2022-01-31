@@ -11,9 +11,9 @@
 ## main Linux commands
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 cd                            # change directory
-chgrp                         # change files/folder groups
+chgrp                         # change files/folder group
 chmod                         # change files/folders access permission
-chown                         # change files/folder owners
+chown                         # change files/folder owner
 ls                            # list folder and files
 ls -a                         # list hidden folder and files
 ls -la                        # list folder and files + permissions + owners (hidden and visible)

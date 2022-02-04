@@ -11,7 +11,8 @@ This part 2  consists of 3 different slots of 3-hours each:
   3. Slot 3: Edit as a Database Manager
 
 <div align="center">
-  This online training will take place online (ZOOM)
+  This online training will be hosted online (ZOOM):
+  "Arches/EAMENA Database Manager Zoom Meeting"
 </div>
 
 ## Requirements

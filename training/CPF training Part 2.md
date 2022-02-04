@@ -15,7 +15,7 @@ Use available documentation. Install AWS server, Arches core, HTTP Apache, and p
 * Requirements installation tuto: https://www.dropbox.com/s/s6xej8epozk06x7/prerequisites.pptx?dl=0
 
 * Part 2 slides:
-  - https://docs.google.com/presentation/d/1Si44scv7N9XxaGBCKYyRMorDnrj6gc362ZHQ-622cfM/edit#slide=id.g10fd25b5a2f_0_73
+  - hhttps://docs.google.com/presentation/d/1Si44scv7N9XxaGBCKYyRMorDnrj6gc362ZHQ-622cfM/edit?usp=sharing
  
 * GitHub: https://github.com/eamena-oxford
   - IT helper commands:https://github.com/eamena-oxford/eamena-arches-dev/blob/8987710b6370521e7259ead0bad1fad673ef4bf0/training/commands.sh

@@ -171,11 +171,12 @@ ubuntu@ip-172-31-46-153:/home/archesadmin$ source env/bin/activate
 (env) ubuntu@ip-172-31-46-153:/home/archesadmin$ cd $project_name/$project_name
 # run Python
 (env) ubuntu@ip-172-31-46-153:/home/archesadmin/$project_name/$project_name$ python
-Python 3.8.10 (default, Nov 26 2021, 20:14:08)
-[GCC 9.3.0] on linux
-Type "help", "copyright", "credits" or "license" for more information.
+## Python 3.8.10 (default, Nov 26 2021, 20:14:08)
+## [GCC 9.3.0] on linux
+## Type "help", "copyright", "credits" or "license" for more information.
+# import libraries
 >>> import os, inspect
-# APP_ROOT (https://github.com/eamena-oxford/eamena-arches-dev/blob/f05af3a8d851bed41724e1717d1d986a93b72a65/training/JordanMasdar/files/settings.py#L16)
+# copied from the settings.py file, APP_ROOT initialisation
 >>> APP_ROOT = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
 >>> print(APP_ROOT)
 /home/$username/$project_name/$project_name

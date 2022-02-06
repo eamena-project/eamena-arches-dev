@@ -12,27 +12,31 @@ This part 2  consists of 3 different slots of 3-hours each:
 
 <div align="center">
   This online training will be hosted online (ZOOM):
-  "Arches/EAMENA Database Manager Zoom Meeting"
+  "Arches/EAMENA Database Manager Zoom Meeting part 2"
+  <ul>
+    <li><b>Monday 14 February</b>, 8:00 - 11:00 (BCT) / 10:00 - 13:00 (EET)</li>
+      <ul>https://zoom.us/j/94050549401?pwd=VTgraWRRRGRlNkhBMXRXdWdPVHVWQT09</ul>
+    <li><b>Tuesday 15 February</b>, 8:00 - 11:00 (BCT) / 10:00 - 13:00 (EET)</li>
+     <ul>https://zoom.us/j/91691114706?pwd=NTh6YlBENFVSalVCTG5IN3FtanpGQT09</ul>
+    <li><b>Wednesday 16 February</b>, 8:00 - 11:00 (BCT) / 10:00 - 13:00 (EET)</li>
+      <ul>https://zoom.us/j/96809107674?pwd=d2llQXhnMDgwN2dpa2tLczZSL3VlZz09</ul>
+  </ul>
 </div>
 
 ## Requirements
 
-Before the start of this the training, for the lead person
+Before the start of this the training, for the lead person, need to be installed:
 
-  + its computer IP (for AWS firewall)
-  
-Need to be installed:
+  + PuTTY SSH client for terminal commands 
+    
+  + FileZilla SSH client for file transfer
     
   + an IDE for code edition
       - Microsoft VS Code, *or*
       - Sublime, *or*
       - Notepad++, *or*
       - etc.  
-      
-  + PuTTY SSH client for terminal commands 
-    
-  + FileZilla SSH client for file transfer
     
   + (opt) Create a [GitHub](https://github.com/join) account for co-development between your institution and the EAMENA team
   
-see [this document](https://www.dropbox.com/s/s6xej8epozk06x7/prerequisites.pptx?dl=0) for further information
+See [this document](https://www.dropbox.com/scl/fi/brrx555afobhr67v698vc/prerequisites.pptx?dl=0&rlkey=a33oys1ldjm0do7sh5d13zmv2) for further information on installation

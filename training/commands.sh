@@ -44,7 +44,7 @@ sudo vim environment
 export project_name="xxxx_project"
 # your Arches user name (app admin)
 export username="archesadmin"
-# save/write and quit (ESC + :wq)
+# save/write and quit (ESC + :wq + Return)
 
 # make environment variables visibles (excecutable) by anyone
 sudo chmod 745 environment      # useful ?
@@ -69,6 +69,7 @@ cd ~/.ssh
 ls -l
 # switch user from ubuntu to archesadmin
 su archesadmin
+# you will have to insert your password
 # create a new .ssh/ folder in archesadmin/
 mkdir /home/$username/.ssh
 # copy the authorized_keys file that contains your public key

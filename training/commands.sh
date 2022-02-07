@@ -56,6 +56,9 @@ my_host="xx.xx.xx.xx"
 # check out by printing the first lines of the script
 head -n 15 install_and_apache_and_load_pkg.sh
 
+# run the script
+source ./install_and_apache_and_load_pkg.sh
+
 
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

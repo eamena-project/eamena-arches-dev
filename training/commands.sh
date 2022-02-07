@@ -28,6 +28,15 @@ su user_name                  # change user
 service apache2 restart       # restart server
 service apache2 status        # check status (active/inactive)
 
+## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+## Ubuntu: prerequisites
+## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# before running the install script                                             # PuTTY
+
+# create a sudo user to install arches under e.g 'archesadmin'
+sudo adduser archesadmin
+sudo usermod -aG sudo archesadmin
+
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ## Ubuntu: use of environmental variables

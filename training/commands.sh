@@ -35,7 +35,27 @@ service apache2 status        # check status (active/inactive)
 
 # create a sudo user to install arches under e.g 'archesadmin'
 sudo adduser archesadmin
+# append a new group to arches admin
 sudo usermod -aG sudo archesadmin
+# move to archesadmin account
+cd ../archesadmin/
+# switch to su
+sudo su
+# go to GitHub, copy the URL of the raw version of the install script, and download it
+
+wget https://raw.githubusercontent.com/reubenosborne1/arches-scripts/master/install_and_apache_and_load_pkg.sh
+# edit 'install_and_apache_and_load_pkg.sh' file with vim (sudo mode)
+vim install_and_apache_and_load_pkg.sh
+# insert  (ESC + I) the following variables:
+# your project name, replace 'xxxx' by your country name
+project_name="xxxx_project"
+# your host, replace 'xx.xx.xx.xx' by the IPv4 Public address of your host
+my_host="xx.xx.xx.xx"
+# save/write and quit (ESC + :wq + Return)
+
+# check out by printing the first lines of the script
+head -n 15 install_and_apache_and_load_pkg.sh
+
 
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

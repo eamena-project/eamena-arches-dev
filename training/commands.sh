@@ -58,6 +58,7 @@ head -n 20 install_and_apache_and_load_pkg.sh
 
 # run the script
 source ./install_and_apache_and_load_pkg.sh
+# ~ 10 minutes to install
 
 
 

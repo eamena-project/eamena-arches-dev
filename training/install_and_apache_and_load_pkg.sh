@@ -49,7 +49,7 @@ arches-project create $project_name
 cd $project_name
 yes | python manage.py setup_db
 
-python manage.py packages -o load_package -s https://github.com/reubenosborne1/eamena-package.git
+python manage.py packages -o load_package -s https://github.com/eamena-oxford/eamena-arches-package.git
 
 apt-get -y install apache2
 apt -y install apache2-dev python3-dev

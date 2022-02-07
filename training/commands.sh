@@ -42,8 +42,8 @@ cd ../archesadmin/
 # switch to su
 sudo su
 # go to GitHub, copy the URL of the raw version of the install script, and download it
+wget https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/training/install_and_apache_and_load_pkg.sh
 
-wget https://raw.githubusercontent.com/reubenosborne1/arches-scripts/master/install_and_apache_and_load_pkg.sh
 # edit 'install_and_apache_and_load_pkg.sh' file with vim (sudo mode)
 vim install_and_apache_and_load_pkg.sh
 # insert  (ESC + I) the following variables:
@@ -54,7 +54,7 @@ my_host="xx.xx.xx.xx"
 # save/write and quit (ESC + :wq + Return)
 
 # check out by printing the first lines of the script
-head -n 15 install_and_apache_and_load_pkg.sh
+head -n 20 install_and_apache_and_load_pkg.sh
 
 # run the script
 source ./install_and_apache_and_load_pkg.sh

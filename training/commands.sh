@@ -56,10 +56,14 @@ my_host="xx.xx.xx.xx"
 # check out by printing the first lines of the script
 head -n 20 install_and_apache_and_load_pkg.sh
 
-# run the script
+
+## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+## Ubuntu: running the install script
+## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# after Ubuntu: prerequisites                                                   # PuTTY
+
 source ./install_and_apache_and_load_pkg.sh
 # ~ 10 minutes to install
-
 
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

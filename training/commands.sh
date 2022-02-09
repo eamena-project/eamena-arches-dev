@@ -109,7 +109,7 @@ su archesadmin
 mkdir /home/$username/.ssh
 # copy the authorized_keys file that contains your public key
 sudo cp /home/ubuntu/.ssh/authorized_keys /home/$username/.ssh/authorized_keys
-# change file ownership from ubuntu to Arches user
+# change file ownership from ubuntu to archesadmin user
 sudo chown -R $username:$username /home/$username/.ssh
 
 # check out permissions

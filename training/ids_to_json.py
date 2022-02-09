@@ -76,6 +76,7 @@ class Command(BaseCommand):
     def write_to_file(self, records):
 
         with open('json_records.jsonl', 'w') as json_records:
+            print("... run python")
             for record in records:
                 json.dump(record, json_records)
                 json_records.write("\n")

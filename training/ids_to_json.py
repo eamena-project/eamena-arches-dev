@@ -49,6 +49,7 @@ class Command(BaseCommand):
             print("... nb of ResourceID")
             print(len(resource_ids))
             print(resource_ids[0])
+            print("resource_ids[0]")
 
 
         records = self.get_resource(resource_ids)

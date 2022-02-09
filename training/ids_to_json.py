@@ -38,10 +38,11 @@ class Command(BaseCommand):
                 totalrows += 1
             print("... nb of records")
             print(totalrows)
-
+            
             #Copy all ResourceID's to new array
             for row in csv_reder:
                 resource_ids.append(row[ 'ResourceID'])
+            print(type(resource_ids))
             print("... nb of ResourceID")
             print(len(resource_ids))
 

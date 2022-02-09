@@ -33,14 +33,15 @@ service apache2 status        # check status (active/inactive)
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # before running the install script                                             # PuTTY
 
-# create a sudo user to install arches under e.g 'archesadmin'
-sudo adduser archesadmin
-# append a new group to arches admin
-sudo usermod -aG sudo archesadmin
-# move to archesadmin account
-cd ../archesadmin/
 # switch to su
 sudo su
+# create a sudo user to install arches under e.g 'archesadmin'
+adduser archesadmin
+# .. choose a password
+# append a new group to arches admin
+usermod -aG sudo archesadmin                                                    # useful?
+# move to archesadmin account
+cd /home/archesadmin/
 # go to GitHub, copy the URL of the raw version of the install script, and download it
 wget https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/training/install_and_apache_and_load_pkg.sh
 

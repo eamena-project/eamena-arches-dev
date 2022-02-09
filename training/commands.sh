@@ -135,7 +135,7 @@ wget https://raw.githubusercontent.com/eamena-oxford/eamena-arches-5-project/mas
 
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-## Authorised the Arches admin user to connect via SSH
+## Authorised the archesadmin user to connect via SSH
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # create directory, copy file, change permissions
 

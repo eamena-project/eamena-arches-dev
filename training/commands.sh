@@ -1,9 +1,12 @@
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ##
+#                                                                                 #
 # Welcome to the Aches/EAMENA Database Manager training !                         #
-# This document resume some IT commands following the install of Arches:          #
-#  https://github.com/zoometh/arches-scripts/blob/master/install_and_apache.sh    #
+# This document resume some Linux and Python commands for the install of an       #
+# Arches database management platform with a EAMENA-like project                  #
+#                                                                                 #
 #                                                  credit: University of Oxford   #
 #                                                  year  :                 2022   #
+#                                                                                 #
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ##
 
 
@@ -29,9 +32,10 @@ service apache2 restart       # restart server
 service apache2 status        # check status (active/inactive)
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-## Ubuntu: installation prerequisites
+## Prerequisites and Arches/EAMENA install
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# before running the install script                                             # PuTTY
+# archesadmin user, project specifications,
+# Arches dabatabase and EAMENA package install                                  # PuTTY
 
 # switch to su
 sudo su
@@ -42,7 +46,7 @@ adduser archesadmin
 usermod -aG sudo archesadmin                                                    # useful?
 # move to archesadmin account
 cd /home/archesadmin/
-# go to GitHub, copy the URL of the raw version of the install script, and download it
+# move to GitHub, copy the URL of the raw version of the install script, and download it
 wget https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/training/install_and_apache_and_load_pkg.sh
 
 # edit 'install_and_apache_and_load_pkg.sh' file with vim (sudo mode)
@@ -57,20 +61,13 @@ my_host="xx.xx.xx.xx"
 # check out by printing the first lines of the script
 head -n 20 install_and_apache_and_load_pkg.sh
 
-
-## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-## Ubuntu: Arches/EAMENA install
-## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# after Ubuntu: prerequisites                                                   # PuTTY
-
 # running the install script
 source ./install_and_apache_and_load_pkg.sh
-# ~ 8-10 minutes to install
-
+# ... ~ 8-10 minutes to install
 
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-## Ubuntu: use of environmental variables
+## Use of environmental variables
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # add 'permanent' environmental variables                                       # PuTTY
 
@@ -100,14 +97,53 @@ cd /home/$username/$project_name/$project_name
 
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-## Ubuntu: authorised the Arches admin user to connect via SSH
+## Convert business data from CSV to JSONL
+## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# import the business data
+
+# import the data by downloading your dataset
+
+# move to the command/ folder
+cd /home/$username/$project_name/$project_name/management/commands
+# switch to su
+sudo su
+# move to GitHub, copy the URL of the raw version of the script (csv to jsonl), and download it
+wget https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/training/ids_to_json.py
+# move to archesadmin/ folder
+cd /home/archesadmin
+# active venv
+source env/bin/activate
+# move to the project/ folder
+cd test_project
+# run
+python manage.py ids_to_json -s /home/archesadmin/test_project/eamena-arches-package/business_data/'Heritage Place.csv'
+# ... has created a json_records.jsonl in the same directory
+# import Budat
+python manage.py packages -o import_business_data -s json_records.jsonl -ow 'overwrite'
+# ~ 1,500 HP = 15 min
+
+# reindex data
+python manage.py es reindex_database
+# Status: Passed, Resource Type: Heritage Place, In Database: 1592, Indexed: 1592, Took: 183 seconds
+
+# create card-components/ as a symlink of cards/
+cd /home/archesadmin/test_project/test_project/static/js/views/components/cards
+ln -s cards card-components
+# load eamena-default-card.js into cards/
+cd cards
+wget https://raw.githubusercontent.com/eamena-oxford/eamena-arches-5-project/master/eamena/media/js/views/components/cards/eamena-default-card.js
+
+
+
+## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+## Authorised the Arches admin user to connect via SSH
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # create directory, copy file, change permissions
 
 # see current permissions of SSH authorized keys                                # PuTTY
 cd ~/.ssh
 ls -l
-# switch user from ubuntu to archesadmin
+# switch from ubuntu user to archesadmin user
 su archesadmin
 # you will have to insert your password
 # create a new .ssh/ folder in archesadmin/
@@ -136,7 +172,7 @@ service apache2 status
 
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-## Ubuntu: understanding permissions and ownerships
+## Understanding permissions and ownerships
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 #
 
@@ -188,42 +224,48 @@ cd /etc/apache2/sites-available                                                 
 /etc/apache2/sites-available                                                    # FileZilla
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-## understanding Python
+## Understanding Python
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-ubuntu@ip-172-31-46-153:~$ cd /home/$username/
-# activate Python virtual environment
-ubuntu@ip-172-31-46-153:/home/archesadmin$ source env/bin/activate
-# got to settings.py directory
-(env) ubuntu@ip-172-31-46-153:/home/archesadmin$ cd $project_name/$project_name
+# run Python                                                                    # PuTTY
+
+# move to archesadmin user folder
+cd /home/$username/
+# activate Python virtual environment (env)
+source env/bin/activate
+# ...(env)
+# move to the settings.py directory
+cd $project_name/$project_name
 # run Python
-(env) ubuntu@ip-172-31-46-153:/home/archesadmin/$project_name/$project_name$ python
-Python 3.8.10 (default, Nov 26 2021, 20:14:08)
-[GCC 9.3.0] on linux
-Type "help", "copyright", "credits" or "license" for more information.
->>>
+python
+# ... Python 3.8.10 (default, Nov 26 2021, 20:14:08)
+# ... [GCC 9.3.0] on linux
+# ... Type "help", "copyright", "credits" or "license" for more information.
+# ... >>>
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-## understanding APP_ROOT
+## Understanding APP_ROOT
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-ubuntu@ip-172-31-46-153:~$ cd /home/$username
-# activate Python virtual environment
-ubuntu@ip-172-31-46-153:/home/archesadmin$ source env/bin/activate
-# got to settings.py directory
-(env) ubuntu@ip-172-31-46-153:/home/archesadmin$ cd $project_name/$project_name
+# get the value of the APP_ROOT variable
+
+# move to archesadmin user folder
+cd /home/$username/
+# activate Python virtual environment (env)
+source env/bin/activate
+# ...(env)
+# move to the settings.py directory
+cd $project_name/$project_name
 # run Python
-(env) ubuntu@ip-172-31-46-153:/home/archesadmin/$project_name/$project_name$ python
-## Python 3.8.10 (default, Nov 26 2021, 20:14:08)
-## [GCC 9.3.0] on linux
-## Type "help", "copyright", "credits" or "license" for more information.
-# import libraries
+python
+# ... Python 3.8.10 (default, Nov 26 2021, 20:14:08)                            # Python
+# ... [GCC 9.3.0] on linux
+# ... Type "help", "copyright", "credits" or "license" for more information.
+# ... >>>
+
+# import libraries                                                              # Python
 >>> import os, inspect
 # copied from the settings.py file, APP_ROOT initialisation
 >>> APP_ROOT = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
 >>> print(APP_ROOT)
-/home/$username/$project_name/$project_name
-# the APP_ROOT is '/home/archesadmin/$project_name/$project_name'
-# >>> MEDIA_URL = '/files/'
-# >>> MEDIA_ROOT =  os.path.join(APP_ROOT)
-# >>> print(MEDIA_ROOT)
+# ... print the path to the app root like /home/$username/$project_name/$project_name
 
 

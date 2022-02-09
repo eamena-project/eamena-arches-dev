@@ -39,8 +39,10 @@ class Command(BaseCommand):
                 totalrows += 1
             print("... nb of records")
             print(totalrows)
+            l_temp = []
             for row in csv_reder[1:3]:
-                print(row)
+                l_temp.append(i)
+            print(l_temp)
 
             #Copy all ResourceID's to new array
             for row in csv_reder:

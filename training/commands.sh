@@ -34,8 +34,7 @@ service apache2 status        # check status (active/inactive)
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ## Prerequisites and Arches/EAMENA install
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# archesadmin user, project specifications,
-# Arches dabatabase and EAMENA package install                                  # PuTTY
+# Project specifications, Arches dabatabase and EAMENA package install          # PuTTY
 
 # switch to su
 sudo su

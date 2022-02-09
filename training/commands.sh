@@ -85,6 +85,10 @@ export username="archesadmin"
 # make environment variables visibles (excecutable) by anyone
 sudo chmod 745 environment      # useful ?
 
+# to see the new variables, need to logout
+exit
+# and re-log in with PuTTY                                                      # PuTTY
+
 # check out
 # call the variables (echo)
 echo $username
@@ -99,12 +103,13 @@ cd /home/$username/$project_name/$project_name
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # create directory, copy file, change permissions
 
-# see current permissions of SSH authorized keys                                # PuTTY
+# move to the .ssh/ folder                                                      # PuTTY
 cd ~/.ssh
+# see current permissions of SSH authorized keys
 ls -l
 # switch from ubuntu user to archesadmin user
 su archesadmin
-# you will have to insert your password
+# ... you will have to insert your password
 # create a new .ssh/ folder in archesadmin/
 mkdir /home/$username/.ssh
 # copy the authorized_keys file that contains your public key
@@ -118,11 +123,9 @@ ls -al
 
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-## Convert business data from CSV to JSONL
+## Get ids_to_json.py and eamena-arches-package.git from GitHub
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# import the business data
-
-# import the data by downloading your dataset
+# import Python script to convert from CSV to JSONL, and EAMENA package
 
 # move to the command/ folder
 cd /home/$username/$project_name/$project_name/management/commands
@@ -130,16 +133,21 @@ cd /home/$username/$project_name/$project_name/management/commands
 sudo su
 # move to GitHub, copy the URL of the raw version of the script (csv to jsonl), and download it
 wget https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/training/ids_to_json.py
-# move to archesadmin/ folder
-cd /home/archesadmin
-# active venv
-source env/bin/activate
 # move to the project/ folder
-cd test_project
-# run
-python manage.py ids_to_json -s /home/archesadmin/test_project/eamena-arches-package/business_data/'Heritage Place.csv'
+cd /home/$username/$project_name
+# clone
+git clone https://github.com/eamena-oxford/eamena-arches-package.git
+
+
+## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+## Convert business data from CSV to JSONL
+## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# after importing the CSV into the business_data/ folder
+
+# convert your CSV to JSONL
+python manage.py ids_to_json -s ./eamena-arches-package/business_data/'Heritage Place.csv'
 # ... has created a json_records.jsonl in the same directory
-# import Budat
+# import business data
 python manage.py packages -o import_business_data -s json_records.jsonl -ow 'overwrite'
 # ~ 1,500 HP = 15 min
 

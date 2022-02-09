@@ -33,7 +33,12 @@ class Command(BaseCommand):
         #Open target file as a dictionary
         with open (csv_path, newline="") as csv_file:
             csv_reder = csv.DictReader(csv_file, delimiter=',')
-            
+            totalrows = 0
+            for row in csv_reder:
+                totalrows += 1
+            print("... nb of records")
+            print(totalrows)
+
             #Copy all ResourceID's to new array
             for row in csv_reder:
                 resource_ids.append(row[ 'ResourceID'])
@@ -77,7 +82,7 @@ class Command(BaseCommand):
     def write_to_file(self, records):
 
         with open('json_records.jsonl', 'w') as json_records:
-            print("... run python")
+            print("... write into jsonl")
             print(len(records))
             for record in records:
                 json.dump(record, json_records)

@@ -33,6 +33,7 @@ class Command(BaseCommand):
         #Open target file as a dictionary
         with open (csv_path, newline="") as csv_file:
             csv_reder = csv.DictReader(csv_file, delimiter=',')
+            print(type(csv_reder))
             totalrows = 0
             for row in csv_reder:
                 totalrows += 1
@@ -41,7 +42,7 @@ class Command(BaseCommand):
 
             #Copy all ResourceID's to new array
             for row in csv_reder:
-                resource_ids.append(row['Geometric Place Expression'])
+                resource_ids.append(row['ResourceID'])
             # print(type(resource_ids)) is list
             print("... nb of ResourceID")
             print(len(resource_ids))

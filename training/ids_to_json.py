@@ -1,4 +1,5 @@
 from fileinput import close
+from operator import length_hint
 import re
 from django.core.management.base import BaseCommand, CommandError
 
@@ -77,6 +78,7 @@ class Command(BaseCommand):
 
         with open('json_records.jsonl', 'w') as json_records:
             print("... run python")
+            print(len(records))
             for record in records:
                 json.dump(record, json_records)
                 json_records.write("\n")

@@ -59,12 +59,14 @@ head -n 20 install_and_apache_and_load_pkg.sh
 
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-## Ubuntu: running the install script
+## Ubuntu: Arches/EAMENA install
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # after Ubuntu: prerequisites                                                   # PuTTY
 
+# running the install script
 source ./install_and_apache_and_load_pkg.sh
-# ~ 10 minutes to install
+# ~ 8-10 minutes to install
+
 
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

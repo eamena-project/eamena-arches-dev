@@ -1,13 +1,5 @@
 #!/bin/bash
 
-# BEFORE RUNNING, CHECK THAT THESE PARAMETERS ARE UP TO DATE:
-# 1. create a sudo user to install arches under e.g 'archesadmin'
-    # sudo adduser archesadmin
-    # sudo usermod -aG sudo archesadmin
-# 2. switch to the root user
-    # sudo su
-#3. Configure projet name, username and arches branch/tag below
-
 username="archesadmin"
 arches_version="origin/stable/5.2.x"
 
@@ -32,7 +24,7 @@ git clone https://github.com/archesproject/arches.git
 python3.8 -m venv env
 source env/bin/activate
 
-#setup arches
+# setup arches
 cd arches
 git checkout $arches_version
 yes | bash arches/install/ubuntu_setup.sh

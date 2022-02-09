@@ -94,6 +94,28 @@ echo $project_name
 cd /home/$username/$project_name/$project_name
 # .. moves to your Arches project root folder
 
+## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+## Authorised the archesadmin user to connect via SSH
+## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# create directory, copy file, change permissions
+
+# see current permissions of SSH authorized keys                                # PuTTY
+cd ~/.ssh
+ls -l
+# switch from ubuntu user to archesadmin user
+su archesadmin
+# you will have to insert your password
+# create a new .ssh/ folder in archesadmin/
+mkdir /home/$username/.ssh
+# copy the authorized_keys file that contains your public key
+sudo cp /home/ubuntu/.ssh/authorized_keys /home/$username/.ssh/authorized_keys
+# change file ownership from ubuntu to Arches user
+sudo chown -R $username:$username /home/$username/.ssh
+
+# check out permissions
+cd /home/$username/.ssh
+ls -al
+
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ## Convert business data from CSV to JSONL
@@ -131,30 +153,6 @@ ln -s cards card-components
 # load eamena-default-card.js into cards/
 cd cards
 wget https://raw.githubusercontent.com/eamena-oxford/eamena-arches-5-project/master/eamena/media/js/views/components/cards/eamena-default-card.js
-
-
-
-## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-## Authorised the archesadmin user to connect via SSH
-## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# create directory, copy file, change permissions
-
-# see current permissions of SSH authorized keys                                # PuTTY
-cd ~/.ssh
-ls -l
-# switch from ubuntu user to archesadmin user
-su archesadmin
-# you will have to insert your password
-# create a new .ssh/ folder in archesadmin/
-mkdir /home/$username/.ssh
-# copy the authorized_keys file that contains your public key
-sudo cp /home/ubuntu/.ssh/authorized_keys /home/$username/.ssh/authorized_keys
-# change file ownership from ubuntu to Arches user
-sudo chown -R $username:$username /home/$username/.ssh
-
-# check out permissions
-cd /home/$username/.ssh
-ls -al
 
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

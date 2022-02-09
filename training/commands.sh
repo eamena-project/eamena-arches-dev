@@ -137,7 +137,8 @@ wget https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/trai
 cd /home/$username/$project_name
 # clone
 git clone https://github.com/eamena-oxford/eamena-arches-package.git
-
+# change ownership of the package from root to archesadmin
+sudo chown -R archesadmin:archesadmin eamena-arches-package
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ## Convert business data from CSV to JSONL

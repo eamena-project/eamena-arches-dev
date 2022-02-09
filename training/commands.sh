@@ -29,7 +29,7 @@ service apache2 restart       # restart server
 service apache2 status        # check status (active/inactive)
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-## Ubuntu: prerequisites
+## Ubuntu: installation prerequisites
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # before running the install script                                             # PuTTY
 

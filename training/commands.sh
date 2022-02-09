@@ -66,9 +66,9 @@ source ./install_and_apache_and_load_pkg.sh
 
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-## Use of environmental variables
+## Use of environment variables
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# add 'permanent' environmental variables                                       # PuTTY
+# add 'permanent' environment variables                                         # PuTTY
 
 # move to etc/ folder
 cd /etc

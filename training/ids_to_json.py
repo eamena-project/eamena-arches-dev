@@ -42,6 +42,8 @@ class Command(BaseCommand):
             #Copy all ResourceID's to new array
             for row in csv_reder:
                 resource_ids.append(row[ 'ResourceID'])
+            print("... nb of ResourceID")
+            print(len(resource_ids))
 
 
         records = self.get_resource(resource_ids)

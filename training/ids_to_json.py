@@ -34,22 +34,22 @@ class Command(BaseCommand):
         with open (csv_path, newline="") as csv_file:
             csv_reder = csv.DictReader(csv_file, delimiter=',')
             # print(type(csv_reder)) is list
-            totalrows = 0
-            for row in csv_reder:
-                totalrows += 1
-                myrow = row
-            print("... nb of records")
-            print(totalrows)
-            print(myrow)
+            # totalrows = 0
+            # for row in csv_reder:
+            #     totalrows += 1
+            #     myrow = row
+            # print("... nb of records")
+            # print(totalrows)
+            # print(myrow)
 
             #Copy all ResourceID's to new array
             for row in csv_reder:
                 resource_ids.append(row['ResourceID'])
             # print(type(resource_ids)) is list
-            print("... nb of ResourceID")
-            print(len(resource_ids))
-            print(resource_ids[0])
-            print("resource_ids[0]")
+            # print("... nb of ResourceID")
+            # print(len(resource_ids))
+            # print(resource_ids[0])
+            # print("resource_ids[0]")
 
 
         records = self.get_resource(resource_ids)

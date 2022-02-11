@@ -20,6 +20,8 @@ cd                            # change directory
 chgrp                         # change files/folder group
 chmod                         # change files/folders access permission
 chown                         # change files/folder owner
+exit                          # exit the current location
+logout                        # terminate the SSH connection
 ls                            # list folder and files
 ls -a                         # list hidden and visible folders and files
 ls -l                         # list folders and files + permissions + owners (visible)
@@ -41,11 +43,11 @@ service apache2 status        # check status (active/inactive)
 
 # switch to su
 sudo su
-# create a sudo user to install arches under e.g 'archesadmin'
+# create archesadmin user to install arches under it
 adduser archesadmin
 # ... choose a password
 # ... (opt)
-# append a new group to arches admin
+# append a new group to archesadmin
 usermod -aG sudo archesadmin                                                    # useful?
 # move to archesadmin account
 cd /home/archesadmin/
@@ -89,7 +91,8 @@ export username="archesadmin"
 # make environment variables visibles (excecutable) by anyone
 sudo chmod 745 environment      # useful ?
 
-# to see the new variables, need to logout
+
+# need to exit for Linux to update the new variables
 exit
 # and re-log in with PuTTY                                                      # PuTTY
 
@@ -125,7 +128,10 @@ sudo chown -R $username:$username /home/$username/.ssh
 # check out permissions
 cd /home/$username/.ssh
 ls -al
-
+# ... total 12
+# ... drwxrwxr-x 2 archesadmin archesadmin 4096 Feb 11 18:25 .
+# ... drwxr-xr-x 6 archesadmin archesadmin 4096 Feb 11 18:25 ..
+# ... -rw------- 1 archesadmin archesadmin  392 Feb 11 18:25 authorized_keys
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ## Clone eamena-arches-package.git from GitHub
@@ -145,7 +151,9 @@ cd $project_name
 git clone https://github.com/eamena-oxford/eamena-arches-package.git
 # load package
 python manage.py packages -o load_package -s eamena-arches-package/ -db
-# ... ~ 1,500 Girds, plus Person/Organisation = 15 min
+# ...
+# move to the project/ folder
+cd /home/$username/$project_name
 # collect static
 python manage.py collectstatic
 
@@ -199,6 +207,10 @@ mv ./card_components ./cards
 # reindex data
 python manage.py es reindex_database
 # ... Status: Passed, Resource Type: Heritage Place, In Database: 1592, Indexed: 1592, Took: 183 seconds
+# do as superuser
+sudo su
+# restart server
+service apache2 restart
 
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -217,7 +229,7 @@ service apache2 status
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ## Understanding permissions and ownerships
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-#
+# list permissions (user, group) for files and folder
 
 # move to img/ folder
 cd /home/$username/$project_name/$project_name/static/img
@@ -254,8 +266,24 @@ cd /home/$username/$project_name/$project_name/static/img/landing               
 /etc/apache2/sites-available                                                    # FileZilla
 cd /etc/apache2/sites-available                                                 # PuTTY
 
+
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-## main configuration files
+## Delete Heritage Places by batch
+## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# After a deleting ElasticSearch needs to be re-indexed
+
+# move to archesadmin user folder
+cd /home/$username/
+# activate Python virtual environment (env)
+source env/bin/activate
+# ...(env)
+# move to the project folder
+cd $project_name
+# reindex ElasticSearch
+python manage.py es index_database
+
+## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+## Main configuration files
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 # settings.py and settings_local.py
@@ -280,10 +308,22 @@ source env/bin/activate
 cd $project_name/$project_name
 # run Python
 python
-# ... Python 3.8.10 (default, Nov 26 2021, 20:14:08)
+# ... Python 3.8.10 (default, Nov 26 2021, 20:14:08)                            # PuTTY / Python
 # ... [GCC 9.3.0] on linux
 # ... Type "help", "copyright", "credits" or "license" for more information.
 # ... >>>
+
+# import os library
+import os
+# current directory
+os.getcwd()
+# ... '/home/$username'
+
+# exit Python
+exit()
+# ... back to shell                                                             # PuTTY
+
+
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ## Understanding APP_ROOT
@@ -299,16 +339,16 @@ source env/bin/activate
 cd $project_name/$project_name
 # run Python
 python
-# ... Python 3.8.10 (default, Nov 26 2021, 20:14:08)                            # Python
+# ... Python 3.8.10 (default, Nov 26 2021, 20:14:08)                            # PuTTY / Python
 # ... [GCC 9.3.0] on linux
 # ... Type "help", "copyright", "credits" or "license" for more information.
 # ... >>>
 
-# import libraries                                                              # Python
->>> import os, inspect
+# import libraries
+import os, inspect
 # copied from the settings.py file, APP_ROOT initialisation
->>> APP_ROOT = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
->>> print(APP_ROOT)
-# ... print the path to the app root like /home/$username/$project_name/$project_name
+APP_ROOT = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
+print(APP_ROOT)
+# ... print the path to the app root = /home/$username/$project_name/$project_name
 
 

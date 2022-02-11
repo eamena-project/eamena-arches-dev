@@ -159,28 +159,24 @@ ls
 # run the script
 python manage.py ids_to_json -s /opt/arches/eamena/'Heritage Place.csv'
 # ... has created a json_records.jsonl in the same directory
-
+# rename this file
+mv ./json_records.jsonl ./'Heritage Place.jsonl'
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-##
+## Import business data, update Cards/Reports, reindex
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # after importing the CSV into the business_data/ folder
 
-
 # import business data
-python manage.py packages -o import_business_data -s json_records.jsonl -ow 'overwrite'
-# ~ 1,500 HP = 15 min
-
+python manage.py packages -o import_business_data -s 'Heritage Place.jsonl' -ow 'overwrite'
+# ... ~ 1,500 HP = 15 min
+# move to components/ folder
+cd /home/$username/$project_name/$project_name/templates/views/components
+# rename card_components/ folder as cards/
+mv ./card_components ./cards
 # reindex data
 python manage.py es reindex_database
-# Status: Passed, Resource Type: Heritage Place, In Database: 1592, Indexed: 1592, Took: 183 seconds
-
-# create card-components/ as a symlink of cards/
-cd /home/archesadmin/test_project/test_project/static/js/views/components/cards
-ln -s cards card-components
-# load eamena-default-card.js into cards/
-cd cards
-wget https://raw.githubusercontent.com/eamena-oxford/eamena-arches-5-project/master/eamena/media/js/views/components/cards/eamena-default-card.js
+# ... Status: Passed, Resource Type: Heritage Place, In Database: 1592, Indexed: 1592, Took: 183 seconds
 
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

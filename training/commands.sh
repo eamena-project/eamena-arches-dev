@@ -134,17 +134,27 @@ ls -al
 
 # switch to su
 sudo su
+# move to archesadmin user folder
+cd /home/$username/
+# activate Python virtual environment (env)
+source env/bin/activate
+# ...(env)
 # move to the project/ folder
-cd /home/$username/$project_name
-# clone
+cd $project_name
+# clone package
 git clone https://github.com/eamena-oxford/eamena-arches-package.git
+# load package
+python manage.py packages -o load_package -s eamena-arches-package/ -db
+# ... ~ 1,500 Girds, plus Person/Organisation = 15 min
+# collect static
+python manage.py collectstatic
 
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ## Convert business data from CSV to JSONL with 'ids_to_json.py'
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # import 'ids_to_json.py' to convert business data from CSV to JSONL
-# to do in the 'main' database, e.g. EAMENA, not in the child one
+# /!\ to do in the 'main' database, e.g. EAMENA, not in the child one
 
 # switch to su
 sudo su
@@ -170,7 +180,7 @@ mv ./json_records.jsonl ./'Heritage Place.jsonl'
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ## Import business data, update Cards/Reports, reindex
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# after importing the CSV into the business_data/ folder
+# Add business data into the package
 
 # move to archesadmin user folder
 cd /home/$username/

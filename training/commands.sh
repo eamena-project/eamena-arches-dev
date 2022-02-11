@@ -40,7 +40,8 @@ service apache2 status        # check status (active/inactive)
 sudo su
 # create a sudo user to install arches under e.g 'archesadmin'
 adduser archesadmin
-# .. choose a password
+# ... choose a password
+# ... (opt)
 # append a new group to arches admin
 usermod -aG sudo archesadmin                                                    # useful?
 # move to archesadmin account
@@ -167,6 +168,13 @@ mv ./json_records.jsonl ./'Heritage Place.jsonl'
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # after importing the CSV into the business_data/ folder
 
+# move to archesadmin user folder
+cd /home/$username/
+# activate Python virtual environment (env)
+source env/bin/activate
+# ...(env)
+# move where is your JSONL file, eg:
+cd $project_name
 # import business data
 python manage.py packages -o import_business_data -s 'Heritage Place.jsonl' -ow 'overwrite'
 # ... ~ 1,500 HP = 15 min

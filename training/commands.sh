@@ -4,7 +4,7 @@
 # This document resume some Linux and Python commands for the install of an       #
 # Arches database management platform with a EAMENA-like project                  #
 #                                                                                 #
-#                                                  credit: University of Oxford   #
+#                                                  credit:         EAMENA project #
 #                                                  year  :                 2022   #
 #                                                                                 #
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ##
@@ -13,6 +13,8 @@
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ## main Linux commands
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+.                             # current directory
+..                            # parent directory
 cat                           # print the content of a file
 cd                            # change directory
 chgrp                         # change files/folder group
@@ -30,6 +32,7 @@ su user_name                  # change user
 # for Apache server - - - - - - - - - - - - - - - - - - - - - -
 service apache2 restart       # restart server
 service apache2 status        # check status (active/inactive)
+
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ## Prerequisites and Arches/EAMENA install
@@ -98,6 +101,7 @@ echo $project_name
 # .. gives: the name of your project
 cd /home/$username/$project_name/$project_name
 # .. moves to your Arches project root folder
+
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ## Authorised the archesadmin user to connect via SSH

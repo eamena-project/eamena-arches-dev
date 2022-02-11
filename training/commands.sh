@@ -123,31 +123,50 @@ ls -al
 
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-## Get ids_to_json.py and eamena-arches-package.git from GitHub
+## Clone eamena-arches-package.git from GitHub
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# import Python script to convert from CSV to JSONL, and EAMENA package
+# import the EAMENA package
 
-# move to the command/ folder
-cd /home/$username/$project_name/$project_name/management/commands
 # switch to su
 sudo su
-# move to GitHub, copy the URL of the raw version of the script (csv to jsonl), and download it
-wget https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/training/ids_to_json.py
 # move to the project/ folder
 cd /home/$username/$project_name
 # clone
 git clone https://github.com/eamena-oxford/eamena-arches-package.git
-# change ownership of the package from root to archesadmin
-sudo chown -R archesadmin:archesadmin eamena-arches-package
+
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-## Convert business data from CSV to JSONL
+## Convert business data from CSV to JSONL with 'ids_to_json.py'
+## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# import 'ids_to_json.py' to convert business data from CSV to JSONL
+# to do in the 'main' database, e.g. EAMENA, not in the child one
+
+# switch to su
+sudo su
+# move to the command/ folder
+cd /opt/arches/eamena/eamena/management/commands
+# move to GitHub, copy the URL of the raw version of the script (csv to jsonl), and download it
+wget https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/training/ids_to_json.py
+# move to arches/ folder
+cd /opt/arches
+# activate env
+source ENV/bin/activate
+# move to eamena/ folder
+cd eamena
+# check out if the dataset is here by listing
+ls
+# ... 'Heritage Place.csv' ...
+# run the script
+python manage.py ids_to_json -s /opt/arches/eamena/'Heritage Place.csv'
+# ... has created a json_records.jsonl in the same directory
+
+
+## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+##
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # after importing the CSV into the business_data/ folder
 
-# convert your CSV to JSONL
-python manage.py ids_to_json -s ./eamena-arches-package/business_data/'Heritage Place.csv'
-# ... has created a json_records.jsonl in the same directory
+
 # import business data
 python manage.py packages -o import_business_data -s json_records.jsonl -ow 'overwrite'
 # ~ 1,500 HP = 15 min

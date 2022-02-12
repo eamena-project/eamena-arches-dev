@@ -2,24 +2,28 @@
 """
 Created on Wed Feb  9 21:37:59 2022
 
-@description: collect EAMENA ID from a CSV export
+@description: collect resourceid from a CSV export
 """
 
 import csv
 
-csv_path = 'C:/Rprojects/eamena-arches-dev/data/to_rm/Heritage Place.csv'
+data_rm_path = 'C:/Rprojects/eamena-arches-dev/data/to_rm/'
+data_rm_csv='Heritage Place.csv'
+data_rm_id='Heritage_Place_ID.csv'
+csv_file_in=data_rm_path+data_rm_csv
+csv_file_out=data_rm_path+data_rm_id
 
 resource_ids =[]
-with open (csv_path, newline="") as csv_file:
+with open (csv_file_in, newline="") as csv_file:
     csv_reder = csv.DictReader(csv_file, delimiter=',')
     for row in csv_reder:
-        resource_ids.append(row['EAMENA ID'])
+        resource_ids.append(row['resourceid'])
 
-path="C:/Rprojects/eamena-arches-dev/data/to_rm/Heritage Place_ID.csv"
-ofile=open(path,"w")
-wr = csv.writer(ofile)
+ofile=open(csv_file_out,"w", newline='')
+wr = csv.writer(ofile, delimiter=',')
 for elem in resource_ids:
    wr.writerow([elem])
 ofile.close()
 
+print("file: "+data_rm_id+" has been exported")
         

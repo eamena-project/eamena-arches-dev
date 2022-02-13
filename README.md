@@ -1,4 +1,4 @@
-# eamena-arches-dev  <img src="www/iconr_logo.png" width='100px' align="right"/>
+# eamena-arches-dev  <img src="www/logo.png" width='100px' align="right"/>
 > development repository
 
 * [training](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/training)

@@ -31,21 +31,14 @@ This part 2  consists of 3 different slots of 3-hours each:
 
 * Requirements installation tuto: 
   - https://www.dropbox.com/scl/fi/brrx555afobhr67v698vc/prerequisites.pptx?dl=0&rlkey=a33oys1ldjm0do7sh5d13zmv2
-
-Before the start of this the training, for the lead person, need to be installed:
-
-  + PuTTY SSH client for terminal commands 
-    
-  + FileZilla SSH client for file transfer
-    
-  + an IDE for code edition
+    + PuTTY SSH client for terminal commands 
+    + FileZilla SSH client for file transfer
+    + an IDE for code edition
       - Microsoft VS Code, *or*
       - Sublime, *or*
       - Notepad++, *or*
       - etc.  
-    
-  + (opt) Create a [GitHub](https://github.com/join) account for co-development between your institution and the EAMENA team
-  
+    + (opt) Create a [GitHub](https://github.com/join) account for co-development between your institution and the EAMENA team
 
 * Part 2 slides:
   - https://docs.google.com/presentation/d/1Si44scv7N9XxaGBCKYyRMorDnrj6gc362ZHQ-622cfM/edit?usp=sharing

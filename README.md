@@ -1,7 +1,8 @@
 # eamena-arches-dev  <img src="www/logo.png" width='100px' align="right"/>
 > development repository
 
-* [training](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/training)
+* [training](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/training):
+  - [README](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/training#readme)
 
 * [checks](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/check/check.md#checks)
 

@@ -15,6 +15,7 @@
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 .                             # current directory
 ..                            # parent directory
+>>                            # redirects output to a file, append at the end
 cat                           # print the content of a file
 cd                            # change directory
 chgrp                         # change files/folder group

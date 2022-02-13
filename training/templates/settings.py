@@ -12,7 +12,7 @@ try:
 except ImportError:
     pass
 
-APP_NAME = 'project'
+APP_NAME = '$project_name'
 APP_ROOT = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
 STATICFILES_DIRS =  (os.path.join(APP_ROOT, 'media'),) + STATICFILES_DIRS
 

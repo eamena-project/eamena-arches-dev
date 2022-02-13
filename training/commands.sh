@@ -31,9 +31,11 @@ pwd                           # current directory
 source                        # read and execute the content of a file
 sudo                          # do as superuser
 su user_name                  # change user
-# for Apache server - - - - - - - - - - - - - - - - - - - - - -
-service apache2 restart       # restart server
-service apache2 status        # check status (active/inactive)
+# for services like Apache, ElasticSearch, PostgreSQL, etc. ($servicename) - - -
+service $servicename start    # start service
+service $servicename stop     # start service
+service $servicename restart  # restart service
+service $servicename status   # check status (active/inactive)
 
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -214,7 +216,7 @@ service apache2 restart
 
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-## Ubuntu: restart and check status of Apache server
+## Apache server, restart and check status
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # restart and check status of the Apache HTTP Server web server
 
@@ -225,6 +227,17 @@ service apache2 restart
 # check status (active/inactive)
 service apache2 status
 
+## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+## ElasticSearch, check status
+## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# check status of the ElasticSearch
+
+# check status (active/inactive)
+systemctl status elasticsearch
+# re-index everything in database
+python manage.py es reindex_database
+# re-index by resource model
+python manage.py es index_resources_by_type -rt [UUID for Resource Model]
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ## Understanding permissions and ownerships
@@ -270,15 +283,39 @@ cd /etc/apache2/sites-available                                                 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ## Delete Heritage Places by batch
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# After a deleting ElasticSearch needs to be re-indexed
+# delet with Python shell
 
 # move to archesadmin user folder
-cd /home/$username/
+cd /home/$username
 # activate Python virtual environment (env)
 source env/bin/activate
 # ...(env)
 # move to the project folder
 cd $project_name
+# run Python
+python manage.py shell
+# ... Python 3.8.10 (default, Nov 26 2021, 20:14:08)                            # PuTTY / Python
+# ... [GCC 9.3.0] on linux
+# ... Type "help", "copyright", "credits" or "license" for more information.
+# ... >>>
+
+from arches.app.models.resource import Resource
+import pandas as pd
+import os
+
+# 'Heritage_Place_ID.csv' is in the Python folder '/home/$username/$project_name'
+# Resources UUID are listed as:
+# 5c6144d3-a4a5-48f7-938c-ac38b043b46e,520de939-79f7-44cc-b255-888a6214cd30, etc.
+resource_data = pd.read_csv(os.path.join(os.getcwd(), 'Heritage_Place_ID.csv'))
+# get the keys = UUIDs
+resource_ids = list(resource_data.keys())
+
+for _id in resource_ids:
+    instance = Resource.objects.get(pk=_id)
+    instance.delete()
+# ...
+# True
+
 # reindex ElasticSearch
 python manage.py es index_database
 

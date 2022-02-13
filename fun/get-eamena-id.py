@@ -7,7 +7,7 @@ Created on Wed Feb  9 21:37:59 2022
 
 import csv
 
-data_rm_path = 'C:/Rprojects/eamena-arches-dev/data/to_rm/'
+data_rm_path = 'C:/Users/Thomas Huet/Desktop/EAMENA/IT/dbs/masdar-palestine/'
 data_rm_csv='Heritage Place.csv'
 data_rm_id='Heritage_Place_ID.csv'
 csv_file_in=data_rm_path+data_rm_csv

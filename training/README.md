@@ -1,6 +1,6 @@
 # Arches/EAMENA Database Manager CPF Training (part 2/2)
 
-This is the second part of Database Management training for Arches-powered platform, EAMENA compliant, for cultural heritage management. The previous part (part 1) took place in person, in Amman, Jordan (5/11/21 - 9/11/21). 
+This is the second part of Database Management training for Arches-powered platform, EAMENA compliant, for cultural heritage management. The previous part (part 1) took place in person, in Amman, Jordan (5/12/21 - 9/12/21). 
 
 This part 2  consists of 3 different slots of 3-hours each:
 

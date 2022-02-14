@@ -67,6 +67,7 @@ This part 2  consists of 3 different slots of 3-hours each:
 
 * project: https://www.archesproject.org/
 * documentation: https://arches.readthedocs.io/en/stable/
+  - documentation 5.2: https://arches.readthedocs.io/en/5.1/
 * forum: https://community.archesproject.org/
 * GitHub: https://github.com/archesproject/arches
 * development: https://www.archesproject.org/development/

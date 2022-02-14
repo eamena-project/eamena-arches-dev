@@ -4,11 +4,11 @@ This is the second part of Database Management training for Arches-powered platf
 
 This part 2  consists of 3 different slots of 3-hours each:
 
-  1. Slot 1: Documentation and installation
+  1. Slot 1: Documentation and customization of the project
 
-  2. Slot 2: Overview of Database Management tools
+  2. Slot 2: Database Management tools
 
-  3. Slot 3: Edit as a Database Manager
+  3. Slot 3: Installing the project on a server
 
 <div align="center">
   This online training will be hosted online (ZOOM):

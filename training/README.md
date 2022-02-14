@@ -72,7 +72,7 @@ This part 2  consists of 3 different slots of 3-hours each:
 * GitHub: https://github.com/archesproject/arches
 * development: https://www.archesproject.org/development/
 
-### Arches depedencies
+### Arches dependencies
 
 * Django: https://www.djangoproject.com/
 * Python: https://www.python.org/

@@ -1,0 +1,16 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "population": 200
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [35.751927739856036,
+            31.913009089150812]
+        }
+      }
+    ]
+}

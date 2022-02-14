@@ -72,7 +72,8 @@ head -n 20 install_and_apache_and_load_pkg.sh
 # running the install script
 source ./install_and_apache_and_load_pkg.sh
 # ... ~ 8-10 minutes to install
-
+# move the script to the appropriate folder (install/)
+mv install_and_apache_and_load_pkg.sh /home/archesadmin/arches/arches/app/functions/install
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ## Use of environment variables

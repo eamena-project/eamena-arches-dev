@@ -66,6 +66,7 @@ This part 2  consists of 3 different slots of 3-hours each:
 ### Arches full stack
 
 * project: https://www.archesproject.org/
+* demo (v5): http://v5demo.archesproject.org/search?paging-filter=1
 * documentation: https://arches.readthedocs.io/en/stable/
   - documentation 5.2: https://arches.readthedocs.io/en/5.1/
 * forum: https://community.archesproject.org/

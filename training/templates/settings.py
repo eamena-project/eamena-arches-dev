@@ -203,6 +203,7 @@ if DEBUG is True:
     SILENCED_SYSTEM_CHECKS = ["captcha.recaptcha_test_key_error"]
 
 
+# see: https://arches.readthedocs.io/en/5.1/settings-beyond-the-ui/?highlight=sign-up#enabling-user-sign-up
 # EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'  #<-- Only need to uncomment this for testing without an actual email server
 # EMAIL_USE_TLS = True
 # EMAIL_HOST = 'smtp.gmail.com'

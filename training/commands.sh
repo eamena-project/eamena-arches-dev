@@ -196,12 +196,14 @@ mv ./json_records.jsonl ./'Heritage Place.jsonl'
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # Add business data into the package
 
+# do as superuser
+sudo su
 # move to archesadmin user folder
 cd /home/$username/
 # activate Python virtual environment (env)
 source env/bin/activate
 # ...(env)
-# move where is your JSONL file, eg:
+# move where is your JSONL file and manage.py
 cd $project_name
 # import business data
 python manage.py packages -o import_business_data -s 'Heritage Place.jsonl' -ow 'overwrite'
@@ -210,11 +212,10 @@ python manage.py packages -o import_business_data -s 'Heritage Place.jsonl' -ow 
 cd /home/$username/$project_name/$project_name/templates/views/components
 # rename card_components/ folder as cards/
 mv ./card_components ./cards
+# move where is your manage.py
+cd $project_name
 # reindex data
 python manage.py es reindex_database
-# ... Status: Passed, Resource Type: Heritage Place, In Database: 1592, Indexed: 1592, Took: 183 seconds
-# do as superuser
-sudo su
 # restart server
 service apache2 restart
 

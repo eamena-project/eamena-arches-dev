@@ -192,7 +192,7 @@ python manage.py ids_to_json -s /opt/arches/eamena/'Heritage Place.csv'
 mv ./json_records.jsonl ./'Heritage Place.jsonl'
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-## Import business data, update Cards/Reports, reindex
+## Import business data, reindex
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # Add business data into the package
 
@@ -208,17 +208,40 @@ cd $project_name
 # import business data
 python manage.py packages -o import_business_data -s 'Heritage Place.jsonl' -ow 'overwrite'
 # ... ~ 1,500 HP = 15 min
+# reindex data
+python manage.py es reindex_database
+# ... ~ 1,500 HP = 7 min
+# restart server
+service apache2 restart
+
+## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+## Update Cards/Reports
+## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# Add business data into the package
+
+# do as superuser
+sudo su
 # move to components/ folder
 cd /home/$username/$project_name/$project_name/templates/views/components
 # rename card_components/ folder as cards/
 mv ./card_components ./cards
-# move where is your manage.py
-cd $project_name
-# reindex data
-python manage.py es reindex_database
-# restart server
-service apache2 restart
 
+# check out filename
+cd /home/$username/$project_name/$project_name/templates/views/components/cards && ls
+# ... eamena-default-card.htm
+# check other related file in media/
+cd /home/$username/$project_name/$project_name/media/js/views/components/card_components && ls
+# ... eamena-default-card.js
+# check other related file in root
+cd /home/$username/$project_name/$project_name && cat card_components
+# ... {
+# ...     "name": "Eamena Form Card",
+# ...     "componentid": "60e4e022-e2ba-40a0-948d-0538e27fbe1c",
+# ...     "description": "Allows multiple node groups to appear on same card",
+# ...     "component": "views/components/card_components/eamena-default-card",
+# ...     "componentname": "eamena-default-card",
+# ...     "defaultconfig": {}
+# ... }
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ## Apache server, restart and check status

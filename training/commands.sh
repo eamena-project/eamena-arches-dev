@@ -1,6 +1,7 @@
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ##
 #                                                                                 #
-# Welcome to the Aches/EAMENA Database Manager training !                         #
+#                                                                                 #
+# Welcome to the Aches/EAMENA Database Manager training part 2                    #
 # This document resume some Linux and Python commands for the install of an       #
 # Arches database management platform with a EAMENA-like project                  #
 #                                                                                 #
@@ -29,6 +30,7 @@ ls -l                         # list folders and files + permissions + owners (v
 ls -la                        # list folders and files + permissions + owners (hidden and visible)
 man command_name              # command documentation
 pwd                           # current directory
+q                             # quit
 source                        # read and execute the content of a file
 sudo                          # do as superuser
 su user_name                  # change user

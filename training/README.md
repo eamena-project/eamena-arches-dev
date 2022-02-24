@@ -11,9 +11,9 @@ This part 2  consists of 3 different slots of 3-hours each:
   3. Slot 3: Installing the project on a server
   
 This online training will be hosted online (ZOOM): "Arches/EAMENA Database Manager Zoom Meeting part 2"
-*~~<b>Monday 14 February</b>, 8:00 - 11:00 (BCT) / 10:00 - 13:00 (EET) https://zoom.us/j/94050549401?pwd=VTgraWRRRGRlNkhBMXRXdWdPVHVWQT09~~
-*~~<b>Tuesday 15 February</b>, 8:00 - 11:00 (BCT) / 10:00 - 13:00 (EET) https://zoom.us/j/91691114706?pwd=NTh6YlBENFVSalVCTG5IN3FtanpGQT09~~
-*~~<b>Wednesday 16 February</b>, 8:00 - 11:00 (BCT) / 10:00 - 13:00 (EET) https://zoom.us/j/96809107674?pwd=d2llQXhnMDgwN2dpa2tLczZSL3VlZz09~~
+*~~<b>Monday 14 February</b>, 8:00 - 11:00 (BCT) / 10:00 - 13:00 (EET) https://zoom.us/j/94050549401?pwd=VTgraWRRRGRlNkhBMXRXdWdPVHVWQT09~~  
+*~~<b>Tuesday 15 February</b>, 8:00 - 11:00 (BCT) / 10:00 - 13:00 (EET) https://zoom.us/j/91691114706?pwd=NTh6YlBENFVSalVCTG5IN3FtanpGQT09~~  
+*~~<b>Wednesday 16 February</b>, 8:00 - 11:00 (BCT) / 10:00 - 13:00 (EET) https://zoom.us/j/96809107674?pwd=d2llQXhnMDgwN2dpa2tLczZSL3VlZz09~~  
 
 ---
 

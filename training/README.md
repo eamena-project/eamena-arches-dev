@@ -1,22 +1,27 @@
 # Arches/EAMENA Database Manager CPF Training (part 2/2)
-
-This is the second part of Database Management training for Arches-powered platform, EAMENA compliant, for cultural heritage management. The previous part (part 1) took place in person, in Amman, Jordan (5/12/21 - 9/12/21). 
-
-This part 2 focuses on database management of three Arches/EAMENA instances hosted on AWS. The provisional timetable consists of 3 different slots of 3-hours each:
+  
+  
+This is the second part of Database Management training for Arches-powered platform, EAMENA compliant, for cultural heritage management. The previous part (part 1) took place in person, in Amman, Jordan (5/12/21 - 9/12/21). This part focuses on database management of three Arches/EAMENA instances hosted on AWS. The provisional timetable consists of 3 different slots of 3-hours each:
 
   1. Slot 1: Documentation and customization of the project
 
   2. Slot 2: Arches Management tools
 
   3. Slot 3: Installing the project on a server
-  
+
+---
+## Timetable
+
 This online training will be hosted online (ZOOM): "Arches/EAMENA Database Manager Zoom Meeting part 2"  
   
-*~~<b>Monday 14 February</b>, 8:00 - 11:00 (BCT) / 10:00 - 13:00 (EET) https://zoom.us/j/94050549401?pwd=VTgraWRRRGRlNkhBMXRXdWdPVHVWQT09~~  
+* ~~Monday 14 February, 8:00 - 11:00 (BCT) / 10:00 - 13:00 (EET)
+  - https://zoom.us/j/94050549401?pwd=VTgraWRRRGRlNkhBMXRXdWdPVHVWQT09~~  
 
-*~~<b>Tuesday 15 February</b>, 8:00 - 11:00 (BCT) / 10:00 - 13:00 (EET) https://zoom.us/j/91691114706?pwd=NTh6YlBENFVSalVCTG5IN3FtanpGQT09~~  
+* ~~Tuesday 15 February, 8:00 - 11:00 (BCT) / 10:00 - 13:00 (EET)
+  - https://zoom.us/j/91691114706?pwd=NTh6YlBENFVSalVCTG5IN3FtanpGQT09~~  
 
-*~~<b>Wednesday 16 February</b>, 8:00 - 11:00 (BCT) / 10:00 - 13:00 (EET) https://zoom.us/j/96809107674?pwd=d2llQXhnMDgwN2dpa2tLczZSL3VlZz09~~  
+* ~~Wednesday 16 February, 8:00 - 11:00 (BCT) / 10:00 - 13:00 (EET)
+  - https://zoom.us/j/96809107674?pwd=d2llQXhnMDgwN2dpa2tLczZSL3VlZz09~~  
 
 ---
 

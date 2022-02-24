@@ -32,18 +32,21 @@ This online training will be hosted online (ZOOM): "Arches/EAMENA Database Manag
 * Requirements installation tuto: 
   - https://docs.google.com/presentation/d/1qkF8w4J4BCjR_LEzWJ9Pn2lvQXO7zpW8A5MVF6obPSw/edit?usp=sharing
     + SSH clients for terminal commands and file transfer: [PuTTY](https://www.putty.org/) and [FileZilla](https://filezilla-project.org/)
-    + IDE for code edition: [Microsoft VS Code](https://code.visualstudio.com/), *or* Sublime *or*, Notepad++, etc.  
+    + IDE for code edition: [Microsoft VS Code](https://code.visualstudio.com/), *or* Sublime, *or* Notepad++, etc.  
     + (opt) Create a [GitHub](https://github.com/join) account for co-development between your institution and the EAMENA team
 
 * Part 2 slides:
   - https://docs.google.com/presentation/d/1Si44scv7N9XxaGBCKYyRMorDnrj6gc362ZHQ-622cfM/edit?usp=sharing
  
 * GitHub: https://github.com/eamena-oxford
-  - IT reference commands: https://github.com/eamena-oxford/eamena-arches-dev/blob/main/training/commands.sh
-  - Issue threads:
-    + Jordan: https://github.com/eamena-oxford/eamena-arches-dev/issues/2
-    + Lebanon: https://github.com/eamena-oxford/eamena-arches-dev/issues/3
-    + Palestine: https://github.com/eamena-oxford/eamena-arches-dev/issues/4
+  - training material: https://github.com/eamena-oxford/eamena-arches-dev/tree/main/training
+    + IT reference commands: https://github.com/eamena-oxford/eamena-arches-dev/blob/main/training/commands.sh
+    + Issue threads:
+      + Jordan: https://github.com/eamena-oxford/eamena-arches-dev/issues/2
+      + Lebanon: https://github.com/eamena-oxford/eamena-arches-dev/issues/3
+      + Palestine: https://github.com/eamena-oxford/eamena-arches-dev/issues/4
+      
+  - Arches/EAMENA package: https://github.com/eamena-oxford/eamena-arches-package
 
 
 ### Part 1/2

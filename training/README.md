@@ -2,7 +2,7 @@
 
 This is the second part of Database Management training for Arches-powered platform, EAMENA compliant, for cultural heritage management. The previous part (part 1) took place in person, in Amman, Jordan (5/12/21 - 9/12/21). 
 
-This part 2  consists of 3 different slots of 3-hours each:
+This part 2 focuses on database management of three Arches/EAMENA instances hosted on AWS. The provisional timetable consists of 3 different slots of 3-hours each:
 
   1. Slot 1: Documentation and customization of the project
 
@@ -13,7 +13,9 @@ This part 2  consists of 3 different slots of 3-hours each:
 This online training will be hosted online (ZOOM): "Arches/EAMENA Database Manager Zoom Meeting part 2"  
   
 *~~<b>Monday 14 February</b>, 8:00 - 11:00 (BCT) / 10:00 - 13:00 (EET) https://zoom.us/j/94050549401?pwd=VTgraWRRRGRlNkhBMXRXdWdPVHVWQT09~~  
+
 *~~<b>Tuesday 15 February</b>, 8:00 - 11:00 (BCT) / 10:00 - 13:00 (EET) https://zoom.us/j/91691114706?pwd=NTh6YlBENFVSalVCTG5IN3FtanpGQT09~~  
+
 *~~<b>Wednesday 16 February</b>, 8:00 - 11:00 (BCT) / 10:00 - 13:00 (EET) https://zoom.us/j/96809107674?pwd=d2llQXhnMDgwN2dpa2tLczZSL3VlZz09~~  
 
 ---
@@ -23,14 +25,9 @@ This online training will be hosted online (ZOOM): "Arches/EAMENA Database Manag
 ### Part 2/2
 
 * Requirements installation tuto: 
-  - https://www.dropbox.com/scl/fi/brrx555afobhr67v698vc/prerequisites.pptx?dl=0&rlkey=a33oys1ldjm0do7sh5d13zmv2
-    + PuTTY SSH client for terminal commands 
-    + FileZilla SSH client for file transfer
-    + an IDE for code edition
-      - Microsoft VS Code, *or*
-      - Sublime, *or*
-      - Notepad++, *or*
-      - etc.  
+  - https://docs.google.com/presentation/d/1qkF8w4J4BCjR_LEzWJ9Pn2lvQXO7zpW8A5MVF6obPSw/edit?usp=sharing
+    + SSH clients for terminal commands and file transfer: [PuTTY](https://www.putty.org/) and [FileZilla](https://filezilla-project.org/)
+    + IDE for code edition: [Microsoft VS Code](https://code.visualstudio.com/), *or* Sublime *or*, Notepad++, etc.  
     + (opt) Create a [GitHub](https://github.com/join) account for co-development between your institution and the EAMENA team
 
 * Part 2 slides:
@@ -66,7 +63,7 @@ This online training will be hosted online (ZOOM): "Arches/EAMENA Database Manag
 * GitHub: https://github.com/archesproject/arches
 * development: https://www.archesproject.org/development/
 
-### Arches dependencies
+### Main Arches dependencies
 
 * Django: https://www.djangoproject.com/
 * Python: https://www.python.org/

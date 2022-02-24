@@ -14,7 +14,7 @@ This part 2  consists of 3 different slots of 3-hours each:
   This online training will be hosted online (ZOOM):
   "Arches/EAMENA Database Manager Zoom Meeting part 2"
   <ul>
-    <li>~<b>Monday 14 February</b>, 8:00 - 11:00 (BCT) / 10:00 - 13:00 (EET)~</li>
+    <li>~~<b>Monday 14 February</b>, 8:00 - 11:00 (BCT) / 10:00 - 13:00 (EET)~~</li>
       <ul>https://zoom.us/j/94050549401?pwd=VTgraWRRRGRlNkhBMXRXdWdPVHVWQT09</ul>
     <li><b>Tuesday 15 February</b>, 8:00 - 11:00 (BCT) / 10:00 - 13:00 (EET)</li>
      <ul>https://zoom.us/j/91691114706?pwd=NTh6YlBENFVSalVCTG5IN3FtanpGQT09</ul>

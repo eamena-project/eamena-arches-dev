@@ -260,6 +260,13 @@ service apache2 status
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # check status of the ElasticSearch
 
+# move to archesadmin user folder
+cd /home/$username/
+# activate Python virtual environment (env)
+source env/bin/activate
+# ...(env)
+# move where is your JSONL file and manage.py
+cd $project_name
 # check status (active/inactive)
 systemctl status elasticsearch
 # re-index everything in database

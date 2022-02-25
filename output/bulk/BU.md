@@ -2,7 +2,12 @@
 
 A Bulk Upload is a process allowing to upload **several XLSX files contained in a single folder**
 
-<center> [](img/folder-files.png) </center>
+<p align="center">
+  <img alt="img-name" src="img/folder-files.png" width="700">
+  <br>
+    <em>The folder `2021-11-22-B-BIJAN` contains two XLSX files</em>
+</p>
+
 
 ## BU process
 > step-by-step BU procedure from the user-side

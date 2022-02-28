@@ -46,6 +46,8 @@ service $servicename status   # check status (active/inactive)
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # Project specifications, Arches dabatabase and EAMENA package install          # PuTTY
 
+# move to home/ directory
+cd /home
 # switch to su
 sudo su
 # create archesadmin user to install arches under it
@@ -53,7 +55,7 @@ adduser archesadmin
 # ... choose a password
 # ... (opt)
 # append a new group to archesadmin
-usermod -aG sudo archesadmin                                                    # useful?
+# usermod -aG sudo archesadmin                                                    # useful?
 # move to archesadmin account
 cd /home/archesadmin/
 # move to GitHub, copy the URL of the raw version of the install script, and download it
@@ -62,9 +64,10 @@ wget https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/trai
 # edit 'install_and_apache_and_load_pkg.sh' file with vim (sudo mode)
 vim install_and_apache_and_load_pkg.sh
 # insert  (ESC + I) the following variables:
-# your project name, replace 'xxxx' by your country name
+# replace 'xxxx' by your project name
 project_name="xxxx_project"
-# your host, replace 'xx.xx.xx.xx' by the IPv4 Public address of your host
+# replace 'xx.xx.xx.xx' by the IPv4 Public address of your host
+# if your local host is a Linux mchine: 
 my_host="xx.xx.xx.xx"
 # save/write and quit (ESC + :wq + Return)
 

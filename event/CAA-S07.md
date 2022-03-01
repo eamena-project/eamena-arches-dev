@@ -1,7 +1,7 @@
 # Cultural Heritage data across borders. Web-based management platforms for immovable cultural heritage in the global south
-> CAA 2022, Session 07 (CAA22#S07), see: https://2022.caaconference.org/call-for-papers-and-posters/  
+> CAA 2022, Session 07 (CAA22#S07, 9-11 August 2022), see: https://2022.caaconference.org/call-for-papers-and-posters/  
   
-*Thomas Huet![^1], Crystal El Safadi![^2], Bijan Rouhani![^1], Ash Smith![^2]*  
+*Thomas Huet[^1], Crystal El Safadi[^2], Bijan Rouhani[^1], Ash Smith[^2]*  
   
 Cultural heritage is a "shared heritage" (UNESCO, 1945), and managing it globally - at a large scale and over a longue durée - requires gathering information from heterogeneous and disparate sources, involves the integration of different software (databases, search engines, etc.), semantic data interoperability (open international standards, multilingual thesauri, etc.), and publishing policies (URI-based names, licenses, etc.). Nowadays, such aims require IT based on the semantic web (Bikakis et al., 2021), structured as a stack of technologies (Berners-Lee, 2013), supported by the concept of FAIR principles (Findable, Accessible, Interoperable, and Reusable, Wilkinson et al., 2016) and described in Data Management Plans (DMP) along the following streams of application:  
 

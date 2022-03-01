@@ -1,5 +1,5 @@
 # Cultural Heritage data across borders. Web-based management platforms for immovable cultural heritage in the global south
-> CAA 2022, Session 07 (CAA22#S07), see [CAA website](https://2022.caaconference.org/call-for-papers-and-posters/]  
+> CAA 2022, Session 07 (CAA22#S07), see: https://2022.caaconference.org/call-for-papers-and-posters/] 
   
 *Thomas Huet[^1], Crystal El Safadi[^2], Bijan Rouhani[^1], Ash Smith[^2]*  
   

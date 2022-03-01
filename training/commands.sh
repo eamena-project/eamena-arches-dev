@@ -52,22 +52,22 @@ cd /home
 sudo su
 # create archesadmin user to install arches under it
 adduser archesadmin
-# ... choose a password
+# ... choose a password, ex: 'arches'
 # ... (opt)
-# append a new group to archesadmin
-# usermod -aG sudo archesadmin                                                    # useful?
+# I got the point
+usermod -aG sudo archesadmin
 # move to archesadmin account
 cd /home/archesadmin/
 # move to GitHub, copy the URL of the raw version of the install script, and download it
 wget https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/training/install_and_apache_and_load_pkg.sh
 
-# edit 'install_and_apache_and_load_pkg.sh' file with vim (sudo mode)
+# edit 'install_and_apache_and_load_pkg.sh' file with an editor (ex: vim) in sudo mode
 vim install_and_apache_and_load_pkg.sh
 # insert  (ESC + I) the following variables:
-# replace 'xxxx' by your project name
+# replace "xxxx" by your project name
 project_name="xxxx_project"
-# replace 'xx.xx.xx.xx' by the IPv4 Public address of your host
-# if your local host is a Linux mchine: 
+# replace "xx.xx.xx.xx" by the IPv4 Public address of your host
+# if your local host is a Linux machine: "localhost"
 my_host="xx.xx.xx.xx"
 # save/write and quit (ESC + :wq + Return)
 

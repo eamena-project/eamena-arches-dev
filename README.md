@@ -4,6 +4,12 @@
 * [training](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/training):
   - [README](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/training#readme)
 
+---
+
+* [CAA22#S07](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/event/CAA-07)
+
+---
+
 * [checks](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/check/check.md#checks)
 
 * [bulk](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/output/bulk/BU.md)

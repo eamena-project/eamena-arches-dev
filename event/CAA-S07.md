@@ -1,7 +1,7 @@
 # Cultural Heritage data across borders. Web-based management platforms for immovable cultural heritage in the global south
-> CAA 2022, Session 07 (CAA22#S07), see: https://2022.caaconference.org/call-for-papers-and-posters/] 
+> CAA 2022, Session 07 (CAA22#S07), see: https://2022.caaconference.org/call-for-papers-and-posters/  
   
-*Thomas Huet[^1], Crystal El Safadi[^2], Bijan Rouhani[^1], Ash Smith[^2]*  
+*Thomas Huet![^1], Crystal El Safadi![^2], Bijan Rouhani![^1], Ash Smith![^2]*  
   
 Cultural heritage is a "shared heritage" (UNESCO, 1945), and managing it globally - at a large scale and over a longue durée - requires gathering information from heterogeneous and disparate sources, involves the integration of different software (databases, search engines, etc.), semantic data interoperability (open international standards, multilingual thesauri, etc.), and publishing policies (URI-based names, licenses, etc.). Nowadays, such aims require IT based on the semantic web (Bikakis et al., 2021), structured as a stack of technologies (Berners-Lee, 2013), supported by the concept of FAIR principles (Findable, Accessible, Interoperable, and Reusable, Wilkinson et al., 2016) and described in Data Management Plans (DMP) along the following streams of application:  
 
@@ -15,8 +15,8 @@ Achieving these objectives is per se a challenge. But additionally, new challeng
   
 This session welcomes papers addressing and demonstrating a successful workflow on collecting, registering, storing, analysing, and sharing knowledge on immovable cultural heritage in the global south, especially for condition and risk assessment of archaeological sites, using standard ontology. Papers should address one or more aspects of these topics, the entire workflow, or emerging issues such as web3D, image annotation, heritage BIMs. Participation is encouraged for institutional projects at the supranational and national levels, or over multi-paradigm, to inform the upcoming emerging challenges of geospatial semantic web-based purpose-built platforms over the borders.  
   
-[^1] University of Oxford  
-[^2] University of Southampton  
+[^1]: University of Oxford  
+[^2]: University of Southampton  
 
 ## References
 

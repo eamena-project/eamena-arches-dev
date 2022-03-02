@@ -105,6 +105,8 @@ sudo chmod 745 environment      # useful ?
 
 # need to exit for Linux to update the new variables
 exit
+# need to exit for Linux to update the new variables
+exit
 # and re-log in with PuTTY                                                      # PuTTY
 
 # check out
@@ -149,7 +151,7 @@ ls -al
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # import the EAMENA package
 
-# switch to su
+# switch to su                                                                  # PuTTY
 sudo su
 # move to archesadmin user folder
 cd /home/$username/
@@ -160,6 +162,17 @@ source env/bin/activate
 cd $project_name
 # clone package
 git clone https://github.com/eamena-oxford/eamena-arches-package.git
+# change permission to archesadmin
+sudo chown -R $username:root ./eamena-arches-package
+# mv to the business_data/ folder
+cd eamena-arches-package/business_data
+# in Filezilla                                                                  # FileZilla
+# mv to /home/$username/$project_name/eamena-arches-package/business_data
+# and upload from your local site to your server:
+#   - Heritage Place.jsonl
+#   - Grid Square.jsonl
+#   - Organization.jsonl
+# in PuTTY                                                                      # PuTTY
 # load package
 python manage.py packages -o load_package -s eamena-arches-package/ -db
 # ...

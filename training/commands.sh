@@ -224,8 +224,12 @@ source env/bin/activate
 # move where is your JSONL file and manage.py
 cd $project_name
 # import business data
-python manage.py packages -o import_business_data -s 'Heritage Place.jsonl' -ow 'overwrite'
+python manage.py packages -o import_business_data -s 'eamena-arches-package/business_data/Heritage Place.jsonl' -ow 'overwrite'
 # ... ~ 1,500 HP = 15 min
+python manage.py packages -o import_business_data -s 'eamena-arches-package/business_data/Grid Square.jsonl' -ow 'overwrite'
+# ...
+python manage.py packages -o import_business_data -s 'eamena-arches-package/business_data/Organization.jsonl' -ow 'overwrite'
+# ...
 # reindex data
 python manage.py es reindex_database
 # ... ~ 1,500 HP = 7 min

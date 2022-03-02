@@ -6,7 +6,7 @@
 
 ---
 
-* [CAA22#S07](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/event/CAA-07)
+* [CAA22#S07](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/event/CAA-S07.md)
 
 ---
 

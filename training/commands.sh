@@ -120,7 +120,7 @@ cd /home/$username/$project_name/$project_name
 
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-## Authorised the archesadmin user to connect via SSH
+## Authorise archesadmin user to connect via SSH
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # create directory, copy file, change permissions
 
@@ -147,20 +147,18 @@ ls -al
 # ... -rw------- 1 archesadmin archesadmin  392 Feb 11 18:25 authorized_keys
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-## Clone eamena-arches-package.git from GitHub
+## Add business data into the eamena-arches-package package
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# import the EAMENA package
+# import the EAMENA package, add business data into the business_data/ folder
 
 # switch to su                                                                  # PuTTY
 sudo su
-# move to archesadmin user folder
-cd /home/$username/
-# activate Python virtual environment (env)
-source env/bin/activate
+# move to archesadmin user folder & activate Python virtual environment (env)
+cd /home/$username/ && source env/bin/activate
 # ...(env)
 # move to the project/ folder
 cd $project_name
-# clone package
+# clone package (opt)
 git clone https://github.com/eamena-oxford/eamena-arches-package.git
 # change permission to archesadmin
 sudo chown -R $username:root ./eamena-arches-package
@@ -173,11 +171,11 @@ cd eamena-arches-package/business_data
 #   - Grid Square.jsonl
 #   - Organization.jsonl
 # in PuTTY                                                                      # PuTTY
+# move to the project/ folder
+cd /home/$username/$project_name
 # load package
 python manage.py packages -o load_package -s eamena-arches-package/ -db
 # ...
-# move to the project/ folder
-cd /home/$username/$project_name
 # collect static
 python manage.py collectstatic
 
@@ -203,6 +201,8 @@ cd eamena
 # check out if the dataset is here by listing
 ls
 # ... 'Heritage Place.csv' ...
+# if not, add it here with FileZilla
+# nb in this file 'resourceid' field should be renamed 'ResourceID'
 # run the script
 python manage.py ids_to_json -s /opt/arches/eamena/'Heritage Place.csv'
 # ... has created a json_records.jsonl in the same directory

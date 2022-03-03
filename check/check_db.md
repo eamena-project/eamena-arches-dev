@@ -61,6 +61,20 @@ Check PostgreSQL database names and sizes
 |template1|6346 kB|
 |eamena|6346 kB|
 |template0|6346 kB|
+---
+
+## :electric_plug: Lebanon Masdar
+
+### :floppy_disk: *databases*
+> 16/11/21
+      
+|db_name|db_size|
+| -- | -- |
+|lebanon_project|194 MB|
+|template_postgis|16 MB|
+|postgres|7953 kB|
+|template1|7953 kB|
+|template0|7809 kB|
 
 ---
       

@@ -54,13 +54,13 @@ sudo su
 adduser archesadmin
 # ... choose a password, ex: 'arches'
 # ... (opt)
-# I got the point
+# grant sudo privileges to archesadmin
 usermod -aG sudo archesadmin
 # move to archesadmin account
 cd /home/archesadmin/
 # move to GitHub, copy the URL of the raw version of the install script, and download it
 wget https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/training/install_and_apache_and_load_pkg.sh
-
+# ... see: https://github.com/eamena-oxford/eamena-arches-dev/blob/main/training/install_and_apache_and_load_pkg.sh
 # edit 'install_and_apache_and_load_pkg.sh' file with an editor (ex: vim) in sudo mode
 vim install_and_apache_and_load_pkg.sh
 # insert  (ESC + I) the following variables:
@@ -158,9 +158,7 @@ cd /home/$username/ && source env/bin/activate
 # ...(env)
 # move to the project/ folder
 cd $project_name
-# clone package (opt)
-git clone https://github.com/eamena-oxford/eamena-arches-package.git
-# change permission to archesadmin
+# change permission of eamena-arches-package package to allow archesadmin
 sudo chown -R $username:root ./eamena-arches-package
 # mv to the business_data/ folder
 cd eamena-arches-package/business_data
@@ -172,7 +170,7 @@ cd eamena-arches-package/business_data
 #   - Organization.jsonl
 # in PuTTY                                                                      # PuTTY
 # move to the project/ folder
-cd /home/$username/$project_name
+cd /home/$username/$project_namefeamen
 # load package
 python manage.py packages -o load_package -s eamena-arches-package/ -db
 # ...

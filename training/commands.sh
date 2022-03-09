@@ -42,6 +42,17 @@ service $servicename status   # check status (active/inactive)
 
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+## Connect via SSH
+## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# connect via Windows command, PowerShell, etc.                                 # PowerShell
+
+# mv to the folder containing the private keys
+cd 'C:\Users\Thomas Huet\Desktop\EAMENA\IT\keys'
+# launch the SSH connection (ex: 'Palestine Masdar II' hosted on AWS)
+ssh -i PalestineMasdarII.pem ubuntu@34.242.117.242
+
+
+## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ## Prerequisites and Arches/EAMENA install
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # Project specifications, Arches dabatabase and EAMENA package install          # PuTTY
@@ -64,12 +75,11 @@ wget https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/trai
 # edit 'install_and_apache_and_load_pkg.sh' file with an editor (ex: vim) in sudo mode
 vim install_and_apache_and_load_pkg.sh
 # insert  (ESC + I) the following variables:
-# replace "xxxx" by your project name
-project_name="xxxx_project"
-# replace "xx.xx.xx.xx" by the IPv4 Public address of your host
-# if your local host is a Linux machine: "localhost"
-my_host="xx.xx.xx.xx"
-# save/write and quit (ESC + :wq + Return)
+# . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+# . project_name="xxxx_project" / replace "xxxx" by your project name /
+# . my_host="xx.xx.xx.xx" / replace "xx.xx.xx.xx" by a Public IPv4 or "localhost" /
+# . / save/write and quit (ESC + :wq + Return) /
+# . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
 
 # check out by printing the first lines of the script
 head -n 20 install_and_apache_and_load_pkg.sh
@@ -99,10 +109,6 @@ export project_name="xxxx_project"
 export username="archesadmin"
 # save/write and quit (ESC + :wq + Return)
 
-# make environment variables visibles (excecutable) by anyone
-sudo chmod 745 environment      # useful ?
-
-
 # need to exit for Linux to update the new variables
 exit
 # need to exit for Linux to update the new variables
@@ -120,7 +126,7 @@ cd /home/$username/$project_name/$project_name
 
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-## Authorise archesadmin user to connect via SSH
+## Authorise archesadmin user to connect via SSH (opt)
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # create directory, copy file, change permissions
 
@@ -158,19 +164,21 @@ cd /home/$username/ && source env/bin/activate
 # ...(env)
 # move to the project/ folder
 cd $project_name
-# change permission of eamena-arches-package package to allow archesadmin
+# clone the 'eamena-arches-package' package
+git clone https://github.com/eamena-oxford/eamena-arches-package.git
+# change permission of 'eamena-arches-package' package to allow archesadmin
 sudo chown -R $username:root ./eamena-arches-package
 # mv to the business_data/ folder
 cd eamena-arches-package/business_data
 # in Filezilla                                                                  # FileZilla
 # mv to /home/$username/$project_name/eamena-arches-package/business_data
 # and upload from your local site to your server:
-#   - Heritage Place.jsonl
 #   - Grid Square.jsonl
 #   - Organization.jsonl
+#   - Heritage Place.jsonl
 # in PuTTY                                                                      # PuTTY
 # move to the project/ folder
-cd /home/$username/$project_namefeamen
+cd /home/$username/$project_name
 # load package
 python manage.py packages -o load_package -s eamena-arches-package/ -db
 # ...
@@ -212,22 +220,33 @@ mv ./json_records.jsonl ./'Heritage Place.jsonl'
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # Add business data into the package
 
-# do as superuser
+# do as superuser                                                               # PuTTY
 sudo su
-# move to archesadmin user folder
-cd /home/$username/
-# activate Python virtual environment (env)
-source env/bin/activate
+# move to archesadmin user folder & activate Python virtual environment (env)
+cd /home/$username/ && source env/bin/activate
 # ...(env)
 # move where is your JSONL file and manage.py
 cd $project_name
-# import business data
-python manage.py packages -o import_business_data -s 'eamena-arches-package/business_data/Heritage Place.jsonl' -ow 'overwrite'
-# ... ~ 1,500 HP = 15 min
+
+# Arches Card Designer                                                          # Arches
+# Authorise mutiple values to these field to fit the model with the data 
+# by changing the cardinality of Cards, 'Allows Multiple Values' to these fields  
+# RM > HP > Card > 
+#   > Bedrock Geology 
+#   > Priority Assignment
+#   > Detailed Condition Assessments
+# RM > Person/organization > Card > 
+#   > ACTOR ID
+# RM > Grid Square
+#   > Geometry Place Expression
+
+# import business data                                                          # PuTTY
 python manage.py packages -o import_business_data -s 'eamena-arches-package/business_data/Grid Square.jsonl' -ow 'overwrite'
 # ...
 python manage.py packages -o import_business_data -s 'eamena-arches-package/business_data/Organization.jsonl' -ow 'overwrite'
 # ...
+python manage.py packages -o import_business_data -s 'eamena-arches-package/business_data/Heritage Place.jsonl' -ow 'overwrite'
+# ... ~ 1,500 HP = 15 min
 # reindex data
 python manage.py es reindex_database
 # ... ~ 1,500 HP = 7 min
@@ -237,7 +256,7 @@ service apache2 restart
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ## Update Cards/Reports
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# Add business data into the package
+# 
 
 # do as superuser
 sudo su
@@ -246,10 +265,11 @@ cd /home/$username/$project_name/$project_name/templates/views/components
 # rename card_components/ folder as cards/
 mv ./card_components ./cards
 
-# check out filename
+# check out filenames
+# HTM
 cd /home/$username/$project_name/$project_name/templates/views/components/cards && ls
 # ... eamena-default-card.htm
-# check other related file in media/
+# JS related file in media/
 cd /home/$username/$project_name/$project_name/media/js/views/components/card_components && ls
 # ... eamena-default-card.js
 # check other related file in root
@@ -262,6 +282,14 @@ cd /home/$username/$project_name/$project_name && cat card_components
 # ...     "componentname": "eamena-default-card",
 # ...     "defaultconfig": {}
 # ... }
+
+cd /home/$username/$project_name/$project_name/media/js/views/components/card_components/
+cp eamena-default-card.js /home/$username/$project_name/$project_name/static/js/views/components/cards
+cd /home/$username/$project_name/$project_name/static/js/views/components/cards
+sudo chown -R $username:www-data ./eamena-default-card.js
+chmod 775 ./eamena-default-card.js
+ln -s cards card_components 
+sudo chown -R $username:www-data ./card-components
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ## Apache server, restart and check status

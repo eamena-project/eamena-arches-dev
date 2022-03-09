@@ -239,11 +239,16 @@ cd $project_name
 #   > ACTOR ID
 # RM > Grid Square
 #   > Geometry Place Expression
+# - - - - - - - - - - -
+# ERROR need value
+# by adding a default vale
+# RM > Person/organization > Card > 
+#   > Actor/Investigator
 
 # import business data                                                          # PuTTY
-python manage.py packages -o import_business_data -s 'eamena-arches-package/business_data/Grid Square.jsonl' -ow 'overwrite'
-# ...
 python manage.py packages -o import_business_data -s 'eamena-arches-package/business_data/Organization.jsonl' -ow 'overwrite'
+# ...
+python manage.py packages -o import_business_data -s 'eamena-arches-package/business_data/Grid Square.jsonl' -ow 'overwrite'
 # ...
 python manage.py packages -o import_business_data -s 'eamena-arches-package/business_data/Heritage Place.jsonl' -ow 'overwrite'
 # ... ~ 1,500 HP = 15 min

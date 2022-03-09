@@ -18,7 +18,7 @@ See the 'ideal' file/folder naming/structure on the [Bulks/](https://github.com/
 
 - add the BUs worksheets on a **folder** named YYYY-MM-DD-Name (ex: 2021-11-23-Bijan). If you run various BUs processes the same day, you will have to name your folders with different suffixes (ex: 2021-11-22-Bijan, 2021-11-22a-Bijan)
 
-- add these folders on **your OneDrive**, and send a Slack message to the DB Manager with the **name(s) of the XLSX file(s)** and the **link to their folder** 
+- add these folders on **your OneDrive**, and send a **Slack message** to the DB Manager with the **name(s) of the XLSX file(s)** and the **link to their folder** 
 
 - if **the BU does not work**, because there are errors, the DB Manager will send you an **error report** in the form of an error JSON file named in the same way as your BU files (ex: [`E61N31-22-Bijan.json`](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/output/bulk/Bulks/2021-11-21-Bijan/E61N31-21-Bijan.json))
 

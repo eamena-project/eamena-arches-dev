@@ -3,7 +3,7 @@
 A Bulk Upload is a process allowing to upload **several XLSX files contained in a single folder**
 
 <p align="center">
-  <img alt="img-name" src="img/folder-files.png" width="700">
+  <img alt="img-name" src="img/folder-files.png" width="600">
   <br>
     <em>The folder `2021-11-22-B-BIJAN` contains two XLSX files</em>
 </p>
@@ -12,7 +12,7 @@ A Bulk Upload is a process allowing to upload **several XLSX files contained in 
 ## BU process
 > step-by-step BU procedure from the user-side
 
-- start by creating a root `Bulks/` folder on **your OneDrive**, or equivalent, create and authorise the DB Manager to write only in this folder. See the 'ideal' file/folder naming/structure on the [Bulks/](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/output/bulk/Bulks) folder. 
+Start by creating a root `Bulks/` folder on **your OneDrive**, or equivalent, create and authorise the DB Manager to write only in this folder. See the 'ideal' file/folder naming/structure on the [Bulks/](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/output/bulk/Bulks) folder. 
 
 - choose short and self-explanatory names for your **XLSX file(s)**, like the format *`GridSquare-GridSquareSubpart-YourName`* (ex: `E61N31-23-Bijan.xlsx`), avoiding dots and spaces in the filename (~~`E61 N31 23.Bijan.xlsx`~~) 
 
@@ -25,6 +25,7 @@ A Bulk Upload is a process allowing to upload **several XLSX files contained in 
 
 - :+1: if **the BU works**, the DB Manager will send you a **confirmation** taht your BU has been uploaded, and the JSON output will be uploaded into the **same OneDrive folder** as your BUs worksheets 
   - if you ask to, the DB Manager will send you a [BU summary](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/output/bulk/BU.md#bu-summary) in the form of a JSON file named in the same way as your BU files with the suffix `-sum` (for `summary`), ex: [`E61N31-22-Bijan-rev-sum.json`](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/output/bulk/Bulks/2021-11-21-Bijan/E61N31-21-Bijan-rev-sum.json)
+
 - once you received the confirmation that your BU has been uploaded into the DB, **move your BU folder into an archive folder** 
 
 ## BU summary
@@ -34,7 +35,7 @@ Once the BU process has been completed, a resume can be displayed with a Python 
 
 
 <p align="center">
-  <img alt="img-name" src="img/json_summary.png" width="700">
+  <img alt="img-name" src="img/json_summary.png" width="500">
   <br>
     <em>screenshot of the JSON with URL</em>
 </p>

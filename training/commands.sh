@@ -231,14 +231,15 @@ cd $project_name
 # Arches Card Designer                                                          # Arches
 # Authorise mutiple values to these field to fit the model with the data 
 # by changing the cardinality of Cards, 'Allows Multiple Values' to these fields  
-# RM > HP > Card > 
-#   > Bedrock Geology 
-#   > Priority Assignment
-#   > Detailed Condition Assessments
 # RM > Person/organization > Card > 
 #   > ACTOR ID
 # RM > Grid Square
 #   > Geometry Place Expression
+# RM > HP > Card > 
+#   > Bedrock Geology 
+#   > Priority Assignment
+#   > Detailed Condition Assessments
+
 # - - - - - - - - - - -
 # ERROR need value
 # by adding a default vale

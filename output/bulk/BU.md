@@ -12,6 +12,7 @@ A Bulk Upload is a process allowing to upload **several XLSX files contained in 
 ## BU process
 > step-by-step BU procedure from the user-side
 
+See the 'ideal' file/folder naming/structure on the [Bulks/](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/output/bulk/Bulks) folder
 
 - choose a short and self-explanatory names for your **XLSX file(s)**, for example, the name of `gridcell-subpart-name` (ex: `E61N31-23-Bijan.xlsx`), avoid using dots in the filename (~~`E61N31.23.Bijan.xlsx`~~) 
 
@@ -28,8 +29,6 @@ A Bulk Upload is a process allowing to upload **several XLSX files contained in 
   - if you ask to, the DB Manager will send you a [BU summary](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/output/bulk/BU.md#bu-summary) in the form of a JSON file named in the same way as your BU files with the suffix `-sum` (for `summary`), ex: [`E61N31-22-Bijan-rev-sum.json`](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/output/bulk/Bulks/2021-11-21-Bijan/E61N31-21-Bijan-rev-sum.json)
 
 - once you received the confirmation that your BU has been uploaded into the DB, **move your BU folder into an archive folder** 
-
-See the 'ideal' file/folder naming/structure on the [Bulks/](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/output/bulk/Bulks) folder
 
 ## BU summary
 > After a successfull BU, render a short summary for the user

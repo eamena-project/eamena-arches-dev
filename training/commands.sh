@@ -298,7 +298,7 @@ sudo chown -R $username:www-data ./eamena-default-card.js && chmod 775 ./eamena-
 # create symlink
 ln -s cards card_components 
 # change ownership
-sudo chown -R $username:www-data ./card-components
+sudo chown -R $username:www-data ./card_components
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ## Apache server, restart and check status

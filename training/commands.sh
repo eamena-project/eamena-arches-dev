@@ -289,12 +289,15 @@ cd /home/$username/$project_name/$project_name && cat card_components
 # ...     "defaultconfig": {}
 # ... }
 
+# move to card_components/
 cd /home/$username/$project_name/$project_name/media/js/views/components/card_components/
 cp eamena-default-card.js /home/$username/$project_name/$project_name/static/js/views/components/cards
 cd /home/$username/$project_name/$project_name/static/js/views/components/cards
-sudo chown -R $username:www-data ./eamena-default-card.js
-chmod 775 ./eamena-default-card.js
+# change ownership & permissions
+sudo chown -R $username:www-data ./eamena-default-card.js && chmod 775 ./eamena-default-card.js
+# create symlink
 ln -s cards card_components 
+# change ownership
 sudo chown -R $username:www-data ./card-components
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

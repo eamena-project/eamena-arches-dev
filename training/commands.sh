@@ -375,7 +375,7 @@ cd /etc/apache2/sites-available                                                 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ## Delete Heritage Places by batch
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# delet with Python shell
+# delete with Python shell
 
 # move to archesadmin user folder
 cd /home/$username

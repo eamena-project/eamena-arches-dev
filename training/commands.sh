@@ -183,7 +183,7 @@ cd /home/$username/$project_name
 python manage.py packages -o load_package -s eamena-arches-package/ -db
 # ...
 # collect static
-python manage.py collectstatic
+# python manage.py collectstatic
 
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

@@ -115,6 +115,13 @@ exit
 exit
 # and re-log in with PuTTY                                                      # PuTTY
 
+# create shortcut to activate the Python virtual environment (env)
+cd /home/$username/.bashrc
+# insert  (ESC + I) the following alias at the end of the file:
+# your project name, replace 'xxxx' by your country name
+alias venv='source ~/env/bin/activate'
+# save/write and quit (ESC + :wq + Return)
+
 # check out
 # call the variables (echo)
 echo $username
@@ -123,6 +130,8 @@ echo $project_name
 # .. gives: the name of your project
 cd /home/$username/$project_name/$project_name
 # .. moves to your Arches project root folder
+venv
+# .. (env) 
 
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -317,17 +326,15 @@ service apache2 status
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # check status of the ElasticSearch
 
-# move to archesadmin user folder
-cd /home/$username/
-# activate Python virtual environment (env)
-source env/bin/activate
-# ...(env)
 # move where is your JSONL file and manage.py
 cd $project_name
+# activate Python virtual environment (env)
+venv
+# ...(env)
 # check status (active/inactive)
 systemctl status elasticsearch
 # re-index everything in database
-python manage.py es reindex_database
+python manage.py es reindex_database # command 'index_database' instead?
 # re-index by resource model
 python manage.py es index_resources_by_type -rt [UUID for Resource Model]
 

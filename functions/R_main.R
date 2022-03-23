@@ -1,7 +1,7 @@
 library(RPostgreSQL)
 library(DBI)
 
-source(paste0(getwd(), "/select/select.R")) # read the SQL queries
+source(paste0(getwd(), "/functions/R_functions.R")) # read the SQL queries
 
 drv <- dbDriver("PostgreSQL")
 

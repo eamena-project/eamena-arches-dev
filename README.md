@@ -16,4 +16,4 @@
   - [README](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/data/bulk/BU.md)
   - [bash](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/data/bulk/run_bulks.sh)
 
-* [fucntions](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/functions)
+* [functions](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/functions)

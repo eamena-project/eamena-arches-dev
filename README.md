@@ -12,6 +12,8 @@
 
 * [checks](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/check/check.md#checks)
 
-* [bulk](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/output/bulk/BU.md)
+* [bulk](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/data/bulk)
+  - [README](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/data/bulk/BU.md)
+  - [bash](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/data/bulk/run_bulks.sh)
 
 * [select](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/select)

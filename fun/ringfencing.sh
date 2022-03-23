@@ -50,6 +50,10 @@ cd /home/archesadmin/test_project/test_project/management/commands
 venv
 python manage.py resave_all_resources
 
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# function manager
+# http://54.74.247.130/graph/34cfe98e-c2c0-11ea-9026-02e7594ce0a0/function_manager
+
 
 
 

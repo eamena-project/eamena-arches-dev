@@ -1,5 +1,6 @@
-# work on ring fencing function
+# Install and work on ring fencing function
 # AWS DB 23test (Masdar test)
+
 # all JS
 cd /home/archesadmin/test_project/test_project/media/js/views/components/functions
 wget https://raw.githubusercontent.com/reubenosborne1/ringfencing-function/master/ringfencing.js
@@ -30,6 +31,25 @@ cd /home/archesadmin/test_project/test_project/
 vim urls.py
 # insert/add 'from .views.userandgroups import getUsers' in the imports
 # insert/add 'url(r"^get/users", getUsers.as_view(), name="getUsers")' in urlpatterns
+
+# collectstatic & restart Apache
+cd /home/archesadmin/test_project
+venv
+python manage.py collectstatic
+sudo service apache2 restart
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+# (optional) unregister function
+cd /home/archesadmin/test_project
+venv
+python manage.py fn unregister --source '/home/archesadmin/test_project/test_project/functions/ringfencing.py'
+
+# (optional) 'resave_all_resources.py'
+cd /home/archesadmin/test_project/test_project/management/commands
+venv
+python manage.py resave_all_resources
+
 
 
 

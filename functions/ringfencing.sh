@@ -55,5 +55,6 @@ python manage.py resave_all_resources
 # http://54.74.247.130/graph/34cfe98e-c2c0-11ea-9026-02e7594ce0a0/function_manager
 
 
-
-
+EAMENA-0187131
+Overall Archaeological Certainty Value
+High

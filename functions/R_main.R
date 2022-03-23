@@ -1,19 +1,11 @@
 library(RPostgreSQL)
 library(DBI)
 
-source(paste0(getwd(), "/functions/R_functions.R")) # read the SQL queries
+source(paste0(getwd(), "/functions/R_functions.R")) # read the functions file
+source(paste0(getwd(), "/secret/credentials.R")) # read the functions file
 
-drv <- dbDriver("PostgreSQL")
+hps_count <- dbGetQuery(con.masdar, d_sql[["HPs_count"]])
 
-con <- dbConnect(drv,
-                 user = 'postgres',
-                 password = 'postgis',
-                 dbname = 'eamena',
-                 host = 'ec2-54-155-109-226.eu-west-1.compute.amazonaws.com',
-                 port = 5432)
-# dbListTables(con)
-HPs_count <- dbGetQuery(con, d.sql[["HPs_count"]])
+hps_count # count of HPs
 
-HPs_count # count of HPs
-
-dbDisconnect(con)
+dbDisconnect(con.eamena)

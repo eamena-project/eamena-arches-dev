@@ -334,7 +334,7 @@ venv
 # check status (active/inactive)
 systemctl status elasticsearch
 # re-index everything in database
-python manage.py es reindex_database # command 'index_database' instead?
+python manage.py es index_database # command 'index_database' instead?
 # re-index by resource model
 python manage.py es index_resources_by_type -rt [UUID for Resource Model]
 
@@ -380,31 +380,32 @@ cd /etc/apache2/sites-available                                                 
 
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-## Delete Heritage Places by batch
+## Delete / Remove resources
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# delete with Python shell
+# delete resources with Python shell
 
-# move to archesadmin user folder
-cd /home/$username
+# move to the project/ folder                                                   # PuTTY
+cd /home/$username/$project_name
 # activate Python virtual environment (env)
-source env/bin/activate
 # ...(env)
-# move to the project folder
-cd $project_name
+venv
 # run Python
 python manage.py shell
 # ... Python 3.8.10 (default, Nov 26 2021, 20:14:08)                            # PuTTY / Python
 # ... [GCC 9.3.0] on linux
 # ... Type "help", "copyright", "credits" or "license" for more information.
 # ... >>>
-
-from arches.app.models.resource import Resource
+from arches.app.models.resource import Resource                                 # Python
 import pandas as pd
 import os
 
+# Delete one resource from its UUID (ie, 'resourceinstanceid')
+Resource.objects.get(pk='228e6003-eba5-48ed-8d01-128d3b2c2c7c').delete()        
+
+# Delete HP by batch
 # 'Heritage_Place_ID.csv' is in the Python folder '/home/$username/$project_name'
 # Resources UUID are listed as:
-# 5c6144d3-a4a5-48f7-938c-ac38b043b46e,520de939-79f7-44cc-b255-888a6214cd30, etc.
+# 5c6144d3-a4a5-48f7-938c-ac38b043b46e, 520de939-79f7-44cc-b255-888a6214cd30, etc.
 resource_data = pd.read_csv(os.path.join(os.getcwd(), 'Heritage_Place_ID.csv'))
 # get the keys = UUIDs
 resource_ids = list(resource_data.keys())

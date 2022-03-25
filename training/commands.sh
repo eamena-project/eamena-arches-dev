@@ -44,13 +44,12 @@ service $servicename status   # check status (active/inactive)
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ## Connect via SSH
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# connect via Windows command, PowerShell, etc.                                 # PowerShell
+# connect via Windows command, PowerShell terminal, etc.                        # PowerShell
 
 # mv to the folder containing the private keys
 cd 'C:\Users\Thomas Huet\Desktop\EAMENA\IT\keys'
 # launch the SSH connection (ex: 'Palestine Masdar II' hosted on AWS)
 ssh -i PalestineMasdarII.pem ubuntu@34.242.117.242
-
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ## Prerequisites and Arches/EAMENA install
@@ -118,7 +117,6 @@ exit
 # create shortcut to activate the Python virtual environment (env)
 cd /home/$username/.bashrc
 # insert  (ESC + I) the following alias at the end of the file:
-# your project name, replace 'xxxx' by your country name
 alias venv='source ~/env/bin/activate'
 # save/write and quit (ESC + :wq + Return)
 
@@ -168,8 +166,8 @@ ls -al
 
 # switch to su                                                                  # PuTTY
 sudo su
-# move to archesadmin user folder & activate Python virtual environment (env)
-cd /home/$username/ && source env/bin/activate
+# activate Python virtual environment (env)
+venv
 # ...(env)
 # move to the project/ folder
 cd $project_name
@@ -280,13 +278,17 @@ cd /home/$username/$project_name/$project_name/templates/views/components
 # rename card_components/ folder as cards/
 mv ./card_components ./cards
 
-# check out filenames
+# import new cards
 # HTM
-cd /home/$username/$project_name/$project_name/templates/views/components/cards && ls
-# ... eamena-default-card.htm
+cd /home/$username/$project_name/$project_name/templates/views/components/cards
+curl -O https://raw.githubusercontent.com/eamena-oxford/eamena-arches-5-project/master/eamena/pkg/extensions/card_components/eamena-default-card/eamena-default-card.htm
+# ... eamena-default-card.htm, and change ownership & permission
+sudo chown -R $username:$username ./eamena-default-card.htm && chmod 644 ./eamena-default-card.htm
 # JS related file in media/
-cd /home/$username/$project_name/$project_name/media/js/views/components/card_components && ls
-# ... eamena-default-card.js
+cd /home/$username/$project_name/$project_name/media/js/views/components/card_components
+curl -O https://raw.githubusercontent.com/eamena-oxford/eamena-arches-5-project/master/eamena/pkg/extensions/card_components/eamena-default-card/eamena-default-card.js
+# ... eamena-default-card.js, and change ownership & permission
+sudo chown -R $username:$username ./eamena-default-card.js && chmod 644 ./eamena-default-card.js
 # check other related file in root
 cd /home/$username/$project_name/$project_name && cat card_components
 # ... {
@@ -297,13 +299,18 @@ cd /home/$username/$project_name/$project_name && cat card_components
 # ...     "componentname": "eamena-default-card",
 # ...     "defaultconfig": {}
 # ... }
-
+# change ownership & permission
+sudo chown -R $username:$username ./card_components && chmod 644 ./card_components
 # move to card_components/
-cd /home/$username/$project_name/$project_name/media/js/views/components/card_components/
-cp eamena-default-card.js /home/$username/$project_name/$project_name/static/js/views/components/cards
+cd /home/$username/$project_name/$project_name/media/js/views/components/card_components
+# copy card to static/
+sudo yes | cp -r eamena-default-card.js /home/$username/$project_name/$project_name/static/js/views/components/cards
+# move to cards/
 cd /home/$username/$project_name/$project_name/static/js/views/components/cards
 # change ownership & permissions
 sudo chown -R $username:www-data ./eamena-default-card.js && chmod 775 ./eamena-default-card.js
+# move to components/
+cd /home/$username/$project_name/$project_name/static/js/views/components
 # create symlink
 ln -s cards card_components 
 # change ownership

@@ -52,9 +52,10 @@ python manage.py resave_all_resources
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # function manager
-# http://54.74.247.130/graph/34cfe98e-c2c0-11ea-9026-02e7594ce0a0/function_manager
-
-
-EAMENA-0187131
+http://54.74.247.130/graph/34cfe98e-c2c0-11ea-9026-02e7594ce0a0/function_manager
+nb HP = 1592
+# 1
+EAMENA-0187131, er-Rasm
+Overall Archaeological Certainty
 Overall Archaeological Certainty Value
 High

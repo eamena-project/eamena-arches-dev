@@ -1,4 +1,4 @@
-# Translation for Arches v7.0 internationalisation  <img src="www/logo.png" width='100px' align="right"/>
+# Translation for Arches v7.0 internationalisation
 
 Read a portable object file (PO) file, use Python *regex* and 'deep_translator' libraries to convert `msgid` message from `eng` into `fr`, write a new PO file
 

@@ -39,3 +39,11 @@ msgid ""
 "The widget used to save this data appears to be incorrect for this datatype."
 " Contact system admin to resolve"
 msgstr ""
+
+#: arches/app/datatypes/concept_types.py:119
+msgid "This is an invalid concept prefLabel, or an incomplete UUID"
+msgstr ""
+
+#: arches/app/datatypes/concept_types.py:127
+msgid "This UUID is not an available concept value"
+msgstr ""

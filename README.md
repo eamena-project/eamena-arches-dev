@@ -10,6 +10,9 @@
 
 ---
 
+* [translation](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/translation)
+  - [README](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/translation/Trans.md)
+
 * [checks](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/check/check.md#checks)
 
 * [bulk](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/data/bulk)

@@ -115,7 +115,9 @@ exit
 # and re-log in with PuTTY                                                      # PuTTY
 
 # create shortcut to activate the Python virtual environment (env)
-cd /home/$username/.bashrc
+cd /home/$user_name
+# edit .bashrc
+vim .bashrc
 # insert  (ESC + I) the following alias at the end of the file:
 alias venv='source ~/env/bin/activate'
 # save/write and quit (ESC + :wq + Return)
@@ -279,7 +281,7 @@ cd /home/$username/$project_name/$project_name/templates/views/components
 mv ./card_components ./cards
 
 # import new cards
-# HTM
+# HTM  file in cards/
 cd /home/$username/$project_name/$project_name/templates/views/components/cards
 curl -O https://raw.githubusercontent.com/eamena-oxford/eamena-arches-5-project/master/eamena/pkg/extensions/card_components/eamena-default-card/eamena-default-card.htm
 # ... eamena-default-card.htm, and change ownership & permission
@@ -289,21 +291,15 @@ cd /home/$username/$project_name/$project_name/media/js/views/components/card_co
 curl -O https://raw.githubusercontent.com/eamena-oxford/eamena-arches-5-project/master/eamena/pkg/extensions/card_components/eamena-default-card/eamena-default-card.js
 # ... eamena-default-card.js, and change ownership & permission
 sudo chown -R $username:$username ./eamena-default-card.js && chmod 644 ./eamena-default-card.js
-# check other related file in root
-cd /home/$username/$project_name/$project_name && cat card_components
-# ... {
-# ...     "name": "Eamena Form Card",
-# ...     "componentid": "60e4e022-e2ba-40a0-948d-0538e27fbe1c",
-# ...     "description": "Allows multiple node groups to appear on same card",
-# ...     "component": "views/components/card_components/eamena-default-card",
-# ...     "componentname": "eamena-default-card",
-# ...     "defaultconfig": {}
-# ... }
-# change ownership & permission
+# JSON related file in $project_name/
+cd /home/$username/$project_name/$project_name
+curl -O https://raw.githubusercontent.com/eamena-oxford/eamena-arches-5-project/master/eamena/card_components
+# ... eamena-default-card.json, and change ownership & permission
 sudo chown -R $username:$username ./card_components && chmod 644 ./card_components
+
 # move to card_components/
 cd /home/$username/$project_name/$project_name/media/js/views/components/card_components
-# copy card to static/
+# copy card to static/ | useful ?
 sudo yes | cp -r eamena-default-card.js /home/$username/$project_name/$project_name/static/js/views/components/cards
 # move to cards/
 cd /home/$username/$project_name/$project_name/static/js/views/components/cards
@@ -315,6 +311,15 @@ cd /home/$username/$project_name/$project_name/static/js/views/components
 ln -s cards card_components 
 # change ownership
 sudo chown -R $username:www-data ./card_components
+# move to the project/ folder
+cd /home/$username/$project_name
+# change user
+su archesadmin
+# activate Python virtual environment
+venv
+# ... (env)
+# collect static
+python manage.py collectstatic
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ## Apache server, restart and check status

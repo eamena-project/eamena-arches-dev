@@ -6,8 +6,10 @@ cd /opt/arches/bulk_uploads
 BUFOLD="2022-03-23-Michael"
 # convert
 ./convert $BUFOLD
+# yes / no
 cd $BUFOLD/for_import/
 # BUFILE=$(ls | grep 'xlsx') # get all XLSX filenames
 python /opt/arches/eamena/manage.py packages -o import_business_data -s "E35N28_REVISED_BUS_MichaelFradley.json" -ow overwrite
+# summary
 python /opt/arches/eamena/manage.py bu -o summary -s "AAA-f-33_Kenawi.json" | json_pp
 

@@ -1,156 +1,82 @@
-#  SOME  DESCRIPTIVE  TITLE. 
+#  SOME  DESCRIPTIVE  TITLE.
 
+#  Copyright  (C)  YEAR  THE  PACKAGE'S  COPYRIGHT  HOLDER
 
-#  Copyright  (C)  YEAR  THE  PACKAGE'S  COPYRIGHT  HOLDER 
+#  This  file  is  distributed  under  the  same  license  as  the  PACKAGE  package.
 
+#  FIRST  AUTHOR  <EMAIL@ADDRESS>,  YEAR.
 
-#  This  file  is  distributed  under  the  same  license  as  the  PACKAGE  package. 
+#
 
+#  Translators:
 
-#  FIRST  AUTHOR  <EMAIL@ADDRESS>,  YEAR. 
+#  Thomas  Huet,  2022
 
+#
 
-#   
+#,  fuzzy
 
+msgid   " "
 
-#  Translators: 
+ "Project-Id-Version:  PACKAGE  VERSION\n "
 
+ "Report-Msgid-Bugs-To:  \n "
 
-#  Thomas  Huet,  2022 
+ "POT-Creation-Date:  2021-12-03  14:33-0800\n "
 
+ "PO-Revision-Date:  2021-12-03  22:37+0000\n "
 
-#   
+ "Last-Translator:  Thomas  Huet,  2022\n "
 
+ "Language-Team:  French  (https://www.transifex.com/archesproject/teams/56656/fr/)\n "
 
-#,  fuzzy 
+ "MIME-Version:  1.0\n "
 
+ "Content-Type:  text/plain;  charset=UTF-8\n "
 
-msgid   " " 
+ "Content-Transfer-Encoding:  8bit\n "
 
+ "Language:  fr\n "
 
-msgstr   " " 
+ "Plural-Forms:  nplurals=2;  plural=(n  >  1);\n "
 
+#:  arches/app/datatypes/base.py:38
 
- "Project-Id-Version:  PACKAGE  VERSION\n " 
+#,  python-brace-format
 
+msgid   "{0}  error,  {1}  {2}  -  {3}.  Unable  to  save. "
 
- "Report-Msgid-Bugs-To:  \n " 
+msgstr   "{0}  erreur,  {1}  {2}  -  {3}.  Impossible  d'enregistrer. "
 
+#:  arches/app/datatypes/base.py:204
 
- "POT-Creation-Date:  2021-12-03  14:33-0800\n " 
+msgid   "Multiple  provisional  edits.  Returning  first  edit "
 
+msgstr   "Plusieurs  modifications  provisoires.  Retour  de  la  premi�re  modification "
 
- "PO-Revision-Date:  2021-12-03  22:37+0000\n " 
+#:  arches/app/datatypes/base.py:208
 
+msgid   "Tile  has  no  authoritative  or  provisional  data "
 
- "Last-Translator:  Thomas  Huet,  2022\n " 
+msgstr   "Tile  n'a  pas  de  donn�es  faisant  autorit�  ou  provisoires "
 
+#:  arches/app/datatypes/concept_types.py:111
 
- "Language-Team:  French  (https://www.transifex.com/archesproject/teams/56656/fr/)\n " 
+msgid   " "
 
+ "The  widget  used  to  save  this  data  appears  to  be  incorrect  for  this  datatype. "
 
- "MIME-Version:  1.0\n " 
+ "  Contact  system  admin  to  resolve "
 
+#:  arches/app/datatypes/concept_types.py:119
 
- "Content-Type:  text/plain;  charset=UTF-8\n " 
+msgid   "This  is  an  invalid  concept  prefLabel,  or  an  incomplete  UUID "
 
+msgstr   "Ceci  est  un  concept  prefLabel  invalide,  ou  un  UUID  incomplet "
 
- "Content-Transfer-Encoding:  8bit\n " 
+#:  arches/app/datatypes/concept_types.py:127
 
+msgid   "This  UUID  is  not  an  available  concept  value "
 
- "Language:  fr\n " 
-
-
- "Plural-Forms:  nplurals=2;  plural=(n  >  1);\n " 
-
-
- 
-
-
-#:  arches/app/datatypes/base.py:38 
-
-
-#,  python-brace-format 
-
-
-msgid   "{0}  error,  {1}  {2}  -  {3}.  Unable  to  save. " 
-
-
-msgstr   " "{0}  erreur,  {1}  {2}  -  {3}.  Impossible  d'enregistrer. " "
-
-msgstr   " " 
-
-
- 
-
-
-#:  arches/app/datatypes/base.py:204 
-
-
-msgid   "Multiple  provisional  edits.  Returning  first  edit " 
-
-
-msgstr   " "Plusieurs  modifications  provisoires.  Retour  de  la  premi�re  modification " "
-
-msgstr   " " 
-
-
- 
-
-
-#:  arches/app/datatypes/base.py:208 
-
-
-msgid   "Tile  has  no  authoritative  or  provisional  data " 
-
-
-msgstr   " "Tile  n'a  pas  de  donn�es  faisant  autorit�  ou  provisoires " "
-
-msgstr   " " 
-
-
- 
-
-
-#:  arches/app/datatypes/concept_types.py:111 
-
-
-msgid   " " 
-
-
- "The  widget  used  to  save  this  data  appears  to  be  incorrect  for  this  datatype. " 
-
-
- "  Contact  system  admin  to  resolve " 
-
-
-msgstr   " " 
-
-
- 
-
-
-#:  arches/app/datatypes/concept_types.py:119 
-
-
-msgid   "This  is  an  invalid  concept  prefLabel,  or  an  incomplete  UUID " 
-
-
-msgstr   " "Ceci  est  un  concept  prefLabel  invalide,  ou  un  UUID  incomplet " "
-
-msgstr   " " 
-
-
- 
-
-
-#:  arches/app/datatypes/concept_types.py:127 
-
-
-msgid   "This  UUID  is  not  an  available  concept  value " 
-
-
-msgstr   " "Cet  UUID  n'est  pas  une  valeur  de  concept  disponible " "
-
-msgstr   " "
+msgstr   "Cet  UUID  n'est  pas  une  valeur  de  concept  disponible "
 

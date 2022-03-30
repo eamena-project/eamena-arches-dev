@@ -26,6 +26,1183 @@ msgstr ""
 msgid "{0} error, {1} {2} - {3}. Unable to save."
 msgstr ""
 
+#: arches/app/datatypes/base.py:204
+msgid "Multiple provisional edits. Returning first edit"
+msgstr ""
+
+#: arches/app/datatypes/base.py:208
+msgid "Tile has no authoritative or provisional data"
+msgstr ""
+
+#: arches/app/datatypes/concept_types.py:111
+msgid ""
+"The widget used to save this data appears to be incorrect for this datatype."
+" Contact system admin to resolve"
+msgstr ""
+
+#: arches/app/datatypes/concept_types.py:119
+msgid "This is an invalid concept prefLabel, or an incomplete UUID"
+msgstr ""
+
+#: arches/app/datatypes/concept_types.py:127
+msgid "This UUID is not an available concept value"
+msgstr ""
+
+#: arches/app/datatypes/datatypes.py:98
+msgid "This is not a string"
+msgstr ""
+
+#: arches/app/datatypes/datatypes.py:227
+msgid "Not a properly formatted number"
+msgstr ""
+
+#: arches/app/datatypes/datatypes.py:311
+msgid "Not of type boolean"
+msgstr "N'est pas de type booléen"
+
+#: arches/app/datatypes/datatypes.py:392
+msgid ""
+"Incorrect format. Confirm format is in settings.DATE_FORMATS or set the "
+"format in settings.DATE_IMPORT_EXPORT_FORMAT."
+msgstr ""
+
+#: arches/app/datatypes/datatypes.py:452
+#, python-brace-format
+msgid "{value} is an invalid date format"
+msgstr ""
+
+#: arches/app/datatypes/datatypes.py:527
+msgid ""
+"Incorrect Extended Date Time Format. See "
+"http://www.loc.gov/standards/datetime/ for supported formats."
+msgstr ""
+
+#: arches/app/datatypes/datatypes.py:580
+msgid ""
+"Only dates that specify an exact year, month, and day can be used with the "
+"\"=\" operator"
+msgstr ""
+
+#: arches/app/datatypes/datatypes.py:589
+msgid ""
+"Only dates that specify an exact year, month,"
+"                                     and day can be used with the \">\", "
+"\"<\", \">=\", and \"<=\" operators"
+msgstr ""
+
+#: arches/app/datatypes/datatypes.py:601
+msgid "Invalid date specified."
+msgstr ""
+
+#: arches/app/datatypes/datatypes.py:668
+msgid "Unable to serialize some geometry features"
+msgstr ""
+
+#: arches/app/datatypes/datatypes.py:1263
+#, python-brace-format
+msgid "This node has a limit of {0} files. Please reduce files."
+msgstr ""
+
+#: arches/app/datatypes/datatypes.py:1271
+#, python-brace-format
+msgid ""
+"This node has a file-size limit of {0}. Please reduce file size or contact "
+"your sysadmin."
+msgstr ""
+
+#: arches/app/datatypes/datatypes.py:1278
+#, python-brace-format
+msgid "datatype: {0}, value: {1} - {2} ."
+msgstr ""
+
+#: arches/app/datatypes/datatypes.py:1336
+msgid "File does not exist"
+msgstr ""
+
+#: arches/app/datatypes/datatypes.py:1440
+msgid "The file url is invalid"
+msgstr ""
+
+#: arches/app/datatypes/datatypes.py:1442
+msgid "A file is not available for this tile"
+msgstr ""
+
+#: arches/app/datatypes/datatypes.py:1444
+msgid "This file's fileid is not a valid UUID"
+msgstr ""
+
+#: arches/app/datatypes/datatypes.py:1625
+msgid ""
+"Invalid domain id. Please check the node this value is mapped to for a list "
+"of valid domain ids."
+msgstr ""
+
+#: arches/app/datatypes/datatypes.py:1854
+#, python-brace-format
+msgid "The related resource with id '{0}' is not in the system."
+msgstr ""
+
+#: arches/app/functions/primary_descriptors.py:46
+msgid "Undefined"
+msgstr ""
+
+#: arches/app/models/concept.py:153
+msgid "Only include values for include or exclude, but not both"
+msgstr ""
+
+#: arches/app/models/concept.py:844
+#, python-format
+msgid "Invalid subconcept definition: %s"
+msgstr ""
+
+#: arches/app/models/concept.py:852
+#, python-format
+msgid "Invalid related concept definition: %s"
+msgstr ""
+
+#: arches/app/models/concept.py:863
+#, python-format
+msgid "Invalid value definition: %s"
+msgstr ""
+
+#: arches/app/models/concept.py:1267
+msgid "Need to include values when creating a collection"
+msgstr ""
+
+#: arches/app/models/concept.py:1375
+msgid ""
+"Index of label failed.  Index type (scheme id) could not be derived from the"
+" label."
+msgstr ""
+
+#: arches/app/models/fields/i18n.py:143
+msgid "A I18n_TextField object"
+msgstr ""
+
+#: arches/app/models/fields/i18n.py:297
+msgid "A I18n_JSONField object"
+msgstr ""
+
+#: arches/app/models/graph.py:75
+msgid "New Node"
+msgstr ""
+
+#: arches/app/models/graph.py:157
+msgid "Top Node"
+msgstr ""
+
+#: arches/app/models/graph.py:431
+#, python-brace-format
+msgid ""
+"Your resource model: {0}, already has instances saved. You cannot delete a "
+"Resource Model with instances."
+msgstr ""
+
+#: arches/app/models/graph.py:578
+#, python-brace-format
+msgid ""
+"Your resource model: {0}, already has instances saved. You cannot modify a "
+"Resource Model with instances."
+msgstr ""
+
+#: arches/app/models/graph.py:610
+msgid "Ontology rules don't allow this node to be appended"
+msgstr ""
+
+#: arches/app/models/graph.py:867
+#, python-brace-format
+msgid ""
+"Your resource model: {self.name}, already has instances saved."
+"                             You cannot delete nodes from a Resource Model "
+"with instances."
+msgstr ""
+
+#: arches/app/models/graph.py:902
+msgid "The graph you wish to append needs to define an ontology"
+msgstr ""
+
+#: arches/app/models/graph.py:915
+msgid "Ontology rules don't allow this graph to be appended"
+msgstr ""
+
+#: arches/app/models/graph.py:1352
+#, python-brace-format
+msgid ""
+"Your resource model: {self.name}, already has instances saved."
+"                                 You cannot modify a Resource Model with "
+"instances."
+msgstr ""
+
+#: arches/app/models/graph.py:1371
+#, python-brace-format
+msgid "Duplicate node name: \"{0}\". All node names in a card must be unique."
+msgstr ""
+
+#: arches/app/models/graph.py:1380
+#, python-brace-format
+msgid "Duplicate node name: \"{0}\". All sibling node names must be unique."
+msgstr ""
+
+#: arches/app/models/graph.py:1401
+msgid ""
+"The top node of your resource graph: {self.root.name} needs to be a "
+"collector.                             Hint: check that nodegroup_id of your"
+" resource node(s) are not null."
+msgstr ""
+
+#: arches/app/models/graph.py:1407
+msgid ""
+"The top node of your resource graph must have a datatype of 'semantic'."
+msgstr ""
+
+#: arches/app/models/graph.py:1412
+msgid ""
+"If your graph contains more than one node and is not a resource the root "
+"must be a collector."
+msgstr ""
+
+#: arches/app/models/graph.py:1417
+msgid "Field name must not be blank."
+msgstr ""
+
+#: arches/app/models/graph.py:1419
+msgid "Field name must contain only alpha-numeric characters or underscores."
+msgstr ""
+
+#: arches/app/models/graph.py:1421
+msgid "Field name cannot begin with an underscore or number"
+msgstr ""
+
+#: arches/app/models/graph.py:1427
+#, python-brace-format
+msgid "Field name must be unique to the graph; '{fieldname}' already exists."
+msgstr ""
+
+#: arches/app/models/graph.py:1449
+#, python-brace-format
+msgid "A valid {0} ontology class must be selected"
+msgstr ""
+
+#: arches/app/models/graph.py:1452
+#, python-brace-format
+msgid "'{0}' is not a valid {1} ontology class"
+msgstr ""
+
+#: arches/app/models/graph.py:1460
+msgid ""
+"You must specify an ontology property. Your graph isn't semantically valid."
+"                                 Entity domain "
+"'{edge.domainnode.ontologyclass}' and                                 Entity"
+" range '{edge.rangenode.ontologyclass}' can not be related via Property "
+"'{edge.ontologyproperty}'."
+msgstr ""
+
+#: arches/app/models/graph.py:1479
+msgid ""
+"Your graph isn't semantically valid. Entity domain "
+"'{edge.domainnode.ontologyclass}' and                                 Entity"
+" range '{edge.rangenode.ontologyclass}' cannot"
+"                                 be related via Property "
+"'{edge.ontologyproperty}'."
+msgstr ""
+
+#: arches/app/models/graph.py:1487
+#, python-brace-format
+msgid ""
+"'{0}' is not found in the {1} ontology or is not a valid ontology property "
+"for Entity domain '{2}'."
+msgstr ""
+
+#: arches/app/models/graph.py:1496
+msgid ""
+"You have assigned ontology classes to your graph nodes but not assigned an "
+"ontology to your graph."
+msgstr ""
+
+#: arches/app/models/graph.py:1517
+msgid "The json-ld context you supplied wasn't formatted correctly."
+msgstr ""
+
+#: arches/app/models/graph.py:1522
+#, python-brace-format
+msgid "Another resource modal already uses the slug '{self.slug}'"
+msgstr ""
+
+#: arches/app/models/graph.py:1527
+msgid "Graph Validation Error"
+msgstr ""
+
+#: arches/app/models/mobile_survey.py:100
+msgid "Could not delete database in CouchDB"
+msgstr ""
+
+#: arches/app/models/mobile_survey.py:312
+msgid ""
+"Celery appears not to be running, you need to have celery running in order "
+"to sync from Arches Collector."
+msgstr ""
+
+#: arches/app/models/mobile_survey.py:331
+msgid "Sync Completed"
+msgstr ""
+
+#: arches/app/models/mobile_survey.py:346
+msgid "Pushing Edits to Arches"
+msgstr ""
+
+#: arches/app/models/models.py:403
+msgid "Only resource models may be edited - branches are not editable"
+msgstr ""
+
+#: arches/app/models/models.py:405
+msgid "This Model is Inactive and not available for editing"
+msgstr ""
+
+#: arches/app/models/resource.py:122
+msgid "This model is not yet active; unable to save."
+msgstr ""
+
+#: arches/app/models/resource.py:413
+msgid "This model is not yet active; unable to delete."
+msgstr ""
+
+#: arches/app/models/resource.py:756
+msgid "Model Inactive Error"
+msgstr ""
+
+#: arches/app/models/tile.py:250
+msgid ""
+"Unable to save a tile to a card with cardinality 1 where a tile has "
+"previously been saved."
+msgstr ""
+
+#: arches/app/models/tile.py:252
+#, python-brace-format
+msgid ""
+"Details: card: {0}, graph: {1}, resource: {2}, tile: {3}, nodegroup: {4}"
+msgstr ""
+
+#: arches/app/models/tile.py:301
+msgid ""
+"This card violates a unique constraint.                                 The "
+"following value is already saved: "
+msgstr ""
+
+#: arches/app/models/tile.py:322
+#, python-brace-format
+msgid ""
+"Error checking for missing node. Nodeid: {nodeid} with value: {value}, not "
+"in nodes.                     You may have a node in your business data that"
+" no longer exists in any graphs."
+msgstr ""
+
+#: arches/app/models/tile.py:327
+msgid "This card requires values for the following: "
+msgstr ""
+
+#: arches/app/models/tile.py:350
+#, python-brace-format
+msgid "{0}"
+msgstr ""
+
+#: arches/app/models/tile.py:654 arches/app/models/tile.py:664
+#: arches/app/models/tile.py:674
+msgid "No associated functions or other TypeError raised by a function"
+msgstr ""
+
+#: arches/app/models/tile.py:712
+msgid "Tile Validation Error"
+msgstr ""
+
+#: arches/app/models/tile.py:723
+msgid "Tile Cardinaltiy Error"
+msgstr ""
+
+#: arches/app/search/base_index.py:182
+msgid "Search Index Error:"
+msgstr ""
+
+#: arches/app/search/base_index.py:192
+msgid "Search Index Not Defined Error:"
+msgstr ""
+
+#: arches/app/search/base_index.py:193
+#, python-format
+msgid "The index \"%s\" is not defined in settings.ELASTICSEARCH_CUSTOM_INDEXES"
+msgstr ""
+
+#: arches/app/search/components/map_filter.py:75
+msgid "Feature geometry is not defined"
+msgstr ""
+
+#: arches/app/search/elasticsearch_dsl_builder.py:289
+msgid ""
+"You need at least one of the following operators in a Range expression: gte,"
+" gt, lte, or lt"
+msgstr ""
+
+#: arches/app/search/elasticsearch_dsl_builder.py:291
+msgid "You can only use one of either: gte or gt"
+msgstr ""
+
+#: arches/app/search/elasticsearch_dsl_builder.py:293
+msgid "You can only use one of either: lte or lt"
+msgstr ""
+
+#: arches/app/search/elasticsearch_dsl_builder.py:377
+msgid "You need to specify either a \"field\" or a \"script\""
+msgstr ""
+
+#: arches/app/search/elasticsearch_dsl_builder.py:379
+msgid "You need to specify a name for your aggregation"
+msgstr ""
+
+#: arches/app/search/elasticsearch_dsl_builder.py:381
+msgid "You need to specify an aggregation type"
+msgstr ""
+
+#: arches/app/search/elasticsearch_dsl_builder.py:570
+msgid "You need to specify a path for your nested aggregation"
+msgstr ""
+
+#: arches/app/search/search_export.py:117
+#, python-brace-format
+msgid "Shapefile are fieldnames required for the following nodes: {0}"
+msgstr ""
+
+#: arches/app/tasks.py:31
+msgid "files_deleted"
+msgstr ""
+
+#: arches/app/tasks.py:89
+msgid ""
+"Your search {} is ready for download. You have 24 hours to access this file,"
+" after which we'll automatically remove it."
+msgstr ""
+
+#: arches/app/tasks.py:93
+msgid ""
+"Hello,\n"
+"Your request to download a set of search results is now ready."
+msgstr ""
+
+#: arches/app/tasks.py:95
+msgid "Download Now"
+msgstr ""
+
+#: arches/app/tasks.py:96 arches/app/tasks.py:135
+msgid "Thank you"
+msgstr ""
+
+#: arches/app/tasks.py:127
+msgid "Resources have completed loading."
+msgstr ""
+
+#: arches/app/tasks.py:131
+msgid ""
+"Hello,\n"
+"Your package has successfully loaded into your Arches project."
+msgstr ""
+
+#: arches/app/tasks.py:134
+msgid "Log me in"
+msgstr ""
+
+#: arches/app/templates/base-manager.htm:65
+#: arches/app/templates/change_password.htm:46
+#: arches/app/templates/javascript.htm:526
+#: arches/app/templates/views/components/buffer-editor.htm:42
+#: arches/app/templates/views/components/file-workbench.htm:415
+#: arches/app/templates/views/components/iiif-annotation.htm:303
+#: arches/app/templates/views/components/iiif-viewer.htm:190
+#: arches/app/templates/views/components/map-editor.htm:90
+#: arches/app/templates/views/components/map-editor.htm:304
+#: arches/app/templates/views/components/map-widget-editor.htm:37
+#: arches/app/templates/views/components/photo-workbench.htm:285
+#: arches/app/templates/views/components/plugins/manifest-manager.htm:106
+#: arches/app/templates/views/components/plugins/manifest-manager.htm:173
+#: arches/app/templates/views/components/related-resources-map-editor.htm:107
+#: arches/app/templates/views/components/related-resources-map-editor.htm:325
+#: arches/app/templates/views/components/search/map-filter.htm:65
+#: arches/app/templates/views/forms/cards.htm:57
+#: arches/app/templates/views/forms/cards.htm:95
+#: arches/app/templates/views/forms/wizard-base.htm:24
+#: arches/app/templates/views/rdm/modals/import-concept-form.htm:52
+#: arches/app/templates/views/rdm/modals/import-scheme-form.htm:53
+#: arches/app/templates/views/rdm/modals/manage-parent-form.htm:57
+#: arches/app/templates/views/rdm/modals/related-concept-form.htm:67
+#: arches/app/templates/views/rdm/modals/related-member-form.htm:66
+#: arches/app/templates/views/rdm/modals/value-form.htm:63
+#: arches/app/templates/views/rdm/modals/value-form.htm:142
+#: arches/app/templates/views/rdm/modals/value-form.htm:220
+#: arches/app/templates/views/resource/permissions/permissions-manager.htm:98
+#: arches/app/templates/views/user-profile-manager.htm:127
+msgid "Cancel"
+msgstr ""
+
+#: arches/app/templates/base-manager.htm:68
+msgid "OK"
+msgstr ""
+
+#: arches/app/templates/base-manager.htm:81 arches/app/templates/index.htm:84
+#: arches/app/templates/views/components/file-workbench.htm:12
+#: arches/app/templates/views/graph.htm:107
+#: arches/app/templates/views/rdm/concept-report.htm:25
+#: arches/app/templates/views/rdm/concept-report.htm:49
+msgid "Manage"
+msgstr ""
+
+#: arches/app/templates/base-manager.htm:112
+msgid "Login"
+msgstr ""
+
+#: arches/app/templates/base-manager.htm:114
+msgid "Welcome"
+msgstr ""
+
+#: arches/app/templates/base-manager.htm:134
+#: arches/app/templates/base-manager.htm:192
+msgid "Notifications"
+msgstr ""
+
+#: arches/app/templates/base-manager.htm:147
+#: arches/app/templates/base-manager.htm:291
+#: arches/app/templates/views/components/related-resources-graph.htm:22
+#: arches/app/templates/views/search.htm:23 arches/app/views/search.py:103
+msgid "Search"
+msgstr ""
+
+#: arches/app/templates/base-manager.htm:157
+msgid "My Recent Edits"
+msgstr ""
+
+#: arches/app/templates/base-manager.htm:165
+msgid "Edit Resource"
+msgstr ""
+
+#: arches/app/templates/base-manager.htm:173
+msgid "Print"
+msgstr ""
+
+#: arches/app/templates/base-manager.htm:181
+#: arches/app/templates/views/components/cards/default.htm:279
+#: arches/app/templates/views/components/cards/grouping.htm:179
+#: arches/app/templates/views/components/file-workbench.htm:349
+#: arches/app/templates/views/components/iiif-annotation.htm:89
+#: arches/app/templates/views/components/map-editor.htm:119
+#: arches/app/templates/views/components/photo-workbench.htm:219
+#: arches/app/templates/views/components/related-resources-map-editor.htm:191
+#: arches/app/templates/views/forms/cards.htm:35
+#: arches/app/templates/views/forms/cards.htm:120
+#: arches/app/templates/views/graph/card-configuration/card-form-preview.htm:54
+#: arches/app/templates/views/graph/card-configuration/card-form-preview.htm:110
+#: arches/app/templates/views/graph/graph-settings.htm:114
+#: arches/app/templates/views/graph/graph-settings.htm:194
+msgid "Help"
+msgstr ""
+
+#: arches/app/templates/base-manager.htm:195
+#: arches/app/templates/base-manager.htm:215 arches/app/templates/login.htm:64
+#: arches/app/templates/rdm.htm:98
+#: arches/app/templates/views/components/photo-workbench.htm:36
+#: arches/app/templates/views/components/related-resources-map-editor.htm:179
+#: arches/app/templates/views/rdm/concept-report.htm:41
+#: arches/app/templates/views/rdm/concept-report.htm:58
+#: arches/app/templates/views/rdm/modals/add-child-form.htm:50
+#: arches/app/templates/views/rdm/modals/add-collection-form.htm:31
+#: arches/app/templates/views/rdm/modals/add-scheme-form.htm:37
+#: arches/app/templates/views/rdm/modals/delete-collection-form.htm:43
+#: arches/app/templates/views/rdm/modals/delete-scheme-form.htm:43
+#: arches/app/templates/views/rdm/modals/export-scheme-form.htm:26
+msgid "Close"
+msgstr ""
+
+#: arches/app/templates/base-manager.htm:212
+msgid "My Edit History"
+msgstr ""
+
+#: arches/app/templates/base-manager.htm:235
+msgid "Close Help"
+msgstr ""
+
+#: arches/app/templates/base-manager.htm:246
+msgid "for more documentation, visit"
+msgstr ""
+
+#: arches/app/templates/base-manager.htm:265 arches/app/templates/rdm.htm:84
+msgid "Tools"
+msgstr ""
+
+#: arches/app/templates/base-manager.htm:273
+msgid "Manage System Settings"
+msgstr ""
+
+#: arches/app/templates/base-manager.htm:278
+#: arches/app/templates/help/system-settings-help.htm:11
+#: arches/app/views/api.py:866 arches/app/views/resource.py:193
+msgid "System Settings"
+msgstr ""
+
+#: arches/app/templates/base-manager.htm:281
+msgid "System Settings Graph"
+msgstr ""
+
+#: arches/app/templates/base-manager.htm:302
+msgid "Add New Resource"
+msgstr ""
+
+#: arches/app/templates/base-manager.htm:326 arches/app/views/graph.py:143
+msgid "Arches Designer"
+msgstr ""
+
+#: arches/app/templates/base-manager.htm:331
+#: arches/app/templates/index.htm:415
+#: arches/app/templates/views/graph-designer.htm:52
+#: arches/app/templates/views/graph.htm:52
+#: arches/app/templates/views/graph.htm:63
+msgid "Resource Models"
+msgstr ""
+
+#: arches/app/templates/base-manager.htm:334
+#: arches/app/templates/views/graph-designer.htm:52
+#: arches/app/templates/views/graph.htm:52
+#: arches/app/templates/views/graph.htm:64
+msgid "Branches"
+msgstr ""
+
+#: arches/app/templates/base-manager.htm:346
+#: arches/app/templates/views/map-layer-manager.htm:25
+#: arches/app/views/map.py:96 arches/app/views/map.py:98
+msgid "Map Layer Manager"
+msgstr ""
+
+#: arches/app/templates/base-manager.htm:351
+#: arches/app/templates/help/map-manager-help.htm:11
+#: arches/app/templates/views/map-layer-manager.htm:86
+msgid "Resource Layers"
+msgstr ""
+
+#: arches/app/templates/base-manager.htm:354
+#: arches/app/templates/help/map-manager-help.htm:31
+#: arches/app/templates/views/components/map.htm:38
+#: arches/app/templates/views/map-layer-manager.htm:87
+msgid "Basemaps"
+msgstr ""
+
+#: arches/app/templates/base-manager.htm:357
+#: arches/app/templates/help/map-manager-help.htm:46
+#: arches/app/templates/views/components/iiif-viewer.htm:22
+#: arches/app/templates/views/components/map.htm:20
+#: arches/app/templates/views/components/map.htm:59
+#: arches/app/templates/views/map-layer-manager.htm:88
+msgid "Overlays"
+msgstr ""
+
+#: arches/app/templates/base-manager.htm:366
+#: arches/app/views/mobile_survey.py:99 arches/app/views/mobile_survey.py:101
+#: arches/app/views/mobile_survey.py:249 arches/app/views/mobile_survey.py:251
+msgid "Arches Collector Manager"
+msgstr ""
+
+#: arches/app/templates/base-manager.htm:379
+#: arches/app/templates/views/edit-history.htm:5
+#: arches/app/views/resource.py:493
+msgid "Recent Edits"
+msgstr ""
+
+#: arches/app/templates/base-manager.htm:391 arches/app/views/user.py:117
+#: arches/app/views/user.py:149
+msgid "Profile Manager"
+msgstr ""
+
+#: arches/app/templates/base-manager.htm:400
+msgid "Modules"
+msgstr ""
+
+#: arches/app/templates/base-manager.htm:408 arches/app/templates/rdm.htm:8
+#: arches/app/views/concept.py:66
+msgid "Reference Data Manager"
+msgstr ""
+
+#: arches/app/templates/change_password.htm:23
+msgid "Change your password"
+msgstr ""
+
+#: arches/app/templates/change_password.htm:47
+msgid "Change Password"
+msgstr ""
+
+#: arches/app/templates/change_password.htm:50
+#: arches/app/templates/signup.htm:133
+msgid "Your password must:"
+msgstr ""
+
+#: arches/app/templates/errors/404.htm:11
+#: arches/app/templates/errors/500.htm:11
+#: arches/app/templates/views/components/resource-report-abstract.htm:43
+msgid "Arches"
+msgstr ""
+
+#: arches/app/templates/errors/404.htm:19
+#: arches/app/templates/errors/500.htm:19
+msgid "Oops!"
+msgstr ""
+
+#: arches/app/templates/errors/404.htm:20
+msgid "Page Not Found!"
+msgstr ""
+
+#: arches/app/templates/errors/404.htm:22
+msgid ""
+"Sorry, but the page you are looking for has not been found on our server."
+msgstr ""
+
+#: arches/app/templates/errors/404.htm:26
+#: arches/app/templates/errors/500.htm:26
+msgid "Back to Homepage"
+msgstr ""
+
+#: arches/app/templates/errors/500.htm:20
+msgid "Internal Server Error!"
+msgstr ""
+
+#: arches/app/templates/errors/500.htm:22
+msgid "Something went wrong and we couldn't process your request."
+msgstr ""
+
+#: arches/app/templates/help/arches-collector-manager-help.htm:6
+#: arches/app/templates/help/arches-designer-help.htm:7
+#: arches/app/templates/help/cards-tab-help.htm:10
+#: arches/app/templates/help/function-help.htm:7
+#: arches/app/templates/help/graph-tab-help.htm:10
+#: arches/app/templates/help/permissions-tab-help.htm:10
+msgid "Overview"
+msgstr ""
+
+#: arches/app/templates/help/arches-collector-manager-help.htm:10
+msgid ""
+"As a database administrator, you will use the Arches Collector Manager to "
+"create and manage the projects that data collection users will access "
+"through the <a href=\"https://arches.readthedocs.io/en/stable/using-arches-"
+"collector\" target=\"_blank\">Arches Collector</a> mobile app."
+msgstr ""
+
+#: arches/app/templates/help/arches-collector-manager-help.htm:11
+msgid ""
+"When you begin creating a new project, you'll be brought to the project "
+"summary, which shows you how many users are participating, when data was "
+"last synced, and more."
+msgstr ""
+
+#: arches/app/templates/help/arches-collector-manager-help.htm:14
+#: arches/app/templates/help/arches-collector-manager-help.htm:21
+#: arches/app/templates/help/function-help.htm:16
+#: arches/app/templates/help/graph-tab-help.htm:112
+#: arches/app/templates/help/permissions-tab-help.htm:47
+#: arches/app/templates/help/rdm-help.htm:33
+#: arches/app/templates/help/rdm-help.htm:47
+#: arches/app/templates/help/rdm-help.htm:61
+#: arches/app/templates/help/rdm-help.htm:75
+#: arches/app/templates/help/rdm-help.htm:89
+#: arches/app/templates/help/resource-editor-help.htm:18
+#: arches/app/templates/help/resource-editor-help.htm:31
+#: arches/app/templates/help/resource-editor-help.htm:53
+#: arches/app/templates/help/search-help.htm:8
+#: arches/app/templates/help/search-help.htm:30
+#: arches/app/templates/help/search-help.htm:39
+#: arches/app/templates/help/search-help.htm:49
+#: arches/app/templates/help/search-help.htm:65
+#: arches/app/templates/help/search-help.htm:88
+msgid "open in new tab"
+msgstr ""
+
+#: arches/app/templates/help/arches-collector-manager-help.htm:18
+msgid ""
+"Once you have finished setting all of the parameters for your project, you "
+"will return to the summary page to activate it for the first time."
+msgstr ""
+
+#: arches/app/templates/help/arches-collector-manager-help.htm:26
+msgid ""
+"This initial activation saves the contents of your project to a staging "
+"database, from which Arches Collector users will download it and begin "
+"collecting data."
+msgstr ""
+
+#: arches/app/templates/help/arches-collector-manager-help.htm:27
+msgid ""
+"IMPORTANT: In order for Arches Collector users to connect to this Arches "
+"instance a system admin must first <a "
+"href=\"https://arches.readthedocs.io/en/stable/api/#registering-an-"
+"application-with-arches\" target=\"_blank\">register an application</a>."
+msgstr ""
+
+#: arches/app/templates/help/arches-collector-manager-help.htm:32
+msgid "Managing Projects"
+msgstr ""
+
+#: arches/app/templates/help/arches-collector-manager-help.htm:36
+msgid "Activation/Deactivation"
+msgstr ""
+
+#: arches/app/templates/help/arches-collector-manager-help.htm:36
+msgid ""
+"The first time you activate the project and click Save, all of the "
+"parameters are saved to an intermediate location, and cannot be updated. "
+"After this initial activation, you can deactivate/reactivate the project "
+"whenever you want. When a project is deactivated, users who have already "
+"downloaded it can still collect and sync their data, but new users cannot "
+"download it, even if they have the proper permissions."
+msgstr ""
+
+#: arches/app/templates/help/arches-collector-manager-help.htm:37
+msgid "Syncing"
+msgstr ""
+
+#: arches/app/templates/help/arches-collector-manager-help.htm:37
+msgid ""
+"After you have activated a project, and users have begun downloading it and "
+"entering data, they can sync their changes at any time. The following takes "
+"place when a user syncs a project:"
+msgstr ""
+
+#: arches/app/templates/help/arches-collector-manager-help.htm:39
+msgid ""
+"All changes from the user's mobile device will be pushed to this database."
+msgstr ""
+
+#: arches/app/templates/help/arches-collector-manager-help.htm:40
+msgid ""
+"All changes from the user's mobile device will be made available to all "
+"other participants in the same project."
+msgstr ""
+
+#: arches/app/templates/help/arches-collector-manager-help.htm:41
+msgid ""
+"If other project participants have synced their data, it will be downloaded "
+"to the user's mobile device."
+msgstr ""
+
+#: arches/app/templates/help/arches-collector-manager-help.htm:42
+msgid ""
+"If resources have been changed in this database since the project was first "
+"activated, these changes are <strong>not</strong> downloaded to the user's "
+"mobile device."
+msgstr ""
+
+#: arches/app/templates/help/arches-collector-manager-help.htm:48
+msgid "Project Parameters"
+msgstr ""
+
+#: arches/app/templates/help/arches-collector-manager-help.htm:54
+#: arches/app/templates/help/map-manager-help.htm:16
+#: arches/app/templates/help/map-manager-help.htm:36
+#: arches/app/templates/help/map-manager-help.htm:51
+#: arches/app/templates/views/components/datatypes/geojson-feature-collection.htm:66
+#: arches/app/templates/views/components/related-resources-graph.htm:213
+#: arches/app/templates/views/graph/graph-designer/card-configuration.htm:69
+#: arches/app/templates/views/graph/graph-settings.htm:51
+#: arches/app/templates/views/map-layer-manager.htm:179
+msgid "Settings"
+msgstr ""
+
+#: arches/app/templates/help/arches-collector-manager-help.htm:59
+#: arches/app/templates/help/graph-tab-help.htm:28
+#: arches/app/templates/views/components/datatypes/edtf.htm:16
+#: arches/app/templates/views/components/datatypes/string.htm:17
+#: arches/app/templates/views/components/datatypes/url.htm:14
+#: arches/app/templates/views/graph/graph-designer/graph-settings.htm:30
+#: arches/app/templates/views/graph/graph-designer/graph-settings.htm:35
+#: arches/app/templates/views/graph/graph-settings.htm:126
+#: arches/app/templates/views/graph/graph-settings.htm:133
+msgid "Name"
+msgstr ""
+
+#: arches/app/templates/help/arches-collector-manager-help.htm:60
+msgid ""
+"This name will be used in Arches Collector when users connect to this Arches"
+" instance."
+msgstr ""
+
+#: arches/app/templates/help/arches-collector-manager-help.htm:63
+msgid "Start Date/End Date"
+msgstr ""
+
+#: arches/app/templates/help/arches-collector-manager-help.htm:64
+msgid ""
+"The project's start and end dates are used to limit when people can add or "
+"edit data to your project. Use these dates to enforce the beginning and end "
+"of your field data collection effort. When a project has expired, users will"
+" not be able to collect new data, but they can still sync."
+msgstr ""
+
+#: arches/app/templates/help/arches-collector-manager-help.htm:67
+#: arches/app/templates/help/graph-tab-help.htm:63
+#: arches/app/templates/views/components/plugins/manifest-manager.htm:42
+#: arches/app/templates/views/graph/graph-designer/graph-settings.htm:176
+#: arches/app/templates/views/graph/graph-designer/node-form.htm:107
+#: arches/app/templates/views/graph/graph-settings.htm:85
+#: arches/app/templates/views/mobile-survey-designer.htm:352
+#: arches/app/templates/views/resource/related-resources/related-resources-manager.htm:260
+msgid "Description"
+msgstr ""
+
+#: arches/app/templates/help/arches-collector-manager-help.htm:68
+msgid ""
+"Optionally add a description for your project. This description will be "
+"included when users download the project using Arches Collector."
+msgstr ""
+
+#: arches/app/templates/help/arches-collector-manager-help.htm:75
+msgid "Map Extent"
+msgstr ""
+
+#: arches/app/templates/help/arches-collector-manager-help.htm:78
+msgid ""
+"The map extent for this project will default to the extent set in System "
+"Settings, but can be changed however you like. If you allow users to "
+"download data in this project, only resources within this boundary will be "
+"used."
+msgstr ""
+
+#: arches/app/templates/help/arches-collector-manager-help.htm:83
+msgid "Map Sources"
+msgstr ""
+
+#: arches/app/templates/help/arches-collector-manager-help.htm:86
+msgid ""
+"Define the basemap layer(s) that will be available to users while they "
+"collect data with Arches Collector."
+msgstr ""
+
+#: arches/app/templates/help/arches-collector-manager-help.htm:87
+msgid ""
+"If you expect data collection to happen in areas that do not have reliable "
+"cellular/wifi data connections, use this parameter to link to an MBTiles "
+"file that users will download when they download this project. You can learn"
+" more about creating this file in our external <a "
+"href=\"https://arches.readthedocs.io/en/stable/arches-collector-manager/\" "
+"target=\"_blank\">Arches Collector Manager</a> documentation."
+msgstr ""
+
+#: arches/app/templates/help/arches-collector-manager-help.htm:92
+msgid "Models"
+msgstr ""
+
+#: arches/app/templates/help/arches-collector-manager-help.htm:95
+msgid ""
+"You must select one or more resources models to include in the project. When"
+" a user downloads the project and begins editing data, only these resource "
+"models will be available to them."
+msgstr ""
+
+#: arches/app/templates/help/arches-collector-manager-help.htm:96
+msgid ""
+"Once you have selected a model, you must further decide which cards from "
+"that model to include."
+msgstr ""
+
+#: arches/app/templates/help/arches-collector-manager-help.htm:98
+msgid ""
+"By only including certain cards, you can keep the Arches Collector users "
+"focused on the specific information you want them to gather."
+msgstr ""
+
+#: arches/app/templates/help/arches-collector-manager-help.htm:99
+msgid ""
+"All existing card-level permissions in a resource model will be honored "
+"during data collection."
+msgstr ""
+
+#: arches/app/templates/help/arches-collector-manager-help.htm:104
+msgid "Data"
+msgstr ""
+
+#: arches/app/templates/help/arches-collector-manager-help.htm:107
+msgid ""
+"If you want users to edit existing resources in your database, you must "
+"include these resources in the Data Download section. You can limit the "
+"number of resources that get downloaded, with the default maximum limit "
+"being 2000. If the resource model you want to download includes geometry, "
+"only resources from within your Map Extent will be downloaded."
+msgstr ""
+
+#: arches/app/templates/help/arches-collector-manager-help.htm:108
+msgid ""
+"You can also choose a custom download of resources. Simply go to the search "
+"page, construct a search query, and copy and paste the URL in the Custom "
+"Download URL box. All of the search results from that query will be included"
+" when users download this project."
+msgstr ""
+
+#: arches/app/templates/help/arches-collector-manager-help.htm:113
+msgid "People"
+msgstr ""
+
+#: arches/app/templates/help/arches-collector-manager-help.htm:116
+msgid ""
+"When someone connects to this Arches instance from their mobile device using"
+" Arches Collector, they will only be able to access this project if they "
+"have been approved to do so."
+msgstr ""
+
+#: arches/app/templates/help/arches-collector-manager-help.htm:117
+msgid "When modifying group and user approvals, bear in mind the following: "
+msgstr ""
+
+#: arches/app/templates/help/arches-collector-manager-help.htm:119
+msgid "By approving a group, all members will be approved."
+msgstr ""
+
+#: arches/app/templates/help/arches-collector-manager-help.htm:120
+msgid ""
+"By disapproving a group, all members will be disapproved unless they are "
+"approved as a member of a different group."
+msgstr ""
+
+#: arches/app/templates/help/arches-collector-manager-help.htm:121
+msgid ""
+"You may approve or disapprove a user regardless of the approval status of "
+"any group to which that user belongs."
+msgstr ""
+
+#: arches/app/templates/help/arches-designer-help.htm:11
+msgid ""
+"This page is where you manage all of your <strong>Resource Models</strong> "
+"and <strong>Branches</strong>."
+msgstr ""
+
+#: arches/app/templates/help/arches-designer-help.htm:12
+msgid ""
+"If you don't see any listed here, you may want to consider <a "
+"href=\"https://arches.readthedocs.io/en/stable/projects-and-packages\" "
+"target=\"_blank\">loading a package</a>. Alternatively, you can directly "
+"import individual Resource Model files through <strong>Add ...</strong> "
+"(close this panel to find the button). Finally, to start from scratch just "
+"<strong>Add ... > New Resource Model</strong>."
+msgstr ""
+
+#: arches/app/templates/help/arches-designer-help.htm:13
+msgid ""
+"Once you have some graphs loaded, there are a few management operations "
+"which are only accessible through this page. Use <strong>Manage ...</strong>"
+" on a graph to perform the following actions:"
+msgstr ""
+
+#: arches/app/templates/help/arches-designer-help.htm:16
+#: arches/app/templates/views/graph.htm:110
+msgid "Manage Graph"
+msgstr ""
+
+#: arches/app/templates/help/arches-designer-help.htm:17
+msgid "Enter the Graph Designer. This is where the magic happens!"
+msgstr ""
+
+#: arches/app/templates/help/arches-designer-help.htm:20
+#: arches/app/templates/views/graph.htm:114
+msgid "Manage Functions"
+msgstr ""
+
+#: arches/app/templates/help/arches-designer-help.htm:21
+#: arches/app/templates/help/arches-designer-help.htm:25
+#: arches/app/templates/help/arches-designer-help.htm:29
+msgid "Resource Models only"
+msgstr ""
+
+#: arches/app/templates/help/arches-designer-help.htm:21
+msgid ""
+"Enter the Function Manager. <strong>You must use the Function Manager to "
+"configure the display names of your resources!</strong> Otherwise, all your "
+"resources will just be labeled \"Untitled\" in the search results and on the"
+" map."
+msgstr ""
+
+#: arches/app/templates/help/arches-designer-help.htm:24
+#: arches/app/templates/views/graph.htm:117
+msgid "Create Mapping File"
+msgstr ""
+
+#: arches/app/templates/help/arches-designer-help.htm:25
+msgid ""
+"You will need a Mapping File if you plan to <a "
+"href=\"https://arches.readthedocs.io/en/stable/import-export\" "
+"target=\"_blank\">bulk import resources</a> from a CSV file."
+msgstr ""
+
+#: arches/app/templates/help/arches-designer-help.htm:28
+#: arches/app/templates/views/graph.htm:120
+msgid "Delete Instances"
+msgstr ""
+
+#: arches/app/templates/help/arches-designer-help.htm:29
+msgid ""
+"Delete all resource instances that have been made with this Resource Model. "
+"<strong>This operation is not reversible!</strong> It's likely this "
+"operation would never be used outside of initial installation and testing."
+msgstr ""
+
+#: arches/app/templates/help/arches-designer-help.htm:32
+#: arches/app/templates/views/graph.htm:124
+#: arches/app/templates/views/rdm/modals/export-scheme-form.htm:27
+msgid "Export"
+msgstr ""
+
+#: arches/app/templates/help/arches-designer-help.htm:33
+msgid ""
+"Export this graph to a .json file. It can then be imported into a different "
+"Arches installation, or copied into a package."
+msgstr ""
+
+#: arches/app/templates/help/arches-designer-help.htm:36
+#: arches/app/templates/views/graph.htm:126
+msgid "Clone"
+msgstr ""
+
+#: arches/app/templates/help/arches-designer-help.htm:37
+msgid ""
+"Create a duplicate of this graph. Useful during development if you want to "
+"alter a Resource Model that already has resource instances saved."
+msgstr ""
+
+#: arches/app/templates/help/arches-designer-help.htm:40
+#: arches/app/templates/help/permissions-tab-help.htm:18
+#: arches/app/templates/views/components/file-workbench.htm:411
+#: arches/app/templates/views/components/iiif-annotation.htm:247
+#: arches/app/templates/views/components/iiif-annotation.htm:299
+#: arches/app/templates/views/components/iiif-widget-annotation.htm:167
+#: arches/app/templates/views/components/map-editor.htm:200
+#: arches/app/templates/views/components/map-editor.htm:300
+#: arches/app/templates/views/components/map-widget-editor.htm:124
+#: arches/app/templates/views/components/photo-workbench.htm:281
+#: arches/app/templates/views/components/plugins/manifest-manager.htm:109
+#: arches/app/templates/views/components/related-resources-map-editor.htm:273
+#: arches/app/templates/views/components/related-resources-map-editor.htm:321
+#: arches/app/templates/views/forms/delete-resource.htm:31
+#: arches/app/templates/views/graph.htm:129
+#: arches/app/templates/views/graph/function-manager.htm:121
+#: arches/app/templates/views/rdm/modals/delete-collection-form.htm:44
+#: arches/app/templates/views/rdm/modals/delete-scheme-form.htm:44
+#: arches/app/templates/views/resource/editor.htm:135
+msgid "Delete"
+msgstr ""
+
+#: arches/app/templates/help/arches-designer-help.htm:41
+msgid ""
+"Delete this graph. If this is a Resource Model, all resource instances that "
+"have been made with it will also be deleted (as with <strong>Delete "
+"Instances</strong> operation above)."
+msgstr ""
+
+#: arches/app/templates/help/arches-designer-help.htm:48
+msgid "What are Resource Models and Branches?"
+msgstr ""
+
+#: arches/app/templates/help/arches-designer-help.htm:52
+msgid ""
+"At the core of an Arches database are a series of structures called "
+"\"graphs\", of which there are two types:"
+msgstr ""
+
 #: arches/app/templates/help/arches-designer-help.htm:53
 msgid ""
 "<strong>Resource Models</strong> -  When creating new Resources, a data "
@@ -36,18 +1213,131 @@ msgid ""
 "database must have at least one Resource Model."
 msgstr ""
 
-#: arches/app/datatypes/base.py:204
-msgid "Multiple provisional edits. Returning first edit"
-msgstr ""
-
-#: arches/app/datatypes/concept_types.py:111
+#: arches/app/templates/help/arches-designer-help.htm:54
 msgid ""
-"The widget used to save this data appears to be incorrect for this datatype."
-" Contact system admin to resolve"
+"<strong>Branches</strong> - You can think of Branches as \"partial\" graphs "
+"that can be aggregated to form the \"full\" graph of a Resource Model. They "
+"function as resuable building blocks, allowing you to avoid having to "
+"manually recreate complex structures in multiple Resource Models."
 msgstr ""
 
-#: arches/app/datatypes/concept_types.py:127
-msgid "This UUID is not an available concept value"
+#: arches/app/templates/help/cards-tab-help.htm:6
+msgid "Cards Tab"
+msgstr ""
+
+#: arches/app/templates/help/cards-tab-help.htm:14
+msgid ""
+"In this tab you will configure the user-facing aspects of your graph. There "
+"are multiple levels to doing so, which are reflected in the levels of the "
+"graph tree. <strong>Report Configuration</strong> where you choose the "
+"template for the resource report, <strong>Card Configuration</strong> where "
+"you'll specify card-related settings, and the <strong>Widget "
+"Manager</strong> where you will choose and configure the data entry widget "
+"for each node in the graph."
+msgstr ""
+
+#: arches/app/templates/help/cards-tab-help.htm:19
+#: arches/app/templates/views/graph-designer.htm:225
+msgid "Report Configuration"
+msgstr ""
+
+#: arches/app/templates/help/cards-tab-help.htm:23
+msgid ""
+"Each Resource Model must be configured with a report template. Reports show "
+"data for all nodes in a resource instance for which the user has Read "
+"permissions."
+msgstr ""
+
+#: arches/app/templates/help/cards-tab-help.htm:24
+msgid "No Header Template"
+msgstr ""
+
+#: arches/app/templates/help/cards-tab-help.htm:25
+msgid "Lists all node data, no special header at the top of the page."
+msgstr ""
+
+#: arches/app/templates/help/cards-tab-help.htm:26
+msgid "Image Header Template"
+msgstr ""
+
+#: arches/app/templates/help/cards-tab-help.htm:27
+msgid ""
+"Use this template for Resource Models that will be be primarily used to "
+"record images."
+msgstr ""
+
+#: arches/app/templates/help/cards-tab-help.htm:30
+#: arches/app/templates/views/report-templates/image.htm:13
+msgid "Included Image Nodes"
+msgstr ""
+
+#: arches/app/templates/help/cards-tab-help.htm:31
+msgid ""
+"Choose one or more nodes that hold images in this Resource Model. These "
+"images will be presented as a slideshow in the report header."
+msgstr ""
+
+#: arches/app/templates/help/cards-tab-help.htm:34
+msgid "Map Header Template"
+msgstr ""
+
+#: arches/app/templates/help/cards-tab-help.htm:35
+msgid ""
+"Use this template for Resource Models that will be be primarily used to "
+"record resources that have a geo-location. There are number of settings you "
+"should fill out to control the appearance of the map in the header."
+msgstr ""
+
+#: arches/app/templates/help/cards-tab-help.htm:38
+msgid "Map Controls"
+msgstr ""
+
+#: arches/app/templates/help/cards-tab-help.htm:39
+msgid "Choose whether or not the user has access to the Map Tools."
+msgstr ""
+
+#: arches/app/templates/help/cards-tab-help.htm:42
+msgid "Position"
+msgstr ""
+
+#: arches/app/templates/help/cards-tab-help.htm:43
+msgid ""
+"You can set the position by panning the map. On report load, the map will "
+"automatically pan and zoom to the resource geo-location if there is one "
+"(also see <strong>Default Value</strong> below). Pitch values are 0-60 "
+"(higher = more oblique), <strong>Bearing</strong> values can be positive or "
+"negative (270 faces west; -180 faces south). Use <code>ctrl + click</code> "
+"then pan the map to change Pitch and Bearing."
+msgstr ""
+
+#: arches/app/templates/help/cards-tab-help.htm:46
+msgid "Zoom"
+msgstr ""
+
+#: arches/app/templates/help/cards-tab-help.htm:47
+msgid ""
+"Zoom levels go from 0 (zoomed out) to 20 (zoomed in). On report load, the "
+"map will automatically pan and zoom to the resource geo-location if there is"
+" one."
+msgstr ""
+
+#: arches/app/templates/help/cards-tab-help.htm:50
+msgid "Geocoder"
+msgstr ""
+
+#: arches/app/templates/help/cards-tab-help.htm:51
+msgid ""
+"Configure which geocoding service the address search bar will use, and "
+"whether or not to show the bar at all."
+msgstr ""
+
+#: arches/app/templates/help/cards-tab-help.htm:54
+msgid "Resource Properties"
+msgstr ""
+
+#: arches/app/templates/help/cards-tab-help.htm:55
+msgid ""
+"Configure some styling options for how the resource appears on the map."
 msgstr ""
 
 #: arches/app/templates/help/cards-tab-help.htm:58
@@ -68,12 +1358,109 @@ msgstr ""
 #: arches/app/templates/views/components/widgets/text.htm:64
 #: arches/app/templates/views/components/widgets/text.htm:67
 msgid "Default Value"
-msgstr "CE MESSAGE A DEJA ETE TRADUIT - THIS MESSAGE HAS ALREADY BEEN TRANSLATED"
+msgstr ""
+
+#: arches/app/templates/help/cards-tab-help.htm:59
+msgid ""
+"Choose whether the map should zoom to the resource geo-location if available"
+" or the geo-location of the user."
+msgstr ""
+
+#: arches/app/templates/help/cards-tab-help.htm:67
+#: arches/app/templates/views/graph/graph-designer/card-configuration.htm:6
+msgid "Card Configuration"
+msgstr ""
+
+#: arches/app/templates/help/cards-tab-help.htm:71
+msgid ""
+"The settings for Cards are mostly related yo how you want a user to see the "
+"card, but some have a more direct bearing on data structure as well. The "
+"preview shows what the card will look like to users."
+msgstr ""
+
+#: arches/app/templates/help/cards-tab-help.htm:74
+#: arches/app/templates/views/graph/graph-designer/card-configuration.htm:17
+msgid "Card Type"
+msgstr ""
+
+#: arches/app/templates/help/cards-tab-help.htm:75
+msgid ""
+"Choose the Card Component to use. Only the Default Card is available "
+"initially, but custom Card Components are a way for developers to enhance "
+"the user experience."
+msgstr ""
+
+#: arches/app/templates/help/cards-tab-help.htm:78
+#: arches/app/templates/views/graph/graph-designer/card-configuration.htm:27
+msgid "Card Title"
+msgstr ""
+
+#: arches/app/templates/help/cards-tab-help.htm:79
+msgid "Users will see this title when performing data entry."
+msgstr ""
+
+#: arches/app/templates/help/cards-tab-help.htm:82
+#: arches/app/templates/help/graph-tab-help.htm:32
+#: arches/app/templates/views/components/simple-switch.htm:21
+#: arches/app/templates/views/components/widgets/switch.htm:21
+#: arches/app/templates/views/graph/graph-designer/card-configuration.htm:36
+#: arches/app/templates/views/graph/graph-designer/graph-settings.htm:43
+#: arches/app/templates/views/graph/graph-designer/graph-settings.htm:47
+#: arches/app/templates/views/graph/graph-settings.htm:141
+#: arches/app/templates/views/graph/graph-settings.htm:145
+msgid "Subtitle"
+msgstr ""
+
+#: arches/app/templates/help/cards-tab-help.htm:83
+msgid "Users will see this subtitle when performing data entry."
+msgstr ""
+
+#: arches/app/templates/help/cards-tab-help.htm:86
+msgid "CSS Classes"
+msgstr ""
 
 #: arches/app/templates/help/cards-tab-help.htm:87
 msgid ""
 "You can add your own CSS classes to this Card to customize its look and "
 "feel. Define these classes in your project's \"package.css\" file."
+msgstr ""
+
+#: arches/app/templates/help/cards-tab-help.htm:90
+#: arches/app/templates/views/graph/graph-designer/card-configuration.htm:74
+msgid "Make Card Visible"
+msgstr ""
+
+#: arches/app/templates/help/cards-tab-help.htm:91
+msgid ""
+"Show this Card by default. Developers could hide a card initially, and show "
+"it based other variables."
+msgstr ""
+
+#: arches/app/templates/help/cards-tab-help.htm:94
+msgid "Allow Multiple Values"
+msgstr ""
+
+#: arches/app/templates/help/cards-tab-help.htm:95
+msgid ""
+"While certain node data types allow the storage of multiple values in a "
+"single node, \"concept-list\" for example, this setting is how you control "
+"cardinality at a higher level. When determining whether or not to use this "
+"setting, we recommend testing out the resource editor interface directly."
+msgstr ""
+
+#: arches/app/templates/help/cards-tab-help.htm:98
+msgid "Enable Card-level Help"
+msgstr ""
+
+#: arches/app/templates/help/cards-tab-help.htm:99
+msgid ""
+"To aid data entry users when using this Card, you may want to add some extra"
+" guidance. Enable setting to do so, and design the content of this guidance "
+"with the Card-Level Help menu."
+msgstr ""
+
+#: arches/app/templates/help/cards-tab-help.htm:106
+msgid "Widget Management"
 msgstr ""
 
 #: arches/app/templates/help/cards-tab-help.htm:110
@@ -88,9 +1475,30 @@ msgid ""
 "editor."
 msgstr ""
 
-#: arches/app/templates/help/cards-tab-help.htm:120
+#: arches/app/templates/help/cards-tab-help.htm:111
 msgid ""
-"The list of available Widgets is determined by the node's data type, though "
-"developers can <a href=\"https://arches.readthedocs.io/en/stable/functions-"
-"widgets-datatypes/#widgets\" target=\"_blank\">create new Widgets</a>."
+"Depending on the Widget, there are more settings you can configure, most of "
+"which are optional and all come with acceptable defaults."
+msgstr ""
+
+#: arches/app/templates/help/cards-tab-help.htm:112
+msgid "Common Settings"
+msgstr ""
+
+#: arches/app/templates/help/cards-tab-help.htm:115
+#: arches/app/templates/views/graph/graph-designer/widget-configuration.htm:17
+#: arches/app/templates/views/graph/graph-designer/widget-configuration.htm:20
+msgid "Widget Label"
+msgstr ""
+
+#: arches/app/templates/help/cards-tab-help.htm:116
+msgid ""
+"This will be used in the user interface. The default label comes from the "
+"node name."
+msgstr ""
+
+#: arches/app/templates/help/cards-tab-help.htm:119
+#: arches/app/templates/views/graph-designer.htm:230
+#: arches/app/templates/views/graph/graph-designer/widget-configuration.htm:26
+msgid "Template"
 msgstr ""

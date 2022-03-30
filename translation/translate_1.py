@@ -13,15 +13,21 @@ path_fold = os.getcwd()+'/translation'
 path_fold = os.getcwd()
 
 # read PO
+print("Read source file")
 with open(path_fold+'/for_translation_arches-70_djangopo_fr_samp.po') as f_in:
+    # don't catch the empty lines
     lines = [line.strip() for line in f_in if line.strip()]
+print("     "+str(len(lines))+" lines to write")
 
 # write PO/TXT
 f_out = open(path_fold+'/translated_out.po', 'w')
 writer = csv.writer(f_out, quoting=csv.QUOTE_NONE, delimiter=' ', escapechar=' ', lineterminator='\n')
 # with indexes
 num_lines = list(range(0,len(lines)))
+print("Write output file")
 for l in num_lines:
+    if l % 100 == 0:
+        print("     write "+"line "+str(l)+"/"+str(len(lines)))
     already_translated = 0
     line = lines[l]
     if(line.startswith('msgid')):

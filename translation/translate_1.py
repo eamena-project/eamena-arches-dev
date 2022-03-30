@@ -5,7 +5,7 @@
 import os, re, csv
 from deep_translator import GoogleTranslator
 
-to_language = 'fr'
+target_language = 'fr'
 # number of maximum lines for a paragraph message
 max_lines = 10
 # one or the other depending on environment
@@ -22,9 +22,10 @@ writer = csv.writer(f_out, quoting=csv.QUOTE_NONE, delimiter=' ', escapechar=' '
 # with indexes
 num_lines = list(range(0,len(lines)))
 for l in num_lines:
+    already_translated = 0
     line = lines[l]
     if(line.startswith('msgid')):
-    # repeat and translate
+    # translate
         writer.writerow([line])
         if(line.startswith('msgid \"\"')):
         # the message has various lines
@@ -33,20 +34,30 @@ for l in num_lines:
                 sub_line = lines[l+sl]
                 if(sub_line.startswith('msgstr')): 
                 # the end of the message has been reached
+                    # TODO
+                    # if bool(re.match('msgstr \"[A-Z]+', sub_line)):
+                    #     # test if the message has been already translated
+                    #     already_translated = 1
                     break
                 else:
                     text_eng = sub_line
-                    text_translated = GoogleTranslator(source='en', target=to_language).translate(text_eng)
+                    text_translated = GoogleTranslator(source='en', target=target_language).translate(text_eng)
                     line_translated = text_translated
                     writer.writerow([line_translated])
         # to be translated
         text_eng = re.sub('msgid', '', line)
-        text_translated = GoogleTranslator(source='en', target=to_language).translate(text_eng)
+        text_translated = GoogleTranslator(source='en', target=target_language).translate(text_eng)
         if (text_translated is not None):
-        # do not read None type (ie, "")
-            line_translated = 'msgstr ' + text_translated
+        # do not write None type (ie, "") and already translated messages
+            # print(line_translated)
+            line_translated = 'msgstr' + text_translated
             # line_translated = line_translated.rstrip()
-            writer.writerow([line_translated])
+            if already_translated == 0:
+                # write if not already translated
+                writer.writerow([line_translated])
     elif(not line.startswith('msgstr')):
     # not repeat the first msgtr
+        writer.writerow([line])
+    elif(bool(re.match('msgstr \"[A-Z]+', line))):
+    # msgtr was translated by someone before running this script
         writer.writerow([line])

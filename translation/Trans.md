@@ -8,3 +8,13 @@ Read a portable object (PO) file, use Python *regex* and 'deep_translator' libra
 <a href="https://github.com/eamena-oxford/eamena-arches-dev/blob/main/translation/translated_out.po">PO file output</a>
 </p>
 
+## Current issues with the output
+
+- [x] special characters (only for a PO output extension, no issue if TXT)
+- [x] extra or missing spaces within the messages and between the messages
+- [x] paragraph message/multiline messages
+    - [x] missing `msgstr` tag
+    - [x] reversed order between source language and target language
+
+
+

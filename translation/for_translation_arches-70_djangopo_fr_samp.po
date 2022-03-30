@@ -68,7 +68,7 @@ msgstr ""
 #: arches/app/templates/views/components/widgets/text.htm:64
 #: arches/app/templates/views/components/widgets/text.htm:67
 msgid "Default Value"
-msgstr ""
+msgstr "CE MESSAGE A DEJA ETE TRADUIT - THIS MESSAGE HAS ALREADY BEEN TRANSLATED"
 
 #: arches/app/templates/help/cards-tab-help.htm:87
 msgid ""

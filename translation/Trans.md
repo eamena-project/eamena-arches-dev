@@ -10,11 +10,12 @@ Read a portable object (PO) file, use Python *regex* and 'deep_translator' libra
 
 ## Current issues with the output
 
-- [x] special characters (only for a PO output extension, no issue if TXT)
-- [x] extra or missing spaces within the messages and between the messages
-- [x] paragraph message/multiline messages
-    - [x] missing `msgstr` tag
-    - [x] reversed order between source language and target language
+- [ ] special characters (only for a PO output extension, no issue if TXT)
+- [ ] extra or missing spaces within the messages and between the messages
+- [ ] translate already translated messages
+- [ ] paragraph message/multiline messages
+    - [ ] missing `msgstr` tag
+    - [ ] reversed order between source language and target language
 
 
 

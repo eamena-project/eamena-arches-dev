@@ -1,7 +1,7 @@
-from deep_translator import GoogleTranslator
+# %%
+msg = "Hello World"
+print(msg)
 
-to_translate = 'Hello World'
-
-translated = GoogleTranslator(source='en', target='fr').translate(to_translate)
-
-print(translated)
+# %%
+msg = "Hello again"
+print(msg)

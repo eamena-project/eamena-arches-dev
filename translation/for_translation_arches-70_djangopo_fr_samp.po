@@ -26,12 +26,18 @@ msgstr ""
 msgid "{0} error, {1} {2} - {3}. Unable to save."
 msgstr ""
 
-#: arches/app/datatypes/base.py:204
-msgid "Multiple provisional edits. Returning first edit"
+#: arches/app/templates/help/arches-designer-help.htm:53
+msgid ""
+"<strong>Resource Models</strong> -  When creating new Resources, a data "
+"entry user must decide which Resource Model to use, determining what "
+"information is collected for the Resource. Think of different Resource "
+"Models as categories of records in your database&mdash;\"Buildings\" vs. "
+"\"Archaeological Sites\" vs. \"Cemeteries\", for example. Every Arches "
+"database must have at least one Resource Model."
 msgstr ""
 
-#: arches/app/datatypes/base.py:208
-msgid "Tile has no authoritative or provisional data"
+#: arches/app/datatypes/base.py:204
+msgid "Multiple provisional edits. Returning first edit"
 msgstr ""
 
 #: arches/app/datatypes/concept_types.py:111
@@ -40,10 +46,51 @@ msgid ""
 " Contact system admin to resolve"
 msgstr ""
 
-#: arches/app/datatypes/concept_types.py:119
-msgid "This is an invalid concept prefLabel, or an incomplete UUID"
-msgstr ""
-
 #: arches/app/datatypes/concept_types.py:127
 msgid "This UUID is not an available concept value"
+msgstr ""
+
+#: arches/app/templates/help/cards-tab-help.htm:58
+#: arches/app/templates/help/cards-tab-help.htm:127
+#: arches/app/templates/views/components/simple-switch.htm:27
+#: arches/app/templates/views/components/widgets/checkbox.htm:33
+#: arches/app/templates/views/components/widgets/concept-select.htm:38
+#: arches/app/templates/views/components/widgets/datepicker.htm:53
+#: arches/app/templates/views/components/widgets/edtf.htm:88
+#: arches/app/templates/views/components/widgets/edtf.htm:91
+#: arches/app/templates/views/components/widgets/number.htm:96
+#: arches/app/templates/views/components/widgets/number.htm:99
+#: arches/app/templates/views/components/widgets/radio-boolean.htm:28
+#: arches/app/templates/views/components/widgets/radio.htm:38
+#: arches/app/templates/views/components/widgets/resource-instance-select.htm:178
+#: arches/app/templates/views/components/widgets/select.htm:43
+#: arches/app/templates/views/components/widgets/switch.htm:27
+#: arches/app/templates/views/components/widgets/text.htm:64
+#: arches/app/templates/views/components/widgets/text.htm:67
+msgid "Default Value"
+msgstr ""
+
+#: arches/app/templates/help/cards-tab-help.htm:87
+msgid ""
+"You can add your own CSS classes to this Card to customize its look and "
+"feel. Define these classes in your project's \"package.css\" file."
+msgstr ""
+
+#: arches/app/templates/help/cards-tab-help.htm:110
+msgid ""
+"Widgets are data entry helpers for each node that collects information; it's"
+" often easier to pick a date from a calendar than to type it in, for "
+"example. Generally, the data type of the node will determine which Widget "
+"template is used. However, in some cases you will have a choice: For "
+"example, in the case of a <code>concept</code> node, you can choose a "
+"dropdown menu or a set of radio buttons. Similarly, for a "
+"<code>string</code> node you can choose a basic text box or a rich text "
+"editor."
+msgstr ""
+
+#: arches/app/templates/help/cards-tab-help.htm:120
+msgid ""
+"The list of available Widgets is determined by the node's data type, though "
+"developers can <a href=\"https://arches.readthedocs.io/en/stable/functions-"
+"widgets-datatypes/#widgets\" target=\"_blank\">create new Widgets</a>."
 msgstr ""

@@ -1,6 +1,4 @@
 # translate a PO file
-# special character like '�' in place of 'é' only occurs with a PO output extension, 
-# they do not appear in the output file if the extension is TXT
 
 import os, re, csv
 from deep_translator import GoogleTranslator
@@ -21,7 +19,6 @@ print("     "+str(len(lines))+" lines to write")
 
 # write PO/TXT
 f_out = open(path_fold+'/translated_out.po', 'w')
-#writer = csv.writer(f_out, quoting=csv.QUOTE_NONE, delimiter=' ', escapechar='\\', lineterminator='\n')
 writer = f_out
 # with indexes
 num_lines = list(range(0,len(lines)))

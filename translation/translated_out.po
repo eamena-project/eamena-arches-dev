@@ -45,7 +45,9 @@ msgstr ""
 
 #: arches/app/datatypes/concept_types.py:119
 msgid "This is an invalid concept prefLabel, or an incomplete UUID"
-msgstr "Il s'agit d'un concept prefLabel non valide ou d'un UUID incomplet"
+msgstr ""
+"THIS MESSAGE HAS ALREADY BEEN TRANSLATED - Il s'agit d'un concept prefLabel "
+"non valide ou d'un UUID incomplet"
 
 #: arches/app/datatypes/concept_types.py:127
 msgid "This UUID is not an available concept value"

@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 
 # translate a PO file
-# special character like '�' in place of 'é' only occurs with a PO output extension, 
-# they do not appear in the output file if the extension is TXT
 
 import os, re, csv, polib, sys
 from deep_translator import GoogleTranslator

@@ -114,8 +114,10 @@ exit
 exit
 # and re-log in with PuTTY                                                      # PuTTY
 
+#login with sudo su for root access
+sudo su
 # create shortcut to activate the Python virtual environment (env)
-cd /home/$user_name
+cd /home/$username
 # edit .bashrc
 vim .bashrc
 # insert  (ESC + I) the following alias at the end of the file:

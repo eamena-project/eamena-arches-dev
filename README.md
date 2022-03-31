@@ -11,7 +11,7 @@
 ---
 
 * [translation](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/translation)
-  - [README](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/translation/Trans.md)
+  - [README](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/translation/README.md)
 
 * [checks](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/check/check.md#checks)
 

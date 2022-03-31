@@ -21,7 +21,8 @@ print("     "+str(len(lines))+" lines to write")
 
 # write PO/TXT
 f_out = open(path_fold+'/translated_out.po', 'w')
-writer = csv.writer(f_out, quoting=csv.QUOTE_NONE, delimiter=' ', escapechar=' ', lineterminator='\n')
+#writer = csv.writer(f_out, quoting=csv.QUOTE_NONE, delimiter=' ', escapechar='\\', lineterminator='\n')
+writer = f_out
 # with indexes
 num_lines = list(range(0,len(lines)))
 print("Write output file")
@@ -32,7 +33,7 @@ for l in num_lines:
     line = lines[l]
     if(line.startswith('msgid')):
     # translate
-        writer.writerow([line])
+        writer.write(line + '\n')
         if(line.startswith('msgid \"\"')):
         # the message has various lines
             ltext_eng = []
@@ -49,7 +50,7 @@ for l in num_lines:
                     text_eng = sub_line
                     text_translated = GoogleTranslator(source='en', target=target_language).translate(text_eng)
                     line_translated = text_translated
-                    writer.writerow([line_translated])
+                    writer.write(line_translated + '\n')
         # to be translated
         text_eng = re.sub('msgid', '', line)
         text_translated = GoogleTranslator(source='en', target=target_language).translate(text_eng)
@@ -60,10 +61,10 @@ for l in num_lines:
             # line_translated = line_translated.rstrip()
             if already_translated == 0:
                 # write if not already translated
-                writer.writerow([line_translated])
+                writer.write(line_translated + '\n')
     elif(not line.startswith('msgstr')):
     # not repeat the first msgtr
-        writer.writerow([line])
+        writer.write(line + '\n')
     elif(bool(re.match('msgstr \"[A-Z]+', line))):
     # msgtr was translated by someone before running this script
-        writer.writerow([line])
+        writer.write(line + '\n')

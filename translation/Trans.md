@@ -4,7 +4,7 @@ Read a portable object (PO) file, use Python *regex* and [deep_translator](https
   
 <p align="center">  
 <a href="https://github.com/eamena-oxford/eamena-arches-dev/blob/main/translation/for_translation_arches-70_djangopo_fr_samp.po">PO file input</a> :arrow_right: 
-<a href="https://github.com/eamena-oxford/eamena-arches-dev/blob/main/translation/translate_1.py">Python file</a> :arrow_right: 
+<a href="https://github.com/eamena-oxford/eamena-arches-dev/blob/main/translation/translate_2.py">Python file</a> :arrow_right: 
 <a href="https://github.com/eamena-oxford/eamena-arches-dev/blob/main/translation/translated_out.po">PO file output</a>
 </p>
 

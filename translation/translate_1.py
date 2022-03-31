@@ -26,7 +26,7 @@ writer = csv.writer(f_out, quoting=csv.QUOTE_NONE, delimiter=' ', escapechar=' '
 num_lines = list(range(0,len(lines)))
 print("Write output file")
 for l in num_lines:
-    if l % 100 == 0:
+    if l % 5 == 0:
         print("     write "+"line "+str(l)+"/"+str(len(lines)))
     already_translated = 0
     line = lines[l]

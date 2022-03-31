@@ -8,9 +8,5 @@ Read a portable object (PO) file, use Python [polib](https://polib.readthedocs.i
 <a href="https://github.com/eamena-oxford/eamena-arches-dev/blob/main/translation/translated_out.po">PO file output</a>
 </p>
 
-## Current issues with the output
-
-- [ ] translate already translated messages
-
 
 

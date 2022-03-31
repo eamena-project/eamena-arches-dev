@@ -9,10 +9,6 @@ from deep_translator.exceptions import NotValidPayload
 target_language = 'fr'
 input_file = 'for_translation_arches-70_djangopo_fr.po'
 output_file = 'translated_out.po'
-# number of maximum lines for a paragraph message
-max_lines = 10
-# one or the other depending on environment
-path_fold = os.getcwd()+'/translation'
 path_fold = os.getcwd()
 
 # read PO

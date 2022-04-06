@@ -263,7 +263,7 @@ python manage.py packages -o import_business_data -s 'eamena-arches-package/busi
 python manage.py packages -o import_business_data -s 'eamena-arches-package/business_data/Heritage Place.jsonl' -ow 'overwrite'
 # ... ~ 1,500 HP = 15 min
 # reindex data
-python manage.py es reindex_database
+python manage.py es index_database
 # ... ~ 1,500 HP = 7 min
 # restart server
 service apache2 restart
@@ -346,7 +346,7 @@ venv
 # check status (active/inactive)
 systemctl status elasticsearch
 # re-index everything in database
-python manage.py es index_database # command 'index_database' instead?
+python manage.py es index_database
 # re-index by resource model
 python manage.py es index_resources_by_type -rt [UUID for Resource Model]
 
@@ -442,6 +442,25 @@ cd /home/$username/$project_name/$project_name                                  
 # 000-default.conf
 cd /etc/apache2/sites-available                                                 # PuTTY
 /etc/apache2/sites-available                                                    # FileZilla
+
+## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+## Issues: index issue
+## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# on RelatedObjectDoesNotExist error ?
+
+# move to the project/ folder                                                   # PuTTY
+cd /home/$username/$project_name
+# activate Python virtual environment (env)
+# ...(env)
+venv
+# delete index
+python manage.py es delete_indexes
+# re-setup index
+python manage.py es setup_indexes
+# re-index
+python manage.py es index_database
+
+
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ## Understanding Python

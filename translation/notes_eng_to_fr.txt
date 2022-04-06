@@ -1,0 +1,15 @@
+# U+00a0 (invisible)
+# modèle de ressource | Modèle de Ressource
+
+chaîne | chaîne de caractères 
+L'ID de fichier | fileid
+graphique | graphe
+céleri | Celery
+vignette | tuile
+fichiers de formes | shapefiles
+Faire en sorte | Gestion
+Avis | Notifications
+La description | Description
+Des modèles | Modèles
+Gens | Personnes
+# 1245 >

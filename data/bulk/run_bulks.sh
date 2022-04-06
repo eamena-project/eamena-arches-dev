@@ -1,7 +1,8 @@
 # SSH to EAMENA DB
 # .. 
-cd /home/$username/$project_name/$project_name/
-mkdir bulk_uploads
+cd /opt/arches/bulk_uploads
+# cd /home/$username/$project_name/$project_name/
+# mkdir bulk_uploads
 
 # change
 # MANAGE="/home/$username/$project_name/manage.py"
@@ -27,15 +28,19 @@ mkdir bulk_uploads
 ...
 
 # move
-cd /home/$username/$project_name/$project_name/bulk_uploads
 # local <-> remote: cd "C:\Users\Thomas Huet\Desktop\EAMENA\IT\bulks\"
-BUFOLD="2021-11-22-b-Bijan"
+# cd /home/$username/$project_name/$project_name/bulk_uploads
+BUFOLD="2022-04-05-Michael"
 # convert
 ./convert $BUFOLD
+# 
+venv
 # yes / no
 cd $BUFOLD/for_import/
 # BUFILE=$(ls | grep 'xlsx') # get all XLSX filenames
-python /$user_name/$project_name/manage.py packages -o import_business_data -s "E35N28_REVISED_BUS_MichaelFradley.json" -ow overwrite
+# python /$user_name/$project_name/manage.py packages -o import_business_data -s "AAA-f29_Kenawi.json" -ow overwrite
+python /opt/arches/eamena/manage.py packages -o import_business_data -s "REVISED-05-04-2022-E35N29_BUS_Michael.json" -ow overwrite
 # summary
-python /$user_name/$project_name/manage.py bu -o summary -s "AAA-f-33_Kenawi.json" | json_pp
+# python /$user_name/$project_name/manage.py bu -o summary -s "AAA-f-33_Kenawi.json" | json_pp
+python /opt/arches/eamena/manage.py bu -o summary -s "REVISED-05-04-2022-E35N29_BUS_Michael.json" | json_pp
 

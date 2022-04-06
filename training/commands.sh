@@ -311,13 +311,13 @@ cd /home/$username/$project_name/$project_name/static/js/views/components
 ln -s cards card_components 
 # change ownership
 sudo chown -R $username:www-data ./card_components
-# move to the project/ folder
-cd /home/$username/$project_name
 # change user
 su archesadmin
 # activate Python virtual environment
-venv
+cd /home/$username/ && source env/bin/activate
 # ... (env)
+# move to the project/ folder
+cd /home/$username/$project_name
 # collect static
 python manage.py collectstatic
 

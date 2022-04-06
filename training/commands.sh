@@ -349,6 +349,7 @@ systemctl status elasticsearch
 python manage.py es index_database
 # re-index by resource model
 python manage.py es index_resources_by_type -rt [UUID for Resource Model]
+# python manage.py es index_resources_by_type -rt [34cfe98e-c2c0-11ea-9026-02e7594ce0a0]
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ## Understanding permissions and ownerships

@@ -30,17 +30,17 @@ cd /opt/arches/bulk_uploads
 # move
 # local <-> remote: cd "C:\Users\Thomas Huet\Desktop\EAMENA\IT\bulks\"
 # cd /home/$username/$project_name/$project_name/bulk_uploads
-BUFOLD="2022-04-05-Michael"
+BUFOLD="2022-04-11-Mohamed"
 # convert
 ./convert $BUFOLD
-# 
+# virtual env
 venv
 # yes / no
 cd $BUFOLD/for_import/
 # BUFILE=$(ls | grep 'xlsx') # get all XLSX filenames
 # python /$user_name/$project_name/manage.py packages -o import_business_data -s "AAA-f29_Kenawi.json" -ow overwrite
-python /opt/arches/eamena/manage.py packages -o import_business_data -s "REVISED-05-04-2022-E35N29_BUS_Michael.json" -ow overwrite
+python /opt/arches/eamena/manage.py packages -o import_business_data -s "AAA-f28_Kenawi.json" -ow overwrite
 # summary
 # python /$user_name/$project_name/manage.py bu -o summary -s "AAA-f-33_Kenawi.json" | json_pp
-python /opt/arches/eamena/manage.py bu -o summary -s "REVISED-05-04-2022-E35N29_BUS_Michael.json" | json_pp
+python /opt/arches/eamena/manage.py bu -o summary -s "E34N28-11_LETTY_corrected.json" | json_pp
 

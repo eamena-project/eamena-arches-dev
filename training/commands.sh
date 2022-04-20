@@ -522,3 +522,38 @@ print(APP_ROOT)
 # ... print the path to the app root = /home/$username/$project_name/$project_name
 
 
+## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+## Export data from Arches v3 - http://levant.eamena.training/
+## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# 34.254.48.177
+
+# following https://arches.readthedocs.io/en/3.1.2/arches-data/ guidelines:
+# mv to Projects-DEP/
+cd /home/ubuntu/Projects-DEP/
+# activate VE
+source ENV/bin/activate
+# mv to Projects-DEP/
+cd /home/ubuntu/Projects-DEP/eamena
+# run export
+python manage.py packages -o export_resources -d EAMENA_data
+# return an error:
+# operation: export_resources
+# package: eamena
+# Traceback (most recent call last):
+#   File "manage.py", line 28, in <module>
+#     execute_from_command_line(sys.argv)
+#   File "/home/ubuntu/Projects-DEP/ENV/lib/python2.7/site-packages/django/core/management/__init__.py", line 399, in execute_from_command_line    
+#     utility.execute()
+#   File "/home/ubuntu/Projects-DEP/ENV/lib/python2.7/site-packages/django/core/management/__init__.py", line 392, in execute
+#     self.fetch_command(subcommand).run_from_argv(self.argv)
+#   File "/home/ubuntu/Projects-DEP/ENV/lib/python2.7/site-packages/django/core/management/base.py", line 242, in run_from_argv
+#     self.execute(*args, **options.__dict__)
+#   File "/home/ubuntu/Projects-DEP/ENV/lib/python2.7/site-packages/django/core/management/base.py", line 285, in execute
+#     output = self.handle(*args, **options)
+#   File "/home/ubuntu/Projects-DEP/ENV/lib/python2.7/site-packages/arches/management/commands/packages.py", line 130, in handle
+#     self.export_resources(package_name, options['dest_dir'])
+#   File "/home/ubuntu/Projects-DEP/ENV/lib/python2.7/site-packages/arches/management/commands/packages.py", line 409, in export_resources
+#     resource_exporter.export(search_results=False, dest_dir=data_dest)
+#   File "/home/ubuntu/Projects-DEP/ENV/lib/python2.7/site-packages/arches/app/utils/data_management/resources/exporter.py", line 34, in export    
+#     self.writer.write_resources(dest_dir)
+# TypeError: write_resources() takes exactly 3 arguments (2 given)

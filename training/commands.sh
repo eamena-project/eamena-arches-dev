@@ -80,9 +80,6 @@ vim install_and_apache_and_load_pkg.sh
 # . / save/write and quit (ESC + :wq + Return) /
 # . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
 
-# check out by printing the first lines of the script
-head -n 20 install_and_apache_and_load_pkg.sh
-
 # running the install script
 source ./install_and_apache_and_load_pkg.sh
 # ... ~ 8-10 minutes to install
@@ -115,7 +112,7 @@ exit
 # and re-log in with PuTTY                                                      # PuTTY
 
 # create shortcut to activate the Python virtual environment (env)
-cd /home/$user_name
+cd /home/$username
 # edit .bashrc
 vim .bashrc
 # insert  (ESC + I) the following alias at the end of the file:

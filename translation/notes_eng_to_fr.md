@@ -1,5 +1,9 @@
-# U+00a0 (invisible)
-# modèle de ressource | Modèle de Ressource
+# en -> ar
+
+# en -> fr
+> U+00a0 (invisible)
+> concepteur de graphes | Graph Designer
+> \"Sans titre\" | \"Untitled\"
 
 chaîne | chaîne de caractères 
 L'ID de fichier | fileid
@@ -12,4 +16,8 @@ Avis | Notifications
 La description | Description
 Des modèles | Modèles
 Gens | Personnes
-# 1245 >
+graphiques | graphes
+graphique | graphe
+modèle de ressource | Modèle de ressource
+
+> 1245

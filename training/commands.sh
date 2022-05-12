@@ -42,9 +42,9 @@ service $servicename status   # check status (active/inactive)
 
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-## Connect via SSH
+## Connect via PuTTY (SSH)
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# connect via Windows command, PowerShell terminal, etc.                        # PowerShell
+# connect via Windows command, PowerShell terminal (CLI), etc.                  # CLI
 
 # mv to the folder containing the private keys
 cd 'C:\Users\Thomas Huet\Desktop\EAMENA\IT\keys'
@@ -54,7 +54,7 @@ ssh -i PalestineMasdarII.pem ubuntu@34.242.117.242
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ## Prerequisites and Arches/EAMENA install
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# Project specifications, Arches dabatabase and EAMENA package install          # PuTTY
+# Project specifications, Arches dabatabase and EAMENA package install          # SSH
 
 # move to home/ directory
 cd /home
@@ -91,7 +91,7 @@ mv install_and_apache_and_load_pkg.sh /home/archesadmin/arches/arches/app/functi
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ## Use of environment variables
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# add 'permanent' environment variables                                         # PuTTY
+# add 'permanent' environment variables                                         # SSH
 
 # move to etc/ folder
 cd /etc
@@ -109,7 +109,7 @@ export username="archesadmin"
 exit
 # need to exit for Linux to update the new variables
 exit
-# and re-log in with PuTTY                                                      # PuTTY
+# and re-log in with SSH                                                      # SSH
 
 # create shortcut to activate the Python virtual environment (env)
 cd /home/$username
@@ -136,7 +136,7 @@ venv
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # create directory, copy file, change permissions
 
-# move to the .ssh/ folder                                                      # PuTTY
+# move to the .ssh/ folder                                                      # SSH
 cd ~/.ssh
 # see current permissions of SSH authorized keys
 ls -l
@@ -163,7 +163,7 @@ ls -al
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # import the EAMENA package, add business data into the business_data/ folder
 
-# switch to su                                                                  # PuTTY
+# switch to su                                                                  # SSH
 sudo su
 # activate Python virtual environment (env)
 venv
@@ -176,13 +176,16 @@ git clone https://github.com/eamena-oxford/eamena-arches-package.git
 sudo chown -R $username:root ./eamena-arches-package
 # mv to the business_data/ folder
 cd eamena-arches-package/business_data
-# in Filezilla                                                                  # FileZilla
+# in FileZilla                                                                  # STFP-SSH
 # mv to /home/$username/$project_name/eamena-arches-package/business_data
 # and upload from your local site to your server:
 #   - Grid Square.jsonl
 #   - Organization.jsonl
 #   - Heritage Place.jsonl
-# in PuTTY                                                                      # PuTTY
+# modify the cardinality of different Resource Models (Cards) to 'Allow Multiple Value':
+#   - Person/Organisation > ACTOR ID
+#   - 
+# in PuTTY                                                                      # SSH
 # move to the project/ folder
 cd /home/$username/$project_name
 # load package
@@ -213,7 +216,7 @@ cd eamena
 # check out if the dataset is here by listing
 ls
 # ... 'Heritage Place.csv' ...
-# if not, add it here with FileZilla
+# if not, add it here with FileZilla (STFP-SSH)
 # nb in this file 'resourceid' field should be renamed 'ResourceID'
 # run the script
 python manage.py ids_to_json -s /opt/arches/eamena/'Heritage Place.csv'
@@ -226,7 +229,7 @@ mv ./json_records.jsonl ./'Heritage Place.jsonl'
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # Add business data into the package
 
-# do as superuser                                                               # PuTTY
+# do as superuser                                                               # SSH
 sudo su
 # move to archesadmin user folder & activate Python virtual environment (env)
 cd /home/$username/ && source env/bin/activate
@@ -235,24 +238,30 @@ cd /home/$username/ && source env/bin/activate
 cd $project_name
 
 # Arches Card Designer                                                          # Arches
+# error: TileCardinalityError
+# - - - - - - - - - - - - - - - 
 # Authorise mutiple values to these field to fit the model with the data 
 # by changing the cardinality of Cards, 'Allows Multiple Values' to these fields  
 # RM > Person/organization > Card > 
 #   > ACTOR ID
-# RM > Grid Square
+# error: TileValidationError
+# by adding a default value
+# RM > Person/organization > Card > 
+#   > Actor/Investigator
+# - - - - - - - - - - - - - - - 
+# error: TileCardinalityError
+# RM > Grid Square > Card >
 #   > Geometry Place Expression
+# - - - - - - - - - - - - - - - 
+# error: TileCardinalityError
 # RM > HP > Card > 
 #   > Bedrock Geology 
 #   > Priority Assignment
 #   > Detailed Condition Assessments
 
-# - - - - - - - - - - -
-# ERROR need value
-# by adding a default vale
-# RM > Person/organization > Card > 
-#   > Actor/Investigator
 
-# import business data                                                          # PuTTY
+
+# import business data                                                          # SSH
 python manage.py packages -o import_business_data -s 'eamena-arches-package/business_data/Organization.jsonl' -ow 'overwrite'
 # ...
 python manage.py packages -o import_business_data -s 'eamena-arches-package/business_data/Grid Square.jsonl' -ow 'overwrite'
@@ -282,17 +291,17 @@ mv ./card_components ./cards
 cd /home/$username/$project_name/$project_name/templates/views/components/cards
 curl -O https://raw.githubusercontent.com/eamena-oxford/eamena-arches-5-project/master/eamena/pkg/extensions/card_components/eamena-default-card/eamena-default-card.htm
 # ... eamena-default-card.htm, and change ownership & permission
-sudo chown -R $username:$username ./eamena-default-card.htm && chmod 644 ./eamena-default-card.htm
+chown -R $username:$username ./eamena-default-card.htm && chmod 644 ./eamena-default-card.htm
 # JS related file in media/
 cd /home/$username/$project_name/$project_name/media/js/views/components/card_components
 curl -O https://raw.githubusercontent.com/eamena-oxford/eamena-arches-5-project/master/eamena/pkg/extensions/card_components/eamena-default-card/eamena-default-card.js
 # ... eamena-default-card.js, and change ownership & permission
-sudo chown -R $username:$username ./eamena-default-card.js && chmod 644 ./eamena-default-card.js
+chown -R $username:$username ./eamena-default-card.js && chmod 644 ./eamena-default-card.js
 # JSON related file in $project_name/
 cd /home/$username/$project_name/$project_name
 curl -O https://raw.githubusercontent.com/eamena-oxford/eamena-arches-5-project/master/eamena/card_components
 # ... eamena-default-card.json, and change ownership & permission
-sudo chown -R $username:$username ./card_components && chmod 644 ./card_components
+chown -R $username:$username ./card_components && chmod 644 ./card_components
 
 # move to card_components/
 cd /home/$username/$project_name/$project_name/media/js/views/components/card_components
@@ -371,23 +380,23 @@ su $username
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # move to the root of the project (= Python APP_ROOT variable)
-cd /home/$username/$project_name/$project_name                                  # PuTTY
-# In FileZilla, replace $username and $project_name by the variable values
-/home/$username/$project_name/$project_name                                     # FileZilla
+cd /home/$username/$project_name/$project_name                                  # SSH
+# In STFP-SSH, replace $username and $project_name by the variable values
+/home/$username/$project_name/$project_name                                     # STFP-SSH
 
 # move to the templates/ project folder
-/home/$username/$project_name/$project_name/templates                           # FileZilla
-# In FileZilla, replace $username and $project_name by the variable values
-cd /home/$username/$project_name/$project_name/templates                        # PuTTY
+/home/$username/$project_name/$project_name/templates                           # STFP-SSH
+# In STFP-SSH, replace $username and $project_name by the variable values
+cd /home/$username/$project_name/$project_name/templates                        # SSH
 
 # move to the landing/ project folder
-/home/$username/$project_name/$project_name/static/img/landing                  # FileZilla
-# In FileZilla, replace $username and $project_name by the variable values
-cd /home/$username/$project_name/$project_name/static/img/landing               # PuTTY
+/home/$username/$project_name/$project_name/static/img/landing                  # STFP-SSH
+# In STFP-SSH, replace $username and $project_name by the variable values
+cd /home/$username/$project_name/$project_name/static/img/landing               # SSH
 
 # move to the sites-available/ folder
-/etc/apache2/sites-available                                                    # FileZilla
-cd /etc/apache2/sites-available                                                 # PuTTY
+/etc/apache2/sites-available                                                    # STFP-SSH
+cd /etc/apache2/sites-available                                                 # SSH
 
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -395,14 +404,14 @@ cd /etc/apache2/sites-available                                                 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # delete resources with Python shell
 
-# move to the project/ folder                                                   # PuTTY
+# move to the project/ folder                                                   # SSH
 cd /home/$username/$project_name
 # activate Python virtual environment (env)
 # ...(env)
 venv
 # run Python
 python manage.py shell
-# ... Python 3.8.10 (default, Nov 26 2021, 20:14:08)                            # PuTTY / Python
+# ... Python 3.8.10 (default, Nov 26 2021, 20:14:08)                            # SSH / Python
 # ... [GCC 9.3.0] on linux
 # ... Type "help", "copyright", "credits" or "license" for more information.
 # ... >>>
@@ -435,19 +444,19 @@ python manage.py es index_database
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 # settings.py and settings_local.py
-cd /home/$username/$project_name/$project_name                                  # PuTTY
-/home/$username/$project_name/$project_name                                     # FileZilla
+cd /home/$username/$project_name/$project_name                                  # SSH
+/home/$username/$project_name/$project_name                                     # STFP-SSH
 
 # 000-default.conf
-cd /etc/apache2/sites-available                                                 # PuTTY
-/etc/apache2/sites-available                                                    # FileZilla
+cd /etc/apache2/sites-available                                                 # SSH
+/etc/apache2/sites-available                                                    # STFP-SSH
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ## Issues: index issue
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # on RelatedObjectDoesNotExist error ?
 
-# move to the project/ folder                                                   # PuTTY
+# move to the project/ folder                                                   # SSH
 cd /home/$username/$project_name
 # activate Python virtual environment (env)
 # ...(env)
@@ -464,7 +473,7 @@ python manage.py es index_database
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ## Understanding Python
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# run Python                                                                    # PuTTY
+# run Python                                                                    # SSH
 
 # move to archesadmin user folder
 cd /home/$username/
@@ -475,7 +484,7 @@ source env/bin/activate
 cd $project_name/$project_name
 # run Python
 python
-# ... Python 3.8.10 (default, Nov 26 2021, 20:14:08)                            # PuTTY / Python
+# ... Python 3.8.10 (default, Nov 26 2021, 20:14:08)                            # SSH / Python
 # ... [GCC 9.3.0] on linux
 # ... Type "help", "copyright", "credits" or "license" for more information.
 # ... >>>
@@ -488,9 +497,7 @@ os.getcwd()
 
 # exit Python
 exit()
-# ... back to shell                                                             # PuTTY
-
-
+# ... back to shell                                                             # SSH
 
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ## Understanding APP_ROOT
@@ -506,7 +513,7 @@ source env/bin/activate
 cd $project_name/$project_name
 # run Python
 python
-# ... Python 3.8.10 (default, Nov 26 2021, 20:14:08)                            # PuTTY / Python
+# ... Python 3.8.10 (default, Nov 26 2021, 20:14:08)                            # SSH / Python
 # ... [GCC 9.3.0] on linux
 # ... Type "help", "copyright", "credits" or "license" for more information.
 # ... >>>

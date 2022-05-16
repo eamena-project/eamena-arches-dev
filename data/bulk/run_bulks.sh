@@ -43,5 +43,5 @@ cd $BUFOLD/for_import/
 python /opt/arches/eamena/manage.py packages -o import_business_data -s "AAA-f27_Kenawi.json" -ow overwrite
 # summary
 # python /$user_name/$project_name/manage.py bu -o summary -s "AAA-f-33_Kenawi.json" | json_pp
-python /opt/arches/eamena/manage.py bu -o summary -s "E34N28-11_LETTY_corrected.json" | json_pp
+python /opt/arches/eamena/manage.py bu -o summary -s "AAA-f27_Kenawi.json" | json_pp
 

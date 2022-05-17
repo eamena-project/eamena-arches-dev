@@ -1,26 +1,25 @@
 
 # Describe the bug
 
-## Blinking image
-
-Two images appear in the Iformation Resource (IR) Report: the header image and the thumbnail (below). The header image doesn't display well and is replaced by a 'PHOTO NOT AVAILABLE' picture 
+In Information Resource (IR) Report, the header image (top, red arrow) doesn't display well, appears briefly, disappears and is replaced by a 'PHOTO NOT AVAILABLE' picture. The thumbnail image (below, blue arrow)
 
 * example:
-  - IR = bf28db92-47fc-41aa-86d3-5b10f2479ae9 
-  - https://database.eamena.org/en/report/bf28db92-47fc-41aa-86d3-5b10f2479ae9 
+  - UUID IR = 7ff02e1c-cacb-4b44-b7c5-31570df7f53b
+  - https://database.eamena.org/en/report/7ff02e1c-cacb-4b44-b7c5-31570df7f53b
 
+![](err_img.png)
+
+see all the IR having this problem: https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/images/data-1652712944340.md
 ## Uploading
 
 When uploading an image to an IR, this images goes to `https://eamena-media.s3.eu-west-2.amazonaws.com/uploadedfiles/` but the image path in the Report is `APP_ROOT/files/name_of_the_image`
 
 * example:
-  - 062e337f-60ec-4240-9ccc-93874baa2c2b
+  - UUID IR: 062e337f-60ec-4240-9ccc-93874baa2c2b
   - https://database.eamena.org/en/report/062e337f-60ec-4240-9ccc-93874baa2c2b
   - https://eamena-media.s3.eu-west-2.amazonaws.com/uploadedfiles/test_img.jpg
 
 # Pg
-
-c712066a-8094-11ea-a6a6-02e7594ce0a0
 
 ## Query
 
@@ -36,7 +35,7 @@ limit 10
 
 ### image link is OK
 
-IR = 07b8ecdd-21d3-44d4-b1f1-0f0271e29310
+UUID IR = 07b8ecdd-21d3-44d4-b1f1-0f0271e29310
 https://database.eamena.org/en/report/07b8ecdd-21d3-44d4-b1f1-0f0271e29310
 
 **SQL**
@@ -68,7 +67,7 @@ and tiledata::jsonb ?| array['c712066a-8094-11ea-a6a6-02e7594ce0a0']
 ```
 ### image link is broken
 
-IR = 062e337f-60ec-4240-9ccc-93874baa2c2b
+UUID IR = 062e337f-60ec-4240-9ccc-93874baa2c2b
 https://database.eamena.org/en/report/062e337f-60ec-4240-9ccc-93874baa2c2b
 
 **SQL**

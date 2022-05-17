@@ -15,9 +15,10 @@ see all the IR having this problem: https://raw.githubusercontent.com/eamena-oxf
 When uploading an image to an IR, this images goes to `https://eamena-media.s3.eu-west-2.amazonaws.com/uploadedfiles/` but the image path in the Report is `APP_ROOT/files/name_of_the_image`
 
 * example:
-  - UUID IR: 062e337f-60ec-4240-9ccc-93874baa2c2b
-  - https://database.eamena.org/en/report/062e337f-60ec-4240-9ccc-93874baa2c2b
-  - https://eamena-media.s3.eu-west-2.amazonaws.com/uploadedfiles/test_img.jpg
+
+  - UUID IR: 062e337f-60ec-4240-9ccc-93874baa2c2b  
+  - https://database.eamena.org/en/report/  062e337f-60ec-4240-9ccc-93874baa2c2b  
+  - https://eamena-media.s3.eu-west-2.amazonaws.com/uploadedfiles/test_img.jpg  
 
 # Pg
 
@@ -35,8 +36,10 @@ limit 10
 
 ### image link is OK
 
-UUID IR = 07b8ecdd-21d3-44d4-b1f1-0f0271e29310
-https://database.eamena.org/en/report/07b8ecdd-21d3-44d4-b1f1-0f0271e29310
+* example:
+
+  - UUID IR = 07b8ecdd-21d3-44d4-b1f1-0f0271e29310  
+  - https://database.eamena.org/en/report/07b8ecdd-21d3-44d4-b1f1-0f0271e29310
 
 **SQL**
 ```
@@ -67,8 +70,10 @@ and tiledata::jsonb ?| array['c712066a-8094-11ea-a6a6-02e7594ce0a0']
 ```
 ### image link is broken
 
-UUID IR = 062e337f-60ec-4240-9ccc-93874baa2c2b
-https://database.eamena.org/en/report/062e337f-60ec-4240-9ccc-93874baa2c2b
+* example:
+
+  - UUID IR = 062e337f-60ec-4240-9ccc-93874baa2c2b
+  - https://database.eamena.org/en/report/062e337f-60ec-4240-9ccc-93874baa2c2b
 
 **SQL**
 ```

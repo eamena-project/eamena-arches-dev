@@ -6,21 +6,6 @@
 > \"Sans titre\" | \"Untitled\"
 > 'Carte' c'est un formulaire?
 > 'model' et 'template' sont traduits par 1 meme mot: modèle
+Line numbers refer to https://docs.google.com/spreadsheets/d/1hoBuv6rZFfXp1ioocJrthxcLH-UM85xgfCV8g38u1Eo/edit?pli=1#gid=1318607822
 
-chaîne | chaîne de caractères 
-L'ID de fichier | fileid
-graphique | graphe
-céleri | Celery
-vignette | tuile
-fichiers de formes | shapefiles
-Faire en sorte | Gestion
-Avis | Notifications
-La description | Description
-Des modèles | Modèles
-Gens | Personnes
-graphiques | graphes
-graphique | graphe
-arborescence graphe | arborescence du graphe
-modèle de ressource | Modèle de ressource
-
-> 1530
+> 279

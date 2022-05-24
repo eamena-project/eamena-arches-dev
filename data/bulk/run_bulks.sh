@@ -1,6 +1,5 @@
 # SSH to EAMENA DB as arches user or super user
 # .. 
-cd /opt/arches/bulk_uploads
 # cd /home/$username/$project_name/$project_name/
 # mkdir bulk_uploads
 
@@ -31,8 +30,8 @@ cd /opt/arches/bulk_uploads
 # local <-> remote: cd "C:\Users\Thomas Huet\Desktop\EAMENA\IT\bulks\"
 cd /opt/arches/bulk_uploads
 # cd /home/$username/$project_name/$project_name/bulk_uploads
-BUFOLD="2022-05-20-Michael"
-# convert
+BUFOLD="2022-05-24-Michael"
+# convert (call 'python manage.py bu -w strict -o validate -g 34cfe98e-c2c0-11ea-9026-02e7594ce0a0 -s "$f" | json_pp')
 ./convert $BUFOLD
 # virtual env
 venv
@@ -40,7 +39,7 @@ venv
 cd $BUFOLD/for_import/
 # BUFILE=$(ls | grep 'xlsx') # get all XLSX filenames
 # python /$user_name/$project_name/manage.py packages -o import_business_data -s "AAA-f29_Kenawi.json" -ow overwrite
-python /opt/arches/eamena/manage.py packages -o import_business_data -s "REVISED_E44N28N29_BUS_Michael_edit.json" -ow overwrite
+python /opt/arches/eamena/manage.py packages -o import_business_data -s "REVISED_2022-05-23_Iraq-Grids_BUS.json" -ow overwrite
 # summary
 # python /$user_name/$project_name/manage.py bu -o summary -s "AAA-f-33_Kenawi.json" | json_pp
 python /opt/arches/eamena/manage.py bu -o summary -s "AAA-f27_Kenawi.json" | json_pp

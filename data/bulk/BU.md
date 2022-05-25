@@ -8,6 +8,10 @@ A Bulk Upload is a process allowing to upload **several XLSX files contained in 
     <em>The folder `2021-11-22-B-BIJAN` contains two XLSX files</em>
 </p>
 
+## BU file
+
+The updated version of the BU file is here:
+https://drive.google.com/file/d/1KtZlCB_mdTOPxh1DpFdfeXddjJLTvF1k/view?usp=sharing
 
 ## BU process
 > step-by-step BU procedure from the user-side

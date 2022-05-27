@@ -4,9 +4,7 @@ QDGC
 
 This project supports the production and distribution of QDGC files. It provides a setup which allows for swift production of spatial data within a PostGIS database. It also provides tools to pull data off from the online database and into a geopackage file for distribution.
 
-You will find tools and relevant templates in the following folder:
-
-- **scripts** to produce PostGreSQL/PostGIS functions to create grids
+You will find tools and relevant templates in the folder [scripts](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/data/grids/qdgc_/scripts) to produce PostGreSQL/PostGIS functions to create grids (with Psql and PL/Python)
 
 ## Initialise a PostGIS database and a spatial table
 

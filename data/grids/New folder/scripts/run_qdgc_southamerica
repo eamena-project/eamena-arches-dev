@@ -1,0 +1,9 @@
+select qdgc_fillqdgc('Chile',7,1);
+select qdgc_fillqdgc('Peru',7,0);
+select qdgc_fillqdgc('Suriname',7,0);
+select qdgc_fillqdgc('Argentina',7,0);
+select qdgc_fillqdgc('Ecuador',7,0);
+select qdgc_fillqdgc('Peru',7,0);
+select qdgc_fillqdgc('Uruguay',7,0);
+select qdgc_fillqdgc('Bolivia',7,0);
+select qdgc_fillqdgc('Brazil',7,0);

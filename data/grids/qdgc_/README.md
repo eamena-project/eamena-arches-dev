@@ -25,14 +25,16 @@ run a SQL command: `select qdgc_fillqdgc(`*'country_name',level,conseq*`);`
   
 eg. `select qdgc_fillqdgc('Afghanistan',2,0);`
 
-* *country_name*
-
+* *country_name*  
+  
 eg. Afghanistan
 
-* *level* 
+* *level*  
+  
 [1-5]: 5 is the maximum QDGC level you want to produce. 1 means the produced table `tbl_qdgc` will be emptied before you run it. 
 
-* *conseg*
+* *conseg*  
+  
 If you want to do several consequtive queries the next queries will have to carry the argument 0.
 
 - `select qdgc_fillqdgc('Uganda',5,1);`

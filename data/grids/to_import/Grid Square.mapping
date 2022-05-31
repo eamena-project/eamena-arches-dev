@@ -1,0 +1,20 @@
+{
+    "resource_model_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+    "resource_model_name": "Grid Square",
+    "nodes": [
+        {
+            "arches_nodeid": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+            "arches_node_name": "Grid ID",
+            "file_field_name": "Grid ID",
+            "data_type": "string",
+            "export": true
+        },
+        {
+            "arches_nodeid": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+            "arches_node_name": "Grid Square Geometric Place Expression",
+            "file_field_name": "Grid Square Geometric Place Expression",
+            "data_type": "geojson-feature-collection",
+            "export": true
+        }
+    ]
+}

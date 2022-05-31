@@ -111,6 +111,8 @@ exit
 exit
 # and re-log in with SSH                                                      # SSH
 
+#login with sudo su for root access
+sudo su
 # create shortcut to activate the Python virtual environment (env)
 cd /home/$username
 # edit .bashrc

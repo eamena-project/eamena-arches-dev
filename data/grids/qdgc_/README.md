@@ -21,7 +21,7 @@ Run the following scripts in a PostGIS database version 3.1 or above from the qu
 
 ## Calculate the grid
 
-run a SQL command: `select qdgc_fillqdgc(`*'country_name',level,conseq*`);`
+run a SQL command: `select qdgc_fillqdgc(`'*country_name*',*level*,*conseq*`);`
   
 eg. `select qdgc_fillqdgc('Afghanistan',2,0);`
 
@@ -31,15 +31,11 @@ eg. Afghanistan
 
 * *level*  
   
-[1-5]: 5 is the maximum QDGC level you want to produce. 1 means the produced table `tbl_qdgc` will be emptied before you run it. 
+[1-5]: 1 means the produced table `tbl_qdgc` will be emptied before you run it. 2 is the scaled used by the [EAMENA DB](https://database.eamena.org/en/). 5 is the maximum QDGC level you want to produce.
 
 * *conseg*  
   
-If you want to do several consequtive queries the next queries will have to carry the argument 0.
-
-- `select qdgc_fillqdgc('Uganda',5,1);`
-- `select qdgc_fillqdgc('Tanzania',5,0);`
-- `select qdgc_fillqdgc('Kenya',5,0);`
+If you want to do several consecutive queries the next queries will have to carry the argument 0.
 
 # Creator notes
 

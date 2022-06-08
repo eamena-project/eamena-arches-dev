@@ -21,5 +21,6 @@ Host this GeoJSON file on GitHub, for example in the `https://github.com/eamena-
 
 5. **Visualise the map**  
 In your web browser, access the GeoJSON file directly by its URL, for example https://github.com/eamena-oxford/eamena-arches-dev/blob/main/data/geojson/caravanserail.geojson.
-
+  
+![](../../www/geojson-github.png)
 

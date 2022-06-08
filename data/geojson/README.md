@@ -28,7 +28,7 @@ In your web browser, access the GeoJSON file directly by its URL, for example ht
 
 ### Get GeoJSON geometries
 
-Go to https://geojson.io/, use the geocoder, draw a POINT, LINE or a POLYGON, copy the JSON geometry (GeoJSON) (in green) and paste it into a new `.geosjon` file
+Go to https://geojson.io/, use the geocoder, draw a POINT, LINE or a POLYGON (in green), copy the JSON geometry (in red) and paste it into a new `.geosjon` file
 
 ![](../../www/geojson-io.png)
 

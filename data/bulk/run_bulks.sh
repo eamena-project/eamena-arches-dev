@@ -33,7 +33,7 @@ cd /opt/arches/bulk_uploads
 BUFOLD="2002-05-27-Mohammed"
 # convert (call 'python manage.py bu -w strict -o validate -g 34cfe98e-c2c0-11ea-9026-02e7594ce0a0 -s "$f" | json_pp')
 ./convert $BUFOLD
-# virtual env
+# virtual env (source env/bin/activate)
 venv
 # yes / no
 cd $BUFOLD/for_import/

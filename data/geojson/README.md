@@ -1,7 +1,7 @@
 # Visualise the result of a EAMENA search on GitHub
 
 Use [EAMENA](https://database.eamena.org/) to create new resource maps hosted on GitHub.
-## Workflow
+## Simple GeoJSON Workflow
 
 1. **EAMENA search**  
 On EAMENA, search for the resources, select Download and copy the geojson url (in green) to the clipboard.
@@ -23,6 +23,12 @@ Host this GeoJSON file on GitHub, for example in the `https://github.com/eamena-
 In your web browser, access the GeoJSON file directly by its URL, for example https://github.com/eamena-oxford/eamena-arches-dev/blob/main/data/geojson/caravanserail.geojson.
   
 ![](../../www/geojson-github.png)
+
+## GeoJSON -> leaflet with R Workflow
+
+After 1., 2., 3. and 4. previous steps, run the R script https://github.com/eamena-oxford/eamena-arches-dev/blob/main/functions/map_geojson.R will create a HTML file, for example: https://eamena-oxford.github.io/eamena-arches-dev/data/geojson/maps/caravanserail
+
+![](../../www/geojson-r-leaflet.png)
 
 ## Other
 

@@ -1,6 +1,6 @@
 # Visualise the result of a EAMENA search on GitHub
 
-Use [EAMENA] (https://database.eamena.org/) to create new resource maps hosted on GitHub.
+Use [EAMENA](https://database.eamena.org/) to create new resource maps hosted on GitHub.
 ## Workflow
 
 1. **EAMENA search**  

@@ -31,34 +31,28 @@ ea.map <- leaflet(data = ea.search) %>%
     opacity = .8) %>%
   addLayersControl(
     baseGroups = c("Ortho", "OSM"),
-    position = "topright"
-  ) %>%
+    position = "topright") %>%
   addScaleBar(position = "bottomright")
+# ea.map
+saveWidget(ea.map, map.name.out)
 
 if(highlight){
-  ea.map <- ea.map %>%
+  map.name.out.zoom <- paste0(getwd(), "/data/geojson/maps/", map.name, "_zoom.html")
+  ea.map.zoom <- ea.map %>%
     addCircleMarkers(
       lng = ea.search[ea.highlights.row, ]@coords[1],
       lat = ea.search[ea.highlights.row, ]@coords[2],
       weight = 1,
       radius = 4,
-      popup = ~lbl,
-      label = ~EAMENA.ID,
+      label = ea.search@data[ea.highlights.row, "EAMENA.ID"],
       color = "red",
       fillOpacity = 1,
       opacity = 1) %>%
-    addPopups(lng = ea.search[ea.highlights.row, ]@coords[1],
-              lat = ea.search[ea.highlights.row, ]@coords[2],
-              popup = ea.search[ea.highlights.row, "EAMENA.ID"],
-              options = popupOptions(closeButton = FALSE))
+    setView(lng = ea.search[ea.highlights.row, ]@coords[1],
+                                    lat = ea.search[ea.highlights.row, ]@coords[2],
+                                    zoom = 17)
 }
-# ea.map
-saveWidget(ea.map, map.name.out)
-
-ea.map.zoom <- ea.map %>% setView(lng = ea.search[ea.highlights.row, ]@coords[1],
-                                  lat = ea.search[ea.highlights.row, ]@coords[2],
-                                  zoom = 17)
-# ea.map
-saveWidget(ea.map, map.name.out.zoom)
+# ea.map.zoom
+saveWidget(ea.map.zoom, map.name.out.zoom)
 
 

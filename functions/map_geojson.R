@@ -17,8 +17,8 @@ ea.highlights.row <- as.integer(row.names(ea.search[ea.search@data$EAMENA.ID %in
 #            file = paste0(getwd(),"/functions/list_HP_fields_for_R.tsv"),
 #            row.names = F)
 ea.search$lbl <- paste0("<b>", ea.search$EAMENA.ID,"</b><br>",
-                        ea.search$Site.Feature.Interpretation.Type, " (", ea.search$Cultural.Period.Type, ")"),
-                        ea.search$Administrative.Division., ", ", ea.search$Country.Type, "<br>"
+                        ea.search$Site.Feature.Interpretation.Type, " (", ea.search$Cultural.Period.Type, ")",
+                        ea.search$Administrative.Division., ", ", ea.search$Country.Type, "<br>")
 ea.map <- leaflet(data = ea.search) %>%
   addProviderTiles(providers$"Esri.WorldImagery", group = "Ortho") %>%
   addProviderTiles(providers$"OpenStreetMap", group = "OSM") %>%
@@ -54,5 +54,11 @@ if(highlight){
 }
 # ea.map
 saveWidget(ea.map, map.name.out)
+
+ea.map.zoom <- ea.map %>% setView(lng = ea.search[ea.highlights.row, ]@coords[1],
+                                  lat = ea.search[ea.highlights.row, ]@coords[2],
+                                  zoom = 17)
+# ea.map
+saveWidget(ea.map, map.name.out.zoom)
 
 

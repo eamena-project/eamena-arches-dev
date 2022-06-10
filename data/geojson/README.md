@@ -1,6 +1,6 @@
 # Visualise the result of a EAMENA search on GitHub
 
-Use [EAMENA](https://database.eamena.org/) to create new resource maps hosted on GitHub.
+Use [EAMENA](https://database.eamena.org/) to create new resource maps hosted on GitHub and [shine a light on your work](https://github.com/eamena-oxford/reveal.js#shine-a-light-on-your-work)
 ## Simple GeoJSON Workflow
 
 1. **EAMENA search**  

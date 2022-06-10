@@ -8,12 +8,17 @@ map.root <- "https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/m
 map.name.out <- paste0(getwd(), "/data/geojson/maps/", map.name, ".html")
 map.url <- paste0(map.root, map.name, map.format)
 ea.search <- rgdal::readOGR(map.url)
+# highlight some HP
+highlight <- TRUE
+ea.highlights.idf <- c('EAMENA-0192700')
+ea.highlights.row <- as.integer(row.names(ea.search[ea.search@data$EAMENA.ID %in% ea.highlights.idf, ]))
 # write.table(colnames(ea.search@data),
 #            sep = "\t",
 #            file = paste0(getwd(),"/functions/list_HP_fields_for_R.tsv"),
 #            row.names = F)
-ea.search$lbl <- paste0("<b>", ea.search$EAMENA.ID," - ", ea.search$Administrative.Division., ", ", ea.search$Country.Type, "</b><br>",
-                        ea.search$Site.Feature.Interpretation.Type, " (", ea.search$Cultural.Period.Type, ")")
+ea.search$lbl <- paste0("<b>", ea.search$EAMENA.ID,"</b><br>",
+                        ea.search$Site.Feature.Interpretation.Type, " (", ea.search$Cultural.Period.Type, ")"),
+                        ea.search$Administrative.Division., ", ", ea.search$Country.Type, "<br>"
 ea.map <- leaflet(data = ea.search) %>%
   addProviderTiles(providers$"Esri.WorldImagery", group = "Ortho") %>%
   addProviderTiles(providers$"OpenStreetMap", group = "OSM") %>%
@@ -26,19 +31,28 @@ ea.map <- leaflet(data = ea.search) %>%
     opacity = .8) %>%
   addLayersControl(
     baseGroups = c("Ortho", "OSM"),
-    position = "topleft"
+    position = "topright"
   ) %>%
-  addCircleMarkers(
-    lng = ea.search[1, ]@coords[1],
-    lat = ea.search[1, ]@coords[2],
-    weight = 1,
-    radius = 4,
-    popup = ~lbl,
-    label = ~EAMENA.ID,
-    color = "red",
-    fillOpacity = 1,
-    opacity = 1)
+  addScaleBar(position = "bottomright")
 
+if(highlight){
+  ea.map <- ea.map %>%
+    addCircleMarkers(
+      lng = ea.search[ea.highlights.row, ]@coords[1],
+      lat = ea.search[ea.highlights.row, ]@coords[2],
+      weight = 1,
+      radius = 4,
+      popup = ~lbl,
+      label = ~EAMENA.ID,
+      color = "red",
+      fillOpacity = 1,
+      opacity = 1) %>%
+    addPopups(lng = ea.search[ea.highlights.row, ]@coords[1],
+              lat = ea.search[ea.highlights.row, ]@coords[2],
+              popup = ea.search[ea.highlights.row, "EAMENA.ID"],
+              options = popupOptions(closeButton = FALSE))
+}
+# ea.map
 saveWidget(ea.map, map.name.out)
 
 

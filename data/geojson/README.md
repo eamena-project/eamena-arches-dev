@@ -30,6 +30,16 @@ After 1., 2., 3. and 4. previous steps, run the R script https://github.com/eame
 
 ![](../../www/geojson-r-leaflet.png)
 
+### Marker labels
+
+Marker labels are calculated on these fields: https://github.com/eamena-oxford/eamena-arches-dev/blob/main/functions/list_HP_fields_for_R.tsv. For example
+
+```
+ea.search$lbl <- paste0("<b>", ea.search$EAMENA.ID," - ", ea.search$Administrative.Division., ", ", ea.search$Country.Type, "</b><br>",
+                        ea.search$Site.Feature.Interpretation.Type, " (", ea.search$Cultural.Period.Type, ")")
+```
+
+
 ## Other
 
 ### Get GeoJSON geometries

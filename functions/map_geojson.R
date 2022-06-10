@@ -8,7 +8,10 @@ map.root <- "https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/m
 map.name.out <- paste0(getwd(), "/data/geojson/maps/", map.name, ".html")
 map.url <- paste0(map.root, map.name, map.format)
 ea.search <- rgdal::readOGR(map.url)
-# colnames(ea.search@data)
+write.csv2(colnames(ea.search@data),
+           file = paste0(getwd(),"/functions/list_HP_fields_for_R.tsv"),
+           row.names = F)
+
 ea.search$lbl <- paste0("<b>", ea.search$EAMENA.ID," - ", ea.search$Administrative.Division., ", ", ea.search$Country.Type, "</b><br>",
                         ea.search$Site.Feature.Interpretation.Type, " (", ea.search$Cultural.Period.Type, ")")
 ea.map <- leaflet(data = ea.search) %>%

@@ -56,23 +56,3 @@ if(highlight){
 saveWidget(ea.map, map.name.out)
 # ea.map.zoom
 saveWidget(ea.map.zoom, map.name.out.zoom)
-
-leaflet() %>%
-  addProviderTiles(providers$"OpenStreetMap", group = "OSM") %>%
-  addProviderTiles(providers$"Esri.WorldImagery", group = "Ortho") %>%
-  setView(lng = -1.254156387634452,
-          lat = 51.758082040247636,
-          zoom = 16) %>%
-  addCircleMarkers(
-    lng = -1.254156387634452,
-    lat = 51.758082040247636,
-    weight = 1,
-    radius = 3,
-    popup = "my popup",
-    label = "my label",
-    fillOpacity = .5,
-    opacity = .8) %>%
-  addLayersControl(
-    baseGroups = c("OSM", "Ortho"),
-    position = "topright") %>%
-  addScaleBar(position = "bottomright")

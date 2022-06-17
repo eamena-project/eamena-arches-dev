@@ -1,4 +1,4 @@
-# Visualise the result of a EAMENA search on GitHub
+# Visualise an EAMENA search result on GitHub
 
 Use [EAMENA](https://database.eamena.org/) to create new resource maps hosted on GitHub and [shine a light on your work](https://github.com/eamena-oxford/reveal.js#shine-a-light-on-your-work)
 ## Simple GeoJSON Workflow
@@ -14,7 +14,7 @@ Paste the copied URL into the address bar, the result is something like :
 ![](../../www/geojson-url.png)
 
 3. **Create a new GeoJSON file**  
-Copy the GeoJSON content and save it in a new GeoJSON file, for example `caravanserail.geojson`.
+Copy the GeoJSON content and save it in a new GeoJSON file, for example `caravanserail.geojson`, `qasr.geojson`, etc.
 
 4. **Host on GitHub**  
 Host this GeoJSON file on GitHub, for example in the `https://github.com/eamena-oxford/eamena-arches-dev/blob/main/data/geojson/` folder.

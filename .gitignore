@@ -3,4 +3,5 @@
 .RData
 .Ruserdata
 ^secret/
-^functions/_*
+functions/_*.py
+functions/_*.R

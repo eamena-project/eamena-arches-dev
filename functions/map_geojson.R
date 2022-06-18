@@ -2,6 +2,8 @@ library(leaflet)
 library(dplyr)
 library(htmlwidgets)
 
+# TODO: documentation
+
 map.name <- "caravanserail"
 map.format <- '.geojson'
 map.root <- "https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/data/geojson/"

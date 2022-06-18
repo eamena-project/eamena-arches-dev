@@ -20,5 +20,6 @@
     + [README](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/data/bulk/BU.md)
     + [bash](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/data/bulk/run_bulks.sh)
   - [grids](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/data/grids/qdgc_#readme)
+  - [geojson](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/data/geojson#readme)
 
 * [functions](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/functions)

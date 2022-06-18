@@ -1,8 +1,9 @@
 from _conn import conn
 from Py_sources import testdb_hp_fields, testdb_bc_fields
+import os
+import urllib.request, geojson, subprocess
 import psycopg2
 import psycopg2.extras
-
 
 conn = conn("24")
 cur = conn.cursor()
@@ -25,7 +26,7 @@ def get_uuid_from_eaid(eamenaid):
     uuid = dict_cur.fetchone()[0]
     return(uuid)
 
-def get_geom_from_uuid(uuid,restyp):
+def get_geom_from_uuid(uuid, restyp):
     """
     Retrieve the geometry of an Heritage Place from its UUID
 
@@ -43,7 +44,6 @@ def get_geom_from_uuid(uuid,restyp):
         sql="SELECT tiledata->>'{0}' as my_geojson FROM tiles \
         WHERE resourceinstanceid = '{1}' \
         AND nodegroupid = '{2}'".format(testdb_hp_fields["Geometric Place Expression"], uuid, testdb_hp_fields["geometry"])
-        print(sql)
         dict_cur = conn.cursor(cursor_factory=psycopg2.extras.DictCursor)
         dict_cur.execute(sql)
         mygeom = dict_cur.fetchone()[0]
@@ -52,7 +52,6 @@ def get_geom_from_uuid(uuid,restyp):
         sql="SELECT tiledata->>'{0}' as my_geojson FROM tiles \
         WHERE resourceinstanceid = '{1}' \
         AND nodegroupid = '{2}'".format(testdb_bc_fields["Geometric Place Expression"], uuid, testdb_bc_fields["geometry"])
-        print(sql)
         dict_cur = conn.cursor(cursor_factory=psycopg2.extras.DictCursor)
         dict_cur.execute(sql)
         mygeom = dict_cur.fetchone()[0]
@@ -60,15 +59,15 @@ def get_geom_from_uuid(uuid,restyp):
 
 def get_related_resources_from_uuid(uuid):
     """
-    Retrieve the related resources of an Heritage Place from its UUID
+    Retrieve the UUID of related resources of an Heritage Place
 
     Relationships are directed. The function looks in 'from', and in 'to' columns
     to be sure to catch the releated resources. The list is then clean (remove duplicates,
     remove the Heritage Place itself)
 
-    :param uuid: The UUID
+    :param uuid: The UUID of the Heritage Place
     :type uuid: UUID
-    :return: TODO
+    :return: A list of the UUID of the related resources
     :Example:
     >>> my_uuid = get_uuid_from_eaid('EAMENA-0181523')
     >>> my_related_resources = get_related_resources_from_uuid(my_uuid)
@@ -91,16 +90,44 @@ def get_related_resources_from_uuid(uuid):
     myrelatedresources = myrelatedresources_not_the_uuid
     return(myrelatedresources)
 
+def export_geom_from_urlgeojson(url_geojson = 'http://34.244.135.144/api/search/export_results?paging-filter=1&tiles=true&format=geojson&reportlink=false&precision=6&total=3&resource-type-filter=%5B%7B%22graphid%22%3A%226c4f0703-c381-11ea-9026-02e7594ce0a0%22%2C%22name%22%3A%22Built%20Component%22%2C%22inverted%22%3Afalse%7D%5D',
+out_geom_format = "geojson", out_geom_name = "out_geom", out_geom_dir = os.getcwd() + "\\data\\test\\"):
+    """
+        Create a geom (SHP or GeoJSON) from a 'url geojson' got in EAMENA-like
+
+        :param url_geojson: The 'url geojson' from EAMENA-like
+        :param out_geom_format: The format of the geometry to create, 'geojson' or 'shp'
+        :param out_geom_name: The name of the geometry to create
+        :param out_geom_dir: The name of the output directory
+        :type url_geojson: string, URL
+        :type out_geom_format: string
+        :type out_geom_name: string
+        :type out_geom_dir: string
+        :return: a new file (SHP or GeoJSON)
+        :Example:
+        >>> export_geom_from_urlgeojson('http://34.244.135.144/api/search/export_results?...')
+        # export 'out_geom.geojson'
+    """
+    # url_geojson= 'http://34.244.135.144/api/search/export_results?paging-filter=1&tiles=true&format=geojson&reportlink=false&precision=6&total=3&resource-type-filter=%5B%7B%22graphid%22%3A%226c4f0703-c381-11ea-9026-02e7594ce0a0%22%2C%22name%22%3A%22Built%20Component%22%2C%22inverted%22%3Afalse%7D%5D'
+    response = urllib.request.urlopen(url_geojson)
+    data = geojson.loads(response.read())
+
+    out_geom = out_geom_dir + out_geom_name + "." + out_geom_format
+
+    with open(out_geom, 'w') as f:
+        geojson.dump(data, f)
+    args = ['ogr2ogr', '-f', 'ESRI Shapefile', out_geom]
+    subprocess.Popen(args)
+    print("File "+ out_geom_name + "." + out_geom_format + " created!")
+
 my_uuid = get_uuid_from_eaid('EAMENA-0181523')
 # my_geom = get_geom_from_uuid(my_uuid)
 # my_related_resources = get_related_resources_from_uuid(my_uuid)
 
 my_geom = get_geom_from_uuid('2a774cbd-d13f-41ce-8af1-292344bd4dff', 'bc')
-print(my_geom)
 
-# print(my_uuid)
-# print(my_geom)
-# print(my_related_resources)
+export_geom_from_urlgeojson(out_geom_name = "new_new_geojson")
+
 
 # - - - - - - - - - - - - -
 cur.close()

@@ -93,7 +93,7 @@ def get_related_resources_from_uuid(uuid):
 def export_geom_from_urlgeojson(url_geojson = 'http://34.244.135.144/api/search/export_results?paging-filter=1&tiles=true&format=geojson&reportlink=false&precision=6&total=3&resource-type-filter=%5B%7B%22graphid%22%3A%226c4f0703-c381-11ea-9026-02e7594ce0a0%22%2C%22name%22%3A%22Built%20Component%22%2C%22inverted%22%3Afalse%7D%5D',
 out_geom_format = "geojson", out_geom_name = "out_geom", out_geom_dir = os.getcwd() + "\\data\\test\\"):
     """
-        Create a geom (SHP or GeoJSON) from a 'url geojson' got in EAMENA-like
+        Create a geom (SHP or GeoJSON) from a 'url geojson' obtained from a EAMENA-like DB
 
         :param url_geojson: The 'url geojson' from EAMENA-like
         :param out_geom_format: The format of the geometry to create, 'geojson' or 'shp'

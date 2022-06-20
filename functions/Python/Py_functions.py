@@ -18,6 +18,7 @@ def get_uuid_from_eaid(eamenaid):
     >>> print(get_uuid_from_eaid('EAMENA-0181523'))
     cb52672e-7bf0-4097-afda-86686d59cf31
     """
+    
     sql="SELECT resourceinstanceid FROM tiles t \
     LEFT JOIN nodes n ON t.nodegroupid = n.nodegroupid \
     WHERE (t.tiledata::json -> n.nodeid::text)::text like '%{0}%'".format(eamenaid)
@@ -40,6 +41,7 @@ def get_geom_from_uuid(uuid, restyp):
     >>> get_geom_from_uuid(my_uuid)
     TODO
     """
+
     if(restyp == 'hp'):
         sql="SELECT tiledata->>'{0}' as my_geojson FROM tiles \
         WHERE resourceinstanceid = '{1}' \
@@ -73,6 +75,7 @@ def get_related_resources_from_uuid(uuid):
     >>> my_related_resources = get_related_resources_from_uuid(my_uuid)
     ['bcff0719-5d68-42ce-ac12-2cfc33858b06', '19e69b2c-eeee-4b1d-a8c8-7fa13a034820', '2a774cbd-d13f-41ce-8af1-292344bd4dff']
     """
+
     sql="SELECT resourceinstanceidfrom FROM public.resource_x_resource \
     WHERE resourceinstanceidfrom = '{0}'".format(uuid)
     dict_cur = conn.cursor(cursor_factory=psycopg2.extras.DictCursor)
@@ -108,6 +111,7 @@ out_geom_format = "geojson", out_geom_name = "out_geom", out_geom_dir = os.getcw
         >>> export_geom_from_urlgeojson('http://34.244.135.144/api/search/export_results?...')
         # export 'out_geom.geojson'
     """
+
     # url_geojson= 'http://34.244.135.144/api/search/export_results?paging-filter=1&tiles=true&format=geojson&reportlink=false&precision=6&total=3&resource-type-filter=%5B%7B%22graphid%22%3A%226c4f0703-c381-11ea-9026-02e7594ce0a0%22%2C%22name%22%3A%22Built%20Component%22%2C%22inverted%22%3Afalse%7D%5D'
     response = urllib.request.urlopen(url_geojson)
     data = geojson.loads(response.read())
@@ -120,14 +124,3 @@ out_geom_format = "geojson", out_geom_name = "out_geom", out_geom_dir = os.getcw
     subprocess.Popen(args)
     print("File "+ out_geom_name + "." + out_geom_format + " created!")
 
-my_uuid = get_uuid_from_eaid('EAMENA-0181523')
-# my_geom = get_geom_from_uuid(my_uuid)
-# my_related_resources = get_related_resources_from_uuid(my_uuid)
-
-my_geom = get_geom_from_uuid('2a774cbd-d13f-41ce-8af1-292344bd4dff', 'bc')
-
-export_geom_from_urlgeojson(out_geom_name = "new_new_geojson")
-
-
-# - - - - - - - - - - - - -
-cur.close()

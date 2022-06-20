@@ -4,4 +4,6 @@
 .Ruserdata
 ^secret/
 functions/_*.py
+functions/Python/_*.py
 functions/_*.R
+functions/R/_*.R

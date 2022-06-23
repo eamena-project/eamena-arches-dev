@@ -4,16 +4,24 @@ library(htmlwidgets)
 
 # TODO: documentation
 
+# highlight some HP
+highlight <- TRUE
+ea.highlights.idf <- c('EAMENA-0205783')
+# project
 map.name <- "kiln"
 map.format <- '.geojson'
 map.root <- "https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/data/geojson/"
 map.name.out <- paste0(getwd(), "/data/geojson/maps/", map.name, ".html")
 map.url <- paste0(map.root, map.name, map.format)
-ea.search <- rgdal::readOGR(map.url)
-# highlight some HP
-highlight <- TRUE
-ea.highlights.idf <- c('EAMENA-0205783')
-ea.highlights.row <- as.integer(row.names(ea.search[ea.search@data$EAMENA.ID %in% ea.highlights.idf, ]))
+# different geometries
+ea.search.point <- rgdal::readOGR(map.url, require_geomType = "wkbPoint")
+ea.search.line <- rgdal::readOGR(map.url, require_geomType = "wkbLineString")
+ea.search.polygon <- rgdal::readOGR(map.url, require_geomType = "wkbPolygon")
+# ea.highlights.row <- as.integer(row.names(ea.search[ea.search@data$EAMENA.ID %in% ea.highlights.idf, ]))
+ea.highlights.row.point <- as.integer(row.names(ea.search.point[ea.search.point@data$EAMENA.ID %in% ea.highlights.idf, ]))
+ea.highlights.row.line <- as.integer(row.names(ea.search.line[ea.search.line@data$EAMENA.ID %in% ea.highlights.idf, ]))
+ea.highlights.row.polygon <- as.integer(row.names(ea.search.polygon[ea.search.polygon@data$EAMENA.ID %in% ea.highlights.idf, ]))
+
 # write.table(colnames(ea.search@data),
 #            sep = "\t",
 #            file = paste0(getwd(),"/functions/list_HP_fields_for_R.tsv"),

@@ -5,7 +5,7 @@ library(htmlwidgets)
 # TODO: documentation
 
 # highlight some HP
-highlight <- FALSE
+highlight <- TRUE
 ea.highlights.idf <- c('EAMENA-0205783')
 # project
 map.name <- "kiln"
@@ -18,10 +18,11 @@ ea.search.point <- rgdal::readOGR(map.url, require_geomType = "wkbPoint")
 ea.search.line <- rgdal::readOGR(map.url, require_geomType = "wkbLineString")
 ea.search.polygon <- rgdal::readOGR(map.url, require_geomType = "wkbPolygon")
 # ea.highlights.row <- as.integer(row.names(ea.search[ea.search@data$EAMENA.ID %in% ea.highlights.idf, ]))
-# highlighted HP
-ea.highlights.row.point <- as.integer(row.names(ea.search.point[ea.search.point@data$EAMENA.ID %in% ea.highlights.idf, ]))
-ea.highlights.row.line <- as.integer(row.names(ea.search.line[ea.search.line@data$EAMENA.ID %in% ea.highlights.idf, ]))
-ea.highlights.row.polygon <- as.integer(row.names(ea.search.polygon[ea.search.polygon@data$EAMENA.ID %in% ea.highlights.idf, ]))
+# highlighted HP (1)
+ea.highlights.row.point <- row.names(ea.search.point[ea.search.point@data$EAMENA.ID %in% ea.highlights.idf, ])
+ea.highlights.row.line <- row.names(ea.search.line[ea.search.line@data$EAMENA.ID %in% ea.highlights.idf, ])
+ea.highlights.row.polygon <- row.names(ea.search.polygon[ea.search.polygon@data$EAMENA.ID %in% ea.highlights.idf, ])
+
 
 # write.table(colnames(ea.search@data),
 #            sep = "\t",
@@ -39,6 +40,7 @@ ea.search.polygon$lbl <- paste0("<b>", ea.search.polygon$EAMENA.ID,"</b><br>",
 # ea.search$lbl <- paste0("<b>", ea.search$EAMENA.ID,"</b><br>",
 #                         ea.search$Site.Feature.Interpretation.Type, " (", ea.search$Cultural.Period.Type, ")",
 #                         ea.search$Administrative.Division., ", ", ea.search$Country.Type, "<br>")
+# add geometries POINT, LINES, POLYGON when exist
 ea.map <- leaflet() %>%
   addProviderTiles(providers$"Esri.WorldImagery", group = "Ortho") %>%
   addProviderTiles(providers$"OpenStreetMap", group = "OSM")
@@ -85,30 +87,30 @@ ea.map <- ea.map %>%
     position = "topright") %>%
   addScaleBar(position = "bottomright")
 
-
 # ea.highlights.row.polygon[ea.highlights.row.polygon, ]@coords[1]
-# TODO:
 if(highlight){
-  map.name.out.zoom <- paste0(getwd(), "/data/geojson/maps/", map.name, "_zoom.html")
-  if(!is.null(nrow(ea.highlights.row.point))){
+  if(length(ea.highlights.row.point) > 0){
+    hl.geom <- ea.search.point[rownames(ea.search.point@data) == ea.highlights.row.point, ]
     ea.map <- ea.map %>%
       addCircleMarkers(
-        # data = ea.search.point,
-        lng = ea.search[ea.highlights.row, ]@coords[1],
-        lat = ea.search[ea.highlights.row, ]@coords[2],
+        data = hl.geom,
+        # lng = ea.search[ea.highlights.row, ]@coords[1],
+        # lat = ea.search[ea.highlights.row, ]@coords[2],
         weight = 1,
         radius = 4,
-        label = ea.search@data[ea.highlights.row, "EAMENA.ID"],
+        popup = ~lbl,
+        label = ~EAMENA.ID,
         color = "red",
         fillOpacity = 1,
         opacity = 1)
   }
-  if(!is.null(nrow(ea.highlights.row.line))){
+  if(length(ea.highlights.row.line) > 0){
+    hl.geom <- ea.search.line[rownames(ea.search.line@data) == ea.highlights.row.line, ]
     ea.map <- ea.map %>%
       addPolylines(# lng = ~Longitude,
         # lng = ea.search.line@coords[,1],
         # lat = ea.search.line@coords[,2],
-        data = ea.search.line,
+        data = hl.geom,
         weight = 2,
         color = "red",
         popup = ~lbl,
@@ -116,22 +118,26 @@ if(highlight){
         fillOpacity = .5,
         opacity = .8)
   }
-
-  ea.map <- ea.map %>%
-    addCircleMarkers(
-      lng = ea.search[ea.highlights.row, ]@coords[1],
-      lat = ea.search[ea.highlights.row, ]@coords[2],
-      weight = 1,
-      radius = 4,
-      label = ea.search@data[ea.highlights.row, "EAMENA.ID"],
-      color = "red",
-      fillOpacity = 1,
-      opacity = 1)
+  if(length(ea.highlights.row.polygon) > 0){
+    hl.geom <- ea.search.polygon[rownames(ea.search.polygon@data) == ea.highlights.row.polygon, ]
+    ea.map <- ea.map %>%
+      addPolygons(# lng = ~Longitude,
+        # lng = ea.search.line@coords[,1],
+        # lat = ea.search.line@coords[,2],
+        data = hl.geom,
+        weight = 5,
+        color = "red",
+        popup = ~lbl,
+        label = ~EAMENA.ID,
+        fillOpacity = .5,
+        opacity = .8)
+  }
   ea.map.zoom <- ea.map %>%
-    setView(lng = ea.search[ea.highlights.row, ]@coords[1],
-            lat = ea.search[ea.highlights.row, ]@coords[2],
+    setView(lng = rgeos::gCentroid(hl.geom)$x,
+            lat = rgeos::gCentroid(hl.geom)$y,
             zoom = 17)
   # ea.map.zoom
+  map.name.out.zoom <- paste0(getwd(), "/data/geojson/maps/", map.name, "_zoom.html")
   saveWidget(ea.map.zoom, map.name.out.zoom)
 }
 # ea.map

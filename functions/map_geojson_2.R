@@ -3,6 +3,9 @@ library(dplyr)
 library(htmlwidgets)
 
 # TODO: documentation
+# Create two maps to be imported into a reveal.js showcase:
+#   1. a general map displaying all the HPs resulting from a EAMENA search ('geojson url' format)
+#   2. a highlight map on one particular HP linked to a 3D model, photograph, etc.
 
 # highlight some HP
 highlight <- TRUE

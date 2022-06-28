@@ -31,9 +31,9 @@ def get_geom_from_uuid(uuid, restyp):
     """
     Retrieve the geometry of an Heritage Place from its UUID
 
-    Select the GeoJSON object in the tiledata field
+    Select the GeoJSON object in the tiledata field. Read equivalences between field names and UUID from the Python source file
     :param uuid: The UUID
-    :param restyp: The type of resource, hp for 'Heritage Place', or bc for 'Built Component'
+    :param restyp: The type of resource, 'hp' for 'Heritage Place', or 'bc' for 'Built Component'
     :type uuid: UUID
     :return: geojson
     :Example:

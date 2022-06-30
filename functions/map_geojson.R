@@ -58,3 +58,33 @@ if(highlight){
 saveWidget(ea.map, map.name.out)
 # ea.map.zoom
 saveWidget(ea.map.zoom, map.name.out.zoom)
+
+# Any other maps
+library(leaflet)
+library(dplyr)
+library(htmlwidgets)
+# 1 point map
+map.name <- "bam"
+ea.map <- leaflet() %>%
+  addProviderTiles(providers$"Esri.WorldImagery", group = "Ortho") %>%
+  addProviderTiles(providers$"OpenStreetMap", group = "OSM") %>%
+  addCircleMarkers(
+    lng = 58.36796164354272,
+    lat = 29.115391062920825,
+    weight = 1,
+    radius = 5,
+    # label = ea.search@data[ea.highlights.row, "EAMENA.ID"],
+    color = "red",
+    fillOpacity = 1,
+    opacity = 1) %>%
+  setView(lng = 58.36796164354272,
+          lat = 29.11539106292082,
+          zoom = 15) %>%
+  addLayersControl(
+    baseGroups = c("Ortho", "OSM"),
+    position = "topright") %>%
+  addScaleBar(position = "bottomright")
+ea.map
+saveWidget(ea.map, paste0(getwd(), "/data/geojson/maps/", map.name, ".html"))
+
+

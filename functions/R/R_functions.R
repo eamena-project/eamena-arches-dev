@@ -27,7 +27,7 @@ threats_eamena <- function(){
   # SQL queries on EAMENA DB for R, stored in a Python-dictionary-like structure
   d_sql <- hash::hash() # hash instance
   # count Heritage Places (HPs)
-  d_sql[["HPs_treats"]] <- "
+  d_sql[["HPs_threats"]] <- "
   SELECT
   tiles.tiledata ->> '34cfe992-c2c0-11ea-9026-02e7594ce0a0' as EamenaID,
   values.value as ThreatCat,
@@ -35,7 +35,9 @@ threats_eamena <- function(){
   resourceinstanceid as ResourceID
   FROM tiles LEFT JOIN values ON
   values.valueid::text = tiledata ->> '34cfea76-c2c0-11ea-9026-02e7594ce0a0'
-  WHERE ((nodegroupid::text = '34cfea2e-c2c0-11ea-9026-02e7594ce0a0') OR (nodegroupid::text = '34cfe9fb-c2c0-11ea-9026-02e7594ce0a0') OR (nodegroupid::text = '34cfe992-c2c0-11ea-9026-02e7594ce0a0')
+  WHERE ((nodegroupid::text = '34cfea2e-c2c0-11ea-9026-02e7594ce0a0')
+  OR (nodegroupid::text = '34cfe9fb-c2c0-11ea-9026-02e7594ce0a0')
+  OR (nodegroupid::text = '34cfe992-c2c0-11ea-9026-02e7594ce0a0')
   ) --AND tiles IS NOT NULL
   LIMIT 100;"
   return(d_sql)

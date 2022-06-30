@@ -9,7 +9,7 @@ library(htmlwidgets)
 
 plot_ly <- T
 
-path_time <- paste0(getwd(), "/")
+path_time <- paste0(getwd(), "/functions/time/")
 
 # df <- read.xlsx(paste0(path_time, "data.xlsx"))
 data_file <- "Disturbances_EDTF.xlsx"
@@ -41,6 +41,7 @@ df_syria.out <- data.frame(#region = character(),
 for(i in seq_len(nrow(df_syria))){
   # intersect with the limits of the study: "2004-01-01..2019-12-31"
   # loop to read the date field
+  if (i %% 50 == 0){print(paste0("   - ", i, "/", nrow(df_syria)))}
   var.date <- md_intersect(as_messydate("2004-01-01..2019-12-31"),
                            as_messydate(df_syria[i, date_field]))
   n.dates <- length(var.date)

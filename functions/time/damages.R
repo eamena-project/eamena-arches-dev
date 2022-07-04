@@ -84,9 +84,12 @@ dev.off()
 
 if(plot_ly){
   # if TRUE, export as plot_ly widget
-  p <- plot_ly(df_syria.out, type = 'scatter',
-               x = ~date, y = ~round(density, 4),
-               mode = 'line')
+  p <- plot_ly(df_syria.out,
+               type = 'scatter',
+               x = ~date,
+               y = ~round(density, 4),
+               mode = 'line') %>%
+    layout(title = "Threats intensity on Tell Dapiq (AM009)")
   p
   saveWidget(as_widget(p), paste0(getwd(),"/functions/time/results/", file_out, ".html"))
   # saveWidget(as_widget(p), paste0(getwd(),"/results/threats.html"))

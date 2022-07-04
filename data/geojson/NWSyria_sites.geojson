@@ -1,0 +1,26 @@
+{
+"type": "FeatureCollection",
+"name": "MWSyria_sites",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "OID_": 0, "Name": "Abu Qilqil", "Number": "01", "S_ID": "AM019" }, "geometry": { "type": "Point", "coordinates": [ 38.109585959000064, 36.432410438000034, 0.0 ] } },
+{ "type": "Feature", "properties": { "OID_": 0, "Name": "Tell Abu Jadha (al Taiarah)", "Number": "02", "S_ID": "AM015" }, "geometry": { "type": "Point", "coordinates": [ 37.887291225000048, 36.27294174200005, 0.0 ] } },
+{ "type": "Feature", "properties": { "OID_": 0, "Name": "Tell Akhtareen", "Number": "04", "S_ID": "AM003" }, "geometry": { "type": "Point", "coordinates": [ 37.338250905999814, 36.514455486000031, 0.0 ] } },
+{ "type": "Feature", "properties": { "OID_": 0, "Name": "Tell al-Bel", "Number": "05", "S_ID": null }, "geometry": { "type": "Point", "coordinates": [ 37.188717571999625, 36.592627585000045, 0.0 ] } },
+{ "type": "Feature", "properties": { "OID_": 0, "Name": "Tell al-Halawanji (Castle)", "Number": "16", "S_ID": "AM017" }, "geometry": { "type": "Point", "coordinates": [ 37.90453892500004, 36.644543426000041, 0.0 ] } },
+{ "type": "Feature", "properties": { "OID_": 0, "Name": "Tell Alsheykh Rih", "Number": "06", "S_ID": "AM002" }, "geometry": { "type": "Point", "coordinates": [ 37.172918370999604, 36.601128145000068, 0.0 ] } },
+{ "type": "Feature", "properties": { "OID_": 0, "Name": "Tell Arab Hasan Kabır", "Number": "03", "S_ID": "AM014" }, "geometry": { "type": "Point", "coordinates": [ 37.854039252000035, 36.652808922000069, 0.0 ] } },
+{ "type": "Feature", "properties": { "OID_": 0, "Name": "​Tell Arshaf", "Number": "07", "S_ID": "AM004" }, "geometry": { "type": "Point", "coordinates": [ 37.271007602999745, 36.518659085000024, 0.0 ] } },
+{ "type": "Feature", "properties": { "OID_": 0, "Name": "Tell Baraghedeh", "Number": "08", "S_ID": "AM010" }, "geometry": { "type": "Point", "coordinates": [ 37.20459454399964, 36.63458560000003, 0.0 ] } },
+{ "type": "Feature", "properties": { "OID_": 0, "Name": "Tell Battal", "Number": "09", "S_ID": "AM006" }, "geometry": { "type": "Point", "coordinates": [ 37.434088472999882, 36.50221515700008, 0.0 ] } },
+{ "type": "Feature", "properties": { "OID_": 0, "Name": "Tell Bhorta", "Number": "10", "S_ID": "AM007" }, "geometry": { "type": "Point", "coordinates": [ 37.312618991999813, 36.578156625000062, 0.0 ] } },
+{ "type": "Feature", "properties": { "OID_": 0, "Name": "Tell Dapiq", "Number": "11", "S_ID": "AM009" }, "geometry": { "type": "Point", "coordinates": [ 37.268844796999744, 36.539976517000078, 0.0 ] } },
+{ "type": "Feature", "properties": { "OID_": 0, "Name": "Tell Maled", "Number": "12", "S_ID": "AM005" }, "geometry": { "type": "Point", "coordinates": [ 37.228522811999696, 36.445826735000026, 0.0 ] } },
+{ "type": "Feature", "properties": { "OID_": 0, "Name": "Tell Sha'eer", "Number": "13", "S_ID": "AM008" }, "geometry": { "type": "Point", "coordinates": [ 37.343296704999837, 36.61670130200001, 0.0 ] } },
+{ "type": "Feature", "properties": { "OID_": 0, "Name": "Tell Soran", "Number": "14", "S_ID": "AM001" }, "geometry": { "type": "Point", "coordinates": [ 37.210962658999698, 36.566582218000065, 0.0 ] } },
+{ "type": "Feature", "properties": { "OID_": 0, "Name": "Tell al-Fursan", "Number": "15", "S_ID": "AM013" }, "geometry": { "type": "Point", "coordinates": [ 37.704387114999989, 36.72742043900007, 0.0 ] } },
+{ "type": "Feature", "properties": { "OID_": 0, "Name": "Tell Ahmar (Barsip)", "Number": "17", "S_ID": "AM016" }, "geometry": { "type": "Point", "coordinates": [ 38.115827095000036, 36.676328843000071, 0.0 ] } },
+{ "type": "Feature", "properties": { "OID_": 0, "Name": "Tell Mizab", "Number": "19", "S_ID": "AM011" }, "geometry": { "type": "Point", "coordinates": [ 37.640497392999976, 36.717144432000048, 0.0 ] } },
+{ "type": "Feature", "properties": { "OID_": 0, "Name": "Tell Ahmar (Al Bab)", "Number": "18", "S_ID": "AM012" }, "geometry": { "type": "Point", "coordinates": [ 37.412665399999874, 36.632349348000048, 0.0 ] } }
+]
+}

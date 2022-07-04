@@ -63,6 +63,7 @@ saveWidget(ea.map.zoom, map.name.out.zoom)
 library(leaflet)
 library(dplyr)
 library(htmlwidgets)
+lbl <- '<a href = "https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/data/geojson/EAMENA-0164997.geojson">EAMENA-0164997.geojson</a>'
 # 1 point map
 map.name <- "bam"
 ea.map <- leaflet() %>%
@@ -73,7 +74,7 @@ ea.map <- leaflet() %>%
     lat = 29.115391062920825,
     weight = 1,
     radius = 5,
-    # label = ea.search@data[ea.highlights.row, "EAMENA.ID"],
+    popup = lbl,
     color = "red",
     fillOpacity = 1,
     opacity = 1) %>%

@@ -8,6 +8,9 @@ library(htmlwidgets)
 
 
 plot_ly <- T
+export.to.ts <- F
+filter.on.id <- T
+id.filter <- c("AM009") # select these/this IDs
 
 path_time <- paste0(getwd(), "/functions/time/")
 
@@ -28,8 +31,15 @@ file_out <- "df_syria_out"
 df_syria <- read.xlsx(paste0(path_time, data_file),
                       sheet = "Sheet1")
 # export XLSX to TSV
-write.table(df_syria,  paste0(path_time, file_out, ".tsv"),
-            quote = FALSE, sep = "\t", col.names = TRUE)
+if(export.to.tsv){
+  write.table(df_syria,  paste0(path_time, file_out, ".tsv"),
+              quote = FALSE, sep = "\t", col.names = TRUE)
+}
+if(filter.on.id){
+  df_syria <- df_syria[df_syria$S_ID %in% id.filter, ]
+  file_out <- paste0(file_out, "_", paste0(as.character(id.filter), collapse = "_"))
+}
+
 
 # reformat dataframe and dates
 df_syria.out <- data.frame(#region = character(),
@@ -72,10 +82,12 @@ dev.off()
 
 if(plot_ly){
   # if TRUE, export as plot_ly widget
-  p <- plot_ly(df_syria.out, type = 'scatter', x = ~date, y = ~round(density, 4),
+  p <- plot_ly(df_syria.out, type = 'scatter',
+               x = ~date, y = ~round(density, 4),
                mode = 'line')
   p
-  saveWidget(as_widget(p), paste0(getwd(),"/results/threats.html"))
+  saveWidget(as_widget(p), paste0(getwd(),"/functions/time/results/", file_out, ".html"))
+  # saveWidget(as_widget(p), paste0(getwd(),"/results/threats.html"))
 }
 #
 # if(plot_ly){

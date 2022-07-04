@@ -48,7 +48,7 @@ if(highlight){
       weight = 1,
       radius = 4,
       label = ea.search@data[ea.highlights.row, "S_ID"],
-      popup = ~lbl
+      popup = ea.search@data[ea.highlights.row, "lbl"],
       # label = ea.search@data[ea.highlights.row, "EAMENA.ID"],
       color = "red",
       fillOpacity = 1,

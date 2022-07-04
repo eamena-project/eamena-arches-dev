@@ -8,7 +8,8 @@ library(htmlwidgets)
 
 
 plot_ly <- T
-export.to.ts <- F
+export.to.tsv <- F
+show.to.html <- F
 filter.on.id <- T
 id.filter <- c("AM009") # select these/this IDs
 
@@ -35,6 +36,7 @@ if(export.to.tsv){
   write.table(df_syria,  paste0(path_time, file_out, ".tsv"),
               quote = FALSE, sep = "\t", col.names = TRUE)
 }
+
 if(filter.on.id){
   df_syria <- df_syria[df_syria$S_ID %in% id.filter, ]
   file_out <- paste0(file_out, "_", paste0(as.character(id.filter), collapse = "_"))
@@ -89,6 +91,19 @@ if(plot_ly){
   saveWidget(as_widget(p), paste0(getwd(),"/functions/time/results/", file_out, ".html"))
   # saveWidget(as_widget(p), paste0(getwd(),"/results/threats.html"))
 }
+
+# show XLSX to HTML (for reveal.js)
+if(show.to.html){
+  library(xtable)
+  df_syria_select <- df_syria[, c("S_ID", "Disturbance.Type", "Disturbance.Cause", "EDTF")]
+  print(xtable(df_syria_select),
+        type="html",
+        # file="example.html",
+        align="llll",include.rownames = F,
+        html.table.attributes="")
+
+}
+
 #
 # if(plot_ly){
 #   # if TRUE, export as plot_ly widget

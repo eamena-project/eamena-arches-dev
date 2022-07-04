@@ -56,6 +56,16 @@ if(read_eamena_db){
   # print(getwd())
   load("C:/Rprojects/eamena-arches-dev/functions/R/out_df_clean.RData")
 }
+# statistics
+# df.temp <- head(out_df_clean, 300)
+# order
+n.threatcat <- table(out_df_clean$threatcat) %>%
+  as.data.frame() %>%
+  arrange(desc(Freq))
+
+threatcat.ord <- n.threatcat$Var1
+
+
 # convert to Date
 out_df_clean$assessdat <- as.Date(out_df_clean$assessdat)
 # group and count
@@ -70,21 +80,25 @@ out_df_clean$assessdat.m <- format(as.Date(out_df_clean$assessdat), "%Y-%m")
 out_df_clean$assessdat.y <- format(as.Date(out_df_clean$assessdat), "%Y")
 time.interv <- c("day", "month", "year")
 
+# by day
 plot1 <- plot_ly(
   data = out_df_clean,
   x = ~assessdat,
   y = ~n,
-  color = ~threatcat,
+  color = ~factor(threatcat, levels = rev(threatcat.ord)),
+  # color = ~threatcat,
   type = "bar") %>%
   layout(title = 'Categories of threats registered in EAMENA - by day',
          barmode = "stack")
 htmlwidgets::saveWidget(as_widget(plot1), "C:/Rprojects/eamena-arches-dev/data/time/threats_day.html")
 
+# by month
 plot1 <- plot_ly(
   data = out_df_clean,
   x = ~assessdat.m,
   y = ~n,
-  color = ~threatcat,
+  color = ~factor(threatcat, levels = rev(threatcat.ord)),
+  # color = ~threatcat,
   type = "bar") %>%
   layout(title = 'Categories of threats registered in EAMENA - by month',
          barmode = "stack")
@@ -94,7 +108,8 @@ plot1 <- plot_ly(
   data = out_df_clean,
   x = ~assessdat.y,
   y = ~n,
-  color = ~threatcat,
+  color = ~factor(threatcat, levels = rev(threatcat.ord)),
+  # color = ~threatcat,
   type = "bar") %>%
   layout(title = 'Categories of threats registered in EAMENA - by year',
          barmode = "stack")

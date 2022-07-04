@@ -74,25 +74,33 @@ for(i in seq_len(nrow(df_syria))){
 #             quote = FALSE, sep='\t', col.names = TRUE)
 # plot
 df_syria.out$date <- as.Date(df_syria.out$date)
-df_syria.out <- df_syria.out %>%
+df_syria.out.general <- df_syria.out %>%
   group_by(date) %>%
   summarise(density = sum(density))
-png(paste0(path_time, file_out, ".png"), width = 18, height = 12, res = 300, units = "cm")
-plot(density ~ date, df_syria.out, xaxt = "n", type = "l")
-axis(1, df_syria.out$date, format(df_syria.out$date, "%b %y"), cex.axis = .7)
-dev.off()
+df_syria.out.cat <- df_syria.out %>%
+  group_by(date, type) %>%
+  summarise(density = sum(density))
 
 if(plot_ly){
   # if TRUE, export as plot_ly widget
-  p <- plot_ly(df_syria.out,
+  p <- plot_ly(df_syria.out.general,
                type = 'scatter',
                x = ~date,
                y = ~round(density, 4),
+               # color=~type,
                mode = 'line') %>%
-    layout(title = "Threats intensity on Tell Dapiq (AM009)")
+
+    layout(title = "Threat types")
   p
-  saveWidget(as_widget(p), paste0(getwd(),"/functions/time/results/", file_out, ".html"))
+  saveWidget(as_widget(p), paste0(getwd(),"/functions/time/results/", file_out, "_threat_types.html"))
   # saveWidget(as_widget(p), paste0(getwd(),"/results/threats.html"))
+}
+
+if(png.out){
+  png(paste0(path_time, file_out, ".png"), width = 18, height = 12, res = 300, units = "cm")
+  plot(density ~ date, df_syria.out, xaxt = "n", type = "l")
+  axis(1, df_syria.out$date, format(df_syria.out$date, "%b %y"), cex.axis = .7)
+  dev.off()
 }
 
 # show XLSX to HTML (for reveal.js)

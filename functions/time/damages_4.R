@@ -83,8 +83,16 @@ df_syria.out.cat <- df_syria.out %>%
   group_by(date, type) %>%
   summarise(density = sum(density))
 
-if(plot_ly){
-  # if TRUE, export as plot_ly widget
+if(plot_ly)
+
+  # general
+  p <- plot_ly(df_syria.out.general,
+               type = 'scatter',
+               x = ~date,
+               y = ~round(density, 4),
+               mode = 'line')
+
+  # type
   p <- plot_ly(df_syria.out.cat,
               type = 'scatter',
               x = ~date,
@@ -93,11 +101,6 @@ if(plot_ly){
               color=~type,
               mode = 'line')
 
-  p <- plot_ly(df_syria.out.general,
-               type = 'scatter',
-               x = ~date,
-               y = ~round(density, 4),
-               mode = 'line')
 
     layout(title = "Threat types")
   p

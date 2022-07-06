@@ -11,7 +11,7 @@ plot_ly <- T
 by.cat <- T
 export.to.tsv <- F
 show.to.html <- F
-filter.on.id <- T
+filter.on.id <- F
 id.filter <- c("AM009") # select these/this IDs
 
 path_time <- paste0(getwd(), "/functions/time/")

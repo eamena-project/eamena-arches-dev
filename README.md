@@ -22,4 +22,4 @@
   - [grids](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/data/grids/qdgc_#readme)
   - [geojson](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/data/geojson#readme)
 
-* [functions](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/functions)
+* [functions](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/functions#readme)

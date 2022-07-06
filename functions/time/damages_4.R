@@ -8,6 +8,7 @@ library(htmlwidgets)
 
 
 plot_ly <- T
+by.cat <- T
 export.to.tsv <- F
 show.to.html <- F
 filter.on.id <- T
@@ -83,15 +84,15 @@ df_syria.out.cat <- df_syria.out %>%
   group_by(date, type) %>%
   summarise(density = sum(density))
 
-if(plot_ly)
-
+if(plot_ly){
   # general
   p <- plot_ly(df_syria.out.general,
                type = 'scatter',
                x = ~date,
                y = ~round(density, 4),
                mode = 'line')
-
+  saveWidget(as_widget(p), paste0(getwd(),"/functions/time/results/", file_out, "_threats.html"))
+  if(by.cat){
   # type
   p <- plot_ly(df_syria.out.cat,
               type = 'scatter',
@@ -99,12 +100,13 @@ if(plot_ly)
               # y = ~density,
               y = ~round(density, 4),
               color=~type,
-              mode = 'line')
-
-
-    layout(title = "Threat types")
-  p
-  saveWidget(as_widget(p), paste0(getwd(),"/functions/time/results/", file_out, "_threat_types.html"))
+              mode = 'line') %>%
+    layout(title = "Threats intensity on Tell Dapiq (AM009)")
+  if(filter.on.id){
+    saveWidget(as_widget(p), paste0(getwd(),"/functions/time/results/", file_out, "_threats_types_", paste0(as.character(id.filter), collapse = "_"), ".html"))
+  }
+  saveWidget(as_widget(p), paste0(getwd(),"/functions/time/results/", file_out, "_threats_types.html"))
+  }
   # saveWidget(as_widget(p), paste0(getwd(),"/results/threats.html"))
 }
 

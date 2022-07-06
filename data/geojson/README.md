@@ -8,18 +8,22 @@ On EAMENA, search for the resources, select Download and copy the geojson url (i
 
 ![](../../www/geojson-export.png)
 
-2. **Get the GeoJSON content**  
+2. Send this URL to @EMANEA or follow with 3.
+
+3. Createa GeoJSON file
+
+    3.1. **Get the GeoJSON content**  
 Paste the copied URL into the address bar, the result is something like :
 
 ![](../../www/geojson-url.png)
 
-3. **Create a new GeoJSON file**  
+    3.2 **Create a new GeoJSON file**  
 Copy the GeoJSON content and save it in a new GeoJSON file, for example `caravanserail.geojson`, `qasr.geojson`, etc.
 
-4. **Host on GitHub**  
+    3.3 **Host on GitHub**  
 Host this GeoJSON file on GitHub, for example in the `https://github.com/eamena-oxford/eamena-arches-dev/blob/main/data/geojson/` folder.
 
-5. **Visualise the map**  
+    3.4 **Visualise the map**  
 In your web browser, access the GeoJSON file directly by its URL, for example https://github.com/eamena-oxford/eamena-arches-dev/blob/main/data/geojson/caravanserail.geojson.
   
 ![](../../www/geojson-github.png)

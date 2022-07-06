@@ -4,7 +4,7 @@
 # the ring fencing has been created by Knowlegde Integration
 # it was imported from https://github.com//reubenosborne1/ringfencing-function
 
-# modify these variables to match your current Arches instance
+# modify this variable to match your current Arches instance name
 PROJECT="my_project"
 
 # all JS
@@ -24,13 +24,12 @@ cd views
 wget https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/functions/ring-fencing/files/userandgroups.py
 # for commands
 cd /home/archesadmin/$PROJECT/$PROJECT/management/commands
-wget https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/functions/ring-fencing/files/resave_all_resrouces.py
-mv ./resave_all_resrouces.py ./resave_all_resources.py # correct typo error
+wget https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/functions/ring-fencing/files/resave_all_resources.py
 
-# register function
+# register the function in the Pg 'functions' table
 cd /home/archesadmin/$PROJECT
 venv
-python manage.py fn register --source '/home/archesadmin/$PROJECT/$PROJECT/functions/ringfencing.py'
+python manage.py fn register --source '/home/archesadmin/'$PROJECT'/'$PROJECT'/functions/ringfencing.py'
 
 # modify urls.py
 cd /home/archesadmin/$PROJECT/$PROJECT/
@@ -55,13 +54,3 @@ python manage.py fn unregister --source '/home/archesadmin/$PROJECT/$PROJECT/fun
 cd /home/archesadmin/$PROJECT/$PROJECT/management/commands
 venv
 python manage.py resave_all_resources
-
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# function manager
-http://54.74.247.130/graph/34cfe98e-c2c0-11ea-9026-02e7594ce0a0/function_manager
-nb HP = 1592
-# 1
-EAMENA-0187131, er-Rasm
-Overall Archaeological Certainty
-Overall Archaeological Certainty Value
-High

@@ -90,7 +90,8 @@ if(plot_ly){
                type = 'scatter',
                x = ~date,
                y = ~round(density, 4),
-               mode = 'line')
+               mode = 'line') %>%
+    layout(title = "Threats")
   saveWidget(as_widget(p), paste0(getwd(),"/functions/time/results/", file_out, "_threats.html"))
   if(by.cat){
   # type

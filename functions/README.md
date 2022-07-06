@@ -11,6 +11,7 @@ files
 * [ringfencing.htm](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/functions/ring-fencing/files/ringfencing.htm)
 * [ringfencing.js](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/functions/ring-fencing/files/ringfencing.js)
 * [ringfencing.py](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/functions/ring-fencing/files/ringfencing.py)
+* [userandgroups.py](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/functions/ring-fencing/files/userandgroups.py)
 
 bash script for function installation
 

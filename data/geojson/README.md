@@ -16,21 +16,22 @@ On EAMENA, search for the resources, select Download and copy the geojson url (i
 Paste the copied URL into the address bar, the result is something like :
 
 ![](../../www/geojson-url.png)
+  
 
-    3.2 **Create a new GeoJSON file**  
+    3.2. **Create a new GeoJSON file**  
 Copy the GeoJSON content and save it in a new GeoJSON file, for example `caravanserail.geojson`, `qasr.geojson`, etc.
 
-    3.3 **Host on GitHub**  
+    3.3. **Host on GitHub**  
 Host this GeoJSON file on GitHub, for example in the `https://github.com/eamena-oxford/eamena-arches-dev/blob/main/data/geojson/` folder.
 
-    3.4 **Visualise the map**  
+    3.4. **Visualise the map**  
 In your web browser, access the GeoJSON file directly by its URL, for example https://github.com/eamena-oxford/eamena-arches-dev/blob/main/data/geojson/caravanserail.geojson.
   
 ![](../../www/geojson-github.png)
 
 ## GeoJSON -> leaflet with R Workflow
 
-After 1., 2., 3. and 4. previous steps, run the R script https://github.com/eamena-oxford/eamena-arches-dev/blob/main/functions/map_geojson.R will create a HTML file, for example: https://eamena-oxford.github.io/eamena-arches-dev/data/geojson/maps/caravanserail
+After 1., 2., and 3. previous steps, run the R script https://github.com/eamena-oxford/eamena-arches-dev/blob/main/functions/map_geojson.R will create a HTML file, for example: https://eamena-oxford.github.io/eamena-arches-dev/data/geojson/maps/caravanserail
 
 ![](../../www/geojson-r-leaflet.png)
 

@@ -101,9 +101,9 @@ if(plot_ly){
               y = ~round(density, 4),
               color=~type,
               mode = 'line') %>%
-    layout(title = "Threats intensity on Tell Dapiq (AM009)")
+    layout(title = "Threats types")
   if(filter.on.id){
-    saveWidget(as_widget(p), paste0(getwd(),"/functions/time/results/", file_out, "_threats_types_", paste0(as.character(id.filter), collapse = "_"), ".html"))
+    saveWidget(as_widget(p), paste0(getwd(),"/functions/time/results/", file_out, "_threats_types", paste0(as.character(id.filter), collapse = "_"), ".html"))
   }
   saveWidget(as_widget(p), paste0(getwd(),"/functions/time/results/", file_out, "_threats_types.html"))
   }

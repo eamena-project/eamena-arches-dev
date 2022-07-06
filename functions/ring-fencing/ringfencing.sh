@@ -1,27 +1,30 @@
 # Install the ring fencing function
 # AWS DB 24test
 
+# the ring fencing has been created by Knowlegde Integration
+# it was imported from https://github.com//reubenosborne1/ringfencing-function
+
 # modify these variables to match your current Arches instance
 PROJECT="my_project"
 
 # all JS
 cd /home/archesadmin/$PROJECT/$PROJECT/media/js/views/components/functions
-wget https://raw.githubusercontent.com/reubenosborne1/ringfencing-function/master/ringfencing.js
+wget https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/functions/ring-fencing/files/ringfencing.js
 # all HTM
 cd /home/archesadmin/$PROJECT/$PROJECT/templates/views/components/functions/
-wget https://raw.githubusercontent.com/reubenosborne1/ringfencing-function/master/ringfencing.htm
+wget https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/functions/ring-fencing/files/ringfencing.htm
 # all PY
 cd /home/archesadmin/$PROJECT/$PROJECT/functions/
-wget https://raw.githubusercontent.com/reubenosborne1/ringfencing-function/master/ringfencing.py
+wget https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/functions/ring-fencing/files/ringfencing.py
 # for views
 cd /home/archesadmin/$PROJECT/$PROJECT/
 mkdir views # if not extist
 sudo chown $username:root ./views
 cd views
-wget https://raw.githubusercontent.com/reubenosborne1/ringfencing-function/master/userandgroups.py
+wget https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/functions/ring-fencing/files/userandgroups.py
 # for commands
 cd /home/archesadmin/$PROJECT/$PROJECT/management/commands
-wget https://raw.githubusercontent.com/reubenosborne1/ringfencing-function/master/resave_all_resrouces.py
+wget https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/functions/ring-fencing/files/resave_all_resrouces.py
 mv ./resave_all_resrouces.py ./resave_all_resources.py # correct typo error
 
 # register function

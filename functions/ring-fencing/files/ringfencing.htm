@@ -1,0 +1,163 @@
+{% load i18n %}
+
+<style>
+
+th{
+  background: #579ddb;
+  color: #fff;
+  padding: 9px 5px;
+  border-bottom: 1px solid #D3E5F4;
+  font-weight: 600;
+}
+
+tr{
+  height: 40px;
+  padding: 9px 5px;
+}
+
+td{
+  padding: 9px 5px;
+}
+
+tr:first-child{
+  background-color: #f8f8f8;
+}
+
+tr:nth-child(odd) {
+    background: #F5FAFE;
+}
+
+</style>
+
+<div style="height: fit-content;">
+  <div class="row widget-container">
+    <div class="form-group">
+      <div class="relative">
+        <div>
+          <label class="control-label widget-input-label">
+            {% trans "Node Group" %}</label>
+            <div class="widget-input" style="display: inline-block" data-bind="select2Query: {
+              select2Config: {
+                      clickBubble: false,
+                      disabled: false,
+                      data: cards(),
+                      value: selectedNodeGroup,
+                      allowClear: true,
+                      multiple: false,
+                      placeholder: 'Select Node'}}"></div>
+                    </div>
+        <!--ko if: selectedNodeGroup()-->
+        <div class="widget-input">
+          <label class="control-label widget-input-label">
+            {% trans "Node" %}</label>
+          <div style="display: inline-block" data-bind="select2Query: {
+            select2Config: {
+              clickBubble: false,
+              disabled: false,
+              data: nodes(),
+              value: selectedNode,
+              allowClear: true,
+              multiple: false,
+              placeholder: 'Select Node'}}"></div>
+            </div>
+            <!--/ko-->
+            <!--ko if: selectedNode-->
+            <div class="widget-input">
+              <div style="display: inline-block" data-bind='component: {
+                        name: "concept-multiselect-widget",
+                        params: {
+                          config: {defaultValue:"", label:"Concept Value", options:[], placeholder:"Select an option"},
+                          value: selectedVal,
+                          node: concept_node(),
+                          type: "resource-editor",
+                        }
+                    }'></div>
+                  </div>
+                  <!--/ko-->
+                  <!--ko if: selectedVal -->
+                  
+                  <div class="permission-header">
+                    <h4>{% trans 'Set Permissions for this instance' %}</h4>
+                    <h5>{% trans 'By default only you have access to this record. You can set permissions for specific people or groups by selecting to whom you will grant access' %}</h5>
+                  </div>
+        <div class="permission-control"></div>
+        <div class="permission-list">
+          <div class="applied-permissions">
+            <div class="permission-list-table">
+              <div class="permissions-list-header">
+                <div class="identities-column">{% trans 'Person/Group' %}</div>
+                <div class="permissions-column">{% trans 'Permissions' %}</div>
+              </div>
+              
+              <div class="permissions-list-table-body" style="height: fit-content">
+                <div data-bind="foreach: userGroups">
+                  <div class="permissions-table-row">
+                    <div style="display: inline-flex; height: 20px">
+                      <div class="identities-column">
+                        <span data-bind="text: $data.identityName"></span>
+                      </div>
+                      <div class="permissions-column">
+                        <span class="switch-small"
+                        data-bind="component: { name: 'views/components/simple-switch', params: {value: $data.identityVal}}"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--/ko-->
+
+        <div style="color: white;">
+          SPACER
+        </div>
+
+        <div style="height: 240px; overflow-y: scroll;">
+          <table style="width: 100%">
+            <colgroup>
+              <col span="1" style="width: 26.6%;">
+              <col span="1" style="width: 26.6%;">
+              <col span="1" style="width: 26.6%;">
+              <col span="1" style="width: 10%;">
+              <col span="1" style="width: 10%;">
+          </colgroup>
+
+          <thead style = "border-left: 1px solid #D3E5F4;">
+            <th>Node Group</th>
+            <th>Node</th>
+            <th style = "border-right: 1px solid #D3E5F4;">Value</th>
+            <th style="visibility: hidden; border-bottom:  1px solid white; "></th>
+            <th style="visibility: hidden; border-bottom:  1px solid white;"></th>
+          </thead>
+          <tbody style="border-bottom: 1px solid #D3E5F4;" data-bind="foreach: rules">
+            <tr>
+              <td  style="border-left: 1px solid #D3E5F4; border-bottom: 1px solid #D3E5F4;">
+                <span data-bind="text: $parent.getNodeText($data.selectedNodeGroup())"></span>
+              </td>
+              <td style="border-bottom: 1px solid #D3E5F4;">
+                <span data-bind="text: $parent.getNodeText($data.selectedNode())"></span>
+              </td>
+              <td style="border-right: 1px solid #D3E5F4; border-bottom: 1px solid #D3E5F4;">
+                <span data-bind="text: $parent.getConceptText($data.selectedVal())"></span>
+              </td>
+              <td style="background-color: white; border-bottom:  1px solid white;">
+                <a href="#" style="color: blue;" data-bind="click: $parent.editRule.bind($data)">Edit</a>
+              </td>
+              <td style="background-color: white; border-bottom:  1px solid white;">
+                <a href="#" style="color: red;" data-bind="click: $parent.removeRule">Remove</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+        
+        <div style="color: white;">
+          SPACER
+        </div>
+        
+        <button style="float:right" data-bind="click: addRule">Add Rule</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -11,7 +11,7 @@ plot_ly <- T
 by.cat <- T
 export.to.tsv <- F
 show.to.html <- F
-filter.on.id <- F
+filter.on.id <- T
 id.filter <- c("AM009") # select these/this IDs
 
 path_time <- paste0(getwd(), "/functions/time/")
@@ -46,11 +46,11 @@ if(filter.on.id){
 
 # reformat dataframe and dates
 df_syria.out <- data.frame(#region = character(),
-                           site = character(),
-                           date = character(),
-                           cause = character(),
-                           type = character(),
-                           density = integer())
+  site = character(),
+  date = character(),
+  cause = character(),
+  type = character(),
+  density = integer())
 for(i in seq_len(nrow(df_syria))){
   # intersect with the limits of the study: "2004-01-01..2019-12-31"
   # loop to read the date field
@@ -63,11 +63,11 @@ for(i in seq_len(nrow(df_syria))){
   var.cause <- rep(df_syria[i, cause_field], n.dates)
   var.type <- rep(df_syria[i, type_field], n.dates)
   df.damage <- data.frame(#region = var.region,
-                          site = var.site,
-                          date = var.date,
-                          cause = var.cause,
-                          type = var.type,
-                          density = 1/n.dates)
+    site = var.site,
+    date = var.date,
+    cause = var.cause,
+    type = var.type,
+    density = 1/n.dates)
   df_syria.out <- rbind(df_syria.out, df.damage)
 }
 # # export XLSX to TSV
@@ -94,19 +94,19 @@ if(plot_ly){
     layout(title = "Threats")
   saveWidget(as_widget(p), paste0(getwd(),"/functions/time/results/", file_out, "_threats.html"))
   if(by.cat){
-  # type
-  p <- plot_ly(df_syria.out.cat,
-              type = 'scatter',
-              x = ~date,
-              # y = ~density,
-              y = ~round(density, 4),
-              color=~type,
-              mode = 'line') %>%
-    layout(title = "Threats types")
-  if(filter.on.id){
-    saveWidget(as_widget(p), paste0(getwd(),"/functions/time/results/", file_out, "_threats_types", paste0(as.character(id.filter), collapse = "_"), ".html"))
-  }
-  saveWidget(as_widget(p), paste0(getwd(),"/functions/time/results/", file_out, "_threats_types.html"))
+    # type
+    p <- plot_ly(df_syria.out.cat,
+                 type = 'scatter',
+                 x = ~date,
+                 # y = ~density,
+                 y = ~round(density, 4),
+                 color=~type,
+                 mode = 'line') %>%
+      layout(title = "Threats types")
+    if(filter.on.id){
+      saveWidget(as_widget(p), paste0(getwd(),"/functions/time/results/", file_out, "_threats_types", paste0(as.character(id.filter), collapse = "_"), ".html"))
+    }
+    saveWidget(as_widget(p), paste0(getwd(),"/functions/time/results/", file_out, "_threats_types.html"))
   }
   # saveWidget(as_widget(p), paste0(getwd(),"/results/threats.html"))
 }

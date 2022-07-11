@@ -1,0 +1,301 @@
+{
+    "graph": [
+        {
+            "author": " ",
+            "cards": [
+                {
+                    "active": true,
+                    "cardid": "d447b1de-ecb1-11ec-8a1a-0f1356e151c4",
+                    "component_id": "2ed3f508-4e8e-11ea-b975-5b976cab10db",
+                    "config": {
+                        "defaultManifest": ""
+                    },
+                    "constraints": [
+                        {
+                            "card_id": "d447b1de-ecb1-11ec-8a1a-0f1356e151c4",
+                            "constraintid": "d9abff05-cc32-45e3-a4ce-cc63965b4bca",
+                            "nodes": [
+                                "b3de13a0-ecb6-11ec-8a1a-0f1356e151c4"
+                            ],
+                            "uniquetoallinstances": false
+                        },
+                        {
+                            "card_id": "d447b1de-ecb1-11ec-8a1a-0f1356e151c4",
+                            "constraintid": "218395fe-cdf9-40c4-b56f-5311bef2a291",
+                            "nodes": [],
+                            "uniquetoallinstances": false
+                        }
+                    ],
+                    "cssclass": null,
+                    "description": "my IIIF node",
+                    "graph_id": "6aa8718b-ecb1-11ec-8a1a-0f1356e151c4",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": "my IIIF card subtitle",
+                    "is_editable": false,
+                    "name": "IIIF Node",
+                    "nodegroup_id": "d447b1dc-ecb1-11ec-8a1a-0f1356e151c4",
+                    "sortorder": null,
+                    "visible": true
+                }
+            ],
+            "cards_x_nodes_x_widgets": [
+                {
+                    "card_id": "d447b1de-ecb1-11ec-8a1a-0f1356e151c4",
+                    "config": {
+                        "defaultManifest": "",
+                        "label": "Annotation"
+                    },
+                    "id": "3a5cfe52-ecb7-11ec-8a1a-0f1356e151c4",
+                    "label": "Annotation",
+                    "node_id": "2b38ac62-ecb2-11ec-8a1a-0f1356e151c4",
+                    "sortorder": null,
+                    "visible": true,
+                    "widget_id": "aae743b8-4c48-11ea-988b-2bc775672c81"
+                },
+                {
+                    "card_id": "d447b1de-ecb1-11ec-8a1a-0f1356e151c4",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Description",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "uneditable": false,
+                        "width": "100%"
+                    },
+                    "id": "3a5cfe54-ecb7-11ec-8a1a-0f1356e151c4",
+                    "label": "Description",
+                    "node_id": "5179acaa-ecb2-11ec-8a1a-0f1356e151c4",
+                    "sortorder": null,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                },
+                {
+                    "card_id": "d447b1de-ecb1-11ec-8a1a-0f1356e151c4",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "IIIF ID",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "uneditable": false,
+                        "width": "100%"
+                    },
+                    "id": "3a5cfe56-ecb7-11ec-8a1a-0f1356e151c4",
+                    "label": "IIIF ID",
+                    "node_id": "b3de13a0-ecb6-11ec-8a1a-0f1356e151c4",
+                    "sortorder": null,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                }
+            ],
+            "color": null,
+            "config": {},
+            "deploymentdate": null,
+            "deploymentfile": null,
+            "description": "blblba",
+            "edges": [
+                {
+                    "description": null,
+                    "domainnode_id": "d447b1dc-ecb1-11ec-8a1a-0f1356e151c4",
+                    "edgeid": "2b38ac63-ecb2-11ec-8a1a-0f1356e151c4",
+                    "graph_id": "6aa8718b-ecb1-11ec-8a1a-0f1356e151c4",
+                    "name": null,
+                    "ontologyproperty": "http://www.ics.forth.gr/isl/CRMdig/L43i_is_annotated_by",
+                    "rangenode_id": "2b38ac62-ecb2-11ec-8a1a-0f1356e151c4"
+                },
+                {
+                    "description": null,
+                    "domainnode_id": "d447b1dc-ecb1-11ec-8a1a-0f1356e151c4",
+                    "edgeid": "5179acab-ecb2-11ec-8a1a-0f1356e151c4",
+                    "graph_id": "6aa8718b-ecb1-11ec-8a1a-0f1356e151c4",
+                    "name": null,
+                    "ontologyproperty": "http://www.ics.forth.gr/isl/CRMdig/L47_has_comment",
+                    "rangenode_id": "5179acaa-ecb2-11ec-8a1a-0f1356e151c4"
+                },
+                {
+                    "description": null,
+                    "domainnode_id": "d447b1dc-ecb1-11ec-8a1a-0f1356e151c4",
+                    "edgeid": "b3de13a1-ecb6-11ec-8a1a-0f1356e151c4",
+                    "graph_id": "6aa8718b-ecb1-11ec-8a1a-0f1356e151c4",
+                    "name": null,
+                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by",
+                    "rangenode_id": "b3de13a0-ecb6-11ec-8a1a-0f1356e151c4"
+                },
+                {
+                    "description": null,
+                    "domainnode_id": "6aa8718a-ecb1-11ec-8a1a-0f1356e151c4",
+                    "edgeid": "d447b1df-ecb1-11ec-8a1a-0f1356e151c4",
+                    "graph_id": "6aa8718b-ecb1-11ec-8a1a-0f1356e151c4",
+                    "name": null,
+                    "ontologyproperty": "http://www.ics.forth.gr/isl/CRMarchaeo/AP20i_contains",
+                    "rangenode_id": "d447b1dc-ecb1-11ec-8a1a-0f1356e151c4"
+                }
+            ],
+            "functions_x_graphs": [
+                {
+                    "config": {
+                        "description": {
+                            "nodegroup_id": "d447b1dc-ecb1-11ec-8a1a-0f1356e151c4",
+                            "string_template": "<IIIF ID>, <Description>"
+                        },
+                        "map_popup": {
+                            "nodegroup_id": "d447b1dc-ecb1-11ec-8a1a-0f1356e151c4",
+                            "string_template": "<IIIF ID>, <Description>"
+                        },
+                        "name": {
+                            "nodegroup_id": "d447b1dc-ecb1-11ec-8a1a-0f1356e151c4",
+                            "string_template": "<IIIF ID>"
+                        },
+                        "triggering_nodegroups": []
+                    },
+                    "function_id": "60000000-0000-0000-0000-000000000001",
+                    "graph_id": "6aa8718b-ecb1-11ec-8a1a-0f1356e151c4",
+                    "id": "25fc7c8b-ecba-11ec-8a1a-0f1356e151c4"
+                }
+            ],
+            "graphid": "6aa8718b-ecb1-11ec-8a1a-0f1356e151c4",
+            "iconclass": "fa fa-file-picture-o",
+            "is_editable": false,
+            "isactive": true,
+            "isresource": true,
+            "jsonldcontext": null,
+            "name": "IIIF",
+            "nodegroups": [
+                {
+                    "cardinality": "n",
+                    "legacygroupid": null,
+                    "nodegroupid": "d447b1dc-ecb1-11ec-8a1a-0f1356e151c4",
+                    "parentnodegroup_id": null
+                }
+            ],
+            "nodes": [
+                {
+                    "config": null,
+                    "datatype": "annotation",
+                    "description": "my annotation node",
+                    "exportable": false,
+                    "fieldname": null,
+                    "graph_id": "6aa8718b-ecb1-11ec-8a1a-0f1356e151c4",
+                    "is_collector": false,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Annotation",
+                    "nodegroup_id": "d447b1dc-ecb1-11ec-8a1a-0f1356e151c4",
+                    "nodeid": "2b38ac62-ecb2-11ec-8a1a-0f1356e151c4",
+                    "ontologyclass": "http://www.ics.forth.gr/isl/CRMdig/D29_Annotation_Object",
+                    "parentproperty": "http://www.ics.forth.gr/isl/CRMdig/L43i_is_annotated_by",
+                    "sortorder": 0
+                },
+                {
+                    "config": null,
+                    "datatype": "string",
+                    "description": "my description node",
+                    "exportable": false,
+                    "fieldname": null,
+                    "graph_id": "6aa8718b-ecb1-11ec-8a1a-0f1356e151c4",
+                    "is_collector": false,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Description",
+                    "nodegroup_id": "d447b1dc-ecb1-11ec-8a1a-0f1356e151c4",
+                    "nodeid": "5179acaa-ecb2-11ec-8a1a-0f1356e151c4",
+                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E59_Primitive_Value",
+                    "parentproperty": "http://www.ics.forth.gr/isl/CRMdig/L47_has_comment",
+                    "sortorder": 0
+                },
+                {
+                    "config": null,
+                    "datatype": "semantic",
+                    "description": "",
+                    "exportable": false,
+                    "fieldname": null,
+                    "graph_id": "6aa8718b-ecb1-11ec-8a1a-0f1356e151c4",
+                    "is_collector": false,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": true,
+                    "name": "IIIF",
+                    "nodegroup_id": null,
+                    "nodeid": "6aa8718a-ecb1-11ec-8a1a-0f1356e151c4",
+                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
+                    "parentproperty": "",
+                    "sortorder": 0
+                },
+                {
+                    "config": null,
+                    "datatype": "string",
+                    "description": null,
+                    "exportable": false,
+                    "fieldname": null,
+                    "graph_id": "6aa8718b-ecb1-11ec-8a1a-0f1356e151c4",
+                    "is_collector": false,
+                    "isrequired": true,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "IIIF ID",
+                    "nodegroup_id": "d447b1dc-ecb1-11ec-8a1a-0f1356e151c4",
+                    "nodeid": "b3de13a0-ecb6-11ec-8a1a-0f1356e151c4",
+                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E42_Identifier",
+                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by",
+                    "sortorder": 0
+                },
+                {
+                    "config": null,
+                    "datatype": "semantic",
+                    "description": "my IIIF node",
+                    "exportable": false,
+                    "fieldname": null,
+                    "graph_id": "6aa8718b-ecb1-11ec-8a1a-0f1356e151c4",
+                    "is_collector": true,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "IIIF Node",
+                    "nodegroup_id": "d447b1dc-ecb1-11ec-8a1a-0f1356e151c4",
+                    "nodeid": "d447b1dc-ecb1-11ec-8a1a-0f1356e151c4",
+                    "ontologyclass": "http://www.ics.forth.gr/isl/CRMarchaeo/A7_Embedding",
+                    "parentproperty": "http://www.ics.forth.gr/isl/CRMarchaeo/AP20i_contains",
+                    "sortorder": 0
+                }
+            ],
+            "ontology_id": "e6e8db47-2ccf-11e6-927e-b8f6b115d7dd",
+            "relatable_resource_model_ids": [
+                "6aa8718b-ecb1-11ec-8a1a-0f1356e151c4",
+                "6aa8718b-ecb1-11ec-8a1a-0f1356e151c4",
+                "6c4f0703-c381-11ea-9026-02e7594ce0a0",
+                "34cfe98e-c2c0-11ea-9026-02e7594ce0a0"
+            ],
+            "resource_2_resource_constraints": [],
+            "root": {
+                "config": null,
+                "datatype": "semantic",
+                "description": "",
+                "exportable": false,
+                "fieldname": null,
+                "graph_id": "6aa8718b-ecb1-11ec-8a1a-0f1356e151c4",
+                "is_collector": false,
+                "isrequired": false,
+                "issearchable": true,
+                "istopnode": true,
+                "name": "IIIF",
+                "nodegroup_id": null,
+                "nodeid": "6aa8718a-ecb1-11ec-8a1a-0f1356e151c4",
+                "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
+                "sortorder": 0
+            },
+            "slug": null,
+            "subtitle": "IIIF for EAMENA",
+            "template_id": "50000000-0000-0000-0000-000000000001",
+            "version": ""
+        }
+    ],
+    "metadata": {
+        "db": "PostgreSQL 12.11 (Ubuntu 12.11-0ubuntu0.20.04.1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0, 64-bit",
+        "git hash": "fatal: unsafe repository ('/home/archesadmin/arches' is owned by someone else)",
+        "os": "Linux",
+        "os version": "5.13.0-1022-aws"
+    }
+}

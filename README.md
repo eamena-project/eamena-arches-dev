@@ -1,25 +1,46 @@
 # eamena-arches-dev  <img src="www/logo.png" width='100px' align="right"/>
 > development repository
 
-* [training](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/training):
-  - [README](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/training#readme)
+## Arches/EAMENA training
+
+[README](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/training#readme)
+
+## Arches translation/internationalization
+
+[README](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/translation/README.md)
+
+## EAMENA checks
+
+[README](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/check/check.md#checks)
+
+## Data
+
+### Bulk
+
+[README](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/data/bulk/BU.md)
+[bash](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/data/bulk/run_bulks.sh)
+
+### Grids
+
+[README](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/data/grids/qdgc_#readme)
+### GeoJSON
+
+[README](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/data/geojson#readme)
+
+## Functions
+
+[README](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/functions#readme)
+
+## IIIF
+
+[iiif](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/iiif)
+
+### Troubleshooting
+
+* [TODO](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/readme)
 
 ---
 
 * [CAA22#S07](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/event/CAA-S07.md)
 
 ---
-
-* [translation](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/translation)
-  - [README](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/translation/README.md)
-
-* [checks](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/check/check.md#checks)
-
-* data
-  - [bulk](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/data/bulk)
-    + [README](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/data/bulk/BU.md)
-    + [bash](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/data/bulk/run_bulks.sh)
-  - [grids](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/data/grids/qdgc_#readme)
-  - [geojson](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/data/geojson#readme)
-
-* [functions](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/functions#readme)

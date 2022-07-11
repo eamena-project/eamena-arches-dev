@@ -1,0 +1,23 @@
+-- examples
+
+-- /!\ image link is broken
+-- select * from tiles where resourceinstanceid = '062e337f-60ec-4240-9ccc-93874baa2c2b'
+
+-- /!\ image link is OK
+-- select * from tiles where resourceinstanceid = '07b8ecdd-21d3-44d4-b1f1-0f0271e29310' 
+
+-- queries
+
+select resourceinstanceid, tiledata from tiles 
+--select count(*) from tiles 
+where tiledata -> 'c712066a-8094-11ea-a6a6-02e7594ce0a0' -> 0 ->> 'url' ilike '%staticflick%'
+order by resourceinstanceid desc
+limit 10
+
+COPY (select count(*) from graphs) to 'C:\\Rprojects\\_coll\\220808 CAA22\\3dlithic\\my_copy_test.csv' csv header;
+select 'https://database.eamena.org/en/report/' || resourceinstanceid from tiles 
+--select count(*) from tiles 
+where tiledata -> 'c712066a-8094-11ea-a6a6-02e7594ce0a0' -> 0 ->> 'url' ilike '%staticflick%'
+
+
+

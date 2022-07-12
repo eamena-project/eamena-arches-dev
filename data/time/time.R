@@ -14,6 +14,25 @@ library(htmlwidgets)
 Dates <- F
 EDTFs <- F
 CulturalPeriods <- F
+CulturalPer.HP <- F
+
+if(CulturalPer.HP){
+  # collect all Cultural periods for a given HP
+  dir_funct <- paste0(getwd(), "/functions/R/")
+  source(paste0(dir_funct, "_conn.R"))        # read the secret credential
+  source(paste0(dir_funct, "R_functions_2.R"))  # read the functions file
+
+  d_sql <- hash::hash() # hash instance to store the results
+  d_sql <- uuid_from_eamenaid("eamena", "EAMENA-0187363", d_sql, "uuid")
+  d_sql$uuid
+  # - - - - - - - -
+  # SQL: select * from values where value = 'Iron Age (Levant/Mesopotamia)'
+  # return two values in conceptid:
+  #     - b9f0270b-c04e-4c77-9a82-5062ecfa7ae1 : ???
+  #     - ce7f6688-212a-47b1-8c2b-d95ce219c8e9 : c'est l'UUID de Concept/Thesauri
+  # - - - - - - - -
+}
+
 
 if(Period.do){
   # convert Perio.do CSV into a data.table table
@@ -34,28 +53,31 @@ if(CulturalPeriods){
   d_sql <- hash::hash() # hash instance to store the results
 
   # list concepts below Cultural Period
-
   filed.out <- "CulturalPeriod_list"
   d_sql <- list_cpts(con, d_sql, field.out, '3b5c9ac7-5615-3de6-9e2d-4cd7ef7460e4')
   g <- d_sql$CulturalPeriod_list
-  # The Cultural periods are the leaves of the Concept list
-  leaves <- V(g)[degree(g, mode="out") == 0]
-  leaves <- leaves$name
-  df.equiv <- data.frame(eamena = leaves,
-                         periodo = rep("", length(leaves)))
-  write.table(df.equiv, paste0(getwd(),"/data/time/results/equivalences.tsv"), sep ="\t", row.names = F)
+
+  write.leaves <- F
+  if(write.leaves){
+    # The Cultural periods are the leaves of the Concept list
+    leaves <- V(g)[degree(g, mode="out") == 0]
+    leaves <- leaves$name
+    df.equiv <- data.frame(eamena = leaves,
+                           periodo = rep("", length(leaves)))
+    write.table(df.equiv, paste0(getwd(),"/data/time/results/equivalences.tsv"), sep ="\t", row.names = F)
+  }
 
   # format for collapsibleTree
   edges.cultural.period <- as_data_frame(g, what = "edges")
   edges.cultural.period$root <- "cultural.period"
   edges.cultural.period <- edges.cultural.period[edges.cultural.period$from != "cultural.period", ]
   tree.edges.cultural.period <- collapsibleTree(edges.cultural.period,
-                  hierarchy = c("root", "from", "to"),
-                  root = "Thesauri",
-                  c("from", "to"),
-                  collapsed = FALSE,
-                  width = 1200,
-                  height = 900)
+                                                hierarchy = c("root", "from", "to"),
+                                                root = "Thesauri",
+                                                c("from", "to"),
+                                                collapsed = FALSE,
+                                                width = 1200,
+                                                height = 900)
   # tree.edges.cultural.period <- collapsibleTree(edges.cultural.period,
   #                                               c("from", "to"),
   #                                               collapsed = FALSE,
@@ -80,10 +102,6 @@ if(Dates){
     source(paste0(dir_funct, "R_functions_2.R"))  # read the functions file
 
     d_sql <- hash::hash() # hash instance to store the results
-
-    # counts of HPs
-    d_sql <- count_hps(con, d_sql, "HPs_count")
-    d_sql$HPs_count
 
     # threats and dates
     d_sql <- threats_hps(con, d_sql, "HPs_treats")
@@ -123,7 +141,7 @@ if(Dates){
     # load 'out_df_clean'
     load("C:/Rprojects/eamena-arches-dev/functions/R/out_df_clean.RData")
   }
-  # translate arabic
+  # translate from arabic to english
   out_df_clean[grepl("بناء والتطوير", out_df_clean$threatcat), ] <- "Building and Development"
   out_df_clean[grepl("لأنشطة المخالفة للقانون", out_df_clean$threatcat), ] <- "Looting/Illegal Activities"
   out_df_clean[grepl("طبيعي", out_df_clean$threatcat), ] <- "Natural"

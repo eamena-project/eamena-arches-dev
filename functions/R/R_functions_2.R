@@ -4,23 +4,29 @@ library(hash)
 library(igraph)
 library(stringr)
 
-uuid_from_eamenaid <- function(eamenaid_pattern){
-  d_sql[["HPs_count"]] <- paste0("SELECT t.tileid, t.resourceinstanceid,
+uuid_from_eamenaid <- function(db, eamenaid, d, field){
+  # return the UUUID from EAMENA id
+  sqll <- str_interp("SELECT t.tileid, t.resourceinstanceid,
      t.tiledata, n.nodeid
     FROM tiles t LEFT JOIN nodes n ON t.nodegroupid = n.nodegroupid
-    WHERE (t.tiledata::json -> n.nodeid::text)::text like '%",
-                                 eamenaid.pattern, "%'")
-  return(d_sql)
+    WHERE (t.tiledata::json -> n.nodeid::text)::text like '%${eamenaid}%'")
+  con <- my_con(db) # load the Pg connection
+  df <- dbGetQuery(con, sqll)
+  d[[field]] <- as.character(df$resourceinstanceid)
+  dbDisconnect(con)
+  return(d)
 }
 
 # count_hps(con.eamena, d_sql, "HPs_count")
 
-count_hps <- function(con, d, field){
+count_hps <- function(db, d, field){
   # count Heritage Places (HPs)
+  # Is 'con' useful?
   sqll <- "select count(
         tiledata->>'34cfe992-c2c0-11ea-9026-02e7594ce0a0' like '%EAMENA%'
         ) as HPs_count FROM tiles;"
-  con <- my_con() # load the Pg connection
+  print(sqll)
+  con <- my_con(db) # load the Pg connection
   d[[field]] <- dbGetQuery(con, sqll)
   dbDisconnect(con)
   return(d)
@@ -28,7 +34,9 @@ count_hps <- function(con, d, field){
 
 #' collect fields: EAMENA_ID, ThreatCat, AssessType, AssessDate, resourceinstanceid
 #' @name threats_hps
-#' @description Read the DB and gather the different threats by HP
+#' @description Read the DB and gather the different threats by HP. A join with the table 'values'
+#' is needed since the 'tiles' table gathers principally UUID that must be translated
+#' into human-readable values
 #'
 #' @param con a Pg connection
 #' @param d a hash() object (a Python-like dictionary)

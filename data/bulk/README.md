@@ -13,9 +13,7 @@ A Bulk Upload is a process allowing to upload **several XLSX files contained in 
 The updated version of the BU file is shared on Google Drive:  
   
 <p align="center">
-  
 https://drive.google.com/file/d/1KtZlCB_mdTOPxh1DpFdfeXddjJLTvF1k/view?usp=sharing
-  
 </p>
   
 ## BU process

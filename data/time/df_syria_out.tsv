@@ -1,0 +1,219 @@
+ID	S_ID	Disturbance.Type	Disturbance.Cause	Cause.Certainty	Cause_Source	Disturbance.Date.Type	Date.1	Date.2	EDTF	Disturbance.Effect.1	Effect.Certainty.1	Disturbance.Effect.2	Effect.Certainty.2	Disturbance.Effect.3	Effect.Certainty.3	Disturbance.Effect.4	Effect.Certainty.4	Disturbance.Effect.5	Effect.Certainty.5
+1	1	AM001	Domestic	Clearance (Bulldozing/Levelling)	Definite	Both	Occurred before	38107	NA	..2004-04-30	Loss of Archaeological Material	Definite	Alteration of Terrain	Definite	Access Restriction	Definite	Artefact Displacement	Definite		
+2	2	AM001	Infrastructure/Transport	Road/Track	Definite	Satellite	Occurred before	38107	NA	..2004-04-30	Alteration of Terrain	Medium	Covered	Definite	Access Restriction	Definite				
+3	3	AM001	Domestic	Construction	Definite	Satellite	Occurred before	38107	NA	..2004-04-30	Covered	Definite	Alteration of Terrain	Definite	Access Restriction	Definite	Artefact Displacement	Definite		
+4	4	AM001	Domestic	Construction	Definite	Satellite	Occurred between	39949	40704	2009-05-16:2011-06-10	Loss of Archaeological Material	High								
+5	5	AM001	Domestic	Construction	Definite	Satellite	Occurred between	40704	41392	2011-06-10:2013-04-28	Loss of Archaeological Material	High								
+6	6	AM001	Domestic	Construction	Definite	Satellite	Occurred between	41392	42120	2013-04-28:2015-04-26	Loss of Archaeological Material	High								
+7	7	AM001	Military	Clearance (Bulldozing/Levelling)	Definite	Both	Occurred between	42120	42458	2015-04-26:2016-03-29	Alteration of Terrain	Definite	Access Restriction	Definite						
+8	8	AM001	Domestic	Clearance (Bulldozing/Levelling)	Definite	Satellite	Occurred between	42458	42701	2016-03-29:2016-11-27	Loss of Archaeological Material	High								
+9	9	AM001	Looting	Drilling	Definite	Ground	Occurred before	42669	NA	..2016-10-26	Alteration of Terrain	Definite	Loss of Archaeological Material	Definite						
+10	10	AM001	Domestic	Drilling	Definite	Satellite	Occurred between	42728	42786	2016-12-24:2017-02-20	Loss of Archaeological Material	High								
+11	11	AM001	Domestic	Drilling	Definite	Satellite	Occurred between	42786	43129	2017-02-20:2018-01-29	Loss of Archaeological Material	High								
+12	12	AM002	Domestic	Clearance (Unclassified)	Definite	Both	Occurred before	38352	NA	..2004-12-31	Alteration of Terrain	Definite	Artefact Displacement	Definite	Loss of Archaeological Material	High	Covered	Definite		
+13	13	AM002	Natural	Wind Action	Definite	Ground	Occurred before	38352	NA	..2004-12-31	Erosion	Definite	Structural Alteration	Definite						
+14	14	AM002	Domestic	Construction	Definite	Both	Occurred between	38352	39949	2004-12-31:2009-05-16	Covered	Definite								
+15	15	AM002	Agricultural/Pastoral	Ploughing	Definite	Satellite	Occurred between	38352	43568	2004-12-31:2019-04-13	Earth Displacement	Definite	Artefact Displacement	High	Loss of Archaeological Material	High				
+16	16	AM002	Natural	Water Action	Definite	Both	Occurred before	39949	NA	..2009-05-16	Erosion	Definite	Structural Alteration	Definite						
+17	17	AM002	Domestic	Construction	Medium	Satellite	Occurred between	40674	41392	2011-05-11:2013-04-28	Covered	Definite	Earth Displacement	High						
+18	18	AM002	Looting	Excavation (Hand)	Medium	Satellite	Occurred between	41831	42120	2014-07-11:2015-04-26	Loss of Archaeological Material	Medium								
+19	19	AM002	Looting	Excavation (Hand)	High	Satellite	Occurred between	42120	42449	2015-04-26:2016-03-20	Earth Displacement	High								
+20	20	AM002	Unknown	Clearance (Bulldozing/Levelling)	Definite	Satellite	Occurred between	42287	42449	2015-10-10:2016-03-20	Alteration of Terrain	Definite	Earth Displacement	High	Loss of Archaeological Material	Medium				
+21	21	AM002	Looting	Drilling	Definite	Satellite	Occurred before	42665	NA	..2016-10-22	Loss of Archaeological Material	High	Structural Alteration	Definite						
+22	22	AM002	Agricultural/Pastoral	Grazing/Animal Movement	Definite	Satellite	Occurred on	42512	NA	2016-05-22	Erosion	High								
+23	23	AM002	Domestic	Occupation/Continued Use	High	Satellite	Occurred between	42786	43129	2017-02-20:2018-01-29	Covered	Definite	Access Restriction	High						
+24	24	AM003	Domestic	Clearance (Bulldozing/Levelling)	Definite	Satellite	Occurred before	38352	NA	..2004-12-31	Alteration of Terrain	Definite	Artefact Displacement	Definite	Loss of Archaeological Material	Definite				
+25	25	AM003	Domestic	Construction	Definite	Satellite	Occurred before	38352	NA	..2004-12-31	Covered	Definite	Earth Displacement	Definite	Loss of Archaeological Material	Definite				
+26	26	AM003	Hydrological	Construction	Definite	Both	Occurred before	38352	NA	..2004-12-31	Alteration of Terrain	Definite	Covered	High	Loss of Archaeological Material	Definite				
+27	27	AM003	Agricultural/Pastoral	Trees	Definite	Satellite	Occurred before	42185	NA	..2015-06-30	Earth Displacement	Definite	Access Restriction	Definite	Covered	Definite				
+28	28	AM003	Development	Clearance (Bulldozing/Levelling)	Definite	Satellite	Occurred between	42631	42786	2016-09-18:2017-02-20	Alteration of Terrain	Definite	Earth Displacement	Definite						
+29	29	AM003	Public	Dumping	Definite	Satellite	Occurred between	42845	43138	2017-04-20:2018-02-07	Covered	Definite								
+30	30	AM003	Public	Excavation (Unclassified)	Definite	Satellite	Occurred between	42845	43138	2017-04-20:2018-02-07	Loss of Archaeological Material	Medium	Earth Displacement	Definite	Covered	Definite				
+31	31	AM003	Natural	Water Action	Definite	Both	Occurred before	38351	NA	..2004-12-30	Erosion	High	Alteration of Terrain	High						
+32	32	AM003	Natural	Wind Action	Definite	Both	Occurred before	38351	NA	..2004-12-30	Erosion	High	Alteration of Terrain	High						
+33	33	AM004	Domestic	Clearance (Bulldozing/Levelling)	Definite	Both	Occurred before	38351	NA	..2004-12-30	Alteration of Terrain	Definite	Loss of Archaeological Material	Definite	Structural Alteration	Definite	Earth Displacement	Definite		
+34	34	AM004	Infrastructure/Transport	Road/Track	Definite	Both	Occurred before	38352	NA	..2004-12-31	Alteration of Terrain	Definite	Earth Displacement	High	Covered	Definite				
+35	35	AM004	Unknown	Clearance (Bulldozing/Levelling)	Definite	Both	Occurred before	38352	NA	..2004-12-31	Alteration of Terrain	Definite	Earth Displacement	High						
+36	36	AM004	Domestic	Construction	Definite	Both	Occurred before	38351	NA	..2004-12-30	Covered	Definite	Access Restriction	Definite	Alteration of Terrain	Definite				
+37	37	AM004	Infrastructure/Transport	Drilling	Definite	Both	Occurred before	42185	NA	..2015-06-30	Alteration of Terrain	Definite	Loss of Archaeological Material	Definite						
+38	38	AM004	Infrastructure/Transport	Drilling	Definite	Both	Occurred on	42482	NA	2016-04-22	Earth Displacement	Definite	Loss of Archaeological Material	Definite						
+39	39	AM004	Development	Dumping	Definite	Both	Occurred between	42512	42564	2016-05-22:2016-07-13	Covered	Definite	Structural Alteration	High						
+40	40	AM004	Domestic	Construction	Definite	Satellite	Occurred between	42728	42845	2016-12-24:2017-04-20	Covered	Definite	Alteration of Terrain	Medium	Access Restriction	Medium				
+41	41	AM004	Utilties	Construction	Definite	Satellite	Occurred between	42845	43138	2017-04-20:2018-02-07	Alteration of Terrain	Definite	Earth Displacement	Definite	Covered	Definite				
+42	42	AM004	Agricultural/Pastoral	Grazing/Animal Movement	Definite	Satellite	Occurred on	43138	NA	2018-02-07	Earth Displacement	Negligible								
+43	43	AM005	Domestic	Clearance (Bulldozing/Levelling)	Definite	Satellite	Occurred before	38352	NA	..2004-12-31	Earth Displacement	Definite	Alteration of Terrain	Definite	Loss of Archaeological Material	Definite				
+44	44	AM005	Domestic	Construction	Definite	Satellite	Occurred before	38352	NA	..2004-12-31	Covered	Definite	Access Restriction	Definite	Artefact Displacement	Definite	Earth Displacement	Definite	Loss of Archaeological Material	Definite
+45	45	AM005	Infrastructure/Transport	Road/Track	Definite	Satellite	Occurred before	38352	NA	..2004-12-31	Alteration of Terrain	Definite	Earth Displacement	Definite	Covered	Definite				
+46	46	AM005	Natural	Water Action	High	Satellite	Occurred before	38352	NA	..2004-12-31	Erosion	Definite								
+47	47	AM005	Unknown	Clearance (Bulldozing/Levelling)	Definite	Both	Occurred before	40097	NA	..2009-10-11	Alteration of Terrain	Definite	Artefact Displacement	High	Structural Alteration	Definite	Loss of Archaeological Material	Definite		
+48	48	AM005	Looting	Excavation (Hand)	Definite	Both	Occurred before	40097	NA	..2009-10-11	Loss of Archaeological Material	Definite								
+49	49	AM005	Unknown	Dumping	Low	Satellite	Occurred before	40097	NA	..2009-10-11	Alteration of Terrain	Definite	Covered	Definite						
+50	50	AM005	Infrastructure/Transport	Road/Track	Definite	Both	Occurred between	40097	40674	2009-10-11:2011-05-11	Alteration of Terrain	Definite	Compacting	High						
+51	51	AM005	Looting	Clearance (Hand)	Definite	Satellite	Occurred between	40674	41392	2011-05-11:2013-04-28	Alteration of Terrain	Definite	Loss of Archaeological Material	Definite						
+52	52	AM005	Military	Clearance (Bulldozing/Levelling)	Definite	Both	Occurred between	41392	42120	2013-04-28:2015-04-26	Access Restriction	Definite	Alteration of Terrain	Definite	Artefact Displacement	Definite	Loss of Archaeological Material	Definite	Structural Alteration	Definite
+53	53	AM005	Looting	Excavation (Hand)	High	Satellite	Occurred between	42120	42185	2015-04-26:2015-06-30	Alteration of Terrain	High	Earth Displacement	High	Artefact Displacement	High				
+54	54	AM005	Looting	Excavation (Hand)	Definite	Satellite	Occurred between	42185	42458	2015-06-30:2016-03-29	Alteration of Terrain	Definite	Earth Displacement	Definite	Loss of Archaeological Material	Definite				
+55	55	AM005	looting	Excavation (Hand)	Definite	Ground	Occurred before	42664	NA	..2016-10-21	Earth Displacement	Definite	Loss of Archaeological Material	High						
+56	56	AM005	Military	Clearance (Bulldozing/Levelling)	Definite	Satellite	Occurred between	42682	42728	2016-11-08:2016-12-24	Access Restriction	Definite	Alteration of Terrain	Definite	Artefact Displacement	Definite	Loss of Archaeological Material	Definite	Structural Alteration	Definite
+57	57	AM005	Military	Construction	Low	Satellite	Occurred between	42682	42728	2016-11-08:2016-12-24	Access Restriction	Definite	Covered	Definite						
+58	58	AM005	Military	Tunelling	Definite	Satellite	Occurred between	42682	42728	2016-11-08:2016-12-24	Access Restriction	Definite	Alteration of Terrain	Definite	Artefact Displacement	Definite				
+59	59	AM005	Unknown	Clearance (Bulldozing/Levelling)	Definite	Satellite	Occurred between	42786	43129	2017-02-20:2018-01-29	Alteration of Terrain	Definite	Artefact Displacement	Definite	Relocation of Archaeological Features	Definite				
+60	60	AM005	Unknown	Drilling	Definite	Satellite	Occurred between	42786	43129	2017-02-20:2018-01-29	Artefact Displacement	Medium	Earth Displacement	Medium	Loss of Archaeological Material	High				
+61	61	AM005	Unknown	Clearance (Bulldozing/Levelling)	Definite	Satellite	Occurred between	43192	43213	2018-04-02:2018-04-23	Alteration of Terrain	Definite	Artefact Displacement	Definite	Earth Displacement	Definite	Loss of Archaeological Material	Definite		
+62	62	AM006	Unknown	Clearance (Bulldozing/Levelling)	Definite	Satellite	Occurred before	38352	NA	..2004-12-31	Alteration of Terrain	Definite	Artefact Displacement	Definite	Loss of Archaeological Material	Definite				
+63	63	AM006	Funerary/Memorial	Clearance (Unclassified)	Definite	Satellite	Occurred before	38352	NA	..2004-12-31	Alteration of Terrain	Definite	Artefact Displacement	Definite	Loss of Archaeological Material	Definite	Covered	Definite	Access Restriction	Definite
+64	64	AM006	Domestic	Construction	Definite	Satellite	Occurred before	38352	NA	..2004-12-31	Access Restriction	Definite	Covered	Definite						
+65	65	AM006	Infrastructure/Transport	Road/Track	Definite	Satellite	Occurred before	38352	NA	..2004-12-31	Artefact Displacement	Definite	Loss of Archaeological Material	High						
+66	66	AM006	Agricultural/Pastoral	Trees	Definite	Both	Occurred before	38352	NA	..2004-12-31	Covered	Definite	Artefact Displacement	Definite	Relocation of Archaeological Features	Definite				
+67	67	AM006	Unknown	Dumping	Definite	Satellite	Occurred before	40097	NA	..2009-10-11	Covered	Definite	Alteration of Terrain	Definite						
+68	68	AM006	Utilties	Drilling	Definite	Ground	Occurred before	40097	NA	..2009-10-11	Artefact Displacement	Definite	Loss of Archaeological Material	Definite	Covered	Definite				
+69	69	AM006	Unknown	Clearance (Bulldozing/Levelling)	Definite	Satellite	Occurred between	41671	41877	2014-02-01:2014-08-26	Alteration of Terrain	Definite	Artefact Displacement	Definite	Loss of Archaeological Material	Definite				
+70	70	AM006	Unknown	Clearance (Bulldozing/Levelling)	Definite	Satellite	Occurred between	41877	42542	2014-08-26:2016-06-21	Alteration of Terrain	Definite	Artefact Displacement	Definite	Loss of Archaeological Material	Definite				
+71	71	AM006	Unknown	Dumping	Definite	Satellite	Occurred between	41877	42542	2014-08-26:2016-06-21	Covered	Definite	Alteration of Terrain	Definite						
+72	72	AM006	Agricultural/Pastoral	Grazing/Animal Movement	Definite	Ground	Occurred on	42561	NA	2016-07-10	Artefact Displacement	High								
+73	73	AM006	Agricultural/Pastoral	Grazing/Animal Movement	Definite	Satellite	Occurred on	42693	NA	2016-11-19	Artefact Displacement	High								
+74	74	AM006	Domestic	Occupation/Continued Use	Definite	Satellite	Occurred between	42693	42701	2016-11-19:2016-11-27	Covered	Definite	Access Restriction	Definite						
+75	75	AM006	Domestic	Construction	Definite	Satellite	Occurred between	42701	42855	2016-11-27:2017-04-30	Access Restriction	Definite	Covered	Definite						
+76	76	AM006	Domestic	Clearance (Bulldozing/Levelling)	Definite	Satellite	Occurred between	42855	43380	2017-04-30:2018-10-07	Access Restriction	Definite	Alteration of Terrain	Definite	Artefact Displacement	Definite	Loss of Archaeological Material	Definite		
+77	77	AM007	Infrastructure/Transport	Clearance (Bulldozing/Levelling)	Definite	Both	Occurred before	38352	NA	..2004-12-31	Alteration of Terrain	High	Earth Displacement	High	Loss of Archaeological Material	Medium	Structural Alteration	High		
+78	78	AM007	Looting	Excavation (Hand)	Definite	Both	Occurred before	38352	NA	..2004-12-31	Alteration of Terrain	Definite	Earth Displacement	Definite	Loss of Archaeological Material	High				
+79	79	AM007	Military	Clearance (Bulldozing/Levelling)	Definite	Both	Occurred between	42185	42297	2015-06-30:2015-10-20	Alteration of Terrain	Definite	Structural Alteration	Definite	Loss of Archaeological Material	High				
+80	80	AM007	Military	Clearance (Hand)	Definite	Satellite	Occurred between	42297	42482	2015-10-20:2016-04-22	Alteration of Terrain	Definite	Loss of Archaeological Material	High	Structural Alteration	High				
+81	81	AM007	Military	Landmines	Definite	Ground	Occurred on	42297	NA	2015-10-20	Access Restriction	Definite	Alteration of Terrain	Definite	Structural Alteration	High				
+82	82	AM007	Domestic	Construction	Definite	Satellite	Occurred between	42728	42786	2016-12-24:2017-02-20	Covered	Definite								
+83	83	AM007	Domestic	Construction	Definite	Satellite	Occurred between	42786	42845	2017-02-20:2017-04-20	Covered	Definite								
+84	84	AM007	Domestic	Construction	Definite	Satellite	Occurred between	42845	43138	2017-04-20:2018-02-07	Covered	Definite								
+85	85	AM007	Military	Clearance (Bulldozing/Levelling)	Definite	Satellite	Occurred between	42845	43138	2017-04-20:2018-02-07	Alteration of Terrain	Definite	Earth Displacement	Definite						
+86	86	AM007	Domestic	Construction	Definite	Satellite	Occurred between	42845	43138	2017-04-20:2018-02-07	Covered	Definite								
+87	87	AM008	Domestic	Clearance (Bulldozing/Levelling)	Definite	Satellite	Occurred before	38352	NA	..2004-12-31	Alteration of Terrain	Definite	Artefact Displacement	Definite	Structural Alteration	Definite	Loss of Archaeological Material	Definite		
+88	88	AM008	Domestic	Construction	Definite	Both	Occurred before	38352	NA	..2004-12-31	Covered	Definite	Access Restriction	Definite						
+89	89	AM008	Infrastructure/Transport	Clearance (Bulldozing/Levelling)	Definite	Both	Occurred before	38352	NA	..2004-12-31	Alteration of Terrain	Definite	Artefact Displacement	Definite	Earth Displacement	Definite	Loss of Archaeological Material	High		
+90	90	AM008	Agricultural/Pastoral	Trees	Definite	Both	Occurred before	38352	NA	..2004-12-31	Covered	Definite	Artefact Displacement	Definite						
+91	91	AM008	Natural	Water Action	Definite	Ground	Occurred before	40704	NA	..2011-06-10	Erosion	Definite								
+92	92	AM008	Natural	Wind Action	Definite	Both	Occurred before	40704	NA	..2011-06-10	Erosion	Definite								
+93	93	AM008	Agricultural/Pastoral	Ploughing	Definite	Satellite	Occurred before	40704	NA	..2011-06-10	Artefact Displacement	Definite								
+94	94	AM008	Utilties	Drilling	Definite	Both	Occurred before	40704	NA	..2011-06-10	Artefact Displacement	Definite	Loss of Archaeological Material	Definite	Covered	Definite				
+95	95	AM008	Funerary/Memorial	Excavation (Hand)	Definite	Both	Occurred before	40704	NA	..2011-06-10	Alteration of Terrain	Definite	Artefact Displacement	Definite	Covered	Definite	Loss of Archaeological Material	High		
+96	96	AM008	Domestic	Construction	Definite	Satellite	Occurred between	40704	41087	2011-06-10:2012-06-27	Covered	Definite	Access Restriction	Definite	Alteration of Terrain	Definite	Loss of Archaeological Material	High		
+97	97	AM008	Domestic	Construction	Definite	Satellite	Occurred between	41087	42297	2012-06-27:2015-10-20	Alteration of Terrain	Definite	Covered	Definite	Access Restriction	Definite				
+98	98	AM008	Looting	Excavation (Hand)	Definite	Satellite	Occurred between	42297	42475	2015-10-20:2016-04-15	Artefact Displacement	Definite	Loss of Archaeological Material	Definite						
+99	99	AM008	Looting	Clearance (Bulldozing/Levelling)	Definite	Satellite	Occurred between	42297	42475	2015-10-20:2016-04-15	Alteration of Terrain	Definite	Artefact Displacement	Definite	Loss of Archaeological Material	High				
+100	100	AM008	Military	Clearance (Bulldozing/Levelling)	Definite	Both	Occurred between	42297	42475	2015-10-20:2016-04-15	Access Restriction	Definite	Alteration of Terrain	Definite	Earth Displacement	Definite	Loss of Archaeological Material	High		
+101	101	AM008	Agricultural/Pastoral	Grazing/Animal Movement	Definite	Satellite	Occurred on	42845	NA	2017-04-20	Artefact Displacement	Low								
+102	102	AM008	Looting	Excavation (Hand)	Definite	Satellite	Occurred between	42855	43138	2017-04-30:2018-02-07	Alteration of Terrain	Definite	Artefact Displacement	Definite	Loss of Archaeological Material	Definite				
+103	103	AM008	Agricultural/Pastoral	Occupation/Continued Use	Definite	Satellite	Occurred between	43138	43375	2018-02-07:2018-10-02	Covered	Definite								
+104	104	AM008	Agricultural/Pastoral	Grazing/Animal Movement	Definite	Satellite	Occurred on	43186	NA	2018-03-27	Artefact Displacement	Low								
+105	105	AM008	Looting	Excavation (Hand)	Definite	Satellite	Occurred between	43186	43274	2018-03-27:2018-06-23	Alteration of Terrain	Definite	Artefact Displacement	Definite	Loss of Archaeological Material	High				
+106	106	AM008	Looting	Clearance (Bulldozing/Levelling)	Definite	Satellite	Occurred between	42544	43375	2016-06-23:2018-10-02	Alteration of Terrain	Definite	Artefact Displacement	Definite	Loss of Archaeological Material	Definite				
+107	107	AM008	Agricultural/Pastoral	Grazing/Animal Movement	Definite	Satellite	Occurred on	43375	NA	2018-10-02	Erosion	Definite								
+108	108	AM009	Domestic	Construction	Definite	Both	Occurred before	38352	NA	..2004-12-31	Covered	Definite	Alteration of Terrain	High	Structural Alteration	High				
+109	109	AM009	Infrastructure/Transport	Clearance (Bulldozing/Levelling)	Definite	Both	Occurred before	38352	NA	..2004-12-31	Alteration of Terrain	Definite	Covered	Definite	Loss of Archaeological Material	Medium				
+110	110	AM009	Hydrological	Construction	Definite	Both	Occurred before	38352	NA	..2004-12-31	Alteration of Terrain	Definite	Covered	Definite	Earth Displacement	High				
+111	111	AM009	Development	Dumping	Definite	Both	Occurred before	39949	NA	..2009-05-16	Covered	Definite	Alteration of Terrain	High						
+112	112	AM009	Natural	Water Action	Definite	Both	Occurred before	39949	NA	..2009-05-16	Erosion	Definite								
+113	113	AM009	Natural	Wind Action	Definite	Both	Occurred before	39949	NA	..2009-05-16	Erosion	Definite								
+114	114	AM009	Domestic	Construction	Definite	Both	Occurred between	40704	42185	2011-06-10:2015-06-30	Covered	Definite	Alteration of Terrain	Definite	Earth Displacement	High				
+115	115	AM009	Defensive/Fortification	Clearance (Bulldozing/Levelling)	Definite	Both	Occurred between	40674	42185	2011-05-11:2015-06-30	Alteration of Terrain	Definite	Artefact Displacement	High	Earth Displacement	Definite	Loss of Archaeological Material	High	Access Restriction	Definite
+116	116	AM009	Public	Occupation/Continued Use	Definite	Satellite	Occurred before	40704	NA	..2011-06-10	Unknown	Not Applicable								
+117	117	AM009	Military	Explosion/Heavy Weaponry	Definite	Ground	Occurred before	42185	NA	..2015-06-30	Access Restriction	Definite	Alteration of Terrain	Definite	Earth Displacement	Definite	Structural Alteration	High		
+118	118	AM009	Domestic	Construction	Definite	Satellite	Occurred between	42638	42701	2016-09-25:2016-11-27	Covered	Definite								
+119	119	AM009	Agricultural/Pastoral	Trees	Definite	Ground	Occurred before	42659	NA	..2016-10-16	Alteration of Terrain	Definite	Covered	Definite	Water Damage	High	Loss of Archaeological Material	High		
+120	120	AM009	Looting	Excavation (Hand)	Definite	Ground	Occurred before	42659	NA	..2016-10-16	Loss of Archaeological Material	Definite	Alteration of Terrain	Definite						
+121	121	AM009	Agricultural/Pastoral	Grazing/Animal Movement	Definite	Satellite	Occurred on	42786	NA	2017-02-20	Earth Displacement	Low								
+122	122	AM009	Looting	Excavation (Hand)	Low	Satellite	Occurred between	42845	43138	2017-04-20:2018-02-07	Loss of Archaeological Material	Low	Alteration of Terrain	Definite						
+123	123	AM009	Agricultural/Pastoral	Grazing/Animal Movement	High	Satellite	Occurred on	43138	NA	2018-02-07	Earth Displacement	Low								
+124	124	AM010	Looting	Excavation (Unclassified)	Definite	Satellite	Occurred before	38352	NA	..2004-12-31	Alteration of Terrain	Definite	Loss of Archaeological Material	Definite	Artefact Displacement	High	Structural Alteration	High		
+125	125	AM010	Infrastructure/Transport	Road/Track	Definite	Both	Occurred before	38352	NA	..2004-12-31	Alteration of Terrain	Definite	Loss of Archaeological Material	High	Earth Displacement	Definite				
+126	126	AM010	Agricultural/Pastoral	Ploughing	Definite	Both	Occurred before	39949	NA	..2009-05-16	Artefact Displacement	High								
+127	127	AM010	Agricultural/Pastoral	Vegetation/Crops	Definite	Both	Occurred before	39949	NA	..2009-05-16	Access Restriction	High								
+128	128	AM010	Utilties	Drilling	Definite	Both	Occurred before	40822	NA	..2011-10-06	Artefact Displacement	Medium	Loss of Archaeological Material	High						
+129	129	AM010	Military	Clearance (Bulldozing/Levelling)	Definite	Both	Occurred between	42218	42297	2015-08-02:2015-10-20	Access Restriction	Definite	Alteration of Terrain	Definite	Loss of Archaeological Material	Definite	Structural Alteration	Definite	Artefact Displacement	Definite
+130	130	AM010	Military	Clearance (Bulldozing/Levelling)	Definite	Both	Occurred between	42297	42458	2015-10-20:2016-03-29	Access Restriction	Definite	Alteration of Terrain	Definite	Artefact Displacement	Definite	Loss of Archaeological Material	Definite		
+131	131	AM010	Infrastructure/Transport	Clearance (Bulldozing/Levelling)	Definite	Both	Occurred between	42458	42512	2016-03-29:2016-05-22	Alteration of Terrain	Definite	Artefact Displacement	Definite	Loss of Archaeological Material	High	Structural Alteration	Definite		
+132	132	AM010	Agricultural/Pastoral	Grazing/Animal Movement	Definite	Satellite	Occurred on	42786	NA	2017-02-20	Earth Displacement	Negligible								
+133	133	AM010	Domestic	Occupation/Continued Use	Definite	Both	Occurred between	42786	43129	2017-02-20:2018-01-29	Covered	Definite	Alteration of Terrain	Definite						
+134	134	AM010	Agricultural/Pastoral	Grazing/Animal Movement	Definite	Satellite	Occurred on	43129	NA	2018-01-29	Earth Displacement	Low								
+135	135	AM010	Looting	Excavation (Hand)	Definite	Satellite	Occurred between	43274	43568	2018-06-23:2019-04-13	Alteration of Terrain	High	Loss of Archaeological Material	Definite	Artefact Displacement	High				
+136	136	AM011	Domestic	Clearance (Bulldozing/Levelling)	Definite	Both	Occurred before	38352	NA	..2004-12-31	Alteration of Terrain	Definite	Artefact Displacement	Definite	Loss of Archaeological Material	Definite	Structural Alteration	Definite		
+137	137	AM011	Domestic	Construction	Definite	Both	Occurred before	38352	NA	..2004-12-31	Covered	Definite	Earth Displacement	Definite	Artefact Displacement	Definite	Structural Alteration	Definite		
+138	138	AM011	Infrastructure/Transport	Road/Track	Definite	Both	Occurred before	38352	NA	..2004-12-31	Alteration of Terrain	Definite	Artefact Displacement	Definite						
+139	139	AM011	Natural	Water Action	Definite	Both	Occurred before	38352	NA	..2004-12-31	Erosion	Definite								
+140	140	AM011	Agricultural/Pastoral	Trees	Definite	Both	Occurred before	40078	NA	..2009-09-22	Covered	Definite	Water Damage	High	Artefact Displacement	Definite				
+141	141	AM011	Domestic	Construction	Definite	Satellite	Occurred between	43182	43567	2018-03-23:2019-04-12	Access Restriction	Definite	Alteration of Terrain	Definite	Artefact Displacement	Definite	Covered	Definite	Loss of Archaeological Material	High
+142	142	AM012	Domestic	Construction	Definite	Both	Occurred before	38352	NA	..2004-12-31	Covered	Definite	Alteration of Terrain	Definite	Artefact Displacement	Definite	Loss of Archaeological Material	Definite		
+143	143	AM012	Domestic	Clearance (Bulldozing/Levelling)	Definite	Both	Occurred before	40704	NA	..2011-06-10	Alteration of Terrain	Definite	Artefact Displacement	Definite	Loss of Archaeological Material	High				
+144	144	AM012	Infrastructure/Transport	Clearance (Unclassified)	Definite	Both	Occurred before	40704	NA	..2011-06-10	Alteration of Terrain	Definite	Artefact Displacement	Definite	Loss of Archaeological Material	Definite	Covered	Definite		
+145	145	AM012	Utilties	Drilling	Definite	Both	Occurred before	40704	NA	..2011-06-10	Artefact Displacement	High	Loss of Archaeological Material	Definite	Covered	Definite				
+146	146	AM012	Looting	Excavation (Hand)	Definite	Satellite	Occurred before	40704	NA	..2011-06-10	Loss of Archaeological Material	Definite	Alteration of Terrain	Definite						
+147	147	AM012	Natural	Water Action	Definite	Both	Occurred before	41087	NA	..2012-06-27	Erosion	Definite								
+148	148	AM012	Utilties	Clearance (Bulldozing/Levelling)	High	Satellite	Occurred between	41087	42297	2012-06-27:2015-10-20	Alteration of Terrain	Definite	Artefact Displacement	High	Loss of Archaeological Material	High	Structural Alteration	Definite		
+149	149	AM012	Utilties	Dumping	High	Satellite	Occurred between	41087	42297	2012-06-27:2015-10-20	Covered	Definite	Artefact Displacement	Definite	Loss of Archaeological Material	Definite				
+150	150	AM012	Unknown	Clearance (Unclassified)	Definite	Satellite	Occurred between	42799	43138	2017-03-05:2018-02-07	Alteration of Terrain	Definite								
+151	151	AM012	Agricultural/Pastoral	Grazing/Animal Movement	Definite	Satellite	Occurred on	43138	NA	2018-02-07	Artefact Displacement	High								
+152	152	AM012	Unknown	Clearance (Bulldozing/Levelling)	Definite	Satellite	Occurred between	43138	43375	2018-02-07:2018-10-02	Alteration of Terrain	Definite	Artefact Displacement	Definite	Loss of Archaeological Material	Definite				
+153	153	AM013	Domestic	Construction	Definite	Both	Occurred before	38352	NA	..2004-12-31	Covered	Definite	Alteration of Terrain	Definite	Artefact Displacement	Definite				
+154	154	AM013	Agricultural/Pastoral	Trees	Definite	Both	Occurred between	40078	41087	2009-09-22:2012-06-27	Covered	Definite	Alteration of Terrain	Definite	Artefact Displacement	High	Loss of Archaeological Material	High		
+155	155	AM013	Utilties	Drilling	Definite	Both	Occurred before	40078	NA	..2009-09-22	Loss of Archaeological Material	Definite	Covered	Definite	Artefact Displacement	Medium	Water Damage	High		
+156	156	AM013	Natural	Wind Action	Definite	Both	Occurred before	40078	NA	..2009-09-22	Erosion	Definite								
+157	157	AM013	Natural	Water Action	Definite	Both	Occurred before	40078	NA	..2009-09-22	Erosion	Definite								
+158	158	AM014	Agricultural/Pastoral	Trees	Definite	Both	Occurred before	38352	NA	..2004-12-31	Covered	Definite	Artefact Displacement	Definite						
+159	159	AM014	Infrastructure/Transport	Clearance (Unclassified)	Definite	Both	Occurred before	38352	NA	..2004-12-31	Earth Displacement	Definite	Alteration of Terrain	Definite	Loss of Archaeological Material	Definite				
+160	160	AM014	Unknown	Clearance (Unclassified)	Definite	Satellite	Occurred between	38107	40078	2004-04-30:2009-09-22	Alteration of Terrain	Definite	Artefact Displacement	Definite	Loss of Archaeological Material	Definite				
+161	161	AM014	Looting	Excavation (Hand)	Definite	Satellite	Occurred before	40078	NA	..2009-09-22	Alteration of Terrain	Definite	Artefact Displacement	Definite	Earth Displacement	Definite	Loss of Archaeological Material	Definite	Structural Alteration	Definite
+162	162	AM014	Looting	Excavation (Hand)	Definite	Both	Occurred between	41678	41881	2014-02-08:2014-08-30	Alteration of Terrain	Definite	Artefact Displacement	Definite	Earth Displacement	Definite	Loss of Archaeological Material	Definite		
+163	163	AM014	Looting	Clearance (Bulldozing/Levelling)	Definite	Satellite	Occurred between	41881	42346	2014-08-30:2015-12-08	Alteration of Terrain	Definite	Artefact Displacement	Definite	Earth Displacement	Definite	Loss of Archaeological Material	Definite	Structural Alteration	Definite
+164	164	AM015	Domestic	Construction	Definite	Both	Occurred before	38352	NA	..2004-12-31	Covered	Definite	Access Restriction	Definite						
+165	165	AM015	Infrastructure/Transport	Road/Track	Definite	Both	Occurred before	38352	NA	..2004-12-31	Artefact Displacement	Definite	Compacting	High						
+166	166	AM015	Utilties	Drilling	Definite	Both	Occurred before	40109	NA	..2009-10-23	Artefact Displacement	Definite	Covered	Definite						
+167	167	AM015	Funerary/Memorial	Excavation (Hand)	Definite	Both	Occurred before	40109	NA	..2009-10-23	Alteration of Terrain	Definite	Covered	Definite	Access Restriction	Definite	Loss of Archaeological Material	Definite		
+168	168	AM015	Looting	Excavation (Hand)	Definite	Both	Occurred between	40109	42547	2009-10-23:2016-06-26	Alteration of Terrain	Definite	Artefact Displacement	Definite	Loss of Archaeological Material	Definite				
+169	169	AM015	Looting	Clearance (Bulldozing/Levelling)	Definite	Both	Occurred between	40109	42547	2009-10-23:2016-06-26	Alteration of Terrain	Definite	Artefact Displacement	Definite	Loss of Archaeological Material	Definite				
+170	170	AM015	Infrastructure/Transport	Road/Track	Definite	Satellite	Occurred between	40109	42547	2009-10-23:2016-06-26	Alteration of Terrain	High	Artefact Displacement	Definite	Compacting	High				
+171	171	AM015	Domestic	Construction	Definite	Satellite	Occurred between	40109	42547	2009-10-23:2016-06-26	Covered	Definite	Access Restriction	Definite	Artefact Displacement	Definite	Loss of Archaeological Material	Definite		
+172	172	AM015	Natural	Water Action	Definite	Both	Occurred before	42547	NA	..2016-06-26	Erosion	Definite	Loss of Archaeological Material	Definite	Alteration of Terrain	Definite				
+173	173	AM015	Utilties	Dumping	Definite	Ground	Occurred between	42547	42823	2016-06-26:2017-03-29	Alteration of Terrain	Definite	Covered	Definite						
+174	174	AM015	Agricultural/Pastoral	Grazing/Animal Movement	Definite	Satellite	Occurred on	43498	NA	2019-02-02	Artefact Displacement	High								
+175	175	AM016	Domestic	Construction	Definite	Both	Occurred before	38352	NA	..2004-12-31	Covered	Definite	Access Restriction	Definite	Alteration of Terrain	Definite	Artefact Displacement	Definite	Loss of Archaeological Material	Definite
+176	176	AM016	Hydrological	Inundation	Definite	Both	Occurred before	38352	NA	..2004-12-31	Water Damage	Definite	Access Restriction	Definite	Alteration of Terrain	Definite	Loss of Archaeological Material	Definite	Erosion	Definite
+177	177	AM016	Agricultural/Pastoral	Trees	Definite	Both	Occurred before	38352	NA	..2004-12-31	Alteration of Terrain	Definite	Artefact Displacement	Definite	Loss of Archaeological Material	Definite				
+178	178	AM016	Infrastructure/Transport	Road/Track	Definite	Satellite	Occurred before	38352	NA	..2004-12-31	Alteration of Terrain	Definite	Loss of Archaeological Material	High	Artefact Displacement	Definite				
+179	179	AM016	Domestic	Construction	Definite	Both	Occurred between	38352	41567	2004-12-31:2013-10-20	Covered	Definite	Alteration of Terrain	Definite	Artefact Displacement	Definite	Loss of Archaeological Material	Definite		
+180	180	AM016	Looting	Clearance (Bulldozing/Levelling)	Definite	Satellite	Occurred between	41567	42408	2013-10-20:2016-02-08	Alteration of Terrain	Definite	Artefact Displacement	Definite	Loss of Archaeological Material	Definite	Earth Displacement	Definite	Structural Alteration	Definite
+181	181	AM016	Looting	Excavation (Hand)	Definite	Ground	Occurred before	42681	NA	..2016-11-07	Artefact Displacement	Definite	Loss of Archaeological Material	Definite						
+182	182	AM017	Archaeological	Excavation (Hand)	Definite	Both	Occurred between	39083	40096	2007-01-01:2009-10-10	Alteration of Terrain	Definite	Earth Displacement	Definite						
+183	183	AM017	Looting	Excavation (Hand)	Definite	Both	Occurred before	40078	NA	..2009-09-22	Alteration of Terrain	Definite	Artefact Displacement	Definite	Loss of Archaeological Material	Definite				
+184	184	AM017	Looting	Excavation (Hand)	Definite	Both	Occurred between	40078	41678	2009-09-22:2014-02-08	Alteration of Terrain	Definite	Artefact Displacement	Definite	Loss of Archaeological Material	Definite				
+185	185	AM017	Military	Clearance (Bulldozing/Levelling)	Definite	Satellite	Occurred between	42613	42866	2016-08-31:2017-05-11	Alteration of Terrain	Definite	Artefact Displacement	Definite	Loss of Archaeological Material	Definite				
+186	186	AM017	Military	Clearance (Bulldozing/Levelling)	Definite	Satellite	Occurred between	42866	43182	2017-05-11:2018-03-23	Alteration of Terrain	Definite	Artefact Displacement	Definite	Loss of Archaeological Material	Definite				
+187	187	AM017	Infrastructure/Transport	Road/Track	Definite	Satellite	Occurred between	42866	43335	2017-05-11:2018-08-23	Alteration of Terrain	Definite	Artefact Displacement	Definite						
+188	188	AM017	Military	Clearance (Bulldozing/Levelling)	Definite	Satellite	Occurred between	43256	43304	2018-06-05:2018-07-23	Alteration of Terrain	Definite	Artefact Displacement	Definite	Loss of Archaeological Material	Definite				
+189	189	AM017	Infrastructure/Transport	Road/Track	Definite	Satellite	Occurred between	43304	43344	2018-07-23:2018-09-01	Alteration of Terrain	Definite	Artefact Displacement	Definite						
+190	190	AM017	Military	Clearance (Bulldozing/Levelling)	Definite	Satellite	Occurred between	43256	43344	2018-06-05:2018-09-01	Alteration of Terrain	Definite	Artefact Displacement	Definite	Earth Displacement	Definite	Loss of Archaeological Material	Definite		
+191	191	AM017	Military	Construction	Definite	Satellite	Occurred between	43256	43344	2018-06-05:2018-09-01	Covered	Definite	Access Restriction	Definite	Artefact Displacement	Definite	Loss of Archaeological Material	High		
+192	192	AM017	Military	Clearance (Bulldozing/Levelling)	Definite	Satellite	Occurred between	43256	43344	2018-06-05:2018-09-01	Alteration of Terrain	Definite	Artefact Displacement	Definite	Loss of Archaeological Material	Definite				
+193	193	AM017	Infrastructure/Transport	Clearance (Bulldozing/Levelling)	Definite	Satellite	Occurred between	43344	43498	2018-09-01:2019-02-02	Alteration of Terrain	Definite	Artefact Displacement	Definite	Earth Displacement	Definite	Loss of Archaeological Material	Definite		
+194	194	AM017	Military	Clearance (Bulldozing/Levelling)	Definite	Satellite	Occurred between	43344	43498	2018-09-01:2019-02-02	Alteration of Terrain	Definite	Artefact Displacement	Definite	Loss of Archaeological Material	Definite	Earth Displacement	Definite		
+195	195	AM018	Natural	Water Action	Definite	Both	Occurred before	38352	NA	..2004-12-31	Erosion	Definite								
+196	196	AM018	Natural	Wind Action	Definite	Both	Occurred before	38353	NA	..2005-01-01	Erosion	Definite								
+197	197	AM018	Archaeological	Excavation (Hand)	Definite	Both	Occurred before	38352	NA	..2004-12-31	Alteration of Terrain	Definite	Relocation of Archaeological Features	Definite	Earth Displacement	Definite				
+198	198	AM018	Infrastructure/Transport	Road/Track	Definite	Both	Occurred before	38352	NA	..2004-12-31	Artefact Displacement	Definite								
+199	199	AM018	Looting	Excavation (Hand)	Definite	Both	Occurred before	40777	NA	..2011-08-22	Alteration of Terrain	Definite	Artefact Displacement	Definite	Relocation of Archaeological Features	Definite	Loss of Archaeological Material	Definite		
+200	200	AM018	Looting	Excavation (Hand)	Definite	Both	Occurred between	40796	41732	2011-09-10:2014-04-03	Alteration of Terrain	Definite	Artefact Displacement	Definite	Loss of Archaeological Material	Definite				
+201	201	AM018	Looting	Clearance (Unclassified)	Definite	Both	Occurred between	41790	42232	2014-05-31:2015-08-16	Alteration of Terrain	Definite	Artefact Displacement	Definite	Loss of Archaeological Material	Definite	Structural Alteration	Definite		
+202	202	AM018	Looting	Clearance (Bulldozing/Levelling)	Definite	Satellite	Occurred between	42787	42957	2017-02-21:2017-08-10	Alteration of Terrain	Definite	Artefact Displacement	Definite	Loss of Archaeological Material	Definite				
+203	203	AM018	Looting	Tunelling	Definite	Satellite	Occurred between	43279	43405	2018-06-28:2018-11-01	Alteration of Terrain	Definite	Artefact Displacement	Definite	Loss of Archaeological Material	Definite				
+204	204	AM019	Infrastructure/Transport	Road/Track	Definite	Both	Occurred before	38352	NA	..2004-12-31	Alteration of Terrain	Definite	Artefact Displacement	Definite	Loss of Archaeological Material	Definite	Covered	Definite		
+205	205	AM019	Domestic	Construction	Definite	Both	Occurred before	38352	NA	..2004-12-31	Alteration of Terrain	Definite	Artefact Displacement	Definite	Loss of Archaeological Material	Definite	Covered	Definite		
+206	206	AM019	Agricultural/Pastoral	Trees	Definite	Satellite	Occurred before	38352	NA	..2004-12-31	Alteration of Terrain	Definite	Artefact Displacement	Definite	Covered	Definite				
+207	207	AM019	Natural	Water Action	Definite	Both	Occurred before	39957	NA	..2009-05-24	Erosion	Definite								
+208	208	AM019	Looting	Clearance (Bulldozing/Levelling)	Definite	Both	Occurred before	39957	NA	..2009-05-24	Alteration of Terrain	Definite	Artefact Displacement	Definite	Loss of Archaeological Material	Definite				
+209	209	AM019	Looting	Excavation (Hand)	Definite	Both	Occurred between	40388	41567	2010-07-29:2013-10-20	Alteration of Terrain	Definite	Artefact Displacement	Definite	Loss of Archaeological Material	Definite				
+210	210	AM019	Agricultural/Pastoral	Grazing/Animal Movement	Definite	Satellite	Occurred on	42799	NA	2017-03-05	Artefact Displacement	High								
+211	211	AM020	Domestic	Clearance (Bulldozing/Levelling)	Definite	Both	Occurred before	38352	NA	..2004-12-31	Alteration of Terrain	Definite	Artefact Displacement	Definite	Loss of Archaeological Material	Definite				
+212	212	AM020	Domestic	Construction	Definite	Both	Occurred before	38352	NA	..2004-12-31	Access Restriction	Definite	Alteration of Terrain	Definite	Artefact Displacement	Definite	Covered	Definite		
+213	213	AM020	Agricultural/Pastoral	Trees	Definite	Satellite	Occurred before	38352	NA	..2004-12-31	Alteration of Terrain	Definite	Artefact Displacement	Definite	Covered	Definite				
+214	214	AM020	Infrastructure/Transport	Road/Track	Definite	Both	Occurred before	38352	NA	..2004-12-31	Alteration of Terrain	Definite	Artefact Displacement	Definite						
+215	215	AM020	Unknown	Clearance (Unclassified)	Definite	Both	Occurred before	39949	NA	..2009-05-16	Alteration of Terrain	Definite	Artefact Displacement	High	Loss of Archaeological Material	Definite				
+216	216	AM020	Unknown	Clearance (Bulldozing/Levelling)	Definite	Satellite	Occurred between	42120	42297	2015-04-26:2015-10-20	Alteration of Terrain	Definite	Artefact Displacement	Definite	Loss of Archaeological Material	Definite				
+217	217	AM020	Military	Clearance (Bulldozing/Levelling)	Definite	Both	Occurred between	42638	42661	2016-09-25:2016-10-18	Access Restriction	Definite	Alteration of Terrain	Definite	Artefact Displacement	Definite	Loss of Archaeological Material	Definite		
+218	218	AM020	Agricultural/Pastoral	Trees	Definite	Ground	Occurred before	42665	NA	..2016-10-22	Alteration of Terrain	Definite	Artefact Displacement	Definite	Loss of Archaeological Material	Definite	Covered	Definite		

@@ -1,6 +1,8 @@
 # miscellaneous of R functions
 
 library(hash)
+library(igraph)
+library(stringr)
 
 uuid_from_eamenaid <- function(eamenaid_pattern){
   d_sql[["HPs_count"]] <- paste0("SELECT t.tileid, t.resourceinstanceid,
@@ -24,6 +26,20 @@ count_hps <- function(con, d, field){
   return(d)
 }
 
+#' collect fields: EAMENA_ID, ThreatCat, AssessType, AssessDate, resourceinstanceid
+#' @name threats_hps
+#' @description Read the DB and gather the different threats by HP
+#'
+#' @param con a Pg connection
+#' @param d a hash() object (a Python-like dictionary)
+#' @param field the name of the field that will be created in the a hash() object
+#' @return A hash() with all threats, dates, etc. stored in the field name
+#'
+#' @examples
+#' d_sql <- hash::hash()
+#' d_sql <- count_hps(con, d_sql, "HPs_count")
+#'
+#' @export
 threats_hps <- function(con, d, field){
   sqll <- "
   SELECT
@@ -50,6 +66,132 @@ threats_hps <- function(con, d, field){
   dbDisconnect(con)
   return(d)
 }
+
+
+#' List the name of all the child-concepts below a certain node
+#' @name list_cpts
+#' @description With a given concept UUID (v. Reference Data Manager), find all
+#' the childs
+#'
+#' @param con a Pg connection
+#' @param d a hash() object (a Python-like dictionary)
+#' @param field the field name that will be created in the a hash() object
+#' @param uuid the UUID of the Concept parent
+#'
+#' @return A hash() with listed child-concepts in the provided field name
+#'
+#' @examples
+#' d_sql <- hash::hash()
+#' d_sql <- list_cpts(con, d_sql, "CulturalPeriod_list", '3b5c9ac7-5615-3de6-9e2d-4cd7ef7460e4')
+#'
+#' @export
+list_cpts <- function(con, d, field, uuid){
+  # uuid <- '3b5c9ac7-5615-3de6-9e2d-4cd7ef7460e4'
+  sqll <- "
+  SELECT conceptidfrom as from, conceptidto as to FROM relations
+  "
+  # sqll <- "
+  # SELECT conceptidto as childs FROM relations
+  # WHERE conceptidfrom = '3b5c9ac7-5615-3de6-9e2d-4cd7ef7460e4'
+  # "
+  con <- my_con() # load the Pg connection
+  relations <- dbGetQuery(con, sqll)
+
+
+
+  # library(castor)
+  # library(alakazam)
+  # library(ape)
+
+  # subset the Concepts graph on the selected UUID
+  g <- graph_from_data_frame(relations, directed = TRUE)
+  nodes.subgraph <- subcomponent(g, uuid, mode = "out")
+  subgraph <- subgraph(g, nodes.subgraph)
+  # get the name of the nodes from their UUID
+  l.uuids <- as_ids(V(subgraph))
+  for(uuid_ in l.uuids){
+    # uuid_ <- "ea784c69-d61d-4bfc-9aa9-b3fb0bfa1b42"
+    sqll <- str_interp("
+    SELECT value FROM values
+    WHERE conceptid = '${uuid_}'
+    AND languageid = 'en-US'
+    AND valuetype = 'prefLabel'
+                       ")
+    uuid_name <- dbGetQuery(con, sqll)
+    uuid_name <- as.character(uuid_name)
+    V(subgraph)$name[V(subgraph)$name == uuid_] <- uuid_name
+  }
+  d[[field]] <- subgraph
+  dbDisconnect(con)
+  return(d)
+
+  #
+  #
+  # library(stringr)
+  #
+  # V(subgraph)$name[V(subgraph)$name == 'ea784c69-d61d-4bfc-9aa9-b3fb0bfa1b42'] <- 'Chalcolithic'
+  #
+  # get.vertex.attribute(subgraph, "name", index=V(subgraph))
+  #
+  # subgraph<-minimum.spanning.tree(subgraph)
+  #
+  #
+  # grps <- split(dfTest, ~ cumsum(!isLeaf))
+  #
+  # edges <- do.call(
+  #   rbind,
+  #   lapply(
+  #     grps,
+  #     function(x) {
+  #       with(x, expand.grid(from = node[!isLeaf],
+  #                           to = node[isLeaf]))
+  #     }
+  #   )
+  # )
+  #
+  # for (k in seq_along(grps)) {
+  #   if (nrow(grps[[k]]) == 1) {
+  #     lleaf <- with(grps[[k + 1]], node[!isLeaf])
+  #     rleaf <- with(grps[[k + 2]], node[!isLeaf])
+  #     edges <- rbind(edges, data.frame(from = grps[[k]]$node, to = c(lleaf, rleaf)))
+  #   }
+  # }
+  #
+  # edges <- `row.names<-`(edges[with(edges, order(from, to)), ], NULL)
+  #
+  #
+  #
+  #
+  #
+  #
+  #
+  #
+  # induced_subgraph(g, c(uuid, neighbors(g,1)))
+  #
+  # tree <- unfold_tree(g, roots=uuid)
+  # g.tree <- ape::as.phylo(g)
+  #
+  # g.sub <- subcomponent(g, uuid, mode = "out")
+  # g.childs <- bfs(g, uuid,
+  #                 mode="out",
+  #                 unreachable=FALSE)
+  # subtree <- get_subtree_at_node(g, uuid)$subtree
+  #
+  #
+  # for(i in df$childs)
+  #   d[[field]] <- dbGetQuery(con, sqll)
+  # dbDisconnect(con)
+  # return(d)
+}
+
+# g <- make_tree(10) %du% make_tree(10)
+# V(g)$id <- seq_len(vcount(g))-1
+# roots <- sapply(decompose(g), function(x) {
+#   V(x)$id[ topo_sort(x)[1]+1 ] })
+# tree <- unfold_tree(g, roots=roots)
+# lay <- layout_as_tree(g)
+# plot(as.undirected(tree), layout = lay %*% diag(c(1, -1)))
+
 
 # summary_eamena <- function(){
 #   # SQL queries on EAMENA DB for R, stored in a Python-dictionary-like structure

@@ -1,0 +1,102 @@
+{
+    "@id": "http://34.244.135.144/manifest/2",
+    "logo": "",
+    "@type": "sc:Manifest",
+    "label": "test1",
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "metadata": [],
+    "sequences": [
+      {
+        "@id": "http://localhost:8182/iiif/manifest/sequence/TBD.json",
+        "@type": "sc:Sequence",
+        "label": "Object",
+        "canvases": [
+          {
+            "@id": "http://localhost:8182/iiif/manifest/canvas/d1ec4dbe-93c0-48c7-b128-7d408b1876aa.json",
+            "@type": "sc:Canvas",
+            "label": "7304691698_50cc0a5148_o",
+            "width": 1440,
+            "height": 1079,
+            "images": [
+              {
+                "on": "http://localhost:8182/iiif/manifest/canvas/d1ec4dbe-93c0-48c7-b128-7d408b1876aa.json",
+                "@id": "http://localhost:8182/iiif/manifest/annotation/d1ec4dbe-93c0-48c7-b128-7d408b1876aa.json",
+                "@type": "oa.Annotation",
+                "resource": {
+                  "@id": "http://34.244.135.144/iiifserver/iiif/2/7304691698_50cc0a5148_o_3LEYMMm.jpg/full/full/0/default.jpg",
+                  "@type": "dctypes:Image",
+                  "width": 1440,
+                  "format": "image/jpeg",
+                  "height": 1079,
+                  "service": {
+                    "@id": "http://34.244.135.144/iiifserver/iiif/2/7304691698_50cc0a5148_o_3LEYMMm.jpg",
+                    "profile": "http://iiif.io/api/image/2/level2.json",
+                    "@context": "http://iiif.io/api/image/2/context.json"
+                  }
+                },
+                "motivation": "unknown"
+              }
+            ],
+            "license": "TBD",
+            "thumbnail": {
+              "@id": "http://34.244.135.144/iiifserver/iiif/2/7304691698_50cc0a5148_o_3LEYMMm.jpg/full/!300,300/0/default.jpg",
+              "@type": "dctypes:Image",
+              "format": "image/jpeg",
+              "service": {
+                "@id": "http://34.244.135.144/iiifserver/iiif/2/7304691698_50cc0a5148_o_3LEYMMm.jpg",
+                "profile": "http://iiif.io/api/image/2/level2.json",
+                "@context": "http://iiif.io/api/image/2/context.json"
+              }
+            }
+          },
+          {
+            "@id": "http://localhost:8182/iiif/manifest/canvas/a66aeebf-ee40-4f69-8bc7-f4cf6b4e9803.json",
+            "@type": "sc:Canvas",
+            "label": "14552982139_faa506939b_o",
+            "width": 1800,
+            "height": 1400,
+            "images": [
+              {
+                "on": "http://localhost:8182/iiif/manifest/canvas/a66aeebf-ee40-4f69-8bc7-f4cf6b4e9803.json",
+                "@id": "http://localhost:8182/iiif/manifest/annotation/a66aeebf-ee40-4f69-8bc7-f4cf6b4e9803.json",
+                "@type": "oa.Annotation",
+                "resource": {
+                  "@id": "http://34.244.135.144/iiifserver/iiif/2/14552982139_faa506939b_o.jpg/full/full/0/default.jpg",
+                  "@type": "dctypes:Image",
+                  "width": 1800,
+                  "format": "image/jpeg",
+                  "height": 1400,
+                  "service": {
+                    "@id": "http://34.244.135.144/iiifserver/iiif/2/14552982139_faa506939b_o.jpg",
+                    "profile": "http://iiif.io/api/image/2/level2.json",
+                    "@context": "http://iiif.io/api/image/2/context.json"
+                  }
+                },
+                "motivation": "unknown"
+              }
+            ],
+            "license": "TBD",
+            "thumbnail": {
+              "@id": "http://34.244.135.144/iiifserver/iiif/2/14552982139_faa506939b_o.jpg/full/!300,300/0/default.jpg",
+              "@type": "dctypes:Image",
+              "format": "image/jpeg",
+              "service": {
+                "@id": "http://34.244.135.144/iiifserver/iiif/2/14552982139_faa506939b_o.jpg",
+                "profile": "http://iiif.io/api/image/2/level2.json",
+                "@context": "http://iiif.io/api/image/2/context.json"
+              }
+            }
+          }
+        ],
+        "startCanvas": ""
+      }
+    ],
+    "thumbnail": {
+      "@id": "file_url/full/!300,300/0/default.jpg",
+      "@type": "dctypes:Image",
+      "label": "Main View (.45v)",
+      "format": "image/jpeg"
+    },
+    "attribution": "",
+    "description": "historical photographs"
+  }

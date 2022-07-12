@@ -23,10 +23,17 @@ if(CulturalPeriods){
   d_sql <- hash::hash() # hash instance to store the results
 
   # list concepts below Cultural Period
-  d_sql <- list_cpts(con, d_sql, "CulturalPeriod_list", '3b5c9ac7-5615-3de6-9e2d-4cd7ef7460e4')
+  filed.out <- "CulturalPeriod_list"
+  d_sql <- list_cpts(con, d_sql, field.out, '3b5c9ac7-5615-3de6-9e2d-4cd7ef7460e4')
   edges.cultural.period <- as_data_frame(d_sql$CulturalPeriod_list, what = "edges")
-  tree.edges.cultural.period <- collapsibleTree(edges.cultural.period, c("from", "to"), collapsed = FALSE)
-  saveWidget(as_widget(tree.edges.cultural.period), paste0(getwd(),"/functions/time/results/", file_out, "_threats.html"))
+  tree.edges.cultural.period <- collapsibleTree(edges.cultural.period,
+                                                c("from", "to"),
+                                                collapsed = FALSE,
+                                                width = 1200,
+                                                height = 900)
+  saveWidget(as_widget(tree.edges.cultural.period),
+             paste0(getwd(),"/data/time/results/",
+                    filed.out, ".html"))
 }
 
 

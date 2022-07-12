@@ -5,6 +5,7 @@ library(tibble)
 library(dplyr)
 library(RPostgreSQL)
 library(DBI)
+library(data.table)
 library(plotly)
 library(collapsibleTree)
 library(htmlwidgets)
@@ -12,7 +13,14 @@ library(htmlwidgets)
 
 Dates <- F
 EDTFs <- F
-CulturalPeriods <- T
+CulturalPeriods <- F
+
+if(Period.do){
+  # convert Perio.do CSV into a data.table table
+  url.perio.do <- "https://n2t.net/ark:/99152/p0dataset.csv"
+  perio.do <- read.csv(url.perio.do)
+  head(perio.do)
+}
 
 if(CulturalPeriods){
   # Plot Cultural Periods as a HTML tree
@@ -24,16 +32,15 @@ if(CulturalPeriods){
 
   # list concepts below Cultural Period
 
-  f <- function(g, r){
-    names(V(g))[is.finite(distances(g, r, mode = "out")) & degree(g) == 1]
-  }
-  f(g, "Cultural.")
-
   filed.out <- "CulturalPeriod_list"
   d_sql <- list_cpts(con, d_sql, field.out, '3b5c9ac7-5615-3de6-9e2d-4cd7ef7460e4')
   g <- d_sql$CulturalPeriod_list
-  edges.cultural.period <- as_data_frame(g, what = "edges")
+  # The Cultural periods are the leaves of the Concept list
+  leaves <- V(g)[degree(g, mode="out")==0]
+  leaves <- leaves$name
+
   # format for collapsibleTree
+  edges.cultural.period <- as_data_frame(g, what = "edges")
   edges.cultural.period$root <- "cultural.period"
   edges.cultural.period <- edges.cultural.period[edges.cultural.period$from != "cultural.period", ]
   tree.edges.cultural.period <- collapsibleTree(edges.cultural.period,
@@ -43,11 +50,11 @@ if(CulturalPeriods){
                   collapsed = FALSE,
                   width = 1200,
                   height = 900)
-  tree.edges.cultural.period <- collapsibleTree(edges.cultural.period,
-                                                c("from", "to"),
-                                                collapsed = FALSE,
-                                                width = 1200,
-                                                height = 900)
+  # tree.edges.cultural.period <- collapsibleTree(edges.cultural.period,
+  #                                               c("from", "to"),
+  #                                               collapsed = FALSE,
+  #                                               width = 1200,
+  #                                               height = 900)
   saveWidget(as_widget(tree.edges.cultural.period),
              paste0(getwd(),"/data/time/results/",
                     filed.out, ".html"))

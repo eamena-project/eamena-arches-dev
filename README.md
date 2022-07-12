@@ -27,6 +27,10 @@
 
 [README](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/data/geojson#readme)
 
+### Time
+
+[README](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/data/time#readme)
+
 ## Functions
 
 [README](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/functions#readme)

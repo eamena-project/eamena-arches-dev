@@ -23,9 +23,26 @@ if(CulturalPeriods){
   d_sql <- hash::hash() # hash instance to store the results
 
   # list concepts below Cultural Period
+
+  f <- function(g, r){
+    names(V(g))[is.finite(distances(g, r, mode = "out")) & degree(g) == 1]
+  }
+  f(g, "Cultural.")
+
   filed.out <- "CulturalPeriod_list"
   d_sql <- list_cpts(con, d_sql, field.out, '3b5c9ac7-5615-3de6-9e2d-4cd7ef7460e4')
-  edges.cultural.period <- as_data_frame(d_sql$CulturalPeriod_list, what = "edges")
+  g <- d_sql$CulturalPeriod_list
+  edges.cultural.period <- as_data_frame(g, what = "edges")
+  # format for collapsibleTree
+  edges.cultural.period$root <- "cultural.period"
+  edges.cultural.period <- edges.cultural.period[edges.cultural.period$from != "cultural.period", ]
+  tree.edges.cultural.period <- collapsibleTree(edges.cultural.period,
+                  hierarchy = c("root", "from", "to"),
+                  root = "Thesauri",
+                  c("from", "to"),
+                  collapsed = FALSE,
+                  width = 1200,
+                  height = 900)
   tree.edges.cultural.period <- collapsibleTree(edges.cultural.period,
                                                 c("from", "to"),
                                                 collapsed = FALSE,

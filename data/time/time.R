@@ -5,7 +5,7 @@ library(tibble)
 library(dplyr)
 library(RPostgreSQL)
 library(DBI)
-library(data.table)
+library(DT)
 library(plotly)
 library(collapsibleTree)
 library(htmlwidgets)
@@ -18,8 +18,11 @@ CulturalPeriods <- F
 if(Period.do){
   # convert Perio.do CSV into a data.table table
   url.perio.do <- "https://n2t.net/ark:/99152/p0dataset.csv"
-  perio.do <- read.csv(url.perio.do)
+  perio.do <- read.csv(url.perio.do, fileEncoding = "UTF-8")
   head(perio.do)
+  perio.do.dt <- datatable(perio.do)
+  saveWidget(perio.do.dt,
+             paste0(getwd(),"/data/time/results/periodo_list.html"))
 }
 
 if(CulturalPeriods){
@@ -36,8 +39,11 @@ if(CulturalPeriods){
   d_sql <- list_cpts(con, d_sql, field.out, '3b5c9ac7-5615-3de6-9e2d-4cd7ef7460e4')
   g <- d_sql$CulturalPeriod_list
   # The Cultural periods are the leaves of the Concept list
-  leaves <- V(g)[degree(g, mode="out")==0]
+  leaves <- V(g)[degree(g, mode="out") == 0]
   leaves <- leaves$name
+  df.equiv <- data.frame(eamena = leaves,
+                         periodo = rep("", length(leaves)))
+  write.table(df.equiv, paste0(getwd(),"/data/time/results/equivalences.tsv"), sep ="\t", row.names = F)
 
   # format for collapsibleTree
   edges.cultural.period <- as_data_frame(g, what = "edges")

@@ -249,23 +249,26 @@ list_culturalper <- function(db = 'eamena', d, field, uuid){
 #'
 #' @export
 plot_cultural_periods <- function(d, field, export.plot = F){
-  # field = "culturalper" ; d <- d_sql
+  # field = "culturalper" ; d <- d_sql ;
   df.all <- d[[field]]
   # nb of HP
   hps <- unique(d[[field]]$period$eamenaid)
   nb.hps <- length(hps)
+  cultural_periods <- read.table(paste0(raw.GH, "data/time/results/cultural_periods.tsv"),
+                                 sep = "\t", header = T)
   for(hp in seq(1, nb.hps)){
     # hp <- 1
     a.hp <- hps[hp] # get a EAMENA id
     df <- df.all$period[df.all$period$eamenaid == a.hp, ]
-    df.periods <- df$period
+    # df.periods <- df$period
     # only useful columns
-    df.periods <- df.periods[, c("name.periods", "name.periods.certain")]
-    cultural_periods <- read.table(paste0(raw.GH, "data/time/results/cultural_periods.tsv"),
-                                   sep = "\t", header = T)
+    df.periods <- df[, c("name.periods", "name.periods.certain")]
     time.table <- merge(df.periods, cultural_periods, by.x = "name.periods", by.y = "ea.name", all.x = TRUE)
     # get unique cultural periods
     time.table <- time.table[!duplicated(time.table), ]
+    time.table$ea.duration.taq <- as.numeric(as.character(time.table$ea.duration.taq))
+    time.table$ea.duration.tpq <- as.numeric(as.character(time.table$ea.duration.tpq))
+    # time.table <- sapply(time.table[, c("ea.duration.taq", "ea.duration.tpq")], as.numeric)
     # plot
     gplotly <- plot_ly()
     for(i in seq(1, nrow(time.table))){
@@ -281,23 +284,24 @@ plot_cultural_periods <- function(d, field, export.plot = F){
         add_polygons(x = per,
                      # x=c(per1,per2,per3,per4),
                      # x=c(periodes.df$tpq, periodes.df$tpq, periodes.df$taq, periodes.df$taq),
-                     y = c(0, 1, 1, 0),
+                     y = c(hp-1, hp, hp, hp-1),
                      line = list(width=1)
         ) %>%
         # the name in the rectangle centre
         add_annotations(x = mean(per),
-                        y = .5,
+                        y = hp/2.5,
                         text = lbl,
                         font = list(size=12),
                         showarrow = FALSE,
                         inherit = T)
     }
     # the name of the EAMENA HP
+    centre.eamena.id <- mean(c(time.table$ea.duration.taq, time.table$ea.duration.tpq))
     gplotly <- gplotly %>%
-      add_annotations(x = mean(per),
-                      y = .5,
-                      text = lbl,
-                      font = list(size=12),
+      add_annotations(x = centre.eamena.id,
+                      y = hp/1.5,
+                      text = a.hp,
+                      font = list(size=16),
                       showarrow = FALSE,
                       inherit = T)
   }

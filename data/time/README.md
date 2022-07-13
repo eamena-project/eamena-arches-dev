@@ -7,7 +7,7 @@ See the EAMENA Summer workshop 2022 presentation for Date and EDTF format here: 
 
 ## Cultural periods
 
-* All available cultural periods, with their duration, used in EAMENA are listed here: https://github.com/eamena-oxford/eamena-arches-dev/blob/main/data/time/results/cultural_periods.tsv
+* All cultural periods with their duration, recorded in EAMENA are listed here: https://github.com/eamena-oxford/eamena-arches-dev/blob/main/data/time/results/cultural_periods.tsv
 
 * An interactive tree of these periods: https://eamena-oxford.github.io/eamena-arches-dev/data/time/results/CulturalPeriod_list
 

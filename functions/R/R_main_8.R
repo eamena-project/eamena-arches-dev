@@ -21,13 +21,13 @@ d_sql <- count_hps("eamena", d_sql, "HPs_count")
 d_sql$HPs_count
 
 # UUID of a HP from its EAMENA ID..
-d_sql <- uuid_from_eamenaid("eamena", "EAMENA-0187363", d_sql, "uuid")
+d_sql <- uuid_from_eamenaid(db = "eamena", d_sql, "EAMENA-0187363", "uuid")
 d_sql$uuid # "12053a2b-9127-47a4-990f-7f5279cd89da"
 # get its periods and subperiods UUIDs
 d_sql <- list_culturalper(db = "eamena", d = d_sql, field = "culturalper", uuid = d_sql[["uuid"]])
 d_sql$culturalper
 # plot the cultural period time span
-plot_cultural_periods(d = d_sql, field = "culturalper")
+plot_cultural_periods(d = d_sql, field = "culturalper", export.plot = T)
 
 # subtree of Cultural Period (UUID: '3b5c9ac7-5615-3de6-9e2d-4cd7ef7460e4')
 d_sql <- list_cpts(db == "eamena", d_sql, "CulturalPeriod_list", '3b5c9ac7-5615-3de6-9e2d-4cd7ef7460e4')

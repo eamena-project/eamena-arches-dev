@@ -17,7 +17,7 @@
 
 ### Bulk 📝
 
-[README](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/data/bulk/readme.md)  
+[README](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/data/bulk#readme.md)  
 [bash](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/data/bulk/run_bulks.sh)
 
 ### Grids 📏

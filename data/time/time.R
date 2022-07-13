@@ -56,12 +56,12 @@ if(CulturalPeriods){
   field.out <- "CulturalPeriod_list"
   d_sql <- list_cpts("eamena", d_sql, field.out, '3b5c9ac7-5615-3de6-9e2d-4cd7ef7460e4')
   g <- d_sql$CulturalPeriod_list
+  leaves <- V(g)[degree(g, mode="out") == 0]
+  leaves <- leaves$name
 
   write.leaves <- F
   if(write.leaves){
     # The Cultural periods are the leaves of the Concept list
-    leaves <- V(g)[degree(g, mode="out") == 0]
-    leaves <- leaves$name
     df.equiv <- data.frame(eamena = leaves,
                            periodo = rep("", length(leaves)))
     write.table(df.equiv, paste0(getwd(),"/data/time/results/equivalences.tsv"), sep ="\t", row.names = F)

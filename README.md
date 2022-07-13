@@ -7,23 +7,24 @@
 
 ## Arches translation/internationalization
 
-[README](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/translation/README.md)
+[README](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/translation#readme)
 
 ## EAMENA checks
 
-[README](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/check/check.md#checks)
+[README](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/check#readme)
 
 ## Data
 
 ### Bulk 📝
 
-[README](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/data/bulk#readme.md)  
+[README](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/data/bulk#readme)  
 [bash](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/data/bulk/run_bulks.sh)
 
-### Grids 📏
+### Space 🗺️
+#### Grids 📏
 
 [README](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/data/grids/qdgc_#readme)
-### GeoJSON 🗺️
+#### GeoJSON 📍
 
 [README](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/data/geojson#readme)
 

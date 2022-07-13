@@ -3,6 +3,7 @@
 library(hash)
 library(igraph)
 library(stringr)
+library(tidyr)
 
 uuid_from_eamenaid <- function(db, eamenaid, d, field){
   # return the UUUID from EAMENA id
@@ -164,19 +165,19 @@ list_culturalper <- function(db = 'eamena', d, field, uuid){
   subperiods <- as.character(na.omit(df$subperiod))
   df.subperiods <- data.frame(uuid = subperiods,
                               name = rep(NA, length(subperiods)))
-
-  df.ss <- name_from_uuid(db, df.periods)
-  # for(i in seq(1, nrow(df.periods))){
-  #   # i <- 1
-  #   uuid_ <- df.periods[i, "uuid"]
-  #   sqll <- str_interp("
-  #   SELECT value FROM values WHERE valueid = '${uuid_}'
-  #                    ")
-  #   name <- dbGetQuery(con, sqll)
-  #   name <- as.character(name)
-  #   df.periods[i, "name"] <- cultural_name
-  # }
-  #
+  # call function
+  df.periods <- name_from_uuid(db, df.periods)
+  df.subperiods <- name_from_uuid(db, df.subperiods)
+  # store in tibble
+  df1 <- tibble(
+    uuid = uuid,
+    period = df.periods,
+    subperiods= df.subperiods
+    # cult_per = list(
+    #   period = df.periods,
+    #   df.subperiods= df.subperiods
+    # )
+  )
   d[[field]] <- df
   # dbDisconnect(con)
   return(d)
@@ -199,9 +200,53 @@ name_from_uuid <- function(db, df){
 }
 
 
-library(tibble)
-set.seed(1)
-df.1 <- tibble(name=sample(LETTERS,20,replace = F),score=sample(1:100,20,replace = F))
-df.2 <- tibble(name=sample(LETTERS,20,replace = F),score=sample(1:100,20,replace = F))
-df <- tibble(id=1,rank=2,data=df.1)
+ref_culturalper <- function(){
+  # create a list concepts below Cultural Period of all periods with their durations
+  # write a CSV file
+  # a periodo colum is added
+  field.out <- "CulturalPeriod_list"
+  d_sql <- list_cpts("eamena", d_sql, field.out, '3b5c9ac7-5615-3de6-9e2d-4cd7ef7460e4')
+  g <- d_sql$CulturalPeriod_list
+  leaves <- V(g)[degree(g, mode="out") == 0]
+  leaves <- leaves$name # all the periods (and superiods?)
+
+  # The Cultural periods are the leaves of the Concept list
+  # df.equiv <- data.frame(eamena = leaves,
+  #                        periodo = rep("", length(leaves)))
+  write.table(df.equiv, paste0(getwd(),"/data/time/results/equivalences.tsv"), sep ="\t", row.names = F)
+
+}
+
+
+
+df.culturalper <- data.frame(ea.name = leaves,
+                             ea.duration.taq = rep("", length(leaves)),
+                             ea.duration.tpq = rep("", length(leaves)),
+                             periodo = rep("", length(leaves)))
+for(i in seq(1, length(leaves))){
+  # i <- 1
+  per.name <- leaves[i]
+  sqll <- str_interp("
+    SELECT conceptid::text FROM values WHERE value = '${per.name}'
+                     ")
+  per.conceptid <- dbGetQuery(con, sqll)
+  per.conceptid <- per.conceptid$conceptid
+  df.name.duration <- data.frame(value = character(),
+                                 # languageid = character(),
+                                 valuetype = character())
+  # there are two concepts for the same value, so it is needed to loop..
+  for(conceptid in per.conceptid){
+    sqll <- str_interp("
+    SELECT value, valuetype FROM values WHERE conceptid = '${conceptid}'
+                     ")
+    res <- dbGetQuery(con, sqll)
+    df.name.duration <- rbind(df.name.duration, res)
+  }
+  culturalper.duration <- df.name.duration[df.name.duration$valuetype == 'scopeNote', "value"]
+  taq <- str_split(culturalper.duration, pattern = "\t")[[1]][1]
+  tpq <- str_split(culturalper.duration, pattern = "\t")[[1]][1]
+  # df.name <- df.name.duration[df.name.duration$valuetype == 'scopeNote', "value"]
+}
+
+
 

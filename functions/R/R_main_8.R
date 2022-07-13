@@ -24,7 +24,7 @@ d_sql$HPs_count
 d_sql <- uuid_from_eamenaid("eamena", "EAMENA-0187363", d_sql, "uuid")
 d_sql$uuid # "12053a2b-9127-47a4-990f-7f5279cd89da"
 # get its periods and subperiods UUIDs
-d_sql <- list_culturalper(db = "eamena", d = d_sql, field = "culturalper", uuid = d_sql$uuid)
+d_sql <- list_culturalper(db = "eamena", d = d_sql, field = "culturalper", uuid = d_sql[["uuid"]])
 d_sql$culturalper
 # plot the cultural period time span
 plot_cultural_periods(d = d_sql, field = "culturalper")

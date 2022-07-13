@@ -243,7 +243,7 @@ list_culturalper <- function(db = 'eamena', d, field, uuid){
 #' d_sql <- hash::hash() # hash instance to store the results
 #' d_sql <- uuid_from_eamenaid("eamena", "EAMENA-0187363", d_sql, "uuid")
 #' d_sql <- list_culturalper(db = "eamena", d = d_sql, field = "culturalper", uuid = d_sql[["uuid"]])
-#' plot_cultural_periods(d = d_sql, field = "culturalper")
+#' plot_cultural_periods(d = d_sql, field = "culturalper", export.plot = TRUE)
 #'
 #' @export
 plot_cultural_periods <- function(d, field, export.plot = F){
@@ -295,7 +295,7 @@ plot_cultural_periods <- function(d, field, export.plot = F){
                         showticklabels = FALSE,
                         zeroline = FALSE))
   if(export.plot){
-    htmlwidgets::saveWidget(as_widget(gplotly), "C:/Rprojects/eamena-arches-dev/data/time/cultural_period.html")
+    htmlwidgets::saveWidget(as_widget(gplotly), paste0(getwd(), "/data/time/results/cultural_period.html"))
   } else {
     gplotly
   }

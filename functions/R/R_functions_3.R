@@ -225,9 +225,10 @@ df.culturalper <- data.frame(ea.name = leaves,
                              periodo = rep("", length(leaves)))
 for(i in seq(1, length(leaves))){
   # i <- 1
-  per.name <- leaves[i]
+  name <- leaves[i]
+  print(paste(i, name))
   sqll <- str_interp("
-    SELECT conceptid::text FROM values WHERE value = '${per.name}'
+    SELECT conceptid::text FROM values WHERE value = '${name}'
                      ")
   per.conceptid <- dbGetQuery(con, sqll)
   per.conceptid <- per.conceptid$conceptid
@@ -242,9 +243,16 @@ for(i in seq(1, length(leaves))){
     res <- dbGetQuery(con, sqll)
     df.name.duration <- rbind(df.name.duration, res)
   }
+  # The cultural period duration is recorded as "600 1200" in a scopeNote
   culturalper.duration <- df.name.duration[df.name.duration$valuetype == 'scopeNote', "value"]
-  taq <- str_split(culturalper.duration, pattern = "\t")[[1]][1]
-  tpq <- str_split(culturalper.duration, pattern = "\t")[[1]][1]
+  if(length(culturalper.duration) > 0){
+    # some Cultural Periods haven't any scopeNote
+    taq <- str_split(culturalper.duration, pattern = "\t")[[1]][1]
+    tpq <- str_split(culturalper.duration, pattern = "\t")[[1]][2]
+    df.culturalper <- rbind(df.culturalper, c(name, taq, tpq, ""))
+  } else {
+    print(paste(" - The period", name, "has no scopeNote (ie, no duration)"))
+  }
   # df.name <- df.name.duration[df.name.duration$valuetype == 'scopeNote', "value"]
 }
 

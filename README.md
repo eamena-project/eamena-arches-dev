@@ -15,19 +15,19 @@
 
 ## Data
 
-### Bulk
+### Bulk 📝
 
-[README](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/data/bulk/readme.md)
+[README](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/data/bulk/readme.md)  
 [bash](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/data/bulk/run_bulks.sh)
 
-### Grids
+### Grids 📏
 
 [README](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/data/grids/qdgc_#readme)
-### GeoJSON
+### GeoJSON 🗺️
 
 [README](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/data/geojson#readme)
 
-### Time
+### Time ⏰
 
 [README](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/data/time#readme)
 
@@ -35,7 +35,7 @@
 
 [README](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/functions#readme)
 
-## IIIF
+## IIIF 🖼️
 
 [iiif](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/iiif)
 

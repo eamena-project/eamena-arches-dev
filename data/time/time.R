@@ -44,49 +44,18 @@ if(Period.do){
              paste0(getwd(),"/data/time/results/periodo_list.html"))
 }
 
-if(CulturalPeriods){
-  # Plot Cultural Periods as a HTML tree
-  dir_funct <- paste0(getwd(), "/functions/R/")
-  source(paste0(dir_funct, "_conn.R"))        # read the secret credential
-  source(paste0(dir_funct, "R_functions_2.R"))  # read the functions file
-
-  d_sql <- hash::hash() # hash instance to store the results
-
-  # list concepts below Cultural Period
-  field.out <- "CulturalPeriod_list"
-  d_sql <- list_cpts("eamena", d_sql, field.out, '3b5c9ac7-5615-3de6-9e2d-4cd7ef7460e4')
-  g <- d_sql$CulturalPeriod_list
-  leaves <- V(g)[degree(g, mode="out") == 0]
-  leaves <- leaves$name
-
-  write.leaves <- F
-  if(write.leaves){
-    # The Cultural periods are the leaves of the Concept list
-    df.equiv <- data.frame(eamena = leaves,
-                           periodo = rep("", length(leaves)))
-    write.table(df.equiv, paste0(getwd(),"/data/time/results/equivalences.tsv"), sep ="\t", row.names = F)
-  }
-
-  # format for collapsibleTree
-  edges.cultural.period <- as_data_frame(g, what = "edges")
-  edges.cultural.period$root <- "cultural.period"
-  edges.cultural.period <- edges.cultural.period[edges.cultural.period$from != "Cultural Period", ]
-  tree.edges.cultural.period <- collapsibleTree(edges.cultural.period,
-                                                hierarchy = c("root", "from", "to"),
-                                                root = "Thesauri",
-                                                c("from", "to"),
-                                                collapsed = FALSE,
-                                                width = 1200,
-                                                height = 900)
-  # tree.edges.cultural.period <- collapsibleTree(edges.cultural.period,
-  #                                               c("from", "to"),
-  #                                               collapsed = FALSE,
-  #                                               width = 1200,
-  #                                               height = 900)
-  saveWidget(as_widget(tree.edges.cultural.period),
-             paste0(getwd(),"/data/time/results/",
-                    filed.out, ".html"))
-}
+# if(CulturalPeriods){
+#   # Plot Cultural Periods as a HTML tree
+#   dir_funct <- paste0(getwd(), "/functions/R/")
+#   source(paste0(dir_funct, "_conn.R"))        # read the secret credential
+#   source(paste0(dir_funct, "R_functions_3.R"))  # read the functions file
+#
+#   d_sql <- hash::hash() # hash instance to store the results
+#
+#
+#
+#
+# }
 
 
 if(Dates){
@@ -220,7 +189,7 @@ if(Dates){
     layout(title = 'Categories of threats registered in EAMENA - by day',
            barmode = "stack")
   plot1
-  htmlwidgets::saveWidget(as_widget(plot1), "C:/Rprojects/eamena-arches-dev/data/time/threats_day.html")
+  htmlwidgets::saveWidget(as_widget(plot1), paste0(getwd(), "/data/time/results/threats_day.html"))
 
   # by month
   out_df_clean$assessdat.m <- format(as.Date(out_df_clean$assessdat), "%Y-%m")
@@ -240,7 +209,7 @@ if(Dates){
     layout(title = 'Categories of threats registered in EAMENA - by month',
            barmode = "stack")
   plot1
-  htmlwidgets::saveWidget(as_widget(plot1), "C:/Rprojects/eamena-arches-dev/data/time/threats_month.html")
+  htmlwidgets::saveWidget(as_widget(plot1), paste0(getwd(), "/data/time/results/threats_month.html"))
 
   # by year
   out_df_clean$assessdat.y <- format(as.Date(out_df_clean$assessdat), "%Y")
@@ -261,7 +230,8 @@ if(Dates){
     layout(title = 'Categories of threats registered in EAMENA - by year',
            barmode = "stack")
   plot1
-  htmlwidgets::saveWidget(as_widget(plot1), "C:/Rprojects/eamena-arches-dev/data/time/threats_year.html")
+  htmlwidgets::saveWidget(as_widget(plot1), paste0(getwd(), "/data/time/results/threats_year.html"))
+
   #
   # plot_ly(
   #   data = out_df_clean,

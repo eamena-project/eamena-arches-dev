@@ -4,52 +4,84 @@ library(hash)
 library(igraph)
 library(stringr)
 library(tidyr)
+library(plotly)
 
-uuid_from_eamenaid <- function(db, eamenaid, d, field){
-  # return the UUUID from EAMENA id
+raw.GH <- "https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/"
+
+
+#' Return the UUID of a HP from EAMENA id
+#' @name uuid_from_eamenaid
+#' @description Return the UUID of a HP from EAMENA id and store it into a hash() object
+#' alongside the EAMENA id
+#'
+#' @param db the name of the database, by default 'eamena'
+#' @param d a hash() object (a Python-like dictionary)
+#' @param eamenaid a EAMENA ID (eg. "EAMENA-0187363")
+#' @param field.uuid the name of the field that will be created in the a hash() object
+#' for the UUID
+#' @param field.eamenaid the name of the field that will be created in the a hash() object
+#' for the EAMENA ID
+#' @return a hash() object (a Python-like dictionary) with EAMENA ID and UUID
+#'
+#' @examples
+#' d_sql <- hash::hash() # hash instance to store the results
+#' d_sql <- uuid_from_eamenaid("eamena", d_sql, "EAMENA-0187363")
+#'
+#' @export
+uuid_from_eamenaid <- function(db, d, eamenaid, field.uuid = "uuid", field.eamenaid = "eamenaid"){
   sqll <- str_interp("SELECT t.tileid, t.resourceinstanceid,
      t.tiledata, n.nodeid
     FROM tiles t LEFT JOIN nodes n ON t.nodegroupid = n.nodegroupid
     WHERE (t.tiledata::json -> n.nodeid::text)::text like '%${eamenaid}%'")
   con <- my_con(db) # load the Pg connection
   df <- dbGetQuery(con, sqll)
-  d[[field]] <- as.character(df$resourceinstanceid)
+  d[[field.eamenaid]] <- eamenaid
+  d[[field.uuid]] <- as.character(df$resourceinstanceid)
   dbDisconnect(con)
   return(d)
 }
 
-# count_hps(con.eamena, d_sql, "HPs_count")
-
-count_hps <- function(db, d, field){
-  # count Heritage Places (HPs)
-  # Is 'con' useful?
-  sqll <- "select count(
-        tiledata->>'34cfe992-c2c0-11ea-9026-02e7594ce0a0' like '%EAMENA%'
-        ) as HPs_count FROM tiles;"
-  print(sqll)
-  con <- my_con(db) # load the Pg connection
-  d[[field]] <- dbGetQuery(con, sqll)
-  dbDisconnect(con)
-  return(d)
-}
-
-#' collect fields: EAMENA_ID, ThreatCat, AssessType, AssessDate, resourceinstanceid
-#' @name threats_hps
-#' @description Read the DB and gather the different threats by HP. A join with the table 'values'
-#' is needed since the 'tiles' table gathers principally UUID that must be translated
-#' into human-readable values
+#' Basic statistic on EAMENA heritage places
+#' @name count_hps
+#' @description Count the number of HP, ...
 #'
-#' @param con a Pg connection
+#' @param db the name of the database, by default 'eamena'
 #' @param d a hash() object (a Python-like dictionary)
 #' @param field the name of the field that will be created in the a hash() object
-#' @return A hash() with all threats, dates, etc. stored in the field name
+#' @return Basic statistics
 #'
 #' @examples
 #' d_sql <- hash::hash()
 #' d_sql <- count_hps(con, d_sql, "HPs_count")
 #'
 #' @export
-threats_hps <- function(con, d, field){
+count_hps <- function(db, d, field){
+  # count Heritage Places (HPs)
+  sqll <- "select count(
+        tiledata->>'34cfe992-c2c0-11ea-9026-02e7594ce0a0' like '%EAMENA%'
+        ) as HPs_count FROM tiles;"
+  con <- my_con(db) # load the Pg connection
+  d[[field]] <- dbGetQuery(con, sqll)
+  dbDisconnect(con)
+  return(d)
+}
+
+#' The threats on HP
+#' @name threats_hps
+#' @description Read the DB and gather the different threats by HP. A join with the table 'values'
+#' is needed since the 'tiles' table gathers principally UUID that must be translated
+#' into human-readable values. Collect fields: EAMENA_ID, ThreatCat, AssessType,
+#' AssessDate, resourceinstanceid
+#'
+#' @param db a Pg connection
+#' @param d a hash() object (a Python-like dictionary)
+#' @param field the name of the field that will be created in the a hash() object
+#' @return A hash() with all threats, dates, etc. stored in the field name
+#'
+#' @examples
+#'
+#' @export
+threats_hps <- function(db, d, field){
   sqll <- "
   SELECT
   tiles.tiledata ->> '34cfe992-c2c0-11ea-9026-02e7594ce0a0' as EamenaID,
@@ -70,7 +102,7 @@ threats_hps <- function(con, d, field){
   ORDER BY resourceid
   -- LIMIT 5000
   "
-  con <- my_con() # load the Pg connection
+  con <- my_con(db) # load the Pg connection
   d[[field]] <- dbGetQuery(con, sqll)
   dbDisconnect(con)
   return(d)
@@ -82,7 +114,7 @@ threats_hps <- function(con, d, field){
 #' @description With a given concept UUID (v. Reference Data Manager), find all
 #' the childs
 #'
-#' @param con a Pg connection
+#' @param db the name of the database, by default 'eamena'
 #' @param d a hash() object (a Python-like dictionary)
 #' @param field the field name that will be created in the a hash() object
 #' @param uuid the UUID of the Concept parent
@@ -93,7 +125,7 @@ threats_hps <- function(con, d, field){
 #' '3b5c9ac7-5615-3de6-9e2d-4cd7ef7460e4' is the UUID of ...
 #'
 #' d_sql <- hash::hash()
-#' d_sql <- list_cpts(con, d_sql, "CulturalPeriod_list", '3b5c9ac7-5615-3de6-9e2d-4cd7ef7460e4')
+#' d_sql <- list_cpts("eamena", d_sql, "CulturalPeriod_list", '3b5c9ac7-5615-3de6-9e2d-4cd7ef7460e4')
 #'
 #' @export
 list_cpts <- function(db, d, field, uuid){
@@ -151,110 +183,276 @@ list_cpts <- function(db, d, field, uuid){
 list_culturalper <- function(db = 'eamena', d, field, uuid){
   # d <- d_sql ; uuid <- '12053a2b-9127-47a4-990f-7f5279cd89da'; field <- "culturalper"
   sqll <- str_interp("
-  SELECT tiledata ->> '38cff73b-c77b-11ea-a292-02e7594ce0a0' AS period,
-  tiledata ->> '38cff73c-c77b-11ea-a292-02e7594ce0a0' AS subperiod
+  SELECT
+  tiledata ->> '38cff73b-c77b-11ea-a292-02e7594ce0a0' AS periods,
+  tiledata ->> '38cff738-c77b-11ea-a292-02e7594ce0a0' AS periods_certain,
+  tiledata ->> '38cff73c-c77b-11ea-a292-02e7594ce0a0' AS subperiods,
+  tiledata ->> '38cff73a-c77b-11ea-a292-02e7594ce0a0' AS subperiods_certain
   FROM tiles
   WHERE resourceinstanceid = '${uuid}'
                      ")
   con <- my_con(db) # load the Pg connection
   df <- dbGetQuery(con, sqll)
   dbDisconnect(con)
-  periods <- as.character(na.omit(df$period))
-  df.periods <- data.frame(uuid = periods,
-                           name = rep(NA, length(periods)))
-  subperiods <- as.character(na.omit(df$subperiod))
-  df.subperiods <- data.frame(uuid = subperiods,
-                              name = rep(NA, length(subperiods)))
-  # call function
-  df.periods <- name_from_uuid(db, df.periods)
-  df.subperiods <- name_from_uuid(db, df.subperiods)
+  periods <- df[!(is.na(df$periods) | df$periods == ""), ]
+  df.periods <- data.frame(periods = periods$periods,
+                           periods.certain = periods$periods_certain,
+                           name.periods = rep(NA, nrow(periods)),
+                           name.periods.certain = rep(NA, nrow(periods))
+  )
+  subperiods <- df[!(is.na(df$subperiods) | df$subperiods == ""), ]
+  df.subperiods <- data.frame(subperiods = subperiods$subperiods,
+                              subperiods.certain = subperiods$subperiods_certain,
+                              name.subperiods = rep(NA, nrow(subperiods)),
+                              name.subperiods.certain = rep(NA, nrow(subperiods))
+  )
+  # function CALL
+  df.periods <- name_from_uuid(db = db, df = df.periods,
+                               uuid.in = "periods", field.out = "name.periods")
+  df.periods <- name_from_uuid(db = db, df = df.periods,
+                               uuid.in = "periods.certain", field.out = "name.periods.certain")
+  # --
+  df.subperiods <- name_from_uuid(db = db, df = df.subperiods,
+                                  uuid.in = "subperiods", field.out = "name.subperiods")
+  df.subperiods <- name_from_uuid(db = db, df = df.subperiods,
+                                  uuid.in = "subperiods.certain", field.out = "name.subperiods.certain")
+  # --
   # store in tibble
-  df1 <- tibble(
+  df.tibble <- tibble(
     uuid = uuid,
     period = df.periods,
     subperiods= df.subperiods
-    # cult_per = list(
-    #   period = df.periods,
-    #   df.subperiods= df.subperiods
-    # )
   )
-  d[[field]] <- df
+  d[[field]] <- df.tibble
   # dbDisconnect(con)
   return(d)
 }
 
-name_from_uuid <- function(db, df){
+#' Plot the duration of EAMENA HP in a plotly chart
+#' @name plot_cultural_periods
+#' @description
+#'
+#' @param d a hash() object (a Python-like dictionary)
+#' @param field the field name where the periods, subperiods, etc. will be read in the a hash() object
+#' @param export.plot if True, export as HTML widget
+#'
+#' @return A plotly chart to display or save
+#'
+#' @examples
+#'
+#' d_sql <- hash::hash() # hash instance to store the results
+#' d_sql <- uuid_from_eamenaid("eamena", "EAMENA-0187363", d_sql, "uuid")
+#' d_sql <- list_culturalper(db = "eamena", d = d_sql, field = "culturalper", uuid = d_sql[["uuid"]])
+#' plot_cultural_periods(d = d_sql, field = "culturalper")
+#'
+#' @export
+plot_cultural_periods <- function(d, field, export.plot = F){
+  # field = "culturalper" ; d <- d_sql
+  df <- d[[field]]
+  df.periods <- df$period
+  # only useful columns
+  df.periods <- df.periods[, c("name.periods", "name.periods.certain")]
+  cultural_periods <- read.table(paste0(raw.GH, "data/time/results/cultural_periods.tsv"),
+                                 sep = "\t", header = T)
+  time.table <- merge(df.periods, cultural_periods, by.x = "name.periods", by.y = "ea.name")
+  # get unique cultural periods
+  time.table <- time.table[!duplicated(time.table), ]
+  # plot
+  gplotly <- plot_ly()
+  for(i in seq(1, nrow(time.table))){
+    # i <- 1
+    # 4 points to create a rectangle
+    per <- c(rep(time.table[i, "ea.duration.taq"], 2),
+             rep(time.table[i, "ea.duration.tpq"], 2))
+    per <- as.numeric(per)
+    lbl <- paste0("<b>", time.table[i, "name.periods"], "</b><br>",
+                  time.table[i, "ea.duration.taq"], " to ", time.table[i, "ea.duration.tpq"], " ANE")
+    # per1 <- c(rep(periodes.df[1,"tpq"],2),rep(periodes.df[1,"taq"],2))
+    # per2 <- c(rep(periodes.df[2,"tpq"],2),rep(periodes.df[2,"taq"],2))
+    # per3 <- c(rep(periodes.df[3,"tpq"],2),rep(periodes.df[3,"taq"],2))
+    # per4 <- c(rep(periodes.df[4,"tpq"],2),rep(periodes.df[4,"taq"],2))
+    gplotly <- gplotly %>%
+      add_polygons(x = per,
+                   # x=c(per1,per2,per3,per4),
+                   # x=c(periodes.df$tpq, periodes.df$tpq, periodes.df$taq, periodes.df$taq),
+                   y = c(0, 1, 1, 0),
+                   line = list(width=1)
+      ) %>%
+      # the name in the rectangle centre
+      add_annotations(x = mean(per),
+                      y = .5,
+                      # y = c(rep(.5, 2), .3, .7),
+                      text = lbl,
+                      # text = paste0("<b>",periodes.df$periodes.lbl,"</b><br>",
+                      #               abs(periodes.df$tpq),"-",abs(periodes.df$taq)," ANE"),
+                      font = list(size=12),
+                      showarrow = FALSE,
+                      inherit = T)
+  }
+  gplotly <- gplotly %>%
+    layout(yaxis = list(title = "Cultural periods",
+                        showgrid = FALSE,
+                        showticklabels = FALSE,
+                        zeroline = FALSE))
+  if(export.plot){
+    htmlwidgets::saveWidget(as_widget(gplotly), "C:/Rprojects/eamena-arches-dev/data/time/cultural_period.html")
+  } else {
+    gplotly
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+#' Get the name (eg, of Cultural Periods) from their UUID
+#' @name name_from_uuid
+#' @description This function is run by list_culturalper()
+#'
+#' @param db the name of the database, by default 'eamena'
+#' @param df a dataframe with at least a colum 'uuid'
+#' @param uuid.in the UUID column to read, by default 'uuid'
+#' @param field the name of the dataframe field that will be filled with names
+#'
+#' @return a dataframe with the UUID and the name (eg, of Cultural Periods)
+#'
+#' @examples
+#'
+#' @export
+name_from_uuid <- function(db = "eamena", df, uuid.in = "uuid", field.out = "name"){
+  # uuid = "periods" ; df = df.periods ; field = "name.periods"
   con <- my_con(db) # load the Pg connection
   for(i in seq(1, nrow(df))){
     # i <- 1
-    uuid_ <- df[i, "uuid"]
+    uuid_ <- df[i, uuid.in]
     sqll <- str_interp("
     SELECT value FROM values WHERE valueid = '${uuid_}'
                      ")
     name <- dbGetQuery(con, sqll)
     name <- as.character(name)
-    df[i, "name"] <- name
+    df[i, field.out] <- name
   }
   dbDisconnect(con)
   return(df)
 }
 
-
-ref_culturalper <- function(){
+#' Create a list of child-concepts below Cultural Period of all periods with their durations
+#' @name ref_culturalper
+#' @description create a list concepts below Cultural Period of all periods
+#' with their durations. If 'overwrite' then write a CSV file
+#'
+#' @param overwrite overwrite the reference table
+#'
+#' @return NA
+#'
+#' @examples
+#'
+#' @export
+ref_culturalper <- function(overwrite = F){
   # create a list concepts below Cultural Period of all periods with their durations
   # write a CSV file
   # a periodo colum is added
-  field.out <- "CulturalPeriod_list"
-  d_sql <- list_cpts("eamena", d_sql, field.out, '3b5c9ac7-5615-3de6-9e2d-4cd7ef7460e4')
+  field <- "CulturalPeriod_list"
+  d_sql <- list_cpts("eamena", d_sql, field, '3b5c9ac7-5615-3de6-9e2d-4cd7ef7460e4')
   g <- d_sql$CulturalPeriod_list
   leaves <- V(g)[degree(g, mode="out") == 0]
   leaves <- leaves$name # all the periods (and superiods?)
-
-  # The Cultural periods are the leaves of the Concept list
-  # df.equiv <- data.frame(eamena = leaves,
-  #                        periodo = rep("", length(leaves)))
-  write.table(df.equiv, paste0(getwd(),"/data/time/results/equivalences.tsv"), sep ="\t", row.names = F)
-
+  if(overwrite){
+    df.culturalper <- data.frame(ea.name = leaves,
+                                 ea.duration.taq = rep("", length(leaves)),
+                                 ea.duration.tpq = rep("", length(leaves)),
+                                 periodo = rep("", length(leaves)))
+    for(i in seq(1, length(leaves))){
+      # i <- 2
+      name <- leaves[i]
+      print(paste(i, name))
+      sqll <- str_interp("
+      SELECT conceptid::text FROM values WHERE value = '${name}'
+                         ")
+      per.conceptid <- dbGetQuery(con, sqll)
+      per.conceptid <- per.conceptid$conceptid
+      df.name.duration <- data.frame(value = character(),
+                                     # languageid = character(),
+                                     valuetype = character())
+      # there are two concepts for the same value, so it is needed to loop..
+      for(conceptid in per.conceptid){
+        sqll <- str_interp("
+        SELECT value, valuetype FROM values WHERE conceptid = '${conceptid}'
+                           ")
+        res <- dbGetQuery(con, sqll)
+        df.name.duration <- rbind(df.name.duration, res)
+      }
+      # The cultural period duration is recorded as "600 1200" in a scopeNote
+      culturalper.duration <- df.name.duration[df.name.duration$valuetype == 'scopeNote', "value"]
+      if(length(culturalper.duration) > 0){
+        # some Cultural Periods haven't any scopeNote
+        taq <- str_split(culturalper.duration, pattern = "\t")[[1]][1]
+        tpq <- str_split(culturalper.duration, pattern = "\t")[[1]][2]
+        df.culturalper[i, ] <- c(name, taq, tpq, "")
+      } else {
+        print(paste(" - The period", name, "has no scopeNote (ie, no duration)"))
+      }
+      write.table(df.culturalper, paste0(getwd(),"/data/time/results/cultural_periods.tsv"), sep ="\t", row.names = F)
+      # df.name <- df.name.duration[df.name.duration$valuetype == 'scopeNote', "value"]
+    }
+  }
+  return(leaves)
 }
 
+#' Create an interactive tree for a given Concept and its concepts-child
+#' (eg: 'Cultural Period')
+#' @name tree_concepts
+#' @description Read the arborescence of concept below of a given concept,
+#' creates a collapsibleTree. Plot it by defaut, but if 'export.tree' will
+#' export it
+#'
+#' @param db the name of the database, by default 'eamena'
+#' @param d a hash() object (a Python-like dictionary)
+#' @param field the field name that will be created in the a hash() object and
+#' the name of the collapsibleTree if exported
+#' @param export.tree if True, export the tree as a HTML widget
 
-
-df.culturalper <- data.frame(ea.name = leaves,
-                             ea.duration.taq = rep("", length(leaves)),
-                             ea.duration.tpq = rep("", length(leaves)),
-                             periodo = rep("", length(leaves)))
-for(i in seq(1, length(leaves))){
-  # i <- 1
-  name <- leaves[i]
-  print(paste(i, name))
-  sqll <- str_interp("
-    SELECT conceptid::text FROM values WHERE value = '${name}'
-                     ")
-  per.conceptid <- dbGetQuery(con, sqll)
-  per.conceptid <- per.conceptid$conceptid
-  df.name.duration <- data.frame(value = character(),
-                                 # languageid = character(),
-                                 valuetype = character())
-  # there are two concepts for the same value, so it is needed to loop..
-  for(conceptid in per.conceptid){
-    sqll <- str_interp("
-    SELECT value, valuetype FROM values WHERE conceptid = '${conceptid}'
-                     ")
-    res <- dbGetQuery(con, sqll)
-    df.name.duration <- rbind(df.name.duration, res)
-  }
-  # The cultural period duration is recorded as "600 1200" in a scopeNote
-  culturalper.duration <- df.name.duration[df.name.duration$valuetype == 'scopeNote', "value"]
-  if(length(culturalper.duration) > 0){
-    # some Cultural Periods haven't any scopeNote
-    taq <- str_split(culturalper.duration, pattern = "\t")[[1]][1]
-    tpq <- str_split(culturalper.duration, pattern = "\t")[[1]][2]
-    df.culturalper <- rbind(df.culturalper, c(name, taq, tpq, ""))
+#' @return a plot or a HTML widget of the tree
+#'
+#' @examples
+#'
+#' @export
+tree_concepts <- function(db = "eamena", d, field, export.tree = F){
+  # TODO: put UUID in the function options
+  d <- list_cpts(db, d, field, '3b5c9ac7-5615-3de6-9e2d-4cd7ef7460e4')
+  g <- d[[field]]
+  leaves <- V(g)[degree(g, mode="out") == 0]
+  leaves <- leaves$name # all the periods (and superiods?)
+  # format for collapsibleTree
+  edges.cultural.period <- as_data_frame(g, what = "edges")
+  edges.cultural.period$root <- "cultural.period"
+  edges.cultural.period <- edges.cultural.period[edges.cultural.period$from != "Cultural Period", ]
+  tree.edges.cultural.period <- collapsibleTree(edges.cultural.period,
+                                                hierarchy = c("root", "from", "to"),
+                                                root = "Thesauri",
+                                                c("from", "to"),
+                                                collapsed = FALSE,
+                                                width = 1200,
+                                                height = 900)
+  if(export.tree){
+    saveWidget(as_widget(tree.edges.cultural.period),
+               paste0(getwd(),"/data/time/results/",
+                      filed.out, ".html"))
   } else {
-    print(paste(" - The period", name, "has no scopeNote (ie, no duration)"))
+    # plot
+    tree.edges.cultural.period
   }
-  # df.name <- df.name.duration[df.name.duration$valuetype == 'scopeNote', "value"]
 }
+
+
+
+
 
 
 

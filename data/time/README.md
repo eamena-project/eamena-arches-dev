@@ -7,6 +7,10 @@ See the EAMENA Summer workshop 2022 presentation for Date and EDTF format here: 
 
 ## Cultural periods
 
+* All available cultural periods, with their duration, used in EAMENA are listed here: https://github.com/eamena-oxford/eamena-arches-dev/blob/main/data/time/results/cultural_periods.tsv
+
+* An interactive tree of these periods: https://eamena-oxford.github.io/eamena-arches-dev/data/time/results/CulturalPeriod_list
+
 ### Standardisation
 
 Our aim is to map the cultural periods of the [Perio.do](https://perio.do/en/) thesaurus and the EAMENA thesaurus:
@@ -14,8 +18,7 @@ Our aim is to map the cultural periods of the [Perio.do](https://perio.do/en/) t
     - interactive dataframe: https://eamena-oxford.github.io/eamena-arches-dev/data/time/results/periodo_list
     - a copy of the original CSV file: https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/data/time/periodo-dataset.csv
 - **EAMENA** thesaurus
-    - interactive tree: https://eamena-oxford.github.io/eamena-arches-dev/data/time/results/CulturalPeriod_list
-    - list of values (tree's leaves): https://github.com/eamena-oxford/eamena-arches-dev/blob/main/data/time/results/equivalences.tsv
+    - list of cultural periods: https://github.com/eamena-oxford/eamena-arches-dev/blob/main/data/time/results/cultural_periods.tsv
 
 
 

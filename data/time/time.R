@@ -54,7 +54,7 @@ if(CulturalPeriods){
 
   # list concepts below Cultural Period
   filed.out <- "CulturalPeriod_list"
-  d_sql <- list_cpts(con, d_sql, field.out, '3b5c9ac7-5615-3de6-9e2d-4cd7ef7460e4')
+  d_sql <- list_cpts("eamena", d_sql, field.out, '3b5c9ac7-5615-3de6-9e2d-4cd7ef7460e4')
   g <- d_sql$CulturalPeriod_list
 
   write.leaves <- F

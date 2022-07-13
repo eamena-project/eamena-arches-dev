@@ -93,8 +93,10 @@ threats_hps <- function(con, d, field){
 #' d_sql <- list_cpts(con, d_sql, "CulturalPeriod_list", '3b5c9ac7-5615-3de6-9e2d-4cd7ef7460e4')
 #'
 #' @export
-list_cpts <- function(con, d, field, uuid){
+list_cpts <- function(db, d, field, uuid){
+  # field <- "CulturalPeriod_list"
   # uuid <- '3b5c9ac7-5615-3de6-9e2d-4cd7ef7460e4'
+  # db <- "eamena"
   sqll <- "
   SELECT conceptidfrom as from, conceptidto as to FROM relations
   "
@@ -102,7 +104,7 @@ list_cpts <- function(con, d, field, uuid){
   # SELECT conceptidto as childs FROM relations
   # WHERE conceptidfrom = '3b5c9ac7-5615-3de6-9e2d-4cd7ef7460e4'
   # "
-  con <- my_con() # load the Pg connection
+  con <- my_con(db) # load the Pg connection
   relations <- dbGetQuery(con, sqll)
 
 

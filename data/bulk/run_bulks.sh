@@ -30,7 +30,7 @@
 # local <-> remote: cd "C:\Users\Thomas Huet\Desktop\EAMENA\IT\bulks\"
 cd /opt/arches/bulk_uploads
 # cd /home/$username/$project_name/$project_name/bulk_uploads
-BUFOLD="2022-06-27-Mohamed"
+BUFOLD="2022-07-12-Michael"
 # convert (call 'python manage.py bu -w strict -o validate -g 34cfe98e-c2c0-11ea-9026-02e7594ce0a0 -s "$f" | json_pp')
 ./convert $BUFOLD
 # virtual env (source env/bin/activate)

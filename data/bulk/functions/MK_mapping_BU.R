@@ -14,14 +14,16 @@ mk.data.path <- paste0(bu.path, "functions/AAA_f22_text only.xlsx")
 mk.data <- xlsx::read.xlsx(mk.data.path, sheetIndex = 1)
 
 # BU
-bu.template.path <- paste0(bu.path, "templates/Heritage Place BUS Template.xlsx")
+# bu.template.path <- paste0(bu.path, "templates/Heritage Place BUS Template.xlsx")
+bu.template.path <- paste0(bu.path, "templates/BUS_TemplateUpdate20072021.xlsx")
+
 # rm two first lines
 bu <- openxlsx::read.xlsx(bu.template.path, startRow = 3)
 # colnames(bu)
 # structure only
 bu <- bu[0, ]
 for(i in seq(1, nrow(mk.data))){
-  bu[nrow(bu) + 1 , ] <- NA
+  bu[nrow(bu)+1, ] <- NA
 }
 
 # mapping file

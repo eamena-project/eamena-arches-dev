@@ -12,7 +12,7 @@ library(htmlwidgets)
 
 dir_funct <- paste0(getwd(), "/functions/R/")
 source(paste0(dir_funct, "_conn.R"))        # read the secret credential
-source(paste0(dir_funct, "R_functions_3.R"))  # read the functions file
+source(paste0(dir_funct, "R_functions_4.R"))  # read the functions file
 
 d_sql <- hash::hash() # hash instance to store the results
 
@@ -21,7 +21,9 @@ d_sql <- count_hps("eamena", d_sql, "HPs_count")
 d_sql$HPs_count
 
 # UUID of a HP from its EAMENA ID..
-d_sql <- uuid_from_eamenaid(db = "eamena", d_sql, "EAMENA-0187363", "uuid")
+# d_sql <- uuid_from_eamenaid(db = "eamena", d_sql, "EAMENA-0187363", "uuid")
+d_sql <- uuid_from_eamenaid(db = "eamena", d_sql, c("EAMENA-0187363", "EAMENA-0186351"), "uuid")
+
 d_sql$uuid # "12053a2b-9127-47a4-990f-7f5279cd89da"
 # get its periods and subperiods UUIDs
 d_sql <- list_culturalper(db = "eamena", d = d_sql, field = "culturalper", uuid = d_sql[["uuid"]])

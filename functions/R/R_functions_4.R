@@ -29,10 +29,20 @@ raw.GH <- "https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/mai
 #'
 #' @export
 uuid_from_eamenaid <- function(db, d, eamenaid, field.uuid = "uuid", field.eamenaid = "eamenaid"){
-  sqll <- str_interp("SELECT t.tileid, t.resourceinstanceid,
+  if(length(eamenaid) == 1){
+    sqll <- str_interp("SELECT t.tileid, t.resourceinstanceid,
      t.tiledata, n.nodeid
     FROM tiles t LEFT JOIN nodes n ON t.nodegroupid = n.nodegroupid
-    WHERE (t.tiledata::json -> n.nodeid::text)::text like '%${eamenaid}%'")
+    WHERE (t.tiledata::json -> n.nodeid::text)::text LIKE '%${eamenaid}%'")
+  }
+  if(length(eamenaid) > 1){
+    eamenaids <- paste0(eamenaid, collapse = "|")
+    sqll <- str_interp("SELECT t.tileid, t.resourceinstanceid,
+     t.tiledata, n.nodeid
+    FROM tiles t LEFT JOIN nodes n ON t.nodegroupid = n.nodegroupid
+    WHERE (t.tiledata::json -> n.nodeid::text)::text similar to '%(${eamenaids})%';")
+    print(sqll)
+  }
   con <- my_con(db) # load the Pg connection
   df <- dbGetQuery(con, sqll)
   d[[field.eamenaid]] <- eamenaid

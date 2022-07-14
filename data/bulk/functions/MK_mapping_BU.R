@@ -1,11 +1,17 @@
-# library(openxlsx)
+library(openxlsx)
 library(xlsx)
 library(googlesheets4)
 
-# Will fill the BU by type of data: MK field one-to-one correspondences ('field'),
-# constant values ('value'), logical functions ('expression')
-# the mapping file is here: https://docs.google.com/spreadsheets/d/1nXgz98mGOySgc0Q2zIeT1RvHGNl4WRq1Fp9m5qB8g8k/edit#gid=1083097625
+##############################
+# Fill an empty BU template with data from an unformatted XLSX
+# Fill by type of data:
+#   - MK field one-to-one correspondences ('field');
+#   - constant values ('value');
+#   - logical functions ('expression');
+#
+# mapping file: https://docs.google.com/spreadsheets/d/1nXgz98mGOySgc0Q2zIeT1RvHGNl4WRq1Fp9m5qB8g8k/edit#gid=1083097625
 # export a TSV here: https://github.com/eamena-oxford/eamena-arches-dev/blob/main/data/bulk/examples/
+#############################
 
 bu.path <- paste0(getwd(), "/data/bulk/")
 
@@ -18,7 +24,6 @@ mk.data <- xlsx::read.xlsx(mk.data.path, sheetIndex = 1)
 bu.template.path <- paste0(bu.path, "templates/BUS_TemplateUpdate20072021.xlsx")
 # rm two first lines
 bu <- openxlsx::read.xlsx(bu.template.path, startRow = 3)
-# colnames(bu)
 # structure only
 bu <- bu[0, ]
 for(i in seq(1, nrow(mk.data))){
@@ -28,11 +33,7 @@ for(i in seq(1, nrow(mk.data))){
 # mapping file
 mapping.file <- read_sheet('https://docs.google.com/spreadsheets/d/1nXgz98mGOySgc0Q2zIeT1RvHGNl4WRq1Fp9m5qB8g8k/edit#gid=1083097625')
 
-# View(head(mk.data))
-
-
-
-# fields
+# 'field'
 mapping.file.fields <- mapping.file[mapping.file$type == "field", ]
 # mapping.file.fields[, "EAMENA"]
 for(i in seq(1, nrow(mapping.file.fields))){
@@ -42,7 +43,7 @@ for(i in seq(1, nrow(mapping.file.fields))){
   bu[ , ea] <- mk.data[ , x]
 }
 
-# values
+# 'value'
 mapping.file.value <- mapping.file[mapping.file$type == "value", ]
 # mapping.file.value[, "EAMENA"]
 for(i in seq(1, nrow(mapping.file.value))){
@@ -52,7 +53,7 @@ for(i in seq(1, nrow(mapping.file.value))){
   bu[ , ea] <- x
 }
 
-# expression
+# 'expression'
 # TODO
 
 # export

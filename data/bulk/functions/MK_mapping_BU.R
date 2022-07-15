@@ -67,9 +67,10 @@ mapping.file.expres <- mapping.file[mapping.file$type == "expression", ]
 #   bu[ , ea] <- x
 # }
 for(i in seq(1, nrow(mapping.file.expres))){
-  # i <- 1
+  # i <- 3
   ea <- as.character(mapping.file.expres[i, "EAMENA"])
   x.text <- as.character(mapping.file.expres[i, "MKdone"])
+  x.text <- gsub("[\r\n]", "\n", x.text)
   eval(parse(text = x.text)) # the XLSX cell text is executed
 }
 

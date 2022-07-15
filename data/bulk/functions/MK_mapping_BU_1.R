@@ -56,17 +56,7 @@ for(i in seq(1, nrow(mapping.file.value))){
 }
 
 # 'expression'
-# TODO
 mapping.file.expres <- mapping.file[mapping.file$type == "expression", ]
-# mapping.file.expres[, "EAMENA"]
-# for(i in seq(1, nrow(mapping.file.expres))){
-#   # i <- 1
-#   ea <- as.character(mapping.file.expres[i, "EAMENA"])
-#   x.text <- as.character(mapping.file.expres[i, "MKdone"])
-#   x <- eval(parse(text = x.text)) # the text is executed as a function
-#   # x <- as.character(mapping.file.expres[i, "MKdone"])
-#   bu[ , ea] <- x
-# }
 for(i in seq(1, nrow(mapping.file.expres))){
   # i <- 3
   ea <- as.character(mapping.file.expres[i, "EAMENA"])
@@ -94,12 +84,31 @@ bu <- rbind(bu, bu.piped)
 bu <- bu[!is.na(bu$UNIQUEID), ]
 # sort on UNIQUEID
 bu <- bu[order(bu$UNIQUEID),]
+row.names(bu) <- seq(1, nrow(bu))
+# View(head(bu))
 # export
 write.table(bu, paste0(bu.path, "examples/", bu.name, ".tsv"),
             row.names = F,
             sep = "\t")
 
 # - - - - - - - - -
+
+
+# Cultural.Period.Type
+for(j in seq(1, nrow(mk.data))){
+  if(mk.data[j, "Certainty"] == 4){
+    bu[j, ea] <- bu[j, "Geometry.Extent.Certainty"] <- bu[j, "Overall.Archaeological.Certainty.Value"] <- "High"
+  }
+  if(mk.data[j, "Certainty"] == 3){
+    bu[j, ea] <- bu[j, "Geometry.Extent.Certainty"] <- bu[j, "Overall.Archaeological.Certainty.Value"] <- "Medium"
+  }
+  if(mk.data[j, "Certainty"] == 2){
+    bu[j, ea] <- bu[j, "Geometry.Extent.Certainty"] <- bu[j, "Overall.Archaeological.Certainty.Value"] <- "Low"
+  }
+  if(mk.data[j, "Certainty"] == 1){
+    bu[j, ea] <- bu[j, "Geometry.Extent.Certainty"] <- bu[j, "Overall.Archaeological.Certainty.Value"] <- "Negligible"
+  }
+}
 
 
 # # Cultural.Period.Type

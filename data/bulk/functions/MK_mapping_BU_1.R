@@ -17,7 +17,8 @@ library(googlesheets4)
 bu.path <- paste0(getwd(), "/data/bulk/")
 
 # MK data
-mk.data.path <- paste0(bu.path, "functions/AAA_f22_text only.xlsx")
+bu.name <- "AAA_f22_text only"
+mk.data.path <- paste0(bu.path, "functions/", bu.name, ".xlsx")
 mk.data <- xlsx::read.xlsx(mk.data.path, sheetIndex = 1)
 
 # BU
@@ -74,10 +75,25 @@ for(i in seq(1, nrow(mapping.file.expres))){
   eval(parse(text = x.text)) # the XLSX cell text is executed
 }
 
+
+# the supplementary rows, a kind of 'pipe' work to add further data to a row
+bu.piped <- bu[0, ]
+for(i in seq(1, nrow(mk.data))){
+  if (!is.na(mk.data[i, "Placename"])){
+    # print(mk.data[i, "Placename"])
+    new.row <- nrow(bu.piped) + 1
+    bu.piped[new.row, ] <- NA
+    bu.piped[new.row, "UNIQUEID"] <- mk.data[i, "Site_ID"]
+    bu.piped[new.row, "Resource.Name"] <- mk.data[i, "Placename"]
+    bu.piped[new.row, "Name.Type"] <- "Toponym"}
+}
+
 # delete surnumerary rows
 bu <- bu[!is.na(bu$UNIQUEID), ]
+# sort on UNIQUEID
+bu <- bu[order(bu$UNIQUEID),]
 # export
-write.table(bu, paste0(bu.path, "examples/", Sys.Date(), "-Mohamed.tsv"),
+write.table(bu, paste0(bu.path, "examples/", bu.name, ".tsv"),
             row.names = F,
             sep = "\t")
 

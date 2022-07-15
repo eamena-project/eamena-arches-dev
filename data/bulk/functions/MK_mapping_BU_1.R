@@ -88,6 +88,8 @@ for(i in seq(1, nrow(mk.data))){
     bu.piped[new.row, "Name.Type"] <- "Toponym"}
 }
 
+bu <- rbind(bu, bu.piped)
+
 # delete surnumerary rows
 bu <- bu[!is.na(bu$UNIQUEID), ]
 # sort on UNIQUEID

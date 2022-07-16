@@ -95,7 +95,7 @@ threats_hps <- function(db, d, field){
 #' d_sql <- list_cpts("eamena", d_sql, "CulturalPeriod_list", '3b5c9ac7-5615-3de6-9e2d-4cd7ef7460e4')
 #'
 #' @export
-list_cpts <- function(db, d, field, uuid){
+list_cpts <- function(db = "eamena", d, field, uuid){
   # field <- "CulturalPeriod_list"
   # uuid <- '3b5c9ac7-5615-3de6-9e2d-4cd7ef7460e4'
   # db <- "eamena"
@@ -194,65 +194,125 @@ uuid_from_eamenaid <- function(db, d, eamenaid, field.uuid = "uuid", field.eamen
 list_culturalper <- function(db = 'eamena', d, field, uuid){
   # d <- d_sql ; uuid <- '12053a2b-9127-47a4-990f-7f5279cd89da'; field <- "culturalper"
   # d <- d_sql ; uuid <- d_sql[["uuid"]]; field <- "culturalper"
-  if(length(uuid) == 1){
+  # if(length(uuid) == 1){
+  #   sqll <- str_interp("
+  # SELECT
+  # tiledata ->> '38cff73b-c77b-11ea-a292-02e7594ce0a0' AS periods,
+  # tiledata ->> '38cff738-c77b-11ea-a292-02e7594ce0a0' AS periods_certain,
+  # tiledata ->> '38cff73c-c77b-11ea-a292-02e7594ce0a0' AS subperiods,
+  # tiledata ->> '38cff73a-c77b-11ea-a292-02e7594ce0a0' AS subperiods_certain
+  # FROM tiles
+  # WHERE resourceinstanceid = '${uuid}'
+  #                    ")
+  # }
+  # if(length(uuid) > 1){
+  df.periods.template <- data.frame(eamenaid = character(0),
+                                    periods = character(0),
+                                    periods.certain = character(0),
+                                    name.periods = character(0),
+                                    name.periods.certain = character(0)
+  )
+  df.subperiods.template <- data.frame(eamenaid = character(0),
+                                       subperiods = character(0),
+                                       subperiods.certain = character(0),
+                                       name.subperiods = character(0),
+                                       name.subperiods.certain = character(0)
+  )
+
+  for (i in seq(1, length(uuid))){
+    # i <- 2
+    a.uuid <- uuid[i]
+    a.eamenaid <- d$eamenaid[i]
     sqll <- str_interp("
-  SELECT
-  tiledata ->> '38cff73b-c77b-11ea-a292-02e7594ce0a0' AS periods,
-  tiledata ->> '38cff738-c77b-11ea-a292-02e7594ce0a0' AS periods_certain,
-  tiledata ->> '38cff73c-c77b-11ea-a292-02e7594ce0a0' AS subperiods,
-  tiledata ->> '38cff73a-c77b-11ea-a292-02e7594ce0a0' AS subperiods_certain
-  FROM tiles
-  WHERE resourceinstanceid = '${uuid}'
+    SELECT
+    '${a.eamenaid}' AS eamenaid,
+    tiledata ->> '38cff73b-c77b-11ea-a292-02e7594ce0a0' AS periods,
+    tiledata ->> '38cff738-c77b-11ea-a292-02e7594ce0a0' AS periods_certain,
+    tiledata ->> '38cff73c-c77b-11ea-a292-02e7594ce0a0' AS subperiods,
+    tiledata ->> '38cff73a-c77b-11ea-a292-02e7594ce0a0' AS subperiods_certain
+    FROM tiles
+    WHERE resourceinstanceid = '${a.uuid}'
                      ")
+    con <- my_con(db) # load the Pg connection
+    df.part <- dbGetQuery(con, sqll)
+    # con <- my_con(db) # load the Pg connection
+    # df <- dbGetQuery(con, sqll)
+    # dbDisconnect(con)
+    periods <- df.part[!(is.na(df.part$periods) | df.part$periods == ""), ]
+    df.periods <- data.frame(eamenaid = periods$eamenaid,
+                             periods = periods$periods,
+                             periods.certain = periods$periods_certain,
+                             name.periods = rep(NA, nrow(periods)),
+                             name.periods.certain = rep(NA, nrow(periods))
+    )
+    df.periods <- name_from_uuid(db = db, df = df.periods,
+                                 uuid.in = "periods", field.out = "name.periods")
+    df.periods <- name_from_uuid(db = db, df = df.periods,
+                                 uuid.in = "periods.certain", field.out = "name.periods.certain")
+    df.periods.template <- rbind(df.periods.template, df.periods)
+    # - - - - - - -
+    subperiods <- df.part[!(is.na(df.part$subperiods) | df.part$subperiods == ""), ]
+    df.subperiods <- data.frame(eamenaid = subperiods$eamenaid,
+                                subperiods = subperiods$subperiods,
+                                subperiods.certain = subperiods$subperiods_certain,
+                                name.subperiods = rep(NA, nrow(subperiods)),
+                                name.subperiods.certain = rep(NA, nrow(subperiods))
+    )
+    df.subperiods <- name_from_uuid(db = db, df = df.subperiods,
+                                    uuid.in = "subperiods", field.out = "name.subperiods")
+    df.subperiods <- name_from_uuid(db = db, df = df.subperiods,
+                                    uuid.in = "subperiods.certain", field.out = "name.subperiods.certain")
+    df.subperiods.template <- rbind(df.subperiods.template, df.subperiods)
   }
-  if(length(uuid) > 1){
-    # uuids <- paste0(uuid, collapse = "|")
-    uuids <- paste0(uuid, collapse = "|")
-    sqll <- str_interp("
-   SELECT
-   tiledata ->> '34cfe992-c2c0-11ea-9026-02e7594ce0a0' as EamenaID,
-   tiledata ->> '38cff73b-c77b-11ea-a292-02e7594ce0a0' AS periods,
-   tiledata ->> '38cff738-c77b-11ea-a292-02e7594ce0a0' AS periods_certain,
-   tiledata ->> '38cff73c-c77b-11ea-a292-02e7594ce0a0' AS subperiods,
-   tiledata ->> '38cff73a-c77b-11ea-a292-02e7594ce0a0' AS subperiods_certain
-   FROM tiles
-   WHERE resourceinstanceid::text SIMILAR to '%(${uuids})%'
-                        ")
-    print(sqll)
-  }
-  con <- my_con(db) # load the Pg connection
-  df <- dbGetQuery(con, sqll)
-  dbDisconnect(con)
-  periods <- df[!(is.na(df$periods) | df$periods == ""), ]
-  df.periods <- data.frame(eamenaid = rep(d$eamenaid, nrow(periods)),
-                           periods = periods$periods,
-                           periods.certain = periods$periods_certain,
-                           name.periods = rep(NA, nrow(periods)),
-                           name.periods.certain = rep(NA, nrow(periods))
-  )
-  subperiods <- df[!(is.na(df$subperiods) | df$subperiods == ""), ]
-  df.subperiods <- data.frame(eamenaid = rep(d$eamenaid, nrow(subperiods)),
-                              subperiods = subperiods$subperiods,
-                              subperiods.certain = subperiods$subperiods_certain,
-                              name.subperiods = rep(NA, nrow(subperiods)),
-                              name.subperiods.certain = rep(NA, nrow(subperiods))
-  )
-  # function CALL
-  df.periods <- name_from_uuid(db = db, df = df.periods,
-                               uuid.in = "periods", field.out = "name.periods")
-  df.periods <- name_from_uuid(db = db, df = df.periods,
-                               uuid.in = "periods.certain", field.out = "name.periods.certain")
-  # --
-  df.subperiods <- name_from_uuid(db = db, df = df.subperiods,
-                                  uuid.in = "subperiods", field.out = "name.subperiods")
-  df.subperiods <- name_from_uuid(db = db, df = df.subperiods,
-                                  uuid.in = "subperiods.certain", field.out = "name.subperiods.certain")
+
+  #  # uuids <- paste0(uuid, collapse = "|")
+  #  uuids <- paste0(uuid, collapse = "|")
+  #  sqll <- str_interp("
+  # SELECT
+  # tiledata ->> '34cfe992-c2c0-11ea-9026-02e7594ce0a0' as EamenaID,
+  # tiledata ->> '38cff73b-c77b-11ea-a292-02e7594ce0a0' AS periods,
+  # tiledata ->> '38cff738-c77b-11ea-a292-02e7594ce0a0' AS periods_certain,
+  # tiledata ->> '38cff73c-c77b-11ea-a292-02e7594ce0a0' AS subperiods,
+  # tiledata ->> '38cff73a-c77b-11ea-a292-02e7594ce0a0' AS subperiods_certain
+  # FROM tiles
+  # WHERE resourceinstanceid::text SIMILAR to '%(${uuids})%'
+  #                      ")
+  #  print(sqll)
+  # }
+  # con <- my_con(db) # load the Pg connection
+  # df <- dbGetQuery(con, sqll)
+  # dbDisconnect(con)
+  # periods <- df[!(is.na(df$periods) | df$periods == ""), ]
+  # df.periods <- data.frame(eamenaid = rep(d$eamenaid, nrow(periods)),
+  #                          periods = periods$periods,
+  #                          periods.certain = periods$periods_certain,
+  #                          name.periods = rep(NA, nrow(periods)),
+  #                          name.periods.certain = rep(NA, nrow(periods))
+  # )
+  # subperiods <- df[!(is.na(df$subperiods) | df$subperiods == ""), ]
+  # df.subperiods <- data.frame(eamenaid = rep(d$eamenaid, nrow(subperiods)),
+  #                             subperiods = subperiods$subperiods,
+  #                             subperiods.certain = subperiods$subperiods_certain,
+  #                             name.subperiods = rep(NA, nrow(subperiods)),
+  #                             name.subperiods.certain = rep(NA, nrow(subperiods))
+  # )
+  # # function CALL
+  # df.periods <- name_from_uuid(db = db, df = df.periods,
+  #                              uuid.in = "periods", field.out = "name.periods")
+  # df.periods <- name_from_uuid(db = db, df = df.periods,
+  #                              uuid.in = "periods.certain", field.out = "name.periods.certain")
+  # # --
+  # df.subperiods <- name_from_uuid(db = db, df = df.subperiods,
+  #                                 uuid.in = "subperiods", field.out = "name.subperiods")
+  # df.subperiods <- name_from_uuid(db = db, df = df.subperiods,
+  #                                 uuid.in = "subperiods.certain", field.out = "name.subperiods.certain")
   # --
   # store in tibble
+  dbDisconnect(con)
   df.tibble <- tibble(
-    uuid = uuid,
-    period = df.periods,
-    subperiods= df.subperiods
+    #uuid = uuid,
+    period = df.periods.template,
+    subperiods= df.subperiods.template
   )
   d[[field]] <- df.tibble
   # dbDisconnect(con)
@@ -278,13 +338,16 @@ list_culturalper <- function(db = 'eamena', d, field, uuid){
 #'
 #' @export
 plot_cultural_periods <- function(d, field, export.plot = F){
-  # field = "culturalper" ; d <- d_sql ;
+  # field = "culturalper" ; d <- d_sql ; export.plot = F
   df.all <- d[[field]]
   # nb of HP
   hps <- unique(d[[field]]$period$eamenaid)
   nb.hps <- length(hps)
+  # read the tpq/taq
   cultural_periods <- read.table(paste0(raw.GH, "data/time/results/cultural_periods.tsv"),
                                  sep = "\t", header = T)
+  gplotly <- plot_ly()
+  colors <- RColorBrewer::brewer.pal(nb.hps, "Set2")
   for(hp in seq(1, nb.hps)){
     # hp <- 1
     a.hp <- hps[hp] # get a EAMENA id
@@ -299,7 +362,6 @@ plot_cultural_periods <- function(d, field, export.plot = F){
     time.table$ea.duration.tpq <- as.numeric(as.character(time.table$ea.duration.tpq))
     # time.table <- sapply(time.table[, c("ea.duration.taq", "ea.duration.tpq")], as.numeric)
     # plot
-    gplotly <- plot_ly()
     for(i in seq(1, nrow(time.table))){
       # thedifferent boxes
       # i <- 1
@@ -314,11 +376,12 @@ plot_cultural_periods <- function(d, field, export.plot = F){
                      # x=c(per1,per2,per3,per4),
                      # x=c(periodes.df$tpq, periodes.df$tpq, periodes.df$taq, periodes.df$taq),
                      y = c(hp-1, hp, hp, hp-1),
+                     color = colors[hp],
                      line = list(width=1)
         ) %>%
         # the name in the rectangle centre
         add_annotations(x = mean(per),
-                        y = hp/2.5,
+                        y = hp-.25,
                         text = lbl,
                         font = list(size=12),
                         showarrow = FALSE,
@@ -328,7 +391,7 @@ plot_cultural_periods <- function(d, field, export.plot = F){
     centre.eamena.id <- mean(c(time.table$ea.duration.taq, time.table$ea.duration.tpq))
     gplotly <- gplotly %>%
       add_annotations(x = centre.eamena.id,
-                      y = hp/1.5,
+                      y = hp-.5,
                       text = a.hp,
                       font = list(size=16),
                       showarrow = FALSE,
@@ -336,6 +399,8 @@ plot_cultural_periods <- function(d, field, export.plot = F){
   }
   gplotly <- gplotly %>%
     layout(yaxis = list(title = "Cultural periods",
+                        showlegend = F,
+                        legend = list(orientation = 'h'),
                         showgrid = FALSE,
                         showticklabels = FALSE,
                         zeroline = FALSE))
@@ -399,12 +464,12 @@ name_from_uuid <- function(db = "eamena", df, uuid.in = "uuid", field.out = "nam
 #' @examples
 #'
 #' @export
-ref_culturalper <- function(overwrite = F){
+ref_culturalper <- function(db = "eamena", overwrite = F){
   # create a list concepts below Cultural Period of all periods with their durations
   # write a CSV file
   # a periodo colum is added
   field <- "CulturalPeriod_list"
-  d_sql <- list_cpts("eamena", d_sql, field, '3b5c9ac7-5615-3de6-9e2d-4cd7ef7460e4')
+  d_sql <- list_cpts(db, d_sql, field, '3b5c9ac7-5615-3de6-9e2d-4cd7ef7460e4')
   g <- d_sql$CulturalPeriod_list
   leaves <- V(g)[degree(g, mode="out") == 0]
   leaves <- leaves$name # all the periods (and superiods?)

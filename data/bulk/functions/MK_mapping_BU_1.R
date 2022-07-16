@@ -65,6 +65,22 @@ for(i in seq(1, nrow(mapping.file.expres))){
   eval(parse(text = x.text)) # the XLSX cell text is executed
 }
 
+# 'Seen' column
+for(i in seq(1, nrow(mk.data))){
+  # i <- 3
+  seen <- mk.data[i, "Seen"]
+  if (seen == "N"){
+    bu[i, "Overall.Condition.State"] <- "Unknown"
+    bu[i, "Damage.Extent.Type"] <- "Unknown"
+    bu[i, "Disturbance.Cause.Category.Type"] <- "Unknown"
+    bu[i, "Disturbance.Cause.Type"] <- "Unknown"
+    bu[i, "Disturbance.Cause.Certainty"] <- "Not Applicable"
+    bu[i, "Threat.Category"] <- "Unknown"
+    bu[i, "Threat.Type"] <- "Unknown"
+    bu[i, "Threat.Probability"] <- "Not Applicable"
+  }
+}
+
 
 # the supplementary rows, a kind of 'pipe' work to add further data to a row
 bu.piped <- bu[0, ]
@@ -86,29 +102,36 @@ bu <- bu[!is.na(bu$UNIQUEID), ]
 bu <- bu[order(bu$UNIQUEID),]
 row.names(bu) <- seq(1, nrow(bu))
 # View(head(bu))
+
 # export
-write.table(bu, paste0(bu.path, "examples/", bu.name, ".tsv"),
+out.bu <- paste0(bu.path, "examples/", bu.name)
+out.bu.tsv <- paste0(out.bu, ".tsv")
+write.table(bu,
+            out.bu.tsv,
             row.names = F,
             sep = "\t")
+out.bu.xlsx <- paste0(out.bu, "_out.xlsx")
+write.xlsx(bu, out.bu.xlsx, row.names = F, showNA = FALSE)
+
 
 # - - - - - - - - -
 
 
-# Cultural.Period.Type
-for(j in seq(1, nrow(mk.data))){
-  if(mk.data[j, "Certainty"] == 4){
-    bu[j, ea] <- bu[j, "Geometry.Extent.Certainty"] <- bu[j, "Overall.Archaeological.Certainty.Value"] <- "High"
-  }
-  if(mk.data[j, "Certainty"] == 3){
-    bu[j, ea] <- bu[j, "Geometry.Extent.Certainty"] <- bu[j, "Overall.Archaeological.Certainty.Value"] <- "Medium"
-  }
-  if(mk.data[j, "Certainty"] == 2){
-    bu[j, ea] <- bu[j, "Geometry.Extent.Certainty"] <- bu[j, "Overall.Archaeological.Certainty.Value"] <- "Low"
-  }
-  if(mk.data[j, "Certainty"] == 1){
-    bu[j, ea] <- bu[j, "Geometry.Extent.Certainty"] <- bu[j, "Overall.Archaeological.Certainty.Value"] <- "Negligible"
-  }
-}
+## Certainty
+# for(j in seq(1, nrow(mk.data))){
+#   if(mk.data[j, "Certainty"] == 4){
+#     bu[j, ea] <- bu[j, "Geometry.Extent.Certainty"] <- bu[j, "Overall.Archaeological.Certainty.Value"] <- "High"
+#   }
+#   if(mk.data[j, "Certainty"] == 3){
+#     bu[j, ea] <- bu[j, "Geometry.Extent.Certainty"] <- bu[j, "Overall.Archaeological.Certainty.Value"] <- "Medium"
+#   }
+#   if(mk.data[j, "Certainty"] == 2){
+#     bu[j, ea] <- bu[j, "Geometry.Extent.Certainty"] <- bu[j, "Overall.Archaeological.Certainty.Value"] <- "Low"
+#   }
+#   if(mk.data[j, "Certainty"] == 1){
+#     bu[j, ea] <- bu[j, "Geometry.Extent.Certainty"] <- bu[j, "Overall.Archaeological.Certainty.Value"] <- "Negligible"
+#   }
+# }
 
 
 # # Cultural.Period.Type

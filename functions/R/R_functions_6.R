@@ -239,8 +239,11 @@ list_culturalper <- function(db = 'eamena', d, field, uuid){
                                        name.subperiods = character(0),
                                        name.subperiods.certain = character(0)
   )
+  #length(uuid)
   for (i in seq(1, length(uuid))){
     # i <- 2
+    # print(i)
+    if(i %% 10 == 0){print(paste("*read:", i, "/", length(uuid)))}
     a.uuid <- uuid[i]
     a.eamenaid <- d$eamenaid[i]
     sqll <- str_interp("
@@ -259,43 +262,56 @@ list_culturalper <- function(db = 'eamena', d, field, uuid){
     # df <- dbGetQuery(con, sqll)
     # dbDisconnect(con)
     periods <- df.part[!(is.na(df.part$periods) | df.part$periods == ""), ]
-    df.periods <- data.frame(eamenaid = periods$eamenaid,
-                             periods = periods$periods,
-                             periods.certain = periods$periods_certain,
-                             name.periods = rep(NA, nrow(periods)),
-                             name.periods.certain = rep(NA, nrow(periods))
-    )
-    df.periods <- name_from_uuid(db = db, df = df.periods,
-                                 uuid.in = "periods", field.out = "name.periods")
-    df.periods <- name_from_uuid(db = db, df = df.periods,
-                                 uuid.in = "periods.certain", field.out = "name.periods.certain")
-    df.periods.template <- rbind(df.periods.template, df.periods)
-    # - - - - - - -
-    subperiods <- df.part[!(is.na(df.part$subperiods) | df.part$subperiods == ""), ]
-    df.subperiods <- data.frame(eamenaid = subperiods$eamenaid,
-                                subperiods = subperiods$subperiods,
-                                subperiods.certain = subperiods$subperiods_certain,
-                                name.subperiods = rep(NA, nrow(subperiods)),
-                                name.subperiods.certain = rep(NA, nrow(subperiods))
-    )
-    df.subperiods <- name_from_uuid(db = db, df = df.subperiods,
-                                    uuid.in = "subperiods", field.out = "name.subperiods")
-    df.subperiods <- name_from_uuid(db = db, df = df.subperiods,
-                                    uuid.in = "subperiods.certain", field.out = "name.subperiods.certain")
-    df.subperiods.template <- rbind(df.subperiods.template, df.subperiods)
+    if(nrow(periods) > 0){
+      df.periods <- data.frame(eamenaid = periods$eamenaid,
+                               periods = periods$periods,
+                               periods.certain = periods$periods_certain,
+                               name.periods = rep(NA, nrow(periods)),
+                               name.periods.certain = rep(NA, nrow(periods))
+      )
+      df.periods <- name_from_uuid(db = db, df = df.periods,
+                                   uuid.in = "periods", field.out = "name.periods")
+      df.periods <- name_from_uuid(db = db, df = df.periods,
+                                   uuid.in = "periods.certain", field.out = "name.periods.certain")
+      df.periods.template <- rbind(df.periods.template, df.periods)
+    }
+    if(nrow(subperiods) > 0){
+      # - - - - - - -
+      subperiods <- df.part[!(is.na(df.part$subperiods) | df.part$subperiods == ""), ]
+      df.subperiods <- data.frame(eamenaid = subperiods$eamenaid,
+                                  subperiods = subperiods$subperiods,
+                                  subperiods.certain = subperiods$subperiods_certain,
+                                  name.subperiods = rep(NA, nrow(subperiods)),
+                                  name.subperiods.certain = rep(NA, nrow(subperiods))
+      )
+      df.subperiods <- name_from_uuid(db = db, df = df.subperiods,
+                                      uuid.in = "subperiods", field.out = "name.subperiods")
+      df.subperiods <- name_from_uuid(db = db, df = df.subperiods,
+                                      uuid.in = "subperiods.certain", field.out = "name.subperiods.certain")
+      df.subperiods.template <- rbind(df.subperiods.template, df.subperiods)
+    }
   }
   # clean
   df.periods.template <- df.periods.template[df.periods.template$eamenaid != "NA", ]
+  df.periods.template <- df.periods.template[df.periods.template$name.periods != "Unknown", ]
+
   df.subperiods.template <- df.subperiods.template[df.subperiods.template$eamenaid != "NA", ]
+  df.subperiods.template <- df.subperiods.template[df.subperiods.template$name.periods != "Unknown", ]
+
   # store in tibble
+  ifelse(nrow(df.periods.template) > 0, periods.out <- df.periods.template, periods.out <- NA)
+  ifelse(nrow(df.subperiods.template) > 0, subperiods.out <- df.subperiods.template, subperiods.out <- NA)
+
   dbDisconnect(con)
   df.tibble <- tibble(
-    #uuid = uuid,
-    period = df.periods.template,
-    subperiods= df.subperiods.template
+    period = periods.out,
+    subperiods = subperiods.out
   )
+  # df.tibble <- tibble(
+  #   period = df.periods.template,
+  #   subperiods = df.subperiods.template
+  # )
   d[[field]] <- df.tibble
-  # dbDisconnect(con)
   return(d)
 }
 
@@ -321,7 +337,7 @@ list_culturalper <- function(db = 'eamena', d, field, uuid){
 #'
 #' @export
 plot_cultural_periods <- function(d, field, type.plot = "static", bin.width = 50, export.plot = F){
-  # field = "culturalper" ; d <- d_sql ; export.plot = F
+  # field = "culturalper" ; d <- d_sql ; export.plot = F ; type.plot = "static" ;  bin.width = 50
   df.all <- d[[field]]
   # nb of HP
   hps <- unique(d[[field]]$period$eamenaid)
@@ -336,6 +352,8 @@ plot_cultural_periods <- function(d, field, type.plot = "static", bin.width = 50
     time.table$ea.duration.taq <- as.numeric(as.character(time.table$ea.duration.taq))
     time.table$ea.duration.tpq <- as.numeric(as.character(time.table$ea.duration.tpq))
     time.table$no <- seq(1, nrow(time.table))
+    # clean
+    time.table <- time.table[!is.na(time.table$ea.duration.taq) & !is.na(time.table$ea.duration.tpq), ]
 
     cultper.byeamenaid <- ggplot(time.table) +
       geom_segment(aes(x = ea.duration.taq, xend = ea.duration.tpq,
@@ -343,7 +361,9 @@ plot_cultural_periods <- function(d, field, type.plot = "static", bin.width = 50
                        size = 1,
                        alpha = .1)) +
       xlab("ANE") +
-      theme_bw()
+      theme_bw() +
+      theme(legend.position="none")
+
     if(export.plot){
       gout <- paste0(time.results, "cultural_period_byeamenaid.png")
       ggsave(gout,
@@ -594,8 +614,32 @@ tree_concepts <- function(db = "eamena", d, field, export.tree = F){
   }
 }
 
+#' Get a list of parameters from a GeoJSON file.
+#' @name geojson_get_field
+#' @description Get values of a given field
+#'
+#' @param geojson.path the path to the GeoJSON file,
+#' eg: "https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/data/geojson/caravanserail.geojson"
+#' @param field a field name, in R format, eg: EAMENA.ID
+#'
+#' @return A vector with all values
+#'
+#' @examples
+#'
+#' @export
+geojson_get_field <- function(geojson.path, field = "EAMENA.ID"){
+  # geojson.path <- "https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/data/geojson/caravanserail.geojson"
+  r <- geojson_read(url)
+  val <- c()
+  for(i in seq(1, length(r[[2]]))){
+    # i <- 4
+    val <- c(val, r[[2]][[i]]$properties[[field]])
+  }
+  return(val)
+}
+
 #' Create an interactive leaflet map from a GeoJSON.
-#' @name map_geojson
+#' @name geojson_map
 #' @description Create two maps to be imported into a reveal.js showcase:
 #' 1. a general map displaying all the HPs resulting from a EAMENA search ('geojson url' format)
 #' 2. a highlight map on one particular HP linked to a 3D model, photograph, etc.
@@ -612,7 +656,7 @@ tree_concepts <- function(db = "eamena", d, field, export.tree = F){
 #' @examples
 #'
 #' @export
-map_geojson <- function(map.name,
+geojson_map <- function(map.name,
                         map.format = '.geojson',
                         map.root = "https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/data/geojson/",
                         highlight = FALSE,

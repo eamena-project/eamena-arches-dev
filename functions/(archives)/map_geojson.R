@@ -4,6 +4,7 @@ library(htmlwidgets)
 
 # TODO: documentation
 
+
 map.name <- "NWSyria_sites"
 map.format <- '.geojson'
 map.root <- "https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/data/geojson/"

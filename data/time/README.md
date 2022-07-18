@@ -16,7 +16,7 @@ See the EAMENA Summer workshop 2022 presentation for Date and EDTF format here: 
 
 #### Cultural periods by Heritage Places 🕌
 
-* Visualize Heritage Places durations on an interactive time table:https://eamena-oxford.github.io/eamena-arches-dev/data/time/results/cultural_period.html
+* View the duration of Heritage Places on an interactive timeline: https://eamena-oxford.github.io/eamena-arches-dev/data/time/results/cultural_period.html
 
 ### Standardisation
 

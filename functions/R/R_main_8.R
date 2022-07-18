@@ -12,7 +12,7 @@ library(htmlwidgets)
 
 dir_funct <- paste0(getwd(), "/functions/R/")
 source(paste0(dir_funct, "_conn.R"))        # read the secret credential
-source(paste0(dir_funct, "R_functions_5.R"))  # read the functions file
+source(paste0(dir_funct, "R_functions_6.R"))  # read the functions file
 
 d_sql <- hash::hash() # hash instance to store the results
 

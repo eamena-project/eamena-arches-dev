@@ -12,7 +12,7 @@ library(htmlwidgets)
 
 dir_funct <- paste0(getwd(), "/functions/R/")
 source(paste0(dir_funct, "_conn.R"))        # read the secret credential
-source(paste0(dir_funct, "R_functions_6.R"))  # read the functions file
+source(paste0(dir_funct, "R_functions_7.R"))  # read the functions file
 
 d_sql <- hash::hash() # hash instance to store the results
 
@@ -37,7 +37,7 @@ if(cultural.periods){
 display.refdata <- F
 if(display.refdata){
   # subtree of Cultural Period (UUID: '3b5c9ac7-5615-3de6-9e2d-4cd7ef7460e4')
-  d_sql <- list_cpts(db == "eamena", d_sql, "CulturalPeriod_list", '3b5c9ac7-5615-3de6-9e2d-4cd7ef7460e4')
+  d_sql <- list_cpts(db = "eamena", d = d_sql, field = "CulturalPeriod_list", uuid = '3b5c9ac7-5615-3de6-9e2d-4cd7ef7460e4')
   plot(d_sql$CulturalPeriod_list)
 
   # plot the tree of the cultural periods

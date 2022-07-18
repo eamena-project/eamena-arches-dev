@@ -101,9 +101,7 @@ threats_hps <- function(db, d, field){
 #'
 #' @export
 list_cpts <- function(db = "eamena", d, field, uuid){
-  # field <- "CulturalPeriod_list"
-  # uuid <- '3b5c9ac7-5615-3de6-9e2d-4cd7ef7460e4'
-  # db <- "eamena"
+  # field <- "CulturalPeriod_list" ; uuid <- '3b5c9ac7-5615-3de6-9e2d-4cd7ef7460e4' ;  db <- "eamena"
   sqll <- "
   SELECT conceptidfrom as from, conceptidto as to FROM relations
   "
@@ -112,9 +110,9 @@ list_cpts <- function(db = "eamena", d, field, uuid){
   # subset the Concepts graph on the selected UUID
   g <- graph_from_data_frame(relations, directed = TRUE)
   nodes.subgraph <- subcomponent(g, uuid, mode = "out")
-  subgraph <- subgraph(g, nodes.subgraph)
+  subgraph.names <- subgraph.uuid <- subgraph(g, nodes.subgraph)
   # get the name of the nodes from their UUID
-  l.uuids <- as_ids(V(subgraph))
+  l.uuids <- as_ids(V(subgraph.uuid))
   for(uuid_ in l.uuids){
     # uuid_ <- "ea784c69-d61d-4bfc-9aa9-b3fb0bfa1b42"
     sqll <- str_interp("
@@ -125,9 +123,10 @@ list_cpts <- function(db = "eamena", d, field, uuid){
                        ")
     uuid_name <- dbGetQuery(con, sqll)
     uuid_name <- as.character(uuid_name)
-    V(subgraph)$name[V(subgraph)$name == uuid_] <- uuid_name
+    V(subgraph.names)$name[V(subgraph.names)$name == uuid_] <- uuid_name
   }
-  d[[field]] <- subgraph
+  d[[field]] <- subgraph.names
+  d[["period.uuid"]] <- subgraph.uuid
   dbDisconnect(con)
   return(d)
 }
@@ -198,10 +197,13 @@ uuid_from_eamenaid <- function(db, d, eamenaid, field.uuid = "uuid", field.eamen
 #' @description With a given concept UUID (v. Reference Data Manager), find all
 #' the cultural periods, subperiods, etc., of a given HP
 #'
-#' @param db the name of the database, by default 'eamena'
+#' @param db the name of the database or dataset, by default 'eamena'. If 'eamena'
+#' will connect the Pg database. If 'geojson', will read the GeoJSON file path
+#' recorded in the parameter 'geojson.path'
 #' @param d a hash() object (a Python-like dictionary)
 #' @param field the field name that will be created in the a hash() object
-#' @param uuid the UUID of the HP
+#' @param uuid the UUID of the HP, only useful if db = 'eamena'
+#' @param geojson.path the path of the GeoJSON file
 #'
 #' @return A hash() with listed cultural periods names
 #'
@@ -212,21 +214,10 @@ uuid_from_eamenaid <- function(db, d, eamenaid, field.uuid = "uuid", field.eamen
 #' d_sql <- list_culturalper("eamena", d_sql, "culturalper", d_sql$uuid)
 #'
 #' @export
-list_culturalper <- function(db = 'eamena', d, field, uuid, geojson.path = NA){
+list_culturalper <- function(db = 'eamena', d, field, uuid = NA, geojson.path = NA){
   # d <- d_sql ; uuid <- '12053a2b-9127-47a4-990f-7f5279cd89da'; field <- "culturalper"
   # d <- d_sql ; uuid <- d_sql[["uuid"]]; field <- "culturalper"
-  # if(length(uuid) == 1){
-  #   sqll <- str_interp("
-  # SELECT
-  # tiledata ->> '38cff73b-c77b-11ea-a292-02e7594ce0a0' AS periods,
-  # tiledata ->> '38cff738-c77b-11ea-a292-02e7594ce0a0' AS periods_certain,
-  # tiledata ->> '38cff73c-c77b-11ea-a292-02e7594ce0a0' AS subperiods,
-  # tiledata ->> '38cff73a-c77b-11ea-a292-02e7594ce0a0' AS subperiods_certain
-  # FROM tiles
-  # WHERE resourceinstanceid = '${uuid}'
-  #                    ")
-  # }
-  # if(length(uuid) > 1){
+  # d <- d_sql ; uuid <- d_sql[["uuid"]]; field <- "culturalper" ; db = 'geojson' ; geojson.path = 'https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/data/geojson/caravanserail.geojson'
   df.periods.template <- data.frame(eamenaid = character(0),
                                     periods = character(0),
                                     periods.certain = character(0),
@@ -240,56 +231,70 @@ list_culturalper <- function(db = 'eamena', d, field, uuid, geojson.path = NA){
                                        name.subperiods.certain = character(0)
   )
   #length(uuid)
-  for (i in seq(1, length(uuid))){
-    # i <- 2
-    # print(i)
-    if(i %% 10 == 0){print(paste("*read:", i, "/", length(uuid)))}
-    a.uuid <- uuid[i]
-    a.eamenaid <- d$eamenaid[i]
-    sqll <- str_interp("
-    SELECT
-    '${a.eamenaid}' AS eamenaid,
-    tiledata ->> '38cff73b-c77b-11ea-a292-02e7594ce0a0' AS periods,
-    tiledata ->> '38cff738-c77b-11ea-a292-02e7594ce0a0' AS periods_certain,
-    tiledata ->> '38cff73c-c77b-11ea-a292-02e7594ce0a0' AS subperiods,
-    tiledata ->> '38cff73a-c77b-11ea-a292-02e7594ce0a0' AS subperiods_certain
-    FROM tiles
-    WHERE resourceinstanceid = '${a.uuid}'
+  if(db == "eamena"){
+    for (i in seq(1, length(uuid))){
+      # i <- 2
+      # print(i)
+      if(i %% 10 == 0){print(paste("*read:", i, "/", length(uuid)))}
+      a.uuid <- uuid[i]
+      a.eamenaid <- d$eamenaid[i]
+      sqll <- str_interp("
+      SELECT
+      '${a.eamenaid}' AS eamenaid,
+      tiledata ->> '38cff73b-c77b-11ea-a292-02e7594ce0a0' AS periods,
+      tiledata ->> '38cff738-c77b-11ea-a292-02e7594ce0a0' AS periods_certain,
+      tiledata ->> '38cff73c-c77b-11ea-a292-02e7594ce0a0' AS subperiods,
+      tiledata ->> '38cff73a-c77b-11ea-a292-02e7594ce0a0' AS subperiods_certain
+      FROM tiles
+      WHERE resourceinstanceid = '${a.uuid}'
                      ")
-    con <- my_con(db) # load the Pg connection
-    df.part <- dbGetQuery(con, sqll)
-    # con <- my_con(db) # load the Pg connection
-    # df <- dbGetQuery(con, sqll)
-    # dbDisconnect(con)
-    periods <- df.part[!(is.na(df.part$periods) | df.part$periods == ""), ]
-    if(nrow(periods) > 0){
-      df.periods <- data.frame(eamenaid = periods$eamenaid,
-                               periods = periods$periods,
-                               periods.certain = periods$periods_certain,
-                               name.periods = rep(NA, nrow(periods)),
-                               name.periods.certain = rep(NA, nrow(periods))
-      )
-      df.periods <- name_from_uuid(db = db, df = df.periods,
-                                   uuid.in = "periods", field.out = "name.periods")
-      df.periods <- name_from_uuid(db = db, df = df.periods,
-                                   uuid.in = "periods.certain", field.out = "name.periods.certain")
-      df.periods.template <- rbind(df.periods.template, df.periods)
+      con <- my_con(db) # load the Pg connection
+      df.part <- dbGetQuery(con, sqll)
     }
-    if(nrow(subperiods) > 0){
-      # - - - - - - -
-      subperiods <- df.part[!(is.na(df.part$subperiods) | df.part$subperiods == ""), ]
-      df.subperiods <- data.frame(eamenaid = subperiods$eamenaid,
-                                  subperiods = subperiods$subperiods,
-                                  subperiods.certain = subperiods$subperiods_certain,
-                                  name.subperiods = rep(NA, nrow(subperiods)),
-                                  name.subperiods.certain = rep(NA, nrow(subperiods))
-      )
-      df.subperiods <- name_from_uuid(db = db, df = df.subperiods,
-                                      uuid.in = "subperiods", field.out = "name.subperiods")
-      df.subperiods <- name_from_uuid(db = db, df = df.subperiods,
-                                      uuid.in = "subperiods.certain", field.out = "name.subperiods.certain")
-      df.subperiods.template <- rbind(df.subperiods.template, df.subperiods)
-    }
+  }
+  if(db == "geojson"){
+    eamenaid <- geojson_get_field(geojson.path, "EAMENA.ID")
+    periods <- geojson_get_field(geojson.path, "Cultural.Period.Type")
+    periods_certain <- geojson_get_field(geojson.path, "Cultural.Period.Certainty")
+    subperiods <- geojson_get_field(geojson.path, "Cultural.Sub.period.Type")
+    subperiods_certain <- geojson_get_field(geojson.path, "Cultural.Sub.period.Certainty")
+    df.part <- data.frame(eamenaid = eamenaid,
+                          periods = periods,
+                          periods_certain = periods_certain,
+                          subperiods = subperiods,
+                          subperiods_certain = subperiods_certain)
+  }
+  # con <- my_con(db) # load the Pg connection
+  # df <- dbGetQuery(con, sqll)
+  # dbDisconnect(con)
+  periods <- df.part[!(is.na(df.part$periods) | df.part$periods == ""), ]
+  if(nrow(periods) > 0){
+    df.periods <- data.frame(eamenaid = periods$eamenaid,
+                             periods = periods$periods,
+                             periods.certain = periods$periods_certain,
+                             name.periods = rep(NA, nrow(periods)),
+                             name.periods.certain = rep(NA, nrow(periods))
+    )
+    df.periods <- name_from_uuid(db = db, df = df.periods,
+                                 uuid.in = "periods", field.out = "name.periods")
+    df.periods <- name_from_uuid(db = db, df = df.periods,
+                                 uuid.in = "periods.certain", field.out = "name.periods.certain")
+    df.periods.template <- rbind(df.periods.template, df.periods)
+  }
+  if(nrow(subperiods) > 0){
+    # - - - - - - -
+    subperiods <- df.part[!(is.na(df.part$subperiods) | df.part$subperiods == ""), ]
+    df.subperiods <- data.frame(eamenaid = subperiods$eamenaid,
+                                subperiods = subperiods$subperiods,
+                                subperiods.certain = subperiods$subperiods_certain,
+                                name.subperiods = rep(NA, nrow(subperiods)),
+                                name.subperiods.certain = rep(NA, nrow(subperiods))
+    )
+    df.subperiods <- name_from_uuid(db = db, df = df.subperiods,
+                                    uuid.in = "subperiods", field.out = "name.subperiods")
+    df.subperiods <- name_from_uuid(db = db, df = df.subperiods,
+                                    uuid.in = "subperiods.certain", field.out = "name.subperiods.certain")
+    df.subperiods.template <- rbind(df.subperiods.template, df.subperiods)
   }
   # clean
   df.periods.template <- df.periods.template[df.periods.template$eamenaid != "NA", ]
@@ -314,6 +319,7 @@ list_culturalper <- function(db = 'eamena', d, field, uuid, geojson.path = NA){
   d[[field]] <- df.tibble
   return(d)
 }
+
 
 #' Plot the duration of EAMENA HP cultural periods attribution in a chart. The cultural periods
 #' are recorded by years
@@ -509,7 +515,7 @@ name_from_uuid <- function(db = "eamena", df, uuid.in = "uuid", field.out = "nam
 #' Create a list of child-concepts below Cultural Period of all periods with their durations
 #' @name ref_culturalper
 #' @description create a list concepts below Cultural Period of all periods
-#' with their durations. If 'overwrite' then write a CSV file
+#' with their durations. a periodo colum is added. If 'overwrite' then write a CSV file
 #'
 #' @param overwrite overwrite the reference table
 #'
@@ -518,23 +524,27 @@ name_from_uuid <- function(db = "eamena", df, uuid.in = "uuid", field.out = "nam
 #' @examples
 #'
 #' @export
-ref_culturalper <- function(db = "eamena", overwrite = F){
-  # create a list concepts below Cultural Period of all periods with their durations
-  # write a CSV file
-  # a periodo colum is added
-  field <- "CulturalPeriod_list"
-  d_sql <- list_cpts(db, d_sql, field, '3b5c9ac7-5615-3de6-9e2d-4cd7ef7460e4')
-  g <- d_sql$CulturalPeriod_list
-  leaves <- V(g)[degree(g, mode="out") == 0]
-  leaves <- leaves$name # all the periods (and superiods?)
+ref_culturalper <- function(db = "eamena", d, field = "CulturalPeriod_list", overwrite = F){
+  # d <- d_sql ; field = "CulturalPeriod_list" ; db = "eamena" ; overwrite = F
+  d <- list_cpts(db, d_sql, field, '3b5c9ac7-5615-3de6-9e2d-4cd7ef7460e4')
+  g.names <- d$CulturalPeriod_list
+  leaves.names <- V(g.names)[degree(g, mode="out") == 0]
+  leaves.names <- leaves.names$name # all the periods names (and superiods?)
+  g.uuid <- d$period.uuid
+  leaves.uuid <- V(g.uuid)[degree(g, mode="out") == 0]
+  leaves.uuid <- leaves.uuid$name
   if(overwrite){
-    df.culturalper <- data.frame(ea.name = leaves,
+    df.culturalper <- data.frame(ea.uuid = leaves.uuid,
+                                 ea.name = leaves.names,
                                  ea.duration.taq = rep("", length(leaves)),
                                  ea.duration.tpq = rep("", length(leaves)),
                                  periodo = rep("", length(leaves)))
-    for(i in seq(1, length(leaves))){
-      # i <- 2
-      name <- leaves[i]
+    # durations
+    con <- my_con(db) # load the Pg connection
+    for(i in seq(1, length(leaves.names))){
+      # i <- 1
+      name <- leaves.names[i]
+      uuid <- leaves.uuid[i]
       print(paste(i, name))
       sqll <- str_interp("
       SELECT conceptid::text FROM values WHERE value = '${name}'
@@ -558,15 +568,16 @@ ref_culturalper <- function(db = "eamena", overwrite = F){
         # some Cultural Periods haven't any scopeNote
         taq <- str_split(culturalper.duration, pattern = "\t")[[1]][1]
         tpq <- str_split(culturalper.duration, pattern = "\t")[[1]][2]
-        df.culturalper[i, ] <- c(name, taq, tpq, "")
+        df.culturalper[i, ] <- c(uuid, name, taq, tpq, "")
       } else {
         print(paste(" - The period", name, "has no scopeNote (ie, no duration)"))
       }
       write.table(df.culturalper, paste0(getwd(),"/data/time/results/cultural_periods.tsv"), sep ="\t", row.names = F)
       # df.name <- df.name.duration[df.name.duration$valuetype == 'scopeNote', "value"]
     }
+    print("     *table of periods and duration created")
   }
-  return(leaves)
+  # return(leaves)
 }
 
 #' Create an interactive tree for a given Concept and its concepts-child
@@ -629,13 +640,18 @@ tree_concepts <- function(db = "eamena", d, field, export.tree = F){
 #' @export
 geojson_get_field <- function(geojson.path, field = "EAMENA.ID"){
   # geojson.path <- "https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/data/geojson/caravanserail.geojson"
-  r <- geojson_read(url)
-  val <- c()
+  # field = "Cultural.Sub.period.Type"
+  r <- geojson_read(geojson.path)
+  all.val <- c()
   for(i in seq(1, length(r[[2]]))){
-    # i <- 4
-    val <- c(val, r[[2]][[i]]$properties[[field]])
+    # print(i)
+    val <- r[[2]][[i]]$properties[[field]]
+    # print(val)
+    # print(is.null(val))
+    if(is.null(val)){val <- NA}
+    all.val <- c(all.val, val)
   }
-  return(val)
+  return(all.val)
 }
 
 #' Create an interactive leaflet map from a GeoJSON.

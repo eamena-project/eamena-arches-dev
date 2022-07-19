@@ -13,6 +13,12 @@ library(htmlwidgets)
 library(sf)
 
 
+d <- list_culturalper(db = "geojson",
+                      d = d,
+                      field = "culturalper",
+                      geojson.path = "https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/data/geojson/caravanserail.geojson")
+
+
 raw.GH <- "https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/"
 time.results <-  paste0(getwd(), "/data/time/results/")
 

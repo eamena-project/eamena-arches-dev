@@ -10,6 +10,8 @@ library(ggplot2)
 library(plotly)
 library(leaflet)
 library(htmlwidgets)
+library(sf)
+
 
 raw.GH <- "https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/"
 time.results <-  paste0(getwd(), "/data/time/results/")
@@ -133,64 +135,64 @@ list_cpts <- function(db = "eamena", d, field, uuid){
 }
 
 
-#' Return the UUID of a HP from EAMENA id
-#' @name uuid_from_eamenaid
-#' @description Return the UUID of a HP from EAMENA id and store it into a hash() object
-#' alongside the EAMENA id
-#'
-#' @param db the name of the database, by default 'eamena'
-#' @param d a hash() object (a Python-like dictionary)
-#' @param eamenaid a EAMENA ID (eg. "EAMENA-0187363")
-#' @param field.uuid the name of the field that will be created in the a hash() object
-#' for the UUID
-#' @param field.eamenaid the name of the field that will be created in the a hash() object
-#' for the EAMENA ID
-#' @return a hash() object (a Python-like dictionary) with EAMENA ID and UUID
-#'
-#' @examples
-#' d_sql <- hash::hash() # hash instance to store the results
-#' d_sql <- uuid_from_eamenaid("eamena", d_sql, "EAMENA-0187363")
-#'
-#' @export
-uuid_from_eamenaid <- function(db, d, eamenaid, field.uuid = "uuid", field.eamenaid = "eamenaid"){
-  # eamenaid <-  c("EAMENA-0187363", "EAMENA-0184752", "EAMENA-0076769")
-  if(length(eamenaid) == 1){
-    sqll <- str_interp("
-    SELECT
-    resourceinstanceid
-    FROM tiles
-    WHERE tiledata ->> '34cfe992-c2c0-11ea-9026-02e7594ce0a0'::text LIKE '%${eamenaid}%'
-                       ")
-    # sqll <- str_interp("
-    # SELECT t.tileid, t.resourceinstanceid, t.tiledata, n.nodeid
-    # FROM tiles t LEFT JOIN nodes n ON t.nodegroupid = n.nodegroupid
-    # WHERE (t.tiledata::json -> n.nodeid::text)::text LIKE '%${eamenaid}%'
-    #                    ")
-  }
-  if(length(eamenaid) > 1){
-    # TODO: does it work for only 1 UUID?
-    eamenaids <- paste0(eamenaid, collapse = "|")
-    sqll <- str_interp("
-    SELECT
-    resourceinstanceid
-    FROM tiles
-    WHERE tiledata ->> '34cfe992-c2c0-11ea-9026-02e7594ce0a0'::text SIMILAR to '%(${eamenaids})%'
-                       ")
-    # sqll <- str_interp("
-    # SELECT
-    # t.tileid, t.resourceinstanceid, t.tiledata, n.nodeid
-    # FROM tiles t LEFT JOIN nodes n ON t.nodegroupid = n.nodegroupid
-    # WHERE (t.tiledata::json -> n.nodeid::text)::text SIMILAR to '%(${eamenaids})%'
-    # ")
-    # print(sqll)
-  }
-  con <- my_con(db) # load the Pg connection
-  df <- dbGetQuery(con, sqll)
-  d[[field.eamenaid]] <- eamenaid
-  d[[field.uuid]] <- as.character(df$resourceinstanceid)
-  dbDisconnect(con)
-  return(d)
-}
+#' #' Return the UUID of a HP from EAMENA id
+#' #' @name uuid_from_eamenaid
+#' #' @description Return the UUID of a HP from EAMENA id and store it into a hash() object
+#' #' alongside the EAMENA id
+#' #'
+#' #' @param db the name of the database, by default 'eamena'
+#' #' @param d a hash() object (a Python-like dictionary)
+#' #' @param eamenaid a EAMENA ID (eg. "EAMENA-0187363")
+#' #' @param field.uuid the name of the field that will be created in the a hash() object
+#' #' for the UUID
+#' #' @param field.eamenaid the name of the field that will be created in the a hash() object
+#' #' for the EAMENA ID
+#' #' @return a hash() object (a Python-like dictionary) with EAMENA ID and UUID
+#' #'
+#' #' @examples
+#' #' d_sql <- hash::hash() # hash instance to store the results
+#' #' d_sql <- uuid_from_eamenaid("eamena", d_sql, "EAMENA-0187363")
+#' #'
+#' #' @export
+#' uuid_from_eamenaid <- function(db, d, eamenaid, field.uuid = "uuid", field.eamenaid = "eamenaid"){
+#'   # eamenaid <-  c("EAMENA-0187363", "EAMENA-0184752", "EAMENA-0076769")
+#'   if(length(eamenaid) == 1){
+#'     sqll <- str_interp("
+#'     SELECT
+#'     resourceinstanceid
+#'     FROM tiles
+#'     WHERE tiledata ->> '34cfe992-c2c0-11ea-9026-02e7594ce0a0'::text LIKE '%${eamenaid}%'
+#'                        ")
+#'     # sqll <- str_interp("
+#'     # SELECT t.tileid, t.resourceinstanceid, t.tiledata, n.nodeid
+#'     # FROM tiles t LEFT JOIN nodes n ON t.nodegroupid = n.nodegroupid
+#'     # WHERE (t.tiledata::json -> n.nodeid::text)::text LIKE '%${eamenaid}%'
+#'     #                    ")
+#'   }
+#'   if(length(eamenaid) > 1){
+#'     # TODO: does it work for only 1 UUID?
+#'     eamenaids <- paste0(eamenaid, collapse = "|")
+#'     sqll <- str_interp("
+#'     SELECT
+#'     resourceinstanceid
+#'     FROM tiles
+#'     WHERE tiledata ->> '34cfe992-c2c0-11ea-9026-02e7594ce0a0'::text SIMILAR to '%(${eamenaids})%'
+#'                        ")
+#'     # sqll <- str_interp("
+#'     # SELECT
+#'     # t.tileid, t.resourceinstanceid, t.tiledata, n.nodeid
+#'     # FROM tiles t LEFT JOIN nodes n ON t.nodegroupid = n.nodegroupid
+#'     # WHERE (t.tiledata::json -> n.nodeid::text)::text SIMILAR to '%(${eamenaids})%'
+#'     # ")
+#'     # print(sqll)
+#'   }
+#'   con <- my_con(db) # load the Pg connection
+#'   df <- dbGetQuery(con, sqll)
+#'   d[[field.eamenaid]] <- eamenaid
+#'   d[[field.uuid]] <- as.character(df$resourceinstanceid)
+#'   dbDisconnect(con)
+#'   return(d)
+#' }
 
 
 #' List the name of all the cultural period of a given HP
@@ -357,37 +359,42 @@ list_culturalper <- function(db = 'eamena', d, field, uuid = NA, geojson.path = 
 plot_cultural_periods <- function(d, field, type.plot = "static", bin.width = 50, export.plot = F){
   # field = "period" ; d <- d_sql ; export.plot = F ; type.plot = "static" ;  bin.width = 50
   df.all <- d[[field]]
+  df <- df.all$period
+  df["ea.duration.tpq"][df["ea.duration.tpq"] == "Present"] <- format(Sys.Date(), "%Y")
+  df$ea.duration.taq <- as.numeric(df$ea.duration.taq)
+  df$ea.duration.tpq <- as.numeric(df$ea.duration.tpq)
+  df <- df[!is.na(df$ea.duration.taq) & !is.na(df$ea.duration.tpq), ]
   # nb of HP
   hps <- unique(d[[field]]$period$eamenaid)
   nb.hps <- length(hps)
-  # read the tpq/taq
-  cultural_periods <- read.table(paste0(raw.GH, "data/time/results/cultural_periods.tsv"),
-                                 sep = "\t", header = T)
+  # # read the tpq/taq
+  # cultural_periods <- read.table(paste0(raw.GH, "data/time/results/cultural_periods.tsv"),
+  #                                sep = "\t", header = T)
   if(type.plot == "static"){
-    time.table <- merge(df.all$period, cultural_periods, by.x = "periods", by.y = "ea.name", all.x = TRUE)
-    # get unique cultural periods
-    time.table <- time.table[!duplicated(time.table), ]
-    time.table$ea.duration.taq <- as.numeric(as.character(time.table$ea.duration.taq))
-    time.table$ea.duration.tpq <- as.numeric(as.character(time.table$ea.duration.tpq))
-    time.table$no <- seq(1, nrow(time.table))
+    # time.table <- merge(df.all$period, cultural_periods, by.x = "periods", by.y = "ea.name", all.x = TRUE)
+    # # get unique cultural periods
+    # time.table <- time.table[!duplicated(time.table), ]
+    # time.table$ea.duration.taq <- as.numeric(as.character(time.table$ea.duration.taq))
+    # time.table$ea.duration.tpq <- as.numeric(as.character(time.table$ea.duration.tpq))
+    # time.table$no <- seq(1, nrow(time.table))
     # clean
-    time.table <- time.table[!is.na(time.table$ea.duration.taq) & !is.na(time.table$ea.duration.tpq), ]
-
-    cultper.byeamenaid <- ggplot(time.table) +
+    # time.table <- time.table[!is.na(time.table$ea.duration.taq) & !is.na(time.table$ea.duration.tpq), ]
+    cultper.byeamenaid <- ggplot(df) +
       geom_segment(aes(x = ea.duration.taq, xend = ea.duration.tpq,
                        y = eamenaid , yend = eamenaid,
                        size = 1,
                        alpha = .1)) +
       xlab("ANE") +
       theme_bw() +
-      theme(legend.position="none")
+      theme(legend.position="none",
+            axis.text.y=element_text(size=6))
 
     if(export.plot){
       gout <- paste0(time.results, "cultural_period_byeamenaid.png")
       ggsave(gout,
              cultper.byeamenaid,
-             width = 7,
-             height = 7)
+             width = 8,
+             height = 8)
       print(paste(gout, "is exported"))
     } else {
       cultper.byeamenaid
@@ -395,8 +402,9 @@ plot_cultural_periods <- function(d, field, type.plot = "static", bin.width = 50
 
     # histogram
     x <- c()
-    for(dur in seq(1, nrow(time.table))){
-      a.duration <- seq(time.table[dur, "ea.duration.taq"], time.table[dur, "ea.duration.tpq"], by = bin.width)
+    for(dur in seq(1, nrow(df))){
+      # dur <- 1
+      a.duration <- seq(df[dur, "ea.duration.taq"], df[dur, "ea.duration.tpq"], by = bin.width)
       x <- as.numeric(c(x, a.duration))
     }
     cultper.histog <- ggplot() +
@@ -408,8 +416,8 @@ plot_cultural_periods <- function(d, field, type.plot = "static", bin.width = 50
       gout <- paste0(time.results, "cultural_period_histog.png")
       ggsave(gout,
              cultper.histog,
-             width = 7,
-             height = 7)
+             width = 8,
+             height = 8)
       print(paste(gout, "is exported"))
     } else {
       cultper.histog
@@ -637,34 +645,34 @@ tree_concepts <- function(db = "eamena", d, field, export.tree = F){
   }
 }
 
-#' Get a list of parameters from a GeoJSON file.
-#' @name geojson_get_field
-#' @description Get values of a given field
-#'
-#' @param geojson.path the path to the GeoJSON file,
-#' eg: "https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/data/geojson/caravanserail.geojson"
-#' @param field a field name, in R format, eg: EAMENA.ID
-#'
-#' @return A vector with all values
-#'
-#' @examples
-#'
-#' @export
-geojson_get_field <- function(geojson.path, field = "EAMENA.ID"){
-  # geojson.path <- "https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/data/geojson/caravanserail.geojson"
-  # field = "Cultural.Sub.period.Type"
-  r <- geojson_read(geojson.path)
-  all.val <- c()
-  for(i in seq(1, length(r[[2]]))){
-    # print(i)
-    val <- r[[2]][[i]]$properties[[field]]
-    # print(val)
-    # print(is.null(val))
-    if(is.null(val)){val <- NA}
-    all.val <- c(all.val, val)
-  }
-  return(all.val)
-}
+#' #' Get a list of parameters from a GeoJSON file.
+#' #' @name geojson_get_field
+#' #' @description Get values of a given field
+#' #'
+#' #' @param geojson.path the path to the GeoJSON file,
+#' #' eg: "https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/data/geojson/caravanserail.geojson"
+#' #' @param field a field name, in R format, eg: EAMENA.ID
+#' #'
+#' #' @return A vector with all values
+#' #'
+#' #' @examples
+#' #'
+#' #' @export
+#' geojson_get_field <- function(geojson.path, field = "EAMENA.ID"){
+#'   # geojson.path <- "https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/data/geojson/caravanserail.geojson"
+#'   # field = "Cultural.Sub.period.Type"
+#'   r <- geojson_read(geojson.path)
+#'   all.val <- c()
+#'   for(i in seq(1, length(r[[2]]))){
+#'     # print(i)
+#'     val <- r[[2]][[i]]$properties[[field]]
+#'     # print(val)
+#'     # print(is.null(val))
+#'     if(is.null(val)){val <- NA}
+#'     all.val <- c(all.val, val)
+#'   }
+#'   return(all.val)
+#' }
 
 #' Create an interactive leaflet map from a GeoJSON.
 #' @name geojson_map
@@ -824,6 +832,37 @@ geojson_map <- function(map.name,
 }
 
 
-
-
+#' Test if a resource (HP) geometry is within a Grid Square.
+#' @name geojson_get_field
+#' @description Test if the geometry of a resource (eg. Heritage Place) is
+#' within a Grid Square. If so, return the ID of the Grid Squre
+#'
+#' @param resource.wkt the WKT geometry of a resource, as a character format. This
+#' WKT geometry can comes from a BU sheet (ex: POINT(0.916350216921341 35.9625191284127))
+#' @grid_squares the sf conversion of a GeoJSON object of a serie of Grid Squares. This GeoJSON is the
+#' EAMENA output of the GeoJSON URL
+#'
+#' @return the name of the Grid Square
+#'
+#' @examples
+#'
+#' @export
+geom_within_gs <- function(resource.wkt, grid.squares.sf){
+  # grid_squares <- geojson_read(geojson.path)
+  resource.geom <- data.frame(wkt = resource.wkt)
+  # resource.geom <- data.frame(wkt = 'POINT(10 10)')
+  resource.sf <- st_as_sf(resource.geom, wkt = "wkt")
+  for(gs in seq(1, nrow(grid.squares.sf))){
+    # gs <- 1
+    # grid.square.id <- grid.squares.sf$Grid.ID[[gs]]
+    grid.square.wkt <- grid.squares.sf$geometry[[gs]]
+    # is.within <- st_within(resource.sf, grid.square.wkt)
+    is.within <- st_within(resource.sf, grid.square.wkt) %>% lengths > 0
+    if(is.within){
+      return(grid.squares.sf$Grid.ID[[gs]])
+    }
+    # grid.square.geom <- data.frame(wkt = grid.square.wkt)
+    # grid.square.sf <- st_as_sf(grid.square.geom, wkt = "wkt")
+  }
+}
 

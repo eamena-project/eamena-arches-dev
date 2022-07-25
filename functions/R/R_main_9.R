@@ -41,6 +41,9 @@ if(display.refdata){
   d_sql <- list_cpts("eamena", d_sql, "CulturalPeriod_list", '3b5c9ac7-5615-3de6-9e2d-4cd7ef7460e4')
   plot(d_sql$period.uuid)
 
+  d_sql <- list_cpts("eamena", d_sql, "SubCulturalPeriod_list", '16cb160e-7b31-4872-b2ca-6305ad311011')
+  plot(d_sql$period.uuid)
+
   ref_culturalper("eamena", d_sql, "CulturalPeriod_list", overwrite = T)
 
   # plot the tree of the cultural periods

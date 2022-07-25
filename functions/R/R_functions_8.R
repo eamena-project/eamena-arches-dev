@@ -17,24 +17,45 @@ raw.GH <- "https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/mai
 time.results <-  paste0(getwd(), "/data/time/results/")
 
 #' Basic statistic on EAMENA heritage places
-#' @name count_hps
+#' @name basic_stats
 #' @description Count the number of HP, ...
 #'
 #' @param db the name of the database, by default 'eamena'
 #' @param d a hash() object (a Python-like dictionary)
-#' @param field the name of the field that will be created in the a hash() object
+#' @param field the name of the field that will be created in the a hash() object.
+#' By default 'count_hp' (see 'stat.choice' and 'rm.choice' parameters)
+#' @param stat.choice the type of statistics ('count', 'duplicates', etc.)
+#' @param rm.choice the type of resources on which this statistics will be
+#' applied (eg: 'hp' for Heritage Places)
 #' @return Basic statistics
 #'
 #' @examples
+#'
+#' # By default count the total number of Heritage Places
 #' d_sql <- hash::hash()
-#' d_sql <- count_hps(con, d_sql, "HPs_count")
+#' d_sql <- count_hps(con, d_sql)
 #'
 #' @export
-count_hps <- function(db, d, field){
-  # count Heritage Places (HPs)
-  sqll <- "select count(
-        tiledata->>'34cfe992-c2c0-11ea-9026-02e7594ce0a0' like '%EAMENA%'
-        ) as HPs_count FROM tiles;"
+basic_stats <- function(db, d, field = "count_hp", stat.choice = "count", rm.choice = "hp"){
+  if(stat.choice == "count" & rm.choice == "hp"){
+    # count Heritage Places (HPs)
+    sqll <- "
+    SELECT
+    count(tiledata->>'34cfe992-c2c0-11ea-9026-02e7594ce0a0' like '%EAMENA%') as HPs_count
+    FROM tiles;
+    "
+  }
+  if(stat.choice == "duplicates" & rm.choice == "hp"){
+    sqll <- "
+    SELECT
+    tiledata->>'34cfe992-c2c0-11ea-9026-02e7594ce0a0'::text as EAMENAID,
+    count(*) AS count
+    FROM tiles
+    GROUP BY EAMENAID
+    HAVING count(*) > 1
+    ORDER BY EAMENAID;
+    "
+  }
   con <- my_con(db) # load the Pg connection
   d[[field]] <- dbGetQuery(con, sqll)
   dbDisconnect(con)
@@ -835,7 +856,7 @@ geojson_map <- function(map.name,
 #' Test if a resource (HP) geometry is within a Grid Square.
 #' @name geojson_get_field
 #' @description Test if the geometry of a resource (eg. Heritage Place) is
-#' within a Grid Square. If so, return the ID of the Grid Squre
+#' within a Grid Square. If so, return the ID of the Grid Square.
 #'
 #' @param resource.wkt the WKT geometry of a resource, as a character format. This
 #' WKT geometry can comes from a BU sheet (ex: POINT(0.916350216921341 35.9625191284127))

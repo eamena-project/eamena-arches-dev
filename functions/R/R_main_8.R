@@ -20,6 +20,17 @@ cultural.periods <- T
 if(cultural.periods){
   # UUID of a HP from its EAMENA ID..
   # d_sql <- uuid_from_eamenaid(db = "eamena", d_sql, "EAMENA-0187363", "uuid")
+
+  d <- hash::hash()
+
+  d <- list_cultural_periods(db = "geojson",
+                             d = d,
+                             geojson.path = "https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/data/geojson/caravanserail.geojson")
+  plot_cultural_periods(d = d, field = "subperiod", export.plot = T)
+
+
+
+
   # TODO: trong long, v. Arches Forum
   geojson.path <- "https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/data/geojson/caravanserail.geojson"
   ea.ids <- geojson_get_field(geojson.path, "EAMENA.ID")

@@ -49,7 +49,33 @@ ea.search$lbl <- paste0("<b>", ea.search$EAMENA.ID," - ", ea.search$Administrati
 
 ### Get GeoJSON geometries
 
-Go to https://geojson.io/, use the geocoder, draw a POINT, LINE or a POLYGON (in green), copy the JSON geometry (in red) and paste it into a new `.geosjon` file
+Go to https://geojson.io/, use the geocoder, draw a POINT, LINE or a POLYGON (in green), copy the JSON geometry (in red) and paste it into a new `.geosjon` file.  
+  
+The format of a rectangle selection is 4 different points[^1] with this order: xmin, 
+
+```
+[
+    xmin,
+    ymin
+],
+[
+    xmax,
+    ymin
+],
+[
+    xmax,
+    ymax
+],
+[
+    xmin
+    ymax
+],
+[
+    xmin,
+    ymin
+]
+```
 
 ![](../../www/geojson-io.png)
 
+[^1]: +1 duplicate which is the need of first point to 'close' with the last point 

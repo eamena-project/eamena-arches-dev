@@ -39,20 +39,29 @@ mapping.file <- read_sheet('https://docs.google.com/spreadsheets/d/1nXgz98mGOySg
 # geojson.path <- "C:/Rprojects/eamena-arches-dev/data/bulk/functions/MK_grid_squares.geojson"
 # grid.squares.sf <- st_read(geojson.path)
 
+xcoord <- ycoord <- c()
 
 for(bu.name in l.bus){
-  # bu.name <- "AAA_f10_text.xlsx""
+  # bu.name <- "AAA_f10_text.xlsx"
   print(paste0("*read: ", bu.name))
   mk.data.path <- paste0(bu.path, "bu/", bu.name)
   mk.data <- xlsx::read.xlsx(mk.data.path, sheetIndex = 1)
   print(paste0("     nb of rows: ", nrow(mk.data)))
+#   xcoord <- c(xcoord, mk.data$xcoord)
+#   ycoord <- c(ycoord, mk.data$ycoord)
+# }
+#
+# max(xcoord, na.rm = T)
+# max(ycoord, na.rm = T)
+# min(xcoord, na.rm = T)
+# min(ycoord, na.rm = T)
   # BU
   # bu.template.path <- paste0(bu.path, "templates/Heritage Place BUS Template.xlsx")
   # rm two first lines
   # structure only
   bu <- bu[0, ]
   for(i in seq(1, nrow(mk.data))){
-    bu[nrow(bu)+1, ] <- NA
+    bu[nrow(bu) + 1, ] <- NA
   }
 
   # - - - - - - - - - - - - - -

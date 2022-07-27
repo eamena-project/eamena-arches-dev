@@ -20,8 +20,10 @@ https://database.eamena.org/en/bulk-upload/templates/34cfe98e-c2c0-11ea-9026-02e
 ## Data mapping
 > Mapping a dataset (the source file) to the EAMENA BU (the taget file)
 
+Reformat data from a source file, using an [R script](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/data/bulk/functions/mapping_BU.R), and a mapping file
+
 <p align="center">
-  <img alt="img-name" src="../../www/bu-mapping-file.png" width="500">
+  <img alt="img-name" src="../../www/bu-mapping-file.png" width="600">
   <br>
     <em>screenshot of Google sheet mapping file</em>
 </p>
@@ -54,17 +56,17 @@ The source file, or original dataset, is assumed to be an XLSX file but it is po
 Export a new BU worksheet. 
 
 <p align="center">
-  <img alt="img-name" src="../../www/bu-mapping-out.png" width="500">
+  <img alt="img-name" src="../../www/bu-mapping-out.png" width="600">
   <br>
-    <em>screenshot of Google sheet mapping file</em>
+    <em>screenshot of the output BU</em>
 </p>
 
 The data from this new worksheet can be copied/pasted into a [BU template](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/data/bulk/templates) to retrieve the drop down menus and 3-line headers. Once done, the BU can be sent to EAMENA.
 
 <p align="center">
-  <img alt="img-name" src="../../www/bu-mapping-out-templated.png" width="500">
+  <img alt="img-name" src="../../www/bu-mapping-out-templated.png" width="600">
   <br>
-    <em>screenshot of Google sheet mapping file</em>
+    <em>screenshot of the output BU once copied/pasted into the template</em>
 </p>
   
 ## BU process

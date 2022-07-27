@@ -1,9 +1,9 @@
-# Bulk Upload (BU)  <img src="../img/bu.png" width='80px' align="right"/>
+# Bulk Upload (BU)  <img src="../../www/bu.png" width='80px' align="right"/>
 
 A Bulk Upload is a process allowing to upload **several XLSX files contained in a single folder**
 
 <p align="center">
-  <img alt="img-name" src="../img/folder-files.png" width="600">
+  <img alt="img-name" src="../../www/folder-files.png" width="600">
   <br>
     <em>The folder `2021-11-22-B-BIJAN` contains two XLSX files</em>
 </p>
@@ -21,7 +21,7 @@ https://database.eamena.org/en/bulk-upload/templates/34cfe98e-c2c0-11ea-9026-02e
 > Mapping a dataset (the source file) to the EAMENA BU (the taget file)
 
 <p align="center">
-  <img alt="img-name" src="../img/bu-mapping-file.png" width="500">
+  <img alt="img-name" src="../../www/bu-mapping-file.png" width="500">
   <br>
     <em>screenshot of Google sheet mapping file</em>
 </p>
@@ -54,7 +54,7 @@ The source file, or original dataset, is assumed to be an XLSX file but it is po
 Export a new BU worksheet. 
 
 <p align="center">
-  <img alt="img-name" src="../img/bu-mapping-out.png" width="500">
+  <img alt="img-name" src="../../www/bu-mapping-out.png" width="500">
   <br>
     <em>screenshot of Google sheet mapping file</em>
 </p>
@@ -62,7 +62,7 @@ Export a new BU worksheet.
 The data from this new worksheet can be copied/pasted into a [BU template](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/data/bulk/templates) to retrieve the drop down menus and 3-line headers. Once done, the BU can be sent to EAMENA.
 
 <p align="center">
-  <img alt="img-name" src="../img/bu-mapping-out-templated.png" width="500">
+  <img alt="img-name" src="../../www/bu-mapping-out-templated.png" width="500">
   <br>
     <em>screenshot of Google sheet mapping file</em>
 </p>
@@ -93,7 +93,7 @@ Once the BU process has been completed, a resume can be displayed with a Python 
 
 
 <p align="center">
-  <img alt="img-name" src="../img/json_summary.png" width="500">
+  <img alt="img-name" src="../../www/json_summary.png" width="500">
   <br>
     <em>screenshot of the JSON with URL</em>
 </p>
@@ -101,7 +101,7 @@ Once the BU process has been completed, a resume can be displayed with a Python 
 The URL opens the Resource Report
 
 <p align="center">
-  <img alt="img-name" src="../img/json_summary_uuid.png" width="700">
+  <img alt="img-name" src="../../www/json_summary_uuid.png" width="700">
   <br>
     <em>screenshot of the Resource Report</em>
 </p>
@@ -109,7 +109,7 @@ The URL opens the Resource Report
 The Resource name can be search in the map database
 
 <p align="center">
-  <img alt="img-name" src="../img/json_summary_uuid_search.png" width="700">
+  <img alt="img-name" src="../../www/json_summary_uuid_search.png" width="700">
   <br>
     <em>screenshot of the Resource Report</em>
 </p>

@@ -16,6 +16,56 @@ The updated version of the BU file is shared on Google Drive:
 https://database.eamena.org/en/bulk-upload/templates/34cfe98e-c2c0-11ea-9026-02e7594ce0a0.xlsx
 <s>https://drive.google.com/file/d/1KtZlCB_mdTOPxh1DpFdfeXddjJLTvF1k/view?usp=sharing</s>
 </p>
+
+## Data mapping
+> Mapping a dataset (the source file) to the EAMENA BU (the taget file)
+
+<p align="center">
+  <img alt="img-name" src="img/bu-mapping-file.png" width="500">
+  <br>
+    <em>screenshot of Google sheet mapping file</em>
+</p>
+
+
+### Mapping file
+
+The 'mapping_BU' online Google sheet establishes the correspondences between the source file and the BU. 
+  
+<p align="center">
+https://docs.google.com/spreadsheets/d/1nXgz98mGOySgc0Q2zIeT1RvHGNl4WRq1Fp9m5qB8g8k/edit?usp=sharing
+</p>
+  
+This mapping file has three columns, one for the target (EAMENA BU template), two for the source (author's data):
+
+1. EAMENA: names of the fields in the EAMENA BU spreadsheet in R format (spaces replaced by dots). Empty cells correspond to expressions that are not directly linked to an EAMENA field.
+2. initials: or job, two letters for the initial of the author (e.g. 'mk' = Mohamed Kenawi)
+3. initials_type: the type of action to perform on the source data (e.g. 'mk_type'). This can be: repeat a single value for the whole BU ('value'), get the different values of a source field and add these different values in a BU field ('field'), execute an R code ('expression'), etc.
+
+The EAMENA column will always be the same, but the mapping file aims to have several authors columns. 
+
+### Dataset
+
+The source file, or original dataset, is assumed to be an XLSX file but it is possible to work with a SHP, or any other suitable format.
+
+
+### Output
+
+
+Export a new BU worksheet. 
+
+<p align="center">
+  <img alt="img-name" src="img/bu-mapping-out.png" width="500">
+  <br>
+    <em>screenshot of Google sheet mapping file</em>
+</p>
+
+The data from this new worksheet can be copied/pasted into a [BU template](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/data/bulk/templates) to retrieve the drop down menus and 3-line headers. Once done, the BU can be sent to EAMENA.
+
+<p align="center">
+  <img alt="img-name" src="img/bu-mapping-out-templated.png" width="500">
+  <br>
+    <em>screenshot of Google sheet mapping file</em>
+</p>
   
 ## BU process
 > step-by-step BU procedure from the user-side

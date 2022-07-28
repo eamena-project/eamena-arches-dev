@@ -56,5 +56,5 @@ The format of a rectangle selection is 4 different points[^1], starting from the
 ]
 ```
 
-[^1]: there is a duplicate which comes from the need to close the polygon, so the coordinates of the origin (`xmin`, `ymin`) are the same as those of the last point.
+[^1]: there is a duplicate which comes from the need to close the polygon, so the coordinates of the origin (`xmin, ymin`) are the same as those of the last point.
 

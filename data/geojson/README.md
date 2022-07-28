@@ -8,7 +8,7 @@ Use [EAMENA](https://database.eamena.org/) to create a GeoJSON dataset. This dat
 
 1. **EAMENA search**  
 
-In EAMENA, search for the resources, select Download and copy the URL `geojson` (in green) to the clipboard.
+In EAMENA, search for the resources, select Download and copy the **geojson url** (in green) to the clipboard.
 
 ![](../../www/geojson-export.png)
 
@@ -22,11 +22,11 @@ Paste the copied URL into the address bar, the result is something like :
 
 3. **Create a new GeoJSON file**  
   
-Copy the text content and save it in a new GeoJSON file, for example `caravanserail.geojson` ([rendered](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/data/geojson/caravanserail.geojson) | [raw](https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/data/geojson/caravanserail.geojson))
+Copy the text content and save it in a new GeoJSON file, for example **caravanserail.geojson** ([rendered](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/data/geojson/caravanserail.geojson) | [raw](https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/data/geojson/caravanserail.geojson))
 
 ## Share a GeoJSON geometry
 
-Go to https://geojson.io/, use the geocoder to find a location, draw a POINT, LINE or a POLYGON (in green), copy the JSON geometry (in red) and paste it into a new `.geosjon` file.  
+Go to https://geojson.io/, use the geocoder to find a location, draw a POINT, LINE or a POLYGON (in green), copy the JSON geometry (in red) and paste it into a new `.geojson` file.  
 
 ![](../../www/geojson-io.png)
 

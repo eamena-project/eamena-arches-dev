@@ -31,7 +31,7 @@ Go to https://geojson.io/, use the geocoder to find a location, draw a POINT, LI
 ![](../../www/geojson-io.png)
 
 
-The format of a rectangle selection is 4 different points[^1], starting from the geographical origin (`xmin, ymin`), eg. `"POINT(0 0)"`):
+The format of a rectangle selection is 4 different points[^1], starting from the geographical origin (`xmin, ymin`), e.g.: `"POINT(0 0)"`
 
 ```
 [

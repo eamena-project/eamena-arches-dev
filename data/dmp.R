@@ -50,8 +50,8 @@ edges <- rbind(a,b)
 gout <- visNetwork(nodes,
                    edges,
                    background = "black",
-                   width = "700px",
-                   height = "700px") %>%
+                   width = "100%",
+                   height = "100%") %>%
   visEdges(shadow = TRUE,
            smooth = TRUE,
            arrows =list(to = list(enabled = TRUE,

@@ -105,57 +105,7 @@ threats_hps <- function(db, d, field){
 }
 
 
-#' List the name of all the child-concepts below a certain Concept node
-#' @name list_cpts
-#' @description With a given concept UUID (v. Reference Data Manager), find all
-#' the childs
-#'
-#' @param db the name of the database, by default 'eamena'
-#' @param d a hash() object (a Python-like dictionary)
-#' @param field the field name that will be created in the a hash() object
-#' @param uuid the UUID of the Concept parent
-#'
-#' @return A hash() with listed child-concepts in the provided field name. The UUID
-#' will be stored into 'field.uuid'
-#'
-#' @examples
-#' '3b5c9ac7-5615-3de6-9e2d-4cd7ef7460e4' is the UUID of ...
-#'
-#' d_sql <- hash::hash()
-#' d_sql <- list_cpts("eamena", d_sql, "CulturalPeriod_list", '3b5c9ac7-5615-3de6-9e2d-4cd7ef7460e4')
-#'
-#' @export
-list_cpts <- function(db = "eamena", d, field, uuid){
-  # field <- "CulturalPeriod_list" ; uuid <- '3b5c9ac7-5615-3de6-9e2d-4cd7ef7460e4' ;  db <- "eamena"
-  sqll <- "
-  SELECT conceptidfrom as from, conceptidto as to FROM relations
-  "
-  con <- my_con(db) # load the Pg connection
-  relations <- dbGetQuery(con, sqll)
-  # subset the Concepts graph on the selected UUID
-  g <- graph_from_data_frame(relations, directed = TRUE)
-  nodes.subgraph <- subcomponent(g, uuid, mode = "out")
-  subgraph.names <- subgraph.uuid <- subgraph(g, nodes.subgraph)
-  # get the name of the nodes from their UUID
-  l.uuids <- as_ids(V(subgraph.uuid))
-  for(uuid_ in l.uuids){
-    # uuid_ <- "ea784c69-d61d-4bfc-9aa9-b3fb0bfa1b42"
-    sqll <- str_interp("
-    SELECT value FROM values
-    WHERE conceptid = '${uuid_}'
-    AND languageid = 'en-US'
-    AND valuetype = 'prefLabel'
-                       ")
-    uuid_name <- dbGetQuery(con, sqll)
-    uuid_name <- as.character(uuid_name)
-    V(subgraph.names)$name[V(subgraph.names)$name == uuid_] <- uuid_name
-  }
-  d[[field]] <- subgraph.names
-  field.uuid <- paste0(field, ".uuid")
-  d[[field.uuid]] <- subgraph.uuid
-  dbDisconnect(con)
-  return(d)
-}
+
 
 
 #' #' Return the UUID of a HP from EAMENA id
@@ -388,75 +338,7 @@ name_from_uuid <- function(db = "eamena", df, uuid.in = "uuid", field.out = "nam
   return(df)
 }
 
-#' Create a list of child-concepts below Cultural Period of all periods with their durations
-#' @name ref_culturalper
-#' @description create a list concepts below Cultural Period of all periods
-#' with their durations. a periodo colum is added. If 'overwrite' then write a CSV file
-#'
-#' @param overwrite overwrite the reference table
-#'
-#' @return NA
-#'
-#' @examples
-#'
-#' @export
-ref_culturalper <- function(db = "eamena", d, field = "CulturalPeriod_list", overwrite = F){
-  # d <- d_sql ; field = "CulturalPeriod_list" ; db = "eamena" ; overwrite = F
-  d <- list_cpts(db, d_sql, field, '3b5c9ac7-5615-3de6-9e2d-4cd7ef7460e4') # periods
-  d <- list_cpts(db, d_sql, field = "SubCulturalPeriod_list", '16cb160e-7b31-4872-b2ca-6305ad311011') # subperiods
-  g <- d[[field]]
-  leaves.names <- V(g)[degree(g, mode="out") == 0]
-  leaves.names <- leaves.names$name # all the periods names (and superiods?)
-  field.uuid <- paste0(field, ".uuid")
-  g.uuid <- d$period.uuid
-  leaves.uuid <- V(g.uuid)[degree(d[[field]], mode="out") == 0]
-  leaves.uuid <- leaves.uuid$name
-  if(overwrite){
-    df.culturalper <- data.frame(ea.uuid = leaves.uuid,
-                                 ea.name = leaves.names,
-                                 ea.duration.taq = rep("", length(leaves.names)),
-                                 ea.duration.tpq = rep("", length(leaves.names)),
-                                 periodo = rep("", length(leaves.names)))
-    # durations
-    con <- my_con(db) # load the Pg connection
-    for(i in seq(1, length(leaves.names))){
-      # i <- 1
-      name <- leaves.names[i]
-      uuid <- leaves.uuid[i]
-      print(paste(i, name))
-      sqll <- str_interp("
-      SELECT conceptid::text FROM values WHERE value = '${name}'
-                         ")
-      per.conceptid <- dbGetQuery(con, sqll)
-      per.conceptid <- per.conceptid$conceptid
-      df.name.duration <- data.frame(value = character(),
-                                     # languageid = character(),
-                                     valuetype = character())
-      # there are two concepts for the same value, so it is needed to loop..
-      for(conceptid in per.conceptid){
-        sqll <- str_interp("
-        SELECT value, valuetype FROM values WHERE conceptid = '${conceptid}'
-                           ")
-        res <- dbGetQuery(con, sqll)
-        df.name.duration <- rbind(df.name.duration, res)
-      }
-      # The cultural period duration is recorded as "600 1200" in a scopeNote
-      culturalper.duration <- df.name.duration[df.name.duration$valuetype == 'scopeNote', "value"]
-      if(length(culturalper.duration) > 0){
-        # some Cultural Periods haven't any scopeNote
-        taq <- str_split(culturalper.duration, pattern = "\t")[[1]][1]
-        tpq <- str_split(culturalper.duration, pattern = "\t")[[1]][2]
-        df.culturalper[i, ] <- c(uuid, name, taq, tpq, "")
-      } else {
-        print(paste(" - The (sub)period", name, "has no scopeNote (ie, no duration)"))
-      }
-      # df.name <- df.name.duration[df.name.duration$valuetype == 'scopeNote', "value"]
-    }
-    write.table(df.culturalper, paste0(getwd(),"/data/time/results/cultural_periods.tsv"), sep ="\t", row.names = F)
-    print("     *table of periods and duration created")
-  }
-  # return(leaves)
-}
+
 
 
 

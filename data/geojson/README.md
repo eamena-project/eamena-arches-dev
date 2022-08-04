@@ -18,6 +18,8 @@ In EAMENA, search for the resources, select Download and copy the **geojson url*
 Paste the copied URL into the address bar, the result is something like :
 
 ![](../../www/geojson-url.png)
+
+You can reformat the (Geo)JSON layout to make it more readable using https://codebeautify.org/jsonviewer
   
 
 3. **Create a new GeoJSON file**  

@@ -51,7 +51,7 @@ gout <- visNetwork(nodes,
                    edges,
                    background = "black",
                    width = "100%",
-                   height = "100%") %>%
+                   height = "100vh") %>%
   visEdges(shadow = TRUE,
            smooth = TRUE,
            arrows =list(to = list(enabled = TRUE,

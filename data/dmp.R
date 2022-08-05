@@ -14,12 +14,12 @@ dmg.steps <- c("collect",
 #                    "#wp3.step.archiv",
 #                    "#wp3.step.public")
 # dmg.steps.tit <- paste0("<a href='",dmg.steps.url,"'>",dmg.steps,"</a>")
-dmg.steps.url <- c("<em>'publish once and reuse often'</em>",
-                   "assign & register data",
-                   "short- to middle term storing",
-                   "process",
-                   "long-term preservation",
-                   "sharing")
+dmg.steps.url <- c("collect and re-use data and metadata: <em>'publish once and reuse often'</em>, describing sources, methods, software, format, and volume",
+                   "describe data and metadata by controlled vocabularies, based on ontologies",
+                   "database technologies, access policies, data versioning, backups and snapshots for short- or mid-term archives",
+                   "analyses routine and data-driven documents, database auditing, knowledge discovery in databases and knowledge representation",
+                   "long-term preservation, sustainibility",
+                   "access to raw or processed data or datasets through working papers, data paper, scientific papers referenced by URI-based names, how-to-cite documentation, licenses")
 dmg.steps.tit <- paste0("<b>", dmg.steps,"</b><br>",dmg.steps.url)
 # dmg.steps.tit <- paste0(dmg.steps)
 dmp.logo.root <- "https://raw.githubusercontent.com/zoometh/thomashuet/main/img/"

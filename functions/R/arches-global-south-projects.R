@@ -6,7 +6,9 @@ gs.globalsouth <- gs[!is.na(gs$globalsout),]
 arches.projects <- readLines("C:/Rprojects/eamena-arches-dev/data/geojson/arches-projects.geojson") %>%
   paste(collapse = "\n") %>%
   fromJSON(simplifyVector = FALSE)
-ggs <- leaflet(gs.globalsouth, width = "100%") %>%
+ggs <- leaflet(gs.globalsouth,
+               width = "100%",
+               height = "100vh") %>%
   addProviderTiles(providers$Stamen.Toner,
                    options = providerTileOptions(noWrap = TRUE)
   ) %>%

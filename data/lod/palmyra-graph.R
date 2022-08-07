@@ -7,12 +7,10 @@ imgDir <- "https://raw.githubusercontent.com/zoometh/thomashuet/main/img/"
 vertices <- read.csv2(paste0(dataDir, "palmyra-vertices.tsv"), sep = "\t")
 edges <- read.csv2(paste0(dataDir, "palmyra-edges.tsv"), sep = "\t")
 
-# vertices$multimedia <- vertices[vertices$multimedia == '', "multimedia"] <- paste0(dataDir, vertices$multimedia)
-
-idx.images <- which(vertices$multimedia != "")
-shapes <- vertices$id %in% idx.images
-shapes[shapes == TRUE] <- "image"
-shapes[shapes == FALSE] <- "box"
+# idx.images <- which(vertices$multimedia != "")
+vertices.shapes <- vertices$id %in% which(vertices$multimedia != "")
+vertices.shapes[vertices.shapes == TRUE] <- "image"
+vertices.shapes[vertices.shapes == FALSE] <- "box"
 
 vertices[idx.images, "multimedia"] <- paste0(imgDir, vertices[which(vertices$multimedia != ""), "multimedia"], ".png")
 
@@ -24,33 +22,30 @@ nodes <- data.frame(id = vertices$id,
                     font.size = rep(15, nrow(vertices)),
                     font.color = c(rep("white", nrow(vertices))),
                     image = vertices$multimedia,
-                    shape = shapes,
+                    shape = vertices.shapes,
                     size = c(rep(24, nrow(vertices))),
                     group = c(rep("dmp", nrow(vertices)))
 )
 
+edges$length <- c(rep(300, nrow(edges)))
 edges$font.color <- c(rep("white", nrow(edges)))
 edges$font.strokeWidth <- c(rep(0, nrow(edges)))
 edges$label <- gsub(" \\(", "\\\n\\(", edges$property)
-visNetwork(nodes,
-           edges,
-           main = list(text = "A simple CIDOC-CRM example",
-                       style = "color:#ffffff"),
-           background = "black",
-           width = "100%",
-           height = "100vh") %>%
+gout <- visNetwork(nodes,
+                   edges,
+                   main = list(text = "A simple CIDOC-CRM example",
+                               style = "text-align:right; font-family:Arial; color:#ffffff"),
+                   background = "black",
+                   width = "100%",
+                   height = "100vh") %>%
   visEdges(shadow = TRUE,
            smooth = TRUE,
            arrows =list(to = list(enabled = TRUE,
                                   scaleFactor = 1)),
            color = list(color = "lightblue",
                         highlight = "red"))
+gout
 
-
-# dmp.logo.root <- "https://raw.githubusercontent.com/zoometh/thomashuet/main/img/"
-# name.im <- c(paste0(dmp.logo.root, "lod-data-create.png"),
-#              paste0(dmp.logo.root, "lod-data-tag.png"),
-#              paste0(dmp.logo.root, "lod-data-store.png"),
-#              paste0(dmp.logo.root, "lod-data-process.png"),
-#              paste0(dmp.logo.root, "lod-data-archive.png"),
-#              paste0(dmp.logo.root, "lod-data-publish.png"))
+path.out <- paste0(getwd(),"/data/lod/palmyra-cidoc-graph.html")
+saveWidget(gout,path.out)
+print(paste("saved in:", path.out))

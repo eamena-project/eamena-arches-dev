@@ -14,7 +14,7 @@ ggs <- leaflet(gs.globalsouth,
   ) %>%
   setView(lng = 53,
           lat = 25,
-          zoom = 2) %>%
+          zoom = 3) %>%
   addPolygons(color = "red",
               weight = 0,
               opacity = .5,

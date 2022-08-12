@@ -1,6 +1,8 @@
 # GitHub training
 
-![](https://github.com/sslarch/caa2022_GitGitHub_workshop/blob/main/slides/images/github_compare_text.png)
+<p align="center">
+  <img alt="img-name" src="https://github.com/sslarch/caa2022_GitGitHub_workshop/blob/main/slides/images/github_compare_text.png" width="500">
+</p>
 
 ## GitHub purpose
 
@@ -20,6 +22,7 @@ Clone, Pull request, Forks, etc.
 * README
 * .gitignore
 * LICENCE
+* ...
 
 ### Issue threads
 
@@ -42,6 +45,11 @@ SSH connection
 
 ### 1: Working with GeoJSON files and the *eamenaR* package
 
+1. Install/Load the *eamenaR* package
+2. Read an online and/or local GeoJSON file
+3. Run an *eamenaR* function on this GeoJSON file
+
+### 2: Editing the Bulk README tutorial file
 
 
 

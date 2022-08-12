@@ -1,7 +1,9 @@
-# GitHub training
+# GitHub workshop
+
+**Objectives**: transferring most of the development of the EAMENA database from standalone files (XLSX, DOCX, etc.), Slack, Mail, Google Doc, etc., to GitHub
 
 <p align="center">
-  <img alt="img-name" src="https://github.com/sslarch/caa2022_GitGitHub_workshop/blob/main/slides/images/github_compare_text.png" width="500">
+  <img alt="img-name" src="https://github.com/sslarch/caa2022_GitGitHub_workshop/blob/main/slides/images/github_compare_text.png" width="700">
 </p>
 
 ## GitHub purpose

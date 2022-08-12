@@ -11,7 +11,7 @@ library(googlesheets4)
 #   - 'field': job field one-to-one correspondences, will be copied as it;
 #   - 'value': constant values (ie, always the same value);
 #   - 'expression': logical functions, mainly if statements;
-#   - 'escape': values depending from another column evaluated by 'expression'
+#   - 'escape': values depending from another column evaluated by 'expression'. This field is
 #       not read
 #
 # mapping file: https://docs.google.com/spreadsheets/d/1nXgz98mGOySgc0Q2zIeT1RvHGNl4WRq1Fp9m5qB8g8k/edit#gid=1083097625
@@ -45,9 +45,12 @@ mapping.file <- read_sheet('https://docs.google.com/spreadsheets/d/1nXgz98mGOySg
 
 # l.bus <- l.bus[c(1)] # already done
 
+# l.bus <- c("AAA_f18_text.xlsx")# test
+
 cpt <- 0
 for(bu.name in l.bus){
   # bu.name <- "AAA_f10_text.xlsx"
+  # bu.name <- "AAA_f18_text.xlsx"
   cpt <- cpt + 1
   print(paste0(cpt, "- read: ", bu.name))
   data.path <- paste0(bu.path, "bu/", job, "/", bu.name)
@@ -55,6 +58,7 @@ for(bu.name in l.bus){
                           sheetIndex = 1)
   data <- data[rowSums(is.na(data)) != ncol(data),]
   print(paste0(" - nb of rows: ", nrow(data)))
+  data[is.na(data)] <- "" # rm NA value for logical tests
   # BU
   # bu.template.path <- paste0(bu.path, "templates/Heritage Place BUS Template.xlsx")
   # rm two first lines

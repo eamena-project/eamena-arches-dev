@@ -1,5 +1,9 @@
 # Kites
 
+## GeoJSON files
+
+The GeoJSON files are stored in https://github.com/eamena-oxford/eamena-arches-dev/tree/main/data/geojson/kites
+
 ## EAMENA DB
 
 Currently in the EAMENA DB:

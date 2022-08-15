@@ -1,0 +1,7 @@
+{
+"type": "FeatureCollection",
+"name": "kite-HP-pt-1",
+"features": [
+{ "type": "Feature", "properties": { "hp": 1 }, "geometry": { "type": "Point", "coordinates": [ 36.798080089709856, 31.888205715162176 ] } }
+]
+}

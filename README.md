@@ -38,6 +38,12 @@
 
 [README](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/functions#readme)
 
+## Projects
+
+### Kites 🪁
+
+[README](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/projects#readme)
+
 ## IIIF 🖼️
 
 [iiif](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/iiif)

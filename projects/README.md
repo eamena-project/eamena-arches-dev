@@ -1,8 +1,10 @@
 # Projects
 
-## Arches Golobal South Projects
+## Arches Global South Projects
 
-See the [rendered map](https://eamena-oxford.github.io/eamena-arches-dev/data/geojson/maps/arches-global-south.html) of Arches-bsed projects in the Global South ([R script](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/projects/arches/arches-global-south-projects.R) | [rendered](https://eamena-oxford.github.io/eamena-arches-dev/data/geojson/maps/arches-global-south.html)) 
+See the extend of the different Arches-based projects in the Global South ([R script](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/projects/arches/arches-global-south-projects-1.R) | [rendered](https://eamena-oxford.github.io/eamena-arches-dev/projects/arches/arches-global-south.html)) 
+
+Project geometries are stored as GeoJSON in 
 
 ## Kites 🪁
 

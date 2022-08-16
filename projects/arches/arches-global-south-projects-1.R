@@ -2,12 +2,10 @@
 # Show the extension of the different Global South projects based in Arches in an interactive leaflet map.
 ###########################
 
-# read GeoJSON geometries
-projects.geojson <- "C:/Rprojects/eamena-arches-dev/projects/arches/geojson/"
-l.geojson <- setdiff(list.files(projects.geojson),
-                     list.dirs(projects.geojson,
-                               recursive = FALSE, full.names = FALSE))
-projects.colors <- RColorBrewer::brewer.pal(length(l.geojson), "Set1")
+root.project <- "https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/projects/arches/"
+l.projects <- read.csv(paste0(root.project, "list-projects.txt"), header = F)
+l.projects <- l.projects[ , 1]
+projects.colors <- RColorBrewer::brewer.pal(length(l.projects), "Set1")
 # background
 gs <- geojsonsf::geojson_sf("C:/Rprojects/eamena-arches-dev/data/geojson/globalsouth.geojson")
 gs.globalsouth <- gs[!is.na(gs$globalsout),]
@@ -26,8 +24,8 @@ ggs <- leaflet::leaflet(gs.globalsouth,
                        opacity = .5,
                        fillOpacity = .5)
 # loop to add the layers
-for(i in seq(1, length(l.geojson))){
-  arches.projects <- readLines(paste0(projects.geojson, l.geojson[i])) %>%
+for(i in seq(1, length(l.projects))){
+  arches.projects <- readLines(paste0(root.project, "geojson/", l.projects[i], ".geojson")) %>%
     paste(collapse = "\n") %>%
     jsonlite::fromJSON(simplifyVector = FALSE)
   ggs <- ggs %>%
@@ -41,7 +39,13 @@ for(i in seq(1, length(l.geojson))){
 }
 ggs <- ggs %>%
   leaflet::addControl("<a href='https://www.archesproject.org/'>Arches</a> projects in the Global South", position = "topright")
-# export
-fileOut <- paste0(getwd(),"/projects/arches/arches-global-south.html")
-htmlwidgets::saveWidget(ggs, fileOut)
-print(paste0(fileOut, " has been saved"))
+
+export <- F
+if(export){
+  fileOut <- paste0(getwd(),"/projects/arches/arches-global-south.html")
+  htmlwidgets::saveWidget(ggs, fileOut)
+  print(paste0(fileOut, " has been saved"))
+} else {
+  print(ggs)
+}
+

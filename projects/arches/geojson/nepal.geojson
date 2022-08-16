@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "nepal",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "project": "Nepal Heritage", "description": "Nepal Heritage Documentation Project" }, "geometry": { "type": "MultiPolygon", "coordinates": [ [ [ [ 80.0, 31.0 ], [ 89.0, 31.0 ], [ 89.0, 26.0 ], [ 80.0, 26.0 ], [ 80.0, 31.0 ] ] ] ] } }
+]
+}

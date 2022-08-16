@@ -1,6 +1,12 @@
 library(leaflet)
 library(leaflet.extras)
 
+
+projects.geojson <- "C:/Rprojects/eamena-arches-dev/projects/arches/geojson"
+l.geojson <- setdiff(list.files(projects.geojson),
+                     list.dirs(projects.geojson,
+                               recursive = FALSE, full.names = FALSE))
+
 gs <- geojsonsf::geojson_sf("C:/Rprojects/eamena-arches-dev/data/geojson/globalsouth.geojson")
 gs.globalsouth <- gs[!is.na(gs$globalsout),]
 arches.projects <- readLines("C:/Rprojects/eamena-arches-dev/data/geojson/arches-projects.geojson") %>%

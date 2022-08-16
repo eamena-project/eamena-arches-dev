@@ -4,7 +4,7 @@
 
 See the [rendered map](https://eamena-oxford.github.io/eamena-arches-dev/data/geojson/maps/arches-global-south.html) of Arches-bsed projects in the Global South ([R script](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/projects/arches/arches-global-south-projects.R) | [rendered](https://eamena-oxford.github.io/eamena-arches-dev/data/geojson/maps/arches-global-south.html)) 
 
-## Kites
+## Kites 🪁
 
 Spatial distribution, topographic and shape analysis
 

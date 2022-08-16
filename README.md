@@ -40,8 +40,6 @@
 
 ## Projects
 
-### Kites 🪁
-
 [README](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/projects#readme)
 
 ## IIIF 🖼️

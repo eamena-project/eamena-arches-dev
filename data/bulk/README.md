@@ -10,7 +10,7 @@ A Bulk Upload is a process allowing to upload **several XLSX files contained in 
 
 ## BU file
 
-The updated version of the BU file is shared on Google Drive:  
+The last/updated version of the BU template file is:  
   
 <p align="center">
 https://database.eamena.org/en/bulk-upload/templates/34cfe98e-c2c0-11ea-9026-02e7594ce0a0.xlsx

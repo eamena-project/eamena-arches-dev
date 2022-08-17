@@ -2,9 +2,9 @@
 
 ## Arches Global South Projects
 
-See the extend of the different Arches-based projects in the Global South in an [interactive map](https://eamena-oxford.github.io/eamena-arches-dev/projects/arches/arches-global-south.html)) 
+See the extend of the different Arches-based projects in the Global South in an [interactive map](https://eamena-oxford.github.io/eamena-arches-dev/projects/arches/arches-global-south.html)
 
-Project geometries are stored as GeoJSON in the folder [geojson/](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/projects/arches/geojson), listed in [list-projects.txt](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/projects/arches/) and rendered using this [R script](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/projects/arches/arches-global-south-projects-1.R).
+Project geometries are stored as GeoJSON in the folder [geojson/](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/projects/arches/geojson), listed in [list-projects.txt](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/projects/arches/list-projects.txt) and rendered using this [R script](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/projects/arches/arches-global-south-projects-1.R).
 ## Kites 🪁
 
 Spatial distribution, topographic and shape analysis

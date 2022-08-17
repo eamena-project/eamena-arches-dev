@@ -13,7 +13,7 @@ A Bulk Upload is a process allowing to upload **several XLSX files contained in 
 The last/updated version of the BU template file is hosted on:  
   
 <p align="center">
-EAMENA DB: https://database.eamena.org/en/bulk-upload/templates/34cfe98e-c2c0-11ea-9026-02e7594ce0a0.xlsx
+EAMENA DB: https://database.eamena.org/en/bulk-upload/templates/34cfe98e-c2c0-11ea-9026-02e7594ce0a0.xlsx<br>
 <s>Google Drive: https://drive.google.com/file/d/1KtZlCB_mdTOPxh1DpFdfeXddjJLTvF1k/view?usp=sharing</s>
 </p>
 

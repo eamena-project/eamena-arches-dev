@@ -8,7 +8,7 @@ A Bulk Upload is a process allowing to upload **several XLSX files contained in 
     <em>The folder `2021-11-22-B-BIJAN` contains two XLSX files</em>
 </p>
 
-## BU file
+## BU template file
 
 The last/updated version of the BU template file is hosted on:  
   

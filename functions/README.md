@@ -1,6 +1,15 @@
-# functions
+# Permissions
 
-## ring-fencing
+## Built-in permissions
+
+Natively, Arches allows:
+
+Arches Designer > Resource Model > Heritage Place > Permissions ([here](https://database.eamena.org/en/graph_designer/34cfe98e-c2c0-11ea-9026-02e7594ce0a0))
+
+
+
+
+## ring-fencing function
 
 Arches function to allow different user subgroups to access different resources
 
@@ -17,3 +26,8 @@ files
 bash script for function installation
 
 * [ringfencing.sh](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/functions/ring-fencing/ringfencing.sh)
+
+## Test
+
+User: test_permission
+Pwd: *see Slack* 

@@ -8,7 +8,7 @@ library(ggrepel)
 df <- geojson_stat(stat = c("list_ids"), export.stat = T)
 df$id <- rownames(df)
 # sequence list of caravanserail ..;20;33;82;46;39;...
-paths <- read.table("C:/Rprojects/eamena-arches-dev/projects/caravanserail/caravanserail_paths.csv", sep = ";", header = T)
+paths <- read.table("C:/Rprojects/eamena-arches-dev/projects/caravanserail/caravanserail_paths.csv", sep = ",", header = T)
 paths
 
 geojson.path <- 'C:/Users/Thomas Huet/Documents/R/win-library/4.1/eamenaR/extdata/caravanserail.geojson'

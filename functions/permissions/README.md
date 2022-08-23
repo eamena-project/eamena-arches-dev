@@ -1,12 +1,17 @@
-# Permissions
+# Permissions 🔒
 
 Built-in permissions, ring-fencing function
+
+EAMENA DB = 
+test DB = http://34.244.135.144/
 
 ## Built-in permissions
 
 Natively, Arches allows:
 
-Arches Designer > Resource Model > Heritage Place > Permissions ([here](https://database.eamena.org/en/graph_designer/34cfe98e-c2c0-11ea-9026-02e7594ce0a0))
+Arches Designer > Resource Model > Heritage Place > Permissions >   
+    - [EAMENA](https://database.eamena.org/en/graph_designer/34cfe98e-c2c0-11ea-9026-02e7594ce0a0)
+    - [test](http://34.244.135.144/graph_designer/34cfe98e-c2c0-11ea-9026-02e7594ce0a0)
 
 
 ## Ring-fencing function

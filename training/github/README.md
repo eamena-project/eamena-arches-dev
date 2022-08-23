@@ -10,6 +10,10 @@
 
 collaboration & versioning
 
+### Collaboration
+
+Using Jupyter colabnotebook
+
 ### Git
 > git version control system, version control system
 

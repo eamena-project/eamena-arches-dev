@@ -13,6 +13,12 @@ Arches Designer > Resource Model > Heritage Place > Permissions >
     - [EAMENA](https://database.eamena.org/en/graph_designer/34cfe98e-c2c0-11ea-9026-02e7594ce0a0)
     - [test](http://34.244.135.144/graph_designer/34cfe98e-c2c0-11ea-9026-02e7594ce0a0)
 
+### Card
+
+* solution 1
+    - duplicate the `eamena-default-card`
+    - rename the duplicate `eamena-permission-card`
+    - 
 
 ## Ring-fencing function
 

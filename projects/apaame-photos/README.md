@@ -2,7 +2,7 @@
  
   
 <center>
-
+  
 <figure>
   <img src="www/APAAME_20211026_RHB-0705.png" width="300">
   <figcaption>APAAME_20211026_RHB-0705.DNG</figcaption>

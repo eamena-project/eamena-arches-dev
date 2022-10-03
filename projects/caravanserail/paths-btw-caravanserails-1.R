@@ -63,8 +63,64 @@ geojson_boxplot_path(plot.name = "box_paths_4",
                      dirOut = "C:/Rprojects/eamena-arches-dev/projects/caravanserail/")
 
 
+######### functions #######
+areas_x_distances <- function(geojson.path = paste0(system.file(package = "eamenaR"),
+                                                    "/extdata/caravanserail.geojson"),
+                              csv.path = paste0(system.file(package = "eamenaR"),
+                                                "/extdata/caravanserail_paths.csv")
+)
+{
+  # boxplot showing the correlations between the distance of a caravanserail to its successor (next) or predecessor (previous) and the area of this caravanserail
+  # ex: areas_x_distances()
+  ea.geojson <- geojsonsf::geojson_sf(geojson.path)
+  hps <- as.data.frame(ea.geojson)
+  hps <- hps[, c("EAMENA ID", "Measurement Number", "Measurement Unit")]
+  paths <- as.data.frame(eamenaR::geojson_format_path(geojson.path, csv.path))
+  paths <- paths[, c("from", "from.id", "to", "to.id", "dist.m", "route")]
+  ## from
+  # plot the distance 'from' an Hp to a next HP on the X axis, with the size of this HP on the Y axis
+  df.fromto <- merge(hps, paths, by.x = "EAMENA ID", by.y = "from", all.x = T)
+  df.fromto <- df.fromto[complete.cases(df.fromto[, c("Measurement Number", "Measurement Unit", "dist.m")]), ]
+  df.fromto$Measurement.Number <- as.numeric(df.fromto$`Measurement Number`)
+  gplot <- ggplot(df.fromto, aes(dist.m, Measurement.Number)) +
+    ggtitle("Relations between caravanserails' areas and distances") +
+    facet_grid(. ~ route, scales="free") +
+    geom_point(aes(color = route), cex = 1) +
+    geom_text(aes(label = from.id),
+              hjust = 1, vjust = 1, size = 2) +
+    xlab("Areas of the caravanserail (in m2)") +
+    ylab("Distances between a caravanserail and the next caravanserail (in m)") +
+    # ggrepel::geom_text_repel(aes(label = from.id), max.overlaps = Inf) +
+    theme_bw()
+  ggsave(plot = gplot,
+         filename = "C:/Rprojects/eamena-arches-dev/projects/caravanserail/areas_x_distances_to.png",
+         width = 29,
+         height = 18,
+         units = "cm")
+  ## to
+  # plot the distance 'to' an Hp to a next HP on the X axis, with the size of this HP on the Y axis
+  df.fromto <- merge(hps, paths, by.x = "EAMENA ID", by.y = "to", all.x = T)
+  df.fromto <- df.fromto[complete.cases(df.fromto[, c("Measurement Number", "Measurement Unit", "dist.m")]), ]
+  df.fromto$Measurement.Number <- as.numeric(df.fromto$`Measurement Number`)
+  gplot <- ggplot(df.fromto, aes(dist.m, Measurement.Number)) +
+    ggtitle("Relations between caravanserails' areas and distances") +
+    facet_grid(. ~ route, scales="free") +
+    geom_point(aes(color = route), cex = 1) +
+    geom_text(aes(label = to.id),
+              hjust = 1, vjust = 1, size = 2) +
+    # ggrepel::geom_text_repel(aes(label = from.id), max.overlaps = Inf) +
+    xlab("Areas of the caravanserail (in m2)") +
+    ylab("Distances between a caravanserail and the previous caravanserail (in m)") +
+    theme_bw()
+  ggsave(plot = gplot,
+         filename = "C:/Rprojects/eamena-arches-dev/projects/caravanserail/areas_x_distances_from.png",
+         width = 29,
+         height = 18,
+         units = "cm")
+}
 
-###############################
+
+################## others #############
 
 # geojson_map(map.name = "caravanserail")
 df <- geojson_stat(stat = c("list_ids"), geojson.path = "C:/Rprojects/eamenaR/inst/extdata/caravanserail_2.geojson", export.stat = T)

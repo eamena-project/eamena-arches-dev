@@ -22,7 +22,7 @@ avm = AVM.from_image(imagename)
 print(avm)
 ```
 
-Gives:
+Gives this metadata:
 
 ```
 MetadataVersion: b'1.2'

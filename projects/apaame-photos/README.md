@@ -1,13 +1,11 @@
 # Extraction of XMP metadata from the APAAME archive
 
-<figure>
 <center>
   
   <img src="www/APAAME_20211026_RHB-0705.png" width="300">
   <figcaption>APAAME_20211026_RHB-0705.DNG</figcaption>
   
 </center>
-</figure>
 
   
   

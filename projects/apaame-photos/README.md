@@ -1,12 +1,12 @@
 # Extraction of XMP metadata from the APAAME archive
-
+  
 <center>
   
   <img src="www/APAAME_20211026_RHB-0705.png" width="300">
   <figcaption>APAAME_20211026_RHB-0705.DNG</figcaption>
   
 </center>
-
+  
   
   
 Using the [`apaame-metadata.py`](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/functions/Python/apaame-metadata.py) script to extract metadata from photograph(s) (ex: APAAME_20211026_RHB-0705.DNG [📥, 25 MB](https://github.com/eamena-oxford/eamena-arches-dev/raw/main/data/photos/APAAME_20211026_RHB-0705.DNG)) 

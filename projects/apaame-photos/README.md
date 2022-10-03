@@ -2,8 +2,12 @@
  
   
 <center>
-<img src="www/APAAME_20211026_RHB-0705.png" width="200"><br>
-APAAME_20211026_RHB-0705.DNG
+
+<figure>
+  <img src="www/APAAME_20211026_RHB-0705.png" width="300">
+  <figcaption>APAAME_20211026_RHB-0705.DNG</figcaption>
+</figure>
+  
 </center>
   
   

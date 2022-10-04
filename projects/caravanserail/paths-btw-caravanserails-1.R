@@ -88,8 +88,8 @@ areas_x_distances <- function(geojson.path = paste0(system.file(package = "eamen
     geom_point(aes(color = route), cex = 1) +
     geom_text(aes(label = from.id),
               hjust = 1, vjust = 1, size = 2) +
-    xlab("Areas of the caravanserail (in m2)") +
-    ylab("Distances between a caravanserail and the next caravanserail (in m)") +
+    ylab("Areas of the caravanserail (in m2)") +
+    xlab("Distances between a caravanserail and the next caravanserail (in m)") +
     # ggrepel::geom_text_repel(aes(label = from.id), max.overlaps = Inf) +
     theme_bw()
   ggsave(plot = gplot,
@@ -109,8 +109,8 @@ areas_x_distances <- function(geojson.path = paste0(system.file(package = "eamen
     geom_text(aes(label = to.id),
               hjust = 1, vjust = 1, size = 2) +
     # ggrepel::geom_text_repel(aes(label = from.id), max.overlaps = Inf) +
-    xlab("Areas of the caravanserail (in m2)") +
-    ylab("Distances between a caravanserail and the previous caravanserail (in m)") +
+    ylab("Areas of the caravanserail (in m2)") +
+    xlab("Distances between a caravanserail and the previous caravanserail (in m)") +
     theme_bw()
   ggsave(plot = gplot,
          filename = "C:/Rprojects/eamena-arches-dev/projects/caravanserail/areas_x_distances_from.png",

@@ -1,4 +1,24 @@
-# Extraction of XMP metadata from the APAAME archive
+
+# APAAME archive referenced in EAMENA
+
+The objective is to reference the APAAME photographs into EAMENA with a simple hyperlink link and import the metadata of the APAAME photographs into EAMENA 
+
+The workflow will be to:
+0. Extract the metadata of the photographs together with their path
+1. setup an ArcDAMS app to host the photographs
+2. link this photographs with URL links recorded in EAMENA
+
+# ArchDAMS app setup
+
+APAAME photographs will be hosted on a NAS server and managed with a ArchDAMS app (like HEIR and Manar-Al-Athar)
+
+# APAAME referenced in EAMENA
+
+Once the the ArchDAMS app will be setup, the URL of the different photographs will be setup into EAMENA
+
+## XMP metadata from the APAAME archive
+
+Extraction of XMP metadata from the APAAME archive
   
 <p align="center">
   <img alt="img-name" src="www/APAAME_20211026_RHB-0705.png" width="300">

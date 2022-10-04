@@ -1,5 +1,6 @@
 # Permissions 🔒
 
+bulk-application of instance-level permissions
 Built-in permissions, ring-fencing function
 
 EAMENA DB = 
@@ -15,18 +16,23 @@ Arches Designer > Resource Model > Heritage Place > Permissions >
 
 ### Card
 
-* solution 1
+* ~~solution 1~~
     - duplicate the `eamena-default-card`
     - rename the duplicate `eamena-permission-card`
-    - 
-
+(see https://community.archesproject.org/t/card-permission/1675?u=zoometh)
 ## Ring-fencing function
 
-Arches function to allow different user subgroups to access different resources
+The RF function is a bulk-application of instance-level permissions created by Knowlegde Intergation and Farallon (Reuben Osborne) delivered to EAMENA-Oxford the 9th March 2022. Its aim is to allow different user subgroups to access different resources.
 
-The function will only apply the rules on newly created resources.
+### Disclaimer
 
-To make the function work on pre-existing resrouces run the included `resave_all_resource` command.
+#### Function behaviour
+
+According to KI and Farallon: *"If an instance has permissions on it, it is not added to the layer. The reason is that checking permissions on instance in the layer would be very expensive. I was in favor of doing it anyway, but others thought the performance hit would be too much. So it was decided just to hide the instances in the map."*
+
+#### Affected resources
+
+The function will only apply the rules on newly created resources. To make the function work on pre-existing resrouces run the included `resave_all_resource` command.
 
 ### Installation
 

@@ -4,9 +4,10 @@
 The objective is to reference the APAAME photographs into EAMENA with a simple hyperlink link and import the metadata of the APAAME photographs into EAMENA 
 
 The workflow will be to:
-0. Extract the metadata of the photographs together with their path
-1. setup an ArcDAMS app to host the photographs
-2. link this photographs with URL links recorded in EAMENA
+
+1. Extract the metadata of the photographs together with their path
+2. setup an ArcDAMS app to host the photographs
+3. link this photographs with URL links recorded in EAMENA
 
 # ArchDAMS app setup
 

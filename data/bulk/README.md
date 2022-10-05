@@ -1,6 +1,6 @@
 # Bulk Upload (BU)  <img src="../../www/bu.png" width='80px' align="right"/>
 
-A Bulk Upload is a process allowing to upload **several XLSX files contained in a single folder**
+A Bulk Upload is a process allowing to upload **several XLSX files** into the database without going through the graphical user interface. It makes the data entry faster.
 
 <p align="center">
   <img alt="img-name" src="../../www/folder-files.png" width="600">

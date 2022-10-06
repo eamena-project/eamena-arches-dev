@@ -13,9 +13,9 @@ flowchart LR
     C --photographs with metadata--> D[(APAAME ArcDAMS server)]; 
 ```
 ## Python script
-> extract XMP metadata from the APAAME archive
+> extract metadata from the APAAME archive
 
-Extraction of XMP metadata from the APAAME archive
+Extraction of XMP and EXIF metadata from the APAAME archive
   
 <p align="center">
   <img alt="img-name" src="www/APAAME_20211026_RHB-0705.png" width="300">
@@ -23,43 +23,8 @@ Extraction of XMP metadata from the APAAME archive
     <em>APAAME_20211026_RHB-0705.DNG</em>
 </p>
   
-Using the [`apaame-metadata.py`](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/functions/Python/apaame-metadata.py) script to extract metadata from photograph(s) (ex: APAAME_20211026_RHB-0705.DNG [📥, 25 MB](https://github.com/eamena-oxford/eamena-arches-dev/raw/main/data/photos/APAAME_20211026_RHB-0705.DNG)) 
+Using the [`apaame-metadata.py`](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/functions/Python/apaame-metadata.py) with the `exifread` and `pyavm` libraries, script to extract metadata from photograph(s) in a [folder](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/data/photos) and record them in a [CSV file](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/projects/apaame-photos/metadata.csv)
   
-
-```
-from pyavm import AVM
-
-path = "C:/Rprojects/eamena-arches-dev/data/photos/"
-imagename = path + "APAAME_20211026_RHB-0705.DNG"
-avm = AVM.from_image(imagename)
-print(avm)
-```
-
-Gives this metadata:
-
-```
-MetadataVersion: b'1.2'
-Creator: b'AAJ'
-Rights: b'All Rights Reserved'
-Title: b'Oblique view to Wisad Kite 16'
-Description: b'to:31.9441084442, 37.9637896272 (Wisad Kite 16)'
-Credit: b'APAAME'
-Date: b'2021-10-26T12:12:05+03:00'
-Contact:
-   Name:
-      * b'Robert Bewley'
-Subject:
-   Name:
-      * b'Jordan'
-      * b'aerial archaeology'
-      * b'aerial photography'
-      * b'air photography'
-      * b'ancient history'
-      * b'archaeological sites'
-      * b'archaeology'
-      * b'middle east'
-```
-
 ## Notes
 
 **ArchDAMS app**

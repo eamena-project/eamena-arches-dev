@@ -5,14 +5,15 @@ import pandas as pd
 from PIL import Image #, ExifTags
 # from PIL.ExifTags import TAGS
 
-df = pd.DataFrame(columns=["Creator","Rights","Title","Description","Credit","Date","Contact","Subject","Model","Lens"])
+df = pd.DataFrame(columns=["Name", "Creator", "Rights", "Title", "Description", "Credit", "Date", "Contact", "Subject", "Model", "Lens"])
 
 pathIn = "C:/Rprojects/eamena-arches-dev/data/photos/"
 pathOut = "C:/Rprojects/eamena-arches-dev/projects/apaame-photos/metadata.csv"
 dirIn = os.listdir(pathIn)
 for i in range(len(dirIn)):
-    print(str(i) + "- read " + dirIn[i])
-    imagename = pathIn + dirIn[i]
+    photo_name = dirIn[i]
+    print(str(i) + "- read " + photo_name)
+    imagename = pathIn + photo_name
     # imagename = path + "APAAME_20211026_RHB-0705.DNG"
     #img = Image.open(imagename) # for XMP
     # exif = { ExifTags.TAGS[k]: v for k, v in img._getexif().items() if k in ExifTags.TAGS }
@@ -37,10 +38,10 @@ for i in range(len(dirIn)):
     exif_model = exifTags['Image Model'].values
     exif_lens = exifTags['EXIF FocalLength'].values
     exif_lens = str(exif_lens)
-    df.loc[i] = [xmp_creator, xmp_rights, xmp_title, xmp_description, xmp_credits, xmp_date, xmp_contact, xmp_subjects, exif_model, exif_lens]
+    df.loc[i] = [photo_name, xmp_creator, xmp_rights, xmp_title, xmp_description, xmp_credits, xmp_date, xmp_contact, xmp_subjects, exif_model, exif_lens]
 # export
 df.to_csv(pathOut, sep=',')
-# print(avm)
+print("Done")
 
 # exif = image.getexif()
 

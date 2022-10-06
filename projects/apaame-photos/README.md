@@ -4,7 +4,7 @@ graph TD;
     A[(APAAME NAS Server)]--photographs-->B[local];
     B--photographs-->C[local with data];
     C--python script->D[local with data + metadata];
-    D-->E[(APAAME ArcDAMS Server)];
+    D-->E;
 ```
 
 # APAAME archive referenced in EAMENA

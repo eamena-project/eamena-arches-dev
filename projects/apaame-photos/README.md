@@ -1,10 +1,10 @@
-# APAAME archive to the ArcDAMS platform
-
 <p align="center">
   <img alt="img-name" src="www/APAAME_20211026_RHB-0705.png" width="300">
   <br>
     <em>APAAME_20211026_RHB-0705.DNG</em>
 </p>
+
+# APAAME archive to the ArcDAMS platform
 
 The objective is to move the APAAME photographs archive stored on the [EAMENA NAS Server](https://eamena-nas1.arch.ox.ac.uk/cgi-bin/) to a dedicated NAS server hosting an ArcDAMS application (APAAME NAS Server).  
 

@@ -8,9 +8,9 @@ The workflow will be to:
 flowchart LR
     A[(EAMENA NAS Server)] --photographs--> B[photographs];
     subgraph local
-    B --> D[(APAAME ArcDAMS server)];
-    end
     B --python script--> C[metadata];
+    end
+    B --> D[(APAAME ArcDAMS server)];
     C --photographs--> D[(APAAME ArcDAMS server)]; 
 ```
 ## Python script

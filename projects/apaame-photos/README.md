@@ -6,7 +6,7 @@ The workflow will be to:
 
 ```mermaid
 flowchart LR
-    A[(APAAME NAS Server)] --photographs--> B[photographs];
+    A[(EAMENA NAS Server)] --photographs--> B[photographs];
     subgraph local
     B --python script--> C[photographs with metadata];
     end

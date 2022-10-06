@@ -1,5 +1,4 @@
 # from PIL import Image, ExifTags
-
 imagename = "C:/Rprojects/eamena-arches-dev/data/photos/APAAME_20211026_RHB-0705.DNG"
 
 # img = Image.open(imagename)
@@ -12,3 +11,6 @@ tags = exifread.process_file(f)
 exif_lens = tags['EXIF FocalLength'].values
 exif_model = tags['Image Model'].values
 exif_model = str(exif_lens)
+
+from libxmp import XMPFiles, consts
+xmpfile = XMPFiles( file_path=imagename, open_forupdate=True )

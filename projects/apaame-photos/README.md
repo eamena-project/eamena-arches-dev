@@ -4,6 +4,7 @@ flowchart TD
     id1[This is the text in the box] --> id2[another text]
     A[(APAAME NAS Server)] --photographs--> B[local];
     B --photographs--> C[local with data];
+    C --python script-> D[local with data + metadata];
 ```
 
 # APAAME archive referenced in EAMENA

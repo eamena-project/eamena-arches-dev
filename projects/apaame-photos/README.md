@@ -1,7 +1,7 @@
 
 ```mermaid
 flowchart TD
-    id1[\This is the text in the box\]
+    id1[This is the text in the box] --> id2[another text]
 ```
 
 # APAAME archive referenced in EAMENA

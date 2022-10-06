@@ -5,14 +5,14 @@ The objective is to move the APAAME photographs archive stored on the [EAMENA NA
 The workflow will be to:
 
 ```mermaid
-flowchart TD
+flowchart LR
     A[(APAAME NAS Server)] --photographs--> B[local with photographs];
     subgraph local
     B --python script--> C[local with photographs with metadata];
     end
-    C --photographs with metadata--> D[APAAME ArcDAMS server]; 
+    C --photographs with metadata--> D[(APAAME ArcDAMS server)]; 
 ```
-# ArchDAMS app setup
+## ArchDAMS app setup
 
 APAAME photographs will be hosted on a NAS server and managed with a ArchDAMS app (like HEIR and Manar-Al-Athar)
 

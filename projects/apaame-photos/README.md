@@ -10,8 +10,8 @@ flowchart LR
     subgraph local
     B --python script--> C[metadata];
     end
-    B --> D[(APAAME ArcDAMS server)];
-    C --photographs--> D[(APAAME ArcDAMS server)]; 
+    B --photographs--> D[(APAAME ArcDAMS server)];
+    C --metadata--> D[(APAAME ArcDAMS server)]; 
 ```
 ## Python script
 > extract metadata from the APAAME archive

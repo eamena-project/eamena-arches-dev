@@ -6,21 +6,14 @@ The workflow will be to:
 
 ```mermaid
 flowchart LR
-    A[(APAAME NAS Server)] --photographs--> B[local with photographs];
+    A[(APAAME NAS Server)] --photographs--> B[photographs];
     subgraph local
-    B --python script--> C[local with photographs with metadata];
+    B --python script--> C[photographs with metadata];
     end
     C --photographs with metadata--> D[(APAAME ArcDAMS server)]; 
 ```
-## ArchDAMS app setup
-
-APAAME photographs will be hosted on a NAS server and managed with a ArchDAMS app (like HEIR and Manar-Al-Athar)
-
-# APAAME referenced in EAMENA
-
-Once the the ArchDAMS app will be setup, the URL of the different photographs will be setup into EAMENA
-
-## XMP metadata from the APAAME archive
+## Python script
+> extract XMP metadata from the APAAME archive
 
 Extraction of XMP metadata from the APAAME archive
   
@@ -66,3 +59,9 @@ Subject:
       * b'archaeology'
       * b'middle east'
 ```
+
+## Notes
+
+**ArchDAMS app**
+
+Application developed by Jeremy Worth (Oxford) on a pre-existing system. Used for [Manar-Al-Athar](http://www.manar-al-athar.ox.ac.uk) and [HEIR](http://heir.arch.ox.ac.uk/pages/home.php?login=true) images archives

@@ -3,7 +3,7 @@
 flowchart TD
     id1[This is the text in the box] --> id2[another text]
     A[(APAAME NAS Server)] --photographs--> B[local with photographs];
-    subgraph
+    subgraph local
     B --python script--> C[local with photographs with metadata];
     end
     C --photographs with metadata--> D[APAAME ArcDAMS server]; 

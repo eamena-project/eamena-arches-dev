@@ -1,6 +1,6 @@
 
 ```mermaid
-graph TD;
+flowchart TD;
     A[(APAAME NAS Server)]--photographs-->B[local];
     B--photographs-->C[local with data];
     C--python script->D[local with data + metadata];

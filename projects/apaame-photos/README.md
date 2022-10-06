@@ -2,9 +2,11 @@
 ```mermaid
 flowchart TD
     id1[This is the text in the box] --> id2[another text]
-    A[(APAAME NAS Server)] --photographs--> B[local];
-    B --photographs--> C[local with data and meta];
-    C --python script--> C;
+    A[(APAAME NAS Server)] --photographs--> B[local with data];
+    subgraph one
+    B --python script--> C[local with data and meta];
+    end
+    C --photographs--> D[APAAME ArcDAMS server]; 
 ```
 
 # APAAME archive referenced in EAMENA

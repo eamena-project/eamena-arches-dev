@@ -1,4 +1,12 @@
 
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+
 # APAAME archive referenced in EAMENA
 
 The objective is to reference the APAAME photographs into EAMENA with a simple hyperlink link and import the metadata of the APAAME photographs into EAMENA 

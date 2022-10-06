@@ -1,5 +1,6 @@
 # devtools::install_github("eamena-oxford/eamenaR")
 library(eamenaR)
+library(dplyr)
 
 geojson_map(map.name = "geoarch",
             ids = "GEOARCH.ID",

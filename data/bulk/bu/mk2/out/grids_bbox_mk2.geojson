@@ -1,0 +1,7 @@
+{
+"type": "FeatureCollection",
+"name": "grids_bbox_mk2",
+"features": [
+{ "type": "Feature", "properties": { }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 4.846944772, 34.49739946 ], [ 8.263049542, 34.49739946 ], [ 8.263049542, 35.4153975 ], [ 4.846944772, 35.4153975 ], [ 4.846944772, 34.49739946 ] ] ] } }
+]
+}

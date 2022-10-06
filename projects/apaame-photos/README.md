@@ -20,11 +20,9 @@ flowchart LR
     C --metadata--> D[(APAAME ArcDAMS server)]; 
 ```
 ## Python script
-> extract metadata from the APAAME archive
+> extraction of XMP and EXIF metadata from the APAAME archive
 
-Extraction of XMP and EXIF metadata from the APAAME archive
-  
-Using the Python script [`apaame-metadata.py`](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/functions/Python/apaame-metadata.py), with the `exifread` and `pyavm` libraries, script to extract metadata from photograph(s) in a [folder](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/data/photos) and record them in a [CSV file](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/projects/apaame-photos/metadata.csv)
+Uses this Python script [`apaame-metadata.py`](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/functions/Python/apaame-metadata.py), with the `exifread` and `pyavm` libraries, script to extract metadata from photograph(s) in a [folder](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/data/photos) and record them in a [CSV file](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/projects/apaame-photos/metadata.csv)
   
 ## Notes
 

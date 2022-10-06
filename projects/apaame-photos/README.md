@@ -1,24 +1,17 @@
+# APAAME archive to the ArcDAMS platform
+
+The objective is to move the APAAME photographs archive stored on the [EAMENA NAS](https://eamena-nas1.arch.ox.ac.uk/cgi-bin/) to a dedicated NAS server hosting an ArcDAMS application.  
+
+The workflow will be to:
 
 ```mermaid
 flowchart TD
-    id1[This is the text in the box] --> id2[another text]
     A[(APAAME NAS Server)] --photographs--> B[local with photographs];
     subgraph local
     B --python script--> C[local with photographs with metadata];
     end
     C --photographs with metadata--> D[APAAME ArcDAMS server]; 
 ```
-
-# APAAME archive referenced in EAMENA
-
-The objective is to reference the APAAME photographs into EAMENA with a simple hyperlink link and import the metadata of the APAAME photographs into EAMENA 
-
-The workflow will be to:
-
-1. Extract the metadata of the photographs together with their path
-2. setup an ArcDAMS app to host the photographs
-3. link this photographs with URL links recorded in EAMENA
-
 # ArchDAMS app setup
 
 APAAME photographs will be hosted on a NAS server and managed with a ArchDAMS app (like HEIR and Manar-Al-Athar)

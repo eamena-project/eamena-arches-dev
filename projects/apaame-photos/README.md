@@ -10,7 +10,7 @@ flowchart LR
     subgraph local
     B --python script--> C[metadata];
     end
-    B --metadata-> C[metadata];
+    B --metadata-> C;
     C --photographs--> D[(APAAME ArcDAMS server)]; 
 ```
 ## Python script

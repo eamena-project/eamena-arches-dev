@@ -27,6 +27,10 @@ Using the [`apaame-metadata.py`](https://github.com/eamena-oxford/eamena-arches-
   
 ## Notes
 
+**EXIF and XMP metadata**
+
+Here is an example of an [EXIF output](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/projects/apaame-photos/exif_example.txt) and [XMP output](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/projects/apaame-photos/xmp_example.txt
+
 **ArchDAMS app**
 
 Application developed by Jeremy Worth (Oxford) on a pre-existing system. Used for [Manar-Al-Athar](http://www.manar-al-athar.ox.ac.uk) and [HEIR](http://heir.arch.ox.ac.uk/pages/home.php?login=true) images archives

@@ -58,7 +58,7 @@ Table: Example of a merged XLSX BU resulting from the merge of EAMENA (bolded) a
 
 </div>
 
-Once done, the merged BU will be returned to the databaes.
+Once done, the merged BU will be returned to the databases.
 
 ```mermaid
 flowchart LR

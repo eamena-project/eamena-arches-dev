@@ -1,6 +1,6 @@
 # Bulk Upload (BU)  <img src="../../www/bu.png" width='80px' align="right"/>
 
-A Bulk Upload is a process allowing to upload **several XLSX files** into the database without going through the graphical user interface. It makes the data entry faster.
+Bulk upload is a process for uploading **many XLSX** files containing heritage places (HPs) data into the database without going through the graphical user interface. It speeds up data entry.
 
 <p align="center">
   <img alt="img-name" src="../../www/folder-files.png" width="600">
@@ -18,8 +18,42 @@ GitHub: https://github.com/eamena-oxford/eamena-arches-dev/blob/main/data/bulk/t
 <s>Google Drive: https://drive.google.com/file/d/1KtZlCB_mdTOPxh1DpFdfeXddjJLTvF1k/view?usp=sharing</s>
 </p>
 
-## BU process
-> step-by-step BU procedure from the user-side
+## BU exchange
+
+The objective is to exchange data between EAMENA and national instances BDs (eg: Mega-J once this database has been ported to Arches v7)
+
+## Workflow
+
+The workflow will be to:
+
+```mermaid
+flowchart LR
+    A[(EAMENA Arches v7)] --export as BU--> B[XLSX BU];
+    C[(Mega-J Arches v7)] --export as BU--> D[XLSX BU];
+    B --> E[XLSX BU merged];
+    D --> E;
+    E --check duplicated--> E;
+    E -- back to EAMENA --> A;
+    E -- back to Mega-J --> C;
+```
+
+In this example, the merged XLSX dataset will be sorted and/or filtered by toponyms, coordinates, or any relevant fields to group rows refering to the same HPs. Then two cases can occur:
+
+1. total matching/perfect duplicates: one of them is removed
+2. partial matching: the *n* rows are merged in a single record
+
+| UNIQUEID | Assessment.Investigator.-.Actor | Investigator.Role.Type   | Assessment.Activity.Type | Assessment.Activity.Date | GE.Assessment(Yes/No) | Resource.Name | Name.Type             |
+|----------|---------------------------------|--------------------------|--------------------------|--------------------------|-----------------------|---------------|-----------------------|
+| ...      | ...                             | ...                      | ...                      | ...                      | ...                   | ...           | ...                   |
+| 4        | Mohamed Kenawi                  | EAMENA Project Staff     | Desk-based Assessment    | 2022-10-05               | Yes                   |               |                       |
+| 5        | Martin Sterry                   | **MEGA-J Project Staff** |                          | 2028-09-12               |                       | AAA f.37.5    | Alternative Reference |
+| 5        | Mohamed Kenawi                  | **EAMENA Project Staff** | Desk-based Assessment    | 2022-10-05               | Yes                   | Metkaouak     | Toponym               |
+| ...      | ...                             | ...                      | ...                      | ...                      | ...                   | ...           | ...                   |
+
+Table: Your Caption
+
+## ~~BU process~~
+> ⚠️ This process is no longer in use ~~step-by-step BU procedure from the user-side~~
 
 Start by creating a root `examples/` folder on **your OneDrive**, or equivalent, create and authorise the DB Manager to write only in this folder. See the 'ideal' file/folder naming/structure on the [examples/](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/output/bulk/examples) folder. 
 

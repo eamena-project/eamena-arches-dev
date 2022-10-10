@@ -38,7 +38,7 @@ flowchart LR
 In this example, the merged XLSX dataset will be sorted and/or filtered by toponyms, coordinates, or any relevant fields to group rows refering to the same HPs. Then two cases can occur:
 
 1. total matching/perfect duplicates: one of them is removed
-2. partial matching: the *n* rows are merged in a single record, like this:
+2. partial matching: the *n* rows are merged in a single record (ie, with the same UNIQUEID), like this (see ID 5):
 
 <div align = "center">
 

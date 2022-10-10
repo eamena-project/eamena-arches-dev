@@ -12,5 +12,5 @@ exif_lens = tags['EXIF FocalLength'].values
 exif_model = tags['Image Model'].values
 exif_model = str(exif_lens)
 
-from libxmp import XMPFiles, consts
-xmpfile = XMPFiles( file_path=imagename, open_forupdate=True )
+# from libxmp import XMPFiles, consts
+# xmpfile = XMPFiles( file_path=imagename, open_forupdate=True )

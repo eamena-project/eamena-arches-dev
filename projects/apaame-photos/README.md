@@ -8,6 +8,8 @@
 
 The objective is to move the APAAME photographs archive stored on the [EAMENA NAS Server](https://eamena-nas1.arch.ox.ac.uk/cgi-bin/) to a dedicated NAS server hosting an ArcDAMS application (APAAME NAS Server).  
 
+## Workflow
+
 The workflow will be to:
 
 ```mermaid

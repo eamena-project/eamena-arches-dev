@@ -32,7 +32,6 @@ The transfer process uses :
 **EXIF and XMP metadata**
 
 Here are examples of:
-
   -[EXIF output](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/projects/apaame-photos/exif_example.txt)  
   -[XMP output](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/projects/apaame-photos/xmp_example.txt)  
 

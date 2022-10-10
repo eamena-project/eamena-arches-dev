@@ -40,6 +40,8 @@ In this example, the merged XLSX dataset will be sorted and/or filtered by topon
 1. total matching/perfect duplicates: one of them is removed
 2. partial matching: the *n* rows are merged in a single record, like this:
 
+<div align = "center">
+
 | UNIQUEID | Assessment.Investigator.-.Actor | Investigator.Role.Type   | Assessment.Activity.Type | Assessment.Activity.Date | GE.Assessment(Yes/No) | Resource.Name | Name.Type             |
 |----------|---------------------------------|--------------------------|--------------------------|--------------------------|-----------------------|---------------|-----------------------|
 | ...      | ...                             | ...                      | ...                      | ...                      | ...                   | ...           | ...                   |
@@ -48,14 +50,16 @@ In this example, the merged XLSX dataset will be sorted and/or filtered by topon
 | 5        | Mohamed Kenawi                  | **EAMENA Project Staff** | Desk-based Assessment    | 2022-10-05               | Yes                   | Metkaouak     | Toponym               |
 | ...      | ...                             | ...                      | ...                      | ...                      | ...                   | ...           | ...                   |
 
-<center>Table: Example of a merged XLSX BU resulting from the merge of EAMENA (bolded) and Mega-J (bolded) </center>
+Table: Example of a merged XLSX BU resulting from the merge of EAMENA (bolded) and Mega-J (bolded) 
+
+</div>
 
 Once done, the merged BU will be returned to the databaes.
 
 ```mermaid
 flowchart LR
-    E[XLSX BU merged] -- back to EAMENA --> A;
-    E -- back to Mega-J --> C;
+    E[XLSX BU merged] -- back to EAMENA --> A[(EAMENA Arches v7)];
+    E -- back to Mega-J --> C[(Mega-J Arches v7)];
 ```
 
 ## ~~BU process~~

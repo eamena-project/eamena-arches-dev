@@ -18,6 +18,10 @@ GitHub: https://github.com/eamena-oxford/eamena-arches-dev/blob/main/data/bulk/t
 <s>Google Drive: https://drive.google.com/file/d/1KtZlCB_mdTOPxh1DpFdfeXddjJLTvF1k/view?usp=sharing</s>
 </p>
 
+## BU mapping
+
+To recast structured data to a BU format, see the [`eamenaR` R package](https://github.com/eamena-oxford/eamenaR#bu-mapping)
+
 ## BU exchange
 
 The objective is to exchange data between EAMENA and national instances BDs (eg: Mega-J once this database has been ported to Arches v7)

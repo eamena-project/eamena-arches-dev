@@ -47,7 +47,8 @@ In this example, the merged XLSX dataset will be sorted and/or filtered by topon
 | 5        | Martin Sterry                   | **MEGA-J Project Staff** |                          | 2028-09-12               |                       | AAA f.37.5    | Alternative Reference |
 | 5        | Mohamed Kenawi                  | **EAMENA Project Staff** | Desk-based Assessment    | 2022-10-05               | Yes                   | Metkaouak     | Toponym               |
 | ...      | ...                             | ...                      | ...                      | ...                      | ...                   | ...           | ...                   |
-Table: Example of a merged XLSX BU resulting from the merge of EAMENA (bolded) and Mega-J (bolded) 
+
+<center>Table: Example of a merged XLSX BU resulting from the merge of EAMENA (bolded) and Mega-J (bolded) </center>
 
 Once done, the merged BU will be returned to the databaes.
 

@@ -54,7 +54,7 @@ In this example, the merged XLSX dataset will be sorted and/or filtered by topon
 | 5        | Mohamed Kenawi                  | **EAMENA Project Staff** | Desk-based Assessment    | 2022-10-05               | Yes                   | Metkaouak     | Toponym               |
 | ...      | ...                             | ...                      | ...                      | ...                      | ...                   | ...           | ...                   |
 
-Example of a merged XLSX BU resulting from the merge of EAMENA (bolded) and Mega-J (bolded) 
+Example of a merged XLSX BU record resulting from the merge of EAMENA (bolded) and Mega-J (bolded) BUs
 
 </div>
 

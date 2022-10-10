@@ -33,14 +33,12 @@ flowchart LR
     B --> E[XLSX BU merged];
     D --> E;
     E --check duplicated--> E;
-    E -- back to EAMENA --> A;
-    E -- back to Mega-J --> C;
 ```
 
 In this example, the merged XLSX dataset will be sorted and/or filtered by toponyms, coordinates, or any relevant fields to group rows refering to the same HPs. Then two cases can occur:
 
 1. total matching/perfect duplicates: one of them is removed
-2. partial matching: the *n* rows are merged in a single record
+2. partial matching: the *n* rows are merged in a single record, like this:
 
 | UNIQUEID | Assessment.Investigator.-.Actor | Investigator.Role.Type   | Assessment.Activity.Type | Assessment.Activity.Date | GE.Assessment(Yes/No) | Resource.Name | Name.Type             |
 |----------|---------------------------------|--------------------------|--------------------------|--------------------------|-----------------------|---------------|-----------------------|
@@ -49,11 +47,18 @@ In this example, the merged XLSX dataset will be sorted and/or filtered by topon
 | 5        | Martin Sterry                   | **MEGA-J Project Staff** |                          | 2028-09-12               |                       | AAA f.37.5    | Alternative Reference |
 | 5        | Mohamed Kenawi                  | **EAMENA Project Staff** | Desk-based Assessment    | 2022-10-05               | Yes                   | Metkaouak     | Toponym               |
 | ...      | ...                             | ...                      | ...                      | ...                      | ...                   | ...           | ...                   |
+Table: Example of a merged XLSX BU resulting from the merge of EAMENA (bolded) and Mega-J (bolded) 
 
-Table: Your Caption
+Once done, the merged BU will be returned to the databaes.
+
+```mermaid
+flowchart LR
+    E[XLSX BU merged] -- back to EAMENA --> A;
+    E -- back to Mega-J --> C;
+```
 
 ## ~~BU process~~
-> ⚠️ This process is no longer in use ~~step-by-step BU procedure from the user-side~~
+> ⚠️ This process is no longer in use ⚠️ ~~step-by-step BU procedure from the user-side~~
 
 Start by creating a root `examples/` folder on **your OneDrive**, or equivalent, create and authorise the DB Manager to write only in this folder. See the 'ideal' file/folder naming/structure on the [examples/](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/output/bulk/examples) folder. 
 

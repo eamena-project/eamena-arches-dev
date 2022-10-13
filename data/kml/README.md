@@ -6,8 +6,11 @@ flowchart LR
     A --export GeoJSON URL--> B[Create GeoJSON file];
     B --import--> C((Google Earth));
     C --"HPs POINTS are turned to POLYGONS"--> C;
-    subgraph eamenaR
     C --export KML/KMZ--> D{{"geom_kml()"}}; 
+    subgraph eamenaR
+    D --"convert KML/KMZ to GeoJSON"--> D;
+    D --export--> E{{"geom_bu()"}};
+    E --"TODO: format GeoJSON as a BU"--> E
     end
-    D --add a new geometry--> A;
+    E --add a new geometry-->A;
 ```

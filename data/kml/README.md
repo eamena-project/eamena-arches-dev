@@ -5,7 +5,7 @@ flowchart LR
     A[(EAMENA DB)] --search--> A;
     A --export GeoJSON URL--> B[Create GeoJSON file];
     B --import--> C((Google Earth));
-    C --"HPs POINTS are turned to POLYGONS"--> C;
+    C --"HPs POINTS -> POLYGONS"--> C;
     C --export KML/KMZ--> D{{"geom_kml()"}}; 
     subgraph eamenaR
     D --"convert KML/KMZ to GeoJSON"--> D;

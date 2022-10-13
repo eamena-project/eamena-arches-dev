@@ -1,4 +1,5 @@
-# GitHub workshop
+# GitHub presentation
+> how GitHub can improve IT and data management in the EAMENA project
 
 **Objectives**: transferring most of the development of the EAMENA database from standalone files (XLSX, DOCX, etc.), Slack, Mail, Google Doc, etc., to GitHub
 

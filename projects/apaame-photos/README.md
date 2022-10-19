@@ -11,6 +11,7 @@ The objective is to move the APAAME photographs archive stored on the [EAMENA NA
 ## Workflow
 
 The workflow will be to:
+> ⚠️ outdated, see how Jeremy is preparing this workflow
 
 ```mermaid
 flowchart LR

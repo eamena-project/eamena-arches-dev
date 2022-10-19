@@ -5,10 +5,9 @@ The objective is to exchange data between EAMENA and national instances BDs (eg:
 
 ```mermaid
 flowchart LR
-    A[(EAMENA NAS Server)] --photographs--> B[photographs];
+    A[(EAMENA DB)] --export as BU--> B[XLSX];
     subgraph local
-    B --Python script--> C[metadata];
+    B --edit data--> B;
     end
-    B --photographs--> D[(APAAME ArcDAMS server)];
-    C --metadata--> D[(APAAME ArcDAMS server)]; 
+    B --re-import--> A;
 ```

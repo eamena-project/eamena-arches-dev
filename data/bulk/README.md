@@ -33,7 +33,7 @@ Objective are:
 
 ```mermaid
 flowchart RL
-    A[(EAMENA DB)] --export as BU--> B[XLSX];
+    A[(EAMENA Arches v5)] --export as BU--> B[XLSX];
     subgraph local
     B --edit data--> B;
     end

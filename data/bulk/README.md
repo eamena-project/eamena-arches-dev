@@ -35,10 +35,8 @@ For selected HPs
 
 ```mermaid
 flowchart RL
-    subgraph onine
     A[(EAMENA Arches v5)] --1. export data as BU--> B[XLSX];
     A --remove data--> A;
-    end
     subgraph local
     B --edit data--> B;
     end

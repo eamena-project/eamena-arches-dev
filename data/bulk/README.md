@@ -36,11 +36,11 @@ For selected HPs
 ```mermaid
 flowchart RL
     A[(EAMENA Arches v5)] --1. export data as BU--> B[XLSX];
-    A --remove data--> A;
+    A --2. remove data--> A;
     subgraph local
-    B --edit data--> B;
+    B --3. edit data--> B;
     end
-    B --re-import--> A;
+    B --4. re-import--> A;
 ```
 
 ### EAMENA ↔️ Other DB workflow

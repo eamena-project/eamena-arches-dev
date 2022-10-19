@@ -24,10 +24,10 @@ To recast structured data to a BU format, see the [`eamenaR` R package](https://
 
 ## BU exchanges
 
-The objective is to:
+Objective are:
 
-- exchange data between EAMENA and national instances BDs (eg: Mega-J once this database has been ported to Arches v7)
-- facilitate the edition of already existing data in the EAMENA DB
+- [1️)](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/data/bulk#eamena-%EF%B8%8F-eamena-workflow) facilitate the edition of already existing data in the EAMENA DB;
+- [2)](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/data/bulk#eamena-%EF%B8%8F-other-db-workflow) exchange data between EAMENA and national instances BDs;
 
 ### EAMENA ↔️ EAMENA workflow
 
@@ -42,7 +42,7 @@ flowchart RL
 
 ### EAMENA ↔️ Other DB workflow
 
-The workflow will be to:
+To exchange data between different Arches-based databases (eg: Mega-J once this database has been ported to Arches v7), the workflow will be to:
 
 ```mermaid
 flowchart LR

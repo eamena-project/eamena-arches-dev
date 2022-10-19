@@ -22,11 +22,25 @@ GitHub: https://github.com/eamena-oxford/eamena-arches-dev/blob/main/data/bulk/t
 
 To recast structured data to a BU format, see the [`eamenaR` R package](https://github.com/eamena-oxford/eamenaR#bu-mapping)
 
-## BU exchange
+## BU exchanges
 
-The objective is to exchange data between EAMENA and national instances BDs (eg: Mega-J once this database has been ported to Arches v7)
+The objective is to:
 
-## Workflow
+- exchange data between EAMENA and national instances BDs (eg: Mega-J once this database has been ported to Arches v7)
+- facilitate the edition of already existing data in the EAMENA DB
+
+### EAMENA ↔️ EAMENA workflow
+
+```mermaid
+flowchart RL
+    A[(EAMENA DB)] --export as BU--> B[XLSX];
+    subgraph local
+    B --edit data--> B;
+    end
+    B --re-import--> A;
+```
+
+### EAMENA ↔️ Other DB workflow
 
 The workflow will be to:
 

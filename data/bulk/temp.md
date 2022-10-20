@@ -22,7 +22,7 @@ $$\textcolor{#e7deca}{\text{Hello World}}$$
 @@ text in purple (and bold)@@
 ```
 
-$\colorbox{brown}{{\color{black}{geom_kml()}}}$
+$\colorbox{brown}{{\color{black}{geom\_kml()}}}$
 
 
 

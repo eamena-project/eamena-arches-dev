@@ -11,12 +11,10 @@ flowchart LR
     classDef eamenaRfunction fill:#e7deca;
 ```
 
-$$\textcolor{#e7deca}{\text{Hello World}}$$
-
-
-```diff
-! [geom_kml()](https://eamena-oxford.github.io/eamenaR/doc/geom_kml)
+[geom_kml()](https://via.placeholder.com/150/e7deca/000000?Text=geom_kml())
 ```
+
+https://via.placeholder.com/150/e7deca/000000?Text=geom_kml()
 
 
 

@@ -10,3 +10,5 @@ flowchart LR
     C --4. add new GeoJSON geometries--> A;
     classDef eamenaRfunction fill:#e7deca;
 ```
+
+<span style="color:#e7deca">eamenaR function</span>

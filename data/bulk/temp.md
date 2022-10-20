@@ -14,7 +14,7 @@ flowchart LR
 [#e7deca](https://via.placeholder.com/150/e7deca/000000?Text=geom_kml.png) geom_kml()
 
 
-$\colorbox{brown}{{\color{black}{   }}}$
+$\colorbox{brown}{{\color{black}{xxx}}}$
 
 
 - ![#e7deca](https://via.placeholder.com/15/f03c15/e7deca.png) `#e7deca`  

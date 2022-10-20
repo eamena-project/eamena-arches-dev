@@ -22,7 +22,10 @@ $$\textcolor{#e7deca}{\text{Hello World}}$$
 @@ text in purple (and bold)@@
 ```
 
-geom_kml()
+$\colorbox{brown}{{\color{black}{geom_kml()}}}$
+
+
+
 - ![#f03c15](https://via.placeholder.com/15/f03c15/f03c15.png) `#f03c15`
 <span style="color:'#e7deca'">eamenaR function</span>
 

@@ -13,7 +13,7 @@ flowchart LR
 
 [#e7deca](https://via.placeholder.com/150/e7deca/000000?Text=geom_kml.png) geom_kml()
 
-$\colorbox{#e7deca}{{\color{black}{eamenaR functions}}}$: [geom_kml()](https://eamena-oxford.github.io/eamenaR/doc/geojson_kml)
+$\colorbox{#e7deca}{{\color{black}{__}}}$: [geom_kml()](https://eamena-oxford.github.io/eamenaR/doc/geojson_kml)
 
 $\colorbox{brown}{{\color{black}{xxx}}}$
 

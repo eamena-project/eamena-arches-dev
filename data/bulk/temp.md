@@ -1,16 +1,11 @@
+## Integrating Google Earth geometries
 
-## BU exchanges
-
-The objective is to:
-
-- exchange data between EAMENA and national instances BDs (eg: Mega-J once this database has been ported to Arches v7)
-- facilitate the edition of already existing data in the EAMENA DB
+Most of the geometries in EAMENA are POINTS (Center Point). The objective is to acquire new geometries created in Google Earth and to add them to already existing records in EAMENA.
 
 ```mermaid
-flowchart RL
-    A[(EAMENA DB)] --export as BU--> B[XLSX];
-    subgraph local
-    B --edit data--> B;
-    end
-    B --re-import--> A;
+flowchart LR
+    A[(EAMENA DB)] --1. export as GeoJSON--> B[GeoJSON file];
+    B((Google Earth)) --2. create POLYGON geometries--> B;
+    B --3. export as KML/KMZ--> C(geom_kml);
+    C --4. add new GeoJSON geometries--> A;
 ```

@@ -11,6 +11,19 @@ flowchart LR
     classDef eamenaRfunction fill:#e7deca;
 ```
 
+$$\textcolor{yellow}{\text{Hello World}}$$
+
+
+```diff
++ Green
+- Red
+! Orange
+@@ Pink @@
+# Gray
+...
+
 geom_kml()
 - ![#f03c15](https://via.placeholder.com/15/f03c15/f03c15.png) `#f03c15`
 <span style="color:'#e7deca'">eamenaR function</span>
+
+https://eamena-oxford.github.io/eamenaR/doc/geom_kml

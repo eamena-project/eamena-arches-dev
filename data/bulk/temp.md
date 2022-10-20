@@ -13,6 +13,7 @@ flowchart LR
 
 [#e7deca](https://via.placeholder.com/150/e7deca/000000?Text=geom_kml.png) geom_kml()
 
+$\colorbox{#e7deca}{{\color{black}{XXX}}}$  
 
 $\colorbox{brown}{{\color{black}{xxx}}}$
 

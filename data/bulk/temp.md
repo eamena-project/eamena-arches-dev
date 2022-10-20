@@ -11,8 +11,7 @@ flowchart LR
     classDef eamenaRfunction fill:#e7deca;
 ```
 
-[geom_kml()](https://via.placeholder.com/150/e7deca/000000?Text=geom_kml())
-```
+[geom_kml()](https://via.placeholder.com/150/e7deca/000000?Text=geom_kml)
 
 https://via.placeholder.com/150/e7deca/000000?Text=geom_kml()
 

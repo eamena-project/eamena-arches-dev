@@ -11,5 +11,5 @@ flowchart LR
     classDef eamenaRfunction fill:#e7deca;
 ```
 
-$\colorbox{#e7deca}{{\color{black}{function}}}$: [geom_kml()](https://eamena-oxford.github.io/eamenaR/doc/geojson_kml)  
+$\colorbox{#e7deca}{{\color{black}{function}}}$: [geom_kml()](https://eamena-oxford.github.io/eamenaR/doc/geom_kml)  
 

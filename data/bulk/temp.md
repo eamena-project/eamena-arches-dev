@@ -13,13 +13,9 @@ flowchart LR
 
 [#e7deca](https://via.placeholder.com/150/e7deca/000000?Text=geom_kml.png) geom_kml()
 
-https://via.placeholder.com/150/e7deca/000000?Text=geom_kml()
+
+$\colorbox{brown}{{\color{black}{   }}}$
 
 
-
-
-
-- ![#f03c15](https://via.placeholder.com/15/f03c15/f03c15.png) `#f03c15`  
 - ![#e7deca](https://via.placeholder.com/15/f03c15/e7deca.png) `#e7deca`  
-<span style="color:'#e7deca'">eamenaR function</span>
 

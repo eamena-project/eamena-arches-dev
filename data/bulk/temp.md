@@ -15,12 +15,12 @@ $$\textcolor{#e7deca}{\text{Hello World}}$$
 
 
 ```diff
-+ Green
-- Red
-! Orange
-@@ Pink @@
-# Gray
-...
+- text in brown
++ text in green
+! text in orange
+# text in gray
+@@ text in purple (and bold)@@
+```
 
 geom_kml()
 - ![#f03c15](https://via.placeholder.com/15/f03c15/f03c15.png) `#f03c15`

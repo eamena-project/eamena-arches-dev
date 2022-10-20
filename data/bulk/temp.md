@@ -11,4 +11,6 @@ flowchart LR
     classDef eamenaRfunction fill:#e7deca;
 ```
 
+geom_kml()
+- ![#f03c15](https://via.placeholder.com/15/f03c15/f03c15.png) `#f03c15`
 <span style="color:'#e7deca'">eamenaR function</span>

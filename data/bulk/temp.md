@@ -11,7 +11,7 @@ flowchart LR
     classDef eamenaRfunction fill:#e7deca;
 ```
 
-$$\textcolor{yellow}{\text{Hello World}}$$
+$$\textcolor{#e7deca}{\text{Hello World}}$$
 
 
 ```diff

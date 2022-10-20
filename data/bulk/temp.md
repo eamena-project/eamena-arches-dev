@@ -8,5 +8,5 @@ flowchart LR
     B((Google Earth)) --2. create POLYGON geometries--> B;
     B --3. export as KML/KMZ--> C("geom_kml()"):::eamenaRfunction;
     C --4. add new GeoJSON geometries--> A;
-    classDef eamenaRfunction fill:#f96;
+    classDef eamenaRfunction fill:#ac8e4e;
 ```

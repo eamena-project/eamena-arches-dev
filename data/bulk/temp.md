@@ -15,11 +15,7 @@ $$\textcolor{#e7deca}{\text{Hello World}}$$
 
 
 ```diff
-- text in brown
-+ text in green
-! text in orange
-# text in gray
-@@ text in purple (and bold)@@
+! [geom_kml()](https://eamena-oxford.github.io/eamenaR/doc/geom_kml)
 ```
 
 
@@ -30,4 +26,3 @@ $$\textcolor{#e7deca}{\text{Hello World}}$$
 - ![#e7deca](https://via.placeholder.com/15/f03c15/e7deca.png) `#e7deca`  
 <span style="color:'#e7deca'">eamenaR function</span>
 
-https://eamena-oxford.github.io/eamenaR/doc/geom_kml

@@ -7,12 +7,10 @@ flowchart LR
     B --data conversion--> C((third part app));
     C --import--> B;
     B --import--> A;
-    subgraph outputs
     B --creates--> D[maps]
-    B --creates--> D[charts]
-    B --creates--> D[listings]
-    B --creates--> D[...]
-    end
+    B --creates--> E[charts]
+    B --creates--> F[listings]
+    B --creates--> G[...]
     classDef eamenaRpkg fill:#e3c071;
 ```
 

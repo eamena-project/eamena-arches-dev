@@ -6,6 +6,7 @@ flowchart LR
     C --2. export as KML file--> B((Google Earth));
     B --3. create POLYGON geometries--> B;
     B --4. export as KML/KMZ--> C;
-    C -.5. add new GeoJSON geometries.-> A;
+    C --5. add new GeoJSON geometries--> D("geojson_csv()"):::eamenaRfunction);
+    D -.6. add new GeoJSON geometries.-> A;
     classDef eamenaRfunction fill:#e7deca;
 ```

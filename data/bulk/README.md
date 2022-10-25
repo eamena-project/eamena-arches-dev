@@ -13,7 +13,7 @@ Bulk upload is a process for uploading **many XLSX** files containing heritage p
 The last/updated version of the BU template file is hosted on:  
   
 <p align="center">
-<s>GitHub: https://github.com/eamena-oxford/eamena-arches-dev/blob/main/data/bulk/templates/E61N30-13-Revised.xlsx<\s><br>
+GitHub: https://github.com/eamena-oxford/eamena-arches-dev/blob/main/data/bulk/templates/E61N30-13-Revised.xlsx<br>
 <s>EAMENA DB: https://database.eamena.org/en/bulk-upload/templates/34cfe98e-c2c0-11ea-9026-02e7594ce0a0.xlsx</s><br>
 <s>Google Drive: https://drive.google.com/file/d/1KtZlCB_mdTOPxh1DpFdfeXddjJLTvF1k/view?usp=sharing</s>
 </p>

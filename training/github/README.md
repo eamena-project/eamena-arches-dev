@@ -9,36 +9,80 @@
 
 ## GitHub purpose
 
-collaboration & versioning
+Collaboration & Versioning
 
-### Collaboration
+## Glossary
 
-Using Jupyter colabnotebook
+| term       | description                                                                                                     |
+|------------|-----------------------------------------------------------------------------------------------------------------|
+| repository | contains all of your project's files and each file's revision history                                           |
+| branch     | represents an independent line of development                                                                   |
+| pull request | represents an independent line of development                                                                   |
 
-### Git
+
+![branches in GitHub](../../www/github-basic-branch.png)
+
+![accepted pull request](../../www/github-basic-pullrequest.png)
+
+## Git
 > git version control system, version control system
 
+---
 🔎 Distributed version control system for tracking changes to a set of files. Typically used to coordinate the work of programmers who collaborate on source code during software development. The objectives are speed, data integrity and support for distributed and non-linear workflows.
+---
+
+### Main commands
+
+#### from local to remote
+> from *downstream* to *upstream*
+
+![a Git command from a Windows *shell*](../../www/github-cmd-basic.png)
+
+```
+$ git add .; git commit -m "training GitHub" ; git push
+```
+
+| command    | description                                                                                                     |
+|------------|-----------------------------------------------------------------------------------------------------------------|
+| git add    | Moves every changes from the working directory to the staging area before committing it to the official history |
+| git commit | Takes the staged snapshot and commits it to the project history                                                 |
+| git push   | Move a local branch to the remote repository (*push upstream*)                                                  |
 
 Clone, Pull request, Forks, etc.
 
+#### from remote to local
+> from *upstream* to *downstream*
+
+| command    | description                                                                                                     |
+|------------|-----------------------------------------------------------------------------------------------------------------|
+| git pull   | Downloads a branch from a remote repository to the local branch                                                 |
+| git clone  | Downloads a copy of an existing Git repository in your local computer                                           |
+
 ## GitHub arichitecture
+
+### Syntaxes
+
+- Markdown, and HTML, for free text
+- [YAML](https://github.com/zoometh/thomashuet/blob/4588894ae1eb6600ad983c313b1d016d8c904593/profiles/oxford/R4A/1_Rmarkdown_Theory.Rmd#L2) headers
+- Programming languages for coding: [Python](https://github.com/ads04r/po2excel), [R](https://github.com/eamena-oxford/eamenaR)
+- [Mermaid](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/data/bulk/temp.md) to create diagrams
+
+
+R + Markdown:
+- [R Markdown](https://github.com/zoometh/thomashuet/tree/main/profiles/oxford/R4A#report-with-r-markdown-)
+- [Quarto](https://github.com/zoometh/thomashuet/blob/main/profiles/oxford/stats/GOA/index.qmd)
 
 ### Files & Folders
 
-* README
-* .gitignore
-* LICENCE
-* ...
+| files      | description                                                                                                     |
+|------------|-----------------------------------------------------------------------------------------------------------------|
+| README.md  | first displayed file in GH. Uses markdown syntax                                                                |
+| .gitignore | list the files/folders that will be ignored in Git operations                                                   |
+| LICENCE    | determine the permissions for any potential reuse of your repository                                            |
 
 ### Issue threads
 
 ### GitHub pages
-
-## Syntaxes
-
-* Markdown
-* YAML
 
 ## Connection
 

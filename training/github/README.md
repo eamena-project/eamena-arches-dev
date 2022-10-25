@@ -27,7 +27,7 @@ Collaboration & Versioning
 ## Git
 > git version control system, version control system
   
-  
+
 ---
 🔎 Distributed version control system for tracking changes to a set of files. Typically used to coordinate the work of programmers who collaborate on source code during software development. The objectives are speed, data integrity and support for distributed and non-linear workflows.
 ---
@@ -39,9 +39,7 @@ Collaboration & Versioning
 
 ![a Git command from a Windows *shell*](../../www/github-cmd-basic.png)
 
-```
-$ git add .; git commit -m "training GitHub" ; git push
-```
+`$ git add .; git commit -m "training GitHub" ; git push`
 
 | command    | description                                                                                                     |
 |------------|-----------------------------------------------------------------------------------------------------------------|
@@ -83,7 +81,11 @@ R + Markdown:
 
 ### Issue threads
 
+https://github.com/eamena-oxford/eamena-arches-dev/issues
+
 ### GitHub pages
+
+https://zoometh.github.io/neonet/results/neonet_atl
 
 ## Connection
 

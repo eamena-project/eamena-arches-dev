@@ -26,7 +26,8 @@ Collaboration & Versioning
 
 ## Git
 > git version control system, version control system
-
+  
+  
 ---
 🔎 Distributed version control system for tracking changes to a set of files. Typically used to coordinate the work of programmers who collaborate on source code during software development. The objectives are speed, data integrity and support for distributed and non-linear workflows.
 ---

@@ -47,7 +47,6 @@ Collaboration & Versioning
 | git commit | Takes the staged snapshot and commits it to the project history                                                 |
 | git push   | Move a local branch to the remote repository (*push upstream*)                                                  |
 
-Clone, Pull request, Forks, etc.
 
 #### from remote to local
 > from *upstream* to *downstream*

@@ -22,7 +22,7 @@ Collaboration & Versioning
 
 ![branches in GitHub](../../www/github-basic-branch.png)
 
-![accepted pull request](../../www/github-basic-pullrequest.png)
+![accepted pull request](../../www/github-basic-pullrequestaccepted.png)
 
 ## Git
 > git version control system, version control system
@@ -58,7 +58,7 @@ Clone, Pull request, Forks, etc.
 | git pull   | Downloads a branch from a remote repository to the local branch                                                 |
 | git clone  | Downloads a copy of an existing Git repository in your local computer                                           |
 
-## GitHub arichitecture
+## GitHub architecture
 
 ### Syntaxes
 

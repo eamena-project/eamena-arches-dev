@@ -54,7 +54,7 @@ Collaboration & Versioning
 | command    | description                                                                                                     |
 |------------|-----------------------------------------------------------------------------------------------------------------|
 | git pull   | Downloads a branch from a remote repository to the local branch                                                 |
-| git clone  | Downloads a copy of an existing Git repository in your local computer                                           |
+| git clone  | Downloads a copy of an existing GitHub repository in your local computer                                           |
 
 ## GitHub architecture
 

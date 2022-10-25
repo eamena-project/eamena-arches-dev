@@ -1,19 +1,12 @@
 # Bulk Upload (BU)  <img src="../../www/bu.png" width='80px' align="right"/>
 
 Bulk upload is a process for uploading **many XLSX** files containing heritage places (HPs) data into the database without going through the graphical user interface. It speeds up data entry.
-
-<p align="center">
-  <img alt="img-name" src="../../www/folder-files.png" width="600">
-  <br>
-    <em>The folder `2021-11-22-B-BIJAN` contains two XLSX files</em>
-</p>
-
 ## BU template file
 
 The last/updated version of the BU template file is hosted on:  
   
 <p align="center">
-GitHub: <https://github.com/eamena-oxford/eamena-arches-dev/blob/main/data/bulk/templates/Bulk Upload template 221025.xlsx><br>
+GitHub: https://github.com/eamena-oxford/eamena-arches-dev/blob/main/data/bulk/templates/Bulk_Upload_template_221025.xlsx<br>
 <s>GitHub: https://github.com/eamena-oxford/eamena-arches-dev/blob/main/data/bulk/templates/E61N30-13-Revised.xlsx</s><br>
 <s>EAMENA DB: https://database.eamena.org/en/bulk-upload/templates/34cfe98e-c2c0-11ea-9026-02e7594ce0a0.xlsx</s><br>
 <s>Google Drive: https://drive.google.com/file/d/1KtZlCB_mdTOPxh1DpFdfeXddjJLTvF1k/view?usp=sharing</s>
@@ -86,6 +79,13 @@ flowchart LR
 
 ## ~~BU process~~
 > ⚠️ This process is no longer in use ⚠️ ~~step-by-step BU procedure from the user-side~~
+
+<p align="center">
+  <img alt="img-name" src="../../www/folder-files.png" width="600">
+  <br>
+    <em>The folder `2021-11-22-B-BIJAN` contains two XLSX files</em>
+</p>
+
 
 Start by creating a root `examples/` folder on **your OneDrive**, or equivalent, create and authorise the DB Manager to write only in this folder. See the 'ideal' file/folder naming/structure on the [examples/](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/output/bulk/examples) folder. 
 

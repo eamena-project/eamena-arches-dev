@@ -361,6 +361,12 @@ display: none;
 </div>
 
 
+<pre class="r"><code>knitr::opts_chunk$set(echo = TRUE)
+# amount of data to store in Gb
+EA.backups &lt;- 36300
+# by type of storage price in $ a Gb/month, in months that have to be paid (minimum storage duration)
+S3.Glacier.Flexible.Retrieval &lt;- c(0.0036, 6)
+S3.Glacier.Deep.Archive  &lt;- c(0.00099, 6)</code></pre>
 <p>Estimation of the EAMENA storage cost in AWS to find the best storage
 service for back-up data. Today, the size of the back-up data is
 3.63^{4} Gb</p>
@@ -387,8 +393,8 @@ service for back-up data. Today, the size of the back-up data is
 </ul>
 <pre class="r"><code>S3.Glacier.by.month &lt;- EA.backups*S3.Glacier.Deep.Archive[1] # by month
 S3.Glacier.minimum.plus &lt;- (S3.Glacier.by.month)*S3.Glacier.Deep.Archive[2] # supplementary cost</code></pre>
-<p>Cost in $/month: <strong>35.937</strong> + supplementary cost:
-215.622</p>
+<p>Cost in $/month: <strong>35.937</strong> <del>+ supplementary cost:
+215.622</del></p>
 <ul>
 <li>Simulation with <a href="https://calculator.aws/" class="uri">https://calculator.aws/</a>:</li>
 </ul>
@@ -425,8 +431,8 @@ S3.Glacier.minimum.plus &lt;- (S3.Glacier.by.month)*S3.Glacier.Deep.Archive[2] #
 </ul>
 <pre class="r"><code>S3.Glacier.by.month &lt;- EA.backups*S3.Glacier.Flexible.Retrieval[1] # by month
 S3.Glacier.minimum.plus &lt;- (S3.Glacier.by.month)*S3.Glacier.Flexible.Retrieval[2] # supplementary cost</code></pre>
-<p>Cost in $/month: <strong>130.68</strong> + supplementary cost:
-784.08</p>
+<p>Cost in $/month: <strong>130.68</strong> <del>+ supplementary cost:
+784.08</del></p>
 <ul>
 <li>Simulation with <a href="https://calculator.aws/" class="uri">https://calculator.aws/</a>:</li>
 </ul>

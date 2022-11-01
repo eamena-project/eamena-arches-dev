@@ -4,7 +4,7 @@ output: html_document
 date: '2022-10-11'
 ---
 
-```{r setup, include=FALSE}
+```{r setup, include=TRUE}
 knitr::opts_chunk$set(echo = TRUE)
 # amount of data to store in Gb
 EA.backups <- 36300
@@ -39,7 +39,7 @@ S3.Glacier.by.month <- EA.backups*S3.Glacier.Deep.Archive[1] # by month
 S3.Glacier.minimum.plus <- (S3.Glacier.by.month)*S3.Glacier.Deep.Archive[2] # supplementary cost
 ```
 
-Cost in \$/month: **`r S3.Glacier.by.month`** + supplementary cost: `r S3.Glacier.minimum.plus`
+Cost in \$/month: **`r S3.Glacier.by.month`** ~~+ supplementary cost: `r S3.Glacier.minimum.plus`~~
 
 -   Simulation with <https://calculator.aws/>:
 
@@ -79,7 +79,7 @@ S3.Glacier.by.month <- EA.backups*S3.Glacier.Flexible.Retrieval[1] # by month
 S3.Glacier.minimum.plus <- (S3.Glacier.by.month)*S3.Glacier.Flexible.Retrieval[2] # supplementary cost
 ```
 
-Cost in \$/month: **`r S3.Glacier.by.month`** + supplementary cost: `r S3.Glacier.minimum.plus`
+Cost in \$/month: **`r S3.Glacier.by.month`** ~~+ supplementary cost: `r S3.Glacier.minimum.plus`~~
 
 -   Simulation with <https://calculator.aws/>:
 

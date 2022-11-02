@@ -2,7 +2,7 @@
 
 ## Timeline
 
-```gantt
+gantt
     title Arches v5.2 to v7
     dateFormat  YYYY-MM-DD
     section Roadmap
@@ -10,7 +10,6 @@
     Test with EAMENA data    : milestone, m1, 2022-12-5, 10d
     Installation v7.1.x      :after a1, 30d
     Test with EAMENA data    : milestone, m2, 2023-01-5, 10d
-```
 
 ## Upgrade Arches v5.2 to v7
 

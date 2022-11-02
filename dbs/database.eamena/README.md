@@ -4,10 +4,11 @@
 
 ```mermaid
 gantt
-    title Arches v5.2 to v7
+    title EAMENA database
     dateFormat  YYYY-MM-DD
-    section EAMENA
+    section Arches v5.2
     EAMENA Arches v5.2       : a0, 2022-11-01, 90d
+    data transfert to v7     : after a1, milestone, m0, 10d
     section Arches v7
     Installation v7.1.1      : a1, 2022-12-01, 30d
     Test with EAMENA data    : milestone, m1, 2022-12-05, 10d

@@ -2,8 +2,7 @@
 
 ## Timeline
 
-```
-gantt
+```gantt
     title Arches v5.2 to v7
     dateFormat  YYYY-MM-DD
     section Roadmap
@@ -23,3 +22,6 @@ flowchart LR
     C(Postgis 3.1.1) --- D(Postgis 3);
     E(ElasticSearch 7.1.1) --> F(ElasticSearch 7.4);
 ```
+legend:
+`---` no upgrade
+`-->` upgrade

@@ -8,7 +8,7 @@ gantt
     dateFormat  YYYY-MM-DD
     section Arches v5.2
     EAMENA Arches v5.2       : a0, 2022-11-01, 90d
-    data transfert to v7     : after a0, milestone, m0, 10d
+    data transfert to v7     : crit, after a0, 10d
     section Arches v7
     Installation v7.1.1      : a1, 2022-12-01, 30d
     Test with EAMENA data    : milestone, m1, 2022-12-05, 10d

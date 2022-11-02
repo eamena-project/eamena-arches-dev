@@ -9,8 +9,8 @@ gantt
     section Arches v5.2
     EAMENA Arches v5.2       : a0, 2022-11-01, 90d
     section Arches v7
-    v7.1.1                   : a1, 2022-12-01, 30d
-    Installation             : milestone, m0, 2022-12-01, 10d
+    v7.1.1                   : a1, 2022-11-07, 57d
+    Installation             : milestone, m0, 2022-11-07, 10d
     Test with EAMENA data    : milestone, m1, 2022-12-10, 10d
     v7.1.x                   : after a1, 30d
     Installation             : milestone, m2, 2023-01-01, 10d

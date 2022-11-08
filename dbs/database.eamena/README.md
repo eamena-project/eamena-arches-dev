@@ -29,6 +29,6 @@ flowchart LR
     C(Postgis 3.1.1) --- D(Postgis 3);
     E(ElasticSearch 7.1.1) --> F(ElasticSearch 7.4);
 ```
-legend:
+legend:  
 `---` no upgrade  
 `-->` upgrade

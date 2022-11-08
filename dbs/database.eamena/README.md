@@ -25,9 +25,9 @@ Needed updates
 
 ```mermaid
 flowchart LR
-    A(Pg 12.12) --- B(Pg 12);
+    A(Pg 12.12) --> B(Pg 14);
     C(Postgis 3.1.1) --- D(Postgis 3);
-    E(ElasticSearch 7.1.1) --> F(ElasticSearch 7.4);
+    E(ElasticSearch 7.1.1) --> F(ElasticSearch 8.3.1);
 ```
 legend:  
 `---` no upgrade  

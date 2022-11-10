@@ -1,0 +1,1 @@
+tail /opt/arches/eamena/eamena/logs/resource_import.log

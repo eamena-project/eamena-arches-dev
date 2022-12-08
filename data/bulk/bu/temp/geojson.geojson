@@ -1,0 +1,7 @@
+{
+"type": "FeatureCollection",
+"name": "geojson",
+"features": [
+{ "type": "Feature", "properties": { }, "geometry": null }
+]
+}

@@ -39,7 +39,7 @@ This online training will be hosted online (ZOOM): "Arches/EAMENA Database Manag
  
 * GitHub: https://github.com/eamena-oxford
   - training material: https://github.com/eamena-oxford/eamena-arches-dev/tree/main/training
-    + IT reference commands: https://github.com/eamena-oxford/eamena-arches-dev/blob/main/training/commands.sh
+    + IT reference commands: https://github.com/eamena-oxford/eamena-arches-dev/blob/main/training/commands.md ~~https://github.com/eamena-oxford/eamena-arches-dev/blob/main/training/commands.sh~~
     + Issue threads:
       + Jordan: https://github.com/eamena-oxford/eamena-arches-dev/issues/2
       + Lebanon: https://github.com/eamena-oxford/eamena-arches-dev/issues/3

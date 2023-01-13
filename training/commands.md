@@ -579,6 +579,11 @@ python manage.py packages -o export_resources -d EAMENA_data
 Following the tutorial: https://www.youtube.com/watch?v=awR4RgJNhVU
 
 ```
+## on your AWS instance
+# autorise the world
+TCP/IP | 8080 | 0.0.0.0/
+TCP/IP | 8080 | ::/0
+## with a SSH connection
 # check your Java version
 java -version
 # create the geoserver/ folder
@@ -600,7 +605,6 @@ cd bin
 sh startup.sh
 # access the geoserver from its public IP
 http://34.243.109.142:8080/geoserver
-```
-
-
+# username = admin
+# password = geoserver
 ```

@@ -10,7 +10,7 @@ See the extend of the different Arches-based projects in the Global South in an 
 Project geometries are stored as GeoJSON in the folder [geojson/](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/projects/arches/geojson), listed in [list-projects.txt](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/projects/arches/list-projects.txt) and rendered using this [R script](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/projects/arches/arches-global-south-projects-1.R).
 ## Kites 🪁
 
-Spatial distribution, topographic and shape analysis
+Spatial distribution of desert kites, topographic and shape analysis
 
 ### GeoJSON files
 

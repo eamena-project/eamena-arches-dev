@@ -6,4 +6,4 @@ http://levant.eamena.training/search?page=1&termFilter=%5B%5B%7B%22inverted%22%3
 
 These are HPs that must be imported into the EAMENA database. The result of this research is exported as a CSV.
 
-The way to do this mapping, is to use the [eamenaR](https://github.com/eamena-oxford/eamenaR#bu-mapping) function `list_mapping_bu()` with the original exported CSV: `C:\Rprojects\eamena-arches-dev\data\bulk\bu\v3\EAMENA_2022-09-26_03-23-29.csv`
+The way to do this mapping, is to use the [eamenaR](https://github.com/eamena-project/eamenaR#bu-mapping) function `list_mapping_bu()` with the original exported CSV: `C:\Rprojects\eamena-arches-dev\data\bulk\bu\v3\EAMENA_2022-09-26_03-23-29.csv`

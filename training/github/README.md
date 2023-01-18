@@ -62,8 +62,8 @@ Collaboration & Versioning
 
 - Markdown, and HTML, for free text
 - [YAML](https://github.com/zoometh/thomashuet/blob/4588894ae1eb6600ad983c313b1d016d8c904593/profiles/oxford/R4A/1_Rmarkdown_Theory.Rmd#L2) headers
-- Programming languages for coding: [Python](https://github.com/ads04r/po2excel), [R](https://github.com/eamena-oxford/eamenaR)
-- [Mermaid](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/data/bulk/temp.md) to create diagrams
+- Programming languages for coding: [Python](https://github.com/ads04r/po2excel), [R](https://github.com/eamena-project/eamenaR)
+- [Mermaid](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bulk/temp.md) to create diagrams
 
 
 R + Markdown:
@@ -80,7 +80,7 @@ R + Markdown:
 
 ### Issue threads
 
-https://github.com/eamena-oxford/eamena-arches-dev/issues
+https://github.com/eamena-project/eamena-arches-dev/issues
 
 ### GitHub pages
 

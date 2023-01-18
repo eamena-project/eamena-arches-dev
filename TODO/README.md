@@ -21,7 +21,7 @@ https://database.eamena.org/en/report/0f7d56e4-df54-419f-b7ba-34f67d65bb14
 
 Develop a Python function to model the quality of HP (or HR) with a radar diagram
 
-https://github.com/eamena-oxford/eamena-arches-5-project/blob/master/eamena/statistics/hr_quality_rec.py
+https://github.com/eamena-project/eamena-arches-5-project/blob/master/eamena/statistics/hr_quality_rec.py
 
 ## Spatial
 

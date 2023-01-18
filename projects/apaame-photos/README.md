@@ -24,17 +24,17 @@ flowchart LR
 ```
 
 The transfer process uses :
-  - a `Python script`, [apaame-metadata.py](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/functions/Python/apaame-metadata.py), with the libraries `exifread` (for EXIF) and `pyavm` (for XMP), to extract metadata from :
-  - a [folder](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/data/photos) containing one or more photographs
-  - and save the metadata of these photographs in a [CSV file](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/projects/apaame-photos/metadata.csv).
+  - a `Python script`, [apaame-metadata.py](https://github.com/eamena-project/eamena-arches-dev/blob/main/functions/Python/apaame-metadata.py), with the libraries `exifread` (for EXIF) and `pyavm` (for XMP), to extract metadata from :
+  - a [folder](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/photos) containing one or more photographs
+  - and save the metadata of these photographs in a [CSV file](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame-photos/metadata.csv).
   
 ## Notes
 
 **EXIF and XMP metadata**
 
 Here are examples of:
-  -[EXIF output](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/projects/apaame-photos/exif_example.txt)  
-  -[XMP output](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/projects/apaame-photos/xmp_example.txt)  
+  -[EXIF output](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame-photos/exif_example.txt)  
+  -[XMP output](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame-photos/xmp_example.txt)  
 
 **ArchDAMS app**
 

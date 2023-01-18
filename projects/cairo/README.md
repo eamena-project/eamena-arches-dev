@@ -7,4 +7,4 @@ Two kinds of data:
 
 ## Textual data
 
-Use of the mapping correspondance table: https://docs.google.com/spreadsheets/d/1nXgz98mGOySgc0Q2zIeT1RvHGNl4WRq1Fp9m5qB8g8k/edit#gid=1083097625, source fields: `cairo` and `cairo_type`, see the dedicated ***eamenaR*** function: https://github.com/eamena-oxford/eamenaR#mapping-file
+Use of the mapping correspondance table: https://docs.google.com/spreadsheets/d/1nXgz98mGOySgc0Q2zIeT1RvHGNl4WRq1Fp9m5qB8g8k/edit#gid=1083097625, source fields: `cairo` and `cairo_type`, see the dedicated ***eamenaR*** function: https://github.com/eamena-project/eamenaR#mapping-file

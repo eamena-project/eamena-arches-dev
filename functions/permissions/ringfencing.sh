@@ -9,22 +9,22 @@ PROJECT="my_project"
 
 # all JS
 cd /home/archesadmin/$PROJECT/$PROJECT/media/js/views/components/functions
-wget https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/functions/ring-fencing/files/ringfencing.js
+wget https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/functions/ring-fencing/files/ringfencing.js
 # all HTM
 cd /home/archesadmin/$PROJECT/$PROJECT/templates/views/components/functions/
-wget https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/functions/ring-fencing/files/ringfencing.htm
+wget https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/functions/ring-fencing/files/ringfencing.htm
 # all PY
 cd /home/archesadmin/$PROJECT/$PROJECT/functions/
-wget https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/functions/ring-fencing/files/ringfencing.py
+wget https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/functions/ring-fencing/files/ringfencing.py
 # for views
 cd /home/archesadmin/$PROJECT/$PROJECT/
 mkdir views # if not extist
 sudo chown $username:root ./views
 cd views
-wget https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/functions/ring-fencing/files/userandgroups.py
+wget https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/functions/ring-fencing/files/userandgroups.py
 # for commands
 cd /home/archesadmin/$PROJECT/$PROJECT/management/commands
-wget https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/functions/ring-fencing/files/resave_all_resources.py
+wget https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/functions/ring-fencing/files/resave_all_resources.py
 
 # register the function in the Pg 'functions' table
 cd /home/archesadmin/$PROJECT

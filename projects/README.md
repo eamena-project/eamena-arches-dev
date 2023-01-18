@@ -2,19 +2,19 @@
 
 ## APAAME archive
 
-See: https://github.com/eamena-oxford/eamena-arches-dev/tree/main/projects/apaame-photos
+See: https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/apaame-photos
 ## Arches Global South Projects
 
-See the extend of the different Arches-based projects in the Global South in an [interactive map](https://eamena-oxford.github.io/eamena-arches-dev/projects/arches/arches-global-south.html)
+See the extend of the different Arches-based projects in the Global South in an [interactive map](https://eamena-project.github.io/eamena-arches-dev/projects/arches/arches-global-south.html)
 
-Project geometries are stored as GeoJSON in the folder [geojson/](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/projects/arches/geojson), listed in [list-projects.txt](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/projects/arches/list-projects.txt) and rendered using this [R script](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/projects/arches/arches-global-south-projects-1.R).
+Project geometries are stored as GeoJSON in the folder [geojson/](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/arches/geojson), listed in [list-projects.txt](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/arches/list-projects.txt) and rendered using this [R script](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/arches/arches-global-south-projects-1.R).
 ## Kites 🪁
 
 Spatial distribution of desert kites, topographic and shape analysis
 
 ### GeoJSON files
 
-The GeoJSON files are stored in https://github.com/eamena-oxford/eamena-arches-dev/tree/main/data/geojson/kites
+The GeoJSON files are stored in https://github.com/eamena-project/eamena-arches-dev/tree/main/data/geojson/kites
 
 ### EAMENA DB
 

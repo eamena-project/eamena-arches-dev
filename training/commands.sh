@@ -69,8 +69,8 @@ usermod -aG sudo archesadmin
 # move to archesadmin account
 cd /home/archesadmin/
 # move to GitHub, copy the URL of the raw version of the install script, and download it
-wget https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/training/install_and_apache_and_load_pkg.sh
-# ... see: https://github.com/eamena-oxford/eamena-arches-dev/blob/main/training/install_and_apache_and_load_pkg.sh
+wget https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/training/install_and_apache_and_load_pkg.sh
+# ... see: https://github.com/eamena-project/eamena-arches-dev/blob/main/training/install_and_apache_and_load_pkg.sh
 # edit 'install_and_apache_and_load_pkg.sh' file with an editor (ex: vim) in sudo mode
 vim install_and_apache_and_load_pkg.sh
 # insert  (ESC + I) the following variables:
@@ -173,7 +173,7 @@ venv
 # move to the project/ folder
 cd $project_name
 # clone the 'eamena-arches-package' package
-git clone https://github.com/eamena-oxford/eamena-arches-package.git
+git clone https://github.com/eamena-project/eamena-arches-package.git
 # change permission of 'eamena-arches-package' package to allow archesadmin
 sudo chown -R $username:root ./eamena-arches-package
 # mv to the business_data/ folder
@@ -208,7 +208,7 @@ sudo su
 # move to the command/ folder
 cd /opt/arches/eamena/eamena/management/commands
 # move to GitHub, copy the URL of the raw version of the script (csv to jsonl), and download it
-wget https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/training/ids_to_json.py
+wget https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/training/ids_to_json.py
 # move to arches/ folder
 cd /opt/arches
 # activate env
@@ -291,17 +291,17 @@ mv ./card_components ./cards
 # import new cards
 # HTM  file in cards/
 cd /home/$username/$project_name/$project_name/templates/views/components/cards
-curl -O https://raw.githubusercontent.com/eamena-oxford/eamena-arches-5-project/master/eamena/pkg/extensions/card_components/eamena-default-card/eamena-default-card.htm
+curl -O https://raw.githubusercontent.com/eamena-project/eamena-arches-5-project/master/eamena/pkg/extensions/card_components/eamena-default-card/eamena-default-card.htm
 # ... eamena-default-card.htm, and change ownership & permission
 chown -R $username:$username ./eamena-default-card.htm && chmod 644 ./eamena-default-card.htm
 # JS related file in media/
 cd /home/$username/$project_name/$project_name/media/js/views/components/card_components
-curl -O https://raw.githubusercontent.com/eamena-oxford/eamena-arches-5-project/master/eamena/pkg/extensions/card_components/eamena-default-card/eamena-default-card.js
+curl -O https://raw.githubusercontent.com/eamena-project/eamena-arches-5-project/master/eamena/pkg/extensions/card_components/eamena-default-card/eamena-default-card.js
 # ... eamena-default-card.js, and change ownership & permission
 chown -R $username:$username ./eamena-default-card.js && chmod 644 ./eamena-default-card.js
 # JSON related file in $project_name/
 cd /home/$username/$project_name/$project_name
-curl -O https://raw.githubusercontent.com/eamena-oxford/eamena-arches-5-project/master/eamena/card_components
+curl -O https://raw.githubusercontent.com/eamena-project/eamena-arches-5-project/master/eamena/card_components
 # ... eamena-default-card.json, and change ownership & permission
 chown -R $username:$username ./card_components && chmod 644 ./card_components
 

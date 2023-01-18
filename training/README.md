@@ -37,15 +37,15 @@ This online training will be hosted online (ZOOM): "Arches/EAMENA Database Manag
 * Part 2 slides:
   - https://docs.google.com/presentation/d/1Si44scv7N9XxaGBCKYyRMorDnrj6gc362ZHQ-622cfM/edit?usp=sharing
  
-* GitHub: https://github.com/eamena-oxford
-  - training material: https://github.com/eamena-oxford/eamena-arches-dev/tree/main/training
-    + IT reference commands: https://github.com/eamena-oxford/eamena-arches-dev/blob/main/training/commands.md ~~https://github.com/eamena-oxford/eamena-arches-dev/blob/main/training/commands.sh~~
+* GitHub: https://github.com/eamena-project
+  - training material: https://github.com/eamena-project/eamena-arches-dev/tree/main/training
+    + IT reference commands: https://github.com/eamena-project/eamena-arches-dev/blob/main/training/commands.md ~~https://github.com/eamena-project/eamena-arches-dev/blob/main/training/commands.sh~~
     + Issue threads:
-      + Jordan: https://github.com/eamena-oxford/eamena-arches-dev/issues/2
-      + Lebanon: https://github.com/eamena-oxford/eamena-arches-dev/issues/3
-      + Palestine: https://github.com/eamena-oxford/eamena-arches-dev/issues/4
+      + Jordan: https://github.com/eamena-project/eamena-arches-dev/issues/2
+      + Lebanon: https://github.com/eamena-project/eamena-arches-dev/issues/3
+      + Palestine: https://github.com/eamena-project/eamena-arches-dev/issues/4
       
-  - Arches/EAMENA package: https://github.com/eamena-oxford/eamena-arches-package
+  - Arches/EAMENA package: https://github.com/eamena-project/eamena-arches-package
 
 
 ### Part 1/2

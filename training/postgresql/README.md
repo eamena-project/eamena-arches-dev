@@ -8,7 +8,7 @@
 For a given HP, here `EAMENA-0182033`, copy its UUID from the Arches interface
 
 <p align="center">
-  <img alt="img-name" src="../../www/ids-eamenaid-uuid" width="700">
+  <img alt="img-name" src="../../www/ids-eamenaid-uuid.png" width="700">
   <br>
     <em>screenshot of the Arches interface, copy the UUID in the URL of `EAMENA-0182033` </em>
 </p>

@@ -143,6 +143,12 @@ nodetype_id
 ================================================================================
 ```
 
+And/Or run:
+
+```
+SELECT * FROM values WHERE conceptid::text = '1339bc8d-247f-4c72-994c-28aa61e4fe0d'
+```
+
 
   
 ---

@@ -41,13 +41,20 @@ Then copy all these data by clicking on the top left corner of the Data Output (
 Paste all this data in a text editor, for example Sublime:
 
 <p align="center">
-  <img alt="img-name" src="../../www/texteditor-hp-data-all.png" width="700">
+  <img alt="img-name" src="../../www/texteditor-hp-data-all.png" width="1000">
   <br>
     <em>paste all the data of `EAMENA-0182033` to a text editor</em>
 </p>
 
 We will take advantage of the UUID; by definition they are unique. So, if we search for one in particular, we will be sure we get the right one. 
 
+<p align="center">
+  <img alt="img-name" src="../../www/texteditor-hp-data-all-find.png" width="1000">
+  <br>
+    <em>search for `a2e166f6-725d-46e5-98a5-e17ed72a77c2` in the text editor</em>
+</p>
+
+The `a2e166f6-725d-46e5-98a5-e17ed72a77c2` value has been found, let's copy the key of this value (`38cff73b-c77b-11ea-a292-02e7594ce0a0`) here below in yellow and light yellow
 
 ## Issues
 
@@ -60,6 +67,18 @@ There are 3 different concepts with exactly the same value (`Pre-Dynastic (Egypt
   <br>
     <em>screenshot of the dedicated <a href="https://community.archesproject.org/t/duplicated-values-find-and-replace-bis/1811?u=zoometh">Arches forum's thread</a> </em>
 </p>
+
+In the 
+
+<p align="center">
+  <img alt="img-name" src="../../www/postgres-issue-1-duplicates.png" width="700">
+  <br>
+    <em>screenshot of the dedicated <a href="https://community.archesproject.org/t/duplicated-values-find-and-replace-bis/1811?u=zoometh">Arches forum's thread</a> </em>
+</p>
+
+
+
+
 
 #### Solution
 

@@ -139,21 +139,6 @@ ontologyclass
   http://www.ics.forth.gr/isl/CRMinf/I4_Proposition_Set
 sortorder
   0
-================================================================================
-(ENV) root@ip-172-31-39-197:/opt/arches/eamena# python manage.py whatisthis 1339bc8d-247f-4c72-994c-28aa61e4fe0d
-================================================================================
-This UUID is the primary key for 1 object:
---------------------------------------------------------------------------------
-Concept object (1339bc8d-247f-4c72-994c-28aa61e4fe0d)
-_state
-  <django.db.models.base.ModelState object at 0xffff8e7fd7f0>
-conceptid
-  1339bc8d-247f-4c72-994c-28aa61e4fe0d
-legacyoid
-  http://localhost:8000/1339bc8d-247f-4c72-994c-28aa61e4fe0d
-nodetype_id
-  Concept
-================================================================================
 ```
 
 Now the second `conceptid`:

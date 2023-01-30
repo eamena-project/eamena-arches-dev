@@ -2,7 +2,7 @@
 
 ## PeriodO
 
-
+[README](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/periodo/README.md)
 
 ## APAAME archive
 

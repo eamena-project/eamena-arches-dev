@@ -1,1 +1,49 @@
-{"start": {"in": {"year": "-4999"}, "label": "5000 BC"}, "type": "Period", "language": "http://lexvo.org/id/iso639-1/en", "id": "p0cp44786m7", "localizedLabels": {"en": ["Predynastic Period"]}, "source": {"partOf": "http://www.worldcat.org/oclc/45184072", "locator": "page 8"}, "spatialCoverage": [{"id": "http://www.wikidata.org/entity/Q79", "label": "Egypt"}], "label": "Predynastic Period", "spatialCoverageDescription": "Ancient Egypt", "stop": {"in": {"year": "-2919"}, "label": "2920 BC"}, "languageTag": "en", "authority": "p0cp447", "@context": ["http://n2t.net/ark:/99152/p0c", {"@base": "http://n2t.net/ark:/99152/"}], "primaryTopicOf": {"id": "p0cp44786m7.json", "inDataset": {"id": "p0d", "changes": "p0h#changes"}}}
+{
+    "start": {
+      "in": {
+        "year": "-4999"
+      },
+      "label": "5000 BC"
+    },
+    "type": "Period",
+    "language": "http://lexvo.org/id/iso639-1/en",
+    "id": "p0cp44786m7",
+    "localizedLabels": {
+      "en": [
+        "Predynastic Period"
+      ]
+    },
+    "source": {
+      "partOf": "http://www.worldcat.org/oclc/45184072",
+      "locator": "page 8"
+    },
+    "spatialCoverage": [
+      {
+        "id": "http://www.wikidata.org/entity/Q79",
+        "label": "Egypt"
+      }
+    ],
+    "label": "Predynastic Period",
+    "spatialCoverageDescription": "Ancient Egypt",
+    "stop": {
+      "in": {
+        "year": "-2919"
+      },
+      "label": "2920 BC"
+    },
+    "languageTag": "en",
+    "authority": "p0cp447",
+    "@context": [
+      "http://n2t.net/ark:/99152/p0c",
+      {
+        "@base": "http://n2t.net/ark:/99152/"
+      }
+    ],
+    "primaryTopicOf": {
+      "id": "p0cp44786m7.json",
+      "inDataset": {
+        "id": "p0d",
+        "changes": "p0h#changes"
+      }
+    }
+  }

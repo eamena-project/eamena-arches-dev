@@ -6,5 +6,5 @@ The `arch-oca` project, host by the [Oxford ARC](https://www.arc.ox.ac.uk/home),
 ---
 
 user registration: https://www.arc.ox.ac.uk/arc-user-registration-page  
-contact coordinator: thomas.huet@arch.ox.ac.uk ([EAMENA project](https://github.com/eamena-project))  
+contact project owner: thomas.huet@arch.ox.ac.uk ([EAMENA project](https://github.com/eamena-project))  
 contact ARC: support@arc.ox.ac.uk  

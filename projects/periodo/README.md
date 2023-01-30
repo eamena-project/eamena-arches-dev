@@ -18,7 +18,7 @@ EAMENA registers the periods (a particular instance of the concepts) as graphs, 
 A template of the `Predynastic `JSON is here: https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/periodo/periodo-period-cp44786m7.json [^1].
 
 <p align="center">
-  <img alt="img-name" src="../../www/periodo-json-template-predynastic.png" width="500">
+  <img alt="img-name" src="../../www/periodo-json-template-predynastic.png" width="400">
   <br>
     <em>screenshot of the `Predynastic` record in PeriodO</em>
 </p>

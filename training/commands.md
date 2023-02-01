@@ -578,33 +578,75 @@ python manage.py packages -o export_resources -d EAMENA_data
 
 Following the tutorial: https://www.youtube.com/watch?v=awR4RgJNhVU
 
+Ubuntu 20.04 or Ubuntu 10.04
+
+On your AWS instance, autorise the world
+
 ```
-## on your AWS instance
-# autorise the world
 TCP/IP | 8080 | 0.0.0.0/
 TCP/IP | 8080 | ::/0
-## with a SSH connection
-# check your Java version
+```
+Check your Java version, or even if Java is installed
+
+```
 java -version
-# create the geoserver/ folder
+```
+
+If Java is not installed[^1], install it doing:
+
+```
+sudo apt install default-jre
+```
+
+create a geoserver/ folder and move in it
+
+```
 mkdir geoserver
-# move to the geoserver/ folder
 cd geoserver
-# download the binaries from https://geoserver.org
-wget https://sourceforge.net/projects/geoserver/files/GeoServer/2.22.0/geoserver-2.22.0-bin.zip
-# unzip the geoserver
-unzip geoserver-2.22.0-bin.zip
-# setup the environment variables
-echo "export GEOSERVER_HOME=/home/archesadmin/my_project/geoserver" >> ~/.profile
+```
+
+download the binaries from https://geoserver.org
+
+```
+wget https://sourceforge.net/projects/geoserver/files/GeoServer/2.22.1/geoserver-2.22.1-bin.zip
+```
+
+unzip the geoserver
+
+```
+unzip geoserver-2.22.1-bin.zip
+```
+
+setup the environment variables
+
+```
+~~echo "export GEOSERVER_HOME=/Downloads/" >> ~/.profile~~
+echo "export GEOSERVER_HOME=/opt/arches/geoserver" >> ~/.profile
 . ~/.profile
-# change the ownership
-sudo chown -R root /home/archesadmin/my_project/geoserver/
-# go to the bin/ folder
+```
+
+change the ownership of the geoserver/ folder
+
+```
+sudo chown -R root /opt/arches/geoserver
+```
+
+go to the bin/ folder
+
+```
 cd bin
-# run the install shell script
-sh startup.sh
+```
+
+run the install shell script
+
+```
+nohup sh startup.sh &
+```
+
 # access the geoserver from its public IP
 http://34.243.109.142:8080/geoserver
 # username = admin
 # password = geoserver
 ```
+
+[^1]: run `java -version`. If not installed, the message will be: `Command 'java' not found, ...`

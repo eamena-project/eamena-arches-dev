@@ -22,7 +22,7 @@ flowchart LR
     subgraph ide1 [<b>F</b>indable, <b>A</b>ccessible]
     A[(EAMENA<br>DB)];
     end
-    A[(EAMENA<br>DB)] <--data<br>exchange--> B{{"eamenaR"}}:::eamenaRpkg;
+    A[(EAMENA<br>DB)] <---> B{{"eamenaR"}}:::eamenaRpkg;
     subgraph ide2 [<b>I</b>nteroperable, <b>R</b>eusable]
     B;
     end

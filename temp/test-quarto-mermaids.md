@@ -21,6 +21,7 @@ flowchart LR
 flowchart TB
     subgraph ide1 [Findable<br>Accessible]
     A[(EAMENA<br>DB)];
+    end
     subgraph ide2 [Interoperable<br>Reusable]
     B --data<br>management--> B;
     end

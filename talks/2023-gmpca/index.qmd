@@ -1,20 +1,16 @@
 ---
 title: "EAMENA"
 subtitle: "**A massive and open data information system for endangered archaeology and cultural heritage**"
-author: 
-  - Bill Finlayson, Bijan Rouhani, Thomas Huet, Michael Fradley, Sayantani Neogi, Melisa Holloway, Andrew Wilson
+author: "Bill Finlayson, Bijan Rouhani, Thomas Huet, Michael Fradley, Sayantani Neogi, Melisa Holloway, Andrew Wilson"
 format:
   revealjs: 
     slide-number: true
     chalkboard: true
     scrollable: true
-    preview-links: true
-    logo: inst-uni-oxford_.png
-    # logo: "<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-oxford_.png' style='height: 70px; vertical-align:middle'>"
+    logo: images/inst-uni-oxford_.png
     css: styles.css
     # footer: "EAMENA project <https://github.com/eamena-project>"
     margin: 0.01
-    width: 0.01
 ---
 
 ## {}
@@ -25,10 +21,6 @@ format:
 
 library(eamenaR)
 ```
-
-## TRY
-
-![Oxford Logo](../../www/inst-uni-oxford_.png)
 
 
 ## ***eamenaR*** <a href="https://github.com/eamena-project/eamenaR"><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px; vertical-align:middle;margin: 0 0 0 0; background: transparent;" class="demo-logo"></a>

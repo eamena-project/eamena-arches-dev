@@ -20,7 +20,7 @@ flowchart LR
 ```mermaid
 flowchart TB
     subgraph ide1 [Findable<br>Accessible]
-    A[(EAMENA<br>DB)]
+    A[(EAMENA<br>DB)];
     subgraph ide2 [Interoperable<br>Reusable]
     B --data<br>management--> B;
     end

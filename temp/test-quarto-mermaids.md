@@ -19,7 +19,7 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-    subgraph ide1 [ <b>F<\b>indable, Accessible ]
+    subgraph ide1 [ <b>F</b>indable, Accessible ]
     A[(EAMENA<br>DB)];
     end
     A[(EAMENA<br>DB)] <--data<br>exchange--> B{{"eamenaR"}}:::eamenaRpkg;

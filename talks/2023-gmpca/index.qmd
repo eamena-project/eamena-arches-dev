@@ -12,7 +12,7 @@ format:
     logo: "../../www/inst-uni-oxford_.png"
     css: "../styles.css"
     footer: "EAMENA project <https://github.com/eamena-project>"
-    margin: 0.5
+    margin: 0.01
 ---
 
 ## {}
@@ -29,14 +29,25 @@ library(eamenaR)
 ![Oxford Logo](../../www/inst-uni-oxford_.png)
 
 
-## ***eamenaR*** <a href="https://github.com/eamena-project/eamenaR"><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px;margin: 0 0 0 0; background: transparent;" class="demo-logo"></a>
+## ***eamenaR*** <a href="https://github.com/eamena-project/eamenaR"><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px; vertical-align:middle;margin: 0 0 0 0; background: transparent;" class="demo-logo"></a>
 
 A package used for:
 
 * Data exchange between the EAMENA DB and third party apps
 * Audit and analyse the EAMENA DB content
-
-## ***eamenaR*** <a href="https://github.com/eamena-project/eamenaR"><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px;margin: 0 0 0 0; background: transparent;" class="demo-logo"></a>
+  
+  
+```{mermaid}
+flowchart LR
+    A[(EAMENA<br>DB)] <--data<br>exchange--> B{{"eamenaR"}}:::eamenaRpkg;
+    B --data<br>management--> B;
+    B <--data<br>exchange--> C((third part<br>app));
+    B --"output"--> D[maps<br>charts<br>listings<br>...];
+    classDef eamenaRpkg fill:#e3c071;
+```
+  
+  
+## ***eamenaR*** <a href="https://github.com/eamena-project/eamenaR"><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px; vertical-align:middle;margin: 0 0 0 0; background: transparent;" class="demo-logo"></a>
 
 An R package hosted on GitHub:
 
@@ -44,7 +55,7 @@ An R package hosted on GitHub:
 * <a href="https://github.com"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" style="height: 80px; margin: 0 0 0 0; background: transparent;" class="demo-logo"></a> GitHub is the 🔝 popular web-platform for source code management and software development (with over 128 million public repositories)
 
 
-## ***eamenaR*** package <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px">
+## ***eamenaR*** package <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px; vertical-align:middle">
 
 * Easy to install and to load:
 
@@ -55,7 +66,15 @@ library(eamenaR)
 
 * The documentation of the package 25**+** functions is available online and regularly updated
 
-## ***eamenaR*** package <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px">
+<p align="center">
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/eamenaR-functions-doc.png" width="700">
+
+</p>
+
+
+
+## ***eamenaR*** package <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px; vertical-align:middle">
 
 It creates outputs like maps for heritage places:
 
@@ -70,7 +89,7 @@ geojson_map(map.name = "caravanserail", export.plot = T, fig.width = 15, fig.hei
 
 </p>
 
-## ***eamenaR*** package <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px">
+## ***eamenaR*** package <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px; vertical-align:middle">
 
 Or maps for paths between heritage places
 
@@ -84,7 +103,7 @@ geojson_map_path(map.name = "caravanserail_paths", export.plot = T, fig.width = 
 
 </p>
 
-## ***eamenaR*** package <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px">
+## ***eamenaR*** package <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px; vertical-align:middle">
 
 And elevation profiles :
 
@@ -101,7 +120,7 @@ geojson_map_path(geojson.path = "C:/Rprojects/eamenaR/inst/extdata/caravanserail
 
 </p>
 
-## ***eamenaR*** package <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px">
+## ***eamenaR*** package <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px; vertical-align:middle">
 
 It also create basic statistics:
 
@@ -117,7 +136,7 @@ gridExtra::grid.arrange(p1, p2, ncol = 2, widths = c(1, 2))
 
 </p>
 
-## ***eamenaR*** package <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px">
+## ***eamenaR*** package <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px; vertical-align:middle">
 
 And interactive charts or maps with <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-plotly.png" style="height: 50px; vertical-align:middle"> and <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-leaflet.png" style="height: 50px; vertical-align:middle">:
 
@@ -137,7 +156,7 @@ And interactive charts or maps with <img src="https://raw.githubusercontent.com/
 ::::
 
 
-## ***eamenaR*** package <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px">
+## ***eamenaR*** package <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px; vertical-align:middle">
 
 And many other ouptuts:
 

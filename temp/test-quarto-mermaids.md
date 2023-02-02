@@ -26,7 +26,5 @@ flowchart LR
     subgraph ide2 [<b>I</b>nteroperable, <b>R</b>eusable]
     B;
     end
-    B <--data<br>exchange--> C((third part<br>app));
-    B --"output"--> D[maps<br>charts<br>listings<br>...];
     classDef eamenaRpkg fill:#e3c071;
 ```

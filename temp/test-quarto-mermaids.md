@@ -19,8 +19,9 @@ flowchart LR
 
 ```mermaid
 flowchart TB
-    c1-->a2
-    subgraph ide1 [one]
-    a1-->a2
+    subgraph ide1 [Findable<br>Accessible]
+    A[(EAMENA<br>DB)]
+    subgraph ide2 [Interoperable<br>Reusable]
+    B --data<br>management--> B;
     end
 ```

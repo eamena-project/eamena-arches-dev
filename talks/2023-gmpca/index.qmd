@@ -9,10 +9,12 @@ format:
     chalkboard: true
     scrollable: true
     preview-links: true
-    logo: "../../www/inst-uni-oxford_.png"
-    css: "../styles.css"
-    footer: "EAMENA project <https://github.com/eamena-project>"
+    logo: inst-uni-oxford_.png
+    # logo: "<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-oxford_.png' style='height: 70px; vertical-align:middle'>"
+    css: styles.css
+    # footer: "EAMENA project <https://github.com/eamena-project>"
     margin: 0.01
+    width: 0.01
 ---
 
 ## {}
@@ -36,12 +38,9 @@ A package used for:
 * Data exchange between the EAMENA DB and third party apps
 * Audit and analyse the EAMENA DB content
 
-
-
-  
 <p align="center">
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR-workflow.png" width="500">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR-workflow.png" width="600">
 
 </p>
 
@@ -63,7 +62,7 @@ devtools::install_github("eamena-project/eamenaR")
 library(eamenaR)
 ```
 
-* The documentation of the package 25**+** functions is available online and regularly updated
+* Regularly updated online documentation
 
 <p align="center">
 
@@ -177,12 +176,13 @@ And many other ouptuts:
 ## ***eamenaR*** package <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px; vertical-align:middle">
 
 
-
-
-## Code
-
-When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:
-
-```{r}
-1 + 1
+```{mermaid}
+flowchart LR
+  A[Hard edge] --> B(Round edge)
+  B --> C{Decision}
+  C --> D[Result one]
+  C --> E[Result two]
 ```
+
+
+

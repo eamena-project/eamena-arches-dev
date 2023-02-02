@@ -94,7 +94,6 @@
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto.css" id="theme">
-  <link rel="stylesheet" href="../styles.css">
   <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -417,24 +416,9 @@
 <li>Data exchange between the EAMENA DB and third party apps</li>
 <li>Audit and analyse the EAMENA DB content</li>
 </ul>
-<div class="cell" data-reveal="true">
-<div class="cell-output-display">
-<div>
-<p>
-</p><pre class="mermaid" data-tooltip-selector="#mermaid-tooltip-1">flowchart LR
-    A[(EAMENA&lt;br&gt;DB)] &lt;--data&lt;br&gt;exchange--&gt; B{{"eamenaR"}}:::eamenaRpkg;
-    B --data&lt;br&gt;management--&gt; B;
-    B &lt;--data&lt;br&gt;exchange--&gt; C((third part&lt;br&gt;app));
-    B --"output"--&gt; D[maps&lt;br&gt;charts&lt;br&gt;listings&lt;br&gt;...];
-    classDef eamenaRpkg fill:#e3c071;
-</pre>
-<div id="mermaid-tooltip-1" class="mermaidTooltip">
-
-</div>
+<p align="center">
+</p><p><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR-workflow.png" width="600"></p>
 <p></p>
-</div>
-</div>
-</div>
 </section>
 <section id="eamenar-1" class="slide level2">
 <h2><strong><em>eamenaR</em></strong> <a href="https://github.com/eamena-project/eamenaR"><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px; vertical-align:middle;margin: 0 0 0 0; background: transparent;" class="demo-logo"></a></h2>
@@ -452,10 +436,10 @@
 <div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"eamena-project/eamenaR"</span>)</span>
 <span id="cb1-2"><a href="#cb1-2"></a><span class="fu">library</span>(eamenaR)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
-<li>The documentation of the package 25<strong>+</strong> functions is available online and regularly updated</li>
+<li>Regularly updated online documentation</li>
 </ul>
 <p align="center">
-</p><p><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR-functions-doc.png" width="700"></p>
+</p><p><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR-functions-doc.png" width="500"></p>
 <p></p>
 </section>
 <section id="eamenar-package-1" class="slide level2">
@@ -537,29 +521,32 @@
 </div>
 </div>
 </section>
-<section id="bullets" class="slide level2">
-<h2>Bullets</h2>
-<p>When you click the <strong>Render</strong> button a document will be generated that includes:</p>
-<ul>
-<li>Content authored with markdown</li>
-<li>Output from executable code</li>
-</ul>
-</section>
-<section id="code" class="slide level2">
-<h2>Code</h2>
-<p>When you click the <strong>Render</strong> button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:</p>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
-</div>
-</div>
+<section id="eamenar-package-7" class="slide level2">
+<h2><strong><em>eamenaR</em></strong> package <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px; vertical-align:middle"></h2>
+<div class="cell" data-reveal="true">
+<div class="cell-output-display">
+<div>
+<p>
+</p><pre class="mermaid" data-tooltip-selector="#mermaid-tooltip-1">flowchart LR
+  A[Hard edge] --&gt; B(Round edge)
+  B --&gt; C{Decision}
+  C --&gt; D[Result one]
+  C --&gt; E[Result two]
+</pre>
+<div id="mermaid-tooltip-1" class="mermaidTooltip">
 
-<img src="../../www/inst-uni-oxford_.png" class="slide-logo r-stretch"><div class="footer footer-default">
-<p>EAMENA project <a href="https://github.com/eamena-project" class="uri">https://github.com/eamena-project</a></p>
 </div>
-</section>
+<p></p>
+</div>
+</div>
+</div>
+<p><img src="<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-oxford_.png' style='height: 70px; vertical-align:middle'>” class=“slide-logo” /></p>
+<div class=" footer="" footer-default"="">
+
+</p></section></div>
+
     </div>
-  </div>
+  
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
   <script src="index_files/libs/revealjs/dist/reveal.js"></script>
@@ -737,7 +724,7 @@
         // The "normal" size of the presentation, aspect ratio will be preserved
         // when the presentation is scaled to fit different resolutions. Can be
         // specified using percentage units.
-        width: 1050,
+        width: 1.0e-2,
 
         height: 700,
 

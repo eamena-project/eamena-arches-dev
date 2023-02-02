@@ -19,12 +19,12 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-    subgraph ide1 [Findable, Accessible]
+    subgraph ide1 [ Findable, Accessible ]
     A[(EAMENA<br>DB)];
     end
     A[(EAMENA<br>DB)] <--data<br>exchange--> B{{"eamenaR"}}:::eamenaRpkg;
-    subgraph ide2 [Interoperable, Reusable]
-    B --data<br>management--> B;
+    subgraph ide2 [ Interoperable, Reusable ]
+    B;
     end
     classDef eamenaRpkg fill:#e3c071;
 ```

@@ -1,0 +1,172 @@
+---
+title: "EAMENA"
+subtitle: "**A massive and open data information system for endangered archaeology and cultural heritage**"
+author: 
+  - Bill Finlayson, Bijan Rouhani, Thomas Huet, Michael Fradley, Sayantani Neogi, Melisa Holloway, Andrew Wilson
+format:
+  revealjs: 
+    slide-number: true
+    chalkboard: true
+    scrollable: true
+    preview-links: true
+    logo: "../../www/inst-uni-oxford_.png"
+    css: "../styles.css"
+    footer: "EAMENA project <https://github.com/eamena-project>"
+    margin: 0.5
+---
+
+## {}
+
+```{r}
+#| echo: false
+#| warning: false
+
+library(eamenaR)
+```
+
+## TRY
+
+![Oxford Logo](../../www/inst-uni-oxford_.png)
+
+
+## ***eamenaR*** <a href="https://github.com/eamena-project/eamenaR"><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px;margin: 0 0 0 0; background: transparent;" class="demo-logo"></a>
+
+A package used for:
+
+* Data exchange between the EAMENA DB and third party apps
+* Audit and analyse the EAMENA DB content
+
+## ***eamenaR*** <a href="https://github.com/eamena-project/eamenaR"><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px;margin: 0 0 0 0; background: transparent;" class="demo-logo"></a>
+
+An R package hosted on GitHub:
+
+* <a href="https://www.r-project.org/"><img src="https://www.r-project.org/logo/Rlogo.svg" alt="" style="height: 80px; margin: 0 0 0 0; background: transparent;" class="demo-logo"></a> is a scripting language for data science is the 1️⃣<sup>st</sup> used by archaeologists, and the 18<sup>th</sup> worldwide
+* <a href="https://github.com"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" style="height: 80px; margin: 0 0 0 0; background: transparent;" class="demo-logo"></a> GitHub is the 🔝 popular web-platform for source code management and software development (with over 128 million public repositories)
+
+
+## ***eamenaR*** package <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px">
+
+* Easy to install and to load:
+
+```{.r }
+devtools::install_github("eamena-project/eamenaR")
+library(eamenaR)
+```
+
+* The documentation of the package 25**+** functions is available online and regularly updated
+
+## ***eamenaR*** package <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px">
+
+It creates outputs like maps for heritage places:
+
+```{.r }
+geojson_map(map.name = "caravanserail", export.plot = T, fig.width = 15, fig.height = 10)
+```
+
+
+<p align="center">
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/caravanserail.png" width="700">
+
+</p>
+
+## ***eamenaR*** package <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px">
+
+Or maps for paths between heritage places
+
+```{.r }
+geojson_map_path(map.name = "caravanserail_paths", export.plot = T, fig.width = 15, fig.height = 10)
+```
+
+<p align="center">
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/caravanserail_paths.png" width="700">
+
+</p>
+
+## ***eamenaR*** package <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px">
+
+And elevation profiles :
+
+```{.r }
+geojson_addZ()
+geojson_map_path(geojson.path = "C:/Rprojects/eamenaR/inst/extdata/caravanserailZ.geojson",
+                 routes = c(0, 1, 2, 3, 4),
+                 export.type = "profile")
+```
+
+<p align="center">
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/paths_profile.png" width="700">
+
+</p>
+
+## ***eamenaR*** package <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px">
+
+It also create basic statistics:
+
+```{.r }
+p1 <- geojson_measurements(stat.name = "areas")
+p2 <- geojson_measurements(stat.name = "areas_by_routes", by.routes = T)
+gridExtra::grid.arrange(p1, p2, ncol = 2, widths = c(1, 2))
+```
+
+<p align="center">
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/areas_sbs.png" width="700">
+
+</p>
+
+## ***eamenaR*** package <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px">
+
+And interactive charts or maps with <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-plotly.png" style="height: 50px; vertical-align:middle"> and <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-leaflet.png" style="height: 50px; vertical-align:middle">:
+
+:::: {.columns}
+
+::: {.column width="50%"}
+![Paths between caravanserais](https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/paths_map_route_1.png){height=350px}
+
+:::
+
+::: {.column width="50%"}
+![Map of caravanserais](https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/caravanserail_plotly.png){height=350px}
+
+
+:::
+
+::::
+
+
+## ***eamenaR*** package <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px">
+
+And many other ouptuts:
+
+:::: {.columns}
+
+::: {.column width="50%"}
+![shape analysis](https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/caravanserail_compar_panel.png){height=350px}
+
+:::
+
+::: {.column width="50%"}
+![2022 new EAMENA DB users](https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/users_date_joined_2.png){height=350px}
+
+:::
+
+::::
+
+
+## Bullets
+
+When you click the **Render** button a document will be generated that includes:
+
+-   Content authored with markdown
+-   Output from executable code
+
+## Code
+
+When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+```

@@ -22,7 +22,9 @@ flowchart TB
     subgraph ide1 [Findable<br>Accessible]
     A[(EAMENA<br>DB)];
     end
+    A[(EAMENA<br>DB)] <--data<br>exchange--> B{{"eamenaR"}}:::eamenaRpkg;
     subgraph ide2 [Interoperable<br>Reusable]
     B --data<br>management--> B;
     end
+    classDef eamenaRpkg fill:#e3c071;
 ```

@@ -35,17 +35,16 @@ A package used for:
 
 * Data exchange between the EAMENA DB and third party apps
 * Audit and analyse the EAMENA DB content
+
+
+
   
-  
-```{mermaid}
-flowchart LR
-    A[(EAMENA<br>DB)] <--data<br>exchange--> B{{"eamenaR"}}:::eamenaRpkg;
-    B --data<br>management--> B;
-    B <--data<br>exchange--> C((third part<br>app));
-    B --"output"--> D[maps<br>charts<br>listings<br>...];
-    classDef eamenaRpkg fill:#e3c071;
-```
-  
+<p align="center">
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR-workflow.png" width="500">
+
+</p>
+
   
 ## ***eamenaR*** <a href="https://github.com/eamena-project/eamenaR"><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px; vertical-align:middle;margin: 0 0 0 0; background: transparent;" class="demo-logo"></a>
 
@@ -68,7 +67,7 @@ library(eamenaR)
 
 <p align="center">
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/eamenaR-functions-doc.png" width="700">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR-functions-doc.png" width="500">
 
 </p>
 
@@ -175,12 +174,10 @@ And many other ouptuts:
 ::::
 
 
-## Bullets
+## ***eamenaR*** package <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px; vertical-align:middle">
 
-When you click the **Render** button a document will be generated that includes:
 
--   Content authored with markdown
--   Output from executable code
+
 
 ## Code
 

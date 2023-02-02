@@ -69,13 +69,13 @@ library(eamenaR)
 It creates outputs like maps for heritage places:
 
 ```{.r }
-geojson_map(map.name = "caravanserail", export.plot = T, fig.width = 15, fig.height = 10)
+geojson_map(map.name = "caravanserail", fig.width = 15, fig.height = 10)
 ```
 
 
 <p align="center">
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/caravanserail.png" width="700">
+<img src="https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/caravanserail.png" width="600">
 
 </p>
 
@@ -84,12 +84,12 @@ geojson_map(map.name = "caravanserail", export.plot = T, fig.width = 15, fig.hei
 Or maps for paths between heritage places
 
 ```{.r }
-geojson_map_path(map.name = "caravanserail_paths", export.plot = T, fig.width = 15, fig.height = 10)
+geojson_map_path(map.name = "caravanserail_paths", fig.width = 15, fig.height = 10)
 ```
 
 <p align="center">
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/caravanserail_paths.png" width="700">
+<img src="https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/caravanserail_paths.png" width="600">
 
 </p>
 
@@ -106,7 +106,7 @@ geojson_map_path(geojson.path = "C:/Rprojects/eamenaR/inst/extdata/caravanserail
 
 <p align="center">
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/paths_profile.png" width="700">
+<img src="https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/paths_profile.png" width="600">
 
 </p>
 
@@ -122,7 +122,7 @@ gridExtra::grid.arrange(p1, p2, ncol = 2, widths = c(1, 2))
 
 <p align="center">
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/areas_sbs.png" width="700">
+<img src="https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/areas_sbs.png" width="600">
 
 </p>
 
@@ -133,12 +133,12 @@ And interactive charts or maps with <img src="https://raw.githubusercontent.com/
 :::: {.columns}
 
 ::: {.column width="50%"}
-![Paths between caravanserais](https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/paths_map_route_1.png){height=350px}
+![Paths between caravanserais](https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/paths_map_route_1.png){height=400px}
 
 :::
 
 ::: {.column width="50%"}
-![Map of caravanserais](https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/caravanserail_plotly.png){height=350px}
+![Map of caravanserais](https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/caravanserail_plotly.png){height=400px}
 
 
 :::
@@ -153,12 +153,12 @@ And many other ouptuts:
 :::: {.columns}
 
 ::: {.column width="50%"}
-![shape analysis](https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/caravanserail_compar_panel.png){height=350px}
+![caravanserais shape analysis](https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/caravanserail_compar_panel.png){height=400px}
 
 :::
 
 ::: {.column width="50%"}
-![2022 new EAMENA DB users](https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/users_date_joined_2.png){height=350px}
+![2022 new EAMENA DB users](https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/users_date_joined_2.png){height=400px}
 
 :::
 
@@ -168,13 +168,7 @@ And many other ouptuts:
 ## ***eamenaR*** package <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px; vertical-align:middle">
 
 
-```{mermaid}
-flowchart LR
-  A[Hard edge] --> B(Round edge)
-  B --> C{Decision}
-  C --> D[Result one]
-  C --> E[Result two]
-```
+
 
 
 

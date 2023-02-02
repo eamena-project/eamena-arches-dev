@@ -167,7 +167,13 @@ And many other ouptuts:
 
 ## ***eamenaR*** package <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px; vertical-align:middle">
 
+Makes the data FAIR (*Findable, Accessible, Interoperable, Reusable*)
 
+<p align="center">
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/wwweamenaR-fair.png" width="600">
+
+</p>
 
 
 

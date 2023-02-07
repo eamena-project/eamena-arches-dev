@@ -2,6 +2,9 @@
 title: "EAMENA"
 subtitle: "**A massive and open data information system for endangered archaeology and cultural heritage**"
 author: "Bill Finlayson, Bijan Rouhani, Thomas Huet, Michael Fradley, Sayantani Neogi, Melisa Holloway, Andrew Wilson"
+title-slide-attributes:
+    data-background-image: "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png"
+    data-background-size: "30%"
 format:
   revealjs: 
     slide-number: true
@@ -13,7 +16,7 @@ format:
     margin: 0.01
 ---
 
-## {}
+## ***eamenaR*** <a href="https://github.com/eamena-project/eamenaR"><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px; vertical-align:middle;margin: 0 0 0 0; background: transparent;" class="demo-logo"></a>
 
 ```{r}
 #| echo: false
@@ -22,30 +25,30 @@ format:
 library(eamenaR)
 ```
 
-
-## ***eamenaR*** <a href="https://github.com/eamena-project/eamenaR"><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px; vertical-align:middle;margin: 0 0 0 0; background: transparent;" class="demo-logo"></a>
-
 A package used for:
 
-* Data exchange between the EAMENA DB and third party apps
+* Data exchange between EAMENA and third party apps
 * Audit and analyse the EAMENA DB content
 
-<p align="center">
-
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR-workflow.png" width="600">
-
-</p>
+```{mermaid}
+flowchart LR
+    A[(EAMENA<br>DB)] <--data<br>exchange--> B{{"eamenaR"}}:::eamenaRpkg;
+    B --data<br>management--> B;
+    B <--data<br>exchange--> C((third part<br>app));
+    B --"output"--> D[maps<br>charts<br>listings<br>...];
+    classDef eamenaRpkg fill:#e3c071;
+```
 
   
 ## ***eamenaR*** <a href="https://github.com/eamena-project/eamenaR"><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px; vertical-align:middle;margin: 0 0 0 0; background: transparent;" class="demo-logo"></a>
 
 An R package hosted on GitHub:
 
-* <a href="https://www.r-project.org/"><img src="https://www.r-project.org/logo/Rlogo.svg" alt="" style="height: 80px; margin: 0 0 0 0; background: transparent;" class="demo-logo"></a> is a scripting language for data science is the 1️⃣<sup>st</sup> used by archaeologists, and the 18<sup>th</sup> worldwide
-* <a href="https://github.com"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" style="height: 80px; margin: 0 0 0 0; background: transparent;" class="demo-logo"></a> GitHub is the 🔝 popular web-platform for source code management and software development (with over 128 million public repositories)
+* <a href="https://www.r-project.org/"><img src="https://www.r-project.org/logo/Rlogo.svg" alt="" style="height: 80px;"></a> is a scripting language for data science is the 1️⃣<sup>st</sup> used by archaeologists, and the 18<sup>th</sup> worldwide
+* <a href="https://github.com"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" style="height: 80px;"></a> GitHub is the 🔝 popular web-platform for source code management and software development (with over 128 million public repositories)
 
 
-## ***eamenaR*** package <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px; vertical-align:middle">
+## ***eamenaR*** <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px; vertical-align:middle">
 
 * Easy to install and to load:
 
@@ -56,15 +59,15 @@ library(eamenaR)
 
 * Regularly updated online documentation
 
-<p align="center">
+<center>
 
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR-functions-doc.png" width="500">
 
-</p>
+</center>
 
 
 
-## ***eamenaR*** package <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px; vertical-align:middle">
+## ***eamenaR*** <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px; vertical-align:middle">
 
 It creates outputs like maps for heritage places:
 
@@ -73,13 +76,13 @@ geojson_map(map.name = "caravanserail", fig.width = 15, fig.height = 10)
 ```
 
 
-<p align="center">
+<center>
 
 <img src="https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/caravanserail.png" width="600">
 
-</p>
+</center>
 
-## ***eamenaR*** package <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px; vertical-align:middle">
+## ***eamenaR*** <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px; vertical-align:middle">
 
 Or maps for paths between heritage places
 
@@ -87,13 +90,13 @@ Or maps for paths between heritage places
 geojson_map_path(map.name = "caravanserail_paths", fig.width = 15, fig.height = 10)
 ```
 
-<p align="center">
+<center>
 
 <img src="https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/caravanserail_paths.png" width="600">
 
-</p>
+</center>
 
-## ***eamenaR*** package <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px; vertical-align:middle">
+## ***eamenaR*** <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px; vertical-align:middle">
 
 And elevation profiles :
 
@@ -104,15 +107,15 @@ geojson_map_path(geojson.path = "C:/Rprojects/eamenaR/inst/extdata/caravanserail
                  export.type = "profile")
 ```
 
-<p align="center">
+<center>
 
 <img src="https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/paths_profile.png" width="600">
 
-</p>
+</center>
 
-## ***eamenaR*** package <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px; vertical-align:middle">
+## ***eamenaR*** <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px; vertical-align:middle">
 
-It also create basic statistics:
+It also creates basic statistics:
 
 ```{.r }
 p1 <- geojson_measurements(stat.name = "areas")
@@ -120,24 +123,24 @@ p2 <- geojson_measurements(stat.name = "areas_by_routes", by.routes = T)
 gridExtra::grid.arrange(p1, p2, ncol = 2, widths = c(1, 2))
 ```
 
-<p align="center">
+<center>
 
 <img src="https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/areas_sbs.png" width="600">
 
-</p>
+</center>
 
-## ***eamenaR*** package <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px; vertical-align:middle">
+## ***eamenaR*** <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px; vertical-align:middle">
 
 And interactive charts or maps with <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-plotly.png" style="height: 50px; vertical-align:middle"> and <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-leaflet.png" style="height: 50px; vertical-align:middle">:
 
 :::: {.columns}
 
-::: {.column width="50%"}
+::: {.column width="40%"}
 ![Paths between caravanserais](https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/paths_map_route_1.png){height=400px}
 
 :::
 
-::: {.column width="50%"}
+::: {.column width="60%"}
 ![Map of caravanserais](https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/caravanserail_plotly.png){height=400px}
 
 
@@ -146,7 +149,7 @@ And interactive charts or maps with <img src="https://raw.githubusercontent.com/
 ::::
 
 
-## ***eamenaR*** package <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px; vertical-align:middle">
+## ***eamenaR*** <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px; vertical-align:middle">
 
 And many other ouptuts:
 
@@ -158,7 +161,7 @@ And many other ouptuts:
 :::
 
 ::: {.column width="50%"}
-![2022 new EAMENA DB users](https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/users_date_joined_2.png){height=400px}
+![caravanserais orientations](https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/orientations_radar.png){height=400px}
 
 :::
 
@@ -169,12 +172,36 @@ And many other ouptuts:
 
 Makes data FAIR (*Findable, Accessible, Interoperable, Reusable*)
 
-<p align="center">
+<center>
 
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR-fair.png" width="600">
 
-</p>
+</center>
+  
+  
+  
 
-
+```{mermaid}
+flowchart LR
+    subgraph ide1 [<b>F</b>indable, <b>A</b>ccessible]
+    A[(EAMENA<br>DB)];
+    end
+    A[(EAMENA<br>DB)] <---> B{{"eamenaR"}}:::eamenaRpkg;
+    subgraph ide2 [<b>I</b>nteroperable, <b>R</b>eusable]
+    B;
+    end
+    classDef eamenaRpkg fill:#e3c071;
+```
+  
+  
+  
+```{mermaid}
+flowchart LR
+    A[(EAMENA<br>DB)] <--data<br>exchange--> B{{"eamenaR"}}:::eamenaRpkg;
+    B --data<br>management--> B;
+    B <--data<br>exchange--> C((third part<br>app));
+    B --"output"--> D[maps<br>charts<br>listings<br>...];
+    classDef eamenaRpkg fill:#e3c071;
+```
 
 

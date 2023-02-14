@@ -1,0 +1,66 @@
+{
+    "type": "rdf:Bag",
+    "id": "https://client.perio.do/.well-known/genid/eamena-dataset",
+    "@context": "http://n2t.net/ark:/99152/p0c",
+    "authorities": {
+      "https://client.perio.do/.well-known/genid/eamena-authority": {
+        "id": "https://client.perio.do/.well-known/genid/eamena-authority",
+        "type": "Authority",
+        "periods": {
+          "https://client.perio.do/.well-known/genid/eamena-period-1": {
+            "id": "https://client.perio.do/.well-known/genid/eamena-period-1",
+            "type": "Period",
+            "source": {
+              "locator": "page 13"
+            },
+            "label": "Transitional Period",
+            "language": "http://lexvo.org/id/iso639-1/en",
+            "languageTag": "en",
+            "localizedLabels": {
+              "en": [
+                "age of Iconoclasm",
+                "Byzantine Dark Ages",
+                "Transitional Period"
+              ]
+            },
+            "spatialCoverageDescription": "The name Cappadocia refers to a historical region of central Anatolia.",
+            "spatialCoverage": [
+              {
+                "id": "http://www.wikidata.org/entity/Q51614",
+                "label": "Anatolia"
+              }
+            ],
+            "start": {
+              "in": {
+                "earliestYear": "0667",
+                "latestYear": "0700"
+              },
+              "label": "late seventh century"
+            },
+            "stop": {
+              "in": {
+                "earliestYear": "0901",
+                "latestYear": "0934"
+              },
+              "label": "early tenth century"
+            },
+            "note": "\"Sometimes called the 'age of Iconoclasm' or simply the \"dark ages,\" I prefer the more neutral nomenclature and thus refer to the late seventh through the early tenth centuries as the transitional period.\" (Ousterhout, 13). ",
+            "editorialNote": "I agree with Ousterhout's reasoning that the label \"transitional period\" is preferable to the Iconoclastic period (which may not represent Cappadocian experience) or dark age (which is perceived as derogatory, even when it refers to the dearth of extant sources from the seventh to ninth centuries in Anatolia). "
+          }
+        },
+        "source": {
+          "citation": "Ousterhout Robert G. 2017. Visualizing Community: Art Material Culture and Settlement in Byzantine Cappadocia. Washington D.C: Dumbarton Oaks Research Library and Collection.",
+          "title": "Visualizing Community: Art, Material Culture, and Settlement in Byzantine Cappadocia",
+          "url": "https://worldcat.org/en/title/934100132",
+          "yearPublished": "2017",
+          "creators": [
+            {
+              "name": "Robert G. Ousterhout"
+            }
+          ],
+          "locator": "13"
+        },
+        "editorialNote": "This book was written by a scholar of Byzantine architecture, and is the most up to date and comprehensive study of Cappadocian architecture during the Byzantine period. "
+      }
+    }
+  }

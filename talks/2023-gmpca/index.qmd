@@ -3,8 +3,9 @@ title: "EAMENA"
 subtitle: "**A massive and open data information system for endangered archaeology and cultural heritage**"
 author: "Bill Finlayson, Bijan Rouhani, Thomas Huet, Michael Fradley, Sayantani Neogi, Melisa Holloway, Andrew Wilson"
 title-slide-attributes:
-    data-background-image: "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png"
-    data-background-size: "30%"
+    data-background-image: "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaDB-bck.png"
+    data-background-size: "60%"
+    data-background-opacity: "0.5"
 format:
   revealjs: 
     slide-number: true
@@ -15,6 +16,22 @@ format:
     # footer: "EAMENA project <https://github.com/eamena-project>"
     margin: 0.01
 ---
+
+## XXX
+
+<div class="div-text"> 
+<small>narrative part</small>
+```{.md}
+published by Yihui Xie [-@Xie19]
+```
+</div>
+🗘published by Yihui Xie [-@Xie19]
+
+<center>---</center>
+
+It's easy to retrieve [this reference in Google Scholar](https://scholar.google.fr/scholar?hl=en&as_sdt=0%2C5&q=Tinytex%3A+A+Lightweight%2C+Cross-Platform%2C+and+Easy-to-Maintain+Latex+Distribution+Based+on+Tex+Live&btnG=), and to copy/paste it in a the `.bib` file.
+
+
 
 ## ***eamenaR*** <a href="https://github.com/eamena-project/eamenaR"><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px; vertical-align:middle;margin: 0 0 0 0; background: transparent;" class="demo-logo"></a>
 
@@ -45,6 +62,12 @@ flowchart LR
 An R package hosted on GitHub:
 
 * <a href="https://www.r-project.org/"><img src="https://www.r-project.org/logo/Rlogo.svg" alt="" style="height: 80px;"></a> is a scripting language for data science is the 1️⃣<sup>st</sup> used by archaeologists, and the 18<sup>th</sup> worldwide
+
+
+## ***eamenaR*** <a href="https://github.com/eamena-project/eamenaR"><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px; vertical-align:middle;margin: 0 0 0 0; background: transparent;" class="demo-logo"></a>
+
+An R package hosted on GitHub:
+
 * <a href="https://github.com"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" style="height: 80px;"></a> GitHub is the 🔝 popular web-platform for source code management and software development (with over 128 million public repositories)
 
 
@@ -57,13 +80,21 @@ devtools::install_github("eamena-project/eamenaR")
 library(eamenaR)
 ```
 
+
+## ***eamenaR*** <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px; vertical-align:middle">
+
 * Regularly updated online documentation
+
+```{.r }
+?geojson_map
+```
 
 <center>
 
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR-functions-doc.png" width="500">
 
 </center>
+
 
 
 
@@ -82,6 +113,21 @@ geojson_map(map.name = "caravanserail", fig.width = 15, fig.height = 10)
 
 </center>
 
+```{.r }
+geojson_stat(stat = "list_ids")
+```
+\
+\
+
+## ***eamenaR*** <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px; vertical-align:middle">
+
+Use API data, on the fly
+
+```{.r }
+geojson_addZ()
+```
+
+
 ## ***eamenaR*** <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px; vertical-align:middle">
 
 Or maps for paths between heritage places
@@ -98,13 +144,17 @@ geojson_map_path(map.name = "caravanserail_paths", fig.width = 15, fig.height = 
 
 ## ***eamenaR*** <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px; vertical-align:middle">
 
+```{.r }
+geojson_addZ()
+```
+
+
+## ***eamenaR*** <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px; vertical-align:middle">
+
 And elevation profiles :
 
 ```{.r }
-geojson_addZ()
-geojson_map_path(geojson.path = "C:/Rprojects/eamenaR/inst/extdata/caravanserailZ.geojson",
-                 routes = c(0, 1, 2, 3, 4),
-                 export.type = "profile")
+geojson_map_path(routes = c(0, 1, 2, 3, 4), export.type = "profile")
 ```
 
 <center>
@@ -118,9 +168,7 @@ geojson_map_path(geojson.path = "C:/Rprojects/eamenaR/inst/extdata/caravanserail
 It also creates basic statistics:
 
 ```{.r }
-p1 <- geojson_measurements(stat.name = "areas")
-p2 <- geojson_measurements(stat.name = "areas_by_routes", by.routes = T)
-gridExtra::grid.arrange(p1, p2, ncol = 2, widths = c(1, 2))
+geojson_boxplot(stat.name = "caravanserais_areas", stat = "area", by = "route")
 ```
 
 <center>
@@ -146,6 +194,18 @@ And interactive charts or maps with <img src="https://raw.githubusercontent.com/
 
 :::
 
+```{.r}
+geojson_map(interactive = T)
+```
+  
+\
+  
+```{.r}
+geojson_map_path(interactive = T, selected.category = c(0, 1, 2, 3, 4))
+```
+
+\
+
 ::::
 
 
@@ -168,6 +228,17 @@ And many other ouptuts:
 ::::
 
 
+## ***eamenaR*** <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px; vertical-align:middle">
+
+
+
+```{.r}
+geojson_stat(field.names = c("Resource Orientation"), 
+             chart.type = "radar", stat = "stats")
+```
+
+\
+
 ## ***eamenaR*** package <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px; vertical-align:middle">
 
 Makes data FAIR (*Findable, Accessible, Interoperable, Reusable*)
@@ -177,8 +248,12 @@ Makes data FAIR (*Findable, Accessible, Interoperable, Reusable*)
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR-fair.png" width="600">
 
 </center>
+
+
   
-  
+## TESTS
+
+<a href="https://github.com/zoometh/thomashuet/blob/8f5665eca9efc76f26847258711a71b5adda1133/teachings/stats/R4Archaeo/index.qmd#L402"><small><notes>source code<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github-1.png" style="height: 35px;vertical-align: middle;"/></notes></small></a>
   
 
 ```{mermaid}

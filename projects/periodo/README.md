@@ -17,7 +17,7 @@ EAMENA registers the periods (a particular instance of the concepts) as graphs, 
 
 ### Template
 
-The [original template](https://gist.github.com/rybesh/9f64c127ad8eeb69619896f22064bb0e#file-example-dataset-json) given by @rybesh (Ryan Shaw) was copied and hosted here: https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/periodo/template_eamena.json.
+The [original template](https://gist.github.com/rybesh/9f64c127ad8eeb69619896f22064bb0e#file-example-dataset-json) given by `@rybesh` (Ryan Shaw) was copied and hosted here: https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/periodo/template_eamena.json.
 
 ### Example
 

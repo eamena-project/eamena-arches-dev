@@ -13,54 +13,51 @@
             "source": {
               "locator": "page 13"
             },
-            "label": "Transitional Period",
+            "label": "Chalcolithic (Northern Iran)",
             "language": "http://lexvo.org/id/iso639-1/en",
             "languageTag": "en",
             "localizedLabels": {
               "en": [
-                "age of Iconoclasm",
-                "Byzantine Dark Ages",
-                "Transitional Period"
+                "Chalcolithic",
+                "Northern Iran"
               ]
             },
-            "spatialCoverageDescription": "The name Cappadocia refers to a historical region of central Anatolia.",
+            "spatialCoverageDescription": "Northern Iran.",
             "spatialCoverage": [
               {
-                "id": "http://www.wikidata.org/entity/Q51614",
+                "id": "http://www.wikidata.org/wiki/Q5686841",
                 "label": "Anatolia"
               }
             ],
             "start": {
               "in": {
-                "earliestYear": "0667",
-                "latestYear": "0700"
+                "year": "-5200",
               },
-              "label": "late seventh century"
+              "label": "sixth millenium BC"
             },
             "stop": {
               "in": {
-                "earliestYear": "0901",
-                "latestYear": "0934"
+                "year": "-3300",
               },
-              "label": "early tenth century"
+              "label": "fourth millenium BC"
             },
-            "note": "\"Sometimes called the 'age of Iconoclasm' or simply the \"dark ages,\" I prefer the more neutral nomenclature and thus refer to the late seventh through the early tenth centuries as the transitional period.\" (Ousterhout, 13). ",
-            "editorialNote": "I agree with Ousterhout's reasoning that the label \"transitional period\" is preferable to the Iconoclastic period (which may not represent Cappadocian experience) or dark age (which is perceived as derogatory, even when it refers to the dearth of extant sources from the seventh to ninth centuries in Anatolia). "
+            "note": "\"a quote\" (XXXX, nn). ",
+            "editorialNote": "an editorial note"
           }
         },
         "source": {
-          "citation": "Ousterhout Robert G. 2017. Visualizing Community: Art Material Culture and Settlement in Byzantine Cappadocia. Washington D.C: Dumbarton Oaks Research Library and Collection.",
-          "title": "Visualizing Community: Art, Material Culture, and Settlement in Byzantine Cappadocia",
-          "url": "https://worldcat.org/en/title/934100132",
-          "yearPublished": "2017",
+          "citation": "a citation",
+          "title": "a title",
+          "url": "a worldcat URL",
+          "yearPublished": "a year",
           "creators": [
             {
-              "name": "Robert G. Ousterhout"
+              "name": "an author"
             }
           ],
-          "locator": "13"
+          "locator": "a page number"
         },
-        "editorialNote": "This book was written by a scholar of Byzantine architecture, and is the most up to date and comprehensive study of Cappadocian architecture during the Byzantine period. "
+        "editorialNote": "an editorial note"
       }
     }
   }

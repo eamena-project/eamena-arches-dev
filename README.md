@@ -1,6 +1,10 @@
 # eamena-arches-dev  <img src="www/logo.png" width='100px' align="right"/>
 > development repository
 
+## PeriodO
+
+[README](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/periodo/README.md)
+
 ## Arches/EAMENA training 🧍
 
 [README](https://github.com/eamena-project/eamena-arches-dev/tree/main/training#readme)

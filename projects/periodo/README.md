@@ -1,10 +1,12 @@
-## PeriodO
+# PeriodO / EAMENA
+> https://perio.do/en/
 
-## PartOf
+Export of EAMENA cultural periods and subperiods as new entries in PeriodO 
 
+## PeriodO formalism
 ### Temporal
 
-EAMENA registers the periods (a particular instance of the concepts) as graphs, with parent and child concepts. The [list_child_concepts()](https://eamena-project.github.io/eamenaR/doc/list_child_concepts) function of the eamenaR package allows to retrieve these periods within their subgraphs.
+EAMENA registers the periods (a particular instance of the concepts) as graphs, with parent and child concepts (cf. PeriodO `PartOf`). The [list_child_concepts()](https://eamena-project.github.io/eamenaR/doc/list_child_concepts) function of the eamenaR package allows to retrieve these periods within their subgraphs.
 
 <p align="center">
   <img alt="img-name" src="../../www/rdm-culturalperiods.png" width="500">
@@ -12,14 +14,11 @@ EAMENA registers the periods (a particular instance of the concepts) as graphs, 
     <em>screenshot of the Cultural Periods in the EAMENA Reference Data Manager (RDM)</em>
 </p>
 
+### Spatial
 
-## JSON
+### Authority
 
-### Template
-
-The [original template](https://gist.github.com/rybesh/9f64c127ad8eeb69619896f22064bb0e#file-example-dataset-json) given by `@rybesh` (Ryan Shaw) was copied and hosted here: https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/periodo/template_eamena.json.
-
-### Example
+## Example
 
 An example of the `Predynastic` JSON is here: https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/periodo/periodo-period-cp44786m7.json [^1].
 
@@ -28,6 +27,17 @@ An example of the `Predynastic` JSON is here: https://github.com/eamena-project/
   <br>
     <em>screenshot of the `Predynastic` record in PeriodO</em>
 </p>
+
+
+## Period definitions from EAMENA
+
+### Template
+
+`@rybesh` (Ryan Shaw) sent a JSON [template](https://gist.github.com/rybesh/9f64c127ad8eeb69619896f22064bb0e#file-example-dataset-json) for EAMENA to create period definitions from its Cultural periods and subperiods.  
+This template was modified for the EAMENA cultural period [`Chalcolithic (Northern Iran)	`](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/periodo/template_eamena.json) and hosted here: https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/periodo/template_eamena.json. 
+If this structure suits, it will be reused in a computer routine to fill all periods and sub-periods of EAMENA.
+
+
 
 ---
 

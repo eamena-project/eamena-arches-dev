@@ -1,0 +1,49 @@
+// Early Bronze Age
+{
+    "stop": {
+      "label": "2500 B.C.E.",
+      "in": {
+        "year": "-2499"
+      }
+    },
+    "start": {
+      "label": "4300 B.C.E.",
+      "in": {
+        "year": "-4299"
+      }
+    },
+    "spatialCoverage": [
+      {
+        "id": "http://www.wikidata.org/entity/Q810",
+        "label": "Jordan"
+      }
+    ],
+    "spatialCoverageDescription": "Petra",
+    "label": "Early Bronze Age",
+    "language": "http://lexvo.org/id/iso639-1/en",
+    "type": "Period",
+    "localizedLabels": {
+      "en": [
+        "Early Bronze Age"
+      ]
+    },
+    "id": "p072r4qsg94",
+    "languageTag": "en",
+    "derivedFrom": [
+      "p0hsq83mmxc"
+    ],
+    "authority": "p072r4q",
+    "@context": [
+      "http://n2t.net/ark:/99152/p0c",
+      {
+        "@base": "http://n2t.net/ark:/99152/"
+      }
+    ],
+    "primaryTopicOf": {
+      "id": "p072r4qsg94.json",
+      "inDataset": {
+        "id": "p0d",
+        "changes": "p0h#changes"
+      }
+    }
+  }

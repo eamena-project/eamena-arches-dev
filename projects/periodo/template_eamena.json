@@ -1,3 +1,4 @@
+// template for EAMENA cultural periods and subperiods modified for the 'Chalcolithic (Northern Iran)' entry
 {
     "type": "rdf:Bag",
     "id": "https://client.perio.do/.well-known/genid/eamena-dataset",

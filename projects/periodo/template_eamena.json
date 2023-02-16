@@ -17,6 +17,7 @@
             "label": "Chalcolithic (Northern Iran)",
             "language": "http://lexvo.org/id/iso639-1/en",
             "languageTag": "en",
+            "broader": "https://client.perio.do/.well-known/genid/eamena-temporary-id-for-Chalcolithic-Period",
             "localizedLabels": {
               "en": [
                 "Chalcolithic",

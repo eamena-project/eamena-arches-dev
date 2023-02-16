@@ -34,8 +34,8 @@ An example of the `Predynastic` JSON is here: https://github.com/eamena-project/
 ### Template
 
 `@rybesh` (Ryan Shaw) sent a JSON [template] (https://gist.github.com/rybesh/9f64c127ad8eeb69619896f22064bb0e#file-example-dataset-json) for EAMENA to create definitions from its cultural periods and sub-periods.  
-As an example, this template has been modified for the EAMENA cultural period [`Chalcolithic (Northern Iran) `](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/periodo/template_eamena.json) and hosted here: https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/periodo/template_eamena.json. 
-If this structure is suitable, it will be reused in a computer routine to reformat all EAMENA periods and sub-periods into a format that can be directly integrated into PeriodO.
+As an example, this template has been modified for the EAMENA cultural period `Chalcolithic (Northern Iran) ` (see its temporal bounds [here](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/periodo/cultural_periods.tsv#L2)) and hosted here: https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/periodo/template_eamena.json. 
+If this structure is suitable, it will be reused in a computer routine to cast all EAMENA periods and sub-periods into a format that can be directly integrated into PeriodO.
 
 
 

@@ -11,7 +11,7 @@
             "id": "https://client.perio.do/.well-known/genid/eamena-period-1",
             "type": "Period",
             "source": {
-              "locator": "page 13"
+              "locator": "a locator"
             },
             "label": "Chalcolithic (Northern Iran)",
             "language": "http://lexvo.org/id/iso639-1/en",
@@ -26,7 +26,7 @@
             "spatialCoverage": [
               {
                 "id": "http://www.wikidata.org/wiki/Q5686841",
-                "label": "Anatolia"
+                "label": "Northern Iran"
               }
             ],
             "start": {
@@ -41,7 +41,7 @@
               },
               "label": "fourth millenium BC"
             },
-            "note": "\"a quote\" (XXXX, nn). ",
+            "note": "\"a quote\" (a reference, an ). ",
             "editorialNote": "an editorial note"
           }
         },

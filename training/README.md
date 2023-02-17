@@ -1,4 +1,4 @@
-# Arches/EAMENA Database Manager CPF Training (part 2/2)
+## Arches/EAMENA Database Manager CPF Training (part 2/2, 2022)
 
 This is the second part of Database Management training for Arches-powered platform, EAMENA compliant, for cultural heritage management. The previous part (part 1) took place in person, in Amman, Jordan (5/12/21 - 9/12/21). This part focuses on database management of three Arches/EAMENA instances hosted on AWS. The provisional timetable consists of 3 different slots of 3-hours each:
 
@@ -9,7 +9,7 @@ This is the second part of Database Management training for Arches-powered platf
   3. Slot 3: Installing the project on a server
 
 ---
-## Timetable
+### Timetable
 
 This online training will be hosted online (ZOOM): "Arches/EAMENA Database Manager Zoom Meeting part 2"  
   
@@ -24,9 +24,9 @@ This online training will be hosted online (ZOOM): "Arches/EAMENA Database Manag
 
 ---
 
-## Documentation
+### Documentation
 
-### Part 2/2
+#### Part 2/2
 
 * Requirements installation tuto: 
   - https://docs.google.com/presentation/d/1qkF8w4J4BCjR_LEzWJ9Pn2lvQXO7zpW8A5MVF6obPSw/edit?usp=sharing
@@ -47,8 +47,7 @@ This online training will be hosted online (ZOOM): "Arches/EAMENA Database Manag
       
   - Arches/EAMENA package: https://github.com/eamena-project/eamena-arches-package
 
-
-### Part 1/2
+#### Part 1/2
 
 * Part 1 slides:
   - day 1: https://docs.google.com/presentation/d/1k9JMuj5oSZXHO3Z9RSVMogn4CUSJ1EK8Plus8sK7xDo/edit#slide=id.p
@@ -60,7 +59,7 @@ This online training will be hosted online (ZOOM): "Arches/EAMENA Database Manag
 * Part 1 reference glossary:
   - https://docs.google.com/spreadsheets/d/13JwjiHjx6pqlSjRYxPc0yW0Rj3voGDJVqTe23j2kO3g/edit#gid=0
 
-### Arches full stack
+#### Arches full stack
 
 * project: https://www.archesproject.org/
 * demo (v5): http://v5demo.archesproject.org/search?paging-filter=1
@@ -70,7 +69,7 @@ This online training will be hosted online (ZOOM): "Arches/EAMENA Database Manag
 * GitHub: https://github.com/archesproject/arches
 * development: https://www.archesproject.org/development/
 
-### Main Arches dependencies
+#### Main Arches dependencies
 
 * Django: https://www.djangoproject.com/
 * Python: https://www.python.org/
@@ -80,3 +79,49 @@ This online training will be hosted online (ZOOM): "Arches/EAMENA Database Manag
 * PostgreSQL: https://www.postgresql.org/
   - pgAdmin4: https://www.pgadmin.org/
 * ElasticSearch: https://www.elastic.co/
+
+
+## Training by R. Osborne
+
+Understanding the purpose, architecture and software stack of Arches
+* What is Arches?
+* What problem does it solve?
+* Key features and use cases
+* Software architecture diagram
+* Core concepts:
+    - Resource models and Branches
+    - Cidoc CRM
+    - Concepts
+    - Collections
+How to install Arches on a Linux OS
+* Pip install
+* Git clone install
+* Install script for deps
+* Requirements file
+* Docker and docker-compose?
+* Creating a project
+* Serving to the internet, apache, wsgi
+Understand project and packages
+* What is a project?
+* What is a package?
+* Why are packages useful in Arches?
+* Layout of a package
+Understand the CLI reference
+* Restarting apache
+* Runserver
+* Collectstatic
+* Load package
+* Load data
+* Looking at different logs
+* Indexing ES
+Backups
+* Dumping db
+* Scheduling cronjob db dump
+* Creating packages
+* AWS snapshot
+* Other options
+Usage of online and collaborative resources
+* Docs
+* Community Forum
+* GitHub
+* Popular Django forums

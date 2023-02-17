@@ -84,8 +84,8 @@ This online training will be hosted online (ZOOM): "Arches/EAMENA Database Manag
 ## Training by R. Osborne
 
 Understanding the purpose, architecture and software stack of Arches
-* What is Arches?
-* What problem does it solve?
+* ~~What is Arches?~~
+* ~~What problem does it solve?~~
 * Key features and use cases
 * Software architecture diagram
 * Core concepts:

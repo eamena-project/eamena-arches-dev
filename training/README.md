@@ -93,6 +93,7 @@ Understanding the purpose, architecture and software stack of Arches
     - Cidoc CRM
     - Concepts
     - Collections
+
 How to install Arches on a Linux OS
 * Pip install
 * Git clone install
@@ -101,11 +102,13 @@ How to install Arches on a Linux OS
 * Docker and docker-compose?
 * Creating a project
 * Serving to the internet, apache, wsgi
+
 Understand project and packages
 * What is a project?
 * What is a package?
 * Why are packages useful in Arches?
 * Layout of a package
+
 Understand the CLI reference
 * Restarting apache
 * Runserver
@@ -114,12 +117,14 @@ Understand the CLI reference
 * Load data
 * Looking at different logs
 * Indexing ES
+
 Backups
 * Dumping db
 * Scheduling cronjob db dump
 * Creating packages
 * AWS snapshot
 * Other options
+
 Usage of online and collaborative resources
 * Docs
 * Community Forum

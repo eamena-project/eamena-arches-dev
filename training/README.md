@@ -90,7 +90,7 @@ Understanding the purpose, architecture and software stack of Arches
 * Software architecture diagram
 * Core concepts:
     - Resource models and Branches
-    - Cidoc CRM
+    - Cidoc CRM and ontologies
     - Concepts
     - Collections
 
@@ -99,9 +99,11 @@ How to install Arches on a Linux OS
 * Git clone install
 * Install script for deps
 * Requirements file
-* Docker and docker-compose?
+* Docker and docker-compose
 * Creating a project
-* Serving to the internet, apache, wsgi
+* Serving to the internet, Apache, WSGI
+
+File/Folder hierachical system
 
 Understand project and packages
 * What is a project?
@@ -110,13 +112,18 @@ Understand project and packages
 * Layout of a package
 
 Understand the CLI reference
-* Restarting apache
+* Restarting Apache
 * Runserver
 * Collectstatic
 * Load package
 * Load data
 * Looking at different logs
 * Indexing ES
+
+Debug
+* Debug SSH connection
+* Understand the `DEBUG = True` in settings.py
+* Uses cases of a browser inspector
 
 Backups
 * Dumping db

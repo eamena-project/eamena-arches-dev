@@ -1,4 +1,3 @@
-// template for EAMENA cultural periods and subperiods modified for the 'Chalcolithic (Northern Iran)' entry
 {
   "type": "rdf:Bag",
   "id": "https://client.perio.do/.well-known/genid/eamena-dataset",
@@ -7,7 +6,7 @@
     "https://client.perio.do/.well-known/genid/eamena-authority": {
       "id": "https://client.perio.do/.well-known/genid/eamena-authority",
       "type": "Authority",
-      "periods": [
+      "periods":
         {
           "https://client.perio.do/.well-known/genid/eamena-late-chalcolithic-northern-iran": {
             "id": "https://client.perio.do/.well-known/genid/eamena-late-chalcolithic-northern-iran",
@@ -46,9 +45,7 @@
             },
             "note": "\"a quote\" (a reference, an ). ",
             "editorialNote": "an editorial note"
-          }
-        },
-        {
+          },
           "https://client.perio.do/.well-known/genid/eamena-chalcolithic": {
             "id": "https://client.perio.do/.well-known/genid/eamena-chalcolithic",
             "type": "Period",
@@ -85,8 +82,7 @@
             "note": "\"a quote\" (a reference, an ). ",
             "editorialNote": "an editorial note"
           }
-        }
-      ],
+        },
       "source": {
         "citation": "a citation",
         "title": "a title",

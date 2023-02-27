@@ -1,0 +1,377 @@
+---
+title: "<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo_complete.png' style='height: 80px; vertical-align:middle;margin: 0 0 0 0; background: transparent;'><br>eamenaR <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png' style='height: 70px; vertical-align:middle;margin: 0 0 0 0; background: transparent;'>"
+
+subtitle: "**R package for front-end statistical analysis<br>of the EAMENA database**"
+author: "Thomas Huet"
+title-slide-attributes:
+  data-background-image: "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaDB-bck.png"
+  data-background-size: "60%"
+  data-background-opacity: "0.3"
+format:
+  revealjs: 
+    css: https://zoometh.github.io/thomashuet/css/quarto.css
+    code-fold: true
+    code-summary: "<small>Code</small>"
+    slide-number: true
+    chalkboard: true
+    scrollable: true
+    preview-links: auto
+    reference-location: document
+    footnotes-hover: true
+    logo: https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/inst-uni-oxford_.png
+    footer: "<em>eamenaR</em> <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png' style='height: 40px;vertical-align: middle;'> EAMENA project, March 2023 - Thomas Huet"
+    margin: 0
+    width: 1200
+---
+
+```{r, echo=FALSE}
+library(shiny)
+library(rmarkdown)
+library(knitr)
+library(kableExtra)
+library(plotly)
+library(archdata)
+library(ggplot2)
+library(DT)
+library(dplyr)
+```
+
+## Purpose
+
+```{r}
+#| echo: false
+#| warning: false
+
+library(eamenaR)
+```
+
+A package used for:
+
+* Data management between EAMENA and third party apps
+* Audit and analyse the EAMENA DB content
+
+```{mermaid}
+flowchart LR
+A[(EAMENA<br>DB)] <--data<br>exchange--> B{{"eamenaR"}}:::eamenaRpkg;
+B --data<br>management--> B;
+B <--data<br>exchange--> C((third part<br>app));
+B --"output"--> D[maps<br>charts<br>listings<br>...];
+classDef eamenaRpkg fill:#e3c071;
+```
+
+
+## R programming
+
+An **R package** hosted on GitHub:
+
+* <a href="https://www.r-project.org/"><img src="https://www.r-project.org/logo/Rlogo.svg" alt="" style="height: 80px;"></a> is a scripting language for data science is the 1️⃣<sup>st</sup> used by archaeologists, and the 18<sup>th</sup> worldwide
+
+
+## GitHub platform
+
+An R package hosted on **GitHub**:
+
+* <a href="https://github.com"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" style="height: 80px;"></a> GitHub is the 🔝 popular web-platform for source code management and software development (with over 128 million public repositories)
+
+
+## Install
+
+* Easy to install and to load:
+
+```{.r }
+devtools::install_github("eamena-project/eamenaR")
+library(eamenaR)
+```
+
+
+## Documentation
+
+* Regularly updated online documentation
+
+```{.r }
+?geojson_map
+```
+
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR-functions-doc.png" width="500">
+
+</center>
+
+# Analyse and audit {background-color="#f3e7b3"}
+
+## Maps
+
+It creates outputs such as maps for heritage places:
+
+```{.r }
+geojson_map(map.name = "caravanserail", fig.width = 15, fig.height = 10)
+```
+
+
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/caravanserail.png" width="600">
+
+</center>
+
+```{.r }
+geojson_stat(stat = "list_ids")
+```
+
+```{r }
+#| echo: false
+geojson_stat(stat = "list_ids")
+```
+\
+\
+
+## Paths
+
+Or maps for paths between heritage places
+
+```{.r }
+geojson_map_path(routes = c(0, 1, 2, 3, 4))
+```
+
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/caravanserail_paths.png" width="600">
+
+</center>
+
+## Elevations
+
+Use API data, on the fly
+
+```{.r }
+geojson_addZ()
+```
+
+
+<div class="div-code"> 
+<small>geojson_addZ() code</small><br>
+```{.r code-line-numbers="12-24"}
+ ...
+ # type of geometries
+    if(sf::st_geometry_type(a.geom$geometry) %in% c("MULTIPOINT", "POLYGON", "MULTIPOLYGON")){
+      # centroids
+      coordinates <- sf::st_coordinates(sf::st_centroid(a.geom))
+    }
+    if(sf::st_geometry_type(a.geom$geometry) == "POINT"){
+      coordinates <- sf::st_coordinates(a.geom)
+    }
+    X <- coordinates[1]
+    Y <- coordinates[2]
+    # elevation API
+    if (elevation.api == 'gmrt'){
+      http.req <- paste0(
+        "https://www.gmrt.org/services/ProfileServer?boundspath=",
+        coordinates,
+        "&format=json"
+      )
+    }
+    if (elevation.api == 'open-elevation'){
+      http.req <- paste0(
+        "https://api.open-elevation.com/api/v1/lookup?locations=", X, ",", Y
+      )
+    }
+    r <- httr::GET(http.req, httr::timeout(timeout))
+    rr <- httr::content(r)
+    ...
+```
+</div>
+
+
+## Profiles
+
+To draw elevation profiles :
+
+```{.r }
+geojson_map_path(routes = c(0, 1, 2, 3, 4), export.type = "profile")
+```
+
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/paths_profile.png" width="700">
+
+</center>
+
+## Statistics
+
+It also creates basic statistics:
+
+```{.r }
+geojson_boxplot(stat.name = "caravanserais_areas", stat = "area", by = "route")
+```
+
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/caravanserais_areas_routes.png" width="700">
+
+</center>
+
+
+## Interactivity
+
+Interactive charts or maps with <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-plotly.png" style="height: 45px; vertical-align:middle"> and <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-leaflet.png" style="height: 40px; vertical-align:middle">:
+
+:::: {.columns}
+
+::: {.column width="40%"}
+
+```{.r}
+geojson_map_path(interactive = T, 
+                 selected.category = c(0, 1, 2, 3, 4))
+```
+
+```{=html}
+<iframe width="1000" height="500" src="http://shinyserver.cfs.unipi.it:3838/teach/stats/eamenaR/paths_map_route_1.html"></iframe>
+```
+
+
+:::
+
+::: {.column width="60%"}
+
+```{.r}
+geojson_map(interactive = T)
+```
+
+```{=html}
+<iframe width="1000" height="500" src="http://shinyserver.cfs.unipi.it:3838/teach/stats/eamenaR/caravanserail_plotly.html"></iframe>
+```
+
+
+:::
+
+::::
+
+
+
+## ***eamenaR*** <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px; vertical-align:middle">
+
+And interactive charts or maps with <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-plotly.png" style="height: 50px; vertical-align:middle"> and <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-leaflet.png" style="height: 50px; vertical-align:middle">:
+
+:::: {.columns}
+
+::: {.column width="40%"}
+![](https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/paths_map_route_1.png){height=400px}<div class="captiontext">Paths between caravanserais</div>
+
+:::
+
+::: {.column width="60%"}
+![](https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/caravanserail_plotly.png){height=400px}<div class="captiontext">Map of caravanserais</div>
+
+
+:::
+
+```{.r}
+geojson_map(interactive = T)
+```
+
+\
+
+```{.r}
+geojson_map_path(interactive = T, selected.category = c(0, 1, 2, 3, 4))
+```
+
+\
+
+::::
+
+
+## Other outputs
+
+And many other ouptuts:
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+```{.r}
+d <- list_cultural_periods(db = "geojson", 
+                           d = d)
+plot_cultural_periods(d = d, 
+                      field = "subperiods",
+                      plot.type = "by.eamenaid")
+```
+
+![](https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/cultural_subperiods_byeamenaid.png){height=400px}<div class="captiontext">caravanserais subperiods</div>
+
+:::
+
+::: {.column width="50%"}
+
+```{.r}
+geojson_stat(stat.name = "orientations",
+             stat = "stats",
+             chart.type = "radar",
+             field.names = c("Resource Orientation"))
+```
+
+![](https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/orientations_radar.png){height=400px}<div class="captiontext">caravanserais orientations</div>
+
+:::
+
+::::
+
+## FAIR data
+
+Makes data FAIR (*Findable, Accessible, Interoperable, Reusable*)
+
+
+```{mermaid}
+flowchart LR
+subgraph ide1 [<b>F</b>indable, <b>A</b>ccessible]
+A[(EAMENA<br>DB)];
+end
+A[(EAMENA<br>DB)] <---> B{{"eamenaR"}}:::eamenaRpkg;
+subgraph ide2 [<b>I</b>nteroperable, <b>R</b>eusable]
+B;
+end
+classDef eamenaRpkg fill:#e3c071;
+```
+
+
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR-fair.png" width="600">
+
+</center>
+
+# Data management {background-color="#f3e7b3"}
+
+
+# Practice {background-color="#f3e7b3"}
+
+
+## TESTS
+
+<a href="https://github.com/zoometh/thomashuet/blob/8f5665eca9efc76f26847258711a71b5adda1133/teachings/stats/R4Archaeo/index.qmd#L402"><small><notes>source code<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github-1.png" style="height: 35px;vertical-align: middle;"/></notes></small></a>
+
+
+```{mermaid}
+flowchart LR
+subgraph ide1 [<b>F</b>indable, <b>A</b>ccessible]
+A[(EAMENA<br>DB)];
+end
+A[(EAMENA<br>DB)] <---> B{{"eamenaR"}}:::eamenaRpkg;
+subgraph ide2 [<b>I</b>nteroperable, <b>R</b>eusable]
+B;
+end
+classDef eamenaRpkg fill:#e3c071;
+```
+
+
+
+```{mermaid}
+flowchart LR
+A[(EAMENA<br>DB)] <--data<br>exchange--> B{{"eamenaR"}}:::eamenaRpkg;
+B --data<br>management--> B;
+B <--data<br>exchange--> C((third part<br>app));
+B --"output"--> D[maps<br>charts<br>listings<br>...];
+classDef eamenaRpkg fill:#e3c071;
+```
+
+

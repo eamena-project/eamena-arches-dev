@@ -1,7 +1,7 @@
 ---
 title: "<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo_complete.png' style='height: 50px; vertical-align:middle;margin: 0 0 0 0; background: transparent;'><br>eamenaR"
 
-subtitle: "**An R package for the front-end<br>statistical analysis of the EAMENA database**"
+subtitle: "**An R package for the<br>statistical analysis and data management<br>of the EAMENA database**"
 author: "Thomas Huet"
 title-slide-attributes:
   data-background-image: "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaDB-bck.png"
@@ -10,7 +10,7 @@ title-slide-attributes:
 format:
   revealjs: 
     css: https://zoometh.github.io/thomashuet/css/quarto.css
-    code-fold: true
+    code-fold: false
     code-summary: "<small>Code</small>"
     slide-number: true
     chalkboard: true
@@ -44,7 +44,7 @@ library(eamenaR)
 
 A package used for:
 
-* Data management between EAMENA and third party apps
+* Data management between EAMENA DB and 3<sup>rd</sup> party apps
 * Data analysis and audit of the EAMENA DB content
 
 ```{mermaid}
@@ -56,12 +56,17 @@ B --"output"--> D[maps<br>charts<br>listings<br>...];
 classDef eamenaRpkg fill:#e3c071;
 ```
 
+
+## IT Stack
+
+*eamenaR* <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px; vertical-align:middle"> is an R package hosted on GitHub:
+
+* <a href="https://www.r-project.org/"><img src="https://www.r-project.org/logo/Rlogo.svg" alt="" style="height: 80px;"></a> is a scripting language for data science is the 1️⃣<sup>st</sup> used by archaeologists, and the 18<sup>th</sup> worldwide
+
+* <a href="https://github.com"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" style="height: 80px;"></a> GitHub is the 🔝 popular web-platform for source code management and software development (with over 128 million public repositories)
+
+
 ## Data
-
-Data comes from two sources  
-
-<small>see: <https://github.com/eamena-project/eamenaR#data></small>
-
 
 ::: {.panel-tabset}
 
@@ -76,29 +81,25 @@ GeoJSON is the privileged format to work with spatial data
 
 Some functions allow to query directly the PostgreSQL
 
-```{.r}
-select_related_resources <- function(db.con = NA,
-                                     df = NA,
-                                     having = "Stable",
-                                     measure = "Measurement Number",
-                                     disconn = TRUE,
-                                     verbose = TRUE){
+```{.r code-line-numbers="9-12"}
   ...
-  for(cc in uuid.cc){
-    for (hav in length(having.df[["uuid"]])){
-      having.uuid <- having.df[["uuid"]][hav]
-      sqll <- stringr::str_interp("
-      SELECT resourceinstanceid
-      FROM tiles
-      WHERE resourceinstanceid::text LIKE '${cc}'
-      AND tiledata ->> '8fc30f35-cb7e-11ea-a292-02e7594ce0a0' = '${having.uuid}'
-                       ")
-      uuid.having <- RPostgres::dbGetQuery(db.con, sqll)
-      uuids.having <- rbind(uuids.having, uuid.having)
+    ...
+    bc.uuid <- eamenaR::ref_ids(concept.name = "Built Component Observation",
+                                choice = "db.concept.uuid")
+    for(cc in uuid.cc){
+      for (hav in length(having.df[["uuid"]])){
+        having.uuid <- having.df[["uuid"]][hav]
+        sqll <- stringr::str_interp("
+              SELECT resourceinstanceid
+              FROM tiles
+              WHERE resourceinstanceid::text LIKE '${cc}'
+              AND tiledata ->> '${bc.uuid}' = '${having.uuid}'
+                         ")
+        uuid.having <- RPostgres::dbGetQuery(db.con, sqll)
+        uuids.having <- rbind(uuids.having, uuid.having)
+      }
     }
-  }
   ...
-}
 ```
 
 
@@ -107,7 +108,7 @@ select_related_resources <- function(db.con = NA,
 
 ## Portability
 
-Allow the package to work with different instances of <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 40px;vertical-align: middle;'>
+Allow the package to work with different instances of <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'>
 
 ::: {.panel-tabset}
 
@@ -123,40 +124,57 @@ kable(ids) %>%
 
 \
 
+### `ref_ids()` function
+
+Retrieve the correspondences between customized Arches label (e.g. "`EAMENA ID`"), R shortnames (e.g. "`hp.id`") and Arches UUID (e.g. "`34cfe992-c2c0-11ea-9026-02e7594ce0a0`")
+
+```{.r}
+eamenaR::ref_ids(concept.name = "EAMENA ID", choice = "db.concept.name")
+```
+
+```{r}
+#| echo: false
+
+eamenaR::ref_ids("hp.id")
+```
+
+
+```{.r}
+eamenaR::ref_ids(concept.name = "EAMENA ID", choice = "db.concept.uuid")
+```
+
+```{r}
+#| echo: false
+
+eamenaR::ref_ids("hp.id", choice = "db.concept.uuid")
+```
+
+
 ### Example
 
-The function [ref_ids()](https://eamena-project.github.io/eamenaR/doc/ref_ids) retrieve the correspondences between a customized label and its counterparts in the <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 40px;vertical-align: middle;'> instance. For example, working with the EAMENA IDs
-
-```{.r}
-eamenaR::ref_ids("hp.id")
+```{.r code-line-numbers="3-4"}
+  ...
+    ...
+    bc.uuid <- eamenaR::ref_ids(concept.name = "Built Component Observation",
+                                choice = "db.concept.uuid")
+    for(cc in uuid.cc){
+      for (hav in length(having.df[["uuid"]])){
+        having.uuid <- having.df[["uuid"]][hav]
+        sqll <- stringr::str_interp("
+              SELECT resourceinstanceid
+              FROM tiles
+              WHERE resourceinstanceid::text LIKE '${cc}'
+              AND tiledata ->> '${bc.uuid}' = '${having.uuid}'
+                         ")
+        uuid.having <- RPostgres::dbGetQuery(db.con, sqll)
+        uuids.having <- rbind(uuids.having, uuid.having)
+      }
+    }
+  ...
 ```
 
-```{r}
-#| echo: false
-
-eamenaR::ref_ids("hp.id")
-```
-
-
-```{.r}
-eamenaR::ref_ids("hp.id", choice = "db.concept.uuid")
-```
-
-```{r}
-#| echo: false
-
-eamenaR::ref_ids("hp.id", choice = "db.concept.uuid")
-```
 
 :::
-
-## IT
-
-An R package hosted on GitHub:
-
-* <a href="https://www.r-project.org/"><img src="https://www.r-project.org/logo/Rlogo.svg" alt="" style="height: 80px;"></a> is a scripting language for data science is the 1️⃣<sup>st</sup> used by archaeologists, and the 18<sup>th</sup> worldwide
-
-* <a href="https://github.com"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" style="height: 80px;"></a> GitHub is the 🔝 popular web-platform for source code management and software development (with over 128 million public repositories)
 
 
 ## Install and documentation
@@ -176,18 +194,19 @@ library(eamenaR)
 
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR-functions-doc.png" width="500">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR-functions-doc_geojson_map.png" width="500">
 
 </center>
 
-# Analyse<br>and audit {background-color="#f3e7b3"}
+# Analyse<br>and audit {background-color="#f3e7b3" }
 
-## Generalities
+## Generalities {background-interactive="true"}
 
 Several types of plots and maps can be created 'flat' or interactive by setting the option `interactive` to `r TRUE`
 
 ```{r}
 #| echo: true
+
 geojson_boxplot(stat = "area", by = "route", interactive = T, verbose = F)
 ```
 
@@ -288,6 +307,8 @@ geojson_addZ()
 ```
 </div>
 
+:::
+
 \
 
 ## Profiles
@@ -384,7 +405,7 @@ geojson_map_path(interactive = T, selected.category = c(1))
 <iframe width="1000" height="500" src="http://shinyserver.cfs.unipi.it:3838/teach/stats/eamenaR/paths_map_route_1.html"></iframe>
 ```
 
-### <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-leaflet.png" style="height: 40px; vertical-align:middle"
+### <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-leaflet.png" style="height: 40px; vertical-align:middle">
 
 ```{.r}
 geojson_map(interactive = T)
@@ -426,7 +447,10 @@ classDef eamenaRpkg fill:#e3c071;
 
 </center>
 
-# Data management {background-color="#f3e7b3"}
+# Data<br>management {background-color="#f3e7b3"}
+
+
+
 
 
 # Practice {background-color="#f3e7b3"}

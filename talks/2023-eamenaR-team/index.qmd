@@ -1,12 +1,12 @@
 ---
-title: "<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo_complete.png' style='height: 80px; vertical-align:middle;margin: 0 0 0 0; background: transparent;'><br>eamenaR <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png' style='height: 70px; vertical-align:middle;margin: 0 0 0 0; background: transparent;'>"
+title: "<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo_complete.png' style='height: 50px; vertical-align:middle;margin: 0 0 0 0; background: transparent;'><br>eamenaR"
 
-subtitle: "**R package for front-end statistical analysis<br>of the EAMENA database**"
+subtitle: "**An R package for the front-end<br>statistical analysis of the EAMENA database**"
 author: "Thomas Huet"
 title-slide-attributes:
   data-background-image: "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaDB-bck.png"
   data-background-size: "60%"
-  data-background-opacity: "0.3"
+  data-background-opacity: "0.5"
 format:
   revealjs: 
     css: https://zoometh.github.io/thomashuet/css/quarto.css
@@ -24,6 +24,11 @@ format:
     width: 1200
 ---
 
+
+# Introduction {background-color="#f3e7b3"}
+
+## Purpose
+
 ```{r, echo=FALSE}
 library(shiny)
 library(rmarkdown)
@@ -34,14 +39,6 @@ library(archdata)
 library(ggplot2)
 library(DT)
 library(dplyr)
-```
-
-## Purpose
-
-```{r}
-#| echo: false
-#| warning: false
-
 library(eamenaR)
 ```
 
@@ -59,6 +56,66 @@ B --"output"--> D[maps<br>charts<br>listings<br>...];
 classDef eamenaRpkg fill:#e3c071;
 ```
 
+## Data
+
+Data comes from two sources  
+
+<small>see: <https://github.com/eamena-project/eamenaR#data></small>
+
+
+::: {.panel-tabset}
+
+### Files
+
+GeoJSON is the privileged format to work with spatial data
+
+![](https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/geojson-export.png){height=400px}<div class="captiontext"></div>
+
+
+### PostgreSQL
+
+Some functions allow to query directly the PostgreSQL
+
+```{.r}
+select_related_resources <- function(db.con = NA,
+                                     df = NA,
+                                     having = "Stable",
+                                     measure = "Measurement Number",
+                                     disconn = TRUE,
+                                     verbose = TRUE){
+  ...
+  for(cc in uuid.cc){
+    for (hav in length(having.df[["uuid"]])){
+      having.uuid <- having.df[["uuid"]][hav]
+      sqll <- stringr::str_interp("
+      SELECT resourceinstanceid
+      FROM tiles
+      WHERE resourceinstanceid::text LIKE '${cc}'
+      AND tiledata ->> '8fc30f35-cb7e-11ea-a292-02e7594ce0a0' = '${having.uuid}'
+                       ")
+      uuid.having <- RPostgres::dbGetQuery(db.con, sqll)
+      uuids.having <- rbind(uuids.having, uuid.having)
+    }
+  }
+  ...
+}
+```
+
+
+:::
+
+
+## Portability
+
+To allow the package to work with different instances of Arches, most of the hard-coded parts are stored in the [ids.csv](https://github.com/eamena-project/eamenaR/blob/main/inst/extdata/ids.csv) file
+
+```{r}
+ids <- read.csv("https://raw.githubusercontent.com/eamena-project/eamenaR/main/inst/extdata/ids.csv")
+kable(ids) %>%
+  kable_styling(full_width = FALSE, position = "center", font_size = 20)
+```
+
+\
 
 ## R programming
 
@@ -222,7 +279,7 @@ Interactive charts or maps with <img src="https://raw.githubusercontent.com/zoom
 
 ```{.r}
 geojson_map_path(interactive = T, 
-                 selected.category = c(0, 1, 2, 3, 4))
+                 selected.category = c(1))
 ```
 
 ```{=html}

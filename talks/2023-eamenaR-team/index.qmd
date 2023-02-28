@@ -45,7 +45,7 @@ library(eamenaR)
 A package used for:
 
 * Data management between EAMENA and third party apps
-* Audit and analyse the EAMENA DB content
+* Data analysis and audit of the EAMENA DB content
 
 ```{mermaid}
 flowchart LR
@@ -70,7 +70,7 @@ Data comes from two sources
 GeoJSON is the privileged format to work with spatial data
 
 ![](https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/geojson-export.png){height=400px}<div class="captiontext"></div>
-
+\
 
 ### PostgreSQL
 
@@ -107,7 +107,13 @@ select_related_resources <- function(db.con = NA,
 
 ## Portability
 
-To allow the package to work with different instances of Arches, most of the hard-coded parts are stored in the [ids.csv](https://github.com/eamena-project/eamenaR/blob/main/inst/extdata/ids.csv) file
+Allow the package to work with different instances of <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 40px;vertical-align: middle;'>
+
+::: {.panel-tabset}
+
+### Mapping table
+
+Most of the hard-coded parts are stored in [ids.csv](https://github.com/eamena-project/eamenaR/blob/main/inst/extdata/ids.csv)
 
 ```{r}
 ids <- read.csv("https://raw.githubusercontent.com/eamena-project/eamenaR/main/inst/extdata/ids.csv")
@@ -117,21 +123,43 @@ kable(ids) %>%
 
 \
 
-## R programming
+### Example
 
-An **R package** hosted on GitHub:
+The function [ref_ids()](https://eamena-project.github.io/eamenaR/doc/ref_ids) retrieve the correspondences between a customized label and its counterparts in the <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 40px;vertical-align: middle;'> instance. For example, working with the EAMENA IDs
+
+```{.r}
+eamenaR::ref_ids("hp.id")
+```
+
+```{r}
+#| echo: false
+
+eamenaR::ref_ids("hp.id")
+```
+
+
+```{.r}
+eamenaR::ref_ids("hp.id", choice = "db.concept.uuid")
+```
+
+```{r}
+#| echo: false
+
+eamenaR::ref_ids("hp.id", choice = "db.concept.uuid")
+```
+
+:::
+
+## IT
+
+An R package hosted on GitHub:
 
 * <a href="https://www.r-project.org/"><img src="https://www.r-project.org/logo/Rlogo.svg" alt="" style="height: 80px;"></a> is a scripting language for data science is the 1️⃣<sup>st</sup> used by archaeologists, and the 18<sup>th</sup> worldwide
-
-
-## GitHub platform
-
-An R package hosted on **GitHub**:
 
 * <a href="https://github.com"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" style="height: 80px;"></a> GitHub is the 🔝 popular web-platform for source code management and software development (with over 128 million public repositories)
 
 
-## Install
+## Install and documentation
 
 * Easy to install and to load:
 
@@ -139,9 +167,6 @@ An R package hosted on **GitHub**:
 devtools::install_github("eamena-project/eamenaR")
 library(eamenaR)
 ```
-
-
-## Documentation
 
 * Regularly updated online documentation
 
@@ -155,11 +180,25 @@ library(eamenaR)
 
 </center>
 
-# Analyse and audit {background-color="#f3e7b3"}
+# Analyse<br>and audit {background-color="#f3e7b3"}
+
+## Generalities
+
+Several types of plots and maps can be created 'flat' or interactive by setting the option `interactive` to `r TRUE`
+
+```{r}
+#| echo: true
+geojson_boxplot(stat = "area", by = "route", interactive = T, verbose = F)
+```
+
 
 ## Maps
 
-It creates outputs such as maps for heritage places:
+Maps of heritage places
+
+::: {.panel-tabset}
+
+### Map
 
 ```{.r }
 geojson_map(map.name = "caravanserail", fig.width = 15, fig.height = 10)
@@ -172,16 +211,21 @@ geojson_map(map.name = "caravanserail", fig.width = 15, fig.height = 10)
 
 </center>
 
+### List of IDs
+
 ```{.r }
 geojson_stat(stat = "list_ids")
 ```
 
 ```{r }
 #| echo: false
+
 geojson_stat(stat = "list_ids")
 ```
 \
 \
+
+:::
 
 ## Paths
 
@@ -201,10 +245,15 @@ geojson_map_path(routes = c(0, 1, 2, 3, 4))
 
 Use API data, on the fly
 
+::: {.panel-tabset}
+
+### Function
+
 ```{.r }
 geojson_addZ()
 ```
 
+### Details
 
 <div class="div-code"> 
 <small>geojson_addZ() code</small><br>
@@ -239,10 +288,11 @@ geojson_addZ()
 ```
 </div>
 
+\
 
 ## Profiles
 
-To draw elevation profiles :
+Draw elevation profiles :
 
 ```{.r }
 geojson_map_path(routes = c(0, 1, 2, 3, 4), export.type = "profile")
@@ -256,7 +306,9 @@ geojson_map_path(routes = c(0, 1, 2, 3, 4), export.type = "profile")
 
 ## Statistics
 
-It also creates basic statistics:
+::: {.panel-tabset}
+
+### Areas
 
 ```{.r }
 geojson_boxplot(stat.name = "caravanserais_areas", stat = "area", by = "route")
@@ -268,28 +320,71 @@ geojson_boxplot(stat.name = "caravanserais_areas", stat = "area", by = "route")
 
 </center>
 
+### Conditions
+
+```{.r }
+geojson_stat(stat.name = "overall_cond", stat = "stats",
+             field.names = c("Overall Condition State Type"))
+```
+
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/overall_condition_pie.png" width="700">
+
+</center>
+
+### Disturbances
+
+```{.r }
+geojson_stat(stat.name = "distrub", stat = "stats",
+            chart.type = "hist", field.names = c("Disturbance Cause Type"))
+```
+
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/distrub_cause_category_type_hist.png" width="700">
+
+</center>
+
+### Periods
+
+```{.r}
+d <- list_cultural_periods(db = "geojson", d = d)
+plot_cultural_periods(d = d, field = "subperiods", plot.type = "by.eamenaid")
+```
+
+![](https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/cultural_subperiods_byeamenaid.png){height=400px}<div class="captiontext">caravanserais subperiods</div>
+
+### Orientations
+
+```{.r}
+geojson_stat(stat.name = "orientations", stat = "stats",
+             chart.type = "radar", field.names = c("Resource Orientation"))
+```
+
+![](https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/orientations_radar.png){height=400px}<div class="captiontext">caravanserais orientations</div>
+
+:::
+
+\
 
 ## Interactivity
 
-Interactive charts or maps with <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-plotly.png" style="height: 45px; vertical-align:middle"> and <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-leaflet.png" style="height: 40px; vertical-align:middle">:
+Interactive charts or maps 
 
-:::: {.columns}
+::: {.panel-tabset}
 
-::: {.column width="40%"}
+### <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-plotly.png" style="height: 45px; vertical-align:middle">
 
 ```{.r}
-geojson_map_path(interactive = T, 
-                 selected.category = c(1))
+geojson_map_path(interactive = T, selected.category = c(1))
 ```
 
 ```{=html}
 <iframe width="1000" height="500" src="http://shinyserver.cfs.unipi.it:3838/teach/stats/eamenaR/paths_map_route_1.html"></iframe>
 ```
 
-
-:::
-
-::: {.column width="60%"}
+### <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-leaflet.png" style="height: 40px; vertical-align:middle"
 
 ```{.r}
 geojson_map(interactive = T)
@@ -302,76 +397,10 @@ geojson_map(interactive = T)
 
 :::
 
-::::
-
-
-
-## ***eamenaR*** <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px; vertical-align:middle">
-
-And interactive charts or maps with <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-plotly.png" style="height: 50px; vertical-align:middle"> and <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-leaflet.png" style="height: 50px; vertical-align:middle">:
-
-:::: {.columns}
-
-::: {.column width="40%"}
-![](https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/paths_map_route_1.png){height=400px}<div class="captiontext">Paths between caravanserais</div>
-
-:::
-
-::: {.column width="60%"}
-![](https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/caravanserail_plotly.png){height=400px}<div class="captiontext">Map of caravanserais</div>
-
-
-:::
-
-```{.r}
-geojson_map(interactive = T)
-```
-
+\
 \
 
-```{.r}
-geojson_map_path(interactive = T, selected.category = c(0, 1, 2, 3, 4))
-```
 
-\
-
-::::
-
-
-## Other outputs
-
-And many other ouptuts:
-
-:::: {.columns}
-
-::: {.column width="50%"}
-
-```{.r}
-d <- list_cultural_periods(db = "geojson", 
-                           d = d)
-plot_cultural_periods(d = d, 
-                      field = "subperiods",
-                      plot.type = "by.eamenaid")
-```
-
-![](https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/cultural_subperiods_byeamenaid.png){height=400px}<div class="captiontext">caravanserais subperiods</div>
-
-:::
-
-::: {.column width="50%"}
-
-```{.r}
-geojson_stat(stat.name = "orientations",
-             stat = "stats",
-             chart.type = "radar",
-             field.names = c("Resource Orientation"))
-```
-
-![](https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/orientations_radar.png){height=400px}<div class="captiontext">caravanserais orientations</div>
-
-:::
-
-::::
 
 ## FAIR data
 

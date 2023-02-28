@@ -439,10 +439,19 @@ classDef eamenaRpkg fill:#e3c071;
 </section>
 <section id="data" class="slide level2">
 <h2>Data</h2>
+<p>Data comes from two sources</p>
+<p><small>see: <a href="https://github.com/eamena-project/eamenaR#data" class="uri">https://github.com/eamena-project/eamenaR#data</a></small></p>
 <div class="panel-tabset">
-<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">PostgreSQL</a></li><li><a href="#tabset-1-2">Files</a></li></ul>
+<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">Files</a></li><li><a href="#tabset-1-2">PostgreSQL</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1">
+<p>GeoJSON is the privileged format to work with spatial data</p>
+<img data-src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/geojson-export.png" height="400">
+<div class="captiontext">
+
+</div>
+</div>
+<div id="tabset-1-2">
 <p>Some functions allow to query directly the PostgreSQL</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a>select_related_resources <span class="ot">&lt;-</span> <span class="cf">function</span>(<span class="at">db.con =</span> <span class="cn">NA</span>,</span>
 <span id="cb1-2"><a href="#cb1-2"></a>                                     <span class="at">df =</span> <span class="cn">NA</span>,</span>
@@ -467,19 +476,12 @@ classDef eamenaRpkg fill:#e3c071;
 <span id="cb1-21"><a href="#cb1-21"></a>  ...</span>
 <span id="cb1-22"><a href="#cb1-22"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="tabset-1-2">
-<img data-src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/geojson-export.png" height="400">
-<div class="captiontext">
-GeoJSON is the privileged format to work with spatial data
-</div>
-<p><small>see: <a href="https://github.com/eamena-project/eamenaR#data" class="uri">https://github.com/eamena-project/eamenaR#data</a></small></p>
-</div>
 </div>
 </div>
 </section>
 <section id="portability" class="slide level2">
 <h2>Portability</h2>
-<p>To allow the package to work with different instances of Arches, most of the hard-coded parts are stored in the <a href="https://github.com/eamena-project/eamenaR/blob/main/inst/extdata/ids.csv">ids.csv</a> file</p>
+<p>To allow the package to work with different instances of <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png" style="height: 60px;vertical-align: middle;">, most of the hard-coded parts are stored in the <a href="https://github.com/eamena-project/eamenaR/blob/main/inst/extdata/ids.csv">ids.csv</a> file</p>
 <div class="cell">
 <div class="cell-output-display">
 

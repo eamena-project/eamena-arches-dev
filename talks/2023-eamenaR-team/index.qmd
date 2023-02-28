@@ -42,8 +42,6 @@ library(dplyr)
 library(eamenaR)
 ```
 
-A package used for:
-
 * Data management between EAMENA DB and 3<sup>rd</sup> party apps
 * Data analysis and audit of the EAMENA DB content
 
@@ -61,9 +59,11 @@ classDef eamenaRpkg fill:#e3c071;
 
 *eamenaR* <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px; vertical-align:middle"> is an R package hosted on GitHub:
 
-* <a href="https://www.r-project.org/"><img src="https://www.r-project.org/logo/Rlogo.svg" alt="" style="height: 80px;"></a> is a scripting language for data science is the 1️⃣<sup>st</sup> used by archaeologists, and the 18<sup>th</sup> worldwide
+<a href="https://www.r-project.org/"><img src="https://www.r-project.org/logo/Rlogo.svg" alt="" style="height: 80px;vertical-align: middle;"></a> is a scripting language for data science is the 1️⃣<sup>st</sup> used by archaeologists, and the 18<sup>th</sup> worldwide
 
-* <a href="https://github.com"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" style="height: 80px;"></a> GitHub is the 🔝 popular web-platform for source code management and software development (with over 128 million public repositories)
+<br>
+
+<a href="https://github.com"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" style="height: 80px;vertical-align: middle;"></a> GitHub is the 🔝 popular web-platform for source code management and software development (with over 128 million public repositories)
 
 
 ## Data
@@ -179,14 +179,14 @@ eamenaR::ref_ids("hp.id", choice = "db.concept.uuid")
 
 ## Install and documentation
 
-* Easy to install and to load:
+Easy to install and to load:
 
 ```{.r }
 devtools::install_github("eamena-project/eamenaR")
 library(eamenaR)
 ```
 
-* Regularly updated online documentation
+Regularly updated online documentation
 
 ```{.r }
 ?geojson_map
@@ -198,18 +198,19 @@ library(eamenaR)
 
 </center>
 
-# Analyse<br>and audit {background-color="#f3e7b3" }
+# Data analysis<br>and audit {background-color="#f3e7b3" }
 
 ## Generalities {background-interactive="true"}
 
-Several types of plots and maps can be created 'flat' or interactive by setting the option `interactive` to `r TRUE`
+Plots and maps are created 'flat' or interactive by setting the option `interactive` to `r TRUE`
 
-```{r}
-#| echo: true
-
+```{.r}
 geojson_boxplot(stat = "area", by = "route", interactive = T, verbose = F)
 ```
 
+```{=html}
+<iframe width="1000" height="400" src="http://shinyserver.cfs.unipi.it:3838/teach/stats/eamenaR/caravanserais_areas.html"></iframe>
+```
 
 ## Maps
 
@@ -217,7 +218,7 @@ Maps of heritage places
 
 ::: {.panel-tabset}
 
-### Map
+### General Map
 
 ```{.r }
 geojson_map(map.name = "caravanserail", fig.width = 15, fig.height = 10)
@@ -240,6 +241,34 @@ geojson_stat(stat = "list_ids")
 #| echo: false
 
 geojson_stat(stat = "list_ids")
+```
+\
+\
+
+### Thematic Map
+
+```{r}
+geojson_map(map.name = "caravanserail", field.names = c("Damage Extent Type"))
+```
+
+
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/caravanserail_Damage Extent Type.png" width="600">
+
+</center>
+
+
+### List of fields
+
+```{.r }
+geojson_stat(stat = "list_fields")
+```
+
+```{r }
+#| echo: false
+
+geojson_stat(stat = "list_fields")
 ```
 \
 \

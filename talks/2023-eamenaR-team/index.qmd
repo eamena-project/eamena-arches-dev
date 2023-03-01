@@ -1,12 +1,11 @@
 ---
-title: "<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo_complete.png' style='height: 50px; vertical-align:middle;margin: 0 0 0 0; background: transparent;'><br>eamenaR"
-
-subtitle: "**An R package for the<br>statistical analysis and data management<br>of the EAMENA database**"
-author: "Thomas Huet"
+title: "eamenaR"
+subtitle: "**An R package for<br>statistical analysis and data management<br>of the EAMENA database**"
+author: "EAMENA project"
 title-slide-attributes:
   data-background-image: "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaDB-bck.png"
-  data-background-size: "60%"
-  data-background-opacity: "0.5"
+  data-background-size: "50%"
+  data-background-opacity: "0.4"
 format:
   revealjs: 
     css: https://zoometh.github.io/thomashuet/css/quarto.css
@@ -18,8 +17,8 @@ format:
     preview-links: auto
     reference-location: document
     footnotes-hover: true
-    logo: https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/inst-uni-oxford_.png
-    footer: "<em>eamenaR</em> <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png' style='height: 40px;vertical-align: middle;'> EAMENA project, March 2023 - Thomas Huet"
+    logo: https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo_complete.png
+    footer: "<em>eamenaR</em>  <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png' style='height: 45px;vertical-align: middle;'> - Arcadia meeting, London (UK), 10<sup>th</sup> March 2023"
     margin: 0
     width: 1200
 ---
@@ -42,12 +41,15 @@ library(dplyr)
 library(eamenaR)
 ```
 
-* Data management between EAMENA DB and 3<sup>rd</sup> party apps
 * Data analysis and audit of the EAMENA DB content
+* Data management between EAMENA DB and 3<sup>rd</sup> party apps
 
 ```{mermaid}
 flowchart LR
+subgraph ide1 [Arches];
 A[(EAMENA<br>DB)] <--data<br>exchange--> B{{"eamenaR"}}:::eamenaRpkg;
+end;
+B --data<br>analysis--> B;
 B --data<br>management--> B;
 B <--data<br>exchange--> C((third part<br>app));
 B --"output"--> D[maps<br>charts<br>listings<br>...];
@@ -124,9 +126,13 @@ kable(ids) %>%
 
 \
 
-### `ref_ids()` function
+### `ref_ids()`
 
-Retrieve the correspondences between customized Arches label (e.g. "`EAMENA ID`"), R shortnames (e.g. "`hp.id`") and Arches UUID (e.g. "`34cfe992-c2c0-11ea-9026-02e7594ce0a0`")
+Correspondences between:
+
+  - Arches labels (e.g. "`EAMENA ID`");  
+  - R short names (e.g. "`hp.id`");  
+  - Arches UUID (e.g. "`34cfe992-c2c0-11ea-9026-02e7594ce0a0`");  
 
 ```{.r}
 eamenaR::ref_ids(concept.name = "EAMENA ID", choice = "db.concept.name")
@@ -135,9 +141,22 @@ eamenaR::ref_ids(concept.name = "EAMENA ID", choice = "db.concept.name")
 ```{r}
 #| echo: false
 
-eamenaR::ref_ids("hp.id")
+eamenaR::ref_ids(concept.name = "EAMENA ID", choice = "db.concept.name")
 ```
 
+\
+
+```{.r}
+eamenaR::ref_ids(concept.name = "EAMENA ID", choice = "r.concept.name")
+```
+
+```{r}
+#| echo: false
+
+eamenaR::ref_ids(concept.name = "EAMENA ID", choice = "r.concept.name")
+```
+
+\
 
 ```{.r}
 eamenaR::ref_ids(concept.name = "EAMENA ID", choice = "db.concept.uuid")
@@ -146,9 +165,10 @@ eamenaR::ref_ids(concept.name = "EAMENA ID", choice = "db.concept.uuid")
 ```{r}
 #| echo: false
 
-eamenaR::ref_ids("hp.id", choice = "db.concept.uuid")
+eamenaR::ref_ids(concept.name = "EAMENA ID", choice = "db.concept.uuid")
 ```
 
+\
 
 ### Example
 
@@ -179,7 +199,7 @@ eamenaR::ref_ids("hp.id", choice = "db.concept.uuid")
 
 ## Install and documentation
 
-Easy to install and to load:
+Install and to load:
 
 ```{.r }
 devtools::install_github("eamena-project/eamenaR")
@@ -200,16 +220,16 @@ Regularly updated online documentation
 
 # Data analysis<br>and audit {background-color="#f3e7b3" }
 
-## Generalities {background-interactive="true"}
+## Generalities
 
-Plots and maps are created 'flat' or interactive by setting the option `interactive` to `r TRUE`
+Plots and maps are 'flat' or interactive based on the option `interactive`
 
 ```{.r}
 geojson_boxplot(stat = "area", by = "route", interactive = T, verbose = F)
 ```
 
 ```{=html}
-<iframe width="1000" height="400" src="http://shinyserver.cfs.unipi.it:3838/teach/stats/eamenaR/caravanserais_areas.html"></iframe>
+<iframe width="1200" height="400" src="http://shinyserver.cfs.unipi.it:3838/teach/stats/eamenaR/caravanserais_areas.html"></iframe>
 ```
 
 ## Maps
@@ -218,10 +238,12 @@ Maps of heritage places
 
 ::: {.panel-tabset}
 
-### General Map
+### General
 
 ```{.r }
-geojson_map(map.name = "caravanserail", fig.width = 15, fig.height = 10)
+geojson_map(geojson.path = paste0(system.file(package = "eamenaR"),
+                                  "/extdata/caravanserail.geojson"),
+            map.name = "caravanserail")
 ```
 
 
@@ -231,11 +253,45 @@ geojson_map(map.name = "caravanserail", fig.width = 15, fig.height = 10)
 
 </center>
 
+### Thematic
+
+```{.r}
+geojson_map(geojson.path = paste0(system.file(package = "eamenaR"),
+                                  "/extdata/caravanserail.geojson"),
+            map.name = "caravanserail", field.names = c("Damage Extent Type"))
+```
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/caravanserail_Damage Extent Type.png" width="600">
+
+</center>
+
+:::
+
+::: {.column width="50%"}
+
+Uses the `symbology.xlsx` layout
+
+```{=html}
+<iframe width="1200" height="500" src="http://shinyserver.cfs.unipi.it:3838/eamena/eamenaR/symbology.html"></iframe>
+```
+
+:::
+
+::::
+
 ### List of IDs
 
 ```{.r }
 geojson_stat(stat = "list_ids")
 ```
+
+\
 
 ```{r }
 #| echo: false
@@ -245,25 +301,13 @@ geojson_stat(stat = "list_ids")
 \
 \
 
-### Thematic Map
-
-```{r}
-geojson_map(map.name = "caravanserail", field.names = c("Damage Extent Type"))
-```
-
-
-<center>
-
-<img src="https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/caravanserail_Damage Extent Type.png" width="600">
-
-</center>
-
-
 ### List of fields
 
 ```{.r }
 geojson_stat(stat = "list_fields")
 ```
+
+\
 
 ```{r }
 #| echo: false
@@ -277,80 +321,48 @@ geojson_stat(stat = "list_fields")
 
 ## Paths
 
-Or maps for paths between heritage places
+Maps for paths between heritage places
 
 ```{.r }
-geojson_map_path(routes = c(0, 1, 2, 3, 4))
+geojson_map_path(geojson.path = paste0(system.file(package = "eamenaR"), "/extdata/caravanserail.geojson"),
+                 csv.path = paste0(system.file(package = "eamenaR"), "/extdata/caravanserail_paths.csv"))
 ```
 
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/caravanserail_paths.png" width="600">
+<img src="https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/caravanserail_paths.png" width="700">
 
 </center>
 
 ## Elevations
 
-Use API data, on the fly
-
-::: {.panel-tabset}
-
-### Function
+Use API data, on the fly, to retrieve elevations
 
 ```{.r }
-geojson_addZ()
+geojson_addZ(geojson.path = paste0(system.file(package = "eamenaR"), "/extdata/caravanserail.geojson"),
+             elevation.api = "gmrt_point")
 ```
 
-### Details
-
-<div class="div-code"> 
-<small>geojson_addZ() code</small><br>
-```{.r code-line-numbers="12-24"}
- ...
- # type of geometries
-    if(sf::st_geometry_type(a.geom$geometry) %in% c("MULTIPOINT", "POLYGON", "MULTIPOLYGON")){
-      # centroids
-      coordinates <- sf::st_coordinates(sf::st_centroid(a.geom))
-    }
-    if(sf::st_geometry_type(a.geom$geometry) == "POINT"){
-      coordinates <- sf::st_coordinates(a.geom)
-    }
-    X <- coordinates[1]
-    Y <- coordinates[2]
-    # elevation API
-    if (elevation.api == 'gmrt'){
-      http.req <- paste0(
-        "https://www.gmrt.org/services/ProfileServer?boundspath=",
-        coordinates,
-        "&format=json"
-      )
-    }
-    if (elevation.api == 'open-elevation'){
-      http.req <- paste0(
-        "https://api.open-elevation.com/api/v1/lookup?locations=", X, ",", Y
-      )
-    }
-    r <- httr::GET(http.req, httr::timeout(timeout))
-    rr <- httr::content(r)
-    ...
+```{=html}
+<iframe width="1200" height="1000" src="https://www.gmrt.org/services/pointserverinfo.php#!/services/getGMRTPoint"></iframe>
 ```
-</div>
-
-:::
 
 \
 
 ## Profiles
 
-Draw elevation profiles :
+Elevation profiles :
 
 ```{.r }
-geojson_map_path(routes = c(0, 1, 2, 3, 4), export.type = "profile")
+geojson_map_path(map.name = "map_path",
+                 geojson.path = paste0(system.file(package = "eamenaR"), "/extdata/caravanserail.geojson"),
+                 csv.path = paste0(system.file(package = "eamenaR"), "/extdata/caravanserail_paths.csv"),
+                 export.type = "profile")
 ```
 
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/paths_profile.png" width="700">
+<img src="https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/map_path_profile.png" width="700">
 
 </center>
 
@@ -431,7 +443,7 @@ geojson_map_path(interactive = T, selected.category = c(1))
 ```
 
 ```{=html}
-<iframe width="1000" height="500" src="http://shinyserver.cfs.unipi.it:3838/teach/stats/eamenaR/paths_map_route_1.html"></iframe>
+<iframe width="1200" height="500" src="http://shinyserver.cfs.unipi.it:3838/teach/stats/eamenaR/paths_map_route_1.html"></iframe>
 ```
 
 ### <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-leaflet.png" style="height: 40px; vertical-align:middle">
@@ -441,7 +453,7 @@ geojson_map(interactive = T)
 ```
 
 ```{=html}
-<iframe width="1000" height="500" src="http://shinyserver.cfs.unipi.it:3838/teach/stats/eamenaR/caravanserail_plotly.html"></iframe>
+<iframe width="1200" height="500" src="http://shinyserver.cfs.unipi.it:3838/teach/stats/eamenaR/caravanserail_plotly.html"></iframe>
 ```
 
 
@@ -451,6 +463,96 @@ geojson_map(interactive = T)
 \
 
 
+# Data<br>management<br>and audit{background-color="#f3e7b3"}
+
+
+
+## Bulk Upload
+
+
+::: {.panel-tabset}
+
+### workflow
+
+
+```{mermaid}
+flowchart LR
+A[structured file<br><em>source</em>] ----> B("list_mapping_bu()"):::eamenaRfunction;
+A -. a. get MBR .-> D("geom_bbox()"):::eamenaRfunction;
+B --1. mapping file--> B;
+B --2. export--> C[BU file<br><em>target</em>];
+subgraph ide1 [Geometries];
+D -. b. creates .-> E[mbr.geojson];
+end;
+E -- + GRID ID --> B; 
+classDef eamenaRfunction fill:#e7deca;
+```
+
+### mapping table
+
+The source depends on the different authors:
+
+  - `job`: by convention, the initial of the author (e.g. '`mk`' = Mohamed Kenawi)
+  - `job_type`: the type of action to perform on the source data (e.g. '`mk_type`'). This can be: 
+    - <span style="color:#f4c7c3;">`value`</span>: repeat a single value for the whole BU;
+    - <span style="color:#ffc000;">`field`</span>: get the different values of a source field and add these different values in a BU field;
+    - <span style="color:#0070c0;">`expression`</span>: execute an R code snippet;
+    - <span style="color:#fce8b2;">`escape`</span>: the value is calculated in another field;
+    - etc.;
+
+
+```{=html}
+<iframe width="1300" height="700" src="https://docs.google.com/spreadsheets/d/1nXgz98mGOySgc0Q2zIeT1RvHGNl4WRq1Fp9m5qB8g8k/edit#gid=1083097625"></iframe>
+```
+
+:::
+
+
+## 3<sup>rd</sup> party data
+
+
+### append geometries
+
+blbla
+
+:::
+
+
+## Duplicates
+
+```{.r}
+d <- hash::hash()
+d <- ref_are_duplicates(d = d,
+                        c("EAMENA-0207209", "EAMENA-0182057"),
+                        selected.fields = c("Assessment Investigator - Actor",
+                                            "Assessment Activity Date",
+                                            "Resource Name"))
+kable(d$are_duplicates) %>%
+  kable_styling(full_width = FALSE, position = "center", font_size = 20)
+```
+
+```{r}
+#| echo: false
+options(encoding = 'UTF-8')
+
+d <- hash::hash()
+d <- ref_are_duplicates(d = d,
+                        c("EAMENA-0207209", "EAMENA-0182057"),
+                        selected.fields = c("Assessment Investigator - Actor",
+                                            "Assessment Activity Date",
+                                            "Resource Name"),
+                        verbose = F)
+kable(d$are_duplicates) %>%
+  kable_styling(full_width = FALSE, position = "center", font_size = 20)
+```
+
+
+
+# Practice {background-color="#f3e7b3"}
+
+
+# Conclusion {background-color="#f3e7b3"}
+
 
 ## FAIR data
 
@@ -459,15 +561,21 @@ Makes data FAIR (*Findable, Accessible, Interoperable, Reusable*)
 
 ```{mermaid}
 flowchart LR
-subgraph ide1 [<b>F</b>indable, <b>A</b>ccessible]
+subgraph ide1 [<b>F</b>indable, <b>A</b>ccessible];
 A[(EAMENA<br>DB)];
-end
+end;
 A[(EAMENA<br>DB)] <---> B{{"eamenaR"}}:::eamenaRpkg;
-subgraph ide2 [<b>I</b>nteroperable, <b>R</b>eusable]
+subgraph ide2 [<b>I</b>nteroperable, <b>R</b>eusable];
 B;
-end
+end;
 classDef eamenaRpkg fill:#e3c071;
 ```
+
+
+
+## TESTS
+
+<a href="https://github.com/zoometh/thomashuet/blob/8f5665eca9efc76f26847258711a71b5adda1133/teachings/stats/R4Archaeo/index.qmd#L402"><small><notes>source code<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github-1.png" style="height: 35px;vertical-align: middle;"/></notes></small></a>
 
 
 <center>
@@ -475,19 +583,6 @@ classDef eamenaRpkg fill:#e3c071;
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR-fair.png" width="600">
 
 </center>
-
-# Data<br>management {background-color="#f3e7b3"}
-
-
-
-
-
-# Practice {background-color="#f3e7b3"}
-
-
-## TESTS
-
-<a href="https://github.com/zoometh/thomashuet/blob/8f5665eca9efc76f26847258711a71b5adda1133/teachings/stats/R4Archaeo/index.qmd#L402"><small><notes>source code<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github-1.png" style="height: 35px;vertical-align: middle;"/></notes></small></a>
 
 
 ```{mermaid}

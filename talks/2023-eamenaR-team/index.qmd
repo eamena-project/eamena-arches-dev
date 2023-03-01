@@ -28,7 +28,7 @@ format:
 
 ## Purpose
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
 library(shiny)
 library(rmarkdown)
 library(knitr)
@@ -47,11 +47,11 @@ library(eamenaR)
 ```{mermaid}
 flowchart LR
 subgraph ide1 [Arches];
-A[(EAMENA<br>DB)] <--data<br>exchange--> B{{"eamenaR"}}:::eamenaRpkg;
+A[(EAMENA<br>DB)];
 end;
-B --data<br>analysis--> B;
-B --data<br>management--> B;
-B <--data<br>exchange--> C((third part<br>app));
+A <--data<br>exchange--> B{{"eamenaR"}}:::eamenaRpkg;
+B --data<br>analysis & management--> B;
+B <--data<br>exchange--> C((3<sup>rd</sup> part<br>app));
 B --"output"--> D[maps<br>charts<br>listings<br>...];
 classDef eamenaRpkg fill:#e3c071;
 ```
@@ -59,13 +59,14 @@ classDef eamenaRpkg fill:#e3c071;
 
 ## IT Stack
 
-*eamenaR* <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px; vertical-align:middle"> is an R package hosted on GitHub:
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px; vertical-align:middle"> is an R package hosted on GitHub:
 
-<a href="https://www.r-project.org/"><img src="https://www.r-project.org/logo/Rlogo.svg" alt="" style="height: 80px;vertical-align: middle;"></a> is a scripting language for data science is the 1️⃣<sup>st</sup> used by archaeologists, and the 18<sup>th</sup> worldwide
+* <a href="https://www.r-project.org/"><img src="https://www.r-project.org/logo/Rlogo.svg" alt="" style="height: 80px;vertical-align: middle;"></a> is a scripting language for data science is the 1️⃣<sup>st</sup> used by archaeologists, and the 18<sup>th</sup> worldwide
 
-<br>
+* <a href="https://github.com"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" style="height: 80px;vertical-align: middle;"></a> GitHub is the 🔝 popular web-platform for source code management and software development (with over 128 million public repositories)
 
-<a href="https://github.com"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" style="height: 80px;vertical-align: middle;"></a> GitHub is the 🔝 popular web-platform for source code management and software development (with over 128 million public repositories)
+## <img src="https://www.r-project.org/logo/Rlogo.svg" alt="" style="height: 80px;vertical-align: middle;"> libraries
+
 
 
 ## Data
@@ -76,7 +77,12 @@ classDef eamenaRpkg fill:#e3c071;
 
 GeoJSON is the privileged format to work with spatial data
 
-![](https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/geojson-export.png){height=400px}<div class="captiontext"></div>
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/geojson-export.png" width="500">
+
+</center>
+
 \
 
 ### PostgreSQL
@@ -110,7 +116,7 @@ Some functions allow to query directly the PostgreSQL
 
 ## Portability
 
-Allow the package to work with different instances of <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'>
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px; vertical-align:middle"> can work with different instances of <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'>
 
 ::: {.panel-tabset}
 
@@ -398,8 +404,8 @@ geojson_stat(stat.name = "overall_cond", stat = "stats",
 ### Disturbances
 
 ```{.r }
-geojson_stat(stat.name = "distrub", stat = "stats",
-            chart.type = "hist", field.names = c("Disturbance Cause Type"))
+geojson_stat(stat = "stats", chart.type = "hist",
+             field.names = c("Disturbance Cause Category Type"))
 ```
 
 <center>
@@ -415,7 +421,13 @@ d <- list_cultural_periods(db = "geojson", d = d)
 plot_cultural_periods(d = d, field = "subperiods", plot.type = "by.eamenaid")
 ```
 
-![](https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/cultural_subperiods_byeamenaid.png){height=400px}<div class="captiontext">caravanserais subperiods</div>
+
+<center>
+
+<img src="raw.githubusercontent.com/eamena-project/eamenaR/master/results/cultural_subperiods_byeamenaid.png" width="700">
+
+</center>
+
 
 ### Orientations
 
@@ -424,7 +436,12 @@ geojson_stat(stat.name = "orientations", stat = "stats",
              chart.type = "radar", field.names = c("Resource Orientation"))
 ```
 
-![](https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/orientations_radar.png){height=400px}<div class="captiontext">caravanserais orientations</div>
+
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/orientations_radar.png" width="700">
+
+</center>
 
 :::
 
@@ -472,23 +489,26 @@ geojson_map(interactive = T)
 
 ::: {.panel-tabset}
 
-### workflow
+### Workflow
 
 
 ```{mermaid}
 flowchart LR
-A[structured file<br><em>source</em>] ----> B("list_mapping_bu()"):::eamenaRfunction;
-A -. a. get MBR .-> D("geom_bbox()"):::eamenaRfunction;
-B --1. mapping file--> B;
-B --2. export--> C[BU file<br><em>target</em>];
-subgraph ide1 [Geometries];
-D -. b. creates .-> E[mbr.geojson];
-end;
-E -- + GRID ID --> B; 
-classDef eamenaRfunction fill:#e7deca;
+    A[structured file<br><em>source</em>] ----> B("list_mapping_bu()"):::eamenaRfunction;
+    A -. a. get MBR .-> D("geom_bbox()"):::eamenaRfunction;
+    B --1. mapping file--> B;
+    B --2. export--> C[BU file<br><em>target</em>];
+    subgraph ide1 [Geometries];
+    D -. b. creates .-> E[mbr.geojson];
+    end;
+    E -- + GRID ID --> B; 
+    classDef eamenaRfunction fill:#e7deca;
 ```
 
-### mapping table
+### Mapping table
+
+<span style="color:#f4c7c3;">`value`</span>
+<span style="color:#f4c7c3;">value</span>
 
 The source depends on the different authors:
 
@@ -515,6 +535,8 @@ The source depends on the different authors:
 
 blbla
 
+### rrr
+
 :::
 
 
@@ -523,7 +545,7 @@ blbla
 ```{.r}
 d <- hash::hash()
 d <- ref_are_duplicates(d = d,
-                        c("EAMENA-0207209", "EAMENA-0182057"),
+                        hp.list = c("EAMENA-0207209", "EAMENA-0182057"),
                         selected.fields = c("Assessment Investigator - Actor",
                                             "Assessment Activity Date",
                                             "Resource Name"))
@@ -542,13 +564,12 @@ d <- ref_are_duplicates(d = d,
                                             "Assessment Activity Date",
                                             "Resource Name"),
                         verbose = F)
+# d$are_duplicates[ , 2] <- stringi::stri_unescape_unicode(gsub("<U\\+(....)>", "\\\\u\\1", d$are_duplicates[ , 2]))
+# d$are_duplicates[ , 3] <- stringi::stri_unescape_unicode(gsub("<U\\+(....)>", "\\\\u\\1", d$are_duplicates[ , 3]))
 kable(d$are_duplicates) %>%
-  kable_styling(full_width = FALSE, position = "center", font_size = 20)
+  kable_styling(full_width = FALSE, position = "center", font_size = 20) %>%
+  column_spec(1, bold = T)
 ```
-
-
-
-# Practice {background-color="#f3e7b3"}
 
 
 # Conclusion {background-color="#f3e7b3"}
@@ -571,6 +592,7 @@ end;
 classDef eamenaRpkg fill:#e3c071;
 ```
 
+# Practice {background-color="#f3e7b3"}
 
 
 ## TESTS

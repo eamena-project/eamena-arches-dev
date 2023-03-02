@@ -67,6 +67,11 @@ classDef eamenaRpkg fill:#e3c071;
 
 ## <img src="https://www.r-project.org/logo/Rlogo.svg" alt="" style="height: 80px;vertical-align: middle;"> libraries
 
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/stack-eamenar.png" width="450">
+
+</center>
 
 
 ## Data
@@ -79,7 +84,7 @@ GeoJSON is the privileged format to work with spatial data
 
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/geojson-export.png" width="500">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/geojson-export.png" width="700">
 
 </center>
 
@@ -116,7 +121,7 @@ Some functions allow to query directly the PostgreSQL
 
 ## Portability
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px; vertical-align:middle"> can work with different instances of <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'>
+<span style="color:#808080;">(in theory)</span> <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" alt="" style="height: 70px; vertical-align:middle"> can work with different <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> instances
 
 ::: {.panel-tabset}
 
@@ -136,68 +141,49 @@ kable(ids) %>%
 
 Correspondences between:
 
+  - Arches UUID (e.g. "`34cfe992-c2c0-11ea-9026-02e7594ce0a0`");  
   - Arches labels (e.g. "`EAMENA ID`");  
   - R short names (e.g. "`hp.id`");  
-  - Arches UUID (e.g. "`34cfe992-c2c0-11ea-9026-02e7594ce0a0`");  
 
-```{.r}
-eamenaR::ref_ids(concept.name = "EAMENA ID", choice = "db.concept.name")
-```
-
-```{r}
-#| echo: false
-
-eamenaR::ref_ids(concept.name = "EAMENA ID", choice = "db.concept.name")
-```
-
-\
-
-```{.r}
-eamenaR::ref_ids(concept.name = "EAMENA ID", choice = "r.concept.name")
-```
-
-```{r}
-#| echo: false
-
-eamenaR::ref_ids(concept.name = "EAMENA ID", choice = "r.concept.name")
-```
-
-\
-
-```{.r}
-eamenaR::ref_ids(concept.name = "EAMENA ID", choice = "db.concept.uuid")
-```
-
-```{r}
-#| echo: false
-
-eamenaR::ref_ids(concept.name = "EAMENA ID", choice = "db.concept.uuid")
-```
-
-\
 
 ### Example
 
-```{.r code-line-numbers="3-4"}
-  ...
-    ...
-    bc.uuid <- eamenaR::ref_ids(concept.name = "Built Component Observation",
-                                choice = "db.concept.uuid")
-    for(cc in uuid.cc){
-      for (hav in length(having.df[["uuid"]])){
-        having.uuid <- having.df[["uuid"]][hav]
-        sqll <- stringr::str_interp("
-              SELECT resourceinstanceid
-              FROM tiles
-              WHERE resourceinstanceid::text LIKE '${cc}'
-              AND tiledata ->> '${bc.uuid}' = '${having.uuid}'
-                         ")
-        uuid.having <- RPostgres::dbGetQuery(db.con, sqll)
-        uuids.having <- rbind(uuids.having, uuid.having)
-      }
-    }
-  ...
+
+```{.r}
+eamenaR::ref_ids(concept.name = "EAMENA ID", choice = "db.concept.name")
 ```
+
+```{r}
+#| echo: false
+
+eamenaR::ref_ids(concept.name = "34cfe992-c2c0-11ea-9026-02e7594ce0a0", choice = "db.concept.name")
+```
+
+\
+
+```{.r}
+eamenaR::ref_ids(concept.name = "EAMENA ID", choice = "r.concept.name")
+```
+
+```{r}
+#| echo: false
+
+eamenaR::ref_ids(concept.name = "EAMENA ID", choice = "r.concept.name")
+```
+
+\
+
+```{.r}
+eamenaR::ref_ids(concept.name = "EAMENA ID", choice = "db.concept.uuid")
+```
+
+```{r}
+#| echo: false
+
+eamenaR::ref_ids(concept.name = "hp.id", choice = "db.concept.uuid")
+```
+
+\
 
 
 :::
@@ -212,7 +198,7 @@ devtools::install_github("eamena-project/eamenaR")
 library(eamenaR)
 ```
 
-Regularly updated online documentation
+Documentation
 
 ```{.r }
 ?geojson_map
@@ -224,7 +210,7 @@ Regularly updated online documentation
 
 </center>
 
-# Data analysis<br>and audit {background-color="#f3e7b3" }
+# Data analysis <br>and audit {background-color="#f3e7b3" }
 
 ## Generalities
 
@@ -234,8 +220,10 @@ Plots and maps are 'flat' or interactive based on the option `interactive`
 geojson_boxplot(stat = "area", by = "route", interactive = T, verbose = F)
 ```
 
+\
+
 ```{=html}
-<iframe width="1200" height="400" src="http://shinyserver.cfs.unipi.it:3838/teach/stats/eamenaR/caravanserais_areas.html"></iframe>
+<iframe width="1000" height="350" src="http://shinyserver.cfs.unipi.it:3838/eamena/eamenaR/caravanserais_areas.html"></iframe>
 ```
 
 ## Maps
@@ -247,8 +235,7 @@ Maps of heritage places
 ### General
 
 ```{.r }
-geojson_map(geojson.path = paste0(system.file(package = "eamenaR"),
-                                  "/extdata/caravanserail.geojson"),
+geojson_map(geojson.path = paste0(system.file(package = "eamenaR"), "/extdata/caravanserail.geojson"),
             map.name = "caravanserail")
 ```
 
@@ -281,8 +268,6 @@ geojson_map(geojson.path = paste0(system.file(package = "eamenaR"),
 
 ::: {.column width="50%"}
 
-Uses the `symbology.xlsx` layout
-
 ```{=html}
 <iframe width="1200" height="500" src="http://shinyserver.cfs.unipi.it:3838/eamena/eamenaR/symbology.html"></iframe>
 ```
@@ -291,13 +276,26 @@ Uses the `symbology.xlsx` layout
 
 ::::
 
+### Paths
+
+Maps for paths between heritage places
+
+```{.r }
+geojson_map_path(geojson.path = paste0(system.file(package = "eamenaR"), "/extdata/caravanserail.geojson"),
+                 csv.path = paste0(system.file(package = "eamenaR"), "/extdata/caravanserail_paths.csv"))
+```
+
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/caravanserail_paths.png" width="700">
+
+</center>
+
 ### List of IDs
 
 ```{.r }
 geojson_stat(stat = "list_ids")
 ```
-
-\
 
 ```{r }
 #| echo: false
@@ -313,8 +311,6 @@ geojson_stat(stat = "list_ids")
 geojson_stat(stat = "list_fields")
 ```
 
-\
-
 ```{r }
 #| echo: false
 
@@ -325,22 +321,11 @@ geojson_stat(stat = "list_fields")
 
 :::
 
-## Paths
-
-Maps for paths between heritage places
-
-```{.r }
-geojson_map_path(geojson.path = paste0(system.file(package = "eamenaR"), "/extdata/caravanserail.geojson"),
-                 csv.path = paste0(system.file(package = "eamenaR"), "/extdata/caravanserail_paths.csv"))
-```
-
-<center>
-
-<img src="https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/caravanserail_paths.png" width="700">
-
-</center>
-
 ## Elevations
+
+::: {.panel-tabset}
+
+### API elevation data
 
 Use API data, on the fly, to retrieve elevations
 
@@ -355,7 +340,7 @@ geojson_addZ(geojson.path = paste0(system.file(package = "eamenaR"), "/extdata/c
 
 \
 
-## Profiles
+### Profiles
 
 Elevation profiles :
 
@@ -371,6 +356,10 @@ geojson_map_path(map.name = "map_path",
 <img src="https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/map_path_profile.png" width="700">
 
 </center>
+
+:::
+
+\
 
 ## Statistics
 
@@ -424,7 +413,7 @@ plot_cultural_periods(d = d, field = "subperiods", plot.type = "by.eamenaid")
 
 <center>
 
-<img src="raw.githubusercontent.com/eamena-project/eamenaR/master/results/cultural_subperiods_byeamenaid.png" width="700">
+<img src="raw.githubusercontent.com/eamena-project/eamenaR/master/results/cultural_subperiods_byeamenaid.png" width="600">
 
 </center>
 
@@ -439,7 +428,7 @@ geojson_stat(stat.name = "orientations", stat = "stats",
 
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/orientations_radar.png" width="700">
+<img src="https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/orientations_radar.png" width="500">
 
 </center>
 
@@ -453,16 +442,6 @@ Interactive charts or maps
 
 ::: {.panel-tabset}
 
-### <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-plotly.png" style="height: 45px; vertical-align:middle">
-
-```{.r}
-geojson_map_path(interactive = T, selected.category = c(1))
-```
-
-```{=html}
-<iframe width="1200" height="500" src="http://shinyserver.cfs.unipi.it:3838/teach/stats/eamenaR/paths_map_route_1.html"></iframe>
-```
-
 ### <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-leaflet.png" style="height: 40px; vertical-align:middle">
 
 ```{.r}
@@ -470,18 +449,25 @@ geojson_map(interactive = T)
 ```
 
 ```{=html}
-<iframe width="1200" height="500" src="http://shinyserver.cfs.unipi.it:3838/teach/stats/eamenaR/caravanserail_plotly.html"></iframe>
+<iframe width="1200" height="500" src="http://shinyserver.cfs.unipi.it:3838/eamena/eamenaR/caravanserail_plotly.html"></iframe>
 ```
 
+### <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-plotly.png" style="height: 45px; vertical-align:middle">
+
+```{.r}
+geojson_map_path(interactive = T, selected.category = c(1))
+```
+
+```{=html}
+<iframe width="1200" height="500" src="http://shinyserver.cfs.unipi.it:3838/eamena/eamenaR/paths_map_route_2.html"></iframe>
+```
 
 :::
 
 \
-\
 
 
-# Data<br>management<br>and audit{background-color="#f3e7b3"}
-
+# Data <br>management <br>and audit{background-color="#f3e7b3"}
 
 
 ## Bulk Upload
@@ -494,31 +480,52 @@ geojson_map(interactive = T)
 
 ```{mermaid}
 flowchart LR
-    A[structured file<br><em>source</em>] ----> B("list_mapping_bu()"):::eamenaRfunction;
-    A -. a. get MBR .-> D("geom_bbox()"):::eamenaRfunction;
-    B --1. mapping file--> B;
-    B --2. export--> C[BU file<br><em>target</em>];
-    subgraph ide1 [Geometries];
-    D -. b. creates .-> E[mbr.geojson];
-    end;
-    E -- + GRID ID --> B; 
-    classDef eamenaRfunction fill:#e7deca;
+A[structured file<br><em>source</em>] ----> B("list_mapping_bu()"):::eamenaRfunction;
+A -. a. get MBR .-> D("geom_bbox()"):::eamenaRfunction;
+B --1. mapping file--> B;
+B --2. export--> C[BU file<br><em>target</em>];
+subgraph ide1 [Geometries];
+D -. b. creates .-> E[mbr.geojson];
+end;
+E -- + GRID ID --> B; 
+classDef eamenaRfunction fill:#e7deca;
 ```
+
 
 ### Mapping table
 
-<span style="color:#f4c7c3;">`value`</span>
-<span style="color:#f4c7c3;">value</span>
+* The **target** are the field names of an <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> instance  
 
-The source depends on the different authors:
+* The **source** depends on the different authors (here '`mk`' = Mohamed Kenawi).
 
-  - `job`: by convention, the initial of the author (e.g. '`mk`' = Mohamed Kenawi)
-  - `job_type`: the type of action to perform on the source data (e.g. '`mk_type`'). This can be: 
-    - <span style="color:#f4c7c3;">`value`</span>: repeat a single value for the whole BU;
-    - <span style="color:#ffc000;">`field`</span>: get the different values of a source field and add these different values in a BU field;
-    - <span style="color:#0070c0;">`expression`</span>: execute an R code snippet;
-    - <span style="color:#fce8b2;">`escape`</span>: the value is calculated in another field;
-    - etc.;
+* The type of action to perform on **source** field names values are: 
+
+<table>
+<thead>
+  <tr>
+    <th>key</th>
+    <th>description</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td bgcolor="#f4c7c3">value</td>
+    <td>repeat a single value for the whole BU</td>
+  </tr>
+  <tr>
+    <td bgcolor="#ffc000">field</td>
+    <td>get the different values of a source field and add these different values in a BU field</td>
+  </tr>
+  <tr>
+    <td bgcolor="#0070c0">>expression</td>
+    <td>execute an R code snippet</td>
+  </tr>
+  <tr>
+    <td bgcolor="#fce8b2">escape</td>
+    <td>the value is calculated in another field</td>
+  </tr>
+</tbody>
+</table>
 
 
 ```{=html}
@@ -527,15 +534,20 @@ The source depends on the different authors:
 
 :::
 
+## XXX
+
 
 ## 3<sup>rd</sup> party data
 
+::: {.panel-tabset}
 
 ### append geometries
 
 blbla
 
 ### rrr
+
+dddd
 
 :::
 

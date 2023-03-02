@@ -436,6 +436,89 @@ geojson_stat(stat.name = "orientations", stat = "stats",
 
 \
 
+## Connected components {auto-animate=true}
+
+:::: {.columns}
+
+::: {.column width="33%"}
+
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/relat-resource-ex1-img.png" width="600">
+
+</center>
+
+:::
+
+::: {.column width="33%"}
+
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/relat-resource-ex1-plan.png" width="600">
+
+</center>
+
+:::
+
+::: {.column width="33%"}
+
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/relat-resource-ex1.png" width="600">
+
+</center>
+
+:::
+
+
+::::
+
+
+
+```{.r}
+d <- hash::hash()
+my_con <- RPostgres::dbConnect(drv = RPostgres::Postgres(),
+                               user = 'postgres',
+                               password = 'postgis',
+                               dbname = 'eamena',
+                               host = 'ec2-54-155-109-226.eu-west-1.compute.amazonaws.com',
+                               port = 5432)
+
+df <- list_related_resources(db.con = my_con,
+                             d = d,
+                             relationshiptype = "PX_is_related_to",
+                             id = "EAMENA-0164943",
+                             disconn = FALSE)
+df
+```
+
+```{.r}
+hps <- c("EAMENA-0164943", "EAMENA-0164937", "EAMENA-0164905")
+bcs <- c("Room", "Stable")
+
+df.measures.all <- data.frame(hp.id = character(),
+                              hp.uuid = character(),
+                              cc.id = character(),
+                              cc.uuid = character(),
+                              cc.type = character(),
+                              cc.measure = numeric())
+
+for(ea in hps){
+  df <- list_related_resources(db.con = my_con,
+                               d = d,
+                               id = ea,
+                               disconn = F)
+  for(have in bcs){
+    df.measures <- select_related_resources(db.con = my_con,
+                                            df = df,
+                                            having = have,
+                                            disconn = F)
+    df.measures.all <- rbind(df.measures.all, df.measures)
+  }
+}
+df.measures.all[ , c("hp.id", "cc.id", "cc.type", "cc.measure")]
+```
+
 ## Interactivity
 
 Interactive charts or maps 

@@ -210,7 +210,7 @@ Documentation
 
 </center>
 
-# Data analysis <br>and audit {background-color="#f3e7b3" }
+# Data analysis {background-color="#f3e7b3" }
 
 ## Generalities
 
@@ -281,7 +281,7 @@ geojson_map(geojson.path = paste0(system.file(package = "eamenaR"),
 Maps for paths between heritage places
 
 ```{.r }
-geojson_map_path(geojson.path = paste0(system.file(package = "eamenaR"), "/extdata/caravanserail.geojson"),
+geojson_map_path(geojson.path = paste0(system.file(package = "eamenaR"), "/extdata/caravanserailZ.geojson"),
                  csv.path = paste0(system.file(package = "eamenaR"), "/extdata/caravanserail_paths.csv"))
 ```
 
@@ -386,7 +386,7 @@ geojson_stat(stat.name = "overall_cond", stat = "stats",
 
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/overall_condition_pie.png" width="700">
+<img src="https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/overall_condition_pie.png" width="600">
 
 </center>
 
@@ -413,7 +413,7 @@ plot_cultural_periods(d = d, field = "subperiods", plot.type = "by.eamenaid")
 
 <center>
 
-<img src="raw.githubusercontent.com/eamena-project/eamenaR/master/results/cultural_subperiods_byeamenaid.png" width="600">
+<img src="raw.githubusercontent.com/eamena-project/eamenaR/master/results/cultural_periods_byeamenaid.png" width="600">
 
 </center>
 
@@ -438,13 +438,15 @@ geojson_stat(stat.name = "orientations", stat = "stats",
 
 ## Connected components {auto-animate=true}
 
+Cultural heritage data can be recorded in heritage places (`EAMENA-`) connected to different built components (`COMPONENT-`)
+
 :::: {.columns}
 
 ::: {.column width="33%"}
 
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/relat-resource-ex1-img.png" width="600">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/relat-resource-ex1-img.png" width="500"><div class="captiontext">The caravanserai Maranjab (EAMENA-164943)</div>
 
 </center>
 
@@ -454,7 +456,7 @@ geojson_stat(stat.name = "orientations", stat = "stats",
 
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/relat-resource-ex1-plan.png" width="600">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/relat-resource-ex1-plan.png" width="500"><div class="captiontext">Ground plan of EAMENA-164943</div>
 
 </center>
 
@@ -464,7 +466,7 @@ geojson_stat(stat.name = "orientations", stat = "stats",
 
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/relat-resource-ex1.png" width="600">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/relat-resource-ex1.png" width="500"><div class="captiontext">COMPONENT-0000141, 0000143 and 0000144 record respectively 30 Stables, 1 Courtyard and 28 Rooms for the EAMENA-164943 Heritage Place</div>
 
 </center>
 
@@ -473,9 +475,45 @@ geojson_stat(stat.name = "orientations", stat = "stats",
 
 ::::
 
+## Connected components {auto-animate=true}
 
+**List** the connected components
 
-```{.r}
+```{.r code-line-numbers="8-12"}
+d <- hash::hash()
+my_con <- RPostgres::dbConnect(drv = RPostgres::Postgres(),
+                               user = 'xxx',
+                               password = 'xxx',
+                               dbname = 'eamena',
+                               host = 'ec2-54-155-109-226.eu-west-1.compute.amazonaws.com',
+                               port = 5432)
+df <- list_related_resources(db.con = my_con,
+                             d = d,
+                             relationshiptype = "PX_is_related_to",
+                             id = "EAMENA-0164943",
+                             disconn = FALSE)
+```
+
+## Connected components {auto-animate=true}
+
+**Select** some of these connected components
+
+```{.r code-line-numbers="3-9"}
+df.measures.all <- data.frame(hp.id = character(), hp.uuid = character(),
+                              cc.id = character(), cc.uuid = character(), cc.type = character(), cc.measure = numeric())
+for(have in c("Room", "Stable")){
+  df.measures <- select_related_resources(db.con = my_con,
+                                          df = df,
+                                          having = have,
+                                          disconn = F)
+  df.measures.all <- rbind(df.measures.all, df.measures)
+}
+df.measures.all[ , c("hp.id", "cc.id", "cc.type", "cc.measure")]
+```
+
+```{r}
+#| echo: false
+
 d <- hash::hash()
 my_con <- RPostgres::dbConnect(drv = RPostgres::Postgres(),
                                user = 'postgres',
@@ -488,12 +526,10 @@ df <- list_related_resources(db.con = my_con,
                              d = d,
                              relationshiptype = "PX_is_related_to",
                              id = "EAMENA-0164943",
-                             disconn = FALSE)
-df
-```
+                             disconn = FALSE,
+                             verbose = F)
 
-```{.r}
-hps <- c("EAMENA-0164943", "EAMENA-0164937", "EAMENA-0164905")
+hps <- c("EAMENA-0164943")
 bcs <- c("Room", "Stable")
 
 df.measures.all <- data.frame(hp.id = character(),
@@ -503,20 +539,18 @@ df.measures.all <- data.frame(hp.id = character(),
                               cc.type = character(),
                               cc.measure = numeric())
 
-for(ea in hps){
-  df <- list_related_resources(db.con = my_con,
-                               d = d,
-                               id = ea,
-                               disconn = F)
-  for(have in bcs){
-    df.measures <- select_related_resources(db.con = my_con,
-                                            df = df,
-                                            having = have,
-                                            disconn = F)
-    df.measures.all <- rbind(df.measures.all, df.measures)
-  }
+for(have in bcs){
+  df.measures <- select_related_resources(db.con = my_con,
+                                          df = df,
+                                          having = have,
+                                          disconn = F,
+                                          verbose = F)
+  df.measures.all <- rbind(df.measures.all, df.measures)
 }
-df.measures.all[ , c("hp.id", "cc.id", "cc.type", "cc.measure")]
+# df.measures.all[ , c("hp.id", "cc.id", "cc.type", "cc.measure")]
+kable(df.measures.all[ , c("hp.id", "cc.id", "cc.type", "cc.measure")]) %>%
+  kable_styling(full_width = FALSE, position = "center", font_size = 20) %>%
+  column_spec(1, bold = T)
 ```
 
 ## Interactivity
@@ -535,7 +569,7 @@ geojson_map(interactive = T)
 <iframe width="1200" height="500" src="http://shinyserver.cfs.unipi.it:3838/eamena/eamenaR/caravanserail_plotly.html"></iframe>
 ```
 
-### <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-plotly.png" style="height: 45px; vertical-align:middle">
+### <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-plotly.png" style="height: 45px; vertical-align:middle"> paths
 
 ```{.r}
 geojson_map_path(interactive = T, selected.category = c(1))
@@ -545,12 +579,22 @@ geojson_map_path(interactive = T, selected.category = c(1))
 <iframe width="1200" height="500" src="http://shinyserver.cfs.unipi.it:3838/eamena/eamenaR/paths_map_route_2.html"></iframe>
 ```
 
+### <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-plotly.png" style="height: 45px; vertical-align:middle"> time
+
+```{.r}
+plot_edtf(edtf_span = "ym", edtf_analyse = "category")
+```
+
+```{=html}
+<iframe width="1200" height="500" src="http://shinyserver.cfs.unipi.it:3838/eamena/eamenaR/edtf_plotly_category_ym_threats_types.html"></iframe>
+```
+
 :::
 
 \
 
 
-# Data <br>management <br>and audit{background-color="#f3e7b3"}
+# Data <br>management{background-color="#f3e7b3"}
 
 
 ## Bulk Upload
@@ -558,30 +602,27 @@ geojson_map_path(interactive = T, selected.category = c(1))
 
 ::: {.panel-tabset}
 
+
 ### Workflow
 
 
-```{mermaid}
+```{mermaid new}
 flowchart LR
-A[structured file<br><em>source</em>] ----> B("list_mapping_bu()"):::eamenaRfunction;
-A -. a. get MBR .-> D("geom_bbox()"):::eamenaRfunction;
-B --1. mapping file--> B;
-B --2. export--> C[BU file<br><em>target</em>];
-subgraph ide1 [Geometries];
-D -. b. creates .-> E[mbr.geojson];
-end;
-E -- + GRID ID --> B; 
-classDef eamenaRfunction fill:#e7deca;
+  A[structured file<br><em>source</em>] ----> B("list_mapping_bu()"):::eamenaRfunction;
+  A -. a. get MBR .-> D("geom_bbox()"):::eamenaRfunction;
+  B --1. mapping file--> B;
+  B --2. export--> C[BU file<br><em>target</em>];
+  D -. b. creates .-> E[mbr.geojson];
+  E -- + GRID ID --> B; 
+  classDef eamenaRfunction fill:#e7deca;
 ```
 
 
 ### Mapping table
 
-* The **target** are the field names of an <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> instance  
+* **target**: field names of an <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> instance  
 
-* The **source** depends on the different authors (here '`mk`' = Mohamed Kenawi).
-
-* The type of action to perform on **source** field names values are: 
+* **source**: data coming from different authors (here '`mk`' = Mohamed Kenawi).
 
 <table>
 <thead>
@@ -593,14 +634,14 @@ classDef eamenaRfunction fill:#e7deca;
 <tbody>
   <tr>
     <td bgcolor="#f4c7c3">value</td>
-    <td>repeat a single value for the whole BU</td>
+    <td>repeat the same value for the whole BU</td>
   </tr>
   <tr>
     <td bgcolor="#ffc000">field</td>
     <td>get the different values of a source field and add these different values in a BU field</td>
   </tr>
   <tr>
-    <td bgcolor="#0070c0">>expression</td>
+    <td bgcolor="#299df0">expression</td>
     <td>execute an R code snippet</td>
   </tr>
   <tr>
@@ -609,31 +650,51 @@ classDef eamenaRfunction fill:#e7deca;
   </tr>
 </tbody>
 </table>
+<div class="captiontext">type of action to perform on **source** field names values</div>
 
 
 ```{=html}
 <iframe width="1300" height="700" src="https://docs.google.com/spreadsheets/d/1nXgz98mGOySgc0Q2zIeT1RvHGNl4WRq1Fp9m5qB8g8k/edit#gid=1083097625"></iframe>
 ```
+  
+:::
+
+
+## 3<sup>rd</sup> party applications
+
+Append geometries
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+```{mermaid ya}
+flowchart LR
+    A[(EAMENA<br>DB)] --1. GeoJSON<br><b>POINT</b>--> C("geojson_kml()"):::eamenaRfunction;
+    C --2. KML/KMZ--> B((Google<br>Earth));
+    B --3. create<br><b>POLYGON</b>--> B;
+    B --4. KML/KMZ--> C;
+    C --5. GeoJSON<br><b>POLYGON</b>--> D("geojson_csv()"):::eamenaRfunction;
+    D --6. append<br>new geometries--> A;
+    classDef eamenaRfunction fill:#e7deca;
+```
 
 :::
 
-## XXX
+::: {.column width="50%"}
 
+```{mermaid yb}
+flowchart LR
+    A[(EAMENA<br>DB)] --1. GeoJSON<br><b>POINT</b>--> E("geojson_shp()"):::eamenaRfunction;
+    E --2. SHP--> F((GIS));
+    F --3. create<br><b>POLYGON</b>--> F;
+    F --4. SHP--> E;
+    E --5. GeoJSON<br><b>POLYGON</b>--> D("geojson_csv()"):::eamenaRfunction;
+    D --6. append<br>new geometries--> A;
+    classDef eamenaRfunction fill:#e7deca;
+```
 
-## 3<sup>rd</sup> party data
-
-::: {.panel-tabset}
-
-### append geometries
-
-blbla
-
-### rrr
-
-dddd
-
-:::
-
+# Data audit{background-color="#f3e7b3"}
 
 ## Duplicates
 
@@ -644,8 +705,7 @@ d <- ref_are_duplicates(d = d,
                         selected.fields = c("Assessment Investigator - Actor",
                                             "Assessment Activity Date",
                                             "Resource Name"))
-kable(d$are_duplicates) %>%
-  kable_styling(full_width = FALSE, position = "center", font_size = 20)
+d$are_duplicates
 ```
 
 ```{r}
@@ -657,7 +717,8 @@ d <- ref_are_duplicates(d = d,
                         c("EAMENA-0207209", "EAMENA-0182057"),
                         selected.fields = c("Assessment Investigator - Actor",
                                             "Assessment Activity Date",
-                                            "Resource Name"),
+                                            "Resource Name",
+                                            "geometry"),
                         verbose = F)
 # d$are_duplicates[ , 2] <- stringi::stri_unescape_unicode(gsub("<U\\+(....)>", "\\\\u\\1", d$are_duplicates[ , 2]))
 # d$are_duplicates[ , 3] <- stringi::stri_unescape_unicode(gsub("<U\\+(....)>", "\\\\u\\1", d$are_duplicates[ , 3]))
@@ -665,6 +726,24 @@ kable(d$are_duplicates) %>%
   kable_styling(full_width = FALSE, position = "center", font_size = 20) %>%
   column_spec(1, bold = T)
 ```
+
+## Users
+
+Total number of new users registered in EAMENA for the year 2022
+
+```{.r}
+ref_users(db.con = my_con,
+          d = d,
+          date.after = "2022-01-01",
+          date.before = "2022-12-01",
+          plot.g = T)
+```
+
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/users_date_joined_2.png" width="500">
+
+</center>
 
 
 # Conclusion {background-color="#f3e7b3"}
@@ -687,42 +766,8 @@ end;
 classDef eamenaRpkg fill:#e3c071;
 ```
 
-# Practice {background-color="#f3e7b3"}
 
+<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" style="height: 80px;vertical-align: middle;"> <https://github.com/eamena-project/eamenaR>
 
-## TESTS
-
-<a href="https://github.com/zoometh/thomashuet/blob/8f5665eca9efc76f26847258711a71b5adda1133/teachings/stats/R4Archaeo/index.qmd#L402"><small><notes>source code<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github-1.png" style="height: 35px;vertical-align: middle;"/></notes></small></a>
-
-
-<center>
-
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR-fair.png" width="600">
-
-</center>
-
-
-```{mermaid}
-flowchart LR
-subgraph ide1 [<b>F</b>indable, <b>A</b>ccessible]
-A[(EAMENA<br>DB)];
-end
-A[(EAMENA<br>DB)] <---> B{{"eamenaR"}}:::eamenaRpkg;
-subgraph ide2 [<b>I</b>nteroperable, <b>R</b>eusable]
-B;
-end
-classDef eamenaRpkg fill:#e3c071;
-```
-
-
-
-```{mermaid}
-flowchart LR
-A[(EAMENA<br>DB)] <--data<br>exchange--> B{{"eamenaR"}}:::eamenaRpkg;
-B --data<br>management--> B;
-B <--data<br>exchange--> C((third part<br>app));
-B --"output"--> D[maps<br>charts<br>listings<br>...];
-classDef eamenaRpkg fill:#e3c071;
-```
-
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/eamena-logo.png" style="height: 80px;vertical-align: middle;"> <https://eamena.org/>
 

@@ -605,7 +605,7 @@ plot_edtf(edtf_span = "ym", edtf_analyse = "category")
 
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/eamenaR-workflow-bu.png" width="500">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/eamenaR-workflow-bu.png" width="900">
 
 </center>
 
@@ -644,10 +644,12 @@ plot_edtf(edtf_span = "ym", edtf_analyse = "category")
 </table>
 <div class="captiontext">type of action to perform on **source** field names values</div>
 
+<center>
 
-```{=html}
-<iframe width="1300" height="700" src="https://docs.google.com/spreadsheets/d/1nXgz98mGOySgc0Q2zIeT1RvHGNl4WRq1Fp9m5qB8g8k/edit#gid=1083097625"></iframe>
-```
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/eamenaR-data-bu.png" width="800">
+
+</center>
+
   
 :::
 
@@ -662,7 +664,7 @@ Append geometries
 
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/eamenaR-workflow-gee.png" width="500">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/eamenaR-workflow-gee.png" width="600">
 
 </center>
 
@@ -672,7 +674,7 @@ Append geometries
 
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/eamenaR-workflow-gis.png" width="500">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/eamenaR-workflow-gis.png" width="600">
 
 </center>
 
@@ -739,17 +741,15 @@ ref_users(db.con = my_con,
 
 ## FAIR data
 
-Improves FAIRability (*Findable, Accessible, Interoperable, Reusable*) of data
-
+Improves the FAIR (*Findable, Accessible, Interoperable, Reusable*) of data
 
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/eamenaR-workflow-gee.png" width="500">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/eamenaR-workflow-fair.png" width="600">
 
 </center>
 
+* <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" style="height: 80px;vertical-align: middle;"> <https://github.com/eamena-project/eamenaR>  
 
-<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" style="height: 80px;vertical-align: middle;"> <https://github.com/eamena-project/eamenaR>
-
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/eamena-logo.png" style="height: 80px;vertical-align: middle;"> <https://eamena.org/>
+* <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/eamena-logo.png" style="height: 80px;vertical-align: middle;"> <https://eamena.org/>
 

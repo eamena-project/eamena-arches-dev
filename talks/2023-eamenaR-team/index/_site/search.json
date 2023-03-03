@@ -102,21 +102,7 @@
     "href": "index.html#bulk-upload",
     "title": "eamenaR",
     "section": "Bulk Upload",
-    "text": "Bulk Upload\n\nWorkflowMapping table\n\n\n\n\n\n\n\n\n\n\n\ntarget: field names of an  instance\nsource: data coming from different authors (here ‘mk’ = Mohamed Kenawi).\n\n\n\n\n\n\nkey\n\n\ndescription\n\n\n\n\n\n\nvalue\n\n\nrepeat the same value in the targeted column\n\n\n\n\nfield\n\n\nrecopy all values in the targeted column\n\n\n\n\nexpression\n\n\ncalculate values based on an R code snippet\n\n\n\n\nescape\n\n\nvalues are calculated in another field\n\n\n\n\n\n\ntype of action to perform on source field names values"
-  },
-  {
-    "objectID": "index.html#workflow-1",
-    "href": "index.html#workflow-1",
-    "title": "eamenaR",
-    "section": "Workflow 1",
-    "text": "Workflow 1"
-  },
-  {
-    "objectID": "index.html#workflow-2",
-    "href": "index.html#workflow-2",
-    "title": "eamenaR",
-    "section": "Workflow 2",
-    "text": "Workflow 2\n\n\n\n\nflowchart LR\n  A[structured file<br><em>source</em>] ----> B(list_mapping_bu):::eamenaRfunction;\n  A -. a. get MBR .-> D(geom_bbox):::eamenaRfunction;\n  B --1. mapping file--> B;\n  B --2. export--> C[BU file<br><em>target</em>];\n  D -. b. creates .-> E[mbr.geojson];\n  E -- add GRID ID --> B; \n  classDef eamenaRfunction fill:#e7deca;"
+    "text": "Bulk Upload\n\nWorkflowMapping table\n\n\n\n\n\n\n\n\ntarget: field names of an  instance\nsource: data coming from different authors (here ‘mk’ = Mohamed Kenawi).\n\n\n\n\n\n\nkey\n\n\ndescription\n\n\n\n\n\n\nvalue\n\n\nrepeat the same value in the targeted column\n\n\n\n\nfield\n\n\nrecopy all values in the targeted column\n\n\n\n\nexpression\n\n\ncalculate values based on an R code snippet\n\n\n\n\nescape\n\n\nvalues are calculated in another field\n\n\n\n\n\n\ntype of action to perform on source field names values"
   },
   {
     "objectID": "index.html#rd-party-applications",
@@ -144,13 +130,6 @@
     "href": "index.html#fair-data",
     "title": "eamenaR",
     "section": "FAIR data",
-    "text": "FAIR data\nImproves FAIRability (Findable, Accessible, Interoperable, Reusable) of data\n\n\n\n\n\n\n https://github.com/eamena-project/eamenaR\n https://eamena.org/"
-  },
-  {
-    "objectID": "index.html#mermaids",
-    "href": "index.html#mermaids",
-    "title": "eamenaR",
-    "section": "Mermaids",
-    "text": "Mermaids\nBasic\n\n\n\n\nflowchart LR\n  A[Hard edge] --> B(Round edge)\n  B --> C{Decision}\n  C --> D[Result one]\n  C --> E[Result two]\n\n\n\n\n\n\n\n\nDouble quotes \"\n\n\n\n\nflowchart LR\nsubgraph ide1 [Arches];\nA[(EAMENA<br>DB)];\nend;\nA <--data<br>exchange--> B{{\"eamenaR\"}}:::eamenaRpkg;\nB --data<br>analysis & management--> B;\nB <--data<br>exchange--> C((3<sup>rd</sup> part<br>app));\nB --\"output\"--> D[maps<br>charts<br>listings<br>...];\nclassDef eamenaRpkg fill:#e3c071;\n\n\n\n\n\n\n\n\n\n\n\n\nflowchart LR\nsubgraph ide1 [<b>F</b>indable, <b>A</b>ccessible];\nA[(EAMENA<br>DB)];\nend;\nA[(EAMENA<br>DB)] <---> B{{\"eamenaR\"}}:::eamenaRpkg;\nsubgraph ide2 [<b>I</b>nteroperable, <b>R</b>eusable];\nB;\nend;\nclassDef eamenaRpkg fill:#e3c071;\n\n\n\n\n\n\n\n\nWithout ( and )\n\n\n\n\n\n\nWith or whitout DiagrammeR\n\n\n\n\n\n\n\n\n\n\nflowchart LR\n  A[(EAMENA<br>DB)] --1. GeoJSON<br><b>POINT</b>--> C(geojson_kml):::eamenaRfunction;\n  C --2. KML/KMZ--> B((Google<br>Earth));\n  B --3. create<br><b>POLYGON</b>--> B;\n  B --4. KML/KMZ--> C;\n  C --5. GeoJSON<br><b>POLYGON</b>--> D(geojson_csv):::eamenaRfunction;\n  D --6. append<br>new geometries--> A;\n  classDef eamenaRfunction fill:#e7deca;\n\n\n\n\n\n\n\n\nIndentation 0, 2, 4 spaces: OK\n\n\n\n\n\n\nSimple quotes: ~ OK\n\n\n\n\n\n\n\n\n\neamenaR  - Arcadia meeting, London (UK), 10th March 2023"
+    "text": "FAIR data\nImproves the FAIR (Findable, Accessible, Interoperable, Reusable) of data\n\n\n\n\n https://github.com/eamena-project/eamenaR\n https://eamena.org/\n\n\n\n\neamenaR  - Arcadia meeting, London (UK), 10th March 2023"
   }
 ]

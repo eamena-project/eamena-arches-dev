@@ -390,14 +390,6 @@
   
   <script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
   <link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
-  <script src="site_libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
-  <script src="site_libs/d3-3.3.8/d3.min.js"></script>
-  <script src="site_libs/dagre-0.4.0/dagre-d3.min.js"></script>
-  <link href="site_libs/mermaid-0.3.0/dist/mermaid.css" rel="stylesheet">
-  <script src="site_libs/mermaid-0.3.0/dist/mermaid.slim.min.js"></script>
-  <link href="site_libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet">
-  <script src="site_libs/chromatography-0.1/chromatography.js"></script>
-  <script src="site_libs/DiagrammeR-binding-1.0.9/DiagrammeR.js"></script>
   <script src="site_libs/quarto-diagram/mermaid.min.js"></script>
   <script src="site_libs/quarto-diagram/mermaid-init.js"></script>
   <link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
@@ -1018,12 +1010,9 @@ COMPONENT-* record the courtyard, 28 rooms and 30 stables of EAMENA-164943.
 <ul id="tabset-7" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-7-1">Workflow</a></li><li><a href="#tabset-7-2">Mapping table</a></li></ul>
 <div class="tab-content">
 <div id="tabset-7-1">
-<div class="cell">
-<div class="cell-output-display">
-<div id="htmlwidget-a24cbb676a5a9aaf0fbd" style="width:960px;height:480px;" class="DiagrammeR html-widget"></div>
-<script type="application/json" data-for="htmlwidget-a24cbb676a5a9aaf0fbd">{"x":{"diagram":"\nflowchart LR\n  A[structured file<br><em>source<\/em>] ----> B(list_mapping_bu):::eamenaRfunction;\n  A -. a. get MBR .-> D(geom_bbox):::eamenaRfunction;\n  B --1. mapping file--> B;\n  B --2. export--> C[BU file<br><em>target<\/em>];\n  D -. b. creates .-> E[mbr.geojson];\n  E -- add GRID ID --> B; \n  classDef eamenaRfunction fill:#e7deca;\n"},"evals":[],"jsHooks":[]}</script>
-</div>
-</div>
+<center>
+<p><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/eamenaR-workflow-bu.png" width="900"></p>
+</center>
 </div>
 <div id="tabset-7-2">
 <ul>
@@ -1086,56 +1075,18 @@ type of action to perform on <strong>source</strong> field names values
 </div>
 </div>
 </section>
-<section id="workflow-1" class="slide level2">
-<h2>Workflow 1</h2>
-<div class="cell">
-<div class="cell-output-display">
-<div id="htmlwidget-6239a9c24f5141f9df8f" style="width:960px;height:480px;" class="DiagrammeR html-widget"></div>
-<script type="application/json" data-for="htmlwidget-6239a9c24f5141f9df8f">{"x":{"diagram":"\nflowchart LR\n  A[structured file<br><em>source<\/em>] ----> B(list_mapping_bu):::eamenaRfunction;\n  A -. a. get MBR .-> D(geom_bbox):::eamenaRfunction;\n  B --1. mapping file--> B;\n  B --2. export--> C[BU file<br><em>target<\/em>];\n  D -. b. creates .-> E[mbr.geojson];\n  E -- add GRID ID --> B; \n  classDef eamenaRfunction fill:#e7deca;\n"},"evals":[],"jsHooks":[]}</script>
-</div>
-</div>
-</section>
-<section id="workflow-2" class="slide level2">
-<h2>Workflow 2</h2>
-<div class="cell" data-reveal="true">
-<div class="cell-output-display">
-<div>
-<p>
-</p><pre class="mermaid" data-tooltip-selector="#mermaid-tooltip-2">flowchart LR
-  A[structured file&lt;br&gt;&lt;em&gt;source&lt;/em&gt;] ----&gt; B(list_mapping_bu):::eamenaRfunction;
-  A -. a. get MBR .-&gt; D(geom_bbox):::eamenaRfunction;
-  B --1. mapping file--&gt; B;
-  B --2. export--&gt; C[BU file&lt;br&gt;&lt;em&gt;target&lt;/em&gt;];
-  D -. b. creates .-&gt; E[mbr.geojson];
-  E -- add GRID ID --&gt; B; 
-  classDef eamenaRfunction fill:#e7deca;
-</pre>
-<div id="mermaid-tooltip-2" class="mermaidTooltip">
-
-</div>
-<p></p>
-</div>
-</div>
-</div>
-</section>
 <section id="rd-party-applications" class="slide level2">
 <h2>3<sup>rd</sup> party applications</h2>
 <p>Append geometries</p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<div class="cell">
-<div class="cell-output-display">
-<div id="htmlwidget-137fc0bf1c698acbf749" style="width:960px;height:480px;" class="DiagrammeR html-widget"></div>
-<script type="application/json" data-for="htmlwidget-137fc0bf1c698acbf749">{"x":{"diagram":"\nflowchart LR\n  A[(EAMENA<br>DB)] --1. GeoJSON<br><b>POINT<\/b>--> C(geojson_kml):::eamenaRfunction;\n  C --2. KML/KMZ--> B((Google<br>Earth));\n  B --3. create<br><b>POLYGON<\/b>--> B;\n  B --4. KML/KMZ--> C;\n  C --5. GeoJSON<br><b>POLYGON<\/b>--> D(geojson_csv):::eamenaRfunction;\n  D --6. append<br>new geometries--> A;\n  classDef eamenaRfunction fill:#e7deca;\n"},"evals":[],"jsHooks":[]}</script>
-</div>
-</div>
+<center>
+<p><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/eamenaR-workflow-gee.png" width="600"></p>
+</center>
 </div><div class="column" style="width:50%;">
-<div class="cell">
-<div class="cell-output-display">
-<div id="htmlwidget-ddba68422fa6fcf51b4f" style="width:960px;height:480px;" class="DiagrammeR html-widget"></div>
-<script type="application/json" data-for="htmlwidget-ddba68422fa6fcf51b4f">{"x":{"diagram":"\nflowchart LR\n    A[(EAMENA<br>DB)] --1. GeoJSON<br><b>POINT<\/b>--> E(geojson_shp):::eamenaRfunction;\n    E --2. SHP--> F((GIS));\n    F --3. create<br><b>POLYGON<\/b>--> F;\n    F --4. SHP--> E;\n    E --5. GeoJSON<br><b>POLYGON<\/b>--> D(geojson_csv):::eamenaRfunction;\n    D --6. append<br>new geometries--> A;\n    classDef eamenaRfunction fill:#e7deca;\n"},"evals":[],"jsHooks":[]}</script>
-</div>
-</div>
+<center>
+<p><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/eamenaR-workflow-gis.png" width="600"></p>
+</center>
 </div>
 </div>
 </section></section>
@@ -1222,127 +1173,14 @@ type of action to perform on <strong>source</strong> field names values
 </section>
 <section id="fair-data" class="slide level2">
 <h2>FAIR data</h2>
-<p>Improves FAIRability (<em>Findable, Accessible, Interoperable, Reusable</em>) of data</p>
-<div class="cell">
-<div class="cell-output-display">
-<div id="htmlwidget-cc6bfc6e9b8cea156e31" style="width:960px;height:480px;" class="DiagrammeR html-widget"></div>
-<script type="application/json" data-for="htmlwidget-cc6bfc6e9b8cea156e31">{"x":{"diagram":"\nflowchart LR\n    subgraph ide1 [<b>F<\/b>indable, <b>A<\/b>ccessible];\n    A[(EAMENA<br>DB)];\n    end;\n    A[(EAMENA<br>DB)] <---> B{{eamenaR}}:::eamenaRpkg;\n    subgraph ide2 [<b>I<\/b>nteroperable, <b>R<\/b>eusable];\n    B;\n    end;\n    classDef eamenaRpkg fill:#e3c071;\n"},"evals":[],"jsHooks":[]}</script>
-</div>
-</div>
-<p><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" style="height: 80px;vertical-align: middle;"> <a href="https://github.com/eamena-project/eamenaR" class="uri">https://github.com/eamena-project/eamenaR</a></p>
-<p><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/eamena-logo.png" style="height: 80px;vertical-align: middle;"> <a href="https://eamena.org/" class="uri">https://eamena.org/</a></p>
-</section>
-<section id="mermaids" class="slide level2">
-<h2>Mermaids</h2>
-<p>Basic</p>
-<div class="cell" data-reveal="true">
-<div class="cell-output-display">
-<div>
-<p>
-</p><pre class="mermaid" data-tooltip-selector="#mermaid-tooltip-3">flowchart LR
-  A[Hard edge] --&gt; B(Round edge)
-  B --&gt; C{Decision}
-  C --&gt; D[Result one]
-  C --&gt; E[Result two]
-</pre>
-<div id="mermaid-tooltip-3" class="mermaidTooltip">
-
-</div>
-<p></p>
-</div>
-</div>
-</div>
-<p>Double quotes <code>"</code></p>
-<div class="cell" data-reveal="true">
-<div class="cell-output-display">
-<div>
-<p>
-</p><pre class="mermaid" data-tooltip-selector="#mermaid-tooltip-4">flowchart LR
-subgraph ide1 [Arches];
-A[(EAMENA&lt;br&gt;DB)];
-end;
-A &lt;--data&lt;br&gt;exchange--&gt; B{{"eamenaR"}}:::eamenaRpkg;
-B --data&lt;br&gt;analysis &amp; management--&gt; B;
-B &lt;--data&lt;br&gt;exchange--&gt; C((3&lt;sup&gt;rd&lt;/sup&gt; part&lt;br&gt;app));
-B --"output"--&gt; D[maps&lt;br&gt;charts&lt;br&gt;listings&lt;br&gt;...];
-classDef eamenaRpkg fill:#e3c071;
-</pre>
-<div id="mermaid-tooltip-4" class="mermaidTooltip">
-
-</div>
-<p></p>
-</div>
-</div>
-</div>
-<div class="cell" data-reveal="true">
-<div class="cell-output-display">
-<div>
-<p>
-</p><pre class="mermaid" data-tooltip-selector="#mermaid-tooltip-5">flowchart LR
-subgraph ide1 [&lt;b&gt;F&lt;/b&gt;indable, &lt;b&gt;A&lt;/b&gt;ccessible];
-A[(EAMENA&lt;br&gt;DB)];
-end;
-A[(EAMENA&lt;br&gt;DB)] &lt;---&gt; B{{"eamenaR"}}:::eamenaRpkg;
-subgraph ide2 [&lt;b&gt;I&lt;/b&gt;nteroperable, &lt;b&gt;R&lt;/b&gt;eusable];
-B;
-end;
-classDef eamenaRpkg fill:#e3c071;
-</pre>
-<div id="mermaid-tooltip-5" class="mermaidTooltip">
-
-</div>
-<p></p>
-</div>
-</div>
-</div>
-<p>Without <code>(</code> and <code>)</code></p>
-<div class="cell">
-<div class="cell-output-display">
-<div id="htmlwidget-b14da13eb4c4d469bdd2" style="width:960px;height:480px;" class="DiagrammeR html-widget"></div>
-<script type="application/json" data-for="htmlwidget-b14da13eb4c4d469bdd2">{"x":{"diagram":"\nflowchart LR\n    A[(EAMENA<br>DB)] --1. GeoJSON<br><b>POINT<\/b>--> E(geojson_shp):::eamenaRfunction;\n    E --2. SHP--> F((GIS));\n    F --3. create<br><b>POLYGON<\/b>--> F;\n    F --4. SHP--> E;\n    E --5. GeoJSON<br><b>POLYGON<\/b>--> D(geojson_csv):::eamenaRfunction;\n    D --6. append<br>new geometries--> A;\n    classDef eamenaRfunction fill:#e7deca;\n"},"evals":[],"jsHooks":[]}</script>
-</div>
-</div>
-<p>With or whitout <code>DiagrammeR</code></p>
-<div class="cell">
-<div class="cell-output-display">
-<div id="htmlwidget-498eaaba8605b592adfc" style="width:960px;height:480px;" class="DiagrammeR html-widget"></div>
-<script type="application/json" data-for="htmlwidget-498eaaba8605b592adfc">{"x":{"diagram":"\nflowchart LR\n  A[(EAMENA<br>DB)] --1. GeoJSON<br><b>POINT<\/b>--> C(geojson_kml):::eamenaRfunction;\n  C --2. KML/KMZ--> B((Google<br>Earth));\n  B --3. create<br><b>POLYGON<\/b>--> B;\n  B --4. KML/KMZ--> C;\n  C --5. GeoJSON<br><b>POLYGON<\/b>--> D(geojson_csv):::eamenaRfunction;\n  D --6. append<br>new geometries--> A;\n  classDef eamenaRfunction fill:#e7deca;\n"},"evals":[],"jsHooks":[]}</script>
-</div>
-</div>
-<div class="cell" data-reveal="true">
-<div class="cell-output-display">
-<div>
-<p>
-</p><pre class="mermaid" data-tooltip-selector="#mermaid-tooltip-6">flowchart LR
-  A[(EAMENA&lt;br&gt;DB)] --1. GeoJSON&lt;br&gt;&lt;b&gt;POINT&lt;/b&gt;--&gt; C(geojson_kml):::eamenaRfunction;
-  C --2. KML/KMZ--&gt; B((Google&lt;br&gt;Earth));
-  B --3. create&lt;br&gt;&lt;b&gt;POLYGON&lt;/b&gt;--&gt; B;
-  B --4. KML/KMZ--&gt; C;
-  C --5. GeoJSON&lt;br&gt;&lt;b&gt;POLYGON&lt;/b&gt;--&gt; D(geojson_csv):::eamenaRfunction;
-  D --6. append&lt;br&gt;new geometries--&gt; A;
-  classDef eamenaRfunction fill:#e7deca;
-</pre>
-<div id="mermaid-tooltip-6" class="mermaidTooltip">
-
-</div>
-<p></p>
-</div>
-</div>
-</div>
-<p>Indentation 0, 2, 4 spaces: OK</p>
-<div class="cell">
-<div class="cell-output-display">
-<div id="htmlwidget-071960edab13d01dfbe2" style="width:960px;height:480px;" class="DiagrammeR html-widget"></div>
-<script type="application/json" data-for="htmlwidget-071960edab13d01dfbe2">{"x":{"diagram":"\nflowchart LR\n  A[structured file<br><em>source<\/em>] ----> B(list_mapping_bu):::eamenaRfunction;\n  A -. a. get MBR .-> D(geom_bbox):::eamenaRfunction;\n  B --1. mapping file--> B;\n  B --2. export--> C[BU file<br><em>target<\/em>];\n  D -. b. creates .-> E[mbr.geojson];\n  E -- add GRID ID --> B; \n  classDef eamenaRfunction fill:#e7deca;\n"},"evals":[],"jsHooks":[]}</script>
-</div>
-</div>
-<p>Simple quotes: ~ OK</p>
-<div class="cell">
-<div class="cell-output-display">
-<div id="htmlwidget-c6581ea2535e74ab6de9" style="width:960px;height:480px;" class="DiagrammeR html-widget"></div>
-<script type="application/json" data-for="htmlwidget-c6581ea2535e74ab6de9">{"x":{"diagram":"\nflowchart LR\n  A[Hard edge] --> B(Round edge)\n  B --> C{Decision}\n  C --> D[Result one]\n  C --> E[Result two]\n"},"evals":[],"jsHooks":[]}</script>
-</div>
-</div>
+<p>Improves the FAIR (<em>Findable, Accessible, Interoperable, Reusable</em>) of data</p>
+<center>
+<p><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/eamenaR-workflow-fair.png" width="600"></p>
+</center>
+<ul>
+<li><p><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" style="height: 80px;vertical-align: middle;"> <a href="https://github.com/eamena-project/eamenaR" class="uri">https://github.com/eamena-project/eamenaR</a></p></li>
+<li><p><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/eamena-logo.png" style="height: 80px;vertical-align: middle;"> <a href="https://eamena.org/" class="uri">https://eamena.org/</a></p></li>
+</ul>
 
 <p><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo_complete.png" class="slide-logo"></p>
 <div class="footer footer-default">

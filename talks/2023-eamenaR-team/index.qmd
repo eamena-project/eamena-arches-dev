@@ -1,11 +1,12 @@
 ---
-title: "eamenaR"
-subtitle: "**An R package for<br>statistical analysis and data management<br>of the EAMENA database**"
+title: "<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png' style='height: 150px;vertical-align: middle;'>"
+subtitle: "**An R package for <br>statistical analysis and management <br>of the EAMENA database**"
 author: "EAMENA project"
 title-slide-attributes:
-  data-background-image: "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaDB-bck.png"
-  data-background-size: "50%"
-  data-background-opacity: "0.4"
+  data-background-iframe: https://database.eamena.org/en/
+  # data-background-image: "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaDB-bck.png"
+  # data-background-size: "50%"
+  data-background-opacity: "0.3"
 format:
   revealjs: 
     css: https://zoometh.github.io/thomashuet/css/quarto.css
@@ -18,7 +19,7 @@ format:
     reference-location: document
     footnotes-hover: true
     logo: https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo_complete.png
-    footer: "<em>eamenaR</em>  <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png' style='height: 45px;vertical-align: middle;'> - Arcadia meeting, London (UK), 10<sup>th</sup> March 2023"
+    footer: "eamenaR <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png' style='height: 45px;vertical-align: middle;'> - Arcadia Fund meeting, 40 Villiers Street, London (UK), 10/03/23"
     margin: 0
     width: 1200
 ---
@@ -41,12 +42,12 @@ library(dplyr)
 library(eamenaR)
 ```
 
-* Data analysis and audit of the EAMENA DB content
+* Data analysis and audit of the EAMENA DB
 * Data management between EAMENA DB and 3<sup>rd</sup> party apps
 
 ```{mermaid}
 flowchart LR
-    subgraph ide1 [Arches];
+    subgraph ide1 [Arches v5.2];
     A[(EAMENA<br>DB)];
     end;
     A <--data<br>exchange--> B{{eamenaR}}:::eamenaRpkg;
@@ -94,13 +95,8 @@ GeoJSON is the privileged format to work with spatial data
 
 Some functions allow to query directly the PostgreSQL
 
-```{.r code-line-numbers="9-12"}
+```{.r code-line-numbers="4-7"}
   ...
-    ...
-    bc.uuid <- eamenaR::ref_ids(concept.name = "Built Component Observation",
-                                choice = "db.concept.uuid")
-    for(cc in uuid.cc){
-      for (hav in length(having.df[["uuid"]])){
         having.uuid <- having.df[["uuid"]][hav]
         sqll <- stringr::str_interp("
               SELECT resourceinstanceid
@@ -109,9 +105,6 @@ Some functions allow to query directly the PostgreSQL
               AND tiledata ->> '${bc.uuid}' = '${having.uuid}'
                          ")
         uuid.having <- RPostgres::dbGetQuery(db.con, sqll)
-        uuids.having <- rbind(uuids.having, uuid.having)
-      }
-    }
   ...
 ```
 
@@ -150,7 +143,7 @@ Correspondences between:
 
 
 ```{.r}
-eamenaR::ref_ids(concept.name = "EAMENA ID", choice = "db.concept.name")
+eamenaR::ref_ids(concept.name = "34cfe992-c2c0-11ea-9026-02e7594ce0a0", choice = "db.concept.name")
 ```
 
 ```{r}
@@ -174,7 +167,7 @@ eamenaR::ref_ids(concept.name = "EAMENA ID", choice = "r.concept.name")
 \
 
 ```{.r}
-eamenaR::ref_ids(concept.name = "EAMENA ID", choice = "db.concept.uuid")
+eamenaR::ref_ids(concept.name = "hp.id", choice = "db.concept.uuid")
 ```
 
 ```{r}
@@ -189,9 +182,9 @@ eamenaR::ref_ids(concept.name = "hp.id", choice = "db.concept.uuid")
 :::
 
 
-## Install and documentation
+## Install and documentation {data-visibility=hidden}
 
-Install and to load:
+Install and to load
 
 ```{.r }
 devtools::install_github("eamena-project/eamenaR")
@@ -214,7 +207,7 @@ Documentation
 
 ## Generalities
 
-Plots and maps are 'flat' or interactive based on the option `interactive`
+Outputs are 'flat' or interactive based on the option interactive
 
 ```{.r}
 geojson_boxplot(stat = "area", by = "route", interactive = T, verbose = F)
@@ -235,8 +228,7 @@ Maps of heritage places
 ### General
 
 ```{.r }
-geojson_map(geojson.path = paste0(system.file(package = "eamenaR"), "/extdata/caravanserail.geojson"),
-            map.name = "caravanserail")
+geojson_map(map.name = "caravanserail", geojson.path = paste0(system.file(package = "eamenaR"), "/extdata/caravanserail.geojson"))
 ```
 
 
@@ -249,9 +241,7 @@ geojson_map(geojson.path = paste0(system.file(package = "eamenaR"), "/extdata/ca
 ### Thematic
 
 ```{.r}
-geojson_map(geojson.path = paste0(system.file(package = "eamenaR"),
-                                  "/extdata/caravanserail.geojson"),
-            map.name = "caravanserail", field.names = c("Damage Extent Type"))
+geojson_map(map.name = "caravanserail", field.names = c("Damage Extent Type"), geojson.path = paste0(system.file(package = "eamenaR"), "/extdata/caravanserail.geojson"))
 ```
 
 :::: {.columns}
@@ -281,8 +271,7 @@ geojson_map(geojson.path = paste0(system.file(package = "eamenaR"),
 Maps for paths between heritage places
 
 ```{.r }
-geojson_map_path(geojson.path = paste0(system.file(package = "eamenaR"), "/extdata/caravanserailZ.geojson"),
-                 csv.path = paste0(system.file(package = "eamenaR"), "/extdata/caravanserail_paths.csv"))
+geojson_map_path(geojson.path = paste0(system.file(package = "eamenaR"), "/extdata/caravanserailZ.geojson"), csv.path = paste0(system.file(package = "eamenaR"), "/extdata/caravanserail_paths.csv"))
 ```
 
 <center>
@@ -330,8 +319,7 @@ geojson_stat(stat = "list_fields")
 Use API data, on the fly, to retrieve elevations
 
 ```{.r }
-geojson_addZ(geojson.path = paste0(system.file(package = "eamenaR"), "/extdata/caravanserail.geojson"),
-             elevation.api = "gmrt_point")
+geojson_addZ(elevation.api = "gmrt_point", geojson.path = paste0(system.file(package = "eamenaR"), "/extdata/caravanserail.geojson"))
 ```
 
 ```{=html}
@@ -345,10 +333,7 @@ geojson_addZ(geojson.path = paste0(system.file(package = "eamenaR"), "/extdata/c
 Elevation profiles :
 
 ```{.r }
-geojson_map_path(map.name = "map_path",
-                 geojson.path = paste0(system.file(package = "eamenaR"), "/extdata/caravanserail.geojson"),
-                 csv.path = paste0(system.file(package = "eamenaR"), "/extdata/caravanserail_paths.csv"),
-                 export.type = "profile")
+geojson_map_path(export.type = "profile", geojson.path = paste0(system.file(package = "eamenaR"), "/extdata/caravanserail.geojson"), csv.path = paste0(system.file(package = "eamenaR"), "/extdata/caravanserail_paths.csv"))
 ```
 
 <center>
@@ -368,7 +353,7 @@ geojson_map_path(map.name = "map_path",
 ### Areas
 
 ```{.r }
-geojson_boxplot(stat.name = "caravanserais_areas", stat = "area", by = "route")
+geojson_boxplot(stat = "area", by = "route")
 ```
 
 <center>
@@ -380,8 +365,7 @@ geojson_boxplot(stat.name = "caravanserais_areas", stat = "area", by = "route")
 ### Conditions
 
 ```{.r }
-geojson_stat(stat.name = "overall_cond", stat = "stats",
-             field.names = c("Overall Condition State Type"))
+geojson_stat(stat = "stats", field.names = c("Overall Condition State Type"))
 ```
 
 <center>
@@ -393,8 +377,7 @@ geojson_stat(stat.name = "overall_cond", stat = "stats",
 ### Disturbances
 
 ```{.r }
-geojson_stat(stat = "stats", chart.type = "hist",
-             field.names = c("Disturbance Cause Category Type"))
+geojson_stat(stat = "stats", chart.type = "hist", field.names = c("Disturbance Cause Category Type"))
 ```
 
 <center>
@@ -421,8 +404,8 @@ plot_cultural_periods(d = d, field = "subperiods", plot.type = "by.eamenaid")
 ### Orientations
 
 ```{.r}
-geojson_stat(stat.name = "orientations", stat = "stats",
-             chart.type = "radar", field.names = c("Resource Orientation"))
+geojson_stat(stat = "stats", chart.type = "radar", 
+             field.names = c("Resource Orientation"))
 ```
 
 
@@ -436,9 +419,9 @@ geojson_stat(stat.name = "orientations", stat = "stats",
 
 \
 
-## Connected components {auto-animate=true}
+## Connected components {auto-animate=true data-visibility=hidden}
 
-Cultural heritage data can be recorded in heritage places (`EAMENA-`) connected to different built components (`COMPONENT-`)
+Heritage places (`EAMENA-`) connected to different built components (`COMPONENT-`)
 
 :::: {.columns}
 
@@ -475,7 +458,7 @@ Cultural heritage data can be recorded in heritage places (`EAMENA-`) connected 
 
 ::::
 
-## Connected components {auto-animate=true}
+## Connected components {auto-animate=true data-visibility=hidden}
 
 **List** the connected components
 
@@ -494,7 +477,7 @@ df <- list_related_resources(db.con = my_con,
                              disconn = FALSE)
 ```
 
-## Connected components {auto-animate=true}
+## Connected components {auto-animate=true data-visibility=hidden}
 
 **Select** some of these connected components
 
@@ -560,7 +543,7 @@ kable(df.measures.all[ , c("hp.id", "cc.id", "cc.type", "cc.measure")]) %>%
 ### <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-leaflet.png" style="height: 40px; vertical-align:middle">
 
 ```{.r}
-geojson_map(interactive = T)
+geojson_map(interactive = T, geojson.path = paste0(system.file(package = "eamenaR"), "/extdata/caravanserail.geojson"))
 ```
 
 ```{=html}
@@ -570,7 +553,7 @@ geojson_map(interactive = T)
 ### <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-plotly.png" style="height: 45px; vertical-align:middle"> paths
 
 ```{.r}
-geojson_map_path(interactive = T, selected.category = c(1))
+geojson_map_path(interactive = T, selected.category = c(2), geojson.path = paste0(system.file(package = "eamenaR"), "/extdata/caravanserailZ.geojson"), csv.path = paste0(system.file(package = "eamenaR"), "/extdata/caravanserail_paths.csv"))
 ```
 
 ```{=html}
@@ -592,25 +575,17 @@ plot_edtf(edtf_span = "ym", edtf_analyse = "category")
 \
 
 
-# Data <br>management{background-color="#f3e7b3"}
+<!-- # Data <br>management{background-color="#f3e7b3" data-visibility=hidden} -->
 
 
-## Bulk Upload
+## Bulk Upload {data-visibility=hidden}
 
-
-::: {.panel-tabset}
-
-
-### Workflow
 
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/eamenaR-workflow-bu.png" width="900">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/eamenaR-workflow-bu.png" width="1000">
 
 </center>
-
-
-### Mapping table
 
 * **target**: field names of an <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> instance  
 
@@ -646,46 +621,31 @@ plot_edtf(edtf_span = "ym", edtf_analyse = "category")
 
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/eamenaR-data-bu.png" width="800">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/eamenaR-data-bu.png" width="1000">
 
 </center>
 
   
-:::
+## 3<sup>rd</sup> party applications {data-visibility=hidden}
 
-## 3<sup>rd</sup> party applications
-
-Append geometries
-
-:::: {.columns}
-
-::: {.column width="50%"}
-
+Append geometries from Google Earth and GIS
 
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/eamenaR-workflow-gee.png" width="600">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/eamenaR-workflow-gee.png" width="700">
 
 </center>
 
-:::
-
-::: {.column width="50%"}
-
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/eamenaR-workflow-gis.png" width="600">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/eamenaR-workflow-gis.png" width="700">
 
 </center>
 
 
-:::
+# Data audit{background-color="#f3e7b3" data-visibility=hidden}
 
-::::
-
-# Data audit{background-color="#f3e7b3"}
-
-## Duplicates
+## Duplicates {data-visibility=hidden}
 
 ```{.r code-line-numbers="2-7"}
 d <- hash::hash()
@@ -717,15 +677,15 @@ kable(d$are_duplicates) %>%
   column_spec(1, bold = T)
 ```
 
-## Users
+\
+
+
+## Users {data-visibility=hidden}
 
 Total number of new users registered in EAMENA for the year 2022
 
 ```{.r}
-ref_users(db.con = my_con,
-          d = d,
-          date.after = "2022-01-01",
-          date.before = "2022-12-01",
+ref_users(db.con = my_con, d = d, date.after = "2022-01-01", date.before = "2022-12-01",
           plot.g = T)
 ```
 
@@ -735,21 +695,41 @@ ref_users(db.con = my_con,
 
 </center>
 
+\
 
 # Conclusion {background-color="#f3e7b3"}
 
 
 ## FAIR data
 
-Improves the FAIR (*Findable, Accessible, Interoperable, Reusable*) of data
+Improves the FAIRness (*Findable, Accessible, Interoperable, Reusable*) of data
 
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/eamenaR-workflow-fair.png" width="600">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/eamenaR-workflow-fair.png" width="700">
 
 </center>
+
+## Next steps
+
+* Update to work with <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> v7.
+
+* Need for better standardisation of functions and documentation.
+
+* <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" style="height: 80px;vertical-align: middle;"> Open to contributions.
+
+## Contact {background-color="#f3e7b3"}
 
 * <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" style="height: 80px;vertical-align: middle;"> <https://github.com/eamena-project/eamenaR>  
 
 * <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/eamena-logo.png" style="height: 80px;vertical-align: middle;"> <https://eamena.org/>
+
+\
+
+<center>
+
+<span style="font-size: 70px; color:#f3e7b3;"> Thank you for your attention </span>
+
+</center>
+
 

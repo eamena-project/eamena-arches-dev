@@ -11,7 +11,7 @@
   <meta name="generator" content="quarto-1.1.251">
 
   <meta name="author" content="EAMENA project">
-  <title>eamenaR</title>
+  <title>eamenaR - </title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -398,9 +398,9 @@
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" data-background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaDB-bck.png" data-background-opacity="0.4" data-background-size="50%" class="center">
-  <h1 class="title">eamenaR</h1>
-  <p class="subtitle"><strong>An R package for<br>statistical analysis and data management<br>of the EAMENA database</strong></p>
+<section id="title-slide" data-background-iframe="https://database.eamena.org/en/" data-background-opacity="0.3" class="center">
+  <h1 class="title"><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" style="height: 150px;vertical-align: middle;"></h1>
+  <p class="subtitle"><strong>An R package for <br>statistical analysis and management <br>of the EAMENA database</strong></p>
   <p class="author">EAMENA project</p>
 </section>
 
@@ -415,7 +415,7 @@
 
 </div>
 <ul>
-<li>Data analysis and audit of the EAMENA DB content</li>
+<li>Data analysis and audit of the EAMENA DB</li>
 <li>Data management between EAMENA DB and 3<sup>rd</sup> party apps</li>
 </ul>
 <div class="cell" data-reveal="true">
@@ -469,24 +469,16 @@
 </div>
 <div id="tabset-1-2">
 <p>Some functions allow to query directly the PostgreSQL</p>
-<div class="sourceCode" id="cb1" data-code-line-numbers="9-12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a>  ...</span>
-<span id="cb1-2"><a href="#cb1-2"></a>    ...</span>
-<span id="cb1-3"><a href="#cb1-3"></a>    bc.uuid <span class="ot">&lt;-</span> eamenaR<span class="sc">::</span><span class="fu">ref_ids</span>(<span class="at">concept.name =</span> <span class="st">"Built Component Observation"</span>,</span>
-<span id="cb1-4"><a href="#cb1-4"></a>                                <span class="at">choice =</span> <span class="st">"db.concept.uuid"</span>)</span>
-<span id="cb1-5"><a href="#cb1-5"></a>    <span class="cf">for</span>(cc <span class="cf">in</span> uuid.cc){</span>
-<span id="cb1-6"><a href="#cb1-6"></a>      <span class="cf">for</span> (hav <span class="cf">in</span> <span class="fu">length</span>(having.df[[<span class="st">"uuid"</span>]])){</span>
-<span id="cb1-7"><a href="#cb1-7"></a>        having.uuid <span class="ot">&lt;-</span> having.df[[<span class="st">"uuid"</span>]][hav]</span>
-<span id="cb1-8"><a href="#cb1-8"></a>        sqll <span class="ot">&lt;-</span> stringr<span class="sc">::</span><span class="fu">str_interp</span>(<span class="st">"</span></span>
-<span id="cb1-9"><a href="#cb1-9"></a><span class="st">              SELECT resourceinstanceid</span></span>
-<span id="cb1-10"><a href="#cb1-10"></a><span class="st">              FROM tiles</span></span>
-<span id="cb1-11"><a href="#cb1-11"></a><span class="st">              WHERE resourceinstanceid::text LIKE '${cc}'</span></span>
-<span id="cb1-12"><a href="#cb1-12"></a><span class="st">              AND tiledata -&gt;&gt; '${bc.uuid}' = '${having.uuid}'</span></span>
-<span id="cb1-13"><a href="#cb1-13"></a><span class="st">                         "</span>)</span>
-<span id="cb1-14"><a href="#cb1-14"></a>        uuid.having <span class="ot">&lt;-</span> RPostgres<span class="sc">::</span><span class="fu">dbGetQuery</span>(db.con, sqll)</span>
-<span id="cb1-15"><a href="#cb1-15"></a>        uuids.having <span class="ot">&lt;-</span> <span class="fu">rbind</span>(uuids.having, uuid.having)</span>
-<span id="cb1-16"><a href="#cb1-16"></a>      }</span>
-<span id="cb1-17"><a href="#cb1-17"></a>    }</span>
-<span id="cb1-18"><a href="#cb1-18"></a>  ...</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb1" data-code-line-numbers="4-7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a>  ...</span>
+<span id="cb1-2"><a href="#cb1-2"></a>        having.uuid <span class="ot">&lt;-</span> having.df[[<span class="st">"uuid"</span>]][hav]</span>
+<span id="cb1-3"><a href="#cb1-3"></a>        sqll <span class="ot">&lt;-</span> stringr<span class="sc">::</span><span class="fu">str_interp</span>(<span class="st">"</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a><span class="st">              SELECT resourceinstanceid</span></span>
+<span id="cb1-5"><a href="#cb1-5"></a><span class="st">              FROM tiles</span></span>
+<span id="cb1-6"><a href="#cb1-6"></a><span class="st">              WHERE resourceinstanceid::text LIKE '${cc}'</span></span>
+<span id="cb1-7"><a href="#cb1-7"></a><span class="st">              AND tiledata -&gt;&gt; '${bc.uuid}' = '${having.uuid}'</span></span>
+<span id="cb1-8"><a href="#cb1-8"></a><span class="st">                         "</span>)</span>
+<span id="cb1-9"><a href="#cb1-9"></a>        uuid.having <span class="ot">&lt;-</span> RPostgres<span class="sc">::</span><span class="fu">dbGetQuery</span>(db.con, sqll)</span>
+<span id="cb1-10"><a href="#cb1-10"></a>  ...</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
@@ -600,7 +592,7 @@
 </ul>
 </div>
 <div id="tabset-2-3">
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a>eamenaR<span class="sc">::</span><span class="fu">ref_ids</span>(<span class="at">concept.name =</span> <span class="st">"EAMENA ID"</span>, <span class="at">choice =</span> <span class="st">"db.concept.name"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a>eamenaR<span class="sc">::</span><span class="fu">ref_ids</span>(<span class="at">concept.name =</span> <span class="st">"34cfe992-c2c0-11ea-9026-02e7594ce0a0"</span>, <span class="at">choice =</span> <span class="st">"db.concept.name"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "EAMENA ID"</code></pre>
@@ -616,7 +608,7 @@
 </div>
 <p><br>
 </p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a>eamenaR<span class="sc">::</span><span class="fu">ref_ids</span>(<span class="at">concept.name =</span> <span class="st">"EAMENA ID"</span>, <span class="at">choice =</span> <span class="st">"db.concept.uuid"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a>eamenaR<span class="sc">::</span><span class="fu">ref_ids</span>(<span class="at">concept.name =</span> <span class="st">"hp.id"</span>, <span class="at">choice =</span> <span class="st">"db.concept.uuid"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "34cfe992-c2c0-11ea-9026-02e7594ce0a0"</code></pre>
@@ -628,17 +620,7 @@
 </div>
 </div>
 </section>
-<section id="install-and-documentation" class="slide level2">
-<h2>Install and documentation</h2>
-<p>Install and to load:</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"eamena-project/eamenaR"</span>)</span>
-<span id="cb8-2"><a href="#cb8-2"></a><span class="fu">library</span>(eamenaR)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Documentation</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a>?geojson_map</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<center>
-<p><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR-functions-doc_geojson_map.png" width="500"></p>
-</center>
-</section></section>
+</section>
 <section>
 <section id="data-analysis" class="title-slide slide level1 center" data-background-color="#f3e7b3">
 <h1>Data analysis</h1>
@@ -646,7 +628,7 @@
 </section>
 <section id="generalities" class="slide level2">
 <h2>Generalities</h2>
-<p>Plots and maps are ‘flat’ or interactive based on the option <code>interactive</code></p>
+<p>Outputs are ‘flat’ or interactive based on the option interactive</p>
 <div class="sourceCode" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a><span class="fu">geojson_boxplot</span>(<span class="at">stat =</span> <span class="st">"area"</span>, <span class="at">by =</span> <span class="st">"route"</span>, <span class="at">interactive =</span> T, <span class="at">verbose =</span> F)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><br>
 </p>
@@ -659,16 +641,13 @@
 <ul id="tabset-3" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-3-1">General</a></li><li><a href="#tabset-3-2">Thematic</a></li><li><a href="#tabset-3-3">Paths</a></li><li><a href="#tabset-3-4">List of IDs</a></li><li><a href="#tabset-3-5">List of fields</a></li></ul>
 <div class="tab-content">
 <div id="tabset-3-1">
-<div class="sourceCode" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1"></a><span class="fu">geojson_map</span>(<span class="at">geojson.path =</span> <span class="fu">paste0</span>(<span class="fu">system.file</span>(<span class="at">package =</span> <span class="st">"eamenaR"</span>), <span class="st">"/extdata/caravanserail.geojson"</span>),</span>
-<span id="cb11-2"><a href="#cb11-2"></a>            <span class="at">map.name =</span> <span class="st">"caravanserail"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1"></a><span class="fu">geojson_map</span>(<span class="at">map.name =</span> <span class="st">"caravanserail"</span>, <span class="at">geojson.path =</span> <span class="fu">paste0</span>(<span class="fu">system.file</span>(<span class="at">package =</span> <span class="st">"eamenaR"</span>), <span class="st">"/extdata/caravanserail.geojson"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <center>
 <p><img src="https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/caravanserail.png" width="600"></p>
 </center>
 </div>
 <div id="tabset-3-2">
-<div class="sourceCode" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1"></a><span class="fu">geojson_map</span>(<span class="at">geojson.path =</span> <span class="fu">paste0</span>(<span class="fu">system.file</span>(<span class="at">package =</span> <span class="st">"eamenaR"</span>),</span>
-<span id="cb12-2"><a href="#cb12-2"></a>                                  <span class="st">"/extdata/caravanserail.geojson"</span>),</span>
-<span id="cb12-3"><a href="#cb12-3"></a>            <span class="at">map.name =</span> <span class="st">"caravanserail"</span>, <span class="at">field.names =</span> <span class="fu">c</span>(<span class="st">"Damage Extent Type"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1"></a><span class="fu">geojson_map</span>(<span class="at">map.name =</span> <span class="st">"caravanserail"</span>, <span class="at">field.names =</span> <span class="fu">c</span>(<span class="st">"Damage Extent Type"</span>), <span class="at">geojson.path =</span> <span class="fu">paste0</span>(<span class="fu">system.file</span>(<span class="at">package =</span> <span class="st">"eamenaR"</span>), <span class="st">"/extdata/caravanserail.geojson"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="columns">
 <div class="column" style="width:50%;">
 <center>
@@ -681,8 +660,7 @@
 </div>
 <div id="tabset-3-3">
 <p>Maps for paths between heritage places</p>
-<div class="sourceCode" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1"></a><span class="fu">geojson_map_path</span>(<span class="at">geojson.path =</span> <span class="fu">paste0</span>(<span class="fu">system.file</span>(<span class="at">package =</span> <span class="st">"eamenaR"</span>), <span class="st">"/extdata/caravanserailZ.geojson"</span>),</span>
-<span id="cb13-2"><a href="#cb13-2"></a>                 <span class="at">csv.path =</span> <span class="fu">paste0</span>(<span class="fu">system.file</span>(<span class="at">package =</span> <span class="st">"eamenaR"</span>), <span class="st">"/extdata/caravanserail_paths.csv"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1"></a><span class="fu">geojson_map_path</span>(<span class="at">geojson.path =</span> <span class="fu">paste0</span>(<span class="fu">system.file</span>(<span class="at">package =</span> <span class="st">"eamenaR"</span>), <span class="st">"/extdata/caravanserailZ.geojson"</span>), <span class="at">csv.path =</span> <span class="fu">paste0</span>(<span class="fu">system.file</span>(<span class="at">package =</span> <span class="st">"eamenaR"</span>), <span class="st">"/extdata/caravanserail_paths.csv"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <center>
 <p><img src="https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/caravanserail_paths.png" width="700"></p>
 </center>
@@ -821,18 +799,14 @@ Wave Climate</code></pre>
 <div class="tab-content">
 <div id="tabset-4-1">
 <p>Use API data, on the fly, to retrieve elevations</p>
-<div class="sourceCode" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1"></a><span class="fu">geojson_addZ</span>(<span class="at">geojson.path =</span> <span class="fu">paste0</span>(<span class="fu">system.file</span>(<span class="at">package =</span> <span class="st">"eamenaR"</span>), <span class="st">"/extdata/caravanserail.geojson"</span>),</span>
-<span id="cb18-2"><a href="#cb18-2"></a>             <span class="at">elevation.api =</span> <span class="st">"gmrt_point"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1"></a><span class="fu">geojson_addZ</span>(<span class="at">elevation.api =</span> <span class="st">"gmrt_point"</span>, <span class="at">geojson.path =</span> <span class="fu">paste0</span>(<span class="fu">system.file</span>(<span class="at">package =</span> <span class="st">"eamenaR"</span>), <span class="st">"/extdata/caravanserail.geojson"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <iframe width="1200" height="1000" src="https://www.gmrt.org/services/pointserverinfo.php#!/services/getGMRTPoint"></iframe>
 <p><br>
 </p>
 </div>
 <div id="tabset-4-2">
 <p>Elevation profiles :</p>
-<div class="sourceCode" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1"></a><span class="fu">geojson_map_path</span>(<span class="at">map.name =</span> <span class="st">"map_path"</span>,</span>
-<span id="cb19-2"><a href="#cb19-2"></a>                 <span class="at">geojson.path =</span> <span class="fu">paste0</span>(<span class="fu">system.file</span>(<span class="at">package =</span> <span class="st">"eamenaR"</span>), <span class="st">"/extdata/caravanserail.geojson"</span>),</span>
-<span id="cb19-3"><a href="#cb19-3"></a>                 <span class="at">csv.path =</span> <span class="fu">paste0</span>(<span class="fu">system.file</span>(<span class="at">package =</span> <span class="st">"eamenaR"</span>), <span class="st">"/extdata/caravanserail_paths.csv"</span>),</span>
-<span id="cb19-4"><a href="#cb19-4"></a>                 <span class="at">export.type =</span> <span class="st">"profile"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1"></a><span class="fu">geojson_map_path</span>(<span class="at">export.type =</span> <span class="st">"profile"</span>, <span class="at">geojson.path =</span> <span class="fu">paste0</span>(<span class="fu">system.file</span>(<span class="at">package =</span> <span class="st">"eamenaR"</span>), <span class="st">"/extdata/caravanserail.geojson"</span>), <span class="at">csv.path =</span> <span class="fu">paste0</span>(<span class="fu">system.file</span>(<span class="at">package =</span> <span class="st">"eamenaR"</span>), <span class="st">"/extdata/caravanserail_paths.csv"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <center>
 <p><img src="https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/map_path_profile.png" width="700"></p>
 </center>
@@ -848,21 +822,19 @@ Wave Climate</code></pre>
 <ul id="tabset-5" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-5-1">Areas</a></li><li><a href="#tabset-5-2">Conditions</a></li><li><a href="#tabset-5-3">Disturbances</a></li><li><a href="#tabset-5-4">Periods</a></li><li><a href="#tabset-5-5">Orientations</a></li></ul>
 <div class="tab-content">
 <div id="tabset-5-1">
-<div class="sourceCode" id="cb20"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1"></a><span class="fu">geojson_boxplot</span>(<span class="at">stat.name =</span> <span class="st">"caravanserais_areas"</span>, <span class="at">stat =</span> <span class="st">"area"</span>, <span class="at">by =</span> <span class="st">"route"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb20"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1"></a><span class="fu">geojson_boxplot</span>(<span class="at">stat =</span> <span class="st">"area"</span>, <span class="at">by =</span> <span class="st">"route"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <center>
 <p><img src="https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/caravanserais_areas_routes.png" width="700"></p>
 </center>
 </div>
 <div id="tabset-5-2">
-<div class="sourceCode" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1"></a><span class="fu">geojson_stat</span>(<span class="at">stat.name =</span> <span class="st">"overall_cond"</span>, <span class="at">stat =</span> <span class="st">"stats"</span>,</span>
-<span id="cb21-2"><a href="#cb21-2"></a>             <span class="at">field.names =</span> <span class="fu">c</span>(<span class="st">"Overall Condition State Type"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1"></a><span class="fu">geojson_stat</span>(<span class="at">stat =</span> <span class="st">"stats"</span>, <span class="at">field.names =</span> <span class="fu">c</span>(<span class="st">"Overall Condition State Type"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <center>
 <p><img src="https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/overall_condition_pie.png" width="600"></p>
 </center>
 </div>
 <div id="tabset-5-3">
-<div class="sourceCode" id="cb22"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1"></a><span class="fu">geojson_stat</span>(<span class="at">stat =</span> <span class="st">"stats"</span>, <span class="at">chart.type =</span> <span class="st">"hist"</span>,</span>
-<span id="cb22-2"><a href="#cb22-2"></a>             <span class="at">field.names =</span> <span class="fu">c</span>(<span class="st">"Disturbance Cause Category Type"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb22"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1"></a><span class="fu">geojson_stat</span>(<span class="at">stat =</span> <span class="st">"stats"</span>, <span class="at">chart.type =</span> <span class="st">"hist"</span>, <span class="at">field.names =</span> <span class="fu">c</span>(<span class="st">"Disturbance Cause Category Type"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <center>
 <p><img src="https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/distrub_cause_category_type_hist.png" width="700"></p>
 </center>
@@ -875,8 +847,8 @@ Wave Climate</code></pre>
 </center>
 </div>
 <div id="tabset-5-5">
-<div class="sourceCode" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1"></a><span class="fu">geojson_stat</span>(<span class="at">stat.name =</span> <span class="st">"orientations"</span>, <span class="at">stat =</span> <span class="st">"stats"</span>,</span>
-<span id="cb24-2"><a href="#cb24-2"></a>             <span class="at">chart.type =</span> <span class="st">"radar"</span>, <span class="at">field.names =</span> <span class="fu">c</span>(<span class="st">"Resource Orientation"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1"></a><span class="fu">geojson_stat</span>(<span class="at">stat =</span> <span class="st">"stats"</span>, <span class="at">chart.type =</span> <span class="st">"radar"</span>, </span>
+<span id="cb24-2"><a href="#cb24-2"></a>             <span class="at">field.names =</span> <span class="fu">c</span>(<span class="st">"Resource Orientation"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <center>
 <p><img src="https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/orientations_radar.png" width="500"></p>
 </center>
@@ -886,286 +858,38 @@ Wave Climate</code></pre>
 <p><br>
 </p>
 </section>
-<section id="connected-components" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">Connected components</h2>
-<p>Cultural heritage data can be recorded in heritage places (<code>EAMENA-</code>) connected to different built components (<code>COMPONENT-</code>)</p>
-<div class="columns">
-<div class="column" style="width:33%;">
-<center>
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/relat-resource-ex1-img.png" width="500">
-<div class="captiontext">
-The caravanserai Maranjab (EAMENA-164943)
-</div>
-</center>
-</div><div class="column" style="width:33%;">
-<center>
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/relat-resource-ex1-plan.png" width="500">
-<div class="captiontext">
-Ground plan of EAMENA-164943
-</div>
-</center>
-</div><div class="column" style="width:33%;">
-<center>
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/relat-resource-ex1.png" width="500">
-<div class="captiontext">
-COMPONENT-* record the courtyard, 28 rooms and 30 stables of EAMENA-164943.
-</div>
-</center>
-</div>
-</div>
-</section>
-<section id="connected-components-1" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">Connected components</h2>
-<p><strong>List</strong> the connected components</p>
-<div class="sourceCode" id="cb25" data-code-line-numbers="8-12"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb25-1" class="hljs-ln-code"><a href="#cb25-1"></a>d <span class="ot">&lt;-</span> hash<span class="sc">::</span><span class="fu">hash</span>()</span>
-<span id="cb25-2" class="hljs-ln-code"><a href="#cb25-2"></a>my_con <span class="ot">&lt;-</span> RPostgres<span class="sc">::</span><span class="fu">dbConnect</span>(<span class="at">drv =</span> RPostgres<span class="sc">::</span><span class="fu">Postgres</span>(),</span>
-<span id="cb25-3" class="hljs-ln-code"><a href="#cb25-3"></a>                               <span class="at">user =</span> <span class="st">'xxx'</span>,</span>
-<span id="cb25-4" class="hljs-ln-code"><a href="#cb25-4"></a>                               <span class="at">password =</span> <span class="st">'xxx'</span>,</span>
-<span id="cb25-5" class="hljs-ln-code"><a href="#cb25-5"></a>                               <span class="at">dbname =</span> <span class="st">'eamena'</span>,</span>
-<span id="cb25-6" class="hljs-ln-code"><a href="#cb25-6"></a>                               <span class="at">host =</span> <span class="st">'ec2-54-155-109-226.eu-west-1.compute.amazonaws.com'</span>,</span>
-<span id="cb25-7" class="hljs-ln-code"><a href="#cb25-7"></a>                               <span class="at">port =</span> <span class="dv">5432</span>)</span>
-<span id="cb25-8" class="hljs-ln-code"><a href="#cb25-8"></a>df <span class="ot">&lt;-</span> <span class="fu">list_related_resources</span>(<span class="at">db.con =</span> my_con,</span>
-<span id="cb25-9" class="hljs-ln-code"><a href="#cb25-9"></a>                             <span class="at">d =</span> d,</span>
-<span id="cb25-10" class="hljs-ln-code"><a href="#cb25-10"></a>                             <span class="at">relationshiptype =</span> <span class="st">"PX_is_related_to"</span>,</span>
-<span id="cb25-11" class="hljs-ln-code"><a href="#cb25-11"></a>                             <span class="at">id =</span> <span class="st">"EAMENA-0164943"</span>,</span>
-<span id="cb25-12" class="hljs-ln-code"><a href="#cb25-12"></a>                             <span class="at">disconn =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="connected-components-2" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">Connected components</h2>
-<p><strong>Select</strong> some of these connected components</p>
-<div class="sourceCode" id="cb26" data-code-line-numbers="3-9"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb26-1" class="hljs-ln-code"><a href="#cb26-1"></a>df.measures.all <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">hp.id =</span> <span class="fu">character</span>(), <span class="at">hp.uuid =</span> <span class="fu">character</span>(),</span>
-<span id="cb26-2" class="hljs-ln-code"><a href="#cb26-2"></a>                              <span class="at">cc.id =</span> <span class="fu">character</span>(), <span class="at">cc.uuid =</span> <span class="fu">character</span>(), <span class="at">cc.type =</span> <span class="fu">character</span>(), <span class="at">cc.measure =</span> <span class="fu">numeric</span>())</span>
-<span id="cb26-3" class="hljs-ln-code"><a href="#cb26-3"></a><span class="cf">for</span>(have <span class="cf">in</span> <span class="fu">c</span>(<span class="st">"Room"</span>, <span class="st">"Stable"</span>)){</span>
-<span id="cb26-4" class="hljs-ln-code"><a href="#cb26-4"></a>  df.measures <span class="ot">&lt;-</span> <span class="fu">select_related_resources</span>(<span class="at">db.con =</span> my_con,</span>
-<span id="cb26-5" class="hljs-ln-code"><a href="#cb26-5"></a>                                          <span class="at">df =</span> df,</span>
-<span id="cb26-6" class="hljs-ln-code"><a href="#cb26-6"></a>                                          <span class="at">having =</span> have,</span>
-<span id="cb26-7" class="hljs-ln-code"><a href="#cb26-7"></a>                                          <span class="at">disconn =</span> F)</span>
-<span id="cb26-8" class="hljs-ln-code"><a href="#cb26-8"></a>  df.measures.all <span class="ot">&lt;-</span> <span class="fu">rbind</span>(df.measures.all, df.measures)</span>
-<span id="cb26-9" class="hljs-ln-code"><a href="#cb26-9"></a>}</span>
-<span id="cb26-10" class="hljs-ln-code"><a href="#cb26-10"></a>df.measures.all[ , <span class="fu">c</span>(<span class="st">"hp.id"</span>, <span class="st">"cc.id"</span>, <span class="st">"cc.type"</span>, <span class="st">"cc.measure"</span>)]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "found id"</code></pre>
-</div>
-<div class="cell-output-display">
 
-<table class="table" style="font-size: 20px; width: auto !important; margin-left: auto; margin-right: auto;">
- <thead>
-  <tr>
-   <th style="text-align:left;"> hp.id </th>
-   <th style="text-align:left;"> cc.id </th>
-   <th style="text-align:left;"> cc.type </th>
-   <th style="text-align:right;"> cc.measure </th>
-  </tr>
- </thead>
-<tbody>
-  <tr>
-   <td style="text-align:left;font-weight: bold;"> EAMENA-0164943 </td>
-   <td style="text-align:left;"> COMPONENT-0000144 </td>
-   <td style="text-align:left;"> Room </td>
-   <td style="text-align:right;"> 28 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;font-weight: bold;"> EAMENA-0164943 </td>
-   <td style="text-align:left;"> COMPONENT-0000141 </td>
-   <td style="text-align:left;"> Stable </td>
-   <td style="text-align:right;"> 30 </td>
-  </tr>
-</tbody>
-</table>
 
-</div>
-</div>
-</section>
+
 <section id="interactivity" class="slide level2">
 <h2>Interactivity</h2>
 <div class="panel-tabset">
 <ul id="tabset-6" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-6-1"><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-leaflet.png" style="height: 40px; vertical-align:middle"></a></li><li><a href="#tabset-6-2"><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-plotly.png" style="height: 45px; vertical-align:middle"> paths</a></li><li><a href="#tabset-6-3"><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-plotly.png" style="height: 45px; vertical-align:middle"> time</a></li></ul>
 <div class="tab-content">
 <div id="tabset-6-1">
-<div class="sourceCode" id="cb28"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1"></a><span class="fu">geojson_map</span>(<span class="at">interactive =</span> T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb27"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1"></a><span class="fu">geojson_map</span>(<span class="at">interactive =</span> T, <span class="at">geojson.path =</span> <span class="fu">paste0</span>(<span class="fu">system.file</span>(<span class="at">package =</span> <span class="st">"eamenaR"</span>), <span class="st">"/extdata/caravanserail.geojson"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <iframe width="1200" height="500" src="http://shinyserver.cfs.unipi.it:3838/eamena/eamenaR/caravanserail_plotly.html"></iframe>
 </div>
 <div id="tabset-6-2">
-<div class="sourceCode" id="cb29"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1"></a><span class="fu">geojson_map_path</span>(<span class="at">interactive =</span> T, <span class="at">selected.category =</span> <span class="fu">c</span>(<span class="dv">1</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb28"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1"></a><span class="fu">geojson_map_path</span>(<span class="at">interactive =</span> T, <span class="at">selected.category =</span> <span class="fu">c</span>(<span class="dv">2</span>), <span class="at">geojson.path =</span> <span class="fu">paste0</span>(<span class="fu">system.file</span>(<span class="at">package =</span> <span class="st">"eamenaR"</span>), <span class="st">"/extdata/caravanserailZ.geojson"</span>), <span class="at">csv.path =</span> <span class="fu">paste0</span>(<span class="fu">system.file</span>(<span class="at">package =</span> <span class="st">"eamenaR"</span>), <span class="st">"/extdata/caravanserail_paths.csv"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <iframe width="1200" height="500" src="http://shinyserver.cfs.unipi.it:3838/eamena/eamenaR/paths_map_route_2.html"></iframe>
 </div>
 <div id="tabset-6-3">
-<div class="sourceCode" id="cb30"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1"></a><span class="fu">plot_edtf</span>(<span class="at">edtf_span =</span> <span class="st">"ym"</span>, <span class="at">edtf_analyse =</span> <span class="st">"category"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb29"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1"></a><span class="fu">plot_edtf</span>(<span class="at">edtf_span =</span> <span class="st">"ym"</span>, <span class="at">edtf_analyse =</span> <span class="st">"category"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <iframe width="1200" height="500" src="http://shinyserver.cfs.unipi.it:3838/eamena/eamenaR/edtf_plotly_category_ym_threats_types.html"></iframe>
 </div>
 </div>
 </div>
 <p><br>
 </p>
-</section></section>
+<!-- # Data <br>management{background-color="#f3e7b3" data-visibility=hidden} -->
+</section>
+
+</section>
 <section>
-<section id="data-management" class="title-slide slide level1 center" data-background-color="#f3e7b3">
-<h1>Data <br>management</h1>
+
 
 </section>
-<section id="bulk-upload" class="slide level2">
-<h2>Bulk Upload</h2>
-<div class="panel-tabset">
-<ul id="tabset-7" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-7-1">Workflow</a></li><li><a href="#tabset-7-2">Mapping table</a></li></ul>
-<div class="tab-content">
-<div id="tabset-7-1">
-<center>
-<p><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/eamenaR-workflow-bu.png" width="900"></p>
-</center>
-</div>
-<div id="tabset-7-2">
-<ul>
-<li><p><strong>target</strong>: field names of an <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png" style="height: 35px;vertical-align: middle;"> instance</p></li>
-<li><p><strong>source</strong>: data coming from different authors (here ‘<code>mk</code>’ = Mohamed Kenawi).</p></li>
-</ul>
-
-<table>
-<thead>
-<tr>
-<th>
-key
-</th>
-<th>
-description
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td bgcolor="#f4c7c3">
-value
-</td>
-<td>
-repeat the same value in the targeted column
-</td>
-</tr>
-<tr>
-<td bgcolor="#ffc000">
-field
-</td>
-<td>
-recopy all values in the targeted column
-</td>
-</tr>
-<tr>
-<td bgcolor="#299df0">
-expression
-</td>
-<td>
-calculate values based on an R code snippet
-</td>
-</tr>
-<tr>
-<td bgcolor="#fce8b2">
-escape
-</td>
-<td>
-values are calculated in another field
-</td>
-</tr>
-</tbody>
-
-</table>
-<div class="captiontext">
-type of action to perform on <strong>source</strong> field names values
-</div>
-<iframe width="1300" height="700" src="https://docs.google.com/spreadsheets/d/1nXgz98mGOySgc0Q2zIeT1RvHGNl4WRq1Fp9m5qB8g8k/edit#gid=1083097625"></iframe>
-</div>
-</div>
-</div>
-</section>
-<section id="rd-party-applications" class="slide level2">
-<h2>3<sup>rd</sup> party applications</h2>
-<p>Append geometries</p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<center>
-<p><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/eamenaR-workflow-gee.png" width="600"></p>
-</center>
-</div><div class="column" style="width:50%;">
-<center>
-<p><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/eamenaR-workflow-gis.png" width="600"></p>
-</center>
-</div>
-</div>
-</section></section>
-<section>
-<section id="data-audit" class="title-slide slide level1 center" data-background-color="#f3e7b3">
-<h1>Data audit</h1>
-
-</section>
-<section id="duplicates" class="slide level2">
-<h2>Duplicates</h2>
-<div class="sourceCode" id="cb31" data-code-line-numbers="2-7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1"></a>d <span class="ot">&lt;-</span> hash<span class="sc">::</span><span class="fu">hash</span>()</span>
-<span id="cb31-2"><a href="#cb31-2"></a>d <span class="ot">&lt;-</span> <span class="fu">ref_are_duplicates</span>(<span class="at">d =</span> d,</span>
-<span id="cb31-3"><a href="#cb31-3"></a>                        <span class="at">hp.list =</span> <span class="fu">c</span>(<span class="st">"EAMENA-0207209"</span>, <span class="st">"EAMENA-0182057"</span>),</span>
-<span id="cb31-4"><a href="#cb31-4"></a>                        <span class="at">selected.fields =</span> <span class="fu">c</span>(<span class="st">"Assessment Investigator - Actor"</span>,</span>
-<span id="cb31-5"><a href="#cb31-5"></a>                                            <span class="st">"Assessment Activity Date"</span>,</span>
-<span id="cb31-6"><a href="#cb31-6"></a>                                            <span class="st">"Resource Name"</span>,</span>
-<span id="cb31-7"><a href="#cb31-7"></a>                                            <span class="st">"geometry"</span>))</span>
-<span id="cb31-8"><a href="#cb31-8"></a>d<span class="sc">$</span>are_duplicates</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell">
-<div class="cell-output-display">
-
-<table class="table" style="font-size: 20px; width: auto !important; margin-left: auto; margin-right: auto;">
- <thead>
-  <tr>
-   <th style="text-align:left;"> field </th>
-   <th style="text-align:left;"> fb0a2ef4-023f-4d13-b931-132799bb7a6c </th>
-   <th style="text-align:left;"> 563567f7-eef0-4683-9e88-5e4be2452f80 </th>
-   <th style="text-align:left;"> dist </th>
-  </tr>
- </thead>
-<tbody>
-  <tr>
-   <td style="text-align:left;font-weight: bold;"> EAMENA ID </td>
-   <td style="text-align:left;"> EAMENA-0182057 </td>
-   <td style="text-align:left;"> EAMENA-0207209 </td>
-   <td style="text-align:left;"> - </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;font-weight: bold;"> Assessment Investigator - Actor </td>
-   <td style="text-align:left;"> Hamed Rahnama </td>
-   <td style="text-align:left;"> Hamed Rahnama, Bijan Rouhani </td>
-   <td style="text-align:left;"> 0.18 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;font-weight: bold;"> Assessment Activity Date </td>
-   <td style="text-align:left;"> 2021-05-25 </td>
-   <td style="text-align:left;"> 2022-08-21, 2022-08-30 </td>
-   <td style="text-align:left;"> 0.32 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;font-weight: bold;"> Resource Name </td>
-   <td style="text-align:left;"> Bedasht Caravanserai, &lt;U+06A9&gt;&lt;U+0627&gt;&lt;U+0631&gt;&lt;U+0648&gt;&lt;U+0646&gt;&lt;U+0633&gt;&lt;U+0631&gt;&lt;U+0627&gt;&lt;U+06CC&gt; &lt;U+0628&gt;&lt;U+062F&gt;&lt;U+0634&gt;&lt;U+062A&gt;, CVNS-IR </td>
-   <td style="text-align:left;"> CVNS-IR, Bedasht Caravanserai, &lt;U+06A9&gt;&lt;U+0627&gt;&lt;U+0631&gt;&lt;U+0648&gt;&lt;U+0627&gt;&lt;U+0646&gt;&lt;U+0633&gt;&lt;U+0631&gt;&lt;U+0627&gt;&lt;U+06CC&gt; &lt;U+0628&gt;&lt;U+062F&gt;&lt;U+0634&gt;&lt;U+062A&gt; </td>
-   <td style="text-align:left;"> 0.26 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;font-weight: bold;"> geometry </td>
-   <td style="text-align:left;"> c(55.05059, 36.42466) </td>
-   <td style="text-align:left;"> c(55.05059, 36.42466) </td>
-   <td style="text-align:left;"> 0 </td>
-  </tr>
-</tbody>
-</table>
-
-</div>
-</div>
-</section>
-<section id="users" class="slide level2">
-<h2>Users</h2>
-<p>Total number of new users registered in EAMENA for the year 2022</p>
-<div class="sourceCode" id="cb32"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1"></a><span class="fu">ref_users</span>(<span class="at">db.con =</span> my_con,</span>
-<span id="cb32-2"><a href="#cb32-2"></a>          <span class="at">d =</span> d,</span>
-<span id="cb32-3"><a href="#cb32-3"></a>          <span class="at">date.after =</span> <span class="st">"2022-01-01"</span>,</span>
-<span id="cb32-4"><a href="#cb32-4"></a>          <span class="at">date.before =</span> <span class="st">"2022-12-01"</span>,</span>
-<span id="cb32-5"><a href="#cb32-5"></a>          <span class="at">plot.g =</span> T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<center>
-<p><img src="https://raw.githubusercontent.com/eamena-project/eamenaR/main/results/users_date_joined_2.png" width="700"></p>
-</center>
-</section></section>
 <section>
 <section id="conclusion" class="title-slide slide level1 center" data-background-color="#f3e7b3">
 <h1>Conclusion</h1>
@@ -1173,18 +897,34 @@ type of action to perform on <strong>source</strong> field names values
 </section>
 <section id="fair-data" class="slide level2">
 <h2>FAIR data</h2>
-<p>Improves the FAIR (<em>Findable, Accessible, Interoperable, Reusable</em>) of data</p>
+<p>Improves the FAIRness (<em>Findable, Accessible, Interoperable, Reusable</em>) of data</p>
 <center>
-<p><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/eamenaR-workflow-fair.png" width="600"></p>
+<p><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/eamenaR-workflow-fair.png" width="700"></p>
 </center>
+</section>
+<section id="next-steps" class="slide level2">
+<h2>Next steps</h2>
+<ul>
+<li><p>Update to work with <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png" style="height: 35px;vertical-align: middle;"> v7.</p></li>
+<li><p>Need for better standardisation of functions and documentation.</p></li>
+<li><p><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" style="height: 80px;vertical-align: middle;"> Open to contributions.</p></li>
+</ul>
+</section>
+<section id="contact" class="slide level2" data-background-color="#f3e7b3">
+<h2>Contact</h2>
 <ul>
 <li><p><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" style="height: 80px;vertical-align: middle;"> <a href="https://github.com/eamena-project/eamenaR" class="uri">https://github.com/eamena-project/eamenaR</a></p></li>
 <li><p><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/eamena-logo.png" style="height: 80px;vertical-align: middle;"> <a href="https://eamena.org/" class="uri">https://eamena.org/</a></p></li>
 </ul>
+<p><br>
+</p>
+<center>
+<p><span style="font-size: 70px; color:#f3e7b3;"> Thank you for your attention </span></p>
+</center>
 
 <p><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo_complete.png" class="slide-logo"></p>
 <div class="footer footer-default">
-<p><em>eamenaR</em> <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" style="height: 45px;vertical-align: middle;"> - Arcadia meeting, London (UK), 10<sup>th</sup> March 2023</p>
+<p>eamenaR <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" style="height: 45px;vertical-align: middle;"> - Arcadia Fund meeting, 40 Villiers Street, London (UK), 10/03/23</p>
 </div>
 </section></section>
     </div>

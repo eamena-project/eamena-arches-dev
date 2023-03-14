@@ -19,7 +19,7 @@ format:
     reference-location: document
     footnotes-hover: true
     logo: https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo_complete.png
-    footer: "eamenaR <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png' style='height: 45px;vertical-align: middle;'> - Arcadia Fund meeting, 40 Villiers Street, London (UK), 10/03/23"
+    footer: "eamenaR <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png' style='height: 45px;vertical-align: middle;'> <https://tinyurl.com/arcadia-eamenar> - Arcadia meeting, 40 Villiers Street, London (UK), 10/03/23"
     margin: 0
     width: 1200
 ---
@@ -70,7 +70,7 @@ flowchart LR
 
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/stack-eamenar.png" width="500">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/stack-eamenar.png" width="700">
 
 </center>
 
@@ -81,19 +81,19 @@ flowchart LR
 
 ### Files
 
-GeoJSON is the privileged format to work with spatial data
+GeoJSON is the privileged file format to work with spatial data
 
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/geojson-export.png" width="700">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/geojson-export.png" width="800">
 
 </center>
 
 \
 
-### PostgreSQL
+### Database
 
-Some functions allow to query directly the PostgreSQL
+Some functions allow to query directly the PostgreSQL database
 
 ```{.r code-line-numbers="4-7"}
   ...
@@ -108,6 +108,13 @@ Some functions allow to query directly the PostgreSQL
   ...
 ```
 
+\
+
+```{=html}
+<iframe width="1200" height="700" src="https://arches.readthedocs.io/en/stable/import-export/#view-creation-functions" title="Arches doc"></iframe>
+```
+
+\
 
 :::
 
@@ -246,7 +253,7 @@ geojson_map(map.name = "caravanserail", field.names = c("Damage Extent Type"), g
 
 :::: {.columns}
 
-::: {.column width="50%"}
+::: {.column width="60%"}
 
 <center>
 
@@ -256,7 +263,7 @@ geojson_map(map.name = "caravanserail", field.names = c("Damage Extent Type"), g
 
 :::
 
-::: {.column width="50%"}
+::: {.column width="40%"}
 
 ```{=html}
 <iframe width="1200" height="500" src="http://shinyserver.cfs.unipi.it:3838/eamena/eamenaR/symbology.html"></iframe>
@@ -274,11 +281,32 @@ Maps for paths between heritage places
 geojson_map_path(geojson.path = paste0(system.file(package = "eamenaR"), "/extdata/caravanserailZ.geojson"), csv.path = paste0(system.file(package = "eamenaR"), "/extdata/caravanserail_paths.csv"))
 ```
 
+:::: {.columns}
+
+::: {.column width="60%"}
+
 <center>
 
 <img src="https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/caravanserail_paths.png" width="700">
 
 </center>
+
+:::
+
+
+::: {.column width="40%"}
+
+```{r}
+paths <- read.csv("https://raw.githubusercontent.com/eamena-project/eamenaR/main/inst/extdata/caravanserail_paths.csv")
+samp.paths <- paths[sort(sample(nrow(paths), 30)), ]
+kable(samp.paths, caption = 'caravanserail_paths.csv (sample)') %>%
+  kable_styling(full_width = FALSE, position = "center", font_size = 20)
+```
+
+:::
+
+::::
+
 
 ### List of IDs
 
@@ -643,7 +671,7 @@ Append geometries from Google Earth and GIS
 </center>
 
 
-# Data audit{background-color="#f3e7b3" data-visibility=hidden}
+<!-- # Data audit{background-color="#f3e7b3" data-visibility=hidden} -->
 
 ## Duplicates {data-visibility=hidden}
 
@@ -706,7 +734,7 @@ Improves the FAIRness (*Findable, Accessible, Interoperable, Reusable*) of data
 
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/eamenaR-workflow-fair.png" width="700">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/eamenaR-workflow-fair.png" width="600">
 
 </center>
 
@@ -714,22 +742,29 @@ Improves the FAIRness (*Findable, Accessible, Interoperable, Reusable*) of data
 
 * Update to work with <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> v7.
 
-* Need for better standardisation of functions and documentation.
+* Improve the standardisation of functions ⚙️ and documentation.
 
-* <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" style="height: 80px;vertical-align: middle;"> Open to contributions.
+* Get more contributions <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" style="height: 80px;vertical-align: middle;">.
 
-## Contact {background-color="#f3e7b3"}
+## {background-color="#f3e7b3"}
+
+\
+\
+\
+
+<center>
+
+<span style="font-size: 70px;">🏛️ Thank you </span>
+
+</center>
+
+\
+
 
 * <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" style="height: 80px;vertical-align: middle;"> <https://github.com/eamena-project/eamenaR>  
 
 * <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/eamena-logo.png" style="height: 80px;vertical-align: middle;"> <https://eamena.org/>
 
 \
-
-<center>
-
-<span style="font-size: 70px; color:#f3e7b3;"> Thank you for your attention </span>
-
-</center>
 
 

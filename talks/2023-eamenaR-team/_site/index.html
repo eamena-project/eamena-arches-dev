@@ -423,7 +423,7 @@
 <div>
 <p>
 </p><pre class="mermaid" data-tooltip-selector="#mermaid-tooltip-1">flowchart LR
-    subgraph ide1 [Arches];
+    subgraph ide1 [Arches v5.2];
     A[(EAMENA&lt;br&gt;DB)];
     end;
     A &lt;--data&lt;br&gt;exchange--&gt; B{{eamenaR}}:::eamenaRpkg;
@@ -451,24 +451,24 @@
 <section id="libraries" class="slide level2">
 <h2><img src="https://www.r-project.org/logo/Rlogo.svg" alt="" style="height: 80px;vertical-align: middle;"> libraries</h2>
 <center>
-<p><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/stack-eamenar.png" width="500"></p>
+<p><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/stack-eamenar.png" width="700"></p>
 </center>
 </section>
 <section id="data" class="slide level2">
 <h2>Data</h2>
 <div class="panel-tabset">
-<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">Files</a></li><li><a href="#tabset-1-2">PostgreSQL</a></li></ul>
+<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">Files</a></li><li><a href="#tabset-1-2">Database</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1">
-<p>GeoJSON is the privileged format to work with spatial data</p>
+<p>GeoJSON is the privileged file format to work with spatial data</p>
 <center>
-<p><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/geojson-export.png" width="700"></p>
+<p><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/geojson-export.png" width="800"></p>
 </center>
 <p><br>
 </p>
 </div>
 <div id="tabset-1-2">
-<p>Some functions allow to query directly the PostgreSQL</p>
+<p>Some functions allow to query directly the PostgreSQL database</p>
 <div class="sourceCode" id="cb1" data-code-line-numbers="4-7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a>  ...</span>
 <span id="cb1-2"><a href="#cb1-2"></a>        having.uuid <span class="ot">&lt;-</span> having.df[[<span class="st">"uuid"</span>]][hav]</span>
 <span id="cb1-3"><a href="#cb1-3"></a>        sqll <span class="ot">&lt;-</span> stringr<span class="sc">::</span><span class="fu">str_interp</span>(<span class="st">"</span></span>
@@ -479,6 +479,12 @@
 <span id="cb1-8"><a href="#cb1-8"></a><span class="st">                         "</span>)</span>
 <span id="cb1-9"><a href="#cb1-9"></a>        uuid.having <span class="ot">&lt;-</span> RPostgres<span class="sc">::</span><span class="fu">dbGetQuery</span>(db.con, sqll)</span>
 <span id="cb1-10"><a href="#cb1-10"></a>  ...</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><br>
+</p>
+
+<iframe width="1200" height="700" src="https://arches.readthedocs.io/en/stable/import-export/#view-creation-functions" title="Arches doc"></iframe>
+<p><br>
+</p>
 </div>
 </div>
 </div>
@@ -649,11 +655,11 @@
 <div id="tabset-3-2">
 <div class="sourceCode" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1"></a><span class="fu">geojson_map</span>(<span class="at">map.name =</span> <span class="st">"caravanserail"</span>, <span class="at">field.names =</span> <span class="fu">c</span>(<span class="st">"Damage Extent Type"</span>), <span class="at">geojson.path =</span> <span class="fu">paste0</span>(<span class="fu">system.file</span>(<span class="at">package =</span> <span class="st">"eamenaR"</span>), <span class="st">"/extdata/caravanserail.geojson"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="columns">
-<div class="column" style="width:50%;">
+<div class="column" style="width:60%;">
 <center>
 <p><img src="https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/caravanserail_Damage Extent Type.png" width="600"></p>
 </center>
-</div><div class="column" style="width:50%;">
+</div><div class="column" style="width:40%;">
 <iframe width="1200" height="500" src="http://shinyserver.cfs.unipi.it:3838/eamena/eamenaR/symbology.html"></iframe>
 </div>
 </div>
@@ -661,9 +667,213 @@
 <div id="tabset-3-3">
 <p>Maps for paths between heritage places</p>
 <div class="sourceCode" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1"></a><span class="fu">geojson_map_path</span>(<span class="at">geojson.path =</span> <span class="fu">paste0</span>(<span class="fu">system.file</span>(<span class="at">package =</span> <span class="st">"eamenaR"</span>), <span class="st">"/extdata/caravanserailZ.geojson"</span>), <span class="at">csv.path =</span> <span class="fu">paste0</span>(<span class="fu">system.file</span>(<span class="at">package =</span> <span class="st">"eamenaR"</span>), <span class="st">"/extdata/caravanserail_paths.csv"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="columns">
+<div class="column" style="width:60%;">
 <center>
 <p><img src="https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/caravanserail_paths.png" width="700"></p>
 </center>
+</div><div class="column" style="width:40%;">
+<div class="cell">
+<div class="cell-output-display">
+
+<table class="table" style="font-size: 20px; width: auto !important; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">caravanserail_paths.csv (sample)</caption>
+ <thead>
+  <tr>
+   <th style="text-align:left;">   </th>
+   <th style="text-align:left;"> from </th>
+   <th style="text-align:left;"> to </th>
+   <th style="text-align:right;"> route </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> 7 </td>
+   <td style="text-align:left;"> EAMENA-0207216 </td>
+   <td style="text-align:left;"> EAMENA-0207236 </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 11 </td>
+   <td style="text-align:left;"> EAMENA-0207235 </td>
+   <td style="text-align:left;"> EAMENA-0207248 </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 12 </td>
+   <td style="text-align:left;"> EAMENA-0207248 </td>
+   <td style="text-align:left;"> EAMENA-0207238 </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 14 </td>
+   <td style="text-align:left;"> EAMENA-0207237 </td>
+   <td style="text-align:left;"> EAMENA-0207231 </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 15 </td>
+   <td style="text-align:left;"> EAMENA-0207231 </td>
+   <td style="text-align:left;"> EAMENA-0207232 </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 17 </td>
+   <td style="text-align:left;"> EAMENA-0207247 </td>
+   <td style="text-align:left;"> EAMENA-0207214 </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 20 </td>
+   <td style="text-align:left;"> EAMENA-0207223 </td>
+   <td style="text-align:left;"> EAMENA-0207224 </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 21 </td>
+   <td style="text-align:left;"> EAMENA-0207224 </td>
+   <td style="text-align:left;"> EAMENA-0207233 </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 25 </td>
+   <td style="text-align:left;"> EAMENA-0207210 </td>
+   <td style="text-align:left;"> EAMENA-0207481 </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 31 </td>
+   <td style="text-align:left;"> EAMENA-0207263 </td>
+   <td style="text-align:left;"> EAMENA-0207239 </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 44 </td>
+   <td style="text-align:left;"> EAMENA-0192617 </td>
+   <td style="text-align:left;"> EAMENA-0192630 </td>
+   <td style="text-align:right;"> 2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 46 </td>
+   <td style="text-align:left;"> EAMENA-0192679 </td>
+   <td style="text-align:left;"> EAMENA-0192643 </td>
+   <td style="text-align:right;"> 2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 47 </td>
+   <td style="text-align:left;"> EAMENA-0192643 </td>
+   <td style="text-align:left;"> EAMENA-0192636 </td>
+   <td style="text-align:right;"> 2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 60 </td>
+   <td style="text-align:left;"> EAMENA-0192684 </td>
+   <td style="text-align:left;"> EAMENA-0192603 </td>
+   <td style="text-align:right;"> 2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 64 </td>
+   <td style="text-align:left;"> EAMENA-0192602 </td>
+   <td style="text-align:left;"> EAMENA-0192645 </td>
+   <td style="text-align:right;"> 2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 65 </td>
+   <td style="text-align:left;"> EAMENA-0192645 </td>
+   <td style="text-align:left;"> EAMENA-0192683 </td>
+   <td style="text-align:right;"> 2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 66 </td>
+   <td style="text-align:left;"> EAMENA-0192683 </td>
+   <td style="text-align:left;"> EAMENA-0192698 </td>
+   <td style="text-align:right;"> 2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 69 </td>
+   <td style="text-align:left;"> EAMENA-0192614 </td>
+   <td style="text-align:left;"> EAMENA-0192696 </td>
+   <td style="text-align:right;"> 2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 75 </td>
+   <td style="text-align:left;"> EAMENA-0192700 </td>
+   <td style="text-align:left;"> EAMENA-0194715 </td>
+   <td style="text-align:right;"> 3 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 88 </td>
+   <td style="text-align:left;"> EAMENA-0192604 </td>
+   <td style="text-align:left;"> EAMENA-0194695 </td>
+   <td style="text-align:right;"> 3 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 94 </td>
+   <td style="text-align:left;"> EAMENA-0194694 </td>
+   <td style="text-align:left;"> EAMENA-0194713 </td>
+   <td style="text-align:right;"> 3 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 95 </td>
+   <td style="text-align:left;"> EAMENA-0194713 </td>
+   <td style="text-align:left;"> EAMENA-0194708 </td>
+   <td style="text-align:right;"> 3 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 104 </td>
+   <td style="text-align:left;"> EAMENA-0194772 </td>
+   <td style="text-align:left;"> EAMENA-0194694 </td>
+   <td style="text-align:right;"> 3 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 109 </td>
+   <td style="text-align:left;"> EAMENA-0207257 </td>
+   <td style="text-align:left;"> EAMENA-0207217 </td>
+   <td style="text-align:right;"> 3 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 112 </td>
+   <td style="text-align:left;"> EAMENA-0207204 </td>
+   <td style="text-align:left;"> EAMENA-0207480 </td>
+   <td style="text-align:right;"> 3 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 121 </td>
+   <td style="text-align:left;"> EAMENA-0207211 </td>
+   <td style="text-align:left;"> EAMENA-0207244 </td>
+   <td style="text-align:right;"> 3 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 124 </td>
+   <td style="text-align:left;"> EAMENA-0207206 </td>
+   <td style="text-align:left;"> EAMENA-0182058 </td>
+   <td style="text-align:right;"> 3 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 125 </td>
+   <td style="text-align:left;"> EAMENA-0207255 </td>
+   <td style="text-align:left;"> EAMENA-0207252 </td>
+   <td style="text-align:right;"> 4 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 126 </td>
+   <td style="text-align:left;"> EAMENA-0207252 </td>
+   <td style="text-align:left;"> EAMENA-0207219 </td>
+   <td style="text-align:right;"> 4 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 129 </td>
+   <td style="text-align:left;"> EAMENA-0207222 </td>
+   <td style="text-align:left;"> EAMENA-0207250 </td>
+   <td style="text-align:right;"> 4 </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</div>
 </div>
 <div id="tabset-3-4">
 <div class="sourceCode" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1"></a><span class="fu">geojson_stat</span>(<span class="at">stat =</span> <span class="st">"list_ids"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -885,8 +1095,6 @@ Wave Climate</code></pre>
 <!-- # Data <br>management{background-color="#f3e7b3" data-visibility=hidden} -->
 </section>
 
-</section>
-<section>
 
 
 </section>
@@ -899,32 +1107,38 @@ Wave Climate</code></pre>
 <h2>FAIR data</h2>
 <p>Improves the FAIRness (<em>Findable, Accessible, Interoperable, Reusable</em>) of data</p>
 <center>
-<p><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/eamenaR-workflow-fair.png" width="700"></p>
+<p><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/eamenaR-workflow-fair.png" width="600"></p>
 </center>
 </section>
 <section id="next-steps" class="slide level2">
 <h2>Next steps</h2>
 <ul>
 <li><p>Update to work with <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png" style="height: 35px;vertical-align: middle;"> v7.</p></li>
-<li><p>Need for better standardisation of functions and documentation.</p></li>
-<li><p><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" style="height: 80px;vertical-align: middle;"> Open to contributions.</p></li>
+<li><p>Improve the standardisation of functions ⚙️ and documentation.</p></li>
+<li><p>Get more contributions <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" style="height: 80px;vertical-align: middle;">.</p></li>
 </ul>
 </section>
-<section id="contact" class="slide level2" data-background-color="#f3e7b3">
-<h2>Contact</h2>
+<section id="section-1" class="slide level2" data-background-color="#f3e7b3">
+<h2></h2>
+<p><br>
+<br>
+<br>
+</p>
+<center>
+<p><span style="font-size: 70px;">🏛️ Thank you </span></p>
+</center>
+<p><br>
+</p>
 <ul>
 <li><p><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" style="height: 80px;vertical-align: middle;"> <a href="https://github.com/eamena-project/eamenaR" class="uri">https://github.com/eamena-project/eamenaR</a></p></li>
 <li><p><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/eamena-logo.png" style="height: 80px;vertical-align: middle;"> <a href="https://eamena.org/" class="uri">https://eamena.org/</a></p></li>
 </ul>
 <p><br>
 </p>
-<center>
-<p><span style="font-size: 70px; color:#f3e7b3;"> Thank you for your attention </span></p>
-</center>
 
 <p><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo_complete.png" class="slide-logo"></p>
 <div class="footer footer-default">
-<p>eamenaR <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" style="height: 45px;vertical-align: middle;"> - Arcadia Fund meeting, 40 Villiers Street, London (UK), 10/03/23</p>
+<p>eamenaR <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png" style="height: 45px;vertical-align: middle;"> <a href="https://tinyurl.com/arcadia-eamenar" class="uri">https://tinyurl.com/arcadia-eamenar</a> - Arcadia meeting, 40 Villiers Street, London (UK), 10/03/23</p>
 </div>
 </section></section>
     </div>

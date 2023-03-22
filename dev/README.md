@@ -49,7 +49,7 @@ flowchart LR
         end
         subgraph VIEWS
             direction LR
-            C[view 1] --> DB 
+            C[view 1]
         end
     end
   end

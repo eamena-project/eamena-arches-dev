@@ -24,17 +24,3 @@ gantt
     IST training             : milestone, m3, 2023-06-06, 7d
     AMM training             : milestone, m3, 2023-06-17, 7d
 ```
-
-## Upgrade Arches v5.2 to v7
-
-Needed updates
-
-```mermaid
-flowchart LR
-    A(Pg 12.12) --> B(Pg 14);
-    C(Postgis 3.1.1) --- D(Postgis 3);
-    E(ElasticSearch 7.1.1) --> F(ElasticSearch 8.3.1);
-```
-legend:  
-`---` no upgrade  
-`-->` upgrade

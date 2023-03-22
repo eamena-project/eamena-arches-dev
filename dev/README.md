@@ -24,13 +24,13 @@ flowchart LR
 flowchart LR
   subgraph EC2
     direction TB
-    subgraph Server 1 EAMENA
+    subgraph Server 1 EAMENA DB
         direction TB
         A[tiles] <--> B[resources]
     end
-    subgraph Server 2
-        direction BT
-        i2 -->f2
+    subgraph Server 2 VIEWS
+        direction TB
+        C[view 1]
     end
   end
   A --> EC2 --> B

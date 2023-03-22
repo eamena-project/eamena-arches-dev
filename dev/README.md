@@ -45,11 +45,11 @@ flowchart LR
         direction TB
         subgraph Server 1 EAMENA DB
             direction TB
-            A[tiles] <--> B[resources]
+            A[tiles] <---> B[resources]
         end
         subgraph Server 2 VIEWS
             direction TB
-            C[view 1]
+            A & B --> C[view 1]
         end
     end
   end

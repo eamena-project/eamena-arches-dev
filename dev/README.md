@@ -49,7 +49,8 @@ flowchart LR
         end
         subgraph Server 2 VIEWS
             direction LR
-            C[view 1] --> A & B  
+            C[view 1] --> A 
+            C[view 1] --> B
         end
     end
   end

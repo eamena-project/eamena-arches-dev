@@ -46,7 +46,7 @@ flowchart LR
         subgraph DB [Server 1]
             direction TB
             A[tiles] --- B[resources]
-            Z[any other tables]
+            B --- Z[any<br>other<br>tables]
         end
         subgraph VIEWS [Server 2]
             direction LR

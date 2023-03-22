@@ -43,7 +43,7 @@ flowchart LR
     direction TB
     subgraph PostgreSQL
         direction LR
-        subgraph DB [Server 1 is Arches instance]
+        subgraph DB [Server 1 <br> Arches instance]
             direction TB
             A[tiles] --- B[resources]
         end
@@ -55,7 +55,7 @@ flowchart LR
   end
   DB --> VIEWS
   VIEWS --> D{{eamenaR}}:::eamenaRpkg
-  D --> E[maps<br>charts<br>listings<br>...]
+  D -- output--> E[maps<br>charts<br>listings<br>...]
   classDef eamenaRpkg fill:#e3c071
 ```
 

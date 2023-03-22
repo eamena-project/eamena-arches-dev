@@ -11,8 +11,6 @@ flowchart LR
     A[tiles];
     B[resources];
     end;
-    subgraph ide2 [Server 2];
-    C[VIEWS];
     end;
     end;
     C --SSH--> D{{eamenaR}}:::eamenaRpkg;

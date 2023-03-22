@@ -53,7 +53,7 @@ flowchart LR
         end
     end
   end
-  A --> EC2 --> B
+  VIEWS --> DB
   B3 --> B4
 ```
 

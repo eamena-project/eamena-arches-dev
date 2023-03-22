@@ -39,7 +39,7 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-  subgraph EC2
+  subgraph EC2 [EC2 AWS]
     direction TB
     subgraph PostgreSQL
         direction LR

@@ -42,7 +42,7 @@ flowchart LR
   subgraph EC2
     direction TB
     subgraph PostgreSQL
-        direction TB
+        direction LR
         subgraph Server 1 EAMENA DB
             direction TB
             A[tiles] <---> B[resources]

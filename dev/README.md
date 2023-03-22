@@ -24,7 +24,7 @@ flowchart LR
 flowchart LR
   subgraph EC2
     direction TB
-    subgraph [Server 1]
+    subgraph Server 1
         direction RL
         i1 -->f1
     end

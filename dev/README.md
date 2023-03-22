@@ -22,6 +22,24 @@ flowchart LR
 
 ```mermaid
 flowchart LR
+  subgraph EC2
+    direction TB
+    subgraph Server1
+        direction RL
+        i1 -->f1
+    end
+    subgraph Server2
+        direction BT
+        i2 -->f2
+    end
+  end
+  A --> EC2 --> B
+  B1 --> B2
+```
+
+
+```mermaid
+flowchart LR
   subgraph [EC2 on AWS]
     direction RL
     subgraph [PostgreSQL]

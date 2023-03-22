@@ -54,7 +54,7 @@ flowchart LR
     end
   end
   DB --> VIEWS
-  B{{eamenaR}}:::eamenaRpkg A --> VIEWS
+  D{{eamenaR}}:::eamenaRpkg --> VIEWS
   classDef eamenaRpkg fill:#e3c071
 ```
 

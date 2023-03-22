@@ -48,7 +48,7 @@ flowchart LR
             A[tiles] <---> B[resources]
         end
         subgraph Server 2 VIEWS
-            direction TB
+            direction LR
             C[view 1] --> A & B  
         end
     end

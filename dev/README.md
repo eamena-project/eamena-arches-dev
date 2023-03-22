@@ -25,7 +25,9 @@ flowchart LR
   subgraph EC2
     direction TB
     subgraph Server 1 EAMENA
-        direction RL
+        direction TB
+        A[tiles]
+        B[resources]
         i1 -->f1
     end
     subgraph Server 2

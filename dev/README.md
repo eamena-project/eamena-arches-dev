@@ -22,7 +22,7 @@ flowchart LR
   end
   DB -- is read by --> VIEWS
   VIEWS -- is read by --> D{{eamenaR}}:::eamenaRpkg
-  D -- SSH connection --> VIEWS
+  D -- ODBC connection --> VIEWS
   D -- creates outputs --> E[maps<br>charts<br>listings<br>...]
   classDef eamenaRpkg fill:#e3c071
 ```

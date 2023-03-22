@@ -1,0 +1,3475 @@
+{
+   "business_data" : {
+      "resources" : [
+         {
+            "resourceinstance" : {
+               "graph_id" : "34cfe98e-c2c0-11ea-9026-02e7594ce0a0",
+               "legacyid" : "61fda22f-2756-42ef-890c-12b89168840c",
+               "resourceinstanceid" : "61fda22f-2756-42ef-890c-12b89168840c"
+            },
+            "tiles" : [
+               {
+                  "data" : {
+                     "34cfea4d-c2c0-11ea-9026-02e7594ce0a0" : "00b71e76-4958-42a6-82f8-bc8ea5639064",
+                     "34cfea81-c2c0-11ea-9026-02e7594ce0a0" : "2022-03-17",
+                     "34cfea8a-c2c0-11ea-9026-02e7594ce0a0" : [
+                        {
+                           "inverseOntologyProperty" : "http://www.ics.forth.gr/isl/CRMdig/L33i_is_maker_of",
+                           "ontologyProperty" : "http://www.ics.forth.gr/isl/CRMdig/L33_has_maker",
+                           "resourceId" : "4764f6bd-bc2b-4a60-b095-114fed6158e2",
+                           "resourceXresourceId" : "51e5c244-3426-46f1-8a1b-6667aad6c449"
+                        }
+                     ],
+                     "bcd3a8ae-0404-11eb-a11c-0a5a9a4f6ef7" : true,
+                     "d2e1ab96-cc05-11ea-a292-02e7594ce0a0" : [
+                        "20b1a4e0-97e1-41f7-b519-124a7317266b"
+                     ]
+                  },
+                  "nodegroup_id" : "34cfea2e-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "61fda22f-2756-42ef-890c-12b89168840c",
+                  "sortorder" : 0,
+                  "tileid" : "ddf23686-2078-4222-af84-c9379a119668"
+               },
+               {
+                  "data" : {},
+                  "nodegroup_id" : "34cfe98f-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "61fda22f-2756-42ef-890c-12b89168840c",
+                  "sortorder" : 0,
+                  "tileid" : "12c766ca-9058-47a3-83b2-4034e1d707d9"
+               },
+               {
+                  "data" : {
+                     "34cfe9dd-c2c0-11ea-9026-02e7594ce0a0" : "AAA f.30.1",
+                     "34cfea97-c2c0-11ea-9026-02e7594ce0a0" : "4bd93e89-2c7e-4e01-9c42-7119e16092f3"
+                  },
+                  "nodegroup_id" : "34cfe9dd-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "12c766ca-9058-47a3-83b2-4034e1d707d9",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "61fda22f-2756-42ef-890c-12b89168840c",
+                  "sortorder" : 0,
+                  "tileid" : "63004535-92d9-4bd0-85b8-9b29593f65f4"
+               },
+               {
+                  "data" : {
+                     "34cfe9ef-c2c0-11ea-9026-02e7594ce0a0" : "e53c9814-1551-4704-add2-3aec42b9d0e4"
+                  },
+                  "nodegroup_id" : "34cfe9ef-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "12c766ca-9058-47a3-83b2-4034e1d707d9",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "61fda22f-2756-42ef-890c-12b89168840c",
+                  "sortorder" : 0,
+                  "tileid" : "66f3ff94-3772-4b60-b243-786fde6531d9"
+               },
+               {
+                  "data" : {
+                     "34cfea77-c2c0-11ea-9026-02e7594ce0a0" : "Quelques ruines ont été signalées sur la rive gauche de l'Oued Adjeroud, à l'E. de la pointe de Bou Madane, qui forme une petite baie, assez bien abritée du côté de l'O. On place généralement à cet endroit la station de Lemnis, indiquée par l'Itinéraire d'Antonin (édit. Parthey et Pinder, p. 5) à 22 milles du fleuve Malva (ou Moulouïa): voir Lapie, dans Fortia d'Urban, Recueil des itinéraires anciens, p. 3 ; Mac-Carthy, Rev. afric., I, 1856-7, p. 168 ; Mouchez, Instructions nautiques sur les côtes de l'Algérie, p. 43 ; Demaeght, Géographie comparée de la partie de la Maurétanie Césarienne correspondantà la province d'Oran, p. 30 ; Cat, Maurétanie Césarienne, p. 159. Cependant la distance comptée par l'Itinéraire est trop forte d'environ 5 milles. — A l'E. de ce point, se trouve le cap Milonia, que quelques auteurs (Mac-Carthy, l, c., p. 169 ; Nau de Champlouis, Carte de l'Afrique sous la domination romaine ; Mouchez, l. c., p. 42 ; Demaeght, l. c., p. 16 ; Cat, l. c., p. 14 et 159) identifient avec le Mega akrwthrion, indiqué par Ptolémée (IV, 2, 2) à l'E. de l'embouchure de la Malva. Mais il est plus probable que Ptolémée a fait erreur et que le Mega akrwthrion au Cap de l'Agua, en face des îles Zaffarines : voir la discussion de cette question par Muller, édit. de Ptolémée, p. 592.",
+                     "34cfea91-c2c0-11ea-9026-02e7594ce0a0" : "aa064973-2664-4fae-8876-a8481d2e760a"
+                  },
+                  "nodegroup_id" : "34cfe9c8-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "12c766ca-9058-47a3-83b2-4034e1d707d9",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "61fda22f-2756-42ef-890c-12b89168840c",
+                  "sortorder" : 0,
+                  "tileid" : "22d51062-f73e-41e6-acd0-a9da5338178c"
+               },
+               {
+                  "data" : {
+                     "34cfea4a-c2c0-11ea-9026-02e7594ce0a0" : "9e8855a8-b118-4278-a3f5-7c1471f76a1d",
+                     "34cfea7d-c2c0-11ea-9026-02e7594ce0a0" : "bb9d0530-6d11-437d-bff8-643418ac9bfb"
+                  },
+                  "nodegroup_id" : "34cfe9ad-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "12c766ca-9058-47a3-83b2-4034e1d707d9",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "61fda22f-2756-42ef-890c-12b89168840c",
+                  "sortorder" : 0,
+                  "tileid" : "420f3286-565f-4ee3-9c90-043a33b1924b"
+               },
+               {
+                  "data" : {
+                     "5348cf67-c2c5-11ea-9026-02e7594ce0a0" : {
+                        "features" : [
+                           {
+                              "geometry" : {
+                                 "coordinates" : [
+                                    -2.10887489941502,
+                                    35.0765083399953
+                                 ],
+                                 "type" : "Point"
+                              },
+                              "properties" : {
+                                 "nodeId" : "5348cf67-c2c5-11ea-9026-02e7594ce0a0"
+                              },
+                              "type" : "Feature"
+                           }
+                        ],
+                        "type" : "FeatureCollection"
+                     },
+                     "5348cf6b-c2c5-11ea-9026-02e7594ce0a0" : "60844684-7b51-4cd1-96d2-7506214e0de6",
+                     "5348cf6c-c2c5-11ea-9026-02e7594ce0a0" : "0483e22a-1f92-44e0-af19-8c85b8922c04",
+                     "ce842cdc-c2c7-11ea-9026-02e7594ce0a0" : [
+                        "3851742b-ccf6-4c55-9ea8-cd33981661c1"
+                     ]
+                  },
+                  "nodegroup_id" : "3080eebe-c2c5-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "61fda22f-2756-42ef-890c-12b89168840c",
+                  "sortorder" : 0,
+                  "tileid" : "2b44064a-ba2e-44a2-9c46-f9bbbb14cad6"
+               },
+               {
+                  "data" : {
+                     "34cfea43-c2c0-11ea-9026-02e7594ce0a0" : [
+                        "c08b6e33-a244-415b-8bb1-b1f0949fc581"
+                     ],
+                     "34cfea5d-c2c0-11ea-9026-02e7594ce0a0" : [
+                        {
+                           "inverseOntologyProperty" : "http://www.cidoc-crm.org/cidoc-crm/P89i_contains",
+                           "ontologyProperty" : "http://www.cidoc-crm.org/cidoc-crm/P89_falls_within",
+                           "resourceId" : "fe5fd699-8dc4-4212-80f8-ea39aba07985",
+                           "resourceXresourceId" : "33c65b2c-ab0f-4ae8-9b23-56be5b3c4e65"
+                        }
+                     ],
+                     "34cfea69-c2c0-11ea-9026-02e7594ce0a0" : "d8919832-8f5a-46f7-b35c-75bf4e388045",
+                     "34cfea73-c2c0-11ea-9026-02e7594ce0a0" : null
+                  },
+                  "nodegroup_id" : "34cfe9b6-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "61fda22f-2756-42ef-890c-12b89168840c",
+                  "sortorder" : 0,
+                  "tileid" : "ad64a7ec-8c4e-4a50-bdd6-371d3880dd4e"
+               },
+               {
+                  "data" : {},
+                  "nodegroup_id" : "34cfe9b3-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "61fda22f-2756-42ef-890c-12b89168840c",
+                  "sortorder" : 0,
+                  "tileid" : "870ab81b-dff7-465f-b216-ab71617dd2b6"
+               },
+               {
+                  "data" : {
+                     "34cfea51-c2c0-11ea-9026-02e7594ce0a0" : "672d9fb7-1b69-40f4-97f1-3cb4c26022c8"
+                  },
+                  "nodegroup_id" : "34cfe9a4-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "870ab81b-dff7-465f-b216-ab71617dd2b6",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "61fda22f-2756-42ef-890c-12b89168840c",
+                  "sortorder" : 0,
+                  "tileid" : "80b8c6a0-e0c2-413a-8676-72fe7b4e10cd"
+               },
+               {
+                  "data" : {
+                     "34cfe9e6-c2c0-11ea-9026-02e7594ce0a0" : "486d3ede-93eb-4bcb-9434-d91fa8767b87"
+                  },
+                  "nodegroup_id" : "34cfe9e6-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "870ab81b-dff7-465f-b216-ab71617dd2b6",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "61fda22f-2756-42ef-890c-12b89168840c",
+                  "sortorder" : 0,
+                  "tileid" : "024a1625-c2d3-41f2-8e20-f4a9d608e51c"
+               },
+               {
+                  "data" : {
+                     "38cff738-c77b-11ea-a292-02e7594ce0a0" : "59439634-1c7e-4a3a-8cb3-c7757231a12a",
+                     "38cff73b-c77b-11ea-a292-02e7594ce0a0" : "70268111-a54b-4e8d-a642-5ef1d71378ba"
+                  },
+                  "nodegroup_id" : "38cff734-c77b-11ea-a292-02e7594ce0a0",
+                  "parenttile_id" : "870ab81b-dff7-465f-b216-ab71617dd2b6",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "61fda22f-2756-42ef-890c-12b89168840c",
+                  "sortorder" : 0,
+                  "tileid" : "f2871229-0ddd-41fd-90be-4c972f3c8b21"
+               },
+               {
+                  "data" : {
+                     "38cff73a-c77b-11ea-a292-02e7594ce0a0" : "8b3fc369-9213-49a0-af9d-abf4befa360f",
+                     "38cff73c-c77b-11ea-a292-02e7594ce0a0" : "8605c02c-4a53-4ca3-b526-7a7ca5cd7366"
+                  },
+                  "nodegroup_id" : "38cff731-c77b-11ea-a292-02e7594ce0a0",
+                  "parenttile_id" : "f2871229-0ddd-41fd-90be-4c972f3c8b21",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "61fda22f-2756-42ef-890c-12b89168840c",
+                  "sortorder" : 0,
+                  "tileid" : "6f6b9bb2-6936-483a-999b-96e526e032d2"
+               },
+               {
+                  "data" : {},
+                  "nodegroup_id" : "34cfe9b9-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "61fda22f-2756-42ef-890c-12b89168840c",
+                  "sortorder" : 0,
+                  "tileid" : "fb4cb0c5-f5cf-4bf7-92da-ff407b2c1c7e"
+               },
+               {
+                  "data" : {
+                     "34cfe9f5-c2c0-11ea-9026-02e7594ce0a0" : "fcd826ea-7c9e-4e14-9bf4-f127ceb9919c"
+                  },
+                  "nodegroup_id" : "34cfe9f5-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "fb4cb0c5-f5cf-4bf7-92da-ff407b2c1c7e",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "61fda22f-2756-42ef-890c-12b89168840c",
+                  "sortorder" : 0,
+                  "tileid" : "fb8f2564-ef0c-42de-bdc1-c48d8e0a52c3"
+               },
+               {
+                  "data" : {
+                     "34cfea8e-c2c0-11ea-9026-02e7594ce0a0" : "2479bd11-1c32-434e-be51-40dc5a71eff0"
+                  },
+                  "nodegroup_id" : "34cfe9bf-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "fb4cb0c5-f5cf-4bf7-92da-ff407b2c1c7e",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "61fda22f-2756-42ef-890c-12b89168840c",
+                  "sortorder" : 0,
+                  "tileid" : "a555d287-5cca-4ec7-80a9-2d54ee04c297"
+               },
+               {
+                  "data" : {
+                     "34cfea63-c2c0-11ea-9026-02e7594ce0a0" : "879a8fef-90b3-497e-929d-e9b2de9afa7b",
+                     "34cfea76-c2c0-11ea-9026-02e7594ce0a0" : "1ba58698-43bc-4c39-b29d-4d16e26d1919",
+                     "34cfea7b-c2c0-11ea-9026-02e7594ce0a0" : "e92eb945-b892-4cbc-8951-cc4f96c3ac5d"
+                  },
+                  "nodegroup_id" : "34cfe9fb-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "fb4cb0c5-f5cf-4bf7-92da-ff407b2c1c7e",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "61fda22f-2756-42ef-890c-12b89168840c",
+                  "sortorder" : 0,
+                  "tileid" : "0ab7ece5-e180-4740-9a55-179fd454361e"
+               }
+            ]
+         },
+         {
+            "resourceinstance" : {
+               "graph_id" : "34cfe98e-c2c0-11ea-9026-02e7594ce0a0",
+               "legacyid" : "51c0db46-b411-4400-b474-2f5003ce695f",
+               "resourceinstanceid" : "51c0db46-b411-4400-b474-2f5003ce695f"
+            },
+            "tiles" : [
+               {
+                  "data" : {
+                     "34cfea4d-c2c0-11ea-9026-02e7594ce0a0" : "00b71e76-4958-42a6-82f8-bc8ea5639064",
+                     "34cfea81-c2c0-11ea-9026-02e7594ce0a0" : "2022-03-17",
+                     "34cfea8a-c2c0-11ea-9026-02e7594ce0a0" : [
+                        {
+                           "inverseOntologyProperty" : "http://www.ics.forth.gr/isl/CRMdig/L33i_is_maker_of",
+                           "ontologyProperty" : "http://www.ics.forth.gr/isl/CRMdig/L33_has_maker",
+                           "resourceId" : "4764f6bd-bc2b-4a60-b095-114fed6158e2",
+                           "resourceXresourceId" : "c58e9549-778c-4f3d-bced-b32ee14c9b9d"
+                        }
+                     ],
+                     "bcd3a8ae-0404-11eb-a11c-0a5a9a4f6ef7" : true,
+                     "d2e1ab96-cc05-11ea-a292-02e7594ce0a0" : [
+                        "20b1a4e0-97e1-41f7-b519-124a7317266b"
+                     ]
+                  },
+                  "nodegroup_id" : "34cfea2e-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "51c0db46-b411-4400-b474-2f5003ce695f",
+                  "sortorder" : 0,
+                  "tileid" : "e7255019-4a9f-4266-883b-0a822af8f67a"
+               },
+               {
+                  "data" : {},
+                  "nodegroup_id" : "34cfe98f-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "51c0db46-b411-4400-b474-2f5003ce695f",
+                  "sortorder" : 0,
+                  "tileid" : "1a48aae3-e025-48fb-bd67-7bddaadbfa31"
+               },
+               {
+                  "data" : {
+                     "34cfe9dd-c2c0-11ea-9026-02e7594ce0a0" : "AAA f.30.2",
+                     "34cfea97-c2c0-11ea-9026-02e7594ce0a0" : "4bd93e89-2c7e-4e01-9c42-7119e16092f3"
+                  },
+                  "nodegroup_id" : "34cfe9dd-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "1a48aae3-e025-48fb-bd67-7bddaadbfa31",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "51c0db46-b411-4400-b474-2f5003ce695f",
+                  "sortorder" : 0,
+                  "tileid" : "c8e4419a-9213-4403-a33e-fbd330dae9d6"
+               },
+               {
+                  "data" : {
+                     "34cfe9ef-c2c0-11ea-9026-02e7594ce0a0" : "e53c9814-1551-4704-add2-3aec42b9d0e4"
+                  },
+                  "nodegroup_id" : "34cfe9ef-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "1a48aae3-e025-48fb-bd67-7bddaadbfa31",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "51c0db46-b411-4400-b474-2f5003ce695f",
+                  "sortorder" : 0,
+                  "tileid" : "4fb99e38-bc90-47dc-aaab-cb470fd01989"
+               },
+               {
+                  "data" : {
+                     "34cfea77-c2c0-11ea-9026-02e7594ce0a0" : "Embouchure de l'Oued Kouarda. On l'identific d'ordinaire avec le Popleto flumen de l'Itinéraire d'Antonin (p. 5), à 30 milles de Lemnis et à 6 d'Ad fratres : Mace Carthy, l. c., p. 168 ; Nau de Champlouis, l. c., ; Demaeght, l. c., p. 15. Cependant les distances ne concordent pas (10 kilomètres environ entre l'Oued Kouarda et l'Oued Adjeroud, 15 environ entre l'Oued Kouarda et Nemours). Mac-Carthy a cherché en vain des ruines antiques sur le cours inférieur de l'Oued Kouarda.",
+                     "34cfea91-c2c0-11ea-9026-02e7594ce0a0" : "aa064973-2664-4fae-8876-a8481d2e760a"
+                  },
+                  "nodegroup_id" : "34cfe9c8-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "1a48aae3-e025-48fb-bd67-7bddaadbfa31",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "51c0db46-b411-4400-b474-2f5003ce695f",
+                  "sortorder" : 0,
+                  "tileid" : "1f4a392f-164a-450a-a67e-1a2d7309c97e"
+               },
+               {
+                  "data" : {
+                     "34cfea4a-c2c0-11ea-9026-02e7594ce0a0" : "9e8855a8-b118-4278-a3f5-7c1471f76a1d",
+                     "34cfea7d-c2c0-11ea-9026-02e7594ce0a0" : "bb9d0530-6d11-437d-bff8-643418ac9bfb"
+                  },
+                  "nodegroup_id" : "34cfe9ad-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "1a48aae3-e025-48fb-bd67-7bddaadbfa31",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "51c0db46-b411-4400-b474-2f5003ce695f",
+                  "sortorder" : 0,
+                  "tileid" : "c475818f-d419-4a72-8d17-81c6185a5b33"
+               },
+               {
+                  "data" : {
+                     "5348cf67-c2c5-11ea-9026-02e7594ce0a0" : {
+                        "features" : [
+                           {
+                              "geometry" : {
+                                 "coordinates" : [
+                                    -2.0035891243482,
+                                    35.0717378015911
+                                 ],
+                                 "type" : "Point"
+                              },
+                              "properties" : {
+                                 "nodeId" : "5348cf67-c2c5-11ea-9026-02e7594ce0a0"
+                              },
+                              "type" : "Feature"
+                           }
+                        ],
+                        "type" : "FeatureCollection"
+                     },
+                     "5348cf6b-c2c5-11ea-9026-02e7594ce0a0" : "60844684-7b51-4cd1-96d2-7506214e0de6",
+                     "5348cf6c-c2c5-11ea-9026-02e7594ce0a0" : "0483e22a-1f92-44e0-af19-8c85b8922c04",
+                     "ce842cdc-c2c7-11ea-9026-02e7594ce0a0" : [
+                        "3851742b-ccf6-4c55-9ea8-cd33981661c1"
+                     ]
+                  },
+                  "nodegroup_id" : "3080eebe-c2c5-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "51c0db46-b411-4400-b474-2f5003ce695f",
+                  "sortorder" : 0,
+                  "tileid" : "f840bf1c-eabd-44ff-a570-e7b98c0a05aa"
+               },
+               {
+                  "data" : {
+                     "34cfea43-c2c0-11ea-9026-02e7594ce0a0" : [
+                        "c08b6e33-a244-415b-8bb1-b1f0949fc581"
+                     ],
+                     "34cfea5d-c2c0-11ea-9026-02e7594ce0a0" : [
+                        {
+                           "inverseOntologyProperty" : "http://www.cidoc-crm.org/cidoc-crm/P89i_contains",
+                           "ontologyProperty" : "http://www.cidoc-crm.org/cidoc-crm/P89_falls_within",
+                           "resourceId" : "fe5fd699-8dc4-4212-80f8-ea39aba07985",
+                           "resourceXresourceId" : "b42cd310-c3b1-4ac8-b935-4567d519bd74"
+                        }
+                     ],
+                     "34cfea69-c2c0-11ea-9026-02e7594ce0a0" : "d8919832-8f5a-46f7-b35c-75bf4e388045",
+                     "34cfea73-c2c0-11ea-9026-02e7594ce0a0" : null
+                  },
+                  "nodegroup_id" : "34cfe9b6-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "51c0db46-b411-4400-b474-2f5003ce695f",
+                  "sortorder" : 0,
+                  "tileid" : "3dba9f98-c281-4721-8b47-f8155f53c9dd"
+               },
+               {
+                  "data" : {},
+                  "nodegroup_id" : "34cfe9b3-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "51c0db46-b411-4400-b474-2f5003ce695f",
+                  "sortorder" : 0,
+                  "tileid" : "59733a50-6b13-47d1-b304-7c14c6836b5b"
+               },
+               {
+                  "data" : {
+                     "34cfea51-c2c0-11ea-9026-02e7594ce0a0" : "672d9fb7-1b69-40f4-97f1-3cb4c26022c8"
+                  },
+                  "nodegroup_id" : "34cfe9a4-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "59733a50-6b13-47d1-b304-7c14c6836b5b",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "51c0db46-b411-4400-b474-2f5003ce695f",
+                  "sortorder" : 0,
+                  "tileid" : "a3ecb17a-b90f-4d3d-92e5-4b9cff6bff93"
+               },
+               {
+                  "data" : {
+                     "34cfe9e6-c2c0-11ea-9026-02e7594ce0a0" : "486d3ede-93eb-4bcb-9434-d91fa8767b87"
+                  },
+                  "nodegroup_id" : "34cfe9e6-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "59733a50-6b13-47d1-b304-7c14c6836b5b",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "51c0db46-b411-4400-b474-2f5003ce695f",
+                  "sortorder" : 0,
+                  "tileid" : "24a261b5-6517-47aa-a950-52d5f57ce706"
+               },
+               {
+                  "data" : {
+                     "38cff738-c77b-11ea-a292-02e7594ce0a0" : "59439634-1c7e-4a3a-8cb3-c7757231a12a",
+                     "38cff73b-c77b-11ea-a292-02e7594ce0a0" : "70268111-a54b-4e8d-a642-5ef1d71378ba"
+                  },
+                  "nodegroup_id" : "38cff734-c77b-11ea-a292-02e7594ce0a0",
+                  "parenttile_id" : "59733a50-6b13-47d1-b304-7c14c6836b5b",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "51c0db46-b411-4400-b474-2f5003ce695f",
+                  "sortorder" : 0,
+                  "tileid" : "d5fdeb25-d66c-4e7f-a90e-65633c7118cb"
+               },
+               {
+                  "data" : {},
+                  "nodegroup_id" : "34cfe9b9-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "51c0db46-b411-4400-b474-2f5003ce695f",
+                  "sortorder" : 0,
+                  "tileid" : "10392bf7-1cdf-4663-b86c-371c134d0038"
+               },
+               {
+                  "data" : {
+                     "34cfea63-c2c0-11ea-9026-02e7594ce0a0" : "879a8fef-90b3-497e-929d-e9b2de9afa7b",
+                     "34cfea76-c2c0-11ea-9026-02e7594ce0a0" : "1ba58698-43bc-4c39-b29d-4d16e26d1919",
+                     "34cfea7b-c2c0-11ea-9026-02e7594ce0a0" : "e92eb945-b892-4cbc-8951-cc4f96c3ac5d"
+                  },
+                  "nodegroup_id" : "34cfe9fb-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "10392bf7-1cdf-4663-b86c-371c134d0038",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "51c0db46-b411-4400-b474-2f5003ce695f",
+                  "sortorder" : 0,
+                  "tileid" : "e067428f-efb9-40ff-99cf-de85d0d1e39d"
+               }
+            ]
+         },
+         {
+            "resourceinstance" : {
+               "graph_id" : "34cfe98e-c2c0-11ea-9026-02e7594ce0a0",
+               "legacyid" : "61538a0c-e76c-495f-9ad9-ff93c982bca9",
+               "resourceinstanceid" : "61538a0c-e76c-495f-9ad9-ff93c982bca9"
+            },
+            "tiles" : [
+               {
+                  "data" : {
+                     "34cfea4d-c2c0-11ea-9026-02e7594ce0a0" : "00b71e76-4958-42a6-82f8-bc8ea5639064",
+                     "34cfea81-c2c0-11ea-9026-02e7594ce0a0" : "2022-03-17",
+                     "34cfea8a-c2c0-11ea-9026-02e7594ce0a0" : [
+                        {
+                           "inverseOntologyProperty" : "http://www.ics.forth.gr/isl/CRMdig/L33i_is_maker_of",
+                           "ontologyProperty" : "http://www.ics.forth.gr/isl/CRMdig/L33_has_maker",
+                           "resourceId" : "4764f6bd-bc2b-4a60-b095-114fed6158e2",
+                           "resourceXresourceId" : "5971caf5-19c8-4c84-b2e6-4cc2ed2706fa"
+                        }
+                     ],
+                     "bcd3a8ae-0404-11eb-a11c-0a5a9a4f6ef7" : true,
+                     "d2e1ab96-cc05-11ea-a292-02e7594ce0a0" : [
+                        "20b1a4e0-97e1-41f7-b519-124a7317266b"
+                     ]
+                  },
+                  "nodegroup_id" : "34cfea2e-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "61538a0c-e76c-495f-9ad9-ff93c982bca9",
+                  "sortorder" : 0,
+                  "tileid" : "8384a74a-b613-4bfa-99ab-515daa048497"
+               },
+               {
+                  "data" : {},
+                  "nodegroup_id" : "34cfe98f-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "61538a0c-e76c-495f-9ad9-ff93c982bca9",
+                  "sortorder" : 0,
+                  "tileid" : "a94201a0-9471-44ce-aaaa-666e33514a1f"
+               },
+               {
+                  "data" : {
+                     "34cfe9dd-c2c0-11ea-9026-02e7594ce0a0" : "AAA f.30.3",
+                     "34cfea97-c2c0-11ea-9026-02e7594ce0a0" : "4bd93e89-2c7e-4e01-9c42-7119e16092f3"
+                  },
+                  "nodegroup_id" : "34cfe9dd-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "a94201a0-9471-44ce-aaaa-666e33514a1f",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "61538a0c-e76c-495f-9ad9-ff93c982bca9",
+                  "sortorder" : 0,
+                  "tileid" : "985978d3-a75a-4df5-93ea-9427819f3af9"
+               },
+               {
+                  "data" : {
+                     "34cfe9ef-c2c0-11ea-9026-02e7594ce0a0" : "6b43f788-ae61-444c-a210-cfb231fc7dbc"
+                  },
+                  "nodegroup_id" : "34cfe9ef-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "a94201a0-9471-44ce-aaaa-666e33514a1f",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "61538a0c-e76c-495f-9ad9-ff93c982bca9",
+                  "sortorder" : 0,
+                  "tileid" : "e3b0cef5-ce16-45a5-a7b1-cfea68c04784"
+               },
+               {
+                  "data" : {
+                     "34cfea77-c2c0-11ea-9026-02e7594ce0a0" : "Nemours. On n'a pas signalé de vestiges romains en ce lieu. On est cependant d'accord pour y placer la station d'Ad Fratres de l'Itinéraire d'Antonin. A 300 mètres au N. de la pointe qui termine à l'o. la baie de Nemours, « sont, dit Mouchez (l. c., p. 44) deux roches, » Les Deux Frères, s'élevant verticalement comme deux » colonnes au-dessus de l'eau ; la plus élevée a 24 mètres » de hauteur »). – Ad Fratres était peut-être relié par une voie à Numerus Syrorum (Lalla Marnia) : Mac-Carthy (l. c., p. 104) mentionne des restes de postes, qui devaient jalonner cette route. — Léon l'Africain (Description de l'Afrique, trad. Temporal, 1556, p. 241 ; conf. Marmol, L'Afrique, trad. Perrot d'Ablancourt, 1667, II, p. 324) indique des ruines romaines à Nédromah, ville indigène située au S.-E. de Nemours. Mais c'est sans doute par erreur : il n'y a rien d'antique en ce lieu (Canal, Bull. d'Oran, 1888, p. 208 ; 1889, p. 272, n. 1; Basset, Nédromah et les Traras, p. 4-5). On n'a donc pas de raison sérieuse pour y placer la ville antique de Calama (voir plus loin, no 11), comme l'ont proposé quelques archéologues (Cat, l. c., p. 209 ; — Mac-Carthy, l. c., p. 105-108, y place la Kelama de Ptolémée, qu'il distingue, sans doute à tort, de la Calama de l'Itinéraire).",
+                     "34cfea91-c2c0-11ea-9026-02e7594ce0a0" : "aa064973-2664-4fae-8876-a8481d2e760a"
+                  },
+                  "nodegroup_id" : "34cfe9c8-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "a94201a0-9471-44ce-aaaa-666e33514a1f",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "61538a0c-e76c-495f-9ad9-ff93c982bca9",
+                  "sortorder" : 0,
+                  "tileid" : "02fd10ee-508a-486b-8c32-6d8233dc4e47"
+               },
+               {
+                  "data" : {
+                     "34cfea4a-c2c0-11ea-9026-02e7594ce0a0" : "9e8855a8-b118-4278-a3f5-7c1471f76a1d",
+                     "34cfea7d-c2c0-11ea-9026-02e7594ce0a0" : "bb9d0530-6d11-437d-bff8-643418ac9bfb"
+                  },
+                  "nodegroup_id" : "34cfe9ad-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "a94201a0-9471-44ce-aaaa-666e33514a1f",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "61538a0c-e76c-495f-9ad9-ff93c982bca9",
+                  "sortorder" : 0,
+                  "tileid" : "dc2fa222-4b86-4809-83ca-618229c3ae24"
+               },
+               {
+                  "data" : {
+                     "5348cf67-c2c5-11ea-9026-02e7594ce0a0" : {
+                        "features" : [
+                           {
+                              "geometry" : {
+                                 "coordinates" : [
+                                    -1.87164539602884,
+                                    35.103415741807
+                                 ],
+                                 "type" : "Point"
+                              },
+                              "properties" : {
+                                 "nodeId" : "5348cf67-c2c5-11ea-9026-02e7594ce0a0"
+                              },
+                              "type" : "Feature"
+                           }
+                        ],
+                        "type" : "FeatureCollection"
+                     },
+                     "5348cf6b-c2c5-11ea-9026-02e7594ce0a0" : "60844684-7b51-4cd1-96d2-7506214e0de6",
+                     "5348cf6c-c2c5-11ea-9026-02e7594ce0a0" : "0483e22a-1f92-44e0-af19-8c85b8922c04",
+                     "ce842cdc-c2c7-11ea-9026-02e7594ce0a0" : [
+                        "3851742b-ccf6-4c55-9ea8-cd33981661c1"
+                     ]
+                  },
+                  "nodegroup_id" : "3080eebe-c2c5-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "61538a0c-e76c-495f-9ad9-ff93c982bca9",
+                  "sortorder" : 0,
+                  "tileid" : "5a95dbd1-1d7f-47b2-af13-191c89ad49c2"
+               },
+               {
+                  "data" : {
+                     "34cfea43-c2c0-11ea-9026-02e7594ce0a0" : [
+                        "c08b6e33-a244-415b-8bb1-b1f0949fc581"
+                     ],
+                     "34cfea5d-c2c0-11ea-9026-02e7594ce0a0" : [
+                        {
+                           "inverseOntologyProperty" : "http://www.cidoc-crm.org/cidoc-crm/P89i_contains",
+                           "ontologyProperty" : "http://www.cidoc-crm.org/cidoc-crm/P89_falls_within",
+                           "resourceId" : "e3282c54-d397-4509-8a95-0d7c20e9c68b",
+                           "resourceXresourceId" : "26276cc4-a6c2-4682-96f3-b9c460110e61"
+                        }
+                     ],
+                     "34cfea69-c2c0-11ea-9026-02e7594ce0a0" : "d8919832-8f5a-46f7-b35c-75bf4e388045",
+                     "34cfea73-c2c0-11ea-9026-02e7594ce0a0" : null
+                  },
+                  "nodegroup_id" : "34cfe9b6-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "61538a0c-e76c-495f-9ad9-ff93c982bca9",
+                  "sortorder" : 0,
+                  "tileid" : "18b48d9a-0bbb-4784-bc3d-1020880e6b6d"
+               },
+               {
+                  "data" : {},
+                  "nodegroup_id" : "34cfe9b3-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "61538a0c-e76c-495f-9ad9-ff93c982bca9",
+                  "sortorder" : 0,
+                  "tileid" : "5dd62db3-2887-4b4f-820b-67d925552e3d"
+               },
+               {
+                  "data" : {},
+                  "nodegroup_id" : "34cfea13-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "5dd62db3-2887-4b4f-820b-67d925552e3d",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "61538a0c-e76c-495f-9ad9-ff93c982bca9",
+                  "sortorder" : 0,
+                  "tileid" : "c37aeeec-5283-4512-beb3-77ae4e644905"
+               },
+               {
+                  "data" : {
+                     "34cfea59-c2c0-11ea-9026-02e7594ce0a0" : "44614d20-7f01-4f3e-b9f6-410938b22daa",
+                     "34cfea9a-c2c0-11ea-9026-02e7594ce0a0" : "6d031c2f-ee35-45f8-b502-806269e734dc"
+                  },
+                  "nodegroup_id" : "34cfe9b0-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "c37aeeec-5283-4512-beb3-77ae4e644905",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "61538a0c-e76c-495f-9ad9-ff93c982bca9",
+                  "sortorder" : 0,
+                  "tileid" : "a739eec4-3b00-48d4-b549-f516cfe196ee"
+               },
+               {
+                  "data" : {
+                     "34cfea19-c2c0-11ea-9026-02e7594ce0a0" : "83ab4239-ed1e-4d11-9ca8-a1c0535bba55"
+                  },
+                  "nodegroup_id" : "34cfea19-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "a739eec4-3b00-48d4-b549-f516cfe196ee",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "61538a0c-e76c-495f-9ad9-ff93c982bca9",
+                  "sortorder" : 0,
+                  "tileid" : "ccfa70e2-a7fb-4484-9f1f-e40dd9406029"
+               },
+               {
+                  "data" : {
+                     "34cfe9e9-c2c0-11ea-9026-02e7594ce0a0" : "8da48460-b240-4aeb-96cc-0fbfcc601b06"
+                  },
+                  "nodegroup_id" : "34cfe9e9-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "a739eec4-3b00-48d4-b549-f516cfe196ee",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "61538a0c-e76c-495f-9ad9-ff93c982bca9",
+                  "sortorder" : 0,
+                  "tileid" : "438e18f9-0430-4ae9-abf1-f74e57a5d979"
+               },
+               {
+                  "data" : {
+                     "34cfe9f8-c2c0-11ea-9026-02e7594ce0a0" : "c1b5da06-9cea-45f4-a1a9-4bfb66c3088c"
+                  },
+                  "nodegroup_id" : "34cfe9f8-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "a739eec4-3b00-48d4-b549-f516cfe196ee",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "61538a0c-e76c-495f-9ad9-ff93c982bca9",
+                  "sortorder" : 0,
+                  "tileid" : "42645223-6b70-4173-84a8-5db80a1d02e9"
+               },
+               {
+                  "data" : {
+                     "34cfea44-c2c0-11ea-9026-02e7594ce0a0" : "ebd0a3ee-cfc9-469e-b1d3-1a82d5dcf700",
+                     "34cfea58-c2c0-11ea-9026-02e7594ce0a0" : "3f6fc20d-c2a8-4291-b536-046a034e0be9",
+                     "34cfea62-c2c0-11ea-9026-02e7594ce0a0" : "1528148e-2665-43a2-bef4-f398dcbd4e10"
+                  },
+                  "nodegroup_id" : "34cfe9fe-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "c37aeeec-5283-4512-beb3-77ae4e644905",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "61538a0c-e76c-495f-9ad9-ff93c982bca9",
+                  "sortorder" : 0,
+                  "tileid" : "42555a5c-e19b-4b58-be69-e7f4be9afc91"
+               },
+               {
+                  "data" : {},
+                  "nodegroup_id" : "34cfe9b9-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "61538a0c-e76c-495f-9ad9-ff93c982bca9",
+                  "sortorder" : 0,
+                  "tileid" : "676a34f1-a3fd-4fa6-8d3e-ed2ea062c1be"
+               },
+               {
+                  "data" : {
+                     "34cfe9f5-c2c0-11ea-9026-02e7594ce0a0" : "65c64194-fc10-4d95-ab38-0a5166d3c6ee"
+                  },
+                  "nodegroup_id" : "34cfe9f5-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "676a34f1-a3fd-4fa6-8d3e-ed2ea062c1be",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "61538a0c-e76c-495f-9ad9-ff93c982bca9",
+                  "sortorder" : 0,
+                  "tileid" : "2c47ed1a-8dae-405a-8e6e-62dceca706f0"
+               },
+               {
+                  "data" : {
+                     "34cfea8e-c2c0-11ea-9026-02e7594ce0a0" : "2eef0519-3503-4e5e-80a1-9b4555d03db3"
+                  },
+                  "nodegroup_id" : "34cfe9bf-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "676a34f1-a3fd-4fa6-8d3e-ed2ea062c1be",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "61538a0c-e76c-495f-9ad9-ff93c982bca9",
+                  "sortorder" : 0,
+                  "tileid" : "76b15fe7-4034-4fb2-bd13-dd8e9e08d081"
+               }
+            ]
+         },
+         {
+            "resourceinstance" : {
+               "graph_id" : "34cfe98e-c2c0-11ea-9026-02e7594ce0a0",
+               "legacyid" : "7221c9a1-cc89-484b-8a38-ea06579d8b3e",
+               "resourceinstanceid" : "7221c9a1-cc89-484b-8a38-ea06579d8b3e"
+            },
+            "tiles" : [
+               {
+                  "data" : {
+                     "34cfea4d-c2c0-11ea-9026-02e7594ce0a0" : "00b71e76-4958-42a6-82f8-bc8ea5639064",
+                     "34cfea81-c2c0-11ea-9026-02e7594ce0a0" : "2022-03-17",
+                     "34cfea8a-c2c0-11ea-9026-02e7594ce0a0" : [
+                        {
+                           "inverseOntologyProperty" : "http://www.ics.forth.gr/isl/CRMdig/L33i_is_maker_of",
+                           "ontologyProperty" : "http://www.ics.forth.gr/isl/CRMdig/L33_has_maker",
+                           "resourceId" : "4764f6bd-bc2b-4a60-b095-114fed6158e2",
+                           "resourceXresourceId" : "7b5ad6c5-8af4-4ec2-8f0b-17065ca8556a"
+                        }
+                     ],
+                     "bcd3a8ae-0404-11eb-a11c-0a5a9a4f6ef7" : true,
+                     "d2e1ab96-cc05-11ea-a292-02e7594ce0a0" : [
+                        "20b1a4e0-97e1-41f7-b519-124a7317266b"
+                     ]
+                  },
+                  "nodegroup_id" : "34cfea2e-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "7221c9a1-cc89-484b-8a38-ea06579d8b3e",
+                  "sortorder" : 0,
+                  "tileid" : "9731270f-8c4c-49b2-b068-e3934e925554"
+               },
+               {
+                  "data" : {},
+                  "nodegroup_id" : "34cfe98f-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "7221c9a1-cc89-484b-8a38-ea06579d8b3e",
+                  "sortorder" : 0,
+                  "tileid" : "58f5a0e9-de0b-4788-bb10-4859bdb9d48c"
+               },
+               {
+                  "data" : {
+                     "34cfe9dd-c2c0-11ea-9026-02e7594ce0a0" : "AAA f.30.4",
+                     "34cfea97-c2c0-11ea-9026-02e7594ce0a0" : "4bd93e89-2c7e-4e01-9c42-7119e16092f3"
+                  },
+                  "nodegroup_id" : "34cfe9dd-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "58f5a0e9-de0b-4788-bb10-4859bdb9d48c",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "7221c9a1-cc89-484b-8a38-ea06579d8b3e",
+                  "sortorder" : 0,
+                  "tileid" : "4a28433a-033a-440c-8335-c503ad60ff03"
+               },
+               {
+                  "data" : {
+                     "34cfe9ef-c2c0-11ea-9026-02e7594ce0a0" : "e53c9814-1551-4704-add2-3aec42b9d0e4"
+                  },
+                  "nodegroup_id" : "34cfe9ef-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "58f5a0e9-de0b-4788-bb10-4859bdb9d48c",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "7221c9a1-cc89-484b-8a38-ea06579d8b3e",
+                  "sortorder" : 0,
+                  "tileid" : "163d5a04-a7f7-4bf0-b0c9-0c0649f8fe12"
+               },
+               {
+                  "data" : {
+                     "34cfea77-c2c0-11ea-9026-02e7594ce0a0" : "Baie d'Honaïn. Il y a des ruines berbères à Honaïn, mais rien de romain (Basset, Nédromah et les Traras, p. 95). C'est donc par pure conjecture que l'on y place la station d'Artisica (un manuscrit donne Artisiga) de l'Itinéraire (à 25 milles d'Ad Fratres, distance trop forte, même en tenant compte des détours nécessaires dans un pays de montagnes): Mac-Carthy, l. c., p. 171; Nau de Champlouis, l. c. ; Mouchez, l. c., p. 47; Demaeght, l. c., p. 30 ; Cat, l. c., p. 158. Ces auteurs identifient Artisiga avec Gupharia limhn, indiqué par Ptolémée (IV, 2, 2) entre le Μέγα ακρωτήριον et Σιγα : ce qui est également une conjecture. Un episcopus Gypsariensis est mentionné dans les procès-verbaux de la conférence de Carthage de 411 (I, 128). — Au S. et au S.-O. d'Honaïn, s'étend le massif des Traras, où l'on trouve de nombreuses ruines berbères, probablement de date récente : Pallary, Assoc. franc., Boulogne, 1899, I, p. 279. On a proposé de placer dans cette région les mines de cuivre, Xalkwrukeia, que Ptolémée (IV, 2, 5) indique dans la partie occidentale de la Maurétanie Césarienne : Demaeght, Géographie, p. 12 ; Cat, l. c., p. 49 et 77. Il y a bien un gisement de cuivre, peu abondant, à Sidi Ouchna, à environ 8 kilomètres à l'E. de Nemours (Ville, Situation de l'industrie minière au commencement de 1874, p. 66 ; le même, Notice minéralogique sur les provinces d'Oran et d'Alger, p. 123-125 ; Canal, Revue de l'Afrique française, 1888, p. 93); mais rien ne prouve qu'il corresponde aux Chalkwrucheia de Ptolémée.",
+                     "34cfea91-c2c0-11ea-9026-02e7594ce0a0" : "aa064973-2664-4fae-8876-a8481d2e760a"
+                  },
+                  "nodegroup_id" : "34cfe9c8-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "58f5a0e9-de0b-4788-bb10-4859bdb9d48c",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "7221c9a1-cc89-484b-8a38-ea06579d8b3e",
+                  "sortorder" : 0,
+                  "tileid" : "99b87580-69a4-477f-a7c4-262f99ff1cc3"
+               },
+               {
+                  "data" : {
+                     "34cfea4a-c2c0-11ea-9026-02e7594ce0a0" : "e090c5f2-64b4-4bd5-802b-a53b3554daf0",
+                     "34cfea7d-c2c0-11ea-9026-02e7594ce0a0" : "a349b879-9fe4-43ca-b0b5-d92d4a9a5974"
+                  },
+                  "nodegroup_id" : "34cfe9ad-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "58f5a0e9-de0b-4788-bb10-4859bdb9d48c",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "7221c9a1-cc89-484b-8a38-ea06579d8b3e",
+                  "sortorder" : 0,
+                  "tileid" : "735a09f9-f931-480b-bedf-0d8f0d09d27b"
+               },
+               {
+                  "data" : {
+                     "5348cf67-c2c5-11ea-9026-02e7594ce0a0" : {
+                        "features" : [
+                           {
+                              "geometry" : {
+                                 "coordinates" : [
+                                    -1.65627406531483,
+                                    35.1742893399042
+                                 ],
+                                 "type" : "Point"
+                              },
+                              "properties" : {
+                                 "nodeId" : "5348cf67-c2c5-11ea-9026-02e7594ce0a0"
+                              },
+                              "type" : "Feature"
+                           }
+                        ],
+                        "type" : "FeatureCollection"
+                     },
+                     "5348cf6b-c2c5-11ea-9026-02e7594ce0a0" : "52c60073-3f87-45ce-8eaa-d67a9e5412d3",
+                     "5348cf6c-c2c5-11ea-9026-02e7594ce0a0" : "433b0da1-8fee-44f8-9e8f-63703880ad07",
+                     "ce842cdc-c2c7-11ea-9026-02e7594ce0a0" : [
+                        "3851742b-ccf6-4c55-9ea8-cd33981661c1"
+                     ]
+                  },
+                  "nodegroup_id" : "3080eebe-c2c5-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "7221c9a1-cc89-484b-8a38-ea06579d8b3e",
+                  "sortorder" : 0,
+                  "tileid" : "e26deed4-79b1-409e-b788-66f9d62f48fd"
+               },
+               {
+                  "data" : {
+                     "34cfea43-c2c0-11ea-9026-02e7594ce0a0" : [
+                        "c08b6e33-a244-415b-8bb1-b1f0949fc581"
+                     ],
+                     "34cfea5d-c2c0-11ea-9026-02e7594ce0a0" : [
+                        {
+                           "inverseOntologyProperty" : "http://www.cidoc-crm.org/cidoc-crm/P89i_contains",
+                           "ontologyProperty" : "http://www.cidoc-crm.org/cidoc-crm/P89_falls_within",
+                           "resourceId" : "f3908a07-ea8e-4609-bb24-a7647b455864",
+                           "resourceXresourceId" : "a398888c-2d2f-43bd-98f5-b7e443f75e64"
+                        }
+                     ],
+                     "34cfea69-c2c0-11ea-9026-02e7594ce0a0" : "e8dbe97d-9112-4ab2-982e-bbf17befa5e3",
+                     "34cfea73-c2c0-11ea-9026-02e7594ce0a0" : null
+                  },
+                  "nodegroup_id" : "34cfe9b6-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "7221c9a1-cc89-484b-8a38-ea06579d8b3e",
+                  "sortorder" : 0,
+                  "tileid" : "d3689225-82cb-47ef-a6df-6b97ad59f7ee"
+               },
+               {
+                  "data" : {},
+                  "nodegroup_id" : "34cfe9b3-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "7221c9a1-cc89-484b-8a38-ea06579d8b3e",
+                  "sortorder" : 0,
+                  "tileid" : "a5e8d0bb-82f2-4da4-91e6-f70823d79937"
+               },
+               {
+                  "data" : {
+                     "38cff738-c77b-11ea-a292-02e7594ce0a0" : "59439634-1c7e-4a3a-8cb3-c7757231a12a",
+                     "38cff73b-c77b-11ea-a292-02e7594ce0a0" : "56a66770-135d-4d72-b5d1-1af66bfde0a2"
+                  },
+                  "nodegroup_id" : "38cff734-c77b-11ea-a292-02e7594ce0a0",
+                  "parenttile_id" : "a5e8d0bb-82f2-4da4-91e6-f70823d79937",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "7221c9a1-cc89-484b-8a38-ea06579d8b3e",
+                  "sortorder" : 0,
+                  "tileid" : "01af2695-e655-4ae2-8071-bb4a5a8edabf"
+               }
+            ]
+         },
+         {
+            "resourceinstance" : {
+               "graph_id" : "34cfe98e-c2c0-11ea-9026-02e7594ce0a0",
+               "legacyid" : "bc4445cb-9653-49de-a0ba-4d10dcc75ffd",
+               "resourceinstanceid" : "bc4445cb-9653-49de-a0ba-4d10dcc75ffd"
+            },
+            "tiles" : [
+               {
+                  "data" : {
+                     "34cfea4d-c2c0-11ea-9026-02e7594ce0a0" : "00b71e76-4958-42a6-82f8-bc8ea5639064",
+                     "34cfea81-c2c0-11ea-9026-02e7594ce0a0" : "2022-03-17",
+                     "34cfea8a-c2c0-11ea-9026-02e7594ce0a0" : [
+                        {
+                           "inverseOntologyProperty" : "http://www.ics.forth.gr/isl/CRMdig/L33i_is_maker_of",
+                           "ontologyProperty" : "http://www.ics.forth.gr/isl/CRMdig/L33_has_maker",
+                           "resourceId" : "4764f6bd-bc2b-4a60-b095-114fed6158e2",
+                           "resourceXresourceId" : "3240b8eb-c70b-47c0-ba1d-0a8f5e6000af"
+                        }
+                     ],
+                     "bcd3a8ae-0404-11eb-a11c-0a5a9a4f6ef7" : true,
+                     "d2e1ab96-cc05-11ea-a292-02e7594ce0a0" : [
+                        "20b1a4e0-97e1-41f7-b519-124a7317266b"
+                     ]
+                  },
+                  "nodegroup_id" : "34cfea2e-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "bc4445cb-9653-49de-a0ba-4d10dcc75ffd",
+                  "sortorder" : 0,
+                  "tileid" : "9c981b96-cfdc-4ed0-a4c8-55fb178ad0b1"
+               },
+               {
+                  "data" : {},
+                  "nodegroup_id" : "34cfe98f-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "bc4445cb-9653-49de-a0ba-4d10dcc75ffd",
+                  "sortorder" : 0,
+                  "tileid" : "650aea68-63bc-400a-b182-9976cb429303"
+               },
+               {
+                  "data" : {
+                     "34cfe9dd-c2c0-11ea-9026-02e7594ce0a0" : "AAA f.30.5",
+                     "34cfea97-c2c0-11ea-9026-02e7594ce0a0" : "4bd93e89-2c7e-4e01-9c42-7119e16092f3"
+                  },
+                  "nodegroup_id" : "34cfe9dd-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "650aea68-63bc-400a-b182-9976cb429303",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "bc4445cb-9653-49de-a0ba-4d10dcc75ffd",
+                  "sortorder" : 0,
+                  "tileid" : "4b699d7b-3ab6-4e03-b33b-c8766b3164bf"
+               },
+               {
+                  "data" : {
+                     "34cfe9dd-c2c0-11ea-9026-02e7594ce0a0" : "Si Mohammed bel Ourdini",
+                     "34cfea97-c2c0-11ea-9026-02e7594ce0a0" : "cdca3d69-5f58-4084-be0c-7bac4c41c553"
+                  },
+                  "nodegroup_id" : "34cfe9dd-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "650aea68-63bc-400a-b182-9976cb429303",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "bc4445cb-9653-49de-a0ba-4d10dcc75ffd",
+                  "sortorder" : 0,
+                  "tileid" : "d4c8b2f3-9f97-4a97-a533-e0f5d4b592b8"
+               },
+               {
+                  "data" : {
+                     "34cfe9ef-c2c0-11ea-9026-02e7594ce0a0" : "6b43f788-ae61-444c-a210-cfb231fc7dbc"
+                  },
+                  "nodegroup_id" : "34cfe9ef-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "650aea68-63bc-400a-b182-9976cb429303",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "bc4445cb-9653-49de-a0ba-4d10dcc75ffd",
+                  "sortorder" : 0,
+                  "tileid" : "b2f6d8f3-6eae-4c32-ac57-6e8c9e597e0a"
+               },
+               {
+                  "data" : {
+                     "34cfea77-c2c0-11ea-9026-02e7594ce0a0" : "Baie de Si Mohammed bel Ourdini, assez abritée, sauf du côté de l'O., « le seul point de la côte auquel on » puisse à la rigueur appliquer le nom de port » (Mac-Carthy, Rev. afric., I, p. 171). Aussi y place-t-on le Portus Caecili, indiqué par l'Itinéraire entre Artisica (à 12 milles) et Siga (à 15 milles, distance trop forte d'environ 4 milles): Mac-Carthy, l. c. ; Nau de Champlouis, l. c. ; Mouchez, l. c., p. 48 ; Demaeght, l. c., p. 31 ; Cat, l. c., p. 158. – En somme, il faut convenir qu'à part Ad Fratres, la position de toutes les stations qui précèdent est absolument incertaine.",
+                     "34cfea91-c2c0-11ea-9026-02e7594ce0a0" : "aa064973-2664-4fae-8876-a8481d2e760a"
+                  },
+                  "nodegroup_id" : "34cfe9c8-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "650aea68-63bc-400a-b182-9976cb429303",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "bc4445cb-9653-49de-a0ba-4d10dcc75ffd",
+                  "sortorder" : 0,
+                  "tileid" : "146245ae-23e0-4fc4-b9fb-f9aa5381b4e9"
+               },
+               {
+                  "data" : {
+                     "34cfea4a-c2c0-11ea-9026-02e7594ce0a0" : "f0a5ec7f-ca4a-4277-a55b-add8c5075b1a",
+                     "34cfea7d-c2c0-11ea-9026-02e7594ce0a0" : "a349b879-9fe4-43ca-b0b5-d92d4a9a5974"
+                  },
+                  "nodegroup_id" : "34cfe9ad-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "650aea68-63bc-400a-b182-9976cb429303",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "bc4445cb-9653-49de-a0ba-4d10dcc75ffd",
+                  "sortorder" : 0,
+                  "tileid" : "1cb09418-be12-425c-a1bf-6f00729cae99"
+               },
+               {
+                  "data" : {
+                     "5348cf67-c2c5-11ea-9026-02e7594ce0a0" : {
+                        "features" : [
+                           {
+                              "geometry" : {
+                                 "coordinates" : [
+                                    -1.58763470434683,
+                                    35.2365347180637
+                                 ],
+                                 "type" : "Point"
+                              },
+                              "properties" : {
+                                 "nodeId" : "5348cf67-c2c5-11ea-9026-02e7594ce0a0"
+                              },
+                              "type" : "Feature"
+                           }
+                        ],
+                        "type" : "FeatureCollection"
+                     },
+                     "5348cf6b-c2c5-11ea-9026-02e7594ce0a0" : "52c60073-3f87-45ce-8eaa-d67a9e5412d3",
+                     "5348cf6c-c2c5-11ea-9026-02e7594ce0a0" : "433b0da1-8fee-44f8-9e8f-63703880ad07",
+                     "ce842cdc-c2c7-11ea-9026-02e7594ce0a0" : [
+                        "3851742b-ccf6-4c55-9ea8-cd33981661c1"
+                     ]
+                  },
+                  "nodegroup_id" : "3080eebe-c2c5-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "bc4445cb-9653-49de-a0ba-4d10dcc75ffd",
+                  "sortorder" : 0,
+                  "tileid" : "1bf4dbe6-b976-48e9-b338-fcee0fdf55c8"
+               },
+               {
+                  "data" : {
+                     "34cfea43-c2c0-11ea-9026-02e7594ce0a0" : [
+                        "c08b6e33-a244-415b-8bb1-b1f0949fc581"
+                     ],
+                     "34cfea5d-c2c0-11ea-9026-02e7594ce0a0" : [
+                        {
+                           "inverseOntologyProperty" : "http://www.cidoc-crm.org/cidoc-crm/P89i_contains",
+                           "ontologyProperty" : "http://www.cidoc-crm.org/cidoc-crm/P89_falls_within",
+                           "resourceId" : "f3908a07-ea8e-4609-bb24-a7647b455864",
+                           "resourceXresourceId" : "2dc676c8-02cc-4265-86d2-10340a7a755a"
+                        }
+                     ],
+                     "34cfea69-c2c0-11ea-9026-02e7594ce0a0" : "d8919832-8f5a-46f7-b35c-75bf4e388045",
+                     "34cfea73-c2c0-11ea-9026-02e7594ce0a0" : null
+                  },
+                  "nodegroup_id" : "34cfe9b6-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "bc4445cb-9653-49de-a0ba-4d10dcc75ffd",
+                  "sortorder" : 0,
+                  "tileid" : "d20924fd-9632-41f1-9e5a-04acfaf1aa3f"
+               },
+               {
+                  "data" : {},
+                  "nodegroup_id" : "34cfe9b3-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "bc4445cb-9653-49de-a0ba-4d10dcc75ffd",
+                  "sortorder" : 0,
+                  "tileid" : "8d5fd7d1-43e8-4ffa-bc1c-699fbf27e409"
+               },
+               {
+                  "data" : {
+                     "34cfea51-c2c0-11ea-9026-02e7594ce0a0" : "672d9fb7-1b69-40f4-97f1-3cb4c26022c8"
+                  },
+                  "nodegroup_id" : "34cfe9a4-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "8d5fd7d1-43e8-4ffa-bc1c-699fbf27e409",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "bc4445cb-9653-49de-a0ba-4d10dcc75ffd",
+                  "sortorder" : 0,
+                  "tileid" : "0b9baf0d-08e9-44f8-aaf5-fd66e5392840"
+               },
+               {
+                  "data" : {
+                     "34cfe9e6-c2c0-11ea-9026-02e7594ce0a0" : "486d3ede-93eb-4bcb-9434-d91fa8767b87"
+                  },
+                  "nodegroup_id" : "34cfe9e6-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "8d5fd7d1-43e8-4ffa-bc1c-699fbf27e409",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "bc4445cb-9653-49de-a0ba-4d10dcc75ffd",
+                  "sortorder" : 0,
+                  "tileid" : "c0760522-d818-44c9-bda4-a2e66441f791"
+               },
+               {
+                  "data" : {
+                     "38cff738-c77b-11ea-a292-02e7594ce0a0" : "898e244b-ce18-4b30-a96b-681ee1b892bc",
+                     "38cff73b-c77b-11ea-a292-02e7594ce0a0" : "25feff4b-ac2a-43ed-971b-1c34e3845c0e"
+                  },
+                  "nodegroup_id" : "38cff734-c77b-11ea-a292-02e7594ce0a0",
+                  "parenttile_id" : "8d5fd7d1-43e8-4ffa-bc1c-699fbf27e409",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "bc4445cb-9653-49de-a0ba-4d10dcc75ffd",
+                  "sortorder" : 0,
+                  "tileid" : "fca7a0cc-d57c-4bdc-b945-51aff018511b"
+               }
+            ]
+         },
+         {
+            "resourceinstance" : {
+               "graph_id" : "34cfe98e-c2c0-11ea-9026-02e7594ce0a0",
+               "legacyid" : "8a4eb781-d877-4752-abb2-04208b46dd81",
+               "resourceinstanceid" : "8a4eb781-d877-4752-abb2-04208b46dd81"
+            },
+            "tiles" : [
+               {
+                  "data" : {
+                     "34cfea4d-c2c0-11ea-9026-02e7594ce0a0" : "00b71e76-4958-42a6-82f8-bc8ea5639064",
+                     "34cfea81-c2c0-11ea-9026-02e7594ce0a0" : "2022-03-17",
+                     "34cfea8a-c2c0-11ea-9026-02e7594ce0a0" : [
+                        {
+                           "inverseOntologyProperty" : "http://www.ics.forth.gr/isl/CRMdig/L33i_is_maker_of",
+                           "ontologyProperty" : "http://www.ics.forth.gr/isl/CRMdig/L33_has_maker",
+                           "resourceId" : "4764f6bd-bc2b-4a60-b095-114fed6158e2",
+                           "resourceXresourceId" : "40e6e96b-00f0-467f-9b37-541e0ad58211"
+                        }
+                     ],
+                     "bcd3a8ae-0404-11eb-a11c-0a5a9a4f6ef7" : true,
+                     "d2e1ab96-cc05-11ea-a292-02e7594ce0a0" : [
+                        "20b1a4e0-97e1-41f7-b519-124a7317266b"
+                     ]
+                  },
+                  "nodegroup_id" : "34cfea2e-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "8a4eb781-d877-4752-abb2-04208b46dd81",
+                  "sortorder" : 0,
+                  "tileid" : "137404fd-0259-4f65-a1ac-200539683a21"
+               },
+               {
+                  "data" : {},
+                  "nodegroup_id" : "34cfe98f-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "8a4eb781-d877-4752-abb2-04208b46dd81",
+                  "sortorder" : 0,
+                  "tileid" : "a8919842-2c81-4d3d-9ad6-b39254514389"
+               },
+               {
+                  "data" : {
+                     "34cfe9dd-c2c0-11ea-9026-02e7594ce0a0" : "AAA f.30.6",
+                     "34cfea97-c2c0-11ea-9026-02e7594ce0a0" : "4bd93e89-2c7e-4e01-9c42-7119e16092f3"
+                  },
+                  "nodegroup_id" : "34cfe9dd-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "a8919842-2c81-4d3d-9ad6-b39254514389",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "8a4eb781-d877-4752-abb2-04208b46dd81",
+                  "sortorder" : 0,
+                  "tileid" : "7fb46a6f-54c3-4f40-bb24-43062691d0f3"
+               },
+               {
+                  "data" : {
+                     "34cfe9dd-c2c0-11ea-9026-02e7594ce0a0" : "Bab el Mahseur",
+                     "34cfea97-c2c0-11ea-9026-02e7594ce0a0" : "cdca3d69-5f58-4084-be0c-7bac4c41c553"
+                  },
+                  "nodegroup_id" : "34cfe9dd-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "a8919842-2c81-4d3d-9ad6-b39254514389",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "8a4eb781-d877-4752-abb2-04208b46dd81",
+                  "sortorder" : 0,
+                  "tileid" : "9c44059c-d541-44bf-84bb-e37e3c3d441b"
+               },
+               {
+                  "data" : {
+                     "34cfe9ef-c2c0-11ea-9026-02e7594ce0a0" : "e53c9814-1551-4704-add2-3aec42b9d0e4"
+                  },
+                  "nodegroup_id" : "34cfe9ef-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "a8919842-2c81-4d3d-9ad6-b39254514389",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "8a4eb781-d877-4752-abb2-04208b46dd81",
+                  "sortorder" : 0,
+                  "tileid" : "a8d22db4-d6f1-4c07-9cfb-55f3dbef193c"
+               },
+               {
+                  "data" : {
+                     "34cfea77-c2c0-11ea-9026-02e7594ce0a0" : "Bab el Mahseur, chez les Msirda. «Poste romain «  de 100 mètres de côté, avec des murs d'une épaisseur » moyenne de 4 à 5 mètres) (Notice inédite sur les ruines de la commune indigène de Marnia, rédigée en 1890). Est-il certain que ce fort soit romain ?",
+                     "34cfea91-c2c0-11ea-9026-02e7594ce0a0" : "aa064973-2664-4fae-8876-a8481d2e760a"
+                  },
+                  "nodegroup_id" : "34cfe9c8-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "a8919842-2c81-4d3d-9ad6-b39254514389",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "8a4eb781-d877-4752-abb2-04208b46dd81",
+                  "sortorder" : 0,
+                  "tileid" : "8beaa2c3-16a3-4687-8025-35970dda9e0d"
+               },
+               {
+                  "data" : {
+                     "34cfea4a-c2c0-11ea-9026-02e7594ce0a0" : "9e8855a8-b118-4278-a3f5-7c1471f76a1d",
+                     "34cfea7d-c2c0-11ea-9026-02e7594ce0a0" : "bb9d0530-6d11-437d-bff8-643418ac9bfb"
+                  },
+                  "nodegroup_id" : "34cfe9ad-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "a8919842-2c81-4d3d-9ad6-b39254514389",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "8a4eb781-d877-4752-abb2-04208b46dd81",
+                  "sortorder" : 0,
+                  "tileid" : "51c34874-c250-4de3-bcb5-d453c34f5846"
+               },
+               {
+                  "data" : {
+                     "5348cf67-c2c5-11ea-9026-02e7594ce0a0" : {
+                        "features" : [
+                           {
+                              "geometry" : {
+                                 "coordinates" : [
+                                    -2.05162386855429,
+                                    35.0089659272117
+                                 ],
+                                 "type" : "Point"
+                              },
+                              "properties" : {
+                                 "nodeId" : "5348cf67-c2c5-11ea-9026-02e7594ce0a0"
+                              },
+                              "type" : "Feature"
+                           }
+                        ],
+                        "type" : "FeatureCollection"
+                     },
+                     "5348cf6b-c2c5-11ea-9026-02e7594ce0a0" : "60844684-7b51-4cd1-96d2-7506214e0de6",
+                     "5348cf6c-c2c5-11ea-9026-02e7594ce0a0" : "0483e22a-1f92-44e0-af19-8c85b8922c04",
+                     "ce842cdc-c2c7-11ea-9026-02e7594ce0a0" : [
+                        "3851742b-ccf6-4c55-9ea8-cd33981661c1"
+                     ]
+                  },
+                  "nodegroup_id" : "3080eebe-c2c5-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "8a4eb781-d877-4752-abb2-04208b46dd81",
+                  "sortorder" : 0,
+                  "tileid" : "1e9ee502-b07b-457b-a2d9-0a0cac576510"
+               },
+               {
+                  "data" : {
+                     "34cfea43-c2c0-11ea-9026-02e7594ce0a0" : [
+                        "c08b6e33-a244-415b-8bb1-b1f0949fc581"
+                     ],
+                     "34cfea5d-c2c0-11ea-9026-02e7594ce0a0" : [
+                        {
+                           "inverseOntologyProperty" : "http://www.cidoc-crm.org/cidoc-crm/P89i_contains",
+                           "ontologyProperty" : "http://www.cidoc-crm.org/cidoc-crm/P89_falls_within",
+                           "resourceId" : "fe5fd699-8dc4-4212-80f8-ea39aba07985",
+                           "resourceXresourceId" : "6c9bc7a4-0347-4e40-9262-85785d390285"
+                        }
+                     ],
+                     "34cfea69-c2c0-11ea-9026-02e7594ce0a0" : "d8919832-8f5a-46f7-b35c-75bf4e388045",
+                     "34cfea73-c2c0-11ea-9026-02e7594ce0a0" : null
+                  },
+                  "nodegroup_id" : "34cfe9b6-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "8a4eb781-d877-4752-abb2-04208b46dd81",
+                  "sortorder" : 0,
+                  "tileid" : "9b87fd4e-a8c6-4605-84e3-3d76fe5568a6"
+               }
+            ]
+         },
+         {
+            "resourceinstance" : {
+               "graph_id" : "34cfe98e-c2c0-11ea-9026-02e7594ce0a0",
+               "legacyid" : "95ae5bb8-a33d-4255-99d7-e35d924a20f3",
+               "resourceinstanceid" : "95ae5bb8-a33d-4255-99d7-e35d924a20f3"
+            },
+            "tiles" : [
+               {
+                  "data" : {
+                     "34cfea4d-c2c0-11ea-9026-02e7594ce0a0" : "00b71e76-4958-42a6-82f8-bc8ea5639064",
+                     "34cfea81-c2c0-11ea-9026-02e7594ce0a0" : "2022-03-17",
+                     "34cfea8a-c2c0-11ea-9026-02e7594ce0a0" : [
+                        {
+                           "inverseOntologyProperty" : "http://www.ics.forth.gr/isl/CRMdig/L33i_is_maker_of",
+                           "ontologyProperty" : "http://www.ics.forth.gr/isl/CRMdig/L33_has_maker",
+                           "resourceId" : "4764f6bd-bc2b-4a60-b095-114fed6158e2",
+                           "resourceXresourceId" : "20cb6c23-5660-46c1-b313-310dde3f2e61"
+                        }
+                     ],
+                     "bcd3a8ae-0404-11eb-a11c-0a5a9a4f6ef7" : true,
+                     "d2e1ab96-cc05-11ea-a292-02e7594ce0a0" : [
+                        "20b1a4e0-97e1-41f7-b519-124a7317266b"
+                     ]
+                  },
+                  "nodegroup_id" : "34cfea2e-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "95ae5bb8-a33d-4255-99d7-e35d924a20f3",
+                  "sortorder" : 0,
+                  "tileid" : "039c2d89-d32b-4be4-9189-d30cf9e150ba"
+               },
+               {
+                  "data" : {},
+                  "nodegroup_id" : "34cfe98f-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "95ae5bb8-a33d-4255-99d7-e35d924a20f3",
+                  "sortorder" : 0,
+                  "tileid" : "8d88bded-68ad-4cfc-bc70-8797a393963d"
+               },
+               {
+                  "data" : {
+                     "34cfe9dd-c2c0-11ea-9026-02e7594ce0a0" : "AAA f.30.7",
+                     "34cfea97-c2c0-11ea-9026-02e7594ce0a0" : "4bd93e89-2c7e-4e01-9c42-7119e16092f3"
+                  },
+                  "nodegroup_id" : "34cfe9dd-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "8d88bded-68ad-4cfc-bc70-8797a393963d",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "95ae5bb8-a33d-4255-99d7-e35d924a20f3",
+                  "sortorder" : 0,
+                  "tileid" : "8c779f2b-9318-432d-bb57-25778d78753b"
+               },
+               {
+                  "data" : {
+                     "34cfe9dd-c2c0-11ea-9026-02e7594ce0a0" : "Kouarda",
+                     "34cfea97-c2c0-11ea-9026-02e7594ce0a0" : "cdca3d69-5f58-4084-be0c-7bac4c41c553"
+                  },
+                  "nodegroup_id" : "34cfe9dd-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "8d88bded-68ad-4cfc-bc70-8797a393963d",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "95ae5bb8-a33d-4255-99d7-e35d924a20f3",
+                  "sortorder" : 0,
+                  "tileid" : "142997ee-9814-46b4-8c2e-14a7182f741e"
+               },
+               {
+                  "data" : {
+                     "34cfe9ef-c2c0-11ea-9026-02e7594ce0a0" : "e53c9814-1551-4704-add2-3aec42b9d0e4"
+                  },
+                  "nodegroup_id" : "34cfe9ef-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "8d88bded-68ad-4cfc-bc70-8797a393963d",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "95ae5bb8-a33d-4255-99d7-e35d924a20f3",
+                  "sortorder" : 0,
+                  "tileid" : "a88dd94f-d418-4481-a807-be1d35b8e27a"
+               },
+               {
+                  "data" : {
+                     "34cfea77-c2c0-11ea-9026-02e7594ce0a0" : "Kouarda. « Poste romain d'une faible superficie, surveillant la vallée de l'Oued Kouarda » (Ibid.).",
+                     "34cfea91-c2c0-11ea-9026-02e7594ce0a0" : "aa064973-2664-4fae-8876-a8481d2e760a"
+                  },
+                  "nodegroup_id" : "34cfe9c8-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "8d88bded-68ad-4cfc-bc70-8797a393963d",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "95ae5bb8-a33d-4255-99d7-e35d924a20f3",
+                  "sortorder" : 0,
+                  "tileid" : "1497d813-dadc-40c0-a615-dbdf75505dae"
+               },
+               {
+                  "data" : {
+                     "34cfea4a-c2c0-11ea-9026-02e7594ce0a0" : "f8bc5d01-42b6-41b8-8b01-dff18fcee2b0",
+                     "34cfea7d-c2c0-11ea-9026-02e7594ce0a0" : "b649a760-dd27-4e9b-bfd1-f9fa38eec380"
+                  },
+                  "nodegroup_id" : "34cfe9ad-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "8d88bded-68ad-4cfc-bc70-8797a393963d",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "95ae5bb8-a33d-4255-99d7-e35d924a20f3",
+                  "sortorder" : 0,
+                  "tileid" : "64e5971c-c03d-4936-9e06-d07f2be3cd73"
+               },
+               {
+                  "data" : {
+                     "5348cf67-c2c5-11ea-9026-02e7594ce0a0" : {
+                        "features" : [
+                           {
+                              "geometry" : {
+                                 "coordinates" : [
+                                    -1.99590662285139,
+                                    35.0210176047312
+                                 ],
+                                 "type" : "Point"
+                              },
+                              "properties" : {
+                                 "nodeId" : "5348cf67-c2c5-11ea-9026-02e7594ce0a0"
+                              },
+                              "type" : "Feature"
+                           }
+                        ],
+                        "type" : "FeatureCollection"
+                     },
+                     "5348cf6b-c2c5-11ea-9026-02e7594ce0a0" : "60844684-7b51-4cd1-96d2-7506214e0de6",
+                     "5348cf6c-c2c5-11ea-9026-02e7594ce0a0" : "0483e22a-1f92-44e0-af19-8c85b8922c04",
+                     "ce842cdc-c2c7-11ea-9026-02e7594ce0a0" : [
+                        "3851742b-ccf6-4c55-9ea8-cd33981661c1"
+                     ]
+                  },
+                  "nodegroup_id" : "3080eebe-c2c5-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "95ae5bb8-a33d-4255-99d7-e35d924a20f3",
+                  "sortorder" : 0,
+                  "tileid" : "45a39dbc-3a4b-4905-b9bd-fdfa7076ad5c"
+               },
+               {
+                  "data" : {
+                     "34cfea43-c2c0-11ea-9026-02e7594ce0a0" : [
+                        "c08b6e33-a244-415b-8bb1-b1f0949fc581"
+                     ],
+                     "34cfea5d-c2c0-11ea-9026-02e7594ce0a0" : [
+                        {
+                           "inverseOntologyProperty" : "http://www.cidoc-crm.org/cidoc-crm/P89i_contains",
+                           "ontologyProperty" : "http://www.cidoc-crm.org/cidoc-crm/P89_falls_within",
+                           "resourceId" : "e3282c54-d397-4509-8a95-0d7c20e9c68b",
+                           "resourceXresourceId" : "7de64bd9-9ffc-4b5c-a464-75756cf11b7e"
+                        }
+                     ],
+                     "34cfea69-c2c0-11ea-9026-02e7594ce0a0" : "d8919832-8f5a-46f7-b35c-75bf4e388045",
+                     "34cfea73-c2c0-11ea-9026-02e7594ce0a0" : null
+                  },
+                  "nodegroup_id" : "34cfe9b6-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "95ae5bb8-a33d-4255-99d7-e35d924a20f3",
+                  "sortorder" : 0,
+                  "tileid" : "fd8b7300-2c03-481f-b494-ba1cae502146"
+               },
+               {
+                  "data" : {},
+                  "nodegroup_id" : "34cfe9b3-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "95ae5bb8-a33d-4255-99d7-e35d924a20f3",
+                  "sortorder" : 0,
+                  "tileid" : "a3502f3c-714d-4413-b73b-8ded63f4de03"
+               },
+               {
+                  "data" : {
+                     "34cfea51-c2c0-11ea-9026-02e7594ce0a0" : "672d9fb7-1b69-40f4-97f1-3cb4c26022c8"
+                  },
+                  "nodegroup_id" : "34cfe9a4-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "a3502f3c-714d-4413-b73b-8ded63f4de03",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "95ae5bb8-a33d-4255-99d7-e35d924a20f3",
+                  "sortorder" : 0,
+                  "tileid" : "c042a77e-29bc-4463-9b78-75bfeb371931"
+               },
+               {
+                  "data" : {
+                     "34cfe9e6-c2c0-11ea-9026-02e7594ce0a0" : "486d3ede-93eb-4bcb-9434-d91fa8767b87"
+                  },
+                  "nodegroup_id" : "34cfe9e6-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "a3502f3c-714d-4413-b73b-8ded63f4de03",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "95ae5bb8-a33d-4255-99d7-e35d924a20f3",
+                  "sortorder" : 0,
+                  "tileid" : "48f1f404-7f19-48f7-84b8-d220ded4ed18"
+               },
+               {
+                  "data" : {
+                     "38cff738-c77b-11ea-a292-02e7594ce0a0" : "59439634-1c7e-4a3a-8cb3-c7757231a12a",
+                     "38cff73b-c77b-11ea-a292-02e7594ce0a0" : "2398cca8-df99-48e4-999e-2ed34b3224b4"
+                  },
+                  "nodegroup_id" : "38cff734-c77b-11ea-a292-02e7594ce0a0",
+                  "parenttile_id" : "a3502f3c-714d-4413-b73b-8ded63f4de03",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "95ae5bb8-a33d-4255-99d7-e35d924a20f3",
+                  "sortorder" : 0,
+                  "tileid" : "061a811d-083f-4eda-b56a-0c51054c4943"
+               }
+            ]
+         },
+         {
+            "resourceinstance" : {
+               "graph_id" : "34cfe98e-c2c0-11ea-9026-02e7594ce0a0",
+               "legacyid" : "0de296dc-a4bc-48c3-aca1-7b4327665590",
+               "resourceinstanceid" : "0de296dc-a4bc-48c3-aca1-7b4327665590"
+            },
+            "tiles" : [
+               {
+                  "data" : {
+                     "34cfea4d-c2c0-11ea-9026-02e7594ce0a0" : "00b71e76-4958-42a6-82f8-bc8ea5639064",
+                     "34cfea81-c2c0-11ea-9026-02e7594ce0a0" : "2022-03-17",
+                     "34cfea8a-c2c0-11ea-9026-02e7594ce0a0" : [
+                        {
+                           "inverseOntologyProperty" : "http://www.ics.forth.gr/isl/CRMdig/L33i_is_maker_of",
+                           "ontologyProperty" : "http://www.ics.forth.gr/isl/CRMdig/L33_has_maker",
+                           "resourceId" : "4764f6bd-bc2b-4a60-b095-114fed6158e2",
+                           "resourceXresourceId" : "a65cf6f4-e914-4991-835e-480321ac35b8"
+                        }
+                     ],
+                     "bcd3a8ae-0404-11eb-a11c-0a5a9a4f6ef7" : true,
+                     "d2e1ab96-cc05-11ea-a292-02e7594ce0a0" : [
+                        "20b1a4e0-97e1-41f7-b519-124a7317266b"
+                     ]
+                  },
+                  "nodegroup_id" : "34cfea2e-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "0de296dc-a4bc-48c3-aca1-7b4327665590",
+                  "sortorder" : 0,
+                  "tileid" : "5bc12fee-b480-4037-9a37-04db2e799414"
+               },
+               {
+                  "data" : {},
+                  "nodegroup_id" : "34cfe98f-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "0de296dc-a4bc-48c3-aca1-7b4327665590",
+                  "sortorder" : 0,
+                  "tileid" : "6cde8100-d57c-4f06-b76f-c8afc9f19879"
+               },
+               {
+                  "data" : {
+                     "34cfe9dd-c2c0-11ea-9026-02e7594ce0a0" : "AAA f.30.8",
+                     "34cfea97-c2c0-11ea-9026-02e7594ce0a0" : "4bd93e89-2c7e-4e01-9c42-7119e16092f3"
+                  },
+                  "nodegroup_id" : "34cfe9dd-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "6cde8100-d57c-4f06-b76f-c8afc9f19879",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "0de296dc-a4bc-48c3-aca1-7b4327665590",
+                  "sortorder" : 0,
+                  "tileid" : "32d8a362-dce6-4b4d-a1b2-9bde16136844"
+               },
+               {
+                  "data" : {
+                     "34cfe9ef-c2c0-11ea-9026-02e7594ce0a0" : "e53c9814-1551-4704-add2-3aec42b9d0e4"
+                  },
+                  "nodegroup_id" : "34cfe9ef-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "6cde8100-d57c-4f06-b76f-c8afc9f19879",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "0de296dc-a4bc-48c3-aca1-7b4327665590",
+                  "sortorder" : 0,
+                  "tileid" : "395bc559-fabf-431b-9369-ff6a88bdd5e5"
+               },
+               {
+                  "data" : {
+                     "34cfea77-c2c0-11ea-9026-02e7594ce0a0" : "Grottes, sur la rive droite de l'Oued Ghazaouah, en amont du Tombeau des Braves (lames de silex, fragments de poteries): Pallary, Assoc. franc., Boulogne, 1899, I, p. 279; Paris, 1900, II, p. 773.",
+                     "34cfea91-c2c0-11ea-9026-02e7594ce0a0" : "aa064973-2664-4fae-8876-a8481d2e760a"
+                  },
+                  "nodegroup_id" : "34cfe9c8-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "6cde8100-d57c-4f06-b76f-c8afc9f19879",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "0de296dc-a4bc-48c3-aca1-7b4327665590",
+                  "sortorder" : 0,
+                  "tileid" : "51ce5ae2-9894-46f9-af37-fedfecf544d2"
+               },
+               {
+                  "data" : {
+                     "34cfea4a-c2c0-11ea-9026-02e7594ce0a0" : "9e8855a8-b118-4278-a3f5-7c1471f76a1d",
+                     "34cfea7d-c2c0-11ea-9026-02e7594ce0a0" : "bb9d0530-6d11-437d-bff8-643418ac9bfb"
+                  },
+                  "nodegroup_id" : "34cfe9ad-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "6cde8100-d57c-4f06-b76f-c8afc9f19879",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "0de296dc-a4bc-48c3-aca1-7b4327665590",
+                  "sortorder" : 0,
+                  "tileid" : "4975f9e9-e777-4eff-a88d-60c607130671"
+               },
+               {
+                  "data" : {
+                     "5348cf67-c2c5-11ea-9026-02e7594ce0a0" : {
+                        "features" : [
+                           {
+                              "geometry" : {
+                                 "coordinates" : [
+                                    -1.83555468448352,
+                                    35.0758295956588
+                                 ],
+                                 "type" : "Point"
+                              },
+                              "properties" : {
+                                 "nodeId" : "5348cf67-c2c5-11ea-9026-02e7594ce0a0"
+                              },
+                              "type" : "Feature"
+                           }
+                        ],
+                        "type" : "FeatureCollection"
+                     },
+                     "5348cf6b-c2c5-11ea-9026-02e7594ce0a0" : "60844684-7b51-4cd1-96d2-7506214e0de6",
+                     "5348cf6c-c2c5-11ea-9026-02e7594ce0a0" : "0483e22a-1f92-44e0-af19-8c85b8922c04",
+                     "ce842cdc-c2c7-11ea-9026-02e7594ce0a0" : [
+                        "3851742b-ccf6-4c55-9ea8-cd33981661c1"
+                     ]
+                  },
+                  "nodegroup_id" : "3080eebe-c2c5-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "0de296dc-a4bc-48c3-aca1-7b4327665590",
+                  "sortorder" : 0,
+                  "tileid" : "dddc1266-caec-4c60-b127-ff8bca75aceb"
+               },
+               {
+                  "data" : {
+                     "34cfea43-c2c0-11ea-9026-02e7594ce0a0" : [
+                        "c08b6e33-a244-415b-8bb1-b1f0949fc581"
+                     ],
+                     "34cfea5d-c2c0-11ea-9026-02e7594ce0a0" : [
+                        {
+                           "inverseOntologyProperty" : "http://www.cidoc-crm.org/cidoc-crm/P89i_contains",
+                           "ontologyProperty" : "http://www.cidoc-crm.org/cidoc-crm/P89_falls_within",
+                           "resourceId" : "e3282c54-d397-4509-8a95-0d7c20e9c68b",
+                           "resourceXresourceId" : "4b8872d2-a184-4c76-85c2-7bbdc859ace4"
+                        }
+                     ],
+                     "34cfea69-c2c0-11ea-9026-02e7594ce0a0" : "d8919832-8f5a-46f7-b35c-75bf4e388045",
+                     "34cfea73-c2c0-11ea-9026-02e7594ce0a0" : null
+                  },
+                  "nodegroup_id" : "34cfe9b6-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "0de296dc-a4bc-48c3-aca1-7b4327665590",
+                  "sortorder" : 0,
+                  "tileid" : "7138e06f-0e96-4192-b587-d314731a69ce"
+               },
+               {
+                  "data" : {},
+                  "nodegroup_id" : "34cfe9b3-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "0de296dc-a4bc-48c3-aca1-7b4327665590",
+                  "sortorder" : 0,
+                  "tileid" : "8385f6a0-7896-432a-b5a5-45124f3446ee"
+               },
+               {
+                  "data" : {},
+                  "nodegroup_id" : "34cfea13-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "8385f6a0-7896-432a-b5a5-45124f3446ee",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "0de296dc-a4bc-48c3-aca1-7b4327665590",
+                  "sortorder" : 0,
+                  "tileid" : "4c4728d3-f9c8-4b53-a8d1-05497a2db64a"
+               },
+               {
+                  "data" : {
+                     "34cfea59-c2c0-11ea-9026-02e7594ce0a0" : "44614d20-7f01-4f3e-b9f6-410938b22daa",
+                     "34cfea9a-c2c0-11ea-9026-02e7594ce0a0" : "03ae4e50-bb26-45a9-96cf-33664d91b5a2"
+                  },
+                  "nodegroup_id" : "34cfe9b0-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "4c4728d3-f9c8-4b53-a8d1-05497a2db64a",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "0de296dc-a4bc-48c3-aca1-7b4327665590",
+                  "sortorder" : 0,
+                  "tileid" : "504971f5-84c9-40aa-85d1-6cf6dcc016ba"
+               },
+               {
+                  "data" : {
+                     "34cfea19-c2c0-11ea-9026-02e7594ce0a0" : "1cfd76b4-2e69-48f2-9b12-4b7bd1d37486"
+                  },
+                  "nodegroup_id" : "34cfea19-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "504971f5-84c9-40aa-85d1-6cf6dcc016ba",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "0de296dc-a4bc-48c3-aca1-7b4327665590",
+                  "sortorder" : 0,
+                  "tileid" : "6bc21a3f-b50d-4484-9f00-df479abfadf8"
+               },
+               {
+                  "data" : {
+                     "34cfe9e9-c2c0-11ea-9026-02e7594ce0a0" : "a7adde8b-72ce-4064-a6bf-b7aeb252dcfb"
+                  },
+                  "nodegroup_id" : "34cfe9e9-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "504971f5-84c9-40aa-85d1-6cf6dcc016ba",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "0de296dc-a4bc-48c3-aca1-7b4327665590",
+                  "sortorder" : 0,
+                  "tileid" : "b51cba19-4d1a-48cd-a9da-c1f72c354c70"
+               },
+               {
+                  "data" : {
+                     "34cfe9f8-c2c0-11ea-9026-02e7594ce0a0" : "940eb026-43ca-4063-9bae-f1d0c1fc4faa"
+                  },
+                  "nodegroup_id" : "34cfe9f8-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "504971f5-84c9-40aa-85d1-6cf6dcc016ba",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "0de296dc-a4bc-48c3-aca1-7b4327665590",
+                  "sortorder" : 0,
+                  "tileid" : "420ffee7-b863-458c-ba98-f3860cfb245b"
+               },
+               {
+                  "data" : {
+                     "34cfea44-c2c0-11ea-9026-02e7594ce0a0" : "b90f0774-ace0-4c50-82e7-4ace310f91c2",
+                     "34cfea58-c2c0-11ea-9026-02e7594ce0a0" : "ccf2bdb2-db32-4601-902e-7c8a9c4496a5",
+                     "34cfea62-c2c0-11ea-9026-02e7594ce0a0" : "638e423a-827a-4f5d-9292-6eda084f36fb"
+                  },
+                  "nodegroup_id" : "34cfe9fe-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "4c4728d3-f9c8-4b53-a8d1-05497a2db64a",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "0de296dc-a4bc-48c3-aca1-7b4327665590",
+                  "sortorder" : 0,
+                  "tileid" : "e3ba9631-ef39-4724-8489-84d0fea7455e"
+               },
+               {
+                  "data" : {},
+                  "nodegroup_id" : "34cfe9b9-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "0de296dc-a4bc-48c3-aca1-7b4327665590",
+                  "sortorder" : 0,
+                  "tileid" : "41d2f5eb-189a-4619-b3cb-9d4b22e24485"
+               },
+               {
+                  "data" : {
+                     "34cfe9f5-c2c0-11ea-9026-02e7594ce0a0" : "65c64194-fc10-4d95-ab38-0a5166d3c6ee"
+                  },
+                  "nodegroup_id" : "34cfe9f5-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "41d2f5eb-189a-4619-b3cb-9d4b22e24485",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "0de296dc-a4bc-48c3-aca1-7b4327665590",
+                  "sortorder" : 0,
+                  "tileid" : "d51cf8d0-65cf-4dda-8bef-d84037872412"
+               },
+               {
+                  "data" : {
+                     "34cfea8e-c2c0-11ea-9026-02e7594ce0a0" : "2479bd11-1c32-434e-be51-40dc5a71eff0"
+                  },
+                  "nodegroup_id" : "34cfe9bf-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "41d2f5eb-189a-4619-b3cb-9d4b22e24485",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "0de296dc-a4bc-48c3-aca1-7b4327665590",
+                  "sortorder" : 0,
+                  "tileid" : "cda65041-6ad6-4e77-841a-68648a0875cb"
+               },
+               {
+                  "data" : {
+                     "34cfea63-c2c0-11ea-9026-02e7594ce0a0" : "879a8fef-90b3-497e-929d-e9b2de9afa7b",
+                     "34cfea76-c2c0-11ea-9026-02e7594ce0a0" : "1ba58698-43bc-4c39-b29d-4d16e26d1919",
+                     "34cfea7b-c2c0-11ea-9026-02e7594ce0a0" : "e92eb945-b892-4cbc-8951-cc4f96c3ac5d"
+                  },
+                  "nodegroup_id" : "34cfe9fb-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "41d2f5eb-189a-4619-b3cb-9d4b22e24485",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "0de296dc-a4bc-48c3-aca1-7b4327665590",
+                  "sortorder" : 0,
+                  "tileid" : "c305d18d-1692-40aa-9761-102127aa8464"
+               }
+            ]
+         },
+         {
+            "resourceinstance" : {
+               "graph_id" : "34cfe98e-c2c0-11ea-9026-02e7594ce0a0",
+               "legacyid" : "2a1791b8-ca6c-413f-89e9-9c8e235c3d25",
+               "resourceinstanceid" : "2a1791b8-ca6c-413f-89e9-9c8e235c3d25"
+            },
+            "tiles" : [
+               {
+                  "data" : {
+                     "34cfea4d-c2c0-11ea-9026-02e7594ce0a0" : "00b71e76-4958-42a6-82f8-bc8ea5639064",
+                     "34cfea81-c2c0-11ea-9026-02e7594ce0a0" : "2022-03-17",
+                     "34cfea8a-c2c0-11ea-9026-02e7594ce0a0" : [
+                        {
+                           "inverseOntologyProperty" : "http://www.ics.forth.gr/isl/CRMdig/L33i_is_maker_of",
+                           "ontologyProperty" : "http://www.ics.forth.gr/isl/CRMdig/L33_has_maker",
+                           "resourceId" : "4764f6bd-bc2b-4a60-b095-114fed6158e2",
+                           "resourceXresourceId" : "b25d6e7e-bba6-4b84-b409-e99e01c30efd"
+                        }
+                     ],
+                     "bcd3a8ae-0404-11eb-a11c-0a5a9a4f6ef7" : true,
+                     "d2e1ab96-cc05-11ea-a292-02e7594ce0a0" : [
+                        "20b1a4e0-97e1-41f7-b519-124a7317266b"
+                     ]
+                  },
+                  "nodegroup_id" : "34cfea2e-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "2a1791b8-ca6c-413f-89e9-9c8e235c3d25",
+                  "sortorder" : 0,
+                  "tileid" : "47e73242-0cb7-42a1-9091-a0608ad6d8e0"
+               },
+               {
+                  "data" : {},
+                  "nodegroup_id" : "34cfe98f-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "2a1791b8-ca6c-413f-89e9-9c8e235c3d25",
+                  "sortorder" : 0,
+                  "tileid" : "2cfc378e-e58a-4212-9bbf-cde319ab3b8a"
+               },
+               {
+                  "data" : {
+                     "34cfe9dd-c2c0-11ea-9026-02e7594ce0a0" : "AAA f.30.9",
+                     "34cfea97-c2c0-11ea-9026-02e7594ce0a0" : "4bd93e89-2c7e-4e01-9c42-7119e16092f3"
+                  },
+                  "nodegroup_id" : "34cfe9dd-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "2cfc378e-e58a-4212-9bbf-cde319ab3b8a",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "2a1791b8-ca6c-413f-89e9-9c8e235c3d25",
+                  "sortorder" : 0,
+                  "tileid" : "8d0970f9-489a-441a-9256-16c6a8aed688"
+               },
+               {
+                  "data" : {
+                     "34cfe9ef-c2c0-11ea-9026-02e7594ce0a0" : "e53c9814-1551-4704-add2-3aec42b9d0e4"
+                  },
+                  "nodegroup_id" : "34cfe9ef-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "2cfc378e-e58a-4212-9bbf-cde319ab3b8a",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "2a1791b8-ca6c-413f-89e9-9c8e235c3d25",
+                  "sortorder" : 0,
+                  "tileid" : "faa143c0-bc5c-4bf1-b12d-d47f4779897d"
+               },
+               {
+                  "data" : {
+                     "34cfea77-c2c0-11ea-9026-02e7594ce0a0" : "Grottes de Taïma et de Mezoudj (sur la rive gauche de l'Oued Taïma, ou Oued Sefra), habitées à l'époque préhistorique : Pallary, l. c., Paris, 1900, p. 773.",
+                     "34cfea91-c2c0-11ea-9026-02e7594ce0a0" : "aa064973-2664-4fae-8876-a8481d2e760a"
+                  },
+                  "nodegroup_id" : "34cfe9c8-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "2cfc378e-e58a-4212-9bbf-cde319ab3b8a",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "2a1791b8-ca6c-413f-89e9-9c8e235c3d25",
+                  "sortorder" : 0,
+                  "tileid" : "f26b95de-5789-4c83-824c-4331019fb052"
+               },
+               {
+                  "data" : {
+                     "34cfea4a-c2c0-11ea-9026-02e7594ce0a0" : "9e8855a8-b118-4278-a3f5-7c1471f76a1d",
+                     "34cfea7d-c2c0-11ea-9026-02e7594ce0a0" : "bb9d0530-6d11-437d-bff8-643418ac9bfb"
+                  },
+                  "nodegroup_id" : "34cfe9ad-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "2cfc378e-e58a-4212-9bbf-cde319ab3b8a",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "2a1791b8-ca6c-413f-89e9-9c8e235c3d25",
+                  "sortorder" : 0,
+                  "tileid" : "78a2e1e3-a32b-4216-982d-00184c22d573"
+               },
+               {
+                  "data" : {
+                     "5348cf67-c2c5-11ea-9026-02e7594ce0a0" : {
+                        "features" : [
+                           {
+                              "geometry" : {
+                                 "coordinates" : [
+                                    -1.82788018416861,
+                                    35.031942692515
+                                 ],
+                                 "type" : "Point"
+                              },
+                              "properties" : {
+                                 "nodeId" : "5348cf67-c2c5-11ea-9026-02e7594ce0a0"
+                              },
+                              "type" : "Feature"
+                           }
+                        ],
+                        "type" : "FeatureCollection"
+                     },
+                     "5348cf6b-c2c5-11ea-9026-02e7594ce0a0" : "60844684-7b51-4cd1-96d2-7506214e0de6",
+                     "5348cf6c-c2c5-11ea-9026-02e7594ce0a0" : "0483e22a-1f92-44e0-af19-8c85b8922c04",
+                     "ce842cdc-c2c7-11ea-9026-02e7594ce0a0" : [
+                        "3851742b-ccf6-4c55-9ea8-cd33981661c1"
+                     ]
+                  },
+                  "nodegroup_id" : "3080eebe-c2c5-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "2a1791b8-ca6c-413f-89e9-9c8e235c3d25",
+                  "sortorder" : 0,
+                  "tileid" : "73193a1e-cdd8-41cd-a16f-7b9f349ad608"
+               },
+               {
+                  "data" : {
+                     "34cfea43-c2c0-11ea-9026-02e7594ce0a0" : [
+                        "c08b6e33-a244-415b-8bb1-b1f0949fc581"
+                     ],
+                     "34cfea5d-c2c0-11ea-9026-02e7594ce0a0" : [
+                        {
+                           "inverseOntologyProperty" : "http://www.cidoc-crm.org/cidoc-crm/P89i_contains",
+                           "ontologyProperty" : "http://www.cidoc-crm.org/cidoc-crm/P89_falls_within",
+                           "resourceId" : "e3282c54-d397-4509-8a95-0d7c20e9c68b",
+                           "resourceXresourceId" : "4e8696e3-16a0-490c-847e-ae7c77955585"
+                        }
+                     ],
+                     "34cfea69-c2c0-11ea-9026-02e7594ce0a0" : "d8919832-8f5a-46f7-b35c-75bf4e388045",
+                     "34cfea73-c2c0-11ea-9026-02e7594ce0a0" : null
+                  },
+                  "nodegroup_id" : "34cfe9b6-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "2a1791b8-ca6c-413f-89e9-9c8e235c3d25",
+                  "sortorder" : 0,
+                  "tileid" : "c82c0e1f-dddb-4d4d-97d8-bac68e3c6b73"
+               },
+               {
+                  "data" : {},
+                  "nodegroup_id" : "34cfe9b3-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "2a1791b8-ca6c-413f-89e9-9c8e235c3d25",
+                  "sortorder" : 0,
+                  "tileid" : "f6b37062-6711-49bf-9b38-e313a5a1bbfd"
+               },
+               {
+                  "data" : {},
+                  "nodegroup_id" : "34cfea13-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "f6b37062-6711-49bf-9b38-e313a5a1bbfd",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "2a1791b8-ca6c-413f-89e9-9c8e235c3d25",
+                  "sortorder" : 0,
+                  "tileid" : "b71e1ce6-d359-4110-9e2f-47dbbdc34f8a"
+               },
+               {
+                  "data" : {
+                     "34cfea59-c2c0-11ea-9026-02e7594ce0a0" : "44614d20-7f01-4f3e-b9f6-410938b22daa",
+                     "34cfea9a-c2c0-11ea-9026-02e7594ce0a0" : "03ae4e50-bb26-45a9-96cf-33664d91b5a2"
+                  },
+                  "nodegroup_id" : "34cfe9b0-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "b71e1ce6-d359-4110-9e2f-47dbbdc34f8a",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "2a1791b8-ca6c-413f-89e9-9c8e235c3d25",
+                  "sortorder" : 0,
+                  "tileid" : "b2aef63c-cd42-4277-b0e8-6a034bf49c55"
+               },
+               {
+                  "data" : {
+                     "34cfea19-c2c0-11ea-9026-02e7594ce0a0" : "1cfd76b4-2e69-48f2-9b12-4b7bd1d37486"
+                  },
+                  "nodegroup_id" : "34cfea19-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "b2aef63c-cd42-4277-b0e8-6a034bf49c55",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "2a1791b8-ca6c-413f-89e9-9c8e235c3d25",
+                  "sortorder" : 0,
+                  "tileid" : "eb40aa6c-7f82-44ab-91c5-58eb1e7b3520"
+               },
+               {
+                  "data" : {
+                     "34cfe9e9-c2c0-11ea-9026-02e7594ce0a0" : "a7adde8b-72ce-4064-a6bf-b7aeb252dcfb"
+                  },
+                  "nodegroup_id" : "34cfe9e9-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "b2aef63c-cd42-4277-b0e8-6a034bf49c55",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "2a1791b8-ca6c-413f-89e9-9c8e235c3d25",
+                  "sortorder" : 0,
+                  "tileid" : "47dea007-9ff3-432f-a05d-57d75a244d0b"
+               },
+               {
+                  "data" : {
+                     "34cfe9f8-c2c0-11ea-9026-02e7594ce0a0" : "940eb026-43ca-4063-9bae-f1d0c1fc4faa"
+                  },
+                  "nodegroup_id" : "34cfe9f8-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "b2aef63c-cd42-4277-b0e8-6a034bf49c55",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "2a1791b8-ca6c-413f-89e9-9c8e235c3d25",
+                  "sortorder" : 0,
+                  "tileid" : "0c476b30-a90f-4f85-8162-1e09318ea5af"
+               },
+               {
+                  "data" : {
+                     "34cfea44-c2c0-11ea-9026-02e7594ce0a0" : "b90f0774-ace0-4c50-82e7-4ace310f91c2",
+                     "34cfea58-c2c0-11ea-9026-02e7594ce0a0" : "ccf2bdb2-db32-4601-902e-7c8a9c4496a5",
+                     "34cfea62-c2c0-11ea-9026-02e7594ce0a0" : "638e423a-827a-4f5d-9292-6eda084f36fb"
+                  },
+                  "nodegroup_id" : "34cfe9fe-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "b71e1ce6-d359-4110-9e2f-47dbbdc34f8a",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "2a1791b8-ca6c-413f-89e9-9c8e235c3d25",
+                  "sortorder" : 0,
+                  "tileid" : "a2e5e930-5998-4fe2-8092-0e06f8e12308"
+               },
+               {
+                  "data" : {},
+                  "nodegroup_id" : "34cfe9b9-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "2a1791b8-ca6c-413f-89e9-9c8e235c3d25",
+                  "sortorder" : 0,
+                  "tileid" : "7b988907-b142-4043-83c4-5d8b56696882"
+               },
+               {
+                  "data" : {
+                     "34cfe9f5-c2c0-11ea-9026-02e7594ce0a0" : "65c64194-fc10-4d95-ab38-0a5166d3c6ee"
+                  },
+                  "nodegroup_id" : "34cfe9f5-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "7b988907-b142-4043-83c4-5d8b56696882",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "2a1791b8-ca6c-413f-89e9-9c8e235c3d25",
+                  "sortorder" : 0,
+                  "tileid" : "440b055e-9141-4c3d-a935-640a4d8ee17b"
+               },
+               {
+                  "data" : {
+                     "34cfea8e-c2c0-11ea-9026-02e7594ce0a0" : "2479bd11-1c32-434e-be51-40dc5a71eff0"
+                  },
+                  "nodegroup_id" : "34cfe9bf-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "7b988907-b142-4043-83c4-5d8b56696882",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "2a1791b8-ca6c-413f-89e9-9c8e235c3d25",
+                  "sortorder" : 0,
+                  "tileid" : "55e8c223-5f82-4677-b490-32a3c416203e"
+               },
+               {
+                  "data" : {
+                     "34cfea63-c2c0-11ea-9026-02e7594ce0a0" : "879a8fef-90b3-497e-929d-e9b2de9afa7b",
+                     "34cfea76-c2c0-11ea-9026-02e7594ce0a0" : "1ba58698-43bc-4c39-b29d-4d16e26d1919",
+                     "34cfea7b-c2c0-11ea-9026-02e7594ce0a0" : "e92eb945-b892-4cbc-8951-cc4f96c3ac5d"
+                  },
+                  "nodegroup_id" : "34cfe9fb-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "7b988907-b142-4043-83c4-5d8b56696882",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "2a1791b8-ca6c-413f-89e9-9c8e235c3d25",
+                  "sortorder" : 0,
+                  "tileid" : "fc0cb2f2-fc47-46db-809a-bdbc63502122"
+               }
+            ]
+         },
+         {
+            "resourceinstance" : {
+               "graph_id" : "34cfe98e-c2c0-11ea-9026-02e7594ce0a0",
+               "legacyid" : "0969c509-474f-4fad-926c-dd3227c18b37",
+               "resourceinstanceid" : "0969c509-474f-4fad-926c-dd3227c18b37"
+            },
+            "tiles" : [
+               {
+                  "data" : {
+                     "34cfea4d-c2c0-11ea-9026-02e7594ce0a0" : "00b71e76-4958-42a6-82f8-bc8ea5639064",
+                     "34cfea81-c2c0-11ea-9026-02e7594ce0a0" : "2022-03-17",
+                     "34cfea8a-c2c0-11ea-9026-02e7594ce0a0" : [
+                        {
+                           "inverseOntologyProperty" : "http://www.ics.forth.gr/isl/CRMdig/L33i_is_maker_of",
+                           "ontologyProperty" : "http://www.ics.forth.gr/isl/CRMdig/L33_has_maker",
+                           "resourceId" : "4764f6bd-bc2b-4a60-b095-114fed6158e2",
+                           "resourceXresourceId" : "17c0b7a4-dbd8-46bf-99de-aa51b0c02ab2"
+                        }
+                     ],
+                     "bcd3a8ae-0404-11eb-a11c-0a5a9a4f6ef7" : true,
+                     "d2e1ab96-cc05-11ea-a292-02e7594ce0a0" : [
+                        "20b1a4e0-97e1-41f7-b519-124a7317266b"
+                     ]
+                  },
+                  "nodegroup_id" : "34cfea2e-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "0969c509-474f-4fad-926c-dd3227c18b37",
+                  "sortorder" : 0,
+                  "tileid" : "2938c239-913b-4224-8bf6-f0278d8678c8"
+               },
+               {
+                  "data" : {},
+                  "nodegroup_id" : "34cfe98f-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "0969c509-474f-4fad-926c-dd3227c18b37",
+                  "sortorder" : 0,
+                  "tileid" : "b7851af9-a2de-45ba-8435-34265d01d409"
+               },
+               {
+                  "data" : {
+                     "34cfe9dd-c2c0-11ea-9026-02e7594ce0a0" : "AAA f.30.10",
+                     "34cfea97-c2c0-11ea-9026-02e7594ce0a0" : "4bd93e89-2c7e-4e01-9c42-7119e16092f3"
+                  },
+                  "nodegroup_id" : "34cfe9dd-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "b7851af9-a2de-45ba-8435-34265d01d409",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "0969c509-474f-4fad-926c-dd3227c18b37",
+                  "sortorder" : 0,
+                  "tileid" : "1acec9ff-7a1b-4ba4-bd0a-23526afad54e"
+               },
+               {
+                  "data" : {
+                     "34cfe9ef-c2c0-11ea-9026-02e7594ce0a0" : "e53c9814-1551-4704-add2-3aec42b9d0e4"
+                  },
+                  "nodegroup_id" : "34cfe9ef-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "b7851af9-a2de-45ba-8435-34265d01d409",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "0969c509-474f-4fad-926c-dd3227c18b37",
+                  "sortorder" : 0,
+                  "tileid" : "d5be6cc2-2dd0-4b2c-85c5-a30d0f4f57f2"
+               },
+               {
+                  "data" : {
+                     "34cfea77-c2c0-11ea-9026-02e7594ce0a0" : "Grottes de Taïma et de Mezoudj (sur la rive gauche de l'Oued Taïma, ou Oued Sefra), habitées à l'époque préhistorique : Pallary, l. c., Paris, 1900, p. 773.",
+                     "34cfea91-c2c0-11ea-9026-02e7594ce0a0" : "aa064973-2664-4fae-8876-a8481d2e760a"
+                  },
+                  "nodegroup_id" : "34cfe9c8-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "b7851af9-a2de-45ba-8435-34265d01d409",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "0969c509-474f-4fad-926c-dd3227c18b37",
+                  "sortorder" : 0,
+                  "tileid" : "afb1934d-f75b-4db7-a85a-17b07f77a478"
+               },
+               {
+                  "data" : {
+                     "34cfea4a-c2c0-11ea-9026-02e7594ce0a0" : "9e8855a8-b118-4278-a3f5-7c1471f76a1d",
+                     "34cfea7d-c2c0-11ea-9026-02e7594ce0a0" : "bb9d0530-6d11-437d-bff8-643418ac9bfb"
+                  },
+                  "nodegroup_id" : "34cfe9ad-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "b7851af9-a2de-45ba-8435-34265d01d409",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "0969c509-474f-4fad-926c-dd3227c18b37",
+                  "sortorder" : 0,
+                  "tileid" : "ae77dd83-7af9-44fd-b9bb-08943e11fc7d"
+               },
+               {
+                  "data" : {
+                     "5348cf67-c2c5-11ea-9026-02e7594ce0a0" : {
+                        "features" : [
+                           {
+                              "geometry" : {
+                                 "coordinates" : [
+                                    -1.85448387906296,
+                                    35.0182835015226
+                                 ],
+                                 "type" : "Point"
+                              },
+                              "properties" : {
+                                 "nodeId" : "5348cf67-c2c5-11ea-9026-02e7594ce0a0"
+                              },
+                              "type" : "Feature"
+                           }
+                        ],
+                        "type" : "FeatureCollection"
+                     },
+                     "5348cf6b-c2c5-11ea-9026-02e7594ce0a0" : "60844684-7b51-4cd1-96d2-7506214e0de6",
+                     "5348cf6c-c2c5-11ea-9026-02e7594ce0a0" : "0483e22a-1f92-44e0-af19-8c85b8922c04",
+                     "ce842cdc-c2c7-11ea-9026-02e7594ce0a0" : [
+                        "3851742b-ccf6-4c55-9ea8-cd33981661c1"
+                     ]
+                  },
+                  "nodegroup_id" : "3080eebe-c2c5-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "0969c509-474f-4fad-926c-dd3227c18b37",
+                  "sortorder" : 0,
+                  "tileid" : "053fbd08-be20-4130-ba4e-82bc5c9a0816"
+               },
+               {
+                  "data" : {
+                     "34cfea43-c2c0-11ea-9026-02e7594ce0a0" : [
+                        "c08b6e33-a244-415b-8bb1-b1f0949fc581"
+                     ],
+                     "34cfea5d-c2c0-11ea-9026-02e7594ce0a0" : [
+                        {
+                           "inverseOntologyProperty" : "http://www.cidoc-crm.org/cidoc-crm/P89i_contains",
+                           "ontologyProperty" : "http://www.cidoc-crm.org/cidoc-crm/P89_falls_within",
+                           "resourceId" : "e3282c54-d397-4509-8a95-0d7c20e9c68b",
+                           "resourceXresourceId" : "08273643-7cf8-493e-b18c-81d521dc055e"
+                        }
+                     ],
+                     "34cfea69-c2c0-11ea-9026-02e7594ce0a0" : "d8919832-8f5a-46f7-b35c-75bf4e388045",
+                     "34cfea73-c2c0-11ea-9026-02e7594ce0a0" : null
+                  },
+                  "nodegroup_id" : "34cfe9b6-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "0969c509-474f-4fad-926c-dd3227c18b37",
+                  "sortorder" : 0,
+                  "tileid" : "d80e87e3-de51-4da2-a248-c9976ae1c3f9"
+               },
+               {
+                  "data" : {},
+                  "nodegroup_id" : "34cfe9b3-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "0969c509-474f-4fad-926c-dd3227c18b37",
+                  "sortorder" : 0,
+                  "tileid" : "1e4e27af-22f1-4968-8197-fdfa43cef210"
+               },
+               {
+                  "data" : {},
+                  "nodegroup_id" : "34cfea13-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "1e4e27af-22f1-4968-8197-fdfa43cef210",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "0969c509-474f-4fad-926c-dd3227c18b37",
+                  "sortorder" : 0,
+                  "tileid" : "596d7b1c-ec2c-4593-b190-541cf0c6a221"
+               },
+               {
+                  "data" : {
+                     "34cfea59-c2c0-11ea-9026-02e7594ce0a0" : "44614d20-7f01-4f3e-b9f6-410938b22daa",
+                     "34cfea9a-c2c0-11ea-9026-02e7594ce0a0" : "03ae4e50-bb26-45a9-96cf-33664d91b5a2"
+                  },
+                  "nodegroup_id" : "34cfe9b0-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "596d7b1c-ec2c-4593-b190-541cf0c6a221",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "0969c509-474f-4fad-926c-dd3227c18b37",
+                  "sortorder" : 0,
+                  "tileid" : "750ba222-23ab-45b9-9a56-9e2c0b40e4ed"
+               },
+               {
+                  "data" : {
+                     "34cfea19-c2c0-11ea-9026-02e7594ce0a0" : "1cfd76b4-2e69-48f2-9b12-4b7bd1d37486"
+                  },
+                  "nodegroup_id" : "34cfea19-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "750ba222-23ab-45b9-9a56-9e2c0b40e4ed",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "0969c509-474f-4fad-926c-dd3227c18b37",
+                  "sortorder" : 0,
+                  "tileid" : "c8cc7425-f036-40ee-b608-dc670cf7826d"
+               },
+               {
+                  "data" : {
+                     "34cfe9e9-c2c0-11ea-9026-02e7594ce0a0" : "a7adde8b-72ce-4064-a6bf-b7aeb252dcfb"
+                  },
+                  "nodegroup_id" : "34cfe9e9-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "750ba222-23ab-45b9-9a56-9e2c0b40e4ed",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "0969c509-474f-4fad-926c-dd3227c18b37",
+                  "sortorder" : 0,
+                  "tileid" : "8285b962-2acf-4162-bca2-dad2d5a097e1"
+               },
+               {
+                  "data" : {
+                     "34cfe9f8-c2c0-11ea-9026-02e7594ce0a0" : "940eb026-43ca-4063-9bae-f1d0c1fc4faa"
+                  },
+                  "nodegroup_id" : "34cfe9f8-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "750ba222-23ab-45b9-9a56-9e2c0b40e4ed",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "0969c509-474f-4fad-926c-dd3227c18b37",
+                  "sortorder" : 0,
+                  "tileid" : "b4cb5168-5989-42a6-961d-e2ee0c11806f"
+               },
+               {
+                  "data" : {
+                     "34cfea44-c2c0-11ea-9026-02e7594ce0a0" : "b90f0774-ace0-4c50-82e7-4ace310f91c2",
+                     "34cfea58-c2c0-11ea-9026-02e7594ce0a0" : "ccf2bdb2-db32-4601-902e-7c8a9c4496a5",
+                     "34cfea62-c2c0-11ea-9026-02e7594ce0a0" : "638e423a-827a-4f5d-9292-6eda084f36fb"
+                  },
+                  "nodegroup_id" : "34cfe9fe-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "596d7b1c-ec2c-4593-b190-541cf0c6a221",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "0969c509-474f-4fad-926c-dd3227c18b37",
+                  "sortorder" : 0,
+                  "tileid" : "16adacec-3b2a-4e7e-9d9b-a8892520ad53"
+               },
+               {
+                  "data" : {},
+                  "nodegroup_id" : "34cfe9b9-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "0969c509-474f-4fad-926c-dd3227c18b37",
+                  "sortorder" : 0,
+                  "tileid" : "bc8abc46-55d8-4234-a242-3539d6aa33bf"
+               },
+               {
+                  "data" : {
+                     "34cfe9f5-c2c0-11ea-9026-02e7594ce0a0" : "65c64194-fc10-4d95-ab38-0a5166d3c6ee"
+                  },
+                  "nodegroup_id" : "34cfe9f5-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "bc8abc46-55d8-4234-a242-3539d6aa33bf",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "0969c509-474f-4fad-926c-dd3227c18b37",
+                  "sortorder" : 0,
+                  "tileid" : "de154a66-5fe0-469b-91d7-b5cc17a16977"
+               },
+               {
+                  "data" : {
+                     "34cfea8e-c2c0-11ea-9026-02e7594ce0a0" : "2479bd11-1c32-434e-be51-40dc5a71eff0"
+                  },
+                  "nodegroup_id" : "34cfe9bf-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "bc8abc46-55d8-4234-a242-3539d6aa33bf",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "0969c509-474f-4fad-926c-dd3227c18b37",
+                  "sortorder" : 0,
+                  "tileid" : "300acf61-3761-4ca7-9148-8c74aefc87b6"
+               },
+               {
+                  "data" : {
+                     "34cfea63-c2c0-11ea-9026-02e7594ce0a0" : "879a8fef-90b3-497e-929d-e9b2de9afa7b",
+                     "34cfea76-c2c0-11ea-9026-02e7594ce0a0" : "1ba58698-43bc-4c39-b29d-4d16e26d1919",
+                     "34cfea7b-c2c0-11ea-9026-02e7594ce0a0" : "e92eb945-b892-4cbc-8951-cc4f96c3ac5d"
+                  },
+                  "nodegroup_id" : "34cfe9fb-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "bc8abc46-55d8-4234-a242-3539d6aa33bf",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "0969c509-474f-4fad-926c-dd3227c18b37",
+                  "sortorder" : 0,
+                  "tileid" : "7f0a9dcc-d3b5-4040-a38c-058014d5f8bf"
+               }
+            ]
+         },
+         {
+            "resourceinstance" : {
+               "graph_id" : "34cfe98e-c2c0-11ea-9026-02e7594ce0a0",
+               "legacyid" : "9222c0a0-44d0-4fa3-831a-7073522802ee",
+               "resourceinstanceid" : "9222c0a0-44d0-4fa3-831a-7073522802ee"
+            },
+            "tiles" : [
+               {
+                  "data" : {
+                     "34cfea4d-c2c0-11ea-9026-02e7594ce0a0" : "00b71e76-4958-42a6-82f8-bc8ea5639064",
+                     "34cfea81-c2c0-11ea-9026-02e7594ce0a0" : "2022-03-17",
+                     "34cfea8a-c2c0-11ea-9026-02e7594ce0a0" : [
+                        {
+                           "inverseOntologyProperty" : "http://www.ics.forth.gr/isl/CRMdig/L33i_is_maker_of",
+                           "ontologyProperty" : "http://www.ics.forth.gr/isl/CRMdig/L33_has_maker",
+                           "resourceId" : "4764f6bd-bc2b-4a60-b095-114fed6158e2",
+                           "resourceXresourceId" : "83c5ecf2-0784-4bb6-9801-5914067746fe"
+                        }
+                     ],
+                     "bcd3a8ae-0404-11eb-a11c-0a5a9a4f6ef7" : true,
+                     "d2e1ab96-cc05-11ea-a292-02e7594ce0a0" : [
+                        "20b1a4e0-97e1-41f7-b519-124a7317266b"
+                     ]
+                  },
+                  "nodegroup_id" : "34cfea2e-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "9222c0a0-44d0-4fa3-831a-7073522802ee",
+                  "sortorder" : 0,
+                  "tileid" : "c1007129-d93c-475b-8027-77c58070ed20"
+               },
+               {
+                  "data" : {},
+                  "nodegroup_id" : "34cfe98f-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "9222c0a0-44d0-4fa3-831a-7073522802ee",
+                  "sortorder" : 0,
+                  "tileid" : "c2af262a-a709-44db-b53d-ca9e3ecf5257"
+               },
+               {
+                  "data" : {
+                     "34cfe9dd-c2c0-11ea-9026-02e7594ce0a0" : "AAA f.30.11",
+                     "34cfea97-c2c0-11ea-9026-02e7594ce0a0" : "4bd93e89-2c7e-4e01-9c42-7119e16092f3"
+                  },
+                  "nodegroup_id" : "34cfe9dd-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "c2af262a-a709-44db-b53d-ca9e3ecf5257",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "9222c0a0-44d0-4fa3-831a-7073522802ee",
+                  "sortorder" : 0,
+                  "tileid" : "f46e446f-0549-4502-a6f6-63c5b5aadcc7"
+               },
+               {
+                  "data" : {
+                     "34cfe9ef-c2c0-11ea-9026-02e7594ce0a0" : "e53c9814-1551-4704-add2-3aec42b9d0e4"
+                  },
+                  "nodegroup_id" : "34cfe9ef-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "c2af262a-a709-44db-b53d-ca9e3ecf5257",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "9222c0a0-44d0-4fa3-831a-7073522802ee",
+                  "sortorder" : 0,
+                  "tileid" : "d558b727-39c0-44d1-bb60-97c2466f7db3"
+               },
+               {
+                  "data" : {
+                     "34cfea77-c2c0-11ea-9026-02e7594ce0a0" : "Damous, à 3 kilomètres environ en amont du bordj de Méchera Gueddara. Ruines romaines, couvrant un monticule que contourne la Tafna (rive droite). Epitaphe latine : C. I. L., VIII, 21797. Sur la rive gauche, à environ 1.200 mètres au N.-E., autres vestiges romains, occupant les flancs d'un mamelon, que couronne une enceinte rectangulaire de 200 mètres sur 100, en pierres sèches. Voir Canal, Bull. d'Oran, 1888, p. 62-64 ; Demaeght, Catalogue du musée d'Oran, p. 54. – MM. Canal et Demaeght pensent que Damous correspond à Calama, tête d'une route allant à Rusuccuru par Ad Rubras (à vingt milles de Calama), Ad Albulas (Aïn Témouchent, à trente milles d'Ad Rubras), etc. : Itinéraire d'Antonin, p. 15. Cette hypothèse est très fragile. La distance de 50 milles entre Calama et Albulae serait sans doute trop forte : il y a seulement 50 kilomètres à vol d'oiseau entre Damous et Aïn Témouchent. D'autre part, si Ptolémée (IV, 2, 6) place Kelama à l'intérieur des terres, ce renseignement paraît être démenti par l'Itinéraire maritime (Itinéraire d'Antonin, p. 250) : Inter Carthaginem Spartariam et Caesaream Mauretaniam : insula Erroris et Tauria... Ad has supra scriptas insulas a Calama de Mauretania Amecas stadia LXXV... Ce texte, quoiqu'il soit peut-être corrompu (voir Muller, édit. de Ptolemée, p. 593), semble pourtant indiquer que Calama était sur la mer, ou du moins à une petite distance du rivage. Galama (sic) est aussi mentionnée par le Géographe de Ravenne (p. 345), dans une liste où les villes dont l'identification a pu être faite sont situées sur le littoral; mais il faut peut-être corriger Galama en Camarata (voir feuille 31, Tlemcen, no 7).",
+                     "34cfea91-c2c0-11ea-9026-02e7594ce0a0" : null
+                  },
+                  "nodegroup_id" : "34cfe9c8-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "c2af262a-a709-44db-b53d-ca9e3ecf5257",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "9222c0a0-44d0-4fa3-831a-7073522802ee",
+                  "sortorder" : 0,
+                  "tileid" : "d7a1ba4e-88f1-487b-be7b-c37c3051db23"
+               },
+               {
+                  "data" : {
+                     "34cfea4a-c2c0-11ea-9026-02e7594ce0a0" : "9e8855a8-b118-4278-a3f5-7c1471f76a1d",
+                     "34cfea7d-c2c0-11ea-9026-02e7594ce0a0" : "bb9d0530-6d11-437d-bff8-643418ac9bfb"
+                  },
+                  "nodegroup_id" : "34cfe9ad-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "c2af262a-a709-44db-b53d-ca9e3ecf5257",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "9222c0a0-44d0-4fa3-831a-7073522802ee",
+                  "sortorder" : 0,
+                  "tileid" : "d83fff62-5073-4a83-a013-f97c8fd81f02"
+               },
+               {
+                  "data" : {
+                     "5348cf67-c2c5-11ea-9026-02e7594ce0a0" : {
+                        "features" : [
+                           {
+                              "geometry" : {
+                                 "coordinates" : [
+                                    -1.55483351735475,
+                                    35.0213124837219
+                                 ],
+                                 "type" : "Point"
+                              },
+                              "properties" : {
+                                 "nodeId" : "5348cf67-c2c5-11ea-9026-02e7594ce0a0"
+                              },
+                              "type" : "Feature"
+                           }
+                        ],
+                        "type" : "FeatureCollection"
+                     },
+                     "5348cf6b-c2c5-11ea-9026-02e7594ce0a0" : "60844684-7b51-4cd1-96d2-7506214e0de6",
+                     "5348cf6c-c2c5-11ea-9026-02e7594ce0a0" : "0483e22a-1f92-44e0-af19-8c85b8922c04",
+                     "ce842cdc-c2c7-11ea-9026-02e7594ce0a0" : [
+                        "3851742b-ccf6-4c55-9ea8-cd33981661c1"
+                     ]
+                  },
+                  "nodegroup_id" : "3080eebe-c2c5-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "9222c0a0-44d0-4fa3-831a-7073522802ee",
+                  "sortorder" : 0,
+                  "tileid" : "61c52abe-b404-47cc-9620-c7d223a8f776"
+               },
+               {
+                  "data" : {
+                     "34cfea43-c2c0-11ea-9026-02e7594ce0a0" : [
+                        "c08b6e33-a244-415b-8bb1-b1f0949fc581"
+                     ],
+                     "34cfea5d-c2c0-11ea-9026-02e7594ce0a0" : [
+                        {
+                           "inverseOntologyProperty" : "http://www.cidoc-crm.org/cidoc-crm/P89i_contains",
+                           "ontologyProperty" : "http://www.cidoc-crm.org/cidoc-crm/P89_falls_within",
+                           "resourceId" : "f3908a07-ea8e-4609-bb24-a7647b455864",
+                           "resourceXresourceId" : "7c18fd15-fd57-47be-b823-2126d1aace8a"
+                        }
+                     ],
+                     "34cfea69-c2c0-11ea-9026-02e7594ce0a0" : "d8919832-8f5a-46f7-b35c-75bf4e388045",
+                     "34cfea73-c2c0-11ea-9026-02e7594ce0a0" : null
+                  },
+                  "nodegroup_id" : "34cfe9b6-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "9222c0a0-44d0-4fa3-831a-7073522802ee",
+                  "sortorder" : 0,
+                  "tileid" : "f1b86f2d-ef97-412f-b1ad-89e0a1a90609"
+               },
+               {
+                  "data" : {},
+                  "nodegroup_id" : "34cfe9b3-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "9222c0a0-44d0-4fa3-831a-7073522802ee",
+                  "sortorder" : 0,
+                  "tileid" : "4ead414b-0b22-47a7-be7a-acfe6c6965f7"
+               },
+               {
+                  "data" : {
+                     "38cff738-c77b-11ea-a292-02e7594ce0a0" : "59439634-1c7e-4a3a-8cb3-c7757231a12a",
+                     "38cff73b-c77b-11ea-a292-02e7594ce0a0" : "2398cca8-df99-48e4-999e-2ed34b3224b4"
+                  },
+                  "nodegroup_id" : "38cff734-c77b-11ea-a292-02e7594ce0a0",
+                  "parenttile_id" : "4ead414b-0b22-47a7-be7a-acfe6c6965f7",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "9222c0a0-44d0-4fa3-831a-7073522802ee",
+                  "sortorder" : 0,
+                  "tileid" : "d12572db-7ad6-4487-aab5-009d0df50a18"
+               },
+               {
+                  "data" : {
+                     "38cff73a-c77b-11ea-a292-02e7594ce0a0" : "206a8456-0d7d-406b-888e-47ae2f3f8009",
+                     "38cff73c-c77b-11ea-a292-02e7594ce0a0" : "8605c02c-4a53-4ca3-b526-7a7ca5cd7366"
+                  },
+                  "nodegroup_id" : "38cff731-c77b-11ea-a292-02e7594ce0a0",
+                  "parenttile_id" : "d12572db-7ad6-4487-aab5-009d0df50a18",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "9222c0a0-44d0-4fa3-831a-7073522802ee",
+                  "sortorder" : 0,
+                  "tileid" : "6a835f6a-98cc-403d-b5ef-79e2298ae010"
+               }
+            ]
+         },
+         {
+            "resourceinstance" : {
+               "graph_id" : "34cfe98e-c2c0-11ea-9026-02e7594ce0a0",
+               "legacyid" : "74b12d69-31d9-465c-bc9d-485e7f0feb4e",
+               "resourceinstanceid" : "74b12d69-31d9-465c-bc9d-485e7f0feb4e"
+            },
+            "tiles" : [
+               {
+                  "data" : {
+                     "34cfea4d-c2c0-11ea-9026-02e7594ce0a0" : "00b71e76-4958-42a6-82f8-bc8ea5639064",
+                     "34cfea81-c2c0-11ea-9026-02e7594ce0a0" : "2022-03-17",
+                     "34cfea8a-c2c0-11ea-9026-02e7594ce0a0" : [
+                        {
+                           "inverseOntologyProperty" : "http://www.ics.forth.gr/isl/CRMdig/L33i_is_maker_of",
+                           "ontologyProperty" : "http://www.ics.forth.gr/isl/CRMdig/L33_has_maker",
+                           "resourceId" : "4764f6bd-bc2b-4a60-b095-114fed6158e2",
+                           "resourceXresourceId" : "7b57928f-1ac2-4bc8-b673-3f7c5ee0abf6"
+                        }
+                     ],
+                     "bcd3a8ae-0404-11eb-a11c-0a5a9a4f6ef7" : true,
+                     "d2e1ab96-cc05-11ea-a292-02e7594ce0a0" : [
+                        "20b1a4e0-97e1-41f7-b519-124a7317266b"
+                     ]
+                  },
+                  "nodegroup_id" : "34cfea2e-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "74b12d69-31d9-465c-bc9d-485e7f0feb4e",
+                  "sortorder" : 0,
+                  "tileid" : "c52aee2f-ee06-423f-bc5b-9d47e8432cdb"
+               },
+               {
+                  "data" : {},
+                  "nodegroup_id" : "34cfe98f-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "74b12d69-31d9-465c-bc9d-485e7f0feb4e",
+                  "sortorder" : 0,
+                  "tileid" : "939f2a41-573e-4fce-b993-20c5130fd80b"
+               },
+               {
+                  "data" : {
+                     "34cfe9dd-c2c0-11ea-9026-02e7594ce0a0" : "AAA f.30.12",
+                     "34cfea97-c2c0-11ea-9026-02e7594ce0a0" : "4bd93e89-2c7e-4e01-9c42-7119e16092f3"
+                  },
+                  "nodegroup_id" : "34cfe9dd-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "939f2a41-573e-4fce-b993-20c5130fd80b",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "74b12d69-31d9-465c-bc9d-485e7f0feb4e",
+                  "sortorder" : 0,
+                  "tileid" : "8be6e97d-d4ca-4c3f-8646-ba8dc42e9e84"
+               },
+               {
+                  "data" : {
+                     "34cfe9ef-c2c0-11ea-9026-02e7594ce0a0" : "e53c9814-1551-4704-add2-3aec42b9d0e4"
+                  },
+                  "nodegroup_id" : "34cfe9ef-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "939f2a41-573e-4fce-b993-20c5130fd80b",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "74b12d69-31d9-465c-bc9d-485e7f0feb4e",
+                  "sortorder" : 0,
+                  "tileid" : "3cdc2023-2c54-442f-8f4e-96a098ce85e8"
+               },
+               {
+                  "data" : {
+                     "34cfea77-c2c0-11ea-9026-02e7594ce0a0" : "Aïn Roumana. Fragment d'une borne milliaire, qui appartenait à une route reliant Numerus Syrorum (Lalla Marnia) à Siga (près de l'embouchure de la Tafna) : Demaeght, Bull. d'Oran, 1893, p. 118.",
+                     "34cfea91-c2c0-11ea-9026-02e7594ce0a0" : null
+                  },
+                  "nodegroup_id" : "34cfe9c8-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "939f2a41-573e-4fce-b993-20c5130fd80b",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "74b12d69-31d9-465c-bc9d-485e7f0feb4e",
+                  "sortorder" : 0,
+                  "tileid" : "7449acee-535c-494c-9174-8a007c479572"
+               },
+               {
+                  "data" : {
+                     "34cfea4a-c2c0-11ea-9026-02e7594ce0a0" : "f69ef14e-1765-4d91-9a9e-86f0ba82c2ac",
+                     "34cfea7d-c2c0-11ea-9026-02e7594ce0a0" : "b649a760-dd27-4e9b-bfd1-f9fa38eec380"
+                  },
+                  "nodegroup_id" : "34cfe9ad-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "939f2a41-573e-4fce-b993-20c5130fd80b",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "74b12d69-31d9-465c-bc9d-485e7f0feb4e",
+                  "sortorder" : 0,
+                  "tileid" : "cb674335-04a4-404a-8ea9-7f8b945ee604"
+               },
+               {
+                  "data" : {
+                     "5348cf67-c2c5-11ea-9026-02e7594ce0a0" : {
+                        "features" : [
+                           {
+                              "geometry" : {
+                                 "coordinates" : [
+                                    -1.5781384714255,
+                                    34.9562445836213
+                                 ],
+                                 "type" : "Point"
+                              },
+                              "properties" : {
+                                 "nodeId" : "5348cf67-c2c5-11ea-9026-02e7594ce0a0"
+                              },
+                              "type" : "Feature"
+                           }
+                        ],
+                        "type" : "FeatureCollection"
+                     },
+                     "5348cf6b-c2c5-11ea-9026-02e7594ce0a0" : "60844684-7b51-4cd1-96d2-7506214e0de6",
+                     "5348cf6c-c2c5-11ea-9026-02e7594ce0a0" : "0483e22a-1f92-44e0-af19-8c85b8922c04",
+                     "ce842cdc-c2c7-11ea-9026-02e7594ce0a0" : [
+                        "3851742b-ccf6-4c55-9ea8-cd33981661c1"
+                     ]
+                  },
+                  "nodegroup_id" : "3080eebe-c2c5-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "74b12d69-31d9-465c-bc9d-485e7f0feb4e",
+                  "sortorder" : 0,
+                  "tileid" : "947cc25e-8c37-4b70-bbd4-2b08794ab83d"
+               },
+               {
+                  "data" : {
+                     "34cfea43-c2c0-11ea-9026-02e7594ce0a0" : [
+                        "c08b6e33-a244-415b-8bb1-b1f0949fc581"
+                     ],
+                     "34cfea5d-c2c0-11ea-9026-02e7594ce0a0" : [
+                        {
+                           "inverseOntologyProperty" : "http://www.cidoc-crm.org/cidoc-crm/P89i_contains",
+                           "ontologyProperty" : "http://www.cidoc-crm.org/cidoc-crm/P89_falls_within",
+                           "resourceId" : "8de6e6cf-7674-45da-98d3-66734b1b5bde",
+                           "resourceXresourceId" : "bf2af04e-167e-43c3-baff-ca64e2276820"
+                        }
+                     ],
+                     "34cfea69-c2c0-11ea-9026-02e7594ce0a0" : "d8919832-8f5a-46f7-b35c-75bf4e388045",
+                     "34cfea73-c2c0-11ea-9026-02e7594ce0a0" : null
+                  },
+                  "nodegroup_id" : "34cfe9b6-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "74b12d69-31d9-465c-bc9d-485e7f0feb4e",
+                  "sortorder" : 0,
+                  "tileid" : "16938ab8-ff89-437b-aab5-684626e0e955"
+               },
+               {
+                  "data" : {},
+                  "nodegroup_id" : "34cfe9b3-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "74b12d69-31d9-465c-bc9d-485e7f0feb4e",
+                  "sortorder" : 0,
+                  "tileid" : "7732d2f6-a6c2-44da-a19d-f167434975c9"
+               },
+               {
+                  "data" : {},
+                  "nodegroup_id" : "34cfea13-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "7732d2f6-a6c2-44da-a19d-f167434975c9",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "74b12d69-31d9-465c-bc9d-485e7f0feb4e",
+                  "sortorder" : 0,
+                  "tileid" : "b2560164-1e8a-4fc5-a73b-3912583933f0"
+               },
+               {
+                  "data" : {
+                     "34cfea59-c2c0-11ea-9026-02e7594ce0a0" : "9454a7b8-07c7-4ac2-a162-d26403d5e520",
+                     "34cfea9a-c2c0-11ea-9026-02e7594ce0a0" : "54e0d028-5d24-4cbf-bafd-1c828fd34ae6"
+                  },
+                  "nodegroup_id" : "34cfe9b0-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "b2560164-1e8a-4fc5-a73b-3912583933f0",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "74b12d69-31d9-465c-bc9d-485e7f0feb4e",
+                  "sortorder" : 0,
+                  "tileid" : "8f246da8-f3dc-4499-9c88-121adf80948a"
+               },
+               {
+                  "data" : {
+                     "34cfea19-c2c0-11ea-9026-02e7594ce0a0" : "1cfd76b4-2e69-48f2-9b12-4b7bd1d37486"
+                  },
+                  "nodegroup_id" : "34cfea19-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "8f246da8-f3dc-4499-9c88-121adf80948a",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "74b12d69-31d9-465c-bc9d-485e7f0feb4e",
+                  "sortorder" : 0,
+                  "tileid" : "23857ca3-9b04-46f6-a8ca-3315e12f7de4"
+               },
+               {
+                  "data" : {
+                     "34cfe9e9-c2c0-11ea-9026-02e7594ce0a0" : "a7adde8b-72ce-4064-a6bf-b7aeb252dcfb"
+                  },
+                  "nodegroup_id" : "34cfe9e9-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "8f246da8-f3dc-4499-9c88-121adf80948a",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "74b12d69-31d9-465c-bc9d-485e7f0feb4e",
+                  "sortorder" : 0,
+                  "tileid" : "b3faece7-fef7-4024-bc9a-46ae277b879c"
+               },
+               {
+                  "data" : {
+                     "34cfe9f8-c2c0-11ea-9026-02e7594ce0a0" : "940eb026-43ca-4063-9bae-f1d0c1fc4faa"
+                  },
+                  "nodegroup_id" : "34cfe9f8-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "8f246da8-f3dc-4499-9c88-121adf80948a",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "74b12d69-31d9-465c-bc9d-485e7f0feb4e",
+                  "sortorder" : 0,
+                  "tileid" : "41dcbbbd-96a8-436e-8a19-a4e577df34b8"
+               },
+               {
+                  "data" : {
+                     "34cfea44-c2c0-11ea-9026-02e7594ce0a0" : "b90f0774-ace0-4c50-82e7-4ace310f91c2",
+                     "34cfea58-c2c0-11ea-9026-02e7594ce0a0" : "ccf2bdb2-db32-4601-902e-7c8a9c4496a5",
+                     "34cfea62-c2c0-11ea-9026-02e7594ce0a0" : "638e423a-827a-4f5d-9292-6eda084f36fb"
+                  },
+                  "nodegroup_id" : "34cfe9fe-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "b2560164-1e8a-4fc5-a73b-3912583933f0",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "74b12d69-31d9-465c-bc9d-485e7f0feb4e",
+                  "sortorder" : 0,
+                  "tileid" : "f5dc817b-a00f-45ab-b68f-4074de18fc3d"
+               }
+            ]
+         },
+         {
+            "resourceinstance" : {
+               "graph_id" : "34cfe98e-c2c0-11ea-9026-02e7594ce0a0",
+               "legacyid" : "eb1b6c21-fd9f-427f-918e-4970e24a0569",
+               "resourceinstanceid" : "eb1b6c21-fd9f-427f-918e-4970e24a0569"
+            },
+            "tiles" : [
+               {
+                  "data" : {
+                     "34cfea4d-c2c0-11ea-9026-02e7594ce0a0" : "00b71e76-4958-42a6-82f8-bc8ea5639064",
+                     "34cfea81-c2c0-11ea-9026-02e7594ce0a0" : "2022-03-17",
+                     "34cfea8a-c2c0-11ea-9026-02e7594ce0a0" : [
+                        {
+                           "inverseOntologyProperty" : "http://www.ics.forth.gr/isl/CRMdig/L33i_is_maker_of",
+                           "ontologyProperty" : "http://www.ics.forth.gr/isl/CRMdig/L33_has_maker",
+                           "resourceId" : "4764f6bd-bc2b-4a60-b095-114fed6158e2",
+                           "resourceXresourceId" : "bcd9f148-4871-4e6b-8f35-dca4ee9c1997"
+                        }
+                     ],
+                     "bcd3a8ae-0404-11eb-a11c-0a5a9a4f6ef7" : true,
+                     "d2e1ab96-cc05-11ea-a292-02e7594ce0a0" : [
+                        "20b1a4e0-97e1-41f7-b519-124a7317266b"
+                     ]
+                  },
+                  "nodegroup_id" : "34cfea2e-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "eb1b6c21-fd9f-427f-918e-4970e24a0569",
+                  "sortorder" : 0,
+                  "tileid" : "643680a6-d617-4bd3-aaad-fc5ee998183f"
+               },
+               {
+                  "data" : {},
+                  "nodegroup_id" : "34cfe98f-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "eb1b6c21-fd9f-427f-918e-4970e24a0569",
+                  "sortorder" : 0,
+                  "tileid" : "0ec2632d-9159-4355-afd4-9c43c1ac3d79"
+               },
+               {
+                  "data" : {
+                     "34cfe9dd-c2c0-11ea-9026-02e7594ce0a0" : "AAA f.30.13",
+                     "34cfea97-c2c0-11ea-9026-02e7594ce0a0" : "4bd93e89-2c7e-4e01-9c42-7119e16092f3"
+                  },
+                  "nodegroup_id" : "34cfe9dd-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "0ec2632d-9159-4355-afd4-9c43c1ac3d79",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "eb1b6c21-fd9f-427f-918e-4970e24a0569",
+                  "sortorder" : 0,
+                  "tileid" : "22223220-547c-4381-9e3f-df946515c741"
+               },
+               {
+                  "data" : {
+                     "34cfe9dd-c2c0-11ea-9026-02e7594ce0a0" : "Hadjerat el Kelaa",
+                     "34cfea97-c2c0-11ea-9026-02e7594ce0a0" : "4bd93e89-2c7e-4e01-9c42-7119e16092f3"
+                  },
+                  "nodegroup_id" : "34cfe9dd-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "0ec2632d-9159-4355-afd4-9c43c1ac3d79",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "eb1b6c21-fd9f-427f-918e-4970e24a0569",
+                  "sortorder" : 0,
+                  "tileid" : "cfbaa566-e683-4785-b42f-40da96dd1797"
+               },
+               {
+                  "data" : {
+                     "34cfe9ef-c2c0-11ea-9026-02e7594ce0a0" : "e53c9814-1551-4704-add2-3aec42b9d0e4"
+                  },
+                  "nodegroup_id" : "34cfe9ef-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "0ec2632d-9159-4355-afd4-9c43c1ac3d79",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "eb1b6c21-fd9f-427f-918e-4970e24a0569",
+                  "sortorder" : 0,
+                  "tileid" : "dc2a1b73-11da-4b7c-901d-47165c8b8942"
+               },
+               {
+                  "data" : {
+                     "34cfea77-c2c0-11ea-9026-02e7594ce0a0" : "Hadjerat el Kelaa. Ruines romaines, probablement sur la même route. Mac-Carthy, Rev. afric., I, p. 172.",
+                     "34cfea91-c2c0-11ea-9026-02e7594ce0a0" : null
+                  },
+                  "nodegroup_id" : "34cfe9c8-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "0ec2632d-9159-4355-afd4-9c43c1ac3d79",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "eb1b6c21-fd9f-427f-918e-4970e24a0569",
+                  "sortorder" : 0,
+                  "tileid" : "dfb97d54-c887-45ad-a8bb-3505c7065f9a"
+               },
+               {
+                  "data" : {
+                     "34cfea4a-c2c0-11ea-9026-02e7594ce0a0" : "9e8855a8-b118-4278-a3f5-7c1471f76a1d",
+                     "34cfea7d-c2c0-11ea-9026-02e7594ce0a0" : "bb9d0530-6d11-437d-bff8-643418ac9bfb"
+                  },
+                  "nodegroup_id" : "34cfe9ad-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "0ec2632d-9159-4355-afd4-9c43c1ac3d79",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "eb1b6c21-fd9f-427f-918e-4970e24a0569",
+                  "sortorder" : 0,
+                  "tileid" : "98418611-1e35-4a8a-aee8-9e91ce447c8b"
+               },
+               {
+                  "data" : {
+                     "5348cf67-c2c5-11ea-9026-02e7594ce0a0" : {
+                        "features" : [
+                           {
+                              "geometry" : {
+                                 "coordinates" : [
+                                    -1.58770188437678,
+                                    34.9321079856863
+                                 ],
+                                 "type" : "Point"
+                              },
+                              "properties" : {
+                                 "nodeId" : "5348cf67-c2c5-11ea-9026-02e7594ce0a0"
+                              },
+                              "type" : "Feature"
+                           }
+                        ],
+                        "type" : "FeatureCollection"
+                     },
+                     "5348cf6b-c2c5-11ea-9026-02e7594ce0a0" : "7b4b0a2f-4f25-476f-954a-831753dec6fc",
+                     "5348cf6c-c2c5-11ea-9026-02e7594ce0a0" : "d83ddf49-dedc-4c16-8276-e5a0a398682d",
+                     "ce842cdc-c2c7-11ea-9026-02e7594ce0a0" : [
+                        "3851742b-ccf6-4c55-9ea8-cd33981661c1"
+                     ]
+                  },
+                  "nodegroup_id" : "3080eebe-c2c5-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "eb1b6c21-fd9f-427f-918e-4970e24a0569",
+                  "sortorder" : 0,
+                  "tileid" : "c9f25e94-01ea-47b2-921d-eab084eaca0a"
+               },
+               {
+                  "data" : {
+                     "34cfea43-c2c0-11ea-9026-02e7594ce0a0" : [
+                        "c08b6e33-a244-415b-8bb1-b1f0949fc581"
+                     ],
+                     "34cfea5d-c2c0-11ea-9026-02e7594ce0a0" : [
+                        {
+                           "inverseOntologyProperty" : "http://www.cidoc-crm.org/cidoc-crm/P89i_contains",
+                           "ontologyProperty" : "http://www.cidoc-crm.org/cidoc-crm/P89_falls_within",
+                           "resourceId" : "8de6e6cf-7674-45da-98d3-66734b1b5bde",
+                           "resourceXresourceId" : "f1bfacd0-ba71-4eef-a600-c912e2ac9c24"
+                        }
+                     ],
+                     "34cfea69-c2c0-11ea-9026-02e7594ce0a0" : "55368bb3-d79d-46e7-97f5-a08f80b54e97",
+                     "34cfea73-c2c0-11ea-9026-02e7594ce0a0" : null
+                  },
+                  "nodegroup_id" : "34cfe9b6-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "eb1b6c21-fd9f-427f-918e-4970e24a0569",
+                  "sortorder" : 0,
+                  "tileid" : "af81c91a-ba3a-40da-840c-2f38761fae62"
+               },
+               {
+                  "data" : {},
+                  "nodegroup_id" : "34cfe9b3-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "eb1b6c21-fd9f-427f-918e-4970e24a0569",
+                  "sortorder" : 0,
+                  "tileid" : "9af159ae-922e-41cb-904f-04f9cb18351c"
+               },
+               {
+                  "data" : {
+                     "34cfea51-c2c0-11ea-9026-02e7594ce0a0" : "5334a261-c0e7-4708-8354-b3bdfb9d2252"
+                  },
+                  "nodegroup_id" : "34cfe9a4-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "9af159ae-922e-41cb-904f-04f9cb18351c",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "eb1b6c21-fd9f-427f-918e-4970e24a0569",
+                  "sortorder" : 0,
+                  "tileid" : "30217327-eca9-47cc-8d77-95bfd3d2242a"
+               },
+               {
+                  "data" : {
+                     "34cfe9e6-c2c0-11ea-9026-02e7594ce0a0" : "f350e1ee-1b0e-4c74-88ec-b1daee34a304"
+                  },
+                  "nodegroup_id" : "34cfe9e6-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "9af159ae-922e-41cb-904f-04f9cb18351c",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "eb1b6c21-fd9f-427f-918e-4970e24a0569",
+                  "sortorder" : 0,
+                  "tileid" : "5dad4b4d-cc4c-4070-8301-81adff0d20f4"
+               },
+               {
+                  "data" : {
+                     "38cff738-c77b-11ea-a292-02e7594ce0a0" : "59439634-1c7e-4a3a-8cb3-c7757231a12a",
+                     "38cff73b-c77b-11ea-a292-02e7594ce0a0" : "2398cca8-df99-48e4-999e-2ed34b3224b4"
+                  },
+                  "nodegroup_id" : "38cff734-c77b-11ea-a292-02e7594ce0a0",
+                  "parenttile_id" : "9af159ae-922e-41cb-904f-04f9cb18351c",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "eb1b6c21-fd9f-427f-918e-4970e24a0569",
+                  "sortorder" : 0,
+                  "tileid" : "59926ac1-d2ca-4a5e-b11a-a4527420c2b5"
+               },
+               {
+                  "data" : {
+                     "38cff73a-c77b-11ea-a292-02e7594ce0a0" : "206a8456-0d7d-406b-888e-47ae2f3f8009",
+                     "38cff73c-c77b-11ea-a292-02e7594ce0a0" : "8605c02c-4a53-4ca3-b526-7a7ca5cd7366"
+                  },
+                  "nodegroup_id" : "38cff731-c77b-11ea-a292-02e7594ce0a0",
+                  "parenttile_id" : "59926ac1-d2ca-4a5e-b11a-a4527420c2b5",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "eb1b6c21-fd9f-427f-918e-4970e24a0569",
+                  "sortorder" : 0,
+                  "tileid" : "15248786-15f7-40c5-9254-999ab634fc18"
+               }
+            ]
+         },
+         {
+            "resourceinstance" : {
+               "graph_id" : "34cfe98e-c2c0-11ea-9026-02e7594ce0a0",
+               "legacyid" : "14f60924-5818-4706-a081-3b95aa7fb00f",
+               "resourceinstanceid" : "14f60924-5818-4706-a081-3b95aa7fb00f"
+            },
+            "tiles" : [
+               {
+                  "data" : {
+                     "34cfea4d-c2c0-11ea-9026-02e7594ce0a0" : "00b71e76-4958-42a6-82f8-bc8ea5639064",
+                     "34cfea81-c2c0-11ea-9026-02e7594ce0a0" : "2022-03-17",
+                     "34cfea8a-c2c0-11ea-9026-02e7594ce0a0" : [
+                        {
+                           "inverseOntologyProperty" : "http://www.ics.forth.gr/isl/CRMdig/L33i_is_maker_of",
+                           "ontologyProperty" : "http://www.ics.forth.gr/isl/CRMdig/L33_has_maker",
+                           "resourceId" : "4764f6bd-bc2b-4a60-b095-114fed6158e2",
+                           "resourceXresourceId" : "88eda381-d8da-4e71-8f41-307661d92951"
+                        }
+                     ],
+                     "bcd3a8ae-0404-11eb-a11c-0a5a9a4f6ef7" : true,
+                     "d2e1ab96-cc05-11ea-a292-02e7594ce0a0" : [
+                        "20b1a4e0-97e1-41f7-b519-124a7317266b"
+                     ]
+                  },
+                  "nodegroup_id" : "34cfea2e-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "14f60924-5818-4706-a081-3b95aa7fb00f",
+                  "sortorder" : 0,
+                  "tileid" : "408e0e43-1808-496e-97dd-16cfc436257a"
+               },
+               {
+                  "data" : {},
+                  "nodegroup_id" : "34cfe98f-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "14f60924-5818-4706-a081-3b95aa7fb00f",
+                  "sortorder" : 0,
+                  "tileid" : "a760b0b1-87a3-48f9-ac00-27476d3dd65b"
+               },
+               {
+                  "data" : {
+                     "34cfe9dd-c2c0-11ea-9026-02e7594ce0a0" : "AAA f.30.14",
+                     "34cfea97-c2c0-11ea-9026-02e7594ce0a0" : "4bd93e89-2c7e-4e01-9c42-7119e16092f3"
+                  },
+                  "nodegroup_id" : "34cfe9dd-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "a760b0b1-87a3-48f9-ac00-27476d3dd65b",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "14f60924-5818-4706-a081-3b95aa7fb00f",
+                  "sortorder" : 0,
+                  "tileid" : "68bc1be5-8964-40db-87cc-4b40f82ee4a8"
+               },
+               {
+                  "data" : {
+                     "34cfe9dd-c2c0-11ea-9026-02e7594ce0a0" : "Hammam bou Ghara",
+                     "34cfea97-c2c0-11ea-9026-02e7594ce0a0" : "cdca3d69-5f58-4084-be0c-7bac4c41c553"
+                  },
+                  "nodegroup_id" : "34cfe9dd-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "a760b0b1-87a3-48f9-ac00-27476d3dd65b",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "14f60924-5818-4706-a081-3b95aa7fb00f",
+                  "sortorder" : 0,
+                  "tileid" : "e3b2e9d4-ac30-452c-a74f-0d6a1cc285c6"
+               },
+               {
+                  "data" : {
+                     "34cfe9ef-c2c0-11ea-9026-02e7594ce0a0" : "e53c9814-1551-4704-add2-3aec42b9d0e4"
+                  },
+                  "nodegroup_id" : "34cfe9ef-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "a760b0b1-87a3-48f9-ac00-27476d3dd65b",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "14f60924-5818-4706-a081-3b95aa7fb00f",
+                  "sortorder" : 0,
+                  "tileid" : "98b1837f-cc48-4cb7-8e10-a7ac1504535b"
+               },
+               {
+                  "data" : {
+                     "34cfea77-c2c0-11ea-9026-02e7594ce0a0" : "Hammam bou Ghara. Borne de la même route, portant le chiffre de milles VIIII (à partir de Numerus Syrorum) : Derrien, Bull. d'Oran, 1898, p. 87. Autre borne : Ephemeris epigraphica, V, 1163.",
+                     "34cfea91-c2c0-11ea-9026-02e7594ce0a0" : null
+                  },
+                  "nodegroup_id" : "34cfe9c8-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "a760b0b1-87a3-48f9-ac00-27476d3dd65b",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "14f60924-5818-4706-a081-3b95aa7fb00f",
+                  "sortorder" : 0,
+                  "tileid" : "4cdb234a-d823-4578-b528-8c8ccdc269b1"
+               },
+               {
+                  "data" : {
+                     "34cfea4a-c2c0-11ea-9026-02e7594ce0a0" : "f69ef14e-1765-4d91-9a9e-86f0ba82c2ac",
+                     "34cfea7d-c2c0-11ea-9026-02e7594ce0a0" : "b649a760-dd27-4e9b-bfd1-f9fa38eec380"
+                  },
+                  "nodegroup_id" : "34cfe9ad-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "a760b0b1-87a3-48f9-ac00-27476d3dd65b",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "14f60924-5818-4706-a081-3b95aa7fb00f",
+                  "sortorder" : 0,
+                  "tileid" : "eb4d1936-57c6-4c07-9eac-3d23e471d418"
+               },
+               {
+                  "data" : {
+                     "5348cf67-c2c5-11ea-9026-02e7594ce0a0" : {
+                        "features" : [
+                           {
+                              "geometry" : {
+                                 "coordinates" : [
+                                    -1.64940192312435,
+                                    34.8964942988383
+                                 ],
+                                 "type" : "Point"
+                              },
+                              "properties" : {
+                                 "nodeId" : "5348cf67-c2c5-11ea-9026-02e7594ce0a0"
+                              },
+                              "type" : "Feature"
+                           }
+                        ],
+                        "type" : "FeatureCollection"
+                     },
+                     "5348cf6b-c2c5-11ea-9026-02e7594ce0a0" : "60844684-7b51-4cd1-96d2-7506214e0de6",
+                     "5348cf6c-c2c5-11ea-9026-02e7594ce0a0" : "0483e22a-1f92-44e0-af19-8c85b8922c04",
+                     "ce842cdc-c2c7-11ea-9026-02e7594ce0a0" : [
+                        "3851742b-ccf6-4c55-9ea8-cd33981661c1"
+                     ]
+                  },
+                  "nodegroup_id" : "3080eebe-c2c5-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "14f60924-5818-4706-a081-3b95aa7fb00f",
+                  "sortorder" : 0,
+                  "tileid" : "e5f81bc9-1142-4845-a2de-31a77deb3406"
+               },
+               {
+                  "data" : {
+                     "34cfea43-c2c0-11ea-9026-02e7594ce0a0" : [
+                        "c08b6e33-a244-415b-8bb1-b1f0949fc581"
+                     ],
+                     "34cfea5d-c2c0-11ea-9026-02e7594ce0a0" : [
+                        {
+                           "inverseOntologyProperty" : "http://www.cidoc-crm.org/cidoc-crm/P89i_contains",
+                           "ontologyProperty" : "http://www.cidoc-crm.org/cidoc-crm/P89_falls_within",
+                           "resourceId" : "8de6e6cf-7674-45da-98d3-66734b1b5bde",
+                           "resourceXresourceId" : "754f56be-5747-4877-98ae-1d328cdc027a"
+                        }
+                     ],
+                     "34cfea69-c2c0-11ea-9026-02e7594ce0a0" : "d8919832-8f5a-46f7-b35c-75bf4e388045",
+                     "34cfea73-c2c0-11ea-9026-02e7594ce0a0" : null
+                  },
+                  "nodegroup_id" : "34cfe9b6-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "14f60924-5818-4706-a081-3b95aa7fb00f",
+                  "sortorder" : 0,
+                  "tileid" : "2a46245b-c2cf-48a7-992f-56b373ab4f48"
+               },
+               {
+                  "data" : {},
+                  "nodegroup_id" : "34cfe9b3-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "14f60924-5818-4706-a081-3b95aa7fb00f",
+                  "sortorder" : 0,
+                  "tileid" : "527c656a-7852-4863-bd54-222bcc26cf89"
+               },
+               {
+                  "data" : {
+                     "34cfea51-c2c0-11ea-9026-02e7594ce0a0" : "672d9fb7-1b69-40f4-97f1-3cb4c26022c8"
+                  },
+                  "nodegroup_id" : "34cfe9a4-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "527c656a-7852-4863-bd54-222bcc26cf89",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "14f60924-5818-4706-a081-3b95aa7fb00f",
+                  "sortorder" : 0,
+                  "tileid" : "f728ac1f-036c-4bc0-bb88-64573d2e2c2a"
+               },
+               {
+                  "data" : {
+                     "34cfe9e6-c2c0-11ea-9026-02e7594ce0a0" : "486d3ede-93eb-4bcb-9434-d91fa8767b87"
+                  },
+                  "nodegroup_id" : "34cfe9e6-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "527c656a-7852-4863-bd54-222bcc26cf89",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "14f60924-5818-4706-a081-3b95aa7fb00f",
+                  "sortorder" : 0,
+                  "tileid" : "8e5cfa0d-7c98-4109-a952-20f345956670"
+               },
+               {
+                  "data" : {
+                     "38cff738-c77b-11ea-a292-02e7594ce0a0" : "c446e531-2698-45c7-813e-4109c7d8ede4",
+                     "38cff73b-c77b-11ea-a292-02e7594ce0a0" : "70268111-a54b-4e8d-a642-5ef1d71378ba"
+                  },
+                  "nodegroup_id" : "38cff734-c77b-11ea-a292-02e7594ce0a0",
+                  "parenttile_id" : "527c656a-7852-4863-bd54-222bcc26cf89",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "14f60924-5818-4706-a081-3b95aa7fb00f",
+                  "sortorder" : 0,
+                  "tileid" : "11a1f36a-c02f-471b-b017-069f68ee3de5"
+               },
+               {
+                  "data" : {},
+                  "nodegroup_id" : "34cfea13-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "527c656a-7852-4863-bd54-222bcc26cf89",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "14f60924-5818-4706-a081-3b95aa7fb00f",
+                  "sortorder" : 0,
+                  "tileid" : "3e7ed62a-e6ed-4018-96c8-4bae8da9043d"
+               },
+               {
+                  "data" : {
+                     "34cfea59-c2c0-11ea-9026-02e7594ce0a0" : "9454a7b8-07c7-4ac2-a162-d26403d5e520",
+                     "34cfea9a-c2c0-11ea-9026-02e7594ce0a0" : "54e0d028-5d24-4cbf-bafd-1c828fd34ae6"
+                  },
+                  "nodegroup_id" : "34cfe9b0-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "3e7ed62a-e6ed-4018-96c8-4bae8da9043d",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "14f60924-5818-4706-a081-3b95aa7fb00f",
+                  "sortorder" : 0,
+                  "tileid" : "f31f61de-39c4-4c1f-81a3-c8056f7cc0d2"
+               },
+               {
+                  "data" : {
+                     "34cfea19-c2c0-11ea-9026-02e7594ce0a0" : "1cfd76b4-2e69-48f2-9b12-4b7bd1d37486"
+                  },
+                  "nodegroup_id" : "34cfea19-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "f31f61de-39c4-4c1f-81a3-c8056f7cc0d2",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "14f60924-5818-4706-a081-3b95aa7fb00f",
+                  "sortorder" : 0,
+                  "tileid" : "8cc53e87-1a80-4d7d-a988-6da3b92ee04e"
+               },
+               {
+                  "data" : {
+                     "34cfe9e9-c2c0-11ea-9026-02e7594ce0a0" : "a7adde8b-72ce-4064-a6bf-b7aeb252dcfb"
+                  },
+                  "nodegroup_id" : "34cfe9e9-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "f31f61de-39c4-4c1f-81a3-c8056f7cc0d2",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "14f60924-5818-4706-a081-3b95aa7fb00f",
+                  "sortorder" : 0,
+                  "tileid" : "c698f3c3-a203-430b-8a95-7fb02feafbfe"
+               },
+               {
+                  "data" : {
+                     "34cfe9f8-c2c0-11ea-9026-02e7594ce0a0" : "940eb026-43ca-4063-9bae-f1d0c1fc4faa"
+                  },
+                  "nodegroup_id" : "34cfe9f8-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "f31f61de-39c4-4c1f-81a3-c8056f7cc0d2",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "14f60924-5818-4706-a081-3b95aa7fb00f",
+                  "sortorder" : 0,
+                  "tileid" : "299334b8-d485-4497-a156-7ff22cd84c56"
+               },
+               {
+                  "data" : {
+                     "34cfea44-c2c0-11ea-9026-02e7594ce0a0" : "b90f0774-ace0-4c50-82e7-4ace310f91c2",
+                     "34cfea58-c2c0-11ea-9026-02e7594ce0a0" : "ccf2bdb2-db32-4601-902e-7c8a9c4496a5",
+                     "34cfea62-c2c0-11ea-9026-02e7594ce0a0" : "638e423a-827a-4f5d-9292-6eda084f36fb"
+                  },
+                  "nodegroup_id" : "34cfe9fe-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "3e7ed62a-e6ed-4018-96c8-4bae8da9043d",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "14f60924-5818-4706-a081-3b95aa7fb00f",
+                  "sortorder" : 0,
+                  "tileid" : "4a403316-d02b-4cad-9017-56fb21068927"
+               },
+               {
+                  "data" : {},
+                  "nodegroup_id" : "34cfe9b9-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "14f60924-5818-4706-a081-3b95aa7fb00f",
+                  "sortorder" : 0,
+                  "tileid" : "dffd46af-7f2c-4e0a-8ae5-8f79395eb82c"
+               },
+               {
+                  "data" : {
+                     "34cfe9f5-c2c0-11ea-9026-02e7594ce0a0" : "fcd826ea-7c9e-4e14-9bf4-f127ceb9919c"
+                  },
+                  "nodegroup_id" : "34cfe9f5-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "dffd46af-7f2c-4e0a-8ae5-8f79395eb82c",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "14f60924-5818-4706-a081-3b95aa7fb00f",
+                  "sortorder" : 0,
+                  "tileid" : "d0daeeee-3a8f-4395-80e4-2d16834a0922"
+               },
+               {
+                  "data" : {
+                     "34cfea8e-c2c0-11ea-9026-02e7594ce0a0" : "2479bd11-1c32-434e-be51-40dc5a71eff0"
+                  },
+                  "nodegroup_id" : "34cfe9bf-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "dffd46af-7f2c-4e0a-8ae5-8f79395eb82c",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "14f60924-5818-4706-a081-3b95aa7fb00f",
+                  "sortorder" : 0,
+                  "tileid" : "c212816b-ad7b-4778-95fb-76595756161b"
+               },
+               {
+                  "data" : {
+                     "34cfea63-c2c0-11ea-9026-02e7594ce0a0" : "879a8fef-90b3-497e-929d-e9b2de9afa7b",
+                     "34cfea76-c2c0-11ea-9026-02e7594ce0a0" : "1ba58698-43bc-4c39-b29d-4d16e26d1919",
+                     "34cfea7b-c2c0-11ea-9026-02e7594ce0a0" : "e92eb945-b892-4cbc-8951-cc4f96c3ac5d"
+                  },
+                  "nodegroup_id" : "34cfe9fb-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "dffd46af-7f2c-4e0a-8ae5-8f79395eb82c",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "14f60924-5818-4706-a081-3b95aa7fb00f",
+                  "sortorder" : 0,
+                  "tileid" : "e607d5e9-4805-4b9c-a419-a6181c01461e"
+               }
+            ]
+         },
+         {
+            "resourceinstance" : {
+               "graph_id" : "34cfe98e-c2c0-11ea-9026-02e7594ce0a0",
+               "legacyid" : "e57e61f7-df7f-4fd0-9757-002616601b12",
+               "resourceinstanceid" : "e57e61f7-df7f-4fd0-9757-002616601b12"
+            },
+            "tiles" : [
+               {
+                  "data" : {
+                     "34cfea4d-c2c0-11ea-9026-02e7594ce0a0" : "00b71e76-4958-42a6-82f8-bc8ea5639064",
+                     "34cfea81-c2c0-11ea-9026-02e7594ce0a0" : "2022-03-17",
+                     "34cfea8a-c2c0-11ea-9026-02e7594ce0a0" : [
+                        {
+                           "inverseOntologyProperty" : "http://www.ics.forth.gr/isl/CRMdig/L33i_is_maker_of",
+                           "ontologyProperty" : "http://www.ics.forth.gr/isl/CRMdig/L33_has_maker",
+                           "resourceId" : "4764f6bd-bc2b-4a60-b095-114fed6158e2",
+                           "resourceXresourceId" : "7c2ff7b4-b20d-4bd3-b773-4a3bd0171366"
+                        }
+                     ],
+                     "bcd3a8ae-0404-11eb-a11c-0a5a9a4f6ef7" : true,
+                     "d2e1ab96-cc05-11ea-a292-02e7594ce0a0" : [
+                        "20b1a4e0-97e1-41f7-b519-124a7317266b"
+                     ]
+                  },
+                  "nodegroup_id" : "34cfea2e-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "e57e61f7-df7f-4fd0-9757-002616601b12",
+                  "sortorder" : 0,
+                  "tileid" : "59c88dcf-2b19-4a76-9c47-4c74bcb9e6a7"
+               },
+               {
+                  "data" : {},
+                  "nodegroup_id" : "34cfe98f-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "e57e61f7-df7f-4fd0-9757-002616601b12",
+                  "sortorder" : 0,
+                  "tileid" : "19bfecae-a592-48ba-aa77-3a024720cde6"
+               },
+               {
+                  "data" : {
+                     "34cfe9dd-c2c0-11ea-9026-02e7594ce0a0" : "AAA f.30.15",
+                     "34cfea97-c2c0-11ea-9026-02e7594ce0a0" : "4bd93e89-2c7e-4e01-9c42-7119e16092f3"
+                  },
+                  "nodegroup_id" : "34cfe9dd-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "19bfecae-a592-48ba-aa77-3a024720cde6",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "e57e61f7-df7f-4fd0-9757-002616601b12",
+                  "sortorder" : 0,
+                  "tileid" : "037d256f-6206-4e16-babe-188f37183ccb"
+               },
+               {
+                  "data" : {
+                     "34cfe9dd-c2c0-11ea-9026-02e7594ce0a0" : "Tagraret",
+                     "34cfea97-c2c0-11ea-9026-02e7594ce0a0" : "cdca3d69-5f58-4084-be0c-7bac4c41c553"
+                  },
+                  "nodegroup_id" : "34cfe9dd-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "19bfecae-a592-48ba-aa77-3a024720cde6",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "e57e61f7-df7f-4fd0-9757-002616601b12",
+                  "sortorder" : 0,
+                  "tileid" : "ce4d6b9a-a4dc-4739-b116-08e0d044c183"
+               },
+               {
+                  "data" : {
+                     "34cfe9ef-c2c0-11ea-9026-02e7594ce0a0" : "e53c9814-1551-4704-add2-3aec42b9d0e4"
+                  },
+                  "nodegroup_id" : "34cfe9ef-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "19bfecae-a592-48ba-aa77-3a024720cde6",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "e57e61f7-df7f-4fd0-9757-002616601b12",
+                  "sortorder" : 0,
+                  "tileid" : "4de5250b-cd91-4535-9437-8dcf2b8fc233"
+               },
+               {
+                  "data" : {
+                     "34cfea77-c2c0-11ea-9026-02e7594ce0a0" : "Tagraret, à 2 kilomètres à l'O. du bordj de Chahba. Ruines romaines (Carte au 50.000e).",
+                     "34cfea91-c2c0-11ea-9026-02e7594ce0a0" : null
+                  },
+                  "nodegroup_id" : "34cfe9c8-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "19bfecae-a592-48ba-aa77-3a024720cde6",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "e57e61f7-df7f-4fd0-9757-002616601b12",
+                  "sortorder" : 0,
+                  "tileid" : "ffd54169-95a7-40ed-924f-a5a420859fab"
+               },
+               {
+                  "data" : {
+                     "34cfea4a-c2c0-11ea-9026-02e7594ce0a0" : "9e8855a8-b118-4278-a3f5-7c1471f76a1d",
+                     "34cfea7d-c2c0-11ea-9026-02e7594ce0a0" : "bb9d0530-6d11-437d-bff8-643418ac9bfb"
+                  },
+                  "nodegroup_id" : "34cfe9ad-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "19bfecae-a592-48ba-aa77-3a024720cde6",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "e57e61f7-df7f-4fd0-9757-002616601b12",
+                  "sortorder" : 0,
+                  "tileid" : "69144025-797f-49f9-90d9-1ed126205b07"
+               },
+               {
+                  "data" : {
+                     "5348cf67-c2c5-11ea-9026-02e7594ce0a0" : {
+                        "features" : [
+                           {
+                              "geometry" : {
+                                 "coordinates" : [
+                                    -1.67891674964563,
+                                    34.8770128080041
+                                 ],
+                                 "type" : "Point"
+                              },
+                              "properties" : {
+                                 "nodeId" : "5348cf67-c2c5-11ea-9026-02e7594ce0a0"
+                              },
+                              "type" : "Feature"
+                           }
+                        ],
+                        "type" : "FeatureCollection"
+                     },
+                     "5348cf6b-c2c5-11ea-9026-02e7594ce0a0" : "6cb6d372-9f4a-45c0-bb17-752352e5b83f",
+                     "5348cf6c-c2c5-11ea-9026-02e7594ce0a0" : "d83ddf49-dedc-4c16-8276-e5a0a398682d",
+                     "ce842cdc-c2c7-11ea-9026-02e7594ce0a0" : [
+                        "3851742b-ccf6-4c55-9ea8-cd33981661c1"
+                     ]
+                  },
+                  "nodegroup_id" : "3080eebe-c2c5-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "e57e61f7-df7f-4fd0-9757-002616601b12",
+                  "sortorder" : 0,
+                  "tileid" : "e16e478d-d054-445e-a925-ad7b210f3c8b"
+               },
+               {
+                  "data" : {
+                     "34cfea43-c2c0-11ea-9026-02e7594ce0a0" : [
+                        "c08b6e33-a244-415b-8bb1-b1f0949fc581"
+                     ],
+                     "34cfea5d-c2c0-11ea-9026-02e7594ce0a0" : [
+                        {
+                           "inverseOntologyProperty" : "http://www.cidoc-crm.org/cidoc-crm/P89i_contains",
+                           "ontologyProperty" : "http://www.cidoc-crm.org/cidoc-crm/P89_falls_within",
+                           "resourceId" : "8de6e6cf-7674-45da-98d3-66734b1b5bde",
+                           "resourceXresourceId" : "0cfb9ef3-9323-4319-86a0-20305e0bfb74"
+                        }
+                     ],
+                     "34cfea69-c2c0-11ea-9026-02e7594ce0a0" : "e8dbe97d-9112-4ab2-982e-bbf17befa5e3",
+                     "34cfea73-c2c0-11ea-9026-02e7594ce0a0" : null
+                  },
+                  "nodegroup_id" : "34cfe9b6-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "e57e61f7-df7f-4fd0-9757-002616601b12",
+                  "sortorder" : 0,
+                  "tileid" : "efec19d6-09a4-4beb-8c65-2bcf9ec0e672"
+               },
+               {
+                  "data" : {},
+                  "nodegroup_id" : "34cfe9b3-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "e57e61f7-df7f-4fd0-9757-002616601b12",
+                  "sortorder" : 0,
+                  "tileid" : "4762010c-82af-4242-9e99-4625f1339c88"
+               },
+               {
+                  "data" : {
+                     "34cfea51-c2c0-11ea-9026-02e7594ce0a0" : "5334a261-c0e7-4708-8354-b3bdfb9d2252"
+                  },
+                  "nodegroup_id" : "34cfe9a4-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "4762010c-82af-4242-9e99-4625f1339c88",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "e57e61f7-df7f-4fd0-9757-002616601b12",
+                  "sortorder" : 0,
+                  "tileid" : "322cad7c-82f0-4a41-94b4-c90925469615"
+               },
+               {
+                  "data" : {
+                     "34cfe9e6-c2c0-11ea-9026-02e7594ce0a0" : "f350e1ee-1b0e-4c74-88ec-b1daee34a304"
+                  },
+                  "nodegroup_id" : "34cfe9e6-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "4762010c-82af-4242-9e99-4625f1339c88",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "e57e61f7-df7f-4fd0-9757-002616601b12",
+                  "sortorder" : 0,
+                  "tileid" : "47032082-f8a5-4ef9-aa30-04b5eb8ac46e"
+               },
+               {
+                  "data" : {
+                     "38cff738-c77b-11ea-a292-02e7594ce0a0" : "59439634-1c7e-4a3a-8cb3-c7757231a12a",
+                     "38cff73b-c77b-11ea-a292-02e7594ce0a0" : "70268111-a54b-4e8d-a642-5ef1d71378ba"
+                  },
+                  "nodegroup_id" : "38cff734-c77b-11ea-a292-02e7594ce0a0",
+                  "parenttile_id" : "4762010c-82af-4242-9e99-4625f1339c88",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "e57e61f7-df7f-4fd0-9757-002616601b12",
+                  "sortorder" : 0,
+                  "tileid" : "49aa49a0-a5ba-47f7-9903-4d32ea7440b8"
+               },
+               {
+                  "data" : {
+                     "38cff73a-c77b-11ea-a292-02e7594ce0a0" : "206a8456-0d7d-406b-888e-47ae2f3f8009",
+                     "38cff73c-c77b-11ea-a292-02e7594ce0a0" : "8605c02c-4a53-4ca3-b526-7a7ca5cd7366"
+                  },
+                  "nodegroup_id" : "38cff731-c77b-11ea-a292-02e7594ce0a0",
+                  "parenttile_id" : "49aa49a0-a5ba-47f7-9903-4d32ea7440b8",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "e57e61f7-df7f-4fd0-9757-002616601b12",
+                  "sortorder" : 0,
+                  "tileid" : "6cbabd44-1b1a-447f-9665-7873dcb1cc8a"
+               },
+               {
+                  "data" : {},
+                  "nodegroup_id" : "34cfea13-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "4762010c-82af-4242-9e99-4625f1339c88",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "e57e61f7-df7f-4fd0-9757-002616601b12",
+                  "sortorder" : 0,
+                  "tileid" : "3bbd0875-e67d-4320-9229-da0c6d83a0bc"
+               },
+               {
+                  "data" : {
+                     "34cfea59-c2c0-11ea-9026-02e7594ce0a0" : "9454a7b8-07c7-4ac2-a162-d26403d5e520",
+                     "34cfea9a-c2c0-11ea-9026-02e7594ce0a0" : "54e0d028-5d24-4cbf-bafd-1c828fd34ae6"
+                  },
+                  "nodegroup_id" : "34cfe9b0-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "3bbd0875-e67d-4320-9229-da0c6d83a0bc",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "e57e61f7-df7f-4fd0-9757-002616601b12",
+                  "sortorder" : 0,
+                  "tileid" : "307ca45c-54e3-4ad6-8fca-e966bf401a62"
+               },
+               {
+                  "data" : {
+                     "34cfea19-c2c0-11ea-9026-02e7594ce0a0" : "1cfd76b4-2e69-48f2-9b12-4b7bd1d37486"
+                  },
+                  "nodegroup_id" : "34cfea19-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "307ca45c-54e3-4ad6-8fca-e966bf401a62",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "e57e61f7-df7f-4fd0-9757-002616601b12",
+                  "sortorder" : 0,
+                  "tileid" : "ae1d7d31-a573-4f89-b576-36eb731ff3b8"
+               },
+               {
+                  "data" : {
+                     "34cfe9e9-c2c0-11ea-9026-02e7594ce0a0" : "a7adde8b-72ce-4064-a6bf-b7aeb252dcfb"
+                  },
+                  "nodegroup_id" : "34cfe9e9-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "307ca45c-54e3-4ad6-8fca-e966bf401a62",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "e57e61f7-df7f-4fd0-9757-002616601b12",
+                  "sortorder" : 0,
+                  "tileid" : "16d6ec82-8748-4b32-b261-aa2179571bb9"
+               },
+               {
+                  "data" : {
+                     "34cfe9f8-c2c0-11ea-9026-02e7594ce0a0" : "940eb026-43ca-4063-9bae-f1d0c1fc4faa"
+                  },
+                  "nodegroup_id" : "34cfe9f8-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "307ca45c-54e3-4ad6-8fca-e966bf401a62",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "e57e61f7-df7f-4fd0-9757-002616601b12",
+                  "sortorder" : 0,
+                  "tileid" : "dd0e3b5e-bdb3-4021-96f5-7e4ebae87801"
+               },
+               {
+                  "data" : {
+                     "34cfea44-c2c0-11ea-9026-02e7594ce0a0" : "b90f0774-ace0-4c50-82e7-4ace310f91c2",
+                     "34cfea58-c2c0-11ea-9026-02e7594ce0a0" : "ccf2bdb2-db32-4601-902e-7c8a9c4496a5",
+                     "34cfea62-c2c0-11ea-9026-02e7594ce0a0" : "638e423a-827a-4f5d-9292-6eda084f36fb"
+                  },
+                  "nodegroup_id" : "34cfe9fe-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "3bbd0875-e67d-4320-9229-da0c6d83a0bc",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "e57e61f7-df7f-4fd0-9757-002616601b12",
+                  "sortorder" : 0,
+                  "tileid" : "f798c91d-7930-42cd-95a4-e0e028ca7b14"
+               },
+               {
+                  "data" : {},
+                  "nodegroup_id" : "34cfe9b9-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : null,
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "e57e61f7-df7f-4fd0-9757-002616601b12",
+                  "sortorder" : 0,
+                  "tileid" : "e53044b0-de1e-443f-af1e-496a4fdaefe1"
+               },
+               {
+                  "data" : {
+                     "34cfe9f5-c2c0-11ea-9026-02e7594ce0a0" : "fcd826ea-7c9e-4e14-9bf4-f127ceb9919c"
+                  },
+                  "nodegroup_id" : "34cfe9f5-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "e53044b0-de1e-443f-af1e-496a4fdaefe1",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "e57e61f7-df7f-4fd0-9757-002616601b12",
+                  "sortorder" : 0,
+                  "tileid" : "6cee5da3-f2cf-45ea-9cd0-e73b12d120e7"
+               },
+               {
+                  "data" : {
+                     "34cfea8e-c2c0-11ea-9026-02e7594ce0a0" : "2479bd11-1c32-434e-be51-40dc5a71eff0"
+                  },
+                  "nodegroup_id" : "34cfe9bf-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "e53044b0-de1e-443f-af1e-496a4fdaefe1",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "e57e61f7-df7f-4fd0-9757-002616601b12",
+                  "sortorder" : 0,
+                  "tileid" : "f4e4571b-2e47-4a86-97b9-e7b3f7681671"
+               },
+               {
+                  "data" : {
+                     "34cfea63-c2c0-11ea-9026-02e7594ce0a0" : "879a8fef-90b3-497e-929d-e9b2de9afa7b",
+                     "34cfea76-c2c0-11ea-9026-02e7594ce0a0" : "1ba58698-43bc-4c39-b29d-4d16e26d1919",
+                     "34cfea7b-c2c0-11ea-9026-02e7594ce0a0" : "e92eb945-b892-4cbc-8951-cc4f96c3ac5d"
+                  },
+                  "nodegroup_id" : "34cfe9fb-c2c0-11ea-9026-02e7594ce0a0",
+                  "parenttile_id" : "e53044b0-de1e-443f-af1e-496a4fdaefe1",
+                  "provisionaledits" : null,
+                  "resourceinstance_id" : "e57e61f7-df7f-4fd0-9757-002616601b12",
+                  "sortorder" : 0,
+                  "tileid" : "841dddd9-bb2e-4388-9485-5dd1228b5e11"
+               }
+            ]
+         }
+      ]
+   }
+}

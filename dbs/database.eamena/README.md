@@ -4,7 +4,7 @@
 
 ```mermaid
 gantt
-    title EAMENA database
+    title EAMENA v3 -> v4 database
     dateFormat  YYYY-MM-DD
     section EAMENA v3
     Arches v5.2              : a0, 2022-11-01, 90d

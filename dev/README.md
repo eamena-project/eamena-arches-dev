@@ -15,8 +15,4 @@ flowchart LR
                 C[VIEWS];
             end;
     end;
-    C --SSH--> D{{eamenaR}}:::eamenaRpkg;
-    D ---> E[end user];
-    E -- output--> F[maps<br>charts<br>listings<br>...];
-    classDef eamenaRpkg fill:#e3c071;
 ```

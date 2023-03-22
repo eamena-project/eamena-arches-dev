@@ -24,11 +24,11 @@ flowchart LR
 flowchart LR
   subgraph EC2
     direction TB
-    subgraph Server 1
+    subgraph Server 1 EAMENA
         direction RL
         i1 -->f1
     end
-    subgraph Server2
+    subgraph Server 2
         direction BT
         i2 -->f2
     end

@@ -26,8 +26,7 @@ flowchart LR
     direction TB
     subgraph Server 1 EAMENA
         direction TB
-        A[tiles]
-        B[resources]
+        A[tiles] <--> B[resources]
     end
     subgraph Server 2
         direction BT

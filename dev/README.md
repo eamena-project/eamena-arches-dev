@@ -5,13 +5,13 @@
 
 ```mermaid
 flowchart LR
-    subgraph A [EC2 on AWS];
-        subgraph B [PostgreSQL];
-            subgraph C [Server 1 is EAMENA];
+    subgraph EC2 [EC2 on AWS];
+        subgraph PG [PostgreSQL];
+            subgraph EA [Server 1 is EAMENA];
                 A[tiles];
                 B[resources];
             end;
-            subgraph D [Server 2];
+            subgraph VIEW [Server 2];
                 C[VIEWS];
             end;
     end;

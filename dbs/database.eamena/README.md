@@ -19,7 +19,7 @@ gantt
     section EAMENA v4
     Arches v7.3 tests                  : a1, 2023-04-17, 5d
     Arches v7.3 published              : a1, 2023-04-24, 2023-10-01
-    section Trainings
+    section Trainings EAMENA v4
     KRG training             : milestone, m3, 2023-05-09, 7d
     IST training             : milestone, m3, 2023-06-06, 7d
     AMM training             : milestone, m3, 2023-06-17, 7d

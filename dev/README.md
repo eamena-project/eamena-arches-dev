@@ -43,18 +43,18 @@ flowchart LR
     direction TB
     subgraph PostgreSQL
         direction LR
-        subgraph Server 1 EAMENA DB
+        subgraph DB
             direction TB
             A[tiles] <---> B[resources]
         end
-        subgraph Server 2 VIEWS
+        subgraph VIEWS
             direction LR
-            C[view 1] --> A 
+            C[view 1] --> DB 
         end
     end
   end
   A --> EC2 --> B
-  B1 --> B2
+  B3 --> B4
 ```
 
 

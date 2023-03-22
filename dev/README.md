@@ -50,14 +50,13 @@ flowchart LR
         end
         subgraph VIEWS [Server 2]
             direction TB
-            C[view 1] 
-            Y[view ...]
+            C[view 1] --- Y[view ...]
         end
     end
   end
-  DB --> VIEWS
-  VIEWS --> D{{eamenaR}}:::eamenaRpkg
-  D -- output--> E[maps<br>charts<br>listings<br>...]
+  DB -- is read by --> VIEWS
+  VIEWS -- is read by --> D{{eamenaR}}:::eamenaRpkg
+  D -- creates outputs --> E[maps<br>charts<br>listings<br>...]
   classDef eamenaRpkg fill:#e3c071
 ```
 

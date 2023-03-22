@@ -43,11 +43,11 @@ flowchart LR
     direction TB
     subgraph PostgreSQL
         direction LR
-        subgraph DB
+        subgraph DB [Server 1 is Arches instance]
             direction TB
             A[tiles] --- B[resources]
         end
-        subgraph VIEWS
+        subgraph VIEWS [Server 2]
             direction LR
             C[view 1]
         end

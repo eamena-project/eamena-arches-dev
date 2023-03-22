@@ -45,7 +45,7 @@ flowchart LR
         direction LR
         subgraph DB
             direction TB
-            A[tiles] <---> B[resources]
+            A[tiles] --- B[resources]
         end
         subgraph VIEWS
             direction LR
@@ -53,8 +53,9 @@ flowchart LR
         end
     end
   end
-  VIEWS --> DB
-  B3 --> B4
+  DB --> VIEWS
+  B{{eamenaR}}:::eamenaRpkg A --> VIEWS
+  classDef eamenaRpkg fill:#e3c071
 ```
 
 

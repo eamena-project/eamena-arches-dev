@@ -7,7 +7,7 @@ gantt
     title EAMENA v3 -> v4 database
     dateFormat  YYYY-MM-DD
     section EAMENA v3
-    Arches v5.2              : a0, 2023-01-01, 2023-04-24
+    Arches v5.2              : a0, 2023-01-01, 2023-04-10
     Arches v5.2 stopped      : milestone, m3, 2023-04-10, 1d
     section EAMENA v3 -> v4
     Arches v7.3 DB installation        : a1, 2023-03-06, 2d

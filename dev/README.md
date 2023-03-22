@@ -49,8 +49,7 @@ flowchart LR
         end
         subgraph Server 2 VIEWS
             direction LR
-            C[view 1] --> A 
-            C[view 1] --> B
+            C[view 1] --> Server 1 EAMENA DB 
         end
     end
   end

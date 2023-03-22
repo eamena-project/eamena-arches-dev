@@ -28,7 +28,6 @@ flowchart LR
         direction TB
         A[tiles]
         B[resources]
-        i1 -->f1
     end
     subgraph Server 2
         direction BT

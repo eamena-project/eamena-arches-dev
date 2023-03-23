@@ -2,6 +2,7 @@
 
 ## PostgreSQL Views
 
+Planning of Arches v7 (EAMENA v4) installation, test and release 
 
 ```mermaid
 flowchart LR

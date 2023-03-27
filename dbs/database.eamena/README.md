@@ -2,6 +2,8 @@
 
 ## Timeline
 
+DB migration process and trainings
+
 ```mermaid
 gantt
     title EAMENA v3 -> v4 database

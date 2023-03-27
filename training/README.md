@@ -160,9 +160,9 @@ gantt
     Training materials development     : a1, 2023-04-10, 4d
     Training delivery online           : a1, 2023-04-15, 6d
     section Trainings EAMENA v4
-    KRG training             : milestone, m3, 2023-05-09, 7d
-    IST training             : milestone, m3, 2023-06-06, 7d
-    AMM training             : milestone, m3, 2023-06-17, 7d
+    KRG training             : milestone, m3, 2023-05-10, 7d
+    IST training             : milestone, m3, 2023-06-05, 7d
+    AMM training             : milestone, m3, 2023-06-18, 11d
     section Reuben Osborne 2 (for MoTA, DoA)
     Online Support                     : a1, 2023-07-01, 4d
 ```

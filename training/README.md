@@ -1,6 +1,9 @@
-# Arches/EAMENA Training
+# Arches/EAMENA Trainings
 
-## Arches/EAMENA Database Manager CPF Training (part 2/2, 2022)
+---
+
+## 2022 
+> Arches/EAMENA Database Manager CPF Training (part 2/2)
 
 This is the second part of Database Management training for Arches-powered platform, EAMENA compliant, for cultural heritage management. The previous part (part 1) took place in person, in Amman, Jordan (5/12/21 - 9/12/21). This part focuses on database management of three Arches/EAMENA instances hosted on AWS. The provisional timetable consists of 3 different slots of 3-hours each:
 
@@ -139,3 +142,27 @@ Usage of online and collaborative resources
 * Community Forum
 * GitHub
 * Popular Django forums
+
+---
+
+## 2023
+> KRG, IST, AMM
+
+Time table of the trainings
+
+```mermaid
+gantt
+    title EAMENA v4 Arches v7 training
+    dateFormat  YYYY-MM-DD
+    section EAMENA v4
+    Arches v7.3 public realease        : a1, 2023-05-02, 2023-10-01
+    section Reuben Osborne 1 (for MoTA, DoA)
+    Training materials development     : a1, 2023-04-10, 4d
+    Training delivery online           : a1, 2023-04-15, 6d
+    section Trainings EAMENA v4
+    KRG training             : milestone, m3, 2023-05-09, 7d
+    IST training             : milestone, m3, 2023-06-06, 7d
+    AMM training             : milestone, m3, 2023-06-17, 7d
+    section Reuben Osborne 2 (for MoTA, DoA)
+    Online Support                     : a1, 2023-07-01, 4d
+```

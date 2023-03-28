@@ -146,7 +146,7 @@ Usage of online and collaborative resources
 ---
 
 ## 2023
-> KRG, IST, AMM
+> MoTA, DoA
 
 Time table of the trainings
 
@@ -154,15 +154,17 @@ Time table of the trainings
 gantt
     title EAMENA v4 Arches v7 training
     dateFormat  YYYY-MM-DD
-    section EAMENA v4
-    Arches v7.3 public realease        : a1, 2023-05-02, 2023-10-01
-    section Reuben Osborne 1 (for MoTA, DoA)
+    axisFormat  %m-%d
+    tickInterval 1day
+    excludes    weekends
+    section Remote training 1/2
     Training materials development     : a1, 2023-04-10, 4d
     Training delivery online           : a1, 2023-04-15, 6d
-    section Trainings EAMENA v4
-    KRG training             : milestone, m3, 2023-05-10, 7d
+    section In-person training
     IST training             : milestone, m3, 2023-06-05, 7d
-    AMM training             : milestone, m3, 2023-06-18, 11d
-    section Reuben Osborne 2 (for MoTA, DoA)
+    AMM training             : milestone, m3, 2023-06-17, 2023-06-22
+    section Remote training 1/2
     Online Support                     : a1, 2023-07-01, 4d
 ```
+
+

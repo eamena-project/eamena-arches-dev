@@ -146,7 +146,9 @@ Usage of online and collaborative resources
 ---
 
 ## 2023
-> MoTA, DoA
+
+### 2023 DoA
+> Jordan
 
 Time table of the trainings
 
@@ -160,10 +162,25 @@ gantt
     Materials development     : a1, 2023-04-10, 4d
     Online delivery           : a1, 2023-04-15, 6d
     section In-person training
-    IST training             : a1, 2023-06-05, 7d
-    AMM training             : a1, 2023-06-17, 2023-06-22
+    DoA training             : a1, 2023-06-25, 2023-06-29
     section Remote training 2
     Online Support                     : a1, 2023-07-01, 4d
 ```
 
+### 2023 MoTA
+> Palestine
 
+```mermaid
+gantt
+    title EAMENA v4 Arches v7 training
+    dateFormat  YYYY-MM-DD
+    axisFormat  %d-%m-%y
+    tickInterval 7day
+    section Remote training 1
+    Materials development     : a1, 2023-04-10, 4d
+    Online delivery           : a1, 2023-04-15, 6d
+    section In-person training
+    MoTA training             : a1, 2023-06-18, 2023-06-22
+    section Remote training 2
+    Online Support                     : a1, 2023-07-01, 4d
+```

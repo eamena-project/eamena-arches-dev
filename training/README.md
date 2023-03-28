@@ -206,7 +206,6 @@ Usage of online and collaborative resources
 ### Online support
 > Online support for sys admins
 
-The EAMENA offers 10 days of support, lead by Reuben Osborne and Thomas Huet, on-demand (re-schedulables)
-
+EAMENA offers 10 days of online support, led by Reuben Osborne and Thomas Huet, to program on demand
 
 

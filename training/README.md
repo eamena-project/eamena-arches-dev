@@ -155,8 +155,7 @@ gantt
     title EAMENA v4 Arches v7 training
     dateFormat  YYYY-MM-DD
     axisFormat  %m-%d
-    tickInterval 7day
-    excludes    weekends
+    tickInterval 1day
     section Remote training 1
     Training materials development     : a1, 2023-04-10, 4d
     Training delivery online           : a1, 2023-04-15, 6d

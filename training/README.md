@@ -154,11 +154,11 @@ Time table of the trainings
 gantt
     title EAMENA v4 Arches v7 training
     dateFormat  YYYY-MM-DD
-    axisFormat  %m-%d
+    axisFormat  %d-%m-%y
     tickInterval 7day
     section Remote training 1
-    Training materials development     : a1, 2023-04-10, 4d
-    Training delivery online           : a1, 2023-04-15, 6d
+    Materials development     : a1, 2023-04-10, 4d
+    Online delivery           : a1, 2023-04-15, 6d
     section In-person training
     IST training             : a1, 2023-06-05, 7d
     AMM training             : a1, 2023-06-17, 2023-06-22

@@ -86,11 +86,32 @@ This online training will be hosted online (ZOOM): "Arches/EAMENA Database Manag
 * ElasticSearch: https://www.elastic.co/
 
 
-## Training by R. Osborne
+
+
+---
+
+## 2023
+
+Training on online support on the Arches v7 (EAMENA v4) database for users, database managers and sys admin[^1] from the DoA and MoTA. The following table shows which part of the training the users, database managers and sys admin are expected to attend.
+
+|   | user  | database manager  | sys admin  |
+|---|---|---|---|
+| Remote 1  |   |   | x |
+| In-person  | x | x | x |
+| Support |   |   | x |
+
+### Training content
+
+#### Remote 1
+> Online training for sys admins prepared by Reuben Osborne
+
+#### Foreword by T. Huet
+
+* What is Arches?
+* What problem does it solve?
+##### Training by R. Osborne
 
 Understanding the purpose, architecture and software stack of Arches
-* ~~What is Arches?~~
-* ~~What problem does it solve?~~
 * Key features and use cases
 * Software architecture diagram
 * Core concepts:
@@ -143,22 +164,23 @@ Usage of online and collaborative resources
 * GitHub
 * Popular Django forums
 
----
+#### In-person
+> Training for users, database managers and sys admins
 
-## 2023
+*to be updated*
 
-Training on the Arches v7 (EAMENA v4) database for users, database managers and sys admin[^1] from the DoA and MoTA. The following table shows which part of the training the users, database managers and sys admin are expected to attend.
+#### Online support
+> Online support for sys admins
 
-|   | user  | database manager  | sys admin  |
-|---|---|---|---|
-| Remote 1  |   |   | x |
-| In-person  | x | x | x |
-| Remote 2 |   |   | x |
+The EAMENA team has a contract for 10 days of supports, on-demand (re-schedulables)
 
-### 2023 DoA
+
+### Time tables
+
+Time table of the trainings and online support
+
+#### 2023 DoA
 > Jordan
-
-Time table of the trainings
 
 ```mermaid
 gantt
@@ -174,7 +196,7 @@ gantt
     Online Support                     : a1, 2023-07-01, 4d
 ```
 
-### 2023 MoTA
+#### 2023 MoTA
 > Palestine
 
 ```mermaid

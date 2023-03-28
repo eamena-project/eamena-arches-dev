@@ -138,11 +138,13 @@ gantt
 ### Remote 1
 > Online training for sys admins prepared by Reuben Osborne and Thomas Huet
 
-#### Introduction by Thomas Huet
+#### Introduction
+> Thomas Huet
 
 * What is Arches?
 * What problem does it solve?
-#### Training by Reuben Osborne
+#### Training
+> Reuben Osborne
 
 Understanding the purpose, architecture and software stack of Arches
 * Key features and use cases

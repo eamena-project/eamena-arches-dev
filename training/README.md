@@ -99,7 +99,25 @@ Training on online & support on the Arches v7 (EAMENA v4) database for users, da
 
 Time table of the trainings and online support
 
-## 2023 DoA
+
+## MoTA timetable
+> Palestine
+
+```mermaid
+gantt
+    title EAMENA v4 Arches v7 training
+    dateFormat  YYYY-MM-DD
+    axisFormat  %d-%m-%Y
+    tickInterval 7day
+    section Remote 1
+    Online Introduction           : a1, 2023-04-15, 6d
+    section In-person
+    MoTA             : a1, 2023-06-18, 2023-06-22
+    section Remote 2
+    Online Support                     : a1, 2023-07-01, 4d
+```
+
+## DoA timetable
 > Jordan
 
 ```mermaid
@@ -116,22 +134,6 @@ gantt
     Online Support                     : a1, 2023-07-01, 4d
 ```
 
-## 2023 MoTA
-> Palestine
-
-```mermaid
-gantt
-    title EAMENA v4 Arches v7 training
-    dateFormat  YYYY-MM-DD
-    axisFormat  %d-%m-%Y
-    tickInterval 7day
-    section Remote 1
-    Online Introduction           : a1, 2023-04-15, 6d
-    section In-person
-    MoTA             : a1, 2023-06-18, 2023-06-22
-    section Remote 2
-    Online Support                     : a1, 2023-07-01, 4d
-```
 ## Training content
 
 ### Remote 1

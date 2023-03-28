@@ -149,11 +149,11 @@ Usage of online and collaborative resources
 
 Training on the Arches v7 (EAMENA v4) database for users, database managers and sys admin[^1] from the DoA and MoTA. The following table shows which part of the training the users, database managers and sys admin are expected to attend.
 
-|   | Remote 1  | In-person  | Remote 2  |
+|   | user  | database manager  | sys admin  |
 |---|---|---|---|
-| user  |   | x |   |
-| database manager  |   | x |   |
-| sys admin  | x | x | x |
+| Remote 1  |   |   | x |
+| In-person  | x | x | x |
+| Remote 2 |   |   | x |
 
 ### 2023 DoA
 > Jordan

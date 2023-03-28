@@ -97,8 +97,7 @@ Training on online & support on the Arches v7 (EAMENA v4) database for users, da
 | In-person  | x | x | x |
 | Support |   |   | x |
 
-Time table of the trainings and online support
-
+Time table for the trainings and online support. 
 
 ## MoTA timetable
 > Palestine

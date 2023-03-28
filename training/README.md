@@ -2,7 +2,7 @@
 
 ---
 
-## 2022 
+# 2022 
 > Arches/EAMENA Database Manager CPF Training (part 2/2)
 
 This is the second part of Database Management training for Arches-powered platform, EAMENA compliant, for cultural heritage management. The previous part (part 1) took place in person, in Amman, Jordan (5/12/21 - 9/12/21). This part focuses on database management of three Arches/EAMENA instances hosted on AWS. The provisional timetable consists of 3 different slots of 3-hours each:
@@ -14,7 +14,7 @@ This is the second part of Database Management training for Arches-powered platf
   3. Slot 3: Installing the project on a server
 
 ---
-### Timetable
+## Timetable
 
 This online training will be hosted online (ZOOM): "Arches/EAMENA Database Manager Zoom Meeting part 2"  
   
@@ -29,9 +29,9 @@ This online training will be hosted online (ZOOM): "Arches/EAMENA Database Manag
 
 ---
 
-### Documentation
+## Documentation
 
-#### Part 2/2
+### Part 2/2
 
 * Requirements installation tuto: 
   - https://docs.google.com/presentation/d/1qkF8w4J4BCjR_LEzWJ9Pn2lvQXO7zpW8A5MVF6obPSw/edit?usp=sharing
@@ -52,7 +52,7 @@ This online training will be hosted online (ZOOM): "Arches/EAMENA Database Manag
       
   - Arches/EAMENA package: https://github.com/eamena-project/eamena-arches-package
 
-#### Part 1/2
+### Part 1/2
 
 * Part 1 slides:
   - day 1: https://docs.google.com/presentation/d/1k9JMuj5oSZXHO3Z9RSVMogn4CUSJ1EK8Plus8sK7xDo/edit#slide=id.p
@@ -64,7 +64,7 @@ This online training will be hosted online (ZOOM): "Arches/EAMENA Database Manag
 * Part 1 reference glossary:
   - https://docs.google.com/spreadsheets/d/13JwjiHjx6pqlSjRYxPc0yW0Rj3voGDJVqTe23j2kO3g/edit#gid=0
 
-#### Arches full stack
+### Arches full stack
 
 * project: https://www.archesproject.org/
 * demo (v5): http://v5demo.archesproject.org/search?paging-filter=1
@@ -74,7 +74,7 @@ This online training will be hosted online (ZOOM): "Arches/EAMENA Database Manag
 * GitHub: https://github.com/archesproject/arches
 * development: https://www.archesproject.org/development/
 
-#### Main Arches dependencies
+### Main Arches dependencies
 
 * Django: https://www.djangoproject.com/
 * Python: https://www.python.org/
@@ -85,14 +85,11 @@ This online training will be hosted online (ZOOM): "Arches/EAMENA Database Manag
   - pgAdmin4: https://www.pgadmin.org/
 * ElasticSearch: https://www.elastic.co/
 
-
-
-
 ---
 
-## 2023
+# 2023
 
-Training on online support on the Arches v7 (EAMENA v4) database for users, database managers and sys admin[^1] from the DoA and MoTA. The following table shows which part of the training the users, database managers and sys admin are expected to attend.
+Training on online & support on the Arches v7 (EAMENA v4) database for users, database managers and sys admin from the DoA and MoTA. The following table shows which part of the training the users, database managers and sys admin are expected to attend.
 
 |   | user  | database manager  | sys admin  |
 |---|---|---|---|
@@ -100,16 +97,51 @@ Training on online support on the Arches v7 (EAMENA v4) database for users, data
 | In-person  | x | x | x |
 | Support |   |   | x |
 
-### Training content
+Time table of the trainings and online support
 
-#### Remote 1
-> Online training for sys admins prepared by Reuben Osborne
+## 2023 DoA
+> Jordan
 
-#### Foreword by T. Huet
+```mermaid
+gantt
+    title EAMENA v4 Arches v7 training
+    dateFormat  YYYY-MM-DD
+    axisFormat  %d-%m-%Y
+    tickInterval 7day
+    section Remote 1
+    Online Introduction           : a1, 2023-04-15, 6d
+    section In-person
+    DoA             : a1, 2023-06-25, 2023-06-29
+    section Remote 2
+    Online Support                     : a1, 2023-07-01, 4d
+```
+
+## 2023 MoTA
+> Palestine
+
+```mermaid
+gantt
+    title EAMENA v4 Arches v7 training
+    dateFormat  YYYY-MM-DD
+    axisFormat  %d-%m-%Y
+    tickInterval 7day
+    section Remote 1
+    Online Introduction           : a1, 2023-04-15, 6d
+    section In-person
+    MoTA             : a1, 2023-06-18, 2023-06-22
+    section Remote 2
+    Online Support                     : a1, 2023-07-01, 4d
+```
+## Training content
+
+### Remote 1
+> Online training for sys admins prepared by Reuben Osborne and Thomas Huet
+
+#### Introduction by Thomas Huet
 
 * What is Arches?
 * What problem does it solve?
-##### Training by R. Osborne
+#### Training by Reuben Osborne
 
 Understanding the purpose, architecture and software stack of Arches
 * Key features and use cases
@@ -163,54 +195,15 @@ Usage of online and collaborative resources
 * Community Forum
 * GitHub
 * Popular Django forums
-
-#### In-person
+### In-person
 > Training for users, database managers and sys admins
 
 *to be updated*
 
-#### Online support
+### Online support
 > Online support for sys admins
 
-The EAMENA team has a contract for 10 days of supports, on-demand (re-schedulables)
+The EAMENA offers 10 days of support, lead by Reuben Osborne and Thomas Huet, on-demand (re-schedulables)
 
 
-### Time tables
 
-Time table of the trainings and online support
-
-#### 2023 DoA
-> Jordan
-
-```mermaid
-gantt
-    title EAMENA v4 Arches v7 training
-    dateFormat  YYYY-MM-DD
-    axisFormat  %d-%m-%Y
-    tickInterval 7day
-    section Remote 1
-    Online Introduction           : a1, 2023-04-15, 6d
-    section In-person
-    DoA             : a1, 2023-06-25, 2023-06-29
-    section Remote 2
-    Online Support                     : a1, 2023-07-01, 4d
-```
-
-#### 2023 MoTA
-> Palestine
-
-```mermaid
-gantt
-    title EAMENA v4 Arches v7 training
-    dateFormat  YYYY-MM-DD
-    axisFormat  %d-%m-%Y
-    tickInterval 7day
-    section Remote 1
-    Online Introduction           : a1, 2023-04-15, 6d
-    section In-person
-    MoTA             : a1, 2023-06-18, 2023-06-22
-    section Remote 2
-    Online Support                     : a1, 2023-07-01, 4d
-```
-
-[^1]: or database administrators

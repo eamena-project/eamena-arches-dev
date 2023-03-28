@@ -147,6 +147,14 @@ Usage of online and collaborative resources
 
 ## 2023
 
+Training on the Arches v7 (EAMENA v4) database for users, database managers and sys admin[^1] from the DoA and MoTA. The following table shows which part of the training the users, database managers and sys admin are expected to attend.
+
+|   | Remote 1  | In-person  | Remote 2  |
+|---|---|---|---|
+| user  |   | x |   |
+| database manager  |   | x |   |
+| sys admin  | x | x | x |
+
 ### 2023 DoA
 > Jordan
 
@@ -158,12 +166,11 @@ gantt
     dateFormat  YYYY-MM-DD
     axisFormat  %d-%m-%Y
     tickInterval 7day
-    section Remote training 1
-    Materials development     : a1, 2023-04-10, 4d
-    Online delivery           : a1, 2023-04-15, 6d
-    section In-person training
-    DoA training             : a1, 2023-06-25, 2023-06-29
-    section Remote training 2
+    section Remote 1
+    Online Introduction           : a1, 2023-04-15, 6d
+    section In-person
+    DoA             : a1, 2023-06-25, 2023-06-29
+    section Remote 2
     Online Support                     : a1, 2023-07-01, 4d
 ```
 
@@ -176,11 +183,12 @@ gantt
     dateFormat  YYYY-MM-DD
     axisFormat  %d-%m-%Y
     tickInterval 7day
-    section Remote training 1
-    Materials development     : a1, 2023-04-10, 4d
-    Online delivery           : a1, 2023-04-15, 6d
-    section In-person training
-    MoTA training             : a1, 2023-06-18, 2023-06-22
-    section Remote training 2
+    section Remote 1
+    Online Introduction           : a1, 2023-04-15, 6d
+    section In-person
+    MoTA             : a1, 2023-06-18, 2023-06-22
+    section Remote 2
     Online Support                     : a1, 2023-07-01, 4d
 ```
+
+[^1]: or database administrators

@@ -25,5 +25,9 @@ gantt
     section Remote training 1
     Materials development     : a1, 2023-04-10, 4d
     Online delivery           : a1, 2023-04-15, 6d
+    section In-person training
+    KRG training             : a1, m3, 2023-05-09, 7d
+    IST training             : a1, 2023-06-05, 7d
+    AMM training             : a1, 2023-06-17, 2023-06-22
 
 ```

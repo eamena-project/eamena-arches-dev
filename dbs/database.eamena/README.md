@@ -2,13 +2,13 @@
 
 ## Timeline
 
-DB migration process and trainings
+DB migration process and trainings 2023
 
 ```mermaid
 gantt
     title EAMENA v4 Arches v7 training
     dateFormat  YYYY-MM-DD
-    axisFormat  %d-%m-%y
+    axisFormat  %d-%m
     tickInterval 7day
     section EAMENA v3
     Arches v5.2              : a0, 2023-01-01, 2023-04-24

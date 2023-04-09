@@ -30,13 +30,23 @@ library(dplyr)
 ```
 
 
-## YYY
+## Arches-powered platform
 
 ```{=html}
-<embed src="http://shinyserver.cfs.unipi.it:3838/bib/BIB 3570 Multivariate.pdf" width="800px" height="2100px" />
+<embed src="https://www.archesproject.org/" width="800px" height="2100px" />
 ```
 
-## XXX
+:::{.notes}
+Arches is a geospatial semantic graph platform for CH management. It natively integrates Dublin Core, CIDOC-CRM, SKOS and SPARQL. Its next version (v7) will also offer internationalisation, RTL support for the user interface and import/export of multi-language data.
+:::
+
+## Arches-projects
+
+```{=html}
+<embed src="https://eamena-oxford.github.io/eamena-arches-dev/data/geojson/maps/arches-global-south.html" width="800px" height="2100px" />
+```
+
+
 
 <div class="div-text"> 
 <small>narrative part</small>

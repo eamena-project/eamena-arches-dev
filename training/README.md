@@ -143,6 +143,7 @@ gantt
 
 * What is Arches?
 * What problem does it solve?
+
 #### Training
 > Reuben Osborne
 

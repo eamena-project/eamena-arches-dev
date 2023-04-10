@@ -18,7 +18,7 @@ format:
     reference-location: document
     footnotes-hover: true
     logo: https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-uni-oxford_.png
-    footer: "EAMENA <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo_black.png' style='height: 40px;vertical-align: middle;'> <https://github.com/eamena-project> GMPCA, Nice, 2023"
+    footer: "<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo_black.png' style='height: 35px;vertical-align: middle;'> <https://github.com/eamena-project> GMPCA, Nice, 2023"
     margin: 0
     width: 1200
 ---

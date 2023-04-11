@@ -105,7 +105,7 @@ Timetable for the MoTA and DoA trainings
 
 ```mermaid
 gantt
-    title EAMENA v4 Arches v7 training
+    title Arches v7 (EAMENA v4) training
     dateFormat  YYYY-MM-DD
     axisFormat  %d-%m-%Y
     tickInterval 7day

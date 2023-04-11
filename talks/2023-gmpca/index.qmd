@@ -4,7 +4,7 @@ subtitle: "**A massive and open data information system for endangered archaeolo
 author: "Bill Finlayson, Bijan Rouhani, Thomas Huet, Michael Fradley, Sayantani Neogi, Melisa Holloway, Andrew Wilson"
 title-slide-attributes:
     data-background-image: "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaDB-bck.png"
-    data-background-size: "60%"
+    data-background-size: "80%"
     data-background-opacity: "0.5"
 format:
   revealjs: 

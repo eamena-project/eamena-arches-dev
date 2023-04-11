@@ -5,5 +5,33 @@
     "title": "EAMENA",
     "section": "iframe in table",
     "text": "iframe in table\n\n\n\nIframe in Table Example\n\n\n\n\n\n\n\n\n\nColumn 1\n\n\nColumn 2\n\n\n\n\nRow 1, Column 1\n\n\n\n\n\n\n\n\nRow 2, Column 1\n\n\n\n\n\n\n\n\n\n\n\n\n\nEAMENA  https://github.com/eamena-project GMPCA, Nice, 2023"
+  },
+  {
+    "objectID": "index.html#arches-powered-platform",
+    "href": "index.html#arches-powered-platform",
+    "title": "EAMENA",
+    "section": "Arches-powered platform",
+    "text": "Arches-powered platform\n\n\nArches is a geospatial semantic graph platform for CH management. It natively integrates Dublin Core, CIDOC-CRM, SKOS and SPARQL. Its next version (v7) will also offer internationalisation, RTL support for the user interface and import/export of multi-language data."
+  },
+  {
+    "objectID": "index.html#arches-projects",
+    "href": "index.html#arches-projects",
+    "title": "EAMENA",
+    "section": "Arches-projects",
+    "text": "Arches-projects"
+  },
+  {
+    "objectID": "index.html#arches-developments",
+    "href": "index.html#arches-developments",
+    "title": "EAMENA",
+    "section": "Arches developments",
+    "text": "Arches developments\n\nhttps://github.com/archesproject/arches"
+  },
+  {
+    "objectID": "index.html#it-stack",
+    "href": "index.html#it-stack",
+    "title": "EAMENA",
+    "section": "IT Stack",
+    "text": "IT Stack\n\n\n\n\n https://github.com/eamena-project GMPCA, Nice, 2023"
   }
 ]

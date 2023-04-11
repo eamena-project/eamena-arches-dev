@@ -4,7 +4,7 @@ subtitle: "**A massive and open data information system for endangered archaeolo
 author: "Bill Finlayson, Bijan Rouhani, Thomas Huet, Michael Fradley, Sayantani Neogi, Melisa Holloway, Andrew Wilson"
 title-slide-attributes:
     data-background-image: "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaDB-bck.png"
-    data-background-size: "80%"
+    data-background-size: "90%"
     data-background-opacity: "0.5"
 format:
   revealjs: 
@@ -35,11 +35,64 @@ library(DT)
 library(dplyr)
 ```
 
-# EAMENA
+# EAMENA project
+
+## Endangered Archaeology in Middle East and North Africa
+
+::: {.panel-tabset}
+
+### Kick-off
+
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/threat-destruction.jpg" width="600"><div class="captiontext">Destruction of Palmyre by ISIS in 2016 </div>
+
+</center>
+
+:::
+
+::: {.column width="40%"}
+
+blabla
+
+:::
+
+::::
+
+### Agriculture
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/threat-agricole.jpg" width="600"><div class="captiontext">Udhma (Jordan). The area around one section of the site is completely ploughed, whilst the other half has been destroyed to plant an orchard</div>
+
+</center>
+
+:::
+
+::: {.column width="40%"}
+
+blabla
+
+:::
+
+::::
+
+:::
 
 
 
 # Arches
+
+## XXX
 
 an <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> instance
 

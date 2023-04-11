@@ -109,7 +109,7 @@ gantt
     axisFormat  %d-%m-%Y
     tickInterval 7day
     section Remote 1
-    Online Introduction           : a1, 2023-04-15, 6d
+    Online Introduction           : a1, 2023-05-22, 3d
     section In-person
     MoTA             : a1, 2023-06-18, 2023-06-22
     section Remote 2
@@ -126,7 +126,7 @@ gantt
     axisFormat  %d-%m-%Y
     tickInterval 7day
     section Remote 1
-    Online Introduction           : a1, 2023-04-15, 6d
+    Online Introduction           : a1, 2023-05-22, 3d
     section In-person
     DoA             : a1, 2023-06-25, 2023-06-29
     section Remote 2

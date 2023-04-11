@@ -2,7 +2,7 @@
 
 ## Timeline
 
-DB migration process and trainings 2023
+DB migration process
 
 ```mermaid
 gantt
@@ -22,13 +22,4 @@ gantt
     Arches v7.3 tests                  : a1, 2023-04-17, 5d
     Arches v7.3 showcase               : a1, 2023-04-25, 1d
     Arches v7.3 public realease        : a1, 2023-05-02, 2023-10-01
-    section Remote training 1
-    Materials development     : a1, 2023-04-10, 4d
-    Online delivery           : a1, 2023-04-15, 6d
-    section In-person training
-    KRG training             : a1, 2023-05-09, 7d
-    IST training             : a1, 2023-06-05, 7d
-    AMM training             : a1, 2023-06-17, 2023-06-22
-    section Remote training 2
-    Online Support                     : a1, 2023-07-01, 4d
 ```

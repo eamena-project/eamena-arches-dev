@@ -1,7 +1,23 @@
 ---
 title: "EAMENA"
 subtitle: "**A massive and open data information system for endangered archaeology and cultural heritage**"
-author: "Bill Finlayson, Bijan Rouhani, Thomas Huet, Michael Fradley, Sayantani Neogi, Melisa Holloway, Andrew Wilson"
+authors:
+  - name: Eric Scott
+    affiliations:
+      - ref: uf
+    corresponding: true
+    email: myemail@institute.edu
+  - name: Author Two
+    affiliations:
+      - ref: uf
+      - ref: eu
+affiliations:
+  - id: uf
+    name: University of Florida, Gainesville, Florida 32611-0430 USA
+  - id: eu
+    name: Example University 123 Center Avenue, New York, New York 10027 USA
+filters:
+  - authors-block
 title-slide-attributes:
     data-background-image: "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaDB-bck.png"
     data-background-size: "60%"
@@ -18,7 +34,7 @@ format:
     reference-location: document
     footnotes-hover: true
     logo: https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-uni-oxford_.png
-    footer: "EAMENA <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo_black.png' style='height: 40px;vertical-align: middle;'> <https://github.com/eamena-project> GMPCA, Nice, 2023"
+    footer: "EAMENA <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo_black.png' style='height: 35px;vertical-align: middle;'> <https://github.com/eamena-project> GMPCA, Nice, 2023"
     margin: 0
     width: 1200
 ---

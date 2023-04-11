@@ -87,9 +87,9 @@ This online training will be hosted online (ZOOM): "Arches/EAMENA Database Manag
 
 ---
 
-# 2023
+# 2023 Trainings
 
-Training on online & support on the Arches v7 (EAMENA v4) database for users, database managers and sys admin from the DoA and MoTA. The following table shows which part of the training the users, database managers and sys admin are expected to attend.
+Training on online & support on the Arches v7 (EAMENA v4) database for users, database managers and sys admin from the MoTA (Palestine) and DoA (Jordan). The following table shows which part of the training the users, database managers and sys admin are expected to attend.
 
 |   | user  | database manager  | sys admin  |
 |---|---|---|---|
@@ -99,8 +99,9 @@ Training on online & support on the Arches v7 (EAMENA v4) database for users, da
 
 Time table for the trainings and online support. 
 
-## MoTA timetable
-> Palestine
+## Time table
+
+Timetable for the MoTA and DoA trainings
 
 ```mermaid
 gantt
@@ -111,26 +112,10 @@ gantt
     section Remote 1
     Online Introduction           : a1, 2023-05-22, 3d
     section In-person
-    MoTA             : a1, 2023-06-18, 2023-06-22
+    MoTA                          : a1, 2023-06-18, 2023-06-22
+    DoA                           : a1, 2023-06-25, 2023-06-29
     section Remote 2
-    Online Support                     : a1, 2023-07-01, 4d
-```
-
-## DoA timetable
-> Jordan
-
-```mermaid
-gantt
-    title EAMENA v4 Arches v7 training
-    dateFormat  YYYY-MM-DD
-    axisFormat  %d-%m-%Y
-    tickInterval 7day
-    section Remote 1
-    Online Introduction           : a1, 2023-05-22, 3d
-    section In-person
-    DoA             : a1, 2023-06-25, 2023-06-29
-    section Remote 2
-    Online Support                     : a1, 2023-07-01, 4d
+    Online Support                 : a1, 2023-07-01, 7d
 ```
 
 ## Training content

@@ -12,7 +12,7 @@ gantt
     tickInterval 7day
     section EAMENA v3
     Arches v5.2              : a0, 2023-01-01, 2023-04-24
-    Arches v5.2 stopped      : milestone, m3, 2023-04-28, 7d
+    Arches v5.2 stopped      : a0, 2023-04-28, 2023-05-04
     section EAMENA v3 -> v4
     Arches v7.3 DB installation        : a1, 2023-03-06, 2d
     Arches v7.3 Graphs installation    : a1, 2023-03-06, 2d

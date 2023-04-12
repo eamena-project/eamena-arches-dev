@@ -11,7 +11,7 @@
     "href": "index.html#arches-powered-platform",
     "title": "EAMENA",
     "section": "Arches-powered platform",
-    "text": "Arches-powered platform\n\n\nArches is a geospatial semantic graph platform for CH management. It natively integrates Dublin Core, CIDOC-CRM, SKOS and SPARQL. Its next version (v7) will also offer internationalisation, RTL support for the user interface and import/export of multi-language data."
+    "text": "Arches-powered platform\n\n\n\n\nan  instance\n\n\n\nArches is a geospatial semantic graph platform for CH management. It natively integrates Dublin Core, CIDOC-CRM, SKOS and SPARQL. Its next version (v7) will also offer internationalisation, RTL support for the user interface and import/export of multi-language data."
   },
   {
     "objectID": "index.html#arches-projects",

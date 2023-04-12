@@ -50,7 +50,7 @@ library(dplyr)
 
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/threat-destruction.jpg" width="600"><div class="captiontext">Destruction of Palmyre by ISIS in 2016 </div>
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-destruction.jpg" width="600"><div class="captiontext">Destruction of Palmyre by ISIS in 2016 </div>
 
 </center>
 
@@ -72,7 +72,7 @@ blabla
 
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/threat-agricole.jpg" width="600"><div class="captiontext">Udhma (Jordan). The area around one section of the site is completely ploughed, whilst the other half has been destroyed to plant an orchard</div>
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-agricole.jpg" width="600"><div class="captiontext">Udhma (Jordan). The area around one section of the site is completely ploughed, whilst the other half has been destroyed to plant an orchard</div>
 
 </center>
 
@@ -90,28 +90,41 @@ blabla
 
 
 
-# Arches
-
-## XXX
-
-an <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> instance
-
+# The database
 
 ## Arches-powered platform
 
+
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
 ```{=html}
-<embed src="https://www.archesproject.org/" width="800px" height="2100px" />
+<embed src="https://www.archesproject.org/" width="800px" height="500px" />
 ```
+
+:::
+
+::: {.column width="40%"}
+
+an <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> instance
+
+:::
+
+::::
 
 ::: {.notes}
 Arches is a geospatial semantic graph platform for CH management. It natively integrates Dublin Core, CIDOC-CRM, SKOS and SPARQL. Its next version (v7) will also offer internationalisation, RTL support for the user interface and import/export of multi-language data.
 :::
 
+
 ## Arches-projects
 
 ```{=html}
-<embed src="https://eamena-oxford.github.io/eamena-arches-dev/data/geojson/maps/arches-global-south.html" width="800px" height="2100px" />
+<embed src="https://achp-project.github.io/cultural-heritage/map-projects/arches-global-south.html" width="800px" height="2100px" />
 ```
+
 
 ## Arches developments
 

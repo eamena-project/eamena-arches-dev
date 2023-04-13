@@ -150,11 +150,12 @@ Destruction: iconoclasm, looting, etc.
 
 ::: {.column width="40%"}
 
-an <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> instance
 
 ```{=html}
-<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="2100px" />
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="350px" />
 ```
+
+EAMENA is an <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> instance
 
 :::
 
@@ -162,7 +163,7 @@ an <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/
 
 
 ```{=html}
-<embed src="https://www.archesproject.org/" width="800px" height="500px" />
+<embed src="https://www.archesproject.org/" width="800px" height="350px" />
 ```
 
 :::
@@ -176,20 +177,17 @@ an <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/
 
 ::: {.column width="40%"}
 
-AWS
-
 ```{=html}
-<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="2100px" />
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="350px" />
 ```
+
+EAMENA is hosted on <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-aws.png' style='height: 35px;vertical-align: middle;'> (Ubuntu)
 
 :::
 
 ::: {.column width="60%"}
 
-
-```{=html}
-<embed src="https://www.archesproject.org/" width="800px" height="500px" />
-```
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/aws-instances.jpg' style='height: 350px'>
 
 :::
 
@@ -203,20 +201,19 @@ AWS
 
 ::: {.column width="40%"}
 
-an <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> instance
-
 ```{=html}
-<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="2100px" />
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="350px" />
 ```
+
+EAMENA uses <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-postgres.png' style='height: 35px;vertical-align: middle;'> Data Base Management System.
+
 
 :::
 
 ::: {.column width="60%"}
 
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/pg-uuid-jsonb.png' style='height: 350px'>
 
-```{=html}
-<embed src="https://www.archesproject.org/" width="800px" height="500px" />
-```
 
 :::
 
@@ -229,29 +226,21 @@ an <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/
 
 ::: {.column width="40%"}
 
-WAF
-
 ```{=html}
-<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="2100px" />
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="350px" />
 ```
+
+EAMENA uses <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-django.png' style='height: 35px;vertical-align: middle;'> Web Application Framework.
 
 :::
 
 ::: {.column width="60%"}
 
-
-```{=html}
-<embed src="https://www.archesproject.org/" width="800px" height="500px" />
-```
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/django-rdm.png' style='height: 350px'>
 
 :::
 
 ::::
-
-
-::: {.notes}
-Arches is a geospatial semantic graph platform for CH management. It natively integrates Dublin Core, CIDOC-CRM, SKOS and SPARQL. Its next version (v7) will also offer internationalisation, RTL support for the user interface and import/export of multi-language data.
-:::
 
 
 ### Elastic
@@ -260,20 +249,18 @@ Arches is a geospatial semantic graph platform for CH management. It natively in
 
 ::: {.column width="40%"}
 
-an <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> instance
-
 ```{=html}
-<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="2100px" />
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="350px" />
 ```
+
+EAMENA uses an <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-elastic.png' style='height: 35px;vertical-align: middle;'> distributed search
 
 :::
 
 ::: {.column width="60%"}
 
 
-```{=html}
-<embed src="https://www.archesproject.org/" width="800px" height="500px" />
-```
+{{< video https://youtu.be/wo9vZccmqwc width="100%" height="100%" >}}
 
 :::
 
@@ -288,7 +275,7 @@ an <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/
 an <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> instance
 
 ```{=html}
-<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="2100px" />
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="350px" />
 ```
 
 :::
@@ -297,7 +284,7 @@ an <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/
 
 
 ```{=html}
-<embed src="https://www.archesproject.org/" width="800px" height="500px" />
+<embed src="https://www.archesproject.org/" width="800px" height="350px" />
 ```
 
 :::
@@ -315,7 +302,7 @@ an <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/
 User Interface
 
 ```{=html}
-<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="2100px" />
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="350px" />
 ```
 
 :::
@@ -324,7 +311,7 @@ User Interface
 
 
 ```{=html}
-<embed src="https://www.archesproject.org/" width="800px" height="500px" />
+<embed src="https://www.archesproject.org/" width="800px" height="350px" />
 ```
 
 :::
@@ -333,21 +320,49 @@ User Interface
 
 :::
 
-## Arches-based projects
+
+::: {.notes}
+Arches is a geospatial semantic graph platform for CH management. It natively integrates Dublin Core, CIDOC-CRM, SKOS and SPARQL. Its next version (v7) will also offer internationalisation, RTL support for the user interface and import/export of multi-language data.
+:::
+
+
+# Arches-based projects
+
+## XXX
 
 ```{=html}
 <embed src="https://achp-project.github.io/cultural-heritage/map-projects/arches-global-south.html" width="1200px" height="700px" />
 ```
 
 
-## Database issues & developments
+# Database Issues & Developments
+
+## Project-related and IT-related issues
+
+::: {.panel-tabset}
+
+### Open Access issues
 
 ```{=html}
-<embed src="https://community.archesproject.org/" width="800px" height="2100px" />
+<embed src="https://community.archesproject.org/" width="800px" height="350px" />
 ```
 
+### Other Issues
 
-<https://github.com/archesproject/arches>
+### XXXX
+
+:::
+
+## Database Developments
+
+::: {.panel-tabset}
+
+### An Example
+
+### An other Example
+
+
+:::
 
 
 # Conclusion

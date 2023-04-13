@@ -11,7 +11,7 @@
     "href": "index.html#arches-powered-platform",
     "title": "EAMENA",
     "section": "Arches-powered platform",
-    "text": "Arches-powered platform\n\nFull-stackAWSPostgresPython/DjangoElastic SearchApacheUI\n\n\n\n\nan  instance\n\n\n\n\n\n\n\n\n\nAWS\n\n\n\n\n\n\n\n\n\nan  instance\n\n\n\n\n\n\n\n\n\nWAF\n\n\n\n\n\n\nArches is a geospatial semantic graph platform for CH management. It natively integrates Dublin Core, CIDOC-CRM, SKOS and SPARQL. Its next version (v7) will also offer internationalisation, RTL support for the user interface and import/export of multi-language data.\n\n\n\n\n\nan  instance\n\n\n\n\n\n\n\n\n\nan  instance\n\n\n\n\n\n\n\n\n\nUser Interface"
+    "text": "Arches-powered platform\n\nFull-stackAWSPostgresPython/DjangoElasticApacheUI\n\n\n\n\n\nan  instance\n\n\n\n\n\n\n\n\nAWS\n\n\n\n\n\n\n\n\n\nan  instance\n\n\n\n\n\n\n\n\n\nWAF\n\n\n\n\n\n\nArches is a geospatial semantic graph platform for CH management. It natively integrates Dublin Core, CIDOC-CRM, SKOS and SPARQL. Its next version (v7) will also offer internationalisation, RTL support for the user interface and import/export of multi-language data.\n\n\n\n\n\nan  instance\n\n\n\n\n\n\n\n\n\nan  instance\n\n\n\n\n\n\n\n\n\nUser Interface"
   },
   {
     "objectID": "index.html#arches-projects",
@@ -39,13 +39,41 @@
     "href": "index.html#endangered-archaeology-in-middle-east-and-north-africa",
     "title": "EAMENA",
     "section": "Endangered Archaeology in Middle East and North Africa",
-    "text": "Endangered Archaeology in Middle East and North Africa\n\nDestructionAgricultureConstructionNatural\n\n\n\n\n\n\n\nDestruction of Palmyre by ISIS in 2016\n\n\n\nblabla\n\n\n\n\n\n\n\n\n\nUdhma (Jordan). The area around one section of the site is completely ploughed, whilst the other half has been destroyed to plant an orchard\n\n\n\nblabla\n\n\n\n\n\n\n\n\n\nThis 2013 aerial photograph shows a road over a section of an exposed excavation of the remains of a church in Ma’in, Jordan (APAAME_20130414_MND-0484 Ma’in).\n\n\n\nblabla\n\n\n\n\n\n\n\n\n\nSabratha in Libya, which is slowly washing away into the sea\n\n\n\nblabla\n\n\n\n\n\n\nDestruction: iconoclasm, looting, etc."
+    "text": "Endangered Archaeology in Middle East and North Africa\n\nDestructionAgricultureConstructionNatural\n\n\n\n\n\n\n\n\n\nDestruction of Palmyre by ISIS in 2016\n\n\n\n\n\n\n\n\n\n\n\n\nUdhma (Jordan). The area around one section of the site is completely ploughed, whilst the other half has been destroyed to plant an orchard\n\n\n\n\n\n\n\n\n\n\n\n\nThis 2013 aerial photograph shows a road over a section of an exposed excavation of the remains of a church in Ma’in, Jordan (APAAME_20130414_MND-0484 Ma’in).\n\n\n\n\n\n\n\n\n\n\n\n\nSabratha in Libya, which is slowly washing away into the sea\n\n\n\n\n\n\n\nDestruction: iconoclasm, looting, etc."
   },
   {
     "objectID": "index.html#xxx",
     "href": "index.html#xxx",
     "title": "EAMENA",
     "section": "XXX",
-    "text": "XXX\nan  instance"
+    "text": "XXX"
+  },
+  {
+    "objectID": "index.html#project-related-and-it-related-issues",
+    "href": "index.html#project-related-and-it-related-issues",
+    "title": "EAMENA",
+    "section": "Project-related and IT-related issues",
+    "text": "Project-related and IT-related issues\n\nOpen Access issuesOther IssuesXXXX"
+  },
+  {
+    "objectID": "index.html#database-developments",
+    "href": "index.html#database-developments",
+    "title": "EAMENA",
+    "section": "Database Developments",
+    "text": "Database Developments\n\nAn ExampleAn other Example"
+  },
+  {
+    "objectID": "index.html#aknowledgments",
+    "href": "index.html#aknowledgments",
+    "title": "EAMENA",
+    "section": "Aknowledgments",
+    "text": "Aknowledgments"
+  },
+  {
+    "objectID": "index.html#contact",
+    "href": "index.html#contact",
+    "title": "EAMENA",
+    "section": "Contact",
+    "text": "Contact\n\nhttps://github.com/eamena-project\nhttp://eamena.arch.ox.ac.uk/\n  \n\n\n\n\n https://github.com/eamena-project GMPCA, Nice, 2023"
   }
 ]

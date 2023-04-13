@@ -11,7 +11,7 @@
     "href": "index.html#arches-powered-platform",
     "title": "EAMENA",
     "section": "Arches-powered platform",
-    "text": "Arches-powered platform\n\nGraph DBFull-stackAWSPostgresPython/DjangoElasticApacheUI\n\n\n\n\nArches is a web-based, geospatial information system for Cultural Heritage inventory and management integrating natively the CIDOC-CRM\n\n\n\n\n\n\n\n\n\nEAMENA is an  instance\n\n\n\n\n\n\n\n\n\nEAMENA is hosted on  (Ubuntu)\n\n\n\n\n\n\n\n\n\nEAMENA uses  Data Base Management System.\n\n\n\n\n\n\n\n\n\nEAMENA uses  Web Application Framework.\n\n\n\n\n\n\n\n\n\nEAMENA uses an  distributed search\n\n\n\n\n\n\n\n\n\nEAMENA uses an  HTTP server\n\n\n\n\n\n\n\n\n\nEAMENA User Interface\n\n\n\n\n\n\n\n\nArches is a geospatial semantic graph platform for CH management. It natively integrates Dublin Core, CIDOC-CRM, SKOS and SPARQL. Its next version (v7) will also offer internationalisation, RTL support for the user interface and import/export of multi-language data."
+    "text": "Arches-powered platform\n\nGraph databaseCIDOC-CRM\n\n\nArches is a web-based, geospatial information system for Cultural Heritage inventory and management\n\n\n\n\n\nArches integrates natively the CIDOC-CRM"
   },
   {
     "objectID": "index.html#arches-projects",
@@ -82,5 +82,12 @@
     "title": "EAMENA",
     "section": "VIDEO",
     "text": "VIDEO"
+  },
+  {
+    "objectID": "index.html#arches-it-stack",
+    "href": "index.html#arches-it-stack",
+    "title": "EAMENA",
+    "section": "Arches IT Stack",
+    "text": "Arches IT Stack\n\nFull-stackAWSPostgresPython/DjangoElasticApacheUI\n\n\n\n\n\nEAMENA is an  instance\n\nA CPF photograph\n\n\n\n\n\n\n\nEAMENA is hosted on  (Ubuntu)\n\n\n\n\n\n\n\n\n\nEAMENA uses  Data Base Management System.\n\n\n\n\n\n\n\n\n\nEAMENA uses  Web Application Framework.\n\n\n\n\n\n\n\n\n\nEAMENA uses an  distributed search\n\n\n\n\n\n\n\n\n\nEAMENA uses an  HTTP server\n\n\n\n\n\n\n\n\n\nEAMENA User Interface\n\n\n\n\n\n\n\n\nArches is a geospatial semantic graph platform for CH management. It natively integrates Dublin Core, CIDOC-CRM, SKOS and SPARQL. Its next version (v7) will also offer internationalisation, RTL support for the user interface and import/export of multi-language data."
   }
 ]

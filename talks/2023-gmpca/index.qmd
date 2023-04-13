@@ -212,7 +212,7 @@ EAMENA uses <img src='https://raw.githubusercontent.com/eamena-project/eamena-ar
 
 ::: {.column width="60%"}
 
-<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/pg-uuid-jsonb.png' style='height: 350px'>
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/postgres-uuid-jsonb.png' style='height: 350px'>
 
 
 :::

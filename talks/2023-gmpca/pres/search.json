@@ -11,7 +11,7 @@
     "href": "index.html#arches-powered-platform",
     "title": "EAMENA",
     "section": "Arches-powered platform",
-    "text": "Arches-powered platform\n\nFull-stackAWSPostgresPython/DjangoElasticApacheUI\n\n\n\n\n\nan  instance\n\n\n\n\n\n\n\n\nAWS\n\n\n\n\n\n\n\n\n\nan  instance\n\n\n\n\n\n\n\n\n\nWAF\n\n\n\n\n\n\nArches is a geospatial semantic graph platform for CH management. It natively integrates Dublin Core, CIDOC-CRM, SKOS and SPARQL. Its next version (v7) will also offer internationalisation, RTL support for the user interface and import/export of multi-language data.\n\n\n\n\n\nan  instance\n\n\n\n\n\n\n\n\n\nan  instance\n\n\n\n\n\n\n\n\n\nUser Interface"
+    "text": "Arches-powered platform\n\nFull-stackAWSPostgresPython/DjangoElasticApacheUI\n\n\n\n\n\nEAMENA is an  instance\n\n\n\n\n\n\n\n\n\nEAMENA is hosted on  (Ubuntu)\n\n\n\n\n\n\n\n\n\nEAMENA uses  Data Base Management System.\n\n\n\n\n\n\n\n\n\nEAMENA uses  Web Application Framework.\n\n\n\n\n\n\n\n\n\nEAMENA uses an  distributed search\n\n\n\n\n\n\n\n\n\nEAMENA uses an  HTTP server\n\n\n\n\n\n\n\n\n\nEAMENA User Interface\n\n\n\n\n\n\n\n\nArches is a geospatial semantic graph platform for CH management. It natively integrates Dublin Core, CIDOC-CRM, SKOS and SPARQL. Its next version (v7) will also offer internationalisation, RTL support for the user interface and import/export of multi-language data."
   },
   {
     "objectID": "index.html#arches-projects",
@@ -60,7 +60,7 @@
     "href": "index.html#database-developments",
     "title": "EAMENA",
     "section": "Database Developments",
-    "text": "Database Developments\n\nAn ExampleAn other Example"
+    "text": "Database Developments\n\nAn ExampleAn other ExampleeamenaR"
   },
   {
     "objectID": "index.html#aknowledgments",
@@ -74,6 +74,6 @@
     "href": "index.html#contact",
     "title": "EAMENA",
     "section": "Contact",
-    "text": "Contact\n\nhttps://github.com/eamena-project\nhttp://eamena.arch.ox.ac.uk/\n  \n\n\n\n\n https://github.com/eamena-project GMPCA, Nice, 2023"
+    "text": "Contact\n\n  https://github.com/archesproject\n https://github.com/eamena-project\nhttp://eamena.arch.ox.ac.uk/\n  \n\n\n\n\n https://github.com/eamena-project GMPCA, Nice, 2023"
   }
 ]

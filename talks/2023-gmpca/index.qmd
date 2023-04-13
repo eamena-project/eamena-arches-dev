@@ -23,6 +23,10 @@ format:
     width: 1400
 ---
 
+
+
+# EAMENA project
+
 ```{r, echo=FALSE}
 library(shiny)
 library(rmarkdown)
@@ -35,7 +39,11 @@ library(DT)
 library(dplyr)
 ```
 
-# EAMENA project
+## VIDEO
+
+---
+
+{{< video https://youtu.be/wo9vZccmqwc width="100%" height="100%" >}}
 
 ## <span style="font-size:50px">Endangered Archaeology in Middle East and North Africa</span>
 
@@ -152,7 +160,7 @@ Destruction: iconoclasm, looting, etc.
 
 
 ```{=html}
-<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="350px" />
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="300px" />
 ```
 
 EAMENA is an <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> instance
@@ -163,7 +171,7 @@ EAMENA is an <img src='https://raw.githubusercontent.com/eamena-project/eamena-a
 
 
 ```{=html}
-<embed src="https://www.archesproject.org/" width="800px" height="350px" />
+<embed src="https://www.archesproject.org/" width="800px" height="400px" />
 ```
 
 :::
@@ -178,7 +186,7 @@ EAMENA is an <img src='https://raw.githubusercontent.com/eamena-project/eamena-a
 ::: {.column width="40%"}
 
 ```{=html}
-<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="350px" />
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="300px" />
 ```
 
 EAMENA is hosted on <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-aws.png' style='height: 35px;vertical-align: middle;'> (Ubuntu)
@@ -187,7 +195,7 @@ EAMENA is hosted on <img src='https://raw.githubusercontent.com/eamena-project/e
 
 ::: {.column width="60%"}
 
-<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/aws-instances.jpg' style='height: 350px'>
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/aws-instances.jpg' style='height: 400px'>
 
 :::
 
@@ -202,7 +210,7 @@ EAMENA is hosted on <img src='https://raw.githubusercontent.com/eamena-project/e
 ::: {.column width="40%"}
 
 ```{=html}
-<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="350px" />
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="300px" />
 ```
 
 EAMENA uses <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-postgres.png' style='height: 35px;vertical-align: middle;'> Data Base Management System.
@@ -212,7 +220,7 @@ EAMENA uses <img src='https://raw.githubusercontent.com/eamena-project/eamena-ar
 
 ::: {.column width="60%"}
 
-<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/postgres-uuid-jsonb.png' style='height: 350px'>
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/postgres-uuid-jsonb.png' style='height: 400px'>
 
 
 :::
@@ -227,7 +235,7 @@ EAMENA uses <img src='https://raw.githubusercontent.com/eamena-project/eamena-ar
 ::: {.column width="40%"}
 
 ```{=html}
-<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="350px" />
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="300px" />
 ```
 
 EAMENA uses <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-django.png' style='height: 35px;vertical-align: middle;'> Web Application Framework.
@@ -236,7 +244,7 @@ EAMENA uses <img src='https://raw.githubusercontent.com/eamena-project/eamena-ar
 
 ::: {.column width="60%"}
 
-<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/django-rdm.png' style='height: 350px'>
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/django-rdm.png' style='height: 400px'>
 
 :::
 
@@ -250,7 +258,7 @@ EAMENA uses <img src='https://raw.githubusercontent.com/eamena-project/eamena-ar
 ::: {.column width="40%"}
 
 ```{=html}
-<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="350px" />
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="300px" />
 ```
 
 EAMENA uses an <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-elastic.png' style='height: 35px;vertical-align: middle;'> distributed search
@@ -273,7 +281,7 @@ EAMENA uses an <img src='https://raw.githubusercontent.com/eamena-project/eamena
 ::: {.column width="40%"}
 
 ```{=html}
-<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="350px" />
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="300px" />
 ```
 
 EAMENA uses an <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-apache.png' style='height: 35px;vertical-align: middle;'> HTTP server
@@ -296,7 +304,7 @@ EAMENA uses an <img src='https://raw.githubusercontent.com/eamena-project/eamena
 ::: {.column width="40%"}
 
 ```{=html}
-<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="350px" />
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="300px" />
 ```
 
 EAMENA User Interface
@@ -307,7 +315,7 @@ EAMENA User Interface
 
 
 ```{=html}
-<embed src="https://database.eamena.org/en/" width="800px" height="350px" />
+<embed src="https://database.eamena.org/en/" width="800px" height="400px" />
 ```
 
 :::
@@ -340,7 +348,7 @@ Arches is a geospatial semantic graph platform for CH management. It natively in
 ### Open Access issues
 
 ```{=html}
-<embed src="https://community.archesproject.org/" width="800px" height="350px" />
+<embed src="https://community.archesproject.org/" width="800px" height="300px" />
 ```
 
 ### Other Issues

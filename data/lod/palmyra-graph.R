@@ -37,7 +37,7 @@ edges$font.strokeWidth <- c(rep(0, nrow(edges)))
 edges$label <- gsub(" \\(", "\\\n\\(", edges$property)
 gout <- visNetwork(nodes,
                    edges,
-                   main = list(text = "A simple CIDOC-CRM example",
+                   main = list(text = "CIDOC-CRM example",
                                style = "font-family:Arial;text-align:center;"
                                # style = "text-align:right; font-family:Arial; color:#ffffff"
                                ),

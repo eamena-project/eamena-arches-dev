@@ -1,7 +1,7 @@
 ---
 title: "EAMENA"
 subtitle: "**A massive and open data information system for endangered archaeology and cultural heritage**"
-author: "Bill Finlayson, Bijan Rouhani, Thomas Huet, Michael Fradley, Sayantani Neogi, Melisa Holloway, Andrew Wilson"
+author: "Bill Finlayson, Bijan Rouhani, Thomas Huet*, Michael Fradley, Sayantani Neogi, Melisa Holloway & Andrew Wilson"
 title-slide-attributes:
     data-background-image: "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaDB-bck.png"
     data-background-size: "90%"
@@ -108,27 +108,6 @@ blabla
 
 ::::
 
-### Construction
-
-:::: {.columns}
-
-::: {.column width="60%"}
-
-<center>
-
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-urbanism.jpg" width="600"><div class="captiontext">This 2013 aerial photograph shows a road over a section of an exposed excavation of the remains of a church in Ma'in, Jordan (APAAME_20130414_MND-0484 Ma’in).</div>
-
-</center>
-
-:::
-
-::: {.column width="40%"}
-
-blabla
-
-:::
-
-::::
 
 ### Natural
 
@@ -163,11 +142,24 @@ Destruction: iconoclasm, looting, etc.
 
 ## Arches-powered platform
 
+::: {.panel-tabset}
 
+### Full-stack
 
 :::: {.columns}
 
+::: {.column width="40%"}
+
+an <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> instance
+
+```{=html}
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack.htm" width="800px" height="2100px" />
+```
+
+:::
+
 ::: {.column width="60%"}
+
 
 ```{=html}
 <embed src="https://www.archesproject.org/" width="800px" height="500px" />
@@ -175,18 +167,171 @@ Destruction: iconoclasm, looting, etc.
 
 :::
 
+::::
+
+
+### AWS
+
+:::: {.columns}
+
 ::: {.column width="40%"}
 
-an <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> instance
+AWS
+
+```{=html}
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack.htm" width="800px" height="2100px" />
+```
+
+:::
+
+::: {.column width="60%"}
+
+
+```{=html}
+<embed src="https://www.archesproject.org/" width="800px" height="500px" />
+```
 
 :::
 
 ::::
 
+
+
+### Postgres
+
+:::: {.columns}
+
+::: {.column width="40%"}
+
+an <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> instance
+
+```{=html}
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack.htm" width="800px" height="2100px" />
+```
+
+:::
+
+::: {.column width="60%"}
+
+
+```{=html}
+<embed src="https://www.archesproject.org/" width="800px" height="500px" />
+```
+
+:::
+
+::::
+
+
+### Python/Django
+
+:::: {.columns}
+
+::: {.column width="40%"}
+
+WAF
+
+```{=html}
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack.htm" width="800px" height="2100px" />
+```
+
+:::
+
+::: {.column width="60%"}
+
+
+```{=html}
+<embed src="https://www.archesproject.org/" width="800px" height="500px" />
+```
+
+:::
+
+::::
+
+
 ::: {.notes}
 Arches is a geospatial semantic graph platform for CH management. It natively integrates Dublin Core, CIDOC-CRM, SKOS and SPARQL. Its next version (v7) will also offer internationalisation, RTL support for the user interface and import/export of multi-language data.
 :::
 
+
+### Elastic Search
+
+:::: {.columns}
+
+::: {.column width="40%"}
+
+an <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> instance
+
+```{=html}
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack.htm" width="800px" height="2100px" />
+```
+
+:::
+
+::: {.column width="60%"}
+
+
+```{=html}
+<embed src="https://www.archesproject.org/" width="800px" height="500px" />
+```
+
+:::
+
+::::
+
+### Apache
+
+:::: {.columns}
+
+::: {.column width="40%"}
+
+an <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> instance
+
+```{=html}
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack.htm" width="800px" height="2100px" />
+```
+
+:::
+
+::: {.column width="60%"}
+
+
+```{=html}
+<embed src="https://www.archesproject.org/" width="800px" height="500px" />
+```
+
+:::
+
+::::
+
+
+
+### UI
+
+:::: {.columns}
+
+::: {.column width="40%"}
+
+User Interface
+
+```{=html}
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack.htm" width="800px" height="2100px" />
+```
+
+:::
+
+::: {.column width="60%"}
+
+
+```{=html}
+<embed src="https://www.archesproject.org/" width="800px" height="500px" />
+```
+
+:::
+
+::::
+
+:::
 
 ## Arches-projects
 
@@ -205,11 +350,8 @@ Arches is a geospatial semantic graph platform for CH management. It natively in
 <https://github.com/archesproject/arches>
 
 
-## IT Stack
 
-```{=html}
-<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack.htm" width="800px" height="2100px" />
-```
+
 
 
 

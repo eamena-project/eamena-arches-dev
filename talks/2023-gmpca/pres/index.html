@@ -10,7 +10,7 @@
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.1.251">
 
-  <meta name="author" content="Bill Finlayson, Bijan Rouhani, Thomas Huet, Michael Fradley, Sayantani Neogi, Melisa Holloway, Andrew Wilson">
+  <meta name="author" content="Bill Finlayson, Bijan Rouhani, Thomas Huet*, Michael Fradley, Sayantani Neogi, Melisa Holloway &amp; Andrew Wilson">
   <title>EAMENA</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -331,7 +331,7 @@
 <section id="title-slide" data-background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaDB-bck.png" data-background-opacity="0.5" data-background-size="90%" class="center">
   <h1 class="title">EAMENA</h1>
   <p class="subtitle"><strong>A massive and open data information system for endangered archaeology and cultural heritage</strong></p>
-  <p class="author">Bill Finlayson, Bijan Rouhani, Thomas Huet, Michael Fradley, Sayantani Neogi, Melisa Holloway, Andrew Wilson</p>
+  <p class="author">Bill Finlayson, Bijan Rouhani, Thomas Huet*, Michael Fradley, Sayantani Neogi, Melisa Holloway &amp; Andrew Wilson</p>
 </section>
 
 <section class="slide level2">
@@ -346,9 +346,9 @@
 
 </section>
 <section id="endangered-archaeology-in-middle-east-and-north-africa" class="slide level2">
-<h2>Endangered Archaeology in Middle East and North Africa</h2>
+<h2><small>Endangered Archaeology in Middle East and North Africa</small></h2>
 <div class="panel-tabset">
-<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">Kick-off</a></li><li><a href="#tabset-1-2">Agriculture</a></li></ul>
+<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">Destruction</a></li><li><a href="#tabset-1-2">Agriculture</a></li><li><a href="#tabset-1-3">Construction</a></li><li><a href="#tabset-1-4">Natural</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1">
 <div class="columns">
@@ -378,8 +378,49 @@ Udhma (Jordan). The area around one section of the site is completely ploughed, 
 </div>
 </div>
 </div>
+<div id="tabset-1-3">
+<div class="columns">
+<div class="column" style="width:60%;">
+<center>
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-urbanism.jpg" width="600">
+<div class="captiontext">
+This 2013 aerial photograph shows a road over a section of an exposed excavation of the remains of a church in Ma’in, Jordan (APAAME_20130414_MND-0484 Ma’in).
+</div>
+</center>
+</div><div class="column" style="width:40%;">
+<p>blabla</p>
 </div>
 </div>
+</div>
+<div id="tabset-1-4">
+<div class="columns">
+<div class="column" style="width:60%;">
+<center>
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-natural.jpg" width="600">
+<div class="captiontext">
+Sabratha in Libya, which is slowly washing away into the sea
+</div>
+</center>
+</div><div class="column" style="width:40%;">
+<p>blabla</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<aside class="notes">
+<p>Destruction: iconoclasm, looting, etc.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section></section>
 <section>
 <section id="the-database" class="title-slide slide level1 center">
@@ -388,11 +429,46 @@ Udhma (Jordan). The area around one section of the site is completely ploughed, 
 </section>
 <section id="arches-powered-platform" class="slide level2">
 <h2>Arches-powered platform</h2>
+<div class="panel-tabset">
+<ul id="tabset-2" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-2-1">Full-stack</a></li><li><a href="#tabset-2-2">AWS</a></li><li><a href="#tabset-2-3">Postgres</a></li><li><a href="#tabset-2-4">Python/Django</a></li><li><a href="#tabset-2-5">Elastic Search</a></li><li><a href="#tabset-2-6">Apache</a></li><li><a href="#tabset-2-7">UI</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1">
 <div class="columns">
-<div class="column" style="width:60%;">
-<embed src="https://www.archesproject.org/" width="800px" height="500px">
-</div><div class="column" style="width:40%;">
+<div class="column" style="width:40%;">
 <p>an <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png" style="height: 35px;vertical-align: middle;"> instance</p>
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack.htm" width="800px" height="2100px">
+</div><div class="column" style="width:60%;">
+<embed src="https://www.archesproject.org/" width="800px" height="500px">
+</div>
+</div>
+</div>
+<div id="tabset-2-2">
+<div class="columns">
+<div class="column" style="width:40%;">
+<p>AWS</p>
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack.htm" width="800px" height="2100px">
+</div><div class="column" style="width:60%;">
+<embed src="https://www.archesproject.org/" width="800px" height="500px">
+</div>
+</div>
+</div>
+<div id="tabset-2-3">
+<div class="columns">
+<div class="column" style="width:40%;">
+<p>an <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png" style="height: 35px;vertical-align: middle;"> instance</p>
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack.htm" width="800px" height="2100px">
+</div><div class="column" style="width:60%;">
+<embed src="https://www.archesproject.org/" width="800px" height="500px">
+</div>
+</div>
+</div>
+<div id="tabset-2-4">
+<div class="columns">
+<div class="column" style="width:40%;">
+<p>WAF</p>
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack.htm" width="800px" height="2100px">
+</div><div class="column" style="width:60%;">
+<embed src="https://www.archesproject.org/" width="800px" height="500px">
 </div>
 </div>
 <aside class="notes">
@@ -408,6 +484,39 @@ Udhma (Jordan). The area around one section of the site is completely ploughed, 
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
+</div>
+<div id="tabset-2-5">
+<div class="columns">
+<div class="column" style="width:40%;">
+<p>an <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png" style="height: 35px;vertical-align: middle;"> instance</p>
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack.htm" width="800px" height="2100px">
+</div><div class="column" style="width:60%;">
+<embed src="https://www.archesproject.org/" width="800px" height="500px">
+</div>
+</div>
+</div>
+<div id="tabset-2-6">
+<div class="columns">
+<div class="column" style="width:40%;">
+<p>an <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png" style="height: 35px;vertical-align: middle;"> instance</p>
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack.htm" width="800px" height="2100px">
+</div><div class="column" style="width:60%;">
+<embed src="https://www.archesproject.org/" width="800px" height="500px">
+</div>
+</div>
+</div>
+<div id="tabset-2-7">
+<div class="columns">
+<div class="column" style="width:40%;">
+<p>User Interface</p>
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack.htm" width="800px" height="2100px">
+</div><div class="column" style="width:60%;">
+<embed src="https://www.archesproject.org/" width="800px" height="500px">
+</div>
+</div>
+</div>
+</div>
+</div>
 </section>
 <section id="arches-projects" class="slide level2">
 <h2>Arches-projects</h2>
@@ -417,10 +526,6 @@ Udhma (Jordan). The area around one section of the site is completely ploughed, 
 <h2>Arches developments</h2>
 <embed src="https://community.archesproject.org/" width="800px" height="2100px">
 <p><a href="https://github.com/archesproject/arches" class="uri">https://github.com/archesproject/arches</a></p>
-</section>
-<section id="it-stack" class="slide level2">
-<h2>IT Stack</h2>
-<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack.htm" width="800px" height="2100px">
 
 <p><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-uni-oxford_.png" class="slide-logo"></p>
 <div class="footer footer-default">

@@ -2,8 +2,9 @@ library(visNetwork)
 library(htmlwidgets)
 library(dplyr)
 
-dataDir <- "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/data/lod/"
-imgDir <- "https://raw.githubusercontent.com/zoometh/thomashuet/main/img/"
+rootDir <- "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/"
+dataDir <- paste0(rootDir, "data/lod/")
+imgDir <- paste0(rootDir, "www/")
 
 vertices <- read.csv2(paste0(dataDir, "palmyra-vertices.tsv"), sep = "\t")
 edges <- read.csv2(paste0(dataDir, "palmyra-edges.tsv"), sep = "\t")
@@ -18,10 +19,10 @@ vertices[idx.images, "multimedia"] <- paste0(imgDir, vertices[which(vertices$mul
 
 nodes <- data.frame(id = vertices$id,
                     label = paste0(vertices$name,"\n", vertices$class),
-                    color = c(rep("#808080", nrow(vertices))),
+                    color = c(rep("#000080", nrow(vertices))),
                     # title = "A simple CIDOC-CRM example",
                     # title.color = "white",
-                    font.size = rep(15, nrow(vertices)),
+                    font.size = rep(18, nrow(vertices)),
                     font.color = c(rep("white", nrow(vertices))),
                     image = vertices$multimedia,
                     shape = vertices.shapes,
@@ -30,14 +31,17 @@ nodes <- data.frame(id = vertices$id,
 )
 
 edges$length <- c(rep(300, nrow(edges)))
-edges$font.color <- c(rep("white", nrow(edges)))
+edges$font.color <- c(rep("black", nrow(edges)))
+edges$font.size <- c(rep(20, nrow(edges)))
 edges$font.strokeWidth <- c(rep(0, nrow(edges)))
 edges$label <- gsub(" \\(", "\\\n\\(", edges$property)
 gout <- visNetwork(nodes,
                    edges,
                    main = list(text = "A simple CIDOC-CRM example",
-                               style = "text-align:right; font-family:Arial; color:#ffffff"),
-                   background = "black",
+                               style = "font-family:Arial;text-align:center;"
+                               # style = "text-align:right; font-family:Arial; color:#ffffff"
+                               ),
+                   # background = "black",
                    width = "100%",
                    height = "100vh") %>%
   visEdges(shadow = TRUE,
@@ -45,9 +49,9 @@ gout <- visNetwork(nodes,
            arrows =list(to = list(enabled = TRUE,
                                   scaleFactor = 1)),
            color = list(color = "lightblue",
-                        highlight = "red"))
+                        highlight = "blue"))
 gout
 
 path.out <- paste0(getwd(),"/data/lod/palmyra-cidoc-graph.html")
-#saveWidget(gout,path.out)
+saveWidget(gout,path.out)
 print(paste("saved in:", path.out))

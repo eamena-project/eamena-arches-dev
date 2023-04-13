@@ -1,13 +1,15 @@
 library(visNetwork)
 library(htmlwidgets)
+library(dplyr)
 
-dataDir <- "https://raw.githubusercontent.com/eamena-oxford/eamena-arches-dev/main/data/lod/"
+dataDir <- "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/data/lod/"
 imgDir <- "https://raw.githubusercontent.com/zoometh/thomashuet/main/img/"
 
 vertices <- read.csv2(paste0(dataDir, "palmyra-vertices.tsv"), sep = "\t")
 edges <- read.csv2(paste0(dataDir, "palmyra-edges.tsv"), sep = "\t")
 
-# idx.images <- which(vertices$multimedia != "")
+idx.images <- which(vertices$multimedia != "")
+
 vertices.shapes <- vertices$id %in% which(vertices$multimedia != "")
 vertices.shapes[vertices.shapes == TRUE] <- "image"
 vertices.shapes[vertices.shapes == FALSE] <- "box"

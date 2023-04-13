@@ -152,6 +152,28 @@ Destruction: iconoclasm, looting, etc.
 
 ::: {.panel-tabset}
 
+### Graph DB
+
+:::: {.columns}
+
+::: {.column width="40%"}
+
+```{=html}
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="300px" />
+```
+
+EAMENA uses <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-django.png' style='height: 35px;vertical-align: middle;'> Web Application Framework.
+
+:::
+
+::: {.column width="60%"}
+
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/django-rdm.png' style='height: 400px'>
+
+:::
+
+::::
+
 ### Full-stack
 
 :::: {.columns}

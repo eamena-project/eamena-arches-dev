@@ -272,20 +272,16 @@ EAMENA uses an <img src='https://raw.githubusercontent.com/eamena-project/eamena
 
 ::: {.column width="40%"}
 
-an <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> instance
-
 ```{=html}
 <embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="350px" />
 ```
+
+EAMENA uses an <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-apache.png' style='height: 35px;vertical-align: middle;'> HTTP server
 
 :::
 
 ::: {.column width="60%"}
 
-
-```{=html}
-<embed src="https://www.archesproject.org/" width="800px" height="350px" />
-```
 
 :::
 
@@ -299,11 +295,11 @@ an <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/
 
 ::: {.column width="40%"}
 
-User Interface
-
 ```{=html}
 <embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="350px" />
 ```
+
+EAMENA User Interface
 
 :::
 
@@ -311,7 +307,7 @@ User Interface
 
 
 ```{=html}
-<embed src="https://www.archesproject.org/" width="800px" height="350px" />
+<embed src="https://database.eamena.org/en/" width="800px" height="350px" />
 ```
 
 :::
@@ -361,6 +357,8 @@ Arches is a geospatial semantic graph platform for CH management. It natively in
 
 ### An other Example
 
+### eamenaR
+
 
 :::
 
@@ -375,8 +373,10 @@ Arches is a geospatial semantic graph platform for CH management. It natively in
 
 ## Contact
 
+* <img src='https://raw.githubusercontent.com/thomashuet/master/img/app-github.png' style='height: 35px;vertical-align: middle;'> <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> <https://github.com/archesproject>
 
-* https://github.com/eamena-project
+
+* <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo-eamena-gh-org.png' style='height: 35px;vertical-align: middle;'> <https://github.com/eamena-project>
 
 * http://eamena.arch.ox.ac.uk/
 

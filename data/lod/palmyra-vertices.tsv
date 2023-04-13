@@ -5,5 +5,5 @@ id	name	class	multimedia
 4	Syria	E36 Visual Item	lod-cidoc-syria
 5	Roman	E4 Period	
 6	Hellenistic	E4 Period	
-7   Destruction E7 Activity
-8   ISIS    E39 Actor
+7	Destruction	E7 Activity
+8	ISIS	E39 Actor

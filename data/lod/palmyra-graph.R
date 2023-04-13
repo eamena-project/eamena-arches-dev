@@ -30,14 +30,14 @@ nodes <- data.frame(id = vertices$id,
                     group = c(rep("dmp", nrow(vertices)))
 )
 
-edges$length <- c(rep(300, nrow(edges)))
+edges$length <- c(rep(400, nrow(edges)))
 edges$font.color <- c(rep("black", nrow(edges)))
 edges$font.size <- c(rep(20, nrow(edges)))
 edges$font.strokeWidth <- c(rep(0, nrow(edges)))
 edges$label <- gsub(" \\(", "\\\n\\(", edges$property)
 gout <- visNetwork(nodes,
                    edges,
-                   main = list(text = "CIDOC-CRM example",
+                   main = list(text = "a CIDOC-CRM example",
                                style = "font-family:Arial;text-align:center;"
                                # style = "text-align:right; font-family:Arial; color:#ffffff"
                                ),
@@ -53,5 +53,5 @@ gout <- visNetwork(nodes,
 gout
 
 path.out <- paste0(getwd(),"/data/lod/palmyra-cidoc-graph.html")
-# saveWidget(gout,path.out)
+saveWidget(gout,path.out)
 print(paste("saved in:", path.out))

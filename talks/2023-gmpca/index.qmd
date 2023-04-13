@@ -41,7 +41,7 @@ library(dplyr)
 
 ::: {.panel-tabset}
 
-### Kick-off
+### Destruction
 
 
 :::: {.columns}
@@ -86,7 +86,7 @@ blabla
 
 ::::
 
-### Agriculture
+### Construction
 
 :::: {.columns}
 
@@ -108,8 +108,55 @@ blabla
 
 ::::
 
+### Construction
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-urbanism.jpg" width="600"><div class="captiontext">This 2013 aerial photograph shows a road over a section of an exposed excavation of the remains of a church in Ma'in, Jordan (APAAME_20130414_MND-0484 Ma’in).</div>
+
+</center>
+
 :::
 
+::: {.column width="40%"}
+
+blabla
+
+:::
+
+::::
+
+### Natural
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-natural.jpg" width="600"><div class="captiontext">Sabratha in Libya, which is slowly washing away into the sea</div>
+
+</center>
+
+:::
+
+::: {.column width="40%"}
+
+blabla
+
+:::
+
+::::
+
+:::
+
+::: {.notes}
+Destruction: iconoclasm, looting, etc.
+:::
 
 
 # The database

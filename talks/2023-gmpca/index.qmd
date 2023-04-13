@@ -37,7 +37,7 @@ library(dplyr)
 
 # EAMENA project
 
-## Endangered Archaeology in Middle East and North Africa
+## <span style="font-size:50px">Endangered Archaeology in Middle East and North Africa</span>
 
 ::: {.panel-tabset}
 
@@ -50,7 +50,7 @@ library(dplyr)
 
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-destruction.jpg" width="600"><div class="captiontext">Destruction of Palmyre by ISIS in 2016 </div>
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-destruction.jpg" width="600">
 
 </center>
 
@@ -58,7 +58,7 @@ library(dplyr)
 
 ::: {.column width="40%"}
 
-blabla
+<div class="captiontext">Destruction of Palmyre by ISIS in 2016 </div>
 
 :::
 
@@ -72,7 +72,7 @@ blabla
 
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-agricole.jpg" width="600"><div class="captiontext">Udhma (Jordan). The area around one section of the site is completely ploughed, whilst the other half has been destroyed to plant an orchard</div>
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-agricole.jpg" width="600">
 
 </center>
 
@@ -80,7 +80,7 @@ blabla
 
 ::: {.column width="40%"}
 
-blabla
+<div class="captiontext">Udhma (Jordan). The area around one section of the site is completely ploughed, whilst the other half has been destroyed to plant an orchard</div>
 
 :::
 
@@ -94,7 +94,7 @@ blabla
 
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-urbanism.jpg" width="600"><div class="captiontext">This 2013 aerial photograph shows a road over a section of an exposed excavation of the remains of a church in Ma'in, Jordan (APAAME_20130414_MND-0484 Ma’in).</div>
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-urbanism.jpg" width="600">
 
 </center>
 
@@ -102,7 +102,7 @@ blabla
 
 ::: {.column width="40%"}
 
-blabla
+<div class="captiontext">This 2013 aerial photograph shows a road over a section of an exposed excavation of the remains of a church in Ma'in, Jordan (APAAME_20130414_MND-0484 Ma’in).</div>
 
 :::
 
@@ -117,7 +117,7 @@ blabla
 
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-natural.jpg" width="600"><div class="captiontext">Sabratha in Libya, which is slowly washing away into the sea</div>
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-natural.jpg" width="600">
 
 </center>
 
@@ -125,7 +125,7 @@ blabla
 
 ::: {.column width="40%"}
 
-blabla
+<div class="captiontext">Sabratha in Libya, which is slowly washing away into the sea</div>
 
 :::
 
@@ -153,7 +153,7 @@ Destruction: iconoclasm, looting, etc.
 an <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> instance
 
 ```{=html}
-<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.htm" width="800px" height="2100px" />
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="2100px" />
 ```
 
 :::
@@ -179,7 +179,7 @@ an <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/
 AWS
 
 ```{=html}
-<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.htm" width="800px" height="2100px" />
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="2100px" />
 ```
 
 :::
@@ -206,7 +206,7 @@ AWS
 an <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> instance
 
 ```{=html}
-<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.htm" width="800px" height="2100px" />
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="2100px" />
 ```
 
 :::
@@ -232,7 +232,7 @@ an <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/
 WAF
 
 ```{=html}
-<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.htm" width="800px" height="2100px" />
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="2100px" />
 ```
 
 :::
@@ -254,7 +254,7 @@ Arches is a geospatial semantic graph platform for CH management. It natively in
 :::
 
 
-### Elastic Search
+### Elastic
 
 :::: {.columns}
 
@@ -263,7 +263,7 @@ Arches is a geospatial semantic graph platform for CH management. It natively in
 an <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> instance
 
 ```{=html}
-<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.htm" width="800px" height="2100px" />
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="2100px" />
 ```
 
 :::
@@ -288,7 +288,7 @@ an <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/
 an <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> instance
 
 ```{=html}
-<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.htm" width="800px" height="2100px" />
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="2100px" />
 ```
 
 :::
@@ -315,7 +315,7 @@ an <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/
 User Interface
 
 ```{=html}
-<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.htm" width="800px" height="2100px" />
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="2100px" />
 ```
 
 :::
@@ -336,7 +336,7 @@ User Interface
 ## Arches-projects
 
 ```{=html}
-<embed src="https://achp-project.github.io/cultural-heritage/map-projects/arches-global-south.html" width="800px" height="2100px" />
+<embed src="https://achp-project.github.io/cultural-heritage/map-projects/arches-global-south.html" width="1200px" height="700px" />
 ```
 
 
@@ -350,7 +350,9 @@ User Interface
 <https://github.com/archesproject/arches>
 
 
+# Acknowledgments
 
+Arcadia
 
 
 

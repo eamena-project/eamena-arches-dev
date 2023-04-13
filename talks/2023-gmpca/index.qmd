@@ -20,7 +20,7 @@ format:
     logo: https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-uni-oxford_.png
     footer: "<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo_black.png' style='height: 35px;vertical-align: middle;'> <https://github.com/eamena-project> GMPCA, Nice, 2023"
     margin: 0
-    width: 1200
+    width: 1400
 ---
 
 ```{r, echo=FALSE}
@@ -37,7 +37,7 @@ library(dplyr)
 
 # EAMENA project
 
-## <small>Endangered Archaeology in Middle East and North Africa</small>
+## Endangered Archaeology in Middle East and North Africa
 
 ::: {.panel-tabset}
 
@@ -153,7 +153,7 @@ Destruction: iconoclasm, looting, etc.
 an <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> instance
 
 ```{=html}
-<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack.htm" width="800px" height="2100px" />
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.htm" width="800px" height="2100px" />
 ```
 
 :::
@@ -179,7 +179,7 @@ an <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/
 AWS
 
 ```{=html}
-<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack.htm" width="800px" height="2100px" />
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.htm" width="800px" height="2100px" />
 ```
 
 :::
@@ -206,7 +206,7 @@ AWS
 an <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> instance
 
 ```{=html}
-<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack.htm" width="800px" height="2100px" />
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.htm" width="800px" height="2100px" />
 ```
 
 :::
@@ -232,7 +232,7 @@ an <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/
 WAF
 
 ```{=html}
-<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack.htm" width="800px" height="2100px" />
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.htm" width="800px" height="2100px" />
 ```
 
 :::
@@ -263,7 +263,7 @@ Arches is a geospatial semantic graph platform for CH management. It natively in
 an <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> instance
 
 ```{=html}
-<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack.htm" width="800px" height="2100px" />
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.htm" width="800px" height="2100px" />
 ```
 
 :::
@@ -288,7 +288,7 @@ an <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/
 an <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> instance
 
 ```{=html}
-<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack.htm" width="800px" height="2100px" />
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.htm" width="800px" height="2100px" />
 ```
 
 :::
@@ -315,7 +315,7 @@ an <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/
 User Interface
 
 ```{=html}
-<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack.htm" width="800px" height="2100px" />
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.htm" width="800px" height="2100px" />
 ```
 
 :::

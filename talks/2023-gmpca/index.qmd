@@ -152,27 +152,40 @@ Destruction: iconoclasm, looting, etc.
 
 ::: {.panel-tabset}
 
-### Graph DB
+### Graph database
+
+Arches is a web-based, geospatial information system for Cultural Heritage inventory and management
+
+```{=html}
+<embed src="https://www.archesproject.org/" width="1200px" height="400px" />
+```
+
+
+### CIDOC-CRM
 
 :::: {.columns}
 
-::: {.column width="40%"}
+::: {.column width="20%"}
 
-```{=html}
-<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="300px" />
-```
-
-EAMENA uses <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-django.png' style='height: 35px;vertical-align: middle;'> Web Application Framework.
+Arches integrates natively the CIDOC-CRM
 
 :::
 
-::: {.column width="60%"}
+::: {.column width="80%"}
 
-<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/django-rdm.png' style='height: 400px'>
+```{=html}
+<embed src="https://eamena-project.github.io/eamena-arches-dev/data/lod/palmyra-cidoc-graph.html" width="800px" height="400px" />
+```
 
 :::
 
 ::::
+
+:::
+
+## Arches IT Stack
+
+::: {.panel-tabset}
 
 ### Full-stack
 
@@ -192,9 +205,8 @@ EAMENA is an <img src='https://raw.githubusercontent.com/eamena-project/eamena-a
 ::: {.column width="60%"}
 
 
-```{=html}
-<embed src="https://www.archesproject.org/" width="800px" height="400px" />
-```
+A CPF photograph
+
 
 :::
 

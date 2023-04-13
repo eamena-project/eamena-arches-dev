@@ -333,14 +333,14 @@ User Interface
 
 :::
 
-## Arches-projects
+## Arches-based projects
 
 ```{=html}
 <embed src="https://achp-project.github.io/cultural-heritage/map-projects/arches-global-south.html" width="1200px" height="700px" />
 ```
 
 
-## Arches developments
+## Database issues & developments
 
 ```{=html}
 <embed src="https://community.archesproject.org/" width="800px" height="2100px" />
@@ -350,11 +350,24 @@ User Interface
 <https://github.com/archesproject/arches>
 
 
-# Acknowledgments
+# Conclusion
 
-Arcadia
+## Aknowledgments
 
 
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo-arcadia.png'>
+
+
+## Contact
+
+
+* https://github.com/eamena-project
+
+* http://eamena.arch.ox.ac.uk/
+
+* <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-oxford_.png' style='height: 35px;vertical-align: middle;'>
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-leicester.png' style='height: 35px;vertical-align: middle;'>
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-durham.png' style='height: 35px;vertical-align: middle;'>
 
 
 

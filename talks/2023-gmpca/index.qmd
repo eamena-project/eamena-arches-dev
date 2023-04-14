@@ -357,7 +357,14 @@ Arches is a geospatial semantic graph platform for CH management. It natively in
 
 # Arches-based projects
 
-## XXX
+## Historic England
+
+```{=html}
+<embed src="https://historicengland.org.uk/listing/the-list/map-search?clearresults=true" width="1400px" height="700px" />
+
+```
+
+## Global South
 
 ```{=html}
 <embed src="https://achp-project.github.io/cultural-heritage/map-projects/arches-global-south.html" width="1400px" height="700px" />
@@ -370,7 +377,9 @@ Arches is a geospatial semantic graph platform for CH management. It natively in
 
 ::: {.panel-tabset}
 
-### Open Access issues
+### Public Database
+
+### Research Database
 
 ```{=html}
 <embed src="https://community.archesproject.org/" width="800px" height="300px" />

@@ -4,8 +4,8 @@ subtitle: "**A massive and open data information system for endangered archaeolo
 author: "Bill Finlayson, Bijan Rouhani, Thomas Huet*, Michael Fradley, Sayantani Neogi, Melisa Holloway & Andrew Wilson"
 title-slide-attributes:
     data-background-image: "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaDB-bck.png"
-    data-background-size: "110%"
-    data-background-opacity: "0.5"
+    data-background-size: "105%"
+    data-background-opacity: "0.4"
 format:
   revealjs: 
     css: https://zoometh.github.io/thomashuet/css/quarto.css
@@ -41,15 +41,13 @@ library(dplyr)
 
 ## VIDEO
 
----
-
 {{< video https://youtu.be/wo9vZccmqwc width="100%" height="100%" >}}
 
 ## <span style="font-size:50px">Endangered Archaeology in Middle East and North Africa</span>
 
 ::: {.panel-tabset}
 
-### Destruction
+### War
 
 
 :::: {.columns}
@@ -58,15 +56,28 @@ library(dplyr)
 
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-destruction.jpg" width="600">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-destruction.jpg" height="300">
 
 </center>
+<div class="captiontext">Destruction of the Temple of Bel (Palmyra, Syria) by ISIS on August 23, 2015</div>
 
 :::
 
 ::: {.column width="40%"}
 
-<div class="captiontext">Destruction of Palmyre by ISIS in 2016 </div>
+```{r}
+#| out-width: 400
+#| out-height: 400
+
+leaflet::leaflet() %>%
+  leaflet::addProviderTiles(leaflet::providers$"Esri.WorldImagery", group = "Ortho") %>%
+  leaflet::addProviderTiles(leaflet::providers$"OpenStreetMap", group = "OSM") %>%
+  leaflet::addMarkers(lng = 38.2740283802469, lat = 34.54760862601158, popup="Temple of Bel") %>%
+  leaflet::addLayersControl(
+    baseGroups = c("Ortho", "OSM"),
+    position = "topright") 
+```
+
 
 :::
 
@@ -80,15 +91,28 @@ library(dplyr)
 
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-agricole.jpg" width="600">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-agricole.jpg" height="300">
 
 </center>
+<div class="captiontext"> Archaeological site (Udhma, Jordan). The area around one section of the site is completely ploughed, whilst the other half has been destroyed to plant an orchard</div>
 
 :::
 
 ::: {.column width="40%"}
 
-<div class="captiontext">Udhma (Jordan). The area around one section of the site is completely ploughed, whilst the other half has been destroyed to plant an orchard</div>
+```{r}
+#| out-width: 400
+#| out-height: 400
+
+leaflet::leaflet() %>%
+  leaflet::addProviderTiles(leaflet::providers$"Esri.WorldImagery", group = "Ortho") %>%
+  leaflet::addProviderTiles(leaflet::providers$"OpenStreetMap", group = "OSM") %>%
+  leaflet::addMarkers(lng = 35.876595716667, lat = 32.127594283333, popup="Udhma") %>%
+  leaflet::addLayersControl(
+    baseGroups = c("Ortho", "OSM"),
+    position = "topright") 
+```
+
 
 :::
 
@@ -102,15 +126,28 @@ library(dplyr)
 
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-urbanism.jpg" width="600">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-urbanism.jpg" height="300">
 
 </center>
+<div class="captiontext">Church (Ma'in, Jordan). This 2013 aerial photograph shows a road over a section of an exposed excavation of the remains of a church in  (APAAME_20130414_MND-0484).</div>
 
 :::
 
 ::: {.column width="40%"}
 
-<div class="captiontext">This 2013 aerial photograph shows a road over a section of an exposed excavation of the remains of a church in Ma'in, Jordan (APAAME_20130414_MND-0484 Ma’in).</div>
+
+```{r}
+#| out-width: 400
+#| out-height: 400
+
+leaflet::leaflet() %>%
+  leaflet::addProviderTiles(leaflet::providers$"Esri.WorldImagery", group = "Ortho") %>%
+  leaflet::addProviderTiles(leaflet::providers$"OpenStreetMap", group = "OSM") %>%
+  leaflet::addMarkers(lng = 35.733155556, lat = 31.679894444, popup="Church in Ma'in") %>%
+  leaflet::addLayersControl(
+    baseGroups = c("Ortho", "OSM"),
+    position = "topright") 
+```
 
 :::
 
@@ -125,15 +162,29 @@ library(dplyr)
 
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-natural.jpg" width="600">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-natural.jpg" height="300">
 
 </center>
+<div class="captiontext">Archaeological site (Sabratha, Libya). The site is slowly washing away into the sea</div>
 
 :::
 
 ::: {.column width="40%"}
 
-<div class="captiontext">Sabratha in Libya, which is slowly washing away into the sea</div>
+
+```{r}
+#| out-width: 400
+#| out-height: 400
+
+leaflet::leaflet() %>%
+  leaflet::addProviderTiles(leaflet::providers$"Esri.WorldImagery", group = "Ortho") %>%
+  leaflet::addProviderTiles(leaflet::providers$"OpenStreetMap", group = "OSM") %>%
+  leaflet::addMarkers(lng = 12.499722, lat = 32.805278, popup="Archaeological site in Sabratha") %>%
+  leaflet::addLayersControl(
+    baseGroups = c("Ortho", "OSM"),
+    position = "topright") 
+```
+
 
 :::
 
@@ -169,8 +220,23 @@ Destruction: iconoclasm, looting, etc.
 <embed src="https://eamena-project.github.io/eamena-arches-dev/data/lod/palmyra-cidoc-graph.html" width="1400px" height="600px" />
 ```
 
+### Built-in Iso Standards and Open Science
+
+DCMI (ISO 15836) <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/lod-iso-dublin.png' style='height: 35px;vertical-align: middle;'>[^2]
+SKOS (ISO 25964-1) <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/lod-iso-skos.png' style='height: 35px;vertical-align: middle;'>[^3]
+SPARQL (ISO/IEC 9075-15)<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/lod-iso-sparql.png' style='height: 35px;vertical-align: middle;'>[^4]
+IIIF (ISO 21127) <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/lod-iso-iiif.png' style='height: 35px;vertical-align: middle;'>[^5]
+EDTF (ISO 8601-2)[^6]
+WGS84 (ISO 19111)[^7]
+
 
 [^1]: CIDOC Conceptual Reference Model <https://www.cidoc-crm.org/>
+[^2]: Dublin Core Metadata Initiative <https://www.dublincore.org/>
+[^3]: Simple Knowledge Organisation System <https://www.w3.org/2004/02/skos/>
+[^4]: Sparse Query Language <https://www.w3.org/TR/rdf-sparql-query/>
+[^5]: International Image Interoperability Framework <https://iiif.io/>
+[^6]: Extended Date/Time Format <https://www.loc.gov/standards/datetime/>
+[^7]: World Geodetic System 1984 <https://www.w3.org/2003/01/geo/>
 
 :::
 
@@ -186,7 +252,7 @@ Destruction: iconoclasm, looting, etc.
 
 
 ```{=html}
-<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="300px" />
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="320px" />
 ```
 
 EAMENA is an <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> instance
@@ -195,9 +261,7 @@ EAMENA is an <img src='https://raw.githubusercontent.com/eamena-project/eamena-a
 
 ::: {.column width="60%"}
 
-
-A CPF photograph
-
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/cpf-training.jpg' style='width: 400px;'><div class="captiontext">Cultural Protection Fund (CPF) training in Amman (Jordan), December 2021</div>
 
 :::
 
@@ -211,7 +275,7 @@ A CPF photograph
 ::: {.column width="40%"}
 
 ```{=html}
-<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="300px" />
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="320px" />
 ```
 
 EAMENA is hosted on <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-aws.png' style='height: 35px;vertical-align: middle;'> (Ubuntu)
@@ -235,7 +299,7 @@ EAMENA is hosted on <img src='https://raw.githubusercontent.com/eamena-project/e
 ::: {.column width="40%"}
 
 ```{=html}
-<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="300px" />
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="320px" />
 ```
 
 EAMENA uses <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-postgres.png' style='height: 35px;vertical-align: middle;'> Data Base Management System.
@@ -260,7 +324,7 @@ EAMENA uses <img src='https://raw.githubusercontent.com/eamena-project/eamena-ar
 ::: {.column width="40%"}
 
 ```{=html}
-<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="300px" />
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="320px" />
 ```
 
 EAMENA uses <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-django.png' style='height: 35px;vertical-align: middle;'> Web Application Framework.
@@ -283,7 +347,7 @@ EAMENA uses <img src='https://raw.githubusercontent.com/eamena-project/eamena-ar
 ::: {.column width="40%"}
 
 ```{=html}
-<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="300px" />
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="320px" />
 ```
 
 EAMENA uses an <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-elastic.png' style='height: 35px;vertical-align: middle;'> distributed search
@@ -360,14 +424,20 @@ Arches is a geospatial semantic graph platform for CH management. It natively in
 ## Historic England
 
 ```{=html}
-<embed src="https://historicengland.org.uk/listing/the-list/map-search?clearresults=true" width="1400px" height="700px" />
+<embed src="https://historicengland.org.uk/listing/the-list/map-search?clearresults=true" width="1400px" height="500px" />
 
 ```
 
 ## Global South
 
 ```{=html}
-<embed src="https://achp-project.github.io/cultural-heritage/map-projects/arches-global-south.html" width="1400px" height="700px" />
+<embed src="https://achp-project.github.io/cultural-heritage/map-projects/arches-global-south.html" width="1400px" height="550px" />
+```
+
+## Listed projects
+
+```{=html}
+<embed src="https://www.archesproject.org/implementations-of-arches" width="1400px" height="550px" />
 ```
 
 
@@ -378,6 +448,8 @@ Arches is a geospatial semantic graph platform for CH management. It natively in
 ::: {.panel-tabset}
 
 ### Public Database
+
+Open Access Issues
 
 ### Research Database
 
@@ -401,6 +473,11 @@ Arches is a geospatial semantic graph platform for CH management. It natively in
 
 ### eamenaR
 
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/stack-eamenar.png" width="700">
+
+</center>
 
 :::
 
@@ -409,22 +486,24 @@ Arches is a geospatial semantic graph platform for CH management. It natively in
 
 ## Aknowledgments
 
-
-<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo-arcadia.png'>
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo-arcadia.png' style='height: 35px;vertical-align: middle;> Arcadia Fund, a charitable fund of Lisbet Rausing & Peter Baldwin
+\
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo-british-council.png' style='height: 35px;vertical-align: middle;> British Council Cultural Protection Fund
 
 
 ## Contact
 
-* <img src='https://raw.githubusercontent.com/thomashuet/master/img/app-github.png' style='height: 35px;vertical-align: middle;'> <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> <https://github.com/archesproject>
+* <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png' style='height: 35px;vertical-align: middle;'> <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> <https://github.com/archesproject>
 
 
-* <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo-eamena-gh-org.png' style='height: 35px;vertical-align: middle;'> <https://github.com/eamena-project>
+* <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png' style='height: 35px;vertical-align: middle;'> <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo-eamena-gh-org.png' style='height: 35px;vertical-align: middle;'> <https://github.com/eamena-project>
 
-* http://eamena.arch.ox.ac.uk/
+* <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/webiste.png' style='height: 35px;vertical-align: middle;'><http://eamena.arch.ox.ac.uk/>
 
-* <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-oxford_.png' style='height: 35px;vertical-align: middle;'>
-<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-leicester.png' style='height: 35px;vertical-align: middle;'>
-<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-durham.png' style='height: 35px;vertical-align: middle;'>
+* Universities
+  - <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-oxford_.png' style='height: 35px;vertical-align: middle;'> <https://www.arch.ox.ac.uk/>
+  - <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-leicester.png' style='height: 35px;vertical-align: middle;'><https://le.ac.uk/study/archaeology-ancient-history>
+  - <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-durham.png' style='height: 35px;vertical-align: middle;'><https://www.durham.ac.uk/departments/academic/archaeology/>
 
 
 

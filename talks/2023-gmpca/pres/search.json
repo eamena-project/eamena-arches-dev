@@ -11,7 +11,7 @@
     "href": "index.html#arches-powered-platform",
     "title": "EAMENA",
     "section": "Arches-powered platform",
-    "text": "Arches-powered platform\n\nGraph databaseCIDOC-CRM\n\n\n is a web-based, geospatial information system for Cultural Heritage management\n\n\n\n\n\n natively integrates the CIDOC-CRM1"
+    "text": "Arches-powered platform\n\nGraph databaseCIDOC-CRMBuilt-in Iso Standards and Open Science\n\n\n is a web-based, geospatial information system for Cultural Heritage management\n\n\n\n natively integrates the CIDOC-CRM1\n\n\n\nDCMI (ISO 15836) 2 SKOS (ISO 25964-1) 3 SPARQL (ISO/IEC 9075-15)4 IIIF (ISO 21127) 5 EDTF (ISO 8601-2)6 WGS84 (ISO 19111)7"
   },
   {
     "objectID": "index.html#arches-projects",
@@ -39,7 +39,7 @@
     "href": "index.html#endangered-archaeology-in-middle-east-and-north-africa",
     "title": "EAMENA",
     "section": "Endangered Archaeology in Middle East and North Africa",
-    "text": "Endangered Archaeology in Middle East and North Africa\n\nDestructionAgricultureConstructionNatural\n\n\n\n\n\n\n\n\n\nDestruction of Palmyre by ISIS in 2016\n\n\n\n\n\n\n\n\n\n\n\n\nUdhma (Jordan). The area around one section of the site is completely ploughed, whilst the other half has been destroyed to plant an orchard\n\n\n\n\n\n\n\n\n\n\n\n\nThis 2013 aerial photograph shows a road over a section of an exposed excavation of the remains of a church in Ma’in, Jordan (APAAME_20130414_MND-0484 Ma’in).\n\n\n\n\n\n\n\n\n\n\n\n\nSabratha in Libya, which is slowly washing away into the sea\n\n\n\n\n\n\n\nDestruction: iconoclasm, looting, etc."
+    "text": "Endangered Archaeology in Middle East and North Africa\n\nWarAgricultureConstructionNatural\n\n\n\n\n\n\n\n\nDestruction of the Temple of Bel (Palmyra, Syria) by ISIS on August 23, 2015\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nArchaeological site (Udhma, Jordan). The area around one section of the site is completely ploughed, whilst the other half has been destroyed to plant an orchard\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nChurch (Ma’in, Jordan). This 2013 aerial photograph shows a road over a section of an exposed excavation of the remains of a church in (APAAME_20130414_MND-0484).\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nArchaeological site (Sabratha, Libya). The site is slowly washing away into the sea\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDestruction: iconoclasm, looting, etc."
   },
   {
     "objectID": "index.html#xxx",
@@ -53,7 +53,7 @@
     "href": "index.html#project-related-and-it-related-issues",
     "title": "EAMENA",
     "section": "Project-related and IT-related issues",
-    "text": "Project-related and IT-related issues\n\nOpen Access issuesOther IssuesXXXX"
+    "text": "Project-related and IT-related issues\n\nPublic DatabaseResearch DatabaseOther IssuesXXXX\n\n\nOpen Access Issues"
   },
   {
     "objectID": "index.html#database-developments",
@@ -67,14 +67,14 @@
     "href": "index.html#aknowledgments",
     "title": "EAMENA",
     "section": "Aknowledgments",
-    "text": "Aknowledgments"
+    "text": "Aknowledgments\n<img src=‘https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo-arcadia.png’ style=‘height: 35px;vertical-align: middle;> Arcadia Fund, a charitable fund of Lisbet Rausing & Peter Baldwin\n<img src=’https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo-british-council.png’ style=’height: 35px;vertical-align: middle;> British Council Cultural Protection Fund"
   },
   {
     "objectID": "index.html#contact",
     "href": "index.html#contact",
     "title": "EAMENA",
     "section": "Contact",
-    "text": "Contact\n\n  https://github.com/archesproject\n https://github.com/eamena-project\nhttp://eamena.arch.ox.ac.uk/\n  \n\n\n\n\n https://github.com/eamena-project GMPCA, Nice, 2023"
+    "text": "Contact\n\n  https://github.com/archesproject\n  https://github.com/eamena-project\nhttp://eamena.arch.ox.ac.uk/\nUniversities\n\n https://www.arch.ox.ac.uk/\nhttps://le.ac.uk/study/archaeology-ancient-history\nhttps://www.durham.ac.uk/departments/academic/archaeology/\n\n\n\n\n\n https://github.com/eamena-project GMPCA, Nice, 2023"
   },
   {
     "objectID": "index.html#video",
@@ -88,6 +88,34 @@
     "href": "index.html#arches-it-stack",
     "title": "EAMENA",
     "section": "Arches IT Stack",
-    "text": "Arches IT Stack\n\nFull-stackAWSPostgresPython/DjangoElasticApacheUI\n\n\n\n\n\nEAMENA is an  instance\n\nA CPF photograph\n\n\n\n\n\n\n\nEAMENA is hosted on  (Ubuntu)\n\n\n\n\n\n\n\n\n\nEAMENA uses  Data Base Management System.\n\n\n\n\n\n\n\n\n\nEAMENA uses  Web Application Framework.\n\n\n\n\n\n\n\n\n\nEAMENA uses an  distributed search\n\n\n\n\n\n\n\n\n\nEAMENA uses an  HTTP server\n\n\n\n\n\n\n\n\n\nEAMENA User Interface\n\n\n\n\n\n\n\n\nArches is a geospatial semantic graph platform for CH management. It natively integrates Dublin Core, CIDOC-CRM, SKOS and SPARQL. Its next version (v7) will also offer internationalisation, RTL support for the user interface and import/export of multi-language data."
+    "text": "Arches IT Stack\n\nFull-stackAWSPostgresPython/DjangoElasticApacheUI\n\n\n\n\n\nEAMENA is an  instance\n\n\n\nCultural Protection Fund (CPF) training in Amman (Jordan), December 2021\n\n\n\n\n\n\n\n\nEAMENA is hosted on  (Ubuntu)\n\n\n\n\n\n\n\n\n\nEAMENA uses  Data Base Management System.\n\n\n\n\n\n\n\n\n\nEAMENA uses  Web Application Framework.\n\n\n\n\n\n\n\n\n\nEAMENA uses an  distributed search\n\n\n\n\n\n\n\n\n\nEAMENA uses an  HTTP server\n\n\n\n\n\n\n\n\n\nEAMENA User Interface\n\n\n\n\n\n\n\n\nArches is a geospatial semantic graph platform for CH management. It natively integrates Dublin Core, CIDOC-CRM, SKOS and SPARQL. Its next version (v7) will also offer internationalisation, RTL support for the user interface and import/export of multi-language data."
+  },
+  {
+    "objectID": "index.html#historic-england",
+    "href": "index.html#historic-england",
+    "title": "EAMENA",
+    "section": "Historic England",
+    "text": "Historic England"
+  },
+  {
+    "objectID": "index.html#global-south",
+    "href": "index.html#global-south",
+    "title": "EAMENA",
+    "section": "Global South",
+    "text": "Global South"
+  },
+  {
+    "objectID": "index.html#yyy",
+    "href": "index.html#yyy",
+    "title": "EAMENA",
+    "section": "YYY",
+    "text": "YYY"
+  },
+  {
+    "objectID": "index.html#listed-projects",
+    "href": "index.html#listed-projects",
+    "title": "EAMENA",
+    "section": "Listed projects",
+    "text": "Listed projects"
   }
 ]

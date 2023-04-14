@@ -323,12 +323,23 @@
       margin-right: 0; 
     }
   </style>
+  <script src="site_libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
+  <script src="site_libs/jquery-1.12.4/jquery.min.js"></script>
+  <link href="site_libs/leaflet-1.3.1/leaflet.css" rel="stylesheet">
+  <script src="site_libs/leaflet-1.3.1/leaflet.js"></script>
+  <link href="site_libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet">
+  <script src="site_libs/proj4-2.6.2/proj4.min.js"></script>
+  <script src="site_libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+  <link href="site_libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet">
+  <script src="site_libs/leaflet-binding-2.1.1/leaflet.js"></script>
+  <script src="site_libs/leaflet-providers-1.9.0/leaflet-providers_1.9.0.js"></script>
+  <script src="site_libs/leaflet-providers-plugin-2.1.1/leaflet-providers-plugin.js"></script>
 </head>
 <body class="quarto-light">
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" data-background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaDB-bck.png" data-background-opacity="0.5" data-background-size="90%" class="center">
+<section id="title-slide" data-background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaDB-bck.png" data-background-opacity="0.5" data-background-size="105%" class="center">
   <h1 class="title">EAMENA</h1>
   <p class="subtitle"><strong>A massive and open data information system for endangered archaeology and cultural heritage</strong></p>
   <p class="author">Bill Finlayson, Bijan Rouhani, Thomas Huet*, Michael Fradley, Sayantani Neogi, Melisa Holloway &amp; Andrew Wilson</p>
@@ -343,25 +354,28 @@
 </section>
 <section id="video" class="slide level2">
 <h2>VIDEO</h2>
-</section>
-<section class="slide level2">
-
 <p></p>
 </section>
 <section id="endangered-archaeology-in-middle-east-and-north-africa" class="slide level2">
 <h2><span style="font-size:50px">Endangered Archaeology in Middle East and North Africa</span></h2>
 <div class="panel-tabset">
-<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">Destruction</a></li><li><a href="#tabset-1-2">Agriculture</a></li><li><a href="#tabset-1-3">Construction</a></li><li><a href="#tabset-1-4">Natural</a></li></ul>
+<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">War</a></li><li><a href="#tabset-1-2">Agriculture</a></li><li><a href="#tabset-1-3">Construction</a></li><li><a href="#tabset-1-4">Natural</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1">
 <div class="columns">
 <div class="column" style="width:60%;">
 <center>
-<p><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-destruction.jpg" width="600"></p>
+<p><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-destruction.jpg" height="300"></p>
 </center>
-</div><div class="column" style="width:40%;">
 <div class="captiontext">
-Destruction of Palmyre by ISIS in 2016
+Destruction of the Temple of Bel (Palmyra, Syria) by ISIS on August 23, 2015
+</div>
+</div><div class="column" style="width:40%;">
+<div class="cell">
+<div class="cell-output-display">
+<div id="htmlwidget-c6d9071e675347514c90" style="width:400px;height:400px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-c6d9071e675347514c90">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addProviderTiles","args":["Esri.WorldImagery",null,"Ortho",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addProviderTiles","args":["OpenStreetMap",null,"OSM",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addMarkers","args":[34.5476086260116,38.2740283802469,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Temple of Bel",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addLayersControl","args":[["Ortho","OSM"],[],{"collapsed":true,"autoZIndex":true,"position":"topright"}]}],"limits":{"lat":[34.5476086260116,34.5476086260116],"lng":[38.2740283802469,38.2740283802469]}},"evals":[],"jsHooks":[]}</script>
+</div>
 </div>
 </div>
 </div>
@@ -370,11 +384,17 @@ Destruction of Palmyre by ISIS in 2016
 <div class="columns">
 <div class="column" style="width:60%;">
 <center>
-<p><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-agricole.jpg" width="600"></p>
+<p><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-agricole.jpg" height="300"></p>
 </center>
-</div><div class="column" style="width:40%;">
 <div class="captiontext">
-Udhma (Jordan). The area around one section of the site is completely ploughed, whilst the other half has been destroyed to plant an orchard
+Archaeological site (Udhma, Jordan). The area around one section of the site is completely ploughed, whilst the other half has been destroyed to plant an orchard
+</div>
+</div><div class="column" style="width:40%;">
+<div class="cell">
+<div class="cell-output-display">
+<div id="htmlwidget-4ed526bca346f1ae2705" style="width:400px;height:400px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-4ed526bca346f1ae2705">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addProviderTiles","args":["Esri.WorldImagery",null,"Ortho",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addProviderTiles","args":["OpenStreetMap",null,"OSM",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addMarkers","args":[32.127594283333,35.876595716667,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Udhma",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addLayersControl","args":[["Ortho","OSM"],[],{"collapsed":true,"autoZIndex":true,"position":"topright"}]}],"limits":{"lat":[32.127594283333,32.127594283333],"lng":[35.876595716667,35.876595716667]}},"evals":[],"jsHooks":[]}</script>
+</div>
 </div>
 </div>
 </div>
@@ -383,11 +403,17 @@ Udhma (Jordan). The area around one section of the site is completely ploughed, 
 <div class="columns">
 <div class="column" style="width:60%;">
 <center>
-<p><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-urbanism.jpg" width="600"></p>
+<p><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-urbanism.jpg" height="300"></p>
 </center>
-</div><div class="column" style="width:40%;">
 <div class="captiontext">
-This 2013 aerial photograph shows a road over a section of an exposed excavation of the remains of a church in Ma’in, Jordan (APAAME_20130414_MND-0484 Ma’in).
+Church (Ma’in, Jordan). This 2013 aerial photograph shows a road over a section of an exposed excavation of the remains of a church in (APAAME_20130414_MND-0484).
+</div>
+</div><div class="column" style="width:40%;">
+<div class="cell">
+<div class="cell-output-display">
+<div id="htmlwidget-bd118469a7d761eae1fc" style="width:400px;height:400px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-bd118469a7d761eae1fc">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addProviderTiles","args":["Esri.WorldImagery",null,"Ortho",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addProviderTiles","args":["OpenStreetMap",null,"OSM",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addMarkers","args":[31.679894444,35.733155556,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Church in Ma'in",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addLayersControl","args":[["Ortho","OSM"],[],{"collapsed":true,"autoZIndex":true,"position":"topright"}]}],"limits":{"lat":[31.679894444,31.679894444],"lng":[35.733155556,35.733155556]}},"evals":[],"jsHooks":[]}</script>
+</div>
 </div>
 </div>
 </div>
@@ -396,11 +422,17 @@ This 2013 aerial photograph shows a road over a section of an exposed excavation
 <div class="columns">
 <div class="column" style="width:60%;">
 <center>
-<p><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-natural.jpg" width="600"></p>
+<p><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-natural.jpg" height="300"></p>
 </center>
-</div><div class="column" style="width:40%;">
 <div class="captiontext">
-Sabratha in Libya, which is slowly washing away into the sea
+Archaeological site (Sabratha, Libya). The site is slowly washing away into the sea
+</div>
+</div><div class="column" style="width:40%;">
+<div class="cell">
+<div class="cell-output-display">
+<div id="htmlwidget-b34d8c81ad261b867445" style="width:400px;height:400px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-b34d8c81ad261b867445">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addProviderTiles","args":["Esri.WorldImagery",null,"Ortho",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addProviderTiles","args":["OpenStreetMap",null,"OSM",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addMarkers","args":[32.805278,12.499722,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Archaeological site in Sabratha",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addLayersControl","args":[["Ortho","OSM"],[],{"collapsed":true,"autoZIndex":true,"position":"topright"}]}],"limits":{"lat":[32.805278,32.805278],"lng":[12.499722,12.499722]}},"evals":[],"jsHooks":[]}</script>
+</div>
 </div>
 </div>
 </div>
@@ -429,20 +461,18 @@ Sabratha in Libya, which is slowly washing away into the sea
 <section id="arches-powered-platform" class="slide level2">
 <h2>Arches-powered platform</h2>
 <div class="panel-tabset">
-<ul id="tabset-2" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-2-1">Graph database</a></li><li><a href="#tabset-2-2">CIDOC-CRM</a></li></ul>
+<ul id="tabset-2" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-2-1">Graph database</a></li><li><a href="#tabset-2-2">CIDOC-CRM</a></li><li><a href="#tabset-2-3">Built-in Iso Standards and Open Science</a></li></ul>
 <div class="tab-content">
 <div id="tabset-2-1">
 <p><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png" style="height: 35px;vertical-align: middle;"> is a web-based, geospatial information system for Cultural Heritage management</p>
 <embed src="https://www.archesproject.org/" width="1400px" height="400px">
 </div>
 <div id="tabset-2-2">
-<div class="columns">
-<div class="column" style="width:20%;">
 <p><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png" style="height: 35px;vertical-align: middle;"> natively integrates the CIDOC-CRM<a href="#/footnotes" class="footnote-ref" id="fnref1" role="doc-noteref" data-footnote-href="#/fn1" onclick=""><sup>1</sup></a></p>
-</div><div class="column" style="width:80%;">
 <embed src="https://eamena-project.github.io/eamena-arches-dev/data/lod/palmyra-cidoc-graph.html" width="1400px" height="600px">
 </div>
-</div>
+<div id="tabset-2-3">
+<p>DCMI (ISO 15836) <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/lod-iso-dublin.png" style="height: 35px;vertical-align: middle;"><a href="#/footnotes" class="footnote-ref" id="fnref2" role="doc-noteref" data-footnote-href="#/fn2" onclick=""><sup>2</sup></a> SKOS (ISO 25964-1) <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/lod-iso-skos.png" style="height: 35px;vertical-align: middle;"><a href="#/footnotes" class="footnote-ref" id="fnref3" role="doc-noteref" data-footnote-href="#/fn3" onclick=""><sup>3</sup></a> SPARQL (ISO/IEC 9075-15)<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/lod-iso-sparql.png" style="height: 35px;vertical-align: middle;"><a href="#/footnotes" class="footnote-ref" id="fnref4" role="doc-noteref" data-footnote-href="#/fn4" onclick=""><sup>4</sup></a> IIIF (ISO 21127) <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/lod-iso-iiif.png" style="height: 35px;vertical-align: middle;"><a href="#/footnotes" class="footnote-ref" id="fnref5" role="doc-noteref" data-footnote-href="#/fn5" onclick=""><sup>5</sup></a> EDTF (ISO 8601-2)<a href="#/footnotes" class="footnote-ref" id="fnref6" role="doc-noteref" data-footnote-href="#/fn6" onclick=""><sup>6</sup></a> WGS84 (ISO 19111)<a href="#/footnotes" class="footnote-ref" id="fnref7" role="doc-noteref" data-footnote-href="#/fn7" onclick=""><sup>7</sup></a></p>
 </div>
 </div>
 </div>
@@ -455,17 +485,20 @@ Sabratha in Libya, which is slowly washing away into the sea
 <div id="tabset-3-1">
 <div class="columns">
 <div class="column" style="width:40%;">
-<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="300px">
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="320px">
 <p>EAMENA is an <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png" style="height: 35px;vertical-align: middle;"> instance</p>
 </div><div class="column" style="width:60%;">
-<p>A CPF photograph</p>
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/cpf-training.jpg" style="width: 400px;">
+<div class="captiontext">
+Cultural Protection Fund (CPF) training in Amman (Jordan), December 2021
+</div>
 </div>
 </div>
 </div>
 <div id="tabset-3-2">
 <div class="columns">
 <div class="column" style="width:40%;">
-<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="300px">
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="320px">
 <p>EAMENA is hosted on <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-aws.png" style="height: 35px;vertical-align: middle;"> (Ubuntu)</p>
 </div><div class="column" style="width:60%;">
 <p><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/aws-instances.jpg" style="height: 400px"></p>
@@ -475,7 +508,7 @@ Sabratha in Libya, which is slowly washing away into the sea
 <div id="tabset-3-3">
 <div class="columns">
 <div class="column" style="width:40%;">
-<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="300px">
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="320px">
 <p>EAMENA uses <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-postgres.png" style="height: 35px;vertical-align: middle;"> Data Base Management System.</p>
 </div><div class="column" style="width:60%;">
 <p><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/postgres-uuid-jsonb.png" style="height: 400px"></p>
@@ -485,7 +518,7 @@ Sabratha in Libya, which is slowly washing away into the sea
 <div id="tabset-3-4">
 <div class="columns">
 <div class="column" style="width:40%;">
-<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="300px">
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="320px">
 <p>EAMENA uses <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-django.png" style="height: 35px;vertical-align: middle;"> Web Application Framework.</p>
 </div><div class="column" style="width:60%;">
 <p><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/django-rdm.png" style="height: 400px"></p>
@@ -495,7 +528,7 @@ Sabratha in Libya, which is slowly washing away into the sea
 <div id="tabset-3-5">
 <div class="columns">
 <div class="column" style="width:40%;">
-<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="300px">
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="320px">
 <p>EAMENA uses an <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-elastic.png" style="height: 35px;vertical-align: middle;"> distributed search</p>
 </div><div class="column" style="width:60%;">
 <p></p>
@@ -543,9 +576,18 @@ Sabratha in Libya, which is slowly washing away into the sea
 <h1>Arches-based projects</h1>
 
 </section>
-<section id="xxx" class="slide level2">
-<h2>XXX</h2>
-<embed src="https://achp-project.github.io/cultural-heritage/map-projects/arches-global-south.html" width="1200px" height="700px">
+<section id="historic-england" class="slide level2">
+<h2>Historic England</h2>
+<embed src="https://historicengland.org.uk/listing/the-list/map-search?clearresults=true" width="1400px" height="500px">
+
+</section>
+<section id="global-south" class="slide level2">
+<h2>Global South</h2>
+<embed src="https://achp-project.github.io/cultural-heritage/map-projects/arches-global-south.html" width="1400px" height="550px">
+</section>
+<section id="listed-projects" class="slide level2">
+<h2>Listed projects</h2>
+<embed src="https://www.archesproject.org/implementations-of-arches" width="1400px" height="550px">
 </section></section>
 <section>
 <section id="database-issues-developments" class="title-slide slide level1 center">
@@ -555,15 +597,18 @@ Sabratha in Libya, which is slowly washing away into the sea
 <section id="project-related-and-it-related-issues" class="slide level2">
 <h2>Project-related and IT-related issues</h2>
 <div class="panel-tabset">
-<ul id="tabset-4" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-4-1">Open Access issues</a></li><li><a href="#tabset-4-2">Other Issues</a></li><li><a href="#tabset-4-3">XXXX</a></li></ul>
+<ul id="tabset-4" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-4-1">Public Database</a></li><li><a href="#tabset-4-2">Research Database</a></li><li><a href="#tabset-4-3">Other Issues</a></li><li><a href="#tabset-4-4">XXXX</a></li></ul>
 <div class="tab-content">
 <div id="tabset-4-1">
-<embed src="https://community.archesproject.org/" width="800px" height="300px">
+<p>Open Access Issues</p>
 </div>
 <div id="tabset-4-2">
-
+<embed src="https://community.archesproject.org/" width="800px" height="300px">
 </div>
 <div id="tabset-4-3">
+
+</div>
+<div id="tabset-4-4">
 
 </div>
 </div>
@@ -581,7 +626,9 @@ Sabratha in Libya, which is slowly washing away into the sea
 
 </div>
 <div id="tabset-5-3">
-
+<center>
+<p><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/stack-eamenar.png" width="700"></p>
+</center>
 </div>
 </div>
 </div>
@@ -593,15 +640,21 @@ Sabratha in Libya, which is slowly washing away into the sea
 </section>
 <section id="aknowledgments" class="slide level2">
 <h2>Aknowledgments</h2>
-
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo-arcadia.png" class="r-stretch"></section>
+<p>&lt;img src=‘https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo-arcadia.png’ style=‘height: 35px;vertical-align: middle;&gt; Arcadia Fund, a charitable fund of Lisbet Rausing &amp; Peter Baldwin<br>
+&lt;img src=’https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo-british-council.png’ style=’height: 35px;vertical-align: middle;&gt; British Council Cultural Protection Fund</p>
+</section>
 <section id="contact" class="slide level2">
 <h2>Contact</h2>
 <ul>
-<li><p><img src="https://raw.githubusercontent.com/thomashuet/master/img/app-github.png" style="height: 35px;vertical-align: middle;"> <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png" style="height: 35px;vertical-align: middle;"> <a href="https://github.com/archesproject" class="uri">https://github.com/archesproject</a></p></li>
-<li><p><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo-eamena-gh-org.png" style="height: 35px;vertical-align: middle;"> <a href="https://github.com/eamena-project" class="uri">https://github.com/eamena-project</a></p></li>
-<li><p>http://eamena.arch.ox.ac.uk/</p></li>
-<li><p><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-oxford_.png" style="height: 35px;vertical-align: middle;"> <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-leicester.png" style="height: 35px;vertical-align: middle;"> <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-durham.png" style="height: 35px;vertical-align: middle;"></p></li>
+<li><p><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png" style="height: 35px;vertical-align: middle;"> <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png" style="height: 35px;vertical-align: middle;"> <a href="https://github.com/archesproject" class="uri">https://github.com/archesproject</a></p></li>
+<li><p><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png" style="height: 35px;vertical-align: middle;"> <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo-eamena-gh-org.png" style="height: 35px;vertical-align: middle;"> <a href="https://github.com/eamena-project" class="uri">https://github.com/eamena-project</a></p></li>
+<li><p><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/webiste.png" style="height: 35px;vertical-align: middle;"><a href="http://eamena.arch.ox.ac.uk/" class="uri">http://eamena.arch.ox.ac.uk/</a></p></li>
+<li><p>Universities</p>
+<ul>
+<li><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-oxford_.png" style="height: 35px;vertical-align: middle;"> <a href="https://www.arch.ox.ac.uk/" class="uri">https://www.arch.ox.ac.uk/</a></li>
+<li><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-leicester.png" style="height: 35px;vertical-align: middle;"><a href="https://le.ac.uk/study/archaeology-ancient-history" class="uri">https://le.ac.uk/study/archaeology-ancient-history</a></li>
+<li><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-durham.png" style="height: 35px;vertical-align: middle;"><a href="https://www.durham.ac.uk/departments/academic/archaeology/" class="uri">https://www.durham.ac.uk/departments/academic/archaeology/</a></li>
+</ul></li>
 </ul>
 
 <p><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-uni-oxford_.png" class="slide-logo"></p>
@@ -613,6 +666,12 @@ Sabratha in Libya, which is slowly washing away into the sea
 
 <ol>
 <li id="fn1"><p>CIDOC Conceptual Reference Model <a href="https://www.cidoc-crm.org/" class="uri">https://www.cidoc-crm.org/</a></p></li>
+<li id="fn2"><p>Dublin Core Metadata Initiative <a href="https://www.dublincore.org/" class="uri">https://www.dublincore.org/</a></p></li>
+<li id="fn3"><p>Simple Knowledge Organisation System <a href="https://www.w3.org/2004/02/skos/" class="uri">https://www.w3.org/2004/02/skos/</a></p></li>
+<li id="fn4"><p>Sparse Query Language <a href="https://www.w3.org/TR/rdf-sparql-query/" class="uri">https://www.w3.org/TR/rdf-sparql-query/</a></p></li>
+<li id="fn5"><p>International Image Interoperability Framework <a href="https://iiif.io/" class="uri">https://iiif.io/</a></p></li>
+<li id="fn6"><p>Extended Date/Time Format <a href="https://www.loc.gov/standards/datetime/" class="uri">https://www.loc.gov/standards/datetime/</a></p></li>
+<li id="fn7"><p>World Geodetic System 1984 <a href="https://www.w3.org/2003/01/geo/" class="uri">https://www.w3.org/2003/01/geo/</a></p></li>
 </ol>
 </section>
     </div>

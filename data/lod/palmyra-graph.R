@@ -53,5 +53,5 @@ gout <- visNetwork(nodes,
 gout
 
 path.out <- paste0(getwd(),"/data/lod/palmyra-cidoc-graph.html")
-# saveWidget(gout,path.out)
+saveWidget(gout,path.out)
 print(paste("saved in:", path.out))

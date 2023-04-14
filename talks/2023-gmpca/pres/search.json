@@ -1,38 +1,10 @@
 [
   {
-    "objectID": "test.html#iframe-in-table",
-    "href": "test.html#iframe-in-table",
+    "objectID": "index.html#video",
+    "href": "index.html#video",
     "title": "EAMENA",
-    "section": "iframe in table",
-    "text": "iframe in table\n\n\n\nIframe in Table Example\n\n\n\n\n\n\n\n\n\nColumn 1\n\n\nColumn 2\n\n\n\n\nRow 1, Column 1\n\n\n\n\n\n\n\n\nRow 2, Column 1\n\n\n\n\n\n\n\n\n\n\n\n\n\nEAMENA  https://github.com/eamena-project GMPCA, Nice, 2023"
-  },
-  {
-    "objectID": "index.html#arches-powered-platform",
-    "href": "index.html#arches-powered-platform",
-    "title": "EAMENA",
-    "section": "Arches-powered platform",
-    "text": "Arches-powered platform\n\nGraph databaseCIDOC-CRMBuilt-in Iso Standards\n\n\n is a web-based, geospatial information system for Cultural Heritage management\n\n\n\n natively integrates the CIDOC-CRM1\n\n\n\nDCMI (ISO 15836) 2\nSKOS (ISO 25964-1) 3\nSPARQL (ISO/IEC 9075-15)4\nIIIF (ISO 21127) 5\nEDTF (ISO 8601-2)6\nWGS84 (ISO 19111)7"
-  },
-  {
-    "objectID": "index.html#arches-projects",
-    "href": "index.html#arches-projects",
-    "title": "EAMENA",
-    "section": "Arches-projects",
-    "text": "Arches-projects"
-  },
-  {
-    "objectID": "index.html#arches-developments",
-    "href": "index.html#arches-developments",
-    "title": "EAMENA",
-    "section": "Arches developments",
-    "text": "Arches developments\n\nhttps://github.com/archesproject/arches\n\n\n\n https://github.com/eamena-project GMPCA, Nice, 2023"
-  },
-  {
-    "objectID": "index.html#it-stack",
-    "href": "index.html#it-stack",
-    "title": "EAMENA",
-    "section": "IT Stack",
-    "text": "IT Stack\n\n\n\n\n https://github.com/eamena-project GMPCA, Nice, 2023"
+    "section": "VIDEO",
+    "text": "VIDEO"
   },
   {
     "objectID": "index.html#endangered-archaeology-in-middle-east-and-north-africa",
@@ -42,11 +14,39 @@
     "text": "Endangered Archaeology in Middle East and North Africa\n\nWarAgricultureConstructionNatural\n\n\n\n\n\n\n\n\nDestruction of the Temple of Bel (Palmyra, Syria) by ISIS on August 23, 2015\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nArchaeological site (Udhma, Jordan). The area around one section of the site is completely ploughed, whilst the other half has been destroyed to plant an orchard\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nChurch (Ma’in, Jordan). This 2013 aerial photograph shows a road over a section of an exposed excavation of the remains of a church in (APAAME_20130414_MND-0484).\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nArchaeological site (Sabratha, Libya). The site is slowly washing away into the sea\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDestruction: iconoclasm, looting, etc."
   },
   {
-    "objectID": "index.html#xxx",
-    "href": "index.html#xxx",
+    "objectID": "index.html#arches-powered-platform",
+    "href": "index.html#arches-powered-platform",
     "title": "EAMENA",
-    "section": "XXX",
-    "text": "XXX"
+    "section": "Arches-powered platform",
+    "text": "Arches-powered platform\n\nGraph databaseCIDOC-CRMBuilt-in Iso Standards\n\n\n is a web-based, geospatial information system for Cultural Heritage management\n\n\n\n natively integrates the CIDOC-CRM1\n\n\n\nDCMI (ISO 15836) 2\nSKOS (ISO 25964-1) 3\nSPARQL (ISO/IEC 9075-15)4\nIIIF (ISO 21127) 5\nEDTF (ISO 8601-2)6\nWGS84 (ISO 19111)7"
+  },
+  {
+    "objectID": "index.html#arches-it-stack",
+    "href": "index.html#arches-it-stack",
+    "title": "EAMENA",
+    "section": "Arches IT Stack",
+    "text": "Arches IT Stack\n\nFull-stackAWSPostgresPython/DjangoElasticApacheUI\n\n\n\n\n\nEAMENA is an  instance\n\n\n\nCultural Protection Fund (CPF) training in Amman (Jordan), December 2021\n\n\n\n\n\n\n\n\nEAMENA is hosted on  (Ubuntu)\n\n\n\n\n\n\n\n\n\nEAMENA uses  Data Base Management System.\n\n\n\n\n\n\n\n\n\nEAMENA uses  Web Application Framework.\n\n\n\n\n\n\n\n\n\nEAMENA uses an  distributed search\n\n\n\n\n\n\n\n\n\nEAMENA uses an  HTTP server\n\n\n\n\n\n\n\n\n\nEAMENA User Interface\n\n\n\n\n\n\n\n\nArches is a geospatial semantic graph platform for CH management. It natively integrates Dublin Core, CIDOC-CRM, SKOS and SPARQL. Its next version (v7) will also offer internationalisation, RTL support for the user interface and import/export of multi-language data."
+  },
+  {
+    "objectID": "index.html#historic-england",
+    "href": "index.html#historic-england",
+    "title": "EAMENA",
+    "section": "Historic England",
+    "text": "Historic England"
+  },
+  {
+    "objectID": "index.html#global-south",
+    "href": "index.html#global-south",
+    "title": "EAMENA",
+    "section": "Global South",
+    "text": "Global South"
+  },
+  {
+    "objectID": "index.html#listed-projects",
+    "href": "index.html#listed-projects",
+    "title": "EAMENA",
+    "section": "Listed projects",
+    "text": "Listed projects"
   },
   {
     "objectID": "index.html#project-related-and-it-related-issues",
@@ -74,48 +74,6 @@
     "href": "index.html#contact",
     "title": "EAMENA",
     "section": "Contact",
-    "text": "Contact\n\n  https://github.com/archesproject\n  https://github.com/eamena-project\n http://eamena.arch.ox.ac.uk/\nUniversities\n\n https://www.arch.ox.ac.uk/\n https://le.ac.uk/study/archaeology-ancient-history\n https://www.durham.ac.uk/departments/academic/archaeology/\n\n\n\n\n\n https://github.com/eamena-project GMPCA, Nice, 2023"
-  },
-  {
-    "objectID": "index.html#video",
-    "href": "index.html#video",
-    "title": "EAMENA",
-    "section": "VIDEO",
-    "text": "VIDEO"
-  },
-  {
-    "objectID": "index.html#arches-it-stack",
-    "href": "index.html#arches-it-stack",
-    "title": "EAMENA",
-    "section": "Arches IT Stack",
-    "text": "Arches IT Stack\n\nFull-stackAWSPostgresPython/DjangoElasticApacheUI\n\n\n\n\n\nEAMENA is an  instance\n\n\n\nCultural Protection Fund (CPF) training in Amman (Jordan), December 2021\n\n\n\n\n\n\n\n\nEAMENA is hosted on  (Ubuntu)\n\n\n\n\n\n\n\n\n\nEAMENA uses  Data Base Management System.\n\n\n\n\n\n\n\n\n\nEAMENA uses  Web Application Framework.\n\n\n\n\n\n\n\n\n\nEAMENA uses an  distributed search\n\n\n\n\n\n\n\n\n\nEAMENA uses an  HTTP server\n\n\n\n\n\n\n\n\n\nEAMENA User Interface\n\n\n\n\n\n\n\n\nArches is a geospatial semantic graph platform for CH management. It natively integrates Dublin Core, CIDOC-CRM, SKOS and SPARQL. Its next version (v7) will also offer internationalisation, RTL support for the user interface and import/export of multi-language data."
-  },
-  {
-    "objectID": "index.html#historic-england",
-    "href": "index.html#historic-england",
-    "title": "EAMENA",
-    "section": "Historic England",
-    "text": "Historic England"
-  },
-  {
-    "objectID": "index.html#global-south",
-    "href": "index.html#global-south",
-    "title": "EAMENA",
-    "section": "Global South",
-    "text": "Global South"
-  },
-  {
-    "objectID": "index.html#yyy",
-    "href": "index.html#yyy",
-    "title": "EAMENA",
-    "section": "YYY",
-    "text": "YYY"
-  },
-  {
-    "objectID": "index.html#listed-projects",
-    "href": "index.html#listed-projects",
-    "title": "EAMENA",
-    "section": "Listed projects",
-    "text": "Listed projects"
+    "text": "Contact\n\n  https://github.com/eamena-project +   https://github.com/archesproject\n http://eamena.arch.ox.ac.uk/\nUniversities\n\n https://www.arch.ox.ac.uk/\n https://le.ac.uk/study/archaeology-ancient-history\n https://www.durham.ac.uk/departments/academic/archaeology/\n\n\n\n\n\n https://github.com/eamena-project GMPCA, Nice, 2023"
   }
 ]

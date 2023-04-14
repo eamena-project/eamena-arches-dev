@@ -6,8 +6,8 @@ rootDir <- "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/m
 dataDir <- paste0(rootDir, "data/lod/")
 imgDir <- paste0(rootDir, "www/")
 
-vertices <- read.csv2(paste0(dataDir, "palmyra-vertices.tsv"), sep = "\t")
-edges <- read.csv2(paste0(dataDir, "palmyra-edges.tsv"), sep = "\t")
+vertices <- read.csv2(paste0(dataDir, "palmyra-vertices-1.tsv"), sep = "\t")
+edges <- read.csv2(paste0(dataDir, "palmyra-edges-1.tsv"), sep = "\t")
 
 idx.images <- which(vertices$multimedia != "")
 
@@ -37,11 +37,11 @@ edges$font.strokeWidth <- c(rep(0, nrow(edges)))
 edges$label <- gsub(" \\(", "\\\n\\(", edges$property)
 gout <- visNetwork(nodes,
                    edges,
-                   main = list(text = "a CIDOC-CRM example",
-                               style = "font-family:Arial;text-align:center;"
-                               # style = "text-align:right; font-family:Arial; color:#ffffff"
-                               ),
-                   # background = "black",
+                   # main = list(text = "a CIDOC-CRM example",
+                   #             style = "font-family:Arial;text-align:center;"
+                   #             # style = "text-align:right; font-family:Arial; color:#ffffff"
+                   #             ),
+                   # # background = "black",
                    width = "100%",
                    height = "100vh") %>%
   visEdges(shadow = TRUE,
@@ -53,5 +53,5 @@ gout <- visNetwork(nodes,
 gout
 
 path.out <- paste0(getwd(),"/data/lod/palmyra-cidoc-graph.html")
-saveWidget(gout,path.out)
+# saveWidget(gout,path.out)
 print(paste("saved in:", path.out))

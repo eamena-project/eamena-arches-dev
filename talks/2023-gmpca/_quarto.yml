@@ -4,7 +4,7 @@ project:
 
 website:
   title: "EAMENA"
-  favicon: images/logo-caa23.png
+  favicon: images/inst-gmpca.png
   repo-url: https://github.com/quarto-dev/quarto-web
   page-footer:
     right:

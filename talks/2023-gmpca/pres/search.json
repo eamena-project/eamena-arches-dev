@@ -11,7 +11,7 @@
     "href": "index.html#arches-powered-platform",
     "title": "EAMENA",
     "section": "Arches-powered platform",
-    "text": "Arches-powered platform\n\nGraph databaseCIDOC-CRMBuilt-in Iso Standards and Open Science\n\n\n is a web-based, geospatial information system for Cultural Heritage management\n\n\n\n natively integrates the CIDOC-CRM1\n\n\n\nDCMI (ISO 15836) 2 SKOS (ISO 25964-1) 3 SPARQL (ISO/IEC 9075-15)4 IIIF (ISO 21127) 5 EDTF (ISO 8601-2)6 WGS84 (ISO 19111)7"
+    "text": "Arches-powered platform\n\nGraph databaseCIDOC-CRMBuilt-in Iso Standards\n\n\n is a web-based, geospatial information system for Cultural Heritage management\n\n\n\n natively integrates the CIDOC-CRM1\n\n\n\nDCMI (ISO 15836) 2\nSKOS (ISO 25964-1) 3\nSPARQL (ISO/IEC 9075-15)4\nIIIF (ISO 21127) 5\nEDTF (ISO 8601-2)6\nWGS84 (ISO 19111)7"
   },
   {
     "objectID": "index.html#arches-projects",
@@ -67,14 +67,14 @@
     "href": "index.html#aknowledgments",
     "title": "EAMENA",
     "section": "Aknowledgments",
-    "text": "Aknowledgments\n<img src=‘https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo-arcadia.png’ style=‘height: 35px;vertical-align: middle;> Arcadia Fund, a charitable fund of Lisbet Rausing & Peter Baldwin\n<img src=’https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo-british-council.png’ style=’height: 35px;vertical-align: middle;> British Council Cultural Protection Fund"
+    "text": "Aknowledgments\n Arcadia Fund, a charitable fund of Lisbet Rausing & Peter Baldwin\n British Council Cultural Protection Fund"
   },
   {
     "objectID": "index.html#contact",
     "href": "index.html#contact",
     "title": "EAMENA",
     "section": "Contact",
-    "text": "Contact\n\n  https://github.com/archesproject\n  https://github.com/eamena-project\nhttp://eamena.arch.ox.ac.uk/\nUniversities\n\n https://www.arch.ox.ac.uk/\nhttps://le.ac.uk/study/archaeology-ancient-history\nhttps://www.durham.ac.uk/departments/academic/archaeology/\n\n\n\n\n\n https://github.com/eamena-project GMPCA, Nice, 2023"
+    "text": "Contact\n\n  https://github.com/archesproject\n  https://github.com/eamena-project\n http://eamena.arch.ox.ac.uk/\nUniversities\n\n https://www.arch.ox.ac.uk/\n https://le.ac.uk/study/archaeology-ancient-history\n https://www.durham.ac.uk/departments/academic/archaeology/\n\n\n\n\n\n https://github.com/eamena-project GMPCA, Nice, 2023"
   },
   {
     "objectID": "index.html#video",

@@ -220,14 +220,19 @@ Destruction: iconoclasm, looting, etc.
 <embed src="https://eamena-project.github.io/eamena-arches-dev/data/lod/palmyra-cidoc-graph.html" width="1400px" height="600px" />
 ```
 
-### Built-in Iso Standards and Open Science
+### Built-in Iso Standards
 
-DCMI (ISO 15836) <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/lod-iso-dublin.png' style='height: 35px;vertical-align: middle;'>[^2]
-SKOS (ISO 25964-1) <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/lod-iso-skos.png' style='height: 35px;vertical-align: middle;'>[^3]
-SPARQL (ISO/IEC 9075-15)<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/lod-iso-sparql.png' style='height: 35px;vertical-align: middle;'>[^4]
-IIIF (ISO 21127) <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/lod-iso-iiif.png' style='height: 35px;vertical-align: middle;'>[^5]
-EDTF (ISO 8601-2)[^6]
-WGS84 (ISO 19111)[^7]
+DCMI (<span style="color:grey">ISO 15836</span>) <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/lod-iso-dublin.png' style='height: 35px;vertical-align: middle;'>[^2]
+
+SKOS (<span style="color:grey">ISO 25964-1</span>) <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/lod-iso-skos.png' style='height: 35px;vertical-align: middle;'>[^3]
+
+SPARQL (<span style="color:grey">ISO/IEC 9075-15</span>)<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/lod-iso-sparql.png' style='height: 35px;vertical-align: middle;'>[^4]
+
+IIIF (<span style="color:grey">ISO 21127</span>) <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/lod-iso-iiif.png' style='height: 35px;vertical-align: middle;'>[^5]
+
+EDTF (<span style="color:grey">ISO 8601-2</span>)[^6]
+
+WGS84 (<span style="color:grey">ISO 19111</span>)[^7]
 
 
 [^1]: CIDOC Conceptual Reference Model <https://www.cidoc-crm.org/>
@@ -370,7 +375,7 @@ EAMENA uses an <img src='https://raw.githubusercontent.com/eamena-project/eamena
 ::: {.column width="40%"}
 
 ```{=html}
-<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="300px" />
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="320px" />
 ```
 
 EAMENA uses an <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-apache.png' style='height: 35px;vertical-align: middle;'> HTTP server
@@ -393,7 +398,7 @@ EAMENA uses an <img src='https://raw.githubusercontent.com/eamena-project/eamena
 ::: {.column width="40%"}
 
 ```{=html}
-<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="300px" />
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="320px" />
 ```
 
 EAMENA User Interface
@@ -475,7 +480,7 @@ Open Access Issues
 
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/stack-eamenar.png" width="700">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/stack-eamenar.png" width="500">
 
 </center>
 
@@ -486,24 +491,21 @@ Open Access Issues
 
 ## Aknowledgments
 
-<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo-arcadia.png' style='height: 35px;vertical-align: middle;> Arcadia Fund, a charitable fund of Lisbet Rausing & Peter Baldwin
-\
-<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo-british-council.png' style='height: 35px;vertical-align: middle;> British Council Cultural Protection Fund
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo-arcadia.png' style='height: 45px;vertical-align: middle;'> Arcadia Fund, a charitable fund of Lisbet Rausing & Peter Baldwin
+
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo-british-council.png' style='height: 45px;vertical-align: middle;'> British Council Cultural Protection Fund
 
 
 ## Contact
 
-* <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png' style='height: 35px;vertical-align: middle;'> <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> <https://github.com/archesproject>
+* <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png' style='height: 35px;vertical-align: middle;'> <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo-eamena-gh-org.png' style='height: 45px;vertical-align: middle;'> <https://github.com/eamena-project> + <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png' style='height: 35px;vertical-align: middle;'> <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> <https://github.com/archesproject>
 
-
-* <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png' style='height: 35px;vertical-align: middle;'> <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo-eamena-gh-org.png' style='height: 35px;vertical-align: middle;'> <https://github.com/eamena-project>
-
-* <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/webiste.png' style='height: 35px;vertical-align: middle;'><http://eamena.arch.ox.ac.uk/>
+* <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/website.png' style='height: 45px;vertical-align: middle;'> <http://eamena.arch.ox.ac.uk/>
 
 * Universities
-  - <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-oxford_.png' style='height: 35px;vertical-align: middle;'> <https://www.arch.ox.ac.uk/>
-  - <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-leicester.png' style='height: 35px;vertical-align: middle;'><https://le.ac.uk/study/archaeology-ancient-history>
-  - <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-durham.png' style='height: 35px;vertical-align: middle;'><https://www.durham.ac.uk/departments/academic/archaeology/>
+  - <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-oxford_.png' style='height: 45px;vertical-align: middle;'> <https://www.arch.ox.ac.uk/>
+  - <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-leicester.png' style='height: 45px;vertical-align: middle;'> <https://le.ac.uk/study/archaeology-ancient-history>
+  - <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-durham.png' style='height: 45px;vertical-align: middle;'> <https://www.durham.ac.uk/departments/academic/archaeology/>
 
 
 

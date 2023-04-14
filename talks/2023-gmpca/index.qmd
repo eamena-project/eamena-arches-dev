@@ -154,10 +154,10 @@ Destruction: iconoclasm, looting, etc.
 
 ### Graph database
 
-Arches is a web-based, geospatial information system for Cultural Heritage inventory and management
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> is a web-based, geospatial information system for Cultural Heritage management
 
 ```{=html}
-<embed src="https://www.archesproject.org/" width="1200px" height="400px" />
+<embed src="https://www.archesproject.org/" width="1400px" height="400px" />
 ```
 
 
@@ -167,7 +167,7 @@ Arches is a web-based, geospatial information system for Cultural Heritage inven
 
 ::: {.column width="20%"}
 
-Arches integrates natively the CIDOC-CRM
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> natively integrates the CIDOC-CRM[^1]
 
 :::
 
@@ -180,6 +180,8 @@ Arches integrates natively the CIDOC-CRM
 :::
 
 ::::
+
+[^1]: CIDOC Conceptual Reference Model <https://www.cidoc-crm.org/>
 
 :::
 

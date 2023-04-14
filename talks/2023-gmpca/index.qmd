@@ -4,7 +4,7 @@ subtitle: "**A massive and open data information system for endangered archaeolo
 author: "Bill Finlayson, Bijan Rouhani, Thomas Huet*, Michael Fradley, Sayantani Neogi, Melisa Holloway & Andrew Wilson"
 title-slide-attributes:
     data-background-image: "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaDB-bck.png"
-    data-background-size: "90%"
+    data-background-size: "110%"
     data-background-opacity: "0.5"
 format:
   revealjs: 
@@ -163,23 +163,12 @@ Destruction: iconoclasm, looting, etc.
 
 ### CIDOC-CRM
 
-:::: {.columns}
-
-::: {.column width="20%"}
-
 <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> natively integrates the CIDOC-CRM[^1]
-
-:::
-
-::: {.column width="80%"}
 
 ```{=html}
 <embed src="https://eamena-project.github.io/eamena-arches-dev/data/lod/palmyra-cidoc-graph.html" width="1400px" height="600px" />
 ```
 
-:::
-
-::::
 
 [^1]: CIDOC Conceptual Reference Model <https://www.cidoc-crm.org/>
 
@@ -371,7 +360,7 @@ Arches is a geospatial semantic graph platform for CH management. It natively in
 ## XXX
 
 ```{=html}
-<embed src="https://achp-project.github.io/cultural-heritage/map-projects/arches-global-south.html" width="1200px" height="700px" />
+<embed src="https://achp-project.github.io/cultural-heritage/map-projects/arches-global-south.html" width="1400px" height="700px" />
 ```
 
 

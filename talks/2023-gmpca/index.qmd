@@ -28,14 +28,10 @@ format:
 # EAMENA project
 
 ```{r, echo=FALSE}
-library(shiny)
 library(rmarkdown)
 library(knitr)
 library(kableExtra)
-library(plotly)
-library(archdata)
 library(ggplot2)
-library(DT)
 library(dplyr)
 ```
 
@@ -257,7 +253,7 @@ WGS84 (<span style="color:grey">ISO 19111</span>)[^7]
 
 
 ```{=html}
-<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="320px" />
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="340px" />
 ```
 
 EAMENA is an <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> instance
@@ -266,7 +262,11 @@ EAMENA is an <img src='https://raw.githubusercontent.com/eamena-project/eamena-a
 
 ::: {.column width="60%"}
 
-<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/cpf-training.jpg' style='width: 400px;'><div class="captiontext">Cultural Protection Fund (CPF) training in Amman (Jordan), December 2021</div>
+<center>
+
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/cpf-training.jpg' style='width: 450px;'><div class="captiontext">Cultural Protection Fund (CPF) training in Amman (Jordan), December 2021</div>
+
+</center>
 
 :::
 
@@ -280,7 +280,7 @@ EAMENA is an <img src='https://raw.githubusercontent.com/eamena-project/eamena-a
 ::: {.column width="40%"}
 
 ```{=html}
-<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="320px" />
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="340px" />
 ```
 
 EAMENA is hosted on <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-aws.png' style='height: 35px;vertical-align: middle;'> (Ubuntu)
@@ -304,7 +304,7 @@ EAMENA is hosted on <img src='https://raw.githubusercontent.com/eamena-project/e
 ::: {.column width="40%"}
 
 ```{=html}
-<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="320px" />
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="340px" />
 ```
 
 EAMENA uses <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-postgres.png' style='height: 35px;vertical-align: middle;'> Data Base Management System.
@@ -329,7 +329,7 @@ EAMENA uses <img src='https://raw.githubusercontent.com/eamena-project/eamena-ar
 ::: {.column width="40%"}
 
 ```{=html}
-<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="320px" />
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="340px" />
 ```
 
 EAMENA uses <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-django.png' style='height: 35px;vertical-align: middle;'> Web Application Framework.
@@ -352,7 +352,7 @@ EAMENA uses <img src='https://raw.githubusercontent.com/eamena-project/eamena-ar
 ::: {.column width="40%"}
 
 ```{=html}
-<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="320px" />
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="340px" />
 ```
 
 EAMENA uses an <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-elastic.png' style='height: 35px;vertical-align: middle;'> distributed search
@@ -362,7 +362,7 @@ EAMENA uses an <img src='https://raw.githubusercontent.com/eamena-project/eamena
 ::: {.column width="60%"}
 
 
-{{< video https://youtu.be/wo9vZccmqwc width="100%" height="100%" >}}
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/elastic-search.gif' style='height: 400px'>
 
 :::
 
@@ -375,7 +375,7 @@ EAMENA uses an <img src='https://raw.githubusercontent.com/eamena-project/eamena
 ::: {.column width="40%"}
 
 ```{=html}
-<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="320px" />
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="340px" />
 ```
 
 EAMENA uses an <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-apache.png' style='height: 35px;vertical-align: middle;'> HTTP server
@@ -383,6 +383,51 @@ EAMENA uses an <img src='https://raw.githubusercontent.com/eamena-project/eamena
 :::
 
 ::: {.column width="60%"}
+
+```{.apache}
+<VirtualHost *:80>
+
+	ServerAdmin ash.smith@soton.ac.uk
+
+	DocumentRoot /opt/arches/eamena
+
+	ErrorLog ${APACHE_LOG_DIR}/error.log
+	CustomLog ${APACHE_LOG_DIR}/access.log combined
+
+	RewriteEngine On
+
+	RewriteCond %{HTTPS} !on
+	RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+	Alias /static /opt/arches/eamena/eamena/static/
+	Alias /media /opt/arches/media
+
+	<Directory /opt/arches/eamena/eamena/static>
+		Require all granted
+	</Directory>
+	<Directory /opt/arches/media>
+		Require all granted
+	</Directory>
+
+	<Directory /opt/arches/eamena>
+
+		<Files wsgi.py>
+			Require all granted
+		</Files>
+
+	</Directory>
+
+	WSGIDaemonProcess eamena user=arches python-path=/opt/arches/eamena python-home=/opt/arches/ENV
+	WSGIProcessGroup eamena
+	WSGIScriptAlias / /opt/arches/eamena/eamena/wsgi.py
+	WSGIPassAuthorization on
+	
+	ProxyPreserveHost On
+	ProxyPass "/geoserver" "http://54.155.109.226:8080/geoserver/"
+	ProxyPassReverse "/geoserver" "http://54.155.109.226:8080/geoserver/"
+
+</VirtualHost>
+```
 
 
 :::
@@ -398,7 +443,7 @@ EAMENA uses an <img src='https://raw.githubusercontent.com/eamena-project/eamena
 ::: {.column width="40%"}
 
 ```{=html}
-<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="320px" />
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="340px" />
 ```
 
 EAMENA User Interface
@@ -426,11 +471,10 @@ Arches is a geospatial semantic graph platform for CH management. It natively in
 
 # Arches-based projects
 
-## Historic England
+## Listed projects
 
 ```{=html}
-<embed src="https://historicengland.org.uk/listing/the-list/map-search?clearresults=true" width="1400px" height="500px" />
-
+<embed src="https://www.archesproject.org/implementations-of-arches" width="1400px" height="550px" />
 ```
 
 ## Global South
@@ -439,28 +483,93 @@ Arches is a geospatial semantic graph platform for CH management. It natively in
 <embed src="https://achp-project.github.io/cultural-heritage/map-projects/arches-global-south.html" width="1400px" height="550px" />
 ```
 
-## Listed projects
+## <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/thomashuet' style='height: 50px;vertical-align: middle;'> Historic England  
+
 
 ```{=html}
-<embed src="https://www.archesproject.org/implementations-of-arches" width="1400px" height="550px" />
+<embed src="https://www.bbc.com/news/uk-england-shropshire-65252130" width="1400px" height="500px" />
 ```
 
+# Research
 
-# Database Issues & Developments
+## XXX
 
-## Project-related and IT-related issues
+Michael Fradly + GlobalKites
+
+## eamenaR <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-eamenar.png' style='height: 35px;vertical-align: middle;'>
+
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/stack-eamenar.png" width="500">
+
+</center>
+
+# Database Issues
+
+## Heritage Places
 
 ::: {.panel-tabset}
 
-### Public Database
+### Coordinates & Looting
 
-Open Access Issues
+:::: {.columns}
 
-### Research Database
+::: {.column width="60%"}
+
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-looting.jpg" height="300">
+
+</center>
+<div class="captiontext">Looting of the Assyrian site of Yasin Tepe (Sulaymaniyah, Iraq)</div>
+
+:::
+
+::: {.column width="40%"}
+
+```{r}
+#| out-width: 400
+#| out-height: 400
+
+leaflet::leaflet() %>%
+  leaflet::addProviderTiles(leaflet::providers$"Esri.WorldImagery", group = "Ortho") %>%
+  leaflet::addProviderTiles(leaflet::providers$"OpenStreetMap", group = "OSM") %>%
+  leaflet::addMarkers(lng = 45.6491261, lat = 35.36001515088195, popup="Temple of Bel") %>%
+  leaflet::addLayersControl(
+    baseGroups = c("Ortho", "OSM"),
+    position = "topright") 
+```
+
+:::
+
+::::
+
+
+### Local Actors & Cultural Heritage Protection
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/icomos-ch-protection-armed-conflict.jpg" height="300">
+
+</center>
+<div class="captiontext">Protection of Syria’s Cultural Heritage in Times of Armed Conflict: ICOMOS - ICCROM e-learning course for Syrian cultural heritage professionals</div>
+
+:::
+
+::: {.column width="40%"}
 
 ```{=html}
-<embed src="https://community.archesproject.org/" width="800px" height="300px" />
+<embed src="https://news.un.org/en/story/2014/03/463782" width="1400px" height="500px" />
 ```
+
+:::
+
+::::
+
 
 ### Other Issues
 
@@ -472,17 +581,36 @@ Open Access Issues
 
 ::: {.panel-tabset}
 
-### An Example
+### EAMENA v4 (Arches v7)
 
-### An other Example
+::: {.columns}
 
-### eamenaR
+::: {.column width="60%"}
+
+* Internationalization
+* multi-language data import/export
+* Two-Factor (MFA)
+* Django 3
+* Postgres 14
+* Elastic 8
+* ...
+
+:::
+
+::: {.column width="40%"}
+
+
 
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/stack-eamenar.png" width="500">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-ea-v4.png.jpg" height="300">
 
 </center>
+<div class="captiontext">Internationalization of the EAMENA database - Arabic</div>
+
+:::
+
+::::
 
 :::
 

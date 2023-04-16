@@ -18,14 +18,14 @@
     "href": "index.html#arches-powered-platform",
     "title": "EAMENA",
     "section": "Arches-powered platform",
-    "text": "Arches-powered platform\n\nGraph geodatabaseCIDOC-CRMBuilt-in Iso Standards\n\n\n is an open source geoweb-based information platform for Cultural Heritage management. It integrates semantic graph.\n\n\n\n natively integrates the CIDOC-CRM1\n\n\n\nDCMI (ISO 15836) 2\nSKOS (ISO 25964-1) 3\nSPARQL (ISO/IEC 9075-15)4\nIIIF (ISO 21127) 5\nEDTF (ISO 8601-2)6\nWGS84 (ISO 19111)7"
+    "text": "Arches-powered platform\n\nGraph geodatabaseCIDOC-CRMBuilt-in Iso Standards\n\n\n is an open source geoweb-based information platform for Cultural Heritage management. It is a semantic graph database software.\n\n\n\n natively integrates the CIDOC-CRM1\n\n\n\nDCMI (ISO 15836) 2\nSKOS (ISO 25964-1) 3\nSPARQL (ISO/IEC 9075-15)4\nIIIF (ISO 21127) 5\nEDTF (ISO 8601-2)6\nWGS84 (ISO 19111)7"
   },
   {
     "objectID": "index.html#arches-it-stack",
     "href": "index.html#arches-it-stack",
     "title": "EAMENA",
     "section": "Arches IT Stack",
-    "text": "Arches IT Stack\n\nFull-stackAWSPostgresPython/DjangoElasticApacheUI\n\n\n\n\n\nEAMENA is an  instance\n\n\n\n\nCultural Protection Fund (CPF) training in Amman (Jordan), December 2021\n\n\n\n\n\n\n\n\n\nEAMENA is hosted on  (Ubuntu)\n\n\n\n\n\n\n\n\n\nEAMENA uses  Data Base Management System.\n\n\n\n\n\n\n\n\n\nEAMENA uses a  Web Application Framework.\n\n\n\n\n\n\n\n\n\nEAMENA uses an  distributed search\n\n\n\n\n\n\n\n\n\n\n\nEAMENA uses an  HTTP server\n\n/etc/apache2/sites-available/database.eamena.org.conf\n<VirtualHost *:80>\n    ServerAdmin ash.smith@soton.ac.uk\n    DocumentRoot /opt/arches/eamena\n    ErrorLog ${APACHE_LOG_DIR}/error.log\n    CustomLog ${APACHE_LOG_DIR}/access.log combined\n    RewriteEngine On\n    RewriteCond %{HTTPS} !on\n    RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]\n    Alias /static /opt/arches/eamena/eamena/static/\n    Alias /media /opt/arches/media\n    <Directory /opt/arches/eamena/eamena/static>\n        Require all granted\n    </Directory>\n    <Directory /opt/arches/media>\n        Require all granted\n    </Directory>\n    <Directory /opt/arches/eamena>\n        <Files wsgi.py>\n            Require all granted\n        </Files>\n    </Directory>\n    WSGIDaemonProcess eamena user=arches python-path=/opt/arches/eamena python-home=/opt/arches/ENV\n    WSGIProcessGroup eamena\n    WSGIScriptAlias / /opt/arches/eamena/eamena/wsgi.py\n    WSGIPassAuthorization on\n    ProxyPreserveHost On\n    ProxyPass \"/geoserver\" \"http://54.155.109.226:8080/geoserver/\"\n    ProxyPassReverse \"/geoserver\" \"http://54.155.109.226:8080/geoserver/\"\n</VirtualHost>\n\n\n\n\n\n\n\nEAMENA User Interface\n\n\n\n\n\n\n\n\nArches is a geospatial semantic graph platform for CH management. It natively integrates Dublin Core, CIDOC-CRM, SKOS and SPARQL. Its next version (v7) will also offer internationalisation, RTL support for the user interface and import/export of multi-language data."
+    "text": "Arches IT Stack\n\nFull-stackAWSPostgresPython/DjangoElasticApacheUI\n\n\n\n\n\nEAMENA is an  instance\n\n\n\n\nCultural Protection Fund (CPF) training in Amman (Jordan), December 2021\n\n\n\n\n\n\n\n\n\nEAMENA is hosted on  (Ubuntu)\n\n\n\n\n\n\n\n\n\nEAMENA uses  Data Base Management System.\n\n\n\n\n\n\n\n\n\nEAMENA uses a  Web Application Framework.\n\n\n\n\n\n\n\n\n\nEAMENA uses an  distributed search\n\n\n\n\n\n\n\n\n\n\n\nEAMENA uses an  HTTP server\n\n/etc/apache2/sites-available/database.eamena.org.conf\n<VirtualHost *:80>\n    ServerAdmin ash.smith@soton.ac.uk\n    DocumentRoot /opt/arches/eamena\n    ErrorLog ${APACHE_LOG_DIR}/error.log\n    CustomLog ${APACHE_LOG_DIR}/access.log combined\n    RewriteEngine On\n    RewriteCond %{HTTPS} !on\n    RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]\n    Alias /static /opt/arches/eamena/eamena/static/\n    Alias /media /opt/arches/media\n    <Directory /opt/arches/eamena/eamena/static>\n        Require all granted\n    </Directory>\n    <Directory /opt/arches/media>\n        Require all granted\n    </Directory>\n    <Directory /opt/arches/eamena>\n        <Files wsgi.py>\n            Require all granted\n        </Files>\n    </Directory>\n    ProxyPreserveHost On\n    ProxyPass \"/geoserver\" \"http://54.155.109.226:8080/geoserver/\"\n    ProxyPassReverse \"/geoserver\" \"http://54.155.109.226:8080/geoserver/\"\n    WSGIDaemonProcess eamena user=arches python-path=/opt/arches/eamena python-home=/opt/arches/ENV\n    WSGIProcessGroup eamena\n    WSGIScriptAlias / /opt/arches/eamena/eamena/wsgi.py\n    WSGIPassAuthorization on\n</VirtualHost>\n\n\n\n\n\n\n\nEAMENA User Interface\n\n\n\n\n\n\n\n\nArches is a geospatial semantic graph platform for CH management. It natively integrates Dublin Core, CIDOC-CRM, SKOS and SPARQL. Its next version (v7) will also offer internationalisation, RTL support for the user interface and import/export of multi-language data."
   },
   {
     "objectID": "index.html#historic-england",
@@ -74,7 +74,7 @@
     "href": "index.html#contact",
     "title": "EAMENA",
     "section": "Contact",
-    "text": "Contact\n\n  https://github.com/eamena-project +   https://github.com/archesproject\n http://eamena.arch.ox.ac.uk/\nUniversities\n\n https://www.arch.ox.ac.uk/\n https://le.ac.uk/study/archaeology-ancient-history\n https://www.durham.ac.uk/departments/academic/archaeology/\n\n\n\n\n\n https://github.com/eamena-project GMPCA, Nice, 2023"
+    "text": "Contact\n\nProject\n\n  https://github.com/eamena-project +   https://github.com/archesproject\n http://eamena.arch.ox.ac.uk/\n\nUniversities\n\n https://www.arch.ox.ac.uk/\n https://le.ac.uk/study/archaeology-ancient-history\n https://www.durham.ac.uk/departments/academic/archaeology/\n\n\n\n\n\n https://github.com/eamena-project GMPCA, Nice, 2023"
   },
   {
     "objectID": "index.html#xxx",
@@ -102,14 +102,14 @@
     "href": "index.html#discovering",
     "title": "EAMENA",
     "section": "Discovering",
-    "text": "Discovering\n\n\n\n\nhttps://www.globalkites.fr/\n\n\n\n\nInteractive map of the Globalkites ANR funded project"
+    "text": "Discovering\n\n\n\n\n\nhttps://www.globalkites.fr/ \n\n\nInteractive map of the Globalkites ANR funded project"
   },
   {
     "objectID": "index.html#analysing",
     "href": "index.html#analysing",
     "title": "EAMENA",
     "section": "Analysing",
-    "text": "Analysing\n\n\neamenaR  R package\n\n\n\n\nhttps://tinyurl.com/eamenaR-edtf"
+    "text": "Analysing\n\n\neamenaR  R package\n\n\n\n\n\nhttps://tinyurl.com/eamenaR-edtf"
   },
   {
     "objectID": "index.html#issues",
@@ -123,6 +123,13 @@
     "href": "index.html#developments",
     "title": "EAMENA",
     "section": "Developments",
-    "text": "Developments\n\nEAMENA v4 (Arches v7)\n\n\n\n\n\nInternationalization\nmulti-language data import/export\nTwo-Factor (MFA)\nDjango 3\nPostgres 14\nElastic 8\n…\n\n\n\n\n\n\nInternationalization of the EAMENA database - Arabic"
+    "text": "Developments\n\nEAMENA v4 (Arches v7)\n\n\n\n\nInternationalization (مرحبًا, bonjour, ہیلو, …) and multi-language data import/export\n 3,  14,  8, …\n\n\n\n\n\n\nInternationalization of the EAMENA database - Arabic"
+  },
+  {
+    "objectID": "index.html#eamena-v4-arches-v7",
+    "href": "index.html#eamena-v4-arches-v7",
+    "title": "EAMENA",
+    "section": "EAMENA v4 (Arches v7)",
+    "text": "EAMENA v4 (Arches v7)\n\n\n\nInternationalization ()\nmulti-language data import/export\nTwo-Factor (MFA)\nDjango 3 , Postgres 14 , Elastic 8 \n…\n\n\n\n\n\n\nInternationalization of the EAMENA database - Arabic"
   }
 ]

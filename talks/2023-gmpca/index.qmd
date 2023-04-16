@@ -27,7 +27,7 @@ format:
 
 # EAMENA project
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, warning = F}
 library(rmarkdown)
 library(knitr)
 library(kableExtra)
@@ -35,9 +35,7 @@ library(ggplot2)
 library(dplyr)
 ```
 
-## VIDEO
 
-{{< video https://youtu.be/wo9vZccmqwc width="100%" height="100%" >}}
 
 ## <span style="font-size:50px">Endangered Archaeology in Middle East and North Africa</span>
 
@@ -201,7 +199,7 @@ Destruction: iconoclasm, looting, etc.
 
 ### Graph geodatabase
 
-<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> is an open source geoweb-based information platform for Cultural Heritage management. It integrates semantic graph.
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> is an open source geoweb-based information platform for Cultural Heritage management. It is a semantic graph database software.
 
 ```{=html}
 <embed src="https://www.archesproject.org/" width="1400px" height="400px" />
@@ -264,7 +262,7 @@ EAMENA is an <img src='https://raw.githubusercontent.com/eamena-project/eamena-a
 
 <center>
 
-<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/cpf-training.jpg' style='width: 550px;'><div class="captiontext">Cultural Protection Fund (CPF) training in Amman (Jordan), December 2021</div>
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/cpf-training.jpg' style='width: 400px;'><div class="captiontext">Cultural Protection Fund (CPF) training in Amman (Jordan), December 2021</div>
 
 </center>
 
@@ -389,7 +387,7 @@ EAMENA uses an <img src='https://raw.githubusercontent.com/eamena-project/eamena
 
 
 <small>`/etc/apache2/sites-available/database.eamena.org.conf`</small>
-```{.apache code-line-numbers="1|3|8|9-10|11-21|27-28"}
+```{.apache code-line-numbers="1|3|8|9-10|11-21|22-23"}
 <VirtualHost *:80>
 	ServerAdmin ash.smith@soton.ac.uk
 	DocumentRoot /opt/arches/eamena
@@ -411,13 +409,13 @@ EAMENA uses an <img src='https://raw.githubusercontent.com/eamena-project/eamena
 			Require all granted
 		</Files>
 	</Directory>
+	ProxyPreserveHost On
+	ProxyPass "/geoserver" "http://54.155.109.226:8080/geoserver/"
+	ProxyPassReverse "/geoserver" "http://54.155.109.226:8080/geoserver/"
 	WSGIDaemonProcess eamena user=arches python-path=/opt/arches/eamena python-home=/opt/arches/ENV
 	WSGIProcessGroup eamena
 	WSGIScriptAlias / /opt/arches/eamena/eamena/wsgi.py
 	WSGIPassAuthorization on
-	ProxyPreserveHost On
-	ProxyPass "/geoserver" "http://54.155.109.226:8080/geoserver/"
-	ProxyPassReverse "/geoserver" "http://54.155.109.226:8080/geoserver/"
 </VirtualHost>
 ```
 
@@ -446,7 +444,7 @@ EAMENA User Interface
 
 
 ```{=html}
-<embed src="https://database.eamena.org/en/" width="800px" height="450px" />
+<embed src="https://database.eamena.org/en/" width="800px" height="400px" />
 ```
 
 :::
@@ -479,7 +477,7 @@ Arches is a geospatial semantic graph platform for CH management. It natively in
 
 <center>
 
-<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-historic-england-stonehenge.jpg' style='height: 500px'>
+<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-historic-england-stonehenge.jpg' style='height: 400px'>
  
 
 </center>
@@ -504,14 +502,13 @@ Arches is a geospatial semantic graph platform for CH management. It natively in
 ::: {.column width="50%"}
 
 
-<small>https://www.globalkites.fr/</small>
 
 <center>
 
-<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/prj-globalkites.png' style='height: 500px'>
- 
-
+<small><https://www.globalkites.fr/></small>
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/prj-globalkites.png' style='height: 400px'>
 </center>
+
 <div class="captiontext">Interactive map of the Globalkites ANR funded project</div>
 
 :::
@@ -525,7 +522,7 @@ Arches is a geospatial semantic graph platform for CH management. It natively in
 
 ::: {.column width="30%"}
 
-eamenaR <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-eamenar.png' style='height: 50px;vertical-align: middle;'> R package
+eamenaR <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-eamenar.png' style='height: 55px;vertical-align: middle;'> package
 
 <center>
 
@@ -537,11 +534,14 @@ eamenaR <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/im
 
 ::: {.column width="70%"}
 
-<small>https://tinyurl.com/eamenaR-edtf</small>
+</center>
 
+<small><https://tinyurl.com/eamenaR-edtf></small>
 ```{=html}
-<embed src="https://eamena-project.github.io/eamenaR/results/edtf_plotly_category_ym_threats_types.html" width="600px" height="400px" />
+<embed src="https://eamena-project.github.io/eamenaR/results/edtf_plotly_category_ym_threats_types.html" width="850px" height="400px" />
 ```
+
+</center>
 
 :::
 
@@ -618,31 +618,22 @@ leaflet::leaflet() %>%
 
 ## Developments
 
-::: {.panel-tabset}
-
-### EAMENA v4 (Arches v7)
+<center>EAMENA v4 (Arches v7)</center>
 
 ::: {.columns}
 
-::: {.column width="60%"}
+::: {.column width="40%"}
 
-* Internationalization
-* multi-language data import/export
-* Two-Factor (MFA)
-* Django 3
-* Postgres 14
-* Elastic 8
-* ...
+* Internationalization (مرحبًا, bonjour, ہیلو, ...) and multi-language data import/export
+* <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-django.png' style='height: 45px;vertical-align: middle;'> 3, <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-postgres.png' style='height: 55px;vertical-align: middle;'> 14, <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-elastic.png' style='height: 50px;vertical-align: middle;'> 8, ...
 
 :::
 
-::: {.column width="40%"}
-
-
+::: {.column width="60%"}
 
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-ea-v4.png.jpg" height="300">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-ea-v4.png" height="450">
 
 </center>
 <div class="captiontext">Internationalization of the EAMENA database - Arabic</div>
@@ -650,8 +641,6 @@ leaflet::leaflet() %>%
 :::
 
 ::::
-
-:::
 
 
 # Conclusion
@@ -665,14 +654,14 @@ leaflet::leaflet() %>%
 
 ## Contact
 
-* <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png' style='height: 35px;vertical-align: middle;'> <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo-eamena-gh-org.png' style='height: 45px;vertical-align: middle;'> <https://github.com/eamena-project> + <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png' style='height: 35px;vertical-align: middle;'> <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> <https://github.com/archesproject>
-
-* <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/website.png' style='height: 45px;vertical-align: middle;'> <http://eamena.arch.ox.ac.uk/>
+* Project
+  - <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png' style='height: 35px;vertical-align: middle;'> <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo-eamena-gh-org.png' style='height: 45px;vertical-align: middle;'> <small><https://github.com/eamena-project></small> + <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png' style='height: 35px;vertical-align: middle;'> <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> <small><https://github.com/archesproject></small>
+  - <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/website.png' style='height: 45px;vertical-align: middle;'> <small><http://eamena.arch.ox.ac.uk/></small>
 
 * Universities
-  - <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-oxford_.png' style='height: 45px;vertical-align: middle;'> <https://www.arch.ox.ac.uk/>
-  - <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-leicester.png' style='height: 45px;vertical-align: middle;'> <https://le.ac.uk/study/archaeology-ancient-history>
-  - <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-durham.png' style='height: 45px;vertical-align: middle;'> <https://www.durham.ac.uk/departments/academic/archaeology/>
+  - <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-oxford_.png' style='height: 45px;vertical-align: middle;'> <small><https://www.arch.ox.ac.uk/></small>
+  - <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-leicester.png' style='height: 45px;vertical-align: middle;'> <small><https://le.ac.uk/study/archaeology-ancient-history></small>
+  - <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-durham.png' style='height: 45px;vertical-align: middle;'> <small><https://www.durham.ac.uk/departments/academic/archaeology/></small>
 
 
 

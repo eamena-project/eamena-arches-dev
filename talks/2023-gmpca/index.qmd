@@ -264,7 +264,7 @@ EAMENA is an <img src='https://raw.githubusercontent.com/eamena-project/eamena-a
 
 <center>
 
-<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/cpf-training.jpg' style='width: 450px;'><div class="captiontext">Cultural Protection Fund (CPF) training in Amman (Jordan), December 2021</div>
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/cpf-training.jpg' style='width: 550px;'><div class="captiontext">Cultural Protection Fund (CPF) training in Amman (Jordan), December 2021</div>
 
 </center>
 
@@ -363,7 +363,7 @@ EAMENA uses an <img src='https://raw.githubusercontent.com/eamena-project/eamena
 
 <center>
 
-<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/elastic-search-1.gif' style='width: 500px'>
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/elastic-search-1.gif' style='width: 600px'>
 
 </center>
 
@@ -388,8 +388,8 @@ EAMENA uses an <img src='https://raw.githubusercontent.com/eamena-project/eamena
 ::: {.column width="60%"}
 
 
-<p center><small>`/etc/apache2/sites-available/database.eamena.org.conf`</small></p>
-```{.apache code-line-numbers="1|3|8|9-10|11-20|27-28"}
+<small>`/etc/apache2/sites-available/database.eamena.org.conf`</small>
+```{.apache code-line-numbers="1|3|8|9-10|11-21|27-28"}
 <VirtualHost *:80>
 	ServerAdmin ash.smith@soton.ac.uk
 	DocumentRoot /opt/arches/eamena
@@ -446,7 +446,7 @@ EAMENA User Interface
 
 
 ```{=html}
-<embed src="https://database.eamena.org/en/" width="800px" height="400px" />
+<embed src="https://database.eamena.org/en/" width="800px" height="450px" />
 ```
 
 :::
@@ -475,11 +475,11 @@ Arches is a geospatial semantic graph platform for CH management. It natively in
 <embed src="https://achp-project.github.io/cultural-heritage/map-projects/arches-global-south.html" width="1400px" height="550px" />
 ```
 
-## <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/thomashuet/inst-historic-england_.png' style='height: 50px;vertical-align: middle;'> Historic England  
+## <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-historic-england_.png' style='height: 50px;vertical-align: middle;'> Historic England  
 
 <center>
 
-<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-historic-england-stonehenge.jpg' style='height: 400px'>
+<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-historic-england-stonehenge.jpg' style='height: 500px'>
  
 
 </center>
@@ -496,7 +496,7 @@ Arches is a geospatial semantic graph platform for CH management. It natively in
 ::: {.column width="50%"}
 
 ```{=html}
-<embed src="https://www.ox.ac.uk/news/2022-09-02-oxford-archaeologists-discover-monumental-evidence-prehistoric-hunting-across" width="600px" height="400px" />
+<embed src="https://journals.sagepub.com/doi/full/10.1177/09596836221114290" width="600px" height="400px" />
 ```
 
 :::
@@ -504,34 +504,40 @@ Arches is a geospatial semantic graph platform for CH management. It natively in
 ::: {.column width="50%"}
 
 
-```{=html}
-<embed src="https://www.globalkites.fr/" width="600px" height="400px" />
-```
+<small>https://www.globalkites.fr/</small>
+
+<center>
+
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/prj-globalkites.png' style='height: 500px'>
+ 
+
+</center>
+<div class="captiontext">Interactive map of the Globalkites ANR funded project</div>
 
 :::
 
 ::::
 
-:::
 
 ## Analysing
 
 :::: {.columns}
 
-::: {.column width="50%"}
+::: {.column width="30%"}
 
-eamenaR <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-eamenar.png' style='height: 35px;vertical-align: middle;'> package
+eamenaR <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-eamenar.png' style='height: 50px;vertical-align: middle;'> R package
 
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/stack-eamenar.png" width="400">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/stack-eamenar.png" width="500">
 
 </center>
 
 :::
 
-::: {.column width="50%"}
+::: {.column width="70%"}
 
+<small>https://tinyurl.com/eamenaR-edtf</small>
 
 ```{=html}
 <embed src="https://eamena-project.github.io/eamenaR/results/edtf_plotly_category_ym_threats_types.html" width="600px" height="400px" />
@@ -541,7 +547,6 @@ eamenaR <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/im
 
 ::::
 
-:::
 
 # Database Issues & Developments
 
@@ -549,7 +554,7 @@ eamenaR <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/im
 
 ::: {.panel-tabset}
 
-### Heritage Places Coordinates & Looting
+### Coordinates & Looting
 
 :::: {.columns}
 
@@ -584,7 +589,7 @@ leaflet::leaflet() %>%
 ::::
 
 
-### Local Actors & Cultural Heritage Protection
+### Working with Local Actors
 
 :::: {.columns}
 
@@ -602,7 +607,7 @@ leaflet::leaflet() %>%
 ::: {.column width="40%"}
 
 ```{=html}
-<embed src="https://news.un.org/en/story/2014/03/463782" width="1400px" height="500px" />
+<embed src="https://news.un.org/en/story/2014/03/463782" width="700px" height="500px" />
 ```
 
 :::

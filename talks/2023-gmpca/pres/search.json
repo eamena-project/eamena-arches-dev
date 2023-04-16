@@ -25,13 +25,13 @@
     "href": "index.html#arches-it-stack",
     "title": "EAMENA",
     "section": "Arches IT Stack",
-    "text": "Arches IT Stack\n\nFull-stackAWSPostgresPython/DjangoElasticApacheUI\n\n\n\n\n\nEAMENA is an  instance\n\n\n\nCultural Protection Fund (CPF) training in Amman (Jordan), December 2021\n\n\n\n\n\n\n\n\nEAMENA is hosted on  (Ubuntu)\n\n\n\n\n\n\n\n\n\nEAMENA uses  Data Base Management System.\n\n\n\n\n\n\n\n\n\nEAMENA uses  Web Application Framework.\n\n\n\n\n\n\n\n\n\nEAMENA uses an  distributed search\n\n\n\n\n\n\n\n\n\nEAMENA uses an  HTTP server\n\n\n\n\n\n\n\n\n\nEAMENA User Interface\n\n\n\n\n\n\n\n\nArches is a geospatial semantic graph platform for CH management. It natively integrates Dublin Core, CIDOC-CRM, SKOS and SPARQL. Its next version (v7) will also offer internationalisation, RTL support for the user interface and import/export of multi-language data."
+    "text": "Arches IT Stack\n\nFull-stackAWSPostgresPython/DjangoElasticApacheUI\n\n\n\n\n\nEAMENA is an  instance\n\n\n\n\nCultural Protection Fund (CPF) training in Amman (Jordan), December 2021\n\n\n\n\n\n\n\n\n\nEAMENA is hosted on  (Ubuntu)\n\n\n\n\n\n\n\n\n\nEAMENA uses  Data Base Management System.\n\n\n\n\n\n\n\n\n\nEAMENA uses  Web Application Framework.\n\n\n\n\n\n\n\n\n\nEAMENA uses an  distributed search\n\n\n\n\n\n\n\n\n\nEAMENA uses an  HTTP server\n\n<VirtualHost *:80>\n\n    ServerAdmin ash.smith@soton.ac.uk\n\n    DocumentRoot /opt/arches/eamena\n\n    ErrorLog ${APACHE_LOG_DIR}/error.log\n    CustomLog ${APACHE_LOG_DIR}/access.log combined\n\n    RewriteEngine On\n\n    RewriteCond %{HTTPS} !on\n    RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]\n\n    Alias /static /opt/arches/eamena/eamena/static/\n    Alias /media /opt/arches/media\n\n    <Directory /opt/arches/eamena/eamena/static>\n        Require all granted\n    </Directory>\n    <Directory /opt/arches/media>\n        Require all granted\n    </Directory>\n\n    <Directory /opt/arches/eamena>\n\n        <Files wsgi.py>\n            Require all granted\n        </Files>\n\n    </Directory>\n\n    WSGIDaemonProcess eamena user=arches python-path=/opt/arches/eamena python-home=/opt/arches/ENV\n    WSGIProcessGroup eamena\n    WSGIScriptAlias / /opt/arches/eamena/eamena/wsgi.py\n    WSGIPassAuthorization on\n    \n    ProxyPreserveHost On\n    ProxyPass \"/geoserver\" \"http://54.155.109.226:8080/geoserver/\"\n    ProxyPassReverse \"/geoserver\" \"http://54.155.109.226:8080/geoserver/\"\n\n</VirtualHost>\n\n\n\n\n\n\n\nEAMENA User Interface\n\n\n\n\n\n\n\n\nArches is a geospatial semantic graph platform for CH management. It natively integrates Dublin Core, CIDOC-CRM, SKOS and SPARQL. Its next version (v7) will also offer internationalisation, RTL support for the user interface and import/export of multi-language data."
   },
   {
     "objectID": "index.html#historic-england",
     "href": "index.html#historic-england",
     "title": "EAMENA",
-    "section": "Historic England",
+    "section": " Historic England",
     "text": "Historic England"
   },
   {
@@ -60,7 +60,7 @@
     "href": "index.html#database-developments",
     "title": "EAMENA",
     "section": "Database Developments",
-    "text": "Database Developments\n\nAn ExampleAn other ExampleeamenaR"
+    "text": "Database Developments\n\nEAMENA v4 (Arches v7)\n\n\n\n\n\nInternationalization\nmulti-language data import/export\nTwo-Factor (MFA)\nDjango 3\nPostgres 14\nElastic 8\n…\n\n\n\n\n\n\nInternationalization of the EAMENA database - Arabic"
   },
   {
     "objectID": "index.html#aknowledgments",
@@ -75,5 +75,26 @@
     "title": "EAMENA",
     "section": "Contact",
     "text": "Contact\n\n  https://github.com/eamena-project +   https://github.com/archesproject\n http://eamena.arch.ox.ac.uk/\nUniversities\n\n https://www.arch.ox.ac.uk/\n https://le.ac.uk/study/archaeology-ancient-history\n https://www.durham.ac.uk/departments/academic/archaeology/\n\n\n\n\n\n https://github.com/eamena-project GMPCA, Nice, 2023"
+  },
+  {
+    "objectID": "index.html#xxx",
+    "href": "index.html#xxx",
+    "title": "EAMENA",
+    "section": "XXX",
+    "text": "XXX\nMichael Fradly + GlobalKites"
+  },
+  {
+    "objectID": "index.html#eamenar",
+    "href": "index.html#eamenar",
+    "title": "EAMENA",
+    "section": "eamenaR ",
+    "text": "eamenaR"
+  },
+  {
+    "objectID": "index.html#heritage-places",
+    "href": "index.html#heritage-places",
+    "title": "EAMENA",
+    "section": "Heritage Places",
+    "text": "Heritage Places\n\nCoordinates & LootingLocal Actors & Cultural Heritage ProtectionOther IssuesXXXX\n\n\n\n\n\n\n\n\nLooting of the Assyrian site of Yasin Tepe (Sulaymaniyah, Iraq)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProtection of Syria’s Cultural Heritage in Times of Armed Conflict: ICOMOS - ICCROM e-learning course for Syrian cultural heritage professionals"
   }
 ]

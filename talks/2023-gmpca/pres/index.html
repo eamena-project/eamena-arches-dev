@@ -29,6 +29,70 @@
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
     }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto.css" id="theme">
   <link rel="stylesheet" href="https://zoometh.github.io/thomashuet/css/quarto.css">
@@ -373,8 +437,8 @@ Destruction of the Temple of Bel (Palmyra, Syria) by ISIS on August 23, 2015
 </div><div class="column" style="width:40%;">
 <div class="cell">
 <div class="cell-output-display">
-<div id="htmlwidget-dd1aba94e151f1fbc2ea" style="width:400px;height:400px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-dd1aba94e151f1fbc2ea">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addProviderTiles","args":["Esri.WorldImagery",null,"Ortho",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addProviderTiles","args":["OpenStreetMap",null,"OSM",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addMarkers","args":[34.5476086260116,38.2740283802469,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Temple of Bel",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addLayersControl","args":[["Ortho","OSM"],[],{"collapsed":true,"autoZIndex":true,"position":"topright"}]}],"limits":{"lat":[34.5476086260116,34.5476086260116],"lng":[38.2740283802469,38.2740283802469]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-5847b4c591fb9d60fdcd" style="width:400px;height:400px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-5847b4c591fb9d60fdcd">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addProviderTiles","args":["Esri.WorldImagery",null,"Ortho",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addProviderTiles","args":["OpenStreetMap",null,"OSM",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addMarkers","args":[34.5476086260116,38.2740283802469,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Temple of Bel",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addLayersControl","args":[["Ortho","OSM"],[],{"collapsed":true,"autoZIndex":true,"position":"topright"}]}],"limits":{"lat":[34.5476086260116,34.5476086260116],"lng":[38.2740283802469,38.2740283802469]}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
@@ -392,8 +456,8 @@ Archaeological site (Udhma, Jordan). The area around one section of the site is 
 </div><div class="column" style="width:40%;">
 <div class="cell">
 <div class="cell-output-display">
-<div id="htmlwidget-5d53e9cc52f75ea32e9a" style="width:400px;height:400px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-5d53e9cc52f75ea32e9a">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addProviderTiles","args":["Esri.WorldImagery",null,"Ortho",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addProviderTiles","args":["OpenStreetMap",null,"OSM",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addMarkers","args":[32.127594283333,35.876595716667,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Udhma",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addLayersControl","args":[["Ortho","OSM"],[],{"collapsed":true,"autoZIndex":true,"position":"topright"}]}],"limits":{"lat":[32.127594283333,32.127594283333],"lng":[35.876595716667,35.876595716667]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-035fb2b9761696802bca" style="width:400px;height:400px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-035fb2b9761696802bca">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addProviderTiles","args":["Esri.WorldImagery",null,"Ortho",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addProviderTiles","args":["OpenStreetMap",null,"OSM",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addMarkers","args":[32.127594283333,35.876595716667,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Udhma",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addLayersControl","args":[["Ortho","OSM"],[],{"collapsed":true,"autoZIndex":true,"position":"topright"}]}],"limits":{"lat":[32.127594283333,32.127594283333],"lng":[35.876595716667,35.876595716667]}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
@@ -411,8 +475,8 @@ Church (Ma’in, Jordan). This 2013 aerial photograph shows a road over a sectio
 </div><div class="column" style="width:40%;">
 <div class="cell">
 <div class="cell-output-display">
-<div id="htmlwidget-eba4a41f56be772af1e9" style="width:400px;height:400px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-eba4a41f56be772af1e9">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addProviderTiles","args":["Esri.WorldImagery",null,"Ortho",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addProviderTiles","args":["OpenStreetMap",null,"OSM",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addMarkers","args":[31.679894444,35.733155556,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Church in Ma'in",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addLayersControl","args":[["Ortho","OSM"],[],{"collapsed":true,"autoZIndex":true,"position":"topright"}]}],"limits":{"lat":[31.679894444,31.679894444],"lng":[35.733155556,35.733155556]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-db610baecb826668d42f" style="width:400px;height:400px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-db610baecb826668d42f">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addProviderTiles","args":["Esri.WorldImagery",null,"Ortho",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addProviderTiles","args":["OpenStreetMap",null,"OSM",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addMarkers","args":[31.679894444,35.733155556,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Church in Ma'in",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addLayersControl","args":[["Ortho","OSM"],[],{"collapsed":true,"autoZIndex":true,"position":"topright"}]}],"limits":{"lat":[31.679894444,31.679894444],"lng":[35.733155556,35.733155556]}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
@@ -430,8 +494,8 @@ Archaeological site (Sabratha, Libya). The site is slowly washing away into the 
 </div><div class="column" style="width:40%;">
 <div class="cell">
 <div class="cell-output-display">
-<div id="htmlwidget-f07afcd334a6ec07c491" style="width:400px;height:400px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-f07afcd334a6ec07c491">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addProviderTiles","args":["Esri.WorldImagery",null,"Ortho",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addProviderTiles","args":["OpenStreetMap",null,"OSM",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addMarkers","args":[32.805278,12.499722,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Archaeological site in Sabratha",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addLayersControl","args":[["Ortho","OSM"],[],{"collapsed":true,"autoZIndex":true,"position":"topright"}]}],"limits":{"lat":[32.805278,32.805278],"lng":[12.499722,12.499722]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-caef0740907838e82659" style="width:400px;height:400px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-caef0740907838e82659">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addProviderTiles","args":["Esri.WorldImagery",null,"Ortho",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addProviderTiles","args":["OpenStreetMap",null,"OSM",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addMarkers","args":[32.805278,12.499722,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Archaeological site in Sabratha",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addLayersControl","args":[["Ortho","OSM"],[],{"collapsed":true,"autoZIndex":true,"position":"topright"}]}],"limits":{"lat":[32.805278,32.805278],"lng":[12.499722,12.499722]}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
@@ -490,20 +554,22 @@ Archaeological site (Sabratha, Libya). The site is slowly washing away into the 
 <div id="tabset-3-1">
 <div class="columns">
 <div class="column" style="width:40%;">
-<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="320px">
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="340px">
 <p>EAMENA is an <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png" style="height: 35px;vertical-align: middle;"> instance</p>
 </div><div class="column" style="width:60%;">
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/cpf-training.jpg" style="width: 400px;">
+<center>
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/cpf-training.jpg" style="width: 450px;">
 <div class="captiontext">
 Cultural Protection Fund (CPF) training in Amman (Jordan), December 2021
 </div>
+</center>
 </div>
 </div>
 </div>
 <div id="tabset-3-2">
 <div class="columns">
 <div class="column" style="width:40%;">
-<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="320px">
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="340px">
 <p>EAMENA is hosted on <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-aws.png" style="height: 35px;vertical-align: middle;"> (Ubuntu)</p>
 </div><div class="column" style="width:60%;">
 <p><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/aws-instances.jpg" style="height: 400px"></p>
@@ -513,7 +579,7 @@ Cultural Protection Fund (CPF) training in Amman (Jordan), December 2021
 <div id="tabset-3-3">
 <div class="columns">
 <div class="column" style="width:40%;">
-<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="320px">
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="340px">
 <p>EAMENA uses <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-postgres.png" style="height: 35px;vertical-align: middle;"> Data Base Management System.</p>
 </div><div class="column" style="width:60%;">
 <p><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/postgres-uuid-jsonb.png" style="height: 400px"></p>
@@ -523,7 +589,7 @@ Cultural Protection Fund (CPF) training in Amman (Jordan), December 2021
 <div id="tabset-3-4">
 <div class="columns">
 <div class="column" style="width:40%;">
-<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="320px">
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="340px">
 <p>EAMENA uses <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-django.png" style="height: 35px;vertical-align: middle;"> Web Application Framework.</p>
 </div><div class="column" style="width:60%;">
 <p><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/django-rdm.png" style="height: 400px"></p>
@@ -533,27 +599,68 @@ Cultural Protection Fund (CPF) training in Amman (Jordan), December 2021
 <div id="tabset-3-5">
 <div class="columns">
 <div class="column" style="width:40%;">
-<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="320px">
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="340px">
 <p>EAMENA uses an <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-elastic.png" style="height: 35px;vertical-align: middle;"> distributed search</p>
 </div><div class="column" style="width:60%;">
-<p></p>
+<p><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/elastic-search.gif" style="height: 400px"></p>
 </div>
 </div>
 </div>
 <div id="tabset-3-6">
 <div class="columns">
 <div class="column" style="width:40%;">
-<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="320px">
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="340px">
 <p>EAMENA uses an <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-apache.png" style="height: 35px;vertical-align: middle;"> HTTP server</p>
 </div><div class="column" style="width:60%;">
-
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource apache number-lines code-with-copy"><code class="sourceCode apache"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">&lt;VirtualHost</span><span class="at"> *:80</span><span class="fu">&gt;</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a></span>
+<span id="cb1-3"><a href="#cb1-3"></a>    ServerAdmin<span class="st"> ash.smith@soton.ac.uk</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a></span>
+<span id="cb1-5"><a href="#cb1-5"></a>    DocumentRoot<span class="st"> /opt/arches/eamena</span></span>
+<span id="cb1-6"><a href="#cb1-6"></a></span>
+<span id="cb1-7"><a href="#cb1-7"></a>    ErrorLog<span class="st"> ${APACHE_LOG_DIR}/error.log</span></span>
+<span id="cb1-8"><a href="#cb1-8"></a>    CustomLog<span class="st"> ${APACHE_LOG_DIR}/access.log combined</span></span>
+<span id="cb1-9"><a href="#cb1-9"></a></span>
+<span id="cb1-10"><a href="#cb1-10"></a>    <span class="ex">RewriteEngine</span><span class="ch"> </span><span class="kw">On</span></span>
+<span id="cb1-11"><a href="#cb1-11"></a></span>
+<span id="cb1-12"><a href="#cb1-12"></a>    RewriteCond<span class="st"> %{HTTPS} !on</span></span>
+<span id="cb1-13"><a href="#cb1-13"></a>    RewriteRule<span class="st"> (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]</span></span>
+<span id="cb1-14"><a href="#cb1-14"></a></span>
+<span id="cb1-15"><a href="#cb1-15"></a>    Alias<span class="st"> /static /opt/arches/eamena/eamena/static/</span></span>
+<span id="cb1-16"><a href="#cb1-16"></a>    Alias<span class="st"> /media /opt/arches/media</span></span>
+<span id="cb1-17"><a href="#cb1-17"></a></span>
+<span id="cb1-18"><a href="#cb1-18"></a>    <span class="fu">&lt;Directory</span><span class="at"> /opt/arches/eamena/eamena/static</span><span class="fu">&gt;</span></span>
+<span id="cb1-19"><a href="#cb1-19"></a>        Require<span class="st"> all granted</span></span>
+<span id="cb1-20"><a href="#cb1-20"></a>    <span class="fu">&lt;/Directory&gt;</span></span>
+<span id="cb1-21"><a href="#cb1-21"></a>    <span class="fu">&lt;Directory</span><span class="at"> /opt/arches/media</span><span class="fu">&gt;</span></span>
+<span id="cb1-22"><a href="#cb1-22"></a>        Require<span class="st"> all granted</span></span>
+<span id="cb1-23"><a href="#cb1-23"></a>    <span class="fu">&lt;/Directory&gt;</span></span>
+<span id="cb1-24"><a href="#cb1-24"></a></span>
+<span id="cb1-25"><a href="#cb1-25"></a>    <span class="fu">&lt;Directory</span><span class="at"> /opt/arches/eamena</span><span class="fu">&gt;</span></span>
+<span id="cb1-26"><a href="#cb1-26"></a></span>
+<span id="cb1-27"><a href="#cb1-27"></a>        <span class="fu">&lt;Files</span><span class="at"> wsgi.py</span><span class="fu">&gt;</span></span>
+<span id="cb1-28"><a href="#cb1-28"></a>            Require<span class="st"> all granted</span></span>
+<span id="cb1-29"><a href="#cb1-29"></a>        <span class="fu">&lt;/Files&gt;</span></span>
+<span id="cb1-30"><a href="#cb1-30"></a></span>
+<span id="cb1-31"><a href="#cb1-31"></a>    <span class="fu">&lt;/Directory&gt;</span></span>
+<span id="cb1-32"><a href="#cb1-32"></a></span>
+<span id="cb1-33"><a href="#cb1-33"></a>    WSGIDaemonProcess eamena user<span class="st">=arches python-path=/opt/arches/eamena python-home=/opt/arches/ENV</span></span>
+<span id="cb1-34"><a href="#cb1-34"></a>    WSGIProcessGroup eamena</span>
+<span id="cb1-35"><a href="#cb1-35"></a>    WSGIScriptAlias / /opt/arches/eamena/eamena/wsgi.py</span>
+<span id="cb1-36"><a href="#cb1-36"></a>    WSGIPassAuthorization on</span>
+<span id="cb1-37"><a href="#cb1-37"></a>    </span>
+<span id="cb1-38"><a href="#cb1-38"></a>    <span class="ex">ProxyPreserveHost</span><span class="ch"> </span><span class="kw">On</span></span>
+<span id="cb1-39"><a href="#cb1-39"></a>    ProxyPass<span class="st"> "/geoserver" "http://54.155.109.226:8080/geoserver/"</span></span>
+<span id="cb1-40"><a href="#cb1-40"></a>    ProxyPassReverse<span class="st"> "/geoserver" "http://54.155.109.226:8080/geoserver/"</span></span>
+<span id="cb1-41"><a href="#cb1-41"></a></span>
+<span id="cb1-42"><a href="#cb1-42"></a><span class="fu">&lt;/VirtualHost&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
 <div id="tabset-3-7">
 <div class="columns">
 <div class="column" style="width:40%;">
-<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="320px">
+<embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="340px">
 <p>EAMENA User Interface</p>
 </div><div class="column" style="width:60%;">
 <embed src="https://database.eamena.org/en/" width="800px" height="400px">
@@ -581,34 +688,75 @@ Cultural Protection Fund (CPF) training in Amman (Jordan), December 2021
 <h1>Arches-based projects</h1>
 
 </section>
-<section id="historic-england" class="slide level2">
-<h2>Historic England</h2>
-<embed src="https://historicengland.org.uk/listing/the-list/map-search?clearresults=true" width="1400px" height="500px">
-
+<section id="listed-projects" class="slide level2">
+<h2>Listed projects</h2>
+<embed src="https://www.archesproject.org/implementations-of-arches" width="1400px" height="550px">
 </section>
 <section id="global-south" class="slide level2">
 <h2>Global South</h2>
 <embed src="https://achp-project.github.io/cultural-heritage/map-projects/arches-global-south.html" width="1400px" height="550px">
 </section>
-<section id="listed-projects" class="slide level2">
-<h2>Listed projects</h2>
-<embed src="https://www.archesproject.org/implementations-of-arches" width="1400px" height="550px">
+<section id="historic-england" class="slide level2">
+<h2><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/thomashuet" style="height: 50px;vertical-align: middle;"> Historic England</h2>
+<embed src="https://www.bbc.com/news/uk-england-shropshire-65252130" width="1400px" height="500px">
 </section></section>
 <section>
-<section id="database-issues-developments" class="title-slide slide level1 center">
-<h1>Database Issues &amp; Developments</h1>
+<section id="research" class="title-slide slide level1 center">
+<h1>Research</h1>
 
 </section>
-<section id="project-related-and-it-related-issues" class="slide level2">
-<h2>Project-related and IT-related issues</h2>
+<section id="xxx" class="slide level2">
+<h2>XXX</h2>
+<p>Michael Fradly + GlobalKites</p>
+</section>
+<section id="eamenar" class="slide level2">
+<h2>eamenaR <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-eamenar.png" style="height: 35px;vertical-align: middle;"></h2>
+<center>
+<p><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/stack-eamenar.png" width="500"></p>
+</center>
+</section></section>
+<section>
+<section id="database-issues" class="title-slide slide level1 center">
+<h1>Database Issues</h1>
+
+</section>
+<section id="heritage-places" class="slide level2">
+<h2>Heritage Places</h2>
 <div class="panel-tabset">
-<ul id="tabset-4" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-4-1">Public Database</a></li><li><a href="#tabset-4-2">Research Database</a></li><li><a href="#tabset-4-3">Other Issues</a></li><li><a href="#tabset-4-4">XXXX</a></li></ul>
+<ul id="tabset-4" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-4-1">Coordinates &amp; Looting</a></li><li><a href="#tabset-4-2">Local Actors &amp; Cultural Heritage Protection</a></li><li><a href="#tabset-4-3">Other Issues</a></li><li><a href="#tabset-4-4">XXXX</a></li></ul>
 <div class="tab-content">
 <div id="tabset-4-1">
-<p>Open Access Issues</p>
+<div class="columns">
+<div class="column" style="width:60%;">
+<center>
+<p><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-looting.jpg" height="300"></p>
+</center>
+<div class="captiontext">
+Looting of the Assyrian site of Yasin Tepe (Sulaymaniyah, Iraq)
+</div>
+</div><div class="column" style="width:40%;">
+<div class="cell">
+<div class="cell-output-display">
+<div id="htmlwidget-189c62602d1133485221" style="width:400px;height:400px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-189c62602d1133485221">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addProviderTiles","args":["Esri.WorldImagery",null,"Ortho",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addProviderTiles","args":["OpenStreetMap",null,"OSM",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addMarkers","args":[35.3600151508819,45.6491261,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Temple of Bel",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addLayersControl","args":[["Ortho","OSM"],[],{"collapsed":true,"autoZIndex":true,"position":"topright"}]}],"limits":{"lat":[35.3600151508819,35.3600151508819],"lng":[45.6491261,45.6491261]}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div id="tabset-4-2">
-<embed src="https://community.archesproject.org/" width="800px" height="300px">
+<div class="columns">
+<div class="column" style="width:60%;">
+<center>
+<p><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/icomos-ch-protection-armed-conflict.jpg" height="300"></p>
+</center>
+<div class="captiontext">
+Protection of Syria’s Cultural Heritage in Times of Armed Conflict: ICOMOS - ICCROM e-learning course for Syrian cultural heritage professionals
+</div>
+</div><div class="column" style="width:40%;">
+<embed src="https://news.un.org/en/story/2014/03/463782" width="1400px" height="500px">
+</div>
+</div>
 </div>
 <div id="tabset-4-3">
 
@@ -622,18 +770,29 @@ Cultural Protection Fund (CPF) training in Amman (Jordan), December 2021
 <section id="database-developments" class="slide level2">
 <h2>Database Developments</h2>
 <div class="panel-tabset">
-<ul id="tabset-5" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-5-1">An Example</a></li><li><a href="#tabset-5-2">An other Example</a></li><li><a href="#tabset-5-3">eamenaR</a></li></ul>
+<ul id="tabset-5" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-5-1">EAMENA v4 (Arches v7)</a></li></ul>
 <div class="tab-content">
 <div id="tabset-5-1">
-
-</div>
-<div id="tabset-5-2">
-
-</div>
-<div id="tabset-5-3">
+<div class="columns">
+<div class="column" style="width:60%;">
+<ul>
+<li>Internationalization</li>
+<li>multi-language data import/export</li>
+<li>Two-Factor (MFA)</li>
+<li>Django 3</li>
+<li>Postgres 14</li>
+<li>Elastic 8</li>
+<li>…</li>
+</ul>
+</div><div class="column" style="width:40%;">
 <center>
-<p><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/stack-eamenar.png" width="500"></p>
+<p><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-ea-v4.png.jpg" height="300"></p>
 </center>
+<div class="captiontext">
+Internationalization of the EAMENA database - Arabic
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>

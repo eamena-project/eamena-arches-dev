@@ -29,6 +29,9 @@ nodes <- data.frame(id = vertices$id,
                     size = c(rep(24, nrow(vertices))),
                     group = c(rep("dmp", nrow(vertices)))
 )
+# enlarge images
+nodes <- nodes %>%
+  mutate(size = ifelse(shape == "image", 36, 24))
 
 edges$length <- c(rep(400, nrow(edges)))
 edges$font.color <- c(rep("black", nrow(edges)))
@@ -53,5 +56,5 @@ gout <- visNetwork(nodes,
 gout
 
 path.out <- paste0(getwd(),"/data/lod/palmyra-cidoc-graph.html")
-# saveWidget(gout,path.out)
+saveWidget(gout,path.out)
 print(paste("saved in:", path.out))

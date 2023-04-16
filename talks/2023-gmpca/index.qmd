@@ -199,9 +199,9 @@ Destruction: iconoclasm, looting, etc.
 
 ::: {.panel-tabset}
 
-### Graph database
+### Graph geodatabase
 
-<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> is a web-based, geospatial information system for Cultural Heritage management
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> is an open source geoweb-based information platform for Cultural Heritage management. It integrates semantic graph.
 
 ```{=html}
 <embed src="https://www.archesproject.org/" width="1400px" height="400px" />
@@ -361,8 +361,11 @@ EAMENA uses an <img src='https://raw.githubusercontent.com/eamena-project/eamena
 
 ::: {.column width="60%"}
 
+<center>
 
-<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/elastic-search.gif' style='height: 400px'>
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/elastic-search-1.gif' style='width: 500px'>
+
+</center>
 
 :::
 
@@ -540,14 +543,13 @@ eamenaR <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/im
 
 :::
 
+# Database Issues & Developments
 
-# Database Issues
-
-## Heritage Places
+## Issues
 
 ::: {.panel-tabset}
 
-### Coordinates & Looting
+### Heritage Places Coordinates & Looting
 
 :::: {.columns}
 
@@ -607,14 +609,9 @@ leaflet::leaflet() %>%
 
 ::::
 
-
-### Other Issues
-
-### XXXX
-
 :::
 
-## Database Developments
+## Developments
 
 ::: {.panel-tabset}
 

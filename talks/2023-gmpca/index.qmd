@@ -199,7 +199,7 @@ Destruction: iconoclasm, looting, etc.
 
 ### <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/semantic-web-logo.png' style='height: 35px;vertical-align: middle;'>
 
-<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> is an open source geoweb-based semantic graph information platform for Cultural Heritage management.
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> is an open source **semantic graph** geoweb-based information platform for Cultural Heritage management.
 
 ```{=html}
 <embed src="https://www.archesproject.org/" width="1400px" height="400px" />
@@ -208,7 +208,7 @@ Destruction: iconoclasm, looting, etc.
 
 ### CIDOC-CRM
 
-<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> natively integrates the CIDOC-CRM[^1]
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> natively integrates the CIDOC Conceptual Reference Model ([CIDOC-CRM](https://www.cidoc-crm.org/))
 
 ```{=html}
 <embed src="https://eamena-project.github.io/eamena-arches-dev/data/lod/palmyra-cidoc-graph.html" width="1400px" height="600px" />
@@ -216,38 +216,71 @@ Destruction: iconoclasm, looting, etc.
 
 ### DCMI
 
-DCMI (<span style="color:grey">ISO 15836</span>) <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/lod-iso-dublin.png' style='height: 35px;vertical-align: middle;'>[^2]
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> natively integrates the Dublin Core Metadata Initiative ([DCMI](https://www.dublincore.org/))[^2]
 
 ### SKOS
 
-SKOS (<span style="color:grey">ISO 25964-1</span>) <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/lod-iso-skos.png' style='height: 35px;vertical-align: middle;'>[^3]
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> natively integrates the Simple Knowledge Organisation System ([SKOS](https://www.w3.org/2004/02/skos/))[^3]
+
+<small><https://github.com/achp-project/prj-eamena-marea/blob/f76031efb09a5cc425d544ee26432bf2d9d4b308/reference_data/concepts/EAMENA.xml#L7841-L7854></small>
+```
+    <skos:narrower>
+      <skos:Concept rdf:about="http://localhost:8000/dd33ef4a-0f20-4b9a-9a73-f2ed5bbd11ff">
+        <dcterms:identifier xml:lang="en-us">{"id": "c192f1f3-afdd-4b7c-af14-36795c1865a8", "value": "http://localhost:8000/dd33ef4a-0f20-4b9a-9a73-f2ed5bbd11ff"}</dcterms:identifier>
+        <skos:narrower rdf:resource="http://localhost:8000/17014583-8f0c-4962-972c-2dc8c9c9f014"/>
+        <skos:narrower rdf:resource="http://localhost:8000/703e2ec7-705e-449d-8cc2-df40273f1417"/>
+        <skos:narrower rdf:resource="http://localhost:8000/b4328a1f-1fde-4c78-aaf5-d2dbac673e4f"/>
+        <skos:prefLabel xml:lang="en-us">{"id": "c8da8720-4c3e-4441-8669-6567eea99cd4", "value": "Islamic (Iran)"}</skos:prefLabel>
+        <skos:narrower rdf:resource="http://localhost:8000/d2fb3e32-43ae-428b-9e48-9c0e1ad3ce3f"/>
+        <arches:collector xml:lang="en-us">{"id": "805b6e2c-4ad5-4326-add3-aff8284ccb03", "value": "41"}</arches:collector>
+        <skos:inScheme rdf:resource="http://localhost:8000/4a98075d-815f-327b-be0e-518b32f7623b"/>
+        <arches:sortorder xml:lang="en-us">{"id": "0017a1a5-0b05-4b69-b632-caa263e42ec5", "value": "41"}</arches:sortorder>
+        <skos:narrower rdf:resource="http://localhost:8000/8ec95fc4-4c38-4e43-a409-72584bb3c63f"/>
+      </skos:Concept>
+    </skos:narrower>
+```
 
 ### SPARQL
 
-SPARQL (<span style="color:grey">ISO/IEC 9075-15</span>)<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/lod-iso-sparql.png' style='height: 35px;vertical-align: middle;'>[^4]
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> natively integrates the Sparse Query Language ([SPARQL](https://www.w3.org/TR/rdf-sparql-query/))[^4]
 
-### IIIF
+```{.sql}
+  prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+  prefix skos:    <http://www.w3.org/2004/02/skos/core#>
+  prefix dcterms: <http://purl.org/dc/terms/>
 
-IIIF (<span style="color:grey">ISO 21127</span>) <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/lod-iso-iiif.png' style='height: 35px;vertical-align: middle;'>[^5]
+  select ?id ?name
+  where {
+  ?concept skos:prefLabel ?name ;
+           dcterms:identifier ?id .
+  FILTER (lang(?name) = 'en-us')
+```
 
 ### EDTF
 
-EDTF (<span style="color:grey">ISO 8601-2</span>)[^6]
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> natively integrates the Extended Date/Time Format ([EDTF](https://www.loc.gov/standards/datetime/))[^6]
 
 ### WGS84
 
-WGS84 (<span style="color:grey">ISO 19111</span>)[^7]
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> natively integrates the World Geodetic System 1984 ([WGS84](https://www.w3.org/2003/01/geo/))[^7]
 
 
-[^1]: CIDOC Conceptual Reference Model <https://www.cidoc-crm.org/>
-[^2]: Dublin Core Metadata Initiative <https://www.dublincore.org/>
-[^3]: Simple Knowledge Organisation System <https://www.w3.org/2004/02/skos/>
-[^4]: Sparse Query Language <https://www.w3.org/TR/rdf-sparql-query/>
-[^5]: International Image Interoperability Framework <https://iiif.io/>
-[^6]: Extended Date/Time Format <https://www.loc.gov/standards/datetime/>
-[^7]: World Geodetic System 1984 <https://www.w3.org/2003/01/geo/>
+### IIIF
+
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> integrates the International Image Interoperability Framework ([IIIF](https://iiif.io/))[^5]
+
+```{=html}
+<embed src="https://ommphoto.ca/kings_chamber-v01/kings_chamber.html" width="700px" height="500px" />
+```
 
 :::
+
+[^2]: ISO 15836 <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/lod-iso-dublin.png' style='height: 35px;vertical-align: middle;'>
+[^3]: ISO 25964-1 <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/lod-iso-skos.png' style='height: 35px;vertical-align: middle;'>
+[^4]: ISO/IEC 9075-15 <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/lod-iso-sparql.png' style='height: 35px;vertical-align: middle;'>
+[^5]: ISO 21127 <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/lod-iso-iiif.png' style='height: 35px;vertical-align: middle;'>
+[^6]: ISO 8601-2
+[^7]: ISO 19111
 
 ## Arches IT Stack
 

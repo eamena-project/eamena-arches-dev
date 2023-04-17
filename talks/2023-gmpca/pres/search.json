@@ -18,7 +18,7 @@
     "href": "index.html#arches-powered-platform",
     "title": "EAMENA",
     "section": "Arches-powered platform",
-    "text": "Arches-powered platform\n\nCIDOC-CRMDCMISKOSSPARQLIIIFEDTFWGS84\n\n\n is an open source geoweb-based semantic graph information platform for Cultural Heritage management.\n\n\n\n natively integrates the CIDOC-CRM1\n\n\n\nDCMI (ISO 15836) 2\n\n\nSKOS (ISO 25964-1) 3\n\n\nSPARQL (ISO/IEC 9075-15)4\n\n\nIIIF (ISO 21127) 5\n\n\nEDTF (ISO 8601-2)6\n\n\nWGS84 (ISO 19111)7"
+    "text": "Arches-powered platform\n\nCIDOC-CRMDCMISKOSSPARQLIIIFEDTFWGS84\n\n\n is an open source semantic graph geoweb-based information platform for Cultural Heritage management.\n\n\n\n natively integrates the CIDOC Conceptual Reference Model (CIDOC-CRM)\n\n\n\n natively integrates the Dublin Core Metadata Initiative (DCMI)1\n\n\n natively integrates the Simple Knowledge Organisation System (SKOS)2\n\n\n natively integrates the Sparse Query Language (SPARQL)3\n\n\n natively integrates the International Image Interoperability Framework (IIIF)4\n\n\n natively integrates the Extended Date/Time Format (EDTF)5\n\n\n natively integrates the World Geodetic System 1984 (WGS84)6"
   },
   {
     "objectID": "index.html#arches-it-stack",

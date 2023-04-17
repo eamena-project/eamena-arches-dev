@@ -371,7 +371,7 @@ Destruction: iconoclasm, looting, etc.
 ::: {.column width="40%"}
 \
 
-<div class="captiontext">EAMENA IIIF node (test) of Qasr al-Hallabat Umayyad castle <br> (Zarqa, Jordan)</div>
+<div class="captiontext">EAMENA IIIF node (in test) of Qasr al-Hallabat Umayyad castle <br> (Zarqa, Jordan)</div>
 
 :::
 

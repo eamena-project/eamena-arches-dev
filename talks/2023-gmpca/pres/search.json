@@ -109,14 +109,14 @@
     "href": "index.html#analysing",
     "title": "EAMENA",
     "section": "Analysing",
-    "text": "Analysing\n\n\neamenaR  R package\n\n\n\n\n\nhttps://tinyurl.com/eamenaR-edtf"
+    "text": "Analysing\n\n\neamenaR  package\n\n\n\n\n\nhttps://tinyurl.com/eamenaR-edtf"
   },
   {
     "objectID": "index.html#issues",
     "href": "index.html#issues",
     "title": "EAMENA",
     "section": "Issues",
-    "text": "Issues\n\nCoordinates & LootingWorking with Local Actors\n\n\n\n\n\n\n\n\nLooting of the Assyrian site of Yasin Tepe (Sulaymaniyah, Iraq)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProtection of Syria’s Cultural Heritage in Times of Armed Conflict: ICOMOS - ICCROM e-learning course for Syrian cultural heritage professionals"
+    "text": "Issues\n\nCoordinates & LootingInstitutional ActorsData and API sovereignty\n\n\n\n\n\n\n\n\nLooting of the Assyrian site of Yasin Tepe (Sulaymaniyah, Iraq)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProtection of Syria’s Cultural Heritage in Times of Armed Conflict: ICOMOS - ICCROM e-learning course for Syrian cultural heritage professionals"
   },
   {
     "objectID": "index.html#developments",
@@ -131,5 +131,19 @@
     "title": "EAMENA",
     "section": "EAMENA v4 (Arches v7)",
     "text": "EAMENA v4 (Arches v7)\n\n\n\nInternationalization ()\nmulti-language data import/export\nTwo-Factor (MFA)\nDjango 3 , Postgres 14 , Elastic 8 \n…\n\n\n\n\n\n\nInternationalization of the EAMENA database - Arabic"
+  },
+  {
+    "objectID": "test.html#xxx",
+    "href": "test.html#xxx",
+    "title": "EAMENA",
+    "section": "XXX",
+    "text": "XXX\n\n\n\n\n https://github.com/eamena-project GMPCA, Nice, 2023"
+  },
+  {
+    "objectID": "index.html#new-findings",
+    "href": "index.html#new-findings",
+    "title": "EAMENA",
+    "section": "New Findings",
+    "text": "New Findings\n\n\n\n\n\nhttps://www.globalkites.fr/ \n\n\nInteractive map of the Globalkites ANR funded project"
   }
 ]

@@ -25,7 +25,7 @@ format:
 
 
 
-# EAMENA project
+# EAMENA project {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/lod-cidoc-palmyra.png"}
 
 ```{r, echo=FALSE, warning = F}
 library(rmarkdown)
@@ -191,7 +191,7 @@ Destruction: iconoclasm, looting, etc.
 :::
 
 
-# The database
+# The database {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/lod-cidoc-palmyra.png"}
 
 ## Arches-powered platform
 
@@ -424,8 +424,6 @@ EAMENA uses an <img src='https://raw.githubusercontent.com/eamena-project/eamena
 
 ::::
 
-
-
 ### UI
 
 :::: {.columns}
@@ -459,7 +457,7 @@ Arches is a geospatial semantic graph platform for CH management. It natively in
 :::
 
 
-# Arches-based projects
+# Arches-based projects {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/lod-cidoc-palmyra.png"}
 
 ## Listed projects
 
@@ -483,25 +481,21 @@ Arches is a geospatial semantic graph platform for CH management. It natively in
 </center>
 <div class="captiontext">General view of Stonehenge (Wiltshire, England) © Historic England J940231</div>
 
+# Research {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/lod-cidoc-palmyra.png"}
 
-
-# Research
-
-## Discovering
+## New Findings
 
 :::: {.columns}
 
 ::: {.column width="50%"}
 
 ```{=html}
-<embed src="https://journals.sagepub.com/doi/full/10.1177/09596836221114290" width="600px" height="400px" />
+<embed src="http://shinyserver.cfs.unipi.it:3838/teach/stats/bib/BIB-3535-Kites.pdf" width="500px" height="2100px" />
 ```
 
 :::
 
 ::: {.column width="50%"}
-
-
 
 <center>
 
@@ -514,7 +508,6 @@ Arches is a geospatial semantic graph platform for CH management. It natively in
 :::
 
 ::::
-
 
 ## Analysing
 
@@ -547,8 +540,7 @@ eamenaR <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/im
 
 ::::
 
-
-# Database Issues & Developments
+# Database Issues & Developments {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/lod-cidoc-palmyra.png"}
 
 ## Issues
 
@@ -589,7 +581,7 @@ leaflet::leaflet() %>%
 ::::
 
 
-### Working with Local Actors
+### Institutional Actors
 
 :::: {.columns}
 
@@ -613,6 +605,8 @@ leaflet::leaflet() %>%
 :::
 
 ::::
+
+### Data and API sovereignty
 
 :::
 
@@ -643,7 +637,7 @@ leaflet::leaflet() %>%
 ::::
 
 
-# Conclusion
+# Conclusion {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/lod-cidoc-palmyra.png"}
 
 ## Aknowledgments
 

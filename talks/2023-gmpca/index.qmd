@@ -25,7 +25,7 @@ format:
 
 
 
-# EAMENA project {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/lod-cidoc-palmyra.png"}
+# EAMENA project {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/23889489303_b3df7d8cef_o.jpg"}
 
 ```{r, echo=FALSE, warning = F}
 library(rmarkdown)
@@ -191,15 +191,15 @@ Destruction: iconoclasm, looting, etc.
 :::
 
 
-# The database {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/lod-cidoc-palmyra.png"}
+# The database {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/23889489303_b3df7d8cef_o.jpg"}
 
 ## Arches-powered platform
 
 ::: {.panel-tabset}
 
-### Graph geodatabase
+### <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/semantic-web-logo.png' style='height: 35px;vertical-align: middle;'>
 
-<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> is an open source geoweb-based information platform for Cultural Heritage management. It is a semantic graph database software.
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> is an open source geoweb-based semantic graph information platform for Cultural Heritage management.
 
 ```{=html}
 <embed src="https://www.archesproject.org/" width="1400px" height="400px" />
@@ -214,17 +214,27 @@ Destruction: iconoclasm, looting, etc.
 <embed src="https://eamena-project.github.io/eamena-arches-dev/data/lod/palmyra-cidoc-graph.html" width="1400px" height="600px" />
 ```
 
-### Built-in Iso Standards
+### DCMI
 
 DCMI (<span style="color:grey">ISO 15836</span>) <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/lod-iso-dublin.png' style='height: 35px;vertical-align: middle;'>[^2]
 
+### SKOS
+
 SKOS (<span style="color:grey">ISO 25964-1</span>) <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/lod-iso-skos.png' style='height: 35px;vertical-align: middle;'>[^3]
+
+### SPARQL
 
 SPARQL (<span style="color:grey">ISO/IEC 9075-15</span>)<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/lod-iso-sparql.png' style='height: 35px;vertical-align: middle;'>[^4]
 
+### IIIF
+
 IIIF (<span style="color:grey">ISO 21127</span>) <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/lod-iso-iiif.png' style='height: 35px;vertical-align: middle;'>[^5]
 
+### EDTF
+
 EDTF (<span style="color:grey">ISO 8601-2</span>)[^6]
+
+### WGS84
 
 WGS84 (<span style="color:grey">ISO 19111</span>)[^7]
 
@@ -457,7 +467,7 @@ Arches is a geospatial semantic graph platform for CH management. It natively in
 :::
 
 
-# Arches-based projects {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/lod-cidoc-palmyra.png"}
+# Arches-based projects {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/23889489303_b3df7d8cef_o.jpg"}
 
 ## Listed projects
 
@@ -481,7 +491,7 @@ Arches is a geospatial semantic graph platform for CH management. It natively in
 </center>
 <div class="captiontext">General view of Stonehenge (Wiltshire, England) © Historic England J940231</div>
 
-# Research {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/lod-cidoc-palmyra.png"}
+# Research {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/23889489303_b3df7d8cef_o.jpg"}
 
 ## New Findings
 
@@ -540,7 +550,7 @@ eamenaR <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/im
 
 ::::
 
-# Database Issues & Developments {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/lod-cidoc-palmyra.png"}
+# Database Issues & Developments {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/23889489303_b3df7d8cef_o.jpg"}
 
 ## Issues
 
@@ -602,6 +612,12 @@ leaflet::leaflet() %>%
 <embed src="https://news.un.org/en/story/2014/03/463782" width="700px" height="500px" />
 ```
 
+
+```{=html}
+<embed src="https://www.getty.edu/publications/cultural-heritage-mass-atrocities/" width="700px" height="500px" />
+```
+
+
 :::
 
 ::::
@@ -637,7 +653,7 @@ leaflet::leaflet() %>%
 ::::
 
 
-# Conclusion {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/lod-cidoc-palmyra.png"}
+# Conclusion {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/23889489303_b3df7d8cef_o.jpg"}
 
 ## Aknowledgments
 

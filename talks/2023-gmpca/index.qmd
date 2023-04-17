@@ -734,7 +734,7 @@ leaflet::leaflet() %>%
 
 :::: {.columns}
 
-::: {.column width="60%"}
+::: {.column width="50%"}
 
 <center>
 
@@ -745,10 +745,10 @@ leaflet::leaflet() %>%
 
 :::
 
-::: {.column width="40%"}
+::: {.column width="50%"}
 
 ```{=html}
-<embed src="https://www.getty.edu/publications/cultural-heritage-mass-atrocities/" width="700px" height="500px" />
+<embed src="https://www.getty.edu/publications/cultural-heritage-mass-atrocities/" width="700px" height="450px" />
 ```
 
 
@@ -762,18 +762,20 @@ leaflet::leaflet() %>%
 
 ## Developments
 
-<center>EAMENA v4 (Arches v7)</center>
-
 ::: {.columns}
 
-::: {.column width="40%"}
+::: {.column width="30%"}
 
-* Internationalization (مرحبًا,* bonjour*, ہیلو, ...), multi-language data import/export
-* <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-django.png' style='height: 45px;vertical-align: middle;'> 3, <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-postgres.png' style='height: 55px;vertical-align: middle;'> 14, <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-elastic.png' style='height: 50px;vertical-align: middle;'> 8, ...
+<center>EAMENA v4 (Arches v7)</center>
+
+<div style="font-size:35px">
+* Internationalization (مرحبًا, *bonjour*, ہیلو, ...), multi-language data import/export
+* <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-django.png' style='height: 40px;vertical-align: middle;'> 3, <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-postgres.png' style='height: 50px;vertical-align: middle;'> 14, <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-elastic.png' style='height: 45px;vertical-align: middle;'> 8, ...
+</div>
 
 :::
 
-::: {.column width="60%"}
+::: {.column width="70%"}
 
 <center>
 

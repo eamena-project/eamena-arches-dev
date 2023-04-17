@@ -222,23 +222,24 @@ Destruction: iconoclasm, looting, etc.
 
 <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> natively integrates the Simple Knowledge Organisation System ([SKOS](https://www.w3.org/2004/02/skos/))[^3]
 
-<small><https://github.com/achp-project/prj-eamena-marea/blob/f76031efb09a5cc425d544ee26432bf2d9d4b308/reference_data/concepts/EAMENA.xml#L7841-L7854></small>
 ```
-    <skos:narrower>
-      <skos:Concept rdf:about="http://localhost:8000/dd33ef4a-0f20-4b9a-9a73-f2ed5bbd11ff">
-        <dcterms:identifier xml:lang="en-us">{"id": "c192f1f3-afdd-4b7c-af14-36795c1865a8", "value": "http://localhost:8000/dd33ef4a-0f20-4b9a-9a73-f2ed5bbd11ff"}</dcterms:identifier>
-        <skos:narrower rdf:resource="http://localhost:8000/17014583-8f0c-4962-972c-2dc8c9c9f014"/>
-        <skos:narrower rdf:resource="http://localhost:8000/703e2ec7-705e-449d-8cc2-df40273f1417"/>
-        <skos:narrower rdf:resource="http://localhost:8000/b4328a1f-1fde-4c78-aaf5-d2dbac673e4f"/>
-        <skos:prefLabel xml:lang="en-us">{"id": "c8da8720-4c3e-4441-8669-6567eea99cd4", "value": "Islamic (Iran)"}</skos:prefLabel>
-        <skos:narrower rdf:resource="http://localhost:8000/d2fb3e32-43ae-428b-9e48-9c0e1ad3ce3f"/>
-        <arches:collector xml:lang="en-us">{"id": "805b6e2c-4ad5-4326-add3-aff8284ccb03", "value": "41"}</arches:collector>
-        <skos:inScheme rdf:resource="http://localhost:8000/4a98075d-815f-327b-be0e-518b32f7623b"/>
-        <arches:sortorder xml:lang="en-us">{"id": "0017a1a5-0b05-4b69-b632-caa263e42ec5", "value": "41"}</arches:sortorder>
-        <skos:narrower rdf:resource="http://localhost:8000/8ec95fc4-4c38-4e43-a409-72584bb3c63f"/>
-      </skos:Concept>
-    </skos:narrower>
+<skos:narrower>
+  <skos:Concept rdf:about="http://localhost:8000/dd33ef4a-0f20-4b9a-9a73-f2ed5bbd11ff">
+    <dcterms:identifier xml:lang="en-us">{"id": "c192f1f3-afdd-4b7c-af14-36795c1865a8", "value": "http://localhost:8000/dd33ef4a-0f20-4b9a-9a73-f2ed5bbd11ff"}</dcterms:identifier>
+    <skos:narrower rdf:resource="http://localhost:8000/17014583-8f0c-4962-972c-2dc8c9c9f014"/>
+    <skos:narrower rdf:resource="http://localhost:8000/703e2ec7-705e-449d-8cc2-df40273f1417"/>
+    <skos:narrower rdf:resource="http://localhost:8000/b4328a1f-1fde-4c78-aaf5-d2dbac673e4f"/>
+    <skos:prefLabel xml:lang="en-us">{"id": "c8da8720-4c3e-4441-8669-6567eea99cd4", "value": "Islamic (Iran)"}</skos:prefLabel>
+    <skos:narrower rdf:resource="http://localhost:8000/d2fb3e32-43ae-428b-9e48-9c0e1ad3ce3f"/>
+    <arches:collector xml:lang="en-us">{"id": "805b6e2c-4ad5-4326-add3-aff8284ccb03", "value": "41"}</arches:collector>
+    <skos:inScheme rdf:resource="http://localhost:8000/4a98075d-815f-327b-be0e-518b32f7623b"/>
+    <arches:sortorder xml:lang="en-us">{"id": "0017a1a5-0b05-4b69-b632-caa263e42ec5", "value": "41"}</arches:sortorder>
+    <skos:narrower rdf:resource="http://localhost:8000/8ec95fc4-4c38-4e43-a409-72584bb3c63f"/>
+  </skos:Concept>
+</skos:narrower>
 ```
+
+[🔗](https://github.com/achp-project/prj-eamena-marea/blob/f76031efb09a5cc425d544ee26432bf2d9d4b308/reference_data/concepts/EAMENA.xml#L7841-L7854)
 
 ### SPARQL
 
@@ -260,18 +261,62 @@ Destruction: iconoclasm, looting, etc.
 
 <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> natively integrates the Extended Date/Time Format ([EDTF](https://www.loc.gov/standards/datetime/))[^6]
 
+:::: {.columns}
+
+::: {.column width="30%"}
+
+
+<center>
+
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/lod-edtf-dataset.png' style='height: 300px;'>
+
+</center>
+<div class="captiontext">EDTF data collected over a period of fifteen years (2004-2019), 63 events, on 19 archaeological sites in NW Syria</div>
+
+:::
+
+::: {.column width="70%"}
+
+</center>
+
+<small><https://tinyurl.com/eamenaR-edtf></small>
+```{=html}
+<embed src="https://eamena-project.github.io/eamenaR/results/edtf_plotly_category_ym_threats_types.html" width="850px" height="400px" />
+```
+
+</center>
+
+:::
+
+cf. <small>https://eamena-project.github.io/reveal.js/projects/time#/9></small>
+
+::::
+
+
 ### WGS84
 
 <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> natively integrates the World Geodetic System 1984 ([WGS84](https://www.w3.org/2003/01/geo/))[^7]
+
+<center>
+
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/wgs84-qasr-al-hallabat.png.png' style='height: 300px;'>
+
+</center>
+
+<div class="captiontext">Report (detail) of Qasr al-Hallabat Umayyad castle (Zarqa, Jordan)</div>
 
 
 ### IIIF
 
 <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> integrates the International Image Interoperability Framework ([IIIF](https://iiif.io/))[^5]
 
-```{=html}
-<embed src="https://ommphoto.ca/kings_chamber-v01/kings_chamber.html" width="700px" height="500px" />
-```
+<center>
+
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/iiif-qasr-el-hallabat.png' style='height: 350px;'>
+
+</center>
+
+<div class="captiontext">Qasr al-Hallabat Umayyad castle (Zarqa, Jordan)</div>
 
 :::
 
@@ -554,28 +599,25 @@ Arches is a geospatial semantic graph platform for CH management. It natively in
 
 ## Analysing
 
+eamenaR <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-eamenar.png' style='height: 55px;vertical-align: middle;'> package
+
 :::: {.columns}
 
-::: {.column width="30%"}
-
-eamenaR <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-eamenar.png' style='height: 55px;vertical-align: middle;'> package
+::: {.column width="50%"}
 
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/stack-eamenar.png" width="500">
+<img src="https://raw.githubusercontent.com/eamena-project/eamenaR/main/results/caravanserail_paths.png" width="500">
 
 </center>
 
 :::
 
-::: {.column width="70%"}
+::: {.column width="50%"}
 
-</center>
+<center>
 
-<small><https://tinyurl.com/eamenaR-edtf></small>
-```{=html}
-<embed src="https://eamena-project.github.io/eamenaR/results/edtf_plotly_category_ym_threats_types.html" width="850px" height="400px" />
-```
+<img src="https://raw.githubusercontent.com/eamena-project/eamenaR/main/results/map_path_profile.png" width="500">
 
 </center>
 

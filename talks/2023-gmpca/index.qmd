@@ -102,7 +102,7 @@ leaflet::leaflet() %>%
 leaflet::leaflet() %>%
   leaflet::addProviderTiles(leaflet::providers$"Esri.WorldImagery", group = "Ortho") %>%
   leaflet::addProviderTiles(leaflet::providers$"OpenStreetMap", group = "OSM") %>%
-  leaflet::addMarkers(lng = 35.876595716667, lat = 32.127594283333, popup="Udhma") %>%
+  leaflet::addMarkers(lng = 35.87992, lat = 32.12974, popup="Udhma") %>%
   leaflet::addLayersControl(
     baseGroups = c("Ortho", "OSM"),
     position = "topright") 
@@ -138,7 +138,7 @@ leaflet::leaflet() %>%
 leaflet::leaflet() %>%
   leaflet::addProviderTiles(leaflet::providers$"Esri.WorldImagery", group = "Ortho") %>%
   leaflet::addProviderTiles(leaflet::providers$"OpenStreetMap", group = "OSM") %>%
-  leaflet::addMarkers(lng = 35.733155556, lat = 31.679894444, popup="Church in Ma'in") %>%
+  leaflet::addMarkers(lng = 35.73318, lat = 31.67979, popup="Church in Ma'in") %>%
   leaflet::addLayersControl(
     baseGroups = c("Ortho", "OSM"),
     position = "topright") 

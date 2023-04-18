@@ -37,7 +37,7 @@ library(dplyr)
 
 
 
-# Section {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaDB-bck.png" background-opacity: 0.3}
+# Section {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/lod-cidoc-palmyra.png"}
 
 ## XXX
 

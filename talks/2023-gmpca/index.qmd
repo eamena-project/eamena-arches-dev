@@ -26,7 +26,7 @@ format:
 
 
 
-# EAMENA project {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/23889489303_b3df7d8cef_o.jpg"}
+# The project {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/23889489303_b3df7d8cef_o.jpg"}
 
 ```{r, echo=FALSE, warning = F}
 library(rmarkdown)
@@ -160,7 +160,7 @@ leaflet::leaflet() %>%
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-natural.jpg" height="300">
 
 </center>
-<div class="captiontext">Archaeological site (Sabratha, Libya). The site is slowly washing away into the sea</div>
+<div class="captiontext">Temple of Isis (Sabratha, Libya) slowly washed away by the sea</div>
 
 :::
 
@@ -174,7 +174,7 @@ leaflet::leaflet() %>%
 leaflet::leaflet() %>%
   leaflet::addProviderTiles(leaflet::providers$"Esri.WorldImagery", group = "Ortho") %>%
   leaflet::addProviderTiles(leaflet::providers$"OpenStreetMap", group = "OSM") %>%
-  leaflet::addMarkers(lng = 12.499722, lat = 32.805278, popup="Archaeological site in Sabratha") %>%
+  leaflet::addMarkers(lng = 12.487980812351678, lat = 32.80763810717728, popup="Isis Temple in Sabratha") %>%
   leaflet::addLayersControl(
     baseGroups = c("Ortho", "OSM"),
     position = "topright") 
@@ -200,7 +200,7 @@ Destruction: iconoclasm, looting, etc.
 
 ### <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/semantic-web-logo.png' style='height: 35px;vertical-align: middle;'>
 
-<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> is an open source **semantic graph** geoweb-based information platform for Cultural Heritage management.
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> is an open source **semantic graph** geoweb-based information platform for Cultural Heritage management
 
 ```{=html}
 <embed src="https://www.archesproject.org/" width="1400px" height="400px" />
@@ -304,7 +304,7 @@ Destruction: iconoclasm, looting, etc.
 <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/lod-edtf-dataset.png' style='height: 300px;'>
 
 </center>
-<div class="captiontext">EDTF data collected over a period of fifteen years (2004-2019), 63 events, on 19 archaeological sites in NW Syria</div>
+<div class="captiontext">EDTF data collected on 19 archaeological sites in NW Syria between 2004 and 2019 (63 events)</div>
 
 :::
 
@@ -354,7 +354,7 @@ Destruction: iconoclasm, looting, etc.
 
 ### IIIF
 
-<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> integrates 3<sup>rd</sup> part apps like the the International Image Interoperability Framework ([IIIF](https://iiif.io/))[^5]
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> integrates 3<sup>rd</sup> part apps like the International Image Interoperability Framework ([IIIF](https://iiif.io/))[^5]
 
 :::: {.columns}
 
@@ -401,7 +401,7 @@ Destruction: iconoclasm, looting, etc.
 <embed src="https://eamena-project.github.io/eamena-arches-dev/it/arches-stack-16.html" width="800px" height="330px" />
 ```
 
-EAMENA is an <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> instance
+EAMENA is an <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> (v5) instance
 
 :::
 
@@ -607,13 +607,13 @@ Arches is a geospatial semantic graph platform for CH management. It natively in
 ## Listed projects
 
 ```{=html}
-<embed src="https://www.archesproject.org/implementations-of-arches" width="1400px" height="550px" />
+<embed src="https://www.archesproject.org/implementations-of-arches" width="1400px" height="520px" />
 ```
 
 ## Global South
 
 ```{=html}
-<embed src="https://achp-project.github.io/cultural-heritage/map-projects/arches-global-south.html" width="1400px" height="550px" />
+<embed src="https://achp-project.github.io/cultural-heritage/map-projects/arches-global-south.html" width="1400px" height="520px" />
 ```
 
 ## <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-historic-england_.png' style='height: 50px;vertical-align: middle;'> Historic England  
@@ -734,18 +734,18 @@ leaflet::leaflet() %>%
 
 :::: {.columns}
 
-::: {.column width="50%"}
+::: {.column width="40%"}
 
 <center>
 
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/icomos-ch-protection-armed-conflict.jpg" height="300">
 
 </center>
-<div class="captiontext">Protection of Syria’s Cultural Heritage in Times of Armed Conflict: ICOMOS - ICCROM e-learning course for Syrian cultural heritage professionals</div>
+<div class="captiontext">"Protection of Syria’s Cultural Heritage in Times of Armed Conflict" e-learning course for Syrian cultural heritage professionals (ICOMOS - ICCROM)</div>
 
 :::
 
-::: {.column width="50%"}
+::: {.column width="60%"}
 
 ```{=html}
 <embed src="https://www.getty.edu/publications/cultural-heritage-mass-atrocities/" width="700px" height="450px" />
@@ -756,7 +756,10 @@ leaflet::leaflet() %>%
 
 ::::
 
-### Data and API sovereignty
+### Data & API sovereignty
+
+
+### Data & API sustainibility
 
 :::
 
@@ -766,7 +769,7 @@ leaflet::leaflet() %>%
 
 ::: {.column width="30%"}
 
-<center>EAMENA v4 (Arches v7)</center>
+<center>EAMENA v4 (<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> v7)</center>
 
 <div style="font-size:35px">
 * Internationalization (مرحبًا, *bonjour*, ہیلو, ...), multi-language data import/export

@@ -157,7 +157,7 @@ leaflet::leaflet() %>%
 
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-natural.jpg" height="300">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-natural-2.jpg" height="300">
 
 </center>
 <div class="captiontext">Temple of Isis (Sabratha, Libya) slowly washed away by the sea</div>
@@ -638,6 +638,17 @@ Arches is a geospatial semantic graph platform for CH management. It natively in
 <embed src="http://shinyserver.cfs.unipi.it:3838/teach/stats/bib/BIB-3535-Kites.pdf" width="800px" height="450px" />
 ```
 
+```{=html}
+<embed src="https://www.archaeology.org/news/10815-220908-desert-hunting-kites" width="800px" height="450px" />
+```
+
+```{=html}
+<embed src="https://journals.sagepub.com/doi/full/10.1177/09596836221114290" width="800px" height="450px" />
+```
+
+
+
+
 <div class="captiontext">New desert kites in Eastern Arabia</div>
 
 :::
@@ -759,7 +770,7 @@ leaflet::leaflet() %>%
 ### Data & API sovereignty
 
 
-### Data & API sustainibility
+### Data & API 
 
 :::
 
@@ -794,14 +805,17 @@ leaflet::leaflet() %>%
 
 # Conclusion {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/23889489303_b3df7d8cef_o.jpg"}
 
-## Aknowledgments
+## Aknowledgments & Contact
+
+## Aknowledgments & Contact
+
+* Aknowledgments
 
 <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo-arcadia.png' style='height: 45px;vertical-align: middle;'> Arcadia Fund, a charitable fund of Lisbet Rausing & Peter Baldwin
 
 <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo-british-council.png' style='height: 45px;vertical-align: middle;'> British Council Cultural Protection Fund
 
-
-## Contact
+* Contact
 
 * Project
   - <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png' style='height: 35px;vertical-align: middle;'> <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo-eamena-gh-org.png' style='height: 45px;vertical-align: middle;'> <small><https://github.com/eamena-project></small> + <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png' style='height: 35px;vertical-align: middle;'> <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> <small><https://github.com/archesproject></small>

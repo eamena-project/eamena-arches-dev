@@ -738,7 +738,7 @@ eamenar::geojson_map_path(export.type = "profile")
 
 ::: {.panel-tabset}
 
-### Coordinates & Looting
+### <span class="tabsetheadertext">Coordinates & Looting</span>
 
 :::: {.columns}
 
@@ -773,7 +773,7 @@ leaflet::leaflet() %>%
 ::::
 
 
-### Institutional Actors
+### <span class="tabsetheadertext">Institutional Actors</span>
 
 :::: {.columns}
 
@@ -791,7 +791,7 @@ leaflet::leaflet() %>%
 ::: {.column width="60%"}
 
 ```{=html}
-<embed src="https://www.getty.edu/publications/cultural-heritage-mass-atrocities/" width="700px" height="450px" />
+<embed src="https://www.getty.edu/publications/cultural-heritage-mass-atrocities/" width="700px" height="420px" />
 ```
 
 
@@ -799,10 +799,10 @@ leaflet::leaflet() %>%
 
 ::::
 
-### Data & API sovereignty
+### <span class="tabsetheadertext">Data & API Sovereignty</span>
 
 
-### Data & API 
+### <span class="tabsetheadertext">Data & API Sustainibility</span>
 
 :::
 
@@ -837,29 +837,23 @@ leaflet::leaflet() %>%
 
 # Conclusion {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/23889489303_b3df7d8cef_o.jpg"}
 
-## Aknowledgments & Contact
 
 ## Aknowledgments & Contact
 
-* Aknowledgments
+\
 
-<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo-arcadia.png' style='height: 45px;vertical-align: middle;'> Arcadia Fund, a charitable fund of Lisbet Rausing & Peter Baldwin
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo-arcadia.png' style='height: 40px;vertical-align: middle;'> Arcadia Fund, a charitable fund of Lisbet Rausing & Peter Baldwin
 
-<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo-british-council.png' style='height: 45px;vertical-align: middle;'> British Council Cultural Protection Fund
-
-* Contact
-
-* Project
-  - <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png' style='height: 35px;vertical-align: middle;'> <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo-eamena-gh-org.png' style='height: 45px;vertical-align: middle;'> <small><https://github.com/eamena-project></small> + <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png' style='height: 35px;vertical-align: middle;'> <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> <small><https://github.com/archesproject></small>
-  - <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/website.png' style='height: 45px;vertical-align: middle;'> <small><http://eamena.arch.ox.ac.uk/></small>
-
-* Universities
-  - <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-oxford_.png' style='height: 45px;vertical-align: middle;'> <small><https://www.arch.ox.ac.uk/></small>
-  - <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-leicester.png' style='height: 45px;vertical-align: middle;'> <small><https://le.ac.uk/study/archaeology-ancient-history></small>
-  - <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-durham.png' style='height: 45px;vertical-align: middle;'> <small><https://www.durham.ac.uk/departments/academic/archaeology/></small>
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo-british-council.png' style='height: 40px;vertical-align: middle;'> British Council Cultural Protection Fund
 
 
+<div style="font-size:35px">
 
+**EAMENA Project**: <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png' style='height: 40px;vertical-align: middle;'> <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo-eamena-gh-org.png' style='height: 40px;vertical-align: middle;'> <https://github.com/eamena-project> + <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png' style='height: 40px;vertical-align: middle;'> <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 40px;vertical-align: middle;'> <https://github.com/archesproject>, <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/website.png' style='height: 40px;vertical-align: middle;'> <http://eamena.arch.ox.ac.uk/>
+\
+**Partner Universities**: <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-oxford_.png' style='height: 35px;vertical-align: middle;'> <https://www.arch.ox.ac.uk/>, <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-leicester.png' style='height: 35px;vertical-align: middle;'> <https://le.ac.uk/study/archaeology-ancient-history>, <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-durham.png' style='height: 35px;vertical-align: middle;'> <https://www.durham.ac.uk/departments/academic/archaeology/>
+
+</div>
 
 
 

@@ -121,7 +121,7 @@ gantt
 ## Training content
 
 ### Remote 1
-> Online training for sys admins prepared by Reuben Osborne and Thomas Huet
+> Online training for Arches platform system administrators, prepared by Reuben Osborne and Thomas Huet
 
 Monday 22 May, Tuesday 23 May and Wednesday 24 May 2023
 

@@ -628,7 +628,37 @@ Arches is a geospatial semantic graph platform for CH management. It natively in
 
 # Research {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/23889489303_b3df7d8cef_o.jpg"}
 
+
 ## New Findings
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+<center>
+
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/bib-3535-fradley.png' style='height: 450px'>
+</center>
+
+<div class="captiontext">Fradley, M., Simi, F., & Guagnin, M. (2022). Following the herds? A new distribution of hunting kites in Southwest Asia. The Holocene, 32(11), 1160-1172 [🔗 link](https://journals.sagepub.com/doi/full/10.1177/09596836221114290)</div>
+
+:::
+
+::: {.column width="40%"}
+
+<center>
+
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/prj-globalkites.png' style='height: 450px'>
+</center>
+
+<div class="captiontext">Screenshot of the  [Globalkites](https://www.globalkites.fr/) ANR funded project interactive map</div>
+
+:::
+
+::::
+
+
+## New Findings {data-visibility=hidden}
 
 :::: {.columns}
 
@@ -646,7 +676,9 @@ Arches is a geospatial semantic graph platform for CH management. It natively in
 <embed src="https://journals.sagepub.com/doi/full/10.1177/09596836221114290" width="800px" height="450px" />
 ```
 
-
+```{=html}
+<embed src="https://github.com/eamena-project/eamena-arches-dev/blob/main/talks/2023-gmpca/BIB-3535-Kites.pdf" width="800px" height="450px" />
+```
 
 
 <div class="captiontext">New desert kites in Eastern Arabia</div>

@@ -123,7 +123,7 @@ gantt
 ### Remote 1
 > Online training for sys admins prepared by Reuben Osborne and Thomas Huet
 
-Online training: Monday 22 May, Tuesday 23 May and Wednesday 24 May 2023
+Monday 22 May, Tuesday 23 May and Wednesday 24 May 2023
 
 #### Introduction
 > Thomas Huet

@@ -4,9 +4,9 @@
 
 ```mermaid
 gitGraph
-       commit
+       commit  tag: "Arches v7"
        branch Palestine
-       commit id:"National instance"
+       commit id:"National instance"  tag: "Arches v7"
        checkout main
        commit
        checkout Palestine
@@ -23,7 +23,7 @@ gitGraph
 gitGraph
        commit id: "JADIS"
        commit id: "MEGA Jordan"
-       branch "Arches v5"
+       branch "Jordania"
        commit id: "Jordan Masdar" tag: "Arches v5"
        checkout main
        commit id: "XXX" tag: "Arches v7"

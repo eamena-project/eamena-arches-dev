@@ -4,9 +4,12 @@
 
 ```mermaid
 gitGraph
-       commit id: "Alpha"
-       commit id: "Beta"
-       commit id: "Gamma"
+       commit id: "JADIS"
+       commit id: "MEGA Jordan"
+       branch develop
+       commit id: "Jordan Masdar"
+       checkout main
+       commit id: "XXX"
 ```
 
 

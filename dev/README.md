@@ -13,7 +13,7 @@ gitGraph
        commit
        checkout main
        commit
-       merge id:"National instance"
+       cherry-pick id:"National instance"
        commit
        checkout Palestine
        commit

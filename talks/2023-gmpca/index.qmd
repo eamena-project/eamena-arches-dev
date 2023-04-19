@@ -845,6 +845,24 @@ gitGraph
 
 
 
+```{mermaid}
+gitGraph
+       commit
+       branch Palestine
+       commit id:"National instance"
+       checkout main
+       commit
+       checkout Palestine
+       commit
+       checkout main
+       commit
+       cherry-pick id:"National instance"
+       commit
+       checkout Palestine
+       commit
+```
+
+
 :::
 
 ## Developments

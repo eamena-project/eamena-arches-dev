@@ -801,6 +801,13 @@ leaflet::leaflet() %>%
 
 ### <span class="tabsetheadertext">Data & API Sovereignty</span>
 
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/workflow-jordan.png" height="200">
+
+</center>
+<div class="captiontext"></div>
+
 
 <center>
 
@@ -829,6 +836,13 @@ leaflet::leaflet() %>%
 
 
 ### <span class="tabsetheadertext">Data & API Sustainibility</span>
+
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/workflow-sharing-data.png" height="200">
+
+</center>
+<div class="captiontext"></div>
 
 
 <center>

@@ -19,6 +19,17 @@ gitGraph
        commit
 ```
 
+```mermaid
+%%{init: { 'logLevel': 'debug', 'theme': 'base', 'gitGraph': {'showBranches': false}} }%%
+gitGraph
+       commit id: "JADIS"
+       commit id: "MEGA Jordan"
+       branch "Arches v5"
+       commit id: "Jordan Masdar" tag: "Arches v5"
+       checkout main
+       commit id: "XXX" tag: "Arches v7"
+```
+
 
 ## PostgreSQL Views
 

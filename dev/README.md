@@ -3,6 +3,7 @@
 ## Mermaid Git Diagram
 
 ```mermaid
+%%{init: { 'logLevel': 'debug', 'theme': 'base', 'gitGraph': {'showBranches': false}} }%%
 gitGraph
        commit id: "JADIS"
        commit id: "MEGA Jordan"

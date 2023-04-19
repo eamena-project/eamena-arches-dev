@@ -5,12 +5,19 @@
 ```mermaid
 %%{init: { 'logLevel': 'debug', 'theme': 'base', 'gitGraph': {'showBranches': false}} }%%
 gitGraph
-       commit id: "JADIS"
-       commit id: "MEGA Jordan"
-       branch "Arches v5"
-       commit id: "Jordan Masdar" tag: "Arches v5"
+       commit
+       branch Palestine
+       commit id:"National instance"
        checkout main
-       commit id: "XXX" tag: "Arches v7"
+       commit
+       checkout Palestine
+       commit
+       checkout main
+       commit
+       cherry-pick id:"National instance"
+       commit
+       checkout Palestine
+       commit
 ```
 
 

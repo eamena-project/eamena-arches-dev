@@ -20,7 +20,6 @@ gitGraph
 ```
 
 ```mermaid
-%%{init: { 'logLevel': 'debug', 'gitGraph': {'showBranches': false}} }%%
 gitGraph
        commit id: "JADIS"
        commit id: "MEGA Jordan"

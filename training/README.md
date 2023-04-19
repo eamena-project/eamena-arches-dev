@@ -18,13 +18,13 @@ This is the second part of Database Management training for Arches-powered platf
 
 This online training will be hosted online (ZOOM): "Arches/EAMENA Database Manager Zoom Meeting part 2"  
   
-* ~~Monday 14 February, 8:00 - 11:00 (BCT) / 10:00 - 13:00 (EET)~~
+* Monday 14 February, 8:00 - 11:00 (BCT) / 10:00 - 13:00 (EET)
   - ~~https://zoom.us/j/94050549401?pwd=VTgraWRRRGRlNkhBMXRXdWdPVHVWQT09~~  
 
-* ~~Tuesday 15 February, 8:00 - 11:00 (BCT) / 10:00 - 13:00 (EET)~~
-  - ~~https://zoom.us/j/91691114706?pwd=NTh6YlBENFVSalVCTG5IN3FtanpGQT09~~  
+* Tuesday 15 February, 8:00 - 11:00 (BCT) / 10:00 - 13:00 (EET)
+  - ~~https://zoom.us/j/91691114706?pwd=NTh6YlBENFVSalVCTG5IN3FtanpGQT09~~ 
 
-* ~~Wednesday 16 February, 8:00 - 11:00 (BCT) / 10:00 - 13:00 (EET)~~
+* Wednesday 16 February, 8:00 - 11:00 (BCT) / 10:00 - 13:00 (EET)~~
   - ~~https://zoom.us/j/96809107674?pwd=d2llQXhnMDgwN2dpa2tLczZSL3VlZz09~~  
 
 ---

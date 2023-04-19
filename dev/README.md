@@ -1,5 +1,15 @@
 # Dev
 
+## Mermaid Git Diagram
+
+```mermaid
+gitGraph
+       commit id: "Alpha"
+       commit id: "Beta"
+       commit id: "Gamma"
+```
+
+
 ## PostgreSQL Views
 
 Planning of Arches v7 (EAMENA v4) installation, test and release.

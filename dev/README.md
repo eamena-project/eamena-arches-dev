@@ -8,9 +8,9 @@ gitGraph
        commit id: "JADIS"
        commit id: "MEGA Jordan"
        branch "Arches v5"
-       commit id: "Jordan Masdar"
+       commit id: "Jordan Masdar" tag: "Arches v5"
        checkout main
-       commit id: "XXX"
+       commit id: "XXX" tag: "Arches v7"
 ```
 
 

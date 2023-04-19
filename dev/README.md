@@ -6,8 +6,19 @@
 gitGraph
        commit  tag: "Arches v7"
        branch Palestine
+       commit
+       commit
+       commit
+       commit
        commit id:"National instance"  tag: "Arches v7"
        checkout main
+       commit
+       commit
+       commit
+       commit
+       commit
+       commit
+       commit
        commit
        checkout Palestine
        commit

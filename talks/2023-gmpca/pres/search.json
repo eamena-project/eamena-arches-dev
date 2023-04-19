@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "index.html#video",
-    "href": "index.html#video",
-    "title": "EAMENA",
-    "section": "VIDEO",
-    "text": "VIDEO"
-  },
-  {
     "objectID": "index.html#endangered-archaeology-in-middle-east-and-north-africa",
     "href": "index.html#endangered-archaeology-in-middle-east-and-north-africa",
     "title": "EAMENA",
@@ -28,11 +21,11 @@
     "text": "Arches IT Stack\n\nFull-stackAWSPostgresPython/DjangoElasticApacheUI\n\n\n\n\n\nEAMENA is an  (v5) instance\n\n\n\n\nCultural Protection Fund (CPF) training in Amman (Jordan), December 2021\n\n\n\n\n\n\n\n\n\nEAMENA is hosted on  (Ubuntu)\n\n\n\n\n\n\n\n\n\nEAMENA uses  Data Base Management System.\n\n\n\n\n\n\n\n\n\nEAMENA uses a  Web Application Framework.\n\n\n\n\n\n\n\n\n\nEAMENA uses an  distributed search\n\n\n\n\n\n\n\n\n\n\n\nEAMENA uses an  HTTP server\n\n<VirtualHost *:80>\n    ServerAdmin ash.smith@soton.ac.uk\n    DocumentRoot /opt/arches/eamena\n    ErrorLog ${APACHE_LOG_DIR}/error.log\n    CustomLog ${APACHE_LOG_DIR}/access.log combined\n    RewriteEngine On\n    RewriteCond %{HTTPS} !on\n    RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]\n    Alias /static /opt/arches/eamena/eamena/static/\n    Alias /media /opt/arches/media\n    <Directory /opt/arches/eamena/eamena/static>\n        Require all granted\n    </Directory>\n    <Directory /opt/arches/media>\n        Require all granted\n    </Directory>\n    <Directory /opt/arches/eamena>\n        <Files wsgi.py>\n            Require all granted\n        </Files>\n    </Directory>\n    ProxyPreserveHost On\n    ProxyPass \"/geoserver\" \"http://54.155.109.226:8080/geoserver/\"\n    ProxyPassReverse \"/geoserver\" \"http://54.155.109.226:8080/geoserver/\"\n    WSGIDaemonProcess eamena user=arches python-path=/opt/arches/eamena python-home=/opt/arches/ENV\n    WSGIProcessGroup eamena\n    WSGIScriptAlias / /opt/arches/eamena/eamena/wsgi.py\n    WSGIPassAuthorization on\n</VirtualHost>\n\n\n\n\n\n\n\nEAMENA User Interface\n\n\n\n\n\n\n\n\nArches is a geospatial semantic graph platform for CH management. It natively integrates Dublin Core, CIDOC-CRM, SKOS and SPARQL. Its next version (v7) will also offer internationalisation, RTL support for the user interface and import/export of multi-language data."
   },
   {
-    "objectID": "index.html#historic-england",
-    "href": "index.html#historic-england",
+    "objectID": "index.html#listed-projects",
+    "href": "index.html#listed-projects",
     "title": "EAMENA",
-    "section": " Historic England",
-    "text": "Historic England\n\n\n\n\nGeneral view of Stonehenge (Wiltshire, England) © Historic England J940231"
+    "section": "Listed projects",
+    "text": "Listed projects"
   },
   {
     "objectID": "index.html#global-south",
@@ -42,67 +35,18 @@
     "text": "Global South"
   },
   {
-    "objectID": "index.html#listed-projects",
-    "href": "index.html#listed-projects",
+    "objectID": "index.html#historic-england",
+    "href": "index.html#historic-england",
     "title": "EAMENA",
-    "section": "Listed projects",
-    "text": "Listed projects"
+    "section": " Historic England",
+    "text": "Historic England\n\n\n\n\nGeneral view of Stonehenge (Wiltshire, England) © Historic England J940231"
   },
   {
-    "objectID": "index.html#project-related-and-it-related-issues",
-    "href": "index.html#project-related-and-it-related-issues",
+    "objectID": "index.html#new-findings",
+    "href": "index.html#new-findings",
     "title": "EAMENA",
-    "section": "Project-related and IT-related issues",
-    "text": "Project-related and IT-related issues\n\nPublic DatabaseResearch DatabaseOther IssuesXXXX\n\n\nOpen Access Issues"
-  },
-  {
-    "objectID": "index.html#database-developments",
-    "href": "index.html#database-developments",
-    "title": "EAMENA",
-    "section": "Database Developments",
-    "text": "Database Developments\n\nEAMENA v4 (Arches v7)\n\n\n\n\n\nInternationalization\nmulti-language data import/export\nTwo-Factor (MFA)\nDjango 3\nPostgres 14\nElastic 8\n…\n\n\n\n\n\n\nInternationalization of the EAMENA database - Arabic"
-  },
-  {
-    "objectID": "index.html#aknowledgments",
-    "href": "index.html#aknowledgments",
-    "title": "EAMENA",
-    "section": "Aknowledgments",
-    "text": "Aknowledgments\n Arcadia Fund, a charitable fund of Lisbet Rausing & Peter Baldwin\n British Council Cultural Protection Fund"
-  },
-  {
-    "objectID": "index.html#contact",
-    "href": "index.html#contact",
-    "title": "EAMENA",
-    "section": "Contact",
-    "text": "Contact\n\nProject\n\n  https://github.com/eamena-project +   https://github.com/archesproject\n http://eamena.arch.ox.ac.uk/\n\nUniversities\n\n https://www.arch.ox.ac.uk/\n https://le.ac.uk/study/archaeology-ancient-history\n https://www.durham.ac.uk/departments/academic/archaeology/\n\n\n\n\n\n https://github.com/eamena-project GMPCA, Nice, 2023"
-  },
-  {
-    "objectID": "index.html#xxx",
-    "href": "index.html#xxx",
-    "title": "EAMENA",
-    "section": "XXX",
-    "text": "XXX"
-  },
-  {
-    "objectID": "index.html#eamenar",
-    "href": "index.html#eamenar",
-    "title": "EAMENA",
-    "section": "eamenaR ",
-    "text": "eamenaR"
-  },
-  {
-    "objectID": "index.html#heritage-places",
-    "href": "index.html#heritage-places",
-    "title": "EAMENA",
-    "section": "Heritage Places",
-    "text": "Heritage Places\n\nCoordinates & LootingLocal Actors & Cultural Heritage ProtectionOther IssuesXXXX\n\n\n\n\n\n\n\n\nLooting of the Assyrian site of Yasin Tepe (Sulaymaniyah, Iraq)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProtection of Syria’s Cultural Heritage in Times of Armed Conflict: ICOMOS - ICCROM e-learning course for Syrian cultural heritage professionals"
-  },
-  {
-    "objectID": "index.html#discovering",
-    "href": "index.html#discovering",
-    "title": "EAMENA",
-    "section": "Discovering",
-    "text": "Discovering\n\n\n\n\n\nhttps://www.globalkites.fr/ \n\n\nInteractive map of the Globalkites ANR funded project"
+    "section": "New Findings",
+    "text": "New Findings\n\n\n\n\n\n\nFradley, M., Simi, F., & Guagnin, M. (2022). Following the herds? A new distribution of hunting kites in Southwest Asia. The Holocene, 32(11), 1160-1172 🔗 link\n\n\n\n\n\n\nScreenshot of the Globalkites ANR funded project interactive map"
   },
   {
     "objectID": "index.html#analysing",
@@ -116,7 +60,7 @@
     "href": "index.html#issues",
     "title": "EAMENA",
     "section": "Issues",
-    "text": "Issues\n\nCoordinates & LootingInstitutional ActorsData & API SovereigntyData & API Sustainibility\n\n\n\n\n\n\n\n\nLooting of the Assyrian site of Yasin Tepe (Sulaymaniyah, Iraq)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n“Protection of Syria’s Cultural Heritage in Times of Armed Conflict” e-learning course for Syrian cultural heritage professionals (ICOMOS - ICCROM)\n\n\n\n\n\n\n\n\n\n\n\n%%{init: { 'logLevel': 'debug', 'theme': 'base', 'gitGraph': {'showBranches': false}} }%%\ngitGraph\n       commit id: \"JADIS\"\n       commit id: \"MEGA Jordan\"\n       branch \"Arches v5\"\n       commit id: \"Jordan Masdar\" tag: \"Arches v5\"\n       checkout main\n       commit id: \"XXX\" tag: \"Arches v7\"\n\n\n\n\n\n\n\n\n\n\n\n\nMiddle East Geodatabase for Antiquities Jordan (MEGA Jordan), created in 2011http://megajordan.org/\n\n\n\n\n\nJordan Masdar (Arches v5), created in 2021http://34.240.60.23/\n\n\n\n\n\nXXX (Arches v7), to be created in 2023\n\n\n\n\n\n\n\ngitGraph\n       commit\n       branch Palestine\n       commit id:\"National instance\"\n       checkout main\n       commit\n       checkout Palestine\n       commit\n       checkout main\n       commit\n       cherry-pick id:\"National instance\"\n       commit\n       checkout Palestine\n       commit\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nproject name\nproject url\nGitHub repository\nGitHub member names\n\n\n\n\nCAAL\nhttps://uclcaal.org/\nhttps://github.com/achp-project/prj-caal\n@mnebbia, @BAPAlveyCHIC\n\n\nEAMENA\nhttp://eamena.arch.ox.ac.uk/\nhttps://github.com/achp-project/prj-eamena-marea\n@zoometh\n\n\nMaESAM\nhttps://maeasam.org/\n\n@razekmh, @manojlokare\n\n\nMAHSA\nhttps://www.mahsa.arch.cam.ac.uk/\n\n@junaidjabbar01\n\n\nMAPHSA\nhttps://www.upf.edu/web/maphsa\n\n@jgregoriods\n\n\nMAPSS\nhttps://mapss.shh.mpg.de/info/\nhttps://github.com/achp-project/prj-mapss\n@michaeltfisher\n\n\nMaREA\nhttps://marea.soton.ac.uk/\nhttps://github.com/achp-project/prj-eamena-marea\n@ads04r"
+    "text": "Issues\n\nCoordinates & LootingInstitutional ActorsData & API SovereigntyData & API Sustainibility\n\n\n\n\n\n\n\n\nLooting of the Assyrian site of Yasin Tepe (Sulaymaniyah, Iraq)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n“Protection of Syria’s Cultural Heritage in Times of Armed Conflict” e-learning course for Syrian cultural heritage professionals (ICOMOS - ICCROM)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMiddle East Geodatabase for Antiquities Jordan (MEGA Jordan), created in 2011http://megajordan.org/\n\n\n\n\n\nJordan Masdar (Arches v5), created in 2021http://34.240.60.23/\n\n\n\n\n\nXXX (Arches v7), to be created in 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nproject name\nproject url\nGitHub repository\nGitHub member names\n\n\n\n\nCAAL\nhttps://uclcaal.org\nhttps://github.com/achp-project/prj-caal\n@mnebbia, @BAPAlveyCHIC\n\n\nEAMENA\nhttp://eamena.arch.ox.ac.uk\nhttps://github.com/achp-project/prj-eamena-marea\n@zoometh\n\n\nMaESAM\nhttps://maeasam.org\n\n@razekmh, @manojlokare\n\n\nMAHSA\nhttps://www.mahsa.arch.cam.ac.uk\n\n@junaidjabbar01\n\n\nMAPHSA\nhttps://www.upf.edu/web/maphsa\n\n@jgregoriods\n\n\nMAPSS\nhttps://mapss.shh.mpg.de/info\nhttps://github.com/achp-project/prj-mapss\n@michaeltfisher\n\n\nMaREA\nhttps://marea.soton.ac.uk\nhttps://github.com/achp-project/prj-eamena-marea\n@ads04r"
   },
   {
     "objectID": "index.html#developments",
@@ -126,11 +70,11 @@
     "text": "Developments\n\n\n\nEAMENA v4 ( v7)\n\n\n\nInternationalization (مرحبًا, bonjour, ہیلو, …), multi-language data import/export\n 3,  14,  8, …\n\n\n\n\n\n\n\nInternationalization of the EAMENA database - Arabic"
   },
   {
-    "objectID": "index.html#eamena-v4-arches-v7",
-    "href": "index.html#eamena-v4-arches-v7",
+    "objectID": "index.html#aknowledgments-contact",
+    "href": "index.html#aknowledgments-contact",
     "title": "EAMENA",
-    "section": "EAMENA v4 (Arches v7)",
-    "text": "EAMENA v4 (Arches v7)\n\n\n\nInternationalization ()\nmulti-language data import/export\nTwo-Factor (MFA)\nDjango 3 , Postgres 14 , Elastic 8 \n…\n\n\n\n\n\n\nInternationalization of the EAMENA database - Arabic"
+    "section": "Aknowledgments & Contact",
+    "text": "Aknowledgments & Contact\n\n\n Arcadia Fund, a charitable fund of Lisbet Rausing & Peter Baldwin\n British Council Cultural Protection Fund\n\nEAMENA Project:   https://github.com/eamena-project +   https://github.com/archesproject,  http://eamena.arch.ox.ac.uk/\nPartner Universities:  https://www.arch.ox.ac.uk/,  https://le.ac.uk/study/archaeology-ancient-history,  https://www.durham.ac.uk/departments/academic/archaeology/\n\n\n\n\n https://github.com/eamena-project GMPCA, Nice, 2023"
   },
   {
     "objectID": "test.html#xxx",
@@ -140,24 +84,10 @@
     "text": "XXX\n\n\n\n\n https://github.com/eamena-project GMPCA, Nice, 2023"
   },
   {
-    "objectID": "index.html#new-findings",
-    "href": "index.html#new-findings",
+    "objectID": "TODO.html",
+    "href": "TODO.html",
     "title": "EAMENA",
-    "section": "New Findings",
-    "text": "New Findings\n\n\n\n\n\n\nFradley, M., Simi, F., & Guagnin, M. (2022). Following the herds? A new distribution of hunting kites in Southwest Asia. The Holocene, 32(11), 1160-1172 🔗 link\n\n\n\n\n\n\nScreenshot of the Globalkites ANR funded project interactive map"
-  },
-  {
-    "objectID": "index.html#aknowledgments-contact",
-    "href": "index.html#aknowledgments-contact",
-    "title": "EAMENA",
-    "section": "Aknowledgments & Contact",
-    "text": "Aknowledgments & Contact\n\n\n Arcadia Fund, a charitable fund of Lisbet Rausing & Peter Baldwin\n British Council Cultural Protection Fund\n\nEAMENA Project:   https://github.com/eamena-project +   https://github.com/archesproject,  http://eamena.arch.ox.ac.uk/\nPartner Universities:  https://www.arch.ox.ac.uk/,  https://le.ac.uk/study/archaeology-ancient-history,  https://www.durham.ac.uk/departments/academic/archaeology/\n\n\n\n\n https://github.com/eamena-project GMPCA, Nice, 2023"
-  },
-  {
-    "objectID": "index.html#aknowledgments-contact-1",
-    "href": "index.html#aknowledgments-contact-1",
-    "title": "EAMENA",
-    "section": "Aknowledgments & Contact",
-    "text": "Aknowledgments & Contact\n\n\n Arcadia Fund, a charitable fund of Lisbet Rausing & Peter Baldwin\n British Council Cultural Protection Fund\n\n\n\nEAMENA Project:   https://github.com/eamena-project +   https://github.com/archesproject,  http://eamena.arch.ox.ac.uk/\nPartner Universities:  https://www.arch.ox.ac.uk/,  https://le.ac.uk/study/archaeology-ancient-history,  https://www.durham.ac.uk/departments/academic/archaeology/\n\n\n\n\n https://github.com/eamena-project GMPCA, Nice, 2023"
+    "section": "",
+    "text": "https://eamena-project.github.io/eamena-arches-dev/talks/2023-gmpca/pres/#/endangered-archaeology-in-middle-east-and-north-africa\n\ntab War: this is the way I want to present all the threats (captions and interactive maps)\ntab Agriculture: TODO -> (1) change the caption and (2) change the coordinates which aren’t accurate. For the latter: does someone knows the accurate coordinates of the ‘Archaeological site (Udhma, Jordan)’, currently: https://github.com/eamena-project/eamena-arches-dev/blob/2ab3b2d9854ffa5b867674274197cd46cecf010f/talks/2023-gmpca/index.qmd#L105\ntab Construction: TODO -> (1) change the caption and (2) change the coordinates which aren’t accurate, currently: https://github.com/eamena-project/eamena-arches-dev/blob/66a6009a0c92c7190c6c688cdc281d760582b340/talks/2023-gmpca/index.qmd#L141\ntab Natural: TODO -> (1) change the caption and (2) change the coordinates which aren’t accurate, currently: https://github.com/eamena-project/eamena-arches-dev/blob/66a6009a0c92c7190c6c688cdc281d760582b340/talks/2023-gmpca/index.qmd#L177 and (3) the photograph is ugly, can someone send me a nicer?\n\nhttps://eamena-project.github.io/eamena-arches-dev/talks/2023-gmpca/pres/#/arches-it-stack\n\nTODO -> the CPF photograph is a screenshot, can someone send me the original one?\n\n\nNotes:\n\nhttps://eamena-project.github.io/eamena-arches-dev/talks/2023-gmpca/pres/#/global-south\n\nI’ll complete the map with some others Arches-based project I know\n\nhttps://eamena-project.github.io/eamena-arches-dev/talks/2023-gmpca/pres/#/new-findings\n\non the left, the PDF (Michael’s Holocene paper) doesn’t display: I’ll solve this\n\nhttps://eamena-project.github.io/eamena-arches-dev/talks/2023-gmpca/pres/#/issues\n\ntab Data and API sovereignty: I’ll complete this.\ntab Sustainibility: to be created (by me)"
   }
 ]

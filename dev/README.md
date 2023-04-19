@@ -8,12 +8,8 @@ gitGraph
        branch Palestine
        commit
        commit
-       commit
-       commit
        commit id:"National instance"  tag: "Arches v7"
        checkout main
-       commit
-       commit
        commit
        commit
        commit

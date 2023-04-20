@@ -648,14 +648,11 @@ Arches is a geospatial semantic graph platform for CH management. It natively in
 
 <center>
 
-```{=html}
-<embed src="https://www.globalkites.fr/" width="1400px" height="520px" />
-```
 
 <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/prj-globalkites.png' style='height: 450px'>
 </center>
 
-<div class="captiontext">Screenshot of the  [Globalkites](https://www.globalkites.fr/) ANR funded project interactive map</div>
+<div class="captiontext">Globalkites ANR funded project [🔗 link](https://www.globalkites.fr/)</div>
 
 :::
 

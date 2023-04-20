@@ -54,7 +54,7 @@ library(dplyr)
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-destruction.jpg" height="300">
 
 </center>
-<div class="captiontext">Destruction of the Temple of Bel (Palmyra, Syria) by ISIS on August 23, 2015</div>
+<div class="captiontext">Destruction of the Temple of Bel by ISIS on August 23, 2015 (Palmyra, Syria)</div>
 
 :::
 
@@ -89,7 +89,7 @@ leaflet::leaflet() %>%
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-agricole.jpg" height="300">
 
 </center>
-<div class="captiontext"> Archaeological site (Udhma, Jordan). The area around one section of the site is completely ploughed, whilst the other half has been destroyed to plant an orchard</div>
+<div class="captiontext"> Development of ploughed fields and orchards around and within  an archaeological site (Udhma, Jordan)</div>
 
 :::
 
@@ -124,7 +124,7 @@ leaflet::leaflet() %>%
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-urbanism.jpg" height="300">
 
 </center>
-<div class="captiontext">Church (Ma'in, Jordan). This 2013 aerial photograph shows a road over a section of an exposed excavation of the remains of a church in  (APAAME_20130414_MND-0484).</div>
+<div class="captiontext">Road over a section of an exposed church excavation (Ma'in, Jordan) &copy;APAAME .</div>
 
 :::
 
@@ -160,7 +160,7 @@ leaflet::leaflet() %>%
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-natural-2.jpg" height="300">
 
 </center>
-<div class="captiontext">Temple of Isis (Sabratha, Libya) slowly washed away by the sea</div>
+<div class="captiontext">The rising sea waters slowly washed away the Temple of Isis (Sabratha, Libya)</div>
 
 :::
 
@@ -278,7 +278,7 @@ Destruction: iconoclasm, looting, etc.
 
 <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> natively integrates the Sparse Query Language ([SPARQL](https://www.w3.org/TR/rdf-sparql-query/))[^4]
 
-```{.sql}
+```{.sql code-line-numbers="5-9"}
   prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
   prefix skos:    <http://www.w3.org/2004/02/skos/core#>
   prefix dcterms: <http://purl.org/dc/terms/>
@@ -532,7 +532,7 @@ EAMENA uses an <img src='https://raw.githubusercontent.com/eamena-project/eamena
 
 ::: {.column width="60%"}
 
-```{.apache code-line-numbers="1|3|8|9-10|11-21|22-23"}
+```{.apache code-line-numbers="1|3|11-21|23-24"}
 <VirtualHost *:80>
 	ServerAdmin ash.smith@soton.ac.uk
 	DocumentRoot /opt/arches/eamena
@@ -640,13 +640,17 @@ Arches is a geospatial semantic graph platform for CH management. It natively in
 <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/bib-3535-fradley.png' style='height: 450px'>
 </center>
 
-<div class="captiontext">Fradley, M., Simi, F., & Guagnin, M. (2022). Following the herds? A new distribution of hunting kites in Southwest Asia. The Holocene, 32(11), 1160-1172 [🔗 link](https://journals.sagepub.com/doi/full/10.1177/09596836221114290)</div>
+<div class="captiontext">Fradley, M., Simi, F., & Guagnin, M. (2022) [🔗 link](https://journals.sagepub.com/doi/full/10.1177/09596836221114290)</div>
 
 :::
 
 ::: {.column width="40%"}
 
 <center>
+
+```{=html}
+<embed src="https://www.globalkites.fr/" width="1400px" height="520px" />
+```
 
 <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/prj-globalkites.png' style='height: 450px'>
 </center>

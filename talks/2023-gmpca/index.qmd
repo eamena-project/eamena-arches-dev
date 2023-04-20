@@ -652,7 +652,7 @@ Arches is a geospatial semantic graph platform for CH management. It natively in
 <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/prj-globalkites.png' style='height: 450px'>
 </center>
 
-<div class="captiontext">Globalkites ANR funded project [🔗 link](https://www.globalkites.fr/)</div>
+<div class="captiontext">Globalkites ANR funded project interactive map screenshot [🔗 link](https://www.globalkites.fr/)</div>
 
 :::
 
@@ -806,14 +806,6 @@ leaflet::leaflet() %>%
 
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/workflow-jordan.png" height="200">
-
-</center>
-<div class="captiontext"></div>
-
-
-<center>
-
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-megaj.png" height="300">
 
 </center>
@@ -840,17 +832,38 @@ leaflet::leaflet() %>%
 
 ### <span class="tabsetheadertext">Data & API Sustainibility</span>
 
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-73oq{border-color:#000000;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <td><img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png' style='height: 100px;vertical-align: middle;'> & <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-gitlab.png' style='height: 100px;vertical-align: middle;'></td>
+    <td><img src="https://raw.githubusercontent.com/achp-project/cultural-heritage/master/www/logo.png" height="200"></td>
+    <td></td>
+    <td><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/workflow-sharing-data.png" height="200"></td>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td><div class="captiontext">Collaborate = </div></td>
+    <td><div class="captiontext">Sharing</div></td>
+    <td><div class="captiontext">and</div></td>
+    <td><div class="captiontext">Versioning</div></td>
+  </tr>
+</tbody>
+</table>
+
+
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/workflow-sharing-data.png" height="200">
-
-</center>
-<div class="captiontext"></div>
-
-
-<center>
-
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/prj-achp.png" height="200" style="text-shadow: 50px 50px 50px #FF0000">
+<https://github.com/achp-project>
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/prj-achp.png" height="200" style="filter: drop-shadow(5px 5px 5px #222);">
 
 </center>
 <div class="captiontext"></div>
@@ -858,7 +871,7 @@ leaflet::leaflet() %>%
 
 <div style="font-size:25px">
 
-| project name | project url                       | GitHub repository                                | GitHub member names     |
+| project name | project url                       | <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png' style='height: 40px;vertical-align: middle;'> GitHub repository                                | GitHub member names     |
 |--------------|-----------------------------------|--------------------------------------------------|-------------------------|
 | CAAL         | <https://uclcaal.org>              | <https://github.com/achp-project/prj-caal>         | @mnebbia, @BAPAlveyCHIC |
 | EAMENA       | <http://eamena.arch.ox.ac.uk>      | <https://github.com/achp-project/prj-eamena-marea> | @zoometh                |
@@ -917,7 +930,7 @@ leaflet::leaflet() %>%
 
 **EAMENA Project**: <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png' style='height: 40px;vertical-align: middle;'> <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo-eamena-gh-org.png' style='height: 40px;vertical-align: middle;'> <https://github.com/eamena-project> + <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png' style='height: 40px;vertical-align: middle;'> <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 40px;vertical-align: middle;'> <https://github.com/archesproject>, <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/website.png' style='height: 40px;vertical-align: middle;'> <http://eamena.arch.ox.ac.uk/>
 \
-**Partner Universities**: <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-oxford_.png' style='height: 35px;vertical-align: middle;'> <https://www.arch.ox.ac.uk/>, <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-leicester.png' style='height: 35px;vertical-align: middle;'> <https://le.ac.uk/study/archaeology-ancient-history>, <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-durham.png' style='height: 35px;vertical-align: middle;'> <https://www.durham.ac.uk/departments/academic/archaeology/>
+**Partners**: <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-oxford_.png' style='height: 35px;vertical-align: middle;'> <https://www.arch.ox.ac.uk/>, <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-leicester.png' style='height: 35px;vertical-align: middle;'> <https://le.ac.uk/study/archaeology-ancient-history>, <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-durham.png' style='height: 35px;vertical-align: middle;'> <https://www.durham.ac.uk/departments/academic/archaeology/>, <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/prj-apaame.png' style='height: 35px;vertical-align: middle;'> <http://www.apaame.org/>
 
 </div>
 

@@ -1,0 +1,163 @@
+---
+title: "Arches v5 to Arches v7 changelog"
+subtitle: "**EAMENA v3 to EAMENA v4 front-end changelog**"
+author: "Thomas Huet"
+date: 2023-04-25
+title-slide-attributes:
+    data-background-image: "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaDB-bck.png"
+    data-background-size: "105%"
+    data-background-opacity: "0.4"
+format:
+  revealjs: 
+    css: https://zoometh.github.io/thomashuet/css/quarto.css
+    code-fold: true
+    code-summary: "<small>Code</small>"
+    code-overflow: "scroll"
+    slide-number: true
+    chalkboard: true
+    scrollable: true
+    preview-links: auto
+    reference-location: document
+    footnotes-hover: true
+    logo: https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-uni-oxford_.png
+    footer: "<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo_black.png' style='height: 35px;vertical-align: middle;'> <https://github.com/eamena-project> GMPCA, Nice, 2023"
+    margin: 0
+    width: 1400
+---
+
+# Front-end {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-EAMENA-0185187.png"}
+
+
+## Training instance
+
+<http://34.242.111.3:8000/>
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7.png" height="450">
+
+</center>
+<div class="captiontext">Internationalization of the EAMENA database - Arabic</div>
+
+
+
+## Internationalization
+
+Internationalization (i18n)
+
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-arches-v7-i18n.png" height="450">
+
+</center>
+<div class="captiontext">my caption</div>
+
+<div class="fhstext">/opt/arches/eamena/eamena/settings.py</div>
+
+```{.python code-line-numbers="5-9"}
+LANGUAGE_CODE = "en"
+
+# list of languages to display in the language switcher,
+# if left empty or with a single entry then the switch won't be displayed
+# language codes need to be all lower case with the form:
+# {langcode}-{regioncode} eg: en, en-gb ....
+# a list of language codes can be found here http://www.i18nguy.com/unicode/language-identifiers.html
+LANGUAGES = [
+#   ('de', _('German')),
+    ('en', _('English')),
+    ('ar', _('Arabic')),
+#   ('en-gb', _('British English')),
+#   ('es', _('Spanish')),
+]
+```
+
+
+## Searches
+
+::: {.panel-tabset}
+
+### wildcard
+
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-search-wildcard.png" height="450">
+
+</center>
+<div class="captiontext">Search on `Apam*ea`</div>
+
+### wildcard
+
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-search-wildcard.png" height="450">
+
+</center>
+<div class="captiontext">Search on `Apam*ea`</div>
+
+<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png' style='height: 40px;vertical-align: middle;'> [#8994](https://github.com/archesproject/arches/issues/8994) 
+
+### exact match and empty string
+
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-search-exactmatch.png" height="450">
+
+</center>
+<div class="captiontext">Search on `"AMMAN/CITADEL"`</div>
+
+<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png' style='height: 40px;vertical-align: middle;'> [#9000](https://github.com/archesproject/arches/issues/9000), [#9001](https://github.com/archesproject/arches/issues/9001) 
+
+
+### UUID
+
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-search-uuid.png" height="450">
+
+</center>
+<div class="captiontext">Search on `6989f9f3-589e-4460-976f-cdf6ddbde827`</div>
+
+<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png' style='height: 40px;vertical-align: middle;'> [#9002](https://github.com/archesproject/arches/issues/9002) 
+
+
+:::
+
+## Arches doc
+
+::: {.panel-tabset}
+
+### v7.3 
+
+https://arches.readthedocs.io/en/stable/
+https://arches.readthedocs.io/en/7.3/
+
+### GitHub
+
+### Forum
+
+:::
+
+# Back-end
+
+## Install
+
+::: {.panel-tabset}
+
+## Python
+
+Arches as a Python library
+
+`/opt/arches/ENV/lib/python3.8/site-packages/arches`
+
+### Files
+
+<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png' style='height: 40px;vertical-align: middle;'> <https://github.com/ads04r/eamena>
+
+:::
+
+## Webpack
+
+## Elastic
+
+
+
+

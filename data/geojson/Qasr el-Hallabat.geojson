@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "Qasr el-Hallabat",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name": "Qasr el-Hallabat", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": 1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 36.327912029814946, 32.092657340450387, 0.0 ], [ 36.328235269806882, 32.092857527376793, 0.0 ], [ 36.328022293793651, 32.093129656498178, 0.0 ], [ 36.327684244071961, 32.09295142409534, 0.0 ], [ 36.327912029814946, 32.092657340450387, 0.0 ] ] ] } }
+]
+}

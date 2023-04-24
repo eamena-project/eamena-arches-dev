@@ -7,8 +7,11 @@
 
 ```mermaid
 flowchart LR
-    A["v7.0"] --> B["v7.2"]
-    B --> C["v7.3"]
+    A["v5.2"] --> B["v6.0.0"]
+    B --> C["v6.0.1"]
+    C --> D["v7.0"]
+    D --> E["v7.2"]
+    E --> F["v7.3"]
 ```
 
 ## National instances

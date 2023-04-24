@@ -76,7 +76,15 @@ LANGUAGES = [
 
 :::
 
-## Searches
+## Search Advanced
+
+default language selection
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-search-advanced-ar.png" height="400">
+
+
+
+## Search
 
 ::: {.panel-tabset}
 

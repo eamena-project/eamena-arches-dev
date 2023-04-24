@@ -1,6 +1,20 @@
 # Dev
 
-## Mermaid Git Diagram
+## Arches v5.2 to v7.3 upgrade
+
+### Proposed workflow
+> cf. https://github.com/archesproject/arches/blob/dev/7.3.x/releases/7.3.0.md#upgrading-arches
+
+```mermaid
+flowchart LR
+    "v7.0" --> "v7.2"
+    "v7.2" --> "v7.3"
+```
+
+## National instances
+> [Git Mermaid diagram](https://mermaid.js.org/syntax/gitgraph.html) 
+
+Example of a Palestinian national instance with EAMENA data
 
 ```mermaid
 gitGraph
@@ -25,6 +39,9 @@ gitGraph
        checkout Palestine
        commit
 ```
+
+## From JADIS to a new Jordanian national instance
+> [Git Mermaid diagram](https://mermaid.js.org/syntax/gitgraph.html) 
 
 ```mermaid
 gitGraph

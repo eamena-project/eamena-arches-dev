@@ -30,9 +30,9 @@ format:
 
 ## Training instance
 
-<http://34.242.111.3:8000/>
 <center>
 
+<http://34.242.111.3:8000/>
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7.png" height="450">
 
 </center>
@@ -40,16 +40,20 @@ format:
 
 
 
-## Internationalization
+## Internationalization (i18n)
 
-Internationalization (i18n)
+::: {.panel-tabset}
+
+### GUI
 
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-i18n.png" height="450">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-i18n.png" height="400">
 
 </center>
 <div class="captiontext">my caption</div>
+
+### Setup
 
 <div class="fhstext">/opt/arches/eamena/eamena/settings.py</div>
 
@@ -70,6 +74,7 @@ LANGUAGES = [
 ]
 ```
 
+:::
 
 ## Searches
 
@@ -117,7 +122,8 @@ LANGUAGES = [
 
 ::: {.column width="20%"}
 
-<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png' style='height: 40px;vertical-align: middle;'> [#9000](https://github.com/archesproject/arches/issues/9000), [#9001](https://github.com/archesproject/arches/issues/9001) 
+<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png' style='height: 40px;vertical-align: middle;'> [#9000](https://github.com/archesproject/arches/issues/9000)   
+<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png' style='height: 40px;vertical-align: middle;'> [#9001](https://github.com/archesproject/arches/issues/9001) 
 
 :::
 
@@ -132,7 +138,7 @@ LANGUAGES = [
 
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-search-uuid.png" height="450">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-search-uuid.png" height="400">
 
 </center>
 <div class="captiontext">Search on `6989f9f3-589e-4460-976f-cdf6ddbde827`</div>
@@ -177,9 +183,17 @@ LANGUAGES = [
 
 ::: {.panel-tabset}
 
+### Workflow
+
+
+
 ### Python
 
-<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> as a Python library[^1]
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> as a Python library[^1]: 
+
+```{.ps}
+pip install arches
+```
 
 ```{=html}
 <embed src="https://pypi.org/project/arches/" width="1400px" height="400px" />

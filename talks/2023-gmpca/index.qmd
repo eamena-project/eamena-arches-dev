@@ -860,6 +860,7 @@ leaflet::leaflet() %>%
 </table>
 
 
+<div style="font-size:25px">
 <center>
 
 <https://github.com/achp-project>
@@ -867,7 +868,7 @@ leaflet::leaflet() %>%
 
 </center>
 <div class="captiontext"></div>
-
+</div>
 
 <div style="font-size:25px">
 
@@ -886,6 +887,10 @@ leaflet::leaflet() %>%
 :::
 
 ## Developments
+
+::: {.panel-tabset}
+
+### Software
 
 ::: {.columns}
 
@@ -912,6 +917,10 @@ leaflet::leaflet() %>%
 :::
 
 ::::
+
+### Project
+
+:::
 
 
 # Conclusion {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/23889489303_b3df7d8cef_o.jpg"}

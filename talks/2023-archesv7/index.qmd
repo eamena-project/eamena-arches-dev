@@ -53,7 +53,7 @@ width: 1400
 
 ## Arches roadmap
 
-<center> <https://www.archesproject.org/roadmap/> </center>
+<div class="captiontext"><https://www.archesproject.org/roadmap/> </div>
 ```{=html}
 <embed src="https://www.archesproject.org/roadmap/" width="1400px" height="500px" />
 ```
@@ -94,7 +94,7 @@ LANGUAGES = [
 
 ### `po2excel.py`
 
-<center> <https://github.com/ads04r/po2excel/> </center>
+<div class="captiontext"><https://github.com/ads04r/po2excel/></div>
 ```{.py}
 #!/usr/bin/python3
 # PO to Excel
@@ -207,8 +207,7 @@ Exact Match (`"..."`) & Empty String (`""`) in advanced search
 
 ### Support
 
-<center><https://arches.readthedocs.io/en/7.3/searching/#searching></center>
-
+<div class="captiontext"><https://arches.readthedocs.io/en/7.3/searching/#searching></div>
 ```{=html}
 <embed src="https://arches.readthedocs.io/en/7.3/searching/?highlight=*st%3Fck#search-operators" width="1400px" height="500px" />
 ```
@@ -264,14 +263,23 @@ Single Sign-On With an External OAuth Provider
 ## Mapbox & Openstreetmap language
 
 <center>
-<div class="captiontext">https://docs.mapbox.com/help/troubleshooting/change-language/</div>
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-mapbox-languages.png" height="400">
+<div class="captiontext"><https://docs.mapbox.com/help/troubleshooting/change-language/></div>
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-mapbox-languages.png" height="500">
 
 </center>
 
 
-# Conclusion
+# Planning
 
+
+<center>
+<div class="captiontext"><https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena#timeline></div>
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-timetable.png" height="500">
+
+</center>
+
+* Arches v5.2 stopped: 2023-04-28 (next Friday)
+* Arches v7.3 public realease: 2023-05-02
 
 
 ## Arches doc

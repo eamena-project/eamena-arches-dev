@@ -1,7 +1,7 @@
 ---
 title: "EAMENA v4"
 subtitle: "**A front-end changelog from <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> v5.2 to <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> v7.3**"
-author: "Thomas Huet, DB manager"
+author: "Thomas Huet, EAMENA DB manager"
 date: 2023-04-25
 logo: https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-prj-eamena.png
 footer: "<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo.png' style='height: 35px;vertical-align: middle;'> v4 showcase <http://34.242.111.3:8000> 25<sup>th</sup> April 2023"
@@ -24,6 +24,42 @@ format:
 margin: 0
 width: 1400
 ---
+
+# Back-end
+
+## Install
+
+::: {.panel-tabset}
+
+### Python
+
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> as a Python library[^1]: 
+
+```{.ps}
+pip install arches
+```
+
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-install-py.png" height="250">
+
+</center>
+<div class="captiontext">Python Arches library: <https://pypi.org/project/arches/> </div>
+
+[^1]: installation folder: `/opt/arches/ENV/lib/python3.8/site-packages/arches`
+
+### Files
+
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/github-issues-arches-v7-ads04r.png" height="250">
+
+</center>
+<div class="captiontext">Python Arches library: <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png' style='height: 40px;vertical-align: middle;'> <https://github.com/ads04r/eamena> </div>
+
+
+
+:::
 
 # Introduction {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-EAMENA-0185187.png"}
 
@@ -269,90 +305,25 @@ Single Sign-On With an External OAuth Provider
 </center>
 
 
-# Planning
+# Next Steps
 
+## Planning
 
 <center>
 <div class="captiontext"><https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena#timeline></div>
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-timetable.png" height="500">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-timetable.png" height="300">
 
 </center>
 
-* Arches v5.2 stopped: 2023-04-28 (next Friday)
-* Arches v7.3 public realease: 2023-05-02
+* EAMENA v3 stopped: 2023-04-28 (next Friday)
+* EAMENA v4 public release: 2023-05-02
 
-
-## Arches doc
-
-::: {.panel-tabset}
-
-### v7.3 
-
-<https://arches.readthedocs.io/en/stable/>  
-
-<https://arches.readthedocs.io/en/7.3/>
-
-### GitHub
-
-<https://github.com/archesproject>
-
-### Forum
-
-<https://community.archesproject.org/>
-
-:::
-
-# Back-end
-
-## Install
-
-::: {.panel-tabset}
-
-### Workflow
-
-
-
-### Python
-
-<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> as a Python library[^1]: 
-
-```{.ps}
-pip install arches
-```
-
-```{=html}
-<embed src="https://pypi.org/project/arches/" width="1400px" height="400px" />
-```
+## Issues reporting
 
 <center>
-
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-install-py.png" height="450">
-
-</center>
-<div class="captiontext">Python libraries repository `https://pypi.org/project/arches/`</div>
-
-[^1]: installation folder: `/opt/arches/ENV/lib/python3.8/site-packages/arches`
-
-### Files
-
-<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png' style='height: 40px;vertical-align: middle;'> <https://github.com/ads04r/eamena>
-
-:::
-
-## Webpack
-
-## Elastic
-
-<https://docs.mapbox.com/help/troubleshooting/change-language/>
-
-
-## Training instance
-
-<center>
-
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7.png" height="450">
+<div class="captiontext"><img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png' style='height: 40px;vertical-align: middle;'> <https://github.com/eamena-project/eamena-arches-dev/issues/16></div>
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/github-issues-arches-v7.png" height="300">
 
 </center>
-<div class="captiontext">Internationalization of the EAMENA database - Arabic</div>
 
-
+# Conclusion

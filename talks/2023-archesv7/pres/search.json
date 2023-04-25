@@ -1,0 +1,72 @@
+[
+  {
+    "objectID": "index.html#arches-stable-version-v7.3",
+    "href": "index.html#arches-stable-version-v7.3",
+    "title": "EAMENA v4",
+    "section": "Arches stable version v7.3",
+    "text": "Arches stable version v7.3\n\n\n latest stable version https://github.com/archesproject (25th April 2023)"
+  },
+  {
+    "objectID": "index.html#training-instance",
+    "href": "index.html#training-instance",
+    "title": "EAMENA v4",
+    "section": "Training Instance",
+    "text": "Training Instance\n\nhttp://34.242.111.3:8000"
+  },
+  {
+    "objectID": "index.html#arches-roadmap",
+    "href": "index.html#arches-roadmap",
+    "title": "EAMENA v4",
+    "section": "Arches roadmap",
+    "text": "Arches roadmap\n\nhttps://www.archesproject.org/roadmap/"
+  },
+  {
+    "objectID": "index.html#internationalization-i18n",
+    "href": "index.html#internationalization-i18n",
+    "title": "EAMENA v4",
+    "section": "Internationalization (i18n)",
+    "text": "Internationalization (i18n)\n\nSimple SearchAdvanced SearchSettingspo2excel.py\n\n\n\n\nSearch in English or Arabic\n\n\n\n\n\n\n\n\n\n/opt/arches/eamena/eamena/settings.py\n\nLANGUAGE_CODE = \"en\"\n\n# list of languages to display in the language switcher,\n# if left empty or with a single entry then the switch won't be displayed\n# language codes need to be all lower case with the form:\n# {langcode}-{regioncode} eg: en, en-gb ....\n# a list of language codes can be found here http://www.i18nguy.com/unicode/language-identifiers.html\nLANGUAGES = [\n#   ('de', _('German')),\n    ('en', _('English')),\n    ('ar', _('Arabic')),\n#   ('en-gb', _('British English')),\n#   ('es', _('Spanish')),\n]\n\n\n\n https://github.com/ads04r/po2excel/\n\n#!/usr/bin/python3\n# PO to Excel\n# By Ash Smith, MarEA project, University of Southampton\n# Based heavily on code by Thomas Huet, EAMENA project, University of Oxford\n\nimport os, re, csv, polib, sys, argparse\nfrom deep_translator import GoogleTranslator\nfrom deep_translator.exceptions import NotValidPayload\nfrom progress.bar import IncrementalBar as progressbar\nfrom openpyxl import Workbook\n\n..."
+  },
+  {
+    "objectID": "index.html#search-operators",
+    "href": "index.html#search-operators",
+    "title": "EAMENA v4",
+    "section": "Search operators",
+    "text": "Search operators\n\n* and ?\"...\" and \"\"UUIDDocumentation\n\n\nWildcard (*) and Question mark (?)1\n\n\n\n\nSearch on *Apam?a*\n\n\n\n\n #8994\n\n\n\n\nExact Match (\"...\") & Empty String (\"\") in advanced search\n\n\n\n\nSearch on \"AMMAN/CITADEL\"\n\n\n\n\n #9000\n #9001\n\n\n\n\n\n\n\n\nSearch on 6989f9f3-589e-4460-976f-cdf6ddbde827\n\n\n\n\n #9002\n\n\n\n\n\nhttps://arches.readthedocs.io/en/7.3/searching/#searching"
+  },
+  {
+    "objectID": "index.html#tile-excel",
+    "href": "index.html#tile-excel",
+    "title": "EAMENA v4",
+    "section": "tile excel",
+    "text": "tile excel\n\nSelectionOutputeamenaR\n\n\n\n\n\n\nExport as Tile Excel\n\n\n\n\n\nTile Excel example\n\n\n\n\n\n\n\n IT stack"
+  },
+  {
+    "objectID": "index.html#sso-and-oauth-provider",
+    "href": "index.html#sso-and-oauth-provider",
+    "title": "EAMENA v4",
+    "section": "SSO and OAuth Provider",
+    "text": "SSO and OAuth Provider\nSingle Sign-On With an External OAuth Provider"
+  },
+  {
+    "objectID": "index.html#planning",
+    "href": "index.html#planning",
+    "title": "EAMENA v4",
+    "section": "Planning",
+    "text": "Planning\n\n\nhttps://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena#timeline\n\n\n\n\nEAMENA v3 stopped: 2023-04-28 (next Friday)\nEAMENA v4 public release: 2023-05-02"
+  },
+  {
+    "objectID": "index.html#issues-reporting",
+    "href": "index.html#issues-reporting",
+    "title": "EAMENA v4",
+    "section": "Issues reporting",
+    "text": "Issues reporting\n\n\n https://github.com/eamena-project/eamena-arches-dev/issues/16"
+  },
+  {
+    "objectID": "index.html#install",
+    "href": "index.html#install",
+    "title": "EAMENA v4",
+    "section": "Install",
+    "text": "Install\n\nPythonArches FilesEAMENA Files\n\n\n as a Python library2:\npip install arches\n\n\n\n\nPython Arches library: https://pypi.org/project/arches/\n\n\n\n\n\n https://github.com/archesproject\n\n\n\n\n\n\n\n https://github.com/ads04r/eamena"
+  }
+]

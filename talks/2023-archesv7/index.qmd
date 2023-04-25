@@ -3,9 +3,11 @@ title: "EAMENA v4"
 subtitle: "**A front-end changelog from <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> v5.2 to <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> v7.3**"
 author: "Thomas Huet, DB manager"
 date: 2023-04-25
+logo: https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-prj-eamena.png
+footer: "<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo.png' style='height: 35px;vertical-align: middle;'> v4 showcase <http://34.242.111.3:8000> 25<sup>th</sup> April 2023"
 title-slide-attributes:
     data-background-image: "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/APAAME_kite.jpg"
-    data-background-size: "105%"
+    data-background-size: "120%"
     data-background-opacity: "0.7"
 format:
   revealjs: 
@@ -19,13 +21,11 @@ format:
     preview-links: auto
     reference-location: document
     footnotes-hover: true
-    logo: https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-prj-eamena.png
-    footer: "<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo.png' style='height: 35px;vertical-align: middle;'> v4 showcase <http://34.242.111.3:8000> 25<sup>th</sup> April 2023"
-    margin: 0
-    width: 1400
+margin: 0
+width: 1400
 ---
 
-# Introduction
+# Introduction {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-EAMENA-0185187.png"}
 
 
 ## Arches stable version
@@ -49,10 +49,11 @@ format:
 ```
 
 
-# Main Improvements
+# Main Improvements {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-EAMENA-0185187.png"}
 
 ## Arches roadmap
 
+<center> <https://www.archesproject.org/roadmap/> </center>
 ```{=html}
 <embed src="https://www.archesproject.org/roadmap/" width="1400px" height="500px" />
 ```
@@ -66,15 +67,15 @@ format:
 <center>
 
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-i18n.png" height="400">
+<div class="captiontext">my caption</div>
 
 </center>
-<div class="captiontext">my caption</div>
 
 ### Setup
 
 <div class="fhstext">/opt/arches/eamena/eamena/settings.py</div>
 
-```{.python code-line-numbers="10-11"}
+```{.py code-line-numbers="10-11"}
 LANGUAGE_CODE = "en"
 
 # list of languages to display in the language switcher,
@@ -91,71 +92,84 @@ LANGUAGES = [
 ]
 ```
 
+### `po2excel.py`
+
+<center> <https://github.com/ads04r/po2excel/> </center>
+```{.py}
+#!/usr/bin/python3
+# PO to Excel
+# By Ash Smith, MarEA project, University of Southampton
+# Based heavily on code by Thomas Huet, EAMENA project, University of Oxford
+
+import os, re, csv, polib, sys, argparse
+from deep_translator import GoogleTranslator
+from deep_translator.exceptions import NotValidPayload
+from progress.bar import IncrementalBar as progressbar
+from openpyxl import Workbook
+
+...
+```
+
+
+
 :::
 
 # Search
 
-## Arches search documentation
+## Arches documentation
 
 ```{=html}
 <embed src="https://arches.readthedocs.io/en/7.3/searching/#search-operators" width="1400px" height="500px" />
 ```
 
-## Search Advanced
 
-Default Language Selection
-
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-search-advanced-ar.png" height="400">
-
-
-## Search Simple
+## Simple and Advanced
 
 ::: {.panel-tabset}
 
 
-### Wildcard & Question mark
+### `*` and `?`
 
-Wildcard and Question mark
+Wildcard (`*`) and Question mark (`?`)[^2]
 
 :::: {.columns}
 
 ::: {.column width="80%"}
 
 <center>
-
+<div class="captiontext">Search on `*Apam?a*`</div>
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-search-questionmark.png" height="400">
-<div class="captiontext">Search on `Apam*ea`</div>
 
 </center>
 
 :::
 
 ::: {.column width="20%"}
-
 <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png' style='height: 40px;vertical-align: middle;'> [#8994](https://github.com/archesproject/arches/issues/8994) 
 
 :::
 
 ::::
 
+[^2]: linked to regular expressions (*regex*)
 
-### Exact Match & Empty String
+### `"..."` and `""`
+
+Exact Match (`"..."`) & Empty String (`""`) in advanced search
 
 :::: {.columns}
 
 ::: {.column width="80%"}
 
 <center>
-
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-search-exactmatch.png" height="400">
 <div class="captiontext">Search on `"AMMAN/CITADEL"`</div>
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-search-exactmatch.png" height="400">
 
 </center>
 
 :::
 
 ::: {.column width="20%"}
-
 <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png' style='height: 40px;vertical-align: middle;'> [#9000](https://github.com/archesproject/arches/issues/9000)   
 <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png' style='height: 40px;vertical-align: middle;'> [#9001](https://github.com/archesproject/arches/issues/9001) 
 
@@ -172,47 +186,35 @@ Wildcard and Question mark
 
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-search-uuid.png" height="400">
 <div class="captiontext">Search on `6989f9f3-589e-4460-976f-cdf6ddbde827`</div>
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-search-uuid.png" height="400">
 
 </center>
 
 :::
 
 ::: {.column width="20%"}
-
 <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png' style='height: 40px;vertical-align: middle;'> [#9002](https://github.com/archesproject/arches/issues/9002) 
 
 :::
 
 ::::
 
-### Search support
+### Advanced
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-search-advanced-ar.png" height="400">
+
+
+### Support
 
 <center><https://arches.readthedocs.io/en/7.3/searching/#searching></center>
 
 ```{=html}
-<embed src="https://arches.readthedocs.io/en/7.3/searching/#search-operators" width="1400px" height="500px" />
+<embed src="https://arches.readthedocs.io/en/7.3/searching/?highlight=*st%3Fck#search-operators" width="1400px" height="500px" />
 ```
-
 
 :::
 
-# Other improvements
-
-## SSO and OAuth Provider
-
-Single Sign-On With an External OAuth Provider
-
-```{=html}
-<embed src="https://arches.readthedocs.io/en/stable/settings-beyond-the-ui/?highlight=OAuth2#using-single-sign-on-with-an-external-oauth-provider" width="1400px" height="400px" />
-```
-
-
-
-# Edits
-
-arches-v7-edits-recent
 
 # Export
 
@@ -231,16 +233,42 @@ arches-v7-edits-recent
 
 ### Output
 
-
 <center>
-
+<div class="captiontext">Tile Excel example</div>
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-export-tilexcel-xlsx.png" height="400">
 
 </center>
-<div class="captiontext">Tile Excel example</div>
+
+### eamenaR
+
+<center>
+<div class="captiontext"><img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png' style='height: 35px;vertical-align: middle;'> stack</div>
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenar-stack.png" height="400">
+</center>
 
 
 :::
+
+# Other improvements
+
+## SSO and OAuth Provider
+
+Single Sign-On With an External OAuth Provider
+
+```{=html}
+<embed src="https://arches.readthedocs.io/en/stable/settings-beyond-the-ui/?highlight=OAuth2#using-single-sign-on-with-an-external-oauth-provider" width="1400px" height="500px" />
+```
+
+# TODO
+
+## Mapbox & Openstreetmap language
+
+<center>
+<div class="captiontext">https://docs.mapbox.com/help/troubleshooting/change-language/</div>
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-mapbox-languages.png" height="400">
+
+</center>
+
 
 # Conclusion
 

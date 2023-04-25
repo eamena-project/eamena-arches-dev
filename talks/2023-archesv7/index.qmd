@@ -1,12 +1,12 @@
 ---
 title: "EAMENA v4"
-subtitle: "**EAMENA v3 (Arches v5.2) to EAMENA v4 (Arches v7.3) front-end changelog**"
-author: "Thomas Huet"
+subtitle: "**A front-end changelog from <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> v5.2 to <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> v7.3**"
+author: "Thomas Huet, DB manager"
 date: 2023-04-25
 title-slide-attributes:
     data-background-image: "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/APAAME_kite.jpg"
     data-background-size: "105%"
-    data-background-opacity: "0.4"
+    data-background-opacity: "0.7"
 format:
   revealjs: 
     css: https://zoometh.github.io/thomashuet/css/quarto.css
@@ -20,7 +20,7 @@ format:
     reference-location: document
     footnotes-hover: true
     logo: https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-prj-eamena.png
-    footer: "<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo.png' style='height: 35px;vertical-align: middle;'> v4 showcase <http://34.242.111.3:8000/> 25<sup>th</sup> April 2023"
+    footer: "<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo.png' style='height: 35px;vertical-align: middle;'> v4 showcase <http://34.242.111.3:8000> 25<sup>th</sup> April 2023"
     margin: 0
     width: 1400
 ---
@@ -28,28 +28,34 @@ format:
 # Introduction
 
 
-## Last stable version
+## Arches stable version
 
-<https://github.com/archesproject>
-arches-v7-github-stable-2023-04-25
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> v7.3 is the latest stable version, [Arches GitHub](https://github.com/archesproject) <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png' style='height: 40px;vertical-align: middle;'>(25<sup>th</sup> April 2023)
+
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-github-stable-2023-04-25.png" height="450">
+
+</center>
 
 
 # Front-end {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-EAMENA-0185187.png"}
 
+## Training Instance
 
-## Training instance
+<center> <http://34.242.111.3:8000> </center>
+```{=html}
+<embed src="http://34.242.111.3:8000" width="1400px" height="500px" />
+```
 
-<center>
-
-<http://34.242.111.3:8000/><br>
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7.png" height="450">
-
-</center>
-<div class="captiontext">Internationalization of the EAMENA database - Arabic</div>
 
 # Main Improvements
 
-<https://www.archesproject.org/roadmap/>
+## Arches roadmap
+
+```{=html}
+<embed src="https://www.archesproject.org/roadmap/" width="1400px" height="500px" />
+```
 
 ## Internationalization (i18n)
 
@@ -68,7 +74,7 @@ arches-v7-github-stable-2023-04-25
 
 <div class="fhstext">/opt/arches/eamena/eamena/settings.py</div>
 
-```{.python}
+```{.python code-line-numbers="10-11"}
 LANGUAGE_CODE = "en"
 
 # list of languages to display in the language switcher,
@@ -89,11 +95,15 @@ LANGUAGES = [
 
 # Search
 
-https://arches.readthedocs.io/en/7.3/searching/#search-operators
+## Arches search documentation
+
+```{=html}
+<embed src="https://arches.readthedocs.io/en/7.3/searching/#search-operators" width="1400px" height="500px" />
+```
 
 ## Search Advanced
 
-default language selection
+Default Language Selection
 
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-search-advanced-ar.png" height="400">
 
@@ -103,7 +113,9 @@ default language selection
 ::: {.panel-tabset}
 
 
-### Wildcard
+### Wildcard & Question mark
+
+Wildcard and Question mark
 
 :::: {.columns}
 
@@ -111,31 +123,8 @@ default language selection
 
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-search-wildcard.png" height="400">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-search-questionmark.png" height="400">
 <div class="captiontext">Search on `Apam*ea`</div>
-
-</center>
-
-:::
-
-::: {.column width="20%"}
-
-<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png' style='height: 40px;vertical-align: middle;'> [#8994](https://github.com/archesproject/arches/issues/8994) 
-
-:::
-
-::::
-
-### Question mark
-
-:::: {.columns}
-
-::: {.column width="80%"}
-
-<center>
-
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-search-wildcard.png" height="400">
-<div class="captiontext">Search on `Apam?ea`</div>
 
 </center>
 
@@ -318,6 +307,16 @@ pip install arches
 
 ## Elastic
 
+<https://docs.mapbox.com/help/troubleshooting/change-language/>
 
+
+## Training instance
+
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7.png" height="450">
+
+</center>
+<div class="captiontext">Internationalization of the EAMENA database - Arabic</div>
 
 

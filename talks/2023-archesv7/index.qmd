@@ -25,57 +25,20 @@ margin: 0
 width: 1400
 ---
 
-# Back-end
+# Introduction {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-natural-2-transp.png"}
 
-## Install
 
-::: {.panel-tabset}
-
-### Python
-
-<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> as a Python library[^1]: 
-
-```{.ps}
-pip install arches
-```
+## Arches stable version v7.3
 
 <center>
+<div class="captiontext"> <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 25px;vertical-align: middle;'> latest stable version <https://github.com/archesproject> (25<sup>th</sup> April 2023)</div>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-install-py.png" height="250">
-
-</center>
-<div class="captiontext">Python Arches library: <https://pypi.org/project/arches/> </div>
-
-[^1]: installation folder: `/opt/arches/ENV/lib/python3.8/site-packages/arches`
-
-### Files
-
-<center>
-
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/github-issues-arches-v7-ads04r.png" height="250">
-
-</center>
-<div class="captiontext"><img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png' style='height: 40px;vertical-align: middle;'> <https://github.com/ads04r/eamena> </div>
-
-
-
-:::
-
-# Introduction {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-EAMENA-0185187.png"}
-
-
-## Arches stable version
-
-<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> v7.3 is the latest stable version, [Arches GitHub](https://github.com/archesproject) <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png' style='height: 40px;vertical-align: middle;'>(25<sup>th</sup> April 2023)
-
-<center>
-
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-github-stable-2023-04-25.png" height="450">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-github-stable-2023-04-25.png" height="500">
 
 </center>
 
 
-# Front-end {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-EAMENA-0185187.png"}
+# Front-end {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-natural-2-transp.png"}
 
 ## Training Instance
 
@@ -85,7 +48,7 @@ pip install arches
 ```
 
 
-# Main Improvements {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-EAMENA-0185187.png"}
+# Main Improvements {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-natural-2-transp.png"}
 
 ## Arches roadmap
 
@@ -150,7 +113,7 @@ from openpyxl import Workbook
 
 :::
 
-# Search
+# Search {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-natural-2-transp.png"}
 
 ## Arches documentation
 
@@ -251,7 +214,7 @@ Exact Match (`"..."`) & Empty String (`""`) in advanced search
 :::
 
 
-# Export
+# Export {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-natural-2-transp.png"}
 
 ## tile excel 
 
@@ -277,14 +240,14 @@ Exact Match (`"..."`) & Empty String (`""`) in advanced search
 ### eamenaR
 
 <center>
-<div class="captiontext"><img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png' style='height: 35px;vertical-align: middle;'> stack</div>
+<div class="captiontext"><img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaR_logo.png' style='height: 55px;vertical-align: middle;'> IT stack</div>
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenar-stack.png" height="400">
 </center>
 
 
 :::
 
-# Other improvements
+# Other improvements {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-natural-2-transp.png"}
 
 ## SSO and OAuth Provider
 
@@ -294,18 +257,8 @@ Single Sign-On With an External OAuth Provider
 <embed src="https://arches.readthedocs.io/en/stable/settings-beyond-the-ui/?highlight=OAuth2#using-single-sign-on-with-an-external-oauth-provider" width="1400px" height="500px" />
 ```
 
-# TODO
 
-## Mapbox & Openstreetmap language
-
-<center>
-<div class="captiontext"><https://docs.mapbox.com/help/troubleshooting/change-language/></div>
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-mapbox-languages.png" height="500">
-
-</center>
-
-
-# Next Steps
+# Next Steps {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-natural-2-transp.png"}
 
 ## Planning
 
@@ -322,8 +275,52 @@ Single Sign-On With an External OAuth Provider
 
 <center>
 <div class="captiontext"><img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png' style='height: 40px;vertical-align: middle;'> <https://github.com/eamena-project/eamena-arches-dev/issues/16></div>
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/github-issues-arches-v7.png" height="300">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/github-issues-arches-v7.png" height="500">
 
 </center>
+
+
+# Back-end {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-natural-2-transp.png"}
+
+## Install
+
+::: {.panel-tabset}
+
+### Python
+
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> as a Python library[^1]: 
+
+```{.ps}
+pip install arches
+```
+
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-install-py.png" height="250">
+
+</center>
+<div class="captiontext">Python Arches library: <https://pypi.org/project/arches/> </div>
+
+
+[^1]: installation folder: `/opt/arches/ENV/lib/python3.8/site-packages/arches`
+
+### Arches Files
+
+<center>
+<div class="captiontext"> <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png' style='height: 40px;vertical-align: middle;'> <https://github.com/archesproject> </div>
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-github-stable-2023-04-25.png" height="500">
+
+</center>
+
+### EAMENA Files
+
+<center>
+
+<div class="captiontext"><img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png' style='height: 40px;vertical-align: middle;'> <https://github.com/ads04r/eamena> </div>
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/github-issues-arches-v7-ads04r.png" height="500">
+
+</center>
+
+:::
 
 # Conclusion

@@ -61,16 +61,22 @@ width: 1400
 
 ::: {.panel-tabset}
 
-### GUI
+### Simple Search
 
 <center>
 
+<div class="captiontext">Search in English or Arabic</div>
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-i18n.png" height="400">
-<div class="captiontext">my caption</div>
 
 </center>
 
-### Setup
+
+### Advanced Search
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-search-advanced-ar.png" height="400">
+
+
+### Settings
 
 <div class="fhstext">/opt/arches/eamena/eamena/settings.py</div>
 
@@ -91,9 +97,10 @@ LANGUAGES = [
 ]
 ```
 
+
 ### `po2excel.py`
 
-<div class="captiontext"><https://github.com/ads04r/po2excel/></div>
+<div class="captiontext"><img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png' style='height: 40px;vertical-align: middle;'> <https://github.com/ads04r/po2excel/></div>
 ```{.py}
 #!/usr/bin/python3
 # PO to Excel
@@ -109,20 +116,16 @@ from openpyxl import Workbook
 ...
 ```
 
-
-
 :::
+
+
+
+
 
 # Search {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-natural-2-transp.png"}
 
-## Arches documentation
 
-```{=html}
-<embed src="https://arches.readthedocs.io/en/7.3/searching/#search-operators" width="1400px" height="500px" />
-```
-
-
-## Simple and Advanced
+## Search operators
 
 ::: {.panel-tabset}
 
@@ -199,12 +202,9 @@ Exact Match (`"..."`) & Empty String (`""`) in advanced search
 
 ::::
 
-### Advanced
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-search-advanced-ar.png" height="400">
+### Documentation
 
-
-### Support
 
 <div class="captiontext"><https://arches.readthedocs.io/en/7.3/searching/#searching></div>
 ```{=html}
@@ -323,4 +323,4 @@ pip install arches
 
 :::
 
-# Conclusion
+# Discussion {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-natural-2-transp.png"}

@@ -25,6 +25,15 @@ format:
     width: 1400
 ---
 
+# Introduction
+
+
+## Last stable version
+
+<https://github.com/archesproject>
+arches-v7-github-stable-2023-04-25
+
+
 # Front-end {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-EAMENA-0185187.png"}
 
 
@@ -243,6 +252,10 @@ arches-v7-edits-recent
 
 
 :::
+
+# Conclusion
+
+
 
 ## Arches doc
 

@@ -20,7 +20,7 @@ format:
     reference-location: document
     footnotes-hover: true
     logo: https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-uni-oxford_.png
-    footer: "<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo_black.png' style='height: 35px;vertical-align: middle;'> <https://github.com/eamena-project> v4 showcase, 2023-04-25"
+    footer: "<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo.png' style='height: 35px;vertical-align: middle;'> v4 showcase <http://34.242.111.3:8000/> 25<sup>th</sup> April 2023"
     margin: 0
     width: 1400
 ---
@@ -32,13 +32,15 @@ format:
 
 <center>
 
-<http://34.242.111.3:8000/>
+<http://34.242.111.3:8000/><br>
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7.png" height="450">
 
 </center>
 <div class="captiontext">Internationalization of the EAMENA database - Arabic</div>
 
+# Main Improvements
 
+<https://www.archesproject.org/roadmap/>
 
 ## Internationalization (i18n)
 
@@ -76,6 +78,10 @@ LANGUAGES = [
 
 :::
 
+# Search
+
+https://arches.readthedocs.io/en/7.3/searching/#search-operators
+
 ## Search Advanced
 
 default language selection
@@ -83,13 +89,12 @@ default language selection
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-search-advanced-ar.png" height="400">
 
 
-
-## Search
+## Search Simple
 
 ::: {.panel-tabset}
 
 
-### wildcard
+### Wildcard
 
 :::: {.columns}
 
@@ -98,9 +103,32 @@ default language selection
 <center>
 
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-search-wildcard.png" height="400">
+<div class="captiontext">Search on `Apam*ea`</div>
 
 </center>
-<div class="captiontext">Search on `Apam*ea`</div>
+
+:::
+
+::: {.column width="20%"}
+
+<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png' style='height: 40px;vertical-align: middle;'> [#8994](https://github.com/archesproject/arches/issues/8994) 
+
+:::
+
+::::
+
+### Question mark
+
+:::: {.columns}
+
+::: {.column width="80%"}
+
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-search-wildcard.png" height="400">
+<div class="captiontext">Search on `Apam?ea`</div>
+
+</center>
 
 :::
 
@@ -113,7 +141,7 @@ default language selection
 ::::
 
 
-### exact match & empty string
+### Exact Match & Empty String
 
 :::: {.columns}
 
@@ -122,9 +150,9 @@ default language selection
 <center>
 
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-search-exactmatch.png" height="400">
+<div class="captiontext">Search on `"AMMAN/CITADEL"`</div>
 
 </center>
-<div class="captiontext">Search on `"AMMAN/CITADEL"`</div>
 
 :::
 
@@ -147,9 +175,9 @@ default language selection
 <center>
 
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-search-uuid.png" height="400">
+<div class="captiontext">Search on `6989f9f3-589e-4460-976f-cdf6ddbde827`</div>
 
 </center>
-<div class="captiontext">Search on `6989f9f3-589e-4460-976f-cdf6ddbde827`</div>
 
 :::
 
@@ -161,6 +189,57 @@ default language selection
 
 ::::
 
+### Search support
+
+<center><https://arches.readthedocs.io/en/7.3/searching/#searching></center>
+
+```{=html}
+<embed src="https://arches.readthedocs.io/en/7.3/searching/#search-operators" width="1400px" height="500px" />
+```
+
+
+:::
+
+# Other improvements
+
+## SSO and OAuth Provider
+
+Single Sign-On With an External OAuth Provider
+
+```{=html}
+<embed src="https://arches.readthedocs.io/en/stable/settings-beyond-the-ui/?highlight=OAuth2#using-single-sign-on-with-an-external-oauth-provider" width="1400px" height="400px" />
+```
+
+
+
+# Edits
+
+arches-v7-edits-recent
+
+# Export
+
+## tile excel 
+
+::: {.panel-tabset}
+
+### Selection
+
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-export-tilexcel.png" height="400">
+
+</center>
+<div class="captiontext">Export as Tile Excel</div>
+
+### Output
+
+
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-export-tilexcel-xlsx.png" height="400">
+
+</center>
+<div class="captiontext">Tile Excel example</div>
 
 
 :::

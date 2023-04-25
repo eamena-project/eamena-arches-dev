@@ -1,5 +1,25 @@
 project:
-  title: "index"
+  type: website
+  output-dir: pres
 
+website:
+  title: "EAMENA v4"
+  favicon: images/inst-gmpca.png
+  repo-url: https://github.com/quarto-dev/quarto-web
+  page-footer:
+    right:
+      - icon: github
+        href: https://github.com/quarto-dev/quarto-cli
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
 
-
+format:
+  html:
+    # page-layout: full
+    anchor-sections: true
+    theme: cosmo
+    css: styles.css
+    toc: true

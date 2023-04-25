@@ -55,7 +55,7 @@ pip install arches
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/github-issues-arches-v7-ads04r.png" height="250">
 
 </center>
-<div class="captiontext">Python Arches library: <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png' style='height: 40px;vertical-align: middle;'> <https://github.com/ads04r/eamena> </div>
+<div class="captiontext"><img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png' style='height: 40px;vertical-align: middle;'> <https://github.com/ads04r/eamena> </div>
 
 
 

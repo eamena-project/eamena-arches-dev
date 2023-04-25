@@ -1,10 +1,10 @@
 ---
-title: "EAMENA v3 *to* EAMENA v4"
-subtitle: "**Arches v5 to Arches v7 front-end changelog**"
+title: "EAMENA v4"
+subtitle: "**EAMENA v3 (Arches v5.2) to EAMENA v4 (Arches v7.3) front-end changelog**"
 author: "Thomas Huet"
 date: 2023-04-25
 title-slide-attributes:
-    data-background-image: "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaDB-bck.png"
+    data-background-image: "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/APAAME_kite.jpg"
     data-background-size: "105%"
     data-background-opacity: "0.4"
 format:
@@ -19,7 +19,7 @@ format:
     preview-links: auto
     reference-location: document
     footnotes-hover: true
-    logo: https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-uni-oxford_.png
+    logo: https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-prj-eamena.png
     footer: "<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo.png' style='height: 35px;vertical-align: middle;'> v4 showcase <http://34.242.111.3:8000/> 25<sup>th</sup> April 2023"
     margin: 0
     width: 1400

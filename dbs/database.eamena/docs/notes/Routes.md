@@ -7,7 +7,8 @@ flowchart
 	id3-->id4[Convert JSONL to JSON]
 	id4-->id5{Full EAMENA data}
 	id5-->id6[IMPORT]
-	id7[Install empty Arches v7]-->id8{Empty Arches v7}
+	id7[Install empty Arches v7]-->id25[Install EAMENA customisations]
+	id25-->id8{Empty Arches v7}
 	id9[Clone EAMENA from Github]-->id8
 	id8-->id6
 	id6-->id10{Unindexed EAMENA v4}
@@ -52,5 +53,6 @@ flowchart
 	style id22 fill:#FFFFFF
 	style id23 fill:#FFFFFF
 	style id24 fill:#FFFFFF
+	style id25 fill:#CFFFCF
 	
 ```

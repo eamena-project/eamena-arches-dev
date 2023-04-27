@@ -33,11 +33,24 @@ flowchart
 	style id3 fill:#CFFFCF
 	style id4 fill:#CFFFCF
 	style id5 fill:#CFFFCF
+	style id6 fill:#CFCFFF
 	style id7 fill:#CFFFCF
 	style id8 fill:#CFFFCF
-	style id6 fill:#CFCFFF
+	style id9 fill:#FFFFFF
 	style id10 fill:#CFCFFF
+	style id11 fill:#FFFFFF
 	style id12 fill:#CFCFFF
 	style id13 fill:#CFCFFF
+	style id14 fill:#FFFFFF
+	style id15 fill:#FFFFFF
+	style id16 fill:#FFFFFF
+	style id17 fill:#FFFFFF
+	style id18 fill:#FFFFFF
+	style id19 fill:#FFFFFF
+	style id20 fill:#FFFFFF
+	style id21 fill:#FFFFFF
+	style id22 fill:#FFFFFF
+	style id23 fill:#FFFFFF
+	style id24 fill:#FFFFFF
 	
 ```

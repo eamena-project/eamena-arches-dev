@@ -203,6 +203,8 @@ EAMENA offers 10 days of online support, led by Reuben Osborne and Thomas Huet, 
 
 ## 'users & database manager' training
 
+The training material is available on the EAMENA website: https://eamena.web.ox.ac.uk/cpf-training
+
 ### Day 1
 
 1.1.    [Introduction to the database](https://youtu.be/6-Cvf8KzBzM)

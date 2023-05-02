@@ -21,5 +21,5 @@ gantt
     section EAMENA v4
     Arches v7.3 tests                  : a1, 2023-04-17, 5d
     Arches v7.3 showcase               : a1, 2023-04-25, 1d
-    Arches v7.3 public realease        : a1, 2023-05-02, 2023-10-01
+    Arches v7.3 public realease        : a1, 2023-05-09, 2023-10-01
 ```

@@ -205,7 +205,7 @@ EAMENA offers 10 days of online support, led by Reuben Osborne and Thomas Huet, 
 
 ### Day 1
 
-1.1.    Introduction to the database
+1.1.    [Introduction to the database](https://youtu.be/6-Cvf8KzBzM)
 
 1.2.    PRACTICAL: Simple navigation, login, select language etc
 

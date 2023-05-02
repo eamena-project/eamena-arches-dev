@@ -199,7 +199,7 @@ Usage of online and collaborative resources
 
 EAMENA offers 10 days of online support, led by Reuben Osborne and Thomas Huet, to program on demand
 
-## 'regular' training
+## 'users & database manager' training
 
 ### Day 1
 

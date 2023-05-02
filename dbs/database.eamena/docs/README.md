@@ -1,6 +1,6 @@
 # EAMENA 4 Install Docs
 
-For Ash to do ASAP. For now, see [Arches 7](notes/Arches%207.md) and [Arches 7 Upgrade](notes/Arches%207%20Upgrade.md). Much of this can be automated.
+In progress. For now, see [Arches 7 Upgrade](notes/Arches%207%20Upgrade.md). 
 
 These docs describe the process of (a) installing an empty EAMENA-customised version of Arches 7.3, and (b) copying the data from an old EAMENA v3 instance to the new database.
 
@@ -47,7 +47,7 @@ flowchart
 	id22-->id24
 	id23-->id18
 	id24-->id18
-	click id9 "install/Clone.md"
+	click id9 "https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/docs/install/Clone.md"
 ```
 
 * [Cloning EAMENA from Github](install/Clone.md)

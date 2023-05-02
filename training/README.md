@@ -114,6 +114,9 @@ gantt
     dateFormat  YYYY-MM-DD
     axisFormat  %d-%m-%Y
     tickInterval 7day
+    section EAMENA Arches v7
+    Arches v7.3 public realease        : milestone, 2023-05-09, 0d
+    Online Introduction           : a1, 2023-05-22, 3d
     section Remote 1
     Online Introduction           : a1, 2023-05-22, 3d
     section In-person

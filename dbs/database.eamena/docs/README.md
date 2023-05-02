@@ -47,7 +47,7 @@ flowchart
 	id22-->id24
 	id23-->id18
 	id24-->id18
-	click id9 "https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/docs/install/Clone.md"
+	click id9 "https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/docs/install/Clone.md" "Clone EAMENA from Github" _blank
 ```
 
 * [Cloning EAMENA from Github](install/Clone.md)

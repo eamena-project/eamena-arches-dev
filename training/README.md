@@ -118,7 +118,7 @@ gantt
     Online Support                 : a1, 2023-07-01, 7d
 ```
 
-## Training content
+## 'sys admin' training content
 
 ### Remote 1
 > Online training for Arches platform system administrators, prepared by Reuben Osborne and Thomas Huet
@@ -195,5 +195,61 @@ Usage of online and collaborative resources
 > Online support for sys admins
 
 EAMENA offers 10 days of online support, led by Reuben Osborne and Thomas Huet, to program on demand
+
+## 'regular' training
+
+### Day 1
+
+1.1.    Introduction to the database
+
+1.2.    PRACTICAL: Simple navigation, login, select language etc
+
+1.3.    PRACTICAL: Simple searching and viewing records
+
+1.4.    PRACTICAL: Database terms intro and create own Person/Organisation record
+
+
+### Day 2
+
+2.1.    PRACTICAL: Heritage Place – Assessment Summary
+
+2.2.    PRACTICAL: Heritage Place – Resource Summary, Geometry, Geography
+
+2.3.    PRACTICAL: Heritage Place – Archaeological Assessment
+
+2.4.    PRACTICAL: Heritage Place – Environment Assessment and practice
+
+
+### Day 3
+
+3.1.    PRACTICAL: Heritage Place – Condition Assessment
+
+3.2.    PRACTICAL: Information Resource
+
+3.3.    PRACTICAL: Built Component
+
+3.4.    PRACTICAL: Detailed Condition Assessment (we can take the trainees outside to old Amman for a practical session)
+
+
+### Day 4
+
+4.1.    PRACTICAL: Advanced Search and making graphs
+
+4.2.    PRACTICAL: QGIS Introduction to map making
+
+4.3.    PRACTICAL: export data and import into QGIS
+
+4.4.   PRACTICAL: Trainees prepare for a short 10mins presentation on the final day about what they have learnt
+
+
+### Day 5
+
+5.1. Presentation by trainees
+
+5.2. Presentation by trainees
+
+5.3. Ceritificate distribution by Bill
+
+5.4. Packing
 
 

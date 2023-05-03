@@ -5,9 +5,7 @@
 
 ### DB Installation 💾
 
-#### Arches v7
-
-[README](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/docs)
+* Arches v7: [README](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/docs)
 
 ### Bulk 📝
 

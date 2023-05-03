@@ -135,7 +135,7 @@ Monday 22 May, Tuesday 23 May and Wednesday 24 May 2023
 #### Introduction
 > Thomas Huet
 
-* What is Arches?
+* [What is Arches?](https://eamena-project.github.io/eamena-arches-dev/talks/2023-gmpca/pres/#/arches-powered-platform)
 * What problem does it solve?
 
 #### Training

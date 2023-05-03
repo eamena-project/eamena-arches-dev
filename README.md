@@ -3,7 +3,7 @@
 
 ## IT
 
-### DB Installation
+### DB Installation 💾
 
 #### Arches v7
 

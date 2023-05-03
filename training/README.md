@@ -120,8 +120,8 @@ gantt
     section Remote 1
     Online Introduction           : a1, 2023-05-22, 3d
     section In-person
-    GDAH (KRG)                    : a1, 2023-05-14, 2023-05-22
-    Syrians (KRG)                 : a1, 2023-05-23, 2023-05-31
+    GDAH                          : a1, 2023-05-14, 2023-05-22
+    Syria 1                       : a1, 2023-05-23, 2023-05-31
     MoTA                          : a1, 2023-06-18, 2023-06-22
     DoA                           : a1, 2023-06-25, 2023-06-29
     section Remote 2

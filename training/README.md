@@ -93,8 +93,9 @@ This online training will be hosted online (ZOOM): "Arches/EAMENA Database Manag
 # 2023
 
 Training on online & support on the Arches v7 (EAMENA v4) database for:
-* [users & database managers](https://github.com/eamena-project/eamena-arches-dev/tree/main/training#users--database-manager-training);
-* [sys admin](https://github.com/eamena-project/eamena-arches-dev/tree/main/training#sys-admin-training);
+* sys admins only: [Remote 1](https://github.com/eamena-project/eamena-arches-dev/tree/main/training#sys-admin-training) and [Support](https://github.com/eamena-project/eamena-arches-dev/tree/main/training#online-support);  
+
+* users & database managers & sysadmins: [In-person](https://github.com/eamena-project/eamena-arches-dev/tree/main/training#users--database-managers--sys-admins-training);
 
 From the MoTA (Palestine) and DoA (Jordan). The following table shows which part of the training the users, database managers and sys admin are expected to attend.
 

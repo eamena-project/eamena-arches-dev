@@ -1,11 +1,13 @@
-# eamena-arches-dev  <img src="www/logo.png" width='100px' align="right"/>
+# eamena-arches-dev  <img src="www/logo.png" width='80px' align="right"/>
 > development repository
 
 ## IT
 
 ### DB Installation
 
-* Arches v7: https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/docs
+#### Arches v7
+
+[README](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/docs)
 
 ### Bulk 📝
 

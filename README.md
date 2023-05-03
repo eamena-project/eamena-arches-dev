@@ -1,61 +1,57 @@
 # eamena-arches-dev  <img src="www/logo.png" width='100px' align="right"/>
 > development repository
 
-## PeriodO
+## IT
 
-[README](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/periodo/README.md)
+### DB Installation
 
-## Arches/EAMENA training 🧍
-
-[README](https://github.com/eamena-project/eamena-arches-dev/tree/main/training#readme)
-
-## Arches translation/internationalization 🌐
-
-[README](https://github.com/eamena-project/eamena-arches-dev/blob/main/translation#readme)
-
-## EAMENA checks ✔️
-
-[README](https://github.com/eamena-project/eamena-arches-dev/blob/main/check#readme)
-
-## Data
+* Arches v7: https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/docs
 
 ### Bulk 📝
 
 [README](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bulk#readme)  
 [bash](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bulk/run_bulks.sh)
 
+## EAMENA checks ✔️
+
+[README](https://github.com/eamena-project/eamena-arches-dev/blob/main/check#readme)
+
 ---
-### Space 🗺️
-#### Grids 📏
+
+## Resources
+
+### Grids 📏
 
 [README](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/grids/qdgc_#readme)
-#### GeoJSON 📍
-
-[README](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/geojson#readme)
 
 ---
+
+## Training 🧍
+
+[README](https://github.com/eamena-project/eamena-arches-dev/tree/main/training#readme)
+
+---
+
+## Standards
+
 ### Time ⏰
 
 [README](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/time#readme)
+PeriodO: [README](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/periodo/README.md)
 
-## Functions
 
-[README](https://github.com/eamena-project/eamena-arches-dev/tree/main/functions#readme)
-
-## Projects
-
-[README](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects#readme)
-
-## IIIF 🖼️
+### IIIF 🖼️
 
 [iiif](https://github.com/eamena-project/eamena-arches-dev/tree/main/iiif)
 
-### Troubleshooting
-
-* [TODO](https://github.com/eamena-project/eamena-arches-dev/tree/main/readme)
-
 ---
 
-* [CAA22#S07](https://github.com/eamena-project/eamena-arches-dev/blob/main/event/CAA-S07.md)
+## Talks
 
----
+## 2022
+
+[CAA22#S07](https://github.com/eamena-project/eamena-arches-dev/blob/main/event/CAA-S07.md)
+
+### 2023
+
+

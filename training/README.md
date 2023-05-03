@@ -213,7 +213,7 @@ The training material is available on the EAMENA website: https://eamena.web.ox.
 
 1.2.    PRACTICAL: Simple navigation, login, select language etc
 
-+ Introduction to the EAMENA Database Version 3 [English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/0_-_eamena_v3_db_general_introduction.pdf) [Arabic](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/0_-_eamena_v3_db_general_introduction_arabic_compressed.pdf)
++ Introduction to the EAMENA Database Version 3 [English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/0_-_eamena_v3_db_general_introduction.pdf) | [عربي](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/0_-_eamena_v3_db_general_introduction_arabic_compressed.pdf)
     + [Part 1 – Introduction](https://youtu.be/HwGb9R1vYMw)
     + [Part 2 – Logging In](https://youtu.be/bfV4qRPTCxk)
     + [Part 3 – Resources Overview](https://youtu.be/eTzQWbLb0mk)

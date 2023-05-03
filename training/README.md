@@ -193,17 +193,9 @@ Usage of online and collaborative resources
 * Community Forum
 * GitHub
 * Popular Django forums
-### In-person
-> Training for users, database managers and sys admins
 
-*to be updated*
-
-### Online support
-> Online support for sys admins
-
-EAMENA offers 10 days of online support, led by Reuben Osborne and Thomas Huet, to program on demand
-
-## 'users & database manager' training
+## 'users & database managers & sys admins' training
+> In-person training for users, database managers and sys admins
 
 The training material is available on the EAMENA website: https://eamena.web.ox.ac.uk/cpf-training
 
@@ -348,5 +340,10 @@ The training material is available on the EAMENA website: https://eamena.web.ox.
 5.3. Ceritificate distribution by Bill
 
 5.4. Packing
+
+## Online support
+> Online support for sys admins
+
+EAMENA offers 10 days of online support, led by Reuben Osborne and Thomas Huet, to program on demand
 
 

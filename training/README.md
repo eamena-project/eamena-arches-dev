@@ -100,7 +100,7 @@ From the MoTA (Palestine) and DoA (Jordan). The following table shows which part
 
 |   | user  | database manager  | sys admin  |
 |---|---|---|---|
-| Remote 1  |   |   | x |
+| [Remote 1](https://github.com/eamena-project/eamena-arches-dev/tree/main/training#sys-admin-training)  |   |   | x |
 | In-person  | x | x | x |
 | Support |   |   | x |
 

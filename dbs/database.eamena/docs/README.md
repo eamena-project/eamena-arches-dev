@@ -21,7 +21,7 @@ Paths to/from the various Arches/EAMENA incarnations.
 ```mermaid
 flowchart
 	id1((Eamena v3))-->id2[Export data as JSONL]
-	id2-->id3[<a href='https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/docs/notes/Arches%207%20Upgrade.md#splitchunk'>Split into chunks</a>]
+	id2-->id3[<a href='notes/Arches%207%20Upgrade.md#splitchunk'>Split into chunks</a>]
 	id3-->id4[Convert JSONL to JSON]
 	id4-->id5{Full EAMENA data}
 	id5-->id6[IMPORT]

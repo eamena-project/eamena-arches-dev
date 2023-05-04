@@ -18,7 +18,7 @@ e98e1cee-c38b-11ea-9026-02e7594ce0a0
 
 FTP the resulting files to the Arches 7 instance. The JSONL exporter I wrote and installed in the EAMENA Arches 5 instance automatically converts the JSON to the I18n-compatible format required by Arches 7.
 
-On the local instance, split the Heritage Place and Information Resource files, as they're too big to import in one go...
+<a name="splitchunk"></a>On the local instance, split the Heritage Place and Information Resource files, as they're too big to import in one go...
 ```bash
 for f in `ls Heritage_Place_*.jsonl`;
 do

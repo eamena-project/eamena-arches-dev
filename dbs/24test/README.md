@@ -28,8 +28,6 @@ image caption: https://github.com/eamena-project/eamena-arches-dev/blob/da9d4efc
 </p>
 
 
-Modify:
-
 1. favicon
  - link: https://github.com/eamena-project/eamena-arches-dev/blob/cbde1edd0c28232f0ab65eb5796d3194822a0a54/dbs/24test/index.htm#L39
  - image: https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/24test/img logo.png

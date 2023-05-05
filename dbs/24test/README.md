@@ -3,7 +3,7 @@
 
 ## Customize the landing page
 
-### Background
+### Background image
 
 <img>
 

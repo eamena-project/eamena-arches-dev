@@ -72,11 +72,13 @@ image caption: https://github.com/eamena-project/eamena-arches-dev/blob/da9d4efc
 * GS
 ```python manage.py packages -o import_business_data -s "/home/archesadmin/data-temp/grid_krg.jsonl" -ow overwrite```
 
-## Reindex
+> Import GS works but not its re-index
+
+## Reindex Business data from EAMENA
 
 *GS
 
-After importing the `grid_krg.jsonl` file. On:
+After importing the `grid_krg.jsonl` file (⚠️ it is not a JSON). On:
 
 ```
 
@@ -168,3 +170,50 @@ nodegroupid1: `b3628db0-742d-11ea-b4d0-02e7594ce0a0`
 nodegroupid2: `7248e0d0-ca96-11ea-a292-02e7594ce0a0`
 nodegroupid3: `7248e0d0-ca96-11ea-a292-02e7594ce0a0`
 nodegroupid3: `b3628db0-742d-11ea-b4d0-02e7594ce0a0`
+
+## Import Business data from 
+
+After creating the GS by hand (`E42N36-34`), using: https://geojson.io/#map=7.07/36.231/42.863 with this coordinates:
+
+```
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "coordinates": [
+          [
+[42.25, 36.75], [42.25, 37.0], [42.5, 37.0], [42.5, 36.75], [42.25, 36.75]
+          ]
+        ],
+        "type": "Polygon"
+      }
+    }
+  ]
+}
+```
+
+I'll export it
+
+```
+python manage.py packages -o export_business_data -d '/home/archesadmin/data-temp' -f 'json' -g '77d
+18973-7428-11ea-b4d0-02e7594ce0a0'
+```
+
+Which gives this JSON file `Grid_Square_2023-05-05_10-41-17.json` (⚠️ it is not a JSONL):
+
+```
+{"business_data": {"resources": [{"resourceinstance": {"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0", "legacyid": null, "resourceinstanceid": "14fee91e-c6a1-418f-8f4b-0d089e220001"}, "tiles": [{"data": {"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E42N36-34"}, "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0", "parenttile_id": null, "provisionaledits": null, "resourceinstance_id": "14fee91e-c6a1-418f-8f4b-0d089e220001", "sortorder": 0, "tileid": "a1dfc3a8-968c-4bc0-8e80-dd216d79aab5"}, {"data": {"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {"features": [{"geometry": {"coordinates": [[[42.25, 36.75], [42.25, 37], [42.5, 37], [42.5, 36.75], [42.25, 36.75]]], "type": "Polygon"}, "id": "d42675a5-9fe2-4835-8da6-bb2ddfcf3bd2", "properties": {"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"}, "type": "Feature"}], "type": "FeatureCollection"}}, "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0", "parenttile_id": null, "provisionaledits": null, "resourceinstance_id": "14fee91e-c6a1-418f-8f4b-0d089e220001", "sortorder": 0, "tileid": "9518bc38-f4dc-430a-b51f-1ffd417e99e4"}]}]}}
+```
+
+Delete it from the KAHD Arches DB and reimport it:
+
+```
+python manage.py packages -o import_business_data -s "/home/archesadmin/data-temp/Grid_Square_2023-05-05_10-41-17.json" -ow overwrite
+```
+
+Imports works, reindex works
+
+{"business_data": {"resources": [{"resourceinstance": {"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0", "legacyid": "f02a8487-e3af-4da1-951f-1dee6234e0e0", "resourceinstanceid": "f02a8487-e3af-4da1-951f-1dee6234e0e0"}, "tiles": [{"data": {"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {"features": [{"geometry": {"coordinates": [[[42.25, 36.75], [42.25, 37.0], [42.5, 37.0], [42.5, 36.75], [42.25, 36.75]]], "type": "Polygon"}, "id": "b1b3f65c-24a3-4c15-a291-58b407cda52d", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"}}, "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0", "parenttile_id": null, "provisionaledits": null, "resourceinstance_id": "f02a8487-e3af-4da1-951f-1dee6234e0e0", "sortorder": 0, "tileid": "cac4a7fb-47fc-44cf-9616-5c0f326df189"}, {"data": {"b3628db0-742d-11ea-b4d0-02e7594ce0a0": {"en": {"value": "E42N36-34", "direction": "ltr"}}}, "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0", "parenttile_id": null, "provisionaledits": null, "resourceinstance_id": "f02a8487-e3af-4da1-951f-1dee6234e0e0", "sortorder": 0, "tileid": "9fee37df-6093-4d3d-b19c-ae898c6c76ae"}]}]}}

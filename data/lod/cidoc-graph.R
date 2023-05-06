@@ -3,32 +3,42 @@ library(htmlwidgets)
 library(dplyr)
 library(openxlsx)
 
+prj <- "palmyra" # to subset the dataframe
+
+# paths
 rootDir <- "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/"
+# rootDir <- paste0(getwd(), "/") # local
 dataDir <- paste0(rootDir, "data/lod/")
 imgDir <- paste0(rootDir, "www/")
+dataFile <- paste0(dataDir, "data.xlsx")
 
-vertices <- read.csv2(paste0(dataDir, "palmyra-vertices-1.tsv"), sep = "\t")
-edges <- read.csv2(paste0(dataDir, "palmyra-edges-1.tsv"), sep = "\t")
+# read
+nodes <- read.xlsx(dataFile, sheet = "nodes")
+edges <- read.xlsx(dataFile, sheet = "edges")
 
-idx.images <- which(vertices$multimedia != "")
+# subset on project
+nodes <- nodes[nodes$prj == prj, ]
+edges <- edges[edges$prj == prj, ]
+nodes$prj <- edges$prj <- NULL
 
-vertices.shapes <- vertices$id %in% which(vertices$multimedia != "")
-vertices.shapes[vertices.shapes == TRUE] <- "image"
-vertices.shapes[vertices.shapes == FALSE] <- "box"
+# nodes with or without (by default) multimedia (eg. image)
+idx.images <- which(nodes$multimedia != "")
+nodes.shapes <- nodes$id %in% which(nodes$multimedia != "")
+nodes.shapes[nodes.shapes == TRUE] <- "image"
+nodes.shapes[nodes.shapes == FALSE] <- "box"
+nodes[idx.images, "multimedia"] <- paste0(imgDir, nodes[which(nodes$multimedia != ""), "multimedia"], ".png")
 
-vertices[idx.images, "multimedia"] <- paste0(imgDir, vertices[which(vertices$multimedia != ""), "multimedia"], ".png")
-
-nodes <- data.frame(id = vertices$id,
-                    label = paste0(vertices$name,"\n", vertices$class),
-                    color = c(rep("#000080", nrow(vertices))),
+nodes <- data.frame(id = nodes$id,
+                    label = paste0(nodes$name,"\n", nodes$class),
+                    color = c(rep("#000080", nrow(nodes))),
                     # title = "A simple CIDOC-CRM example",
                     # title.color = "white",
-                    font.size = rep(18, nrow(vertices)),
-                    font.color = c(rep("white", nrow(vertices))),
-                    image = vertices$multimedia,
-                    shape = vertices.shapes,
-                    size = c(rep(24, nrow(vertices))),
-                    group = c(rep("dmp", nrow(vertices)))
+                    font.size = rep(18, nrow(nodes)),
+                    font.color = c(rep("white", nrow(nodes))),
+                    image = nodes$multimedia,
+                    shape = nodes.shapes,
+                    size = c(rep(24, nrow(nodes))),
+                    group = c(rep("dmp", nrow(nodes)))
 )
 # enlarge images
 nodes <- nodes %>%
@@ -44,7 +54,7 @@ gout <- visNetwork(nodes,
                    main = list(text = "a CIDOC-CRM example",
                                style = "font-family:Arial;text-align:center;"
                                # style = "text-align:right; font-family:Arial; color:#ffffff"
-                               ),
+                   ),
                    # background = "black",
                    width = "100%",
                    height = "100vh") %>%

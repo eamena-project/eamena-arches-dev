@@ -4,13 +4,17 @@ library(dplyr)
 library(openxlsx)
 
 prj <- "palmyra" # to subset the dataframe
+prj <- "thera"
 
 # paths
 rootDir <- "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/"
-# rootDir <- paste0(getwd(), "/") # local
+rootDir <- paste0(getwd(), "/") # local
 dataDir <- paste0(rootDir, "data/lod/")
-imgDir <- paste0(rootDir, "www/")
 dataFile <- paste0(dataDir, "data.xlsx")
+# multimedia (images)
+if(prj == "palmyra"){imgDir <- paste0(rootDir, "www/")}
+# prj thera is in historiacl-time GH
+if(prj == "thera"){imgDir <- paste0("https://raw.githubusercontent.com/historical-time/data-samples/main/", "cidoc-crm/")}
 
 # read
 nodes <- read.xlsx(dataFile, sheet = "nodes")

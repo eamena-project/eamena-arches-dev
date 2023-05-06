@@ -1,0 +1,7665 @@
+{
+	"business_data": {
+	  "resources": [
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "f02a8487-e3af-4da1-951f-1dee6234e0e0",
+			"resourceinstanceid": "f02a8487-e3af-4da1-951f-1dee6234e0e0"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  42.25,
+							  36.75
+							],
+							[
+							  42.25,
+							  37
+							],
+							[
+							  42.5,
+							  37
+							],
+							[
+							  42.5,
+							  36.75
+							],
+							[
+							  42.25,
+							  36.75
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "b1b3f65c-24a3-4c15-a291-58b407cda52d",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "f02a8487-e3af-4da1-951f-1dee6234e0e0",
+			  "sortorder": 0,
+			  "tileid": "cac4a7fb-47fc-44cf-9616-5c0f326df189"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0":"E42N36-34"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "f02a8487-e3af-4da1-951f-1dee6234e0e0",
+			  "sortorder": 0,
+			  "tileid": "9fee37df-6093-4d3d-b19c-ae898c6c76ae"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "66552848-b252-4db0-aca0-d4b2c3f7c7cf",
+			"resourceinstanceid": "66552848-b252-4db0-aca0-d4b2c3f7c7cf"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  42.5,
+							  36.5
+							],
+							[
+							  42.5,
+							  36.75
+							],
+							[
+							  42.75,
+							  36.75
+							],
+							[
+							  42.75,
+							  36.5
+							],
+							[
+							  42.5,
+							  36.5
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "9beb04cb-83b6-4bfd-aad0-e1ea9542bb08",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "66552848-b252-4db0-aca0-d4b2c3f7c7cf",
+			  "sortorder": 0,
+			  "tileid": "b73ccb7e-8758-44e0-9939-dc2fc407fe12"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E42N36-41"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "66552848-b252-4db0-aca0-d4b2c3f7c7cf",
+			  "sortorder": 0,
+			  "tileid": "e5d82c86-fc98-49ae-a486-4bd09a9d46d3"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "c7dafff0-9dee-4d78-92c8-24cdb7cd2efb",
+			"resourceinstanceid": "c7dafff0-9dee-4d78-92c8-24cdb7cd2efb"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  42.75,
+							  36.5
+							],
+							[
+							  42.75,
+							  36.75
+							],
+							[
+							  43,
+							  36.75
+							],
+							[
+							  43,
+							  36.5
+							],
+							[
+							  42.75,
+							  36.5
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "313c0d23-6e9f-4167-9b96-4108914496ef",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "c7dafff0-9dee-4d78-92c8-24cdb7cd2efb",
+			  "sortorder": 0,
+			  "tileid": "eab345e6-d1a7-43b3-8603-61c4f19e41ee"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E42N36-42"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "c7dafff0-9dee-4d78-92c8-24cdb7cd2efb",
+			  "sortorder": 0,
+			  "tileid": "38bf7a71-e6a3-475a-8556-feccb7f10b2d"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "db6c75b4-a4d9-4a57-a326-5041a74120d3",
+			"resourceinstanceid": "db6c75b4-a4d9-4a57-a326-5041a74120d3"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  42.5,
+							  36.75
+							],
+							[
+							  42.5,
+							  37
+							],
+							[
+							  42.75,
+							  37
+							],
+							[
+							  42.75,
+							  36.75
+							],
+							[
+							  42.5,
+							  36.75
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "4ff9166b-2621-4eb1-81dc-d32cdccd5aff",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "db6c75b4-a4d9-4a57-a326-5041a74120d3",
+			  "sortorder": 0,
+			  "tileid": "aebd49f0-ea34-4513-a7c7-3fffbffe8c2a"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E42N36-43"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "db6c75b4-a4d9-4a57-a326-5041a74120d3",
+			  "sortorder": 0,
+			  "tileid": "6d44d1b9-1635-45d6-8a79-533d7148f295"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "6d167e36-3797-4c04-bd52-0947b3f71155",
+			"resourceinstanceid": "6d167e36-3797-4c04-bd52-0947b3f71155"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  42.75,
+							  36.75
+							],
+							[
+							  42.75,
+							  37
+							],
+							[
+							  43,
+							  37
+							],
+							[
+							  43,
+							  36.75
+							],
+							[
+							  42.75,
+							  36.75
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "27f53b2d-150f-43ce-a64d-82d82e48fa15",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "6d167e36-3797-4c04-bd52-0947b3f71155",
+			  "sortorder": 0,
+			  "tileid": "75848480-6572-4037-b5da-3250657859de"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E42N36-44"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "6d167e36-3797-4c04-bd52-0947b3f71155",
+			  "sortorder": 0,
+			  "tileid": "51ae1f55-c77a-4044-a867-35350a343af7"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "c8913781-f1e7-4039-abac-039d221947c4",
+			"resourceinstanceid": "c8913781-f1e7-4039-abac-039d221947c4"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  42.25,
+							  37
+							],
+							[
+							  42.25,
+							  37.25
+							],
+							[
+							  42.5,
+							  37.25
+							],
+							[
+							  42.5,
+							  37
+							],
+							[
+							  42.25,
+							  37
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "7e592d7a-ec32-444b-a73b-5fee7efc7be9",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "c8913781-f1e7-4039-abac-039d221947c4",
+			  "sortorder": 0,
+			  "tileid": "7b1004a6-73fd-42ec-b8d4-14242660713b"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E42N37-12"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "c8913781-f1e7-4039-abac-039d221947c4",
+			  "sortorder": 0,
+			  "tileid": "b2c08c3f-16a2-40f8-84e6-d55790274d41"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "fee711cf-19b9-4f70-afec-5fb0dbed5bde",
+			"resourceinstanceid": "fee711cf-19b9-4f70-afec-5fb0dbed5bde"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  42.5,
+							  37
+							],
+							[
+							  42.5,
+							  37.25
+							],
+							[
+							  42.75,
+							  37.25
+							],
+							[
+							  42.75,
+							  37
+							],
+							[
+							  42.5,
+							  37
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "ada25005-801e-44d6-a85c-196f10517d7b",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "fee711cf-19b9-4f70-afec-5fb0dbed5bde",
+			  "sortorder": 0,
+			  "tileid": "ce978082-f508-4675-aca0-e61516758804"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E42N37-21"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "fee711cf-19b9-4f70-afec-5fb0dbed5bde",
+			  "sortorder": 0,
+			  "tileid": "cbdf92d1-977a-4de4-9cbf-7912adc25948"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "cb447ef0-a808-4df0-be54-b4f9d7ba1868",
+			"resourceinstanceid": "cb447ef0-a808-4df0-be54-b4f9d7ba1868"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  42.75,
+							  37
+							],
+							[
+							  42.75,
+							  37.25
+							],
+							[
+							  43,
+							  37.25
+							],
+							[
+							  43,
+							  37
+							],
+							[
+							  42.75,
+							  37
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "e2d2fc54-a2b8-42b2-aaad-41ca737e2d0e",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "cb447ef0-a808-4df0-be54-b4f9d7ba1868",
+			  "sortorder": 0,
+			  "tileid": "cfa5405d-1fe1-4045-939e-e8272b6986d8"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E42N37-22"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "cb447ef0-a808-4df0-be54-b4f9d7ba1868",
+			  "sortorder": 0,
+			  "tileid": "8d25ed32-ec91-46d5-9c30-a5557a7eeca4"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "fd49035a-ea39-47b8-94bd-1e09c40f373a",
+			"resourceinstanceid": "fd49035a-ea39-47b8-94bd-1e09c40f373a"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  42.5,
+							  37.25
+							],
+							[
+							  42.5,
+							  37.5
+							],
+							[
+							  42.75,
+							  37.5
+							],
+							[
+							  42.75,
+							  37.25
+							],
+							[
+							  42.5,
+							  37.25
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "a41a9951-038d-42d5-8b32-8081f2ecba01",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "fd49035a-ea39-47b8-94bd-1e09c40f373a",
+			  "sortorder": 0,
+			  "tileid": "79a490ff-09eb-48ac-9322-e1018f54ba2e"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E42N37-23"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "fd49035a-ea39-47b8-94bd-1e09c40f373a",
+			  "sortorder": 0,
+			  "tileid": "ca0497c3-59d1-4dfd-9a33-4d8d91ad1e8f"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "02dd7aff-ebc9-4ff1-878b-a00812584021",
+			"resourceinstanceid": "02dd7aff-ebc9-4ff1-878b-a00812584021"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  42.75,
+							  37.25
+							],
+							[
+							  42.75,
+							  37.5
+							],
+							[
+							  43,
+							  37.5
+							],
+							[
+							  43,
+							  37.25
+							],
+							[
+							  42.75,
+							  37.25
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "619d2380-179b-452f-8008-0dcb22d349b2",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "02dd7aff-ebc9-4ff1-878b-a00812584021",
+			  "sortorder": 0,
+			  "tileid": "7f4cbb91-100d-48d5-97af-aed83ee0aa0e"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E42N37-24"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "02dd7aff-ebc9-4ff1-878b-a00812584021",
+			  "sortorder": 0,
+			  "tileid": "77434a79-e32b-4db9-8035-2e356e5ecef9"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "ac4310dd-40eb-466f-9f41-156f07adaeed",
+			"resourceinstanceid": "ac4310dd-40eb-466f-9f41-156f07adaeed"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  43.5,
+							  35.75
+							],
+							[
+							  43.5,
+							  36
+							],
+							[
+							  43.75,
+							  36
+							],
+							[
+							  43.75,
+							  35.75
+							],
+							[
+							  43.5,
+							  35.75
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "0163b627-7f44-45ab-b6d6-cbd6f04df0b2",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "ac4310dd-40eb-466f-9f41-156f07adaeed",
+			  "sortorder": 0,
+			  "tileid": "d54faed4-e8ec-4f3b-b39b-d7810523afe1"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E43N35-43"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "ac4310dd-40eb-466f-9f41-156f07adaeed",
+			  "sortorder": 0,
+			  "tileid": "80bb9abd-4168-406a-ab8d-de3589fef761"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "efa0c111-c05f-4006-8def-57c2d11ffe68",
+			"resourceinstanceid": "efa0c111-c05f-4006-8def-57c2d11ffe68"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  43.75,
+							  35.75
+							],
+							[
+							  43.75,
+							  36
+							],
+							[
+							  44,
+							  36
+							],
+							[
+							  44,
+							  35.75
+							],
+							[
+							  43.75,
+							  35.75
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "0912ccf9-6e91-4c66-9f9a-b38077e29fb2",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "efa0c111-c05f-4006-8def-57c2d11ffe68",
+			  "sortorder": 0,
+			  "tileid": "bd37bf0e-7467-44ef-96ce-f7157ea5e81a"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E43N35-44"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "efa0c111-c05f-4006-8def-57c2d11ffe68",
+			  "sortorder": 0,
+			  "tileid": "de665c83-997a-44ff-a89d-4fbb720c1aa4"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "794731ec-8db4-4193-bd19-a3e50c40f744",
+			"resourceinstanceid": "794731ec-8db4-4193-bd19-a3e50c40f744"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  43.25,
+							  36
+							],
+							[
+							  43.25,
+							  36.25
+							],
+							[
+							  43.5,
+							  36.25
+							],
+							[
+							  43.5,
+							  36
+							],
+							[
+							  43.25,
+							  36
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "a11f6d1e-397c-4243-b893-5f21a89c581f",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "794731ec-8db4-4193-bd19-a3e50c40f744",
+			  "sortorder": 0,
+			  "tileid": "4e8c3854-ea8d-4c5a-83bf-a05e57410ef2"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E43N36-12"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "794731ec-8db4-4193-bd19-a3e50c40f744",
+			  "sortorder": 0,
+			  "tileid": "79c02169-be2f-4742-bef1-4d936ae75546"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "c5893556-9d33-457d-b0ae-6006f8dc2d25",
+			"resourceinstanceid": "c5893556-9d33-457d-b0ae-6006f8dc2d25"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  43.25,
+							  36.25
+							],
+							[
+							  43.25,
+							  36.5
+							],
+							[
+							  43.5,
+							  36.5
+							],
+							[
+							  43.5,
+							  36.25
+							],
+							[
+							  43.25,
+							  36.25
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "d11e53eb-9884-431d-84aa-216e6d2b0f61",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "c5893556-9d33-457d-b0ae-6006f8dc2d25",
+			  "sortorder": 0,
+			  "tileid": "0b7c5d4e-8f38-4b04-be9f-cccf44225697"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E43N36-14"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "c5893556-9d33-457d-b0ae-6006f8dc2d25",
+			  "sortorder": 0,
+			  "tileid": "5b6bea42-61f0-4d6d-9344-80ce2cd9df77"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "5e7a4d60-827f-47e5-a311-d31461f8c265",
+			"resourceinstanceid": "5e7a4d60-827f-47e5-a311-d31461f8c265"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  43.5,
+							  36
+							],
+							[
+							  43.5,
+							  36.25
+							],
+							[
+							  43.75,
+							  36.25
+							],
+							[
+							  43.75,
+							  36
+							],
+							[
+							  43.5,
+							  36
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "c1ca636f-440b-4983-aa27-8f4ce74e723a",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "5e7a4d60-827f-47e5-a311-d31461f8c265",
+			  "sortorder": 0,
+			  "tileid": "d9786c50-adfc-4b64-8107-b0371a1373b7"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E43N36-21"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "5e7a4d60-827f-47e5-a311-d31461f8c265",
+			  "sortorder": 0,
+			  "tileid": "9f0c5a16-41ad-4c12-95e5-9e30004e4d27"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "ac5dfe85-2924-404f-8d19-0ab3a90a6a34",
+			"resourceinstanceid": "ac5dfe85-2924-404f-8d19-0ab3a90a6a34"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  43.75,
+							  36
+							],
+							[
+							  43.75,
+							  36.25
+							],
+							[
+							  44,
+							  36.25
+							],
+							[
+							  44,
+							  36
+							],
+							[
+							  43.75,
+							  36
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "c5a73776-051a-4479-a824-40d1ae663ba9",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "ac5dfe85-2924-404f-8d19-0ab3a90a6a34",
+			  "sortorder": 0,
+			  "tileid": "6dda05ea-a002-4ee6-92f2-16188381b4d8"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E43N36-22"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "ac5dfe85-2924-404f-8d19-0ab3a90a6a34",
+			  "sortorder": 0,
+			  "tileid": "9ff2e61b-cf4d-43b1-b20a-cf8fb9c1eb12"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "dcbf7ae2-3e3b-4836-9bcc-738257dacf10",
+			"resourceinstanceid": "dcbf7ae2-3e3b-4836-9bcc-738257dacf10"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  43.5,
+							  36.25
+							],
+							[
+							  43.5,
+							  36.5
+							],
+							[
+							  43.75,
+							  36.5
+							],
+							[
+							  43.75,
+							  36.25
+							],
+							[
+							  43.5,
+							  36.25
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "bf37ecbe-ca36-4928-a865-65c89881e5ae",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "dcbf7ae2-3e3b-4836-9bcc-738257dacf10",
+			  "sortorder": 0,
+			  "tileid": "0b490a9d-3dd5-4eb6-a184-d07a4836664d"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E43N36-23"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "dcbf7ae2-3e3b-4836-9bcc-738257dacf10",
+			  "sortorder": 0,
+			  "tileid": "f8d73904-1f7c-4c90-a558-2ad01cd42fd0"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "3b1ca1ef-729b-41f3-a2ab-454fd2b435aa",
+			"resourceinstanceid": "3b1ca1ef-729b-41f3-a2ab-454fd2b435aa"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  43.75,
+							  36.25
+							],
+							[
+							  43.75,
+							  36.5
+							],
+							[
+							  44,
+							  36.5
+							],
+							[
+							  44,
+							  36.25
+							],
+							[
+							  43.75,
+							  36.25
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "ebdae622-a27c-427e-9341-4f892afecead",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "3b1ca1ef-729b-41f3-a2ab-454fd2b435aa",
+			  "sortorder": 0,
+			  "tileid": "2e4a73d4-35ce-40fd-9143-3a099d08ffa8"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E43N36-24"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "3b1ca1ef-729b-41f3-a2ab-454fd2b435aa",
+			  "sortorder": 0,
+			  "tileid": "ffae0378-9e5a-48e6-a8ef-25cd65382ab0"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "9e197e3e-aa33-4046-bd30-93214446fdc3",
+			"resourceinstanceid": "9e197e3e-aa33-4046-bd30-93214446fdc3"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  43,
+							  36.5
+							],
+							[
+							  43,
+							  36.75
+							],
+							[
+							  43.25,
+							  36.75
+							],
+							[
+							  43.25,
+							  36.5
+							],
+							[
+							  43,
+							  36.5
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "ea18cd70-93c9-4fa0-b1e3-d2125ccbecc9",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "9e197e3e-aa33-4046-bd30-93214446fdc3",
+			  "sortorder": 0,
+			  "tileid": "631fc9ac-a2e4-45e3-91b8-7481d0cbf9a3"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E43N36-31"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "9e197e3e-aa33-4046-bd30-93214446fdc3",
+			  "sortorder": 0,
+			  "tileid": "5006de4d-03eb-4a69-be02-7035e0c1e685"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "47f55f9c-b815-4bde-a52e-8e63383e1052",
+			"resourceinstanceid": "47f55f9c-b815-4bde-a52e-8e63383e1052"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  43.25,
+							  36.5
+							],
+							[
+							  43.25,
+							  36.75
+							],
+							[
+							  43.5,
+							  36.75
+							],
+							[
+							  43.5,
+							  36.5
+							],
+							[
+							  43.25,
+							  36.5
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "c282b101-1148-45f6-a103-3d87717870fb",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "47f55f9c-b815-4bde-a52e-8e63383e1052",
+			  "sortorder": 0,
+			  "tileid": "6c7e8dfd-5a23-437e-a71a-86f1128d5d27"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E43N36-32"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "47f55f9c-b815-4bde-a52e-8e63383e1052",
+			  "sortorder": 0,
+			  "tileid": "cf7ae2f5-36c4-424b-8681-7aa710c9aee8"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "1016fa9c-a4a5-4e54-9961-0fc2081405ca",
+			"resourceinstanceid": "1016fa9c-a4a5-4e54-9961-0fc2081405ca"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  43,
+							  36.75
+							],
+							[
+							  43,
+							  37
+							],
+							[
+							  43.25,
+							  37
+							],
+							[
+							  43.25,
+							  36.75
+							],
+							[
+							  43,
+							  36.75
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "197e50b1-e089-4c0d-96c9-fb7285c45b08",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "1016fa9c-a4a5-4e54-9961-0fc2081405ca",
+			  "sortorder": 0,
+			  "tileid": "0320741a-6823-44a7-9c46-48853fa231d9"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E43N36-33"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "1016fa9c-a4a5-4e54-9961-0fc2081405ca",
+			  "sortorder": 0,
+			  "tileid": "6a2a26f7-bcdf-4b7d-a43f-ce228b0b26e4"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "8aba8b15-5fa4-4ffd-ab42-ed5c47d59935",
+			"resourceinstanceid": "8aba8b15-5fa4-4ffd-ab42-ed5c47d59935"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  43.25,
+							  36.75
+							],
+							[
+							  43.25,
+							  37
+							],
+							[
+							  43.5,
+							  37
+							],
+							[
+							  43.5,
+							  36.75
+							],
+							[
+							  43.25,
+							  36.75
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "4b48f33f-b7a7-48ba-8a45-fbff9c987df0",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "8aba8b15-5fa4-4ffd-ab42-ed5c47d59935",
+			  "sortorder": 0,
+			  "tileid": "6337475c-c0cf-42fe-ad29-43340d34d0e4"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E43N36-34"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "8aba8b15-5fa4-4ffd-ab42-ed5c47d59935",
+			  "sortorder": 0,
+			  "tileid": "6c0b2d5a-4471-45b3-b10b-92081c831b1b"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "355574bc-1300-4376-b3b3-b5092c1990a9",
+			"resourceinstanceid": "355574bc-1300-4376-b3b3-b5092c1990a9"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  43.5,
+							  36.5
+							],
+							[
+							  43.5,
+							  36.75
+							],
+							[
+							  43.75,
+							  36.75
+							],
+							[
+							  43.75,
+							  36.5
+							],
+							[
+							  43.5,
+							  36.5
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "4cf923c5-c6c0-4175-8382-c532f8dc6408",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "355574bc-1300-4376-b3b3-b5092c1990a9",
+			  "sortorder": 0,
+			  "tileid": "dbe49e44-0196-4113-857b-52e16f852a63"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E43N36-41"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "355574bc-1300-4376-b3b3-b5092c1990a9",
+			  "sortorder": 0,
+			  "tileid": "37c6eae2-8758-48e2-ae33-697b0b6dafd3"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "c2cd04c8-6915-4992-bdb4-89880e2f8f6c",
+			"resourceinstanceid": "c2cd04c8-6915-4992-bdb4-89880e2f8f6c"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  43.75,
+							  36.5
+							],
+							[
+							  43.75,
+							  36.75
+							],
+							[
+							  44,
+							  36.75
+							],
+							[
+							  44,
+							  36.5
+							],
+							[
+							  43.75,
+							  36.5
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "e90b3625-9004-4dbf-8407-3a8c46b323b3",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "c2cd04c8-6915-4992-bdb4-89880e2f8f6c",
+			  "sortorder": 0,
+			  "tileid": "52029b77-f841-49b5-922f-6842e037d848"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E43N36-42"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "c2cd04c8-6915-4992-bdb4-89880e2f8f6c",
+			  "sortorder": 0,
+			  "tileid": "cb1d863b-88d2-410f-b52c-f3315ad41bae"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "63407ebf-4024-41a4-9f9e-ae3cdac4ea54",
+			"resourceinstanceid": "63407ebf-4024-41a4-9f9e-ae3cdac4ea54"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  43.5,
+							  36.75
+							],
+							[
+							  43.5,
+							  37
+							],
+							[
+							  43.75,
+							  37
+							],
+							[
+							  43.75,
+							  36.75
+							],
+							[
+							  43.5,
+							  36.75
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "3a4ff4d4-12fe-4ead-80ed-7d48b6669361",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "63407ebf-4024-41a4-9f9e-ae3cdac4ea54",
+			  "sortorder": 0,
+			  "tileid": "96077d15-08cb-498e-b3f8-c30d49d60ffd"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E43N36-43"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "63407ebf-4024-41a4-9f9e-ae3cdac4ea54",
+			  "sortorder": 0,
+			  "tileid": "73eeecd8-6787-4148-b131-3a91f6d693c1"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "458041e3-c4d8-4750-ad81-6866636fa4b5",
+			"resourceinstanceid": "458041e3-c4d8-4750-ad81-6866636fa4b5"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  43.75,
+							  36.75
+							],
+							[
+							  43.75,
+							  37
+							],
+							[
+							  44,
+							  37
+							],
+							[
+							  44,
+							  36.75
+							],
+							[
+							  43.75,
+							  36.75
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "47e99e44-95c6-40f1-b340-ac1d2e78c4ab",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "458041e3-c4d8-4750-ad81-6866636fa4b5",
+			  "sortorder": 0,
+			  "tileid": "f00d621b-406c-4854-8a0c-dd13ae53277e"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E43N36-44"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "458041e3-c4d8-4750-ad81-6866636fa4b5",
+			  "sortorder": 0,
+			  "tileid": "b9dab4b4-4fcc-4028-8417-63a5707eaec7"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "28010dee-6673-456e-9d59-64a025053062",
+			"resourceinstanceid": "28010dee-6673-456e-9d59-64a025053062"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  43,
+							  37
+							],
+							[
+							  43,
+							  37.25
+							],
+							[
+							  43.25,
+							  37.25
+							],
+							[
+							  43.25,
+							  37
+							],
+							[
+							  43,
+							  37
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "9daeda3c-8729-4461-8bf7-8af7eaf1f20f",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "28010dee-6673-456e-9d59-64a025053062",
+			  "sortorder": 0,
+			  "tileid": "1c11a45e-8c29-486b-8036-781d7179158e"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E43N37-11"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "28010dee-6673-456e-9d59-64a025053062",
+			  "sortorder": 0,
+			  "tileid": "9aa34910-b3d0-4922-ab78-503839af2478"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "f9a7c91e-10b1-4176-a572-0068429327e8",
+			"resourceinstanceid": "f9a7c91e-10b1-4176-a572-0068429327e8"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  43.25,
+							  37
+							],
+							[
+							  43.25,
+							  37.25
+							],
+							[
+							  43.5,
+							  37.25
+							],
+							[
+							  43.5,
+							  37
+							],
+							[
+							  43.25,
+							  37
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "9a063a76-48a4-4982-b08f-6dda33d8ab03",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "f9a7c91e-10b1-4176-a572-0068429327e8",
+			  "sortorder": 0,
+			  "tileid": "2747c12a-9b3a-40d8-b8a2-ab66935b468d"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E43N37-12"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "f9a7c91e-10b1-4176-a572-0068429327e8",
+			  "sortorder": 0,
+			  "tileid": "a1b7898f-0920-4af5-8996-8da34d8c05da"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "2ddb7f02-5ca2-4a79-a241-83963e3ca917",
+			"resourceinstanceid": "2ddb7f02-5ca2-4a79-a241-83963e3ca917"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  43,
+							  37.25
+							],
+							[
+							  43,
+							  37.5
+							],
+							[
+							  43.25,
+							  37.5
+							],
+							[
+							  43.25,
+							  37.25
+							],
+							[
+							  43,
+							  37.25
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "658b24f2-484c-4b97-9673-c466511dd635",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "2ddb7f02-5ca2-4a79-a241-83963e3ca917",
+			  "sortorder": 0,
+			  "tileid": "919f893d-5203-4c5a-8ae7-6a800f05adae"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E43N37-13"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "2ddb7f02-5ca2-4a79-a241-83963e3ca917",
+			  "sortorder": 0,
+			  "tileid": "7eb68c6d-4a8c-4001-ad66-d75156c04b2d"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "0471f690-1eaa-460d-a86b-67758d13d15d",
+			"resourceinstanceid": "0471f690-1eaa-460d-a86b-67758d13d15d"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E43N37-14"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "0471f690-1eaa-460d-a86b-67758d13d15d",
+			  "sortorder": 0,
+			  "tileid": "66fd6d82-18ff-48e9-9784-66c75fbc09cc"
+			},
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  43.25,
+							  37.25
+							],
+							[
+							  43.25,
+							  37.5
+							],
+							[
+							  43.5,
+							  37.5
+							],
+							[
+							  43.5,
+							  37.25
+							],
+							[
+							  43.25,
+							  37.25
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "bacd0cbb-f1de-4a75-affc-7d3a84c34878",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "0471f690-1eaa-460d-a86b-67758d13d15d",
+			  "sortorder": 0,
+			  "tileid": "f2c58abc-f5ff-40f0-b2dd-153981d9ae78"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "27f3502e-8c05-4f9b-ad68-56e07fc7bfb1",
+			"resourceinstanceid": "27f3502e-8c05-4f9b-ad68-56e07fc7bfb1"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  43.5,
+							  37
+							],
+							[
+							  43.5,
+							  37.25
+							],
+							[
+							  43.75,
+							  37.25
+							],
+							[
+							  43.75,
+							  37
+							],
+							[
+							  43.5,
+							  37
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "50fd6432-e96e-4fa9-a30b-48a7774e7477",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "27f3502e-8c05-4f9b-ad68-56e07fc7bfb1",
+			  "sortorder": 0,
+			  "tileid": "530737a2-0af2-4a05-8776-40ec4d0c3e94"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E43N37-21"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "27f3502e-8c05-4f9b-ad68-56e07fc7bfb1",
+			  "sortorder": 0,
+			  "tileid": "5932952b-6d18-4569-a0a2-cb7462cf82c6"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "442ee487-7a8c-4699-b09d-4bd0e21a84fc",
+			"resourceinstanceid": "442ee487-7a8c-4699-b09d-4bd0e21a84fc"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  43.75,
+							  37
+							],
+							[
+							  43.75,
+							  37.25
+							],
+							[
+							  44,
+							  37.25
+							],
+							[
+							  44,
+							  37
+							],
+							[
+							  43.75,
+							  37
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "84b5c3db-ed04-42b3-99c9-c24304c509bc",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "442ee487-7a8c-4699-b09d-4bd0e21a84fc",
+			  "sortorder": 0,
+			  "tileid": "fdbe0121-c2d2-40fb-9a99-c53659411af8"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E43N37-22"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "442ee487-7a8c-4699-b09d-4bd0e21a84fc",
+			  "sortorder": 0,
+			  "tileid": "5625d957-2211-4bda-a6fb-389c0da67777"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "c57816e3-a0bd-481b-9b9b-c3219c89f3c5",
+			"resourceinstanceid": "c57816e3-a0bd-481b-9b9b-c3219c89f3c5"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E43N37-23"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "c57816e3-a0bd-481b-9b9b-c3219c89f3c5",
+			  "sortorder": 0,
+			  "tileid": "18656096-da89-45db-9b3a-5046b8bdc73b"
+			},
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  43.5,
+							  37.25
+							],
+							[
+							  43.5,
+							  37.5
+							],
+							[
+							  43.75,
+							  37.5
+							],
+							[
+							  43.75,
+							  37.25
+							],
+							[
+							  43.5,
+							  37.25
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "e696a5db-4289-4cce-b895-24c5f2a95b75",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "c57816e3-a0bd-481b-9b9b-c3219c89f3c5",
+			  "sortorder": 0,
+			  "tileid": "c9e37a4e-3280-43c9-b92e-6fadb54e86fb"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "ed024723-46c5-44b3-8be8-ae1b4f39c428",
+			"resourceinstanceid": "ed024723-46c5-44b3-8be8-ae1b4f39c428"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E43N37-24"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "ed024723-46c5-44b3-8be8-ae1b4f39c428",
+			  "sortorder": 0,
+			  "tileid": "9dd89fad-7611-4b52-8213-dc19ebe51a48"
+			},
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  43.75,
+							  37.25
+							],
+							[
+							  43.75,
+							  37.5
+							],
+							[
+							  44,
+							  37.5
+							],
+							[
+							  44,
+							  37.25
+							],
+							[
+							  43.75,
+							  37.25
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "ae28bb08-3e81-4588-b00d-0b6e849193b3",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "ed024723-46c5-44b3-8be8-ae1b4f39c428",
+			  "sortorder": 0,
+			  "tileid": "93156e29-0d7b-4cac-af4c-1333db3de7d6"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "58038e42-8d75-41b3-9267-7cd87567c242",
+			"resourceinstanceid": "58038e42-8d75-41b3-9267-7cd87567c242"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  44.75,
+							  34.25
+							],
+							[
+							  44.75,
+							  34.5
+							],
+							[
+							  45,
+							  34.5
+							],
+							[
+							  45,
+							  34.25
+							],
+							[
+							  44.75,
+							  34.25
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "288723a5-54ea-4e56-9093-fbeb2ae6bc40",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "58038e42-8d75-41b3-9267-7cd87567c242",
+			  "sortorder": 0,
+			  "tileid": "a51b7435-25f0-4829-a70b-7a1380af12d1"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E44N34-24"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "58038e42-8d75-41b3-9267-7cd87567c242",
+			  "sortorder": 0,
+			  "tileid": "c210f403-a4f6-4cb8-a213-1aeacf4bac03"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "da73a802-3491-46fa-9ca8-8af0afd50d8c",
+			"resourceinstanceid": "da73a802-3491-46fa-9ca8-8af0afd50d8c"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  44.75,
+							  34.5
+							],
+							[
+							  44.75,
+							  34.75
+							],
+							[
+							  45,
+							  34.75
+							],
+							[
+							  45,
+							  34.5
+							],
+							[
+							  44.75,
+							  34.5
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "d5b625f9-0064-41de-be3f-74b143d11c86",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "da73a802-3491-46fa-9ca8-8af0afd50d8c",
+			  "sortorder": 0,
+			  "tileid": "014fe88a-bef6-4b5f-8364-0cfc80d31036"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E44N34-42"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "da73a802-3491-46fa-9ca8-8af0afd50d8c",
+			  "sortorder": 0,
+			  "tileid": "5f90866e-5f8a-4a61-aa18-0026cf39c9a9"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "1cbb0bc6-6f6d-433b-9f0a-9700c3cdd0c9",
+			"resourceinstanceid": "1cbb0bc6-6f6d-433b-9f0a-9700c3cdd0c9"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  44.5,
+							  34.75
+							],
+							[
+							  44.5,
+							  35
+							],
+							[
+							  44.75,
+							  35
+							],
+							[
+							  44.75,
+							  34.75
+							],
+							[
+							  44.5,
+							  34.75
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "d1056444-85d6-47dc-81d7-d68fd070712d",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "1cbb0bc6-6f6d-433b-9f0a-9700c3cdd0c9",
+			  "sortorder": 0,
+			  "tileid": "a61d58be-dd05-4d93-afca-6f595eec805b"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E44N34-43"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "1cbb0bc6-6f6d-433b-9f0a-9700c3cdd0c9",
+			  "sortorder": 0,
+			  "tileid": "c6c27bbf-a08a-401e-bccf-7f06c9a2716e"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "8fc2f3ef-6ad1-495b-b100-a6e7bd72c994",
+			"resourceinstanceid": "8fc2f3ef-6ad1-495b-b100-a6e7bd72c994"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  44.75,
+							  34.75
+							],
+							[
+							  44.75,
+							  35
+							],
+							[
+							  45,
+							  35
+							],
+							[
+							  45,
+							  34.75
+							],
+							[
+							  44.75,
+							  34.75
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "ccc45df0-0b0e-4851-a072-f475ced76f6c",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "8fc2f3ef-6ad1-495b-b100-a6e7bd72c994",
+			  "sortorder": 0,
+			  "tileid": "7bda0a77-2a33-433f-a67e-ca4da5375845"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E44N34-44"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "8fc2f3ef-6ad1-495b-b100-a6e7bd72c994",
+			  "sortorder": 0,
+			  "tileid": "72ef316d-e7e9-419e-8608-527fd1200595"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "9641a42c-4bd8-414a-bed6-75d063123006",
+			"resourceinstanceid": "9641a42c-4bd8-414a-bed6-75d063123006"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  44.25,
+							  35
+							],
+							[
+							  44.25,
+							  35.25
+							],
+							[
+							  44.5,
+							  35.25
+							],
+							[
+							  44.5,
+							  35
+							],
+							[
+							  44.25,
+							  35
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "425c860c-3f52-49a1-bc8a-0d3e4426465b",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "9641a42c-4bd8-414a-bed6-75d063123006",
+			  "sortorder": 0,
+			  "tileid": "8f4a8228-d68f-4c26-b7a6-3ef662855059"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E44N35-12"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "9641a42c-4bd8-414a-bed6-75d063123006",
+			  "sortorder": 0,
+			  "tileid": "5883963f-c6f4-4713-a654-9c032e7cb26e"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "c003c4db-9a81-4285-ad87-90ed6279aa61",
+			"resourceinstanceid": "c003c4db-9a81-4285-ad87-90ed6279aa61"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  44.5,
+							  35
+							],
+							[
+							  44.5,
+							  35.25
+							],
+							[
+							  44.75,
+							  35.25
+							],
+							[
+							  44.75,
+							  35
+							],
+							[
+							  44.5,
+							  35
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "9044d3a6-aab4-45e0-ac5b-fffec1dad399",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "c003c4db-9a81-4285-ad87-90ed6279aa61",
+			  "sortorder": 0,
+			  "tileid": "9174223b-7e03-40d0-8c6a-9e8e7a1b083b"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E44N35-21"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "c003c4db-9a81-4285-ad87-90ed6279aa61",
+			  "sortorder": 0,
+			  "tileid": "e763d8fa-4496-409d-a810-11217250e056"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "1f4bedb0-8bfa-4120-90fe-df8165ddbc68",
+			"resourceinstanceid": "1f4bedb0-8bfa-4120-90fe-df8165ddbc68"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  44.75,
+							  35
+							],
+							[
+							  44.75,
+							  35.25
+							],
+							[
+							  45,
+							  35.25
+							],
+							[
+							  45,
+							  35
+							],
+							[
+							  44.75,
+							  35
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "58a3d1a9-8721-4e9e-99c4-1c302e8ed204",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "1f4bedb0-8bfa-4120-90fe-df8165ddbc68",
+			  "sortorder": 0,
+			  "tileid": "659a21df-7e23-4fd4-af05-1a5053f68c90"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E44N35-22"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "1f4bedb0-8bfa-4120-90fe-df8165ddbc68",
+			  "sortorder": 0,
+			  "tileid": "928caee1-385c-4807-9f22-2f40d525626f"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "c0907b0c-c9e0-47c4-9b09-52b203038735",
+			"resourceinstanceid": "c0907b0c-c9e0-47c4-9b09-52b203038735"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  44.5,
+							  35.25
+							],
+							[
+							  44.5,
+							  35.5
+							],
+							[
+							  44.75,
+							  35.5
+							],
+							[
+							  44.75,
+							  35.25
+							],
+							[
+							  44.5,
+							  35.25
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "19a484c7-e41b-49b1-8793-5df8c824fb39",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "c0907b0c-c9e0-47c4-9b09-52b203038735",
+			  "sortorder": 0,
+			  "tileid": "f4cdd361-a192-45df-9f4d-d139e4186d78"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E44N35-23"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "c0907b0c-c9e0-47c4-9b09-52b203038735",
+			  "sortorder": 0,
+			  "tileid": "7a6c70b9-bde1-4147-8593-139af5c6fe96"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "6895b74b-3b4e-4f3a-b5cf-d43fc8b624ad",
+			"resourceinstanceid": "6895b74b-3b4e-4f3a-b5cf-d43fc8b624ad"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  44.75,
+							  35.25
+							],
+							[
+							  44.75,
+							  35.5
+							],
+							[
+							  45,
+							  35.5
+							],
+							[
+							  45,
+							  35.25
+							],
+							[
+							  44.75,
+							  35.25
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "838e4a48-450b-429a-b3fc-9b0028630bcf",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "6895b74b-3b4e-4f3a-b5cf-d43fc8b624ad",
+			  "sortorder": 0,
+			  "tileid": "97008219-64fd-454b-bf26-c4371dc96b1a"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E44N35-24"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "6895b74b-3b4e-4f3a-b5cf-d43fc8b624ad",
+			  "sortorder": 0,
+			  "tileid": "923fe812-2465-4101-ab69-e909eaa715ab"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "aaa8a6ad-9f4c-4199-a4f5-5fc4b11c552d",
+			"resourceinstanceid": "aaa8a6ad-9f4c-4199-a4f5-5fc4b11c552d"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  44,
+							  35.5
+							],
+							[
+							  44,
+							  35.75
+							],
+							[
+							  44.25,
+							  35.75
+							],
+							[
+							  44.25,
+							  35.5
+							],
+							[
+							  44,
+							  35.5
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "d456ebea-a5df-455d-b55f-f13a93a3b6cb",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "aaa8a6ad-9f4c-4199-a4f5-5fc4b11c552d",
+			  "sortorder": 0,
+			  "tileid": "0c772b4f-93d3-4925-b6c9-7da559bda474"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E44N35-31"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "aaa8a6ad-9f4c-4199-a4f5-5fc4b11c552d",
+			  "sortorder": 0,
+			  "tileid": "744ebdf7-9429-4dad-8957-57a07660298a"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "f080a41c-f315-4536-b9e1-7ef80616c67e",
+			"resourceinstanceid": "f080a41c-f315-4536-b9e1-7ef80616c67e"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  44,
+							  35.75
+							],
+							[
+							  44,
+							  36
+							],
+							[
+							  44.25,
+							  36
+							],
+							[
+							  44.25,
+							  35.75
+							],
+							[
+							  44,
+							  35.75
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "08af4b42-127d-40b1-bac5-d85898ec0f2a",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "f080a41c-f315-4536-b9e1-7ef80616c67e",
+			  "sortorder": 0,
+			  "tileid": "55dc5b4e-381a-4408-ad4c-049c29c1cc9e"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E44N35-33"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "f080a41c-f315-4536-b9e1-7ef80616c67e",
+			  "sortorder": 0,
+			  "tileid": "53bceac5-3343-4b67-8de3-015132de8027"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "9b0f5053-9cf7-49c9-84b2-169e64e74ad1",
+			"resourceinstanceid": "9b0f5053-9cf7-49c9-84b2-169e64e74ad1"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  44.25,
+							  35.75
+							],
+							[
+							  44.25,
+							  36
+							],
+							[
+							  44.5,
+							  36
+							],
+							[
+							  44.5,
+							  35.75
+							],
+							[
+							  44.25,
+							  35.75
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "29f9d5d9-f1a4-43cd-b97d-598b97c28401",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "9b0f5053-9cf7-49c9-84b2-169e64e74ad1",
+			  "sortorder": 0,
+			  "tileid": "62b2c879-3d17-4500-8009-a368a78abfc5"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E44N35-34"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "9b0f5053-9cf7-49c9-84b2-169e64e74ad1",
+			  "sortorder": 0,
+			  "tileid": "a76da042-7d09-40ce-be85-2c167f7704f9"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "189d0e36-f1b4-42b9-9e7c-a52b97ca16a7",
+			"resourceinstanceid": "189d0e36-f1b4-42b9-9e7c-a52b97ca16a7"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  44.5,
+							  35.5
+							],
+							[
+							  44.5,
+							  35.75
+							],
+							[
+							  44.75,
+							  35.75
+							],
+							[
+							  44.75,
+							  35.5
+							],
+							[
+							  44.5,
+							  35.5
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "d65a9418-2ae1-4b25-b2f1-c51c25d27178",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "189d0e36-f1b4-42b9-9e7c-a52b97ca16a7",
+			  "sortorder": 0,
+			  "tileid": "e65563fc-c696-43e3-af17-523b023285f4"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E44N35-41"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "189d0e36-f1b4-42b9-9e7c-a52b97ca16a7",
+			  "sortorder": 0,
+			  "tileid": "1ac91577-c775-45e5-98c3-cd8abf84ec70"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "9660f128-c5d1-4ba7-8e13-d92958b905b1",
+			"resourceinstanceid": "9660f128-c5d1-4ba7-8e13-d92958b905b1"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  44.75,
+							  35.5
+							],
+							[
+							  44.75,
+							  35.75
+							],
+							[
+							  45,
+							  35.75
+							],
+							[
+							  45,
+							  35.5
+							],
+							[
+							  44.75,
+							  35.5
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "e35b1b8f-c4fa-4d10-a856-c5abd1992428",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "9660f128-c5d1-4ba7-8e13-d92958b905b1",
+			  "sortorder": 0,
+			  "tileid": "d72ff5d6-5c67-4b30-8b18-fd7b810d9420"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E44N35-42"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "9660f128-c5d1-4ba7-8e13-d92958b905b1",
+			  "sortorder": 0,
+			  "tileid": "c5017ab7-a0ab-480a-9593-96ac08729523"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "f4e93f7c-4fd8-45c7-b981-913ff2f172a1",
+			"resourceinstanceid": "f4e93f7c-4fd8-45c7-b981-913ff2f172a1"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  44.5,
+							  35.75
+							],
+							[
+							  44.5,
+							  36
+							],
+							[
+							  44.75,
+							  36
+							],
+							[
+							  44.75,
+							  35.75
+							],
+							[
+							  44.5,
+							  35.75
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "5a4c4216-ffd7-47ba-b554-69676221246e",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "f4e93f7c-4fd8-45c7-b981-913ff2f172a1",
+			  "sortorder": 0,
+			  "tileid": "e330a8e1-1690-404f-866e-fd2f38e7c512"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E44N35-43"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "f4e93f7c-4fd8-45c7-b981-913ff2f172a1",
+			  "sortorder": 0,
+			  "tileid": "4d3a4bb9-baef-4e08-aad0-21114dd75d57"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "1e59b9d5-ddc3-47b4-83a2-edecb2c72a9b",
+			"resourceinstanceid": "1e59b9d5-ddc3-47b4-83a2-edecb2c72a9b"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  44.75,
+							  35.75
+							],
+							[
+							  44.75,
+							  36
+							],
+							[
+							  45,
+							  36
+							],
+							[
+							  45,
+							  35.75
+							],
+							[
+							  44.75,
+							  35.75
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "798e36db-bdae-48dc-970e-97a4e9be98b5",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "1e59b9d5-ddc3-47b4-83a2-edecb2c72a9b",
+			  "sortorder": 0,
+			  "tileid": "c6407b72-6524-4032-9ce5-eb7104f8e797"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E44N35-44"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "1e59b9d5-ddc3-47b4-83a2-edecb2c72a9b",
+			  "sortorder": 0,
+			  "tileid": "ad4bee0b-caa7-4640-80b9-c0ce9be32d59"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "fbaf16b1-6e08-49c9-86ae-b8b3ae76b023",
+			"resourceinstanceid": "fbaf16b1-6e08-49c9-86ae-b8b3ae76b023"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  44,
+							  36
+							],
+							[
+							  44,
+							  36.25
+							],
+							[
+							  44.25,
+							  36.25
+							],
+							[
+							  44.25,
+							  36
+							],
+							[
+							  44,
+							  36
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "f7c931a5-14c9-4825-979a-37821ebe00a3",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "fbaf16b1-6e08-49c9-86ae-b8b3ae76b023",
+			  "sortorder": 0,
+			  "tileid": "fc4218db-2589-4f9f-9fbe-34b13b294746"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E44N36-11"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "fbaf16b1-6e08-49c9-86ae-b8b3ae76b023",
+			  "sortorder": 0,
+			  "tileid": "22dd15d8-dfa8-4587-889c-b778a48b95a9"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "066c9cbd-7e0d-4441-b078-9182fb180b88",
+			"resourceinstanceid": "066c9cbd-7e0d-4441-b078-9182fb180b88"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  44.25,
+							  36
+							],
+							[
+							  44.25,
+							  36.25
+							],
+							[
+							  44.5,
+							  36.25
+							],
+							[
+							  44.5,
+							  36
+							],
+							[
+							  44.25,
+							  36
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "a6dbf67e-5743-4baa-b69d-1668c86c6102",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "066c9cbd-7e0d-4441-b078-9182fb180b88",
+			  "sortorder": 0,
+			  "tileid": "91c5824b-affa-4bcb-9c07-243db777dce3"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E44N36-12"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "066c9cbd-7e0d-4441-b078-9182fb180b88",
+			  "sortorder": 0,
+			  "tileid": "d404aee0-9dc0-4582-bd06-76122b0f2e3b"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "6a0b6555-3d41-4419-b83b-2666cb061f28",
+			"resourceinstanceid": "6a0b6555-3d41-4419-b83b-2666cb061f28"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  44,
+							  36.25
+							],
+							[
+							  44,
+							  36.5
+							],
+							[
+							  44.25,
+							  36.5
+							],
+							[
+							  44.25,
+							  36.25
+							],
+							[
+							  44,
+							  36.25
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "ba138260-e743-4b80-8d5d-b00637b82cc7",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "6a0b6555-3d41-4419-b83b-2666cb061f28",
+			  "sortorder": 0,
+			  "tileid": "75165a66-fd92-4a8b-8ec2-53162089ab3f"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E44N36-13"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "6a0b6555-3d41-4419-b83b-2666cb061f28",
+			  "sortorder": 0,
+			  "tileid": "41e88742-b125-41a6-be7a-0553b67dc938"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "f2d25a72-8e99-4583-8cc1-c57e60ed63d4",
+			"resourceinstanceid": "f2d25a72-8e99-4583-8cc1-c57e60ed63d4"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  44.25,
+							  36.25
+							],
+							[
+							  44.25,
+							  36.5
+							],
+							[
+							  44.5,
+							  36.5
+							],
+							[
+							  44.5,
+							  36.25
+							],
+							[
+							  44.25,
+							  36.25
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "107f4b8f-202d-4206-9fcf-d15e6dda2ba5",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "f2d25a72-8e99-4583-8cc1-c57e60ed63d4",
+			  "sortorder": 0,
+			  "tileid": "08ad838d-33c7-4450-ae34-ac0b33fa5b2b"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E44N36-14"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "f2d25a72-8e99-4583-8cc1-c57e60ed63d4",
+			  "sortorder": 0,
+			  "tileid": "737c763c-a261-4686-8b9a-8c57a8815a4f"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "740e3b8a-2bc3-498f-8b62-27157a3183db",
+			"resourceinstanceid": "740e3b8a-2bc3-498f-8b62-27157a3183db"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  44.5,
+							  36
+							],
+							[
+							  44.5,
+							  36.25
+							],
+							[
+							  44.75,
+							  36.25
+							],
+							[
+							  44.75,
+							  36
+							],
+							[
+							  44.5,
+							  36
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "d17c4441-1789-48c8-b2f3-ffa0f710f4b1",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "740e3b8a-2bc3-498f-8b62-27157a3183db",
+			  "sortorder": 0,
+			  "tileid": "29d95bce-9662-4294-9182-379786220cdf"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E44N36-21"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "740e3b8a-2bc3-498f-8b62-27157a3183db",
+			  "sortorder": 0,
+			  "tileid": "cb47700e-cf1a-4e19-a40e-27b7da6355aa"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "338310dc-0b7f-489b-8bad-113c5a5ca558",
+			"resourceinstanceid": "338310dc-0b7f-489b-8bad-113c5a5ca558"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  44.75,
+							  36
+							],
+							[
+							  44.75,
+							  36.25
+							],
+							[
+							  45,
+							  36.25
+							],
+							[
+							  45,
+							  36
+							],
+							[
+							  44.75,
+							  36
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "bf4bfff2-29dc-46ce-9637-ee7441b21f73",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "338310dc-0b7f-489b-8bad-113c5a5ca558",
+			  "sortorder": 0,
+			  "tileid": "30709304-d2c9-4ee9-8786-22df3682bd20"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E44N36-22"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "338310dc-0b7f-489b-8bad-113c5a5ca558",
+			  "sortorder": 0,
+			  "tileid": "ea572fa4-4dae-4f15-89b4-3dc6fa7361a7"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "313ef776-725f-44e2-82bf-42357235c7eb",
+			"resourceinstanceid": "313ef776-725f-44e2-82bf-42357235c7eb"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  44.5,
+							  36.25
+							],
+							[
+							  44.5,
+							  36.5
+							],
+							[
+							  44.75,
+							  36.5
+							],
+							[
+							  44.75,
+							  36.25
+							],
+							[
+							  44.5,
+							  36.25
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "50b35d42-f032-4a8c-898b-64baf3eb5bd8",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "313ef776-725f-44e2-82bf-42357235c7eb",
+			  "sortorder": 0,
+			  "tileid": "72681af7-e3bd-4da7-b4c4-db5dfc027fdc"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E44N36-23"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "313ef776-725f-44e2-82bf-42357235c7eb",
+			  "sortorder": 0,
+			  "tileid": "155f60f7-7c0b-434b-855a-97c101ff2dc3"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "0f0b0eba-48da-43c4-919c-ccbe84960d22",
+			"resourceinstanceid": "0f0b0eba-48da-43c4-919c-ccbe84960d22"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  44.75,
+							  36.25
+							],
+							[
+							  44.75,
+							  36.5
+							],
+							[
+							  45,
+							  36.5
+							],
+							[
+							  45,
+							  36.25
+							],
+							[
+							  44.75,
+							  36.25
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "1033ddbb-7ea0-4794-b210-ad259e2c2f93",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "0f0b0eba-48da-43c4-919c-ccbe84960d22",
+			  "sortorder": 0,
+			  "tileid": "fb317c38-5436-490d-a67b-580847f0e80d"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E44N36-24"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "0f0b0eba-48da-43c4-919c-ccbe84960d22",
+			  "sortorder": 0,
+			  "tileid": "baab19eb-94bf-44a4-9361-3acfc06ff0f0"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "c44d590c-23e3-4349-b7a3-5eda558fbbe3",
+			"resourceinstanceid": "c44d590c-23e3-4349-b7a3-5eda558fbbe3"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  44,
+							  36.5
+							],
+							[
+							  44,
+							  36.75
+							],
+							[
+							  44.25,
+							  36.75
+							],
+							[
+							  44.25,
+							  36.5
+							],
+							[
+							  44,
+							  36.5
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "4027c3e0-a678-4a3a-86a9-782bd8f88baa",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "c44d590c-23e3-4349-b7a3-5eda558fbbe3",
+			  "sortorder": 0,
+			  "tileid": "3f5a3fe0-3b9f-41f5-b8f2-704857f756d6"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E44N36-31"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "c44d590c-23e3-4349-b7a3-5eda558fbbe3",
+			  "sortorder": 0,
+			  "tileid": "7226936d-afaa-4c28-91fa-095cff387dc7"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "d98e8bc1-b4e2-4823-8bfe-240e82a787b0",
+			"resourceinstanceid": "d98e8bc1-b4e2-4823-8bfe-240e82a787b0"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  44.25,
+							  36.5
+							],
+							[
+							  44.25,
+							  36.75
+							],
+							[
+							  44.5,
+							  36.75
+							],
+							[
+							  44.5,
+							  36.5
+							],
+							[
+							  44.25,
+							  36.5
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "1afa8048-9527-484f-b992-10b50273b1db",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "d98e8bc1-b4e2-4823-8bfe-240e82a787b0",
+			  "sortorder": 0,
+			  "tileid": "3cf56c57-b8fd-4f05-8df4-98d68c08a6b8"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E44N36-32"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "d98e8bc1-b4e2-4823-8bfe-240e82a787b0",
+			  "sortorder": 0,
+			  "tileid": "9bbbc36b-ce2c-4493-a50f-c8cb9a6f7fd5"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "dd61c80e-d086-46f5-a221-4a6c8ccfed4d",
+			"resourceinstanceid": "dd61c80e-d086-46f5-a221-4a6c8ccfed4d"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  44,
+							  36.75
+							],
+							[
+							  44,
+							  37
+							],
+							[
+							  44.25,
+							  37
+							],
+							[
+							  44.25,
+							  36.75
+							],
+							[
+							  44,
+							  36.75
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "b19a95a7-7463-40d4-a1fa-befc1a71fd19",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "dd61c80e-d086-46f5-a221-4a6c8ccfed4d",
+			  "sortorder": 0,
+			  "tileid": "73dc64fc-35fc-47cb-bfa3-c83108c66871"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E44N36-33"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "dd61c80e-d086-46f5-a221-4a6c8ccfed4d",
+			  "sortorder": 0,
+			  "tileid": "4c6522a5-a488-410d-a5b4-3d6b26fb3afe"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "6f79ccdb-d289-4f69-8351-f55eb22da958",
+			"resourceinstanceid": "6f79ccdb-d289-4f69-8351-f55eb22da958"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  44.25,
+							  36.75
+							],
+							[
+							  44.25,
+							  37
+							],
+							[
+							  44.5,
+							  37
+							],
+							[
+							  44.5,
+							  36.75
+							],
+							[
+							  44.25,
+							  36.75
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "b7042aaf-c0e8-4182-8196-7e20bd3bb308",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "6f79ccdb-d289-4f69-8351-f55eb22da958",
+			  "sortorder": 0,
+			  "tileid": "e378f6bd-3c6d-468e-bf16-e2772f068dac"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E44N36-34"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "6f79ccdb-d289-4f69-8351-f55eb22da958",
+			  "sortorder": 0,
+			  "tileid": "828f19c8-56a6-4084-9cf5-983c1742395f"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "d5df1ded-7102-4f0c-a93a-72181759c516",
+			"resourceinstanceid": "d5df1ded-7102-4f0c-a93a-72181759c516"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  44.5,
+							  36.5
+							],
+							[
+							  44.5,
+							  36.75
+							],
+							[
+							  44.75,
+							  36.75
+							],
+							[
+							  44.75,
+							  36.5
+							],
+							[
+							  44.5,
+							  36.5
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "fc60f48d-fe03-423d-b9f7-3ac0b4bc835b",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "d5df1ded-7102-4f0c-a93a-72181759c516",
+			  "sortorder": 0,
+			  "tileid": "556708f2-6750-4973-97f1-6ba485cfddaf"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E44N36-41"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "d5df1ded-7102-4f0c-a93a-72181759c516",
+			  "sortorder": 0,
+			  "tileid": "ce801837-30fd-4ff0-a623-9dd011da9952"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "54847574-4f51-4b43-80c3-7767b3090a66",
+			"resourceinstanceid": "54847574-4f51-4b43-80c3-7767b3090a66"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  44.75,
+							  36.5
+							],
+							[
+							  44.75,
+							  36.75
+							],
+							[
+							  45,
+							  36.75
+							],
+							[
+							  45,
+							  36.5
+							],
+							[
+							  44.75,
+							  36.5
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "4414c69a-e087-47b0-b6f4-60aac4985423",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "54847574-4f51-4b43-80c3-7767b3090a66",
+			  "sortorder": 0,
+			  "tileid": "eab4dac0-d71b-4e4d-b314-aefa410e4bc2"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E44N36-42"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "54847574-4f51-4b43-80c3-7767b3090a66",
+			  "sortorder": 0,
+			  "tileid": "d5136f38-4db9-4301-b1f7-dea6febe148d"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "16340156-ea02-4c24-ba09-017969a27253",
+			"resourceinstanceid": "16340156-ea02-4c24-ba09-017969a27253"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  44.5,
+							  36.75
+							],
+							[
+							  44.5,
+							  37
+							],
+							[
+							  44.75,
+							  37
+							],
+							[
+							  44.75,
+							  36.75
+							],
+							[
+							  44.5,
+							  36.75
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "67c8e7a9-bc82-496f-abe8-f566eedc47ad",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "16340156-ea02-4c24-ba09-017969a27253",
+			  "sortorder": 0,
+			  "tileid": "f0d5fb8f-1f84-49e0-b668-aa64ea69b2b9"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E44N36-43"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "16340156-ea02-4c24-ba09-017969a27253",
+			  "sortorder": 0,
+			  "tileid": "60932c41-d285-45c0-b7b7-d01e1f1f8a93"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "3d9af6ad-aede-43fa-b645-9d87a357bcb7",
+			"resourceinstanceid": "3d9af6ad-aede-43fa-b645-9d87a357bcb7"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  44.75,
+							  36.75
+							],
+							[
+							  44.75,
+							  37
+							],
+							[
+							  45,
+							  37
+							],
+							[
+							  45,
+							  36.75
+							],
+							[
+							  44.75,
+							  36.75
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "5129681e-fd97-464b-9de7-747a049a1ec1",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "3d9af6ad-aede-43fa-b645-9d87a357bcb7",
+			  "sortorder": 0,
+			  "tileid": "50a30169-abb8-426c-ba51-92fac081c641"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E44N36-44"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "3d9af6ad-aede-43fa-b645-9d87a357bcb7",
+			  "sortorder": 0,
+			  "tileid": "66740f18-0fef-4417-b305-3eba0a749df7"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "288a24e6-8ffe-4b7f-91b9-4ac1747a7ecb",
+			"resourceinstanceid": "288a24e6-8ffe-4b7f-91b9-4ac1747a7ecb"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  44,
+							  37
+							],
+							[
+							  44,
+							  37.25
+							],
+							[
+							  44.25,
+							  37.25
+							],
+							[
+							  44.25,
+							  37
+							],
+							[
+							  44,
+							  37
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "3d16d323-727e-407a-860a-04e960d0f653",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "288a24e6-8ffe-4b7f-91b9-4ac1747a7ecb",
+			  "sortorder": 0,
+			  "tileid": "11fc789a-dd0c-4c31-98ef-ec6547a1d54f"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E44N37-11"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "288a24e6-8ffe-4b7f-91b9-4ac1747a7ecb",
+			  "sortorder": 0,
+			  "tileid": "cecfde26-142c-4e82-92cc-c6f7abfaebcf"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "de255d98-ade4-4c37-aa62-ca521a993f8c",
+			"resourceinstanceid": "de255d98-ade4-4c37-aa62-ca521a993f8c"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E44N37-12"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "de255d98-ade4-4c37-aa62-ca521a993f8c",
+			  "sortorder": 0,
+			  "tileid": "e84e69d8-356f-4a1d-9487-f938825ab560"
+			},
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  44.25,
+							  37
+							],
+							[
+							  44.25,
+							  37.25
+							],
+							[
+							  44.5,
+							  37.25
+							],
+							[
+							  44.5,
+							  37
+							],
+							[
+							  44.25,
+							  37
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "e7d2cedc-2f32-4738-a2a4-99731e25d6da",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "de255d98-ade4-4c37-aa62-ca521a993f8c",
+			  "sortorder": 0,
+			  "tileid": "39aea857-a866-43d7-a674-ce018f6e8152"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "34bf43ac-3d7d-4b4e-8f13-02114743c269",
+			"resourceinstanceid": "34bf43ac-3d7d-4b4e-8f13-02114743c269"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E44N37-13"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "34bf43ac-3d7d-4b4e-8f13-02114743c269",
+			  "sortorder": 0,
+			  "tileid": "e504c8cc-c008-42fd-b841-f4f0fc36b55b"
+			},
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  44,
+							  37.25
+							],
+							[
+							  44,
+							  37.5
+							],
+							[
+							  44.25,
+							  37.5
+							],
+							[
+							  44.25,
+							  37.25
+							],
+							[
+							  44,
+							  37.25
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "71485781-db7b-4fa7-97fa-0037e3e2fd8b",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "34bf43ac-3d7d-4b4e-8f13-02114743c269",
+			  "sortorder": 0,
+			  "tileid": "8cf1d835-a76f-4f37-869b-f1a80c9e28a9"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "b3f62da5-d13b-41db-8d7f-47ede976176e",
+			"resourceinstanceid": "b3f62da5-d13b-41db-8d7f-47ede976176e"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E44N37-14"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "b3f62da5-d13b-41db-8d7f-47ede976176e",
+			  "sortorder": 0,
+			  "tileid": "876d851e-9cc6-4f19-b898-b3ee82cbb5af"
+			},
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  44.25,
+							  37.25
+							],
+							[
+							  44.25,
+							  37.5
+							],
+							[
+							  44.5,
+							  37.5
+							],
+							[
+							  44.5,
+							  37.25
+							],
+							[
+							  44.25,
+							  37.25
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "4e0fba29-cd17-4a8b-9876-afef8c694efd",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "b3f62da5-d13b-41db-8d7f-47ede976176e",
+			  "sortorder": 0,
+			  "tileid": "b298c193-fbc6-4111-96b6-e62b362ccbd4"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "993b17e0-d42d-4d8b-a1e1-53b1bc5d8f73",
+			"resourceinstanceid": "993b17e0-d42d-4d8b-a1e1-53b1bc5d8f73"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  44.5,
+							  37
+							],
+							[
+							  44.5,
+							  37.25
+							],
+							[
+							  44.75,
+							  37.25
+							],
+							[
+							  44.75,
+							  37
+							],
+							[
+							  44.5,
+							  37
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "49fc83ee-6d71-48d9-a653-37c44410937e",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "993b17e0-d42d-4d8b-a1e1-53b1bc5d8f73",
+			  "sortorder": 0,
+			  "tileid": "be2cc0b3-328c-4faa-bf0f-e075ebaefe03"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E44N37-21"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "993b17e0-d42d-4d8b-a1e1-53b1bc5d8f73",
+			  "sortorder": 0,
+			  "tileid": "72abfc53-ff4a-445f-908b-4e0d6dfb1ffc"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "ba3c87ba-b30d-49d2-8891-f79e54491fc6",
+			"resourceinstanceid": "ba3c87ba-b30d-49d2-8891-f79e54491fc6"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E44N37-22"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "ba3c87ba-b30d-49d2-8891-f79e54491fc6",
+			  "sortorder": 0,
+			  "tileid": "3786adcc-a914-4d38-846f-df11b0b80cdb"
+			},
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  44.75,
+							  37
+							],
+							[
+							  44.75,
+							  37.25
+							],
+							[
+							  45,
+							  37.25
+							],
+							[
+							  45,
+							  37
+							],
+							[
+							  44.75,
+							  37
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "d5b43974-64be-4dff-9727-8c388aabdffd",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "ba3c87ba-b30d-49d2-8891-f79e54491fc6",
+			  "sortorder": 0,
+			  "tileid": "7d54d6f3-e961-4f28-a25a-ab9fa90be65f"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "bea9085c-01a3-47e7-875e-3c20bb993674",
+			"resourceinstanceid": "bea9085c-01a3-47e7-875e-3c20bb993674"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  45,
+							  34.25
+							],
+							[
+							  45,
+							  34.5
+							],
+							[
+							  45.25,
+							  34.5
+							],
+							[
+							  45.25,
+							  34.25
+							],
+							[
+							  45,
+							  34.25
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "ad888058-d6b3-4448-acfa-c21d3a622e45",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "bea9085c-01a3-47e7-875e-3c20bb993674",
+			  "sortorder": 0,
+			  "tileid": "a70c1ba7-177b-407d-b1cd-d5fe1763516c"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E45N34-13"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "bea9085c-01a3-47e7-875e-3c20bb993674",
+			  "sortorder": 0,
+			  "tileid": "cb45f12c-d61d-48eb-8c5e-0239bc1e1813"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "c534edee-36f3-4b58-aac9-16e1e0acd7e8",
+			"resourceinstanceid": "c534edee-36f3-4b58-aac9-16e1e0acd7e8"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  45.25,
+							  34.25
+							],
+							[
+							  45.25,
+							  34.5
+							],
+							[
+							  45.5,
+							  34.5
+							],
+							[
+							  45.5,
+							  34.25
+							],
+							[
+							  45.25,
+							  34.25
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "65751a69-e83a-4d7d-8b34-d757d1472e67",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "c534edee-36f3-4b58-aac9-16e1e0acd7e8",
+			  "sortorder": 0,
+			  "tileid": "e5bbc1be-136a-4cdd-b75b-108881609a91"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E45N34-14"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "c534edee-36f3-4b58-aac9-16e1e0acd7e8",
+			  "sortorder": 0,
+			  "tileid": "0b483eef-82e2-4ed4-94a9-1900b34fe514"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "fa9277a1-0f4d-4d72-a469-71f8381c7276",
+			"resourceinstanceid": "fa9277a1-0f4d-4d72-a469-71f8381c7276"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E45N34-23"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "fa9277a1-0f4d-4d72-a469-71f8381c7276",
+			  "sortorder": 0,
+			  "tileid": "475f98d4-17eb-433a-a498-af4d933dce16"
+			},
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  45.5,
+							  34.25
+							],
+							[
+							  45.5,
+							  34.5
+							],
+							[
+							  45.75,
+							  34.5
+							],
+							[
+							  45.75,
+							  34.25
+							],
+							[
+							  45.5,
+							  34.25
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "cec93fc2-ba12-49b5-b01f-79d95f2e419a",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "fa9277a1-0f4d-4d72-a469-71f8381c7276",
+			  "sortorder": 0,
+			  "tileid": "22fab9db-1952-4de6-95c9-c0ff4f27fdfa"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "92370b5c-1c0d-43e7-ae4d-9d70618cfead",
+			"resourceinstanceid": "92370b5c-1c0d-43e7-ae4d-9d70618cfead"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  45,
+							  34.5
+							],
+							[
+							  45,
+							  34.75
+							],
+							[
+							  45.25,
+							  34.75
+							],
+							[
+							  45.25,
+							  34.5
+							],
+							[
+							  45,
+							  34.5
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "4a1311e7-ba11-4ccb-a030-066b7cfa66ca",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "92370b5c-1c0d-43e7-ae4d-9d70618cfead",
+			  "sortorder": 0,
+			  "tileid": "e8717758-1015-4b03-b56d-b7023f88d997"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E45N34-31"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "92370b5c-1c0d-43e7-ae4d-9d70618cfead",
+			  "sortorder": 0,
+			  "tileid": "8827d4f7-c6bf-4902-ab47-a3e7c3e5aa64"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "87511bc8-7174-4e02-ad8b-37ccc3f05e47",
+			"resourceinstanceid": "87511bc8-7174-4e02-ad8b-37ccc3f05e47"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  45.25,
+							  34.5
+							],
+							[
+							  45.25,
+							  34.75
+							],
+							[
+							  45.5,
+							  34.75
+							],
+							[
+							  45.5,
+							  34.5
+							],
+							[
+							  45.25,
+							  34.5
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "a05d82a0-9bcd-4a95-a89f-250e3f3872b8",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "87511bc8-7174-4e02-ad8b-37ccc3f05e47",
+			  "sortorder": 0,
+			  "tileid": "b29ab3f6-2e8a-4589-90a5-1bc8bda77668"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E45N34-32"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "87511bc8-7174-4e02-ad8b-37ccc3f05e47",
+			  "sortorder": 0,
+			  "tileid": "78d50f39-c63c-4b9d-bfe3-f809f7f6fc7d"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "3fb1167b-0a6b-4674-a424-e4fbfd8d0daf",
+			"resourceinstanceid": "3fb1167b-0a6b-4674-a424-e4fbfd8d0daf"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  45,
+							  34.75
+							],
+							[
+							  45,
+							  35
+							],
+							[
+							  45.25,
+							  35
+							],
+							[
+							  45.25,
+							  34.75
+							],
+							[
+							  45,
+							  34.75
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "02d8c164-9367-4502-b6b9-f3215e72dc81",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "3fb1167b-0a6b-4674-a424-e4fbfd8d0daf",
+			  "sortorder": 0,
+			  "tileid": "425df241-0824-446d-a7d7-f9b769ceff86"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E45N34-33"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "3fb1167b-0a6b-4674-a424-e4fbfd8d0daf",
+			  "sortorder": 0,
+			  "tileid": "21a2e01a-44cc-41fa-933a-720775744953"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "0359d4cf-8c53-4c6c-8a21-e301bcf83e80",
+			"resourceinstanceid": "0359d4cf-8c53-4c6c-8a21-e301bcf83e80"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  45.25,
+							  34.75
+							],
+							[
+							  45.25,
+							  35
+							],
+							[
+							  45.5,
+							  35
+							],
+							[
+							  45.5,
+							  34.75
+							],
+							[
+							  45.25,
+							  34.75
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "d32f8d96-f342-4e75-923a-f8b62a9036ee",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "0359d4cf-8c53-4c6c-8a21-e301bcf83e80",
+			  "sortorder": 0,
+			  "tileid": "ba8c89b9-40fb-4843-81a1-bab772494815"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E45N34-34"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "0359d4cf-8c53-4c6c-8a21-e301bcf83e80",
+			  "sortorder": 0,
+			  "tileid": "4e2ea74b-f3d3-4b5f-adcd-8795133f99ed"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "d2143114-b0da-44df-86b6-a3af5c0730cc",
+			"resourceinstanceid": "d2143114-b0da-44df-86b6-a3af5c0730cc"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  45.5,
+							  34.5
+							],
+							[
+							  45.5,
+							  34.75
+							],
+							[
+							  45.75,
+							  34.75
+							],
+							[
+							  45.75,
+							  34.5
+							],
+							[
+							  45.5,
+							  34.5
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "bd986ca8-3dda-431f-95a4-0d210baa773b",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "d2143114-b0da-44df-86b6-a3af5c0730cc",
+			  "sortorder": 0,
+			  "tileid": "a5dafcde-33a4-4734-8fd2-8ea9efb0d229"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E45N34-41"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "d2143114-b0da-44df-86b6-a3af5c0730cc",
+			  "sortorder": 0,
+			  "tileid": "3ab9318d-2633-4e19-8d72-686374a2c317"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "e31558cc-3ab1-4bf8-96dd-951a027489e0",
+			"resourceinstanceid": "e31558cc-3ab1-4bf8-96dd-951a027489e0"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  45.5,
+							  34.75
+							],
+							[
+							  45.5,
+							  35
+							],
+							[
+							  45.75,
+							  35
+							],
+							[
+							  45.75,
+							  34.75
+							],
+							[
+							  45.5,
+							  34.75
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "3960fbf9-1309-4183-9ecd-40efd0ba8786",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "e31558cc-3ab1-4bf8-96dd-951a027489e0",
+			  "sortorder": 0,
+			  "tileid": "386edb3e-ec73-4805-bdfc-0b4f65ea4ee9"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E45N34-43"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "e31558cc-3ab1-4bf8-96dd-951a027489e0",
+			  "sortorder": 0,
+			  "tileid": "f78e0984-4d30-4229-9d96-8511499b3e4a"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "62c98f9d-b99f-4cc3-9f2e-02b48ceeaa55",
+			"resourceinstanceid": "62c98f9d-b99f-4cc3-9f2e-02b48ceeaa55"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E45N34-44"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "62c98f9d-b99f-4cc3-9f2e-02b48ceeaa55",
+			  "sortorder": 0,
+			  "tileid": "f53827a4-f510-44e8-9152-07218e7dfcc5"
+			},
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  45.75,
+							  34.75
+							],
+							[
+							  45.75,
+							  35
+							],
+							[
+							  46,
+							  35
+							],
+							[
+							  46,
+							  34.75
+							],
+							[
+							  45.75,
+							  34.75
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "31e556a5-0354-44bd-ac1e-4f17fbb83251",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "62c98f9d-b99f-4cc3-9f2e-02b48ceeaa55",
+			  "sortorder": 0,
+			  "tileid": "a3b08cea-971c-4246-a024-45a2cc14bba3"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "4d16c6dc-b3ef-4de7-aa32-49e6ed9f3665",
+			"resourceinstanceid": "4d16c6dc-b3ef-4de7-aa32-49e6ed9f3665"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  45,
+							  35
+							],
+							[
+							  45,
+							  35.25
+							],
+							[
+							  45.25,
+							  35.25
+							],
+							[
+							  45.25,
+							  35
+							],
+							[
+							  45,
+							  35
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "a860f7d7-79ce-4c06-a958-1a08322fb43f",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "4d16c6dc-b3ef-4de7-aa32-49e6ed9f3665",
+			  "sortorder": 0,
+			  "tileid": "69e6ff16-3411-47b3-bae9-c64d52c17050"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E45N35-11"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "4d16c6dc-b3ef-4de7-aa32-49e6ed9f3665",
+			  "sortorder": 0,
+			  "tileid": "4187ba9f-5d12-4e19-9cef-5e315e3d66c9"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "6d480826-a3b0-4e2a-86a5-8e5afa91a79c",
+			"resourceinstanceid": "6d480826-a3b0-4e2a-86a5-8e5afa91a79c"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  45.25,
+							  35
+							],
+							[
+							  45.25,
+							  35.25
+							],
+							[
+							  45.5,
+							  35.25
+							],
+							[
+							  45.5,
+							  35
+							],
+							[
+							  45.25,
+							  35
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "6beb791d-7e93-4819-8a55-b573b23a94b5",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "6d480826-a3b0-4e2a-86a5-8e5afa91a79c",
+			  "sortorder": 0,
+			  "tileid": "be982fb7-10ec-499d-a88e-0b79ae76ba0c"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E45N35-12"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "6d480826-a3b0-4e2a-86a5-8e5afa91a79c",
+			  "sortorder": 0,
+			  "tileid": "b033aa28-e6a0-4439-8671-deb7b204227d"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "85222901-c2c3-4e02-8416-025dcce20c0f",
+			"resourceinstanceid": "85222901-c2c3-4e02-8416-025dcce20c0f"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  45,
+							  35.25
+							],
+							[
+							  45,
+							  35.5
+							],
+							[
+							  45.25,
+							  35.5
+							],
+							[
+							  45.25,
+							  35.25
+							],
+							[
+							  45,
+							  35.25
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "bdfb8002-7283-46f7-9dc6-56685d761c13",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "85222901-c2c3-4e02-8416-025dcce20c0f",
+			  "sortorder": 0,
+			  "tileid": "4af9a411-70ef-4f1d-86a9-cbbfaee71c70"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E45N35-13"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "85222901-c2c3-4e02-8416-025dcce20c0f",
+			  "sortorder": 0,
+			  "tileid": "b9821cfb-cbde-480f-bf1b-a52e17b3006a"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "a44c7f50-7563-46d9-ab3e-728ce8306e8c",
+			"resourceinstanceid": "a44c7f50-7563-46d9-ab3e-728ce8306e8c"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  45.25,
+							  35.25
+							],
+							[
+							  45.25,
+							  35.5
+							],
+							[
+							  45.5,
+							  35.5
+							],
+							[
+							  45.5,
+							  35.25
+							],
+							[
+							  45.25,
+							  35.25
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "a9228301-0ed4-4928-82fa-e9487e9b376a",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "a44c7f50-7563-46d9-ab3e-728ce8306e8c",
+			  "sortorder": 0,
+			  "tileid": "ed45250b-58eb-4ac3-882b-183bc4d7f9a8"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E45N35-14"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "a44c7f50-7563-46d9-ab3e-728ce8306e8c",
+			  "sortorder": 0,
+			  "tileid": "64be4317-2876-4cdc-b592-17ece9dd0a97"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "cf6b0e9f-8243-4713-962f-47c0c0f51444",
+			"resourceinstanceid": "cf6b0e9f-8243-4713-962f-47c0c0f51444"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  45.5,
+							  35
+							],
+							[
+							  45.5,
+							  35.25
+							],
+							[
+							  45.75,
+							  35.25
+							],
+							[
+							  45.75,
+							  35
+							],
+							[
+							  45.5,
+							  35
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "f97e3c8c-cf48-4c3a-8e4e-18ac2f0b4f27",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "cf6b0e9f-8243-4713-962f-47c0c0f51444",
+			  "sortorder": 0,
+			  "tileid": "d8ffb99a-aa95-4b34-acad-08637807a496"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E45N35-21"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "cf6b0e9f-8243-4713-962f-47c0c0f51444",
+			  "sortorder": 0,
+			  "tileid": "ab28ad2b-a206-41bf-8044-765922ce17ab"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "26700444-0287-4ea4-bb69-65da9afad7df",
+			"resourceinstanceid": "26700444-0287-4ea4-bb69-65da9afad7df"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  45.75,
+							  35
+							],
+							[
+							  45.75,
+							  35.25
+							],
+							[
+							  46,
+							  35.25
+							],
+							[
+							  46,
+							  35
+							],
+							[
+							  45.75,
+							  35
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "7f4dfe26-449d-4903-b4a2-3311171cd66f",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "26700444-0287-4ea4-bb69-65da9afad7df",
+			  "sortorder": 0,
+			  "tileid": "5d9c62b5-a0f7-4a58-a818-218a02962694"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E45N35-22"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "26700444-0287-4ea4-bb69-65da9afad7df",
+			  "sortorder": 0,
+			  "tileid": "eb5ec2e1-7cdb-4f38-924b-1be78b6727f8"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "571b6041-9a4a-4d1b-a1be-3e61f6d67da0",
+			"resourceinstanceid": "571b6041-9a4a-4d1b-a1be-3e61f6d67da0"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  45.5,
+							  35.25
+							],
+							[
+							  45.5,
+							  35.5
+							],
+							[
+							  45.75,
+							  35.5
+							],
+							[
+							  45.75,
+							  35.25
+							],
+							[
+							  45.5,
+							  35.25
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "4c7bd5a0-0c17-4fd8-b9b9-e36e5c0b7b0d",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "571b6041-9a4a-4d1b-a1be-3e61f6d67da0",
+			  "sortorder": 0,
+			  "tileid": "ae5af42d-31f0-423a-807b-fa5165456dd0"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E45N35-23"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "571b6041-9a4a-4d1b-a1be-3e61f6d67da0",
+			  "sortorder": 0,
+			  "tileid": "db9e1f86-960d-4258-bf51-66876f86ab97"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "953558e7-2fa3-4001-905a-58de0db0e42b",
+			"resourceinstanceid": "953558e7-2fa3-4001-905a-58de0db0e42b"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  45.75,
+							  35.25
+							],
+							[
+							  45.75,
+							  35.5
+							],
+							[
+							  46,
+							  35.5
+							],
+							[
+							  46,
+							  35.25
+							],
+							[
+							  45.75,
+							  35.25
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "c8e2b261-4a2a-4e51-9fb7-b0c6ed8d8188",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "953558e7-2fa3-4001-905a-58de0db0e42b",
+			  "sortorder": 0,
+			  "tileid": "4b3c8382-ba4b-466d-abf4-8d3c8a2b6ec3"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E45N35-24"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "953558e7-2fa3-4001-905a-58de0db0e42b",
+			  "sortorder": 0,
+			  "tileid": "54c2b403-68d4-4a4e-b72a-6747e1267cbe"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "062fbb23-d34e-4dad-9dc9-0cdf9e8daabe",
+			"resourceinstanceid": "062fbb23-d34e-4dad-9dc9-0cdf9e8daabe"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  45,
+							  35.5
+							],
+							[
+							  45,
+							  35.75
+							],
+							[
+							  45.25,
+							  35.75
+							],
+							[
+							  45.25,
+							  35.5
+							],
+							[
+							  45,
+							  35.5
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "c531f1a3-2808-4eb5-b80a-740f28ca9412",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "062fbb23-d34e-4dad-9dc9-0cdf9e8daabe",
+			  "sortorder": 0,
+			  "tileid": "96a78571-b939-4513-a014-5b0d154888f7"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E45N35-31"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "062fbb23-d34e-4dad-9dc9-0cdf9e8daabe",
+			  "sortorder": 0,
+			  "tileid": "3847c35b-54ce-4d02-b1a0-f7b7f9b94eba"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "f2233cd0-2fe5-4ce9-80bf-204f06a1b233",
+			"resourceinstanceid": "f2233cd0-2fe5-4ce9-80bf-204f06a1b233"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  45.25,
+							  35.5
+							],
+							[
+							  45.25,
+							  35.75
+							],
+							[
+							  45.5,
+							  35.75
+							],
+							[
+							  45.5,
+							  35.5
+							],
+							[
+							  45.25,
+							  35.5
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "fe89e7fc-3794-418e-8a3c-c6051231b029",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "f2233cd0-2fe5-4ce9-80bf-204f06a1b233",
+			  "sortorder": 0,
+			  "tileid": "7966129c-af9a-44cb-8198-24820d17ade5"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E45N35-32"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "f2233cd0-2fe5-4ce9-80bf-204f06a1b233",
+			  "sortorder": 0,
+			  "tileid": "e1277c21-95fd-4ad0-8b2c-e0bb8ac1b1e7"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "8e48fc28-3573-4aab-bd22-62ea8d21dd63",
+			"resourceinstanceid": "8e48fc28-3573-4aab-bd22-62ea8d21dd63"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  45,
+							  35.75
+							],
+							[
+							  45,
+							  36
+							],
+							[
+							  45.25,
+							  36
+							],
+							[
+							  45.25,
+							  35.75
+							],
+							[
+							  45,
+							  35.75
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "000ca9d1-e68f-4ded-8439-004046fec99e",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "8e48fc28-3573-4aab-bd22-62ea8d21dd63",
+			  "sortorder": 0,
+			  "tileid": "a85c390d-77ce-49d5-b2d7-aaa96cb32018"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E45N35-33"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "8e48fc28-3573-4aab-bd22-62ea8d21dd63",
+			  "sortorder": 0,
+			  "tileid": "03749560-2c9a-4382-bb46-bcf4f5e8ba4a"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "f6339fa6-dfd4-4e47-b37c-58f09b04c444",
+			"resourceinstanceid": "f6339fa6-dfd4-4e47-b37c-58f09b04c444"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  45.25,
+							  35.75
+							],
+							[
+							  45.25,
+							  36
+							],
+							[
+							  45.5,
+							  36
+							],
+							[
+							  45.5,
+							  35.75
+							],
+							[
+							  45.25,
+							  35.75
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "98a8e823-7ca9-4fd5-b661-4673546f186f",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "f6339fa6-dfd4-4e47-b37c-58f09b04c444",
+			  "sortorder": 0,
+			  "tileid": "a6f5b912-fd1f-48f8-a17a-e78c21d643be"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E45N35-34"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "f6339fa6-dfd4-4e47-b37c-58f09b04c444",
+			  "sortorder": 0,
+			  "tileid": "a055b036-c886-4c27-a116-68430163923b"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "fc0c384b-d26c-41d9-abf3-4ac283b1ee3b",
+			"resourceinstanceid": "fc0c384b-d26c-41d9-abf3-4ac283b1ee3b"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  45.5,
+							  35.5
+							],
+							[
+							  45.5,
+							  35.75
+							],
+							[
+							  45.75,
+							  35.75
+							],
+							[
+							  45.75,
+							  35.5
+							],
+							[
+							  45.5,
+							  35.5
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "803463c0-3cf5-490e-885f-02fdda26d84e",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "fc0c384b-d26c-41d9-abf3-4ac283b1ee3b",
+			  "sortorder": 0,
+			  "tileid": "055330dc-1ac2-4fe1-9876-84ccf1a66d7c"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E45N35-41"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "fc0c384b-d26c-41d9-abf3-4ac283b1ee3b",
+			  "sortorder": 0,
+			  "tileid": "2ea388d1-7716-4c17-ae5b-260a0a7e8d0c"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "b8f8ab62-a035-41c1-91f0-1e023ee4bd3b",
+			"resourceinstanceid": "b8f8ab62-a035-41c1-91f0-1e023ee4bd3b"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  45.75,
+							  35.5
+							],
+							[
+							  45.75,
+							  35.75
+							],
+							[
+							  46,
+							  35.75
+							],
+							[
+							  46,
+							  35.5
+							],
+							[
+							  45.75,
+							  35.5
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "1b2ced02-d5ab-43e6-9b1c-8f74a89497e3",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "b8f8ab62-a035-41c1-91f0-1e023ee4bd3b",
+			  "sortorder": 0,
+			  "tileid": "fc1643bf-1946-4edd-a194-3860ed7eae96"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E45N35-42"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "b8f8ab62-a035-41c1-91f0-1e023ee4bd3b",
+			  "sortorder": 0,
+			  "tileid": "438c0780-b062-416e-8609-0992a385959c"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "81601360-07c9-4156-a832-a5bf39418213",
+			"resourceinstanceid": "81601360-07c9-4156-a832-a5bf39418213"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  45.5,
+							  35.75
+							],
+							[
+							  45.5,
+							  36
+							],
+							[
+							  45.75,
+							  36
+							],
+							[
+							  45.75,
+							  35.75
+							],
+							[
+							  45.5,
+							  35.75
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "8ed4a525-86f9-465b-9bc5-d8c1c7583fe6",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "81601360-07c9-4156-a832-a5bf39418213",
+			  "sortorder": 0,
+			  "tileid": "5ecc8c2d-f737-414f-95d9-b7c074e34657"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E45N35-43"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "81601360-07c9-4156-a832-a5bf39418213",
+			  "sortorder": 0,
+			  "tileid": "b2512865-91d7-400e-b4bb-6112b7af090f"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "ba91b4c8-892b-4ecb-a468-097cd41ccafd",
+			"resourceinstanceid": "ba91b4c8-892b-4ecb-a468-097cd41ccafd"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  45.75,
+							  35.75
+							],
+							[
+							  45.75,
+							  36
+							],
+							[
+							  46,
+							  36
+							],
+							[
+							  46,
+							  35.75
+							],
+							[
+							  45.75,
+							  35.75
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "b66011c5-3b3f-41bc-885c-c4ecfe2753e0",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "ba91b4c8-892b-4ecb-a468-097cd41ccafd",
+			  "sortorder": 0,
+			  "tileid": "d60cbc68-d73e-4882-8826-1a3a5d35e602"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E45N35-44"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "ba91b4c8-892b-4ecb-a468-097cd41ccafd",
+			  "sortorder": 0,
+			  "tileid": "5a313719-b7b2-4e4f-a381-3d9b3690c143"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "5e7e94e5-8e32-4db7-ac77-9a4c41069573",
+			"resourceinstanceid": "5e7e94e5-8e32-4db7-ac77-9a4c41069573"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  45,
+							  36
+							],
+							[
+							  45,
+							  36.25
+							],
+							[
+							  45.25,
+							  36.25
+							],
+							[
+							  45.25,
+							  36
+							],
+							[
+							  45,
+							  36
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "5de5b01c-b4a3-4811-b245-a0f5277a7b32",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "5e7e94e5-8e32-4db7-ac77-9a4c41069573",
+			  "sortorder": 0,
+			  "tileid": "1f205ba3-bbff-4a8d-86a9-b3e31508c32e"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E45N36-11"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "5e7e94e5-8e32-4db7-ac77-9a4c41069573",
+			  "sortorder": 0,
+			  "tileid": "95b92e05-a940-43be-bfbb-9eabc807fc8f"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "ce93e0d5-2171-456e-9e72-f34703598c2f",
+			"resourceinstanceid": "ce93e0d5-2171-456e-9e72-f34703598c2f"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  45.25,
+							  36
+							],
+							[
+							  45.25,
+							  36.25
+							],
+							[
+							  45.5,
+							  36.25
+							],
+							[
+							  45.5,
+							  36
+							],
+							[
+							  45.25,
+							  36
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "5d59520f-178b-4746-8726-4cb92f5596db",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "ce93e0d5-2171-456e-9e72-f34703598c2f",
+			  "sortorder": 0,
+			  "tileid": "efa9a7b1-aa73-455c-857d-c9eb81844b99"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E45N36-12"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "ce93e0d5-2171-456e-9e72-f34703598c2f",
+			  "sortorder": 0,
+			  "tileid": "e25934ea-a8ef-4b49-9676-9857d3f37f7f"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "e435009e-4bbb-4a33-a281-6a541b14d886",
+			"resourceinstanceid": "e435009e-4bbb-4a33-a281-6a541b14d886"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  45,
+							  36.25
+							],
+							[
+							  45,
+							  36.5
+							],
+							[
+							  45.25,
+							  36.5
+							],
+							[
+							  45.25,
+							  36.25
+							],
+							[
+							  45,
+							  36.25
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "5459060b-c5fa-4080-8816-109d0532d878",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "e435009e-4bbb-4a33-a281-6a541b14d886",
+			  "sortorder": 0,
+			  "tileid": "5290c9d5-b121-4f9b-94b2-970b540572fb"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E45N36-13"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "e435009e-4bbb-4a33-a281-6a541b14d886",
+			  "sortorder": 0,
+			  "tileid": "ac653985-de7c-48b8-a8d5-46b8f5eca161"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "8f38e52e-fd3d-4126-a8ed-a7e73f91a0c2",
+			"resourceinstanceid": "8f38e52e-fd3d-4126-a8ed-a7e73f91a0c2"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E45N36-14"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "8f38e52e-fd3d-4126-a8ed-a7e73f91a0c2",
+			  "sortorder": 0,
+			  "tileid": "898f4ce4-a8a7-40f9-9e1c-c0f6c14effed"
+			},
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  45.25,
+							  36.25
+							],
+							[
+							  45.25,
+							  36.5
+							],
+							[
+							  45.5,
+							  36.5
+							],
+							[
+							  45.5,
+							  36.25
+							],
+							[
+							  45.25,
+							  36.25
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "a6d9bf1d-94c0-4784-a99d-a03db51b2df3",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "8f38e52e-fd3d-4126-a8ed-a7e73f91a0c2",
+			  "sortorder": 0,
+			  "tileid": "cacbf71f-d4f2-4149-a244-12beac247364"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "4d5b7d19-1388-4db9-9877-ab1dbb19e8ca",
+			"resourceinstanceid": "4d5b7d19-1388-4db9-9877-ab1dbb19e8ca"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E45N36-21"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "4d5b7d19-1388-4db9-9877-ab1dbb19e8ca",
+			  "sortorder": 0,
+			  "tileid": "79e354b4-02c1-41ae-b3c5-9d929eb896c7"
+			},
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  45.5,
+							  36
+							],
+							[
+							  45.5,
+							  36.25
+							],
+							[
+							  45.75,
+							  36.25
+							],
+							[
+							  45.75,
+							  36
+							],
+							[
+							  45.5,
+							  36
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "da1cf1fe-a2fb-417c-9a05-7075f8276997",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "4d5b7d19-1388-4db9-9877-ab1dbb19e8ca",
+			  "sortorder": 0,
+			  "tileid": "89cde7bf-d975-40e2-8e4c-fcef7681cd4c"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "8f341c5e-cb13-4d61-a936-d49eb024c4c5",
+			"resourceinstanceid": "8f341c5e-cb13-4d61-a936-d49eb024c4c5"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  45,
+							  36.5
+							],
+							[
+							  45,
+							  36.75
+							],
+							[
+							  45.25,
+							  36.75
+							],
+							[
+							  45.25,
+							  36.5
+							],
+							[
+							  45,
+							  36.5
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "aef13c19-9f2f-4574-8174-87a52f017936",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "8f341c5e-cb13-4d61-a936-d49eb024c4c5",
+			  "sortorder": 0,
+			  "tileid": "e894a530-668e-4feb-84b9-dd192b6601a7"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E45N36-31"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "8f341c5e-cb13-4d61-a936-d49eb024c4c5",
+			  "sortorder": 0,
+			  "tileid": "09c24e0a-e69f-4a7d-a687-ade5592a7391"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "a5482cce-3845-4301-b55a-4536761f1f90",
+			"resourceinstanceid": "a5482cce-3845-4301-b55a-4536761f1f90"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E45N36-33"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "a5482cce-3845-4301-b55a-4536761f1f90",
+			  "sortorder": 0,
+			  "tileid": "fa0288f3-c98d-4443-ad10-0dea009fb773"
+			},
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  45,
+							  36.75
+							],
+							[
+							  45,
+							  37
+							],
+							[
+							  45.25,
+							  37
+							],
+							[
+							  45.25,
+							  36.75
+							],
+							[
+							  45,
+							  36.75
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "3f146f2f-f651-46f8-a2d8-daee651debd1",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "a5482cce-3845-4301-b55a-4536761f1f90",
+			  "sortorder": 0,
+			  "tileid": "66bcf954-64ec-4e23-b694-d618326471e6"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "6292faaa-4d37-4259-baf5-5a30d2809c3a",
+			"resourceinstanceid": "6292faaa-4d37-4259-baf5-5a30d2809c3a"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  46,
+							  35
+							],
+							[
+							  46,
+							  35.25
+							],
+							[
+							  46.25,
+							  35.25
+							],
+							[
+							  46.25,
+							  35
+							],
+							[
+							  46,
+							  35
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "6a270503-8e16-4c3b-bdab-1dca0fa9bc94",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "6292faaa-4d37-4259-baf5-5a30d2809c3a",
+			  "sortorder": 0,
+			  "tileid": "b806be71-6cf0-462f-827d-f2e81d4215e9"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E46N35-11"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "6292faaa-4d37-4259-baf5-5a30d2809c3a",
+			  "sortorder": 0,
+			  "tileid": "666321b0-e9f0-4287-ac0a-586b75aca00d"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "37904f98-a61d-4c8f-933a-31aa1ce760b1",
+			"resourceinstanceid": "37904f98-a61d-4c8f-933a-31aa1ce760b1"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  46,
+							  35.25
+							],
+							[
+							  46,
+							  35.5
+							],
+							[
+							  46.25,
+							  35.5
+							],
+							[
+							  46.25,
+							  35.25
+							],
+							[
+							  46,
+							  35.25
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "c3ecd4f5-a32d-4720-b4fa-3b619f8750d5",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "37904f98-a61d-4c8f-933a-31aa1ce760b1",
+			  "sortorder": 0,
+			  "tileid": "ef29deb5-98c8-4982-b33d-f2879ed4d8cb"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E46N35-13"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "37904f98-a61d-4c8f-933a-31aa1ce760b1",
+			  "sortorder": 0,
+			  "tileid": "866bd999-a86c-43c3-9957-0193b13913c2"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "ba943839-5049-486b-88c9-42c0d8455395",
+			"resourceinstanceid": "ba943839-5049-486b-88c9-42c0d8455395"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  46,
+							  35.5
+							],
+							[
+							  46,
+							  35.75
+							],
+							[
+							  46.25,
+							  35.75
+							],
+							[
+							  46.25,
+							  35.5
+							],
+							[
+							  46,
+							  35.5
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "2179fe19-b0dd-4257-a3d4-c705b68de501",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "ba943839-5049-486b-88c9-42c0d8455395",
+			  "sortorder": 0,
+			  "tileid": "23907027-bb2a-4006-926c-7d5d7e7aea75"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E46N35-31"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "ba943839-5049-486b-88c9-42c0d8455395",
+			  "sortorder": 0,
+			  "tileid": "101034a7-5206-470b-8cf8-81db08b6f1ed"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "675f0670-04c8-44aa-bef7-1e68fed94098",
+			"resourceinstanceid": "675f0670-04c8-44aa-bef7-1e68fed94098"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E46N35-32"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "675f0670-04c8-44aa-bef7-1e68fed94098",
+			  "sortorder": 0,
+			  "tileid": "ff0f57c1-3026-49a7-af21-2a3209718abe"
+			},
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  46.25,
+							  35.5
+							],
+							[
+							  46.25,
+							  35.75
+							],
+							[
+							  46.5,
+							  35.75
+							],
+							[
+							  46.5,
+							  35.5
+							],
+							[
+							  46.25,
+							  35.5
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "7bcf3efb-4cfa-4942-aad1-dd41fc8df1d2",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "675f0670-04c8-44aa-bef7-1e68fed94098",
+			  "sortorder": 0,
+			  "tileid": "42271f80-7d81-47dc-abd4-2d3173dfdd9d"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "52360bb7-47cb-4b03-97bc-b8f0d04190a0",
+			"resourceinstanceid": "52360bb7-47cb-4b03-97bc-b8f0d04190a0"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  46,
+							  35.75
+							],
+							[
+							  46,
+							  36
+							],
+							[
+							  46.25,
+							  36
+							],
+							[
+							  46.25,
+							  35.75
+							],
+							[
+							  46,
+							  35.75
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "f9dd7a21-1567-4896-b385-132ca60364ae",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "52360bb7-47cb-4b03-97bc-b8f0d04190a0",
+			  "sortorder": 0,
+			  "tileid": "00f0d423-3e23-4002-ba8e-2cd184efab67"
+			},
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E46N35-33"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "52360bb7-47cb-4b03-97bc-b8f0d04190a0",
+			  "sortorder": 0,
+			  "tileid": "90c7a5b7-3515-4f16-b398-433506d37cb9"
+			}
+		  ]
+		},
+		{
+		  "resourceinstance": {
+			"graph_id": "77d18973-7428-11ea-b4d0-02e7594ce0a0",
+			"legacyid": "5e9f8bf9-7a6d-4dd7-8539-2a6a400b1773",
+			"resourceinstanceid": "5e9f8bf9-7a6d-4dd7-8539-2a6a400b1773"
+		  },
+		  "tiles": [
+			{
+			  "data": {
+				"b3628db0-742d-11ea-b4d0-02e7594ce0a0": "E46N35-34"
+			  },
+			  "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "5e9f8bf9-7a6d-4dd7-8539-2a6a400b1773",
+			  "sortorder": 0,
+			  "tileid": "0543f155-3b6a-4774-bf86-6d37d4cec37a"
+			},
+			{
+			  "data": {
+				"7248e0d0-ca96-11ea-a292-02e7594ce0a0": {
+				  "features": [
+					{
+					  "geometry": {
+						"coordinates": [
+						  [
+							[
+							  46.25,
+							  35.75
+							],
+							[
+							  46.25,
+							  36
+							],
+							[
+							  46.5,
+							  36
+							],
+							[
+							  46.5,
+							  35.75
+							],
+							[
+							  46.25,
+							  35.75
+							]
+						  ]
+						],
+						"type": "Polygon"
+					  },
+					  "id": "5b5fb5a3-4a93-40b3-a9c0-58bbb33833a8",
+					  "properties": {
+						"nodeId": "7248e0d0-ca96-11ea-a292-02e7594ce0a0"
+					  },
+					  "type": "Feature"
+					}
+				  ],
+				  "type": "FeatureCollection"
+				}
+			  },
+			  "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
+			  "parenttile_id": null,
+			  "provisionaledits": null,
+			  "resourceinstance_id": "5e9f8bf9-7a6d-4dd7-8539-2a6a400b1773",
+			  "sortorder": 0,
+			  "tileid": "e7fd32a0-8afb-40fa-b6c2-c1290f6fcd84"
+			}
+		  ]
+		}
+	  ]
+	}
+  }

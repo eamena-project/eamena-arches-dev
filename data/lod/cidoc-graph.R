@@ -3,12 +3,16 @@ library(htmlwidgets)
 library(dplyr)
 library(openxlsx)
 
-prj <- "palmyra" # to subset the dataframe
+# local or GH
+local <- F
+
+# to subset the dataframe
+prj <- "palmyra"
 prj <- "thera"
 
 # paths
 rootDir <- "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/"
-rootDir <- paste0(getwd(), "/") # local
+if(local){rootDir <- paste0(getwd(), "/")} # local
 dataDir <- paste0(rootDir, "data/lod/")
 dataFile <- paste0(dataDir, "data.xlsx")
 # multimedia (images)

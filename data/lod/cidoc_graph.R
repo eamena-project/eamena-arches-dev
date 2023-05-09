@@ -28,7 +28,7 @@ library(openxlsx)
 #' cidoc-graph()
 #'
 #' ## Plot the "thera" CIDOC graph and export data as TSV format
-#' cidoc-graph(export.data = T, outDir = "C:/Rprojects/histime-datasample/cidoc-crm/")
+#' cidoc-graph(export.data = T, export.plot = T, outDir = "C:/Rprojects/histime-datasample/cidoc-crm/")
 #'
 #' @export
 cidoc_graph <- function(prj = "thera",
@@ -48,12 +48,12 @@ cidoc_graph <- function(prj = "thera",
   # multimedia (images)
   if(prj == "palmyra"){
     imgDir <- paste0(rootDir, "www/")
-    tit <- "a CIDOC-CRM example <br>for the destruction of Palmyra"
+    tit <- "A CIDOC-CRM example <br>for the destruction of Palmyra"
   }
   # prj thera is in historiacl-time GH
   if(prj == "thera"){
     imgDir <- paste0("https://raw.githubusercontent.com/historical-time/data-samples/main/", "cidoc-crm/")
-    tit <- "an CIDOC-CRM example <br>for the dating of the Thera-Santorini eruption"
+    tit <- "A CIDOC-CRM example <br>for the dating of the Thera-Santorini eruption"
   }
   if(verbose){print(paste0("Read the XLSX file '",
                            inFile,"'"))}
@@ -127,21 +127,23 @@ cidoc_graph <- function(prj = "thera",
     if(is.na(outDir)){
       outDir <- dirname(rstudioapi::getSourceEditorContext()$path)
     }
-    raw.nodes$prj <- raw.nodes$multimedia <- NULL
-    raw.edges$prj <- NULL
-    write.table(raw.nodes, sep = "\t", paste0(outDir, outFile.nodes))
-    write.table(raw.edges, sep = "\t", paste0(outDir, outFile.edges))
+    exp.nodes <- raw.nodes[raw.nodes$prj == prj, ]
+    exp.edges <- raw.edges[raw.edges$prj == prj, ]
+    exp.nodes$prj <- exp.nodes$multimedia <- NULL
+    exp.edges$prj <- NULL
+    write.table(exp.nodes, sep = "\t", paste0(outDir, outFile.nodes), row.names = F)
+    write.table(exp.edges, sep = "\t", paste0(outDir, outFile.edges), row.names = F)
     if(verbose){print(paste0("Data exported in folder'", outFile.nodes,"' and '", outFile.edges,"'"))}
     if(verbose){print(paste0("Data exported in folder'", outDir,"'"))}
   }
 
   if(export.plot){
-    path.out <- paste0(getwd(),"/data/lod/", prj, "-cidoc-graph.html")
+    path.out <- paste0(outDir, prj, "-cidoc-graph.html")
     htmlwidgets::saveWidget(gout,path.out)
-    if(verbose){print(paste0("Saved in: ", path.out))}
+    if(verbose){print(paste0("HTML graph saved in: ", path.out))}
   } else {
     gout %>% visNetwork::visIgraphLayout(layout = 'layout.davidson.harel')
   }
 }
 
-cidoc_graph(export.data = T, outDir = "C:/Rprojects/histime-datasample/cidoc-crm/")
+cidoc_graph(export.data = T, export.plot = T, outDir = "C:/Rprojects/histime-datasample/cidoc-crm/")

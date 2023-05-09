@@ -76,7 +76,7 @@ image caption: https://github.com/eamena-project/eamena-arches-dev/blob/da9d4efc
 
 ## Reindex Business data from EAMENA
 
-*GS
+* GS
 
 After importing the `grid_krg.jsonl` file (⚠️ it is not a JSON). On:
 

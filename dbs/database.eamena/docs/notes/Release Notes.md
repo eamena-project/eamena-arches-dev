@@ -19,7 +19,7 @@ Known Problems
   other. I believe I can fix this, but will contact Farallon if I have
   difficulty.
 
-* PERMISSIONS - Users and groups between EAMENA 3 and EAMENA 4 have the same
+* PERMISSIONS <a name="permis"></a>- Users and groups between EAMENA 3 and EAMENA 4 have the same
   IDs so they map one-to-one. Sadly, due to the increased number of possible 
   permissions in Arches 7, the actual permissions do not have a direct
   mapping any more, so I will need to write a script to apply all the

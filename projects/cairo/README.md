@@ -27,7 +27,7 @@ For each Heritage Place (HP), there is two kinds of data:
 <p align="center">
   <img alt="img-name" src="./www/mapping-ex.png" width="700">
   <br>
-    <em>Alignement *source* (`cairo` and `cairo_type`) and *target*</em>
+    <em>Alignement 'source' (columns `cairo` and `cairo_type`) and 'target'</em>
 </p>
 
 2. Run the [list_mapping_bu()](https://eamena-project.github.io/eamenaR/doc/list_mapping_bu) function

@@ -34,6 +34,8 @@ For each Heritage Place (HP), there is two kinds of data:
 
 ## Photographs
 
+1. Importing each photograph as an Information Resource (IR)
+
 <p align="center">
   <img alt="img-name" src="./www/record-photo-table.png" width="700">
   <br>

@@ -28,7 +28,15 @@ gantt
 
 ### Landing page
 
-In order to give a new "skin" to the landing page of EAv4, we can change the background images and captions of the slides. Change directly the file: https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/varia/index.htm (paths and caption). And add the images here: https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/img
+To give a new "skin" to the landing page of EAv4, we can change the background images and captions of the slides. 
+
+<p align="center">
+  <img alt="img-name" src="../../www/arches-v7-landingpage.png" width="700">
+  <br>
+    <em>Alignement 'source' (columns `cairo` and `cairo_type`) and 'target'</em>
+</p>
+
+Change directly the file: https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/varia/index.htm (paths and caption). And add the images here: https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/img
 
 * example [Slide 1](https://github.com/eamena-project/eamena-arches-dev/blob/11df37b9c528e4e3b423ae00464190432bd69c0c/dbs/database.eamena/varia/index.htm#L255-L275)
 

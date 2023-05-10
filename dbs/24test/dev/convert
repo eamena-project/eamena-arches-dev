@@ -1,0 +1,49 @@
+#!/usr/bin/bash
+
+IFS=$(echo -en "\n\r\b")
+
+MANAGE="/home/archesadmin/my_project/manage.py"
+BUPATH="/home/archesadmin/bulk_uploads/$1"
+
+if [ -z "$1" ]; then
+	echo "Use: validate [directory_name]"
+	exit
+fi
+
+source /home/archesadmin/env/bin/activate
+
+if [ ! -d "$BUPATH" ]; then
+	echo "$BUPATH does not exist"
+	exit
+fi
+
+VALDESTPATH="$BUPATH/error_reports"
+CNVDESTPATH="$BUPATH/for_import"
+
+if [ ! -d "$VALDESTPATH" ]; then
+	mkdir "$VALDESTPATH"
+fi
+if [ ! -d "$CNVDESTPATH" ]; then
+	mkdir "$CNVDESTPATH"
+fi
+
+FILECOUNT=`find $BUPATH | grep ".xlsx$" | wc -l`
+
+echo "Working on $FILECOUNT file(s)..."
+
+for f in `find $BUPATH | grep ".xlsx$"`; do
+	echo "* $f"
+	BUFILE=`echo "$f" | sed "s#$BUPATH/##" | sed "s/.xlsx$/.json/"`
+	VALDESTFILE="$VALDESTPATH/$BUFILE"
+	CNVDESTFILE="$CNVDESTPATH/$BUFILE"
+	python "$MANAGE" bu -w strict -o validate -g 34cfe98e-c2c0-11ea-9026-02e7594ce0a0 -s "$f" | json_pp > "$VALDESTFILE" 2> /dev/null
+	FILESIZE=`cat "$VALDESTFILE" | wc -c`
+	if [ $FILESIZE -le 4 ]; then
+		rm "$VALDESTFILE"
+		python "$MANAGE" bu -w strict -o convert -g 34cfe98e-c2c0-11ea-9026-02e7594ce0a0 -s "$f" | json_pp > "$CNVDESTFILE" 2> /dev/null
+	fi
+done
+
+ERRORFILES=`find $VALDESTPATH | grep ".json$" | wc -l`
+
+echo "$ERRORFILES of $FILECOUNT file(s) have errors."

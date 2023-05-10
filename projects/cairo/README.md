@@ -1,4 +1,11 @@
-# Cairo's city of the Dead project ➡️ EAMENA DB
+# Cairo project 
+> Unknown Heritage in the 'City of the Dead', DOCUMENTATION OF THE UNREGISTERED HERITAGE OF THE EASTERN CEMETERY IN CAIRO
+
+# Aims
+
+Uploading an existing database into EAMENA v4
+
+# Datatypes
 
 Two kinds of data:
 
@@ -7,4 +14,26 @@ Two kinds of data:
 
 ## Textual data
 
-Use of the mapping correspondance table: https://docs.google.com/spreadsheets/d/1nXgz98mGOySgc0Q2zIeT1RvHGNl4WRq1Fp9m5qB8g8k/edit#gid=1083097625, source fields: `cairo` and `cairo_type`, see the dedicated ***eamenaR*** function: https://github.com/eamena-project/eamenaR#mapping-file
+<p align="center">
+  <img alt="img-name" src="./www/record-ex.png" width="600">
+  <br>
+    <em>Detail of a Cairo's project record</em>
+</p>
+
+* solution
+
+1. Map correspondances between Cairo's project DB fieldnames with EAMENA field names, using the [mapping correspondance table](https://github.com/eamena-project/eamenaR#mapping-file) (fields: `cairo` and `cairo_type`)
+
+<p align="center">
+  <img alt="img-name" src="./www/mapping-ex.png" width="600">
+  <br>
+    <em>Detail of a Cairo's project record</em>
+</p>
+
+2. Run the [list_mapping_bu()](https://eamena-project.github.io/eamenaR/doc/list_mapping_bu) function
+
+## Photographs
+
+
+
+

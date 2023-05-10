@@ -5,9 +5,9 @@
 
 Uploading an existing database into EAMENA v4
 
-# Datatypes
+# Data
 
-Two kinds of data:
+For each Heritage Place (HP), there is two kinds of data:
 
 1. Textual data
 2. Photographs
@@ -34,6 +34,16 @@ Two kinds of data:
 
 ## Photographs
 
+<p align="center">
+  <img alt="img-name" src="./www/record-photo-table.png" width="700">
+  <br>
+    <em>Listing of photographs for a given HP</em>
+</p>
+
+
+* solution
+
+<*to be discussed*>
 
 
 

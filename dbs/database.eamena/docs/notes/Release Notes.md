@@ -6,11 +6,6 @@ EAMENA v4 Release Notes
 Known Problems
 --------------
 
-* BULK UPLOADER - Currently this does not open. Although the URL endpoints are
-  in the urls.py file, they are not being registered. I currently have no idea
-  why this is happening, but I anticipate that it is some kind of config
-  issue; the full functionality works just fine on my Arches 7 test install.
-
 * EAMENA FORM CARD - Currently, creating a new Heritage Place and clicking on
   the geometries section causes the HTML to become unreadable. This seems to
   happen if one opens an instance of the map card (eg the geometries node)

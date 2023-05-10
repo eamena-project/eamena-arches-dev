@@ -33,7 +33,7 @@ To give a new "skin" to the landing page of EAv4, we can change the background i
 <p align="center">
   <img alt="img-name" src="../../www/arches-v7-landingpage.png" width="700">
   <br>
-    <em>Alignement 'source' (columns `cairo` and `cairo_type`) and 'target'</em>
+    <em>Current landing page of EAMENA v4 <https://database.eamena.org/> </em>
 </p>
 
 Change directly the file: https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/varia/index.htm (paths and caption). And add the images here: https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/img

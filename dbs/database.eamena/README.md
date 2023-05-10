@@ -44,4 +44,4 @@ Change directly the file: https://github.com/eamena-project/eamena-arches-dev/bl
 2. Change the [caption](https://github.com/eamena-project/eamena-arches-dev/blob/11df37b9c528e4e3b423ae00464190432bd69c0c/dbs/database.eamena/varia/index.htm#L273) [^2]
 
 [^1]: `index.htm` -> `/opt/arches/eamena/eamena/templates`
-[^2]: `images` -> `/opt/arches/eamena/eamena/media/img/landing/eamena`
+[^2]: images -> `/opt/arches/eamena/eamena/media/img/landing/eamena`

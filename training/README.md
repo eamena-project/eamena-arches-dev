@@ -140,6 +140,7 @@ Monday 22 May, Tuesday 23 May and Wednesday 24 May 2023, between 9-11am and 12-2
 |---|---|---|---|
 | morning  | 12-14  | 10-12 | 9-11 |
 | afternoon  | 15-17 | 13-15 | 12-14 |
+<em>time table convertor</em>
 
 #### Introduction
 > Thomas Huet

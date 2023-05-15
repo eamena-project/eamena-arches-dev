@@ -123,7 +123,7 @@ gantt
     Online Introduction           : a1, 2023-05-22, 3d
     section In-person 2
     Syria 1                       : a1, 2023-05-23, 2023-05-31
-    Syria 2                       : a1, 2023-06-06, 2023-06-13
+    Syria 2                       : a1, 2023-06-06, 2023-06-13 %% Istanbul
     MoTA                          : a1, 2023-06-18, 2023-06-22
     DoA                           : a1, 2023-06-25, 2023-06-29
     section Remote 2

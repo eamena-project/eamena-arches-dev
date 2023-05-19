@@ -139,8 +139,8 @@ Monday 22 May, Tuesday 23 May and Wednesday 24 May 2023, between 9-11am and 12-2
 
 |   | Jordan/Palestine  | UK  | GMT  |
 |---|---|---|---|
-| morning  | 12pm-14pm  | 10am-12pm | 9am-11am |
-| afternoon  | 15pm-17pm | 13pm-15pm | 12pm-14pm |
+| morning  | 11pm-13pm  | 9am-11pm | 8am-10am |
+| afternoon  | 14pm-16pm | 12pm-14pm | 11pm-13pm |
 
 #### Introduction
 > Thomas Huet

@@ -152,13 +152,13 @@ Monday 22 May, Tuesday 23 May and Wednesday 24 May 2023, between 9-11am and 12-2
 > Reuben Osborne
 
 Understanding the purpose, architecture and software stack of Arches
-~~* Key features and use cases~~
+* ~~Key features and use cases~~
 * Software architecture diagram
-~~* Core concepts:~~
-    ~~- Resource models and Branches
-    - Cidoc CRM and ontologies
-    - Concepts
-    - Collections~~
+* ~~Core concepts:~~
+    - ~~Resource models and Branches~~
+    - ~~Cidoc CRM and ontologies~~
+    - ~~Concepts~~
+    - ~~Collections~~
 
 How to install Arches on a Linux OS
 * Pip install
@@ -166,23 +166,23 @@ How to install Arches on a Linux OS
 * Install script for deps
 * Requirements file
 * Docker and docker-compose
-~~* Creating a project~~
+* ~~Creating a project~~
 * Serving to the internet, Apache, WSGI
 
 ~~File/Folder hierachical system~~
 
 ~~Understand project and packages~~
-~~* What is a project?~~
-~~* What is a package?~~
-~~* Why are packages useful in Arches?~~
-~~* Layout of a package~~
+* ~~What is a project?~~
+* ~~What is a package?~~
+* ~~Why are packages useful in Arches?~~
+* ~~Layout of a package~~
 
 Understand the CLI reference
 * Restarting Apache
 * Runserver
 * Collectstatic
-~~* Load package~~
-~~* Load data~~
+* ~~Load package~~
+* ~~Load data~~
 * Looking at different logs
 * Indexing ES
 
@@ -194,15 +194,15 @@ Debug
 Backups
 * Dumping db
 * Scheduling cronjob db dump
-~~* Creating packages~~
+* ~~Creating packages~~
 * AWS snapshot
 * Other options
 
 ~~Usage of online and collaborative resources~~
-~~* Docs~~
-~~* Community Forum~~
-~~* GitHub~~
-~~* Popular Django forums~~
+* ~~Docs~~
+* ~~Community Forum~~
+* ~~GitHub~~
+* ~~Popular Django forums~~
 
 ## 'users & database managers & sys admins' training
 > In-person training for users, database managers and sys admins

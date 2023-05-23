@@ -178,13 +178,18 @@ How to install Arches on a Linux OS
 * ~~Layout of a package~~
 
 Understand the CLI reference
-* Restarting Apache
+* Apache
+  - status, stop, restart
+* ElasticSearch (ES)
+  - status, stop, restart
+  - indexing
+* Others
+  - Celery
 * Runserver
 * Collectstatic
 * ~~Load package~~
 * ~~Load data~~
 * Looking at different logs
-* Indexing ES
 
 Debug
 * Debug SSH connection

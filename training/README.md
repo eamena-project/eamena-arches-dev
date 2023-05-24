@@ -135,17 +135,17 @@ gantt
 ### Remote 1
 > Online training for Arches platform system administrators, prepared by Reuben Osborne and Thomas Huet
 
-Monday 22 May, Tuesday 23 May and Wednesday 24 May 2023, between 9-11am and 12-2pm (UK time):
+Monday 22 May, Tuesday 23 May and Wednesday 24 May 2023, between 9-11am ~~and 12-2pm~~ (UK time):
 
 |   | Jordan/Palestine  | UK  | GMT  |
 |---|---|---|---|
 | morning  | 11am-1pm  | 9am-11am | 8am-10am |
-| afternoon  | 2pm-4pm | 12pm-2pm | 11am-1pm |
+| ~~afternoon~~  | ~~2pm-4pm~~ | ~~12pm-2pm~~ | ~~11am-1pm~~ |
 
 #### Introduction
 > Thomas Huet
 
-* [What is Arches?](https://eamena-project.github.io/eamena-arches-dev/talks/2023-gmpca/pres/#/arches-powered-platform)
+* What is Arches?
 * What problem does it solve?
 
 #### Training

@@ -117,13 +117,12 @@ gantt
     tickInterval 7day
     section EAMENA Arches v7
     Arches v7.3 public realease   : milestone, 2023-05-09, 0d
-    section In-person 1
-    GDAH                          : a1, 2023-05-14, 2023-05-22    
     section Remote 1
     Online Introduction           : a1, 2023-05-22, 3d
-    section In-person 2
-    Syria 1                       : a1, 2023-05-23, 2023-05-31
-    Syria 2                       : a1, 2023-06-06, 2023-06-13 %% Istanbul
+    section In-person
+    GDAH                          : a1, 2023-05-28, 2023-06-05
+    Syria 1                       : a1, 2023-06-07, 2023-06-15
+    %% Syria 2                       : a1, 2023-06-06, 2023-06-13 %% Istanbul TBC later
     MoTA                          : a1, 2023-06-18, 2023-06-22
     DoA                           : a1, 2023-06-25, 2023-06-29
     section Remote 2

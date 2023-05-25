@@ -1,5 +1,10 @@
 # Arches/EAMENA Trainings
 
+by theme:
+
+
+by year:
+
 * [2022](https://github.com/eamena-project/eamena-arches-dev/tree/main/training#2022)
 * [2023](https://github.com/eamena-project/eamena-arches-dev/tree/main/training#2023)
 

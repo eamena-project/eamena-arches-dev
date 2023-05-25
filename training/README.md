@@ -8,8 +8,8 @@ by year:
 by theme:
 
 ```mermaid
-flowchart
-  subgraph LR
+flowchart LR
+  subgraph DB
   id1((Eamena v4))<-->id2((Arches v7));
   end
   id3[<a href='https://github.com/eamena-project/eamena-arches-dev/tree/main/geoserver'>GeoServer</a>]-->DB;

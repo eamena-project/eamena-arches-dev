@@ -13,8 +13,10 @@ flowchart LR
   id1((Eamena v4))<-->id2((Arches v7));
   end
   id3[<a href='https://github.com/eamena-project/eamena-arches-dev/tree/main/geoserver'>GeoServer</a>]-->DB;
-  id3 <--> id4[QGIS]
+  id3 <--> id4[<a href='https://github.com/eamena-project/eamena-arches-dev/tree/main/gis/qgis'>QGIS</a>];
+  id1 <--> id5[<a href='https://github.com/eamena-project/eamenaR'>eamenaR</a>];
 ```
+
 
 ---
 

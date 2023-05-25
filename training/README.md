@@ -7,6 +7,12 @@ by year:
 
 by theme:
 
+* related computer applications
+
+---
+
+# Related Computer Applications
+
 ```mermaid
 flowchart LR
   subgraph DB

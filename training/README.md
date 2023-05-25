@@ -10,7 +10,7 @@ by theme:
 ```mermaid
 flowchart LR
   subgraph DB
-  id1((Eamena v4))<-->id2((Arches v7));
+  id1((Eamena v4))<--->id2((Arches v7));
   end
   id3[<a href='https://github.com/eamena-project/eamena-arches-dev/tree/main/geoserver'>GeoServer</a>]-->DB;
 ```

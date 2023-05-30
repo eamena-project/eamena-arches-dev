@@ -169,13 +169,26 @@ Monday 22 May, Tuesday 23 May and Wednesday 24 May 2023, between 9-11am ~~and 12
 | morning  | 11am-1pm  | 9am-11am | 8am-10am |
 | ~~afternoon~~  | ~~2pm-4pm~~ | ~~12pm-2pm~~ | ~~11am-1pm~~ |
 
-#### Introduction
+#### Documentation
+
+* [Day 2 Google Slides 🖺](https://docs.google.com/presentation/d/1bX1D7yQrF8QsgRlzymfpU-Bh6D-bE3gIYG4JIbwWFZw/edit?usp=share_link) and [Video 🎞️](https://drive.google.com/file/d/1cPg_PckmBX6WAy5inzVjHAaCHHPEAA66/view?usp=sharing)
+  - Software stack
+  - Installing Arches
+* [Day 3 Google Slides 🖺](https://docs.google.com/presentation/d/1HFlAh7SU9lqf8PdwdjCIbisRR6fLAeORvNU4ZQOK_qU/edit?usp=sharing) and [Video 🎞️](https://drive.google.com/file/d/1axP7UwFDhbKr1vm6dMZmeLtULjruMsQY/view?usp=sharing)
+  - CLI references
+  - Debbuging
+  - Troubleshooting SSH
+  - Backups
+
+#### Program
+
+##### Introduction
 > Thomas Huet
 
 * What is Arches?
 * What problem does it solve?
 
-#### Training
+##### Training
 > Reuben Osborne
 
 Understanding the purpose, architecture and software stack of Arches

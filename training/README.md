@@ -15,7 +15,7 @@ by theme:
 
 ```mermaid
 flowchart LR
-  subgraph Arches
+  subgraph Arches v7
     subgraph EAMENA
     ea[(Eamena v4)]
     end

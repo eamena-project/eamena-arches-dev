@@ -43,7 +43,7 @@ flowchart LR
   id3[<a href='https://github.com/eamena-project/eamena-arches-dev/tree/main/geoserver'>GeoServer</a>] --- EAMENA;
   id3 --- id4[<a href='https://github.com/eamena-project/eamena-arches-dev/tree/main/gis/qgis'>QGIS</a>];
   EAMENA --- id5[<a href='https://github.com/eamena-project/eamenaR'>eamenaR</a>];
-  DB --- internationalisation
+  EAMENA --- internationalisation
 ```
 
 

@@ -30,6 +30,22 @@ flowchart LR
   DB --- internationalisation
 ```
 
+```mermaid
+flowchart LR
+  subgraph Arches
+    subgraph EAMENA
+    end
+    subgraph internationalisation
+      id6[<a href='https://github.com/archesproject/arches/blob/master/arches/locale/ar/LC_MESSAGES/django.po'>ar</a>];
+      id7[<a href='https://github.com/archesproject/arches/blob/master/arches/locale/fr/LC_MESSAGES/django.po'>fr</a>];
+    end 
+  end
+  id3[<a href='https://github.com/eamena-project/eamena-arches-dev/tree/main/geoserver'>GeoServer</a>] --- EAMENA;
+  id3 --- id4[<a href='https://github.com/eamena-project/eamena-arches-dev/tree/main/gis/qgis'>QGIS</a>];
+  EAMENA --- id5[<a href='https://github.com/eamena-project/eamenaR'>eamenaR</a>];
+  DB --- internationalisation
+```
+
 
 ---
 

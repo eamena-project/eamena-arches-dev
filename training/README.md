@@ -145,6 +145,7 @@ Monday 22 May, Tuesday 23 May and Wednesday 24 May 2023, between 9-11am ~~and 12
 
 #### Documentation
 
+* [Day 1 Google Slides 🖺](https://docs.google.com/presentation/d/1NIwZhX9ycueAM9CKijcRdYj7vckED6yZ-0bQeCDFlyE/edit?usp=sharing) and [Video 🎞️](https://drive.google.com/file/d/14-tEVqXcNJl8Sl5OoTZkGKBfYFILVHxi/view?usp=sharing)
 * [Day 2 Google Slides 🖺](https://docs.google.com/presentation/d/1bX1D7yQrF8QsgRlzymfpU-Bh6D-bE3gIYG4JIbwWFZw/edit?usp=share_link) and [Video 🎞️](https://drive.google.com/file/d/1cPg_PckmBX6WAy5inzVjHAaCHHPEAA66/view?usp=sharing)
   - Software stack
   - Installing Arches

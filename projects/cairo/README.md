@@ -7,18 +7,18 @@ Uploading an existing database into EAMENA v4
 
 # Data
 
+<p align="center">
+  <img alt="img-name" src="./www/record-ex.png" width="700">
+  <br>
+    <em>Detail of a Cairo's project record</em>
+</p>
+
 For each Heritage Place (HP), there is two kinds of data:
 
 1. Textual data
 2. Photographs
 
 ## Textual data
-
-<p align="center">
-  <img alt="img-name" src="./www/record-ex.png" width="700">
-  <br>
-    <em>Detail of a Cairo's project record</em>
-</p>
 
 * solution
 
@@ -35,13 +35,6 @@ For each Heritage Place (HP), there is two kinds of data:
 ## Photographs
 
 1. Importing each photograph as an Information Resource (IR)
-
-<p align="center">
-  <img alt="img-name" src="./www/record-photo-table.png" width="700">
-  <br>
-    <em>Listing of photographs for a given HP</em>
-</p>
-
 
 * solution
 

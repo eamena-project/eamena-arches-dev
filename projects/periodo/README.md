@@ -1,7 +1,6 @@
-# PeriodO / EAMENA
-> https://perio.do/en/
+# EAMENA cultural (sub)periods to PeriodO temporal gazetteer
 
-The aim is to export EAMENA cultural periods and subperiods as new entries in PeriodO 
+The aim is to export EAMENA cultural periods and subperiods as new entries in the temporal gazetteer [PeriodO](https://perio.do/en/) [^4]
 
 ## Workflow
 
@@ -21,14 +20,8 @@ An example of the `Predynastic` JSON is here: https://github.com/eamena-project/
 </p>
 
 
-
-
-
----
-
-The PeriodO issue thread: https://github.com/eamena-project/eamena-arches-dev/issues/12
-
 [^1]: This example corresponding to the URL: https://client.perio.do/?page=period-view&backendID=web-https%3A%2F%2Fdata.perio.do%2F&authorityID=p0cp447&periodID=p0cp44786m7
 [^2]: this template has been modified for the EAMENA cultural period `Chalcolithic (Northern Iran) ` (see its temporal bounds [here](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/periodo/cultural_periods.tsv#L2))  
 [^3]: PeriodO's `PartOf` is in some ways equivalent to the hierarchical structure of EAMENA
+[^4]: The PeriodO issue thread: https://github.com/eamena-project/eamena-arches-dev/issues/12
 

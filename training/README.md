@@ -5,32 +5,6 @@ by year:
 * [2022](https://github.com/eamena-project/eamena-arches-dev/tree/main/training#2022)
 * [2023](https://github.com/eamena-project/eamena-arches-dev/tree/main/training#2023)
 
-by theme:
-
-* [related computer applications](https://github.com/eamena-project/eamena-arches-dev/tree/main/training#related-computer-applications)
-
----
-
-# Related Computer Applications
-
-```mermaid
-flowchart LR
-  subgraph Arches v7
-    subgraph EAMENA
-    ea[(Eamena v4)]
-    end
-    subgraph internationalisation
-      id6[<a href='https://github.com/archesproject/arches/blob/master/arches/locale/ar/LC_MESSAGES/django.po'>ar</a>];
-      id7[<a href='https://github.com/archesproject/arches/blob/master/arches/locale/fr/LC_MESSAGES/django.po'>fr</a>];
-    end 
-  end
-  id3[<a href='https://github.com/eamena-project/eamena-arches-dev/tree/main/geoserver'>GeoServer</a>] --- ea;
-  id3 --- id4[<a href='https://github.com/eamena-project/eamena-arches-dev/tree/main/gis/qgis'>QGIS</a>];
-  ea --- id5[<a href='https://github.com/eamena-project/eamenaR'>eamenaR</a>];
-  ea --- internationalisation
-```
-
-
 ---
 
 # 2022 

@@ -125,8 +125,7 @@ gantt
     GDAH                          : a1, 2023-05-28, 2023-06-05
     Syria 1                       : a1, 2023-06-07, 2023-06-15
     %% Syria 2                       : a1, 2023-06-06, 2023-06-13 %% Istanbul TBC later
-    MoTA                          : a1, 2023-06-18, 2023-06-22
-    DoA                           : a1, 2023-06-25, 2023-06-29
+    MoTA & DoA                        : a1, 2023-06-18, 2023-06-22
     section Remote 2
     Online Support                 : a1, 2023-07-01, 7d
 ```

@@ -11,16 +11,16 @@
 * Mobile Project Administrator
 * RDM Administrator
 * Resource Deleter
-	-models | resource | Can add resource
+	```-models | resource | Can add resource
 	-models | resource | Can change resource
 	-models | resource | Can delete resource
 	-models | resource | Can view resource
 	-models | resource instance | Create resource
 	-models | resource instance | Update resource
 	-models | resource instance | Delete resource
-	-models | resource instance | Read resource
+	-models | resource instance | Read resource```
 * Resource Editor
-	-models | card | Can add tile
+	```-models | card | Can add tile
 	-models | card | Can change tile
 	-models | card | Can view tile
 	-models | card component | Can add card component
@@ -35,21 +35,20 @@
 	-models | resource | Can view resource
 	-models | resource instance | Create resource
 	-models | resource instance | Update resource
-	-models | resource instance | Read resource
+	-models | resource instance | Read resource```
 * Resource Reviewer
-	-models | node group | Delete
-	-models | node group | Create/Update
+	```-models | node group | Delete
+	-models | node group | Create/Update```
 * System Administrator
 
 ### EAMENA former groups
 
 native groups +
+
 * Academic Research Condition Assessment Users
 * Academic Research Users
 
 ### EAMENA new groups
-
-3. Contributors: 
 
 | permission level | EA group name | native groups combination  | description  |
 |---|---|---|---|

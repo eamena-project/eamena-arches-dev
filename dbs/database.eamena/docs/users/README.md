@@ -50,7 +50,7 @@ native groups +
 
 ### EAMENA new groups
 
-| permission level | EA group name | native groups combination  | description  |
+| permission level | EA group name | native Arches groups combination  | description  |
 |---|---|---|---|
 | 1 | Guest | Guest | same as Arches 'Guest' but cannot see: condition assessment, coordinates[^1] |
 | 2 | Researcher | same as Arches 'Guest' | no edit, no add  |

@@ -19,11 +19,9 @@
 
 ---
 
-Researchers create records
-
 1. Guest: read-only, no zoom, no condition ass, no coords
-2. Researcher :no edit, no add, 
-3. Contributors
+2. Researcher: no edit, no add
+3. Contributors: 
 4. Staff
 5. Sys Admin
 

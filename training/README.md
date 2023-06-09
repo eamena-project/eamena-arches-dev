@@ -278,7 +278,7 @@ Backups
 - Explain the other optional cards (for e.g. historic figures)
 - Try a simple search for new Person/Organization records
 
-- If there is spare time then move onto Google Earth Pro, this will allow for more practice time for the following afternoon.
+If there is spare time then move onto Google Earth Pro, this will allow for more practice time for the following afternoon.
 
 #### Day 2 (19/06/2023)
 
@@ -391,74 +391,74 @@ Backups
 
 ### Useful links
 
--[EAMENA homepage](https://www.eamena.org/)
--[EAMENA database](https://database.eamena.org/)
--[Google Earth Pro download link](https://www.google.com/earth/download/gep/agree.html?gl=GB&hl=en)
+- [EAMENA homepage](https://www.eamena.org/)
+- [EAMENA database](https://database.eamena.org/)
+- [Google Earth Pro download link](https://www.google.com/earth/download/gep/agree.html?gl=GB&hl=en)
 
 ### YouTube and PDF Tutorials
 
 Please note these tutorials were created for Version 3 of the EAMENA database - we have newly upgraded to Version 4 and have not yet updated the documentation. However, the vast majority of tutorials are relevant to both versions.
 
-YouTube tutorials are provided as an indented list under each section, PDF versions are available in English and Arabic - just follow the link for your chosen language that follows each section heading. The YouTube videos were created in English but all have Arabic subtitles.
+YouTube tutorials are listed under each section, PDF versions are available in English and Arabic - just follow the link for your chosen language following each section heading. The YouTube videos were created in English but all have Arabic subtitles.
 
 #### Database Basics
 
-Introduction to the EAMENA Database (Version 3) |[English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/0_-_eamena_v3_db_general_introduction.pdf) |[عربي](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/0_-_eamena_v3_db_general_introduction_arabic_compressed.pdf)|
+Introduction to the EAMENA Database (Version 3) | [English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/0_-_eamena_v3_db_general_introduction.pdf) | [عربي](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/0_-_eamena_v3_db_general_introduction_arabic_compressed.pdf) |
 
 - [Part 1: Introduction](https://youtu.be/HwGb9R1vYMw)
 - [Part 2: Logging In](https://youtu.be/bfV4qRPTCxk)
 - [Part 3: Resources Overview](https://youtu.be/eTzQWbLb0mk)
 - [Part 4: Navigating](https://youtu.be/WWQrjI1hLhc)
 
-Searching the Database (Basic) |[English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/1_-_eamena_v3_-_searching_the_database_-_basic.pdf) |[عربي](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/1b_-_eamena_v3_-_finding_your_records.pdf)|
+Searching the Database (Basic) | [English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/1_-_eamena_v3_-_searching_the_database_-_basic.pdf) | [عربي](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/1b_-_eamena_v3_-_finding_your_records.pdf) |
 
 - [Searching the Database: Basic](https://youtu.be/9bJeTLpFvQs)
 
-Finding your Records by Searching for your Name | [English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/1b_-_eamena_v3_-_finding_your_records.pdf) |[عربي](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/1b_-_eamena_v3_-_finding_your_records_arabic.pdf)|
+Finding your Records by Searching for your Name | [English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/1b_-_eamena_v3_-_finding_your_records.pdf) | [عربي](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/1b_-_eamena_v3_-_finding_your_records_arabic.pdf) |
 
 - [Finding your Records by Searching for your Name](https://youtu.be/LOn0DfwBCKU)
 
 #### Person and Organization
 
-Creating a new Person/Organization Record |[English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/2_-_eamena_v3_-_person_and_organisation.pdf) |[عربي](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/2_-_eamena_v3_-_person_and_organisation_arabic.pdf)|
+Creating a new Person/Organization Record | [English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/2_-_eamena_v3_-_person_and_organisation.pdf) | [عربي](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/2_-_eamena_v3_-_person_and_organisation_arabic.pdf) |
 
 - [Person/Organization Records](https://youtu.be/Q35uPjthQo8)
 
 #### Heritage Place
 
-Assessment Summary |[English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/3_-_eamena_v3_-_assessment_summary.pdf) |[عربي](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/3_-_eamena_v3_-_assessment_summary_arabic.pdf)|
+Assessment Summary | [English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/3_-_eamena_v3_-_assessment_summary.pdf) | [عربي](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/3_-_eamena_v3_-_assessment_summary_arabic.pdf) |
 
 - [A Heritage Place example: Rujm al Faridiyyeh, Jordan](https://youtu.be/HHGN8FJTv8Y)
 - [Part 1: Assessment Summary](https://youtu.be/c7qh3PwROgI)
 - [Part 2: Assessment Summary](https://youtu.be/-sopmEZY1Zc)
 - [Part 3: Assessment Summary](https://youtu.be/XbAxJJQXJw8)
 
-Resource Summary|[English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/4_-_eamena_v3_-_resource_summary.pdf) |[عربي](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/4_-_eamena_v3_-_resource_summary_arabic.pdf)|
+Resource Summary| [English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/4_-_eamena_v3_-_resource_summary.pdf) | [عربي](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/4_-_eamena_v3_-_resource_summary_arabic.pdf) |
 
 - [Resource Summary](https://youtu.be/vogizPGzk9A)
 
-Geometries |[English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/5_-_eamena_v3_-_geometries.pdf) |[عربي](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/5_-_eamena_v3_-_geometries_arabic.pdf)|
+Geometries | [English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/5_-_eamena_v3_-_geometries.pdf) | [عربي](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/5_-_eamena_v3_-_geometries_arabic.pdf) |
 
 - [Part 1: Introduction](https://youtu.be/92Z_J1wwAD0)
 - [Part 2: Adding a polygon](https://youtu.be/DtJ_DROyKf8)
 - [Part 3: Location and Geometry Extent Certainties, Geometry Type](https://youtu.be/MK0LYdXyk2k)
 
-Geography |[English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/6_-_eamena_v3_-_geography_updated.pdf) |[عربي](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/6_-_eamena_v3_-_geography_arabic_updated.pdf)|
+Geography | [English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/6_-_eamena_v3_-_geography_updated.pdf) | [عربي](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/6_-_eamena_v3_-_geography_arabic_updated.pdf) |
 
 - [Geography (Part 1)](https://youtu.be/bDIpbBfxOw8)
 - [Geography (Part 2)](https://youtu.be/wnAXmrlij3s)
 
-Archaeological Assessment|[English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/7_-_eamena_v3_-_archaeological_assessment_updated.pdf) |[عربي](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/7_-_eamena_v3_-_archaeological_assessment_arabic_updated.pdf)|
+Archaeological Assessment| [English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/7_-_eamena_v3_-_archaeological_assessment_updated.pdf) | [عربي](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/7_-_eamena_v3_-_archaeological_assessment_arabic_updated.pdf) |
 
 - [Part 1: Overall Morphology and Chronology](https://youtu.be/38ElNVPEBKI)
 - [Part 2: Site Features](https://youtu.be/oUYDVzyCp6M)
 - [Part 3: Measurements, Materials and Geoarchaeology](https://youtu.be/ikvU6TdRBpk)
 
-Environment Assessment |[English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/8_-_eamena_v3_-_environment_assessment.pdf) |[عربي](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/8_-_eamena_v3_-_environment_assessment_arabic.pdf)|
+Environment Assessment | [English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/8_-_eamena_v3_-_environment_assessment.pdf) | [عربي](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/8_-_eamena_v3_-_environment_assessment_arabic.pdf) |
 
 - [Environment Assessment](https://youtu.be/7HzOIo4a3UM)
 
-Condition Assessment |[English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/12_-_eamena_v3_-_condition_assessment.pdf) |[عربي](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/12_-_eamena_v3_-_condition_assessment_site_arabic.pdf)|
+Condition Assessment | [English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/12_-_eamena_v3_-_condition_assessment.pdf) | [عربي](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/12_-_eamena_v3_-_condition_assessment_site_arabic.pdf) |
 
 [Part 1: Condition Assessment](https://youtu.be/HnQF4EiOCFA)
 
@@ -472,15 +472,15 @@ Related Resources
 
 #### MarEA/Geoarchaeology
 
-The MarEA Project|[English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/cpf-marea-2020.pdf) |
+The MarEA Project| [English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/cpf-marea-2020.pdf) |
 
 - [An Introduction to the MarEA Project](https://youtu.be/Cl4ri-tT8Mg)
 
-Introduction to Geoarchaeology | [English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/10_-_eamena_v3_-_intro_to_geoarchaeology_records.pdf) |[عربي](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/10_-_eamena_v3_-_intro_to_geoarchaeology_records_arabic.pdf)|
+Introduction to Geoarchaeology | [English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/10_-_eamena_v3_-_intro_to_geoarchaeology_records.pdf) | [عربي](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/10_-_eamena_v3_-_intro_to_geoarchaeology_records_arabic.pdf) |
 
 [Geoarchaeology: Introduction](https://youtu.be/4TyIgo8rVws)
 
-Geoarchaeology Assessment| [English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/11_-_eamena_v3_-_geoarchaeology_assessment.pdf) |[عربي](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/11_-_eamena_v3_-_geoarchassessment_arabic.pdf)|
+Geoarchaeology Assessment| [English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/11_-_eamena_v3_-_geoarchaeology_assessment.pdf) | [عربي](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/11_-_eamena_v3_-_geoarchassessment_arabic.pdf) |
 
 - [Part 1: Resource Summary](https://youtu.be/fOSfxOLykZg)
 - [Part 2: Geometry and Geography](https://youtu.be/pX3IhRaDhN0)
@@ -490,14 +490,14 @@ Geoarchaeology Assessment| [English](https://eamena.web.ox.ac.uk/sites/default/f
 
 #### Built Component
 
-Built Component: Observation, Measurements, Material, Geometry, Assessment Summary |[English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/13_-_eamena_v3_-_built_component.pdf) |[عربي](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/13_-_eamena_v3_-_built_component_arabic.pdf)|
+Built Component: Observation, Measurements, Material, Geometry, Assessment Summary | [English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/13_-_eamena_v3_-_built_component.pdf) | [عربي](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/13_-_eamena_v3_-_built_component_arabic.pdf) |
 
 - [Part 1: Introduction](https://youtu.be/NHSuz8XeqgY)
 - [Part 2: How to Create a Built Component](https://youtu.be/gph1hz7qKuQ)
 
 #### Detailed Condition Assessment
 
-Detailed Condition Assessment |[English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/14_-_eamena_v3_-_detailed_condition_assessment.pdf) |[عربي](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/14_-_eamena_v3_-_detailed_condition_assessment_arabic.pdf)|
+Detailed Condition Assessment | [English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/14_-_eamena_v3_-_detailed_condition_assessment.pdf) | [عربي](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/14_-_eamena_v3_-_detailed_condition_assessment_arabic.pdf) |
 
 - [Part 1: Introduction](https://youtu.be/Dq64KukGyIA)
 - [Part 2: Measurements, Location, Modification and Construction](https://youtu.be/kSaDkEmLrh4)
@@ -507,7 +507,7 @@ Detailed Condition Assessment |[English](https://eamena.web.ox.ac.uk/sites/defau
 
 #### Information Resource
 
-Information Resource |[English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/15_-_eamena_v3_-_information_resource_1_compressed.pdf) |[عربي](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/15_-_eamena_v3_-_information_resource_arabic_compressed.pdf)|
+Information Resource | [English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/15_-_eamena_v3_-_information_resource_1_compressed.pdf) | [عربي](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/15_-_eamena_v3_-_information_resource_arabic_compressed.pdf) |
 
 - [Part 1: Introduction](http://youtu.be/WE3GZ0Xj8As)
 - [Part 2a: Bibliography](https://youtu.be/7jRXBp6Mkqo)
@@ -518,13 +518,13 @@ Information Resource |[English](https://eamena.web.ox.ac.uk/sites/default/files/
 
 #### Record/Resource Management
 
-Record/Resource Management | [English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/16_-_eamena_v3_-_managing_your_records.pdf) |[عربي](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/16_-_eamena_v3_-_managing_your_records_arabic.pdf)|
+Record/Resource Management | [English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/16_-_eamena_v3_-_managing_your_records.pdf) | [عربي](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/16_-_eamena_v3_-_managing_your_records_arabic.pdf) |
 
 - [Managing your Records](https://youtu.be/CBOGyU3c9Hc)
 
 #### Exploratory Analysis
 
-Advanced (complex) Searches |[English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/17_-_eamena_v3_searching_the_database_2_-_advanced_final2.pdf) |[عربي](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/17_-_eamena_v3_searching_the_database_2_-_advanced_arabic_compressed.pdf)|
+Advanced (complex) Searches | [English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/17_-_eamena_v3_searching_the_database_2_-_advanced_final2.pdf) | [عربي](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/17_-_eamena_v3_searching_the_database_2_-_advanced_arabic_compressed.pdf) |
 
 - [Part 1: Introduction](https://youtu.be/-dKez1iYa5Q)
 - [Part 2: 'And' and 'Or' Searches](https://youtu.be/92IvC_ojEuo)
@@ -532,7 +532,7 @@ Advanced (complex) Searches |[English](https://eamena.web.ox.ac.uk/sites/default
 - [Part 4: Time Filter](https://youtu.be/Kz5F3WGkzFg)
 - [Part 5: Examples](https://youtu.be/aD4oF0xNye4)
 
-Making tables and graphs based on database data|[English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/18_-_making_tables_and_graphs-compressed.pdf) |[عربي](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/18_-_making_tables_and_graphs_final_-_arb_compressed.pdf)|
+Making tables and graphs based on database data| [English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/18_-_making_tables_and_graphs-compressed.pdf) | [عربي](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/18_-_making_tables_and_graphs_final_-_arb_compressed.pdf) |
 
 - [Part 1: Introduction](https://youtu.be/0XlKgpsfcQs)
 - [Part 2](https://youtu.be/L7G7EkdqHAI)
@@ -546,7 +546,7 @@ Making tables and graphs based on database data|[English](https://eamena.web.ox.
 
 #### Exporting Data
 
-Exporting from the database |[English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/19_-_eamena_v3_exporting.pdf) |[عربي](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/19_-_eamena_v3_exporting_arabic_compressed.pdf)|
+Exporting from the database | [English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/19_-_eamena_v3_exporting.pdf) | [عربي](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/19_-_eamena_v3_exporting_arabic_compressed.pdf) |
 
 - [Part 1: Introduction](https://youtu.be/LssKo9rBekg)
 - [Part 2: Using the Excel Reorganising Macro](https://youtu.be/rjWepf_iQCc)

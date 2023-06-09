@@ -1,30 +1,18 @@
 # Dev
 > scheduled developments and miscellaneous
 
-# EAMENA TODO
-
-Don't Git this folder/file: `git add -- . :!"TODO"`
-Convert MD to PDF: `pandoc -s "C:/Rprojects/eamena-arches-dev/TODO/TODO.md" -s -o "C:/Rprojects/eamena-arches-dev/TODO/TODO.pdf"`
-
-## Access
-
-MFA authentification (v. connect)  
-IAM policies
-
 ## Images
 
 Restore the path of images
 
-![](C:/Rprojects/eamena-arches-dev/www/images-uploaded-error.png)
+<p align="center">
+  <img alt="img-name" src="../www/images-uploaded-error.png" width="700">
+  <br>
+    <em>caption</em>
+</p>
+![](C:/Rprojects/eamena-arches-dev/)
   
 example: Search INFORMATION-0104667
-https://database.eamena.org/en/report/0f7d56e4-df54-419f-b7ba-34f67d65bb14
-
-## Quality of information
-
-Develop a Python function to model the quality of HP (or HR) with a radar diagram
-
-https://github.com/eamena-project/eamena-arches-5-project/blob/master/eamena/statistics/hr_quality_rec.py
 
 ## Spatial
 
@@ -71,6 +59,13 @@ https://database.eamena.org/en/search?paging-filter=1&tiles=true&format=tilecsv&
 > Linked open data
 
 See 'Related resources', try to recover the info with a SPARQL endpoint
+
+
+## Quality of information
+
+Develop a Python function to model the quality of HP (or HR) with a radar diagram
+
+https://github.com/eamena-project/eamena-arches-5-project/blob/master/eamena/statistics/hr_quality_rec.py
 
 ## Arches v5.2 to v7.3 upgrade
 

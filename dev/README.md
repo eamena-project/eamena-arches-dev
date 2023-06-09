@@ -10,7 +10,6 @@ Restore the path of images
   <br>
     <em>caption</em>
 </p>
-![](C:/Rprojects/eamena-arches-dev/)
   
 example: Search INFORMATION-0104667
 
@@ -36,18 +35,21 @@ https://database.eamena.org/en/search?paging-filter=1&tiles=true&format=tilecsv&
 
 ### EDTF
 
-![](C:/Rprojects/eamena-arches-dev/www/time-edtf-cultural-periods.png)
-
-### Timewheel
-
-
-## Calculated fields
+<p align="center">
+  <img alt="img-name" src="../www/time-edtf-cultural-periods.png" width="700">
+  <br>
+    <em>caption</em>
+</p>
 
 ### Audit
 
 Translate https://mareastats.drashsmith.com/ from PHP to Python
 
-![](C:/Rprojects/eamena-arches-dev/www/audit-data-sums.png)
+<p align="center">
+  <img alt="img-name" src="../www/audit-data-sums.png" width="700">
+  <br>
+    <em>caption</em>
+</p>
 
 ## Related resources
 > test to add contains relation with 23test 

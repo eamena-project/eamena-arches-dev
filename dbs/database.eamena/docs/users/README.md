@@ -52,10 +52,10 @@ native groups +
 
 Unless otherwise specified, these groups are set up in Django Admin/Groups (https://database.eamena.org/admin/auth/group/)
 
-| permission level | EA group name | native Arches groups combination  | description  |
+| permission level | EA group name | Arches groups combination  | description  |
 |---|---|---|---|
 | 1 | Guest | Guest | same as Arches 'Guest', max zoom = 10 (~town scale)[^3], cannot see: condition assessment[^1], coordinates[^1] |
-| 2 | Researcher | Guest | same as Arches 'Guest', no edit, no add  |
+| 2 | Researcher | Researcher | same as Arches 'Guest', no edit, no add  |
 | 3 | Contributor | Resource Editor + Resource Reviewer  |  can create/edit but can't delete |
 | 4 | Staff | Resource Editor + Resource Reviewer + Resource Deleted + RDM Adinistrator + Application Administrator [^2] | cannot change Resource Models and System settings |
 | 5 | Sys Admin | * | = superuser |

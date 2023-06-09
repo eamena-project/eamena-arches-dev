@@ -15,8 +15,13 @@ example: Search INFORMATION-0104667
 
 ## Spatial
 
-### Zoom
-> Max Zoom, recenter, etc.
+### Collect the coordinates
+
+### Click clustering
+
+### Reverse geocoding
+
+### Zoom level
 
 + Keep the same level of zoom when clicking on the 'map' button 
 
@@ -28,7 +33,7 @@ example: Search INFORMATION-0104667
 
 Today when click on the 'map' button, there's a de-zoom
 
-example: Search 'Suq Sirmayatiya (Market)' = [EAMENA-0166083](https://database.eamena.org/en/search?paging-filter=1&tiles=true&format=tilecsv&precision=6&total=336316&term-filter=%5B%7B%22inverted%22%3Afalse%2C%22type%22%3A%22string%22%2C%22context%22%3A%22%22%2C%22context_label%22%3A%22%22%2C%22id%22%3A%22Suq%20Sirmayatiya%20(Market)%22%2C%22text%22%3A%22Suq%20Sirmayatiya%20(Market)%22%2C%22value%22%3A%22Suq%20Sirmayatiya%20(Market)%22%7D%5D)
+example: Search 'Suq Sirmayatiya (Market)' = [EAMENA-0166083](https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&precision=6&total=336316&term-filter=%5B%7B%22inverted%22%3Afalse%2C%22type%22%3A%22string%22%2C%22context%22%3A%22%22%2C%22context_label%22%3A%22%22%2C%22id%22%3A%22Suq%20Sirmayatiya%20(Market)%22%2C%22text%22%3A%22Suq%20Sirmayatiya%20(Market)%22%2C%22value%22%3A%22Suq%20Sirmayatiya%20(Market)%22%7D%5D)
 
 ## Time
 

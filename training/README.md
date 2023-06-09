@@ -228,7 +228,7 @@ Backups
 
 ### Training Schedule
 
-### Day 1 (18/06/2023)
+#### Day 1 (18/06/2023)
 
 ##### Address by His Excellency the Director General Professor Fadi Balaawi
 

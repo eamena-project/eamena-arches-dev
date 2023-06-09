@@ -228,7 +228,7 @@ Backups
 
 ### Training Schedule
 
-### Day 1 (18/06/2023)
+#### Day 1 (18/06/2023)
 
 ##### Address by His Excellency the Director General Professor Fadi Balaawi
 
@@ -396,7 +396,6 @@ Making maps in Google Earth Pro **(follow along)**
 -[Google Earth Pro download link](https://www.google.com/earth/download/gep/agree.html?gl=GB&hl=en)
 
 ### YouTube and PDF Tutorials
-## YouTube & PDF Tutorials
 
 Please note these tutorials were created for Version 3 of the EAMENA database - we have newly upgraded to Version 4 and have not yet updated the documentation. However, the vast majority of tutorials are relevant to both versions.
 

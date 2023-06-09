@@ -33,7 +33,11 @@ https://github.com/eamena-project/eamena-arches-5-project/blob/master/eamena/sta
 
 + Keep the same level of zoom when clicking on the 'map' button 
 
-![](C:/Rprojects/eamena-arches-dev/www/zoom-map-same-zoom.png)
+<p align="center">
+  <img alt="img-name" src="../www/zoom-map-same-zoom.png" width="700">
+  <br>
+    <em>caption</em>
+</p>
 
 Today when click on the 'map' button, there's a de-zoom
 

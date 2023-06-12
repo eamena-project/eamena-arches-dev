@@ -17,11 +17,40 @@ example: Search INFORMATION-0104667
 
 ### Collect the coordinates
 
+*expected behaviour*: on a click in the map, lon/lat coordinates of the point are shown in the bottom-right or bottom-left of the map and can be copied in the clipboard
 
+### Cluster of Clusters
 
-### Click clustering
+*expected behaviour*: group in cluster or explode clusters depending on zoom-in zoom-ou
+
+Restore the path of images
+
+<p align="center">
+  <img alt="img-name" src="../www/arches-dev-mapbox-ClustOfClust.gif
+" width="700">
+  <br>
+    <em>caption</em>
+</p>
+  
+
+### Cluster zooming
+
+*expected behaviour*: after clicking on a cluster, this cluster explode and there's an automatic zoom-in to its minimum bound rectangle. The behaviour we expect is similar to Arches v3
+
+see: https://community.archesproject.org/t/mapbox-cluster-zooming/1964
 
 ### Reverse geocoding
+
+*expected behaviour*: be able to find a place (zoom-in) from its coordinates 
+
+<p align="center">
+  <img alt="img-name" src="../www/arches-v7-dev-mapbox-revgeocod.gif
+" width="700">
+  <br>
+    <em>caption</em>
+</p>
+
+see: https://community.archesproject.org/t/reverse-geocoding-zoom-in-from-coordinates/1852
 
 ### Zoom level
 

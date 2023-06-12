@@ -38,20 +38,6 @@ see: https://community.archesproject.org/t/mapbox-cluster-zooming/1964
 
 see: https://community.archesproject.org/t/reverse-geocoding-zoom-in-from-coordinates/1852
 
-### Zoom level
-
-+ Keep the same level of zoom when clicking on the 'map' button 
-
-<p align="center">
-  <img alt="img-name" src="../www/zoom-map-same-zoom.png" width="700">
-  <br>
-    <em>caption</em>
-</p>
-
-Today when click on the 'map' button, there's a de-zoom
-
-example: Search 'Suq Sirmayatiya (Market)' = [EAMENA-0166083](https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&precision=6&total=336316&term-filter=%5B%7B%22inverted%22%3Afalse%2C%22type%22%3A%22string%22%2C%22context%22%3A%22%22%2C%22context_label%22%3A%22%22%2C%22id%22%3A%22Suq%20Sirmayatiya%20(Market)%22%2C%22text%22%3A%22Suq%20Sirmayatiya%20(Market)%22%2C%22value%22%3A%22Suq%20Sirmayatiya%20(Market)%22%7D%5D)
-
 ---
 
 ## Images

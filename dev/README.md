@@ -31,7 +31,7 @@ see: https://community.archesproject.org/t/mapbox-cluster-zooming/1964
 *expected behaviour*: be able to find a place (zoom-in) from its coordinates 
 
 <p align="center">
-  <img src="../www/arches-v7-dev-mapbox-revgeocod.gif" width="500">
+  <img src="../www/arches-v7-dev-mapbox-revgeocod.gif" width="300">
   <br>
     <em>caption</em>
 </p>

@@ -144,11 +144,11 @@ Monday 22 May, Tuesday 23 May and Wednesday 24 May 2023, between 9-11am ~~and 12
 
 #### Documentation
 
-* [Day 1 Google Slides 🖺](https://docs.google.com/presentation/d/1NIwZhX9ycueAM9CKijcRdYj7vckED6yZ-0bQeCDFlyE/edit?usp=sharing) and [Video 🎞️](https://drive.google.com/file/d/14-tEVqXcNJl8Sl5OoTZkGKBfYFILVHxi/view?usp=sharing)
-* [Day 2 Google Slides 🖺](https://docs.google.com/presentation/d/1bX1D7yQrF8QsgRlzymfpU-Bh6D-bE3gIYG4JIbwWFZw/edit?usp=share_link) and [Video 🎞️](https://drive.google.com/file/d/1cPg_PckmBX6WAy5inzVjHAaCHHPEAA66/view?usp=sharing)
+* Day 1 [Google Slides 🖺](https://docs.google.com/presentation/d/1NIwZhX9ycueAM9CKijcRdYj7vckED6yZ-0bQeCDFlyE/edit?usp=sharing) and [Video 🎞️](https://drive.google.com/file/d/14-tEVqXcNJl8Sl5OoTZkGKBfYFILVHxi/view?usp=sharing)
+* Day 2 [Google Slides 🖺](https://docs.google.com/presentation/d/1bX1D7yQrF8QsgRlzymfpU-Bh6D-bE3gIYG4JIbwWFZw/edit?usp=share_link) and [Video 🎞️](https://drive.google.com/file/d/1cPg_PckmBX6WAy5inzVjHAaCHHPEAA66/view?usp=sharing)
   - Software stack
   - Installing Arches
-* [Day 3 Google Slides 🖺](https://docs.google.com/presentation/d/1HFlAh7SU9lqf8PdwdjCIbisRR6fLAeORvNU4ZQOK_qU/edit?usp=sharing) and [Video 🎞️](https://drive.google.com/file/d/1axP7UwFDhbKr1vm6dMZmeLtULjruMsQY/view?usp=sharing)
+* Day 3 [Google Slides 🖺](https://docs.google.com/presentation/d/1HFlAh7SU9lqf8PdwdjCIbisRR6fLAeORvNU4ZQOK_qU/edit?usp=sharing) and [Video 🎞️](https://drive.google.com/file/d/1axP7UwFDhbKr1vm6dMZmeLtULjruMsQY/view?usp=sharing)
   - CLI references
   - Debbuging
   - Troubleshooting SSH
@@ -433,7 +433,7 @@ Assessment Summary | [English](https://eamena.web.ox.ac.uk/sites/default/files/e
 - [Part 2: Assessment Summary](https://youtu.be/-sopmEZY1Zc)
 - [Part 3: Assessment Summary](https://youtu.be/XbAxJJQXJw8)
 
-Resource Summary| [English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/4_-_eamena_v3_-_resource_summary.pdf) | [عربي](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/4_-_eamena_v3_-_resource_summary_arabic.pdf) |
+Resource Summary | [English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/4_-_eamena_v3_-_resource_summary.pdf) | [عربي](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/4_-_eamena_v3_-_resource_summary_arabic.pdf) |
 
 - [Resource Summary](https://youtu.be/vogizPGzk9A)
 
@@ -448,7 +448,7 @@ Geography | [English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/doc
 - [Geography (Part 1)](https://youtu.be/bDIpbBfxOw8)
 - [Geography (Part 2)](https://youtu.be/wnAXmrlij3s)
 
-Archaeological Assessment| [English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/7_-_eamena_v3_-_archaeological_assessment_updated.pdf) | [عربي](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/7_-_eamena_v3_-_archaeological_assessment_arabic_updated.pdf) |
+Archaeological Assessment | [English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/7_-_eamena_v3_-_archaeological_assessment_updated.pdf) | [عربي](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/7_-_eamena_v3_-_archaeological_assessment_arabic_updated.pdf) |
 
 - [Part 1: Overall Morphology and Chronology](https://youtu.be/38ElNVPEBKI)
 - [Part 2: Site Features](https://youtu.be/oUYDVzyCp6M)
@@ -480,7 +480,7 @@ Introduction to Geoarchaeology | [English](https://eamena.web.ox.ac.uk/sites/def
 
 [Geoarchaeology: Introduction](https://youtu.be/4TyIgo8rVws)
 
-Geoarchaeology Assessment| [English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/11_-_eamena_v3_-_geoarchaeology_assessment.pdf) | [عربي](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/11_-_eamena_v3_-_geoarchassessment_arabic.pdf) |
+Geoarchaeology Assessment | [English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/11_-_eamena_v3_-_geoarchaeology_assessment.pdf) | [عربي](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/11_-_eamena_v3_-_geoarchassessment_arabic.pdf) |
 
 - [Part 1: Resource Summary](https://youtu.be/fOSfxOLykZg)
 - [Part 2: Geometry and Geography](https://youtu.be/pX3IhRaDhN0)

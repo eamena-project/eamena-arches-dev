@@ -23,8 +23,6 @@ example: Search INFORMATION-0104667
 
 *expected behaviour*: group in cluster or explode clusters depending on zoom-in zoom-ou
 
-Restore the path of images
-
 <p align="center">
   <img src="../www/arches-v7-dev-mapbox-ClustOfClust.gif" width="500">
   <br>

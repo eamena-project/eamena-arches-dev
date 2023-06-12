@@ -26,8 +26,7 @@ example: Search INFORMATION-0104667
 Restore the path of images
 
 <p align="center">
-  <img alt="img-name" src="../www/arches-dev-mapbox-ClustOfClust.gif
-" width="700">
+  <img src="../www/arches-dev-mapbox-ClustOfClust.gif" width="700">
   <br>
     <em>caption</em>
 </p>
@@ -44,8 +43,7 @@ see: https://community.archesproject.org/t/mapbox-cluster-zooming/1964
 *expected behaviour*: be able to find a place (zoom-in) from its coordinates 
 
 <p align="center">
-  <img alt="img-name" src="../www/arches-v7-dev-mapbox-revgeocod.gif
-" width="700">
+  <img src="../www/arches-v7-dev-mapbox-revgeocod.gif" width="700">
   <br>
     <em>caption</em>
 </p>

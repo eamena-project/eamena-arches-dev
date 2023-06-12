@@ -287,7 +287,7 @@ If there is spare time then move onto Google Earth Pro, this will allow for more
 - Google Earth Pro
   - Slides [here](https://docs.google.com/presentation/d/1wMobmplz3YHCt2_l9NfOBebmNSM6jMSfka5SoL6f6WQ/edit?usp=drive_link)
 - GEP Download and install **(follow along)**
-  - Download link [here]([https://docs.google.com/document/u/0/d/1Mu4eo6Ov8aMSYW4p1Z_5EyU42nrG52dSDwSGChYa5NY/edit](https://www.google.com/earth/download/gep/agree.html?gl=GB&hl=en)
+  - Download link [here](https://www.google.com/earth/download/gep/agree.html?gl=GB&hl=en)
 - GEP Basic controls **(follow along)**
   - Navigation
   - Layers (turn off)

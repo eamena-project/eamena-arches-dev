@@ -17,6 +17,8 @@ example: Search INFORMATION-0104667
 
 ### Collect the coordinates
 
+
+
 ### Click clustering
 
 ### Reverse geocoding

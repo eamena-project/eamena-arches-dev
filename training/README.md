@@ -251,8 +251,6 @@ Click [here]() to download the PDF of the training program
 - Brief introduction to the EAMENA project
   - Slides [here](https://docs.google.com/presentation/u/0/d/1-qyVdMlZudkeA9GzGgLMV3OtspP8k5rhudYwPBg2mEU/edit)
 
-  **🍵 coffee break**
-
 - Trainee/Trainer introductions
 - Training overview (GitHub) and setup *by Thomas*
   - Slides [here](https://docs.google.com/presentation/u/0/d/1QrYW7SxO6id6OZ8chiI9z0kh8z0jGlxemOoUECdK8AY/edit)
@@ -265,8 +263,6 @@ Click [here]() to download the PDF of the training program
   - [https://database.eamena.org/](https://database.eamena.org/)
     - Add to bookmarks (optional)
   - Usernames [here](https://docs.google.com/spreadsheets/u/0/d/1X9oJQ5Uhs6sSxsXalhjdYnpMsQwoDHRhp2Oa8O56Edo/edit), password: ?
-
-  **🍴 lunch break**
 
 ##### Database basics **(follow along)**
 

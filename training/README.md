@@ -302,6 +302,28 @@ If there is spare time then move onto Google Earth Pro, this will allow for more
 
 #### Day 2 (19/06/2023)
 
+##### Grids
+
+* Palestine
+
+| grid id | geojson | kml |
+|---------|---------|-----|
+| all     |  [here](https://github.com/eamena-project/eamena-arches-dev/blob/main/training/2023/grids/palestine/all.geojson) |     |
+| E34N31-24 |  [here](https://github.com/eamena-project/eamena-arches-dev/blob/main/training/2023/grids/palestine/E34N31-24.geojson) | [here](https://github.com/eamena-project/eamena-arches-dev/blob/main/training/2023/grids/palestine/E34N31-24.kml)  |
+|         |         |     |
+|         |         |     |
+|         |         |     |
+|         |         |     |
+|         |         |     |
+|         |         |     |
+|         |         |     |
+|         |         |     |
+|         |         |     |
+
+- Palestine
+  - all: 
+
+
 ##### Google Earth Pro and Database Heritage Place (part 1)
 
 - Google Earth Pro

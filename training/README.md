@@ -306,23 +306,19 @@ If there is spare time then move onto Google Earth Pro, this will allow for more
 
 * Palestine
 
-| grid id | geojson | kml |
-|---------|---------|-----|
-| all     |  [here](https://github.com/eamena-project/eamena-arches-dev/blob/main/training/2023/grids/palestine/all.geojson) |     |
-| E34N31-24 |  [here](https://github.com/eamena-project/eamena-arches-dev/blob/main/training/2023/grids/palestine/E34N31-24.geojson) | [here](https://github.com/eamena-project/eamena-arches-dev/blob/main/training/2023/grids/palestine/E34N31-24.kml)  |
-|         |         |     |
-|         |         |     |
-|         |         |     |
-|         |         |     |
-|         |         |     |
-|         |         |     |
-|         |         |     |
-|         |         |     |
-|         |         |     |
-
-- Palestine
-  - all: 
-
+|num | grid id | geojson | kml |
+|---|---------|---------|-----|
+| 0 | all     |  [here](https://github.com/eamena-project/eamena-arches-dev/blob/main/training/2023/grids/palestine/all.geojson) |     |
+| 1 | E34N31-24 |  [here](https://github.com/eamena-project/eamena-arches-dev/blob/main/training/2023/grids/palestine/E34N31-24.geojson) | [here](https://github.com/eamena-project/eamena-arches-dev/blob/main/training/2023/grids/palestine/E34N31-24.kml)  |
+| 2 | E35N31-13 |  [here](https://github.com/eamena-project/eamena-arches-dev/blob/main/training/2023/grids/palestine/E35N31-13.geojson) | [here](https://github.com/eamena-project/eamena-arches-dev/blob/main/training/2023/grids/palestine/E35N31-13.kml)  |
+| 3 | E35N31-31 |  [here](https://github.com/eamena-project/eamena-arches-dev/blob/main/training/2023/grids/palestine/E35N31-31.geojson) | [here](https://github.com/eamena-project/eamena-arches-dev/blob/main/training/2023/grids/palestine/E35N31-31.kml)  |
+| 4 | E35N31-32 |  [here](https://github.com/eamena-project/eamena-arches-dev/blob/main/training/2023/grids/palestine/E35N31-32.geojson) | [here](https://github.com/eamena-project/eamena-arches-dev/blob/main/training/2023/grids/palestine/E35N31-32.kml)  |
+| 5 | E35N31-33 |  [here](https://github.com/eamena-project/eamena-arches-dev/blob/main/training/2023/grids/palestine/E35N31-33.geojson) | [here](https://github.com/eamena-project/eamena-arches-dev/blob/main/training/2023/grids/palestine/E35N31-33.kml)  |
+| 6 | E35N31-34 |  [here](https://github.com/eamena-project/eamena-arches-dev/blob/main/training/2023/grids/palestine/E35N31-34.geojson) | [here](https://github.com/eamena-project/eamena-arches-dev/blob/main/training/2023/grids/palestine/E35N31-34.kml)  |
+| 7 | E35N32-11 |  [here](https://github.com/eamena-project/eamena-arches-dev/blob/main/training/2023/grids/palestine/E35N32-11.geojson) | [here](https://github.com/eamena-project/eamena-arches-dev/blob/main/training/2023/grids/palestine/E35N32-11.kml)  |
+| 8 | E35N32-12 |  [here](https://github.com/eamena-project/eamena-arches-dev/blob/main/training/2023/grids/palestine/E35N32-12.geojson) | [here](https://github.com/eamena-project/eamena-arches-dev/blob/main/training/2023/grids/palestine/E35N32-12.kml)  |
+| 9 | E35N32-13 |  [here](https://github.com/eamena-project/eamena-arches-dev/blob/main/training/2023/grids/palestine/E35N32-13.geojson) | [here](https://github.com/eamena-project/eamena-arches-dev/blob/main/training/2023/grids/palestine/E35N32-13.kml)  |
+| 10 | E35N32-14 |  [here](https://github.com/eamena-project/eamena-arches-dev/blob/main/training/2023/grids/palestine/E35N32-14.geojson) | [here](https://github.com/eamena-project/eamena-arches-dev/blob/main/training/2023/grids/palestine/E35N32-14.kml)  |
 
 ##### Google Earth Pro and Database Heritage Place (part 1)
 

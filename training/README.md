@@ -253,6 +253,8 @@ gantt
   - Slides [here](https://docs.google.com/presentation/u/0/d/1QrYW7SxO6id6OZ8chiI9z0kh8z0jGlxemOoUECdK8AY/edit)
   - Google Drive folder [here](https://drive.google.com/drive/folders/1p3wYJPCcvfKAiUNnKoWlyq675svv7V0I?usp=sharing)
 
+<center> break </center>
+
 ##### Introduction to the EAMENA database
 
 - Slides [here](https://docs.google.com/presentation/u/0/d/1Q0U7n9QkCcptxVtzmZVMAst0L2noNz4kmMIMTi31_yk/edit)

@@ -240,6 +240,8 @@ gantt
     MoTA & DoA                        : a1, 2023-06-18, 2023-06-22
 ```
 
+Click [here]() to download the PDF of the training program
+
 #### Day 1 (18/06/2023)
 
 ##### Address by His Excellency the Director General Professor Fadi Balaawi

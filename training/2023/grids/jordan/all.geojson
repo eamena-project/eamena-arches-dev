@@ -1,0 +1,335 @@
+{
+	"features": [
+	  {
+		"geometry": {
+		  "coordinates": [
+			[
+			  [
+				35.75,
+				29.25
+			  ],
+			  [
+				35.75,
+				29.5
+			  ],
+			  [
+				36,
+				29.5
+			  ],
+			  [
+				36,
+				29.25
+			  ],
+			  [
+				35.75,
+				29.25
+			  ]
+			]
+		  ],
+		  "type": "Polygon"
+		},
+		"properties": {
+		  "Grid ID": "E35N29-24"
+		},
+		"type": "Feature"
+	  },
+	  {
+		"geometry": {
+		  "coordinates": [
+			[
+			  [
+				35.5,
+				29.75
+			  ],
+			  [
+				35.5,
+				30
+			  ],
+			  [
+				35.75,
+				30
+			  ],
+			  [
+				35.75,
+				29.75
+			  ],
+			  [
+				35.5,
+				29.75
+			  ]
+			]
+		  ],
+		  "type": "Polygon"
+		},
+		"properties": {
+		  "Grid ID": "E35N29-43"
+		},
+		"type": "Feature"
+	  },
+	  {
+		"geometry": {
+		  "coordinates": [
+			[
+			  [
+				36,
+				30.25
+			  ],
+			  [
+				36,
+				30.5
+			  ],
+			  [
+				36.25,
+				30.5
+			  ],
+			  [
+				36.25,
+				30.25
+			  ],
+			  [
+				36,
+				30.25
+			  ]
+			]
+		  ],
+		  "type": "Polygon"
+		},
+		"properties": {
+		  "Grid ID": "E36N30-13"
+		},
+		"type": "Feature"
+	  },
+	  {
+		"geometry": {
+		  "coordinates": [
+			[
+			  [
+				35.5,
+				30
+			  ],
+			  [
+				35.5,
+				30.25
+			  ],
+			  [
+				35.75,
+				30.25
+			  ],
+			  [
+				35.75,
+				30
+			  ],
+			  [
+				35.5,
+				30
+			  ]
+			]
+		  ],
+		  "type": "Polygon"
+		},
+		"properties": {
+		  "Grid ID": "E35N30-21"
+		},
+		"type": "Feature"
+	  },
+	  {
+		"geometry": {
+		  "coordinates": [
+			[
+			  [
+				35.75,
+				29.5
+			  ],
+			  [
+				35.75,
+				29.75
+			  ],
+			  [
+				36,
+				29.75
+			  ],
+			  [
+				36,
+				29.5
+			  ],
+			  [
+				35.75,
+				29.5
+			  ]
+			]
+		  ],
+		  "type": "Polygon"
+		},
+		"properties": {
+		  "Grid ID": "E35N29-42"
+		},
+		"type": "Feature"
+	  },
+	  {
+		"geometry": {
+		  "coordinates": [
+			[
+			  [
+				35.75,
+				29.75
+			  ],
+			  [
+				35.75,
+				30
+			  ],
+			  [
+				36,
+				30
+			  ],
+			  [
+				36,
+				29.75
+			  ],
+			  [
+				35.75,
+				29.75
+			  ]
+			]
+		  ],
+		  "type": "Polygon"
+		},
+		"properties": {
+		  "Grid ID": "E35N29-44"
+		},
+		"type": "Feature"
+	  },
+	  {
+		"geometry": {
+		  "coordinates": [
+			[
+			  [
+				35.75,
+				30
+			  ],
+			  [
+				35.75,
+				30.25
+			  ],
+			  [
+				36,
+				30.25
+			  ],
+			  [
+				36,
+				30
+			  ],
+			  [
+				35.75,
+				30
+			  ]
+			]
+		  ],
+		  "type": "Polygon"
+		},
+		"properties": {
+		  "Grid ID": "E35N30-22"
+		},
+		"type": "Feature"
+	  },
+	  {
+		"geometry": {
+		  "coordinates": [
+			[
+			  [
+				35.75,
+				30.25
+			  ],
+			  [
+				35.75,
+				30.5
+			  ],
+			  [
+				36,
+				30.5
+			  ],
+			  [
+				36,
+				30.25
+			  ],
+			  [
+				35.75,
+				30.25
+			  ]
+			]
+		  ],
+		  "type": "Polygon"
+		},
+		"properties": {
+		  "Grid ID": "E35N30-24"
+		},
+		"type": "Feature"
+	  },
+	  {
+		"geometry": {
+		  "coordinates": [
+			[
+			  [
+				35.5,
+				29.5
+			  ],
+			  [
+				35.5,
+				29.75
+			  ],
+			  [
+				35.75,
+				29.75
+			  ],
+			  [
+				35.75,
+				29.5
+			  ],
+			  [
+				35.5,
+				29.5
+			  ]
+			]
+		  ],
+		  "type": "Polygon"
+		},
+		"properties": {
+		  "Grid ID": "E35N29-41"
+		},
+		"type": "Feature"
+	  },
+	  {
+		"geometry": {
+		  "coordinates": [
+			[
+			  [
+				36,
+				30
+			  ],
+			  [
+				36,
+				30.25
+			  ],
+			  [
+				36.25,
+				30.25
+			  ],
+			  [
+				36.25,
+				30
+			  ],
+			  [
+				36,
+				30
+			  ]
+			]
+		  ],
+		  "type": "Polygon"
+		},
+		"properties": {
+		  "Grid ID": "E36N30-11"
+		},
+		"type": "Feature"
+	  }
+	],
+	"type": "FeatureCollection"
+  }

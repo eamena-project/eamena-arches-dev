@@ -263,7 +263,7 @@ Click [here]() to download the PDF of the training program
     - Add to bookmarks (optional)
   - Usernames [here](https://docs.google.com/spreadsheets/u/0/d/1X9oJQ5Uhs6sSxsXalhjdYnpMsQwoDHRhp2Oa8O56Edo/edit), password: ?
 
-  **break**
+  **lunch break**
 
 ##### Database basics **(follow along)**
 

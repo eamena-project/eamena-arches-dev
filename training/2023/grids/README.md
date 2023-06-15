@@ -1,9 +1,9 @@
 # Grids
 
 <p align="center">
-  <img alt="img-name" src="../../../www/eamenaDB-grid.png" width="700">
+  <img alt="img-name" src="../../../www/eamenaDB-grid.png" width="600">
   <br>
-    <em>EAMENA grid</em> <https://database.eamena.org/>
+    <em>EAMENA grids</em> <https://database.eamena.org/>
 </p>
 
 ## Palestine

@@ -1,7 +1,7 @@
 # Grids
 
 <p align="center">
-  <img alt="img-name" src="../../www/eamenaDB-grid.png" width="700">
+  <img alt="img-name" src="../../../../www/eamenaDB-grid.png" width="700">
   <br>
     <em>EAMENA grid</em> <https://database.eamena.org/>
 </p>

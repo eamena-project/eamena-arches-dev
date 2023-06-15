@@ -250,9 +250,8 @@ Click [here]() to download the PDF of the training program
 
 - Brief introduction to the EAMENA project
   - Slides [here](https://docs.google.com/presentation/u/0/d/1-qyVdMlZudkeA9GzGgLMV3OtspP8k5rhudYwPBg2mEU/edit)
-
 - Trainee/Trainer introductions
-- Training overview (GitHub) and setup *by Thomas*
+- Training overview (GitHub) and setup
   - Slides [here](https://docs.google.com/presentation/u/0/d/1QrYW7SxO6id6OZ8chiI9z0kh8z0jGlxemOoUECdK8AY/edit)
   - Google Drive folder [here](https://drive.google.com/drive/folders/1p3wYJPCcvfKAiUNnKoWlyq675svv7V0I?usp=sharing)
 
@@ -313,7 +312,7 @@ If there is spare time then move onto Google Earth Pro, this will allow for more
   - Reset view
     - Turn off tilting in options (optional)
 - GEP Survey **(follow along)**
-  - Download EAMENA\_Grid\_Jordan\_Palestine.kmz [here](https://drive.google.com/file/d/1CHD8v3OO6bktCoJD86QGyZFyjZR-QYpz/view?usp=drive_link)
+  - Download EAMENA_Grid_Jordan_Palestine.kmz [here](https://drive.google.com/file/d/1CHD8v3OO6bktCoJD86QGyZFyjZR-QYpz/view?usp=drive_link)
   - Open Grid in GEP
   - Demonstrate survey methodology
   - Demonstrate site naming (optional)
@@ -321,7 +320,7 @@ If there is spare time then move onto Google Earth Pro, this will allow for more
   - Can be a new survey site or a previously known site
   - Tell Damiyah (Jordan) is a good example (already has a [record](https://database.eamena.org/report/e3473be0-14c1-44fa-8c7d-74e6b0270dc3) with periods etc in the database) \> 32.103917° N 35.546977° E
   - Or e.g. Tell Raza (Iraq), a Neo-Assyrian tell with diverse disturbances in the KRG \> 35.302385° N 45.684842° E
-- Heritage Place - Assessment Summary card **(follow along)**
+- Heritage Place (part 1)- Assessment Summary card **(follow along)**
 
 ##### Heritage Place (part 2)
 

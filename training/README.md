@@ -1,5 +1,10 @@
 # Arches/EAMENA Trainings
 
+by theme:
+
+* [CPF training, Amman, Jordan - 18-22 June, 2023](https://github.com/eamena-project/eamena-arches-dev/tree/main/training#users--database-managers--sys-admins-training)
+
+
 by year:
 
 * [2022](https://github.com/eamena-project/eamena-arches-dev/tree/main/training#2022)

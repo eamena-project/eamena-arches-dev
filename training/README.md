@@ -251,11 +251,9 @@ Click [here]() to download the PDF of the training program
 - Brief introduction to the EAMENA project
   - Slides [here](https://docs.google.com/presentation/u/0/d/1-qyVdMlZudkeA9GzGgLMV3OtspP8k5rhudYwPBg2mEU/edit)
 - Trainee/Trainer introductions
-- Training overview and setup
+- Training overview (GitHub) and setup
   - Slides [here](https://docs.google.com/presentation/u/0/d/1QrYW7SxO6id6OZ8chiI9z0kh8z0jGlxemOoUECdK8AY/edit)
   - Google Drive folder [here](https://drive.google.com/drive/folders/1p3wYJPCcvfKAiUNnKoWlyq675svv7V0I?usp=sharing)
-
-<center> break </center>
 
 ##### Introduction to the EAMENA database
 

@@ -228,6 +228,16 @@ Backups
 
 ### Training Schedule
 
+```mermaid
+gantt
+    title Arches v7 (EAMENA v4) training
+    dateFormat  YYYY-MM-DD
+    axisFormat  %d-%m-%Y
+    tickInterval 1day
+    section In-person
+    MoTA & DoA                        : a1, 2023-06-18, 2023-06-22
+```
+
 #### Day 1 (18/06/2023)
 
 ##### Address by His Excellency the Director General Professor Fadi Balaawi

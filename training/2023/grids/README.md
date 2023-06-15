@@ -1,8 +1,6 @@
 # Grids
 
-##### Grids
-
-* Palestine
+## Palestine
 
 |num | grid id | geojson | kml |
 |---|---------|---------|-----|
@@ -18,7 +16,7 @@
 | 9 | E35N32-13 |  [here](https://github.com/eamena-project/eamena-arches-dev/blob/main/training/2023/grids/palestine/E35N32-13.geojson) | [here](https://github.com/eamena-project/eamena-arches-dev/blob/main/training/2023/grids/palestine/E35N32-13.kml)  |
 | 10 | E35N32-14 |  [here](https://github.com/eamena-project/eamena-arches-dev/blob/main/training/2023/grids/palestine/E35N32-14.geojson) | [here](https://github.com/eamena-project/eamena-arches-dev/blob/main/training/2023/grids/palestine/E35N32-14.kml)  |
 
-* Jordan
+## Jordan
 
 |num | grid id | geojson | kml |
 |---|---------|---------|-----|

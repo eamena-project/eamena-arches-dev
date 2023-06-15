@@ -320,6 +320,13 @@ If there is spare time then move onto Google Earth Pro, this will allow for more
 | 9 | E35N32-13 |  [here](https://github.com/eamena-project/eamena-arches-dev/blob/main/training/2023/grids/palestine/E35N32-13.geojson) | [here](https://github.com/eamena-project/eamena-arches-dev/blob/main/training/2023/grids/palestine/E35N32-13.kml)  |
 | 10 | E35N32-14 |  [here](https://github.com/eamena-project/eamena-arches-dev/blob/main/training/2023/grids/palestine/E35N32-14.geojson) | [here](https://github.com/eamena-project/eamena-arches-dev/blob/main/training/2023/grids/palestine/E35N32-14.kml)  |
 
+* Jordan
+
+|num | grid id | geojson | kml |
+|---|---------|---------|-----|
+| 0 | all     |  [here](https://github.com/eamena-project/eamena-arches-dev/blob/main/training/2023/grids/jordan/all.geojson) |     |
+
+
 ##### Google Earth Pro and Database Heritage Place (part 1)
 
 - Google Earth Pro

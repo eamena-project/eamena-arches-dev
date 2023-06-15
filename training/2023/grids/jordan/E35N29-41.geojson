@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "Grid ID_E35N29-41",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Grid ID": "E35N29-41" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 35.5, 29.5 ], [ 35.5, 29.75 ], [ 35.75, 29.75 ], [ 35.75, 29.5 ], [ 35.5, 29.5 ] ] ] } }
+]
+}

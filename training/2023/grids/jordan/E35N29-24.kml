@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="Grid_ID_E35N29_24" id="Grid_ID_E35N29_24">
+	<SimpleField name="Grid ID" type="string"></SimpleField>
+</Schema>
+<Folder><name>Grid_ID_E35N29_24</name>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#Grid_ID_E35N29_24">
+		<SimpleData name="Grid ID">E35N29-24</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>35.75,29.25 35.75,29.5 36.0,29.5 36.0,29.25 35.75,29.25</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+</Folder>
+</Document></kml>

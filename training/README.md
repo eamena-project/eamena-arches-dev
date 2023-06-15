@@ -240,7 +240,7 @@ gantt
     MoTA & DoA                        : a1, 2023-06-18, 2023-06-22
 ```
 
-Click [here]() to download the PDF of the training program
+Click [here](https://github.com/eamena-project/eamena-arches-dev/blob/main/training/2023/EAMENA-Doa_MoTA%20Training%20Programme.pdf) to see the PDF of the training program (download using the 📥 button on the top right) 
 
 #### Day 1 (18/06/2023)
 

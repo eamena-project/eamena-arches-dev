@@ -292,6 +292,7 @@ Click [here](https://github.com/eamena-project/eamena-arches-dev/blob/main/train
 
 ##### Person/Organisation **(follow along)**
 
+- Slides [here](https://docs.google.com/presentation/d/13RihYQuJHQDQ0e9RYI0G7uwB06SB58tgFEpjDLzvu78/edit?usp=sharing)
 - Explain how tree and cards work
 - Fill in Appellation card
 - Explain the other optional cards (for e.g. historic figures)

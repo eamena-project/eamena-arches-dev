@@ -228,11 +228,13 @@ Backups
 
 ### Training Schedule
 
+Amman International Hotel, Amman | فندق عمان الدولي , عمان
+
 ```mermaid
 gantt
     title Arches v7 (EAMENA v4) training
     dateFormat  YYYY-MM-DD
-    axisFormat  %d-%m-%Y
+    axisFormat  %A %d-%m-%Y
     tickInterval 1day
     section In-person
     MoTA & DoA                        : a1, 2023-06-18, 2023-06-22

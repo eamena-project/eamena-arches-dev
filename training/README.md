@@ -352,7 +352,6 @@ If there is spare time then move onto Google Earth Pro, this will allow for more
 - Information Resources **(demo only)**
   - Add new or show existing
 - Built Components **(demo only)**
-- Detailed Condition Assessments **(demo only)**
 
 ##### Bulk uploading Heritage Places
 

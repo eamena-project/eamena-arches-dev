@@ -251,7 +251,7 @@ Click [here]() to download the PDF of the training program
 - Brief introduction to the EAMENA project
   - Slides [here](https://docs.google.com/presentation/u/0/d/1-qyVdMlZudkeA9GzGgLMV3OtspP8k5rhudYwPBg2mEU/edit)
 
-  **break**
+  **coffee break**
 
 - Trainee/Trainer introductions
 - Training overview (GitHub) and setup *by Thomas*

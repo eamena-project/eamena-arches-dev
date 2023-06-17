@@ -421,6 +421,8 @@ If there is spare time then move onto Google Earth Pro, this will allow for more
 
 ##### Awarding of certificates
 
+---
+
 ### Useful links
 
 - [EAMENA homepage](https://www.eamena.org/)

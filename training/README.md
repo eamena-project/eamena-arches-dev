@@ -247,7 +247,15 @@ gantt
 
 Click [here](https://github.com/eamena-project/eamena-arches-dev/blob/main/training/2023/EAMENA-Doa_MoTA%20Training%20Programme.pdf) to see the PDF of the training program (download using the 📥 button on the top right) 
 
-#### Day 1 (18/06/2023)
+CPF training, June 2023, Amman, Jordan
+
+| Sunday 18 | Monday 19 | Tuesday 20 | Wednesday 21 | Thursday 22 |
+|--------|--------|---------|-----------|----------|
+| [Day 1](https://github.com/eamena-project/eamena-arches-dev/tree/main/training#day-1) |  [Day 2](https://github.com/eamena-project/eamena-arches-dev/tree/main/training#day-2)  |  [Day 3](https://github.com/eamena-project/eamena-arches-dev/tree/main/training#day-3)  |  [Day 4](https://github.com/eamena-project/eamena-arches-dev/tree/main/training#day-4) |   [Day 5](https://github.com/eamena-project/eamena-arches-dev/tree/main/training#day-5)  |
+
+
+#### Day 1
+> 18/06/2023
 
 ##### Address by His Excellency the Director General Professor Fadi Balaawi
 
@@ -302,7 +310,8 @@ Click [here](https://github.com/eamena-project/eamena-arches-dev/blob/main/train
 
 If there is spare time then move onto Google Earth Pro, this will allow for more practice time for the following afternoon.
 
-#### Day 2 (19/06/2023)
+#### Day 2
+> 19/06/2023
 
 
 
@@ -347,7 +356,8 @@ If there is spare time then move onto Google Earth Pro, this will allow for more
 - Environment assessment card **(follow along)**
 - Data entry practice with more sites for cards covered
 
-#### Day 3 (20/06/2023)
+#### Day 3
+> 20/06/2023
 
 ##### EAMENA Condition Assessment and Heritage Place (part 5)
 
@@ -369,7 +379,8 @@ If there is spare time then move onto Google Earth Pro, this will allow for more
 
 ##### Data entry practice
 
-#### Day 4 (21/06/2023)
+#### Day 4
+> 21/06/2023
 
 ##### Advanced search, data export and record management
 
@@ -404,7 +415,8 @@ If there is spare time then move onto Google Earth Pro, this will allow for more
 
 ##### Trainee presentation preparation
 
-#### Day 5 (22/06/2023)
+#### Day 5
+> 22/06/2023
 
 ##### DoA Trainee Presentations
 

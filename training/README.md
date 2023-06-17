@@ -231,6 +231,9 @@ Backups
 ## 'users & database managers & sys admins' training
 > In-person training for users, database managers and sys admins
 
+  <img alt="img-name" src="../../../www/logo-doa.png" align="right" width="600">
+
+
 ### Training Schedule
 
 Amman International Hotel, Amman | فندق عمان الدولي , عمان
@@ -320,14 +323,14 @@ If there is spare time then move onto Google Earth Pro, this will allow for more
   - Reset view
     - Turn off tilting in options (optional)
 - GEP Survey **(follow along)**
-  - Download EAMENA_Grid_Jordan_Palestine.kmz [here](https://drive.google.com/file/d/1CHD8v3OO6bktCoJD86QGyZFyjZR-QYpz/view?usp=drive_link)
+  - Download `EAMENA_Grid_Jordan_Palestine.kmz` [here](https://drive.google.com/file/d/1CHD8v3OO6bktCoJD86QGyZFyjZR-QYpz/view?usp=drive_link)
   - Open Grid in GEP
   - Demonstrate survey methodology
   - Demonstrate site naming (optional)
 - GEP practice to find a site to record in the database
   - Can be a new survey site or a previously known site
-  - Tell Damiyah (Jordan) is a good example (already has a [record](https://database.eamena.org/report/e3473be0-14c1-44fa-8c7d-74e6b0270dc3) with periods etc in the database) \> 32.103917° N 35.546977° E
-  - Or e.g. Tell Raza (Iraq), a Neo-Assyrian tell with diverse disturbances in the KRG \> 35.302385° N 45.684842° E
+  - Tell Damiyah (Jordan) is a good example (already has a [record](https://database.eamena.org/report/e3473be0-14c1-44fa-8c7d-74e6b0270dc3) with periods etc in the database) > `32.103917° N 35.546977° E`
+  - Or e.g. Tell Raza (Iraq), a Neo-Assyrian tell with diverse disturbances in the KRG > `35.302385° N 45.684842° E`
 - Heritage Place (part 1)- Assessment Summary card **(follow along)**
 
 ##### Heritage Place (part 2)

@@ -229,29 +229,17 @@ Backups
 * ~~Popular Django forums~~
 
 ## 'users & database managers & sys admins' training
-> In-person training for users, database managers and sys admins
+> CPF training, June 2023, Amman International Hotel, Amman, Jordan | فندق عمان الدولي , عمان
+
+In-person training for users, database managers and sys admins
 
 ### Training Schedule
-
-Amman International Hotel, Amman | فندق عمان الدولي , عمان
-
-```mermaid
-gantt
-    title Arches v7 (EAMENA v4) training
-    dateFormat  YYYY-MM-DD
-    axisFormat  %A %d-%m-%Y
-    tickInterval 1day
-    section In-person
-    MoTA & DoA                        : a1, 2023-06-18, 2023-06-22
-```
-
-Click [here](https://github.com/eamena-project/eamena-arches-dev/blob/main/training/2023/EAMENA-Doa_MoTA%20Training%20Programme.pdf) to see the PDF of the training program (download using the 📥 button on the top right) 
-
-CPF training, June 2023, Amman, Jordan
 
 | Sunday 18 | Monday 19 | Tuesday 20 | Wednesday 21 | Thursday 22 |
 |--------|--------|---------|-----------|----------|
 | [Day 1](https://github.com/eamena-project/eamena-arches-dev/tree/main/training#day-1) |  [Day 2](https://github.com/eamena-project/eamena-arches-dev/tree/main/training#day-2)  |  [Day 3](https://github.com/eamena-project/eamena-arches-dev/tree/main/training#day-3)  |  [Day 4](https://github.com/eamena-project/eamena-arches-dev/tree/main/training#day-4) |   [Day 5](https://github.com/eamena-project/eamena-arches-dev/tree/main/training#day-5)  |
+
+Click [here](https://github.com/eamena-project/eamena-arches-dev/blob/main/training/2023/EAMENA-Doa_MoTA%20Training%20Programme.pdf) to see the PDF of the training program (download using the 📥 button on the top right) 
 
 ---
 

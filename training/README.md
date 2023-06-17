@@ -267,7 +267,9 @@ Click [here](https://github.com/eamena-project/eamena-arches-dev/blob/main/train
   - [https://database.eamena.org/](https://database.eamena.org/)
     - Add to bookmarks (optional)
   - Usernames [here](https://docs.google.com/spreadsheets/u/0/d/1X9oJQ5Uhs6sSxsXalhjdYnpMsQwoDHRhp2Oa8O56Edo/edit), password: ?
-- [Grids](https://github.com/eamena-project/eamena-arches-dev/tree/main/training/2023/grids)
+- Grids
+  - [to see](https://github.com/eamena-project/eamena-arches-dev/tree/main/training/2023/grids)
+  - [to download](https://drive.google.com/drive/folders/1QjLQtVx5OnlEVw3RhNS6W5TgYsIs8s6O?usp=sharing)
 ##### Database basics **(follow along)**
 
 - Select language

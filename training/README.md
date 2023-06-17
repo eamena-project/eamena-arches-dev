@@ -231,7 +231,8 @@ Backups
 ## 'users & database managers & sys admins' training
 > In-person training for users, database managers and sys admins
 
-<img alt="img-name" src="../www/logo-doa.png" align="right" width="150"><img alt="img-name" src="../www/logo-mota.jpg" align="right" width="100">
+<img alt="img-name" src="../www/logo-doa.png" align="right" width="120"><br>
+<img alt="img-name" src="../www/logo-mota.jpg" align="right" width="100">
 
 
 ### Training Schedule

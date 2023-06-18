@@ -233,6 +233,8 @@ Backups
 
 In-person training for users, database managers and sys admins
 
+* database: https://database.eamena.org/
+
 ### Training Schedule
 
 | Sunday 18 | Monday 19 | Tuesday 20 | Wednesday 21 | Thursday 22 |
@@ -344,6 +346,9 @@ If there is spare time then move onto Google Earth Pro, this will allow for more
 
 ##### Heritage Place (part 4) and data entry practice
 
+- Archaeological Assessment card (see here)
+  - Palestinian CPF *tag*: CPF23-P
+  - Jordan CPF *tag*: CPF23-J
 - Environment assessment card **(follow along)**
 - Data entry practice with more sites for cards covered
 

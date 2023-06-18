@@ -262,6 +262,7 @@ Click [here](https://github.com/eamena-project/eamena-arches-dev/blob/main/train
 ##### Introduction to the EAMENA database
 
 - Slides [here](https://docs.google.com/presentation/u/0/d/1Q0U7n9QkCcptxVtzmZVMAst0L2noNz4kmMIMTi31_yk/edit)
+  - new : the [English -> Arabic translation](https://github.com/archesproject/arches/blob/master/arches/locale/ar/LC_MESSAGES/django.po)
 - Logging in **(follow along)**
   - [https://database.eamena.org/](https://database.eamena.org/)
     - Add to bookmarks (optional)

@@ -158,6 +158,7 @@ Monday 22 May, Tuesday 23 May and Wednesday 24 May 2023, between 9-11am ~~and 12
   - Debbuging
   - Troubleshooting SSH
   - Backups
+* [installation steps](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/docs/install/Clone.md) (based on EAMENA v4): 
 
 #### Program
 

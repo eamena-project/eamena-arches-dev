@@ -25,6 +25,15 @@ see: https://community.archesproject.org/t/mapbox-cluster-zooming/1964
 
 see: https://community.archesproject.org/t/reverse-geocoding-zoom-in-from-coordinates/1852
 
+### search by different type of coordinates
+
+
+<p align="center">
+  <img src="../www/megaj-search-coordinates.png" width="300">
+  <br>
+    <em>caption</em>
+</p>
+
 ### Collect the coordinates
 
 *expected behaviour*: on a click in the map, lon/lat coordinates of the point are shown in the bottom-right or bottom-left of the map and can be copied in the clipboard

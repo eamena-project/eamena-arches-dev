@@ -345,13 +345,15 @@ If there is spare time then move onto Google Earth Pro, this will allow for more
 ##### Heritage Place (part 3)
 
 - Archaeological Assessment card **(follow along)**
-  - documentation [here](#assessment-summary)
+  - documentation [here](#archaeological-summary)
 
 ##### Heritage Place (part 4) and data entry practice
 
 - Archaeological Assessment card (see here)
-  - Palestinian CPF *tag*: CPF23-P
-  - Jordan CPF *tag*: CPF23-J
+  - documentation [here](#archaeology-summary)
+  - CPF *tag*
+  - Palestinian : CPF23-P
+  - Jordan : CPF23-J
 - Environment assessment card **(follow along)**
 - Data entry practice with more sites for cards covered
 
@@ -369,6 +371,7 @@ If there is spare time then move onto Google Earth Pro, this will allow for more
 
 - Introduction to EAMENA Condition Assessment
   - Slides [here](https://docs.google.com/presentation/u/0/d/1GHW4jKUtVqInEIM9oMENzBhCEk28mG6QS493VMGHSeQ/edit)
+  - documentation [here](#condition-summary)
 - Heritage Place - Condition Assessment card **(follow along)**
 
 ##### Other Database Resource Models
@@ -480,7 +483,7 @@ Creating a new Person/Organization Record | [English](https://eamena.web.ox.ac.u
 - [Part 2: Assessment Summary](https://youtu.be/-sopmEZY1Zc)
 - [Part 3: Assessment Summary](https://youtu.be/XbAxJJQXJw8)
 
-Resource Summary | [English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/4_-_eamena_v3_-_resource_summary.pdf) | [عربي](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/4_-_eamena_v3_-_resource_summary_arabic.pdf) |
+<a id="resource-summary"></a>Resource Summary | [English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/4_-_eamena_v3_-_resource_summary.pdf) | [عربي](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/4_-_eamena_v3_-_resource_summary_arabic.pdf) |
 
 - [Resource Summary](https://youtu.be/vogizPGzk9A)
 
@@ -495,7 +498,7 @@ Geography | [English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/doc
 - [Geography (Part 1)](https://youtu.be/bDIpbBfxOw8)
 - [Geography (Part 2)](https://youtu.be/wnAXmrlij3s)
 
-Archaeological Assessment | [English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/7_-_eamena_v3_-_archaeological_assessment_updated.pdf) | [عربي](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/7_-_eamena_v3_-_archaeological_assessment_arabic_updated.pdf) |
+<a id="archaeology-summary"></a>Archaeological Assessment | [English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/7_-_eamena_v3_-_archaeological_assessment_updated.pdf) | [عربي](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/7_-_eamena_v3_-_archaeological_assessment_arabic_updated.pdf) |
 
 - [Part 1: Overall Morphology and Chronology](https://youtu.be/38ElNVPEBKI)
 - [Part 2: Site Features](https://youtu.be/oUYDVzyCp6M)
@@ -505,7 +508,7 @@ Environment Assessment | [English](https://eamena.web.ox.ac.uk/sites/default/fil
 
 - [Environment Assessment](https://youtu.be/7HzOIo4a3UM)
 
-Condition Assessment | [English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/12_-_eamena_v3_-_condition_assessment.pdf) | [عربي](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/12_-_eamena_v3_-_condition_assessment_site_arabic.pdf) |
+<a id="condition-summary"></a>Condition Assessment | [English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/12_-_eamena_v3_-_condition_assessment.pdf) | [عربي](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/12_-_eamena_v3_-_condition_assessment_site_arabic.pdf) |
 
 [Part 1: Condition Assessment](https://youtu.be/HnQF4EiOCFA)
 

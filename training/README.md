@@ -356,7 +356,7 @@ If there is spare time then move onto Google Earth Pro, this will allow for more
 
 ⚠️ troubleshootings
 - [Drag and Drop a KML geometry doesn't work](https://github.com/eamena-project/eamena-arches-dev/issues/25)
-- [EAMENA ID = غير محدد](https://github.com/eamena-project/eamena-arches-dev/issues/26)
+- [EAMENA ID = غير محدد = indéfini = ...](https://github.com/eamena-project/eamena-arches-dev/issues/26)
 - [EAMENA ID duplicated](https://github.com/eamena-project/eamena-arches-dev/issues/27)
 
 ---

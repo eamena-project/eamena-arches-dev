@@ -587,7 +587,7 @@ EAMENA User Interface
 
 
 ```{=html}
-<embed src="https://database.eamena.org/en/" width="800px" height="400px" />
+<embed src="https://database.eamena.org" width="800px" height="400px" />
 ```
 
 :::

@@ -381,6 +381,9 @@ If there is spare time then move onto Google Earth Pro, this will allow for more
 - Information Resources **(demo only)**
   - Add new or show existing
 - Built Components **(demo only)**
+  - see [here](https://github.com/eamena-project/eamenaR#related-resources)
+- Geoarchaeology
+  - mostly used by [MaREA](https://marea.soton.ac.uk/)
 
 ##### Bulk uploading Heritage Places
 

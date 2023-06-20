@@ -384,8 +384,6 @@ If there is spare time then move onto Google Earth Pro, this will allow for more
   - another BU sheet [here](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bulk#bu-template-file)
 ##### Data entry practice
 
-⚠️ troubleshootings
-- [Add data in the Information Resource model](https://github.com/eamena-project/eamena-arches-dev/issues/23)
 ---
 
 #### Day 4

@@ -345,6 +345,7 @@ If there is spare time then move onto Google Earth Pro, this will allow for more
 ##### Heritage Place (part 3)
 
 - Archaeological Assessment card **(follow along)**
+  - documentation [here](#assessment-summary)
 
 ##### Heritage Place (part 4) and data entry practice
 
@@ -472,7 +473,7 @@ Creating a new Person/Organization Record | [English](https://eamena.web.ox.ac.u
 
 #### Heritage Place
 
-Assessment Summary | [English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/3_-_eamena_v3_-_assessment_summary.pdf) | [عربي](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/3_-_eamena_v3_-_assessment_summary_arabic.pdf) |
+<a id="assessment-summary"></a>Assessment Summary | [English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/3_-_eamena_v3_-_assessment_summary.pdf) | [عربي](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/3_-_eamena_v3_-_assessment_summary_arabic.pdf) |
 
 - [A Heritage Place example: Rujm al Faridiyyeh, Jordan](https://youtu.be/HHGN8FJTv8Y)
 - [Part 1: Assessment Summary](https://youtu.be/c7qh3PwROgI)

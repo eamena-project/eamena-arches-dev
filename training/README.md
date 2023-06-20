@@ -382,7 +382,6 @@ If there is spare time then move onto Google Earth Pro, this will allow for more
 
 - Bulk upload sheet [here](https://docs.google.com/spreadsheets/d/1yTdzuad5ycZApp9u23JzdWWlBe17U-KI/edit?usp=drive_link&ouid=100772503955149566691&rtpof=true&sd=true)
   - another BU sheet [here](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bulk#bu-template-file)
-
 ##### Data entry practice
 
 ⚠️ troubleshootings

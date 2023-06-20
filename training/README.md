@@ -352,8 +352,8 @@ If there is spare time then move onto Google Earth Pro, this will allow for more
 - Archaeological Assessment card (see here)
   - documentation [here](#archaeology-summary)
   - CPF *tag*
-  - Palestinian : CPF23-P
-  - Jordan : CPF23-J
+    - Palestinian : CPF23-P
+    - Jordan : CPF23-J
 - Environment assessment card **(follow along)**
 - Data entry practice with more sites for cards covered
 

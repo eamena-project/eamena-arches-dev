@@ -409,27 +409,27 @@ If there is spare time then move onto Google Earth Pro, this will allow for more
   - Recent Edits
   - Deleting records
 
-##### ~~Trainee presentation overview and making maps with Google Earth Pro~~
+##### Trainee presentation overview and making maps with Google Earth Pro
 
-- ~~Trainee presentation overview~~
-- ~~Making maps in Google Earth Pro **(follow along)**~~
-  - ~~GEP \> File \> Save \> Save As Image (or Save Image button)~~
-  - ~~Resolution~~
-  - ~~Map Options~~
-    - ~~Add elements~~
-    - ~~Edit elements (title, legend)~~
-  - ~~Save Image~~
+- Trainee presentation overview
+- Making maps in Google Earth Pro **(follow along)**
+  - GEP \> File \> Save \> Save As Image (or Save Image button)
+  - Resolution
+  - Map Options
+    - Add elements
+    - Edit elements (title, legend)
+  - Save Image
 
-##### ~~Trainee presentation preparation~~
+##### Trainee presentation preparation
 
 ---
 
 #### Day 5
 > 22/06/2023
 
-##### ~~DoA Trainee Presentations~~
+##### DoA Trainee Presentations
 
-##### ~~MoTA Trainee presentations~~
+##### MoTA Trainee presentations
 
 ##### Awarding of certificates
 

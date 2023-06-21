@@ -425,9 +425,9 @@ BU append see: https://github.com/eamena-project/eamenaR#bu-append
   - Recent Edits
   - Deleting records
 
-##### Trainee presentation overview and making maps with Google Earth Pro
+##### ~~Trainee presentation overview and~~ Making maps with Google Earth Pro
 
-- Trainee presentation overview
+- ~~Trainee presentation overview~~
 - Making maps in Google Earth Pro **(follow along)**
   - GEP \> File \> Save \> Save As Image (or Save Image button)
   - Resolution
@@ -436,16 +436,20 @@ BU append see: https://github.com/eamena-project/eamenaR#bu-append
     - Edit elements (title, legend)
   - Save Image
 
-##### Trainee presentation preparation
+##### ~~Trainee presentation preparation~~
 
 ---
 
 #### Day 5
 > 22/06/2023
 
-##### DoA Trainee Presentations
+##### Round table
 
-##### MoTA Trainee presentations
+Round table topic [here](https://docs.google.com/presentation/d/1GMR1O-kJUWGjwsBMEkHPqoWjF65FbJIXmoFzSWstqEQ/edit?usp=sharing)
+
+##### ~~DoA Trainee Presentations~~
+
+##### ~~MoTA Trainee presentations~~
 
 ##### Awarding of certificates
 

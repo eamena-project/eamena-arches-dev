@@ -391,6 +391,9 @@ If there is spare time then move onto Google Earth Pro, this will allow for more
   - another BU sheet [here](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bulk#bu-template-file)
 ##### Data entry practice
 
+⚠️ troubleshootings
+- [Bulk-Uploader accepts unstructured bulk (validate and upload)](https://github.com/eamena-project/eamena-arches-dev/issues/28)
+
 ---
 
 #### Day 4

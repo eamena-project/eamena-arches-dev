@@ -387,8 +387,11 @@ If there is spare time then move onto Google Earth Pro, this will allow for more
 
 ##### Bulk uploading Heritage Places
 
-- Bulk upload sheet [here](https://docs.google.com/spreadsheets/d/1yTdzuad5ycZApp9u23JzdWWlBe17U-KI/edit?usp=drive_link&ouid=100772503955149566691&rtpof=true&sd=true)
+- Bulk upload (BU) sheet [here](https://docs.google.com/spreadsheets/d/1yTdzuad5ycZApp9u23JzdWWlBe17U-KI/edit?usp=drive_link&ouid=100772503955149566691&rtpof=true&sd=true)
   - another BU sheet [here](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bulk#bu-template-file)
+
+BU append see: https://github.com/eamena-project/eamenaR#bu-append
+
 ##### Data entry practice
 
 ⚠️ troubleshootings
@@ -402,7 +405,7 @@ If there is spare time then move onto Google Earth Pro, this will allow for more
 ##### Advanced search, data export and record management
 
 - Advanced Search **(follow along)**
-  - E.g. Roman Imperial `AND` Hellenistic Heritage Places vs Roman `OR` Hellenistic
+  - E.g. Roman Imperial `AND` Hellenistic Heritage Places *vs* Roman `OR` Hellenistic
   - Roman Imperial `AND` Temple `AND` Jordan
   - Roman Imperial `AND` Temple `AND` Jordan `OR` Hellenistic `AND` TEMPLE `AND` Jordan
   - Find own sites
@@ -412,7 +415,7 @@ If there is spare time then move onto Google Earth Pro, this will allow for more
   - Export as shapefile
   - Import to Google Earth
     - Extract files
-    - GEP \> File \> Open \> ESRI Shape
+    - GEP > File > Open > ESRI Shape
     - Set style template
     - Move to My Places (optional)
 - Record management **(demo only)**

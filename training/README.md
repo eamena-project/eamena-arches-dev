@@ -402,11 +402,11 @@ If there is spare time then move onto Google Earth Pro, this will allow for more
 ##### Advanced search, data export and record management
 
 - Advanced Search **(follow along)**
-  - E.g. Roman Imperial AND Hellenistic Heritage Places vs Roman OR Hellenistic
-  - Roman Imperial AND Temple AND Jordan
-  - Roman Imperial AND Temple AND Jordan OR Hellenistic AND TEMPLE AND Jordan
+  - E.g. Roman Imperial `AND` Hellenistic Heritage Places vs Roman `OR` Hellenistic
+  - Roman Imperial `AND` Temple `AND` Jordan
+  - Roman Imperial `AND` Temple `AND` Jordan `OR` Hellenistic `AND` TEMPLE `AND` Jordan
   - Find own sites
-    - Heritage Place \> Assessment Summary \> Assessment Investigator
+    - Heritage Place > Assessment Summary > Assessment Investigator
 - Exporting data **(follow along)**
   - Discuss options
   - Export as shapefile

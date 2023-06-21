@@ -78,7 +78,7 @@ This online training will be hosted online (ZOOM): "Arches/EAMENA Database Manag
 
 * project: https://www.archesproject.org/
 * demo (v5): http://v5demo.archesproject.org/search?paging-filter=1
-* documentation: https://arches.readthedocs.io/en/stable/
+* 🗎 documentation: https://arches.readthedocs.io/en/stable/
   - documentation 5.2: https://arches.readthedocs.io/en/5.1/
 * forum: https://community.archesproject.org/
 * GitHub: https://github.com/archesproject/arches
@@ -345,12 +345,12 @@ If there is spare time then move onto Google Earth Pro, this will allow for more
 ##### Heritage Place (part 3)
 
 - Archaeological Assessment card **(follow along)**
-  - documentation [here](#archaeological-summary)
+  - 🖺 documentation [here](#archaeological-summary)
 
 ##### Heritage Place (part 4) and data entry practice
 
 - Archaeological Assessment card (see here)
-  - documentation [here](#archaeology-summary)
+  - 🖺 documentation [here](#archaeology-summary)
   - CPF *tag*
     - Palestinian : CPF23-P
     - Jordan : CPF23-J
@@ -371,7 +371,7 @@ If there is spare time then move onto Google Earth Pro, this will allow for more
 
 - Introduction to EAMENA Condition Assessment
   - Slides [here](https://docs.google.com/presentation/u/0/d/1GHW4jKUtVqInEIM9oMENzBhCEk28mG6QS493VMGHSeQ/edit)
-  - documentation [here](#condition-summary)
+  - 🖺 documentation [here](#condition-summary)
 - Heritage Place - Condition Assessment card **(follow along)**
 
 ##### Other Database Resource Models
@@ -418,7 +418,7 @@ see [here](https://github.com/eamena-project/eamena-arches-dev/tree/main/trainin
     - All `Defensive/Fortifications` in `Jordan`:
       - https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&reportlink=false&precision=6&total=353&advanced-search=%5B%7B%22op%22%3A%22and%22%2C%2234cfea43-c2c0-11ea-9026-02e7594ce0a0%22%3A%7B%22op%22%3A%22%22%2C%22val%22%3A%22890f6e0c-313b-4a64-bdd6-9e6c13eb1dd7%22%7D%2C%2234cfea5d-c2c0-11ea-9026-02e7594ce0a0%22%3A%7B%22op%22%3A%22%22%2C%22val%22%3A%22%22%7D%2C%2234cfea69-c2c0-11ea-9026-02e7594ce0a0%22%3A%7B%22op%22%3A%22%22%2C%22val%22%3A%22%22%7D%2C%2234cfea95-c2c0-11ea-9026-02e7594ce0a0%22%3A%7B%22op%22%3A%22~%22%2C%22lang%22%3A%22en%22%2C%22val%22%3A%22%22%7D%2C%2234cfea73-c2c0-11ea-9026-02e7594ce0a0%22%3A%7B%22op%22%3A%22%22%2C%22val%22%3A%22%22%7D%7D%2C%7B%22op%22%3A%22and%22%2C%2234cfea7d-c2c0-11ea-9026-02e7594ce0a0%22%3A%7B%22op%22%3A%22%22%2C%22val%22%3A%22%22%7D%2C%2234cfea4a-c2c0-11ea-9026-02e7594ce0a0%22%3A%7B%22op%22%3A%22%22%2C%22val%22%3A%22e090c5f2-64b4-4bd5-802b-a53b3554daf0%22%7D%7D%5D
     - Google Doc to share your Advanced Searches [here](https://docs.google.com/document/d/1SQngrYaLc4Uo7GfLcRWpyWkNeWomhnzNCDTejoBLy_U/edit?usp=sharing)
-    - documentation [here](#advanced-search)
+    - 🖺 documentation [here](#advanced-search)
 - Exporting data **(follow along)**
   - Discuss options
   - Export as shapefile
@@ -427,6 +427,7 @@ see [here](https://github.com/eamena-project/eamena-arches-dev/tree/main/trainin
     - GEP > File > Open > ESRI Shape
     - Set style template
     - Move to My Places (optional)
+    - 🖺 documentation [here](#export-data)
 - Record management **(demo only)**
   - Recent Edits
   - Deleting records
@@ -618,7 +619,7 @@ Making tables and graphs based on database data| [English](https://eamena.web.ox
 
 #### Exporting Data
 
-Exporting from the database | [English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/19_-_eamena_v3_exporting.pdf) | [عربي](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/19_-_eamena_v3_exporting_arabic_compressed.pdf) |
+<a id="export-data"></a>Exporting from the database | [English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/19_-_eamena_v3_exporting.pdf) | [عربي](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/19_-_eamena_v3_exporting_arabic_compressed.pdf) |
 
 - [Part 1: Introduction](https://youtu.be/LssKo9rBekg)
 - [Part 2: Using the Excel Reorganising Macro](https://youtu.be/rjWepf_iQCc)

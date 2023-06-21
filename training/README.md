@@ -405,6 +405,8 @@ BU append see: https://github.com/eamena-project/eamenaR#bu-append
 
 ##### Presentation of Day 5 round-table
 
+see [here](https://github.com/eamena-project/eamena-arches-dev/tree/main/training#round-table)
+
 ##### Advanced search, data export and record management
 
 - Advanced Search **(follow along)**

@@ -418,6 +418,7 @@ see [here](https://github.com/eamena-project/eamena-arches-dev/tree/main/trainin
     - All `Defensive/Fortifications` in `Jordan`:
       - https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&reportlink=false&precision=6&total=353&advanced-search=%5B%7B%22op%22%3A%22and%22%2C%2234cfea43-c2c0-11ea-9026-02e7594ce0a0%22%3A%7B%22op%22%3A%22%22%2C%22val%22%3A%22890f6e0c-313b-4a64-bdd6-9e6c13eb1dd7%22%7D%2C%2234cfea5d-c2c0-11ea-9026-02e7594ce0a0%22%3A%7B%22op%22%3A%22%22%2C%22val%22%3A%22%22%7D%2C%2234cfea69-c2c0-11ea-9026-02e7594ce0a0%22%3A%7B%22op%22%3A%22%22%2C%22val%22%3A%22%22%7D%2C%2234cfea95-c2c0-11ea-9026-02e7594ce0a0%22%3A%7B%22op%22%3A%22~%22%2C%22lang%22%3A%22en%22%2C%22val%22%3A%22%22%7D%2C%2234cfea73-c2c0-11ea-9026-02e7594ce0a0%22%3A%7B%22op%22%3A%22%22%2C%22val%22%3A%22%22%7D%7D%2C%7B%22op%22%3A%22and%22%2C%2234cfea7d-c2c0-11ea-9026-02e7594ce0a0%22%3A%7B%22op%22%3A%22%22%2C%22val%22%3A%22%22%7D%2C%2234cfea4a-c2c0-11ea-9026-02e7594ce0a0%22%3A%7B%22op%22%3A%22%22%2C%22val%22%3A%22e090c5f2-64b4-4bd5-802b-a53b3554daf0%22%7D%7D%5D
     - Google Doc to share your Advanced Searches [here](https://docs.google.com/document/d/1SQngrYaLc4Uo7GfLcRWpyWkNeWomhnzNCDTejoBLy_U/edit?usp=sharing)
+    - documentation [here](#advanced-search)
 - Exporting data **(follow along)**
   - Discuss options
   - Export as shapefile
@@ -595,7 +596,7 @@ Record/Resource Management | [English](https://eamena.web.ox.ac.uk/sites/default
 
 #### Exploratory Analysis
 
-Advanced (complex) Searches | [English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/17_-_eamena_v3_searching_the_database_2_-_advanced_final2.pdf) | [عربي](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/17_-_eamena_v3_searching_the_database_2_-_advanced_arabic_compressed.pdf) |
+<a id="advanced-search"></a>Advanced (complex) Searches | [English](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/17_-_eamena_v3_searching_the_database_2_-_advanced_final2.pdf) | [عربي](https://eamena.web.ox.ac.uk/sites/default/files/eamena/documents/media/17_-_eamena_v3_searching_the_database_2_-_advanced_arabic_compressed.pdf) |
 
 - [Part 1: Introduction](https://youtu.be/-dKez1iYa5Q)
 - [Part 2: 'And' and 'Or' Searches](https://youtu.be/92IvC_ojEuo)

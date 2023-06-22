@@ -445,6 +445,9 @@ see [here](https://github.com/eamena-project/eamena-arches-dev/tree/main/trainin
 
 ##### ~~Trainee presentation preparation~~
 
+⚠️ troubleshootings
+- When there are different Alternative References for a given Heritage Place, the pop-up window will show one of them randomly
+
 ---
 
 #### Day 5
@@ -459,6 +462,8 @@ see [here](https://github.com/eamena-project/eamena-arches-dev/tree/main/trainin
 ##### Resume of the Amman workshop (by Dr Bijan Rouhani)
 
 ##### Short video presentation (by Surveyor Ahmad Marafi)
+
+🎞️ download the video [here](https://drive.google.com/file/d/1OK2RUQn89H6jptMgOcnGh_XTvNpcWw51/view?usp=drive_link)
 
 ##### Round table
 

@@ -458,7 +458,7 @@ see [here](https://github.com/eamena-project/eamena-arches-dev/tree/main/trainin
 
 ##### Resume of the Amman workshop (by Dr Bijan Rouhani)
 
-##### Short video presentation (by Ahmad Marafi)
+##### Short video presentation (by Surveyor Ahmad Marafi)
 ##### Round table
 
 Round table topic [here](https://docs.google.com/presentation/d/1GMR1O-kJUWGjwsBMEkHPqoWjF65FbJIXmoFzSWstqEQ/edit?usp=sharing)

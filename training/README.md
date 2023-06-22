@@ -454,7 +454,7 @@ see [here](https://github.com/eamena-project/eamena-arches-dev/tree/main/trainin
 
 ##### Welcome (by Dr Sayantani Neogi)
 
-##### Future of EAMENA and national collaborations (by OBE Bill Finlayson)
+##### Future of EAMENA and collaborations (by OBE Bill Finlayson)
 
 ##### Resume of the Amman workshop (by Dr Bijan Rouhani)
 

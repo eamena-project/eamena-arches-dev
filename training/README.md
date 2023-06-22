@@ -464,9 +464,7 @@ see [here](https://github.com/eamena-project/eamena-arches-dev/tree/main/trainin
 
 Round table topic [here](https://docs.google.com/presentation/d/1GMR1O-kJUWGjwsBMEkHPqoWjF65FbJIXmoFzSWstqEQ/edit?usp=sharing)
 
-##### ~~DoA Trainee Presentations~~
-
-##### ~~MoTA Trainee presentations~~
+##### ~~DoA and Mota Trainee Presentations~~
 
 ##### Awarding of certificates
 

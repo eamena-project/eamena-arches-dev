@@ -460,7 +460,7 @@ see [here](https://github.com/eamena-project/eamena-arches-dev/tree/main/trainin
 
 ##### Short video presentation (by Surveyor Ahmad Marafi)
 
-🎞️ Video [here](https://drive.google.com/file/d/13rlNknJdRhzWmgvFIZ9lDsULNMNcGgau/view?usp=drive_link)
+🎞️ download the video [here](https://drive.google.com/file/d/13rlNknJdRhzWmgvFIZ9lDsULNMNcGgau/view?usp=drive_link)
 
 ##### Round table
 

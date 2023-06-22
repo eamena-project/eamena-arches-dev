@@ -454,11 +454,11 @@ see [here](https://github.com/eamena-project/eamena-arches-dev/tree/main/trainin
 
 ##### Welcome (by Dr Sayantani Neogi)
 
-##### Short talk (by OBE Bill Finlayson)
+##### Future of EAMENA and national collaborations (by OBE Bill Finlayson)
 
-##### Resume of the Jordan training (by Dr Bijan Rouhani)
+##### Resume of the Amman workshop (by Dr Bijan Rouhani)
 
-##### Video (by Ahmad Marafi)
+##### Short video presentation (by Ahmad Marafi)
 ##### Round table
 
 Round table topic [here](https://docs.google.com/presentation/d/1GMR1O-kJUWGjwsBMEkHPqoWjF65FbJIXmoFzSWstqEQ/edit?usp=sharing)

@@ -357,7 +357,7 @@ If there is spare time then move onto Google Earth Pro, this will allow for more
 - Environment assessment card **(follow along)**
 - Data entry practice with more sites for cards covered
 
-⚠️ troubleshootings
+<a id="troubles-day2"></a>⚠️ troubleshootings
 - [Drag and Drop a KML geometry doesn't work](https://github.com/eamena-project/eamena-arches-dev/issues/25)
 - [EAMENA ID = غير محدد = indéfini = ...](https://github.com/eamena-project/eamena-arches-dev/issues/26)
 - [EAMENA ID duplicated](https://github.com/eamena-project/eamena-arches-dev/issues/27)
@@ -395,7 +395,7 @@ BU append see: https://github.com/eamena-project/eamenaR#bu-append
 
 ##### Data entry practice
 
-⚠️ troubleshootings
+<a id="troubles-day3"></a>⚠️ troubleshootings
 - [Bulk-Uploader accepts unstructured bulk (validate and upload)](https://github.com/eamena-project/eamena-arches-dev/issues/28)
 
 ---

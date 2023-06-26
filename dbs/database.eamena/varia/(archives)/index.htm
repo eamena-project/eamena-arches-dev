@@ -96,9 +96,6 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
                         <a href="http://www.archesproject.org" class="">
                             <img src="{% static 'img/PoweredByArches.png' %}" class="powered-by-arches" width= "118" height= "50" style="padding: 0px 0px 35px 0px">&nbsp;
                         </a>
-                        <a href="http://www.archesproject.org" class="">
-                            <img src="{% static 'img/landing/eamena/license-cc-by.png' %}" class="" width= "50" style="padding: 0px 0px 35px 0px">&nbsp;
-                        </a>
                 </div>
 
   <!--                  <div class="relative" style="padding: 8px 10px 8px 100px; width: 300px;">
@@ -191,7 +188,7 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
 <!--                            <ul class="nav navbar-nav navbar-right" style="padding: 10px 10px 10px 100px"> -->
                                <!-- <li class="pull-right" style="padding: 0px 10px 0px 0px"> -->
                         <span style="padding-right: 20px">
-                            <a class="white" href="https://eamena.org/database#data-use" target="_blank">{% trans "License and Open Access Policy" %}</a></span>
+                            <a class="white" href="https://eamena.org/open-access-policy" target="_blank">{% trans "Please read our Open Access Policy before using the database" %}</a></span>
                     {% if user.username != 'anonymous' %}
                         <span style="padding-right: 20px">
                             <a class="white" href="{% url 'search_home' %}" target="_blank">{% trans "Search the EAMENA Database" %}</a></span>

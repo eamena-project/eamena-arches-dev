@@ -20,7 +20,7 @@ Grids are strored as a GeoJSON file here: https://github.com/eamena-project/eame
 
 ## QGIS project
 
-The QGIS project is here: https://github.com/eamena-project/eamena-arches-dev/blob/main/data/grids/grids_nb_hp.qgz. But you can also use the QGIS [projet_gesoserver.qgz](https://github.com/eamena-project/eamena-arches-dev/blob/main/gis/qgis/projet_gesoserver.qgz)
+The QGIS project is here: https://github.com/eamena-project/eamena-arches-dev/blob/main/data/grids/grids_nb_hp.qgz. But you can also use the QGIS project associated with the GeoServer [projet_gesoserver.qgz](https://github.com/eamena-project/eamena-arches-dev/blob/main/gis/qgis/projet_gesoserver.qgz)
 
 <p align="center">
   <img alt="img-name" src="../../www/arches-v7-grids-qgis.png" width="700">

@@ -28,7 +28,7 @@ The QGIS project is here: https://github.com/eamena-project/eamena-arches-dev/bl
     <em>Number of Heritage Places by EAMENA v4 grids (QGIS)</em>
 </p>
 
-The SLD file, for the layer style, is here: 
+The SLD file, for the layer style, is here: https://github.com/eamena-project/eamena-arches-dev/blob/main/data/grids/grids_nb_hp_230704.sld
 
 ## Create new grids
 

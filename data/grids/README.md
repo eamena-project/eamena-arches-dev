@@ -18,6 +18,14 @@ Grids are strored as a GeoJSON file here: https://github.com/eamena-project/eame
     <em>EAMENA v4 grids (GeoJSON)</em>
 </p>
 
+## QGIS project
+
+<p align="center">
+  <img alt="img-name" src="../../www/arches-v7-grids-qgis.png" width="700">
+  <br>
+    <em>Number of Heritage Places by EAMENA v4 grids (QGIS)</em>
+</p>
+
 ## Create new grids
 
 see the [QDGC folder](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/grids/qdgc_#readme) 

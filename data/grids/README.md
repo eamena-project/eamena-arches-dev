@@ -2,12 +2,19 @@
 
 ## Database
 
+### Geometries
+
+These grids come from the Grid Square Ressource Model
+
 <p align="center">
   <img alt="img-name" src="../../www/arches-v7-grids-ea.png" width="700">
   <br>
     <em>EAMENA v4 grids (in the database)</em>
 </p>
 
+### List of grids registered in HP
+
+The CSV list of all the grids registered in the Heritage Places Resource Model is available here: https://github.com/eamena-project/eamena-arches-dev/blob/main/data/grids/data-1688403740400-1.csv
 ## File
 
 Grids are strored as a GeoJSON file here: https://github.com/eamena-project/eamena-arches-dev/blob/main/data/grids/EAMENA_Grid.geojson

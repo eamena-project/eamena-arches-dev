@@ -1,5 +1,9 @@
 # Data
 
+## Grids
+
+[Grids](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/grids#grids)
+
 ## LOD
 
 Linked open data (LOD)

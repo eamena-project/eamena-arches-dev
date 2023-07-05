@@ -18,11 +18,26 @@ see: https://community.archesproject.org/t/give-access-to-a-custom-postgresql-vi
 
 Development on Mapbox
 
-### Cluster zooming
+### Clusters
+
+#### Cluster zooming
 
 *expected behaviour*: after clicking on a cluster, this cluster explode and there's an automatic zoom-in to its minimum bound rectangle. The behaviour we expect is similar to Arches v3
 
 see: https://community.archesproject.org/t/mapbox-cluster-zooming/1964
+
+
+#### Cluster of Clusters
+
+*expected behaviour*: group in cluster or explode clusters depending on zoom-in zoom-ou
+
+<p align="center">
+  <img src="../www/arches-v7-dev-mapbox-ClustOfClust.gif" width="600">
+  <br>
+    <em>caption</em>
+</p>
+
+see: https://community.archesproject.org/t/mapbox-cluster-grouping/1999/1
 
 
 ### Reverse geocoding
@@ -49,19 +64,6 @@ see: https://community.archesproject.org/t/reverse-geocoding-zoom-in-from-coordi
 ### Collect the coordinates
 
 *expected behaviour*: on a click in the map, lon/lat coordinates of the point are shown in the bottom-right or bottom-left of the map and can be copied in the clipboard
-
-
-### Cluster of Clusters
-
-*expected behaviour*: group in cluster or explode clusters depending on zoom-in zoom-ou
-
-<p align="center">
-  <img src="../www/arches-v7-dev-mapbox-ClustOfClust.gif" width="600">
-  <br>
-    <em>caption</em>
-</p>
-
-see: https://community.archesproject.org/t/mapbox-cluster-grouping/1999/1
 
 ---
 

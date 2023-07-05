@@ -12,6 +12,8 @@ Scheduled IT developments for the EAMENA DB and miscellaneous
 
 see: https://community.archesproject.org/t/give-access-to-a-custom-postgresql-view/1900/1
 
+---
+
 ## Spatial
 
 Development on Mapbox

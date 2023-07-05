@@ -1,8 +1,18 @@
 # Dev
 
-Scheduled developments and miscellaneous
+Scheduled IT developments for the EAMENA DB and miscellaneous
 
-## Mapbox
+## Postgres
+
+### DB Read (only)
+
+*expected behaviour*: give users access to query the Postgres database using functions [eamenaR](https://github.com/eamena-project/eamenaR#eamenar-) package.
+
+*hints*: create Postgres views, change the Potgres configration file `pg_hba.conf` 
+
+see: https://community.archesproject.org/t/give-access-to-a-custom-postgresql-view/1900/1
+
+## Spatial
 
 Development on Mapbox
 
@@ -38,15 +48,18 @@ see: https://community.archesproject.org/t/reverse-geocoding-zoom-in-from-coordi
 
 *expected behaviour*: on a click in the map, lon/lat coordinates of the point are shown in the bottom-right or bottom-left of the map and can be copied in the clipboard
 
+
 ### Cluster of Clusters
 
 *expected behaviour*: group in cluster or explode clusters depending on zoom-in zoom-ou
 
 <p align="center">
-  <img src="../www/arches-v7-dev-mapbox-ClustOfClust.gif" width="500">
+  <img src="../www/arches-v7-dev-mapbox-ClustOfClust.gif" width="600">
   <br>
     <em>caption</em>
 </p>
+
+see: https://community.archesproject.org/t/mapbox-cluster-grouping/1999/1
 
 ---
 

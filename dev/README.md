@@ -41,7 +41,7 @@ see: https://community.archesproject.org/t/reverse-geocoding-zoom-in-from-coordi
 
 
 <p align="center">
-  <img src="../www/megaj-search-coordinates.png" width="300">
+  <img src="../www/megaj-search-coordinates.png" width="500">
   <br>
     <em>caption</em>
 </p>

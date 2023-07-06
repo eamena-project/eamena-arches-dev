@@ -8,7 +8,7 @@ Scheduled IT developments for the EAMENA DB and miscellaneous
 
 *expected behaviour*: give users access to query the Postgres database using functions [eamenaR](https://github.com/eamena-project/eamenaR#eamenar-) package.
 
-*hints*: create Postgres views, change the Potgres configuration file `pg_hba.conf` 
+*hints*: create Postgres views, change the Potgres default configuration file (renammed) [pg_hba_old.conf](https://github.com/eamena-project/eamena-arches-dev/blob/main/dev/postgres/pg_hba_old.conf) to a new file [pg_hba.conf](https://github.com/eamena-project/eamena-arches-dev/blob/main/dev/postgres/pg_hba.conf). 
 
 see: https://community.archesproject.org/t/give-access-to-a-custom-postgresql-view/1900/1
 

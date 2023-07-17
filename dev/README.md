@@ -2,6 +2,14 @@
 
 Scheduled IT developments for the EAMENA DB and miscellaneous
 
+## Arches
+
+### Card permission
+
+*expected behaviour*: hide coordinates to Guest users withou hiding the map (zoom-in can be limited)
+
+see: https://community.archesproject.org/t/card-permission/1675/1
+
 ## Postgres
 
 ### DB Read (only)

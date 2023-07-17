@@ -1,8 +1,6 @@
 # Installation
 > Installation, upgrade and migration
 
-* Arches v7: [README](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/docs)
-
 ## EAMENA 4 Install Docs
 
 In progress. For now, see [Arches 7 Upgrade](notes/Arches%207%20Upgrade.md). 

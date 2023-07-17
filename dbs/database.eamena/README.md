@@ -118,7 +118,7 @@ If you find any errors in the translations, please update these files:
 These changes will be then proposed (Pull request) to Arches' source code
 
 <p align="center">
-  <img alt="img-name" src="../../www/arches-ea-github-pr.png" width="900">
+  <img alt="img-name" src="../../www/arches-ea-github-pr.png" width="1100">
   <br>
     <em>Pull request to change <a href='https://github.com/archesproject/arches/blob/master/arches/locale/fr/LC_MESSAGES/django.po'>Arches French PO file content</a></em>
 </p>

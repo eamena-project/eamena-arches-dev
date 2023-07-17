@@ -1,6 +1,7 @@
 # Installation
 > Installation, upgrade and migration
 
+* Arches v7: [README](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/docs)
 
 ## DB migration process timeline
 

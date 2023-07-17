@@ -29,7 +29,7 @@ For selected HPs
 
 ```mermaid
 flowchart RL
-    A[(EAMENA Arches v5)] --1. export data as BU--> B[XLSX];
+    A[(EAMENA Arches v7)] --1. export data as BU--> B[XLSX];
     A --3. remove data--> A;
     subgraph local
     B --2. edit data--> B;

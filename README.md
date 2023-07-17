@@ -1,13 +1,12 @@
 # eamena-arches-dev  <img src="www/logo.png" width='80px' align="right"/>
 > development repository
 
+[EAMENA DB](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena)
+
+---
+
 * [CPF training, Amman, Jordan - 18-22 June, 2023](https://github.com/eamena-project/eamena-arches-dev/tree/main/training#users--database-managers--sys-admins-training)
 
-## IT
-
-### DB Installation 💾
-
-* Arches v7: [README](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/docs)
 
 ### Bulk 📝
 

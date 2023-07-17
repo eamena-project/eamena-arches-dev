@@ -1,6 +1,9 @@
 # Bulk Upload (BU)  <img src="../../www/bu.png" width='80px' align="right"/>
 
 Bulk upload is a process for uploading **many XLSX** files containing heritage places (HPs) data into the database without going through the graphical user interface. It speeds up data entry.
+
+[bash](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bulk/run_bulks.sh)
+
 ## BU template file
 
 The last/updated version of the BU template file is hosted on:  

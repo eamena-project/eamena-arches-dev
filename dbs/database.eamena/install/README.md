@@ -3,13 +3,13 @@
 
 * Arches v7: [README](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/docs)
 
-# EAMENA 4 Install Docs
+## EAMENA 4 Install Docs
 
 In progress. For now, see [Arches 7 Upgrade](notes/Arches%207%20Upgrade.md). 
 
 These docs describe the process of (a) installing an empty EAMENA-customised version of Arches 7.3, and (b) copying the data from an old EAMENA v3 instance to the new database.
 
-## Prerequisites
+### Prerequisites
 
 Arches 7.3 requires Elasticsearch [8.3.3](https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-8.3.3-amd64.deb) and PostgreSQL 14 to be installed. Additionally, Arches 7 requires NPM 8.19.3 or 9.6.0 (tested and works with both), Yarn 1.22.19 and Node.JS 14.17.6. The instructions for installing and configuring all of these are linked from below.
 
@@ -17,7 +17,7 @@ Arches 7.3 requires Elasticsearch [8.3.3](https://artifacts.elastic.co/downloads
 * [Install Elasticsearch 8.3.3](prerequisites/Elasticsearch.md)
 * [Install NodeJS / NPM / Yarn](prerequisites/Yarn.md)
 
-## Install Paths
+### Install Paths
 
 Once the VM is configured correctly, follow the flow chart below in order to 
 
@@ -78,9 +78,9 @@ flowchart
 | Perform the 'switch' (eg server certificates, domain name, etc)   | Down | Down |
 
 
-## Still to do (2023-05-09)
+### Still to do (2023-05-09)
 
-### If time isn't tight
+#### If time isn't tight
 * Upgrade to 7.4 (currently 7.3)
 * A few more partial export/imports using the AWS server.
 * Some heavy stress testing

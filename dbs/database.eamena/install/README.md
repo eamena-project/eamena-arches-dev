@@ -1,4 +1,5 @@
-# Installation and migration
+# Installation
+> Installation, upgrade and migration
 
 
 ## DB migration process timeline

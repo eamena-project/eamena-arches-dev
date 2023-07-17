@@ -3,13 +3,15 @@
 
 ## Related Computer Applications
 
+
+
 ```mermaid
 flowchart LR
   subgraph Arches v7
     subgraph EAMENA
     ea[(Eamena v4)]
     end
-    subgraph internationalisation
+    subgraph [<a href='https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/internationalisation'>internationalisation</a>]
       id6[<a href='https://github.com/eamena-project/arches/blob/master/arches/locale/ar/LC_MESSAGES/django.po'>ar</a>];
       id7[<a href='https://github.com/eamena-project/arches/blob/master/arches/locale/fr/LC_MESSAGES/django.po'>fr</a>];
     end 

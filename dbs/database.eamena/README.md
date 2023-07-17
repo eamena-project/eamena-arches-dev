@@ -16,7 +16,7 @@ flowchart LR
     end
     subgraph internationalisation
       id6[<a href='https://github.com/archesproject/arches/blob/master/arches/locale/ar/LC_MESSAGES/django.po'>ar</a>];
-      id7[<a href='https://github.com/archesproject/arches/blob/master/arches/locale/fr/LC_MESSAGES/django.po'>fr</a>];
+      id7[<a href=''>fr</a>];
     end 
   end
   id3[<a href='https://github.com/eamena-project/eamena-arches-dev/tree/main/geoserver'>GeoServer</a>] --- ea;
@@ -99,6 +99,20 @@ index.htm modified, a new slide has been created;
 1. delete the updated `index.htm`
 2. rename reverse: rename `index_old.htm` to `index.htm`  
 
+## Internationalisation
+
+If you spot errors in translations, please update these files:
+
+- `ar` (Arabic): 
+- `fr` (French):
+
+These changes will be then proposed (Pull request) to Arches' source code
+
+<p align="center">
+  <img alt="img-name" src="../../www/arches-ea-github-pr.png" width="700">
+  <br>
+    <em>Pull request to change [Arches French PO file content](https://github.com/archesproject/arches/blob/master/arches/locale/fr/LC_MESSAGES/django.po)</em>
+</p>
 
 
 

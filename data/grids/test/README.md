@@ -10,10 +10,11 @@ test Grid:
 ## Work progress
 
 Google Earth:
-* altitude "distance from eye" = 300m
+* altitude "distance from eye" = 300-600m (depends on the computer screen)
 * survey in boustophedon
 
-- [x] E42N30-42_88
-- [x] E42N30-42_121
-- [x] E42N30-42_152
-- [x] E42N30-42_183
+* entered in the BU
+- [x] E42N30-42.88
+- [x] E42N30-42.121
+- [x] E42N30-42.152
+- [x] E42N30-42.183

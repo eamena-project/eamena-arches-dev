@@ -14,7 +14,7 @@ see: https://community.archesproject.org/t/card-permission/1675/1
 
 ### DB Read (only)
 
-*expected behaviour*: give users access to query the Postgres database using functions [eamenaR](https://github.com/eamena-project/eamenaR#eamenar-) package.
+*expected behaviour*: give users access to query the Postgres database using functions [eamenaR](https://github.com/eamena-project/eamenaR#eamenar-) package in READ only mode ([example](https://github.com/eamena-project/eamenaR/blob/107bd73656180f34c06880df36ea5aa601f859b5/R/ref_hps.R#L75-L107))
 
 *hints*: create Postgres views, change the Potgres default configuration file (renammed) [pg_hba_old.conf](https://github.com/eamena-project/eamena-arches-dev/blob/main/dev/postgres/pg_hba_old.conf) to a new file [pg_hba.conf](https://github.com/eamena-project/eamena-arches-dev/blob/main/dev/postgres/pg_hba.conf). 
 

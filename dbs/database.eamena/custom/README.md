@@ -40,9 +40,11 @@ index.htm modified, a new slide has been created;
 
   - `cd /opt/arches/eamena/eamena/templates`
 
-* rename the former `index.htm` to `index_old.htm`: 
+* rename the former `index.htm` by adding 'yesterday' date to the begining of the file, and move this file to `archives/` folder: 
 
-  - `mv index.htm intex_old.htm`
+  - `yestdate=$( date -d "yesterday 13:00 " '+%Y-%m-%d' ) ; indexfile="_index.htm"`
+  - `index_old=${yestdate}${indexfile}`
+  - `mv index.htm ./archives/$index_old`
 
 * import the updated `index.htm`: 
 

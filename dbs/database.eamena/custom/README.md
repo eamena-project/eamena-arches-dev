@@ -46,8 +46,8 @@ index.htm modified, a new slide has been created;
 
 * import the updated `index.htm`: 
 
-  - `wget https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/dbs/database.eamena/customisation/index.htm`
-  
+  - `wget https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/dbs/database.eamena/custom/index.htm`
+
 * refresh EA landing page in your browser
 
 ---

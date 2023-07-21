@@ -12,12 +12,12 @@ To give a new "skin" to the landing page of EAv4, we can change the background i
 
 ## Update the `index.htm` file
 
-Change directly the file: https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/varia/index.htm (paths and captions). And add the images in this folder: https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/img
+Change directly the file: https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/customisation/index.htm (paths and captions). And add the images in this folder: https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/img
 
-* example for [Slide 1](https://github.com/eamena-project/eamena-arches-dev/blob/11df37b9c528e4e3b423ae00464190432bd69c0c/dbs/database.eamena/varia/index.htm#L255-L275)
+* example for [Slide 1](https://github.com/eamena-project/eamena-arches-dev/blob/11df37b9c528e4e3b423ae00464190432bd69c0c/dbs/database.eamena/customisation/index.htm#L255-L275)
 
-1. Change the [image](https://github.com/eamena-project/eamena-arches-dev/blob/11df37b9c528e4e3b423ae00464190432bd69c0c/dbs/database.eamena/varia/index.htm#L258) [^1]
-2. Change the [caption](https://github.com/eamena-project/eamena-arches-dev/blob/11df37b9c528e4e3b423ae00464190432bd69c0c/dbs/database.eamena/varia/index.htm#L273) [^2]
+1. Change the [image](https://github.com/eamena-project/eamena-arches-dev/blob/11df37b9c528e4e3b423ae00464190432bd69c0c/dbs/database.eamena/customisation/index.htm#L258) [^1]
+2. Change the [caption](https://github.com/eamena-project/eamena-arches-dev/blob/11df37b9c528e4e3b423ae00464190432bd69c0c/dbs/database.eamena/customisation/index.htm#L273) [^2]
 
 ## Example
 
@@ -40,7 +40,7 @@ index.htm modified, a new slide has been created;
 3. rename the former `index.htm` to `index_old.htm`: 
   - `mv index.htm intex_old.htm`
 4. import the updated `index.htm`: 
-  - `wget https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/dbs/database.eamena/varia/index.htm`
+  - `wget https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/dbs/database.eamena/customisation/index.htm`
 5. refresh EA landing page in your browser
 
 ---

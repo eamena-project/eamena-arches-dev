@@ -35,12 +35,19 @@ index.htm modified, a new slide has been created;
 ## Import the updated `index.htm` to the EA instance
 
 * Connect the EA instance throug SSH as with the `arches` account
+
 * move to the `index.htm` folder: 
+
   - `cd /opt/arches/eamena/eamena/templates`
+
 * rename the former `index.htm` to `index_old.htm`: 
+
   - `mv index.htm intex_old.htm`
+
 * import the updated `index.htm`: 
+
   - `wget https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/dbs/database.eamena/customisation/index.htm`
+  
 * refresh EA landing page in your browser
 
 ---

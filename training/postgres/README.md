@@ -1,4 +1,4 @@
-# Postgres for Arches basics
+# Postgres basics for Arches
 
 ## Examples
 

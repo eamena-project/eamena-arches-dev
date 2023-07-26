@@ -27,7 +27,11 @@ To make it easier to reference and share controlled vocabularies, the numerous B
 py split_bu_template.py "C:/Rprojects/eamena-arches-dev/data/bulk/templates/doc"
 ```
 
-Will create the many TSV located into https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bulk/templates/doc: [bu_Archaeological Assessment.tsv](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bulk/templates/doc/bu_Archaeological%20Assessment.tsv), [bu_Assessment Summary.tsv](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bulk/templates/doc/bu_Assessment%20Summary.tsv), [bu_Built Component.tsv](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bulk/templates/doc/bu_Built%20Component.tsv), etc.
+Will create the many TSV located into the folder https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bulk/templates/doc: 
+* [bu_Archaeological Assessment.tsv](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bulk/templates/doc/bu_Archaeological%20Assessment.tsv)
+* [bu_Assessment Summary.tsv](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bulk/templates/doc/bu_Assessment%20Summary.tsv)
+* [bu_Built Component.tsv](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bulk/templates/doc/bu_Built%20Component.tsv)
+* ...
 
 <p align="center">
   <img alt="img-name" src="../../www/bu-to-tsv-ex.png" width="600">

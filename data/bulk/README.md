@@ -16,7 +16,7 @@ GitHub: https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bulk/
 ### Referenced individual sheets
 
 <p align="center">
-  <img alt="img-name" src="../../www/bu-to-tsv.png" width="600">
+  <img alt="img-name" src="../../www/bu-to-tsv.png" width="700">
   <br>
     <em>In yellow, the sheets that will be exported as TSV file</em>
 </p>
@@ -34,7 +34,7 @@ Will create the many TSV located into the folder https://github.com/eamena-proje
 * ...
 
 <p align="center">
-  <img alt="img-name" src="../../www/bu-to-tsv-ex.png" width="600">
+  <img alt="img-name" src="../../www/bu-to-tsv-ex.png" width="700">
   <br>
     <em>In yellow, the sheets that will be exported as TSV file</em>
 </p>

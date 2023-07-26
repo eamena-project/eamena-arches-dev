@@ -13,9 +13,32 @@ GitHub: https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bulk/
 <s>Google Drive: https://drive.google.com/file/d/1KtZlCB_mdTOPxh1DpFdfeXddjJLTvF1k/view?usp=sharing</s>
 </p>
 
-## BU mapping
+### Referenced individual sheets
 
-To recast structured data to a BU format, see the [`eamenaR` R package](https://github.com/eamena-project/eamenaR#bu-mapping)
+<p align="center">
+  <img alt="img-name" src="../../www/bu-to-tsv.png" width="600">
+  <br>
+    <em>In yellow, the sheets that will be exported as TSV file</em>
+</p>
+
+To make it easier to reference and share controlled vocabularies, the numerous BU template sheets (XLSX) can be converted into TSV files that can be read on GitHub using the [split_bu_template.py](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bulk/functions/split_bu_template.py) function. For example:
+
+```Python
+py split_bu_template.py "C:/Rprojects/eamena-arches-dev/data/bulk/templates/doc"
+```
+
+Will create the many TSV located into https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bulk/templates/doc: [bu_Archaeological Assessment.tsv](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bulk/templates/doc/bu_Archaeological%20Assessment.tsv), [bu_Assessment Summary.tsv](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bulk/templates/doc/bu_Assessment%20Summary.tsv), [bu_Built Component.tsv](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bulk/templates/doc/bu_Built%20Component.tsv), etc.
+
+<p align="center">
+  <img alt="img-name" src="../../www/bu-to-tsv-ex.png" width="600">
+  <br>
+    <em>In yellow, the sheets that will be exported as TSV file</em>
+</p>
+
+
+## Mapping
+
+To recast structured data (source) to a BU format (target), see the [eamenaR](https://github.com/eamena-project/eamenaR#bu-mapping) package
 
 ## ~~BU process~~
 > ⚠️ This process is no longer in use ⚠️ ~~step-by-step BU procedure from the user-side~~

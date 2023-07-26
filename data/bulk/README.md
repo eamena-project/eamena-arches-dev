@@ -23,7 +23,7 @@ GitHub: https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bulk/
 
 To make it easier to reference and share controlled vocabularies, the numerous BU template sheets (XLSX) can be converted into TSV files that can be read on GitHub using the [split_bu_template.py](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bulk/functions/split_bu_template.py) function. For example:
 
-```Python
+```python
 py split_bu_template.py "C:/Rprojects/eamena-arches-dev/data/bulk/templates/doc"
 ```
 

@@ -17,67 +17,6 @@ GitHub: https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bulk/
 
 To recast structured data to a BU format, see the [`eamenaR` R package](https://github.com/eamena-project/eamenaR#bu-mapping)
 
-## BU exchanges
-
-Objective are:
-
-- [1️)](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bulk#eamena-%EF%B8%8F-eamena-workflow) facilitate the edition of already existing data in the EAMENA DB;
-- [2)](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bulk#eamena-%EF%B8%8F-other-db-workflow) exchange data between EAMENA and national instances BDs;
-
-### EAMENA ↔️ EAMENA workflow
-
-For selected HPs
-
-```mermaid
-flowchart RL
-    A[(EAMENA Arches v7)] --1. export data as BU--> B[XLSX];
-    A --3. remove data--> A;
-    subgraph local
-    B --2. edit data--> B;
-    end
-    B --4. re-import--> A;
-```
-
-### EAMENA ↔️ Other DB workflow
-
-To exchange data between different Arches-based databases (eg: Mega-J once this database has been ported to Arches v7), the workflow will be to:
-
-```mermaid
-flowchart LR
-    A[(EAMENA Arches v7)] --export as BU--> B[XLSX BU];
-    C[(Mega-J Arches v7)] --export as BU--> D[XLSX BU];
-    B --> E[XLSX BU merged];
-    D --> E;
-    E --check duplicated--> E;
-```
-
-In this example, the merged XLSX dataset will be sorted and/or filtered by toponyms, coordinates, or any relevant fields to group rows refering to the same HPs. Then two cases can occur:
-
-1. total matching/perfect duplicates: one of them is removed
-2. partial matching: the *n* rows are merged in a single record (ie, with the same UNIQUEID), like this (see ID 5):
-
-<div align = "center">
-
-| UNIQUEID | Assessment.Investigator.-.Actor | Investigator.Role.Type   | Assessment.Activity.Type | Assessment.Activity.Date | GE.Assessment(Yes/No) | Resource.Name | Name.Type             |
-|----------|---------------------------------|--------------------------|--------------------------|--------------------------|-----------------------|---------------|-----------------------|
-| ...      | ...                             | ...                      | ...                      | ...                      | ...                   | ...           | ...                   |
-| 4        | Mohamed Kenawi                  | EAMENA Project Staff     | Desk-based Assessment    | 2022-10-05               | Yes                   |               |                       |
-| 5        | Martin Sterry                   | **MEGA-J Project Staff** |                          | 2028-09-12               |                       | AAA f.37.5    | Alternative Reference |
-| 5        | Mohamed Kenawi                  | **EAMENA Project Staff** | Desk-based Assessment    | 2022-10-05               | Yes                   | Metkaouak     | Toponym               |
-| ...      | ...                             | ...                      | ...                      | ...                      | ...                   | ...           | ...                   |
-
-Example of a merged XLSX BU record resulting from the merge of EAMENA (bolded) and Mega-J (bolded) BUs
-
-</div>
-
-Once done, the merged BU will be returned to the databases.
-
-```mermaid
-flowchart LR
-    E[XLSX BU merged] -- back to EAMENA --> A[(EAMENA Arches v7)];
-    E -- back to Mega-J --> C[(Mega-J Arches v7)];
-```
-
 ## ~~BU process~~
 > ⚠️ This process is no longer in use ⚠️ ~~step-by-step BU procedure from the user-side~~
 

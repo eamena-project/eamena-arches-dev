@@ -1,0 +1,14 @@
+**Needs Reviewing, v3 Relationships Function wasn't working yet	Unnamed: 1	Unnamed: 2	Unnamed: 3	Alternative suggested translation	mk comments	Old Term replaced by AB or MK
+						
+Relationships	العلاقات	Definitions	التعريف			
+Within	ضمن	The unit being recorded is wholly within another unit	الوحدة التي يتم تسجيلها تقع ضمن وحدة أخرى			
+Same spatial unit	الوحدة الفراغية نفسها	The unit being described is the same unit as another recorded unit	الوحدة التي يتم وصفها تشبه تماماً وحدة أخرى	الوحدة الفراغية نفسها	ok	نفس الوحدة الفراغية
+Contains	تحتوي	The unit being recorded contains another unit(s)	الوحدة التي يتم تسجيلها تحتوي وحدة أخرى			
+Adjacent	متجاورة	The unit being recorded is adjacent to another unit. Some archaeological relationship might be present between the two	الوحدة التي يتم تسجيلها متجاورة مع وحدة أخرى. ومن المحتمل أن تكون هناك علاقة أثرية بين الوحدتين			
+Overlapping 	متراكبة	The unit being recorded partially overlaps with another unit. Some archaeological relationship might be present between the two	الوحدة التي يتم تسجيلها متراكبة بشكل جزئي مع وحدة أخرى. ومن المحتمل أن تكون هناك علاقة أثرية بين الوحدتين			
+Intersecting	متقاطعة	The unit being recorded intersects with another unit. Some archaeological relationship might be present between the two	الوحدة التي يتم تسجيلها متقاطعة بشكل جزئي مع وحدة أخرى. ومن المحتمل أن تكون هناك علاقة أثرية بين الوحدتين			
+Related To	متعلقة ب	Used to relate E27s/E18s to Information Resources. Should not be used to relate E27s or E18s to one another.	يستخدم للربط بين وحدات E27/E18 ومصادر المعلومات. لا يجب أن يستخدم للربط بين وحدات E18 وبعضها البعض، أو بين وحدات E27 وبعضها البعض			
+						
+Relationship Certainty	مدى التأكد من العلاقات	Definitions	التعريف	مدى التأكد من العلاقات	ok	درجة التأكد من العلاقات
+Certain	مؤكد	There is no evidence to suggest that the relationships identified between archaeological features/sites is not correct.	لا يوجد دليل على أن العلاقات التي تم تحديدها بين المواقع الأثرية، أو الملامح الأثرية غير صحيحة			
+Uncertain	غير مؤكد	There is evidence to suggest that the relationships identified between archaeological features/sites is not correct.	يوجد دليل على أن العلاقات التي تم تحديدها بين المواقع الأثرية، أو الملامح الأثرية غير صحيحة			

@@ -1,0 +1,72 @@
+Resource Summary	ملخص المورد	Unnamed: 2	Unnamed: 3	Ahmed Buzaian suggested translation	MK Comments	Old Term replaced by AB or MK
+						
+Resource Name(s)	اسم (أسماء) المورد					
+						
+Name Type	نوع الاسم	Definitions	تعريف			
+Alternative Reference	مصادر ومراجع بديلة	Used to indicate a reference number/site id given to a site in a published or unpublished gazetteer or survey database.  The source of the reference must also be listed as an Information Resource and linked to the record.		إشارة أو مرجع بديل	مصادر ومراجع بديلة	مصادر مختلفة أخرى
+Designation	اسم دليلي/عالمي	Where a site is designated in an official list or register (e.g. UNESCO World Heritage Site), the name/reference under which it is registered should be listed. World Heritage Sites should be entered using the format “World Heritage List” plus the list number, e.g. World Heritage List 287. If the site name listed on the World Heritage List differs from the usual toponyms, list it as a separate entry, also with the Designation Type, e.g. “Rock-Art Sites of Tadrart Acacus”. The type of designation must be listed under the resource's 'Designation' field				
+Toponym	اسم المكان	All known names, historical and modern, and in any language should be listed, including alternative spellings, if applicable.		اسم المكان	Yes, better	اسم علم/اسم مكان
+						
+Heritage Place Type	نوع الموقع التراثي	Definitions	تعريف			
+Archaeological Site	الموقع الأثري	A place or area of archaeological/heritage significance where human activity is represented by material culture. This is the 'default' category to which records should be assigned if you are unsure about its classification.				
+Archaeological Feature/Component	الظاهرة/المكون	A place, area, or feature of archaeological/heritage significance which comprises part of a larger place/area/feature of significance, such as a Landscape or Archaeological Site. Records given this classification should always be related to a 'parent' record.				
+Landscape/Seascape	لاندسكيب	An area which contains one or more places, areas, and/or features of shared or similar archaeological/heritage significance, but which may be physically separated and spread over a large area				
+Urban Heritage	موقع تراثي حضري	A place, area, or feature of archaeological/heritage significance which is located within a contemporary urban area, and which is often (but not necessarily) still in current use				
+Structural Heritage	مبنى تراثي	"A building or other construction of archaeological/heritage significance, which is still, at least partially, standing. This term should be used only when the entire record is documenting this type of heritage, not for cases where structures just happen to present as part of a larger or more complex site. E.g. an ancient city may have many individual buildings which can be recorded as ""Structural Heritage"" if given individual records, but the city itself is made of many different types of features, and should be recorded overall as an ""Archaeological Site""."				
+						
+Designation Type	نوع الإسناد	Definitions	تعريف			
+Managed Site	موقع تتم إدارته	Under governmental/state management, not further specified.				
+Enhanced Protection List of the Hague Convention	قائمة حماية محسنة لإتفاقية لاهاي	Cultural property specifically designated for enhanced protection during armed conflicts under the Hague Convention. http://www.unesco.org/new/en/culture/themes/armed-conflict-and-heritage/lists/enhanced-protection/				
+UNESCO World Heritage List	قائمة اليونسكو للتراث العالمي	Sites designated by UNESCO as having cultural, historical, scientific or other significance and considered to be of outstanding value to humanity.  https://whc.unesco.org/en/list/				
+UNESCO World Heritage Tentative List	قائمة اليونسكو المبدئية للتراث العالمي	Sites under consideration by UNESCO to be added to the World Heritage List. https://whc.unesco.org/en/tentativelists/				
+UNESCO World Heritage in Danger List	قائمة اليونسكو للتراث العالمي المعرض للخطر	UNESCO World Heritage Sites which are considered to be experiencing conditions which threaten the very characteristics for which a property was inscribe on the list.  https://whc.unesco.org/en/danger/				
+National Register	السجلّ الوطني	On an official national register/inventory not specifically listed below				
+Local Register	السجلّ المحلّي	On an official local register/inventory, i.e. below the national level, not specifically listed below				
+JADIS (Jordan Antiquities Database and Information System)	جاديس (قاعدة بيانات ونظام معلومات دائرة الآثار الأردنية)	Previous national archaeological inventory for Jordan used before adoption of MEGA-Jordan		جاديس (قاعدة بيانات ونظام معلومات دائرة الآثار الأردنية)	yes	جاديس
+MEGA-Jordan (Middle Eastern Geodatabase for Antiquities)	ميجا - الأردن (قاعدة البيانات الجغرافية لآثار الشرق الأوسط)	National archaeological inventory for Jordan		ميجا - الأردن (قاعدة البيانات الجغرافية لآثار الشرق الأوسط)	yes	ميجا - الأردن
+Saudi Commission for Tourism and National Heritage (SCTH)	الهيئة العامة للسياحة والتراث الوطني السعودية	National Register of the Kingdom of Saudi Arabia				
+Carte Nationale des Sites Archéologiques et des Monuments Historiques (Tunisia)	الخريطة الوطنية للمواقع الأثرية والمعالم التاريخية (تونس)	National mapping project for archaeological sites and historic monuments in Tunisia				
+Iran's National Heritage List	قائمة التراث الوطني - إيران	National Heritage List of Iran				
+PADIS (Palestine Archaeological Databank and Information System)	باديس (بنك البيانات الأثرية ونظام المعلومات الفلسطيني)	National archaeological inventory for Palestine		باديس (بنك البيانات الأثرية ونظام المعلومات الفلسطيني)	yes	باديس
+Other	آخر	Designated on another official list or register not included above. Note it in the free-text Comments below and/or contact a member of the EAMENA team to have it added				
+x						
+Designation To Date	التحديد الحديث					
+						
+Designation From Date	التحديد القديم					
+						
+Heritage Place Function	وظيفة الموقع التراثي	Definitions	تعريف			
+Agricultural/Pastoral	زراعي/ رعوي	Relating to the farming of land and/or the rearing of animals	له علاقة بزراعة الأرض، أو رعي الحيوانات بها			
+Defensive/Fortification	دفاعي/ تحصينات	Relating to the security or protection of people or an area, but not military in nature	له علاقة بالأمن أو بحماية الناس أو حماية منطقة، ولكن ليس ذا طبيعة حربية			
+Domestic	سكني	Relating to the habitation of people	له علاقة باستيطان وسكن الناس			
+Entertainment/Leisure	ترفيه/ تسلية	Relating to activities which are largely for pleasure or enjoyment	له علاقة بأنشطة يغلب عليها الجانب الترفيهي			
+Funerary/Memorial	جنائزي/ تذكاري	Relating to activities concerning the memorialisation of individuals, events and/or the treatment of the dead	له علاقة بتخليد ذكرى أشخاص، أو أحداث، أو له علاقة بالتعامل مع الموت والموتى			
+Hunting/Fishing	صيد بري/ صيد بحري	Relating to the exploitation of (mostly) non-domesticated species	له علاقة بالاستثمار في كائنات حية (عادة في غير الدواب أو الحيوانات المستأنسة)			
+Hydrological	مائي/ هيدرولوجي	Relating to the management and movement of water	له علاقة بإدارة وحركة المياه			
+Industrial/Productive	صناعي/ إنتاجي	Relating to the production of goods or other commodities, at large or small scale	له علاقة بانتاج البضائع، على نطاق كبير أو صغير			
+Infrastructure/Transport	بنية تحتية/ مواصلات	Relating to the organisation and provision of facilities and services, particularly those associated with the movement of people, animals and goods, which are necessary for a society to function	له علاقة بتنظيم وإتاحة الخدمات، خصوصاً تلك المتعلقة بحركة الناس والحيوانات والبضائع، والتي يحتاجها كل مجتمع في حياته اليومية			
+Maritime	بحري	Relating to the sea, in particular shipping and/or the exploitation of maritime resources where these resources cannot be further defined.	له علاقة بالبحر، خصوصاً الشحن والاستثمار في مصادر بحرية، في الحالات التي لا يمكن فيها تحديد المصادر			
+Military	حربي	Relating to an organised and/or official group of armed forces	له علاقة بقوات حربية منظمة أو رسمية			
+Public/Institutional	عام/مؤسسي	Relating to facilities and services which are intended for use by the community as a whole. Often, but not necessarily officially provided or sanctioned e.g. markets, courthouses, official/government etc.	له علاقة بالخدمات للمجتمع ككل. والتي عادة، وليس دائماً، تكون رسمية، مثال الأسواق، المحاكم، الإدارات الحكومية، وغيرها			
+Religious	ديني	Relating to activities of a ritual nature	له علاقة بأنشطة تعبدية			
+Status/Display/Monumental	وجاهة/ مظهر/ نصب	Relating to structures which serve no functional purpose except to express a statement, usually relating to wealth, status, power etc.	له علاقة ببناء لا يخدم وظيفة محددة وإنما يعبر عن وضع أو مكانة معينة، وعادة ما يكون له علاقة بالثروة أو السلطة			
+Trade/Commercial	تجارة/ تجاري	Relating to facilities and or services which are predominantly economically orientated or mercantile in nature.	له علاقة بخدمات لها طبيعة اقتصادية وتجارية			
+Unknown	غير معلوم	Unknown	غير معلوم	غير محدد	Both are ok together	
+						
+						
+Heritage Place Function Certainty	التأكد من وظيفة المكان التراثي	Definitions	تعريف			
+Not Applicable	لا يمكن تحديده	The investigator has entered 'unknown' and certainty does not apply 	"أدخل المحقق ""غير معروف"" و""مدى التأكد غير قابل للتطبيق"""	لا يمكن تحديده	Yes, better	غير قابل للتطبيق
+Negligible	ضئيل	The investigator has considerable reason to doubt their identifications/interpretations. The evidence may also be contradicted by published sources/other imagery specialists or multiple imagery sources.	لدى المحقق أسباباً كافية للشك في التحديد/ التفسير. قد يكون الدليل مناقض لمصادر منشورة/ متخصصون آخرون في التصوير، أو مصادر مرئية متعددة	ضئيل	Yes, better	تافه
+Low	ضعيف	The investigator has considerable reason to doubt their identifications/interpretations. It is It is not confirmed by published sources/other imagery specialists or multiple imagery sources.	لدى المحقق أسباباً كافية للشك في التحديد/ التفسير. ولا تؤكده المصادر المنشورة/متخصصون آخرون في التصوير، أو مصادر مرئية متعددة			
+Medium	متوسط	The investigator has some reason to doubt their identifications/interpretations. It is not confirmed by published sources/other imagery specialists or multiple imagery sources.	لدى المحقق بعض الأسباب للشك في التحديد/ التفسير. ولا تؤكده المصادر المنشورة/ متخصصون آخرون في التصوير، أو مصادر مرئية متعددة			
+High	عالي	The investigator has little reason to doubt their identification, it may or may not be confirmed by published sources/other imagery specialists or multiple imagery sources.	لدى المحقق أسباباً ضعيفة للشك في التحديد/ التفسير. ولا تؤكده المصادر المنشورة/ متخصصون آخرون في التصوير، أو مصادر مرئية متعددة	عال	From gramatical point of view, yes better, but low to medium users will not get it, so the first translation would be better	
+Definite	مؤكد	The investigator has no reason to doubt their identification and it is either confirmed by published sources/other imagery specialists or multiple imagery sources.	ليس لدى المحقق أية أسباب للشك في التحديد وهو ما تؤكده المصادر المنشورة/ متخصصون آخرون في التصوير، أو مصادر مرئية متعددة			
+						
+General Description Type	نوع الوصف	Definitions	تعريف			
+Comments	تعليقات	Unspecified comments, normally temporary and for internal use				
+General Description 	وصف عام	General description where the main character of the site or feature is not sufficiently captured by the rest of the record				
+Summary of Significance 	 ملخص للمعلومات المهمة	Explanation of criteria used to define the significance of the site, if not obvious from rest of record.		ملخص للأهمية	I would say: ملخص للمعلومات المهمة	ملخص الأهمية
+Architectural Description	وصف معماري	General description relating specifically to architecture, where not sufficiently captured by the rest of the record				
+Primary	أولي					
+Old ArchesID	الهوية من قاعدة بيانات التطبيق السابق ArchesID	The ArchesID from previous versions of the database, where applicable				
+x						
+General Description 	وصف عام					

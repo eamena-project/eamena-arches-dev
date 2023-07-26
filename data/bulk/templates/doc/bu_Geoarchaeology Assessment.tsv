@@ -1,0 +1,192 @@
+Geoarchaeology Assessment	تقييم جيوأركيولوجي	Unnamed: 2	Unnamed: 3	Alternative suggested translation	mk comments	Old Term replaced by AB or MK
+						
+Geoarchaeology Certainty Observation	مدى التأكد من الملاحظة الجيوأركيولوجية					
+						
+Overall Geoarchaeological Certainty Value	درجة التأكد من الملاحظة الجيوأركيولوجية	Definitions	التعريف			
+Negligible	ضئيل	There is very weak evidence to suggest that the site/feature has any geological/geoarchaeological significance and it is highly questionable whether the site/feature is of geoarchaeological interest. E.g. informal reports of landforms which may or may not be recent features, or sediments which are likely to have been recently deposited		ضئيل	ok	تافه
+Low	ضعيف	There is weak evidence to suggest that the site/feature has any geological/geoarchaeological significance and it is highly questionable whether the site/feature is of geoarchaeological interest.  The site/feature may be unclear on imagery or alternative explanations may be probable. This is probably not a site of geoarchaeological interest, although there has been no fieldwork to verify this. E.g. Landforms which may or may not be recent features but which are clearly visible on satellite imagery or other data sources				
+Medium	متوسط	There is evidence to suggest that the site/feature has any geological/geoarchaeological significance. The area has multiple sources of evidence which support each other (e.g. multiple image sets or data types) or is clear enough in a single evidence source to suggest that it is possibly a site of geological/geoarchaeological interest. The area will probably be easy to delimit, but alternative explanations may be possible. There has been no field visit to confirm this interpretation or age. E.g. Landforms which are clearly visible on satellite imagery or other data sources and whose shape and form suggest creation by processes no longer operating at present but which could have occured relatively recently				
+High	عالي	There is strong evidence to suggest that the site/feature is archaeological. The area has multiple sources of evidence that support each other (e.g. multiple image sets, multiple data types) or is clear enough in a single evidence source to suggest that it is a site of archaeological interest. The area will probably be easy to delimit and there are no obvious possible. There has been no field visit to confirm this interpretation. E.g. Landforms which are clearly visible on satellite imagery or other data sources and whose shape and form indicate creation by processes no longer operating at present or recent past		عال	no	
+Definite	مؤكد	There is definitive evidence to suggest that the site/feature has geological/geoarchaeological signifiance.  The site has been visited and it is confirmed that it is a site of geological/geoarchaeological interest. (Published literature/ Field-visit only)				
+Unknown	غير محدد	Unknown	غير معلوم	غير محدد	ok	مجهول
+						
+Source of Evidence	مصدر الأدلة					
+						
+Source of Evidence Type	نوع مصدر الأدلة	Definitions	التعريف			
+Aerial/Satellite Image	صورة جوية/قمر صناعي	Image of the Earth's surface taken from above by a spaceborne (satellite) or airborne (aircraft, UAV) camera or image sensor. Defintion here encompasses optical and multispectral images				
+Core/Borehole	مجسات سبر بالحفارة	Vertical sample of sediment obtained by drilling or pushing a sampling device vertically into the ground or seabed surface. Provides an indication of stratigraphy as well as physical samples for further analysis 				
+Ground Penetrating Radar (GPR)	ذبذبة رادار أرضية (GPR)	Radar system which images sediment layers and rocks buried under the ground surface, providing information about sediment thickness, stratigraphy and buried features/structures. Data traditionally collected and displayed as 2D (vertical) cross sections, but 3D systems also now exist.				
+Micropaleontological Analysis	تحليل بيولوجي دقيق	Sampling and analysis of microfossils (i.e. require a microscope to see) of plants or animals from rocks or sediments, generally for the purpose of reconstructing past environments and environmental change. Analysis can be done of microfossils from both terrestiral and marine environments				
+Open Face Section	قطاع أو مسقط مكشوف	Vertical exposure (cross section) on the Earth surface which reveals buried sediments or rock. Can occur naturally (e.g. through coastal or cliff erosion), or by human action (e.g. quarrying, trenching). Provides an indication of stratigraphy, physical samples for further analysis and in some cases, show the shape of buried landforms 				
+Optically Stimulated Luminescence dating	التأريخ بالتحفيز البصري للإشعاع الضوئي	Absolute dating method for sediments (and some types of archaeological material) based on measuring the luminescence caused by trapping of electrons within a mineral 				
+Other Absolute Dating Method	طرق أخرى للتأريخ المطلق	Any other dating method which provides a numerical date but does not match one of the other terms here				
+Radiocarbon Dating	التأريخ بواسطة الكربون	Absolute dating method for organic material based on the radioactive decay of the carbon-14 isotope				
+Relative Dating	الـتأريخ النسبي	Dating method which aims to determine the sequential order of past events based on comparison of the stratigraphic position of sediments, rocks or fossils 				
+Seafloor Bathymetry	قياس أعماق قاع البحر	Digital Elevation Model of the seabed surface generated by any method, for instance, including swath systems (multibeam echosounder, interferometric sonar), single-beam echosounder, LiDAR, Satellite Derived Bathymetry				
+Seismic Profile (Marine)	قطاع ذبذبي (بحري)	Boat deployed acoustic system which images sediment layers and rocks buried under the seabed, providing information about sediment thickness, stratigraphy and buried features/structures. Data traditionally collected and displayed as 2D (vertical) cross sections, but 3D systems also now exist. Also known as a sub-bottom profiler				
+Sidescan Sonar	سونار مسح جانبي	Boat-deployed acoustic system which images the seabed surface and provides data in the form of a 2D image. Imagery gives an indication of features on the seafloor and a qualitative impression of sediment type				
+Surface Sampling	عينة سطحية	Sediment sample taken from the land or seabed surface by any method. 				
+Surface Visual Observations	معاينة بصرية سطحية	Observations of the land or seabed surface made with the naked eye				
+Synthetic Aperture Radar	رادار تركيبي الفتحة	Air- or spaceborne radar system which images the land surface and provides data in the form of a 2D image. 2D imagery gives an indication of features on the land surface, additional processing can be used to derive 3D elevation models from the 2D imagery				
+Terrestrial Elevation Model	موديل الارتفاع الأرضي	Digital Elevation Model of the land surface generated by any method, for instance, including LiDAR (ground and airborne), orthoimagery, GPS or Structure-From-Motion				
+U-series Dating	التأريخ بسلسلة اليورانيوم	Absolute dating method for carbonate material based on the radioactive decay of uranium and thorium isotopes				
+Unknown	غير محدد	Unknown	غير معلوم	غير محدد	ok	مجهول
+						
+Related Information Resource	مصادر المعلومات ذات الصلة					
+						
+General Date	التاريخ العام					
+						
+Marine Isotope Stages	مراحل النظائر المشعة البحرية	Definition (note here years are thousands of years ago - ka)	التعريف			
+MIS1	MIS1	0 to 11.7 ka				
+MIS2	MIS2	11.7 to 29ka				
+MIS3	MIS3	29 to 54 ka				
+MIS4	MIS4	54 to 71 ka				
+MIS5	MIS5	71 to 130 ka				
+MIS6	MIS6	130 to 191 ka				
+MIS7	MIS7	191 to 243 ka				
+MIS8	MIS8	243 to 300 ka				
+MIS9	MIS9	300 to 337 ka				
+MIS10	MIS10	337 to 374 ka				
+MIS11	MIS11	374 to 424 ka				
+MIS12	MIS12	424 to 478 ka				
+MIS13	MIS13	478 to 533 ka				
+MIS14	MIS14	533 to 563 ka				
+MIS15	MIS15	563 to 621 ka				
+MIS16	MIS16	621 to 676 ka				
+MIS17	MIS17	676 to 712 ka				
+MIS18	MIS18	712 to 761 ka				
+MIS19	MIS19	761 to 790 ka				
+MIS20-63	MIS20-63	790 ka to 1782 ka				
+MIS64-103	MIS64-103	1782 to 2575 ka				
+						
+Marine Isotope Stage Certainty	تأكيد مراحل النظائر المشعة البحرية	Definitions	التعريف			
+Possible	ممكن	"Chronological data has either been collected in the field with some issues of certainty e.g. the published report suggests that the material ""possibly"" dates to a given MIS stage, or Quatenrary substage, although there is some evidence to suggest that an alternative dating of this feature is possible."				
+Probable	محتمل	"Chronological data has either been collected in the field with some issues of certainty e.g. the published report suggests that the material ""probably"" dates to a given MIS stage, or Quatenrary substage, although there is some evidence to suggest that an alternative dating of this feature is possible."				
+Definite	مؤكد	Chronological data has been collected from either a primary field visit or a published source and the current investigator has no reason to doubt this.				
+Not Applicable	لا يمكن تحديده	For use when Unknown has been entered in either Marine Isotope Stage or Quaternary Stage		لا يمكن تحديده	ok	غير قابل للتطبيق
+						
+Quaternary Divisions	تقسيمات الدهر الرباعي	Definitions (note here years are measured to b2k - i.e. before the year 2000)	التعريف			
+Holocene	الهولوسين	Most recent major stratigraphic division of the Quaternary Period: present day to 11,700 years ago				
+Upper & Late Holocene / Meghalayan	الهولوسين العلوي & المتأخر/الميغالي	Youngest sub-division of the Holocene: present day to 4250 years ago				
+Middle Holocene / Northgrippian	الهولوسين الوسيط/نورث غريبيان Northgrippian	Middle sub-division of the Holocene: 8236 to 4250 years ago				
+Lower & Early Holocene / Greenlandian	الهولولسين الأدنى والمبكر /غرين لاندي Greenlandian	Oldest sub-division of the Holocene: 11,700 to 8236 years ago				
+Pleistocene	البليستوسين	Penultimate major stratigraphic division of the Quaternary Period: 11,700 years ago to 2.58 million years ago				
+Upper & Late Pleistocene	البلستوسين العلويى & المتأخر	Youngest sub-division of the Pleistocene: ~126,000 to 11,700 years ago				
+Middle Pleistocene	البليستوسن الوسيط	One of 2 middle sub-divisions of the Pleistocene: ~773,000 to 126,000 years ago				
+Lower & Early Pleistocene / Calabrian	البليستوسن الأدنى & المبكر /الكالابري Calabrian	One of 2 middle sub-divisions of the Pleistocene: 1.8 million to ~773,000 years ago				
+Lower & Early Pleistocene / Gelasian	البليستوسن الأدنى & المبكر /الجيلاسي Gelasian	Oldest sub-division of the Pleistocene: 2.58 to 1.8 million years ago				
+						
+Quaternary Date Certainty	مدى التأكد من تاريخ الزمن الرابع	Terms same as for Marine Isotope Stage Certainty above				
+						
+Geoarchaeology Timescape	المنظور الزمني للملاحظة الجيوأركيولوجية					
+						
+Geoarchaeology From Date (earliest)	الجيوأركيولوجي (الأقدم)					
+						
+Geoarchaeology To Date (latest)	الجيوأركيولوجي الحديث (الأحدث)					
+						
+Timescale Convention	الجدول الزمني المتعارف عليه	Definitions	التعريف	Terms TBC		
+						
+Geoarchaeology Feature Assessment	تقييم الظاهرة الأثارجيولوجية					
+						
+Geoarchaeological Feature Sediment Belief	نوع توضع الظواهر االجيوأركيولوجية					
+						
+Geoarchaeological Feature Sediment Type	نوع توضع الظواهر االجيوأركيولوجية	Terms same as Surficial Geology Type in Environment Assessment Tab				
+						
+Geoarchaeological Feature Sediment Transition	مظاهر انتقال الرواسب الجيوأركيولوجية	Definitions	التعريف			
+Abrupt	حاد	Successive sediment beds are separated by a sharp and distinct boundary created for example by differences in colour, sorting, grain size, bedding patterns or a clear unconformity				
+Gradual	تدريجي	Successive sediment beds are separated by a gradual transition for example in terms of colour, grain size, sorting or bedding patterns. Distinct unconformities are not visible				
+Unclear/Unknown	غير واضح/غير محدد	Self-Explanatory				
+						
+Geoarchaeological Feature Sediment Type Certainty	مدى التأكد	Definitions	التعريف			
+Negligible	ضئيل	The investigator has considerable reason to doubt their identifications/interpretations. The evidence may also be contradicted by published sources/other geoscientific specialists or data		ضئيل	ok	تافه
+Low	ضعيف	The investigator has considerable reason to doubt their identifications/interpretations.  It is not confirmed by published sources/other geoscientific specialists or data				
+Medium	متوسط	The investigator has some reason to doubt their identifications/interpretations.  It is not confirmed by published sources/other geoscientific specialists or data				
+High	عالي	The investigator has little reason to doubt their identification, it may or may not be confirmed by published sources/other geoscientific specialists or data		عال	no	
+Definite	مؤكد	The investigator has no reason to doubt their identification and it is either confirmed  It is not confirmed by published sources/other geoscientific specialists or data				
+Not Applicable	لا يمكن تحديده	The investigator has entered 'No Visible/Known' or 'unknown' and certainty does not apply		لا يمكن تحديده	ok	غير قابل للتطبيق
+						
+Geoarchaeological Feature Landform Belief	نوع شكل الظاهرة الجيوأركيولوجية					
+						
+Geoarchaeological Feature Landform Type	نوع شكل الظاهرة الجيوأركيولوجية	Definitions	التعريف			
+Archaeological Feature	ظاهرة أثرية	A man-made structure, either built or created by modification of the natural landscape. Use this term in the event that archaeological structures are present and contribute to understanding of environmental change. If only loose artefacts are present, use Sediment Type>Archaeological Deposit/Artefact Bearing Deposit				
+Bed/Sedimentary Deposit	توضع رسوبي/قاعي	A layer of sediment or rock that is different from over- and underlying rock/sediment layers. Difference could be based on texture, sorting, colour, bedding patterns, fossils or distinct boundaries such as unconformities 				
+Break in Slope	تغير فجائي في درجة انحدار السفح	A distinct, often sharp, change in the angle of a slope				
+Cave	كهف	An underground hollow, usually but not exclusively with a horizontal opening; naturally or anthropogenically formed and/or modified				
+Channel/Gully	قناة/أخدود	A linear cut in the ground surface, varying between straight and sinuous and generally cut by flowing water				
+Cliff/Scarp	جرف/سفح	A vertical to near-vertical face of exposed rock or sediment				
+Colour/Texture Difference	اختلاف اللون/المركب وملمسه	Variation in ground-surface colour or texture distinct from surrounding area. In many cases using satellite imagery it will not be clear whether this is a cropmark or a soilmark.				
+Depression/Basin	منخفض/حوض	A large concave area in the surface of the ground (inc. land and seabed), usually wider than it is deep				
+Mound	تل/رابية	A  pile of material (inc. rock or sediment) heaped up, often rounded to sub-rounded in plan and profile, and elevated above the surrounding area (inc. land and seabed)				
+Pit/Shaft	حفرة/جوانب بئر	Small depression vertically cut into the land or seabed surface 				
+Ridge	حافة	A linear feature on the ground surface (inc. land and seabed), varying between straight and sinuous and elevated above the surrounding area. Can be composed of rock, or piled up sediment				
+Terrace/Platform	مصطبة/منصة	A step-like feature with a level or gently sloping surface bounded at one or both sides by steeper slopes. Often found adjacent to rivers and coastlines and also on both the seabed and land surface				
+Unknown or n/a	غير محدد أو لا يمكن تحديده	Self-Explanatory				
+						
+Geoarchaeological Feature Landform Number Type	النوع	Terms same as Estimated Number of Forms in Archaeological Assessment Tab				
+						
+Geoarchaeological Feature Landform Arrangement Type	نوع الترتيب	Terms same as Arrangement in Archaeological Assessment Tab				
+						
+Geoarchaeological Feature Landform Type Certainty	مدى التأكد	Terms same as Sediment Type Certainty Above				
+						
+Geoarchaeological Feature Interpretation Belief	تفسير نوع الظاهرةالجيوأركيولوجية					
+						
+Geoarchaeological Feature Interpretation Type	تفسير نوع الظاهرةالجيوأركيولوجية	Definitions	التعريف			
+Glacial	جليدي	Feature produced by glacial processes.  Use this term where distinct landforms (e.g. see  other definitions) cannot be identified, only the general process by which the feature/evidence was created 				
+Fluvial/Alluvial	راسب فيضي/راسب غريني	Feature produced by river processes. Use this term where distinct landforms (e.g. see  other definitions) cannot be identified, only the general process by which the feature/evidence was created 				
+River channel/wadi/khor	قناة نهرية/وادي/خور	A linear cut in the ground surface, varying between straight and sinuous. Cut by water flowing permanently (e.g. river channel) or intermittently (e.g. wadi/khor)				
+River bar	حاجز نهري	Sediment deposited in a river by water and elevated above the riverbed as a distinct feature. Definition here includes bars within the channel (e.g. braid bar) and attached to the bank (e.g. point bar)				
+Floodplain	سهل فيضي	Flat low-lying plain adjacent to a river or stream and onto which alluvial sediment is deposited during floods				
+Alluvial Fan	مروحة غرينية	Sediment deposited where a steep stream exits a mountain catchment. Generally forms conical to sub-conical landform				
+River Terrace	مصطبة نهرية	Step-like feature landform or close to, but elevated above a river/stream channel. Represents the former floodplain surface into which the river has subsequently incised				
+Lacustrine	بحيري	Feature produced by lake processes.  Use this term where distinct landforms (e.g. see  other definitions) cannot be identified, only the general process by which the feature/evidence was created 				
+Lake	بحيرة	Large body of water, located inland and surrouded by land. Generally freshwater, but can sometimes hold saltwater				
+Lake Shoreline	شاطئ بحيرة	The line where water in a lake and the surrounding land meet. 				
+Aeolian	راسب ريحي	Feature produced by wind processes.  Use this term where distinct landforms (e.g. see  other definitions) cannot be identified, only the general process by which the feature/evidence was created 				
+Dunes/Aeolianite	كثبان رملية/كثبان متحجرة	A mound of sand piled up by wind action and elevated above its surrounds. Definition here includes aeolianite: dunes cemented into sandstone by carbonates. Local names include kurkar and ramleh.				
+Sand sheet	حصيرة رملية	Low relief to undulating area covered by windblown sand. Formed where wind speed is too low and/or grain size too large for dune formation. May contain small bedforms like ripples				
+Slope	منحدر	Feature produced by slope processes.  Use this term where distinct landforms (e.g. see  other definitions) cannot be identified, only the general process by which the feature/evidence was created 				
+Landslide	إنزلاق أرضي	Mass movement of material (inc. rock, sediment and other debris) down a slope. Can be triggered by multiple causes inc. rainfall, earthquakes, undercutting, human action				
+Scree/Talus	ركام سفحي	Deposit of broken rock fragments and sediment at the base of cliffs accumulated though rockfall. Forms a slope at an angle to the backing cliff				
+Organic	عضوي	Feature produced by organic processes.  Use this term where distinct landforms (e.g. see  other definitions) cannot be identified, only the general process by which the feature/evidence was created 				
+Freshwater Wetland	أراض رطبة - مياه عذبة	Area permanently or seasonally flooded by freshwater and characterised by distinct aquatic plants. Definition here includes marshes, swamps, bogs, fens and peatlands				
+Saltmarsh	مستنقع	Intertidal area (i.e. periodically inundated by the sea), generally muddy, colonized by salt tolerant grasses, shrubs and herbs. Found worldwide				
+Mangrove	أيكة بحرية	Intertidal area (i.e. periodically inundated by the sea), colonized by salt tolerant trees and shrubs which are rooted in the seabed. Restricted to tropical and subtropical regions				
+Buried Soil	تربة مدفونة	Layer of soil, subsequently buried by another layer of sediment				
+Biogenic	بيولوجي المنشأ	Feature produced by biogenic processes.  Use this term where distinct landforms (e.g. see  other definitions) cannot be identified, only the general process by which the feature/evidence was created 				
+Coral Reef	شعب مرجانية	Underwater structure made up of the carbonate skeletons of corals. Definition here encompasses all reef morphologies including fringing reefs, barrier reefs, atolls and platforms 				
+Marine/Coastal	بحري/ساحلي	Feature produced by marine/coastal processes.  Use this term where distinct landforms (e.g. see  other definitions) cannot be identified, only the general process by which the feature/evidence was created 				
+Bay	خليج	Indentation of the shoreline to form a semi-enclosed body of water				
+Beach (Sand/Gravel)	شاطئ (رملي/حصىوي)	Flat or sloping band of unconsolidated sand and/or gravel running along the coastline 				
+Beach Ridge	حافة شاطئية	Narrow and linear accumulation of sediment running parallel to the shoreline and formed by wave and/or wind action in the intertidal and supratidal zone				
+Boulder Deposit	توضع بحري متكتل	Deposit comprised primarily of boulder sized material. Definiition here includes boulder beaches formed by very high wave energy or storm action				
+Coastal Cliff	جرف ساحلي	Vertical to near-vertical faces of exposed rock or sediment located at the shoreline and produced by wave erosion 				
+Delta	دلتا	Low-lying body of alluvial sediment, often triangular in planform, deposited where one or more freshwater watercourse meet the sea				
+Estuary	مصب النهر	Semi-enclosed water body or indentation in th coastline created by the entry of one or more freshwater watercourses into the sea				
+Island	جزيرة	Area of land surrounded by water. Definition here encompasses specific island types, such as barrier islands				
+Lagoon	هور/بحيرة ساحلية	Shallow, enclosed or semi-enclosed water body separated from the open sea by some sort of barrier, such as a reef, shoal or barrier island				
+Marine Terrace	مصطبة بحرية	Step-like landform elevated above or submerged below present day sea-level. Comprises a level to gently seaward sloping surface terminated landward by a steeper slope or cliff. Represents a former shoreline. 				
+Notch	ثغر	Notch or indendation in the base of a cliff at or close to sea-level. Can form as a result of wave erosion (wave-cut notch) or bioerosion (tidal notch)				
+Sabkha/Sandflat/Mudflat	سبخة/مسطح رملي /مسطح طيني	Low relief to undulating area in the intertidal to supratidal zone covered by fine sediment (mud/sand). Definition here includes sabkhas: supratidal mud- or sandflats where evaporite saline minerals accumulate to arid/semi-arid climate				
+Seabed	قاع البحر	The bottom of the sea/ocean. Definition used here encompasses various seabed bedforms created by waves and currents such as sand waves and sand ripples				
+Shoreline	خط الساحل	The line where seawater meets the land. Use this term where distinct coastal landforms (e.g. see the other definitions) cannot be identified 				
+Spit/Tombolo	لسان/جسر بحري	Depositional landform created in the sea by the transport and accumulation of sediment, often by longshore drift. Variations include spits (attached at one end to the land) and tombolos (linking an island to the mainland)				
+Tsunami	تسونامي/زلزال بحري	Extreme wave, or series of waves, much larger than normal for the given stretch of coastline. Occur rarely as a result of earthquakes or submarine landslides				
+Wave-cut Platform	مصطبة بحرية نحتها الموج	Level to gently sloping rock surface in the intertidal zone cut by wave erosion. Often located at the foot of a cliff				
+Chemical	كيميائي	Feature produced by chemical processes.  Use this term where distinct landforms (e.g. see  other definitions) cannot be identified, only the general process by which the feature/evidence was created 				
+Beachrock	صخور شاطئية	Beach sediment cemented by carbonate precipitation to form a hard substrate				
+Karst	كارستية (أحجار جيرية ذات مجار جوفية)	Landscape shaped by the dissolution of carbonate rocks. Includes features such as limestone pavements, subterranean drainage systems, caves and sinkholes				
+Cave/sinkhole	كهف/حفرة كارستية	An underground hollow; naturally or anthropogenically formed and/or modified. Definition here encompasses caves with horizontal openings as well as those opening vertically, often as a result of roof collapse, such as dolines and sinkholes.				
+Volcanic	بركاني	Feature produced by volcanic processes.  Use this term where distinct landforms (e.g. see  other definitions) cannot be identified, only the general process by which the feature/evidence was created 				
+Lava flow	طفح بركاني	Stream of molten rock from a volcanic activity, either effusive or explosive				
+Ash layer	طبقة رماد	Layer of ash deposited as a result of a volcanic eruption				
+Unknown	غير محدد	Unknown	غير معلوم	غير محدد	ok	مجهول
+						
+Geoarchaeological Feature Interpretation Type Certainty	مدى التأكد	Terms same as Sediment Type Certainty Above				
+						
+Related Geoarchaeology/Palaeolandscape	على صلة بالجيوأركيولوجي/اللاندسكيب القديمة					
+						
+Related Heritage Place	موقع على صلة بالتراث					
+						
+Source of Evidence	مصدر الأدلة					
+						
+Related Information Resource	مصادر المعلومات ذات الصلة					

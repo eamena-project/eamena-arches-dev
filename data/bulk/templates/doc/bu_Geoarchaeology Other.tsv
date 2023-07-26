@@ -1,0 +1,36 @@
+Process Indicator/Evidence of	مؤشر /أدلة للتغيرات	Unnamed: 2	Unnamed: 3	Alternative suggested translation	mk comments	Old Term replaced by AB or MK
+						
+Process Indicator/Evidence of Type	نوع مؤشر /أدلة للتغيرات	Definitions	التعريف			
+Channel Migration/Abandonment	قناة مائية مهجورة/مجرى نهري مهجور	Evidence indicates that river channels have moved in the past				
+Coastal Advance/Accretion	انحسار الساحل/تقدم اليابسة	Evidence indicates that the coastline has advanced (i.e. moved seaward) in the past				
+Coastal Retreat/Erosion	تراجع الساحل/تعرية (تقدم البحر)	Evidence indicates that the coastline has retreated (i.e. moved landward) in the past				
+High Potential for Archaeological Preservation	امكانية عالية محفوظة للآثار	Evidence suggests the geological deposit/feature under consideration has a high (but not certain) likelihood of containing archaeological material 				
+Lake Level Change	تغير مستوى سطح البحيرة	Evidence indicates that the water level of a lake has fluctuated (i.e. risen or fallen) in the past				
+Low Potential for Archaeological Preservation	امكانية منخفضة محفوظة للآثار	Evidence suggests the geological deposit/feature under consideration has a low (but not certain) likelihood of containing archaeological material 				
+Natural Hazard	خطر طبيعي	Evidence indicates that a natural hazard, such as an earthquake, volcano, tsunamic etc…, has occurred sometime in the past				
+Preservation of Organic Remains	بقايا عضوية محفوظة	Evidence suggests the geological deposit/feature under consideration preserves organic material. Note that this includes naturally occuring material (e.g. plant remains) as well as organic archaeological artefacts				
+Preservation of Relict Palaeo-landscape Features	معالم أو ظواهر	Evidence indicates that parts of a landscape which existed before the present day, including landforms and sedimentary deposits, are still preserved either on, or buried under, the Earth's surface				
+Reworking of Archaeological Deposits	إعادة تعرية وترسيب للبقايا الأثرية	Evidence indicates that although archaeological remains may be present, they are likely reworked (resulting in the loss of spatial relationships) and no longer in situ				
+Sea-level Fall	انخفاض مستوى سطح البحر	Evidence indicates that sea-level has fallen in the past				
+Sea-level Oscillations	تذبذب مستوى سطح البحر	Evidence indicates that sea-level has risen in the past				
+Sea-level Rise	ارتفاع مستوى سطح البحر	Evidence indicates that sea-level has has fluctuated (i.e. risen or fallen) in the past				
+Tectonic Subsidence	الهبوط التكتوني	Downward movement of the ground surface due to tectonic processes including both long-term (e.g. plate movement) and short-term (e.g. earthquake)				
+Tectonic Uplift	الرفع التكتوني	Upward movement of the ground surface due to tectonic processes including both long-term (e.g. plate movement) and short-term (e.g. earthquake)				
+Unknown or n/a	غير محدد أو لا يمكن تحديده	The archaeological or geoscientific implications of the evidence under consideration is unknown				
+						
+Process Indicator Certainty	مدى تأكيد مؤشر /أدلة التغيرات	Definitions	التعريف			
+Possible	ممكن	The investigator has some issues of certainty regarding the interpreted significance (process indicators) of the geoarchaeological evidence; e.g. there are clear weakness/limitations in the evidence which mean that alternative explanations are plausible				
+Probable	محتمل	The investigator has minor issues of certainty regarding the interpreted significance (process indicators) of the geoarchaeological evidence; e.g. the evidence is generally strong with only minor limitations and possibilities for alternative explanations				
+Definite	مؤكد	The investigator is definitely certain of the interpreted significance (process indicators) of the geoarchaeological evidence. The evidence is definitive and no alternative explanations are possible				
+Not Applicable	لا يمكن تحديد	For use when Unknown has been entered as the Process Indicator		لا يمكن تحديد	ok	غير قابل للتطبيق
+						
+Maritime Region Type	نوع الإقليم البحري	Definitions	التعريف			
+Territorial Waters (12 Nautical Miles)	مياه إقليمية (12 ميل بحري)	12 nautical miles from the coastline (if unsure check https://www.marineregions.org/eezmapper.php)				
+Exclusive Economic Zone (EEZ)	منطقة اقتصادية خالصة أو حيوية	200 nautical miles from the coastline (if unsure check https://www.marineregions.org/eezmapper.php)				
+International Waters	مياه دولية	Beyond 200 nautical miles from the coastline (if unsure check https://www.marineregions.org/eezmapper.php)				
+Not Applicable	لا يمكن تحديد	Maritime region type not applicable as site lies inland		لا يمكن تحديد	ok	غير قابل للتطبيق
+						
+Overall Location Type	نوع الموقع عمومًا	Definitions	التعريف			
+Data Extent	مدى البيانات	The mapped extent of the geoarchaeological evidence reflects the extent of the dataset available (e.g. box showing the extent of available geophysical survey data). 				
+Interpolated boundary	الحدود المستنبطة	The mapped extent of the geoarchaeological evidence has been interpolated outside the bounds of the available data (e.g. polygon showing the extent of a deposit which is interpolated from scattered individual cores).				
+Observed geoarchaeological boundary	حدود أثرية ملحوظة	The mapped extent of the geoarchaeological evidence reflects the extent of the evidence as observed from available data (e.g. polygon over a series of beach ridges visible on satellite images).				

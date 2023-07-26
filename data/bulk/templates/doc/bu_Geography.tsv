@@ -1,0 +1,84 @@
+Geography	الجغرافيا	Unnamed: 2	Unnamed: 3	Alternative suggested translation	MK Comments	Old Term replaced by AB or MK
+						
+Overall Site Shape	الشكل العام للموقع	Definitions	تعريف			
+Circular	دائري	An enclosed heritage resource which is round in shape	ملمح ذو شكل دائري مغلق			
+Curvilinear	منحنى	A linear heritage resource which curves	ملمح طولي على شكل منحنى			
+Irregular	غير منتظم	An enclosed or unenclosed heritage resource with no identifiable geometric form	ملمح ذو شكل مغلق أو مفتوح، ليس له شكل هندسي محدد			
+Point	نقطة	For use only on sites which consist of a single very small findspot which is too small to be recognised on satellite imagery under normal circumstances. e.g. an isolated stone tool with no other objects or features around				
+Polygonal	كثير الأضلع	An enclosed heritage resource with 4+ straight sides, not arranged at right angles (e.g. trapezoid, pentagon, hexagon etc.)	ملمح ذو شكل هندسي مغلق له أربعة أضلاع مستقيمة أو أكثر، ولا ترتبط بزاويا قائمة (مثل الشكل شبه المنحرف، والخماسي الأضلاع، والسداسي الأضلاع، الخ)			
+Rectangular/Square	مستطيل/ مربع	An enclosed heritage resource with 4 straight sides arranged at right angles	ملمح ذو شكل هندسي مغلق له أربعة أضلاع مستقيمة بينها بزوايا قائمة			
+Rectilinear	مستقيم الجوانب	An enclosed or unenclosed heritage resource which is formed of straight sides sitting at more or less right angles	ملمح ذو شكل هندسي مغلق أو مفتوح، يتكون من جوانب إلى حد ما مستقيمة بينها زوايا قائمة	مستقيم الجوانب	yes	مستقيم الخطوط
+Semi-circular	شبه دائري	An enclosed heritage resource with one straight side and one curved/rounded side (e.g. D-shaped)	ملمح ذو شكل مغلق أحد أضلاعه مستقيم، والضلع الآخر منحني أو شبه دائري (مثل حرف D الإنجليزي)	نصف دائري	No, the meaning is not half circile but Semi	
+Straight	مستقيم	A linear heritage resource which does not curve or bend	ملمح طولي مستقيم بدون منحنيات	مستقيم	yes	على استقامة واحدة
+Sub-circular	شبه دائري	An enclosed heritage resource which is rounded in shape, but not necessarily circular	ملمح ذو شكل دائري مغلق، ولكن ليس بالضرورة أن يكون دائرة	شبه دائري	yes	جزء من دائرة
+Sub-rectangular	شبه مستطيل	An enclosed heritage resource which is rectangular in overall shape but with rounded corners or edges	ملمح على شكل مستطيل مغلق بصورة عامة، ولكن أركانه أو بعض جوانبه بها انحناءات	شبه مستطيل	yes	جزء من مستطيل
+Triangular	مثلث	An enclosed heritage resource of 3 straight sides.	ملمح على شكل مثلث مغلق يتكون من ثلاثة أضلاع مستقيمة			
+User Defined	محدد بمعرفة المستخدم	Any shape which has been drawn to define the edge of area which is being treated as a single 'site' by the researcher for no other reason than the geographical proximity of heritage resources visible on the imagery (e.g. a large area which contains 1000s of cairns, pendants, and small enclosures, when you have no reason to believe that the individual heritage resources are necessarily related functionally or chronologically, but where we do not want to/cannot enter individual records, for reasons of time. If you use this category, your 'Certainty' for 'Site size/extent' should always be 'Negligible'.	"أي شكل يتم رسمه لتحديد حدود منطقة يتم التعامل معه ك""موقع"" بواسطة الباحث ليس لأي سبب سوى التقارب الجيولوجي بين الموارد التراثية المرئية على الصور (مثل: منطقة كبيرة تشمل آلاف أكوام الحجارة، أو القلائد، أو الأشكال المغلقة الصغيرة، عندما لا يكون هناك سبب للاعتقاد بأن الموارد المنفردة مرتبطة بشكل وظيفي أو تاريخي (كرونولوجي)، ولكننا لا نريد، أو لا نستطيع إدخال تسجيلات مستقلة، بسبب ضيق الوقت. فإن استخدمت هذا التصنيف فيجب أن تكون ""مدى التأكد"" لكل من حجم ومدى الموقع ""تافه"""			
+Winding	ملتوي	A linear heritage resource which does not follow a regular/straight, and may incorporate bends and/or curves	ملميح طولي ليس له شكل منتظم أو مستقيم، وقد يشمل منحنيات	ملتوي	yes, it is the same word	
+Zigzag	متعرج	A linear heritage resource which bends in alternating directions at intervals	ملمح طولي ينحني في إتجاهات متعاكسة في بعض أجزائه			
+Unknown	غير محدد	Unknown	غير معلوم	غير محدد	yes	مجهول
+x						
+Resource Orientation Type	اتجاه الموقع الذي بصدد التسجيل					
+North	شمال					
+South	جنوب					
+East	شرق					
+West	غرب					
+North-East	شمال شرق					
+North-West	شمالي غرب					
+South-East	جنوبي شرق					
+South-West	جنوب غرب					
+North-South	شمال-جنوب					
+East-West	شرق-غرب					
+Northeast-Southwest	شمال شرق-جنوب غرب					
+Northwest-Southeast	شمال غرب-جنوب شرق					
+Not Applicable	لا يمكن تحديده					
+x						
+Country	الدولة					
+Algeria	الجزائر					
+Bahrain	البحرين					
+Djibouti	جيبوتي					
+Egypt	مصر					
+Eritrea	أرتيريا					
+Ethiopia	أثيوبيا					
+Iran (Islamic Republic of)	جمهورية إيران الأسلامية					
+Iraq	العراق					
+Israel	إسرائيل					
+Jordan	الأردن					
+Kuwait	الكويت					
+Lebanon	لبنان					
+Libya	ليبيا					
+Mauretania	موريتانيا					
+Morocco	المغرب					
+Oman	مسقط وعُمان					
+Palestine, State of	دولة فلسطين					
+Qatar	قطر					
+Saudi Arabia	السعودية					
+Sudan	السودان					
+Syrian Arab Republic	الجمهرية العربية السورية					
+Tunisia	تونس					
+Turkey	تركيا					
+United Arab Emirates	الإمارات العربية المتحدة					
+Western Sahara	الصحراء الغربية					
+Yemen	اليمن					
+Other	شيء أخر					
+						
+Grid ID	هوية الشبكة					
+						
+Address	العنوان					
+						
+Address Type	نوع العنوان					
+Alternative	بديل					
+Primary	أولي/أساسي					
+x						
+Administrative Division	التقسيم الإداري					
+						
+Administrative Division Type	نوع التقسيم الإداري					
+Community Plan Area	المنطقة - المجتمع المحلي					
+Council District	منطقة المجلس - المجلس البلدي					
+District						
+Governorate	محافظة/ولاية					
+Neighborhood	الجوار					
+Neighborhood Council	البلدية المجاورة					
+Province						
+x						
+Cadastral Reference	مرجع تقسيم الأراضي					

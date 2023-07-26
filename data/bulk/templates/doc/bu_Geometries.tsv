@@ -1,0 +1,38 @@
+Geometries	أشكال هندسية	Unnamed: 2	Unnamed: 3	Unnamed: 4	Alternative suggested translation	MK Comments	Old Term replaced by AB or MK
+							
+Geometric Place Expression	التعبير هندسيًا عن شكل الموقع						
+Add a New Feature	أضف ظاهرة جديدة						
+Add Point	أضف نقطة						
+Add Line	أضف خط						
+Add Polygon	أضف خط كثير الأضلاع						
+							
+Site Location Certainty	مدى التأكد من مكان الموقع 	Definitions	تعريف				
+Negligible	ضئيل	The site/feature has no accurate spatial information associated with it. For example, it is mentioned within the literature as being within a general region, but there is no additional information or imagery to corroborate this.	لا توجد معلومات فراغية عن الموقع/الملمح. فمثلاً، قد يكون مذكوراُ في أحد المصادر على أنه موجود ضمن منطقة بشكل عام، ولكن دون معلومات تفصيلية أو صور تعزز ذلك.		ضئيل	yes better	تافه
+Low	ضعيف	The site/feature is possibly identifiable on imagery or you have an approximate location (e.g. to within less than a kilometre) from sketch maps or descriptions, however, there is concern over the precision of the location due to poor imagery, rectification issues and/or limited data.	هذا الموقع/ الملمح يمكن تحديده على الصور، أو أن لديك علم بالموقع التقريبي (مثال: ضمن أقل من كيلومتر واحد) من خرائط غير دقيقة، أو وصف، إلا أنه هناك إشكالية في دقة الموقع بسبب عدم وضوح الصور، أو اشكاليات خاصة بتصحيح البيانات، أو محدودية البيانات.				
+Medium	متوسط	The site/feature is identifable on imagery, although there may be some concern over its 'shifting location' in different imagery sets. This may be due to poor imagery, rectification issues and/or limited data.	"يمكن تحديد الموقع/ الملمح على الصور، إلا أن هناك إشكالية خاصة ب""اختلاف الموقع"" بين الصور المختلفة للموقع. قد يكون ذلك بسبب عدم وضوح الصور، أو اشكاليات خاصة بتصحيح البيانات، أو محدودية البيانات."				
+High	عالي	The site/feature can be clearly identified from imagery (preferably multiple images). There is no concern over its 'shifting location' and its location may or may not be corrorobated by placename or cartographic data. 	"يمكن تحديد الموقع/ الملمح على الصوربشكل واضح (يفضل عدة صور). ولا توجد إشكالية بخصوص ""اختلاف الموقع""، وقد يكون موقعه تم تعزيزه أو لم يتم تعزيزه بواسطة أسماء الأماكن والبيات المساحية."		عال	As mentioned before, it is better, but will not be understod by low-medium users. 	
+Definite	مؤكد	The site/feature has been identified in the field, either through primary fieldwork and/or published data and can be clearly seen and identified on the imagery OR exact co-ordinates have been provided/published (and you have no reason to doubt their accuracy), even if the site cannot be seen on the imagery	تم تحديد الموقع/الملمح في الموقع، إما من خلال العمل في الموقع و/أو بيانات منشورة ويمكن بسهولة تحديدها على الصور، أو الإحداثيات المحددة تم الحصول عليها، أو أنها منشورة (ولا يوجد سبب في الشك في دقتها)، حتى وإن لم يكن من الممكن رؤية الموقع على الصور.				
+							
+							
+							
+Geometry Extent Certainty	مدى التأكد من امتداد الموقع من ناحية هندسية	NB. The site extent drawn should be what you can see on the reference imagery. The certainty of site extent should address how certain this extent reflects the archaeological site.	يجب أن تكون أبعاد الموقع هي ما تراه على الصورة المرجعية. ويجب أن يكون مدى التأكد من أبعاد الموقع خاصاً بمدى التأكد أن هذه الابعاد تعكس الموقع الأثري				
+Negligible	ضئيل	"The site/feature has a very diffuse boundary and/or appears to have a very different extent on different images, or alternatively is not visible on imagery. The site may also have no overall spatial information associated with it i.e. is only located by a broad scale map and/or by reference to a general region. In this case both the site location and site extent certainty will be negligible. This certainty level should also be used for polygons which are ""user-defined"" e.g. around a group of cairns which are not necessarily chronologically or functionally related."	"الموقع/الملمح له حدود متآكلة إلى حد كبير و/أو يبدو بنطاق مختلف في الصور المختلفة، أو قد يكون غير مرئي في الصور. وقد لا يكون هناك معلومات فراغية للموقع، كأن يكون محدد على خريطة بمقياس رسم كبير جداً و/أو بربطه بمنطقة بشكل عام. في هذه الحالة يكون كل من الموقع والنطاق ""تافه"". ويستخدم نفس مدى التأكد بالنسبة للمضلعات ""المحددة بواسطة المستخدم""، مثال مجموعة من كومات الحجارة والتي قد لا تكون مرتبطة زمنياً أو وظيفياً."		ضئيل	yes	تافه
+Low	ضعيف	The site/feature has a diffuse boundary (i.e. it is hard to identify from imagery where the site starts and ends). It appears to have a different extent on different images. Alternatively, if the site is listed by published sources it is only referred to using very broad size categories e.g. 0-5ha.	الموقع/الملمح له حدود متآكلة (بمعنى أنه من الصعب التحديد من الصور أين يبدأ الموقع وأين ينتهي).  و/أو يبدو بنطاق مختلف في الصور المختلفة، أو قد يكون غير مرئي في الصور. واحتمال آخر أن يكون الموقع مسجل في مصادر منشورة ولكنه مذكور باستخدام وحدات كبيرة الحجم جداً مثل نصف هكتار.				
+Medium	متوسط	The site/feature appears to have a fairly clear boundary and it is similar on multiple images. References to the site extent within published data may roughly correspond to what is identifiable via imagery.	الموقع/ الملمح له حدود واضحة إلى حد ما، ومتطابقة في الصور المختلفة. والمصادر التي تذكر نطاق الموقع قد يتشابه إلى حد كبير مع ما تم تحديده بواسطة الصور.				
+High	عالي	The site/feature has a very clear boundary and is very similar on multiple images. The site, however, may not have been mapped in the field OR there may be some concern over the correspondence between the field and imagery extents.	هذا الموقع/الملمح له حدود واضحة جداً، ومتطابقة بشكل كبير جداً في جميع الصور. إلا أن الموقع قد لا يكون تم ترسيمه في الموقع، أو قد تكون هناك إشكاليات خاصة بمطابقة المعلومات  بين النطاق في كل من الموقع والصور.		عال	same comment as before	
+Definite	مؤكد	The site/feature has been mapped in the field (primary or secondary sources) and the two extents have a  high level of correspondence.	تم ترسيم هذا الموقع/الملمح في الموقع (مصادر أولية وثانوية) وهناك تطابق عالي بين نطاقه في كلاهما.				
+							
+Spatial Coordinates Reference System	نظام الإحداثيات المكانية						
+							
+Geometry Type	نوع الشكل الهندسي	Definitions	تعريف				
+Access Point	المدخل إلى الموقع	The geometry indicates the official or recommended entrance to the site or the point where access is easiest.					
+Buffer Polygon	حدود حرم الموقع	The polygon indicates the extent of a buffer, usually a zone of protection beyond the known limits of the site					
+Center Line	خط التقسيم	A line which divides the site in half					
+Center Point	نقطة مركز الموقع	A point which indicates the geometric centre of the site					
+Façade Point	نقطة لظوهر قائمة	A point which indicates the position of the façade or front of a structure					
+Perimeter Polygon	شكل مضلع لامتداد معروف لمبنى ما	A polygon which marks the known horizontal extent of the site or feature being recorded		**merged with footprint polygon			
+Property Boundary	شكل منتظم أو مضلع لحدود مبان حديثة	A line or polygon which indicates the edge(s) of the modern property according to its legal ownership, which may differ from the original/ancient boundaries of the site					
+Site Datum Point	الإحداثية المساحية للموقع	Location of the site datum used for surveying					
+Simplified Polygon	شكل هندسي مبسط	A polygon which simplifies the shape of an area with very irregular or difficult to draw boundaries		**Changed from circumscribed polygon			
+Vicinity Point	الموقع بالنسبة إلى أقرب إحدائية مساحة	A point marking the approximate location of a site or feature based on available evidence but when the exact location is not precisely known					
+x							

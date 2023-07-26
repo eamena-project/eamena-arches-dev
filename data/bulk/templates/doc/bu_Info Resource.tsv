@@ -1,0 +1,123 @@
+Information Resource	مصدر المعلومات	Unnamed: 2	Unnamed: 3
+			
+Resource Type	نوع المصدر	Definitions	التعريف
+Bibliography	المراجع	Sources from which information is communicated through text or words, such as books, articles, reports, websitesetc.	
+Ancient Text	نص قديم	A written document dating from ancient history	
+Archive/Collection	أرشيف/مجموعة مقتنية	A group of documents or objects, often historical and related to a specific topic or from a specific source	
+Blog	مدونة ألكترونية	A regularly updated online source, often dedicated to a specific subject and usually written in an informal or conversational style	
+Book	كتاب	A self-contained, written work, which in physical form is bound with covers, and is normally edited and published for distribution	
+Book Chapter/Section	فصل أو جز ء كتاب	A defined section of a book, usually specified with its own title or number	
+Database	قاعدة بيانات	An organised collection of structured information or data, typically stored digitally	
+Encyclopedia	موسوعة	A book or set of books which gives information on many subjects, typically arranged alphabetically	
+Film/Podcast	فيلم مرئي/حلقة صوتية	A video or audio work which has been deliberately produced and edited for distribution to an audience	
+Government Document	وثيقة حكومية	A document produced by and/or for the government, for example, relating to laws and official regulations on the treatment of heritage	
+Journal Article	مقال صحفي	A written work which is published in an academic periodical, i.e. a publication which is produced and distributed at regular intervals and is normally peer-reviewed	
+News/Media Broadcast	أخبار/خبر إعلامي مذاع	An audio or video report produced and distributed to the public by a news organisation, on television, radio, or the internet	
+Other Periodical Article	مقال في مجلة دورية	A written work which is published in periodicals that are not peer-reviewed (see Journal Article), such as magazines or newsletters	
+Pamphlet	كُتيّب		
+Personal Communication	اتصال شخصي	A written or verbal exchange between two people, often informal	
+Published Report	تقرير منشور	A written report about the activities of a project, group, etc. which has been published in print or online	
+Social Media	وسيلة تواصل اجتماعي	Applications or websites where users share information online, often informally	
+Unpublished Paper/Presentation	مقال غير منشور/محاضرة أو عرض	A written work or audio-visual presentation which has been produced and perhaps presented to an audience but has not yet been published	
+Unpublished Report	تقرير غير منشور	A written report about the activities of a project, group, etc. which has not been published in print or online	
+Unpublished Thesis	أطروحة غير منشورة		
+Website	موقع الكتروني	Collected documents and information accessed through an internet browser	
+Cartography	الخرائط	Sources which are visual or symbolic representations of geographical space, such as maps, plans, elevations, etc.	
+Elevation/Section	قطاع/مسقط (رأسي)	A drawing or photograph which specifically records the vertical face of a structure or the side of an excavated trench	
+Map	خريطة	A visual or symbolic representation of a geographical area, often showing the shape and position of physical features of the landscape	
+Plan	مخطط (أفقي)	A drawing or photograph which records a horizontal area	
+Imagery	الصور	Sources which capture visual representations of physical landscapes, strutures, objects, etc. such as photographs, satellite imagery, etc. (but NOT including site plans or section drawings which come under Cartography)	
+Aerial Mosaic	صورة جوية مُجمعة	An assemblage of aerial photographs which have been combined to create a larger image	
+Aerial Photograph	صورة جوية	A photograph of the earth's surface which has been taken from an airborne vehicle, such as airplane, kite, or UAV	
+Digital Model	موديل رقمي		
+Drawing/Reconstruction	رسم/إعادة تركيب أو تصور	A likeness, diagram, or representation of an object or scene, produced manually (e.g. pencil on paper) or digitally. Ruined or missing parts may be filled in, based on evidence, extrapolation, or imagination.	
+Photograph	صورة ضوئية	An image captured directly by a camera onto a light-sensitive surface or digitally	
+Satellite Imagery	صورة قمر صناعي	An image captured of the earth by an imaging system which operates from a satellite.	
+Satellite Imagery (Virtual Globe/Map)	صورة قمر صناعي (فضاء افتراضي/خريطة افتراضية)	Satellite imagery which is accessed via an online virtual globe or map software, e.g. Google Earth or Bing Maps, where metadata and information for individual images is generally unavailable	
+Video/Moving Image	فيديو/شريط مرئي	An recording of moving visual images captured on film or digitally	
+Shared Data	بيانات ومعلومات مشتركة	See 'Shared Dataset'	
+Shared Dataset	تقاسم مجموعات البيانات	A set of data which has been officially shared with EAMENA from other individuals, institutions, or projects, such as survey or excavation results before publication. These data are normally unpublished; if the data are published, they should be recorded under Bibliography.	
+			
+Information Carrier	ناقل المعلومات وحافظها		
+			
+Format Type	نوع التهيئة أو التنسيق	Definitions	التعريف
+Digital Audio	صوتي رقمي	An audio recording accessed as a digital file, e.g. mp3	
+Digital Dataset	مجموعة بيانات رقمية	A collection of data organised and stored in a digital document or platform e.g. spreadsheet, database software or platform	
+Digital Document	وثيقة رقمية	A digital text document, e.g. PDF, eBook, word document	
+Digital Drawing/Model	رسم رقمي/موديل	A drawing or model created and viewed using digital software, e.g. Illustrator, AutoCAD, Photoscan	
+Digital Elevation Model	موديل قطاع رقمي	A 3-dimensional digital representation of elevation data to represent terrain	
+Digital Image	صورة رقمية	An image accessed as a digital file, e.g. jpeg, tiff	
+Digital Video	فيديو رقمي	A video recording accessed as a digital file, e.g. mp4	
+Film Negative	شريط نيجاتيف	Plastic strips onto which photographic images are captured through light exposure with a camera, usually with colours inverted	
+GeoTIFF	Geo TIFF	A digital TIFF image file which has georeferencing information embedded within the file	
+Glass photographic plate	صورة ضوئية على لوح زجاجي	Glass plates onto which photographic images are captured through light exposure with a camera. Their use preceded the use of plastic film in modern cameras (see Film Negative)	
+Kml/Kmz	Kml/Kmz	A digital file used to display geographic data in an earth browser such as Google Earth	
+Online Access	متاح على الأنترنت	Data viewed via the internet through a web browser or platform	
+Other GIS File	ملف GIS آخر	Digital data files used in GIS software other than shapefile (.shp), such as rasters	
+Other/Unknown	آخر/غير معروف	Data format unspecified or not listed here	
+Personal Communication	اتصال شخصي	A written or verbal exchange between two people, often informal, e.g. an e-mail or telephone call	
+Physical Material	مادة منشورة	Any physical document or object, such as books, photographs, etc.	
+Shapefile	ملفات تستخدم الشكل Shapfile	A digital geospatial vector data file for GIS software	
+Slide	شريحة	An individual transparent image intended for projection onto a larger screen using a slide projector	
+			
+Bibliography	المراجع		
+			
+Author(s)	المؤلف (المؤلفون)	Last Name, Initials	
+			
+Publication Date	تاريخ النشر	Date of publication. In yyyy-mm-dd format. Put 1st of January for year (unless otherwise known)	
+			
+Publication Title	العنوان	Title of Book/Article/Document, etc. Required field. As given, without capitalization	
+			
+Editor(s)	المحرر (المحررون)	Editor of edited volume, if applicable	
+			
+Source (e.g. Journal/Volume title)	المصدر (مثال: مجلة/عنوان المجلد)	Title of Periodical/Edited Volume, etc., if applicable. Full unabbreviated name	
+			
+Place(s) of publication	مكان (أمكنة) النشر	Place of publication. City, Country format	
+			
+Publisher	الناشر	Name of Publishing Body, full unabbreviated name	
+			
+Volume	المجلد	Periodical Volume number, if applicable	
+			
+Issue/Edition	الإصدار/الطبعة	Periodical Issue number, if applicable/ OR Edition	
+			
+Page Number(s)	رقم (أرقام) الصفحة	Page Range, use full numbers	
+			
+Figure Number(s)	رقم (أرقام) الشكل	Name/Number of figure, if applicable. Only if the Information Resource refers to a specific figure.	
+			
+Shared Data	البيانات المشتركة		
+			
+Shared Data Source	مصدر البيانات المشتركة	Name of person/contact/institution who has supplied data	
+			
+Shared Data Source Affiliation	اسم الجهة مالكة البيانات المشترك	Name of the affiliation or copyright type	
+			
+Shared Data Source Project	اسم المشروع مصدر البيانات المشتركة	Name of project from which data has been shared	
+			
+Shared Data Source Date of Creation	تاريخ مصدر البيانات المشتركة	Date; use 1 January if only year known	
+			
+URLs	URLs		
+			
+URL	URL	URL of the website, without http://	
+			
+URL Access Date	تاريخ الدخول واستخدام المصدر URL	Date source was (last) accessed, in yyyy-mm-dd format. Use '01' where month or year unknown	
+			
+Location	الموقع	**See Geometries Tab in other Glossary document	
+			
+File Upload	تحميل الملف		
+			
+Resource Relationships	مصدر العلاقات		
+			
+Related Site	موقع ذي صلة		
+			
+Add new Relationship	أضف علاقة جديدة		
+			
+Relationship from Date	علاقة قديمة		
+			
+Relationship to Date	علاقة حديثة		
+			
+Relationship Comments	تعليقات العلاقة		
+			
+Relationship Detailed Condition Assessment	علاقات مفصلة لتقييم الحالة		
+			
+Additional Information	معلومات إضافية		
+			
+Description	الوصف		

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <skos:ConceptScheme rdf:about="http://localhost:8000/00000000-0000-0000-0000-000000000006">
+    <dcterms:identifier xml:lang="en-us">{"id": "427b10b2-718a-41b8-b834-4da9a14b82c1", "value": "http://localhost:8000/00000000-0000-0000-0000-000000000006"}</dcterms:identifier>
+    <dcterms:title xml:lang="en-us">{"id": "fee39428-e83f-11e6-b49d-9b976819ac02", "value": "Candidates"}</dcterms:title>
+  </skos:ConceptScheme>
+</rdf:RDF>

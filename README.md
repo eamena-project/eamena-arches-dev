@@ -9,7 +9,7 @@
 | ⏰ Time | 🖼️ IIIF |
 |------|------|
 |[README](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/time#readme)| [iiif](https://github.com/eamena-project/eamena-arches-dev/tree/main/iiif) |
-|[PeriodO](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/periodo/README.md) |      |
+|[PeriodO](https://github.com/achp-project/cultural-heritage/tree/main/periodo-projects) |      |
 |      |      |
 
 ---

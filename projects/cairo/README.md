@@ -32,6 +32,11 @@ For each Heritage Place (HP), there is two kinds of data:
 
 2. Run the [list_mapping_bu()](https://eamena-project.github.io/eamenaR/doc/list_mapping_bu) function
 
+```R
+
+
+```
+
 ## Photographs
 
 1. Importing each photograph as an Information Resource (IR)

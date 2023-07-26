@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+>
+  <skos:Concept rdf:about="http://localhost:8000/00000000-0000-0000-0000-000000000004">
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="http://localhost:8000/00000000-0000-0000-0000-000000000001">
+        <dcterms:title xml:lang="en-us">{"id": "d8c60bf4-e786-11e6-905a-b756ec83dad5", "value": "Arches"}</dcterms:title>
+        <dcterms:identifier xml:lang="en-us">{"id": "8fec5e63-6b34-4d8d-94cd-cc77abb0f26d", "value": "http://localhost:8000/00000000-0000-0000-0000-000000000001"}</dcterms:identifier>
+        <skos:hasTopConcept rdf:resource="http://localhost:8000/00000000-0000-0000-0000-000000000004"/>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+    <skos:narrower>
+      <skos:Concept rdf:about="http://localhost:8000/4d505aad-65a6-4229-a6db-5532e811f3f9">
+        <skos:prefLabel xml:lang="en-us">{"id": "6af2277e-683d-4fb7-9cc3-38ae51aa0528", "value": "Cannot Be Determined with"}</skos:prefLabel>
+        <dcterms:identifier xml:lang="en-us">{"id": "4db197d8-e052-4445-b5af-0d3b24d345a9", "value": "http://localhost:8000/4d505aad-65a6-4229-a6db-5532e811f3f9"}</dcterms:identifier>
+        <skos:inScheme rdf:resource="http://localhost:8000/00000000-0000-0000-0000-000000000001"/>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="http://localhost:8000/3f48362f-9a3b-4b5a-8f12-0cee160133f3">
+        <dcterms:identifier xml:lang="en-us">{"id": "58b9b358-38d9-43e0-a595-fac03382f7fa", "value": "http://localhost:8000/3f48362f-9a3b-4b5a-8f12-0cee160133f3"}</dcterms:identifier>
+        <skos:prefLabel xml:lang="en-us">{"id": "5eaafbf2-096e-469c-b6c9-56fc37128c92", "value": "Is Colocated with"}</skos:prefLabel>
+        <skos:inScheme rdf:resource="http://localhost:8000/00000000-0000-0000-0000-000000000001"/>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="http://localhost:8000/fa37e0de-2b85-4146-9649-7f20a551061e">
+        <skos:inScheme rdf:resource="http://localhost:8000/00000000-0000-0000-0000-000000000001"/>
+        <dcterms:identifier xml:lang="en-us">{"id": "13b1e011-8efe-4965-8e95-d1076962dc0d", "value": "http://localhost:8000/fa37e0de-2b85-4146-9649-7f20a551061e"}</dcterms:identifier>
+        <skos:prefLabel xml:lang="en-us">{"id": "f5f4707b-2c36-4b3f-8786-e8a7d1dc9bac", "value": "Is Contained by"}</skos:prefLabel>
+      </skos:Concept>
+    </skos:narrower>
+    <dcterms:identifier xml:lang="en-us">{"id": "6b04e5a6-ede5-467f-8ff4-01dc94513e14", "value": "http://localhost:8000/00000000-0000-0000-0000-000000000004"}</dcterms:identifier>
+    <skos:narrower>
+      <skos:Concept rdf:about="http://localhost:8000/41f8e0bc-3523-418e-bbf0-22edcc9678f7">
+        <skos:prefLabel xml:lang="en-us">{"id": "c05945b2-2a17-49db-b967-eea7ae2ec82b", "value": "Contains"}</skos:prefLabel>
+        <skos:inScheme rdf:resource="http://localhost:8000/00000000-0000-0000-0000-000000000001"/>
+        <dcterms:identifier xml:lang="en-us">{"id": "c2aa6ed6-4ae2-419e-9f16-1d3095f9176c", "value": "http://localhost:8000/41f8e0bc-3523-418e-bbf0-22edcc9678f7"}</dcterms:identifier>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="http://localhost:8000/2e1eab7e-6be6-4c80-9623-c7c689c49b2e">
+        <skos:inScheme rdf:resource="http://localhost:8000/00000000-0000-0000-0000-000000000001"/>
+        <skos:prefLabel xml:lang="en-us">{"id": "8a808fbd-16a6-48e6-ba79-def42e541211", "value": "Is Parallel to"}</skos:prefLabel>
+        <dcterms:identifier xml:lang="en-us">{"id": "ca59e22b-5b84-4366-aa19-071b84861ba2", "value": "http://localhost:8000/2e1eab7e-6be6-4c80-9623-c7c689c49b2e"}</dcterms:identifier>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:prefLabel xml:lang="en-us">{"id": "c12e7e6c-e417-11e6-b14b-0738913905b4", "value": "Resource To Resource Relationship Types"}</skos:prefLabel>
+    <skos:narrower>
+      <skos:Concept rdf:about="http://localhost:8000/00000000-0000-0000-0000-000000000007">
+        <dcterms:identifier xml:lang="en-us">{"id": "cbcfd49a-5e4d-492a-b871-53d5d06b56e2", "value": "http://localhost:8000/00000000-0000-0000-0000-000000000007"}</dcterms:identifier>
+        <skos:inScheme rdf:resource="http://localhost:8000/00000000-0000-0000-0000-000000000001"/>
+        <skos:prefLabel xml:lang="en-us">{"id": "ac41d9be-79db-4256-b368-2f4559cfbe55", "value": "is related to"}</skos:prefLabel>
+      </skos:Concept>
+    </skos:narrower>
+  </skos:Concept>
+</rdf:RDF>

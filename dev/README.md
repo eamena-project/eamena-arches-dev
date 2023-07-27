@@ -163,7 +163,7 @@ Translate Ash's statistics https://mareastats.drashsmith.com/ from PHP to Python
 <p align="center">
   <img alt="img-name" src="../www/audit-data-sums.png" width="400">
   <br>
-    <em>caption</em>
+    <em>EAMENA DB statistics</em>
 </p>
 
 ### Data completness

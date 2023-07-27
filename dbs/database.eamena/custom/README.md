@@ -18,8 +18,8 @@ Change the `index.htm` file directly: https://github.com/eamena-project/eamena-a
 
 * example for [Slide 1](https://github.com/eamena-project/eamena-arches-dev/blob/11df37b9c528e4e3b423ae00464190432bd69c0c/dbs/database.eamena/customisation/index.htm#L255-L275)
 
-1. Change the [image](https://github.com/eamena-project/eamena-arches-dev/blob/11df37b9c528e4e3b423ae00464190432bd69c0c/dbs/database.eamena/customisation/index.htm#L258) [^1]
-2. Change the [caption](https://github.com/eamena-project/eamena-arches-dev/blob/11df37b9c528e4e3b423ae00464190432bd69c0c/dbs/database.eamena/customisation/index.htm#L273) [^2]
+1. Change the [image name](https://github.com/eamena-project/eamena-arches-dev/blob/11df37b9c528e4e3b423ae00464190432bd69c0c/dbs/database.eamena/customisation/index.htm#L258) [^1]
+2. Change the [caption name](https://github.com/eamena-project/eamena-arches-dev/blob/11df37b9c528e4e3b423ae00464190432bd69c0c/dbs/database.eamena/customisation/index.htm#L273) [^2]
 
 ## Import the updated file to the EA instance
 

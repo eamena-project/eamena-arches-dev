@@ -43,7 +43,13 @@ flowchart LR
 		G -- creates reference --> H[email creation];
 		end
 	end
-	H -- send --> I[/user/];
+	G -- triggers GitHub Action --> F
+	H -- send --> Z[/user/];
+	subgraph GitHub
+	F -- update the List of citations --> I[List of citations.md]
+	F -- creates .ris file --> I[KEY1.ris]
+	F -- creates .bib file --> I[KEY1.bib]
+	end
 	classDef eamenaFunc fill:#e3c071;
 ```
 

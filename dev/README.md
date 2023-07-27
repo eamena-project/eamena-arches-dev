@@ -156,7 +156,9 @@ example: Search INFORMATION-0104667
 
 ## Audit
 
-### Translate https://mareastats.drashsmith.com/ from PHP to Python
+### Basic statistics
+
+Translate Ash's statistics https://mareastats.drashsmith.com/ from PHP to Python
 
 <p align="center">
   <img alt="img-name" src="../www/audit-data-sums.png" width="400">

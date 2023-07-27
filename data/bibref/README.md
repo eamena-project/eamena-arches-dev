@@ -11,7 +11,7 @@
 ```mermaid
 flowchart
 	LR
-	A[id3[<a href='https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/docs/notes/Arches%207%20Upgrade.md#splitchunk'>BU</a>]] --read XLSX--> B{bulk-uploader};
+	A[<a href='https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/docs/notes/Arches%207%20Upgrade.md#splitchunk'>BU</a>] --read XLSX--> B{bulk-uploader};
 	subgraph local
 	B -- OK --> C[(EAMENA)];
 	end

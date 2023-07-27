@@ -43,7 +43,7 @@ flowchart LR
 		G -- creates reference --> H[email creation];
 		end
 	end
-	G -- triggers GitHub Action --> F
+	G -- triggers --> F[GitHub Action]
 	H -- send --> Z[/user/];
 	subgraph GitHub
 	F -- update the List of citations --> I[List of citations.md]

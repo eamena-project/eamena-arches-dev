@@ -14,9 +14,10 @@ flowchart LR
 	B -- OK --> C[(Postgres DB)];
 	B -- OK --> E{{citation-generator}}:::eamenaFunc;
 		subgraph citation-generator
+		E
+		end
 		E -- collect BU UUID --> H[email creation];
 		E -- recreates Search URL --> H;
-		end
 	end
 	B -- OK --> H
 	H -- send --> I[/user/];

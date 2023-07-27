@@ -14,7 +14,7 @@ flowchart LR
 	B -- OK --> E{{citation-generator}}:::eamenaFunc;
 		subgraph citation-generator
 		E -- collect BU UUID --> H;
-		F -- recreates Search URL --> H;
+		E -- recreates Search URL --> H;
 		end
 	end
 	B -- OK --> H[email creation]

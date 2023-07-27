@@ -9,8 +9,8 @@ Upload your BU to EAMENA
 ```mermaid
 flowchart LR
 	U[/user/] -- send --> A[<a href='https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/docs/notes/Arches%207%20Upgrade.md#splitchunk'>BU</a>]
-	A ---> B{{bulk-uploader}}:::eamenaFunc;
 	subgraph EAMENA
+		A ---> B{{bulk-uploader}}:::eamenaFunc;
 		subgraph bulk-uploader
 		B -- OK --> H[email creation];
 		B -- OK --> C[(Postgres DB)];

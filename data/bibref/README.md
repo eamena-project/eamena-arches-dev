@@ -2,11 +2,9 @@
 
 ## Data entry
 
-### GUI process
-
 ### Bulk-Upload process
 
-1. Upload your BU to EAMENA
+Upload your BU to EAMENA
 
 ```mermaid
 flowchart LR
@@ -15,18 +13,35 @@ flowchart LR
 	B -- OK --> C[(Postgres DB)];
 	B -- OK --> E{{citation-generator}}:::eamenaFunc;
 		subgraph citation-generator
-		E -- collect BU UUID --> F;
-		E -- creates Search URL --> G;
-		E -- creates reference --> H;
+		E -- collect BU UUID --> H;
+		F -- recreates Search URL --> H;
 		end
 	end
-	B -- OK --> I[/email to the user/];
-	F & G & H ---> I;
+	B -- OK --> H[email creation]
+	H -- send --> I[/email to the user/];
 	B -- not OK --> D((STOP)):::stop;
 	classDef eamenaFunc fill:#e3c071;
 	classDef stop fill:#EE4B2B;
 ```
 
+## Data output
+
+When an user do an export, he/she has to copy the URL and send the URL to `citation-generator`
+
+```mermaid
+flowchart LR
+	A[<a href='https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/docs/notes/Arches%207%20Upgrade.md#splitchunk'>BU</a>] --Search URL--> G{{citation-generator}}:::eamenaFunc;
+	subgraph EAMENA
+		subgraph citation-generator
+		G -- creates reference --> H;
+		end
+	end
+	B -- OK --> I[/email to the user/];
+	H ---> I;
+	B -- not OK --> D((STOP)):::stop;
+	classDef eamenaFunc fill:#e3c071;
+	classDef stop fill:#EE4B2B;
+```
 
 ## Glossary
 

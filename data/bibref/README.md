@@ -12,7 +12,7 @@ Upload your BU to EAMENA
 ```mermaid
 flowchart LR
 	U[/user/] -- send --> A[<a href='https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/docs/notes/Arches%207%20Upgrade.md#splitchunk'>BU</a>]
-	subgraph EAMENA
+	subgraph EAMENA DB
 		A ---> B{{bulk-uploader}}:::eamenaFunc;
 		subgraph bulk-uploader
 		B -- OK --> H[email creation];
@@ -37,7 +37,7 @@ When an user do an export, he/she has to copy the URL and send the URL to `citat
 ```mermaid
 flowchart LR
 	U[/user/] -- send --> A[<a href='https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/docs/notes/Arches%207%20Upgrade.md#splitchunk'>Search URL</a>];
-	subgraph EAMENA
+	subgraph EAMENA DB
 	A --Search URL--> G{{citation-generator}}:::eamenaFunc;
 		subgraph citation-generator
 		G -- creates reference --> H[email creation];
@@ -45,7 +45,7 @@ flowchart LR
 	end
 	G -- triggers --> F[GitHub Action]
 	H -- send --> Z[/user/];
-	subgraph GitHub
+	subgraph EAMENA GitHub
 	F -- update the List of citations --> I[List of citations.md]
 	F -- creates .ris file --> J[KEY1.ris]
 	F -- creates .bib file --> K[KEY1.bib]

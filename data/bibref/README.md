@@ -11,8 +11,12 @@
 ```mermaid
 flowchart LR
 	A[<a href='https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/docs/notes/Arches%207%20Upgrade.md#splitchunk'>BU</a>] --read XLSX--> B{{bulk-uploader}}:::eamenaFunc;
-	subgraph local
-	B -- OK --> C[(EAMENA)];
+	subgraph EAMENA
+	B -- OK --> C[(Postgres DB)];
+		subgraph citation-generator TD
+		B -- OK --> D{{citation-generator}}:::eamenaFunc;
+		D -- collect BU UUID --> E;
+		D -- creates Search URL --> F;
 	end
 	B -- not OK --> D((STOP)):::stop;
 	classDef eamenaFunc fill:#e3c071;

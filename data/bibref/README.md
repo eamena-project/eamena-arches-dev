@@ -47,8 +47,8 @@ flowchart LR
 	H -- send --> Z[/user/];
 	subgraph GitHub
 	F -- update the List of citations --> I[List of citations.md]
-	F -- creates .ris file --> I[KEY1.ris]
-	F -- creates .bib file --> I[KEY1.bib]
+	F -- creates .ris file --> J[KEY1.ris]
+	F -- creates .bib file --> K[KEY1.bib]
 	end
 	classDef eamenaFunc fill:#e3c071;
 ```

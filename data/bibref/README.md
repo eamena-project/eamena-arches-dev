@@ -14,9 +14,9 @@ flowchart LR
 	subgraph EAMENA
 	B -- OK --> C[(Postgres DB)];
 		subgraph citation-generator TD
-		B -- OK --> D{{citation-generator}}:::eamenaFunc;
-		D -- collect BU UUID --> E;
-		D -- creates Search URL --> F;
+		B -- OK --> E{{citation-generator}}:::eamenaFunc;
+		E -- collect BU UUID --> F;
+		E -- creates Search URL --> G;
 		end
 	end
 	B -- not OK --> D((STOP)):::stop;

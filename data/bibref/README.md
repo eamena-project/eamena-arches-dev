@@ -19,8 +19,9 @@ flowchart LR
 		E -- creates Search URL --> G;
 		E -- creates reference --> H;
 		end
-		F & G & H -- reference --> I;
 	end
+	B -- OK --> I[/email to the user/];
+	F & G & H ---> I;
 	B -- not OK --> D((STOP)):::stop;
 	classDef eamenaFunc fill:#e3c071;
 	classDef stop fill:#EE4B2B;

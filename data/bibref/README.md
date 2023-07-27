@@ -68,7 +68,7 @@ Where:
 * **id**: unique identifier
 * **complete citation**: APA-like citation
 * **citation downloads**: links to downloadable .bib and .ris formats. These files are produced on-the-fly.
-* **search url**: the shortened URL. The complete URL is listed in [this dataframe](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bibref/urls/urls.tsv). Shortening URL will be a service hosted locally (see IT solutions [here](https://github.com/awesome-selfhosted/awesome-selfhosted#url-shorteners))
+* **search url**: the shortened URL (here a 'tinyurl' one). The complete URL is listed in [this dataframe](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bibref/urls/urls.tsv). Shortening URL will be a service hosted locally (see IT solutions [here](https://github.com/awesome-selfhosted/awesome-selfhosted#url-shorteners))
 
 ## Glossary
 

@@ -35,10 +35,10 @@ When an user do an export, he/she has to copy the URL and send the URL to `citat
 ```mermaid
 flowchart LR
 	U[/user/] -- send --> A[<a href='https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/docs/notes/Arches%207%20Upgrade.md#splitchunk'>BU</a>];
-	A --Search URL--> G{{citation-generator}}:::eamenaFunc;
 	subgraph EAMENA
+	A --Search URL--> G{{citation-generator}}:::eamenaFunc;
 		subgraph citation-generator
-		G -- creates reference --> H[email creation];;
+		G -- creates reference --> H[email creation];
 		end
 	end
 	H -- send --> I[/user/];

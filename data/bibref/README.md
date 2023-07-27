@@ -13,8 +13,8 @@ flowchart LR
 	A[<a href='https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/docs/notes/Arches%207%20Upgrade.md#splitchunk'>BU</a>] --read XLSX--> B{{bulk-uploader}}:::eamenaFunc;
 	subgraph EAMENA
 	B -- OK --> C[(Postgres DB)];
+	B -- OK --> E{{citation-generator}}:::eamenaFunc;
 		subgraph citation-generator TD
-		B -- OK --> E{{citation-generator}}:::eamenaFunc;
 		E -- collect BU UUID --> F;
 		E -- creates Search URL --> G;
 		end

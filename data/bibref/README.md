@@ -22,7 +22,6 @@ flowchart LR
 		subgraph citation-generator
 		E
 		end
-		E -- collect BU UUID --> H;
 		E -- recreates Search URL --> H;
 	end
 	H -- send --> I[/user/];

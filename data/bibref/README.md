@@ -42,13 +42,12 @@ flowchart LR
 		subgraph citation-generator
 		G -- creates reference --> H[email creation];
 		end
-	end
 	subgraph "https://database.eamena.org/citations"
 	G -- update the List of citations --> I[List of citations.md]
-	G -- creates a new .ris file --> J[KEY1.ris]
-	G -- creates a new .bib file --> K[KEY1.bib]
+	G -- creates plain text files --> J[KEY1.ris <br> KEY1.bib <br> ...]
 	end
 	H -- send --> Z[/user/];
+	end
 	classDef eamenaFunc fill:#e3c071;
 ```
 

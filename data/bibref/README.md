@@ -43,13 +43,11 @@ flowchart LR
 		G -- creates reference --> H[email creation];
 		end
 	end
-	G -- triggers --> F[GitHub Action]
+	subgraph "https://database.eamena.org/citations"
+	G -- update the List of citations --> I[List of citations.md]
+	G -- creates a new .ris file --> J[KEY1.ris]
+	G -- creates a new .bib file --> K[KEY1.bib]
 	H -- send --> Z[/user/];
-	subgraph EAMENA GitHub
-	F -- update the List of citations --> I[List of citations.md]
-	F -- creates .ris file --> J[KEY1.ris]
-	F -- creates .bib file --> K[KEY1.bib]
-	end
 	classDef eamenaFunc fill:#e3c071;
 ```
 
@@ -59,7 +57,7 @@ Exposed on GitHub. For example
 
 |  **id** 	| **complete citation**	|  **citation downloads** 	|  **search URL** | 
 |---	|---	|---	|---	|
-| KEY1 	| Contributor, A. (2023), KEY1,  in *University of Oxford, University of Southampton EAMENA Database*. Retrieved from www.https://database.eamena.org (Accessed: 2023-06-01)| [.ris](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bibref/citations/KEY1.ris), [.bib](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bibref/citations/KEY1.bib)  	| https://tinyurl.com/eamena-0001|  
+| KEY1 	| Contributor, A. (2023), KEY1,  in *University of Oxford, University of Southampton EAMENA Database*. Retrieved from https:/database.eamena.org (Accessed: 2023-06-01)| [.ris](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bibref/citations/KEY1.ris), [.bib](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bibref/citations/KEY1.bib)  	| https://tinyurl.com/eamena-0001|  
 |  KEY2	|   ...	| ...  	|  ... 	|
 
 

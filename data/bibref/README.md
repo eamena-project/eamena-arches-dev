@@ -47,6 +47,7 @@ flowchart LR
 	G -- update the List of citations --> I[List of citations.md]
 	G -- creates a new .ris file --> J[KEY1.ris]
 	G -- creates a new .bib file --> K[KEY1.bib]
+	end
 	H -- send --> Z[/user/];
 	classDef eamenaFunc fill:#e3c071;
 ```

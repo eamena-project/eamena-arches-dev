@@ -37,17 +37,17 @@ When an user do an export, he/she has to copy the URL and send the URL to `citat
 ```mermaid
 flowchart LR
 	U[/user/] -- send --> A[<a href='https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/docs/notes/Arches%207%20Upgrade.md#splitchunk'>Search URL</a>];
-	subgraph EAMENA DB
-	A --Search URL--> G{{citation-generator}}:::eamenaFunc;
-		subgraph citation-generator
-		G -- creates reference --> H[email creation];
+		subgraph EAMENA DB
+		A --Search URL--> G{{citation-generator}}:::eamenaFunc;
+			subgraph citation-generator
+			G -- creates reference --> H[email creation];
+			end
+		subgraph "https://database.eamena.org/citations"
+		G -- update the List of citations --> I[List of citations.md]
+		G -- creates plain text files --> J[KEY1.ris <br> KEY1.bib <br> ...]
 		end
-	subgraph "https://database.eamena.org/citations"
-	G -- update the List of citations --> I[List of citations.md]
-	G -- creates plain text files --> J[KEY1.ris <br> KEY1.bib <br> ...]
 	end
 	H -- send --> Z[/user/];
-	end
 	classDef eamenaFunc fill:#e3c071;
 ```
 

@@ -3,7 +3,7 @@
 Objective: to make the EAMENA database and its specific datasets citable.
 ## citation-generator
 
-`citation-generator` will be a Python function
+`citation-generator` will be a Python function working with EAMENA resources (HP, IR, etc.), Search URL and bbibliographical references.
 
 |   	| input	|  output 	|
 |---	|---	|---	|

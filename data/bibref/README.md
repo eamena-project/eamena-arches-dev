@@ -15,7 +15,8 @@ Where 'KEY' is a unique identifier which refers to a Search URL (see [List of ci
 | [Data entry](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bibref#data-entry) 		|  BU	|   Search URL	|
 | [Data output](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bibref#data-output)		|  Search URL 	|   Bibliographical references	|
 
-The function will have an API (like the bulk-uploader) allowing users to access it directly
+The function will have an API (like the bulk-uploader) enabling users to access it directly.
+
 ### Data entry
 
 An user uploads a BU to EAMENA. He will recieved an email with the URL (search URL) referencing his/her dataset
@@ -43,7 +44,7 @@ flowchart LR
 
 ### Data output
 
-An user export data. He/she has to copy the URL (search URL) and paste the URL to `citation-generator`
+An user export data. He/she has to copy the URL (search URL) and paste the URL to the `citation-generator` API
 
 ```mermaid
 flowchart LR

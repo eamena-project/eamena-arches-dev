@@ -5,7 +5,18 @@ To reference a dataset, we are using this type of mention:
 - Contributor, A. (2023), 'KEY',  in *University of Oxford, University of Southampton EAMENA Database*. Retrieved from www.https://database.eamena.org (Accessed: 2023-06-01)
 
 Where 'KEY' is a unique identifier which refers to a Search URL (see [List of citations](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bibref#list-of-citations))
-## Data entry
+
+## citation-generator
+
+`citation-generator` will be a Python function
+
+|   	| input	|  output 	|
+|---	|---	|---	|
+| [Data entry](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bibref#data-entry) 		|  BU	|   Search URL	|
+| [Data output](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bibref#data-output)		|  Search URL 	|   Bibliographical references	|
+
+The function will have an API (like the bulk-uploader) allowing users to access it directly
+### Data entry
 
 An user uploads a BU to EAMENA. He will recieved an email with the URL (search URL) referencing his/her dataset
 
@@ -30,7 +41,7 @@ flowchart LR
 	classDef stop fill:#EE4B2B;
 ```
 
-## Data output
+### Data output
 
 An user export data. He/she has to copy the URL (search URL) and paste the URL to `citation-generator`
 
@@ -51,19 +62,21 @@ flowchart LR
 	classDef eamenaFunc fill:#e3c071;
 ```
 
-## citation-generator
+#### https://database.eamena.org/citations
 
-A Python function:
+A folder, or a website, hosted on EAMENA AWS
 
-|   	| input	|  output 	|
-|---	|---	|---	|
-| Data inpuput 		|  BU	|   Search URL	|
-| Data output		|  Search URL 	|   Bibliographical references	|
+```mermaid
+flowchart LR
+	subgraph "https://database.eamena.org/citations"
+	G{{citation-generator}}:::eamenaFunc -- update the List of citations --> I[List of citations.md]
+	G -- creates plain text files --> J[KEY1.ris <br> KEY1.bib <br> ...]
+	end
+	H[email creation] -- send --> Z[/user/];
+	classDef eamenaFunc fill:#e3c071;
+```
 
-
-The function will have an API (like the bulk-uploader) allowing users to access it directly
-
-## List of citations
+#### List of citations
 
 Exposed on GitHub. For example
 

@@ -72,7 +72,6 @@ flowchart LR
 	subgraph "https://database.eamena.org/citations"
 	G -- creates plain text files --> J[KEY1.ris <br> KEY1.bib <br> ...]
 	end
-	H[email creation] -- send --> Z[/user/];
 	classDef eamenaFunc fill:#e3c071;
 ```
 

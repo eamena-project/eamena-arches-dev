@@ -68,8 +68,8 @@ A folder, or a website, hosted on EAMENA AWS
 
 ```mermaid
 flowchart LR
-	subgraph "https://database.eamena.org/citations"
 	G{{citation-generator}}:::eamenaFunc -- update the List of citations --> I[List of citations.md]
+	subgraph "https://database.eamena.org/citations"
 	G -- creates plain text files --> J[KEY1.ris <br> KEY1.bib <br> ...]
 	end
 	H[email creation] -- send --> Z[/user/];

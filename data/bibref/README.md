@@ -7,7 +7,7 @@ To reference a dataset, we are using this type of mention:
 Where 'KEY' is a unique identifier which refers to a Search URL (see [List of citations](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bibref#list-of-citations))
 ## Data entry
 
-Upload your BU to EAMENA
+An user uploads a BU to EAMENA. He will recieved an email with the URL (search URL) referencing his/her dataset
 
 ```mermaid
 flowchart LR
@@ -32,7 +32,7 @@ flowchart LR
 
 ## Data output
 
-When an user do an export, he/she has to copy the URL and send the URL to `citation-generator`
+An user export data. He/she has to copy the URL (search URL) and paste the URL to `citation-generator`
 
 ```mermaid
 flowchart LR
@@ -50,6 +50,18 @@ flowchart LR
 	H -- send --> Z[/user/];
 	classDef eamenaFunc fill:#e3c071;
 ```
+
+## citation-generator
+
+A Python function:
+
+|   	| input	|  output 	|
+|---	|---	|---	|
+| Data inpuput 		|  BU	|   Search URL	|
+| Data output		|  Search URL 	|   Bibliographical references	|
+
+
+The function will have an API (like the bulk-uploader) allowing users to access it directly
 
 ## List of citations
 

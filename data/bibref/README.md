@@ -62,7 +62,7 @@ flowchart LR
 	classDef eamenaFunc fill:#e3c071;
 ```
 
-#### https://database.eamena.org/citations
+#### <https://database.eamena.org/citations>
 
 A folder, or a website, hosted on EAMENA AWS
 

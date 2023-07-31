@@ -1,11 +1,6 @@
 # "How-to-cite" EAMENA database and data
 
-To reference a dataset, we are using this type of mention: 
-
-- Contributor, A. (2023), 'KEY',  in *University of Oxford, University of Southampton EAMENA Database*. Retrieved from www.https://database.eamena.org (Accessed: 2023-06-01)
-
-Where 'KEY' is a unique identifier which refers to a Search URL (see [List of citations](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bibref#list-of-citations))
-
+Objective: to make the EAMENA database and its specific datasets citable.
 ## citation-generator
 
 `citation-generator` will be a Python function
@@ -87,8 +82,11 @@ Exposed on GitHub. For example
 
 Where:
 
-* **id**: unique identifier, for example: `eamena-dataset-1`, `eamena-dataset-2`, ...
+* **id**: unique identifier, which refers to a Search URL (see [List of citations](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bibref#list-of-citations)). For example: `eamena-dataset-1`, `eamena-dataset-2`, ...
+
 * **complete citation**: APA-like citation
+	- Contributor, A. (2023), 'KEY',  in *University of Oxford, University of Southampton EAMENA Database*. Retrieved from www.https://database.eamena.org (Accessed: 2023-06-01)
+
 * **citation downloads**: links to downloadable .bib and .ris formats. One by entry. These files are produced on-the-fly.
 * **search url**: the shortened URL (here a 'tinyurl' one). The complete URL is listed in [this dataframe](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bibref/urls/urls.tsv). Shortening URL will be a service hosted locally (see IT solutions [here](https://github.com/awesome-selfhosted/awesome-selfhosted#url-shorteners))
 

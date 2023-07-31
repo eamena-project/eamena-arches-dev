@@ -3,14 +3,14 @@
 Objective: to make the EAMENA database and its specific datasets citable.
 ## citation-generator
 
-`citation-generator` will be a Python function working with EAMENA resources (HP, IR, etc.), Search URL and bbibliographical references.
+`citation-generator` will be a function working with EAMENA resources (HP, IR, etc.), Search URL and bbibliographical references.
 
 |   	| input	|  output 	|
 |---	|---	|---	|
 | [Data entry](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bibref#data-entry) 		|  BU	|   Search URL	|
 | [Data output](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bibref#data-output)		|  Search URL 	|   Bibliographical references	|
 
-The function will have an API (like the bulk-uploader) enabling users to access it directly.
+The `citation-generator` Python function will have an API (like the bulk-uploader) enabling users to access it directly.
 
 ### Data entry
 

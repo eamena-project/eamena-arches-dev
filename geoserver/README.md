@@ -1,13 +1,6 @@
 # GeoServer
 
-<p align="center">
-  <img alt="img-name" src="../www/gis-qgis-geoserver-example.png" width="300">
-  <br>
-    <em>Screenshot of the QGIS project with connected to the GeoServer: grids (WFS) and the 'Atlas Archéologique d'Algérie'</em>
-</p>
-
-
-EAMENA GeoServer (http://54.155.109.226:8080/geoserver) host different files
+The EAMENA GeoServer (http://54.155.109.226:8080/geoserver) host different files
 
 | Service  	|  URL 	|
 |---	|---	|

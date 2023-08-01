@@ -11,21 +11,22 @@ EAMENA GeoServer (http://54.155.109.226:8080/geoserver) host different files
 
 ## WFS
 
-| type | Name  	|   description	| 
-|---	|---	|---	|
-| Grids | EAMENA_Grid_contour  	| EAMENA Grid Squares perimeter	| 
-| Grids | EAMENA_Grid  	|  EAMENA Grid Squares 	| 
-| Grids | grids_nb_hp_230704  |  Nb of heritage places by Grid Squares (see eamenaR) 	|  
+Web File Services
 
-
+| type | Name  	|   description	| map |
+|---	|---	|---	|--- |
+| Grids | EAMENA_Grid_contour  	| EAMENA Grid Squares perimeter	| <img alt="img-name" src="../www/geoserver-map-wfs-gs-contour.png" width="200"> |
+| Grids | EAMENA_Grid  	|  EAMENA Grid Squares 	| <img alt="img-name" src="../www/geoserver-map-wfs-gs.png" width="200"> |
+| Grids | grids_nb_hp_230704  |  Nb of heritage places by Grid Squares (see eamenaR) 	|  <img alt="img-name" src="../www/geoserver-map-wfs-gs-nb-hp.png" width="200"> |
 
 ## WMS
 
-| type | Name  	|   description	| 
-|---	|---	|---	|
-| Atlas | AAA  	| Atlas Archéologique d'Algérie	| 
-| Climate | Beck_KG_V1_present_0p008  	| Koppen Climate Classification	| 
-| Climate | Beck_KG_V1_present_0p008  	| <img alt="img-name" src="../www/gis-qgis-geoserver-example.png" width="300">	| 
+Web Map Services
+
+| type | Name  	|   description	| map |
+|---	|---	|---	|--- |
+| Atlas | AAA  	| Atlas Archéologique d'Algérie	| <img alt="img-name" src="../www/geoserver-map-wms-aaa.png" width="200"> |
+| Climate | Beck_KG_V1_present_0p008  	| Koppen Climate Classification	| <img alt="img-name" src="../www/geoserver-map-wms-koppen.png" width="200"> |
 
 
 

@@ -25,7 +25,7 @@ EAMENA GeoServer (http://54.155.109.226:8080/geoserver) host different files
 |---	|---	|---	|
 | Atlas | AAA  	| Atlas Archéologique d'Algérie	| 
 | Climate | Beck_KG_V1_present_0p008  	| Koppen Climate Classification	| 
-| Climate | Beck_KG_V1_present_0p008  	| [try me](https://www.tablesgenerator.com/)	| 
+| Climate | Beck_KG_V1_present_0p008  	| <img alt="img-name" src="../../www/gis-qgis-geoserver-example.png" width="300">	| 
 
 
 

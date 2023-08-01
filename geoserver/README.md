@@ -15,7 +15,7 @@ Web File Services
 |---	|---	|---	|--- |
 | Grids | EAMENA_Grid_contour  	| EAMENA Grid Squares perimeter	| <img alt="img-name" src="../www/geoserver-map-wfs-gs-contour.png" width="250"> |
 | Grids | EAMENA_Grid  	|  EAMENA Grid Squares 	| <img alt="img-name" src="../www/geoserver-map-wfs-gs.png" width="250"> |
-| Grids | grids_nb_hp_230704  |  Nb of heritage places by Grid Squares (see eamenaR) 	|  <img alt="img-name" src="../www/geoserver-map-wfs-gs-nb-hp.png" width="250"> |
+| Grids | grids_nb_hp_230704  |  Nb of heritage places by Grid Squares (see [eamenaR](https://github.com/eamena-project/eamenaR#grids)) 	|  <img alt="img-name" src="../www/geoserver-map-wfs-gs-nb-hp.png" width="250"> |
 
 ## WMS
 

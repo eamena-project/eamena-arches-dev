@@ -9,8 +9,12 @@
 
 EAMENA GeoServer (http://54.155.109.226:8080/geoserver) host different files
 
+| Service  	|  URL 	|
+|---	|---	|
+| WFS  	|  http://54.155.109.226:8080/geoserver/ows?acceptversions=2.0.0 	|
+| WMS 	|  http://54.155.109.226:8080/geoserver/ows?version=1.3.0 	|
+
 ## WFS
-> http://54.155.109.226:8080/geoserver/ows?acceptversions=2.0.0
 
 Web File Services
 
@@ -21,7 +25,6 @@ Web File Services
 | Grids | grids_nb_hp_230704  |  Nb of heritage places by Grid Squares (see eamenaR) 	|  <img alt="img-name" src="../www/geoserver-map-wfs-gs-nb-hp.png" width="200"> |
 
 ## WMS
-> http://54.155.109.226:8080/geoserver/ows?version=1.3.0
 
 Web Map Services
 

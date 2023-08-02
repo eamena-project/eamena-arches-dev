@@ -15,7 +15,7 @@ The objective is to move the APAAME photographs archive stored on the [EAMENA NA
 In the IR, under the menu 'File Upload', paths to images are wrong. For example, with INFORMATION-0052511[^1], we have currently:
 
 <p align="center">
-  <img alt="img-name" src="www/img-err-path-a-INFORMATION-0052511.png" width="300">
+  <img alt="img-name" src="www/img-err-path-a-INFORMATION-0052511.png" width="700">
   <br>
     <em>Current Flickr path: `https:/live.staticflickr.com/4118/4928802850_49ed2fdbcb_o_d.jpg`</em>
 </p>
@@ -23,7 +23,7 @@ In the IR, under the menu 'File Upload', paths to images are wrong. For example,
 Should be:
 
 <p align="center">
-  <img alt="img-name" src="www/img-err-path-INFORMATION-0052511.png" width="300">
+  <img alt="img-name" src="www/img-err-path-INFORMATION-0052511.png" width="700">
   <br>
     <em>Correct Flickr path: `https://live.staticflickr.com/4118/4928802850_fbab90b8ca_h.jpg`</em>
 </p>

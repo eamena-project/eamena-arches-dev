@@ -1,5 +1,8 @@
+# SQL snippets
 
+## 1
 
+Select images ressources from the IR
 
 ```SQL
 SELECT q1.ir_id, q1.ir_num, q2.apaame_num, img_url, img_name
@@ -37,3 +40,5 @@ Gives
 | ir_id  	|  ir_num 	|  apaame_num 	|  img_url 	|  img_name 	|
 |---	|---	|---	|---	|---	|
 |  45ea21b3-5434-442e-98ab-a83851611128	|   INFORMATION-0088488	|  APAAME_20091019_DDB-0250 	|   /files/601bc682-2d7f-44af-9f23-e2d71f89e08e	|  APAAME_20091019_DDB-0250.jpg 	|
+
+---

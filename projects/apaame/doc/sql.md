@@ -77,8 +77,7 @@ LIMIT 20;
 
 ```
 
-[Gives](#id-catalog):
-
+Gives
 
 <a name="id-catalog"></a>
 |ir_id                                |ir_num              |catalog_id                               |img_url                                                                                 |img_name                                     |

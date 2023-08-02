@@ -15,22 +15,29 @@ The objective is to move the APAAME photographs archive stored on the [EAMENA NA
 In the IR, under the menu 'File Upload', paths to images are wrong. For example, with INFORMATION-0052511[^1], we have currently:
 
 <p align="center">
-  <img alt="img-name" src="www/img-err-path-a-INFORMATION-0052511.png" width="700">
+  <img alt="img-name" src="www/img-err-path-a-INFORMATION-0052511.png" width="1000">
   <br>
-    <em>Current Flickr path: `https:/live.staticflickr.com/4118/4928802850_49ed2fdbcb_o_d.jpg`</em>
+    <em>Current Flickr path: `https:/live.staticflickr.com/4118/4928802850_49ed2fdbcb_o_d.jpg` </em>
+</p>
+
+Hover on the missing image gives this URL
+
+<p align="center">
+  <img alt="img-name" src="www/img-err-path-aa-INFORMATION-0052511.png" width="1000">
+  <br>
+    <em>Hover value is: `database.eamena.org/live.staticflickr.com/4118/4928802850_49ed2fdbcb_o_d.jpg` </em>
 </p>
 
 Should be:
 
 <p align="center">
-  <img alt="img-name" src="www/img-err-path-INFORMATION-0052511.png" width="700">
+  <img alt="img-name" src="www/img-err-path-INFORMATION-0052511.png" width="1000">
   <br>
     <em>Correct Flickr path: `https://live.staticflickr.com/4118/4928802850_fbab90b8ca_h.jpg`</em>
 </p>
 
 The path root is the same, `https://live.staticflickr.com/4118/4928802850` the difference is between the last digits:
 
-|  	|   	|
 |---	|---	|
 | **current**   	|  49ed2fdbcb_o_d.jpg 	|
 | **correct**   	|  fbab90b8ca_h.jpg 	|

@@ -23,7 +23,7 @@ In the IR, under the menu 'File Upload', paths to images are wrong. For example,
 Hover on the missing image gives this URL
 
 <p align="center">
-  <img alt="img-name" src="www/img-err-path-aa-INFORMATION-0052511.png" width="1000">
+  <img alt="img-name" src="www/img-err-path-aa-INFORMATION-0052511.png" width="800">
   <br>
     <em>Hover value is: `database.eamena.org/live.staticflickr.com/4118/4928802850_49ed2fdbcb_o_d.jpg` </em>
 </p>

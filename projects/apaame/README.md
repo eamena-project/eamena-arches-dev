@@ -38,10 +38,12 @@ Should be:
 
 The path root is the same, `https://live.staticflickr.com/4118/4928802850` the difference is between the last digits:
 
+| | |
 |---	|---	|
 | **current**   	|  49ed2fdbcb_o_d.jpg 	|
 | **correct**   	|  fbab90b8ca_h.jpg 	|
 
+[link](doc/sql.md#id_catalog")
 
 ---
 

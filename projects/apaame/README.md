@@ -1,18 +1,10 @@
-<p align="center">
-  <img alt="img-name" src="www/APAAME_20211026_RHB-0705.png" width="300">
-  <br>
-    <em>APAAME_20211026_RHB-0705.DNG</em>
-</p>
-
-
-
 # Transfer of the APAAME archive to an ArcDAMS platform
 
 The objective is to move the APAAME photographs archive stored on the [EAMENA NAS Server](https://eamena-nas1.arch.ox.ac.uk/cgi-bin/) to a dedicated NAS server hosting an ArcDAMS application (APAAME NAS Server).  
 
 ## Flickr images
 
-In the IR, under the menu 'File Upload', paths to images are wrong. For example, with INFORMATION-0052511[^1], we have currently:
+In the Information Resources (IR), under the menu 'File Upload', paths to images are wrong. For example, with INFORMATION-0052511[^1], we have currently:
 
 <p align="center">
   <img alt="img-name" src="www/img-err-path-a-INFORMATION-0052511.png" width="1000">
@@ -47,7 +39,7 @@ Hover on the missing image gives this URL
 
 ## EAMENA Image paths
 
-Looking in this dataframe (a sample of IR having Catalog ID recorded), there are different type of paths:
+Looking in [this dataframe](https://docs.google.com/spreadsheets/d/1-shK3M3Pl5NANWWvGuSYTgjFNpJAyi-A6uf04a8WTkM/edit#gid=1837558986) (a sample of IR having Catalog ID recorded), there are different type of paths:
 
 * `https://live.staticflickr.com...` to the Fickr archive
 * `https://eamena-media.s3.amazonaws.com/files/...` to the AWS S3 bucket
@@ -55,7 +47,7 @@ Looking in this dataframe (a sample of IR having Catalog ID recorded), there are
 
 ---
 
-## Workflow
+## ~~Workflow~~
 
 ~~The workflow will be to:~~
 > ⚠️ outdated, see how Jeremy is preparing this workflow

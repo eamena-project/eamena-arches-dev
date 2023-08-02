@@ -45,11 +45,19 @@ Hover on the missing image gives this URL
     <em>Hover value is: `database.eamena.org/live.staticflickr.com/4118/4928802850_49ed2fdbcb_o_d.jpg` </em>
 </p>
 
+## EAMENA Image paths
+
+Looking in this dataframe (a sample of IR having Catalog ID recorded), there are different type of paths:
+
+* `https://live.staticflickr.com...` to the Fickr archive
+* `https://eamena-media.s3.amazonaws.com/files/...` to the AWS S3 bucket
+* `https://eamena-uploads-v2.s3.amazonaws.com/...` to the AWS S3 bucket (also)
+
 ---
 
 ## Workflow
 
-The workflow will be to:
+~~The workflow will be to:~~
 > ⚠️ outdated, see how Jeremy is preparing this workflow
 
 ```mermaid

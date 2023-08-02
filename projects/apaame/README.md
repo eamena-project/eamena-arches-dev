@@ -20,14 +20,6 @@ In the IR, under the menu 'File Upload', paths to images are wrong. For example,
     <em>Current Flickr path: `https:/live.staticflickr.com/4118/4928802850_49ed2fdbcb_o_d.jpg` </em>
 </p>
 
-Hover on the missing image gives this URL
-
-<p align="center">
-  <img alt="img-name" src="www/img-err-path-aa-INFORMATION-0052511.png" width="800">
-  <br>
-    <em>Hover value is: `database.eamena.org/live.staticflickr.com/4118/4928802850_49ed2fdbcb_o_d.jpg` </em>
-</p>
-
 Should be:
 
 <p align="center">
@@ -43,8 +35,15 @@ The path root is the same, `https://live.staticflickr.com/4118/4928802850` the d
 | **current**   	|  49ed2fdbcb_o_d.jpg 	|
 | **correct**   	|  fbab90b8ca_h.jpg 	|
 
-[link](doc/sql.md#id-catalog)
-[link2](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/doc/sql.md#id-catalog)
+* Note: 
+
+Hover on the missing image gives this URL
+
+<p align="center">
+  <img alt="img-name" src="www/img-err-path-aa-INFORMATION-0052511.png" width="800">
+  <br>
+    <em>Hover value is: `database.eamena.org/live.staticflickr.com/4118/4928802850_49ed2fdbcb_o_d.jpg` </em>
+</p>
 
 ---
 

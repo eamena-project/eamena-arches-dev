@@ -1,6 +1,6 @@
 # Transfer of the APAAME archive to an ArcDAMS platform
 
-The objective is to move the APAAME photographs archive stored on the [EAMENA NAS Server](https://eamena-nas1.arch.ox.ac.uk/cgi-bin/) to a dedicated NAS server hosting an ArcDAMS application (APAAME NAS Server).  
+The objective is to move the APAAME photographs archive stored on the [EAMENA NAS Server](https://eamena-nas1.arch.ox.ac.uk/cgi-bin/) to the APAAME Server.  
 
 ## Flickr images
 
@@ -41,9 +41,20 @@ Hover on the missing image gives this URL
 
 Looking in [this dataframe](https://docs.google.com/spreadsheets/d/1-shK3M3Pl5NANWWvGuSYTgjFNpJAyi-A6uf04a8WTkM/edit#gid=1837558986) (a sample of IR having Catalog ID recorded), there are different type of paths:
 
-* `https://live.staticflickr.com...` to the Fickr archive
-* `https://eamena-media.s3.amazonaws.com/files/...` to the AWS S3 bucket
-* `https://eamena-uploads-v2.s3.amazonaws.com/...` to the AWS S3 bucket (also)
+* `https://live.staticflickr.com...` to the Fickr archive: APAAME only
+* `https://eamena-media.s3.amazonaws.com/files/...` to the AWS S3 bucket: ⌐ APAAME
+* `https://eamena-uploads-v2.s3.amazonaws.com/...` to the AWS S3 bucket (also): ⌐ APAAME
+
+
+## APAAME Server
+
+QNAP NAS Server, hosting an ArcDAMS application: https://apaame.arch.ox.ac.uk/
+
+### Questions
+
+- How can we transfer from EAMENA NAS to APAAME NAS without downloading on a labtop?
+- Is it possible to fetch image from ResourceSpace URL to use it into EAMENA (as a thumbnail)? See: https://groups.google.com/g/resourcespace/c/vAE77DCxWPo?pli=1
+- Is it possible to batch the add new Keywords after the transfer from EAMENA NAS to APAAME NAS? For example, we would like to append the corresponding Information Resource (ex: `APAAME_20000906_RHB-0018.tif` is recorded in `INFORMATION-0052511.png`). See: https://docs.google.com/spreadsheets/d/1-shK3M3Pl5NANWWvGuSYTgjFNpJAyi-A6uf04a8WTkM/edit?usp=sharing
 
 ---
 
@@ -74,6 +85,10 @@ The transfer process uses :
 Here are examples of:
   -[EXIF output](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame-photos/exif_example.txt)  
   -[XMP output](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame-photos/xmp_example.txt)  
+
+**ResourceSpace**
+
+It is a DAM (Digital Asset Management) application
 
 **ArchDAMS app**
 

@@ -1,5 +1,7 @@
 # Internationalisation
 
+## Spotted errors
+
 There could have errors in the translations:
 
 <p align="center">
@@ -21,3 +23,7 @@ These changes will be then proposed (Pull request) to Arches' source code
   <br>
     <em>Pull request to change <a href='https://github.com/archesproject/arches/blob/master/arches/locale/fr/LC_MESSAGES/django.po'>Arches French PO file content</a></em>
 </p>
+
+
+## Concepts
+

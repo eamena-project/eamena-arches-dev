@@ -70,3 +70,4 @@ https://database.eamena.org/
 translation
 
 py3 skos2excel ./data/EAMENA.xml ./data/EAMENA_out.csv -lang fr -f csv
+

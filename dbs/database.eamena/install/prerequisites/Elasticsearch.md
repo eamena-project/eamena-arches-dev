@@ -21,6 +21,7 @@ Edit `/etc/elasticsearch/elasticsearch.yml`, set the following. This removes all
 ```yaml
 xpack.security.enabled: false
 xpack.security.enrollment.enabled: false
+xpack.security.transport.ssl.enabled: false
 xpack.security.http.ssl:
   enabled: false
 ```

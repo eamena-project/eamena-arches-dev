@@ -24,3 +24,22 @@ Host EA-training-instance
 https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/install/prerequisites/elasticsearch.yml
 
 * install [Yarn](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/install/prerequisites/Yarn.md)
+
+* install Python VE
+	- `sudo apt-get install python3-virtualenv`
+	- `sudo apt-get install virtualenv`
+	- create `ENV/`
+	- as arches user, run: `virtualenv --python=/usr/bin/python3 ENV`
+	- activate the VE `source ENV/bib/activate`
+* install "Install empty Arches v7"
+	- `sudo apt-get install python3-psycopg2`
+	- `sudo apt-get install libpq-dev`
+	- install the Python package Arches `python -m pip install "arches==7.3"`
+* install "Install EAMENA customisations" from the `arches/` folder
+	- `git clone https://github.com/eamena-project/eamena.git`
+* upload the `settings_local_.py` file and customise it
+	- `ALLOWED_HOSTS = ['54.155.109.226', ...]`
+	- Pg passwords
+* setup DB `python manage.py setup_db`
+* `runserver 0:8000`
+* autorise port `8000` (see AWS SG 'django-dev')

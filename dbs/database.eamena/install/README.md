@@ -24,7 +24,7 @@ Paths to/from the various Arches/EAMENA incarnations.
 ```mermaid
 flowchart
 	id1((Eamena v3))-->id2[Export data as JSONL]
-	id2-->id3[<a href='https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/docs/notes/Arches%207%20Upgrade.md#splitchunk'>Split into chunks</a>]
+	id2-->id3[Split into chunks]
 	id3-->id4[Convert JSONL to JSON]
 	id4-->id5{Full EAMENA data}
 	id5-->id6[IMPORT]
@@ -50,7 +50,31 @@ flowchart
 	id22-->id24
 	id23-->id18
 	id24-->id18
-	click id9 "https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/docs/install/Clone.md" "Clone EAMENA from Github" _blank
+	style id1 fill:#CFFFCF
+	style id2 fill:#CFFFCF
+	style id3 fill:#CFFFCF
+	style id4 fill:#CFFFCF
+	style id5 fill:#CFFFCF
+	style id6 fill:#CFCFFF
+	style id7 fill:#CFFFCF
+	style id8 fill:#CFFFCF
+	style id9 fill:#FFFFFF
+	style id10 fill:#CFCFFF
+	style id11 fill:#FFFFFF
+	style id12 fill:#CFCFFF
+	style id13 fill:#CFCFFF
+	style id14 fill:#FFFFFF
+	style id15 fill:#FFFFFF
+	style id16 fill:#FFFFFF
+	style id17 fill:#FFFFFF
+	style id18 fill:#FFFFFF
+	style id19 fill:#FFFFFF
+	style id20 fill:#FFFFFF
+	style id21 fill:#FFFFFF
+	style id22 fill:#FFFFFF
+	style id23 fill:#FFFFFF
+	style id24 fill:#FFFFFF
+	style id25 fill:#CFFFCF
 ```
 
 * [Cloning EAMENA from Github](install/Clone.md)

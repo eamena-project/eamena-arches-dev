@@ -3,7 +3,6 @@ Yarn is installable from many package managers, but in order to select a specifi
 ## Install NodeJS, NPM and Yarn
 
 ```bash
-sudo apt-get update
 sudo apt-get install nodejs npm
 sudo npm i -g n
 sudo n 14.17.6

@@ -18,3 +18,9 @@ Host EA-training-instance
 * sudo apt-get update
 
 * install [Postgres](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/install/prerequisites/PostgreSQL.md#download-postgresql)
+
+* install [ElasticSearch](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/install/prerequisites/Elasticsearch.md)
+
+https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/install/prerequisites/elasticsearch.yml
+
+* install [Yarn](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/install/prerequisites/Yarn.md)

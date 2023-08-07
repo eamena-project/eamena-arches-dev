@@ -2,9 +2,18 @@ Arches 7.3 requires Elasticsearch 8.3.3. I have tried EAMENA v3 with this versio
 
 ## Download and run Elasticsearch
 
+AMD architecture
+
 ```bash
 wget "https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-8.3.3-amd64.deb"
 sudo dpkg -i ./elasticsearch-8.3.3-amd64.deb
+```
+
+or ARM architecture
+
+```bash
+wget "https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-8.3.3-arm64.deb"
+sudo dpkg -i ./elasticsearch-8.3.3-arm64.deb
 ```
 
 Edit `/etc/elasticsearch/elasticsearch.yml`, set the following. This removes all security, but as the VM is firewalled, this is low risk so long as there are no open Elasticsearch ports, and makes configuring Arches much simpler.

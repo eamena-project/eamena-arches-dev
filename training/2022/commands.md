@@ -59,18 +59,18 @@ ssh -i PalestineMasdarII.pem ubuntu@34.242.117.242
 ### Project specifications, Arches dabatabase and EAMENA package install
 
 ```
-# move to home/ directory
-cd /home
+# move to opt/ directory
+cd /opt
 # switch to su
 sudo su
-# create archesadmin user to install arches under it
-adduser archesadmin
+# create arches user to install arches under it
+adduser arches -m -d
 # ... choose a password, ex: 'arches'
 # ... (opt)
-# grant sudo privileges to archesadmin
-usermod -aG sudo archesadmin
-# move to archesadmin account
-cd /home/archesadmin/
+# grant sudo privileges to arches
+usermod -aG sudo arches
+# move to arches account
+cd /home/arches/
 # move to GitHub, copy the URL of the raw version of the install script, and download it
 wget https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/training/install_and_apache_and_load_pkg.sh
 # ... see: https://github.com/eamena-project/eamena-arches-dev/blob/main/training/install_and_apache_and_load_pkg.sh
@@ -89,7 +89,7 @@ source ./install_and_apache_and_load_pkg.sh
 # move to the parent directory
 cd ..
 # move the script to the appropriate folder (install/)
-mv install_and_apache_and_load_pkg.sh /home/archesadmin/arches/arches/app/functions/install
+mv install_and_apache_and_load_pkg.sh /home/arches/arches/arches/app/functions/install
 ```
 
 ## Use of environment variables
@@ -105,7 +105,7 @@ sudo vim environment
 # your project name, replace 'xxxx' by your country name
 export project_name="xxxx_project"
 # your Arches user name (app admin)
-export username="archesadmin"
+export username="arches"
 # save/write and quit (ESC + :wq + Return)
 
 # need to exit for Linux to update the new variables
@@ -127,7 +127,7 @@ alias venv='source ~/env/bin/activate'
 # check out
 # call the variables (echo)
 echo $username
-# .. gives: archesadmin
+# .. gives: arches
 echo $project_name
 # .. gives: the name of your project
 cd /home/$username/$project_name/$project_name
@@ -136,7 +136,7 @@ venv
 # .. (env) 
 ```
 
-## Authorise `archesadmin` user to connect via SSH (opt)
+## Authorise `arches` user to connect via SSH (opt)
 
 ### create directory, copy file, change permissions
 
@@ -145,23 +145,23 @@ venv
 cd ~/.ssh
 # see current permissions of SSH authorized keys
 ls -l
-# switch from ubuntu user to archesadmin user
-su archesadmin
+# switch from ubuntu user to arches user
+su arches
 # ... you will have to insert your password
-# create a new .ssh/ folder in archesadmin/
+# create a new .ssh/ folder in arches/
 mkdir /home/$username/.ssh
 # copy the authorized_keys file that contains your public key
 sudo cp /home/ubuntu/.ssh/authorized_keys /home/$username/.ssh/authorized_keys
-# change file ownership from ubuntu to archesadmin user
+# change file ownership from ubuntu to arches user
 sudo chown -R $username:$username /home/$username/.ssh
 
 # check out permissions
 cd /home/$username/.ssh
 ls -al
 # ... total 12
-# ... drwxrwxr-x 2 archesadmin archesadmin 4096 Feb 11 18:25 .
-# ... drwxr-xr-x 6 archesadmin archesadmin 4096 Feb 11 18:25 ..
-# ... -rw------- 1 archesadmin archesadmin  392 Feb 11 18:25 authorized_keys
+# ... drwxrwxr-x 2 arches arches 4096 Feb 11 18:25 .
+# ... drwxr-xr-x 6 arches arches 4096 Feb 11 18:25 ..
+# ... -rw------- 1 arches arches  392 Feb 11 18:25 authorized_keys
 ```
 
 ## Add business data into the eamena-arches-package package
@@ -178,7 +178,7 @@ venv
 cd $project_name
 # clone the 'eamena-arches-package' package
 git clone https://github.com/eamena-project/eamena-arches-package.git
-# change permission of 'eamena-arches-package' package to allow archesadmin
+# change permission of 'eamena-arches-package' package to allow arches
 sudo chown -R $username:root ./eamena-arches-package
 # mv to the business_data/ folder
 cd eamena-arches-package/business_data
@@ -238,7 +238,7 @@ mv ./json_records.jsonl ./'Heritage Place.jsonl'
 ```
 # do as superuser                                                               # SSH
 sudo su
-# move to archesadmin user folder & activate Python virtual environment (env)
+# move to arches user folder & activate Python virtual environment (env)
 cd /home/$username/ && source env/bin/activate
 # ...(env)
 # move where is your JSONL file and manage.py
@@ -325,7 +325,7 @@ ln -s cards card_components
 # change ownership
 sudo chown -R $username:www-data ./card_components
 # change user
-su archesadmin
+su arches
 # activate Python virtual environment
 cd /home/$username/ && source env/bin/activate
 # ... (env)
@@ -378,7 +378,7 @@ cd /home/$username/$project_name/$project_name/static/img
 # list files' and folders' permissions and ownerships
 ls -la
 # ...
-# drwxrwxr-x  4 archesadmin www-data  4096 Jan 17 11:59 landing
+# drwxrwxr-x  4 arches www-data  4096 Jan 17 11:59 landing
 # ..
 su $username
 ```
@@ -485,7 +485,7 @@ python manage.py es index_database
 ### run Python                                                                    # SSH
 
 ```
-# move to archesadmin user folder
+# move to arches user folder
 cd /home/$username/
 # activate Python virtual environment (env)
 source env/bin/activate
@@ -515,7 +515,7 @@ exit()
 ### get the value of the APP_ROOT variable
 
 ```
-# move to archesadmin user folder
+# move to arches user folder
 cd /home/$username/
 # activate Python virtual environment (env)
 source env/bin/activate

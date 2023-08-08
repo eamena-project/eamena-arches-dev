@@ -41,5 +41,17 @@ https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamen
 	- `ALLOWED_HOSTS = ['54.155.109.226', ...]`
 	- Pg passwords
 * setup DB `python manage.py setup_db`
+* run `yarn` from `eamena/eamena/`
+	- `yarn add jquery-validation` (see: https://community.archesproject.org/t/errors-in-yarn-build-development/1971)
+	- `yarn build_production` (45 min)
 * `runserver 0:8000`
 * autorise port `8000` (see AWS SG 'django-dev')
+* "Empty Arches v7"
+* create `/opt/arches/eamena/eamena/system_settings/` folder
+
+* `load_packages...`
+	- "user 4" issue?
+
+* If `KeyError at /add-resource/ 34cfe98e-c2c0-11ea-...` on add HP:
+	- run `python manage.py fix_default_values.py`
+	- remove `sample_widget` from the package (`eamena/`) and the project (`arches/`)

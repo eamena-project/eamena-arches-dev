@@ -51,9 +51,9 @@ flowchart
 	id21 --3--> id22{Partial EAMENA data}
 	id15-->id23[Remove un-needed data]
 	id8 --23--> id24[IMPORT]
-	id22-->id24
+	id22 --3--> id24
 	id23-->id18
-	id24-->id18
+	id24 --23--> id18
 	style id1 fill:#CFFFCF
 	style id2 fill:#CFFFCF
 	style id3 fill:#CFFFCF

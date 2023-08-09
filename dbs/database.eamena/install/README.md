@@ -81,6 +81,19 @@ flowchart
 	style id25 fill:#CFFFCF
 ```
 
+## Install empty Arches v7
+
+```Bash
+sudo apt-get install python3-psycopg2
+sudo apt-get install libpq-dev
+```
+
+Install the Arches Python package:
+
+```Bash
+python -m pip install "arches==7.3"
+```
+
 ## Install EAMENA customisations
 
 From the `arches/` folder, run:

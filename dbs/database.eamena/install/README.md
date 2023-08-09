@@ -134,7 +134,7 @@ Use the [jsonl2json.py](https://github.com/eamena-project/eamena-arches-dev/blob
 
 ## Convert JSON Arches v5 to v7
 
-Use the [convert_json_57.py](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/install/scripts/convert_json_57.py) script to convert business data from JSON data for Arches v5 to Arches v7.
+Use the [convert_json_57.py](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/install/scripts/convert_json_57.py) script to convert business data from JSON data for Arches v5 to Arches v7. This script will mostly convert strings to dictionnaries for the internationalisation in Arches v7.
 
 ## Import
 

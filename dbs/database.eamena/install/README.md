@@ -16,7 +16,7 @@ These docs describe the process of (a) installing an empty EAMENA-customised ver
 
 ### Prerequisites
 
-Arches 7.3 requires Python 3.8.10 or 3.10.12 (tested), [Elasticsearch 8.3.3](prerequisites/Elasticsearch.md) and [PostgreSQL 14](prerequisites/PostgreSQL.md) to be installed. Additionally, Arches 7 requires NPM 8.19.3 or 9.6.0 (tested and works with both), Yarn 1.22.19 and Node.JS 14.17.6. The instructions for installing and configuring all of these are linked from below.
+Arches 7.3 requires Python, [Elasticsearch 8.3.3](prerequisites/Elasticsearch.md) and [PostgreSQL 14](prerequisites/PostgreSQL.md) to be installed. Additionally, Arches 7 requires NPM 8.19.3 or 9.6.0 (tested and works with both), Yarn 1.22.19 and Node.JS 14.17.6. The instructions for installing and configuring all of these are linked from below.
 
 Install:
 

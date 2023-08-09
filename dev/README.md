@@ -1,6 +1,18 @@
 # Dev
 
-Scheduled IT developments for the EAMENA DB and miscellaneous
+Scheduled IT developments for the EAMENA DB and miscellaneous. Test on [EA training instance](https://github.com/eamena-project/eamena-arches-dev/tree/main/dev#instance-ea)
+
+## Instance
+
+### EA
+> EA training instance
+
+```
+Host EA-training-instance
+  HostName 34.244.241.250
+  IdentityFile "C:/Users/Thomas Huet/Desktop/EAMENA/IT/keys/EA_training.pem"
+  User ubuntu
+```
 
 ## Arches
 

@@ -3,9 +3,9 @@
 
 This workflow has been test on two AWS instances:
 
-1- 
+1- installation of the [EA training instance](https://github.com/eamena-project/eamena-arches-dev/tree/main/dev#instance-ea) (spec: Ubuntu 20.04.2, AWS r6g.large, http:/54.247.46.210)
 
-2- (spec: Ubuntu 22, r6g.large, 54.247.46.210)
+2- migration of the [EAMENA database](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/install#db-migration-process-timeline) (spec: Ubuntu 22.04.2, AWS r6g.large,  https://database.eamena.org/)
 
 
 ## EAMENA 4 Install Docs
@@ -14,19 +14,7 @@ In progress. For now, see [Arches 7 Upgrade](notes/Arches%207%20Upgrade.md).
 
 These docs describe the process of (a) installing an empty EAMENA-customised version of Arches 7.3, and (b) copying the data from an old EAMENA v3 (Arches v5.2) instance to the new database.
 
-### Prerequisites
-
-Arches 7.3 requires Python, [Elasticsearch 8.3.3](prerequisites/Elasticsearch.md) and [PostgreSQL 14](prerequisites/PostgreSQL.md) to be installed. Additionally, Arches 7 requires NPM 8.19.3 or 9.6.0 (tested and works with both), Yarn 1.22.19 and Node.JS 14.17.6. The instructions for installing and configuring all of these are linked from below.
-
-Install:
-
-* [Elasticsearch 8.3.3](prerequisites/Elasticsearch.md)
-* [PostgreSQL 14](prerequisites/PostgreSQL.md) 
-* [NodeJS / NPM / Yarn](prerequisites/Yarn.md)
-* [Celery](prerequisites/Celery.md)
-* [Apache](prerequisites/Apache.md)
-
-### Install Paths
+## File Hierarchical Structure
 
 Once the VM is configured correctly, create:
 
@@ -42,7 +30,21 @@ Once the VM is configured correctly, create:
 mkdir /opt/arches/
 ```
 
-Then, follow the flow chart below in order to install Arches v.7. Paths to/from the various Arches/EAMENA incarnations are identified by numbers on edges: `1`; `2`; `3`, etc. When two or more routes join, the new route is named after the concatenation of the converging routes: `1` and `2` = `12`; `2` and `3` = `23`; etc.
+### Prerequisites
+
+Arches 7.3 requires Python, [Elasticsearch 8.3.3](prerequisites/Elasticsearch.md) and [PostgreSQL 14](prerequisites/PostgreSQL.md) to be installed. Additionally, Arches 7 requires NPM 8.19.3 or 9.6.0 (tested and works with both), Yarn 1.22.19 and Node.JS 14.17.6. The instructions for installing and configuring all of these are linked from below.
+
+Install:
+
+* [Elasticsearch 8.3.3](prerequisites/Elasticsearch.md)
+* [PostgreSQL 14](prerequisites/PostgreSQL.md) 
+* [NodeJS / NPM / Yarn](prerequisites/Yarn.md)
+* [Celery](prerequisites/Celery.md)
+* [Apache](prerequisites/Apache.md)
+
+### Install Paths
+
+Follow the flow chart below in order to install Arches v.7. Paths to/from the various Arches/EAMENA incarnations are identified by numbers on edges: `1`; `2`; `3`, etc. When two or more routes join, the new route is named after the concatenation of the converging routes: `1` and `2` = `12`; `2` and `3` = `23`; etc.
 
 ```mermaid
 flowchart

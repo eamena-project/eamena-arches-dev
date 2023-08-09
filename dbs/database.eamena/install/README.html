@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.1.251">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>readme</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="README_files/libs/clipboard/clipboard.min.js"></script>
+<script src="README_files/libs/quarto-html/quarto.js"></script>
+<script src="README_files/libs/quarto-html/popper.min.js"></script>
+<script src="README_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="README_files/libs/quarto-html/anchor.min.js"></script>
+<link href="README_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="README_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="README_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="README_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="README_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+
+
+<section id="installation" class="level1">
+<h1>Installation</h1>
+<blockquote class="blockquote">
+<p>Installation, upgrade and migration</p>
+</blockquote>
+<p>This workflow has been test on two AWS instances:</p>
+<p>1- installation of the <a href="https://github.com/eamena-project/eamena-arches-dev/tree/main/dev#instance-ea">EA training instance</a> (spec: Ubuntu 20.04.2, AWS r6g.large, <a href="http://54.247.46.210" class="uri">http://54.247.46.210</a>)</p>
+<p>2- migration of the <a href="#db-migration-process-timeline">EAMENA database</a> (spec: Ubuntu 22.04.2, AWS r6g.large, <a href="https://database.eamena.org/" class="uri">https://database.eamena.org/</a>)</p>
+<p>See also: <a href="fix_default_values">troubleshooting</a></p>
+<section id="eamena-4-install-docs" class="level2">
+<h2 class="anchored" data-anchor-id="eamena-4-install-docs">EAMENA 4 Install Docs</h2>
+<p>In progress. For now, see <a href="notes/Arches%207%20Upgrade.md">Arches 7 Upgrade</a>.</p>
+<p>These docs describe the process of (a) installing an empty EAMENA-customised version of Arches 7.3, and (b) copying the data from an old EAMENA v3 (Arches v5.2) instance to the new database.</p>
+</section>
+<section id="file-hierarchical-structure" class="level2">
+<h2 class="anchored" data-anchor-id="file-hierarchical-structure">File Hierarchical Structure</h2>
+<p>Once the VM is configured correctly, create:</p>
+<ul>
+<li>an <code>arches</code> user:</li>
+</ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> adduser arches</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>an <code>arches/</code> folder</li>
+</ul>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> /opt/arches/</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="prerequisites" class="level3">
+<h3 class="anchored" data-anchor-id="prerequisites">Prerequisites</h3>
+<p>Arches 7.3 requires <a href="prerequisites/Python.md">Python</a>, <a href="prerequisites/Elasticsearch.md">Elasticsearch</a> and <a href="prerequisites/PostgreSQL.md">PostgreSQL</a> to be installed. Additionally, Arches 7 requires NPM 8.19.3 or 9.6.0 (tested and works with both), Yarn 1.22.19 and Node.JS 14.17.6. The instructions for installing and configuring all of these are linked from below.</p>
+<p>Install:</p>
+<ul>
+<li><a href="prerequisites/Python.md">Python</a></li>
+<li><a href="prerequisites/Elasticsearch.md">Elasticsearch</a></li>
+<li><a href="prerequisites/PostgreSQL.md">PostgreSQL</a></li>
+<li><a href="prerequisites/Yarn.md">NodeJS / NPM / Yarn</a></li>
+<li><a href="prerequisites/Celery.md">Celery</a></li>
+<li><a href="prerequisites/Apache.md">Apache</a></li>
+</ul>
+</section>
+<section id="install-paths" class="level3">
+<h3 class="anchored" data-anchor-id="install-paths">Install Paths</h3>
+<p>Follow the flow chart below in order to install/upgraded to Arches v.7. Paths to/from the various Arches/EAMENA incarnations are identified by numbers on edges: <code>1</code>; <code>2</code>; <code>3</code>, etc. When two or more routes join, the new route is named after the concatenation of the converging routes: <code>1</code> and <code>2</code> = <code>12</code>; <code>2</code> and <code>3</code> = <code>23</code>; etc.</p>
+<pre class="mermaid"><code>flowchart
+    id1((Eamena v3))--&gt;id2[Export data as JSONL]
+    id2--&gt;id3[Split into chunks]
+    id3--&gt;id4[ &lt;a href='https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/install#convert-jsonl-to-json'&gt;Convert JSONL to JSON &lt;/a&gt; ]
+    id4--&gt;id5{Full EAMENA data}
+    id5--&gt;id6[IMPORT]
+    id7[ &lt;a href='https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/install#install-empty-arches-v7'&gt; Install empty Arches v7 &lt;/a&gt;] --2--&gt; id25[ &lt;a href='https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/install#install-eamena-customisations'&gt;Install EAMENA customisations&lt;/a&gt; ]
+    id25 --2--&gt; id8{Empty Arches v7}
+    id9[Clone EAMENA from Github] --2--&gt; id8
+    id8--&gt;id6
+    id6--&gt;id10{Unindexed EAMENA v4}
+    id10--&gt;id11[Duplicate PostGreSQL DB]
+    id10--&gt;id12[INDEX]
+    id12--&gt;id13((Eamena v4))
+    id2 --3--&gt; id14[Remove un-needed data]
+    id6--&gt;id15{Unindexed full clone}
+    id11--&gt;id15
+    id15--&gt;id16[INDEX]
+    id16--&gt;id17((Full Clone))
+    id18{Unindexed partial clone} --23--&gt; id19[INDEX]
+    id19 --23--&gt; id20((Partial Clone))
+    id14 --3--&gt; id21[Convert JSONL to JSON]
+    id21 --3--&gt; id22{Partial EAMENA data}
+    id15--&gt;id23[Remove un-needed data]
+    id8 --2--&gt; id24[IMPORT]
+    id22 --3--&gt; id24
+    id23--&gt;id18
+    id24 --23--&gt; id18
+    style id1 fill:#CFFFCF
+    style id2 fill:#CFFFCF
+    style id3 fill:#CFFFCF
+    style id4 fill:#CFFFCF
+    style id5 fill:#CFFFCF
+    style id6 fill:#CFCFFF
+    style id7 fill:#CFFFCF
+    style id8 fill:#CFFFCF
+    style id9 fill:#FFFFFF
+    style id10 fill:#CFCFFF
+    style id11 fill:#FFFFFF
+    style id12 fill:#CFCFFF
+    style id13 fill:#CFCFFF
+    style id14 fill:#FFFFFF
+    style id15 fill:#FFFFFF
+    style id16 fill:#FFFFFF
+    style id17 fill:#FFFFFF
+    style id18 fill:#FFFFFF
+    style id19 fill:#FFFFFF
+    style id20 fill:#FFFFFF
+    style id21 fill:#FFFFFF
+    style id22 fill:#FFFFFF
+    style id23 fill:#FFFFFF
+    style id24 fill:#FFFFFF
+    style id25 fill:#CFFFCF</code></pre>
+</section>
+</section>
+<section id="install-empty-arches-v7" class="level2">
+<h2 class="anchored" data-anchor-id="install-empty-arches-v7">Install empty Arches v7</h2>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt-get install python3-psycopg2</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt-get install libpq-dev</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Install the Arches Python package:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> <span class="at">-m</span> pip install <span class="st">"arches==7.3"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="install-eamena-customisations" class="level2">
+<h2 class="anchored" data-anchor-id="install-eamena-customisations">Install EAMENA customisations</h2>
+<p>From the <code>arches/</code> folder, run:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/eamena-project/eamena.git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="convert-jsonl-to-json" class="level2">
+<h2 class="anchored" data-anchor-id="convert-jsonl-to-json">Convert JSONL to JSON</h2>
+<p>Use the <code>jsonl2json.py</code> to convert business data from JSONL to JSON script (<a href="https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/install/scripts/jsonl2json.py">here</a>)</p>
+</section>
+<section id="import" class="level2">
+<h2 class="anchored" data-anchor-id="import">Import</h2>
+<p>Following this order</p>
+<ul>
+<li>Grids</li>
+</ul>
+<pre><code>python manage.py packages -o import_business_data -s path/to/grids.csv -ow OVERWRITE -c pat/to/mapping/file/'Grid Square.mapping'</code></pre>
+</section>
+<section id="trouble-shooting" class="level2">
+<h2 class="anchored" data-anchor-id="trouble-shooting">Trouble shooting</h2>
+<table class="table">
+<thead>
+<tr class="header">
+<th>error key</th>
+<th>error description</th>
+<th>solution</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>KeyError at /add-resource/</td>
+<td>a default value is expected</td>
+<td><a href="https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/install/scripts/jsonl2json.py">fix_default_values.py</a> assign default values when missing</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="others" class="level2">
+<h2 class="anchored" data-anchor-id="others">Others</h2>
+<ul>
+<li><a href="install/Clone.md">Cloning EAMENA from Github</a></li>
+</ul>
+<table class="table">
+<colgroup>
+<col style="width: 30%">
+<col style="width: 35%">
+<col style="width: 35%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Task</th>
+<th>3-&gt;5</th>
+<th>5-&gt;7</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Export data structures from old database</td>
+<td>Up</td>
+<td>Up</td>
+</tr>
+<tr class="even">
+<td>Install new version of Arches on a test box</td>
+<td>Up</td>
+<td>Up</td>
+</tr>
+<tr class="odd">
+<td>Develop/convert data structures in new database</td>
+<td>Up</td>
+<td>Up</td>
+</tr>
+<tr class="even">
+<td>Develop/convert EAMENA customisations</td>
+<td>Up</td>
+<td>Up</td>
+</tr>
+<tr class="odd">
+<td>Export a subset of data from old database</td>
+<td>Down</td>
+<td>Up</td>
+</tr>
+<tr class="even">
+<td>Determine changes to be made to data</td>
+<td>Down</td>
+<td>Up</td>
+</tr>
+<tr class="odd">
+<td>Write automated scripts to convert data</td>
+<td>Down</td>
+<td>Up</td>
+</tr>
+<tr class="even">
+<td>Convert a subset of data using test script</td>
+<td>Down</td>
+<td>Up</td>
+</tr>
+<tr class="odd">
+<td>Install correct version of Python, Django, PostgreSQL, etc</td>
+<td>Down</td>
+<td>Up</td>
+</tr>
+<tr class="even">
+<td>Install new database on AWS</td>
+<td>Down</td>
+<td>Up</td>
+</tr>
+<tr class="odd">
+<td>Install new data structures into new database</td>
+<td>Down</td>
+<td>Up</td>
+</tr>
+<tr class="even">
+<td>Apply EAMENA customisations to the database</td>
+<td>Down</td>
+<td>Up</td>
+</tr>
+<tr class="odd">
+<td>Export complete data from old database (test run)</td>
+<td>Down</td>
+<td>Up</td>
+</tr>
+<tr class="even">
+<td>Import complete data into new database (test run)</td>
+<td>Down</td>
+<td>Up</td>
+</tr>
+<tr class="odd">
+<td>Export complete data from old database</td>
+<td>Down</td>
+<td>Down</td>
+</tr>
+<tr class="even">
+<td>Import complete data into new database</td>
+<td>Down</td>
+<td>Down</td>
+</tr>
+<tr class="odd">
+<td>Perform the ‘switch’ (eg server certificates, domain name, etc)</td>
+<td>Down</td>
+<td>Down</td>
+</tr>
+</tbody>
+</table>
+<section id="still-to-do-2023-05-09" class="level3">
+<h3 class="anchored" data-anchor-id="still-to-do-2023-05-09">Still to do (2023-05-09)</h3>
+<section id="if-time-isnt-tight" class="level4">
+<h4 class="anchored" data-anchor-id="if-time-isnt-tight">If time isn’t tight</h4>
+<ul>
+<li>Upgrade to 7.4 (currently 7.3)</li>
+<li>A few more partial export/imports using the AWS server.</li>
+<li>Some heavy stress testing</li>
+</ul>
+</section>
+</section>
+</section>
+<section id="db-migration-process-timeline" class="level2">
+<h2 class="anchored" data-anchor-id="db-migration-process-timeline">DB migration process timeline</h2>
+<p>EAMENA v5.2 to v7.3 migration process timeline</p>
+<pre class="mermaid"><code>gantt
+    title EAMENA v4 Arches v7 training
+    dateFormat  YYYY-MM-DD
+    axisFormat  %d-%m
+    tickInterval 7day
+    section EAMENA v3
+    Arches v5.2              : a0, 2023-01-01, 2023-04-24
+    Arches v5.2 stopped      : a0, 2023-04-28, 2023-05-09
+    section EAMENA v3 -&gt; v4
+    Arches v7.3 DB installation        : a1, 2023-03-06, 2d
+    Arches v7.3 Graphs installation    : a1, 2023-03-06, 2d
+    Arches v7.3 Data                   : a1, 2023-04-10, 4d
+    Arches v7.3 Custom components      : a1, 2023-04-10, 4d
+    section EAMENA v4
+    Arches v7.3 tests                  : a1, 2023-04-17, 5d
+    Arches v7.3 showcase               : a1, 2023-04-25, 1d
+    Arches v7.3 public realease        : a1, 2023-05-09, 2023-10-01</code></pre>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

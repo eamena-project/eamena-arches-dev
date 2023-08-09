@@ -73,7 +73,7 @@ flowchart
 	id18{Unindexed partial clone} --23--> id19[INDEX]
 	id19 --23--> id20((Partial Clone))
 	id14 --3--> id141[ <a href='https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/install#convert-jsonl-to-json'>Convert JSONL to JSON </a> ]
-	id141-->id211[ <a href='https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/install#convert-json-arches-v5-to-v7'>Convert JSON Arches v5 to v7</a> ]
+	id141 --3--> id211[ <a href='https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/install#convert-json-arches-v5-to-v7'>Convert JSON Arches v5 to v7</a> ]
 	id211 --3--> id22{Partial EAMENA data}
 	id15-->id23[Remove un-needed data]
 	id8 --2--> id24[IMPORT]

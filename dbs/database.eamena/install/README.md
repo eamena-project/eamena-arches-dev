@@ -5,7 +5,7 @@
 
 In progress. For now, see [Arches 7 Upgrade](notes/Arches%207%20Upgrade.md). 
 
-These docs describe the process of (a) installing an empty EAMENA-customised version of Arches 7.3, and (b) copying the data from an old EAMENA v3 instance to the new database.
+These docs describe the process of (a) installing an empty EAMENA-customised version of Arches 7.3, and (b) copying the data from an old EAMENA v3 (Arches v5.2) instance to the new database.
 
 ### Prerequisites
 

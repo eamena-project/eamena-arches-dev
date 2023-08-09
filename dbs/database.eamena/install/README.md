@@ -11,9 +11,13 @@ These docs describe the process of (a) installing an empty EAMENA-customised ver
 
 Arches 7.3 requires Elasticsearch [8.3.3](https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-8.3.3-amd64.deb) and PostgreSQL 14 to be installed. Additionally, Arches 7 requires NPM 8.19.3 or 9.6.0 (tested and works with both), Yarn 1.22.19 and Node.JS 14.17.6. The instructions for installing and configuring all of these are linked from below.
 
-* [Install PostgreSQL 14](prerequisites/PostgreSQL.md)
-* [Install Elasticsearch 8.3.3](prerequisites/Elasticsearch.md)
-* [Install NodeJS / NPM / Yarn](prerequisites/Yarn.md)
+Install:
+
+* [PostgreSQL 14](prerequisites/PostgreSQL.md)
+* [Elasticsearch 8.3.3](prerequisites/Elasticsearch.md)
+* [NodeJS / NPM / Yarn](prerequisites/Yarn.md)
+* [Celery](prerequisites/Celery.md)
+* [Apache](prerequisites/Apache.md)
 
 ### Install Paths
 
@@ -75,6 +79,14 @@ flowchart
 	style id23 fill:#FFFFFF
 	style id24 fill:#FFFFFF
 	style id25 fill:#CFFFCF
+```
+
+## Install EAMENA customisations
+
+From the `arches/` folder, run:
+
+```Bash
+git clone https://github.com/eamena-project/eamena.git
 ```
 
 * [Cloning EAMENA from Github](install/Clone.md)

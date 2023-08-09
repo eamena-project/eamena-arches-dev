@@ -64,7 +64,7 @@ cd /opt
 # switch to su
 sudo su
 # create arches user to install arches under it
-adduser arches -m -d
+adduser arches -m -d /opt/arches ar
 # ... choose a password, ex: 'arches'
 # ... (opt)
 # grant sudo privileges to arches

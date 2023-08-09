@@ -5,51 +5,55 @@
 
 In progress. For now, see [Arches 7 Upgrade](notes/Arches%207%20Upgrade.md). 
 
-These docs describe the process of (a) installing an empty EAMENA-customised version of Arches 7.3, and (b) copying the data from an old EAMENA v3 instance to the new database.
+These docs describe the process of (a) installing an empty EAMENA-customised version of Arches 7.3, and (b) copying the data from an old EAMENA v3 (Arches v5.2) instance to the new database.
 
 ### Prerequisites
 
-Arches 7.3 requires Elasticsearch [8.3.3](https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-8.3.3-amd64.deb) and PostgreSQL 14 to be installed. Additionally, Arches 7 requires NPM 8.19.3 or 9.6.0 (tested and works with both), Yarn 1.22.19 and Node.JS 14.17.6. The instructions for installing and configuring all of these are linked from below.
+Arches 7.3 requires [Elasticsearch 8.3.3](prerequisites/Elasticsearch.md) and [PostgreSQL 14](prerequisites/PostgreSQL.md) to be installed. Additionally, Arches 7 requires NPM 8.19.3 or 9.6.0 (tested and works with both), Yarn 1.22.19 and Node.JS 14.17.6. The instructions for installing and configuring all of these are linked from below.
 
-* [Install PostgreSQL 14](prerequisites/PostgreSQL.md)
-* [Install Elasticsearch 8.3.3](prerequisites/Elasticsearch.md)
-* [Install NodeJS / NPM / Yarn](prerequisites/Yarn.md)
+Install:
+
+* [Elasticsearch 8.3.3](prerequisites/Elasticsearch.md)
+* [PostgreSQL 14](prerequisites/PostgreSQL.md) 
+* [NodeJS / NPM / Yarn](prerequisites/Yarn.md)
+* [Celery](prerequisites/Celery.md)
+* [Apache](prerequisites/Apache.md)
 
 ### Install Paths
 
 Once the VM is configured correctly, follow the flow chart below in order to 
 
-Paths to/from the various Arches/EAMENA incarnations.
+Paths to/from the various Arches/EAMENA incarnations are identified by numbers on edges: `1`; `2`; `3`, etc. When two or more routes join, the new route is named after the concatenation of the converging routes: `1` and `2` = `12`; `2` and `3` = `23`; etc.
 
 ```mermaid
 flowchart
 	id1((Eamena v3))-->id2[Export data as JSONL]
 	id2-->id3[Split into chunks]
-	id3-->id4[Convert JSONL to JSON]
+	id3-->id4[ <a href='https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/install#convert-jsonl-to-json'>Convert JSONL to JSON </a> ]
 	id4-->id5{Full EAMENA data}
 	id5-->id6[IMPORT]
-	id7[Install empty Arches v7]-->id25[Install EAMENA customisations]
-	id25-->id8{Empty Arches v7}
-	id9[Clone EAMENA from Github]-->id8
+	id7[ <a href='https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/install#install-empty-arches-v7'> Install empty Arches v7 </a>] --2--> id25[ <a href='https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/install#install-eamena-customisations'>Install EAMENA customisations</a> ]
+	id25 --2--> id8{Empty Arches v7}
+	id9[Clone EAMENA from Github] --2--> id8
 	id8-->id6
 	id6-->id10{Unindexed EAMENA v4}
 	id10-->id11[Duplicate PostGreSQL DB]
 	id10-->id12[INDEX]
 	id12-->id13((Eamena v4))
-	id2-->id14[Remove un-needed data]
+	id2 --3--> id14[Remove un-needed data]
 	id6-->id15{Unindexed full clone}
 	id11-->id15
 	id15-->id16[INDEX]
 	id16-->id17((Full Clone))
-	id18{Unindexed partial clone}-->id19[INDEX]
-	id19-->id20((Partial Clone))
-	id14-->id21[Convert JSONL to JSON]
-	id21-->id22{Partial EAMENA data}
+	id18{Unindexed partial clone} --23--> id19[INDEX]
+	id19 --23--> id20((Partial Clone))
+	id14 --3--> id21[Convert JSONL to JSON]
+	id21 --3--> id22{Partial EAMENA data}
 	id15-->id23[Remove un-needed data]
-	id8-->id24[IMPORT]
-	id22-->id24
+	id8 --2--> id24[IMPORT]
+	id22 --3--> id24
 	id23-->id18
-	id24-->id18
+	id24 --23--> id18
 	style id1 fill:#CFFFCF
 	style id2 fill:#CFFFCF
 	style id3 fill:#CFFFCF
@@ -76,6 +80,33 @@ flowchart
 	style id24 fill:#FFFFFF
 	style id25 fill:#CFFFCF
 ```
+
+## Install empty Arches v7
+
+```Bash
+sudo apt-get install python3-psycopg2
+sudo apt-get install libpq-dev
+```
+
+Install the Arches Python package:
+
+```Bash
+python -m pip install "arches==7.3"
+```
+
+## Install EAMENA customisations
+
+From the `arches/` folder, run:
+
+```Bash
+git clone https://github.com/eamena-project/eamena.git
+```
+
+## Convert JSONL to JSON
+
+Use the `jsonl2json.py` to convert from JSONL to JSON script
+
+## Others
 
 * [Cloning EAMENA from Github](install/Clone.md)
 

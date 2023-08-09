@@ -33,24 +33,24 @@ flowchart
 	id4-->id5{Full EAMENA data}
 	id5-->id6[IMPORT]
 	id7[ <a href='https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/install#install-empty-arches-v7'> Install empty Arches v7 </a>] --2--> id25[ <a href='https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/install#install-eamena-customisations'>Install EAMENA customisations</a> ]
-	id25-->id8{Empty Arches v7}
+	id25 --2--> id8{Empty Arches v7}
 	id9[Clone EAMENA from Github]-->id8
 	id8-->id6
 	id6-->id10{Unindexed EAMENA v4}
 	id10-->id11[Duplicate PostGreSQL DB]
 	id10-->id12[INDEX]
 	id12-->id13((Eamena v4))
-	id2-->id14[Remove un-needed data]
+	id2 --3--> id14[Remove un-needed data]
 	id6-->id15{Unindexed full clone}
 	id11-->id15
 	id15-->id16[INDEX]
 	id16-->id17((Full Clone))
 	id18{Unindexed partial clone}-->id19[INDEX]
 	id19-->id20((Partial Clone))
-	id14-->id21[Convert JSONL to JSON]
-	id21-->id22{Partial EAMENA data}
+	id14 --3--> id21[Convert JSONL to JSON]
+	id21 --3--> id22{Partial EAMENA data}
 	id15-->id23[Remove un-needed data]
-	id8-->id24[IMPORT]
+	id8 --23--> id24[IMPORT]
 	id22-->id24
 	id23-->id18
 	id24-->id18

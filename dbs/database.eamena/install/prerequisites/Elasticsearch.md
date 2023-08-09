@@ -1,4 +1,4 @@
-Arches 7.3 requires Elasticsearch 8.3.3. I have tried EAMENA v3 with this version of Elasticsearch and it doesn't appear to work, so if upgrading from EAMENA v3, this must be stopped and removed before Elasticsearch is upgraded, if installing on the same VM.
+Arches 7.3 requires **Elasticsearch 8.3.3**. I have tried EAMENA v3 with this version of Elasticsearch and it doesn't appear to work, so if upgrading from EAMENA v3, this must be stopped and removed before Elasticsearch is upgraded, if installing on the same VM.
 
 ## Download and run Elasticsearch
 

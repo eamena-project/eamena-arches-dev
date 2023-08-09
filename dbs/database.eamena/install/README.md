@@ -21,7 +21,7 @@ Once the VM is configured correctly, create:
 * an `arches` user: 
 
 ```Bash
-`sudo adduser arches` 
+sudo adduser arches
 ```
 
 * an `arches/` folder
@@ -32,19 +32,20 @@ mkdir /opt/arches/
 
 ### Prerequisites
 
-Arches 7.3 requires Python, [Elasticsearch 8.3.3](prerequisites/Elasticsearch.md) and [PostgreSQL 14](prerequisites/PostgreSQL.md) to be installed. Additionally, Arches 7 requires NPM 8.19.3 or 9.6.0 (tested and works with both), Yarn 1.22.19 and Node.JS 14.17.6. The instructions for installing and configuring all of these are linked from below.
+Arches 7.3 requires [Python](prerequisites/Python.md), [Elasticsearch](prerequisites/Elasticsearch.md) and [PostgreSQL](prerequisites/PostgreSQL.md) to be installed. Additionally, Arches 7 requires NPM 8.19.3 or 9.6.0 (tested and works with both), Yarn 1.22.19 and Node.JS 14.17.6. The instructions for installing and configuring all of these are linked from below.
 
 Install:
 
-* [Elasticsearch 8.3.3](prerequisites/Elasticsearch.md)
-* [PostgreSQL 14](prerequisites/PostgreSQL.md) 
+* [Python](prerequisites/Python.md)
+* [Elasticsearch](prerequisites/Elasticsearch.md)
+* [PostgreSQL](prerequisites/PostgreSQL.md) 
 * [NodeJS / NPM / Yarn](prerequisites/Yarn.md)
 * [Celery](prerequisites/Celery.md)
 * [Apache](prerequisites/Apache.md)
 
 ### Install Paths
 
-Follow the flow chart below in order to install Arches v.7. Paths to/from the various Arches/EAMENA incarnations are identified by numbers on edges: `1`; `2`; `3`, etc. When two or more routes join, the new route is named after the concatenation of the converging routes: `1` and `2` = `12`; `2` and `3` = `23`; etc.
+Follow the flow chart below in order to install/upgraded to Arches v.7. Paths to/from the various Arches/EAMENA incarnations are identified by numbers on edges: `1`; `2`; `3`, etc. When two or more routes join, the new route is named after the concatenation of the converging routes: `1` and `2` = `12`; `2` and `3` = `23`; etc.
 
 ```mermaid
 flowchart
@@ -126,6 +127,16 @@ git clone https://github.com/eamena-project/eamena.git
 ## Convert JSONL to JSON
 
 Use the `jsonl2json.py` to convert business data from JSONL to JSON script ([here](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/install/scripts/jsonl2json.py))
+
+## Import
+
+Following this order
+
+* Grids
+
+```
+python manage.py packages -o import_business_data -s path/to/grids.csv -ow OVERWRITE -c pat/to/mapping/file/'Grid Square.mapping'
+```
 
 ## Others
 

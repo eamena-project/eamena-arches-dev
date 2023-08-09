@@ -1,4 +1,4 @@
-Arches 7 requires PostgreSQL 14. This requires an upgrade from the PostgreSQL 12 for which EAMENA v3 was designed, although EAMENA v3 will happily work with PostgreSQL 14. Most of these instructions are adapted from the official Arches [Ubuntu install script](https://github.com/archesproject/arches/blob/master/arches/install/ubuntu_setup.sh).
+Arches 7 requires **PostgreSQL 14**. This requires an upgrade from the PostgreSQL 12 for which EAMENA v3 was designed, although EAMENA v3 will happily work with PostgreSQL 14. Most of these instructions are adapted from the official Arches [Ubuntu install script](https://github.com/archesproject/arches/blob/master/arches/install/ubuntu_setup.sh).
 
 ## Download PostgreSQL
 

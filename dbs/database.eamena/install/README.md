@@ -29,7 +29,7 @@ Paths to/from the various Arches/EAMENA incarnations are identified by numbers o
 flowchart
 	id1((Eamena v3))-->id2[Export data as JSONL]
 	id2-->id3[Split into chunks]
-	id3-->id4[Convert JSONL to JSON]
+	id3-->id4[ <a href='https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/install#convert-jsonl-to-json'>Convert JSONL to JSON </a> ]
 	id4-->id5{Full EAMENA data}
 	id5-->id6[IMPORT]
 	id7[ <a href='https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/install#install-empty-arches-v7'> Install empty Arches v7 </a>] --2--> id25[ <a href='https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/install#install-eamena-customisations'>Install EAMENA customisations</a> ]

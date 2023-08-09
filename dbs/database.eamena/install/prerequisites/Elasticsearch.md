@@ -16,7 +16,7 @@ wget "https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-8.3.3-a
 sudo dpkg -i ./elasticsearch-8.3.3-arm64.deb
 ```
 
-Edit `/etc/elasticsearch/elasticsearch.yml`, set the following. This removes all security, but as the VM is firewalled, this is low risk so long as there are no open Elasticsearch ports, and makes configuring Arches much simpler.
+Edit `/etc/elasticsearch/elasticsearch.yml` (see [here](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/install/prerequisites/elasticsearch.yml)), set the following. This removes all security, but as the VM is firewalled, this is low risk so long as there are no open Elasticsearch ports, and makes configuring Arches much simpler.
 
 ```yaml
 xpack.security.enabled: false

@@ -23,7 +23,7 @@ Install:
 
 Once the VM is configured correctly, follow the flow chart below in order to 
 
-Paths to/from the various Arches/EAMENA incarnations are identified by numbers on edges: `1`; `2`; `3`, etc. When two or more routes join, the new route is named after the concatenation of the converging routes: `1` + `2` = `12`; `2` + `3` = `23`; etc.
+Paths to/from the various Arches/EAMENA incarnations are identified by numbers on edges: `1`; `2`; `3`, etc. When two or more routes join, the new route is named after the concatenation of the converging routes: `1` and `2` = `12`; `2` and `3` = `23`; etc.
 
 ```mermaid
 flowchart
@@ -50,7 +50,7 @@ flowchart
 	id14 --3--> id21[Convert JSONL to JSON]
 	id21 --3--> id22{Partial EAMENA data}
 	id15-->id23[Remove un-needed data]
-	id8 --23--> id24[IMPORT]
+	id8 --2--> id24[IMPORT]
 	id22 --3--> id24
 	id23-->id18
 	id24 --23--> id18

@@ -5,7 +5,7 @@ This workflow has been test on two AWS instances:
 
 1- installation of the [EA training instance](https://github.com/eamena-project/eamena-arches-dev/tree/main/dev#instance-ea) (spec: Ubuntu 20.04.2, AWS r6g.large, <http://54.247.46.210>)
 
-2- migration of the [EAMENA database](#db-migration-process-timeline) (spec: Ubuntu 22.04.2, AWS r6g.large, <https://database.eamena.org/>)
+2- migration of the [EAMENA database](#db-migration-process-timeline) (spec: Ubuntu 22.04.2, AWS m6g.4xlarge, <https://database.eamena.org/>)
 
 
 See also: [troubleshooting](#troubleshooting)
@@ -128,7 +128,7 @@ git clone https://github.com/eamena-project/eamena.git
 
 ## Convert JSONL to JSON
 
-Use the `jsonl2json.py` to convert business data from JSONL to JSON script ([here](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/install/scripts/jsonl2json.py))
+Use the [jsonl2json.py](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/install/scripts/jsonl2json.py) to convert business data from JSONL to JSON script.
 
 ## Import
 

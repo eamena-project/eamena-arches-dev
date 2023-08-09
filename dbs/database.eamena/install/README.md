@@ -23,7 +23,7 @@ Install:
 
 Once the VM is configured correctly, follow the flow chart below in order to 
 
-Paths to/from the various Arches/EAMENA incarnations.
+Paths to/from the various Arches/EAMENA incarnations are identified by numbers on edges: `1`; `2`; `3`, etc. When two or more routes join, the new route is named after the concatenation of the converging routes: `1` + `2` = `12`; `2` + `3` = `23`; etc.
 
 ```mermaid
 flowchart
@@ -34,7 +34,7 @@ flowchart
 	id5-->id6[IMPORT]
 	id7[ <a href='https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/install#install-empty-arches-v7'> Install empty Arches v7 </a>] --2--> id25[ <a href='https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/install#install-eamena-customisations'>Install EAMENA customisations</a> ]
 	id25 --2--> id8{Empty Arches v7}
-	id9[Clone EAMENA from Github]-->id8
+	id9[Clone EAMENA from Github] --2--> id8
 	id8-->id6
 	id6-->id10{Unindexed EAMENA v4}
 	id10-->id11[Duplicate PostGreSQL DB]
@@ -45,8 +45,8 @@ flowchart
 	id11-->id15
 	id15-->id16[INDEX]
 	id16-->id17((Full Clone))
-	id18{Unindexed partial clone}-->id19[INDEX]
-	id19-->id20((Partial Clone))
+	id18{Unindexed partial clone} --23--> id19[INDEX]
+	id19 --23--> id20((Partial Clone))
 	id14 --3--> id21[Convert JSONL to JSON]
 	id21 --3--> id22{Partial EAMENA data}
 	id15-->id23[Remove un-needed data]

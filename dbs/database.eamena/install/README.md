@@ -54,9 +54,8 @@ Follow the flow chart below in order to install/upgraded to Arches v.7. Paths to
 flowchart
 	id1((Eamena v3))-->id2[Export data as JSONL]
 	id2-->id3[Split into chunks]
-	id3-->id4[ <a href='https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/install#convert-jsonl-to-json'>Convert JSONL to JSON </a> ]
-	id4-->id41[ <a href='https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/install#convert-json'>Convert JSON Arches v5 to v7</a> ]
-	id41-->id5{Full EAMENA data}
+	id3-->id4[Convert JSONL to JSON]
+	id4-->id5{Full EAMENA data}
 	id5-->id6[IMPORT]
 	id7[ <a href='https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/install#install-empty-arches-v7'> Install empty Arches v7 </a>] --2--> id25[ <a href='https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/install#install-eamena-customisations'>Install EAMENA customisations</a> ]
 	id25 --2--> id8{Empty Arches v7}
@@ -73,8 +72,9 @@ flowchart
 	id16-->id17((Full Clone))
 	id18{Unindexed partial clone} --23--> id19[INDEX]
 	id19 --23--> id20((Partial Clone))
-	id14 --3--> id21[Convert JSONL to JSON]
-	id21 --3--> id22{Partial EAMENA data}
+	id14 --3--> id141[ <a href='https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/install#convert-jsonl-to-json'>Convert JSONL to JSON </a> ]
+	id141-->id211[ <a href='https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/install#convert-json-arches-v5-to-v7'>Convert JSON Arches v5 to v7</a> ]
+	id211 --3--> id22{Partial EAMENA data}
 	id15-->id23[Remove un-needed data]
 	id8 --2--> id24[IMPORT]
 	id22 --3--> id24

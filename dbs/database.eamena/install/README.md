@@ -42,8 +42,9 @@ Install:
 * [Elasticsearch](prerequisites/Elasticsearch.md)
 * [PostgreSQL](prerequisites/PostgreSQL.md) 
 * [NodeJS / NPM / Yarn](prerequisites/Yarn.md)
-* [Celery](prerequisites/Celery.md)
 * [Apache](prerequisites/Apache.md)
+* [Celery](prerequisites/Celery.md)
+
 
 ### Install Paths
 
@@ -54,7 +55,8 @@ flowchart
 	id1((Eamena v3))-->id2[Export data as JSONL]
 	id2-->id3[Split into chunks]
 	id3-->id4[ <a href='https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/install#convert-jsonl-to-json'>Convert JSONL to JSON </a> ]
-	id4-->id5{Full EAMENA data}
+	id4-->id41[ <a href='https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/install#convert-json'>Convert JSON Arches v5 to v7</a> ]
+	id41-->id5{Full EAMENA data}
 	id5-->id6[IMPORT]
 	id7[ <a href='https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/install#install-empty-arches-v7'> Install empty Arches v7 </a>] --2--> id25[ <a href='https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/install#install-eamena-customisations'>Install EAMENA customisations</a> ]
 	id25 --2--> id8{Empty Arches v7}
@@ -128,7 +130,11 @@ git clone https://github.com/eamena-project/eamena.git
 
 ## Convert JSONL to JSON
 
-Use the [jsonl2json.py](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/install/scripts/jsonl2json.py) to convert business data from JSONL to JSON script.
+Use the [jsonl2json.py](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/install/scripts/jsonl2json.py) script to convert business data from JSONL to JSON.
+
+## Convert JSON Arches v5 to v7
+
+Use the [convert_json_57.py](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/install/scripts/convert_json_57.py) script to convert business data from JSON data for Arches v5 to Arches v7.
 
 ## Import
 

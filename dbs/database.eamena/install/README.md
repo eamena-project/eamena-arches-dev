@@ -102,6 +102,10 @@ From the `arches/` folder, run:
 git clone https://github.com/eamena-project/eamena.git
 ```
 
+## Convert JSONL to JSON
+
+Use the `jsonl2json.py` to convert from JSONL to JSON script
+
 ## Others
 
 * [Cloning EAMENA from Github](install/Clone.md)

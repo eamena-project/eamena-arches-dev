@@ -52,6 +52,23 @@ https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamen
 * `load_packages...`
 	- "user 4" issue?
 
-* If `KeyError at /add-resource/ 34cfe98e-c2c0-11ea-...` on add HP:
+* If `KeyError at /add-resource/ 34cfe98e-c2c0-11ea-...` with no defaultValue on add HP:
 	- run `python manage.py fix_default_values.py`
 	- remove `sample_widget` from the package (`eamena/`) and the project (`arches/`)
+
+* import business data
+	- Grid Squares
+	- Person/Organization
+		- turn `ACTOR ID` Python function off
+		- ~~[Cardinality](https://github.com/eamena-project/eamena-arches-dev/blob/7b67fe7c736d700c077981a925cead71c2e246c2/training/2022/commands.sh#L188)~~
+		- ~~turn ES off?~~
+	- HP
+	- ~~IR~~ (no need, only 1 IR)
+
+* install Apache
+	- run `collecticstatic` to fill the `static/` folder
+	- `mkdir staticfiles/`
+
+* install Celery
+	- install `django-storages==1.13.1`
+	- install `boto3==1.25.3`

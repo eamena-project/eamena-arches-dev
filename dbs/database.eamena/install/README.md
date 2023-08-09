@@ -9,12 +9,12 @@ These docs describe the process of (a) installing an empty EAMENA-customised ver
 
 ### Prerequisites
 
-Arches 7.3 requires Elasticsearch [8.3.3](https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-8.3.3-amd64.deb) and PostgreSQL 14 to be installed. Additionally, Arches 7 requires NPM 8.19.3 or 9.6.0 (tested and works with both), Yarn 1.22.19 and Node.JS 14.17.6. The instructions for installing and configuring all of these are linked from below.
+Arches 7.3 requires [Elasticsearch 8.3.3](prerequisites/Elasticsearch.md) and [PostgreSQL 14](prerequisites/PostgreSQL.md) to be installed. Additionally, Arches 7 requires NPM 8.19.3 or 9.6.0 (tested and works with both), Yarn 1.22.19 and Node.JS 14.17.6. The instructions for installing and configuring all of these are linked from below.
 
 Install:
 
-* [PostgreSQL 14](prerequisites/PostgreSQL.md)
 * [Elasticsearch 8.3.3](prerequisites/Elasticsearch.md)
+* [PostgreSQL 14](prerequisites/PostgreSQL.md) 
 * [NodeJS / NPM / Yarn](prerequisites/Yarn.md)
 * [Celery](prerequisites/Celery.md)
 * [Apache](prerequisites/Apache.md)
@@ -32,7 +32,7 @@ flowchart
 	id3-->id4[Convert JSONL to JSON]
 	id4-->id5{Full EAMENA data}
 	id5-->id6[IMPORT]
-	id7[ <a href='https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/install#install-empty-arches-v7'> Install empty Arches v7 </a>]-->id25[ <a href='https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/install#install-eamena-customisations'>Install EAMENA customisations</a> ]
+	id7[ <a href='https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/install#install-empty-arches-v7'> Install empty Arches v7 </a>]-2->id25[ <a href='https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/install#install-eamena-customisations'>Install EAMENA customisations</a> ]
 	id25-->id8{Empty Arches v7}
 	id9[Clone EAMENA from Github]-->id8
 	id8-->id6

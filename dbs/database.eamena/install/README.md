@@ -38,12 +38,12 @@ Arches 7.3 requires [Python](prerequisites/Python.md), [Elasticsearch](prerequis
 
 Install:
 
-* [Python](prerequisites/Python.md)
-* [Elasticsearch](prerequisites/Elasticsearch.md)
-* [PostgreSQL](prerequisites/PostgreSQL.md) 
-* [NodeJS / NPM / Yarn](prerequisites/Yarn.md)
-* [Apache](prerequisites/Apache.md)
-* [Celery](prerequisites/Celery.md)
+1 [Python](prerequisites/Python.md)
+2 [Elasticsearch](prerequisites/Elasticsearch.md)
+3 [PostgreSQL](prerequisites/PostgreSQL.md) 
+4 [NodeJS / NPM / Yarn](prerequisites/Yarn.md)
+5 [Apache](prerequisites/Apache.md)
+6 [Celery](prerequisites/Celery.md)
 
 
 ### Install Paths

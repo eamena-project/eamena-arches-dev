@@ -100,7 +100,6 @@ flowchart
 	style id18 fill:#FFFFFF
 	style id19 fill:#FFFFFF
 	style id20 fill:#FFFFFF
-	style id21 fill:#FFFFFF
 	style id22 fill:#FFFFFF
 	style id23 fill:#FFFFFF
 	style id24 fill:#FFFFFF

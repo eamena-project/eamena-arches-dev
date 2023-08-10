@@ -105,6 +105,8 @@ flowchart
 	style id23 fill:#FFFFFF
 	style id24 fill:#FFFFFF
 	style id25 fill:#CFFFCF
+	style id141 fill:#FFFFFF
+	style id211 fill:#FFFFFF
 ```
 
 ## Install empty Arches v7

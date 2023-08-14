@@ -1,5 +1,7 @@
 # EAMENA DB
 
+## Diagram
+
 ```mermaid
 flowchart LR
   subgraph Arches v7

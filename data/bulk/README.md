@@ -2,9 +2,9 @@
 
 Bulk upload is a process for uploading **many XLSX** files containing heritage places (HPs) data into the database without going through the graphical user interface. It speeds up data entry.
 
-## BU template file
+## Template file
 
-The last/updated version of the BU template file is hosted on:  
+The last/updated version of the BU template is:  
   
 <p align="center">
 GitHub: https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bulk/templates/Bulk_Upload_template_221025.xlsx<br>
@@ -13,12 +13,14 @@ GitHub: https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bulk/
 <s>Google Drive: https://drive.google.com/file/d/1KtZlCB_mdTOPxh1DpFdfeXddjJLTvF1k/view?usp=sharing</s>
 </p>
 
-### Referenced individual sheets
+### Individual reference sheets
+
+The BU template is a set of different templates:
 
 <p align="center">
   <img alt="img-name" src="../../www/bu-to-tsv.png" width="700">
   <br>
-    <em>In yellow, the sheets that will be exported as TSV file</em>
+    <em>In yellow, example of the BU template sheets that will be exported as TSV file</em>
 </p>
 
 To make it easier to reference and share controlled vocabularies, the numerous BU template sheets (XLSX) can be converted into TSV files that can be read on GitHub using the [split_bu_template.py](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bulk/functions/split_bu_template.py) function. For example:
@@ -40,10 +42,10 @@ Will create the many TSV located into the folder https://github.com/eamena-proje
 </p>
 
 
-
 ## Mapping
 
 To recast structured data (source) to a BU format (target), see the [eamenaR](https://github.com/eamena-project/eamenaR#bu-mapping) package
+
 
 ## ~~BU process~~
 > ⚠️ This process is no longer in use ⚠️ ~~step-by-step BU procedure from the user-side~~

@@ -16,7 +16,7 @@
 
 ## **(2) Methods**
 
-(...). The original dataset has been formated to be compliant with the Arches-based EAMENA database [1] (...)
+(...). The original dataset has been formated to be compliant with the Arches-based EAMENA database [**1**] (...)
 
 ### **Steps**
 
@@ -59,11 +59,11 @@ CC BY 4.0
 
 ## **(4) Reuse potential**
 
-EAMENA is an Arches-based information platform for cultural heritage management [2]. EAMENA graphs are CIDOC-CRM based and have been released publicly [3] alongside with other Arches-based project. EAMENA is also accessible through an API. This will ensure the Reusibility of the dataset (...) the shortened unique URL of the dataset is: <https://tinyurl.com/eamena-0001> (...)
+EAMENA is an Arches-based information platform for cultural heritage management [**2**]. EAMENA graphs are CIDOC-CRM based and have been released publicly [**3**] alongside with other Arches-based project. EAMENA is also accessible through an API. This will ensure the Reusibility of the dataset (...) the shortened unique URL of the dataset is: <https://tinyurl.com/eamena-0001> (...)
 
 <p align="center">
-  <img alt="img-name" src="https://github.com/eamena-project/eamenaR/blob/main/results/caravanserail.png" width="400">
-  <em> View of the *caravanserais* dataset created through the EAMENA API DB and the eamenaR function
+  <img alt="img-name" src="https://github.com/eamena-project/eamenaR/blob/main/results/caravanserail.png" width="600"><br>
+  <em> View of the *caravanserais* dataset created through the EAMENA API DB and the eamenaR function</em> 
 </p>
 
 

@@ -53,7 +53,7 @@ An "unformated dataset" is our original dataset 'as-it-is', as you published it 
 
 #### **Formated dataset** route
 
-A "formated dataset" is a Bulk Upload form, that is to say, a EAMENA databae-compliant dataset that can be uploaded directly into EAMENA via the Bulk Upload process. Following this route will improve the FAIRability[^1]. Indeed, the process of making your compliant to a open-access and open-source database using CIDOC-CRM onlogy can already be mentioned in your *data paper* (see, improve and reuse, this [JOAD template](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bibref/templates/template_joad.md)).
+A "formated dataset" is a Bulk Upload form, that is to say, a EAMENA databae-compliant dataset that can be uploaded directly into EAMENA via the Bulk Upload process. Following this route will improve the FAIRability[^1]. Indeed, the process of making your compliant to a open-access and open-source database using CIDOC-CRM onlogy[^2] can already be mentioned in your *data paper* (see, improve and reuse, this [JOAD template](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bibref/templates/template_joad.md)).
 
 ---
 

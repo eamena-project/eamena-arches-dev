@@ -37,23 +37,23 @@ flowchart LR
 
 There is two ways to add data to the database:
 
-1. Request a [Contributor user account](#contributor-user-account) to add data directly into the database using the graphical user interface <https://database.eamena.org/>
+1. Request a [Contributor user account](#contributor-user-account) to add data directly into the database using the graphical user interface <https://database.eamena.org/>. See the [Contributor user account](https://eamena.web.ox.ac.uk/open-access-policy#user-contributor) on EAMENA website.
 2. Submit an [unformated or formated dataset](#unformated-or-formated-dataset) in a form of a TSV, CSV or XLSX file, to the team
 
 See the [License](https://eamena.org/database#data-use) and [Open Access policy](https://eamena.org/open-access-policy) on EAMENA website
-
-### Contributor user account
-
-See the [Contributor user account](https://eamena.web.ox.ac.uk/open-access-policy#user-contributor) on EAMENA website.
-
 ### Unformated or formated dataset
 
-An unformated is our original dataset, whereas a formated dataset is a Bulk Upload. In any cases your dataset will have to be formated for the EAMENA database: this is the [Bulk Upload procedure](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bulk#readme). Before assigning a DOI to your dataset, and publishing it as a *data paper*, we suggest two routes:
+If you want to host and expose an already prepared dataset, the latter will have to be formated for the EAMENA database: this is the [Bulk Upload procedure](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bulk#readme). Before assigning a DOI to your dataset, and publishing it as a *data paper*, we suggest two routes:
 
-1. **Unformated dataset** route: publish your dataset 'as-it-is', respecting only the FAIR guidelines. So, there is no need for you to reformat the columns, values, etc.
-2. **Formated dataset** route: publish your dataset as a EAMENA-compliant dataset that can be uploaded directly into EAMENA via the Bulk Upload process. Following this route will improve the FAIRability (sustainibility of our database, open-access, etc.). Indeed, the process of making your compliant can already be mentioned in your *data paper* (see, and reuse, this [JOAD template](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bibref/templates/template_joad.md)) 
+#### **Unformated dataset** route
 
-In both cases, the EAMENA team will balance the effort needed to format your dataset into a EAMENA-compliant structure and the interest of you research for the endangered archaeology. If your dataset complies to EAMENA policies, we will (1) review your dataset and (2) make it properly citable.
+An unformated is our original dataset 'as-it-is', as you published it under its DOI, in data paper journal, etc., respecting only the FAIR guidelines. So, there is no need for you to reformat the columns, values, etc. You submit your dataset directly to the EAMENA team. In this case, the EAMENA team will balance the effort needed to format your dataset into a EAMENA-compliant structure and the interest of you research for the endangered archaeology *a posteriori*
+
+#### **Formated dataset** route
+
+A formated dataset is a Bulk Upload form, that is to say, a EAMENA databae-compliant dataset that can be uploaded directly into EAMENA via the Bulk Upload process. Following this route will improve the FAIRability (sustainibility of our database, open-access, etc.). Indeed, the process of making your compliant can already be mentioned in your *data paper* (see, and reuse, this [JOAD template](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bibref/templates/template_joad.md)). In this case, the EAMENA team will balance the effort needed to format your dataset into a EAMENA-compliant structure and the interest of you research for the endangered archaeology *a priori*.
+
+---
 
 The EAMENA team is currently developping a computer routine allowing to automatise the generation of ready-made citation for the different data subset (see ["How-to-cite"](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bibref#readme)). For the moment, we suggest that you assign a DOI to your dataset (Zenodo, etc.) and publish it as a *data paper* in a specialised journal ([JOAD](https://openarchaeologydata.metajnl.com/), [IAJ](https://archaeologydataservice.ac.uk/about/the-internet-archaeology-journal/), etc.).
 

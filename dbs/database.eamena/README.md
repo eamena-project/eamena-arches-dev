@@ -62,5 +62,5 @@ The EAMENA team is currently developping a computer routine allowing to automati
 
 
 [^1]: Findable, Accessible, Interoperable, Reusable. See <https://www.go-fair.org/>
-
+[^2]: CIDOC Conceptual Reference Model. See: <https://www.cidoc-crm.org/>
 

@@ -63,7 +63,7 @@ EAMENA is an Arches-based information platform for cultural heritage management 
 
 <p align="center">
   <img alt="img-name" src="https://github.com/eamena-project/eamenaR/blob/main/results/caravanserail.png" width="600"><br>
-  <em> View of the *caravanserais* dataset created through the EAMENA API DB and the eamenaR function</em> 
+  <em> View of the caravanserais dataset created through the EAMENA API DB and the eamenaR function</em> 
 </p>
 
 
@@ -77,7 +77,7 @@ EAMENA is an Arches-based information platform for cultural heritage management 
 
 ## **References**
 
-[1] EAMENA and MaREA projects. (2022). *EAMENA database*. University of Oxford, University of Southampton. Retrieved from database.eamena.org/en/ (Accessed: November 17, 2022).
+[1] EAMENA and MaREA projects. (2022). *EAMENA database*. University of Oxford, University of Southampton. Retrieved from <database.eamena.org/en/> (Accessed: November 17, 2022).
 
 [2] Myers, D., Dalgity, A., & Avramides, I. (2016). The Arches heritage inventory and management system: a platform for the heritage field. *Journal of Cultural Heritage Management and Sustainable Development*, 6(2), 213-224.
 

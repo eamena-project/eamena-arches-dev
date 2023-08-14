@@ -17,7 +17,12 @@ flowchart LR
   id3[<a href='https://github.com/eamena-project/eamena-arches-dev/tree/main/geoserver'>GeoServer</a>] --- ea;
   id3 --- id4[<a href='https://github.com/eamena-project/eamena-arches-dev/tree/main/gis/qgis'>QGIS</a>];
   subgraph local
-    id9B[<a href='https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bulk#readme'>Bulk Upload</a>] --1. export data as <a href='https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bulk#readme'>Bulk Upload</a> --> ea;
+    subgraph unformated data
+      id9A -- format to Bulk Upload --> id9B[<a href='https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bulk#readme'>Bulk Upload</a>]
+    end
+    subgraph formated data
+      id9B --1. export data as BU--> ea;
+    end
   end
   ea --- id5[<a href='https://github.com/eamena-project/eamenaR'>eamenaR</a>];
   ea --- internationalisation

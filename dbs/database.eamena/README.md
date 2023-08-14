@@ -36,7 +36,7 @@ flowchart LR
 
 ## Contribute to the EAMENA database
 
-There is two ways to add data to the database:
+There is two routes to add data to the database:
 
 1. Request a Contributor user account to add data directly into the database using the graphical user interface <https://database.eamena.org/>. See the [EAMENA website](https://eamena.web.ox.ac.uk/open-access-policy#user-contributor).
 2. Submit an [unformated or formated dataset](#unformated-or-formated-dataset) in a form of a TSV, CSV or XLSX file, to the team

@@ -49,7 +49,7 @@ If you want to host and expose an already prepared dataset, the latter will have
 
 #### **Unformated dataset** route
 
-An "unformated dataset" is our original dataset 'as-it-is', as you published it under its DOI, in data paper journal, etc., respecting only the FAIR guidelines. So, there is no need for you to reformat the columns, values, etc. You submit your dataset directly to the EAMENA team. 
+An "unformated dataset" is our original dataset 'as-it-is', as you published it under its DOI (Zenodo, etc.), in *data paper* journal ([JOAD](https://openarchaeologydata.metajnl.com/), [IAJ](https://archaeologydataservice.ac.uk/about/the-internet-archaeology-journal/), etc.), etc., respecting only the FAIR guidelines. So, there is no need for you to reformat the columns, values, etc. You submit your dataset directly to the EAMENA team. 
 
 #### **Formated dataset** route
 
@@ -57,8 +57,7 @@ A "formated dataset" is a Bulk Upload form, that is to say, a EAMENA databae-com
 
 ---
 
-The EAMENA team is currently developping a computer routine allowing to automatise the generation of ready-made citation for the different data subset (see ["How-to-cite"](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bibref#readme)). For the moment, we suggest that you assign a DOI to your dataset (Zenodo, etc.) and publish it as a *data paper* in a specialised journal ([JOAD](https://openarchaeologydata.metajnl.com/), [IAJ](https://archaeologydataservice.ac.uk/about/the-internet-archaeology-journal/), etc.). See also the [License](https://eamena.org/database#data-use) and [Open Access policy](https://eamena.org/open-access-policy) on EAMENA website
-
+Our team is currently developping a computer routine allowing to automatise the generation of ready-made citation for the different data subset (see ["How-to-cite"](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bibref#readme)). For the moment, we suggest that you assign a DOI to your dataset (Zenodo, etc.) and publish it as a *data paper* in a specialised journal ([JOAD](https://openarchaeologydata.metajnl.com/), [IAJ](https://archaeologydataservice.ac.uk/about/the-internet-archaeology-journal/), etc.). See also the [License](https://eamena.org/database#data-use) and [Open Access policy](https://eamena.org/open-access-policy) on EAMENA website
 
 
 [^1]: Findable, Accessible, Interoperable, Reusable. See <https://www.go-fair.org/>

@@ -1,6 +1,7 @@
-# "How-to-cite" EAMENA database and data
+# "How-to-cite" EAMENA database and datasets
 
-Objective: to make the EAMENA database and its specific datasets citable.
+Automate the generation of bibliographic references for the EAMENA database and its various datasets
+
 ## citation-generator
 
 `citation-generator` will be a function working with EAMENA resources (HP, IR, etc.), Search URL and bbibliographical references.

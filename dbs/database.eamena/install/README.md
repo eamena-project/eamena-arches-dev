@@ -32,6 +32,7 @@ sudo adduser arches
 mkdir /opt/arches/
 ```
 
+
 ### Prerequisites
 
 Arches 7.3 requires [Python](prerequisites/Python.md), [Elasticsearch](prerequisites/Elasticsearch.md) and [PostgreSQL](prerequisites/PostgreSQL.md) to be installed. Additionally, Arches 7 requires NPM 8.19.3 or 9.6.0 (tested and works with both), Yarn 1.22.19 and Node.JS 14.17.6. The instructions for installing and configuring all of these are linked from below.

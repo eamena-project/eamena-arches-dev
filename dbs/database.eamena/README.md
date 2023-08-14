@@ -37,8 +37,8 @@ flowchart LR
 
 There is two ways to add data to the database:
 
-1. Request a [Contributor user account](#contributor-user-account) to add data directly into the database
-2. Submit an [unformated or formated dataset](#unformated-or-formated-dataset) to the team
+1. Request a [Contributor user account](#contributor-user-account) to add data directly into the database using the graphical user interface <https://database.eamena.org/>
+2. Submit an [unformated or formated dataset](#unformated-or-formated-dataset) in a form of a TSV, CSV or XLSX file, to the team
 
 See the [License](https://eamena.org/database#data-use) and [Open Access policy](https://eamena.org/open-access-policy) on EAMENA website
 
@@ -47,8 +47,6 @@ See the [License](https://eamena.org/database#data-use) and [Open Access policy]
 See the [Contributor user account](https://eamena.web.ox.ac.uk/open-access-policy#user-contributor) on EAMENA website.
 
 ### Unformated or formated dataset
-
-https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena
 
 An unformated is our original dataset, whereas a formated dataset is a Bulk Upload. In any cases your dataset will have to be formated for the EAMENA database: this is the [Bulk Upload procedure](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bulk#readme). Before assigning a DOI to your dataset, and publishing it as a *data paper*, we suggest two routes:
 

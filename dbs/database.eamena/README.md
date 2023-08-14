@@ -41,7 +41,7 @@ There is two ways to add data to the database:
 1. Request a Contributor user account to add data directly into the database using the graphical user interface <https://database.eamena.org/>. See the [EAMENA website](https://eamena.web.ox.ac.uk/open-access-policy#user-contributor).
 2. Submit an [unformated or formated dataset](#unformated-or-formated-dataset) in a form of a TSV, CSV or XLSX file, to the team
 
-If you aim to submit your dataset to EAMENA as an [unformated or formated dataset](#unformated-or-formated-dataset), the EAMENA team will balance the effort needed to format your dataset into a EAMENA-compliant structure and its interest for the research on endangered archaeology.
+If you aim to submit your data to EAMENA as an [unformated or formated dataset](#unformated-or-formated-dataset), the EAMENA team will balance the effort needed to format your dataset into a EAMENA-compliant structure and its interest for the research on endangered archaeology.
 
 ### Unformated or formated dataset
 
@@ -49,11 +49,11 @@ If you want to host and expose an already prepared dataset, the latter will have
 
 #### **Unformated dataset** route
 
-An unformated is our original dataset 'as-it-is', as you published it under its DOI, in data paper journal, etc., respecting only the FAIR guidelines. So, there is no need for you to reformat the columns, values, etc. You submit your dataset directly to the EAMENA team. 
+An "unformated dataset" is our original dataset 'as-it-is', as you published it under its DOI, in data paper journal, etc., respecting only the FAIR guidelines. So, there is no need for you to reformat the columns, values, etc. You submit your dataset directly to the EAMENA team. 
 
 #### **Formated dataset** route
 
-A formated dataset is a Bulk Upload form, that is to say, a EAMENA databae-compliant dataset that can be uploaded directly into EAMENA via the Bulk Upload process. Following this route will improve the FAIRability (sustainibility of our database, open-access, etc.). Indeed, the process of making your compliant to a open-access and open-source database using CIDOC-CRM onlogy can already be mentioned in your *data paper* (see, improve and reuse, this [JOAD template](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bibref/templates/template_joad.md)).
+A "formated dataset" is a Bulk Upload form, that is to say, a EAMENA databae-compliant dataset that can be uploaded directly into EAMENA via the Bulk Upload process. Following this route will improve the FAIRability[^1]. Indeed, the process of making your compliant to a open-access and open-source database using CIDOC-CRM onlogy can already be mentioned in your *data paper* (see, improve and reuse, this [JOAD template](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bibref/templates/template_joad.md)).
 
 ---
 
@@ -61,6 +61,6 @@ The EAMENA team is currently developping a computer routine allowing to automati
 
 
 
-
+[^1]: Findable, Accessible, Interoperable, Reusable. See <https://www.go-fair.org/>
 
 

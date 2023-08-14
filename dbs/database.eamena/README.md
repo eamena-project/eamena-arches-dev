@@ -24,7 +24,8 @@ flowchart LR
       id9A[dataset]
     end
     subgraph formated data
-      id9A -- format to Bulk Upload --> id9B[<a href='https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bulk#readme'>Bulk Upload</a>]
+      direction TB
+      id9A -- Bulk Upload formatting --> id9B[<a href='https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bulk#readme'>Bulk Upload</a>]
       id9B ---> ea;
     end
   end

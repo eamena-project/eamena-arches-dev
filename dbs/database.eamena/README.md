@@ -46,7 +46,13 @@ If you aim to submit your data to EAMENA as an [unformated or formated dataset](
 ### Unformated or formated dataset
 
 If you want to host a dataset on EAMENA, this dataset will have first to be formated for the EAMENA database: this is the [Bulk Upload procedure](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bulk#readme). The EAMENA team will evaluate the interest of your data for the research on endangered archaeology and, if your dataset need to be reformat into a EAMENA-compliant structure ("unformated dataset"), the effort needed to prepare your dataset.
-Alongside with your data you will create an Information Resource
+Alongside with your data you will create an **Information Resource** referencing your dataset. 
+
+<p align="center">
+  <img alt="img-name" src="../www/arches-ea-v4-rm.png" width="700">
+  <br>
+    <em>Create a new resource in the Ressource Model <b>Information Resource</b>, see for example: <a href = "https://github.com/eamena-project/eamena-arches-dev/blob/main/www/arches-ea-v4-rm-ir-ex2.pdf">GlobalKites ANR project</a></em>
+</p>
 
 Before assigning a DOI to your dataset, and maybe publishing it as a *data paper*, we suggest two routes:
 

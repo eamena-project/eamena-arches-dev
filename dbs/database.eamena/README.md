@@ -49,7 +49,7 @@ If you want to host a dataset on EAMENA, this dataset will have first to be form
 Alongside with your data you will create an **Information Resource** referencing your dataset. 
 
 <p align="center">
-  <img alt="img-name" src="../../www/arches-ea-v4-rm.png" width="700">
+  <img alt="img-name" src="../../www/arches-ea-v4-rm.png" width="300">
   <br>
     <em>Create a new resource in the Ressource Model <b>Information Resource</b>, see for example: <a href = "https://github.com/eamena-project/eamena-arches-dev/blob/main/www/arches-ea-v4-rm-ir-ex2.pdf">GlobalKites ANR project</a></em>
 </p>

@@ -49,7 +49,7 @@ If you want to host a dataset on EAMENA, this dataset will have first to be form
 Alongside with your data you will create an **Information Resource** referencing your dataset. 
 
 <p align="center">
-  <img alt="img-name" src="../../www/arches-ea-v4-rm.png" width="300">
+  <img alt="img-name" src="../../www/arches-ea-v4-rm.png" width="250">
   <br>
     <em>Create a new resource in the Ressource Model <b>Information Resource</b>, see for example: <a href = "https://github.com/eamena-project/eamena-arches-dev/blob/main/www/arches-ea-v4-rm-ir-ex2.pdf">GlobalKites ANR project</a></em>
 </p>
@@ -58,7 +58,7 @@ Before assigning a DOI to your dataset, and maybe publishing it as a *data paper
 
 #### **Unformated dataset** route
 
-An "unformated dataset" is our original dataset 'as-it-is', as you published it under its DOI ([Zenodo](https://zenodo.org/), [OSF](https://help.osf.io/article/220-create-dois), etc.), in *data paper* journal ([JOAD](https://openarchaeologydata.metajnl.com/), [IAJ](https://archaeologydataservice.ac.uk/about/the-internet-archaeology-journal/), etc.), etc., respecting only the FAIR guidelines. 
+An "unformated dataset" is our original dataset 'as-it-is', as you published it under its DOI ([Zenodo](https://zenodo.org/), [OSF](https://help.osf.io/article/220-create-dois), [Inist-CNRS](https://www.inist.fr/nos-actualites/datacite-accompagne-doi/), etc.), in *data paper* journal ([JOAD](https://openarchaeologydata.metajnl.com/), [IAJ](https://archaeologydataservice.ac.uk/about/the-internet-archaeology-journal/), etc.), etc., respecting only the FAIR guidelines. 
 
 There is no need for you to align the columns names, map the values, etc. with the EAMENA format. You submit your dataset directly to the EAMENA team. 
 

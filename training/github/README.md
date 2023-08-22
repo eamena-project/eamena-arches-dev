@@ -22,34 +22,37 @@ Collaboration & Versioning
 
 ![branches in GitHub](../../www/github-basic-branch.png)
 
-![accepted pull request](../../www/github-basic-pullrequestaccepted.png)
 
 ## Git
 > git version control system, version control system
   
 
 ---
+
 🔎 Distributed version control system for tracking changes to a set of files. Typically used to coordinate the work of programmers who collaborate on source code during software development. The objectives are speed, data integrity and support for distributed and non-linear workflows.
+
 ---
 
 ### Main commands
 
 #### from local to remote
-> from *downstream* to *upstream*
+> *downstream* to *upstream*
 
 ![a Git command from a Windows *shell*](../../www/github-cmd-basic.png)
 
-`$ git add .; git commit -m "training GitHub" ; git push`
+```Bash
+git add .; git commit -m "training GitHub" ; git push
+```
 
 | command    | description                                                                                                     |
 |------------|-----------------------------------------------------------------------------------------------------------------|
-| git add    | Moves every changes from the working directory to the staging area before committing it to the official history |
-| git commit | Takes the staged snapshot and commits it to the project history                                                 |
-| git push   | Move a local branch to the remote repository (*push upstream*)                                                  |
+| `git add`    | Moves every changes from the working directory to the staging area before committing it to the official history |
+| `git commit` | Takes the staged snapshot and commits it to the project history                                                 |
+| `git push`   | Move a local branch to the remote repository (*push upstream*)                                                  |
 
 
 #### from remote to local
-> from *upstream* to *downstream*
+> *upstream* to *downstream*
 
 | command    | description                                                                                                     |
 |------------|-----------------------------------------------------------------------------------------------------------------|

@@ -1,0 +1,15 @@
+{
+    "name": "Stamen Watercolor",
+    "sources": {
+        "stamen-terrain": {
+            "tiles": ["https://stamen-tiles.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.jpg"],
+            "type": "raster",
+            "tileSize": 256
+        }
+    },
+    "layers": [{
+        "source": "stamen-watercolor",
+        "type": "raster",
+        "id": "stamen-watercolor"
+    }]
+}

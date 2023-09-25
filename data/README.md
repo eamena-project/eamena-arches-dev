@@ -1,13 +1,26 @@
 # Data
 
-## Grids
+## Features
+
+Heritage Places, Grids, Built components, etc.
+
+### Heritage Places
+
+#### Minimum Enhanced Data Standards
+
+Heritage Places minimum enhanced data standards are listed in a worksheet of the last [Bulk Upload template file](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bulk#template-file) version
+
+#### Bulk
+
+[Bulk Upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bulk)
+### Grids
 
 [Grids](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/grids#grids)
 
-## LOD
+## Maps
 
-Linked open data (LOD)
+### Basemaps
 
-* a CIDOC-CRM simple example ( [R script](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/lod/palmyra-graph.R) | [rendered](https://eamena-project.github.io/eamena-arches-dev/data/lod/palmyra-cidoc-graph.html) )
 
-## Bulk
+
+

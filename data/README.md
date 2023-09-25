@@ -2,7 +2,7 @@
 
 ## Features
 
-Heritage Places, Grids, Built components, etc.
+[Heritage Places](https://github.com/eamena-project/eamena-arches-dev/tree/main/data#heritage-places), [Grids](https://github.com/eamena-project/eamena-arches-dev/tree/main/data#grids), Built components, etc.
 
 ### Heritage Places
 
@@ -17,9 +17,9 @@ Heritage Places minimum enhanced data standards are listed in a worksheet of the
 
 [Grids](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/grids#grids)
 
-## Maps
+## Spatial
 
-### Basemaps
+[Spatial](https://github.com/eamena-project/eamena-arches-dev/tree/main/spatial)
 
 
 

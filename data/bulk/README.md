@@ -15,15 +15,15 @@ GitHub: https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bulk/
 
 ### Individual reference sheets
 
-The BU template is a set of different templates:
+To make it easier to reference and share controlled vocabularies, the numerous BU template sheets (XLSX) can be converted into TSV files that can be read on GitHub using the [split_bu_template.py](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bulk/functions/split_bu_template.py) function. 
 
 <p align="center">
   <img alt="img-name" src="../../www/bu-to-tsv.png" width="700">
   <br>
-    <em>In yellow, example of the BU template sheets that will be exported as TSV file</em>
+    <em>The BU template is a set of different templates. In yellow, example of the BU template sheets that will be exported as TSV file</em>
 </p>
 
-To make it easier to reference and share controlled vocabularies, the numerous BU template sheets (XLSX) can be converted into TSV files that can be read on GitHub using the [split_bu_template.py](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bulk/functions/split_bu_template.py) function. For example:
+For example:
 
 ```bash
 py split_bu_template.py "C:/Rprojects/eamena-arches-dev/data/bulk/templates/doc"

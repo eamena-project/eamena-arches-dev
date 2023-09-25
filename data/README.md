@@ -9,7 +9,7 @@
 #### Minimum Enhanced Data Standards
 > HP-MEDS
 
-Heritage Places minimum enhanced data standards are listed in a worksheet of the last [Bulk Upload template file](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bulk#template-file) version. See its export: 
+Heritage Places minimum enhanced data standards are listed in a worksheet of the last [Bulk Upload template file](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bulk#template-file) version. See its export[^1]: 
 
 * [HP-MEDS](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bulk/templates/doc/bu_Minimum%20Enhanced%20Data%20Standards.tsv)
 
@@ -25,5 +25,5 @@ Heritage Places minimum enhanced data standards are listed in a worksheet of the
 [Spatial](https://github.com/eamena-project/eamena-arches-dev/tree/main/spatial)
 
 
-
+[^1]: after running [split_bu_template.py](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bulk#individual-reference-sheets) on the latest version of the BU template 
 

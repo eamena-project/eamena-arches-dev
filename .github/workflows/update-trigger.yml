@@ -22,7 +22,7 @@ jobs:
 
       - name: Convert XLSX to TSV
         run: |
-        python dev/data_quality/convert_xlsx_to_tsv.py dev/data_quality/template.xlsx dev/data_quality/output.tsv
+          python dev/data_quality/convert_xlsx_to_tsv.py dev/data_quality/template.xlsx dev/data_quality/output.tsv
 
       - name: Commit and push TSV file
         run: |

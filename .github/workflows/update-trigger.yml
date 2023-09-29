@@ -22,13 +22,13 @@ jobs:
 
       - name: Convert XLSX to TSV
         run: |
-          python dev/data_quality/convert_xlsx_to_tsv.py template.xlsx template.tsv
+        python dev/data_quality/convert_xlsx_to_tsv.py dev/data_quality/template.xlsx dev/data_quality/output.tsv
 
       - name: Commit and push TSV file
         run: |
           git config user.name "zoometh"
           git config user.email "thomashuet7@gmail.com"
-          git add template.tsv
+          git add dev/data_quality/output.tsv
           git commit -m "Convert XLSX to TSV"
           git push
 

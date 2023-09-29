@@ -1,0 +1,34 @@
+name: XLSX to TSV Conversion
+
+on:
+  push:
+    paths:
+      - 'dev/data_quality/template.xlsx'
+
+jobs:
+  convert_to_tsv:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'  # Replace with your desired Python version
+
+      - name: Install dependencies
+        run: pip install openpyxl
+
+      - name: Convert XLSX to TSV
+        run: |
+          python dev/data_quality/convert_xlsx_to_tsv.py template.xlsx template.tsv
+
+      - name: Commit and push TSV file
+        run: |
+          git config user.name "zoometh"
+          git config user.email "thomashuet7@gmail.com"
+          git add output.tsv
+          git commit -m "Convert XLSX to TSV"
+          git push
+

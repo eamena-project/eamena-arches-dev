@@ -182,107 +182,24 @@ Translate Ash's statistics https://mareastats.drashsmith.com/ from PHP to Python
 
 Check the completness of data. Python function to model the quality of HP with a radar diagram based on the groups appearing in the BU file (different levels of data agregation and summing):
 
-| | | |
-|-|-|-|
-|ASSESSMENT SUMMARY| |Assessment Investigator - Actor|
-| | |Investigator Role Type|
-| |ASSESSMENT ACTIVITY|Assessment Activity Type|
-| | |Assessment Activity Date|
-| | |GE Assessment(Yes/No)|
-| | |GE Imagery Acquisition Date|
-| | |Information Resource Used|
-| | |Information Resource Acquisition Date|
-|RESOURCE SUMMARY|RESOURCE NAME|Resource Name|
-| | |Name Type|
-| | |Heritage Place Type|
-| |RESOURCE DESCRIPTION|General Description Type|
-| | |General Description|
-| |HERITAGE RESOURCE CLASSIFICATION|Heritage Place Function|
-| | |Heritage Place Function Certainty|
-| |DESIGNATION|Designation|
-| | |Designation From Date|
-| | |Designation To Date|
-|GEOMETRIES| |Geometric Place Expression|
-| | |Geometry Qualifier|
-| | |Site Location Certainty|
-| | |Geometry Extent Certainty|
-|GEOGRAPHY| |Site Overall Shape Type|
-| | |Grid ID|
-| | |Country Type|
-| | |Cadastral Reference|
-| | |Resource Orientation|
-| |ADDRESS|Address|
-| | |Address Type|
-| |ADMINISTRATIVE SUBDIVISION|Administrative Subdivision|
-| | |Administrative Subdivision Type|
-|ARCHAEOLOGICAL ASSESSMENT| |Overall Archaeological Certainty Value|
-| | |Overall Site Morphology Type|
-| |PERIODIZATION|Cultural Period Type|
-| | |Cultural Period Certainty|
-| | |Cultural Subperiod Type|
-| | |Cultural Subperiod Certainty|
-| | |Date Inference Making Actor|
-| |ABSOLUTE CHRONOLOGY|Archaeological Date From (cal)|
-| | |Archaeological Date to (cal)|
-| | |BP Date From|
-| | |BP Date To|
-| | |AH Date From|
-| | |AH Date To|
-| | |SH Date From|
-| | |SH Date To|
-| |SITE FEATURES & INTERPRETATIONS|Site Feature Form Type|
-| | |Site Feature Form Type Certainty|
-| | |Site Feature Shape Type|
-| | |Site Feature Arrangement Type|
-| | |Site Feature Number Type|
-| | |Site Feature Interpretation Type |
-| | |Site Feature Interpretation Number|
-| | |Site Feature Interpretation Certainty|
-| | |Built Component Related Resource|
-| | |HP Related Resource|
-| |MATERIAL|Material Class|
-| | |Material Type|
-| | |Construction Technique|
-| |Measurements|Measurement Number|
-| | |Measurement Unit|
-| | |Dimension Type|
-| | |Measurement Source Type|
-| | |Related Geoarch/Palaeo|
-|CONDITION ASSESSMENT| |Overall Condition State|
-| | |Damage Extent Type|
-| |DISTURBANCES|Disturbance Cause Category Type|
-| | |Disturbance Cause Type|
-| | |Disturbance Cause Certainty|
-| | |Disturbance Date From|
-| | |Disturbance Date To|
-| | |Disturbance Date Occurred Before|
-| | |Disturbance Date Occurred On|
-| | |Disturbance Cause Assignment Assessor Name|
-| | |Effect Type|
-| | |Effect Certainty|
-| |THREATS|Threat Category|
-| | |Threat Type|
-| | |Threat Probability|
-| | |Threat Inference Making Assessor Name|
-| |RECOMMENDATION PLAN|Intervention Activity Type|
-| | |Recommendation Type|
-| | |Priority Type|
-| | |Related Detailed Condition Resource|
-|ENVIRONMENT ASSESSMENT| |Topography Type|
-| |LAND COVER|Land Cover Type|
-| | |Land Cover Assessment Date|
-| |SURFICIAL GEOLOGY|Surficial Geology Type|
-| | |Depositional Process|
-| | |Bedrock Geology|
-| |MARINE ENVIRONMENT|Fetch Type|
-| | |Wave Climate|
-| | |Tidal Energy|
-| |DEPTH/ELEVATION|Minimum Depth/Max Elevation(m)|
-| | |Maximum Depth/Min Elevation(m)|
-| | |Datum Type|
-| | |Datum Description/EPSG code|
-|ACCESS| |Restricted Access Record Designation|
+see: [template.xlsx](https://github.com/eamena-project/eamena-arches-dev/blob/main/dev/data_quality/template.xlsx)
 
-Create a GUI in <https://colab.research.google.com/>, or equivalent, to let a user request on a UUID (HP's uuid, or BU's uuid)
+1. Query an HP in Pg, for example [Apamea](http://52.50.27.140/report/dbc95d2d-38fb-465e-a6cb-0545eaa7584f) in the training instance:
+
+```SQL
+SELECT * FROM tiles 
+WHERE resourceinstanceid::text LIKE 'dbc95d2d-38fb-465e-a6cb-0545eaa7584f'
+```
+
+2. Create a GUI in <https://colab.research.google.com/>, or equivalent, to let a user request on a UUID (HP's uuid, or BU's uuid)
+
+#### Tests
+
+Work with the site 'Apamea' (`EAMENA-0500002` / `dbc95d2d-38fb-465e-a6cb-0545eaa7584f`)
+
+```SQL
+SELECT * FROM tiles 
+WHERE resourceinstanceid::text LIKE 'dbc95d2d-38fb-465e-a6cb-0545eaa7584f'
+```
 
 ~~https://github.com/eamena-project/eamena-arches-5-project/blob/master/eamena/statistics/hr_quality_rec.py~~

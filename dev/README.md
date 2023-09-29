@@ -2,6 +2,8 @@
 
 Scheduled IT developments for the EAMENA DB and miscellaneous. Test on [EA training instance](https://github.com/eamena-project/eamena-arches-dev/tree/main/dev#instance-ea)
 
+* [data quality](https://github.com/eamena-project/eamena-arches-dev/tree/main/dev/data_quality)
+
 ## Instance
 
 ### EA
@@ -178,28 +180,6 @@ Translate Ash's statistics https://mareastats.drashsmith.com/ from PHP to Python
     <em>EAMENA DB statistics</em>
 </p>
 
-### Data quality
 
-Check the completness of data. Python function to model the quality of HP with a radar diagram based on the groups appearing in the BU file (different levels of data agregation and summing):
-
-see: [template.xlsx](https://github.com/eamena-project/eamena-arches-dev/blob/main/dev/data_quality/template.xlsx)
-
-1. Query an HP in Pg, for example [Apamea](http://52.50.27.140/report/dbc95d2d-38fb-465e-a6cb-0545eaa7584f) in the training instance:
-
-```SQL
-SELECT * FROM tiles 
-WHERE resourceinstanceid::text LIKE 'dbc95d2d-38fb-465e-a6cb-0545eaa7584f'
-```
-
-2. Create a GUI in <https://colab.research.google.com/>, or equivalent, to let a user request on a UUID (HP's uuid, or BU's uuid)
-
-#### Tests
-
-Work with the site 'Apamea' (`EAMENA-0500002` / `dbc95d2d-38fb-465e-a6cb-0545eaa7584f`)
-
-```SQL
-SELECT * FROM tiles 
-WHERE resourceinstanceid::text LIKE 'dbc95d2d-38fb-465e-a6cb-0545eaa7584f'
-```
 
 ~~https://github.com/eamena-project/eamena-arches-5-project/blob/master/eamena/statistics/hr_quality_rec.py~~

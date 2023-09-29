@@ -78,6 +78,15 @@ AND tiledata -> '%s' IS NOT NULL
 res = cursor.execute(sqll)
 ```
 
+* Generalised (in Python) in a loop
+
+
+
 4. Create a GUI in <https://colab.research.google.com/>, or equivalent, to let a user request on a UUID (HP's uuid, or BU's uuid)
+
+## Other
+
+~~https://github.com/eamena-project/eamena-arches-5-project/blob/master/eamena/statistics/hr_quality_rec.py~~
+
 
 

@@ -63,7 +63,7 @@ WHERE valueid::text IN
 SELECT tiledata ->> '34cfea4d-c2c0-11ea-9026-02e7594ce0a0' AS DamageExtentType
 FROM tiles 
 WHERE resourceinstanceid::text LIKE 'dbc95d2d-38fb-465e-a6cb-0545eaa7584f'
-AND tiledata -> '34cfea4d-c2c0-11ea-9026-02e7594ce0a0 IS NOT NULL
+AND tiledata -> '34cfea4d-c2c0-11ea-9026-02e7594ce0a0' IS NOT NULL
 )
 ```
 

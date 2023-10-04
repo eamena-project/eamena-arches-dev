@@ -180,6 +180,3 @@ Translate Ash's statistics https://mareastats.drashsmith.com/ from PHP to Python
     <em>EAMENA DB statistics</em>
 </p>
 
-
-
-~~https://github.com/eamena-project/eamena-arches-5-project/blob/master/eamena/statistics/hr_quality_rec.py~~

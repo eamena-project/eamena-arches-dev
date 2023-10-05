@@ -2,16 +2,10 @@
 
 Automate the generation of bibliographic references for the EAMENA database and its various datasets
 
-## citation-generator
-
-`citation-generator` will be a function working with EAMENA resources (HP, IR, etc.), Search URL and bbibliographical references.
-
 |   	| input	|  output 	|
 |---	|---	|---	|
 | [Data entry](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bibref#data-entry) 		|  BU	|   Search URL	|
 | [Data output](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bibref#data-output)		|  Search URL 	|   Bibliographical references	|
-
-The `citation-generator` Python function will have an API (like the bulk-uploader) enabling users to access it directly.
 
 ### Data entry
 
@@ -26,7 +20,7 @@ flowchart LR
 		B -- OK --> H[email creation];
 		B -- OK --> C[(Postgres DB)];
 		end	
-	B -- OK --> E{{citation-generator}}:::eamenaFunc;
+	B -- OK --> E{{<a href='https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bibref#citation-generator'>citation-generator</a>}}:::eamenaFunc;
 		subgraph citation-generator
 		E
 		end
@@ -46,7 +40,7 @@ An user export data. He/she has to copy the URL (search URL) and paste the URL t
 flowchart LR
 	U[/user/] -- send --> A[<a href='https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/docs/notes/Arches%207%20Upgrade.md#splitchunk'>Search URL</a>];
 		subgraph EAMENA DB
-		A --Search URL--> G{{citation-generator}}:::eamenaFunc;
+		A --Search URL--> G{{<a href='https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bibref#citation-generator'>citation-generator</a>}}:::eamenaFunc;
 			subgraph citation-generator
 			G -- creates reference --> H[email creation];
 			end
@@ -58,6 +52,14 @@ flowchart LR
 	H -- send --> Z[/user/];
 	classDef eamenaFunc fill:#e3c071;
 ```
+
+## citation-generator
+
+`citation-generator` will be a Python function working with EAMENA resources (HP, IR, etc.), Search URL and bbibliographical references. The function will have an API (like the bulk-uploader) enabling users to access it directly.
+
+1. Collect `Investigator Name` from uploaded HPs
+	- retrieve HP identifiers from a BU (see: [get_hp_from_bu.ipynb](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bibref/doc/get_hp_from_bu.ipynb))
+	- collect `Investigator Name`
 
 #### `https://database.eamena.org/citations`
 

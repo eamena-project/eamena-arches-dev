@@ -6,6 +6,7 @@ The objective is to move the APAAME photographs archive stored on the [EAMENA NA
 
 ### IT stack
 
+|           |                   |
 |-----------|-------------------|
 | instance 	| ArcDAMS         	|
 | software 	| ResourceSpace   	|

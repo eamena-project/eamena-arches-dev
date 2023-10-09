@@ -34,7 +34,7 @@ APAAME Server is a QNAP NAS Server, hosting a customisation of ResourceSpace, a 
 - Is it possible to fetch image from ResourceSpace URL to use it into EAMENA (as a thumbnail)? See: https://groups.google.com/g/resourcespace/c/vAE77DCxWPo?pli=1
 - Is it possible to batch the add new Keywords after the transfer from EAMENA NAS to APAAME NAS? For example:
   - add the corresponding Information Resource (ex: `APAAME_20000906_RHB-0018.tif` is recorded in `INFORMATION-0052511.png`). See: https://docs.google.com/spreadsheets/d/1-shK3M3Pl5NANWWvGuSYTgjFNpJAyi-A6uf04a8WTkM/edit?usp=sharing
-  - add a licence ()
+  - add a licence (ex: CC BY-NC-ND)
 
 
 ## Flickr images

@@ -1,5 +1,7 @@
 # SQL snippets
 
+SQL queries to work with IR and APAAME resources
+
 ## 1
 
 Select images ressources from the IR `45ea21b3-5434-442e-98ab-a83851611128`

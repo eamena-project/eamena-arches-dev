@@ -1,7 +1,6 @@
 # APAAME archive
 > Aerial Photographic Archive for Archaeology in the Middle East archive
 
-
 ## APAAME Server
 
 The objective is to move the APAAME photographs archive stored on the [EAMENA NAS Server](https://eamena-nas1.arch.ox.ac.uk/cgi-bin/) to the [APAAME Server](https://apaame.arch.ox.ac.uk/).  .
@@ -98,7 +97,7 @@ flowchart LR
 ```
 
 The transfer process uses :
-  - a `Python script`, [apaame-metadata.py](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/apaame-metadata.py), with the libraries `exifread` (for EXIF) and `pyavm` (for XMP), to extract metadata from :
+  - a `Python script`, [apaame-metadata.ipynb](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/apaame-metadata.ipynb), with the libraries `exifread` (for EXIF) and `pyavm` (for XMP), to extract metadata from :
   - a [folder](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/photos) containing one or more photographs
   - and save the metadata of these photographs in a [CSV file](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame-photos/metadata.csv).
   

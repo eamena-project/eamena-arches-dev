@@ -1,13 +1,12 @@
-# Transfer of the APAAME archive to an ArcDAMS platform
-
-The objective is to move the APAAME photographs archive stored on the [EAMENA NAS Server](https://eamena-nas1.arch.ox.ac.uk/cgi-bin/) to the [APAAME Server](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/README.md#apaame-server).  
+# APAAME archive
 
 ## APAAME Server
 
-APAAME Server is a QNAP NAS Server, hosting an ArcDAMS application which is a customisation of : https://apaame.arch.ox.ac.uk/.
+The objective is to move the APAAME photographs archive stored on the [EAMENA NAS Server](https://eamena-nas1.arch.ox.ac.uk/cgi-bin/) to the [APAAME Server](https://apaame.arch.ox.ac.uk/). APAAME Server is a QNAP NAS Server, hosting an ArcDAMS application which is a customisation of : .
 
 ### IT stack
 
+|-----------|-------------------|
 | instance 	| ArcDAMS         	|
 | software 	| ResourceSpace   	|
 | hardware 	| QNAP NAS server 	|

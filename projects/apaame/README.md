@@ -16,12 +16,25 @@ APAAME Server is a QNAP NAS Server, hosting a customisation of ResourceSpace, a 
 | software 	| ResourceSpace   	|
 | hardware 	| QNAP NAS server 	|
 
+### Workflow
+
+* Examples
+
+| APAAME ID 	| description 	| notes 	| URL 	|
+|-----------	|-------------	|-------	|-----	|
+| APAAME_19970527_DLK-0190 	| Qasr el-Hallabat | reduced size	| https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/sample/APAAME_19970527_DLK-0190-small.tif  	|
+|           	|             	|       	|     	|
+
+
+
 
 ### Questions
 
 - How can we transfer from EAMENA NAS to APAAME NAS without downloading on a labtop?
 - Is it possible to fetch image from ResourceSpace URL to use it into EAMENA (as a thumbnail)? See: https://groups.google.com/g/resourcespace/c/vAE77DCxWPo?pli=1
-- Is it possible to batch the add new Keywords after the transfer from EAMENA NAS to APAAME NAS? For example, we would like to append the corresponding Information Resource (ex: `APAAME_20000906_RHB-0018.tif` is recorded in `INFORMATION-0052511.png`). See: https://docs.google.com/spreadsheets/d/1-shK3M3Pl5NANWWvGuSYTgjFNpJAyi-A6uf04a8WTkM/edit?usp=sharing
+- Is it possible to batch the add new Keywords after the transfer from EAMENA NAS to APAAME NAS? For example:
+  - add the corresponding Information Resource (ex: `APAAME_20000906_RHB-0018.tif` is recorded in `INFORMATION-0052511.png`). See: https://docs.google.com/spreadsheets/d/1-shK3M3Pl5NANWWvGuSYTgjFNpJAyi-A6uf04a8WTkM/edit?usp=sharing
+  - add a licence ()
 
 
 ## Flickr images

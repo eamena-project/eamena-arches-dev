@@ -1,10 +1,14 @@
 # APAAME archive
+> Aerial Photographic Archive for Archaeology in the Middle East archive
+
 
 ## APAAME Server
 
-The objective is to move the APAAME photographs archive stored on the [EAMENA NAS Server](https://eamena-nas1.arch.ox.ac.uk/cgi-bin/) to the [APAAME Server](https://apaame.arch.ox.ac.uk/). APAAME Server is a QNAP NAS Server, hosting an ArcDAMS application which is a customisation of : .
+The objective is to move the APAAME photographs archive stored on the [EAMENA NAS Server](https://eamena-nas1.arch.ox.ac.uk/cgi-bin/) to the [APAAME Server](https://apaame.arch.ox.ac.uk/).  .
 
 ### IT stack
+
+APAAME Server is a QNAP NAS Server, hosting a customisation of ResourceSpace, a Digital Asset Management (DAM) system, named ArcDAMS.
 
 |           |                   |
 |-----------|-------------------|

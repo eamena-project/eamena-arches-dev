@@ -19,10 +19,9 @@ APAAME Server is a QNAP NAS Server, hosting a customisation of ResourceSpace, a 
 
 * Examples
 
-| APAAME ID 	| description 	| notes 	| URL 	|
+| APAAME ID 	| description 	| notes 	| local URL 	| EAMENA record |
 |-----------	|-------------	|-------	|-----	|
-| APAAME_19970527_DLK-0190 	| Qasr el-Hallabat | reduced size	| https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/sample/APAAME_19970527_DLK-0190-small.tif  	|
-|           	|             	|       	|     	|
+| APAAME_19970527_DLK-0190 	| Qasr el-Hallabat | reduced size	| https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/sample/APAAME_19970527_DLK-0190-small.tif  	| INFORMATION-0005901 |
 
 
 

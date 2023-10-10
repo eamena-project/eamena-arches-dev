@@ -32,7 +32,6 @@ From a local hardrive with a copy of APAAME photgraph, to a labtop, to the new A
 
 🖴 ➡️ 💻➡️☁️
 
-This is the job for one person (student placement)?
 
 ### Questions
 

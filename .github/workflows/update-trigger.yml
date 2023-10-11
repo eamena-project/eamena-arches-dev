@@ -3,7 +3,7 @@ name: XLSX to TSV Conversion
 on:
   push:
     paths:
-      - 'dev/data_quality/template.xlsx'
+      - 'dev/data_quality/erms-template.xlsx'
 
 jobs:
   convert_to_tsv:
@@ -22,13 +22,13 @@ jobs:
 
       - name: Convert XLSX to TSV
         run: |
-          python dev/data_quality/convert_xlsx_to_tsv.py dev/data_quality/template.xlsx dev/data_quality/output.tsv
+          python dev/data_quality/convert_xlsx_to_tsv.py dev/data_quality/erms-template.xlsx dev/data_quality/erms-template-readonly.tsv
 
       - name: Commit and push TSV file
         run: |
           git config user.name "zoometh"
           git config user.email "thomashuet7@gmail.com"
-          git add dev/data_quality/output.tsv
+          git add dev/data_quality/erms-template-readonly.tsv
           git commit -m "Convert XLSX to TSV"
           git push
 

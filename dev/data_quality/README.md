@@ -17,7 +17,7 @@ Enhanced record minimum standard of heritage places
 
 
 <p align="center">
-  <img alt="img-name" src="../../www/audit-data-erms.png" width="500">
+  <img alt="img-name" src="../../www/audit-data-erms.png" width="800">
   <br>
     <em>A screenshot of the editable 'erms-template.xlsx'</em>
 </p>

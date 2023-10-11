@@ -1,3 +1,12 @@
+# Completness of data
+
+This part covers the data quality.
+
+## ERMS
+
+see the Jupyter document: [erms.ipynb](https://github.com/eamena-project/eamena-arches-dev/blob/main/dev/data_quality/erms.ipynb)
+
+## Other
 
 Check the completness of data. Python function to model the quality of HP with a radar diagram based on the groups appearing in the BU file (different levels of data agregation and summing):
 

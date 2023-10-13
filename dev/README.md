@@ -1,6 +1,6 @@
 # Dev
 
-Scheduled IT developments for the EAMENA DB and miscellaneous. Test on [EA training instance](https://github.com/eamena-project/eamena-arches-dev/tree/main/dev#instance-ea)
+Scheduled IT developments for the EAMENA DB and miscellaneous. Test on [EA training instance](https://github.com/eamena-project/eamena-arches-dev/tree/main/dev#instance-ea) or main database. All scripts will be moved to an another place once the dev part is acomplished.
 
 * [data quality](https://github.com/eamena-project/eamena-arches-dev/tree/main/dev/data_quality)
 
@@ -17,6 +17,9 @@ Host EA-training-instance
 ```
 
 ## Arches
+
+### Citation
+> cf. https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bibref
 
 ### Card permission
 

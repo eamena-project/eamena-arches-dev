@@ -1,7 +1,47 @@
-# "How-to-cite" EAMENA database and datasets
-> Automate the generation of bibliographic references for the EAMENA sub-datasets
+# citation-generator
+> "How-to-cite" EAMENA database and datasets
 
-An user provide a GeoJSON URL/Search URL ([example](https://github.com/eamena-project/eamenaR/blob/ed96039aa9e98697311b9bbdf5eaf3f6e0c36597/README.md#exported-files)) to the EAMENA plugin `citation-generator`
+Automate the generation of DOI and bibliographic references for the EAMENA sub-datasets 
+
+## Use
+
+An user provide a GeoJSON URL/Search URL ([example](https://github.com/eamena-project/eamenaR/blob/ed96039aa9e98697311b9bbdf5eaf3f6e0c36597/README.md#exported-files)) to the EAMENA plugin (ie [Arches plugin](https://arches.readthedocs.io/en/stable/developing/extending/extensions/plugins/)) `citation-generator` like the [Bulk-Uploader](https://database.eamena.org/plugins/bulk-upload) one.
+
+```mermaid
+flowchart LR
+	U[/user/] -- send --> A[<a href='https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/docs/notes/Arches%207%20Upgrade.md#splitchunk'>Search URL</a>];
+		subgraph EAMENA DB
+		A --Search URL--> G{{<a href='https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bibref#citation-generator'>citation-generator</a>}}:::eamenaFunc;
+			subgraph plugins
+			G
+			end
+		subgraph "Zenodo"
+		G -- creates a new deposit on<br>the EAMENA Zenodo account --> DOI
+		end
+	end
+	classDef eamenaFunc fill:#e3c071;
+```
+
+The core of the `citation-generator` function is currently hosted here: https://github.com/eamena-project/eamena-arches-dev/blob/main/dev/citations/citation-generator.ipynb
+
+### Zenodo
+
+
+
+#### Metadata
+
+`title`: Name for the dataset
+`description`: dataset description (mandatory). This field accepts HTML
+`upload_type`: 'dataset' (mandatory - always, for now)
+`keywords`: list of keywords, such as ['Low-Cost Sensors', 'Air Quality', 'Citizen Science']
+`creators`: dictionary containing the authors. Can contain the name, the affiliation and an orcid
+`access_right`: 'open' (other options in the zenodo documentation)
+`communities`: id for the zenodo data community
+`grants`: grant id
+
+
+### `https://database.eamena.org/citations`
+> work in progress
 
 ```mermaid
 flowchart LR
@@ -16,22 +56,12 @@ flowchart LR
 		G -- creates plain text files --> J[KEY1.ris <br> KEY1.bib <br> ...]
 		end
 		subgraph "Zenodo"
-		G -- creates a new deposit on the EAMENA Zenodo account --> DOI
+		G -- creates a new deposit on<br>the EAMENA Zenodo account --> DOI
 		end
 	end
 	H -- send --> Z[/user/];
 	classDef eamenaFunc fill:#e3c071;
 ```
-
-## citation-generator
-
-`citation-generator` will be an EAMENA plugin ([Arches plugin](https://arches.readthedocs.io/en/stable/developing/extending/extensions/plugins/)) like the [Bulk-Uploader](https://database.eamena.org/plugins/bulk-upload) one.
-
-###
-
-The function is currently hosted here: https://github.com/eamena-project/eamena-arches-dev/blob/main/dev/citations/citation-generator.ipynb
-
-### `https://database.eamena.org/citations`
 
 `https://database.eamena.org/citations` will be folder, or a website, hosted on EAMENA AWS, hosting a [List of citations](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bibref#list-of-citations) and several individual reference bibliographic files (.bib, .ris) 
 

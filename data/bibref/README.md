@@ -32,12 +32,17 @@ The core of the Python `citation-generator` function is currently hosted here: h
 
 * `title`: Name for the dataset
 * `description`: dataset description (mandatory). This field accepts HTML
-* `upload_type`: 'dataset' (mandatory - always, for now)
-* `keywords`: list of keywords, such as ['Low-Cost Sensors', 'Air Quality', 'Citizen Science']
-* `creators`: dictionary containing the authors. Can contain the name, the affiliation and an orcid
+* `upload_type`: 'dataset', 'poster', 'presentation', etc. (mandatory - always, for now)
+* `keywords`: list of keywords, such as `['Low-Cost Sensors', 'Air Quality', 'Citizen Science']`
+* `creators`: dictionary containing the authors. Can contain the name, the affiliation and an orcid, such as:
+	- ```'creators': [{'name': CREATORS_NAMES,
+                       'affiliation': CREATORS_AFFILIATION}]
+	  ```
 * `access_right`: 'open' (other options in the zenodo documentation)
 * `communities`: id for the zenodo data community
 * `grants`: grant id
+
+         
 
 
 ### `https://database.eamena.org/citations`

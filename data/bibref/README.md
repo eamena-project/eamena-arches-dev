@@ -1,52 +1,22 @@
 # "How-to-cite" EAMENA database and datasets
+> Automate the generation of bibliographic references for the EAMENA sub-datasets
 
-Automate the generation of bibliographic references for the EAMENA database and its various datasets
-
-|   	| input	|  output 	|
-|---	|---	|---	|
-| [Data entry](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bibref#data-entry) 		|  BU	|   Search URL	|
-| [Data output](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bibref#data-output)		|  Search URL 	|   Bibliographical references	|
-
-### Data entry
-
-An user uploads a BU to EAMENA. He will recieved an email with the URL (search URL) referencing his/her dataset
-
-```mermaid
-flowchart LR
-	U[/user/] -- send --> A[<a href='https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/docs/notes/Arches%207%20Upgrade.md#splitchunk'>BU</a>]
-	subgraph EAMENA DB
-		A ---> B{{bulk-uploader}}:::eamenaFunc;
-		subgraph bulk-uploader
-		B -- OK --> H[email creation];
-		B -- OK --> C[(Postgres DB)];
-		end	
-	B -- OK --> E{{<a href='https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bibref#citation-generator'>citation-generator</a>}}:::eamenaFunc;
-		subgraph citation-generator
-		E
-		end
-		E -- recreates Search URL --> H;
-	end
-	H -- send --> I[/user/];
-	B -- not OK --> D((STOP)):::stop;
-	classDef eamenaFunc fill:#e3c071;
-	classDef stop fill:#EE4B2B;
-```
-
-### Data output
-
-An user export data. He/she has to copy the URL (search URL) and paste the URL to the `citation-generator` API
+An user provide a GeoJSON URL/Search URL ([example](https://github.com/eamena-project/eamenaR/blob/ed96039aa9e98697311b9bbdf5eaf3f6e0c36597/README.md#exported-files)) to the EAMENA plugin `citation-generator`
 
 ```mermaid
 flowchart LR
 	U[/user/] -- send --> A[<a href='https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/docs/notes/Arches%207%20Upgrade.md#splitchunk'>Search URL</a>];
 		subgraph EAMENA DB
 		A --Search URL--> G{{<a href='https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bibref#citation-generator'>citation-generator</a>}}:::eamenaFunc;
-			subgraph citation-generator
+			subgraph plugins
 			G -- creates reference --> H[email creation];
 			end
 		subgraph "https://database.eamena.org/citations"
 		G -- update the List of citations --> I[List of citations.md]
 		G -- creates plain text files --> J[KEY1.ris <br> KEY1.bib <br> ...]
+		end
+		subgraph "Zenodo"
+		G -- creates a new deposit on the EAMENA Zenodo account --> DOI
 		end
 	end
 	H -- send --> Z[/user/];
@@ -55,13 +25,13 @@ flowchart LR
 
 ## citation-generator
 
-`citation-generator` will be a Python function working with EAMENA resources (HP, IR, etc.), Search URL and bbibliographical references. The function will have an API (like the bulk-uploader) enabling users to access it directly.
+`citation-generator` will be an EAMENA plugin ([Arches plugin](https://arches.readthedocs.io/en/stable/developing/extending/extensions/plugins/)) like the [Bulk-Uploader](https://database.eamena.org/plugins/bulk-upload) one.
 
-1. Collect `Investigator Name` from uploaded HPs
-	- retrieve HP identifiers from a BU (see: [get_hp_from_bu.ipynb](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bibref/doc/get_hp_from_bu.ipynb))
-	- collect `Investigator Name`
+###
 
-#### `https://database.eamena.org/citations`
+The function is currently hosted here: https://github.com/eamena-project/eamena-arches-dev/blob/main/dev/citations/citation-generator.ipynb
+
+### `https://database.eamena.org/citations`
 
 `https://database.eamena.org/citations` will be folder, or a website, hosted on EAMENA AWS, hosting a [List of citations](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bibref#list-of-citations) and several individual reference bibliographic files (.bib, .ris) 
 

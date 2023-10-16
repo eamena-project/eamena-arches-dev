@@ -9,9 +9,8 @@ An user provide a GeoJSON URL/Search URL ([example](https://github.com/eamena-pr
 
 ```mermaid
 flowchart LR
-	U[/user/] -- send --> A[<a href='https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/docs/notes/Arches%207%20Upgrade.md#splitchunk'>Search URL</a>];
+	U[/user/] -- Search URL --> G{{citation-generator}}:::eamenaFunc;
 		subgraph EAMENA DB
-		A --Search URL--> G{{<a href='https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bibref#citation-generator'>citation-generator</a>}}:::eamenaFunc;
 			subgraph plugins
 			G
 			end

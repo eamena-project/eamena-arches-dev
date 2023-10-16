@@ -22,7 +22,7 @@ flowchart LR
 	classDef eamenaFunc fill:#e3c071;
 ```
 
-The core of the `citation-generator` function is currently hosted here: https://github.com/eamena-project/eamena-arches-dev/blob/main/dev/citations/citation-generator.ipynb
+The core of the Python `citation-generator` function is currently hosted here: https://github.com/eamena-project/eamena-arches-dev/blob/main/dev/citations/citation-generator.ipynb
 
 ### Zenodo
 
@@ -30,14 +30,14 @@ The core of the `citation-generator` function is currently hosted here: https://
 
 #### Metadata
 
-`title`: Name for the dataset
-`description`: dataset description (mandatory). This field accepts HTML
-`upload_type`: 'dataset' (mandatory - always, for now)
-`keywords`: list of keywords, such as ['Low-Cost Sensors', 'Air Quality', 'Citizen Science']
-`creators`: dictionary containing the authors. Can contain the name, the affiliation and an orcid
-`access_right`: 'open' (other options in the zenodo documentation)
-`communities`: id for the zenodo data community
-`grants`: grant id
+* `title`: Name for the dataset
+* `description`: dataset description (mandatory). This field accepts HTML
+* `upload_type`: 'dataset' (mandatory - always, for now)
+* `keywords`: list of keywords, such as ['Low-Cost Sensors', 'Air Quality', 'Citizen Science']
+* `creators`: dictionary containing the authors. Can contain the name, the affiliation and an orcid
+* `access_right`: 'open' (other options in the zenodo documentation)
+* `communities`: id for the zenodo data community
+* `grants`: grant id
 
 
 ### `https://database.eamena.org/citations`

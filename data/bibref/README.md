@@ -13,6 +13,7 @@ flowchart LR
 		subgraph EAMENA DB
 			subgraph plugins
 			G
+			H{{bulk-uploader}}:::eamenaFunc;
 			end
 		subgraph "Zenodo"
 		G -- creates a new deposit on<br>the EAMENA Zenodo account --> DOI

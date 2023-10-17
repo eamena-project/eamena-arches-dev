@@ -20,9 +20,15 @@ instance type: see https://instances.vantage.sh/aws/ec2/t2.xlarge or https://aws
 	- 3 Yr Reserved: ...
 	- Spot: ...
 
+### Forecast
+
+* full costings of a prepaid, 3 Yr Reserved instance for a KAHD upgrade to Arches v7 using the same specs it currently has;
+* full costings of a prepaid, 3 Yr Reserved instance for a smaller Syrian instance;
 
 
-
+---
+links:
+* [Arches system requirements](https://arches.readthedocs.io/en/stable/installing/requirements-and-dependencies/#system-requirements)
 
 
 

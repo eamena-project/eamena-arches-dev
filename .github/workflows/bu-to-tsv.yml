@@ -3,7 +3,7 @@ name: XLSX to TSV Conversion for BU
 on:
   push:
     paths:
-      - 'data/bulk/templates/Bulk_Upload_template_221025.xlsx'
+      - 'data/bulk/templates/'
 
 jobs:
   convert_to_tsv:

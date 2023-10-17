@@ -9,11 +9,12 @@ import requests as rq
 import tempfile
 
 argp = argparse.ArgumentParser()
+argp.add_argument('FileIn', metavar='file_in', type=str, help='The BU template that will be exported in as many TSV files it has spreadsheets', default='Bulk_Upload_template_231017.xlsx')
 argp.add_argument('DirOut', metavar='dir_out', type=str, help='The folder path where to write the many TSV', default='')
 args = argp.parse_args()
 
 
-bu_url = "https://github.com/eamena-project/eamena-arches-dev/raw/main/data/bulk/templates/Bulk_Upload_template_221025.xlsx"
+bu_url = "https://github.com/eamena-project/eamena-arches-dev/raw/main/data/bulk/templates/" + args.FileIn
 bu_name = os.path.basename(bu_url)
 
 response = rq.get(bu_url)

@@ -9,23 +9,23 @@ An user provide a GeoJSON URL/Search URL ([example](https://github.com/eamena-pr
 
 ```mermaid
 flowchart LR
-	U[/user/] -- Search URL --> G{{citation-generator}}:::eamenaFunc;
-		subgraph EAMENA DB
-			subgraph plugins
-			G
-			H{{bulk-uploader}}:::eamenaFunc;
-			end
-		subgraph "Zenodo"
-		G -- creates a new deposit on<br>the EAMENA Zenodo account --> DOI
+	subgraph EAMENA DB
+		U[/user/] -- Search URL --> E[Export GeoJSON URL]
+		E -- paste URL --> G{{citation-generator}}:::eamenaFunc;
+		subgraph plugins
+		G
+		H{{bulk-uploader}}:::eamenaFunc;
 		end
+	subgraph "Zenodo"
+	G -- creates a new deposit on<br>the EAMENA Zenodo account --> DOI
 	end
-	classDef eamenaFunc fill:#e3c071;
+end
+classDef eamenaFunc fill:#e3c071;
 ```
 
 The core of the Python `citation-generator` function is currently hosted here: https://github.com/eamena-project/eamena-arches-dev/blob/main/dev/citations/citation-generator.ipynb
 
 ### Zenodo
-
 
 
 #### Metadata
@@ -39,6 +39,7 @@ The core of the Python `citation-generator` function is currently hosted here: h
 'creators': [{'name': CREATORS_NAMES,
 					'affiliation': CREATORS_AFFILIATION}]
 ```
+* `license`: 'cc-zero', ...
 * `access_right`: 'open' (other options in the zenodo documentation)
 * `communities`: id for the zenodo data community
 * `grants`: grant id
@@ -48,7 +49,7 @@ The core of the Python `citation-generator` function is currently hosted here: h
 
 
 ### `https://database.eamena.org/citations`
-> work in progress
+>⚠️ work in progress, please do not take into account
 
 ```mermaid
 flowchart LR

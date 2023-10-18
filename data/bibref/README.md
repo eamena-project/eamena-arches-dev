@@ -15,6 +15,7 @@ flowchart LR
 		subgraph plugins
 		G
 		H{{bulk-uploader}}:::eamenaFunc;
+		I{{...}}:::eamenaFunc;
 		end
 	subgraph "Zenodo"
 	G -- creates a new deposit on<br>the EAMENA Zenodo account --> DOI
@@ -25,7 +26,7 @@ classDef eamenaFunc fill:#e3c071;
 
 The core of the Python `citation-generator` function is currently hosted here: https://github.com/eamena-project/eamena-arches-dev/blob/main/dev/citations/citation-generator.ipynb
 
-### Zenodo
+## Zenodo
 
 
 #### Metadata
@@ -45,8 +46,6 @@ The core of the Python `citation-generator` function is currently hosted here: h
 * `grants`: grant id
 
 ---
----
-
 
 ### `https://database.eamena.org/citations`
 >⚠️ work in progress, please do not take into account

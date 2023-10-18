@@ -5,7 +5,7 @@ Automate the generation of DOI and bibliographic references for the EAMENA sub-d
 
 ## Use
 
-An user provide a GeoJSON URL/Search URL ([example](https://github.com/eamena-project/eamenaR/blob/ed96039aa9e98697311b9bbdf5eaf3f6e0c36597/README.md#exported-files)) to the EAMENA plugin (ie [Arches plugin](https://arches.readthedocs.io/en/stable/developing/extending/extensions/plugins/)) `citation-generator` like the [Bulk-Uploader](https://database.eamena.org/plugins/bulk-upload) one.
+An user provide a GeoJSON URL/Search URL ([example](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/sistan#dataset)) to the EAMENA plugin (ie [Arches plugin](https://arches.readthedocs.io/en/stable/developing/extending/extensions/plugins/)) `citation-generator`.
 
 ```mermaid
 flowchart LR
@@ -29,7 +29,7 @@ The core of the Python `citation-generator` function is currently hosted here: h
 ## Zenodo
 
 
-#### Metadata
+### Metadata
 
 * `title`: Name for the dataset
 * `description`: dataset description (mandatory). This field accepts HTML
@@ -47,7 +47,7 @@ The core of the Python `citation-generator` function is currently hosted here: h
 
 ---
 
-### `https://database.eamena.org/citations`
+## `https://database.eamena.org/citations`
 >⚠️ work in progress, please do not take into account
 
 ```mermaid

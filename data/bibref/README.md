@@ -12,7 +12,7 @@ flowchart LR
 	subgraph EAMENA DB
 		U[/user/] -- Search URL --> E[Export GeoJSON URL]
 		E -- paste URL --> G{{citation-generator}}:::eamenaFunc;
-		subgraph plugins
+		subgraph plugins LR
 		G
 		H{{bulk-uploader}}:::eamenaFunc;
 		I{{...}}:::eamenaFunc;

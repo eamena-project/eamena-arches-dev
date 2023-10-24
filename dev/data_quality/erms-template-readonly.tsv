@@ -1,18 +1,18 @@
-level1	level2	level3	uuid_sql	Enhanced record minimum standard	uuid_sql_old
-ASSESSMENT SUMMARY	ASSESSMENT ACTIVITY	Assessment Investigator - Actor	34cfea8a-c2c0-11ea-9026-02e7594ce0a0		34cfea8a-c2c0-11ea-9026-02e7594ce0a0
-ASSESSMENT SUMMARY	ASSESSMENT ACTIVITY	Investigator Role Type	d2e1ab96-cc05-11ea-a292-02e7594ce0a0	Yes	d2e1ab96-cc05-11ea-a292-02e7594ce0a0
-ASSESSMENT SUMMARY	ASSESSMENT ACTIVITY	Assessment Activity Type	34cfea4d-c2c0-11ea-9026-02e7594ce0a0		34cfea4d-c2c0-11ea-9026-02e7594ce0a0
-ASSESSMENT SUMMARY	ASSESSMENT ACTIVITY	Assessment Activity Date	34cfea81-c2c0-11ea-9026-02e7594ce0a0		34cfea81-c2c0-11ea-9026-02e7594ce0a0
-ASSESSMENT SUMMARY	ASSESSMENT ACTIVITY	GE Assessment(Yes/No)			bcd3a8ae-0404-11eb-a11c-0a5a9a4f6ef7
-ASSESSMENT SUMMARY	ASSESSMENT ACTIVITY	GE Imagery Acquisition Date	b9643302-0407-11eb-a11c-0a5a9a4f6ef7	Yes, if an acquisition date is available. If there are a range of images the earliest and most recent dates should be added.	b9643302-0407-11eb-a11c-0a5a9a4f6ef7
-ASSESSMENT SUMMARY	ASSESSMENT ACTIVITY	Information Resource Used			34cfea34-c2c0-11ea-9026-02e7594ce0a0
-ASSESSMENT SUMMARY	ASSESSMENT ACTIVITY	Information Resource Acquisition Date	a5eb59b4-0406-11eb-a11c-0a5a9a4f6ef7		a5eb59b4-0406-11eb-a11c-0a5a9a4f6ef7
-RESOURCE SUMMARY	RESOURCE NAME	Resource Name	34cfe9dd-c2c0-11ea-9026-02e7594ce0a0	No (a site identified via remote sensing may not have an identifiable name, and the EAMENA Database will automatically generate a UiD).	34cfe9dd-c2c0-11ea-9026-02e7594ce0a0
-RESOURCE SUMMARY	RESOURCE NAME	Name Type	34cfea97-c2c0-11ea-9026-02e7594ce0a0	No 	34cfea97-c2c0-11ea-9026-02e7594ce0a0
-RESOURCE SUMMARY	RESOURCE SUMMARY	Heritage Place Type	34cfe9ef-c2c0-11ea-9026-02e7594ce0a0	No	34cfe9ef-c2c0-11ea-9026-02e7594ce0a0
+level1	level2	level3	uuid_sql	Enhanced record minimum standard	notes
+ASSESSMENT SUMMARY	ASSESSMENT ACTIVITY	Assessment Investigator - Actor	34cfea8a-c2c0-11ea-9026-02e7594ce0a0		
+ASSESSMENT SUMMARY	ASSESSMENT ACTIVITY	Investigator Role Type	d2e1ab96-cc05-11ea-a292-02e7594ce0a0	Yes	
+ASSESSMENT SUMMARY	ASSESSMENT ACTIVITY	Assessment Activity Type	34cfea4d-c2c0-11ea-9026-02e7594ce0a0		
+ASSESSMENT SUMMARY	ASSESSMENT ACTIVITY	Assessment Activity Date	34cfea81-c2c0-11ea-9026-02e7594ce0a0		
+ASSESSMENT SUMMARY	ASSESSMENT ACTIVITY	GE Assessment(Yes/No)			
+ASSESSMENT SUMMARY	ASSESSMENT ACTIVITY	GE Imagery Acquisition Date	b9643302-0407-11eb-a11c-0a5a9a4f6ef7	Yes, if an acquisition date is available. If there are a range of images the earliest and most recent dates should be added.	
+ASSESSMENT SUMMARY	ASSESSMENT ACTIVITY	Information Resource Used			
+ASSESSMENT SUMMARY	ASSESSMENT ACTIVITY	Information Resource Acquisition Date	a5eb59b4-0406-11eb-a11c-0a5a9a4f6ef7		
+RESOURCE SUMMARY	RESOURCE NAME	Resource Name	34cfe9dd-c2c0-11ea-9026-02e7594ce0a0	No (a site identified via remote sensing may not have an identifiable name, and the EAMENA Database will automatically generate a UiD).	
+RESOURCE SUMMARY	RESOURCE NAME	Name Type	34cfea97-c2c0-11ea-9026-02e7594ce0a0	No 	
+RESOURCE SUMMARY	RESOURCE SUMMARY	Heritage Place Type	34cfe9ef-c2c0-11ea-9026-02e7594ce0a0	No	
 RESOURCE SUMMARY	RESOURCE DESCRIPTION	General Description Type	34cfea91-c2c0-11ea-9026-02e7594ce0a0	No	
 RESOURCE SUMMARY	RESOURCE DESCRIPTION	General Description	34cfea77-c2c0-11ea-9026-02e7594ce0a0	No	
-RESOURCE SUMMARY	HERITAGE RESOURCE CLASSIFICATION	Heritage Place Function	34cfea4a-c2c0-11ea-9026-02e7594ce0a0	Yes (including â€˜Unknownâ€™)	
+RESOURCE SUMMARY	HERITAGE RESOURCE CLASSIFICATION	Heritage Place Function	34cfea4a-c2c0-11ea-9026-02e7594ce0a0	Yes (including ‘Unknown’)	
 RESOURCE SUMMARY	HERITAGE RESOURCE CLASSIFICATION	Heritage Place Function Certainty		Yes  	
 RESOURCE SUMMARY	DESIGNATION	Designation	d9abdfdb-c6a3-11ea-a292-02e7594ce0a0	No	
 RESOURCE SUMMARY	DESIGNATION	Designation From Date	d9abdfe0-c6a3-11ea-a292-02e7594ce0a0	No	
@@ -45,7 +45,7 @@ ARCHAEOLOGICAL ASSESSMENT	ABSOLUTE CHRONOLOGY	AH Date From	41afc438-c5fb-11ea-90
 ARCHAEOLOGICAL ASSESSMENT	ABSOLUTE CHRONOLOGY	AH Date To	5435f2ee-c5fb-11ea-9026-02e7594ce0a0		
 ARCHAEOLOGICAL ASSESSMENT	ABSOLUTE CHRONOLOGY	SH Date From	086e756c-cb86-11ea-a292-02e7594ce0a0		
 ARCHAEOLOGICAL ASSESSMENT	ABSOLUTE CHRONOLOGY	SH Date To			
-ARCHAEOLOGICAL ASSESSMENT	SITE FEATURES and INTERPRETATIONS	Site Feature Form Type	34cfea9a-c2c0-11ea-9026-02e7594ce0a0	No, unless there is no Site Feature Interpretation Type (eg. If the interpretation field is listed â€˜Unknownâ€™ then the Feature field should be filled in)  	
+ARCHAEOLOGICAL ASSESSMENT	SITE FEATURES and INTERPRETATIONS	Site Feature Form Type	34cfea9a-c2c0-11ea-9026-02e7594ce0a0	No, unless there is no Site Feature Interpretation Type (eg. If the interpretation field is listed ‘Unknown’ then the Feature field should be filled in)  	
 ARCHAEOLOGICAL ASSESSMENT	SITE FEATURES and INTERPRETATIONS	Site Feature Form Type Certainty	34cfea59-c2c0-11ea-9026-02e7594ce0a0		
 ARCHAEOLOGICAL ASSESSMENT	SITE FEATURES and INTERPRETATIONS	Site Feature Shape Type	34cfea19-c2c0-11ea-9026-02e7594ce0a0	No	
 ARCHAEOLOGICAL ASSESSMENT	SITE FEATURES and INTERPRETATIONS	Site Feature Arrangement Type	34cfe9e9-c2c0-11ea-9026-02e7594ce0a0	No	
@@ -63,8 +63,8 @@ ARCHAEOLOGICAL ASSESSMENT	Measurements	Measurement Unit	34cfea60-c2c0-11ea-9026-
 ARCHAEOLOGICAL ASSESSMENT	Measurements	Dimension Type	34cfea86-c2c0-11ea-9026-02e7594ce0a0		
 ARCHAEOLOGICAL ASSESSMENT	Measurements	Measurement Source Type			
 ARCHAEOLOGICAL ASSESSMENT	ARCHAEOLOGICAL ASSESSMENT	Related Geoarch/Palaeo		No	
-CONDITION ASSESSMENT	CONDITION ASSESSMENT	Overall Condition State		Yes 	34cfe9f5-c2c0-11ea-9026-02e7594ce0a0
-CONDITION ASSESSMENT	CONDITION ASSESSMENT	Damage Extent Type	34cfea8e-c2c0-11ea-9026-02e7594ce0a0	No	34cfea8e-c2c0-11ea-9026-02e7594ce0a0
+CONDITION ASSESSMENT	CONDITION ASSESSMENT	Overall Condition State		Yes 	
+CONDITION ASSESSMENT	CONDITION ASSESSMENT	Damage Extent Type	34cfea8e-c2c0-11ea-9026-02e7594ce0a0	No	
 CONDITION ASSESSMENT	DISTURBANCES	Disturbance Cause Category Type	34cfea68-c2c0-11ea-9026-02e7594ce0a0	Yes 	
 CONDITION ASSESSMENT	DISTURBANCES	Disturbance Cause Type		Yes 	
 CONDITION ASSESSMENT	DISTURBANCES	Disturbance Cause Certainty		Yes 	
@@ -72,11 +72,11 @@ CONDITION ASSESSMENT	DISTURBANCES	Disturbance Date From	e3cc8c5c-c772-11ea-a292-
 CONDITION ASSESSMENT	DISTURBANCES	Disturbance Date To	34cfea65-c2c0-11ea-9026-02e7594ce0a0		
 CONDITION ASSESSMENT	DISTURBANCES	Disturbance Date Occurred Before			
 CONDITION ASSESSMENT	DISTURBANCES	Disturbance Date Occurred On	34cfea92-c2c0-11ea-9026-02e7594ce0a0		
-CONDITION ASSESSMENT	DISTURBANCES	Disturbance Cause Assignment Assessor Name	e3cc8c5a-c772-11ea-a292-02e7594ce0a0	No	
+CONDITION ASSESSMENT	DISTURBANCES	Disturbance Cause Assignment Assessor Name - Actor	e3cc8c5a-c772-11ea-a292-02e7594ce0a0	No	Disturbance Cause Assignment Assessor Name
 CONDITION ASSESSMENT	DISTURBANCES	Effect Type		No	
 CONDITION ASSESSMENT	DISTURBANCES	Effect Certainty		No	
 CONDITION ASSESSMENT	THREATS	Threat Category	34cfea90-c2c0-11ea-9026-02e7594ce0a0	Yes (including 'No Visible/Known')	
-CONDITION ASSESSMENT	THREATS	Threat Type	34cfea5c-c2c0-11ea-9026-02e7594ce0a0	Yes	
+CONDITION ASSESSMENT	THREATS	Threat Cause Type	34cfea5c-c2c0-11ea-9026-02e7594ce0a0	Yes	Threat Type
 CONDITION ASSESSMENT	THREATS	Threat Probability	34cfea76-c2c0-11ea-9026-02e7594ce0a0		
 CONDITION ASSESSMENT	THREATS	Threat Inference Making Assessor Name			
 CONDITION ASSESSMENT	RECOMMENDATION PLAN	Intervention Activity Type			

@@ -33,11 +33,13 @@ flowchart LR
     direction LR
     idf1[erms]
   end
-  ea -- GeoJSON URL --> idf1
+  ea -- [<a href='query#url'>GeoJSON URL/a>] --> idf1
   ea --- id5[<a href='https://github.com/eamena-project/eamenaR'>eamenaR</a>];
   ea --- internationalisation
   ea <--- install
 ```
+
+
 
 ## Contribute to the EAMENA database
 

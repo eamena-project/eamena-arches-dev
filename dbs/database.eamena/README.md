@@ -31,7 +31,15 @@ flowchart LR
   end
   subgraph eamena-functions
     direction LR
-    idf1[<a href='https://github.com/eamena-project/eamena-functions/tree/main/erms'>erms</a>]
+    subgraph functions
+      idf1[<a href='https://github.com/eamena-project/eamena-functions/tree/main/erms'>erms.py</a>]
+    end
+    subgraph Jupyter NB
+      idf2[<a href='https://github.com/eamena-project/eamena-functions/tree/main/erms'>erms.ipynb</a>] -- read --> idf1
+    end
+  end
+  subgraph Google Colab
+    idg1[erms.ipynb] -- is mirrored --> idf2
   end
   ea -- <a href='query#url'>GeoJSON URL</a> --> idf1
   ea --- id5[<a href='https://github.com/eamena-project/eamenaR'>eamenaR</a>];

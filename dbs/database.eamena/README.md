@@ -31,7 +31,7 @@ flowchart LR
   end
   subgraph eamena-functions
     direction LR
-    idf1[erms]
+    idf1[<a href='https://github.com/eamena-project/eamena-functions/tree/main/erms'>erms</a>]
   end
   ea -- <a href='query#url'>GeoJSON URL</a> --> idf1
   ea --- id5[<a href='https://github.com/eamena-project/eamenaR'>eamenaR</a>];

@@ -6,7 +6,7 @@
 flowchart LR
   subgraph Arches v7
     subgraph EAMENA DB
-    ea[(Eamena v4)]
+    ea[(Eamena v4)] -- GeoJSON URL --> idf1[erms]
     end
     subgraph internationalisation
       id6[<a href='https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/internationalisation'>ar</a>];
@@ -29,6 +29,11 @@ flowchart LR
       id9B ---> ea;
     end
   end
+  subgraph eamena-functions
+    direction LR
+    idf1
+  end
+
   ea --- id5[<a href='https://github.com/eamena-project/eamenaR'>eamenaR</a>];
   ea --- internationalisation
   ea <--- install

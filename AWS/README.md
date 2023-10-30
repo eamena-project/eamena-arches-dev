@@ -20,6 +20,9 @@ instance type: see https://instances.vantage.sh/aws/ec2/t2.xlarge or https://aws
 	- 3 Yr Reserved: ...
 	- Spot: ...
 
+* t4g.xlarge:
+
+
 ### Forecast
 
 * full costings of a prepaid, 3 Yr Reserved instance for a KAHD upgrade to Arches v7 using the same specs it currently has;

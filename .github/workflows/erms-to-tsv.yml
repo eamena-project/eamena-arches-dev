@@ -1,4 +1,4 @@
-name: XLSX to TSV Conversion
+name: XLSX to TSV Conversion ERMS
 
 on:
   push:

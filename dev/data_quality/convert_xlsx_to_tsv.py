@@ -4,11 +4,11 @@ import os
 
 print(os.getcwd())
 
-# xlsx_filename = 'dev/data_quality/erms-template.xlsx'
-# tsv_filename = 'dev/data_quality/erms-template-readonly.tsv'
+xlsx_filename = 'dev/data_quality/erms-template.xlsx'
+tsv_filename = 'dev/data_quality/erms-template-readonly.tsv'
 
-xlsx_filename = 'erms-template.xlsx'
-tsv_filename = 'erms-template-readonly.tsv'
+# xlsx_filename = 'erms-template.xlsx'
+# tsv_filename = 'erms-template-readonly.tsv'
 
 wb = openpyxl.load_workbook(xlsx_filename)
 sheet = wb.active

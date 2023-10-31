@@ -29,6 +29,6 @@ jobs:
           git config user.name "zoometh"
           git config user.email "thomashuet7@gmail.com"
           git add dev/data_quality/erms-template-readonly.tsv
-          git commit -m "Convert XLSX to TSV"
+          git commit -m "Convert XLSX to TSV ERMS"
           git push
 

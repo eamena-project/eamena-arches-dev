@@ -249,7 +249,7 @@ Each disturbance in a condition assessment must have an effect type and an effec
  * 48 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
 
- * 48 	No effect type or certainty.
+ * 48 	No effect type or certainty.  
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
 
  * 48 	Invalid concept value 'Human movement/Trampling'

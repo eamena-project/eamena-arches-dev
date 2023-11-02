@@ -1,14 +1,32 @@
-# Data
+# Features
 
-## Features
+[Heritage Places](#heritage-places), [Grids](#grids), Built components, etc.
 
-[Heritage Places](https://github.com/eamena-project/eamena-arches-dev/tree/main/data#heritage-places), [Grids](https://github.com/eamena-project/eamena-arches-dev/tree/main/data#grids), Built components, etc.
+## Heritage Places
 
-### Heritage Places
+### ERMS
+> Completness of data
 
-#### Minimum Enhanced Data Standards
+Enhanced record minimum standard of Heritage Places
 
-Heritage Places minimum enhanced data standards are listed in a worksheet of the last [Bulk Upload template file](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bulk#template-file) version. See its export: [bu_Minimum Enhanced Data Standards.tsv](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bulk/templates/doc/bu_Minimum%20Enhanced%20Data%20Standards.tsv)[^1]
+#### Files
+
+* [erms-template-readonly.tsv](https://github.com/eamena-project/eamena-arches-dev/blob/main/dev/data_quality/erms-template-readonly.tsv):
+	- a read-ony TSV file with the list of HP fields with their UUID and a "Yes" mark if these fields belong to the ERMS. This files results from the automatic export of [erms-template.xlsx](https://github.com/eamena-project/eamena-arches-dev/blob/main/dev/data_quality/erms-template.xlsx), it will be overwrite each time 'erms-template.xlsx' is updated.
+* [erms-template.xlsx](https://github.com/eamena-project/eamena-arches-dev/blob/main/dev/data_quality/erms-template.xlsx):
+	- an editable XLSX file with the list of HP fields with their UUID and a "Yes" mark if these fields belong to the ERMS. This file is considered to be the authorative document for ERMS.
+* [erms.ipynb](https://github.com/eamena-project/eamena-arches-dev/blob/main/dev/data_quality/erms.ipynb):
+	- a Jupyter/Python document to run ERMS assessement
+* [convert_xlsx_to_tsv.py](https://github.com/eamena-project/eamena-arches-dev/blob/main/dev/data_quality/convert_xlsx_to_tsv.py):
+	- a Python simple script to convert 'erms-template.xlsx' into 'erms-template-readonly.tsv'. This script is run automatically, in a GitHub action with [update-trigger.yml](https://github.com/eamena-project/eamena-arches-dev/blob/main/.github/workflows/update-trigger.yml), each time 'erms-template.xlsx' is updated.
+
+
+<p align="center">
+  <img alt="img-name" src="../../www/audit-data-erms.png" width="1000">
+  <br>
+    <em>A screenshot of the editable 'erms-template.xlsx'</em>
+</p>
+
 
 #### Bulk
 
@@ -21,6 +39,4 @@ Heritage Places minimum enhanced data standards are listed in a worksheet of the
 
 [Spatial](https://github.com/eamena-project/eamena-arches-dev/tree/main/spatial)
 
-
-[^1]: after running [split_bu_template.py](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bulk#individual-reference-sheets) on the latest version of the BU template 
 

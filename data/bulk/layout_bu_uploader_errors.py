@@ -278,6 +278,8 @@ Did you mean 'Human Movement/Trampling'?
 # Use regular expressions to add line breaks before integers
 formatted_text = re.sub(r'(\d+)', r'\n * \1 ', text)
 
+# print(formatted_text)
+
 file_path = os.getcwd() + "\\data\\bulk\\bu_validation_error_message.md"
 
 # Open the file in write mode and write the formatted text to it

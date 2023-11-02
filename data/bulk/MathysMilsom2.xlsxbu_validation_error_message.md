@@ -1,289 +1,406 @@
-import os
-import re
-from datetime import datetime 
 
 
-# paste here the validation error message
-text = """
-0	No effect type or certainty.
+ * 0 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-0	No effect type or certainty.
+
+ * 0 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-1	No effect type or certainty.
+
+ * 1 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-1	No effect type or certainty.
+
+ * 1 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-2	No effect type or certainty.
+
+ * 2 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-3	No effect type or certainty.
+
+ * 3 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-3	No effect type or certainty.
+
+ * 3 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-4	No effect type or certainty.
+
+ * 4 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-4	Invalid concept value 'probable'
+
+ * 4 	Invalid concept value 'probable'
 Did you mean 'Probable'?
-4	Invalid concept value 'probable'
+
+ * 4 	Invalid concept value 'probable'
 Did you mean 'Probable'?
-5	No effect type or certainty.
+
+ * 5 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-5	No effect type or certainty.
+
+ * 5 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-5	No effect type or certainty.
+
+ * 5 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-5	No effect type or certainty.
+
+ * 5 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-5	No effect type or certainty.
+
+ * 5 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-5	Invalid concept value 'possible'
+
+ * 5 	Invalid concept value 'possible'
 Did you mean 'Possible'?
-5	Invalid concept value 'possible'
+
+ * 5 	Invalid concept value 'possible'
 Did you mean 'Possible'?
-5	Invalid concept value 'Human movement/Trampling'
+
+ * 5 	Invalid concept value 'Human movement/Trampling'
 Did you mean 'Human Movement/Trampling'?
-6	No effect type or certainty.
+
+ * 6 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-6	No effect type or certainty.
+
+ * 6 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-6	No effect type or certainty.
+
+ * 6 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-7	No effect type or certainty.
+
+ * 7 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-7	No effect type or certainty.
+
+ * 7 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-8	No effect type or certainty.
+
+ * 8 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-8	No effect type or certainty.
+
+ * 8 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-9	No effect type or certainty.
+
+ * 9 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-10	No effect type or certainty.
+
+ * 10 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-10	No effect type or certainty.
+
+ * 10 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-11	No effect type or certainty.
+
+ * 11 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-11	No effect type or certainty.
+
+ * 11 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-12	No effect type or certainty.
+
+ * 12 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-12	No effect type or certainty.
+
+ * 12 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-12	No effect type or certainty.
+
+ * 12 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-13	No effect type or certainty.
+
+ * 13 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-14	No effect type or certainty.
+
+ * 14 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-15	No effect type or certainty.
+
+ * 15 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-15	No effect type or certainty.
+
+ * 15 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-16	No effect type or certainty.
+
+ * 16 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-17	No effect type or certainty.
+
+ * 17 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-18	No effect type or certainty.
+
+ * 18 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-19	No effect type or certainty.
+
+ * 19 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-20	No effect type or certainty.
+
+ * 20 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-21	No effect type or certainty.
+
+ * 21 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-22	No effect type or certainty.
+
+ * 22 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-22	No effect type or certainty.
+
+ * 22 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-22	No effect type or certainty.
+
+ * 22 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-23	No effect type or certainty.
+
+ * 23 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-24	No effect type or certainty.
+
+ * 24 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-25	No effect type or certainty.
+
+ * 25 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-26	No effect type or certainty.
+
+ * 26 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-27	Invalid concept value "Linear" for "Site Feature Shape Type".
+
+ * 27 	Invalid concept value "Linear" for "Site Feature Shape Type".
 Valid values: 'Curvilinear', 'Sub-circular', 'Sub-rectangular', 'Unknown', 'Circular', 'Semi-circular', 'Straight', 'Irregular', 'Multiple', 'Polygonal', 'Zigzag', 'Triangular', 'Rectangular/Square', 'Rectilinear', 'Winding'.
-27	Invalid concept value "Rectangular" for "Site Feature Shape Type".
+
+ * 27 	Invalid concept value "Rectangular" for "Site Feature Shape Type".
 Valid values: 'Curvilinear', 'Sub-circular', 'Sub-rectangular', 'Unknown', 'Circular', 'Semi-circular', 'Straight', 'Irregular', 'Multiple', 'Polygonal', 'Zigzag', 'Triangular', 'Rectangular/Square', 'Rectilinear', 'Winding'.
-27	No effect type or certainty.
+
+ * 27 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-27	No effect type or certainty.
+
+ * 27 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-28	No effect type or certainty.
+
+ * 28 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-29	No effect type or certainty.
+
+ * 29 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-30	No effect type or certainty.
+
+ * 30 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-31	No effect type or certainty.
+
+ * 31 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-33	No effect type or certainty.
+
+ * 33 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-34	No effect type or certainty.
+
+ * 34 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-35	Missing Location Certainty
+
+ * 35 	Missing Location Certainty
 Record cannot have a geometry without a location certainty.
-36	Missing Location Certainty
+
+ * 36 	Missing Location Certainty
 Record cannot have a geometry without a location certainty.
-37	Missing Location Certainty
+
+ * 37 	Missing Location Certainty
 Record cannot have a geometry without a location certainty.
-38	Missing Location Certainty
+
+ * 38 	Missing Location Certainty
 Record cannot have a geometry without a location certainty.
-39	Missing Location Certainty
+
+ * 39 	Missing Location Certainty
 Record cannot have a geometry without a location certainty.
-40	No effect type or certainty.
+
+ * 40 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-41	No effect type or certainty.
+
+ * 41 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-42	Missing Location Certainty
+
+ * 42 	Missing Location Certainty
 Record cannot have a geometry without a location certainty.
-43	No effect type or certainty.
+
+ * 43 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-44	No effect type or certainty.
+
+ * 44 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-44	No effect type or certainty.
+
+ * 44 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-44	Invalid concept value 'Recession of water'
+
+ * 44 	Invalid concept value 'Recession of water'
 Did you mean 'Recession of Water'?
-45	No effect type or certainty.
+
+ * 45 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-45	No effect type or certainty.
+
+ * 45 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-45	No effect type or certainty.
+
+ * 45 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-46	No effect type or certainty.
+
+ * 46 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-46	No effect type or certainty.
+
+ * 46 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-47	No effect type or certainty.
+
+ * 47 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-47	No effect type or certainty.
+
+ * 47 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-48	No effect type or certainty.
+
+ * 48 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-48	No effect type or certainty.
+
+ * 48 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-48	No effect type or certainty.
+
+ * 48 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-48	No effect type or certainty.
+
+ * 48 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-48	No effect type or certainty.
+
+ * 48 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-48	Invalid concept value 'Human movement/Trampling'
+
+ * 48 	Invalid concept value 'Human movement/Trampling'
 Did you mean 'Human Movement/Trampling'?
-49	No effect type or certainty.
+
+ * 49 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-50	No effect type or certainty.
+
+ * 50 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-51	No effect type or certainty.
+
+ * 51 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-52	No effect type or certainty.
+
+ * 52 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-53	Missing Location Certainty
+
+ * 53 	Missing Location Certainty
 Record cannot have a geometry without a location certainty.
-54	Missing Location Certainty
+
+ * 54 	Missing Location Certainty
 Record cannot have a geometry without a location certainty.
-55	No effect type or certainty.
+
+ * 55 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-55	No effect type or certainty.
+
+ * 55 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-55	No effect type or certainty.
+
+ * 55 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-55	No effect type or certainty.
+
+ * 55 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-55	No effect type or certainty.
+
+ * 55 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-56	No effect type or certainty.
+
+ * 56 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-57	No effect type or certainty.
+
+ * 57 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-57	No effect type or certainty.
+
+ * 57 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-57	No effect type or certainty.
+
+ * 57 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-58	No effect type or certainty.
+
+ * 58 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-58	No effect type or certainty.
+
+ * 58 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-59	No effect type or certainty.
+
+ * 59 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-59	No effect type or certainty.
+
+ * 59 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-60	No effect type or certainty.
+
+ * 60 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-60	No effect type or certainty.
+
+ * 60 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-60	No effect type or certainty.
+
+ * 60 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-60	No effect type or certainty.
+
+ * 60 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-60	No effect type or certainty.
+
+ * 60 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-60	Invalid concept value 'Human movement/Trampling'
+
+ * 60 	Invalid concept value 'Human movement/Trampling'
 Did you mean 'Human Movement/Trampling'?
-61	No effect type or certainty.
+
+ * 61 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-61	No effect type or certainty.
+
+ * 61 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-61	No effect type or certainty.
+
+ * 61 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-62	No effect type or certainty.
+
+ * 62 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-62	No effect type or certainty.
+
+ * 62 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-63	No effect type or certainty.
+
+ * 63 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-63	No effect type or certainty.
+
+ * 63 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-63	No effect type or certainty.
+
+ * 63 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-64	No effect type or certainty.
+
+ * 64 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-64	No effect type or certainty.
+
+ * 64 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-65	No effect type or certainty.
+
+ * 65 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-65	No effect type or certainty.
+
+ * 65 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-65	No effect type or certainty.
+
+ * 65 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-65	No effect type or certainty.
+
+ * 65 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-66	No effect type or certainty.
+
+ * 66 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-66	No effect type or certainty.
+
+ * 66 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-67	No effect type or certainty.
+
+ * 67 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-67	No effect type or certainty.
+
+ * 67 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-68	No effect type or certainty.
+
+ * 68 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-69	No effect type or certainty.
+
+ * 69 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-69	No effect type or certainty.
+
+ * 69 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-69	No effect type or certainty.
+
+ * 69 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-70	No effect type or certainty.
+
+ * 70 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-70	No effect type or certainty.
+
+ * 70 	No effect type or certainty.
 Each disturbance in a condition assessment must have an effect type and an effect certainty. These can be Unknown and Not Applicable respectively, but may not be left blank.
-70	Invalid concept value 'Human movement/Trampling'
+
+ * 70 	Invalid concept value 'Human movement/Trampling'
 Did you mean 'Human Movement/Trampling'?
-"""
-
-# Use regular expressions to add line breaks before integers
-formatted_text = re.sub(r'(\d+)', r'\n * \1 ', text)
-
-# print(formatted_text)
-
-title = "MathysMilsom2"
-current_date = datetime.now().strftime("%y-%m-%d")
-file_path = os.getcwd() + "\\data\\bulk\\errors\\" + current_date + "_" + title + "bu_validation_error_message.md"
-with open(file_path, "w") as file:
-    file.write(formatted_text)

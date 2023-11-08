@@ -2,6 +2,14 @@
 
 - ![#BD0026](https://placehold.co/15x15/BD0026/BD0026.png) `#BD0026`
 
+![#808080](https://placehold.co/15x15/808080/808080.png) `#808080`
+![#BD0026](https://placehold.co/15x15/BD0026/BD0026.png) `#BD0026`
+![#F03B20](https://placehold.co/15x15/F03B20/F03B20.png) `#F03B20`
+![#FD8D3C](https://placehold.co/15x15/FD8D3C/FD8D3C.png) `#FD8D3C`
+![#FECC5C](https://placehold.co/15x15/FECC5C/FECC5C.png) `#FECC5C`
+![#FFFFB2](https://placehold.co/15x15/FFFFB2/FFFFB2.png) `#FFFFB2`
+![#808080](https://placehold.co/15x15/808080/808080.png) `#808080`
+
 
 ## Arches
 

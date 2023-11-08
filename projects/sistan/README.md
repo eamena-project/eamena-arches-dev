@@ -1,6 +1,6 @@
 # Sistan
 
-- ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) `#f03c15`
+- ![#BD0026](https://placehold.co/15x15/BD0026/BD0026.png) `#BD0026`
 
 
 ## Arches

@@ -1,12 +1,15 @@
 # Sistan
 
-- ![#808080](https://placehold.co/15x15/808080/808080.png) `No Visible/Known`
-- ![#BD0026](https://placehold.co/15x15/BD0026/BD0026.png) `1-10%`
-- ![#F03B20](https://placehold.co/15x15/F03B20/F03B20.png) `11-30%`
-- ![#FD8D3C](https://placehold.co/15x15/FD8D3C/FD8D3C.png) `31-60%`
-- ![#FECC5C](https://placehold.co/15x15/FECC5C/FECC5C.png) `61-90%`
-- ![#FFFFB2](https://placehold.co/15x15/FFFFB2/FFFFB2.png) `91-100%`
-- ![#808080](https://placehold.co/15x15/808080/808080.png) `Unknown`
+- ![#BD0026](https://placehold.co/15x15/BD0026/BD0026.png)`Damage Extent Type` - `1-10%`
+- ![#F03B20](https://placehold.co/15x15/F03B20/F03B20.png)`Damage Extent Type` - `11-30%`
+- ![#FD8D3C](https://placehold.co/15x15/FD8D3C/FD8D3C.png)`Damage Extent Type` - `31-60%`
+- ![#FECC5C](https://placehold.co/15x15/FECC5C/FECC5C.png)`Damage Extent Type` - `61-90%`
+- ![#FFFFB2](https://placehold.co/15x15/FFFFB2/FFFFB2.png)`Damage Extent Type` - `91-100%`
+- ![#808080](https://placehold.co/15x15/808080/808080.png)`Damage Extent Type` - `Unknown`
+- ![#808080](https://placehold.co/15x15/808080/808080.png)`Damage Extent Type` - `No Visible/Known`
+
+
+
 
 
 

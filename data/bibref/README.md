@@ -28,19 +28,19 @@ The core of the Python `citation-generator` function is currently hosted here: h
 
 ## Zenodo
 
-OAI-PMH compliant: <https://zenodo.org/oai2d>
+[OAI-PMH compliant](https://developers.zenodo.org/#oai-pmh)
 
 ### Proposed metadata
 
 * `title`: *free text*. Name for the dataset (mandatory).
 * `description`: *free text*. Dataset description (mandatory).
-* `upload_type`: 'dataset' (always)
+* `upload_type`: `'dataset'` (always)
 * `creators` (always):
  ```
 'creators': [{'name': "EAMENA database",
 			  'affiliation': "University of Oxford, University of Southampton"}]
 ```
-* `contributors` (for example):
+* `contributors` (example):
  ```
 'contributors': [{'name': "Thomas, Huet",
 			  	  'affiliation': "University of Oxford",
@@ -49,24 +49,22 @@ OAI-PMH compliant: <https://zenodo.org/oai2d>
 			  	  'affiliation': "University of Southampton",
 				  'orcid': 0000-0001-5312-1189}]
 ```
-* `license`: 'cc-by' (always)
+* `license`: `'cc-by'` (always)
 * `dates`: creation dates
 ```
 'dates': [{'type': 'created', 'start': '2021-08-01', 'end': '2022-05-01'}],
 ```
-* `grants`: Arcadia fund, nun 4178 (always)
+* `grants`: (always, = Arcadia fund, nun 4178)
 ```
 'grants': [{'id': '051z6e826::4178'}],
 ```
-* `keywords`: *free text* + `['EAMENA']`
+* `keywords`: *free text* + `'EAMENA', MaREA`
 
 
 #### others or by default
 
 * `access_right`: 'open' (other options in the [documentation](https://help.zenodo.org/docs/about/whats-changed/#deposit-access))
 
-
-![](https://sandbox.zenodo.org/badge/doi/10.5072%2Fzenodo.10004658.svg)
 
 ---
 

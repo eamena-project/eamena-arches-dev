@@ -11,7 +11,7 @@ An user provide a GeoJSON URL/Search URL ([example](https://github.com/eamena-pr
 flowchart LR
 	subgraph EAMENA DB
 		U[/user/] -- Search URL --> E[Export GeoJSON URL]
-		E -- paste URL --> G{{citation-generator}}:::eamenaFunc;
+		E ---> G{{citation-generator}}:::eamenaFunc;
 		subgraph plugins
 		G
 		H{{bulk-uploader}}:::eamenaFunc;
@@ -19,6 +19,7 @@ flowchart LR
 		end
 	subgraph "Zenodo"
 	G -- creates a new deposit on<br>the EAMENA Zenodo account --> DOI
+	DOI -- return --> badge[![](https://sandbox.zenodo.org/badge/doi/10.5072%2Fzenodo.10004658.svg)]
 	end
 end
 classDef eamenaFunc fill:#e3c071;

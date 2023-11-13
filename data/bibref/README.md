@@ -19,7 +19,6 @@ flowchart LR
 		end
 	subgraph "Zenodo"
 	G -- creates a new deposit on<br>the EAMENA Zenodo account --> DOI
-	DOI -- return --> badge("<img src='https://sandbox.zenodo.org/badge/doi/10.5072%2Fzenodo.10004658.svg'; width='30' />")
 	end
 end
 classDef eamenaFunc fill:#e3c071;
@@ -29,22 +28,43 @@ The core of the Python `citation-generator` function is currently hosted here: h
 
 ## Zenodo
 
+OAI-PMH compliant: <https://zenodo.org/oai2d>
 
-### Metadata
+### Proposed metadata
 
-* `title`: Name for the dataset
-* `description`: dataset description (mandatory). This field accepts HTML
-* `upload_type`: 'dataset', 'poster', 'presentation', etc. (mandatory - always, for now)
-* `keywords`: list of keywords, such as `['Low-Cost Sensors', 'Air Quality', 'Citizen Science']`
-* `creators`: dictionary containing the authors. Can contain the name, the affiliation and an orcid, such as:
+* `title`: *free text*. Name for the dataset (mandatory).
+* `description`: *free text*. Dataset description (mandatory).
+* `upload_type`: 'dataset' (always)
+* `creators` (always):
  ```
-'creators': [{'name': CREATORS_NAMES,
-					'affiliation': CREATORS_AFFILIATION}]
+'creators': [{'name': "EAMENA database",
+			  'affiliation': "University of Oxford, University of Southampton"}]
 ```
-* `license`: 'cc-zero', ...
-* `access_right`: 'open' (other options in the zenodo documentation)
-* `communities`: id for the zenodo data community
-* `grants`: grant id
+* `contributors` (for example):
+ ```
+'contributors': [{'name': "Thomas, Huet",
+			  	  'affiliation': "University of Oxford",
+				  'orcid': 0000-0002-1112-6122},
+				  {'name': "Ash, Smith",
+			  	  'affiliation': "University of Southampton",
+				  'orcid': 0000-0001-5312-1189}]
+```
+* `license`: 'cc-by' (always)
+* `dates`: creation dates
+```
+'dates': [{'type': 'created', 'start': '2021-08-01', 'end': '2022-05-01'}],
+```
+* `grants`: Arcadia fund, nun 4178 (always)
+```
+'grants': [{'id': '051z6e826::4178'}],
+```
+* `keywords`: *free text* + `['EAMENA']`
+
+
+#### others or by default
+
+* `access_right`: 'open' (other options in the [documentation](https://help.zenodo.org/docs/about/whats-changed/#deposit-access))
+
 
 ![](https://sandbox.zenodo.org/badge/doi/10.5072%2Fzenodo.10004658.svg)
 

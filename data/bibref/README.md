@@ -19,7 +19,7 @@ flowchart LR
 		end
 	subgraph "Zenodo"
 	G -- creates a new deposit on<br>the EAMENA Zenodo account --> DOI
-	DOI -- return --> badge[![](https://sandbox.zenodo.org/badge/doi/10.5072%2Fzenodo.10004658.svg)]
+	DOI -- return --> badge("<img src='https://sandbox.zenodo.org/badge/doi/10.5072%2Fzenodo.10004658.svg'; width='30' />")
 	end
 end
 classDef eamenaFunc fill:#e3c071;

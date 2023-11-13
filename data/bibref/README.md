@@ -45,6 +45,8 @@ The core of the Python `citation-generator` function is currently hosted here: h
 * `communities`: id for the zenodo data community
 * `grants`: grant id
 
+![](https://sandbox.zenodo.org/badge/doi/10.5072%2Fzenodo.10004658.svg)
+
 ---
 
 ## `https://database.eamena.org/citations`

@@ -27,7 +27,7 @@ It means that fields, and field and field values (`level1`) can be aggregated an
 * [mds.ipynb](https://github.com/eamena-project/eamena-arches-dev/blob/main/dev/data_quality/mds.ipynb):
 	- a Jupyter/Python document to run mds assessement
 * [convert_xlsx_to_tsv.py](https://github.com/eamena-project/eamena-arches-dev/blob/main/dev/data_quality/convert_xlsx_to_tsv.py):
-	- a Python simple script to convert 'mds-template.xlsx' into 'mds-template-readonly.tsv'. This script is run automatically, in a GitHub action with [update-trigger.yml](https://github.com/eamena-project/eamena-arches-dev/blob/main/.github/workflows/update-trigger.yml), each time 'mds-template.xlsx' is updated.
+	- a Python simple script to convert 'mds-template.xlsx' into 'mds-template-readonly.tsv'. This script is run automatically, in a GitHub action with [mds-to-tsv.yml](https://github.com/eamena-project/eamena-arches-dev/blob/main/.github/workflows/mds-to-tsv.yml), each time 'mds-template.xlsx' is updated.
 
 
 <p align="center">

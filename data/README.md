@@ -15,7 +15,7 @@ Data Minimum Standards (MDS) of Heritage Places
 
 * [mds-template-readonly.tsv](https://github.com/eamena-project/eamena-arches-dev/blob/main/dev/data_quality/mds-template-readonly.tsv):
 	- a read-ony TSV file with the list of HP fields with their UUID and a "Yes" mark if these fields belong to the mds. This files results from the automatic export of [mds-template.xlsx](https://github.com/eamena-project/eamena-arches-dev/blob/main/dev/data_quality/mds-template.xlsx), it will be overwrite each time 'mds-template.xlsx' is updated.
-* mds-template.xlsx](https://github.com/eamena-project/eamena-arches-dev/blob/main/dev/data_quality/mds-template.xlsx):
+* [mds-template.xlsx](https://github.com/eamena-project/eamena-arches-dev/blob/main/dev/data_quality/mds-template.xlsx):
 	- an editable XLSX file with the list of HP fields with their UUID and a "Yes" mark if these fields belong to the mds. This file is considered to be the authorative document for mds.
 
 **Level of aggregation**

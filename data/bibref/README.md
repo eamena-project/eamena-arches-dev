@@ -41,22 +41,28 @@ These metadata values have to be entered manually (ie, can not be deduced from t
 
 These metadata values are always the same (constant):
 
-* `upload_type`: `'dataset'` (constant)
-* `creators` (constant):
+* `upload_type`: `'dataset'`
+* `creators`:
  ```
 'creators': [{'name': "EAMENA database",
 			  'affiliation': "University of Oxford, University of Southampton"}]
 ```
-* `license`: `'cc-by'` (constant)
-* `grants`: (constant)[^4]
+* `license`: `'cc-by'`
+* `grants`: this is the ID of 'Arcadia fund, num 4178'
 ```
 'grants': [{'id': '051z6e826::4178'}]
 ```
+* `subjects`:
+```
+[{"term": "Cultural property", "identifier": "https://id.loc.gov/authorities/subjects/sh97000183.html", "scheme": "url"}]
+```
+* `method`: `EAMENA data entry methodology`
+
 
 ##### implicit
 > By default on a Zenodo upload
 
-* `access_right`: `open` (constant)
+* `access_right`: `open`
 
 
 #### Calculated values
@@ -75,10 +81,18 @@ These metadata values:
 				  {'name': "Ash, Smith",
 			  	  "type": "DataCollector"}]
 ```
-* `dates`: creation dates (calculated, example)[^2]
+* `dates`: creation dates (mixed), a list
+with this constant keys/values:
 ```
-'dates': [{'type': 'created', 'start': '2021-08-01', 'end': '2022-05-01'}]
+'dates': {'type': 'Collected', 'description': 'Data creation and curation'}
 ```
+with this calculated keys/values (example)[^2]:
+```
+'dates': {'start': '2021-08-01', 'end': '2022-05-01'}
+```
+result (example):
+'dates': [{'start': '2021-08-01', 'end': '2022-05-01', 'type': 'Collected', 'description': 'Data creation and curation'}]
+
 * `related_identifiers`:  (mixed) 
 
 with this constant (constant)[^3]:
@@ -89,21 +103,30 @@ and this calculated value (calculated, example)[^5]:
 ```
 [{'relation': 'isContinuedBy', 'identifier':'a_previously_published_dataset'}] 
 ```
+result (example):
+[
+	{'relation': 'isDescribedBy', 'identifier':'https://zenodo.org/doi/10.5281/zenodo.10142706'}, 
+	{'relation': 'isContinuedBy', 'identifier':'a_previously_published_dataset'}
+] 
 * `keywords`: (mixed)
 `'EAMENA', MaREA` + locations ("Country Type"[^1]) + periods ("Cultural Period Type[^1]")
 
 
 ## TODO
-
+> Optional?
 
 | Zenodo field | Description |
 |------|-------------|
 | `contributors` | add keys `affiliation`, `orcid` |
+| `references` | add list of references, for ex: `["Doe J (2014). Title. Publisher. DOI", "Smith J (2014). Title. Publisher. DOI"]` |
+| `communities` | maybe Arches-based projects |
+| `locations` | mproblem, only accept point positions (not MBR)|
+
+
 
 
 [^2]: the min and max of the EAMENA field "Assessment Activity Date"
 [^1]: All unique values from this EAMENA field. For example in a given GeoJSON export, the EAMENA field "Country Type" gathers these values: "Iran (Islamic Republic of)", "Afghanistan", "Islamic (Iran)"
 [^3]: constant: `isDescribedBy`: `https://zenodo.org/doi/10.5281/zenodo.10142706` refers to the Zenodo GitHub release of the refrence data (resource models, etc.), see: https://zenodo.org/doi/10.5281/zenodo.10142706
-[^4]: this is the ID of 'Arcadia fund, num 4178'
 [^5]: calculated: `isContinuedBy` : the DOI of already published datasets. Assuming that all dataset will be stored on Zenodo, we can use the Zenodo API to collect DOI of already published datasets, see: https://developers.zenodo.org/#oai-pmh
 [^6]: `name` is calculated, `type` is constant (`DataCollector`)

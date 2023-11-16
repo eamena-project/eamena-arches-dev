@@ -45,6 +45,8 @@ These values have to be entered manually (ie, can not be deduced from the GeoJSO
 
 #### Calculted from the GeoJSON data
 
+These values are always the same or can be deduced from the GeoJSON data
+
 * `upload_type`: `'dataset'` (always)
 * `creators` (always):
  ```

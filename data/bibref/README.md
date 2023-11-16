@@ -31,12 +31,11 @@ The core of the Python `citation-generator` function is currently hosted here: h
 
 ## Zenodo
 
-[OAI-PMH compliant](https://developers.zenodo.org/#oai-pmh)
 
 ### Metadata
 > proposed metadata
 
-Metadata of published dataset could be: free text, [constant values](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bibref/README.md#constant-values), calculated values
+Metadata of published dataset could be: [free text](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bibref/README.md#free-text), [constant values](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bibref/README.md#constant-values), [calculated values](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bibref/README.md#calculated-values)
 
 #### Free text
 
@@ -113,5 +112,5 @@ and this calculated value (calculated, example)[^5]:
 [^1]: All unique values from this EAMENA field. For example in a given GeoJSON export, the EAMENA field "Country Type" gathers these values: "Iran (Islamic Republic of)", "Afghanistan", "Islamic (Iran)"
 [^3]: constant: `isDescribedBy`: `https://zenodo.org/doi/10.5281/zenodo.10142706` is the Zenodo GitHub release of the refrence data (resource models, etc.) and calculated: `isContinuedBy` : the DOI of already published datasets
 [^4]: this is the ID of 'Arcadia fund, num 4178'
-[^5]: assuming that all dataset will be stored on Zenodo, we can use the Zenodo API to collect DOI of already published datasets
+[^5]: assuming that all dataset will be stored on Zenodo, we can use the Zenodo API to collect DOI of already published datasets, see: https://developers.zenodo.org/#oai-pmh
 [^6]: `name` is calculated, `type` is constant (`DataCollector`)

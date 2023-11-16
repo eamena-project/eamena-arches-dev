@@ -36,6 +36,8 @@ The core of the Python `citation-generator` function is currently hosted here: h
 ### Metadata
 > proposed metadata
 
+Metadata of published dataset could be: free text, [constant values](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bibref/README.md#constant-values), calculated values
+
 #### Free text
 
 These values have to be entered manually (ie, can not be deduced from the GeoJSON data)
@@ -65,22 +67,23 @@ These metadata values are always the same (constant):
 * `access_right`: `open` (constant)
 
 
-#### Calculated from the GeoJSON data
+#### Calculated values
+> Calculated from the GeoJSON data
 
 These metadata values:
 
 2. are calculated (variable) from the GeoJSON data using [zenodo.py](https://github.com/eamena-project/eamena-functions/blob/main/zenodo/zenodo.py), OR 
-3. change, based of previous published dataset (variable), OR
-4. are mixed (mixed): partly constant (constant), partly variable (variable) 
+3. change, based of previous published dataset (calculated), OR
+4. are mixed (mixed): partly constant (constant), partly calculated (calculated) 
 
-* `contributors` (variable, example)[^6]:
+* `contributors` (calculated, example)[^6]:
  ```
 'contributors': [{'name': "Thomas, Huet",
 				  "type": "DataCollector"},
 				  {'name': "Ash, Smith",
 			  	  "type": "DataCollector"}]
 ```
-* `dates`: creation dates (variable, example)[^2]
+* `dates`: creation dates (calculated, example)[^2]
 ```
 'dates': [{'type': 'created', 'start': '2021-08-01', 'end': '2022-05-01'}]
 ```
@@ -90,7 +93,7 @@ with this constant (constant):
 ```
 [{'relation': 'isDescribedBy', 'identifier':'https://zenodo.org/doi/10.5281/zenodo.10142706'}] 
 ```
-and this variable (variable, example)[^5]:
+and this calculated value (calculated, example)[^5]:
 ```
 [{'relation': 'isContinuedBy', 'identifier':'a_previously_published_dataset'}] 
 ```
@@ -108,7 +111,7 @@ and this variable (variable, example)[^5]:
 
 [^2]: the min and max of the EAMENA field "Assessment Activity Date"
 [^1]: All unique values from this EAMENA field. For example in a given GeoJSON export, the EAMENA field "Country Type" gathers these values: "Iran (Islamic Republic of)", "Afghanistan", "Islamic (Iran)"
-[^3]: constant: `isDescribedBy`: `https://zenodo.org/doi/10.5281/zenodo.10142706` is the Zenodo GitHub release of the refrence data (resource models, etc.) and variable: `isContinuedBy` : the DOI of already published datasets
+[^3]: constant: `isDescribedBy`: `https://zenodo.org/doi/10.5281/zenodo.10142706` is the Zenodo GitHub release of the refrence data (resource models, etc.) and calculated: `isContinuedBy` : the DOI of already published datasets
 [^4]: this is the ID of 'Arcadia fund, num 4178'
 [^5]: assuming that all dataset will be stored on Zenodo, we can use the Zenodo API to collect DOI of already published datasets
-[^6]: `name` is variable, `type` is constant (`DataCollector`)
+[^6]: `name` is calculated, `type` is constant (`DataCollector`)

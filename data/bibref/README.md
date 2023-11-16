@@ -62,7 +62,7 @@ These metadata values are always the same (constant):
 ##### implicit
 > By default on a Zenodo upload
 
-* `access_right`: 'open' (constant)
+* `access_right`: `open` (constant)
 
 
 #### Calculated from the GeoJSON data

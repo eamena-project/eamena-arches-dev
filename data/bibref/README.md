@@ -2,8 +2,9 @@
 > "How-to-cite" EAMENA database and datasets, Automate the generation of DOI and bibliographic references for the EAMENA sub-datasets 
 
 Working with a GeoJSON URL only 
-
+  
 ![](https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/geojson-export.png)
+  
 
 ## Use
 

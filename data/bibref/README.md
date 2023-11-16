@@ -33,7 +33,7 @@ The core of the Python `citation-generator` function is currently hosted here: h
 
 
 ### Metadata
-> proposed metadata
+> proposed metadata schema/layout
 
 Metadata of published dataset could be: [free text](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bibref/README.md#free-text), [constant values](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bibref/README.md#constant-values), [calculated values](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bibref/README.md#calculated-values)
 

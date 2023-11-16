@@ -6,16 +6,16 @@ Working with a GeoJSON URL only
 ![](https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/geojson-export.png)
   
 
-## Use
+## Workflow
 
-An user provide a GeoJSON URL/Search URL ([example](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/sistan#dataset)) to the EAMENA plugin (ie [Arches plugin](https://arches.readthedocs.io/en/stable/developing/extending/extensions/plugins/)) `citation-generator`.
+An user provide a GeoJSON URL/Search URL ([example](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/sistan#dataset)).
 
 ```mermaid
 flowchart LR
 	subgraph EAMENA DB
 		U[/user/] -- Search URL --> E[Export GeoJSON URL]
 		E ---> G{{citation-generator}}:::eamenaFunc;
-		subgraph plugins
+		subgraph plugins or functions
 		G
 		H{{bulk-uploader}}:::eamenaFunc;
 		I{{...}}:::eamenaFunc;

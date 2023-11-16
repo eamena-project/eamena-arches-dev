@@ -41,6 +41,7 @@ These metadata values have to be entered manually (ie, can not be deduced from t
 
 These metadata values are always the same (constant):
 
+* `'communities'`: `[{'identifier': 'eamena'}]`,
 * `upload_type`: `'dataset'`
 * `creators`:
  ```
@@ -104,10 +105,12 @@ and this calculated value (calculated, example)[^5]:
 [{'relation': 'isContinuedBy', 'identifier':'a_previously_published_dataset'}] 
 ```
 result (example):
+```
 [
 	{'relation': 'isDescribedBy', 'identifier':'https://zenodo.org/doi/10.5281/zenodo.10142706'}, 
 	{'relation': 'isContinuedBy', 'identifier':'a_previously_published_dataset'}
 ] 
+```
 * `keywords`: (mixed)
 `'EAMENA', MaREA` + locations ("Country Type"[^1]) + periods ("Cultural Period Type[^1]")
 

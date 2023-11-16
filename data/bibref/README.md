@@ -79,9 +79,9 @@ These metadata values:
 ```
 'dates': [{'type': 'created', 'start': '2021-08-01', 'end': '2022-05-01'}]
 ```
-* `related_identifiers`:  (mixed)[^3]  
+* `related_identifiers`:  (mixed) 
 
-with this constant (constant):
+with this constant (constant)[^3]:
 ```
 [{'relation': 'isDescribedBy', 'identifier':'https://zenodo.org/doi/10.5281/zenodo.10142706'}] 
 ```
@@ -103,7 +103,7 @@ and this calculated value (calculated, example)[^5]:
 
 [^2]: the min and max of the EAMENA field "Assessment Activity Date"
 [^1]: All unique values from this EAMENA field. For example in a given GeoJSON export, the EAMENA field "Country Type" gathers these values: "Iran (Islamic Republic of)", "Afghanistan", "Islamic (Iran)"
-[^3]: constant: `isDescribedBy`: `https://zenodo.org/doi/10.5281/zenodo.10142706` is the Zenodo GitHub release of the refrence data (resource models, etc.) and calculated: `isContinuedBy` : the DOI of already published datasets
+[^3]: constant: `isDescribedBy`: `https://zenodo.org/doi/10.5281/zenodo.10142706` refers to the Zenodo GitHub release of the refrence data (resource models, etc.), see: https://zenodo.org/doi/10.5281/zenodo.10142706
 [^4]: this is the ID of 'Arcadia fund, num 4178'
-[^5]: assuming that all dataset will be stored on Zenodo, we can use the Zenodo API to collect DOI of already published datasets, see: https://developers.zenodo.org/#oai-pmh
+[^5]: calculated: `isContinuedBy` : the DOI of already published datasets. Assuming that all dataset will be stored on Zenodo, we can use the Zenodo API to collect DOI of already published datasets, see: https://developers.zenodo.org/#oai-pmh
 [^6]: `name` is calculated, `type` is constant (`DataCollector`)

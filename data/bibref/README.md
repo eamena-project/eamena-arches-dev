@@ -85,12 +85,11 @@ These metadata values:
 'dates': [{'type': 'created', 'start': '2021-08-01', 'end': '2022-05-01'}]
 ```
 * `related_identifiers`:  (mixed)[^3]
-	- with this constant (constant):
+with this constant (constant):
 ```
 [{'relation': 'isDescribedBy', 'identifier':'https://zenodo.org/doi/10.5281/zenodo.10142706'}] 
 ```
-	- and this variable (variable, example)[^5]:
-
+and this variable (variable, example)[^5]:
 ```
 [{'relation': 'isContinuedBy', 'identifier':'a_previously_published_dataset'}] 
 ```

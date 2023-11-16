@@ -1,14 +1,14 @@
 # citation-generator
 > "How-to-cite" EAMENA database and datasets, Automate the generation of DOI and bibliographic references for the EAMENA sub-datasets 
 
-Working with a GeoJSON URL only 
+Working with a GeoJSON URL only to create GeoJSON data
   
 ![](https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/geojson-export.png)
   
 
 ## Workflow
 
-An user provide a GeoJSON URL/Search URL ([example](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/sistan#dataset)).
+An user provide a GeoJSON URL ([example](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/sistan#dataset)).
 
 ```mermaid
 flowchart LR
@@ -38,10 +38,12 @@ The core of the Python `citation-generator` function is currently hosted here: h
 
 #### Free text
 
+These values have to be entered manually (ie, can not be deduced from the GeoJSON data)
+
 * `title`: *free text*. Name for the dataset (mandatory).
 * `description`: *free text*. Dataset description (mandatory).
 
-#### Calculted from the GeoJSON file
+#### Calculted from the GeoJSON data
 
 * `upload_type`: `'dataset'` (always)
 * `creators` (always):

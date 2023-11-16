@@ -64,9 +64,9 @@ These metadata values are always the same (constant):
 
 These metadata values:
 
-2. are calculated (variable) from the GeoJSON data using [zenodo.py](https://github.com/eamena-project/eamena-functions/blob/main/zenodo/zenodo.py), OR 
-3. change, based of previous published dataset (calculated), OR
-4. are mixed (mixed): partly constant (constant), partly calculated (calculated) 
+1. are calculated (variable) from the GeoJSON data using [zenodo.py](https://github.com/eamena-project/eamena-functions/blob/main/zenodo/zenodo.py), OR 
+2. change, based of previous published dataset (calculated), OR
+3. are mixed (mixed): partly constant (constant), partly calculated (calculated) 
 
 * `contributors` (calculated, example)[^6]:
  ```

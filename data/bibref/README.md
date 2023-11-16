@@ -43,14 +43,9 @@ These values have to be entered manually (ie, can not be deduced from the GeoJSO
 * `title`: *free text*. Name for the dataset (mandatory).
 * `description`: *free text*. Dataset description (mandatory).
 
-#### Calculted from the GeoJSON data
+#### Constant values
 
-These metadata values:
-
-1. are always the same (constant), OR 
-2. are calculated (variable) from the GeoJSON data using [zenodo.py](https://github.com/eamena-project/eamena-functions/blob/main/zenodo/zenodo.py), OR 
-3. change, based of previous published dataset (variable), OR
-4. are mixed (mixed): partly constant (constant), partly variable (variable) 
+These metadata values are always the same (constant):
 
 * `upload_type`: `'dataset'` (constant)
 * `creators` (constant):
@@ -58,6 +53,26 @@ These metadata values:
 'creators': [{'name': "EAMENA database",
 			  'affiliation': "University of Oxford, University of Southampton"}]
 ```
+* `license`: `'cc-by'` (constant)
+* `grants`: (constant)[^4]
+```
+'grants': [{'id': '051z6e826::4178'}]
+```
+
+##### implicit
+> By default on a Zenodo upload
+
+* `access_right`: 'open' (constant)
+
+
+#### Calculated from the GeoJSON data
+
+These metadata values:
+
+2. are calculated (variable) from the GeoJSON data using [zenodo.py](https://github.com/eamena-project/eamena-functions/blob/main/zenodo/zenodo.py), OR 
+3. change, based of previous published dataset (variable), OR
+4. are mixed (mixed): partly constant (constant), partly variable (variable) 
+
 * `contributors` (variable, example):
  ```
 'contributors': [{'name': "Thomas, Huet",
@@ -65,14 +80,9 @@ These metadata values:
 				  {'name': "Ash, Smith",
 			  	  "type": "DataCollector"}]
 ```
-* `license`: `'cc-by'` (constant)
 * `dates`: creation dates (variable, example)[^2]
 ```
-'dates': [{'type': 'created', 'start': '2021-08-01', 'end': '2022-05-01'}],
-```
-* `grants`: (constant)[^4]
-```
-'grants': [{'id': '051z6e826::4178'}],
+'dates': [{'type': 'created', 'start': '2021-08-01', 'end': '2022-05-01'}]
 ```
 * `related_identifiers`:  (mixed)[^3], with this constant (constant):
 ```
@@ -84,11 +94,6 @@ and this variable (variable, example):
 ```
 * `keywords`: (mixed)
 `'EAMENA', MaREA` + locations ("Country Type"[^1]) + periods ("Cultural Period Type[^1]")
-
-
-#### others or by default
-
-* `access_right`: 'open' (other options in the [documentation](https://help.zenodo.org/docs/about/whats-changed/#deposit-access))
 
 
 ## TODO

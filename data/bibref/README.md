@@ -1,14 +1,7 @@
 # citation-generator
 > "How-to-cite" EAMENA database and datasets, Automate the generation of DOI and bibliographic references for the EAMENA sub-datasets 
 
-Working with a GeoJSON URL only to create GeoJSON data
-  
-![](https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/geojson-export.png)
-  
-
-## Workflow
-
-An user provide a GeoJSON URL ([example](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/sistan#dataset)).
+Working with a GeoJSON URL only to create GeoJSON data, the user provide a GeoJSON URL ([example](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/sistan#dataset), [tutorial](https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/geojson-export.png)).
 
 ```mermaid
 flowchart LR

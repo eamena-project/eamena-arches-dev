@@ -1,7 +1,9 @@
 # citation-generator
-> "How-to-cite" EAMENA database and datasets
+> "How-to-cite" EAMENA database and datasets, Automate the generation of DOI and bibliographic references for the EAMENA sub-datasets 
 
-Automate the generation of DOI and bibliographic references for the EAMENA sub-datasets 
+Working with a GeoJSON URL only 
+
+![](https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/geojson-export.png)
 
 ## Use
 
@@ -30,10 +32,16 @@ The core of the Python `citation-generator` function is currently hosted here: h
 
 [OAI-PMH compliant](https://developers.zenodo.org/#oai-pmh)
 
-### Proposed metadata
+### Metadata
+> proposed metadata
+
+#### Free text
 
 * `title`: *free text*. Name for the dataset (mandatory).
 * `description`: *free text*. Dataset description (mandatory).
+
+#### Calculted from the GeoJSON file
+
 * `upload_type`: `'dataset'` (always)
 * `creators` (always):
  ```
@@ -47,9 +55,8 @@ The core of the Python `citation-generator` function is currently hosted here: h
 				  {'name': "Ash, Smith",
 			  	  "type": "DataCollector"}]
 ```
-TODO: add "affiliation", "orcid".
 * `license`: `'cc-by'` (always)
-* `dates`: creation dates
+* `dates`: creation dates[^2]
 ```
 'dates': [{'type': 'created', 'start': '2021-08-01', 'end': '2022-05-01'}],
 ```
@@ -65,5 +72,13 @@ TODO: add "affiliation", "orcid".
 * `access_right`: 'open' (other options in the [documentation](https://help.zenodo.org/docs/about/whats-changed/#deposit-access))
 
 
+## TODO
 
-[^1]: All unique values from this EAMENA field, for example in a given GeoJSON export, the field  
+
+| Zenodo field | Description |
+|------|-------------|
+| `contributors` | add keys `affiliation`, `orcid` |
+
+
+[^2]: the min and max of the EAMENA field "Assessment Activity Date"
+[^1]: All unique values from this EAMENA field. For example in a given GeoJSON export, the EAMENA field "Country Type" gathers these values: "Iran (Islamic Republic of)", "Afghanistan", "Islamic (Iran)"

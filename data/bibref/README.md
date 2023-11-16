@@ -45,31 +45,45 @@ These values have to be entered manually (ie, can not be deduced from the GeoJSO
 
 #### Calculted from the GeoJSON data
 
-These values are always the same or can be deduced from the GeoJSON data
+These metadata values:
 
-* `upload_type`: `'dataset'` (always)
-* `creators` (always):
+1. are always the same (constant), OR 
+2. are calculated (variable) from the GeoJSON data using [zenodo.py](https://github.com/eamena-project/eamena-functions/blob/main/zenodo/zenodo.py), OR 
+3. change, based of previous published dataset (variable), OR
+4. are mixed (mixed): partly constant (constant), partly variable (variable) 
+
+* `upload_type`: `'dataset'` (constant)
+* `creators` (constant):
  ```
 'creators': [{'name': "EAMENA database",
 			  'affiliation': "University of Oxford, University of Southampton"}]
 ```
-* `contributors` (example):
+* `contributors` (variable, example):
  ```
 'contributors': [{'name': "Thomas, Huet",
 				  "type": "DataCollector"},
 				  {'name': "Ash, Smith",
 			  	  "type": "DataCollector"}]
 ```
-* `license`: `'cc-by'` (always)
-* `dates`: creation dates[^2]
+* `license`: `'cc-by'` (constant)
+* `dates`: creation dates (variable, example)[^2]
 ```
 'dates': [{'type': 'created', 'start': '2021-08-01', 'end': '2022-05-01'}],
 ```
-* `grants`: (always, = Arcadia fund, num 4178)
+* `grants`: (constant)[^4]
 ```
 'grants': [{'id': '051z6e826::4178'}],
 ```
-* `keywords`: `'EAMENA', MaREA` + locations ("Country Type"[^1]) + periods ("Cultural Period Type[^1]")
+* `related_identifiers`:  (mixed)[^3], with this constant (constant):
+```
+[{'relation': 'isDescribedBy', 'identifier':'https://zenodo.org/doi/10.5281/zenodo.10142706'}] 
+```
+and this variable (variable, example):
+```
+[{'relation': 'isContinuedBy', 'identifier':'a_previously_published_dataset'}] 
+```
+* `keywords`: (mixed)
+`'EAMENA', MaREA` + locations ("Country Type"[^1]) + periods ("Cultural Period Type[^1]")
 
 
 #### others or by default
@@ -87,3 +101,5 @@ These values are always the same or can be deduced from the GeoJSON data
 
 [^2]: the min and max of the EAMENA field "Assessment Activity Date"
 [^1]: All unique values from this EAMENA field. For example in a given GeoJSON export, the EAMENA field "Country Type" gathers these values: "Iran (Islamic Republic of)", "Afghanistan", "Islamic (Iran)"
+[^3]: constant: `isDescribedBy`: `https://zenodo.org/doi/10.5281/zenodo.10142706` is the Zenodo GitHub release of the refrence data (resource models, etc.) and variable: `isContinuedBy` : the DOI of already published datasets
+[^4]: this is the ID of 'Arcadia fund, num 4178'

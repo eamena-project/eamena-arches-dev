@@ -9,6 +9,17 @@
 - ![#808080](https://placehold.co/15x15/808080/808080.png)`Damage Extent Type` - `No Visible/Known`
 
 
+![#46AAF](https://placehold.co/15x15/46AAF/46AAF.png)	3	Aw Tropical, savannah
+![#FF0000](https://placehold.co/15x15/FF0000/FF0000.png)	4	BWh Arid, desert, hot
+![#FF9696](https://placehold.co/15x15/FF9696/FF9696.png)	5	BWk Arid, desert, cold
+![#F5A500](https://placehold.co/15x15/F5A500/F5A500.png)	6	BSh Arid, steppe, hot
+![#FFFF00](https://placehold.co/15x15/FFFF00/FFFF00.png)	8	Csa Temperate, dry summer, hot summer
+![#FF00FF](https://placehold.co/15x15/FF00FF/FF00FF.png)	17	Dsa Cold, dry summer, hot summer
+![#C800C8](https://placehold.co/15x15/C800C8/C800C8.png)	18	Dsb Cold, dry summer, warm summer
+![#963296](https://placehold.co/15x15/963296/963296.png)	19	Dsc Cold, dry summer, cold summer
+
+
+
 
 
 

@@ -56,7 +56,7 @@ These metadata values are always the same (constant):
 ```
 [{"term": "Cultural property", "identifier": "https://id.loc.gov/authorities/subjects/sh97000183.html", "scheme": "url"}]
 ```
-* `method`: `EAMENA data entry methodology`
+* `method`: `'EAMENA data entry methodology'`
 
 
 ##### implicit

@@ -23,7 +23,7 @@ During this workflow, the GeoJSON is converted into a GeoJSON file, and zipped, 
 
 ## Zenodo
 
-Zenodo will host the data (the GeoJSON file itself) and its [metadata](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bibref/README.md#metadata)
+Zenodo will host the data (the GeoJSON file itself) and its [metadata](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bibref/README.md#metadata) under the EAMENA database community: https://zenodo.org/communities/eamena. See for example the GitHub release of Ressource Models and collections ([here](https://zenodo.org/records/10142707))
 
 ### Metadata
 > proposed metadata schema/layout

@@ -32,7 +32,7 @@ Metadata of published dataset could be: [free text](https://github.com/eamena-pr
 
 #### Free text
 
-These values have to be entered manually (ie, can not be deduced from the GeoJSON data)
+These metadata values have to be entered manually (ie, can not be deduced from the GeoJSON data)
 
 * `title`: *free text*. Name for the dataset (mandatory).
 * `description`: *free text*. Dataset description (mandatory).
@@ -68,7 +68,7 @@ These metadata values:
 2. change, based of previous published dataset (calculated), OR
 3. are mixed (mixed): partly constant (constant), partly calculated (calculated) 
 
-* `contributors` (calculated, example)[^6]:
+* `contributors` (mixed, example)[^6]:
  ```
 'contributors': [{'name': "Thomas, Huet",
 				  "type": "DataCollector"},

@@ -73,7 +73,7 @@ These metadata values:
 3. change, based of previous published dataset (variable), OR
 4. are mixed (mixed): partly constant (constant), partly variable (variable) 
 
-* `contributors` (variable, example):
+* `contributors` (variable, example)[^6]:
  ```
 'contributors': [{'name': "Thomas, Huet",
 				  "type": "DataCollector"},
@@ -88,7 +88,7 @@ These metadata values:
 ```
 [{'relation': 'isDescribedBy', 'identifier':'https://zenodo.org/doi/10.5281/zenodo.10142706'}] 
 ```
-and this variable (variable, example):
+and this variable (variable, example)[^5]:
 ```
 [{'relation': 'isContinuedBy', 'identifier':'a_previously_published_dataset'}] 
 ```
@@ -108,3 +108,5 @@ and this variable (variable, example):
 [^1]: All unique values from this EAMENA field. For example in a given GeoJSON export, the EAMENA field "Country Type" gathers these values: "Iran (Islamic Republic of)", "Afghanistan", "Islamic (Iran)"
 [^3]: constant: `isDescribedBy`: `https://zenodo.org/doi/10.5281/zenodo.10142706` is the Zenodo GitHub release of the refrence data (resource models, etc.) and variable: `isContinuedBy` : the DOI of already published datasets
 [^4]: this is the ID of 'Arcadia fund, num 4178'
+[^5]: assuming that all dataset will be stored on Zenodo, we can use the Zenodo API to collect DOI of already published datasets
+[^6]: `name` is variable, `type` is constant (`DataCollector`)

@@ -24,7 +24,7 @@ Web Map Services
 | type | Name  	|   description	| map |
 |---	|---	|---	|--- |
 | Atlas | AAA  	| Atlas Archéologique d'Algérie	| <img alt="img-name" src="../../www/geoserver-map-wms-aaa.png" width="250"> |
-| Climate | Beck_KG_V1_present_0p008  	| Koppen Climate Classification	| <img alt="img-name" src="../../www/geoserver-map-wms-koppen.png" width="250"> |
+| Climate | Beck_KG_V1_present_0p008  	| Koppen Climate Classification ([legend](../../data/layouts/koppen_climate_class.md))	| <img alt="img-name" src="../../www/geoserver-map-wms-koppen.png" width="250"> |
 
 
 

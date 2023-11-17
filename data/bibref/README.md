@@ -6,8 +6,7 @@ Working with a GeoJSON URL only to create GeoJSON data, the user provide a GeoJS
 ```mermaid
 flowchart LR
 	subgraph EAMENA DB
-		U[/user/] -- Search URL --> E[Export GeoJSON URL]
-		E -- Select<br>'Ressource Type' = 'Heritage Place' --> E
+		U[/user/] -- Search URL + 'Ressource Type' = 'Heritage Place' --> E[Export GeoJSON URL]
 		E ---> G{{citation-generator}}:::eamenaFunc;
 		subgraph plugins or functions
 		G

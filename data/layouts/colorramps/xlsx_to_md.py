@@ -23,3 +23,5 @@ for sheet_name, df in xls.items():
     with open(markdown_file, 'w') as f:
         f.write(markdown_table)
     print(f"Markdown table saved to {markdown_file}")
+
+# %%

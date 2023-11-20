@@ -1,6 +1,10 @@
 # Time 📅
 > Development for Date, EDTF and cultural periods formats
 
+## PeriodO
+
+EAMENA authority periods: https://eamena-project.github.io/reveal.js/projects/time/periods/periodo
+
 ## Date and EDTF ⏱
 
 See the EAMENA Summer workshop 2022 presentation for Date and EDTF format here: https://eamena-project.github.io/reveal.js/projects/time

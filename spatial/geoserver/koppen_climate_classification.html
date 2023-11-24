@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_348d8d933a38d059eac19b3164c1b3db {
+                #map_5740f3758dfdb29045994e1b914301ab {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -39,22 +39,22 @@
 <body>
     
     
-    <h3 align="center" style="font-size:16px">Koppen Climate Classification</h3>
+    <span align="center" style="font-size:16px">Koppen Climate Classification</span>
 	<a href="https://github.com/eamena-project/eamena-arches-dev/blob/main/data/layouts/koppen_climate_class.md">Legend</a>
     
     
-            <div class="folium-map" id="map_348d8d933a38d059eac19b3164c1b3db" ></div>
+            <div class="folium-map" id="map_5740f3758dfdb29045994e1b914301ab" ></div>
         
 </body>
 <script>
     
     
-            var map_348d8d933a38d059eac19b3164c1b3db = L.map(
-                "map_348d8d933a38d059eac19b3164c1b3db",
+            var map_5740f3758dfdb29045994e1b914301ab = L.map(
+                "map_5740f3758dfdb29045994e1b914301ab",
                 {
-                    center: [20.0, 35.0],
+                    center: [35.0, 20.0],
                     crs: L.CRS.EPSG3857,
-                    zoom: 10,
+                    zoom: 5,
                     zoomControl: true,
                     preferCanvas: false,
                 }
@@ -64,20 +64,20 @@
 
         
     
-            var tile_layer_e27581741074971938921939ae26050a = L.tileLayer(
+            var tile_layer_a63cd0c6fde62daeb1734d61cf8c4da3 = L.tileLayer(
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
             );
         
     
-                tile_layer_e27581741074971938921939ae26050a.addTo(map_348d8d933a38d059eac19b3164c1b3db);
+                tile_layer_a63cd0c6fde62daeb1734d61cf8c4da3.addTo(map_5740f3758dfdb29045994e1b914301ab);
     
-            var macro_element_4f128964babe392c7d5d21e75a4cc177 = L.tileLayer.wms(
+            var macro_element_987da237693212a0d5af9d2775b2be27 = L.tileLayer.wms(
                 "http://54.155.109.226:8080/geoserver/ows",
                 {"attribution": "", "format": "image/jpeg", "layers": "Beck_KG_V1_present_0p0083", "styles": "", "transparent": false, "version": "1.1.1"}
             );
         
     
-                macro_element_4f128964babe392c7d5d21e75a4cc177.addTo(map_348d8d933a38d059eac19b3164c1b3db);
+                macro_element_987da237693212a0d5af9d2775b2be27.addTo(map_5740f3758dfdb29045994e1b914301ab);
 </script>
 </html>

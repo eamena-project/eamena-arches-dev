@@ -1,7 +1,7 @@
 ## Sankey diagrams
 
 
-This plot shows before-and-after changes
+This plot shows before-and-after changes calculated in the ACD software
 
 
 ![](../../../www/acd_before_after_ex1_barplot.png)
@@ -11,4 +11,4 @@ I've copied to this dataframe: https://github.com/eamena-project/eamena-arches-d
 
 ![](../../../www/acd_before_after_ex1_sankey.png)
 
-See the HTML output: https://eamena-project.github.io/eamena-arches-dev/data/time/sankey.html
+See the HTML output: https://eamena-project.github.io/eamena-arches-dev/data/time/sankey/sankey

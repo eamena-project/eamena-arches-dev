@@ -1,48 +1,35 @@
-
-
 #%%
 import os
 import plotly.graph_objects as go
 import pandas as pd
 
 url = "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/data/time/sankey/acd_ex1.tsv"
-data = pd.read_csv(url, sep='\t')
+df = pd.read_csv(url, sep='\t')
+df['target'] = df['target'] + "_" # to distinguish 'source' and 'target'
 
-
-os.getcwd()
 
 #%%
-
-
-# Your dataframe
-data = {'source': ['bare', 'bare', 'bare', 'bare', 'bare', 'mountain', 'mountain', 'mountain', 'mountain', 'mountain',
-                   'quarry', 'quarry', 'quarry', 'quarry', 'quarry', 'urban', 'urban', 'urban', 'urban', 'urban',
-                   'vegetation', 'vegetation', 'vegetation', 'vegetation', 'vegetation'],
-        'target': ['bare', 'mountain', 'quarry', 'urban', 'vegetation', 'bare', 'mountain', 'quarry', 'urban', 'vegetation',
-                   'bare', 'mountain', 'quarry', 'urban', 'vegetation', 'bare', 'mountain', 'quarry', 'urban', 'vegetation',
-                   'bare', 'mountain', 'quarry', 'urban', 'vegetation'],
-        'value': [21, 89, 76, 165, 121, 87, 100, 0, 98, 64, 124, 1, 81, 74, 8, 184, 128, 49, 154, 124, 133, 58, 0, 122, 127]}
-
-df = pd.DataFrame(data)
-
 # Create a Sankey diagram
 fig = go.Figure(data=[go.Sankey(
     node=dict(
         pad=15,
         thickness=20,
         line=dict(color='black', width=0.5),
-        label=['bare', 'mountain', 'quarry', 'urban', 'vegetation']
+        label=['bare', 'mountain', 'quarry', 'urban', 'vegetation', 'bare_', 'mountain_', 'quarry_', 'urban_', 'vegetation_']
     ),
     link=dict(
         source=df['source'].map({'bare': 0, 'mountain': 1, 'quarry': 2, 'urban': 3, 'vegetation': 4}),
-        target=df['target'].map({'bare': 0, 'mountain': 1, 'quarry': 2, 'urban': 3, 'vegetation': 4}),
+        target=df['target'].map({'bare_': 5, 'mountain_': 6, 'quarry_': 7, 'urban_': 8, 'vegetation_': 9}),
         value=df['value']
     )
 )])
 
 # Customize layout
 fig.update_layout(title_text="Sankey Diagram", font_size=10)
-fig.write_html("sankey_diagram.html")
+
+dirIn = os.path.dirname(os.path.realpath(__file__))
+fileout = "sankey_diagram.html"
+fig.write_html(dirIn + "/" + fileout)
 
 # Show the plot
-fig.show()
+# fig.show()

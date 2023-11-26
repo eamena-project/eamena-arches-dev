@@ -2,12 +2,17 @@
 
 #%%
 import os
+import plotly.graph_objects as go
+import pandas as pd
+
+url = "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/data/time/sankey/acd_ex1.tsv"
+data = pd.read_csv(url, sep='\t')
+
 
 os.getcwd()
 
 #%%
-import plotly.graph_objects as go
-import pandas as pd
+
 
 # Your dataframe
 data = {'source': ['bare', 'bare', 'bare', 'bare', 'bare', 'mountain', 'mountain', 'mountain', 'mountain', 'mountain',

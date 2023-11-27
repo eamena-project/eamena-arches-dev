@@ -18,7 +18,7 @@ periodo_ids = json_data["periods"].keys()
 
 def maping_eamena_and_periodo(periodo_eamena = "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/data/time/periodes/periodo/eamena.json", lperiods = ["Iron Age (Iran)", "Classical/Pre-Islamic (Levant/Mesopotamia/Iran/Northern Arabia)", "Islamic (Iran)", "Contemporary Islamic (MENA)", "Unknown"]):
 	"""
-	Map periods existing in a GeoJSON exported from EAMENA (ex: Sistan) to their PeriodO equivalent
+	Map periods existing in a GeoJSON exported from EAMENA (ex: Sistan) to their PeriodO equivalent to get the PeriodO unique ARK
      
      :param periodo_eamena: the EAMENA authority from PeriodO. A JSON file
      :param lperiods: a list of periods existing in a GeoJSON
@@ -48,7 +48,7 @@ def maping_eamena_and_periodo(periodo_eamena = "https://raw.githubusercontent.co
 				if match_label and match_spatial:
 					print(i + " = " + period)
 
-maping_eamena_and_periodo()
+maping_eamena_and_periodo(lperiods= ["Chalcolithic (Southern Iran)", "Bronze Age (Southern Iran)", "Iron Age (Iran)", "Classical/Pre-Islamic (Levant/Mesopotamia/Iran/Northern Arabia)", "Islamic (Iran)", "Contemporary Islamic (MENA)", "Unknown"])
 
      
 

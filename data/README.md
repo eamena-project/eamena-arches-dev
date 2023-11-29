@@ -64,7 +64,7 @@ Check the MDS fields in this HTML circular plot ([here](https://eamena-project.g
 These grids come from the Grid Square Ressource Model
 
 <p align="center">
-  <img alt="img-name" src="../../www/arches-v7-grids-ea.png" width="700">
+  <img alt="img-name" src="../www/arches-v7-grids-ea.png" width="700">
   <br>
     <em>EAMENA v4 grids (in the database)</em>
 </p>
@@ -77,7 +77,7 @@ The CSV list of all the grids registered in the Heritage Places Resource Model i
 Grids are strored as a GeoJSON file here: https://github.com/eamena-project/eamena-arches-dev/blob/main/data/grids/EAMENA_Grid.geojson
 
 <p align="center">
-  <img alt="img-name" src="../../www/arches-v7-grids-geojson.png" width="700">
+  <img alt="img-name" src="../www/arches-v7-grids-geojson.png" width="700">
   <br>
     <em>EAMENA v4 grids (GeoJSON)</em>
 </p>
@@ -89,7 +89,7 @@ Grids are strored as a GeoJSON file here: https://github.com/eamena-project/eame
 The QGIS project is here: https://github.com/eamena-project/eamena-arches-dev/blob/main/data/grids/grids_nb_hp.qgz. But you can also use the QGIS project associated with the GeoServer [projet_gesoserver.qgz](https://github.com/eamena-project/eamena-arches-dev/blob/main/gis/qgis/projet_gesoserver.qgz)
 
 <p align="center">
-  <img alt="img-name" src="../../www/arches-v7-grids-qgis.png" width="700">
+  <img alt="img-name" src="../www/arches-v7-grids-qgis.png" width="700">
   <br>
     <em>Number of Heritage Places by EAMENA v4 grids (QGIS)</em>
 </p>
@@ -105,7 +105,7 @@ see the [QDGC folder](https://github.com/eamena-project/eamena-arches-dev/tree/m
 Use the R script [eamena-grid.R](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/grids/eamena-grid.R) to create an interactive web map like [this one](https://eamena-project.github.io/eamena-arches-dev/data/grids/grid_afghanistan)
 
 <p align="center">
-  <img alt="img-name" src="../../www/arches-v7-grids-html.png" width="700">
+  <img alt="img-name" src="../www/arches-v7-grids-html.png" width="700">
   <br>
     <em>New grids for Afghanisthan (here in HTML)</em>
 </p>

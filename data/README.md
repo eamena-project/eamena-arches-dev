@@ -110,7 +110,7 @@ see the [QDGC folder](https://github.com/eamena-project/eamena-arches-dev/tree/m
 Use the R script [eamena-grid.R](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/grids/eamena-grid.R) to create an interactive web map like [this one](https://eamena-project.github.io/eamena-arches-dev/data/grids/grid_afghanistan)
 
 <p align="center">
-  <img alt="img-name" src="../www/arches-v7-grids-html.png" width="700">
+  <img alt="img-name" src="../www/arches-v7-grids-html.png" width="500">
   <br>
     <em>New grids for Afghanisthan (here in HTML)</em>
 </p>

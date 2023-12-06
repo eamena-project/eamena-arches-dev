@@ -2,13 +2,9 @@
 
 <h5 class="rtejustify" id="open-data">How to use our datasets and images</h5>
 
-<p>Images and datasets from the EAMENA Database can be used according to our licence: Creative Commons Attribution 4.0 International License<a href="http://creativecommons.org/licenses/by/4.0/" rel="license"><img alt="Creative Commons Licence" src="https://i.creativecommons.org/l/by/4.0/88x31.png" style="border-width:0" style='height: 50px;vertical-align: middle;'/></a></p>
+<p>Images and datasets from the EAMENA Database are under the Creative Commons Attribution 4.0 International License<a href="http://creativecommons.org/licenses/by/4.0/" rel="license"><img alt="Creative Commons Licence" src="https://i.creativecommons.org/l/by/4.0/88x31.png" style="border-width:0" style='height: 50px;vertical-align: middle;'/></a></p>
 
 <h5 class="rtejustify" id="cite-data">How to cite an EAMENA dataset</h5>
-<p>
-	<br />
-	<span href="http://purl.org/dc/dcmitype/Dataset" property="dct:title" rel="dct:type" xmlns:dct="http://purl.org/dc/terms/">EAMENA Database</span> by <a href="https://eamena.org" property="cc:attributionName" rel="cc:attributionURL" xmlns:cc="http://creativecommons.org/ns#">EAMENA</a>        is licensed under a <a href="http://creativecommons.org/licenses/by/4.0/" rel="license">Creative Commons Attribution 4.0 International License</a>.
-	<br /> Based on a work at <a href="https://database.eamena.org">https://database.eamena.org</a></p>
 
 <p>To cite our database please use the following (examples):</p>
 

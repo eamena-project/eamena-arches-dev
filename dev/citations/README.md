@@ -49,8 +49,8 @@ The other metadata will be calculated from the data themselves. The result of th
 </p>
 
 <p style="text-align:center;">
-<img alt="citation-generator" src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/zenodo-communities-eamena.png" width="500" style="border-width:0" /><br>
-<em>EAMENA dataset, GeoJSON files, will be hosted under Zenodo's `eamena` community and referenced by DOI.</em>
+<a href="https://zenodo.org/communities/eamena" rel="license"><img alt="citation-generator" src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/zenodo-communities-eamena.png" width="500" style="border-width:0" /></a><br>
+<em>EAMENA dataset, GeoJSON files, will be hosted under Zenodo's `eamena` community and referenced by DOI (<https://zenodo.org/communities/eamena>).</em>
 </p>
 
 

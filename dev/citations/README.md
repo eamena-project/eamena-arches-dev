@@ -47,7 +47,9 @@ EAMENA database (2023) “Sistan: part 1. Heritage Places”. Zenodo. doi: 10.50
 		<li>`FILENAME` of the dataset. For example: "sistan_part1_hps" or "sistan_part1_gs".</li>
 	</ul>
 </ol>
-The other metadata will be calculated from the data themselves. The result of this deposit in Zenodo can be seen here: <a href="https://sandbox.zenodo.org/records/5847">https://sandbox.zenodo.org/records/5847</a>.
+<p>The other metadata will be calculated from the data themselves.</p> 
+
+<p>The result of this deposit in Zenodo can be seen here: <a href="https://sandbox.zenodo.org/records/5847">https://sandbox.zenodo.org/records/5847</a>.
 </p>
 
 <p style="text-align:center;">

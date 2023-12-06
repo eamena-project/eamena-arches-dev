@@ -10,8 +10,10 @@
 
 <h6 class="rtejustify" id="cite-data-APA">APA</h6>
 EAMENA database. (2023). Sistan: part 1. Heritage Places [Data set]. Zenodo. https://doi.org/10.5072/zenodo.5847
+
 <h6 class="rtejustify" id="cite-data-Harvard">Harvard</h6>
 EAMENA database (2023) “Sistan: part 1. Heritage Places”. Zenodo. doi: 10.5072/zenodo.5847.
+
 <h6 class="rtejustify" id="open-data-BibTex">BibTex</h6>
 <pre><code data-trim id="awesomecpp">
 @dataset{eamena_database_2023_5847,
@@ -50,7 +52,7 @@ The other metadata will be calculated from the data themselves. The result of th
 
 <p style="text-align:center;">
 <a href="https://zenodo.org/communities/eamena" rel="license"><img alt="citation-generator" src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/zenodo-communities-eamena.png" width="500" style="border-width:0" /></a><br>
-<em>EAMENA dataset, GeoJSON files, will be hosted under Zenodo's `eamena` community and referenced by DOI (<https://zenodo.org/communities/eamena>).</em>
+<em>EAMENA dataset, GeoJSON files, will be hosted under Zenodo's `eamena` community (https://zenodo.org/communities/eamena) and referenced by DOI.</em>
 </p>
 
 

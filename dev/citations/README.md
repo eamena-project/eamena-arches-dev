@@ -53,10 +53,10 @@ and levels of access can be&nbsp;found&nbsp;<a href="https://eamena.web.ox.ac.uk
 
 <h5 class="rtejustify" id="publish-data">How to publish EAMENA data</h5>
 
-<p>The EAMENA team is working on creating an option, called `citation-generator`, allowing to export a dataset to Zenodo. By doing this, EAMENA contributors will get a citable unique reference identifier (DOI) that can be mentioned in a data or research paper. Currently, this workflow has been set up in a Jupyter Notebook hosted on <a href="https://github.com/eamena-project/eamena-arches-dev/blob/main/dev/citations/citation_generator.ipynb">Google Colab</a> and <a href="https://colab.research.google.com/github/eamena-project/eamena-arches-dev/blob/main/dev/citations/citation_generator.ipynb">Google Colab</a>.</p>
+<p>The EAMENA team is working on creating an option, called `citation-generator`, allowing to export a dataset to Zenodo. By doing this, EAMENA contributors will get a citable unique reference identifier (DOI) that can be mentioned in a data or research paper. Currently, this workflow has been set up in a Jupyter Notebook hosted on <a href="https://github.com/eamena-project/eamena-arches-dev/blob/main/dev/citations/citation_generator.ipynb">GitHub</a> and <a href="https://colab.research.google.com/github/eamena-project/eamena-arches-dev/blob/main/dev/citations/citation_generator.ipynb">Google Colab</a>.</p>
 
 <p>
-<img alt="citation-generator" src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/arches-v7-export-citation.png" style="border-width:0" />
+<img alt="citation-generator" src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/arches-v7-export-citation.png" width="500", style="border-width:0" /><br>
 <em> Future export mode in the EAMENA main window</em>
 </p>
 
@@ -75,7 +75,7 @@ The other metadata will be calculated from the data themselves. The result of th
 </p>
 
 <p>
-<img alt="citation-generator" src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/zenodo-communities-eamena.png" style="border-width:0" />
+<img alt="citation-generator" src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/zenodo-communities-eamena.png" width="500" style="border-width:0" /><br>
 <em>EAMENA dataset, GeoJSON files, will be hosted under the Zenodo's `eamena` community and referenced by DOI.</em>
 </p>
 

@@ -29,8 +29,6 @@ EAMENA database (2023) “Sistan: part 1. Heritage Places”. Zenodo. doi: 10.50
 
 <p>The EAMENA team is working on creating an option, called `citation-generator`, allowing the export of a dataset to Zenodo. By doing this, EAMENA contributors will obtain a citable unique reference identifier (DOI) that can be referenced in a data or research paper. Currently, this workflow has been set up in a Jupyter Notebook hosted on <a href="https://github.com/eamena-project/eamena-arches-dev/blob/main/dev/citations/citation_generator.ipynb">GitHub</a> and <a href="https://colab.research.google.com/github/eamena-project/eamena-arches-dev/blob/main/dev/citations/citation_generator.ipynb">Google Colab</a>.</p>
 
-<p style="text-align:center"><img src="https://via.placeholder.com/300"></p>
-
 <p style="text-align: center;">
 <img alt="citation-generator" src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/arches-v7-export-citation.png" width="500" style="border-width:0" /><br>
 <em>Future export mode in the EAMENA main window</em>

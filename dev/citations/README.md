@@ -54,7 +54,7 @@ EAMENA database (2023) “Sistan: part 1. Heritage Places”. Zenodo. doi: 10.50
 
 <p style="text-align:center;">
 <a href="https://zenodo.org/communities/eamena" rel="license"><img alt="citation-generator" src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/zenodo-communities-eamena.png" width="500" style="border-width:0" /></a><br>
-<em>EAMENA dataset, GeoJSON files, will be hosted under Zenodo's `eamena` community (https://zenodo.org/communities/eamena) and referenced by DOI.</em>
+<em>EAMENA datasets, GeoJSON files, will be hosted under Zenodo's `eamena` community (https://zenodo.org/communities/eamena) and referenced by DOI.</em>
 </p>
 
 

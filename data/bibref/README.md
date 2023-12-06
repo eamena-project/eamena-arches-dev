@@ -30,6 +30,8 @@ Zenodo will host the data (the GeoJSON file itself) and its [metadata](https://g
 
 Metadata of published dataset could be: [free text](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bibref/README.md#free-text), [constant values](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bibref/README.md#constant-values), [calculated values](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bibref/README.md#calculated-values)
 
+ℹ️ see the [list of Zenodo metadata](https://developers.zenodo.org/#depositions) 
+
 #### Free text
 
 These metadata values have to be entered manually (ie, can not be deduced from the GeoJSON data)

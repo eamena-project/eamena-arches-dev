@@ -2,7 +2,7 @@
 
 <h5 class="rtejustify" id="open-data">How to use our datasets and images</h5>
 
-<p>Images and datasets from the EAMENA Database are under the Creative Commons Attribution 4.0 International License<a href="http://creativecommons.org/licenses/by/4.0/" rel="license"><img alt="Creative Commons Licence" src="https://i.creativecommons.org/l/by/4.0/88x31.png" style="border-width:0" style='height: 30px;vertical-align: middle;'/></a></p>
+<p>Images and datasets from the EAMENA Database are under the Creative Commons Attribution 4.0 International License <a href="http://creativecommons.org/licenses/by/4.0/" rel="license"><img alt="Creative Commons Licence" src="https://i.creativecommons.org/l/by/4.0/88x31.png" style="border-width:0" style='height: 20px;vertical-align: middle;'/></a></p>
 
 <h5 class="rtejustify" id="cite-data">How to cite an EAMENA dataset</h5>
 

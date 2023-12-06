@@ -24,10 +24,6 @@ EAMENA database (2023) “Sistan: part 1. Heritage Places”. Zenodo. doi: 10.50
   url          = {https://doi.org/10.5072/zenodo.5847}
 }
 </code></pre>
-<h4 class="rtejustify">Updates and more information</h4>
-
-<p class="rtejustify">As with all databases, this resource is a work in progress and is constantly being developed. Please do keep visiting the website and database for changes, as we will be adding new sites, case studies and features throughout 2023 and beyond. We will announce updates via our Twitter account. Unfortunately, it is not possible to make every record fully accessible because our main focus has to be on ensuring the protection and preservation of archaeological sites.&nbsp;Our Open Access policy
-and levels of access can be&nbsp;found&nbsp;<a href="https://eamena.web.ox.ac.uk/article/eamena-marea-open-access-policy">here</a>.</p>
 
 <h5 class="rtejustify" id="publish-data">How to publish EAMENA data</h5>
 
@@ -52,7 +48,7 @@ and levels of access can be&nbsp;found&nbsp;<a href="https://eamena.web.ox.ac.uk
 The other metadata will be calculated from the data themselves. The result of this deposit in Zenodo can be seen here: <a href="https://sandbox.zenodo.org/records/5847">https://sandbox.zenodo.org/records/5847</a>.
 </p>
 
-<p style="text-align: center;">
+<p style="text-align:center;">
 <img alt="citation-generator" src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/zenodo-communities-eamena.png" width="500" style="border-width:0" /><br>
 <em>EAMENA dataset, GeoJSON files, will be hosted under Zenodo's `eamena` community and referenced by DOI.</em>
 </p>

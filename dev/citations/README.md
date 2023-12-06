@@ -51,3 +51,9 @@
 <p class="rtejustify">As with all databases, this resource is a work in progress and is constantly being developed. Please do keep visiting the website and database for changes, as we will be adding new sites, case studies and features throughout 2023 and beyond. We will
 	announce updates via our Twitter account. Unfortunately, it is not possible to make every record fully accessible because our main focus has to be on ensuring the protection and preservation of archaeological sites.&nbsp;Our Open Access policy
 	and levels of access can be&nbsp;found&nbsp;<a href="https://eamena.web.ox.ac.uk/article/eamena-marea-open-access-policy">here</a>.</p>
+
+<h5 class="rtejustify" id="publish-data">How to publish EAMENA data</h5>
+
+<p>The EAMENA team is working on creating an option in the main window allowing to export a dataset referenced by a Search URL to Zenodo and, by doing this, get a citable Unique Reference Identifier (DOI) that can be mentioned in a data or research paper. Currently, this workflow has bee set up in the `citation-generator` Jupyter Notebook hosted on  </p>
+
+<a href="https://github.com/eamena-project/eamena-arches-dev/blob/main/dev/citations/citation_generator.ipynb">Google Colab</a> and <a href="https://colab.research.google.com/github/eamena-project/eamena-arches-dev/blob/main/dev/citations/citation_generator.ipynb">Google Colab</a>

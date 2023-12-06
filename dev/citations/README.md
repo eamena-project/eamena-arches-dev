@@ -48,12 +48,33 @@
 
 <h4 class="rtejustify">Updates and more information</h4>
 
-<p class="rtejustify">As with all databases, this resource is a work in progress and is constantly being developed. Please do keep visiting the website and database for changes, as we will be adding new sites, case studies and features throughout 2023 and beyond. We will
-	announce updates via our Twitter account. Unfortunately, it is not possible to make every record fully accessible because our main focus has to be on ensuring the protection and preservation of archaeological sites.&nbsp;Our Open Access policy
-	and levels of access can be&nbsp;found&nbsp;<a href="https://eamena.web.ox.ac.uk/article/eamena-marea-open-access-policy">here</a>.</p>
+<p class="rtejustify">As with all databases, this resource is a work in progress and is constantly being developed. Please do keep visiting the website and database for changes, as we will be adding new sites, case studies and features throughout 2023 and beyond. We will announce updates via our Twitter account. Unfortunately, it is not possible to make every record fully accessible because our main focus has to be on ensuring the protection and preservation of archaeological sites.&nbsp;Our Open Access policy
+and levels of access can be&nbsp;found&nbsp;<a href="https://eamena.web.ox.ac.uk/article/eamena-marea-open-access-policy">here</a>.</p>
 
 <h5 class="rtejustify" id="publish-data">How to publish EAMENA data</h5>
 
-<p>The EAMENA team is working on creating an option in the main window allowing to export a dataset referenced by a Search URL to Zenodo and, by doing this, get a citable Unique Reference Identifier (DOI) that can be mentioned in a data or research paper. Currently, this workflow has bee set up in the `citation-generator` Jupyter Notebook hosted on  </p>
+<p>The EAMENA team is working on creating an option, called `citation-generator`, allowing to export a dataset referenced to the 'eamena' community in Zenodo. By doing this, EAMENA contributors will get a citable unique reference identifier (DOI) that can be mentioned in a data or research paper. Currently, this workflow has been set up in a Jupyter Notebook hosted on <a href="https://github.com/eamena-project/eamena-arches-dev/blob/main/dev/citations/citation_generator.ipynb">Google Colab</a> and <a href="https://colab.research.google.com/github/eamena-project/eamena-arches-dev/blob/main/dev/citations/citation_generator.ipynb">Google Colab</a>.</p>
 
-<a href="https://github.com/eamena-project/eamena-arches-dev/blob/main/dev/citations/citation_generator.ipynb">Google Colab</a> and <a href="https://colab.research.google.com/github/eamena-project/eamena-arches-dev/blob/main/dev/citations/citation_generator.ipynb">Google Colab</a>
+<p>
+<img alt="Creative Commons Licence" src="https://i.creativecommons.org/l/by/4.0/88x31.png" style="border-width:0" />
+<em> Future export mode in the EAMENA main window</em>
+</p>
+
+<p>The workflow will follow these steps:
+<ul>
+	<li>Create a Search URL. Only one resource type should be selected (Heritage Place, Grid Square, etc.), this will be the exported dataset. Currently, the workflow is covering the export of Heritage Places and Grid Squares</li>
+	<li>Select the 'citation' button</li>
+	<li>Fill some of the dataset metadata:</li>
+	<ul>
+		<li>`TITLE` of the dataset. For example:  "Sistan: part 1. Heritage Places" or "Sistan: part 1. Grid Squares"</li>
+		<li>`DESCRIPTION` of the dataset. For example:  "Deposit of Heritage Places from the Sistan region (Iran, Afghanistan) maintained within the EAMENA database" or "Deposit of Grid Squares from the Sistan region (Iran, Afghanistan) maintained within the EAMENA database"</li>
+		<li>`FILENAME` of the dataset. For example:  "sistan_part1_hps" or "sistan_part1_gs"</li>
+	</ul>
+</ul>
+The other metadata will be calculated from the data themselves. The result of this deposit in Zenodo can be seen here: <https://sandbox.zenodo.org/records/5847>
+</p>
+
+
+
+
+

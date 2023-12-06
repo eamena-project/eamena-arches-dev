@@ -35,7 +35,7 @@ EAMENA database (2023) “Sistan: part 1. Heritage Places”. Zenodo. doi: 10.50
 </p>
 
 <p>The workflow will follow these steps:
-<ul>
+<ol>
 	<li>Create a Search URL. Only one resource type should be selected (Heritage Place, Grid Square, etc.), and this will be the exported dataset. Currently, the workflow covers the export of Heritage Places and Grid Squares.</li>
 	<li>Select the 'citation' button.</li>
 	<li>Fill in some of the dataset metadata:</li>
@@ -44,7 +44,7 @@ EAMENA database (2023) “Sistan: part 1. Heritage Places”. Zenodo. doi: 10.50
 		<li>`DESCRIPTION` of the dataset. For example: "Deposit of Heritage Places from the Sistan region (Iran, Afghanistan) maintained within the EAMENA database" or "Deposit of Grid Squares from the Sistan region (Iran, Afghanistan) maintained within the EAMENA database".</li>
 		<li>`FILENAME` of the dataset. For example: "sistan_part1_hps" or "sistan_part1_gs".</li>
 	</ul>
-</ul>
+</ol>
 The other metadata will be calculated from the data themselves. The result of this deposit in Zenodo can be seen here: <a href="https://sandbox.zenodo.org/records/5847">https://sandbox.zenodo.org/records/5847</a>.
 </p>
 

@@ -74,12 +74,14 @@ These grids come from the Grid Square Ressource Model
 * The Google Sheet list of Grids:
   - assessed in EAMENA but having 0 Heritage Places, and
   - managed in Google Earth but not yet uploaded in EAMENA
-  
+
 here: https://docs.google.com/spreadsheets/d/1r2VLLiyJMaCl8l7C4sKilQ4ZMqEfAwhQAwYC7wGzmk0/edit#gid=1376319544
 
 #### List of grids registered in HP
 
-* The CSV list of all the grids registered in the Heritage Places Resource Model is available here: https://github.com/eamena-project/eamena-arches-dev/blob/main/data/grids/data-1688403740400-1.csv
+* The CSV list of all the grids registered in the Heritage Places Resource Model is available
+
+here: https://github.com/eamena-project/eamena-arches-dev/blob/main/data/grids/data-1688403740400-1.csv
 
 ### File
 

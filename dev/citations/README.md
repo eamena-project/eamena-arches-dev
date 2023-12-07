@@ -29,7 +29,7 @@ EAMENA database (2023) “Sistan: part 1. Heritage Places”. Zenodo. doi: 10.50
 
 <h5 class="rtejustify" id="publish-data">How to publish EAMENA data</h5>
 
-<p>The EAMENA team is working on creating an option, called `citation-generator`, allowing the export of a dataset to Zenodo. By doing this, EAMENA contributors will obtain a citable unique reference identifier (DOI) that can be referenced in a data or research paper. Currently, this workflow has been set up in a Jupyter Notebook hosted on <a href="https://github.com/eamena-project/eamena-arches-dev/blob/main/dev/citations/citation_generator.ipynb">GitHub</a> and <a href="https://colab.research.google.com/github/eamena-project/eamena-arches-dev/blob/main/dev/citations/citation_generator.ipynb">Google Colab</a>.</p>
+<p>A ‘citation-generator’ feature is being developed by EAMENA to create an option allowing the export of a dataset to Zenodo. By doing this, EAMENA contributors will be given a citable unique reference identifier (DOI) that can be referenced in a data or research paper. This workflow has currently been implemented in a Jupyter Notebook hosted on <a href="https://github.com/eamena-project/eamena-arches-dev/blob/main/dev/citations/citation_generator.ipynb">GitHub</a> and <a href="https://colab.research.google.com/github/eamena-project/eamena-arches-dev/blob/main/dev/citations/citation_generator.ipynb">Google Colab</a>.</p>
 
 <p style="text-align: center;">
 <img alt="citation-generator" src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/arches-v7-export-citation.png" width="500" style="border-width:0" /><br>
@@ -38,18 +38,18 @@ EAMENA database (2023) “Sistan: part 1. Heritage Places”. Zenodo. doi: 10.50
 
 <p>The workflow will follow these steps:
 <ol>
-	<li>Create a Search URL. Only one resource type should be selected (Heritage Place, Grid Square, etc.), and this will be the exported dataset. Currently, the workflow covers the export of Heritage Places and Grid Squares.</li>
+	<li>Create a Search URL in the database, selecting one resource model (Heritage Place, Grid Square, etc.) from the Resource Type menu under the search bar. This URL will comprise the exported dataset. Currently, only Heritage Places and Grid Squares are supported.</li>
 	<li>Select the 'citation' button.</li>
-	<li>Fill in some of the dataset metadata:</li>
+	<li>Populate some dataset metadata fields:</li>
 	<ul>
-		<li>`TITLE` of the dataset. For example: "Sistan: part 1. Heritage Places" or "Sistan: part 1. Grid Squares".</li>
-		<li>`DESCRIPTION` of the dataset. For example: "Deposit of Heritage Places from the Sistan region (Iran, Afghanistan) maintained within the EAMENA database" or "Deposit of Grid Squares from the Sistan region (Iran, Afghanistan) maintained within the EAMENA database".</li>
-		<li>`FILENAME` of the dataset. For example: "sistan_part1_hps" or "sistan_part1_gs".</li>
+		<li>TITLE: Provide a name for the dataset (e.g. "Sistan Region Heritage Places Part 1")</li>
+		<li>DESCRIPTION: Enter a description of the dataset contents (e.g. "Heritage Places from the Sistan region maintained within the EAMENA database”).</li>
+		<li>FILENAME: Specify the file name to assign (e.g. "sistan_part1_hps").</li>
 	</ul>
 </ol>
-<p>The other metadata will be calculated from the data themselves.</p> 
+<p>The remaining metadata is extracted from the data itself.</p> 
 
-<p>The result of this deposit in Zenodo can be seen here: <a href="https://sandbox.zenodo.org/records/5847">https://sandbox.zenodo.org/records/5847</a>.
+<p>An example exported dataset available on Zenodo can be seen here: <a href="https://sandbox.zenodo.org/records/5847">https://sandbox.zenodo.org/records/5847</a>.
 </p>
 
 <p style="text-align:center;">

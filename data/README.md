@@ -71,11 +71,15 @@ These grids come from the Grid Square Ressource Model
 
 #### List of grids with 0 HPs and in GE only
 
-* The Google Sheet list of Grids:
+* The Google Sheet [EAMENA Final Grid Squares](https://docs.google.com/spreadsheets/d/1r2VLLiyJMaCl8l7C4sKilQ4ZMqEfAwhQAwYC7wGzmk0/edit#gid=1376319544) list of Grids:
   - assessed in EAMENA but having 0 Heritage Places, and
   - managed in Google Earth but not yet uploaded in EAMENA
 
-here: https://docs.google.com/spreadsheets/d/1r2VLLiyJMaCl8l7C4sKilQ4ZMqEfAwhQAwYC7wGzmk0/edit#gid=1376319544
+The Python script gs_with_0_hp.py parse this Google Sheet and collect all Grid Square having 0 in the column `Pins in GE`. The result is a list that can be used in a GIS to highlight the Grid Squares that have been surveyed but show 0 Heritage Places (n = 210 on the 2023-12-12).
+
+```
+Grid Square values where 'Pins in GE' is 0: ['E32N29-23', 'E34N26-12', 'E34N27-32', 'E39N32-21', 'E39N32-33', 'E39N33-11', 'E39N33-12', 'E40N32-13', 'E38N33-24', 'E39N32-11', 'E39N32-12', ..., 'E45N15-33', 'E45N16-11', 'E45N16-13', 'E46N13-24', 'E46N13-33', 'E46N13-44', 'E46N14-41', 'E47N13-41', 'E49N17-34', 'E49N17-41', 'E49N17-43', 'E49N17-44']
+```
 
 #### List of grids registered in HP
 

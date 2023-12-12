@@ -83,7 +83,7 @@ Grid Square values where 'Pins in GE' is 0: ['E32N29-23', 'E34N26-12', 'E34N27-3
 
 #### List of grids registered in HP
 
-* The CSV list of all the grids registered in the Heritage Places Resource Model is available
+* The CSV list of all the grids registered in the Heritage Places Resource Model is available. Some have typos.
 
 here: https://github.com/eamena-project/eamena-arches-dev/blob/main/data/grids/data-1688403740400-1.csv
 

@@ -76,7 +76,7 @@ These grids come from the Grid Square Ressource Model
   - managed in Google Earth but not yet uploaded in EAMENA
 
 <p align="center">
-  <img alt="img-name" src="../www/audit-data-0hp.png" width="500">
+  <img alt="img-name" src="../www/audit-data-0hp.png" width="400">
   <br>
     <em>'E32N29-23' grid square has been surveyed but doesn't have any Heritage places</em>
 </p>

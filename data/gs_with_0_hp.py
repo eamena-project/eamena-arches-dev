@@ -10,8 +10,6 @@ gsheet_key = "gsheet-407918-65ebbb9cb656.json" # a key from the Google API platf
 gkey = keys + gsheet_key
 
 gc = gspread.service_account(filename=gkey) # Google Client
-#%% 
-
 spreadsheet = gc.open("EAMENA Final Grid Squares")
 grid_square_values = []
 
@@ -27,5 +25,7 @@ for worksheet in spreadsheet:
             grid_square_values.append(record['Grid Square'])
             
 # Print the final list of 'Grid Square' values
+len(grid_square_values)
 print("Grid Square values where 'Pins in GE' is 0:", grid_square_values)
 
+# %%

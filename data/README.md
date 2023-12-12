@@ -75,6 +75,13 @@ These grids come from the Grid Square Ressource Model
   - assessed in EAMENA but having 0 Heritage Places, and
   - managed in Google Earth but not yet uploaded in EAMENA
 
+<p align="center">
+  <img alt="img-name" src="../www/audit-data-0hp.png" width="500">
+  <br>
+    <em>'E32N29-23' grid square has been surveyed but doesn't have any Heritage places</em>
+</p>
+
+  
 * The Python script [gs_with_0_hp.py](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/gs_with_0_hp.py) parse this Google Sheet and collect all Grid Square having 0 in the column `Pins in GE`. The result is a list that can be used in a GIS to highlight the Grid Squares that have been surveyed but show 0 Heritage Places (n = 210 on the 2023-12-12).
 
 ```

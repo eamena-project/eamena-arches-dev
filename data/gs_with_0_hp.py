@@ -1,5 +1,8 @@
-# Grids with 0 Heritage places
+# Grids with 0 Heritage places. Return a dataframe
 
+#%%
+
+import pandas as pd
 import gspread
 
 keys = "C:/Rprojects/eamena-arches-dev/data/keys/"
@@ -19,3 +22,21 @@ for worksheet in spreadsheet:
             grid_square_values.append(record['Grid Square'])
             
 print("Grid Square values where 'Pins in GE' is 0:", grid_square_values)
+
+vals = [0] * len(grid_square_values)
+
+gs_with_0_hp = pd.DataFrame(
+  {'nb_hp': vals,
+   'grid_num': grid_square_values
+  })
+
+# %%
+# read a dataframe with the number of HP summed by GS
+eamena_gs_nb_hps = "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/data/grids/eamena_hps_by_grids_231212.csv"
+gs_nb_hps = pd.read_csv(eamena_gs_nb_hps)
+
+# %%
+# merge the two df
+
+df = pd.concat([gs_nb_hps, gs_with_0_hp])
+

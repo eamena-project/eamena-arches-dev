@@ -40,3 +40,9 @@ gs_nb_hps = pd.read_csv(eamena_gs_nb_hps)
 
 df = pd.concat([gs_nb_hps, gs_with_0_hp])
 
+
+# %%
+# write a CSV
+
+df.to_csv("C:/Rprojects/eamena-arches-dev/data/grids/grids_nb_hp_231213.csv", index=False)
+# %%

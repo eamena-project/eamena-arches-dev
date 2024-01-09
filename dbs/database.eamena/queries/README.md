@@ -9,7 +9,8 @@ Miscellaneous and compendium of equivalent queries between Advanced Search and S
 | HP | Heritage Place |
 | AS | Advanced Search |
 
-Main correspondances between EAMENA fieldnames and field UUIDs are listed here: github.com/eamena-project/eamena-arches-dev/blob/main/dev/data_quality/mds-template-readonly.tsv
+Main correspondances between EAMENA fieldnames and field UUIDs are listed here: https://github.com/eamena-project/eamena-arches-dev/blob/main/dev/data_quality/mds-template-readonly.tsv
+
 
 ## Total number of HP
 

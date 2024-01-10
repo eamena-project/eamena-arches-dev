@@ -10,7 +10,7 @@ Minimum Data Standards (MDS) of Heritage Places
 ##### Templates
 
 * [mds-template-readonly.tsv](mds-template-readonly.tsv):
-	- a read-ony TSV file with the list of HP fields with their UUID and a "Yes" mark if these fields belong to the mds. This files results from the automatic export of [mds-template.xlsx](mds-template.xlsx), it will be overwrite each time 'mds-template.xlsx' is updated.
+	- a read-ony TSV file with the list of HP fields with their UUID and a "Yes" mark if these fields belong to the mds. This files results from the automatic export of [mds-template.xlsx](mds-template.xlsx), it will be overwrite each time 'mds-template.xlsx' is updated. This is the reference table of the eamenaR mapping file `ids.csv` (see [eamenaR documentation](https://github.com/eamena-project/eamenaR/blob/bff834a2b239f195bc49cf72ce51d7a330808ee8/README.md#correspondances-between-concept-labels-and-uuids))
 * [mds-template.xlsx](mds-template.xlsx):
 	- an editable XLSX file with the list of HP fields with their UUID and a "Yes" mark if these fields belong to the mds. This file is considered to be the authorative document for mds.
 

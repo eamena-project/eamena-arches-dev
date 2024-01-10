@@ -23,7 +23,7 @@ classDef eamenaFunc fill:#e3c071;
 The core of the Python `citation-generator` function is currently hosted on [**Google Colab**](https://colab.research.google.com/github/eamena-project/eamena-arches-dev/blob/main/dev/citations/citation_generator.ipynb). During this workflow:
 
 1. the GeoJSON is converted into a GeoJSON file and zipped;
-2. uploaded to Zenodo 'eamena' community with its metadata, see [Zenodo](#zenodo) 
+2. the file is uploaded to Zenodo 'eamena' community with its metadata, see [Zenodo](#zenodo) 
 
 ## Zenodo
 

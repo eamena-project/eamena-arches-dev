@@ -19,7 +19,11 @@ flowchart LR
 end
 classDef eamenaFunc fill:#e3c071;
 ```
-During this workflow, the GeoJSON is converted into a GeoJSON file, and zipped, uploaded to Zenodo with its metadata. The core of the Python `citation-generator` function is currently hosted on [**Google Colab**](https://colab.research.google.com/github/eamena-project/eamena-arches-dev/blob/main/dev/citations/citation_generator.ipynb)
+
+The core of the Python `citation-generator` function is currently hosted on [**Google Colab**](https://colab.research.google.com/github/eamena-project/eamena-arches-dev/blob/main/dev/citations/citation_generator.ipynb). During this workflow:
+
+1. the GeoJSON is converted into a GeoJSON file and zipped;
+2. uploaded to Zenodo 'eamena' community with its metadata, see [Zenodo](#zenodo) 
 
 ## Zenodo
 

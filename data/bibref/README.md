@@ -27,7 +27,9 @@ The core of the Python `citation-generator` function is currently hosted on [**G
 
 ## Zenodo
 
-Zenodo will host the data (the GeoJSON file itself) and its [metadata](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bibref/README.md#metadata) under the EAMENA database community ['eamena'](https://zenodo.org/communities/eamena). See for example the GitHub release of Ressource Models and collections ([here](https://zenodo.org/records/10142707))
+Zenodo ['eamena' community](https://zenodo.org/communities/eamena) host the data (the GeoJSON file itself) and its [metadata](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bibref/README.md#metadata). 
+
+ℹ️ see for example the GitHub release of Ressource Models and collections ([here](https://zenodo.org/records/10142707))
 
 ### Metadata
 > proposed metadata schema/layout
@@ -37,15 +39,13 @@ Metadata of published dataset could be: [free text](https://github.com/eamena-pr
 ℹ️ see the [list of Zenodo metadata](https://developers.zenodo.org/#depositions) 
 
 #### Free text
-
-These metadata values have to be entered manually (ie, can not be deduced from the GeoJSON data)
+> These metadata values have to be entered manually (ie, can not be deduced from the GeoJSON data)
 
 * `title`: *free text*. Name for the dataset (mandatory).
 * `description`: *free text*. Dataset description (mandatory).
 
 #### Constant values
-
-These metadata values are always the same (constant):
+> These metadata values are always the same (constant):
 
 * `'communities'`: `[{'identifier': 'eamena'}]`,
 * `upload_type`: `'dataset'`

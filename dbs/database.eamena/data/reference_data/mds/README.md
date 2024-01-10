@@ -9,7 +9,7 @@ Minimum Data Standards (MDS) of Heritage Places
 
 ##### Templates
 
-The template `mds-template-*` is the reference table of the eamenaR mapping file `ids.csv` (see [eamenaR documentation](https://github.com/eamena-project/eamenaR#correspondances-between-concept-labels-and-uuids)
+The template `mds-template-*` is the reference table for the MDS and for the eamenaR mapping file `ids.csv` (see [eamenaR documentation](https://github.com/eamena-project/eamenaR#correspondances-between-concept-labels-and-uuids)
 
 * [mds-template.xlsx](mds-template.xlsx):
 	- an editable XLSX file with the list of HP fields with their UUID and a "Yes" mark if these fields belong to the mds. This file is considered to be the authorative document for mds.

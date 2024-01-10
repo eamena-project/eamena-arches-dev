@@ -3,7 +3,7 @@ name: XLSX to TSV Conversion mds
 on:
   push:
     paths:
-      - 'dev/data_quality/mds-template.xlsx'
+      - 'dbs/database.eamena/data/reference_data/mds/mds-template.xlsx'
 
 jobs:
   convert_to_tsv:
@@ -22,7 +22,7 @@ jobs:
 
       - name: Convert XLSX to TSV
         run: |
-          python dev/data_quality/convert_xlsx_to_tsv.py dev/data_quality/mds-template.xlsx dev/data_quality/mds-template-readonly.tsv
+          python dbs/database.eamena/data/reference_data/mds/convert_xlsx_to_tsv.py dbs/database.eamena/data/reference_data/mds/mds-template.xlsx dev/data_quality/mds-template-readonly.tsv
 
       - name: Commit and push TSV file
         run: |

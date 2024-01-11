@@ -49,6 +49,9 @@ NB: use `34cfea68-c2c0-11ea-9026-02e7594ce0a0` for Disturbance Cause Category Ty
 
 ## HP centroids
 
+
+* SQL
+
 ```SQL
 SELECT ids.ri, ids.ei, coords.x, coords.y FROM (
 -- EAMENA ID
@@ -77,6 +80,8 @@ LIMIT 10
 ```
 
 ## HP without GS
+
+* SQL
 
 ```SQL
 SELECT ids.ri, ids.ei, coords.x, coords.y FROM (

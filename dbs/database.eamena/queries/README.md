@@ -6,8 +6,10 @@ Miscellaneous and compendium of equivalent queries between Advanced Search and S
 
 | Abrevv. | Full name |
 |----------|----------|
-| HP | Heritage Place |
 | AS | Advanced Search |
+| GS | Grid Squares |
+| HP | Heritage Place |
+
 
 Main correspondances between EAMENA fieldnames and field UUIDs are listed here: https://github.com/eamena-project/eamena-arches-dev/blob/main/dev/data_quality/mds-template-readonly.tsv
 
@@ -43,6 +45,96 @@ https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&rep
 ```
 
 NB: use `34cfea68-c2c0-11ea-9026-02e7594ce0a0` for Disturbance Cause Category Type	
+
+
+## HP centroids
+
+```SQL
+SELECT ids.ri, ids.ei, coords.x, coords.y FROM (
+-- EAMENA ID
+SELECT * FROM (
+SELECT
+resourceinstanceid::TEXT AS ri,
+tiledata ->> '34cfe992-c2c0-11ea-9026-02e7594ce0a0'::text as ei
+FROM tiles
+) AS x
+WHERE ei IS NOT NULL
+) AS ids,
+(
+-- coordinates
+SELECT * FROM (
+SELECT
+resourceinstanceid::TEXT AS ri,
+ST_X(ST_AsText(ST_Centroid(ST_GeomFromGeoJSON(tiledata -> '5348cf67-c2c5-11ea-9026-02e7594ce0a0' -> 'features' -> 0 -> 'geometry')))) x,
+ST_Y(ST_AsText(ST_Centroid(ST_GeomFromGeoJSON(tiledata -> '5348cf67-c2c5-11ea-9026-02e7594ce0a0' -> 'features' -> 0 -> 'geometry')))) y
+FROM tiles
+) AS x
+WHERE x IS NOT NULL AND y IS NOT NULL
+) AS coords
+WHERE ids.ri = coords.ri
+ORDER BY ei
+LIMIT 10
+```
+
+## HP without GS
+
+```SQL
+SELECT ids.ri, ids.ei, coords.x, coords.y FROM (
+-- EAMENA ID
+SELECT * FROM (
+SELECT
+resourceinstanceid::TEXT AS ri,
+tiledata ->> '34cfe992-c2c0-11ea-9026-02e7594ce0a0'::text as ei
+FROM tiles
+) AS x
+WHERE ei IS NOT NULL
+) AS ids,
+(
+-- coordinates
+SELECT * FROM (
+SELECT
+resourceinstanceid::TEXT AS ri,
+ST_X(ST_AsText(ST_Centroid(ST_GeomFromGeoJSON(tiledata -> '5348cf67-c2c5-11ea-9026-02e7594ce0a0' -> 'features' -> 0 -> 'geometry')))) x,
+ST_Y(ST_AsText(ST_Centroid(ST_GeomFromGeoJSON(tiledata -> '5348cf67-c2c5-11ea-9026-02e7594ce0a0' -> 'features' -> 0 -> 'geometry')))) y
+FROM tiles
+) AS x
+WHERE x IS NOT NULL AND y IS NOT NULL
+) AS coords
+WHERE ids.ri = coords.ri
+EXCEPT
+SELECT ids.ri, ids.ei, coords.x, coords.y FROM (
+	-- EAMENA ID
+	SELECT * FROM (
+		SELECT
+		resourceinstanceid::TEXT AS ri,
+		tiledata ->> '34cfe992-c2c0-11ea-9026-02e7594ce0a0'::text as ei
+		FROM tiles
+		) AS x
+	WHERE ei IS NOT NULL
+	) AS ids,
+	(
+	-- coordinates
+	SELECT * FROM (
+		SELECT
+		resourceinstanceid::TEXT AS ri,
+		ST_X(ST_AsText(ST_Centroid(ST_GeomFromGeoJSON(tiledata -> '5348cf67-c2c5-11ea-9026-02e7594ce0a0' -> 'features' -> 0 -> 'geometry')))) x,
+		ST_Y(ST_AsText(ST_Centroid(ST_GeomFromGeoJSON(tiledata -> '5348cf67-c2c5-11ea-9026-02e7594ce0a0' -> 'features' -> 0 -> 'geometry')))) y
+		FROM tiles
+		) AS x
+	WHERE x IS NOT NULL AND y IS NOT NULL
+	) AS coords,
+	(
+	-- coordinates
+	SELECT * FROM (
+		SELECT
+		resourceinstanceid::TEXT AS ri,
+		tiledata ->> '34cfea5d-c2c0-11ea-9026-02e7594ce0a0'::text as gr
+		FROM tiles
+		) AS x
+	WHERE gr IS NOT NULL
+	) AS grd
+WHERE ids.ri = coords.ri AND grd.ri = coords.ri AND grd.ri = ids.ri
+```
 
 
 # Other

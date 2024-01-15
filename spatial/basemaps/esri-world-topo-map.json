@@ -1,0 +1,15 @@
+{
+    "name": "EsriWorldTopoMap",
+    "sources": {
+        "stamen-terrain": {
+            "tiles": ["http://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}"],
+            "type": "raster",
+            "tileSize": 256
+        }
+    },
+    "layers": [{
+        "source": "esri-world-topo-map",
+        "type": "raster",
+        "id": "esri-world-topo-map"
+    }]
+}

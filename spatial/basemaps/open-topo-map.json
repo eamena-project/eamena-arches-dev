@@ -1,0 +1,15 @@
+{
+    "name": "OpenTopoMap",
+    "sources": {
+        "stamen-terrain": {
+            "tiles": ["https://tile.opentopomap.org/{z}/{x}/{y}.png"],
+            "type": "raster",
+            "tileSize": 256
+        }
+    },
+    "layers": [{
+        "source": "open-topo-map",
+        "type": "raster",
+        "id": "open-topo-map"
+    }]
+}

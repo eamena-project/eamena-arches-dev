@@ -48,8 +48,14 @@ Will create the many TSV located into the folder https://github.com/eamena-proje
 
 
 ## Mapping
+> Create a BU from a structured file
 
 To recast structured data (source) to a BU format (target), see the [eamenaR](https://github.com/eamena-project/eamenaR#bu-mapping) package
+
+## BU append
+
+Check the name of the fields in https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/mds/mds-template-readonly.tsv
+
 
 
 ## ~~BU process~~

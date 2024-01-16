@@ -62,6 +62,8 @@ A BU append is necessarly a CSV file
   - [bu_append_hp_grid_20240116.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bulk/append/bu_append_gs.csv). Append missing GS to HP 
 * Check the name of the fields in the reference data [mds-template-readonly.tsv](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/mds/mds-template-readonly.tsv) file  
 
+A mapping file (`.mapping`) will also be necessary, cf: https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data/mapping_files
+
 
 
 ## ~~BU process~~

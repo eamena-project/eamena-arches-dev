@@ -53,8 +53,13 @@ Will create the many TSV located into the folder https://github.com/eamena-proje
 To recast structured data (source) to a BU format (target), see the [eamenaR](https://github.com/eamena-project/eamenaR#bu-mapping) package
 
 ## BU append
+> Append data to an already existing record
 
-Check the name of the fields in https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/mds/mds-template-readonly.tsv
+A BU append is necessarly a CSV file
+
+* Check one of these models:
+  - [caravanserail_outCSV2.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bulk/append/caravanserail_outCSV2.csv): Append new geometries to caravanserails
+* Check the name of the fields in the reference data [mds-template-readonly.tsv](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/mds/mds-template-readonly.tsv) file  
 
 
 

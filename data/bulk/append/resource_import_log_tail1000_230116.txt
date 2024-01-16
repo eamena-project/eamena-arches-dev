@@ -1,0 +1,1000 @@
+                inverserelationshiptype,
+                resourceinstanceidfrom,
+                resourceinstanceidto,
+                resourceinstancefrom_graphid,
+                resourceinstanceto_graphid,
+                tileid,
+                nodeid,
+                created,
+                modified
+            ) (SELECT
+                (relationship->>'resourceXresourceId')::uuid,
+                '',
+                CASE relationship->>'ontologyProperty'
+                    WHEN '' THEN defaultOntologyProperty
+                    ELSE relationship->>'ontologyProperty'
+                END,
+                CASE relationship->>'inverseOntologyProperty'
+                    WHEN '' THEN defaultInverseOntologyProperty
+                    ELSE relationship->>'inverseOntologyProperty'
+                END,
+                resourceinstancefrom_id,
+                (relationship->>'resourceId')::uuid,
+                from_graphid,
+                to_graphid,
+                tile_id,
+                nodeid,
+                now(),
+                now()
+            FROM relationships3)"
+PL/pgSQL function __arches_create_resource_x_resource_relationships(uuid) line 14 at SQL statement
+
+
+Tue Jan 16 06:28:22 2024 WARNING: 2024-01-16 08:28:09.457468: WARNING: failed to save document in resource: ad7a4dc1-0e8c-4934-9978-3c98543246a7 on line 542. Exception detail:
+cannot extract elements from a scalar
+CONTEXT:  SQL statement "WITH updated_tiles as (
+                UPDATE tiles t
+                SET tiledata = ret.result
+                FROM (SELECT res.tileid, (res.tiledata || jsonb_object_agg(res.nodeid, res.result)) result
+                        FROM 
+                        nodes n, 
+                            (SELECT t.tileid, n.nodeid, t.tiledata, jsonb_agg(jsonb_set(tile_data, array['resourceXresourceId'::text], ('"' || uuid_generate_v4()|| '"')::jsonb, true)) result
+                                FROM tiles t LEFT JOIN nodes n ON t.nodegroupid = n.nodegroupid, jsonb_array_elements(t.tiledata->n.nodeid::text) tile_data
+                                WHERE t.tiledata->>n.nodeid::text IS NOT null
+                                AND t.tiledata->>n.nodeid::text != ''
+                                AND t.tileid = tile_id
+                                AND n.datatype IN ('resource-instance-list', 'resource-instance')
+                                GROUP BY t.tileid, n.nodeid, tiledata
+                            ) res
+                        WHERE n.nodeid = res.nodeid
+                        GROUP BY res.tileid, res.tiledata
+                    ) as ret
+                WHERE
+                    t.tileid = tile_id
+                RETURNING t.nodegroupid, t.tiledata::jsonb, t.tileid, t.resourceinstanceid
+            )
+            , relationships AS (
+                SELECT n.nodeid, n.config,
+                    jsonb_array_elements(tt.tiledata->n.nodeid::text) AS relationship
+                FROM updated_tiles tt
+                    LEFT JOIN nodes n ON tt.nodegroupid = n.nodegroupid
+                WHERE n.datatype IN ('resource-instance-list', 'resource-instance')
+                    AND tt.tiledata->>n.nodeid::text IS NOT null
+            )
+            , relationships2 AS (
+                SELECT r.nodeid, r.config, r.relationship, (SELECT ri.graphid
+                    FROM resource_instances ri
+                    WHERE r.relationship->>'resourceId' = ri.resourceinstanceid::text) AS to_graphid
+                FROM relationships r
+            )
+            , relationships3 AS (
+                SELECT fr.nodeid, fr.relationship, fr.to_graphid, 
+                (
+                    SELECT graphs->>'ontologyProperty'
+                    FROM jsonb_array_elements(fr.config->'graphs') AS graphs
+                    WHERE graphs->>'graphid' = fr.to_graphid::text
+                ) AS defaultOntologyProperty,
+                (
+                    SELECT graphs->>'inverseOntologyProperty'
+                    FROM jsonb_array_elements(fr.config->'graphs') AS graphs
+                    WHERE graphs->>'graphid' = fr.to_graphid::text
+                ) AS defaultInverseOntologyProperty
+                FROM relationships2 fr
+            )
+
+            INSERT INTO resource_x_resource (
+                resourcexid,
+                notes,
+                relationshiptype,
+                inverserelationshiptype,
+                resourceinstanceidfrom,
+                resourceinstanceidto,
+                resourceinstancefrom_graphid,
+                resourceinstanceto_graphid,
+                tileid,
+                nodeid,
+                created,
+                modified
+            ) (SELECT
+                (relationship->>'resourceXresourceId')::uuid,
+                '',
+                CASE relationship->>'ontologyProperty'
+                    WHEN '' THEN defaultOntologyProperty
+                    ELSE relationship->>'ontologyProperty'
+                END,
+                CASE relationship->>'inverseOntologyProperty'
+                    WHEN '' THEN defaultInverseOntologyProperty
+                    ELSE relationship->>'inverseOntologyProperty'
+                END,
+                resourceinstancefrom_id,
+                (relationship->>'resourceId')::uuid,
+                from_graphid,
+                to_graphid,
+                tile_id,
+                nodeid,
+                now(),
+                now()
+            FROM relationships3)"
+PL/pgSQL function __arches_create_resource_x_resource_relationships(uuid) line 14 at SQL statement
+
+
+Tue Jan 16 06:28:22 2024 WARNING: 2024-01-16 08:28:10.347017: WARNING: failed to save document in resource: 95037bc9-7809-4945-9af8-3cbe29dd1303 on line 543. Exception detail:
+cannot extract elements from a scalar
+CONTEXT:  SQL statement "WITH updated_tiles as (
+                UPDATE tiles t
+                SET tiledata = ret.result
+                FROM (SELECT res.tileid, (res.tiledata || jsonb_object_agg(res.nodeid, res.result)) result
+                        FROM 
+                        nodes n, 
+                            (SELECT t.tileid, n.nodeid, t.tiledata, jsonb_agg(jsonb_set(tile_data, array['resourceXresourceId'::text], ('"' || uuid_generate_v4()|| '"')::jsonb, true)) result
+                                FROM tiles t LEFT JOIN nodes n ON t.nodegroupid = n.nodegroupid, jsonb_array_elements(t.tiledata->n.nodeid::text) tile_data
+                                WHERE t.tiledata->>n.nodeid::text IS NOT null
+                                AND t.tiledata->>n.nodeid::text != ''
+                                AND t.tileid = tile_id
+                                AND n.datatype IN ('resource-instance-list', 'resource-instance')
+                                GROUP BY t.tileid, n.nodeid, tiledata
+                            ) res
+                        WHERE n.nodeid = res.nodeid
+                        GROUP BY res.tileid, res.tiledata
+                    ) as ret
+                WHERE
+                    t.tileid = tile_id
+                RETURNING t.nodegroupid, t.tiledata::jsonb, t.tileid, t.resourceinstanceid
+            )
+            , relationships AS (
+                SELECT n.nodeid, n.config,
+                    jsonb_array_elements(tt.tiledata->n.nodeid::text) AS relationship
+                FROM updated_tiles tt
+                    LEFT JOIN nodes n ON tt.nodegroupid = n.nodegroupid
+                WHERE n.datatype IN ('resource-instance-list', 'resource-instance')
+                    AND tt.tiledata->>n.nodeid::text IS NOT null
+            )
+            , relationships2 AS (
+                SELECT r.nodeid, r.config, r.relationship, (SELECT ri.graphid
+                    FROM resource_instances ri
+                    WHERE r.relationship->>'resourceId' = ri.resourceinstanceid::text) AS to_graphid
+                FROM relationships r
+            )
+            , relationships3 AS (
+                SELECT fr.nodeid, fr.relationship, fr.to_graphid, 
+                (
+                    SELECT graphs->>'ontologyProperty'
+                    FROM jsonb_array_elements(fr.config->'graphs') AS graphs
+                    WHERE graphs->>'graphid' = fr.to_graphid::text
+                ) AS defaultOntologyProperty,
+                (
+                    SELECT graphs->>'inverseOntologyProperty'
+                    FROM jsonb_array_elements(fr.config->'graphs') AS graphs
+                    WHERE graphs->>'graphid' = fr.to_graphid::text
+                ) AS defaultInverseOntologyProperty
+                FROM relationships2 fr
+            )
+
+            INSERT INTO resource_x_resource (
+                resourcexid,
+                notes,
+                relationshiptype,
+                inverserelationshiptype,
+                resourceinstanceidfrom,
+                resourceinstanceidto,
+                resourceinstancefrom_graphid,
+                resourceinstanceto_graphid,
+                tileid,
+                nodeid,
+                created,
+                modified
+            ) (SELECT
+                (relationship->>'resourceXresourceId')::uuid,
+                '',
+                CASE relationship->>'ontologyProperty'
+                    WHEN '' THEN defaultOntologyProperty
+                    ELSE relationship->>'ontologyProperty'
+                END,
+                CASE relationship->>'inverseOntologyProperty'
+                    WHEN '' THEN defaultInverseOntologyProperty
+                    ELSE relationship->>'inverseOntologyProperty'
+                END,
+                resourceinstancefrom_id,
+                (relationship->>'resourceId')::uuid,
+                from_graphid,
+                to_graphid,
+                tile_id,
+                nodeid,
+                now(),
+                now()
+            FROM relationships3)"
+PL/pgSQL function __arches_create_resource_x_resource_relationships(uuid) line 14 at SQL statement
+
+
+Tue Jan 16 06:28:22 2024 WARNING: 2024-01-16 08:28:11.223299: WARNING: failed to save document in resource: 1b9cad4f-e326-4ac5-a1b4-55e730db5c6a on line 544. Exception detail:
+cannot extract elements from a scalar
+CONTEXT:  SQL statement "WITH updated_tiles as (
+                UPDATE tiles t
+                SET tiledata = ret.result
+                FROM (SELECT res.tileid, (res.tiledata || jsonb_object_agg(res.nodeid, res.result)) result
+                        FROM 
+                        nodes n, 
+                            (SELECT t.tileid, n.nodeid, t.tiledata, jsonb_agg(jsonb_set(tile_data, array['resourceXresourceId'::text], ('"' || uuid_generate_v4()|| '"')::jsonb, true)) result
+                                FROM tiles t LEFT JOIN nodes n ON t.nodegroupid = n.nodegroupid, jsonb_array_elements(t.tiledata->n.nodeid::text) tile_data
+                                WHERE t.tiledata->>n.nodeid::text IS NOT null
+                                AND t.tiledata->>n.nodeid::text != ''
+                                AND t.tileid = tile_id
+                                AND n.datatype IN ('resource-instance-list', 'resource-instance')
+                                GROUP BY t.tileid, n.nodeid, tiledata
+                            ) res
+                        WHERE n.nodeid = res.nodeid
+                        GROUP BY res.tileid, res.tiledata
+                    ) as ret
+                WHERE
+                    t.tileid = tile_id
+                RETURNING t.nodegroupid, t.tiledata::jsonb, t.tileid, t.resourceinstanceid
+            )
+            , relationships AS (
+                SELECT n.nodeid, n.config,
+                    jsonb_array_elements(tt.tiledata->n.nodeid::text) AS relationship
+                FROM updated_tiles tt
+                    LEFT JOIN nodes n ON tt.nodegroupid = n.nodegroupid
+                WHERE n.datatype IN ('resource-instance-list', 'resource-instance')
+                    AND tt.tiledata->>n.nodeid::text IS NOT null
+            )
+            , relationships2 AS (
+                SELECT r.nodeid, r.config, r.relationship, (SELECT ri.graphid
+                    FROM resource_instances ri
+                    WHERE r.relationship->>'resourceId' = ri.resourceinstanceid::text) AS to_graphid
+                FROM relationships r
+            )
+            , relationships3 AS (
+                SELECT fr.nodeid, fr.relationship, fr.to_graphid, 
+                (
+                    SELECT graphs->>'ontologyProperty'
+                    FROM jsonb_array_elements(fr.config->'graphs') AS graphs
+                    WHERE graphs->>'graphid' = fr.to_graphid::text
+                ) AS defaultOntologyProperty,
+                (
+                    SELECT graphs->>'inverseOntologyProperty'
+                    FROM jsonb_array_elements(fr.config->'graphs') AS graphs
+                    WHERE graphs->>'graphid' = fr.to_graphid::text
+                ) AS defaultInverseOntologyProperty
+                FROM relationships2 fr
+            )
+
+            INSERT INTO resource_x_resource (
+                resourcexid,
+                notes,
+                relationshiptype,
+                inverserelationshiptype,
+                resourceinstanceidfrom,
+                resourceinstanceidto,
+                resourceinstancefrom_graphid,
+                resourceinstanceto_graphid,
+                tileid,
+                nodeid,
+                created,
+                modified
+            ) (SELECT
+                (relationship->>'resourceXresourceId')::uuid,
+                '',
+                CASE relationship->>'ontologyProperty'
+                    WHEN '' THEN defaultOntologyProperty
+                    ELSE relationship->>'ontologyProperty'
+                END,
+                CASE relationship->>'inverseOntologyProperty'
+                    WHEN '' THEN defaultInverseOntologyProperty
+                    ELSE relationship->>'inverseOntologyProperty'
+                END,
+                resourceinstancefrom_id,
+                (relationship->>'resourceId')::uuid,
+                from_graphid,
+                to_graphid,
+                tile_id,
+                nodeid,
+                now(),
+                now()
+            FROM relationships3)"
+PL/pgSQL function __arches_create_resource_x_resource_relationships(uuid) line 14 at SQL statement
+
+
+Tue Jan 16 06:28:22 2024 WARNING: 2024-01-16 08:28:12.122888: WARNING: failed to save document in resource: 7908bf2d-3556-4dfa-9137-1700e7500279 on line 545. Exception detail:
+cannot extract elements from a scalar
+CONTEXT:  SQL statement "WITH updated_tiles as (
+                UPDATE tiles t
+                SET tiledata = ret.result
+                FROM (SELECT res.tileid, (res.tiledata || jsonb_object_agg(res.nodeid, res.result)) result
+                        FROM 
+                        nodes n, 
+                            (SELECT t.tileid, n.nodeid, t.tiledata, jsonb_agg(jsonb_set(tile_data, array['resourceXresourceId'::text], ('"' || uuid_generate_v4()|| '"')::jsonb, true)) result
+                                FROM tiles t LEFT JOIN nodes n ON t.nodegroupid = n.nodegroupid, jsonb_array_elements(t.tiledata->n.nodeid::text) tile_data
+                                WHERE t.tiledata->>n.nodeid::text IS NOT null
+                                AND t.tiledata->>n.nodeid::text != ''
+                                AND t.tileid = tile_id
+                                AND n.datatype IN ('resource-instance-list', 'resource-instance')
+                                GROUP BY t.tileid, n.nodeid, tiledata
+                            ) res
+                        WHERE n.nodeid = res.nodeid
+                        GROUP BY res.tileid, res.tiledata
+                    ) as ret
+                WHERE
+                    t.tileid = tile_id
+                RETURNING t.nodegroupid, t.tiledata::jsonb, t.tileid, t.resourceinstanceid
+            )
+            , relationships AS (
+                SELECT n.nodeid, n.config,
+                    jsonb_array_elements(tt.tiledata->n.nodeid::text) AS relationship
+                FROM updated_tiles tt
+                    LEFT JOIN nodes n ON tt.nodegroupid = n.nodegroupid
+                WHERE n.datatype IN ('resource-instance-list', 'resource-instance')
+                    AND tt.tiledata->>n.nodeid::text IS NOT null
+            )
+            , relationships2 AS (
+                SELECT r.nodeid, r.config, r.relationship, (SELECT ri.graphid
+                    FROM resource_instances ri
+                    WHERE r.relationship->>'resourceId' = ri.resourceinstanceid::text) AS to_graphid
+                FROM relationships r
+            )
+            , relationships3 AS (
+                SELECT fr.nodeid, fr.relationship, fr.to_graphid, 
+                (
+                    SELECT graphs->>'ontologyProperty'
+                    FROM jsonb_array_elements(fr.config->'graphs') AS graphs
+                    WHERE graphs->>'graphid' = fr.to_graphid::text
+                ) AS defaultOntologyProperty,
+                (
+                    SELECT graphs->>'inverseOntologyProperty'
+                    FROM jsonb_array_elements(fr.config->'graphs') AS graphs
+                    WHERE graphs->>'graphid' = fr.to_graphid::text
+                ) AS defaultInverseOntologyProperty
+                FROM relationships2 fr
+            )
+
+            INSERT INTO resource_x_resource (
+                resourcexid,
+                notes,
+                relationshiptype,
+                inverserelationshiptype,
+                resourceinstanceidfrom,
+                resourceinstanceidto,
+                resourceinstancefrom_graphid,
+                resourceinstanceto_graphid,
+                tileid,
+                nodeid,
+                created,
+                modified
+            ) (SELECT
+                (relationship->>'resourceXresourceId')::uuid,
+                '',
+                CASE relationship->>'ontologyProperty'
+                    WHEN '' THEN defaultOntologyProperty
+                    ELSE relationship->>'ontologyProperty'
+                END,
+                CASE relationship->>'inverseOntologyProperty'
+                    WHEN '' THEN defaultInverseOntologyProperty
+                    ELSE relationship->>'inverseOntologyProperty'
+                END,
+                resourceinstancefrom_id,
+                (relationship->>'resourceId')::uuid,
+                from_graphid,
+                to_graphid,
+                tile_id,
+                nodeid,
+                now(),
+                now()
+            FROM relationships3)"
+PL/pgSQL function __arches_create_resource_x_resource_relationships(uuid) line 14 at SQL statement
+
+
+Tue Jan 16 06:28:22 2024 WARNING: 2024-01-16 08:28:13.079566: WARNING: failed to save document in resource: 4f7295e2-7b5a-4e48-b980-31a41cc86a21 on line 546. Exception detail:
+cannot extract elements from a scalar
+CONTEXT:  SQL statement "WITH updated_tiles as (
+                UPDATE tiles t
+                SET tiledata = ret.result
+                FROM (SELECT res.tileid, (res.tiledata || jsonb_object_agg(res.nodeid, res.result)) result
+                        FROM 
+                        nodes n, 
+                            (SELECT t.tileid, n.nodeid, t.tiledata, jsonb_agg(jsonb_set(tile_data, array['resourceXresourceId'::text], ('"' || uuid_generate_v4()|| '"')::jsonb, true)) result
+                                FROM tiles t LEFT JOIN nodes n ON t.nodegroupid = n.nodegroupid, jsonb_array_elements(t.tiledata->n.nodeid::text) tile_data
+                                WHERE t.tiledata->>n.nodeid::text IS NOT null
+                                AND t.tiledata->>n.nodeid::text != ''
+                                AND t.tileid = tile_id
+                                AND n.datatype IN ('resource-instance-list', 'resource-instance')
+                                GROUP BY t.tileid, n.nodeid, tiledata
+                            ) res
+                        WHERE n.nodeid = res.nodeid
+                        GROUP BY res.tileid, res.tiledata
+                    ) as ret
+                WHERE
+                    t.tileid = tile_id
+                RETURNING t.nodegroupid, t.tiledata::jsonb, t.tileid, t.resourceinstanceid
+            )
+            , relationships AS (
+                SELECT n.nodeid, n.config,
+                    jsonb_array_elements(tt.tiledata->n.nodeid::text) AS relationship
+                FROM updated_tiles tt
+                    LEFT JOIN nodes n ON tt.nodegroupid = n.nodegroupid
+                WHERE n.datatype IN ('resource-instance-list', 'resource-instance')
+                    AND tt.tiledata->>n.nodeid::text IS NOT null
+            )
+            , relationships2 AS (
+                SELECT r.nodeid, r.config, r.relationship, (SELECT ri.graphid
+                    FROM resource_instances ri
+                    WHERE r.relationship->>'resourceId' = ri.resourceinstanceid::text) AS to_graphid
+                FROM relationships r
+            )
+            , relationships3 AS (
+                SELECT fr.nodeid, fr.relationship, fr.to_graphid, 
+                (
+                    SELECT graphs->>'ontologyProperty'
+                    FROM jsonb_array_elements(fr.config->'graphs') AS graphs
+                    WHERE graphs->>'graphid' = fr.to_graphid::text
+                ) AS defaultOntologyProperty,
+                (
+                    SELECT graphs->>'inverseOntologyProperty'
+                    FROM jsonb_array_elements(fr.config->'graphs') AS graphs
+                    WHERE graphs->>'graphid' = fr.to_graphid::text
+                ) AS defaultInverseOntologyProperty
+                FROM relationships2 fr
+            )
+
+            INSERT INTO resource_x_resource (
+                resourcexid,
+                notes,
+                relationshiptype,
+                inverserelationshiptype,
+                resourceinstanceidfrom,
+                resourceinstanceidto,
+                resourceinstancefrom_graphid,
+                resourceinstanceto_graphid,
+                tileid,
+                nodeid,
+                created,
+                modified
+            ) (SELECT
+                (relationship->>'resourceXresourceId')::uuid,
+                '',
+                CASE relationship->>'ontologyProperty'
+                    WHEN '' THEN defaultOntologyProperty
+                    ELSE relationship->>'ontologyProperty'
+                END,
+                CASE relationship->>'inverseOntologyProperty'
+                    WHEN '' THEN defaultInverseOntologyProperty
+                    ELSE relationship->>'inverseOntologyProperty'
+                END,
+                resourceinstancefrom_id,
+                (relationship->>'resourceId')::uuid,
+                from_graphid,
+                to_graphid,
+                tile_id,
+                nodeid,
+                now(),
+                now()
+            FROM relationships3)"
+PL/pgSQL function __arches_create_resource_x_resource_relationships(uuid) line 14 at SQL statement
+
+
+Tue Jan 16 06:28:22 2024 WARNING: 2024-01-16 08:28:13.968530: WARNING: failed to save document in resource: 232c04ce-f51e-4801-9f59-d13603c5cb7f on line 547. Exception detail:
+cannot extract elements from a scalar
+CONTEXT:  SQL statement "WITH updated_tiles as (
+                UPDATE tiles t
+                SET tiledata = ret.result
+                FROM (SELECT res.tileid, (res.tiledata || jsonb_object_agg(res.nodeid, res.result)) result
+                        FROM 
+                        nodes n, 
+                            (SELECT t.tileid, n.nodeid, t.tiledata, jsonb_agg(jsonb_set(tile_data, array['resourceXresourceId'::text], ('"' || uuid_generate_v4()|| '"')::jsonb, true)) result
+                                FROM tiles t LEFT JOIN nodes n ON t.nodegroupid = n.nodegroupid, jsonb_array_elements(t.tiledata->n.nodeid::text) tile_data
+                                WHERE t.tiledata->>n.nodeid::text IS NOT null
+                                AND t.tiledata->>n.nodeid::text != ''
+                                AND t.tileid = tile_id
+                                AND n.datatype IN ('resource-instance-list', 'resource-instance')
+                                GROUP BY t.tileid, n.nodeid, tiledata
+                            ) res
+                        WHERE n.nodeid = res.nodeid
+                        GROUP BY res.tileid, res.tiledata
+                    ) as ret
+                WHERE
+                    t.tileid = tile_id
+                RETURNING t.nodegroupid, t.tiledata::jsonb, t.tileid, t.resourceinstanceid
+            )
+            , relationships AS (
+                SELECT n.nodeid, n.config,
+                    jsonb_array_elements(tt.tiledata->n.nodeid::text) AS relationship
+                FROM updated_tiles tt
+                    LEFT JOIN nodes n ON tt.nodegroupid = n.nodegroupid
+                WHERE n.datatype IN ('resource-instance-list', 'resource-instance')
+                    AND tt.tiledata->>n.nodeid::text IS NOT null
+            )
+            , relationships2 AS (
+                SELECT r.nodeid, r.config, r.relationship, (SELECT ri.graphid
+                    FROM resource_instances ri
+                    WHERE r.relationship->>'resourceId' = ri.resourceinstanceid::text) AS to_graphid
+                FROM relationships r
+            )
+            , relationships3 AS (
+                SELECT fr.nodeid, fr.relationship, fr.to_graphid, 
+                (
+                    SELECT graphs->>'ontologyProperty'
+                    FROM jsonb_array_elements(fr.config->'graphs') AS graphs
+                    WHERE graphs->>'graphid' = fr.to_graphid::text
+                ) AS defaultOntologyProperty,
+                (
+                    SELECT graphs->>'inverseOntologyProperty'
+                    FROM jsonb_array_elements(fr.config->'graphs') AS graphs
+                    WHERE graphs->>'graphid' = fr.to_graphid::text
+                ) AS defaultInverseOntologyProperty
+                FROM relationships2 fr
+            )
+
+            INSERT INTO resource_x_resource (
+                resourcexid,
+                notes,
+                relationshiptype,
+                inverserelationshiptype,
+                resourceinstanceidfrom,
+                resourceinstanceidto,
+                resourceinstancefrom_graphid,
+                resourceinstanceto_graphid,
+                tileid,
+                nodeid,
+                created,
+                modified
+            ) (SELECT
+                (relationship->>'resourceXresourceId')::uuid,
+                '',
+                CASE relationship->>'ontologyProperty'
+                    WHEN '' THEN defaultOntologyProperty
+                    ELSE relationship->>'ontologyProperty'
+                END,
+                CASE relationship->>'inverseOntologyProperty'
+                    WHEN '' THEN defaultInverseOntologyProperty
+                    ELSE relationship->>'inverseOntologyProperty'
+                END,
+                resourceinstancefrom_id,
+                (relationship->>'resourceId')::uuid,
+                from_graphid,
+                to_graphid,
+                tile_id,
+                nodeid,
+                now(),
+                now()
+            FROM relationships3)"
+PL/pgSQL function __arches_create_resource_x_resource_relationships(uuid) line 14 at SQL statement
+
+
+Tue Jan 16 06:28:22 2024 WARNING: 2024-01-16 08:28:14.831429: WARNING: failed to save document in resource: c2c7b459-699c-41f7-af8e-d4dff20e7e12 on line 548. Exception detail:
+cannot extract elements from a scalar
+CONTEXT:  SQL statement "WITH updated_tiles as (
+                UPDATE tiles t
+                SET tiledata = ret.result
+                FROM (SELECT res.tileid, (res.tiledata || jsonb_object_agg(res.nodeid, res.result)) result
+                        FROM 
+                        nodes n, 
+                            (SELECT t.tileid, n.nodeid, t.tiledata, jsonb_agg(jsonb_set(tile_data, array['resourceXresourceId'::text], ('"' || uuid_generate_v4()|| '"')::jsonb, true)) result
+                                FROM tiles t LEFT JOIN nodes n ON t.nodegroupid = n.nodegroupid, jsonb_array_elements(t.tiledata->n.nodeid::text) tile_data
+                                WHERE t.tiledata->>n.nodeid::text IS NOT null
+                                AND t.tiledata->>n.nodeid::text != ''
+                                AND t.tileid = tile_id
+                                AND n.datatype IN ('resource-instance-list', 'resource-instance')
+                                GROUP BY t.tileid, n.nodeid, tiledata
+                            ) res
+                        WHERE n.nodeid = res.nodeid
+                        GROUP BY res.tileid, res.tiledata
+                    ) as ret
+                WHERE
+                    t.tileid = tile_id
+                RETURNING t.nodegroupid, t.tiledata::jsonb, t.tileid, t.resourceinstanceid
+            )
+            , relationships AS (
+                SELECT n.nodeid, n.config,
+                    jsonb_array_elements(tt.tiledata->n.nodeid::text) AS relationship
+                FROM updated_tiles tt
+                    LEFT JOIN nodes n ON tt.nodegroupid = n.nodegroupid
+                WHERE n.datatype IN ('resource-instance-list', 'resource-instance')
+                    AND tt.tiledata->>n.nodeid::text IS NOT null
+            )
+            , relationships2 AS (
+                SELECT r.nodeid, r.config, r.relationship, (SELECT ri.graphid
+                    FROM resource_instances ri
+                    WHERE r.relationship->>'resourceId' = ri.resourceinstanceid::text) AS to_graphid
+                FROM relationships r
+            )
+            , relationships3 AS (
+                SELECT fr.nodeid, fr.relationship, fr.to_graphid, 
+                (
+                    SELECT graphs->>'ontologyProperty'
+                    FROM jsonb_array_elements(fr.config->'graphs') AS graphs
+                    WHERE graphs->>'graphid' = fr.to_graphid::text
+                ) AS defaultOntologyProperty,
+                (
+                    SELECT graphs->>'inverseOntologyProperty'
+                    FROM jsonb_array_elements(fr.config->'graphs') AS graphs
+                    WHERE graphs->>'graphid' = fr.to_graphid::text
+                ) AS defaultInverseOntologyProperty
+                FROM relationships2 fr
+            )
+
+            INSERT INTO resource_x_resource (
+                resourcexid,
+                notes,
+                relationshiptype,
+                inverserelationshiptype,
+                resourceinstanceidfrom,
+                resourceinstanceidto,
+                resourceinstancefrom_graphid,
+                resourceinstanceto_graphid,
+                tileid,
+                nodeid,
+                created,
+                modified
+            ) (SELECT
+                (relationship->>'resourceXresourceId')::uuid,
+                '',
+                CASE relationship->>'ontologyProperty'
+                    WHEN '' THEN defaultOntologyProperty
+                    ELSE relationship->>'ontologyProperty'
+                END,
+                CASE relationship->>'inverseOntologyProperty'
+                    WHEN '' THEN defaultInverseOntologyProperty
+                    ELSE relationship->>'inverseOntologyProperty'
+                END,
+                resourceinstancefrom_id,
+                (relationship->>'resourceId')::uuid,
+                from_graphid,
+                to_graphid,
+                tile_id,
+                nodeid,
+                now(),
+                now()
+            FROM relationships3)"
+PL/pgSQL function __arches_create_resource_x_resource_relationships(uuid) line 14 at SQL statement
+
+
+Tue Jan 16 06:28:22 2024 WARNING: 2024-01-16 08:28:15.696042: WARNING: failed to save document in resource: 0adf5ed7-ad04-43d7-bbdc-54c1b263c329 on line 549. Exception detail:
+cannot extract elements from a scalar
+CONTEXT:  SQL statement "WITH updated_tiles as (
+                UPDATE tiles t
+                SET tiledata = ret.result
+                FROM (SELECT res.tileid, (res.tiledata || jsonb_object_agg(res.nodeid, res.result)) result
+                        FROM 
+                        nodes n, 
+                            (SELECT t.tileid, n.nodeid, t.tiledata, jsonb_agg(jsonb_set(tile_data, array['resourceXresourceId'::text], ('"' || uuid_generate_v4()|| '"')::jsonb, true)) result
+                                FROM tiles t LEFT JOIN nodes n ON t.nodegroupid = n.nodegroupid, jsonb_array_elements(t.tiledata->n.nodeid::text) tile_data
+                                WHERE t.tiledata->>n.nodeid::text IS NOT null
+                                AND t.tiledata->>n.nodeid::text != ''
+                                AND t.tileid = tile_id
+                                AND n.datatype IN ('resource-instance-list', 'resource-instance')
+                                GROUP BY t.tileid, n.nodeid, tiledata
+                            ) res
+                        WHERE n.nodeid = res.nodeid
+                        GROUP BY res.tileid, res.tiledata
+                    ) as ret
+                WHERE
+                    t.tileid = tile_id
+                RETURNING t.nodegroupid, t.tiledata::jsonb, t.tileid, t.resourceinstanceid
+            )
+            , relationships AS (
+                SELECT n.nodeid, n.config,
+                    jsonb_array_elements(tt.tiledata->n.nodeid::text) AS relationship
+                FROM updated_tiles tt
+                    LEFT JOIN nodes n ON tt.nodegroupid = n.nodegroupid
+                WHERE n.datatype IN ('resource-instance-list', 'resource-instance')
+                    AND tt.tiledata->>n.nodeid::text IS NOT null
+            )
+            , relationships2 AS (
+                SELECT r.nodeid, r.config, r.relationship, (SELECT ri.graphid
+                    FROM resource_instances ri
+                    WHERE r.relationship->>'resourceId' = ri.resourceinstanceid::text) AS to_graphid
+                FROM relationships r
+            )
+            , relationships3 AS (
+                SELECT fr.nodeid, fr.relationship, fr.to_graphid, 
+                (
+                    SELECT graphs->>'ontologyProperty'
+                    FROM jsonb_array_elements(fr.config->'graphs') AS graphs
+                    WHERE graphs->>'graphid' = fr.to_graphid::text
+                ) AS defaultOntologyProperty,
+                (
+                    SELECT graphs->>'inverseOntologyProperty'
+                    FROM jsonb_array_elements(fr.config->'graphs') AS graphs
+                    WHERE graphs->>'graphid' = fr.to_graphid::text
+                ) AS defaultInverseOntologyProperty
+                FROM relationships2 fr
+            )
+
+            INSERT INTO resource_x_resource (
+                resourcexid,
+                notes,
+                relationshiptype,
+                inverserelationshiptype,
+                resourceinstanceidfrom,
+                resourceinstanceidto,
+                resourceinstancefrom_graphid,
+                resourceinstanceto_graphid,
+                tileid,
+                nodeid,
+                created,
+                modified
+            ) (SELECT
+                (relationship->>'resourceXresourceId')::uuid,
+                '',
+                CASE relationship->>'ontologyProperty'
+                    WHEN '' THEN defaultOntologyProperty
+                    ELSE relationship->>'ontologyProperty'
+                END,
+                CASE relationship->>'inverseOntologyProperty'
+                    WHEN '' THEN defaultInverseOntologyProperty
+                    ELSE relationship->>'inverseOntologyProperty'
+                END,
+                resourceinstancefrom_id,
+                (relationship->>'resourceId')::uuid,
+                from_graphid,
+                to_graphid,
+                tile_id,
+                nodeid,
+                now(),
+                now()
+            FROM relationships3)"
+PL/pgSQL function __arches_create_resource_x_resource_relationships(uuid) line 14 at SQL statement
+
+
+Tue Jan 16 06:28:22 2024 WARNING: 2024-01-16 08:28:16.576233: WARNING: failed to save document in resource: bc895417-f73d-4af6-aa5a-2d2d75c74861 on line 550. Exception detail:
+cannot extract elements from a scalar
+CONTEXT:  SQL statement "WITH updated_tiles as (
+                UPDATE tiles t
+                SET tiledata = ret.result
+                FROM (SELECT res.tileid, (res.tiledata || jsonb_object_agg(res.nodeid, res.result)) result
+                        FROM 
+                        nodes n, 
+                            (SELECT t.tileid, n.nodeid, t.tiledata, jsonb_agg(jsonb_set(tile_data, array['resourceXresourceId'::text], ('"' || uuid_generate_v4()|| '"')::jsonb, true)) result
+                                FROM tiles t LEFT JOIN nodes n ON t.nodegroupid = n.nodegroupid, jsonb_array_elements(t.tiledata->n.nodeid::text) tile_data
+                                WHERE t.tiledata->>n.nodeid::text IS NOT null
+                                AND t.tiledata->>n.nodeid::text != ''
+                                AND t.tileid = tile_id
+                                AND n.datatype IN ('resource-instance-list', 'resource-instance')
+                                GROUP BY t.tileid, n.nodeid, tiledata
+                            ) res
+                        WHERE n.nodeid = res.nodeid
+                        GROUP BY res.tileid, res.tiledata
+                    ) as ret
+                WHERE
+                    t.tileid = tile_id
+                RETURNING t.nodegroupid, t.tiledata::jsonb, t.tileid, t.resourceinstanceid
+            )
+            , relationships AS (
+                SELECT n.nodeid, n.config,
+                    jsonb_array_elements(tt.tiledata->n.nodeid::text) AS relationship
+                FROM updated_tiles tt
+                    LEFT JOIN nodes n ON tt.nodegroupid = n.nodegroupid
+                WHERE n.datatype IN ('resource-instance-list', 'resource-instance')
+                    AND tt.tiledata->>n.nodeid::text IS NOT null
+            )
+            , relationships2 AS (
+                SELECT r.nodeid, r.config, r.relationship, (SELECT ri.graphid
+                    FROM resource_instances ri
+                    WHERE r.relationship->>'resourceId' = ri.resourceinstanceid::text) AS to_graphid
+                FROM relationships r
+            )
+            , relationships3 AS (
+                SELECT fr.nodeid, fr.relationship, fr.to_graphid, 
+                (
+                    SELECT graphs->>'ontologyProperty'
+                    FROM jsonb_array_elements(fr.config->'graphs') AS graphs
+                    WHERE graphs->>'graphid' = fr.to_graphid::text
+                ) AS defaultOntologyProperty,
+                (
+                    SELECT graphs->>'inverseOntologyProperty'
+                    FROM jsonb_array_elements(fr.config->'graphs') AS graphs
+                    WHERE graphs->>'graphid' = fr.to_graphid::text
+                ) AS defaultInverseOntologyProperty
+                FROM relationships2 fr
+            )
+
+            INSERT INTO resource_x_resource (
+                resourcexid,
+                notes,
+                relationshiptype,
+                inverserelationshiptype,
+                resourceinstanceidfrom,
+                resourceinstanceidto,
+                resourceinstancefrom_graphid,
+                resourceinstanceto_graphid,
+                tileid,
+                nodeid,
+                created,
+                modified
+            ) (SELECT
+                (relationship->>'resourceXresourceId')::uuid,
+                '',
+                CASE relationship->>'ontologyProperty'
+                    WHEN '' THEN defaultOntologyProperty
+                    ELSE relationship->>'ontologyProperty'
+                END,
+                CASE relationship->>'inverseOntologyProperty'
+                    WHEN '' THEN defaultInverseOntologyProperty
+                    ELSE relationship->>'inverseOntologyProperty'
+                END,
+                resourceinstancefrom_id,
+                (relationship->>'resourceId')::uuid,
+                from_graphid,
+                to_graphid,
+                tile_id,
+                nodeid,
+                now(),
+                now()
+            FROM relationships3)"
+PL/pgSQL function __arches_create_resource_x_resource_relationships(uuid) line 14 at SQL statement
+
+
+Tue Jan 16 06:28:22 2024 WARNING: 2024-01-16 08:28:17.504272: WARNING: failed to save document in resource: f6031cad-250a-4305-9e6a-f44a33fc7010 on line 551. Exception detail:
+cannot extract elements from a scalar
+CONTEXT:  SQL statement "WITH updated_tiles as (
+                UPDATE tiles t
+                SET tiledata = ret.result
+                FROM (SELECT res.tileid, (res.tiledata || jsonb_object_agg(res.nodeid, res.result)) result
+                        FROM 
+                        nodes n, 
+                            (SELECT t.tileid, n.nodeid, t.tiledata, jsonb_agg(jsonb_set(tile_data, array['resourceXresourceId'::text], ('"' || uuid_generate_v4()|| '"')::jsonb, true)) result
+                                FROM tiles t LEFT JOIN nodes n ON t.nodegroupid = n.nodegroupid, jsonb_array_elements(t.tiledata->n.nodeid::text) tile_data
+                                WHERE t.tiledata->>n.nodeid::text IS NOT null
+                                AND t.tiledata->>n.nodeid::text != ''
+                                AND t.tileid = tile_id
+                                AND n.datatype IN ('resource-instance-list', 'resource-instance')
+                                GROUP BY t.tileid, n.nodeid, tiledata
+                            ) res
+                        WHERE n.nodeid = res.nodeid
+                        GROUP BY res.tileid, res.tiledata
+                    ) as ret
+                WHERE
+                    t.tileid = tile_id
+                RETURNING t.nodegroupid, t.tiledata::jsonb, t.tileid, t.resourceinstanceid
+            )
+            , relationships AS (
+                SELECT n.nodeid, n.config,
+                    jsonb_array_elements(tt.tiledata->n.nodeid::text) AS relationship
+                FROM updated_tiles tt
+                    LEFT JOIN nodes n ON tt.nodegroupid = n.nodegroupid
+                WHERE n.datatype IN ('resource-instance-list', 'resource-instance')
+                    AND tt.tiledata->>n.nodeid::text IS NOT null
+            )
+            , relationships2 AS (
+                SELECT r.nodeid, r.config, r.relationship, (SELECT ri.graphid
+                    FROM resource_instances ri
+                    WHERE r.relationship->>'resourceId' = ri.resourceinstanceid::text) AS to_graphid
+                FROM relationships r
+            )
+            , relationships3 AS (
+                SELECT fr.nodeid, fr.relationship, fr.to_graphid, 
+                (
+                    SELECT graphs->>'ontologyProperty'
+                    FROM jsonb_array_elements(fr.config->'graphs') AS graphs
+                    WHERE graphs->>'graphid' = fr.to_graphid::text
+                ) AS defaultOntologyProperty,
+                (
+                    SELECT graphs->>'inverseOntologyProperty'
+                    FROM jsonb_array_elements(fr.config->'graphs') AS graphs
+                    WHERE graphs->>'graphid' = fr.to_graphid::text
+                ) AS defaultInverseOntologyProperty
+                FROM relationships2 fr
+            )
+
+            INSERT INTO resource_x_resource (
+                resourcexid,
+                notes,
+                relationshiptype,
+                inverserelationshiptype,
+                resourceinstanceidfrom,
+                resourceinstanceidto,
+                resourceinstancefrom_graphid,
+                resourceinstanceto_graphid,
+                tileid,
+                nodeid,
+                created,
+                modified
+            ) (SELECT
+                (relationship->>'resourceXresourceId')::uuid,
+                '',
+                CASE relationship->>'ontologyProperty'
+                    WHEN '' THEN defaultOntologyProperty
+                    ELSE relationship->>'ontologyProperty'
+                END,
+                CASE relationship->>'inverseOntologyProperty'
+                    WHEN '' THEN defaultInverseOntologyProperty
+                    ELSE relationship->>'inverseOntologyProperty'
+                END,
+                resourceinstancefrom_id,
+                (relationship->>'resourceId')::uuid,
+                from_graphid,
+                to_graphid,
+                tile_id,
+                nodeid,
+                now(),
+                now()
+            FROM relationships3)"
+PL/pgSQL function __arches_create_resource_x_resource_relationships(uuid) line 14 at SQL statement
+
+
+Tue Jan 16 06:28:22 2024 WARNING: 2024-01-16 08:28:18.369285: WARNING: failed to save document in resource: 4dedcdfa-7938-46fc-9bb8-a75cb297ec68 on line 551. Exception detail:
+cannot extract elements from a scalar
+CONTEXT:  SQL statement "WITH updated_tiles as (
+                UPDATE tiles t
+                SET tiledata = ret.result
+                FROM (SELECT res.tileid, (res.tiledata || jsonb_object_agg(res.nodeid, res.result)) result
+                        FROM 
+                        nodes n, 
+                            (SELECT t.tileid, n.nodeid, t.tiledata, jsonb_agg(jsonb_set(tile_data, array['resourceXresourceId'::text], ('"' || uuid_generate_v4()|| '"')::jsonb, true)) result
+                                FROM tiles t LEFT JOIN nodes n ON t.nodegroupid = n.nodegroupid, jsonb_array_elements(t.tiledata->n.nodeid::text) tile_data
+                                WHERE t.tiledata->>n.nodeid::text IS NOT null
+                                AND t.tiledata->>n.nodeid::text != ''
+                                AND t.tileid = tile_id
+                                AND n.datatype IN ('resource-instance-list', 'resource-instance')
+                                GROUP BY t.tileid, n.nodeid, tiledata
+                            ) res
+                        WHERE n.nodeid = res.nodeid
+                        GROUP BY res.tileid, res.tiledata
+                    ) as ret
+                WHERE
+                    t.tileid = tile_id
+                RETURNING t.nodegroupid, t.tiledata::jsonb, t.tileid, t.resourceinstanceid
+            )
+            , relationships AS (
+                SELECT n.nodeid, n.config,
+                    jsonb_array_elements(tt.tiledata->n.nodeid::text) AS relationship
+                FROM updated_tiles tt
+                    LEFT JOIN nodes n ON tt.nodegroupid = n.nodegroupid
+                WHERE n.datatype IN ('resource-instance-list', 'resource-instance')
+                    AND tt.tiledata->>n.nodeid::text IS NOT null
+            )
+            , relationships2 AS (
+                SELECT r.nodeid, r.config, r.relationship, (SELECT ri.graphid
+                    FROM resource_instances ri
+                    WHERE r.relationship->>'resourceId' = ri.resourceinstanceid::text) AS to_graphid
+                FROM relationships r
+            )
+            , relationships3 AS (
+                SELECT fr.nodeid, fr.relationship, fr.to_graphid, 
+                (
+                    SELECT graphs->>'ontologyProperty'
+                    FROM jsonb_array_elements(fr.config->'graphs') AS graphs
+                    WHERE graphs->>'graphid' = fr.to_graphid::text
+                ) AS defaultOntologyProperty,
+                (
+                    SELECT graphs->>'inverseOntologyProperty'
+                    FROM jsonb_array_elements(fr.config->'graphs') AS graphs
+                    WHERE graphs->>'graphid' = fr.to_graphid::text
+                ) AS defaultInverseOntologyProperty
+                FROM relationships2 fr
+            )
+
+            INSERT INTO resource_x_resource (
+                resourcexid,
+                notes,
+                relationshiptype,
+                inverserelationshiptype,
+                resourceinstanceidfrom,
+                resourceinstanceidto,
+                resourceinstancefrom_graphid,
+                resourceinstanceto_graphid,
+                tileid,
+                nodeid,
+                created,
+                modified
+            ) (SELECT
+                (relationship->>'resourceXresourceId')::uuid,
+                '',
+                CASE relationship->>'ontologyProperty'
+                    WHEN '' THEN defaultOntologyProperty
+                    ELSE relationship->>'ontologyProperty'
+                END,
+                CASE relationship->>'inverseOntologyProperty'
+                    WHEN '' THEN defaultInverseOntologyProperty
+                    ELSE relationship->>'inverseOntologyProperty'
+                END,
+                resourceinstancefrom_id,
+                (relationship->>'resourceId')::uuid,
+                from_graphid,
+                to_graphid,
+                tile_id,
+                nodeid,
+                now(),
+                now()
+            FROM relationships3)"
+PL/pgSQL function __arches_create_resource_x_resource_relationships(uuid) line 14 at SQL statement
+
+

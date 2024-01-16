@@ -26,7 +26,7 @@ flowchart LR
     subgraph formated data
       direction TB
       id9A -- Bulk Upload formatting --> id9B[<a href='https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bulk#readme'>Bulk Upload</a>];
-      id9B ----> ea;
+      id9B -- XXX --> ea;
     end
   end
   subgraph eamena-functions

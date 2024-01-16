@@ -40,14 +40,13 @@ flowchart LR
     end
   end
   subgraph Google Colab
-    idg1[erms.ipynb] -- is mirrored --> idf2
+    idg1[<a href='https://colab.research.google.com/github/eamena-project/eamena-arches-dev/blob/main/dev/citations/citation_generator.ipynb'>citation_generator.ipynb</a>] -- is mirrored --> idf2
   end
   ea -- <a href='query#url'>GeoJSON URL</a> --> idf1
   ea --- id5[<a href='https://github.com/eamena-project/eamenaR'>eamenaR</a>];
   ea --- internationalisation
   ea <--- install
 ```
-
 
 
 ## Contribute to the EAMENA database

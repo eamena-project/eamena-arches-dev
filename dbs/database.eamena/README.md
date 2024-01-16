@@ -33,10 +33,10 @@ flowchart LR
   subgraph eamena-functions
     direction LR
     subgraph functions
-      idf1[<a href='https://github.com/eamena-project/eamena-functions/tree/main/erms'>erms.py</a>]
+      idf1[<a href='https://github.com/eamena-project/eamena-functions/blob/main/mds/mds.py'>mds.py</a>]
     end
     subgraph Jupyter NB
-      idf2[<a href='https://github.com/eamena-project/eamena-functions/tree/main/erms'>erms.ipynb</a>] -- read --> idf1
+      idf2[<a href='https://github.com/eamena-project/eamena-arches-dev/blob/main/dev/citations/citation_generator.ipynb'>citation_generator.ipynb</a>] -- read --> idf1
     end
   end
   subgraph Google Colab

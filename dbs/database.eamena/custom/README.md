@@ -57,11 +57,24 @@ You can add the images in this folder: https://github.com/eamena-project/eamena-
 ### Clustering
 > Clustering of Heritage Places
 
-* 1. Cluster Distance = .75 ; Cluster Min Points = 3
-- *Results: few clusters with a small number of HP*
-* 2. Cluster Distance = 10 ; Cluster Min Points = 10
-- *Results: few clusters with a very large number of HP*
-* 6. Cluster Distance = 5, Cluster points = 10
+<p align="center">
+  <img alt="img-name" src="../../../www/arches-v5-clustering-1.png" width="700">
+  <br>
+    <em>1. Cluster Distance = .75 ; Cluster Min Points = 3; Results: few clusters with a small number of HP</em>
+</p>
+
+<p align="center">
+  <img alt="img-name" src="../../../www/arches-v5-clustering-2.png" width="700">
+  <br>
+    <em>2. Cluster Distance = 10 ; Cluster Min Points = 10; Results: few clusters with a very large number of HP</em>
+</p>
+
+<p align="center">
+  <img alt="img-name" src="../../../www/arches-v5-clustering-6.png" width="700">
+  <br>
+    <em>6. Cluster Distance = 5, Cluster points = 10</em>
+</p>
+
 
 ---
 

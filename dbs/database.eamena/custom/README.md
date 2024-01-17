@@ -51,6 +51,18 @@ You can add the images in this folder: https://github.com/eamena-project/eamena-
 3. import the image:
   - `wget https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/img/APAAME_20221123_FAB-0154_reduced.jpg`
 
+
+## Map Layer Management
+
+### Clustering
+> Clustering of Heritage Places
+
+* 1. Cluster Distance = .75 ; Cluster Min Points = 3
+- *Results: few clusters with a small number of HP*
+* 2. Cluster Distance = 10 ; Cluster Min Points = 10
+- *Results: few clusters with a very large number of HP*
+* 6. Cluster Distance = 5, Cluster points = 10
+
 ---
 
 

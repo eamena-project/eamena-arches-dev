@@ -32,6 +32,7 @@ su arches
 
 ```Bash
 sudo mkdir /opt/arches/
+sudo chown arches /opt/arches
 ```
 
 

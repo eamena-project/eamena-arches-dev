@@ -10,4 +10,4 @@ Arches 7.3 requires Python 3.8.10 or 3.10.12 (tested).
 	- `sudo apt-get install virtualenv`
 	- create `ENV/` under `opt/arches/ENV/`
 	- as arches user, run: `virtualenv --python=/usr/bin/python3 ENV`
-	- activate the VE `source ENV/bib/activate`
+	- activate the VE `source ENV/bin/activate`

@@ -18,6 +18,8 @@ https://database.eamena.org/api/search/export_results?paging-filter=1&tiles=true
 ## Zenodo sandobx deposit
 > see https://sandbox.zenodo.org/
 
+Metadata from the Search/GeoJSON URL:
+
 ```
 {'created': '2024-01-18T15:59:42.566835+00:00',
  'modified': '2024-01-18T15:59:57.343103+00:00',

@@ -24,12 +24,14 @@ Once the VM is configured correctly, create:
 
 ```Bash
 sudo adduser arches
+usermod -aG sudo username
+su arches
 ```
 
 * an `arches/` folder
 
 ```Bash
-mkdir /opt/arches/
+sudo mkdir /opt/arches/
 ```
 
 

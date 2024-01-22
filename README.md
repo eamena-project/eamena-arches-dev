@@ -13,6 +13,8 @@
 
 ## News 🗞️
 
+* EA/APAAME "tight links" (*in progress*): linking the DB with the new ArchDAMS ResourceSpace-based server ([here](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/README.md#apaame-server))
+
 * EA/Arches v7 training instance: [installation](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/install), etc.
 
 * [CPF training, Amman, Jordan - 18-22 June, 2023](https://github.com/eamena-project/eamena-arches-dev/tree/main/training#users--database-managers--sys-admins-training)

@@ -50,7 +50,41 @@ subdirectories = [d for d in os.listdir(AMC) if os.path.isdir(os.path.join(AMC, 
 # 	# Recursively traverse each subdirectory
 # 	traverse_directory(os.path.join(path, subdir), ws, level+ 1)
 
-subdir = 'aaa'
+subdir = 'cairo'
+main_path = os.path.join(AMC, subdir)
+
+
+os.listdir(os.path.join(AMC, subdir))
+os.walk()
+subfolders = [f.name for f in os.scandir(os.path.join(AMC, subdir)) if f.is_dir()]
+[x[0] for x in os.walk(os.path.join(AMC, subdir))]
+
+# %%
+res = []
+for (dir_path, dir_names, file_names) in os.walk(main_path):
+    res.extend(file_names)
+print(res)
+
+# %%
+l = [x[0] for x in os.walk(main_path)]
+
+
+# %%
+def export_list_to_xlsx(data_list, excel_file='output.xlsx', column_separator='\\'):
+    # Create a new Excel workbook
+    wb = Workbook()
+    ws = wb.active
+    ws.title = "Data"
+
+    # Write the data to the Excel sheet
+    for row_num, item in enumerate(data_list, start=1):
+        columns = item.split(column_separator)
+        ws.append(columns)
+
+    # Save the Excel workbook
+    wb.save(excel_file)
+
+export_list_to_xlsx(l, excel_file=FHS, column_separator='\\')
 
 
 # %%

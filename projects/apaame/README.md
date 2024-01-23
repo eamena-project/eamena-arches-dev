@@ -60,6 +60,8 @@ see the [TSV file](https://github.com/eamena-project/eamena-arches-dev/blob/main
 
 ## Flickr archive
 
+Flickr archive is here: https://www.flickr.com/photos/apaame/collections
+
 In the Information Resources (IR), under the menu 'File Upload', paths to images are wrong. For example, with INFORMATION-0052511[^1], we have currently:
 
 <p align="center">

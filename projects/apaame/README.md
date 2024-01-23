@@ -62,6 +62,8 @@ APAAME Server: https://apaame.arch.ox.ac.uk/
 
 EAMENA NAS Server: https://eamena-nas1.arch.ox.ac.uk/cgi-bin/
 
+### FHS 
+
 The main folder `APAAME Master Catalog` has been copied in a external hardrive. Its file/folder hierachical structure (FHS) is as following:
 
 <p align="center">

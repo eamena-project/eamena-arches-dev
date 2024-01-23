@@ -52,7 +52,7 @@ APAAME Server: https://apaame.arch.ox.ac.uk/
 * DNG photographs are not rendered in the ArcDAMS server
 
 <p align="center">
-  <img alt="img-name" src="www/rs-ex2-APAAME_20081029_DLK-0111_dng.png" width="400">
+  <img alt="img-name" src="www/rs-ex2-APAAME_20081029_DLK-0111_dng.png" width="300">
   <br>
     <em>DNG photographs are not rendered in the ArcDAMS server</em>
 </p>

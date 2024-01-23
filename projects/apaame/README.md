@@ -8,7 +8,7 @@ Current repositories of APAAME dataset are:
 * [ArcDAMS server](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/README.md#archdams-server) (*work in progress*)
 
 ## ArchDAMS server
-> APAAME Server 
+> APAAME Server(*work in progress*)
 
 ArchDAMS server, or APAAME server, is a QNAP NAS Server, hosting a customisation of ResourceSpace, a Digital Asset Management (DAM) system, named ArcDAMS.
 
@@ -23,6 +23,11 @@ APAAME Server: https://apaame.arch.ox.ac.uk/
 | instance 	| ArcDAMS         	|
 | software 	| ResourceSpace   	|
 | hardware 	| QNAP NAS server 	|
+
+### Struture
+> Photographs 
+
+* By Country
 
 ### Examples
 
@@ -40,6 +45,17 @@ APAAME Server: https://apaame.arch.ox.ac.uk/
 | APAAME ID 	| description 	| notes 	| local URL 	| EAMENA record |
 |-----------	|-------------	|-------	|-----	|----- |
 | APAAME_19970527_DLK-0190 	| Qasr el-Hallabat | reduced size	| https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/sample/APAAME_19970527_DLK-0190-small.tif  	| INFORMATION-0005901 |
+
+### Notes
+
+
+* DNG photographs are not rendered in the ArcDAMS server
+
+<p align="center">
+  <img alt="img-name" src="www/rs-ex2-APAAME_20081029_DLK-0111.dng" width="800">
+  <br>
+    <em>DNG photographs are not rendered in the ArcDAMS server</em>
+</p>
 
 
 ## NAS server

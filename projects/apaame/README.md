@@ -1,13 +1,20 @@
 # APAAME archive
 > Aerial Photographic Archive for Archaeology in the Middle East archive
 
-## APAAME Server
+The objective is to move the APAAME photographs archive stored from the  to the [APAAME Server](https://apaame.arch.ox.ac.uk/).  
 
-The objective is to move the APAAME photographs archive stored on the [EAMENA NAS Server](https://eamena-nas1.arch.ox.ac.uk/cgi-bin/) to the [APAAME Server](https://apaame.arch.ox.ac.uk/).  .
+[Flickr archive](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/README.md#flickr-archive)
+
+## ArchDAMS server
+> APAAME Server 
+
+ArchDAMS server, or APAAME server, is a QNAP NAS Server, hosting a customisation of ResourceSpace, a Digital Asset Management (DAM) system, named ArcDAMS.
+
+### URL
+
+APAAME Server: https://apaame.arch.ox.ac.uk/
 
 ### IT stack
-
-APAAME Server is a QNAP NAS Server, hosting a customisation of ResourceSpace, a Digital Asset Management (DAM) system, named ArcDAMS.
 
 |           |                   |
 |-----------|-------------------|
@@ -39,8 +46,12 @@ From a local hardrive with a copy of APAAME photgraph, to a labtop, to the new A
   - add the corresponding Information Resource (ex: `APAAME_20000906_RHB-0018.tif` is recorded in `INFORMATION-0052511.png`). See: https://docs.google.com/spreadsheets/d/1-shK3M3Pl5NANWWvGuSYTgjFNpJAyi-A6uf04a8WTkM/edit?usp=sharing
   - add a licence (ex: CC BY-NC-ND)
 
+## NAS server
 
-## Flickr images
+[EAMENA NAS Server](https://eamena-nas1.arch.ox.ac.uk/cgi-bin/)
+
+
+## Flickr archive
 
 In the Information Resources (IR), under the menu 'File Upload', paths to images are wrong. For example, with INFORMATION-0052511[^1], we have currently:
 

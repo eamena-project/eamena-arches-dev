@@ -48,14 +48,17 @@ APAAME Server: https://apaame.arch.ox.ac.uk/
 
 ### Notes
 
+#### DNG
 
-* DNG photographs are not rendered in the ArcDAMS server
+DNG photographs (raw format) are not rendered in the ArcDAMS server
 
 <p align="center">
   <img alt="img-name" src="www/rs-ex2-APAAME_20081029_DLK-0111_dng.png" width="300">
   <br>
     <em>DNG photographs are not rendered in the ArcDAMS server</em>
 </p>
+
+see: https://groups.google.com/g/resourcespace/c/wu9FNbbVBmo
 
 
 ## NAS server

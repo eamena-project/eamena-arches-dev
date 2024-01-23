@@ -28,16 +28,18 @@ APAAME Server: https://apaame.arch.ox.ac.uk/
 
 #### Ex 1
 
-| APAAME ID 	| description 	| notes 	| local URL 	| EAMENA record |
-|-----------	|-------------	|-------	|-----	|----- |
-| APAAME_19970527_DLK-0190 	| Qasr el-Hallabat | reduced size	| https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/sample/APAAME_19970527_DLK-0190-small.tif  	| INFORMATION-0005901 |
-
 
 <p align="center">
   <img alt="img-name" src="www/rs-ex1-APAAME_20081029_WKSHP-0095_JPG.png" width="1000">
   <br>
     <em>APAAME_20081029_WKSHP-0095</em>
 </p>
+
+### Other
+
+| APAAME ID 	| description 	| notes 	| local URL 	| EAMENA record |
+|-----------	|-------------	|-------	|-----	|----- |
+| APAAME_19970527_DLK-0190 	| Qasr el-Hallabat | reduced size	| https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/sample/APAAME_19970527_DLK-0190-small.tif  	| INFORMATION-0005901 |
 
 
 ## NAS server

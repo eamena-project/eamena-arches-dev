@@ -17,8 +17,6 @@ APAAME Server is a QNAP NAS Server, hosting a customisation of ResourceSpace, a 
 
 ### Workflow
 
-
-
 * Examples
 
 | APAAME ID 	| description 	| notes 	| local URL 	| EAMENA record |

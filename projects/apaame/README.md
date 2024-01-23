@@ -3,8 +3,8 @@
 
 Current repositories of APAAME dataset are: 
 
-* [Flickr archive](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/README.md#flickr-archive);
 * [NAS server](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/README.md#nas-server);
+* [Flickr archive](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/README.md#flickr-archive);
 * [ArcDAMS server](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/README.md#archdams-server) (*work in progress*)
 
 ## ArchDAMS server
@@ -44,7 +44,18 @@ APAAME Server: https://apaame.arch.ox.ac.uk/
 
 ## NAS server
 
-[EAMENA NAS Server](https://eamena-nas1.arch.ox.ac.uk/cgi-bin/)
+EAMENA NAS Server: https://eamena-nas1.arch.ox.ac.uk/cgi-bin/
+
+The main folder `APAAME Master Catalog` has been copied in a external hardrive. Its file/folder hierachical structure (FHS) is as following:
+
+<p align="center">
+  <img alt="img-name" src="www/amc-fhs-ex1.png" width="1000">
+  <br>
+    <em>Detail of the APAAME Master Catalog FHS (XLSX file)</em>
+</p>
+
+
+see the [TSV file](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/amc-fhs.tsv) or download the [XLSX file itself](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/amc-fhs.xlsx)
 
 
 ## Flickr archive

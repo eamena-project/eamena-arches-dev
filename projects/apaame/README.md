@@ -2,7 +2,10 @@
 > Aerial Photographic Archive for Archaeology in the Middle East archive
 
 Current repositories of APAAME dataset are: 
-[Flickr archive](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/README.md#flickr-archive), [NAS server](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/README.md#nas-server), [ArcDAMS server](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/README.md#archdams-server) (*work in progress*)
+
+* [Flickr archive](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/README.md#flickr-archive);
+* [NAS server](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/README.md#nas-server);
+* [ArcDAMS server](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/README.md#archdams-server) (*work in progress*)
 
 ## ArchDAMS server
 > APAAME Server 

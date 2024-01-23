@@ -49,9 +49,9 @@ EAMENA NAS Server: https://eamena-nas1.arch.ox.ac.uk/cgi-bin/
 The main folder `APAAME Master Catalog` has been copied in a external hardrive. Its file/folder hierachical structure (FHS) is as following:
 
 <p align="center">
-  <img alt="img-name" src="www/amc-fhs-ex1.png" width="1000">
+  <img alt="img-name" src="www/amc-fhs-ex1.png" width="800">
   <br>
-    <em>Detail of the APAAME Master Catalog FHS (XLSX file)</em>
+    <em>Detail of the APAAME Master Catalog FHS (XLSX file) with a maximum depth of 6 subfolders (`level6`)</em>
 </p>
 
 

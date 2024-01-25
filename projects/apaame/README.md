@@ -127,15 +127,24 @@ The aim is to embed previews of APAAME photographs (hosted on ArchDAMS) into EAM
 
 ### In EAMENA
 
-EAMENA hosted links here:
+Let's consider the Information Resource - INFORMATION-0052511. It has two photographs linked:
+
+* APAAME_20000906_RHB-0018
+* SL00/4.33 (RHB) 
 
 <p align="center">
-  <img alt="img-name" src="www/img-fileupload-aa-INFORMATION-0052511.png" width="800">
+  <img alt="img-name" src="www/img-imagery-catalogueid-INFORMATION-0052511.png" width="800">
   <br>
     <em>File Upolad</em>
 </p>
 
-The UUID of the field Information resources/File Upload is: `c712066a-8094-11ea-a6a6-02e7594ce0a0`
+Images paths are hosted here:
+
+<p align="center">
+  <img alt="img-name" src="www/img-fileupload-aa-INFORMATION-0052511.png" width="800">
+  <br>
+    <em>File Upolad. The UUID of the field 'File Upload' is: `c712066a-8094-11ea-a6a6-02e7594ce0a0`</em>
+</p>
 
 The current link of Information Resource - INFORMATION-0052511 (ie, APAAME ID: APAAME_20000906_RHB-0018) is:
 
@@ -162,7 +171,7 @@ The correct link is:
 
 the workflow is then to:
 
-1. In EAMENA: collect Information UUIDs with their APAAME ID, store them in a dataframe (`A`)
+1. In EAMENA: collect Information Resources UUIDs with their APAAME ID, store them in a dataframe (`A`)
 2. In ArchDAMS: collect APAAME ID and the external URL, store them in a dataframe (`B`)
 3. join the dataframe `A` and `B` on the APAAME ID
 4. update the EAMENA Postgres DB table with ArcDAMS external links

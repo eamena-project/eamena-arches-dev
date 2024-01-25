@@ -168,11 +168,37 @@ WHERE ids.ri = coords.ri AND grd.ri = coords.ri AND grd.ri = ids.ri
 
 Using INFORMATION-0052511 (UUID: `88ab19b3-1f4c-40ba-9467-55ef66fc9f26`), see the APAAME [README.md](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/README.md#in-eamena)
 
+* APAAME ID
+
 ```SQL
-SELECT tiledata -> '341f9905-5253-11ea-a3f7-02e7594ce0a0' -> 'en' ->> 'value' AS apaame_num FROM tiles 
+SELECT tiledata -> '341f9905-5253-11ea-a3f7-02e7594ce0a0' -> 'en' ->> 'value' AS apaame_id FROM tiles 
 WHERE resourceinstanceid::text LIKE '88ab19b3-1f4c-40ba-9467-55ef66fc9f26' 
 AND tiledata -> '341f9905-5253-11ea-a3f7-02e7594ce0a0' -> 'en' ->> 'value' IS NOT NULL
 ```
+
+Returns:
+
+| apaame_id |
+|----------|
+| SL00/4.33 (RHB)    |
+| APAAME_20000906_RHB-0018    |
+
+* File Upload
+
+This is location of the image, it can be an URL
+
+```SQL
+SELECT tiledata -> 'c712066a-8094-11ea-a6a6-02e7594ce0a0' #>> '{0, url}' AS file_upload FROM tiles 
+WHERE resourceinstanceid::text LIKE '88ab19b3-1f4c-40ba-9467-55ef66fc9f26' 
+AND tiledata -> 'c712066a-8094-11ea-a6a6-02e7594ce0a0' #>> '{0, url}' IS NOT NULL
+```
+
+Returns:
+
+| file_upload |
+|----------|
+| https://live.staticflickr.com/4118/4928802850_49ed2fdbcb_o_d.jpg    |
+
 
 
 # Other

@@ -189,7 +189,6 @@ examaples:
 
 4. update the EAMENA Pg database
 
-
 see: SQL [ex1](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/queries#ex1)
 
 

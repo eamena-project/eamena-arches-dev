@@ -6,10 +6,11 @@ Miscellaneous and compendium of equivalent queries between Advanced Search and S
 
 | Abrevv. | Full name |
 |----------|----------|
-| AS | Advanced Search |
+| AS | EAMENA Advanced Search |
 | GS | Grid Squares |
 | HP | Heritage Place |
 
+By default, the SQL queries are 
 
 Main correspondances between EAMENA fieldnames and field UUIDs are listed here: https://github.com/eamena-project/eamena-arches-dev/blob/main/dev/data_quality/mds-template-readonly.tsv
 
@@ -28,6 +29,16 @@ WHERE graphid::text LIKE '34cfe98e-c2c0-11ea-9026-02e7594ce0a0'
 ```
 https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&reportlink=false&precision=6&total=368511&resource-type-filter=%5B%7B%22graphid%22%3A%2234cfe98e-c2c0-11ea-9026-02e7594ce0a0%22%2C%22name%22%3A%22Heritage%20Place%22%2C%22inverted%22%3Afalse%7D%5D
 ```
+
+## All the data of a specific HP
+
+```SQL
+SELECT * FROM tiles 
+WHERE resourceinstanceid::text LIKE '45ea21b3-5434-442e-98ab-a83851611128'
+```
+
+Where `45ea21b3-5434-442e-98ab-a83851611128` is the UUID of a HP
+
 
 ## HP with Overall Site Condition
 > HP having a value in OSC
@@ -139,6 +150,23 @@ SELECT ids.ri, ids.ei, coords.x, coords.y FROM (
 	WHERE gr IS NOT NULL
 	) AS grd
 WHERE ids.ri = coords.ri AND grd.ri = coords.ri AND grd.ri = ids.ri
+```
+
+# APAAME and ArchDAMS
+> IR 
+
+## examples
+
+### ex1
+
+#### APAAME ID of a given IR
+
+Using 
+
+```SQL
+SELECT tiledata -> '341f9905-5253-11ea-a3f7-02e7594ce0a0' -> 'en' ->> 'value' AS apaame_num FROM tiles 
+WHERE resourceinstanceid::text LIKE '88ab19b3-1f4c-40ba-9467-55ef66fc9f26' 
+AND tiledata -> '341f9905-5253-11ea-a3f7-02e7594ce0a0' -> 'en' ->> 'value' IS NOT NULL
 ```
 
 

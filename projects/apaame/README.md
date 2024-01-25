@@ -1,6 +1,8 @@
 # APAAME archive
 > Aerial Photographic Archive for Archaeology in the Middle East archive
 
+
+
 ## Photograph archives
 
 Current repositories of APAAME dataset are: 
@@ -133,6 +135,71 @@ EAMENA hosted links here:
     <em>File Upolad</em>
 </p>
 
+The UUID of the field Information resources/File Upload is: `c712066a-8094-11ea-a6a6-02e7594ce0a0`
+
+The current link of Information Resource - INFORMATION-0052511 (ie, APAAME ID: APAAME_20000906_RHB-0018) is:
+
+```HTML
+<img data-bind="attr: { src: src, alt: alt }" src="/static/img/photo_missing.png" alt="">
+```
+<p align="center">
+  <img alt="img-name" src="img-photomissing-INFORMATION-0052511.png" width="800">
+  <br>
+    <em>Photo missing</em>
+</p>
+
+The correct link is:
+
+```HTML
+<img data-bind="attr: { src: src, alt: alt }" src="https://live.staticflickr.com/4118/4928802850_fbab90b8ca_h.jpg%60" alt="">
+```
+
+<p align="center">
+  <img alt="img-name" src="img-photo-flickrurl-ok-INFORMATION-0052511.png" width="800">
+  <br>
+    <em>Flickr photo from its direct URL/external link</em>
+</p>
+
+the aim is then to:
+
+1. In EAMENA: collect Information UUIDs with their APAAME ID, store them in a dataframe (`A`)
+2. In ArchDAMS: collect APAAME ID and the external URL, store them in a dataframe (`B`)
+3. join the dataframe `A` and `B` on the APAAME ID
+4. update the EAMENA Postgres DB table with ArcDAMS external links
+
+examaples:
+
+1. `A` is EAMENA
+
+| IR UUID | APAAME ID |
+|----------|----------|
+| c712066a-8094-11ea-a6a6-02e7594ce0a0    |  APAAME_20000906_RHB-0018   |
+
+2. `B` is ArchDAMS
+
+| external URL | APAAME ID |
+|----------|----------|
+| ??    |  APAAME_20000906_RHB-0018   |
+
+3. join
+
+| APAAME ID | IR UUID | external URL |
+|----------|----------|----------|
+| APAAME_20000906_RHB-0018   | c712066a-8094-11ea-a6a6-02e7594ce0a0   | ??   |
+
+4. update the EAMENA Pg database
+
+
+
+
+#### Notes
+
+NO: https://www.flickr.com/photos/apaame/4928802850/
+NO: https://database.eamena.org/live.staticflickr.com/4118/4928802850_49ed2fdbcb_o_d.jpg
+YES: https://live.staticflickr.com/4118/4928802850_fbab90b8ca_h.jpg%60
+
+* UUID: 
+ - 
 
 # EAMENA Image paths
 

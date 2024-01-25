@@ -123,14 +123,14 @@ Hover on the missing image gives this URL
 
 ## ArchmDAMS and EAMENA links
 
-The aim is to embed into EAMENA a preview of an APAAME photograph hosted on ArchDAMS
+The aim is to embed previews of an APAAME photographs (hosted on ArchDAMS) into EAMENA using ArchDAMS external links
 
 ### In EAMENA
 
 EAMENA hosted links here:
 
 <p align="center">
-  <img alt="img-name" src="img-fileupload-aa-INFORMATION-0052511.png" width="800">
+  <img alt="img-name" src="www/img-fileupload-aa-INFORMATION-0052511.png" width="800">
   <br>
     <em>File Upolad</em>
 </p>
@@ -143,7 +143,7 @@ The current link of Information Resource - INFORMATION-0052511 (ie, APAAME ID: A
 <img data-bind="attr: { src: src, alt: alt }" src="/static/img/photo_missing.png" alt="">
 ```
 <p align="center">
-  <img alt="img-name" src="img-photomissing-INFORMATION-0052511.png" width="800">
+  <img alt="img-name" src="www/img-photomissing-INFORMATION-0052511.png" width="400">
   <br>
     <em>Photo missing</em>
 </p>
@@ -155,12 +155,12 @@ The correct link is:
 ```
 
 <p align="center">
-  <img alt="img-name" src="img-photo-flickrurl-ok-INFORMATION-0052511.png" width="800">
+  <img alt="img-name" src="www/img-photo-flickrurl-ok-INFORMATION-0052511.png" width="400">
   <br>
     <em>Flickr photo from its direct URL/external link</em>
 </p>
 
-the aim is then to:
+the workflow is then to:
 
 1. In EAMENA: collect Information UUIDs with their APAAME ID, store them in a dataframe (`A`)
 2. In ArchDAMS: collect APAAME ID and the external URL, store them in a dataframe (`B`)
@@ -190,6 +190,7 @@ examaples:
 4. update the EAMENA Pg database
 
 
+see: SQL [ex1](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/queries#ex1)
 
 
 #### Notes

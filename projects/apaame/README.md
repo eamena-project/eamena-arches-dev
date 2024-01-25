@@ -133,7 +133,7 @@ Let's consider the Information Resource - INFORMATION-0052511. It has two photog
 * SL00/4.33 (RHB) 
 
 <p align="center">
-  <img alt="img-name" src="www/img-imagery-catalogueid-INFORMATION-0052511.png" width="800">
+  <img alt="img-name" src="www/img-imagery-catalogueid-INFORMATION-0052511.png" width="500">
   <br>
     <em>File Upolad</em>
 </p>
@@ -146,7 +146,7 @@ Images paths are hosted here:
     <em>File Upolad. The UUID of the field 'File Upload' is: `c712066a-8094-11ea-a6a6-02e7594ce0a0`</em>
 </p>
 
-The current link of Information Resource - INFORMATION-0052511 (ie, APAAME ID: APAAME_20000906_RHB-0018) is:
+The current link of Information Resource - INFORMATION-0052511 is:
 
 ```HTML
 <img data-bind="attr: { src: src, alt: alt }" src="/static/img/photo_missing.png" alt="">
@@ -157,7 +157,7 @@ The current link of Information Resource - INFORMATION-0052511 (ie, APAAME ID: A
     <em>Photo missing</em>
 </p>
 
-The correct link is:
+The correct link (ie, external link) is:
 
 ```HTML
 <img data-bind="attr: { src: src, alt: alt }" src="https://live.staticflickr.com/4118/4928802850_fbab90b8ca_h.jpg%60" alt="">
@@ -169,7 +169,7 @@ The correct link is:
     <em>Flickr photo from its direct URL/external link</em>
 </p>
 
-the workflow is then to:
+To batch the link update, the workflow is then to:
 
 1. In EAMENA: collect Information Resources UUIDs with their APAAME ID, store them in a dataframe (`A`)
 2. In ArchDAMS: collect APAAME ID and the external URL, store them in a dataframe (`B`)
@@ -203,9 +203,9 @@ see: SQL [ex1](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs
 
 #### Notes
 
-NO: https://www.flickr.com/photos/apaame/4928802850/
-NO: https://database.eamena.org/live.staticflickr.com/4118/4928802850_49ed2fdbcb_o_d.jpg
-YES: https://live.staticflickr.com/4118/4928802850_fbab90b8ca_h.jpg%60
+NO: https://www.flickr.com/photos/apaame/4928802850/  
+NO: https://database.eamena.org/live.staticflickr.com/4118/4928802850_49ed2fdbcb_o_d.jpg  
+YES: https://live.staticflickr.com/4118/4928802850_fbab90b8ca_h.jpg%60  
 
 * UUID: 
  - 

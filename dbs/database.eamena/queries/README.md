@@ -166,7 +166,7 @@ WHERE ids.ri = coords.ri AND grd.ri = coords.ri AND grd.ri = ids.ri
 
 #### APAAME ID of a given IR
 
-Using 
+Using INFORMATION-0052511 (UUID: `88ab19b3-1f4c-40ba-9467-55ef66fc9f26`), see the APAAME [README.md](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/README.md#in-eamena)
 
 ```SQL
 SELECT tiledata -> '341f9905-5253-11ea-a3f7-02e7594ce0a0' -> 'en' ->> 'value' AS apaame_num FROM tiles 

@@ -1,22 +1,24 @@
 # APAAME archive
 > Aerial Photographic Archive for Archaeology in the Middle East archive
 
+## Photograph archives
+
 Current repositories of APAAME dataset are: 
 
 * [NAS server](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/README.md#nas-server);
 * [Flickr archive](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/README.md#flickr-archive);
 * [ArcDAMS server](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/README.md#archdams-server) (*work in progress*)
 
-## ArchDAMS server
+### ArchDAMS server
 > APAAME Server(*work in progress*)
 
 ArchDAMS server, or APAAME server, is a QNAP NAS Server, hosting a customisation of ResourceSpace, a Digital Asset Management (DAM) system, named ArcDAMS.
 
-### URL
+#### URL
 
 APAAME Server: https://apaame.arch.ox.ac.uk/
 
-### IT stack
+#### IT stack
 
 |           |                   |
 |-----------|-------------------|
@@ -24,14 +26,14 @@ APAAME Server: https://apaame.arch.ox.ac.uk/
 | software 	| ResourceSpace   	|
 | hardware 	| QNAP NAS server 	|
 
-### Struture
+#### Struture
 > Photographs 
 
 * By Country
 
-### Examples
+#### Examples
 
-#### Ex 1
+##### Ex 1
 
 
 <p align="center">
@@ -40,15 +42,15 @@ APAAME Server: https://apaame.arch.ox.ac.uk/
     <em>APAAME_20081029_WKSHP-0095</em>
 </p>
 
-### Other
+#### Other
 
 | APAAME ID 	| description 	| notes 	| local URL 	| EAMENA record |
 |-----------	|-------------	|-------	|-----	|----- |
 | APAAME_19970527_DLK-0190 	| Qasr el-Hallabat | reduced size	| https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/sample/APAAME_19970527_DLK-0190-small.tif  	| INFORMATION-0005901 |
 
-### Notes
+#### Notes
 
-#### DNG
+##### DNG
 
 DNG photographs (raw format) are not rendered in the ArcDAMS server
 
@@ -61,11 +63,11 @@ DNG photographs (raw format) are not rendered in the ArcDAMS server
 see: https://groups.google.com/g/resourcespace/c/wu9FNbbVBmo
 
 
-## NAS server
+### NAS server
 
 EAMENA NAS Server: https://eamena-nas1.arch.ox.ac.uk/cgi-bin/
 
-### FHS 
+#### FHS 
 
 The main folder `APAAME Master Catalog` has been copied in a external hardrive. Its file/folder hierachical structure (FHS) is as following:
 
@@ -79,7 +81,7 @@ The main folder `APAAME Master Catalog` has been copied in a external hardrive. 
 see the [TSV file](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/amc-fhs.tsv) or download the [XLSX file itself](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/amc-fhs.xlsx)
 
 
-## Flickr archive
+### Flickr archive
 
 Flickr archive is here: https://www.flickr.com/photos/apaame/collections
 
@@ -116,7 +118,23 @@ Hover on the missing image gives this URL
     <em>Hover value is: `database.eamena.org/live.staticflickr.com/4118/4928802850_49ed2fdbcb_o_d.jpg` </em>
 </p>
 
-## EAMENA Image paths
+
+## ArchmDAMS and EAMENA links
+
+The aim is to embed into EAMENA a preview of an APAAME photograph hosted on ArchDAMS
+
+### In EAMENA
+
+EAMENA hosted links here:
+
+<p align="center">
+  <img alt="img-name" src="img-fileupload-aa-INFORMATION-0052511.png" width="800">
+  <br>
+    <em>File Upolad</em>
+</p>
+
+
+# EAMENA Image paths
 
 Looking in [this dataframe](https://docs.google.com/spreadsheets/d/1-shK3M3Pl5NANWWvGuSYTgjFNpJAyi-A6uf04a8WTkM/edit#gid=1837558986) (a sample of IR having Catalog ID recorded), there are different type of paths:
 
@@ -126,7 +144,7 @@ Looking in [this dataframe](https://docs.google.com/spreadsheets/d/1-shK3M3Pl5NA
 
 ---
 
-## ~~Workflow~~
+# ~~Workflow~~
 
 ~~The workflow will be to:~~
 > ⚠️ outdated, see how Jeremy is preparing this workflow
@@ -146,7 +164,7 @@ The transfer process uses :
   - a [folder](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/photos) containing one or more photographs
   - and save the metadata of these photographs in a [CSV file](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame-photos/metadata.csv).
   
-## Notes
+# Notes
 
 **EXIF and XMP metadata**
 

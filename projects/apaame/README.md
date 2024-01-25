@@ -123,7 +123,7 @@ Hover on the missing image gives this URL
 
 ## ArchmDAMS and EAMENA links
 
-The aim is to embed previews of an APAAME photographs (hosted on ArchDAMS) into EAMENA using ArchDAMS external links
+The aim is to embed previews of APAAME photographs (hosted on ArchDAMS) into EAMENA Information resources using ArchDAMS external links
 
 ### In EAMENA
 

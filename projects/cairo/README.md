@@ -1,17 +1,19 @@
 # City of the Dead
 > Unknown Heritage in the 'City of the Dead', DOCUMENTATION OF THE UNREGISTERED HERITAGE OF THE EASTERN CEMETERY IN CAIRO, *aka* Cairo project, *aka* CoD
 
-# Aims
+## Aims
 
 Uploading an existing database into EAMENA v4
 
-# Data
+## CoD data
 
 <p align="center">
   <img alt="img-name" src="./www/record-ex.png" width="700">
   <br>
     <em>Detail of a CoD's project record</em>
 </p>
+
+## CoD to EAMENA
 
 CoD records gather informations that will belong both to EAMENA Heritage Places (HP, [example](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cairo/business_data/hp.csv)) and EAMENA Built Components (BC, [example](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cairo/business_data/bc.csv)). For each CoD record there is two kinds of data:
 

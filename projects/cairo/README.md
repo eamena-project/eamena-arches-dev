@@ -8,7 +8,7 @@ Uploading an existing database into EAMENA v4
 ## CoD data
 
 <p align="center">
-  <img alt="img-name" src="./www/record-ex.png" width="700">
+  <img alt="img-name" src="./www/record-ex.png" width="600">
   <br>
     <em>Detail of a CoD's project record</em>
 </p>

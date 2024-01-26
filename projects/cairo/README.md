@@ -47,6 +47,8 @@ CoD records gather informations that will belong both to EAMENA Heritage Places 
 
 * solution
 
+- ArchDAMS server?
+
 <*to be discussed*>
 
 

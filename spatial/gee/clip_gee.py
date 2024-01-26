@@ -4,7 +4,17 @@ import ee
 
 #%%
 
-ee.Initialize()
+ee.Authenticate()
+
+# ee.Initialize(project='clipgee')
+
+#%%
+
+service_account = 'clipgee@clipgee.iam.gserviceaccount.com'
+credentials = ee.ServiceAccountCredentials(service_account, 'C:/Rprojects/eamena-arches-dev/spatial/credentials/clipgee-d255ac0a9453.json')
+ee.Initialize(project='clipgee', credentials)
+
+# ee.Initialize()
 
 #%%
 

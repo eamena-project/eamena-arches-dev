@@ -13,6 +13,10 @@ Uploading an existing database into EAMENA v4
     <em>Detail of a CoD's project record</em>
 </p>
 
+## CoD database
+
+A Microsoft Access DB. Once exported the tables are handled and their data re-organised using the [read_cod_tables.R](read_cod_tables.R) script
+
 ## CoD to EAMENA
 
 CoD records gather informations that will belong both to EAMENA Heritage Places (HP, [example](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cairo/business_data/hp.csv)) and EAMENA Built Components (BC, [example](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cairo/business_data/bc.csv)). For each CoD record there is two kinds of data:

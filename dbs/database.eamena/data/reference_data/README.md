@@ -1,7 +1,7 @@
 # Refrence Data
 
-* Heritage Places
-* Information Resources
+* [Heritage Places](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data/reference_data#heritage-places)
+* [Information Resources](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data/reference_data#information-resources)
 
 ## Heritage Places
 
@@ -16,11 +16,11 @@ Minimum Data Standards (MDS) of Heritage Places
 
 The template `mds-template-*` is the reference table for the MDS and for the eamenaR mapping file `ids.csv` (see [eamenaR documentation](https://github.com/eamena-project/eamenaR#correspondances-between-concept-labels-and-uuids))
 
-* [mds-template.xlsx](mds-template.xlsx):
+* [mds-template.xlsx](mds/mds-template.xlsx):
 	- an editable XLSX file with the list of HP fields with their UUID and a "Yes" mark if these fields belong to the mds. This file is considered to be the authorative document for mds.
 
-* [mds-template-readonly.tsv](mds-template-readonly.tsv):
-	- a read-ony TSV file with the list of HP fields with their UUID and a "Yes" mark if these fields belong to the mds. This files results from the automatic export of [mds-template.xlsx](mds-template.xlsx), it will be overwrite each time 'mds-template.xlsx' is updated)
+* [mds-template-readonly.tsv](mds/mds-template-readonly.tsv):
+	- a read-ony TSV file with the list of HP fields with their UUID and a "Yes" mark if these fields belong to the mds. This files results from the automatic export of [mds-template.xlsx](mds/mds-template.xlsx), it will be overwrite each time 'mds-template.xlsx' is updated)
 
 
 **Level of aggregation**

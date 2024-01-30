@@ -166,7 +166,16 @@ WHERE ids.ri = coords.ri AND grd.ri = coords.ri AND grd.ri = ids.ri
 
 #### APAAME ID of a given IR
 
-Using INFORMATION-0052511 (UUID: `88ab19b3-1f4c-40ba-9467-55ef66fc9f26`), see the APAAME [README.md](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/README.md#in-eamena)
+Using INFORMATION-0052511 (UUID: `88ab19b3-1f4c-40ba-9467-55ef66fc9f26`), 
+
+---
+
+**useful links**:
+
+- [APAAME project](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/README.md#in-eamena)
+- [Reference data](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data) for UUIDs
+
+---
 
 * APAAME ID
 

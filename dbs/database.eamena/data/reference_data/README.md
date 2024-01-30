@@ -153,6 +153,8 @@ res = cursor.execute(sqll)
 
 ## Information Resources
 
+field names' UUIDs are listed here: [ir-uuids-readonly.tsv](ir-uuids-readonly.tsv). The Pyton script that generate this file is [nodes_id.ipynb](nodes_id.ipynb)
+
 ## Other
 
 ~~https://github.com/eamena-project/eamena-arches-5-project/blob/master/eamena/statistics/hr_quality_rec.py~~

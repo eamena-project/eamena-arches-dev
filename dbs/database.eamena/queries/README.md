@@ -191,7 +191,7 @@ AND resourceinstanceid::text LIKE '88ab19b3-1f4c-40ba-9467-55ef66fc9f26'
 
 where:
 * `341f9905-5253-11ea-a3f7-02e7594ce0a0` is the "Catalogue ID" field UUID ([here](https://github.com/eamena-project/eamena-arches-dev/blob/5584e36842825dfd8d60c5b368bf7186ab72a39e/dbs/database.eamena/data/reference_data/ir-uuids-readonly.tsv#L13))
-* `88ab19b3-1f4c-40ba-9467-55ef66fc9f26` is the HP UUID
+* `88ab19b3-1f4c-40ba-9467-55ef66fc9f26` is the HP INFORMATION-0052511's UUID
 
 
 Returns:
@@ -225,7 +225,7 @@ Returns:
 
 ### 2.1
 
-Select images ressources from the IR `45ea21b3-5434-442e-98ab-a83851611128`
+Select images ressources from INFORMATION-0088488
 
 ```SQL
 SELECT q1.ir_id, q1.information_id, q2.catalog_id, img_url, img_name
@@ -260,6 +260,7 @@ ON q1.ir_id = q3.ir_id;
 
 where:
 * `4c403a80-8a3d-11ea-a6a6-02e7594ce0a0` is the "INFORMATION ID" field UUID ([here](https://github.com/eamena-project/eamena-arches-dev/blob/5584e36842825dfd8d60c5b368bf7186ab72a39e/dbs/database.eamena/data/reference_data/ir-uuids-readonly.tsv#L33))
+* `45ea21b3-5434-442e-98ab-a83851611128` is INFORMATION-0088488
 * `341f9905-5253-11ea-a3f7-02e7594ce0a0` is the "Catalogue ID" field UUID ([here](https://github.com/eamena-project/eamena-arches-dev/blob/5584e36842825dfd8d60c5b368bf7186ab72a39e/dbs/database.eamena/data/reference_data/ir-uuids-readonly.tsv#L13))
 * `c712066a-8094-11ea-a6a6-02e7594ce0a0` is the "File Upload" field UUID ([here](https://github.com/eamena-project/eamena-arches-dev/blob/a0d644aa376bfce54afa465974f74db821832f52/dbs/database.eamena/data/reference_data/ir-uuids-readonly.tsv#L64))
 

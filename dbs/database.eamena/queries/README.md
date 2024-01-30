@@ -160,14 +160,6 @@ WHERE ids.ri = coords.ri AND grd.ri = coords.ri AND grd.ri = ids.ri
 # APAAME and ArchDAMS
 > IR 
 
-## examples
-
-### ex1
-
-#### APAAME ID of a given IR
-
-Using INFORMATION-0052511 (UUID: `88ab19b3-1f4c-40ba-9467-55ef66fc9f26`), 
-
 ---
 
 **useful links**:
@@ -176,6 +168,16 @@ Using INFORMATION-0052511 (UUID: `88ab19b3-1f4c-40ba-9467-55ef66fc9f26`),
 - [Reference data](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data) for UUIDs
 
 ---
+
+## examples
+
+### ex1
+
+#### APAAME ID of a given IR
+
+Using INFORMATION-0052511 (UUID: `88ab19b3-1f4c-40ba-9467-55ef66fc9f26`), 
+
+
 
 * APAAME ID
 

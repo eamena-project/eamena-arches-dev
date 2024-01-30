@@ -228,22 +228,22 @@ Returns:
 Select images ressources from the IR `45ea21b3-5434-442e-98ab-a83851611128`
 
 ```SQL
-SELECT q1.ir_id, q1.ir_num, q2.catalog_id, img_url, img_name
+SELECT q1.ir_id, q1.information_id, q2.catalog_id, img_url, img_name
 FROM (
     SELECT
     resourceinstanceid AS ir_id,
-    tiledata -> '4c403a80-8a3d-11ea-a6a6-02e7594ce0a0' -> 'en' ->> 'value' AS ir_num
+    tiledata -> '4c403a80-8a3d-11ea-a6a6-02e7594ce0a0' -> 'en' ->> 'value' AS information_id
     FROM tiles
-    WHERE resourceinstanceid::text LIKE '45ea21b3-5434-442e-98ab-a83851611128' 
-	AND tiledata -> '4c403a80-8a3d-11ea-a6a6-02e7594ce0a0' -> 'en' ->> 'value' IS NOT NULL
+    WHERE tiledata -> '4c403a80-8a3d-11ea-a6a6-02e7594ce0a0' -> 'en' ->> 'value' IS NOT NULL
+    AND resourceinstanceid::text LIKE '45ea21b3-5434-442e-98ab-a83851611128' 
 ) q1
 INNER JOIN(
 	SELECT
     resourceinstanceid AS ir_id,
     tiledata -> '341f9905-5253-11ea-a3f7-02e7594ce0a0' -> 'en' ->> 'value' AS catalog_id
     FROM tiles
-    WHERE resourceinstanceid::text LIKE '45ea21b3-5434-442e-98ab-a83851611128' 
-	AND tiledata -> '341f9905-5253-11ea-a3f7-02e7594ce0a0' -> 'en' ->> 'value' IS NOT NULL
+    WHERE tiledata -> '341f9905-5253-11ea-a3f7-02e7594ce0a0' -> 'en' ->> 'value' IS NOT NULL
+    AND resourceinstanceid::text LIKE '45ea21b3-5434-442e-98ab-a83851611128' 
 ) q2
 ON q1.ir_id = q2.ir_id
 INNER JOIN(
@@ -258,9 +258,14 @@ INNER JOIN(
 ON q1.ir_id = q3.ir_id;
 ```
 
-Gives
+where:
+* `4c403a80-8a3d-11ea-a6a6-02e7594ce0a0` is the "INFORMATION ID" field UUID ([here](https://github.com/eamena-project/eamena-arches-dev/blob/5584e36842825dfd8d60c5b368bf7186ab72a39e/dbs/database.eamena/data/reference_data/ir-uuids-readonly.tsv#L33))
+* `341f9905-5253-11ea-a3f7-02e7594ce0a0` is the "Catalogue ID" field UUID ([here](https://github.com/eamena-project/eamena-arches-dev/blob/5584e36842825dfd8d60c5b368bf7186ab72a39e/dbs/database.eamena/data/reference_data/ir-uuids-readonly.tsv#L13))
+* `c712066a-8094-11ea-a6a6-02e7594ce0a0` is the "File Upload" field UUID ([here](https://github.com/eamena-project/eamena-arches-dev/blob/a0d644aa376bfce54afa465974f74db821832f52/dbs/database.eamena/data/reference_data/ir-uuids-readonly.tsv#L64))
 
-| ir_id  	|  ir_num 	|  catalog_id 	|  img_url 	|  img_name 	|
+gives:
+
+| ir_id  	|  information_id 	|  catalog_id 	|  img_url 	|  img_name 	|
 |---	|---	|---	|---	|---	|
 |  45ea21b3-5434-442e-98ab-a83851611128	|   INFORMATION-0088488	|  APAAME_20091019_DDB-0250 	|   /files/601bc682-2d7f-44af-9f23-e2d71f89e08e	|  APAAME_20091019_DDB-0250.jpg 	|
 
@@ -268,14 +273,14 @@ Gives
 
 ### 2.2
 
-Select all IR having a Catalog ID (`4c403a80-8a3d-11ea-a6a6-02e7594ce0a0`) not NULL (limit to 20)
+Select all IR having a Catalog ID not NULL (limit to 20)
 
 ```SQL
-SELECT q1.ir_id, q1.ir_num, q2.catalog_id, img_url, img_name
+SELECT q1.ir_id, q1.information_id, q2.catalog_id, img_url, img_name
 FROM (
     SELECT
     resourceinstanceid AS ir_id,
-    tiledata -> '4c403a80-8a3d-11ea-a6a6-02e7594ce0a0' -> 'en' ->> 'value' AS ir_num
+    tiledata -> '4c403a80-8a3d-11ea-a6a6-02e7594ce0a0' -> 'en' ->> 'value' AS information_id
     FROM tiles
 	WHERE tiledata -> '4c403a80-8a3d-11ea-a6a6-02e7594ce0a0' -> 'en' ->> 'value' IS NOT NULL
 ) q1
@@ -297,14 +302,18 @@ INNER JOIN(
 ) q3
 ON q1.ir_id = q3.ir_id
 LIMIT 20;
-
 ```
 
-Gives
+where:
+* `4c403a80-8a3d-11ea-a6a6-02e7594ce0a0` is the "INFORMATION ID" field UUID ([here](https://github.com/eamena-project/eamena-arches-dev/blob/5584e36842825dfd8d60c5b368bf7186ab72a39e/dbs/database.eamena/data/reference_data/ir-uuids-readonly.tsv#L33))
+* `341f9905-5253-11ea-a3f7-02e7594ce0a0` is the "Catalogue ID" field UUID ([here](https://github.com/eamena-project/eamena-arches-dev/blob/5584e36842825dfd8d60c5b368bf7186ab72a39e/dbs/database.eamena/data/reference_data/ir-uuids-readonly.tsv#L13))
+* `c712066a-8094-11ea-a6a6-02e7594ce0a0` is the "File Upload" field UUID ([here](https://github.com/eamena-project/eamena-arches-dev/blob/a0d644aa376bfce54afa465974f74db821832f52/dbs/database.eamena/data/reference_data/ir-uuids-readonly.tsv#L64))
+
+gives:
 
 <a name="id-catalog"></a>
 
-|ir_id                                |ir_num              |catalog_id                               |img_url                                                                                 |img_name                                     |
+|ir_id                                |information_id              |catalog_id                               |img_url                                                                                 |img_name                                     |
 |:------------------------------------|:-------------------|:----------------------------------------|:---------------------------------------------------------------------------------------|:--------------------------------------------|
 |000117a1-b1e2-4e09-b676-124be29a05d4 |INFORMATION-0033853 |APAAME_20141020_RHB-0143                 |https://live.staticflickr.com/7569/15784162651_852ef747a0_o_d.jpg                       |15784162651_852ef747a0_o_d.jpg               |
 |00012dab-00cf-4cf1-90b5-d09c5cf3c6d6 |INFORMATION-0090288 |APAAME_20091008_KRH-0062                 |https://live.staticflickr.com/7559/15976540576_f78c5c5355_o_d.jpg                       |15976540576_f78c5c5355_o_d.jpg               |

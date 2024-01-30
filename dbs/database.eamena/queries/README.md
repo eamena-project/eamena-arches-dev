@@ -166,7 +166,7 @@ SQL queries to work with IR and APAAME resources
 
 **useful links**:
 
-- [APAAME project](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/README.md#in-eamena)
+- [APAAME project](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/README.md#workflow)
 - [Reference data](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data) for UUIDs
 
 ---
@@ -178,8 +178,6 @@ SQL queries to work with IR and APAAME resources
 #### APAAME ID of a given IR
 
 Using INFORMATION-0052511 (UUID: `88ab19b3-1f4c-40ba-9467-55ef66fc9f26`), 
-
-
 
 * APAAME ID
 

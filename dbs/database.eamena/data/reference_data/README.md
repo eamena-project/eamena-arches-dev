@@ -29,7 +29,7 @@ It means that fields, and field and field values (`level3`) can be aggregated an
 
 #### Scripts
 
-* [mds.ipynb](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/mds/mds.ipynb):
+* [mds.ipynb](https://github.com/eamena-project/eamena-functions/blob/main/mds/mds.ipynb):
 	- a Jupyter/Python document to run mds assessement
 * [convert_xlsx_to_tsv.py](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/mds/convert_xlsx_to_tsv.py):
 	- a Python simple script to convert 'mds-template.xlsx' into 'mds-template-readonly.tsv'. This script is run automatically, in a GitHub Action with [mds-to-tsv.yml](https://github.com/eamena-project/eamena-arches-dev/blob/main/.github/workflows/mds-to-tsv.yml), each time 'mds-template.xlsx' is updated.

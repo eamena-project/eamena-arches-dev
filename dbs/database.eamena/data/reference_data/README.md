@@ -29,8 +29,10 @@ It means that fields, and field and field values (`level3`) can be aggregated an
 
 #### Scripts
 
-* [mds.ipynb](https://github.com/eamena-project/eamena-functions/blob/main/mds/mds.ipynb):
-	- a Jupyter/Python document to run mds assessement
+* [mds-reference.ipynb](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/mds/mds-reference.ipynb)
+  - a Jupyter/Python document to run mds reference
+* [mds-assessment.ipynb](https://github.com/eamena-project/eamena-functions/blob/main/mds/mds.ipynb):
+	- a Jupyter/Python document to run mds assessement on heritage places
 * [convert_xlsx_to_tsv.py](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/mds/convert_xlsx_to_tsv.py):
 	- a Python simple script to convert 'mds-template.xlsx' into 'mds-template-readonly.tsv'. This script is run automatically, in a GitHub Action with [mds-to-tsv.yml](https://github.com/eamena-project/eamena-arches-dev/blob/main/.github/workflows/mds-to-tsv.yml), each time 'mds-template.xlsx' is updated.
 
@@ -48,7 +50,7 @@ Check the MDS fields in this HTML circular plot ([here](https://eamena-project.g
 <p align="center">
   <img alt="img-name" src="https://github.com/eamena-project/eamena-arches-dev/blob/main/www/arches-v7-hp-data-mds-pie.png" width="500">
   <br>
-    <em>A screenshot of the HTML file showing the 98 fields of the Heritage Places with the MDS fields (highlighted)</em>
+    <em>A screenshot of the HTML file showing the 98 fields of the Heritage Places with the MDS fields (highlighted) using the `mds-reference.ipynb` script</em>
 </p>
 
 ## Other

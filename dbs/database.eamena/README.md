@@ -1,5 +1,19 @@
 # EAMENA DB
 
+## ERD
+> Entity–relationship model
+
+### HP
+
+The interactive version of this ERD is [here](https://eamena-project.github.io/dbs/database.eamena/data/reference_data/erd/EAMENA-erd.html)
+
+<p align="center">
+  <img alt="img-name" src="../../www/arches-v7-hp-data-erd.png" width="250">
+  <br>
+    <em>Heritage places ERD</em>
+</p>
+
+
 ## Diagram
 
 ```mermaid

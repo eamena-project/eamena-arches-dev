@@ -13,7 +13,7 @@ Miscellaneous and compendium of equivalent queries between Advanced Search and S
 
 * UUID and fiel names
 
-Main correspondances between EAMENA Heritage Places fieldnames and field UUIDs are listed here: https://github.com/eamena-project/eamena-arches-dev/blob/main/dev/data_quality/mds-template-readonly.tsv
+Main correspondances between EAMENA Heritage Places fieldnames and field UUIDs are listed here: https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/mds/mds-template-readonly.tsv
 
 ---
 

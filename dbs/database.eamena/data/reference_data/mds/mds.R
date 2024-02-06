@@ -14,7 +14,8 @@ colnames(df_filtered)[colnames(df_filtered) == 'level3'] <- 'Heritage Place fiel
 df_filtered$color <- sub("^(.{7}).*", "\\1", df_filtered$color)
 # df_filtered$color <- as.factor(df_filtered$color)
 dt_widget <- datatable(df_filtered[ , c("Heritage Place field","description"), drop=FALSE],
-          options = list(pageLength = 10, autoWidth = TRUE)) %>%
+                       rownames = FALSE,
+                       options = list(pageLength = 25, autoWidth = TRUE)) %>%
   formatStyle(
     columns = c("Heritage Place field"),
     backgroundColor = styleEqual(df_filtered[["Heritage Place field"]], df_filtered$color)

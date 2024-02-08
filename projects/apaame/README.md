@@ -12,7 +12,7 @@ In the Information Resources (IR), under the menu 'File Upload', paths to images
     <em>Current Flickr path: `https:/live.staticflickr.com/4118/4928802850_49ed2fdbcb_o_d.jpg` </em>
 </p>
 
-Should be:
+<a id="directlk-ok"></a>Should be:
 
 <p align="center">
   <img alt="img-name" src="www/img-err-path-INFORMATION-0052511.png" width="1000">

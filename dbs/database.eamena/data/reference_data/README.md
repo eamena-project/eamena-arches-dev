@@ -43,9 +43,10 @@ It means that fields, and field and field values (`level3`) can be aggregated an
     <em>A screenshot of the editable 'mds-template.xlsx'</em>
 </p>
 
+
 #### Interactivity
 
-Check the MDS fields in this HTML circular plot ([here](https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/mds/mds_level.html))
+Check the MDS fields in this HTML circular plot ([here](https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/mds/mds-reference.html))
 
 <p align="center">
   <img alt="img-name" src="https://github.com/eamena-project/eamena-arches-dev/blob/main/www/arches-v7-hp-data-mds-pie.png" width="500">

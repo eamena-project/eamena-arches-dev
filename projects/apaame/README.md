@@ -114,7 +114,7 @@ examples:
 
 4. update the EAMENA Pg database
 
-see [SQL queries](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/queries#apaame-and-archdams)
+see [SQL queries](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/postgres/queries#apaame-and-archdams)
 
 * Notes
 

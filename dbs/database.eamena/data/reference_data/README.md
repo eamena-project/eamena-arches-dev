@@ -49,7 +49,7 @@ It means that fields, and field and field values (`level3`) can be aggregated an
 Check the MDS fields in this HTML circular plot ([here](https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/mds/mds-reference.html))
 
 <p align="center">
-  <img alt="img-name" src="https://github.com/eamena-project/eamena-arches-dev/blob/main/www/arches-v7-hp-data-mds-pie.png" width="500">
+  <img alt="img-name" src="https://github.com/eamena-project/eamena-arches-dev/blob/main/www/arches-v7-hp-data-mds-pie.png" width="600">
   <br>
     <em>A screenshot of the `mds_level.html` file showing the 98 fields of the Heritage Places with the MDS fields (highlighted, thumbs up) using the `mds-reference.ipynb` script</em>
 </p>
@@ -57,7 +57,7 @@ Check the MDS fields in this HTML circular plot ([here](https://eamena-project.g
 The Entity-relationships diagram of HP with fieldnames and CIDOC-CRM entities and relationships
 
 <p align="center">
-  <img alt="img-name" src="https://github.com/eamena-project/eamena-arches-dev/blob/main/www/arches-v7-hp-data-erd.png" width="500">
+  <img alt="img-name" src="https://github.com/eamena-project/eamena-arches-dev/blob/main/www/arches-v7-hp-data-erd.png" width="650">
   <br>
     <em>A screenshot of the `EAMENA-erd.html` file (detail) showing the 98 fields of the Heritage Places with the MDS fields (colored, thumbs up) using the `EAMENA-erd.ipynb` script</em>
 </p>

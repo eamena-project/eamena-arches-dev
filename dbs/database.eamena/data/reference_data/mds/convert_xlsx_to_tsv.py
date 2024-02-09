@@ -23,5 +23,4 @@ print(f'Conversion from XLSX to TSV complete. TSV file saved as {tsv_filename}')
 # #%%
 # import pandas as pd
 # df1=pd.read_csv("https://raw.githubusercontent.com/tuyenhavan/Statistics/Dataset/World_Life_Expectancy.csv",sep=";")
-
 # df1.head()

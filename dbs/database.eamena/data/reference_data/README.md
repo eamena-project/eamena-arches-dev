@@ -54,7 +54,7 @@ Check the MDS fields in this HTML circular plot ([here](https://eamena-project.g
     <em>A screenshot of the `mds_level.html` file showing the 98 fields of the Heritage Places with the MDS fields (highlighted, thumbs up) using the `mds-reference.ipynb` script</em>
 </p>
 
-The Entity-relationships diagram of HP
+The Entity-relationships diagram of HP with fieldnames and CIDOC-CRM entities and relationships
 
 <p align="center">
   <img alt="img-name" src="https://github.com/eamena-project/eamena-arches-dev/blob/main/www/arches-v7-hp-data-erd.png" width="500">

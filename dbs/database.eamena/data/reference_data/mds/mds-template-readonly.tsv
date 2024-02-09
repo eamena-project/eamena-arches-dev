@@ -1,99 +1,1000 @@
-level1	level2	level3	uuid_sql	Enhanced record minimum standard	notes	
-ASSESSMENT SUMMARY	ASSESSMENT ACTIVITY	Assessment Investigator - Actor	34cfea8a-c2c0-11ea-9026-02e7594ce0a0	Yes		
-ASSESSMENT SUMMARY	ASSESSMENT ACTIVITY	Investigator Role Type	d2e1ab96-cc05-11ea-a292-02e7594ce0a0	Yes		
-ASSESSMENT SUMMARY	ASSESSMENT ACTIVITY	Assessment Activity Type	34cfea4d-c2c0-11ea-9026-02e7594ce0a0	Yes 		
-ASSESSMENT SUMMARY	ASSESSMENT ACTIVITY	Assessment Activity Date	34cfea81-c2c0-11ea-9026-02e7594ce0a0	Yes		
-ASSESSMENT SUMMARY	ASSESSMENT ACTIVITY	Google Earth Assessment	bcd3a8ae-0404-11eb-a11c-0a5a9a4f6ef7	Yes 		
-ASSESSMENT SUMMARY	ASSESSMENT ACTIVITY	GE Imagery Acquisition Date	b9643302-0407-11eb-a11c-0a5a9a4f6ef7	Yes, if an acquisition date is available. If there are a range of images the earliest and most recent dates should be added.		
-ASSESSMENT SUMMARY	ASSESSMENT ACTIVITY	Information Resource	34cfea34-c2c0-11ea-9026-02e7594ce0a0			
-ASSESSMENT SUMMARY	ASSESSMENT ACTIVITY	Information Resource Acquisition Date	a5eb59b4-0406-11eb-a11c-0a5a9a4f6ef7			
-RESOURCE SUMMARY	RESOURCE NAME	Resource Name	34cfe9dd-c2c0-11ea-9026-02e7594ce0a0	No (a site identified via remote sensing may not have an identifiable name, and the EAMENA Database will automatically generate a UiD).		
-RESOURCE SUMMARY	RESOURCE NAME	Name Type	34cfea97-c2c0-11ea-9026-02e7594ce0a0	No 		
-RESOURCE SUMMARY	RESOURCE SUMMARY	Heritage Place Type	34cfe9ef-c2c0-11ea-9026-02e7594ce0a0	No		
-RESOURCE SUMMARY	RESOURCE DESCRIPTION	General Description Type	34cfea91-c2c0-11ea-9026-02e7594ce0a0	No		
-RESOURCE SUMMARY	RESOURCE DESCRIPTION	General Description	34cfea77-c2c0-11ea-9026-02e7594ce0a0	No		
-RESOURCE SUMMARY	HERITAGE RESOURCE CLASSIFICATION	Heritage Place Function	34cfea4a-c2c0-11ea-9026-02e7594ce0a0	Yes (Including 'Unknownâ€™)		
-RESOURCE SUMMARY	HERITAGE RESOURCE CLASSIFICATION	Heritage Place Function Certainty 	34cfea7d-c2c0-11ea-9026-02e7594ce0a0	Yes  		
-RESOURCE SUMMARY	DESIGNATION	Designation	d9abdfdb-c6a3-11ea-a292-02e7594ce0a0	No		
-RESOURCE SUMMARY	DESIGNATION	Designation From Date	d9abdfe0-c6a3-11ea-a292-02e7594ce0a0	No		
-RESOURCE SUMMARY	DESIGNATION	Designation To Date	d9abdfdf-c6a3-11ea-a292-02e7594ce0a0	No		
-GEOMETRIES	GEOMETRIES	Geometric Place Expression	5348cf67-c2c5-11ea-9026-02e7594ce0a0	Yes		
-GEOMETRIES	GEOMETRIES	Geometry Qualifier	ce842cdc-c2c7-11ea-9026-02e7594ce0a0			
-GEOMETRIES	GEOMETRIES	Location Certainty	5348cf6b-c2c5-11ea-9026-02e7594ce0a0	Yes 		
-GEOMETRIES	GEOMETRIES	Geometry Extent Certainty	5348cf6c-c2c5-11ea-9026-02e7594ce0a0	No		
-GEOGRAPHY	GEOGRAPHY	Overall Site Shape Type	34cfea69-c2c0-11ea-9026-02e7594ce0a0	No 		
-GEOGRAPHY	GEOGRAPHY	Grid ID	34cfea5d-c2c0-11ea-9026-02e7594ce0a0	Yes		
-GEOGRAPHY	GEOGRAPHY	Country Type	34cfea43-c2c0-11ea-9026-02e7594ce0a0	Yes 		
-GEOGRAPHY	GEOGRAPHY	Cadastral Reference	34cfea95-c2c0-11ea-9026-02e7594ce0a0	No		
-GEOGRAPHY	GEOGRAPHY	Resource Orientation	34cfea73-c2c0-11ea-9026-02e7594ce0a0	No		
-GEOGRAPHY	ADDRESS	Address	34cfea6d-c2c0-11ea-9026-02e7594ce0a0			
-GEOGRAPHY	ADDRESS	Address Type	34cfea8f-c2c0-11ea-9026-02e7594ce0a0			
-GEOGRAPHY	ADMINISTRATIVE SUBDIVISION	Administrative Division 	34cfea78-c2c0-11ea-9026-02e7594ce0a0			
-GEOGRAPHY	ADMINISTRATIVE SUBDIVISION	Administrative Division Type	34cfea87-c2c0-11ea-9026-02e7594ce0a0			
-ARCHAEOLOGICAL ASSESSMENT	ARCHAEOLOGICAL ASSESSMENT	Overall Archaeological Certainty Value 	34cfea51-c2c0-11ea-9026-02e7594ce0a0	Yes		
-ARCHAEOLOGICAL ASSESSMENT	ARCHAEOLOGICAL ASSESSMENT	Overall Site Morphology Type	34cfe9e6-c2c0-11ea-9026-02e7594ce0a0	Yes		
-ARCHAEOLOGICAL ASSESSMENT	PERIODIZATION	Cultural Period Type	38cff73b-c77b-11ea-a292-02e7594ce0a0	Yes (Including â€˜Unknownâ€™)		
-ARCHAEOLOGICAL ASSESSMENT	PERIODIZATION	Cultural Period Certainty	38cff738-c77b-11ea-a292-02e7594ce0a0	Yes		
-ARCHAEOLOGICAL ASSESSMENT	PERIODIZATION	Cultural Sub-period Type	38cff73c-c77b-11ea-a292-02e7594ce0a0	No		
-ARCHAEOLOGICAL ASSESSMENT	PERIODIZATION	Cultural Sub-period Certainty	38cff73a-c77b-11ea-a292-02e7594ce0a0	No		
-ARCHAEOLOGICAL ASSESSMENT	PERIODIZATION	Date Inference Making Actor	38cff737-c77b-11ea-a292-02e7594ce0a0			
-ARCHAEOLOGICAL ASSESSMENT	ABSOLUTE CHRONOLOGY	Archaeological From Date	34cfea83-c2c0-11ea-9026-02e7594ce0a0			
-ARCHAEOLOGICAL ASSESSMENT	ABSOLUTE CHRONOLOGY	Archaeological To Date	34cfea6c-c2c0-11ea-9026-02e7594ce0a0			
-ARCHAEOLOGICAL ASSESSMENT	ABSOLUTE CHRONOLOGY	BP Date From	b7314be2-c5fa-11ea-9026-02e7594ce0a0			
-ARCHAEOLOGICAL ASSESSMENT	ABSOLUTE CHRONOLOGY	BP Date To	173ff15a-c5fb-11ea-9026-02e7594ce0a0			
-ARCHAEOLOGICAL ASSESSMENT	ABSOLUTE CHRONOLOGY	AH Date From	41afc438-c5fb-11ea-9026-02e7594ce0a0			
-ARCHAEOLOGICAL ASSESSMENT	ABSOLUTE CHRONOLOGY	AH Date To	5435f2ee-c5fb-11ea-9026-02e7594ce0a0			
-ARCHAEOLOGICAL ASSESSMENT	ABSOLUTE CHRONOLOGY	SH Date From	086e756c-cb86-11ea-a292-02e7594ce0a0			
-ARCHAEOLOGICAL ASSESSMENT	ABSOLUTE CHRONOLOGY	SH Date to	97a2c1fc-cb86-11ea-a292-02e7594ce0a0			
-ARCHAEOLOGICAL ASSESSMENT	SITE FEATURES and INTERPRETATIONS	Site Feature Form Type	34cfea9a-c2c0-11ea-9026-02e7594ce0a0	No, unless there is no Site Feature Interpretation Type (eg. If the interpretation field is listed Ã¢â‚¬ËœUnknownÃ¢â‚¬â„¢ then the Feature field should be filled in)  		
-ARCHAEOLOGICAL ASSESSMENT	SITE FEATURES and INTERPRETATIONS	Site Feature Form Type Certainty	34cfea59-c2c0-11ea-9026-02e7594ce0a0	No 		
-ARCHAEOLOGICAL ASSESSMENT	SITE FEATURES and INTERPRETATIONS	Site Feature Shape Type	34cfea19-c2c0-11ea-9026-02e7594ce0a0	No		
-ARCHAEOLOGICAL ASSESSMENT	SITE FEATURES and INTERPRETATIONS	Site Feature Arrangement Type	34cfe9e9-c2c0-11ea-9026-02e7594ce0a0	No		
-ARCHAEOLOGICAL ASSESSMENT	SITE FEATURES and INTERPRETATIONS	Site Feature Number Type	34cfe9f8-c2c0-11ea-9026-02e7594ce0a0	No		
-ARCHAEOLOGICAL ASSESSMENT	SITE FEATURES and INTERPRETATIONS	Site Feature Interpretation Type	34cfea58-c2c0-11ea-9026-02e7594ce0a0	Yes (including â€˜Unknownâ€™)		
-ARCHAEOLOGICAL ASSESSMENT	SITE FEATURES and INTERPRETATIONS	Site Feature Interpretation Number Type	34cfea62-c2c0-11ea-9026-02e7594ce0a0	Yes		
-ARCHAEOLOGICAL ASSESSMENT	SITE FEATURES and INTERPRETATIONS	Site Feature Interpretation Certainty	34cfea44-c2c0-11ea-9026-02e7594ce0a0	Yes		
-ARCHAEOLOGICAL ASSESSMENT	SITE FEATURES and INTERPRETATIONS	Built Component	3d218500-c385-11ea-9026-02e7594ce0a0		Related ressources	
-ARCHAEOLOGICAL ASSESSMENT	SITE FEATURES and INTERPRETATIONS	Heritage Place Resource Instance	3d218500-c385-11ea-9026-02e7594ce0a0		Related ressources	
-ARCHAEOLOGICAL ASSESSMENT	MATERIAL	Material Class	34cfea3c-c2c0-11ea-9026-02e7594ce0a0			
-ARCHAEOLOGICAL ASSESSMENT	MATERIAL	Material Type	34cfea4e-c2c0-11ea-9026-02e7594ce0a0			
-ARCHAEOLOGICAL ASSESSMENT	MATERIAL	Construction Technique	34cfea6b-c2c0-11ea-9026-02e7594ce0a0			
-ARCHAEOLOGICAL ASSESSMENT	MEASUREMENTS	Measurement Number	34cfea47-c2c0-11ea-9026-02e7594ce0a0			
-ARCHAEOLOGICAL ASSESSMENT	MEASUREMENTS	Measurement Unit	34cfea60-c2c0-11ea-9026-02e7594ce0a0			
-ARCHAEOLOGICAL ASSESSMENT	MEASUREMENTS	Dimension Type	34cfea86-c2c0-11ea-9026-02e7594ce0a0			
-ARCHAEOLOGICAL ASSESSMENT	MEASUREMENTS	Measurement Source Type 	34cfea7c-c2c0-11ea-9026-02e7594ce0a0			
-ARCHAEOLOGICAL ASSESSMENT	ARCHAEOLOGICAL ASSESSMENT	Related Geoarchaeology/Palaeolandscape	34cfe9ec-c2c0-11ea-9026-02e7594ce0a0	No		
-CONDITION ASSESSMENT	CONDITION ASSESSMENT	Overall Condition State Type	34cfe9f5-c2c0-11ea-9026-02e7594ce0a0	Yes 		
-CONDITION ASSESSMENT	CONDITION ASSESSMENT	Damage Extent Type	34cfea8e-c2c0-11ea-9026-02e7594ce0a0	No		
-CONDITION ASSESSMENT	DISTURBANCES	Disturbance Cause Category Type	34cfea68-c2c0-11ea-9026-02e7594ce0a0	Yes 		
-CONDITION ASSESSMENT	DISTURBANCES	Disturbance Cause Type 	34cfea79-c2c0-11ea-9026-02e7594ce0a0	Yes 		
-CONDITION ASSESSMENT	DISTURBANCES	Disturbance Cause Certainty 	34cfea3d-c2c0-11ea-9026-02e7594ce0a0	Yes 		
-CONDITION ASSESSMENT	DISTURBANCES	Disturbance Date From	e3cc8c5c-c772-11ea-a292-02e7594ce0a0	Yes, dates should be included if available.	 dates should be included if available.	
-CONDITION ASSESSMENT	DISTURBANCES	Disturbance Date To 	34cfea65-c2c0-11ea-9026-02e7594ce0a0	Yes, dates should be included if available.	There are two fields named 'Disturbance Date To ' in the RM. dates should be included if available.	
-CONDITION ASSESSMENT	DISTURBANCES	Disturbance Date Occurred Before	34cfea92-c2c0-11ea-9026-02e7594ce0a0	Yes, dates should be included if available.	There are two fields named 'Disturbance Date On ' in the RM. dates should be included if available.	
-CONDITION ASSESSMENT	DISTURBANCES	Disturbance Date Occurred On 	34cfea92-c2c0-11ea-9026-02e7594ce0a0	Yes, dates should be included if available.	 dates should be included if available.	
-CONDITION ASSESSMENT	DISTURBANCES	Disturbance Cause Assignment Assessor Name - Actor	e3cc8c5a-c772-11ea-a292-02e7594ce0a0	No	Disturbance Cause Assignment Assessor Name	
-CONDITION ASSESSMENT	DISTURBANCES	Effect Type	34cfea75-c2c0-11ea-9026-02e7594ce0a0	Yes 		
-CONDITION ASSESSMENT	DISTURBANCES	Effect Certainty	34cfea5c-c2c0-11ea-9026-02e7594ce0a0	Yes		
-CONDITION ASSESSMENT	THREATS	Threat Category	34cfea90-c2c0-11ea-9026-02e7594ce0a0	Yes (including 'No Visible/Known')		
-CONDITION ASSESSMENT	THREATS	Threat Cause Type	34cfea5c-c2c0-11ea-9026-02e7594ce0a0	Yes	Threat Type	
-CONDITION ASSESSMENT	THREATS	Threat Probability 	34cfea76-c2c0-11ea-9026-02e7594ce0a0	Yes 		
-CONDITION ASSESSMENT	THREATS	Threat Inference Making Assessor Name - Actor	34cfea75-c2c0-11ea-9026-02e7594ce0a0			
-CONDITION ASSESSMENT	RECOMMENDATION PLAN	Intervention Activity Type	34cfea0a-c2c0-11ea-9026-02e7594ce0a0			
-CONDITION ASSESSMENT	RECOMMENDATION PLAN	Recommendation Type	34cfea64-c2c0-11ea-9026-02e7594ce0a0			
-CONDITION ASSESSMENT	RECOMMENDATION PLAN	Priority Type	34cfea0a-c2c0-11ea-9026-02e7594ce0a0			
-CONDITION ASSESSMENT	CONDITION ASSESSMENT	Detailed Condition Assessments	34cfea64-c2c0-11ea-9026-02e7594ce0a0	No	Related ressources	
-ENVIRONMENT ASSESSMENT	ENVIRONMENT ASSESSMENT	Topography Type	34cfea84-c2c0-11ea-9026-02e7594ce0a0			
-ENVIRONMENT ASSESSMENT	LAND COVER	Land Cover Type	34cfea93-c2c0-11ea-9026-02e7594ce0a0			
-ENVIRONMENT ASSESSMENT	LAND COVER	Land Cover Assessment Date	34cfea39-c2c0-11ea-9026-02e7594ce0a0			
-ENVIRONMENT ASSESSMENT	SURFICIAL GEOLOGY	Surficial Geology Type	34cfea93-c2c0-11ea-9026-02e7594ce0a0			
-ENVIRONMENT ASSESSMENT	SURFICIAL GEOLOGY	Depositional Process	34cfea61-c2c0-11ea-9026-02e7594ce0a0			
-ENVIRONMENT ASSESSMENT	ENVIRONMENT ASSESSMENT	Bedrock Geology Type	34cfea9d-c2c0-11ea-9026-02e7594ce0a0			
-ENVIRONMENT ASSESSMENT	MARINE ENVIRONMENT	Fetch Type	34cfea37-c2c0-11ea-9026-02e7594ce0a0			
-ENVIRONMENT ASSESSMENT	MARINE ENVIRONMENT	Wave Climate	34cfea2b-c2c0-11ea-9026-02e7594ce0a0			
-ENVIRONMENT ASSESSMENT	MARINE ENVIRONMENT	Tidal Range	34cfea9c-c2c0-11ea-9026-02e7594ce0a0		Previously named 'Tidal Energy'	
-ENVIRONMENT ASSESSMENT	DEPTH or ELEVATION	Minimum Depth/Max Elevation	34cfea40-c2c0-11ea-9026-02e7594ce0a0			
-ENVIRONMENT ASSESSMENT	DEPTH or ELEVATION	Maximum Depth/Min Elevation	34cfea42-c2c0-11ea-9026-02e7594ce0a0			
-ENVIRONMENT ASSESSMENT	DEPTH or ELEVATION	Datum Type	34cfea9b-c2c0-11ea-9026-02e7594ce0a0			
-ENVIRONMENT ASSESSMENT	DEPTH or ELEVATION	Datum Description/EPSG code	34cfea8d-c2c0-11ea-9026-02e7594ce0a0			
-ACCESS	ACCESS	Restricted Access Record Designation	34cfea9b-c2c0-11ea-9026-02e7594ce0a0			
+num	level1	level2	level3	uuid_sql	Enhanced record minimum standard	notes	description	color
+1	ASSESSMENT SUMMARY	ASSESSMENT ACTIVITY	Assessment Investigator - Actor	34cfea8a-c2c0-11ea-9026-02e7594ce0a0	Yes		Free text. Name and Surname of the Assessor of the heritage place	#1b9e77
+2	ASSESSMENT SUMMARY	ASSESSMENT ACTIVITY	Investigator Role Type	d2e1ab96-cc05-11ea-a292-02e7594ce0a0	Yes		Structured data. Defines roles of the assessor within heritage management and research, including academic researchers, project staff (EAMENA, MarEA), government personnel, NGO employees, private sector workers, students/trainees, and volunteers/independent researchers.	#1b9e77
+3	ASSESSMENT SUMMARY	ASSESSMENT ACTIVITY	Assessment Activity Type	34cfea4d-c2c0-11ea-9026-02e7594ce0a0	Yes 		Structured data. Delineates methods of heritage place assessment, including on-place surveys, remote image analysis, risk evaluation, emergency impact, and data processing activities.	#1b9e77
+4	ASSESSMENT SUMMARY	ASSESSMENT ACTIVITY	Assessment Activity Date	34cfea81-c2c0-11ea-9026-02e7594ce0a0	Yes		Date. The date of the assessment	#1b9e77
+5	ASSESSMENT SUMMARY	ASSESSMENT ACTIVITY	Google Earth Assessment	bcd3a8ae-0404-11eb-a11c-0a5a9a4f6ef7	Yes 		Boolean. Was the assessment based on Google Earth imagery?	#1b9e77
+6	ASSESSMENT SUMMARY	ASSESSMENT ACTIVITY	GE Imagery Acquisition Date	b9643302-0407-11eb-a11c-0a5a9a4f6ef7	Yes, if an acquisition date is available. If there are a range of images the earliest and most recent dates should be added.		Date. The date of Google Earth (GE) images used for the assessment.	#1b9e77
+7	ASSESSMENT SUMMARY	ASSESSMENT ACTIVITY	Information Resource	34cfea34-c2c0-11ea-9026-02e7594ce0a0			Resource instance. Are Information Resources used to create and record sources (e.g., imagery, books, etc.)?	#1b9e7755
+8	ASSESSMENT SUMMARY	ASSESSMENT ACTIVITY	Information Resource Acquisition Date	a5eb59b4-0406-11eb-a11c-0a5a9a4f6ef7			Date. The date of the acquisition of the information resource.	#1b9e7755
+9	RESOURCE SUMMARY	RESOURCE NAME	Resource Name	34cfe9dd-c2c0-11ea-9026-02e7594ce0a0	No (a site identified via remote sensing may not have an identifiable name, and the EAMENA Database will automatically generate a UiD).		Free text. Name of the heritage place	#d95f0255
+10	RESOURCE SUMMARY	RESOURCE NAME	Name Type	34cfea97-c2c0-11ea-9026-02e7594ce0a0	No 		Structured data. Categorises identification labels for heritage places, including alternative references, official designations, and all known toponyms across languages and periods.	#d95f0255
+11	RESOURCE SUMMARY	RESOURCE SUMMARY	Heritage Place Type	34cfe9ef-c2c0-11ea-9026-02e7594ce0a0	No		Structured data. Defines categories of heritage place type, including archaeological sites, components, landscapes/seascapes, urban heritage, and structural heritage, each with specific criteria for classification.	#d95f0255
+12	RESOURCE SUMMARY	RESOURCE DESCRIPTION	General Description Type	34cfea91-c2c0-11ea-9026-02e7594ce0a0	No		Structured data. Outlines the types of descriptive free text for heritage places, including general place characteristics, significance summaries, architectural details, and references to previous database identifiers.	#d95f0255
+13	RESOURCE SUMMARY	RESOURCE DESCRIPTION	General Description	34cfea77-c2c0-11ea-9026-02e7594ce0a0	No		Free text. A general description of the heritage place.	#d95f0255
+14	RESOURCE SUMMARY	HERITAGE RESOURCE CLASSIFICATION	Heritage Place Function	34cfea4a-c2c0-11ea-9026-02e7594ce0a0	Yes (Including 'Unknown’)		Structured data. Categorises heritage places by their original or historical function, such as agricultural, defensive, domestic, leisure, funerary, hunting, water management, industrial, transport, maritime, military, public, religious, status display, and commercial activities.	#d95f02
+15	RESOURCE SUMMARY	HERITAGE RESOURCE CLASSIFICATION	Heritage Place Function Certainty 	34cfea7d-c2c0-11ea-9026-02e7594ce0a0	Yes  		Structured data. Defines the level of certainty regarding the function of heritage places, ranging from not applicable to definite, based on evidence and confirmation from various sources.	#d95f02
+16	RESOURCE SUMMARY	DESIGNATION	Designation	d9abdfdb-c6a3-11ea-a292-02e7594ce0a0	No		Structured list of categories indicating the status and recognition of heritage sites by various authoritative bodies and conventions.	#d95f0255
+17	RESOURCE SUMMARY	DESIGNATION	Designation From Date	d9abdfe0-c6a3-11ea-a292-02e7594ce0a0	No		Date. The date the heritage place was designated.	#d95f0255
+18	RESOURCE SUMMARY	DESIGNATION	Designation To Date	d9abdfdf-c6a3-11ea-a292-02e7594ce0a0	No		Date. The date the designation ended.	#d95f0255
+19	GEOMETRIES	GEOMETRIES	Geometric Place Expression	5348cf67-c2c5-11ea-9026-02e7594ce0a0	Yes		GeoJSON feature collection. The coordinates of the heritage place geometry, whether it is a point, line, or polygon.	#7570b3
+20	GEOMETRIES	GEOMETRIES	Geometry Qualifier	ce842cdc-c2c7-11ea-9026-02e7594ce0a0			Structured data. The type of geometry qualifier, whether it is Centre Point, Access Point, Buffer Polygon, Center Line, Façade Point, Perimeter Polygon, Property Boundary, Site Datum Point, Simplified Polygon, or Vicinity Point.	#7570b355
+21	GEOMETRIES	GEOMETRIES	Location Certainty	5348cf6b-c2c5-11ea-9026-02e7594ce0a0	Yes 		Structured data. Describes the level of confidence in the spatial information of a heritage place, ranging from negligible to definite, based on the quality of imagery, corroborative data, and field verification.	#7570b3
+22	GEOMETRIES	GEOMETRIES	Geometry Extent Certainty	5348cf6c-c2c5-11ea-9026-02e7594ce0a0	No		Structured data. Defines certainty levels in identifying and delineating the boundaries of a heritage place or feature, from negligible to definite, based on imagery visibility, boundary clarity, and field corroboration.	#7570b355
+23	GEOGRAPHY	GEOGRAPHY	Overall Site Shape Type	34cfea69-c2c0-11ea-9026-02e7594ce0a0	No 		Structured data. Describes the overall shape of heritage places, ranging from geometrically precise forms to irregular, user-defined, and unknown configurations, accommodating a variety of archaeological features.	#e7298a55
+24	GEOGRAPHY	GEOGRAPHY	Grid ID	34cfea5d-c2c0-11ea-9026-02e7594ce0a0	Yes		Resource instance. EAMENA Grid ID for the location of heritage places.	#e7298a
+25	GEOGRAPHY	GEOGRAPHY	Country Type	34cfea43-c2c0-11ea-9026-02e7594ce0a0	Yes 		Structured data. Name of the country where the heritage place is located.	#e7298a
+26	GEOGRAPHY	GEOGRAPHY	Cadastral Reference	34cfea95-c2c0-11ea-9026-02e7594ce0a0	No		Free text. Cadastral reference of the heritage place.	#e7298a55
+27	GEOGRAPHY	GEOGRAPHY	Resource Orientation	34cfea73-c2c0-11ea-9026-02e7594ce0a0	No		Structured data. Specifies the compass orientations for heritage places, including cardinal and intercardinal directions, as well as combinations for linear orientations and a category for non-applicable cases.	#e7298a55
+28	GEOGRAPHY	ADDRESS	Address	34cfea6d-c2c0-11ea-9026-02e7594ce0a0			Free text. Address of heritage places.	#e7298a55
+29	GEOGRAPHY	ADDRESS	Address Type	34cfea8f-c2c0-11ea-9026-02e7594ce0a0			Structured data. Differentiates between the main (primary) and secondary (alternative) addresses for entities in a database or record system.	#e7298a55
+30	GEOGRAPHY	ADMINISTRATIVE SUBDIVISION	Administrative Division 	34cfea78-c2c0-11ea-9026-02e7594ce0a0			Free text. Name of the administrative division of where heritage places are located.	#e7298a55
+31	GEOGRAPHY	ADMINISTRATIVE SUBDIVISION	Administrative Division Type	34cfea87-c2c0-11ea-9026-02e7594ce0a0			Structured data. Categorises types of administrative divisions within a region, such as community plan areas, council districts, districts, governorates, neighborhoods, neighborhood councils, and provinces.	#e7298a55
+32	ARCHAEOLOGICAL ASSESSMENT	ARCHAEOLOGICAL ASSESSMENT	Overall Archaeological Certainty Value 	34cfea51-c2c0-11ea-9026-02e7594ce0a0	Yes		Structured data. Defines certainty levels in in identifying archaeological values of heritage places.	#66a61e
+33	ARCHAEOLOGICAL ASSESSMENT	ARCHAEOLOGICAL ASSESSMENT	Overall Site Morphology Type	34cfe9e6-c2c0-11ea-9026-02e7594ce0a0	Yes		Structured data. Identifies types of heritage places based on their morphology—whether they are negative/cut/dug features, constructed above ground, surface marks, or undetermined.	#66a61e
+34	ARCHAEOLOGICAL ASSESSMENT	PERIODIZATION	Cultural Period Type	38cff73b-c77b-11ea-a292-02e7594ce0a0	Yes (Including ‘Unknown’)		Structured data. Classifies cultural periods of cultural heritage places from Palaeolithic to Contemporary Islamic.	#66a61e
+35	ARCHAEOLOGICAL ASSESSMENT	PERIODIZATION	Cultural Period Certainty	38cff738-c77b-11ea-a292-02e7594ce0a0	Yes		Structured data. Classifies the certaintiy level of chronological data associated with archaeological findings into possible, probable, definite, or not applicable, based on evidence	#66a61e
+36	ARCHAEOLOGICAL ASSESSMENT	PERIODIZATION	Cultural Sub-period Type	38cff73c-c77b-11ea-a292-02e7594ce0a0	No		Structured data. Subcategories representing main cultural periods of heritage places.	#66a61e55
+37	ARCHAEOLOGICAL ASSESSMENT	PERIODIZATION	Cultural Sub-period Certainty	38cff73a-c77b-11ea-a292-02e7594ce0a0	No		Structured data. Classifies the certaintiy level of sub-periods into possible, probable, definite, or not applicable, based on evidence.	#66a61e55
+38	ARCHAEOLOGICAL ASSESSMENT	PERIODIZATION	Date Inference Making Actor	38cff737-c77b-11ea-a292-02e7594ce0a0			Free text. Actor involved in the process of inferring or determining dates and cultural periods and sub-periods for heritage places.	#66a61e55
+39	ARCHAEOLOGICAL ASSESSMENT	ABSOLUTE CHRONOLOGY	Archaeological From Date	34cfea83-c2c0-11ea-9026-02e7594ce0a0			EDTF. The starting point or earliest known date of an archaeological site, a heritage place or feature, expressed in calibrated years.	#66a61e55
+40	ARCHAEOLOGICAL ASSESSMENT	ABSOLUTE CHRONOLOGY	Archaeological To Date	34cfea6c-c2c0-11ea-9026-02e7594ce0a0			EDTF. The ending point or latest known date of an archaeological site, a heritage place or feature, expressed in calibrated years.	#66a61e55
+41	ARCHAEOLOGICAL ASSESSMENT	ABSOLUTE CHRONOLOGY	BP Date From	b7314be2-c5fa-11ea-9026-02e7594ce0a0			EDTF. The starting point or earliest known date of a heritage place, expressed in years Before Present (BP).	#66a61e55
+42	ARCHAEOLOGICAL ASSESSMENT	ABSOLUTE CHRONOLOGY	BP Date To	173ff15a-c5fb-11ea-9026-02e7594ce0a0			EDTF. The ending point or latest known date of a heritage place, expressed in years Before Present (BP).	#66a61e55
+43	ARCHAEOLOGICAL ASSESSMENT	ABSOLUTE CHRONOLOGY	AH Date From	41afc438-c5fb-11ea-9026-02e7594ce0a0			EDTF. The starting point or earliest known date of a heritage place in Anno Hijra (AH). Islamic calendar date.	#66a61e55
+44	ARCHAEOLOGICAL ASSESSMENT	ABSOLUTE CHRONOLOGY	AH Date To	5435f2ee-c5fb-11ea-9026-02e7594ce0a0			EDTF. The ending point or or latest known date of a heritage place in Anno Hijra (AH). Islamic calendar date.	#66a61e55
+45	ARCHAEOLOGICAL ASSESSMENT	ABSOLUTE CHRONOLOGY	SH Date From	086e756c-cb86-11ea-a292-02e7594ce0a0			EDTF. The starting point or earliest known date of a heritage place in expressed in years according to the Solar Hijri (SH) calendar. The SH calendar, also known as the Persian calendar, is a solar calendar used in Iran and Afghanistan.	#66a61e55
+46	ARCHAEOLOGICAL ASSESSMENT	ABSOLUTE CHRONOLOGY	SH Date to	97a2c1fc-cb86-11ea-a292-02e7594ce0a0			EDTF. The ending point or or latest known date of a heritage place in expressed in years according to the Solar Hijri (SH) calendar. The SH calendar, also known as the Persian calendar, is a solar calendar used in Iran and Afghanistan.	#66a61e55
+47	ARCHAEOLOGICAL ASSESSMENT	SITE FEATURES and INTERPRETATIONS	Site Feature Form Type	34cfea9a-c2c0-11ea-9026-02e7594ce0a0	No, unless there is no Site Feature Interpretation Type (eg. If the interpretation field is listed â€˜Unknownâ€™ then the Feature field should be filled in)  		Structured data. Categorises physical forms and constructions of features of a heritage place, ranging from natural formations like caves to man-made structures such as walls, platforms, and mounds, based on their shape, material, and purpose.	#66a61e55
+48	ARCHAEOLOGICAL ASSESSMENT	SITE FEATURES and INTERPRETATIONS	Site Feature Form Type Certainty	34cfea59-c2c0-11ea-9026-02e7594ce0a0	No 		Structured data. Measures the confidence level in feature identifications, ranging from not applicable to definite, based on evidence strength and corroboration by sources or experts.	#66a61e55
+49	ARCHAEOLOGICAL ASSESSMENT	SITE FEATURES and INTERPRETATIONS	Site Feature Shape Type	34cfea19-c2c0-11ea-9026-02e7594ce0a0	No		Structured data. Describes the geometric and physical outlines of archaeological features, including shapes like circular, rectilinear, and irregular, for both enclosed and linear forms.	#66a61e55
+50	ARCHAEOLOGICAL ASSESSMENT	SITE FEATURES and INTERPRETATIONS	Site Feature Arrangement Type	34cfe9e9-c2c0-11ea-9026-02e7594ce0a0	No		Structured data. Defines the spatial relationships and arrangements of archaeological features, detailing how they are positioned in relation to one another, such as isolated, linear, clustered, or concentric.	#66a61e55
+51	ARCHAEOLOGICAL ASSESSMENT	SITE FEATURES and INTERPRETATIONS	Site Feature Number Type	34cfe9f8-c2c0-11ea-9026-02e7594ce0a0	No		Structured data. Quantifies archaeological site complexity by the count of distinct features, ranging from singular to over five hundred, with a category for undetermined quantities.	#66a61e55
+52	ARCHAEOLOGICAL ASSESSMENT	SITE FEATURES and INTERPRETATIONS	Site Feature Interpretation Type	34cfea58-c2c0-11ea-9026-02e7594ce0a0	Yes (including ‘Unknown’)		Structured data. Defines archaeological features by their identified interpretation or type, such as structures for habitation, religious purposes, transportation, defensive mechanisms, and various processing or manufacturing activities.	#66a61e
+53	ARCHAEOLOGICAL ASSESSMENT	SITE FEATURES and INTERPRETATIONS	Site Feature Interpretation Number Type	34cfea62-c2c0-11ea-9026-02e7594ce0a0	Yes		Structured data. Quantifies the number of identified archaeological interpretations, from a single instance to more than five hundred, with a category for indeterminate counts.	#66a61e
+54	ARCHAEOLOGICAL ASSESSMENT	SITE FEATURES and INTERPRETATIONS	Site Feature Interpretation Certainty	34cfea44-c2c0-11ea-9026-02e7594ce0a0	Yes		Structured data. The level of certainty regarding the interpretation of archaeological features, ranging from negligible to definite, based on corroborative evidence and expert consensus.	#66a61e
+55	ARCHAEOLOGICAL ASSESSMENT	SITE FEATURES and INTERPRETATIONS	Built Component	3d218500-c385-11ea-9026-02e7594ce0a0		Related ressources	Resource instance. The related Built Component resource ID pertains to heritage places and encompasses various structural and architectural elements, including walls, doors, windows, courtyards, decorative elements, etc.	#66a61e55
+56	ARCHAEOLOGICAL ASSESSMENT	SITE FEATURES and INTERPRETATIONS	Heritage Place Resource Instance	3d218500-c385-11ea-9026-02e7594ce0a0		Related ressources	Resource instance. The related Heritage Place IDs to Built Component resources (default: the one of the current Heritage Place).	#66a61e55
+57	ARCHAEOLOGICAL ASSESSMENT	MATERIAL	Material Class	34cfea3c-c2c0-11ea-9026-02e7594ce0a0			Structured data. Classifies materials used in heritage places, ranging from raw materials, clay, and sediment to stone, wood, etc.	#66a61e55
+58	ARCHAEOLOGICAL ASSESSMENT	MATERIAL	Material Type	34cfea4e-c2c0-11ea-9026-02e7594ce0a0			Structured data. Type of materials related to each of material classes.	#66a61e55
+59	ARCHAEOLOGICAL ASSESSMENT	MATERIAL	Construction Technique	34cfea6b-c2c0-11ea-9026-02e7594ce0a0			Structured data. Classifies construction techniques used at heritage places, ranging from masonry, brick-laid laying, and beam-supported to wood construction, roofing, etc.	#66a61e55
+60	ARCHAEOLOGICAL ASSESSMENT	MEASUREMENTS	Measurement Number	34cfea47-c2c0-11ea-9026-02e7594ce0a0			Free text. Measurement numeric value of heritage places.	#66a61e55
+61	ARCHAEOLOGICAL ASSESSMENT	MEASUREMENTS	Measurement Unit	34cfea60-c2c0-11ea-9026-02e7594ce0a0			Structured data. Categorises units of measurement of heritage places by system: Metric (mm, cm, m, km, ha, m², km²), Imperial (in, ft, yd, mi, ac, ft², mi²), and Other (dunam).	#66a61e55
+62	ARCHAEOLOGICAL ASSESSMENT	MEASUREMENTS	Dimension Type	34cfea86-c2c0-11ea-9026-02e7594ce0a0			Structured data. Describes types of spatial measurements for sites or features, including area, breadth/width, depth, diameter, height, length, and an 'unknown' category for unspecified dimensions.	#66a61e55
+63	ARCHAEOLOGICAL ASSESSMENT	MEASUREMENTS	Measurement Source Type 	34cfea7c-c2c0-11ea-9026-02e7594ce0a0			Structured data. Identifies the methods used to obtain measurements of sites or features, such as imagery analysis, various forms of aerial photography, satellite imagery, field surveys, GPS technologies, pacing estimations, laser rangefinders, tape measures, total stations, theodolites, or unspecified sources.	#66a61e55
+64	ARCHAEOLOGICAL ASSESSMENT	ARCHAEOLOGICAL ASSESSMENT	Related Geoarchaeology/Palaeolandscape	34cfe9ec-c2c0-11ea-9026-02e7594ce0a0	No		Resource instance. The related Geoarchaeology resource ID related to heritage places.	#66a61e55
+65	CONDITION ASSESSMENT	CONDITION ASSESSMENT	Overall Condition State Type	34cfe9f5-c2c0-11ea-9026-02e7594ce0a0	Yes 		Structured data. Evaluates the preservation state of heritage places, from 'good' indicating minimal damage, to 'destroyed' where integrity is lost and data is no longer retrievable.	#e6ab02
+66	CONDITION ASSESSMENT	CONDITION ASSESSMENT	Damage Extent Type	34cfea8e-c2c0-11ea-9026-02e7594ce0a0	No		Structured data. Describes the scope of damage or disturbance at heritage places, with categories ranging from no visible damage to near-total visible damage.	#e6ab0255
+67	CONDITION ASSESSMENT	DISTURBANCES	Disturbance Cause Category Type	34cfea68-c2c0-11ea-9026-02e7594ce0a0	Yes 		Structured data: Describes categories of disturbance caused at heritage places, ranging from Agricultural/Pastoral, Building/Development, Natural, and Domestic Use to Infrastructure/Transport, Looting/Illegal activities, Military/Armed Conflict, etc.	#e6ab02
+68	CONDITION ASSESSMENT	DISTURBANCES	Disturbance Cause Type 	34cfea79-c2c0-11ea-9026-02e7594ce0a0	Yes 		Structured data. Determines the type of disturbance causes related to each of the cause categories, ranging from animal/pest infestation to wind and water action.	#e6ab02
+69	CONDITION ASSESSMENT	DISTURBANCES	Disturbance Cause Certainty 	34cfea3d-c2c0-11ea-9026-02e7594ce0a0	Yes 		Structured data. Determines the confidence level in identifying the cause of disturbance to heritage places, from 'not applicable' to 'definite', based on the evidence and expert agreement.	#e6ab02
+70	CONDITION ASSESSMENT	DISTURBANCES	Disturbance Date From	e3cc8c5c-c772-11ea-a292-02e7594ce0a0	Yes, dates should be included if available.	 dates should be included if available.	Date. Event occurred at some point between two dates - enter the date span	#e6ab02
+71	CONDITION ASSESSMENT	DISTURBANCES	Disturbance Date To 	34cfea65-c2c0-11ea-9026-02e7594ce0a0	Yes, dates should be included if available.	There are two fields named 'Disturbance Date To ' in the RM. dates should be included if available.	Date. Event occurred at some point between two dates - enter the date span	#e6ab02
+72	CONDITION ASSESSMENT	DISTURBANCES	Disturbance Date Occurred Before	34cfea92-c2c0-11ea-9026-02e7594ce0a0	Yes, dates should be included if available.	There are two fields named 'Disturbance Date On ' in the RM. dates should be included if available.	Date. Event occurred before a specific date. The 'from' field does not apply.	#e6ab02
+73	CONDITION ASSESSMENT	DISTURBANCES	Disturbance Date Occurred On 	34cfea92-c2c0-11ea-9026-02e7594ce0a0	Yes, dates should be included if available.	 dates should be included if available.	Date. Event occurred on a specific date.	#e6ab02
+74	CONDITION ASSESSMENT	DISTURBANCES	Disturbance Cause Assignment Assessor Name - Actor	e3cc8c5a-c772-11ea-a292-02e7594ce0a0	No	Disturbance Cause Assignment Assessor Name	Free text. the name of the assessor or actor who identified and recorded the disturbance cause.	#e6ab0255
+75	CONDITION ASSESSMENT	DISTURBANCES	Effect Type	34cfea75-c2c0-11ea-9026-02e7594ce0a0	Yes 		Structured data. Outlines various impacts on heritage places, ranging from access restriction to water damage, including physical alterations, chemical effects, and loss of heritage materials or value.	#e6ab02
+76	CONDITION ASSESSMENT	DISTURBANCES	Effect Certainty	34cfea5c-c2c0-11ea-9026-02e7594ce0a0	Yes		Structured data. Assesses the confidence in determining the effects of disturbance on heritage placess, ranging from 'not applicable' when uncertain, to 'definite' when confirmed by evidence and experts.	#e6ab02
+77	CONDITION ASSESSMENT	THREATS	Threat Category	34cfea76-c2c0-11ea-9026-02e7594ce0a0	Yes (including 'No Visible/Known')		Structured data. Classifies potential future risks to heritage places, from agricultural impact to military conflict, including environmental and illicit threats, as well as societal and infrastructural pressures.	#e6ab02
+78	CONDITION ASSESSMENT	THREATS	Threat Cause Type	34cfea5c-c2c0-11ea-9026-02e7594ce0a0	Yes	Threat Type	Structured data. Details the array of potential threats (future disturbances) to heritage sites, encompassing natural processes, human activities, and environmental changes that can cause damage or alteration.	#e6ab02
+79	CONDITION ASSESSMENT	THREATS	Threat Probability 	34cfea63-c2c0-11ea-9026-02e7594ce0a0	Yes 		Structured data. Assesses the likelihood of future threats to heritage places, with categories ranging from 'not applicable' to 'planned', considering factors like proximity and the nature of the threat.	#e6ab02
+80	CONDITION ASSESSMENT	THREATS	Threat Inference Making Assessor Name - Actor	34cfea75-c2c0-11ea-9026-02e7594ce0a0			Free text. The name of the assessor or actor who identified and recorded the threats.	#e6ab0255
+81	CONDITION ASSESSMENT	RECOMMENDATION PLAN	Intervention Activity Type	34cfea0a-c2c0-11ea-9026-02e7594ce0a0			Structured data. Classifies types of activities for heritage place protection, including emergency interventions, conservation and restoration efforts, and preventative measures.	#e6ab0255
+82	CONDITION ASSESSMENT	RECOMMENDATION PLAN	Recommendation Type	34cfea64-c2c0-11ea-9026-02e7594ce0a0			Structured data. Defines detailed activities related to identified intervention types for managing and preserving heritage places, ranging from surveys and excavations to conservation and maintenance practices, as well as management and preventive strategies.	#e6ab0255
+83	CONDITION ASSESSMENT	RECOMMENDATION PLAN	Priority Type	34cfea0a-c2c0-11ea-9026-02e7594ce0a0			Structured data. Categorises urgency levels for action at heritage places, from 'emergency' requiring immediate attention to 'low' priority where long-term planning is possible.	#e6ab0255
+84	CONDITION ASSESSMENT	CONDITION ASSESSMENT	Detailed Condition Assessments	34cfea64-c2c0-11ea-9026-02e7594ce0a0	No	Related ressources	Resource instance. Detailed Condition Resource ID related to heritage places	#e6ab0255
+85	ENVIRONMENT ASSESSMENT	ENVIRONMENT ASSESSMENT	Topography Type	34cfea84-c2c0-11ea-9026-02e7594ce0a0			Structured data. Details various landforms and water-related features in relation to heritage sites, including alluvial fans, lake beds, shores, sea beds, bays, beaches, cliffs, deltas, estuaries, intertidal flats, islands, reefs, plains, plateaus, precipices, slopes, summits, valleys, terraces, and watercourse edges and beds.	#a6761d55
+86	ENVIRONMENT ASSESSMENT	LAND COVER	Land Cover Type	34cfea93-c2c0-11ea-9026-02e7594ce0a0			Structured data. Categorises the predominant type of surface cover at heritage sites, ranging from various vegetation types and water bodies to barren lands and built-up areas.	#a6761d55
+87	ENVIRONMENT ASSESSMENT	LAND COVER	Land Cover Assessment Date	34cfea39-c2c0-11ea-9026-02e7594ce0a0			Date. The date of the land cover assessment.	#a6761d55
+88	ENVIRONMENT ASSESSMENT	SURFICIAL GEOLOGY	Surficial Geology Type	34cfea93-c2c0-11ea-9026-02e7594ce0a0			Structured data. Describes surface geological materials, from coarse sediments and mixed deposits to mud, organic materials, paleontological remains, rocks, boulders, sand, and archaeological layers, highlighting composition and grain size.	#a6761d55
+89	ENVIRONMENT ASSESSMENT	SURFICIAL GEOLOGY	Depositional Process	34cfea61-c2c0-11ea-9026-02e7594ce0a0			Structured data. Outlines types of sediment deposition processes, from aeolian (wind) and biogenic (organism-produced) to chemical, fluvial, glacial, and marine, including volcanic and anthropogenic influences on sedimentation.	#a6761d55
+90	ENVIRONMENT ASSESSMENT	ENVIRONMENT ASSESSMENT	Bedrock Geology Type	34cfea9d-c2c0-11ea-9026-02e7594ce0a0			Structured data. Classifies types of bedrock geology, detailing igneous, sedimentary, and metamorphic rocks, with specific examples like basalt, granite, limestone, marble, and others, including undefined categories for unspecified types.	#a6761d55
+91	ENVIRONMENT ASSESSMENT	MARINE ENVIRONMENT	Fetch Type	34cfea37-c2c0-11ea-9026-02e7594ce0a0			Structured data. Defines coastal exposure levels based on fetch, the straight-line distance over water from a coast to the nearest landmass, with categories for exposed, moderately exposed, and protected environments.	#a6761d55
+92	ENVIRONMENT ASSESSMENT	MARINE ENVIRONMENT	Wave Climate	34cfea2b-c2c0-11ea-9026-02e7594ce0a0			Structured data. Dominant wave patterns and influences by monsoons, protection, storms, swells, tides, or cyclones.	#a6761d55
+93	ENVIRONMENT ASSESSMENT	MARINE ENVIRONMENT	Tidal Range	34cfea9c-c2c0-11ea-9026-02e7594ce0a0		Previously named 'Tidal Energy'	Structured data. Vertical height difference between high and low tide.	#a6761d55
+94	ENVIRONMENT ASSESSMENT	DEPTH or ELEVATION	Minimum Depth/Max Elevation	34cfea40-c2c0-11ea-9026-02e7594ce0a0			Free text. The minimum depth (i.e., maximum elevation) numeric value (in meter)	#a6761d55
+95	ENVIRONMENT ASSESSMENT	DEPTH or ELEVATION	Maximum Depth/Min Elevation	34cfea42-c2c0-11ea-9026-02e7594ce0a0			Free text. The maximum depth (i.e., minimum elevation) numeric value (in meter)	#a6761d55
+96	ENVIRONMENT ASSESSMENT	DEPTH or ELEVATION	Datum Type	34cfea9b-c2c0-11ea-9026-02e7594ce0a0			Structured data. The datum of the Depth/Elevation (Biological Mean Sea Level, Mean High Water, etc.).	#a6761d55
+97	ENVIRONMENT ASSESSMENT	DEPTH or ELEVATION	Datum Description/EPSG code	34cfea8d-c2c0-11ea-9026-02e7594ce0a0			Free text. The EPSG code of the coordinates.	#a6761d55
+98	ACCESS	ACCESS	Restricted Access Record Designation	7deb8fcc-c6a5-11ea-a292-02e7594ce0a0			Depreciated	#66666655
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								

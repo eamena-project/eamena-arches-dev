@@ -1,9 +1,18 @@
-# Refrence Data
+# Reference Data
 
 * [Heritage Places](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data/reference_data#heritage-places)
 * [Information Resources](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data/reference_data#information-resources)
 
 ## Heritage Places
+
+### UUIDs
+
+Fieldnames (ex: "Effect type") have UUIDs. To find these correspondances, check the `nodeid` in the RM. For example, the "Effect type" field has the UUID `34cfea90-c2c0-11ea-9026-02e7594ce0a0`, see:
+
+- https://github.com/achp-project/prj-eamena-marea/blob/8e397ad1343cd7fb04e4ca8a50247a1e3a687cb2/resource_models/Heritage%20Place.json#L2036
+
+- https://github.com/achp-project/prj-eamena-marea/blob/8e397ad1343cd7fb04e4ca8a50247a1e3a687cb2/resource_models/Heritage%20Place.json#L6530
+
 
 ### MDS
 > Minimum Data Standards. Completness of data
@@ -14,7 +23,7 @@ Minimum Data Standards (MDS) of Heritage Places
 
 ##### Templates
 
-The template `mds-template-*` is the reference table for the MDS and for the eamenaR mapping file `ids.csv` (see [eamenaR documentation](https://github.com/eamena-project/eamenaR#correspondances-between-concept-labels-and-uuids))
+The template `mds-template-*` is the reference table for the MDS, fieldnames' descriptions, and for the eamenaR mapping file `ids.csv` (see [eamenaR documentation](https://github.com/eamena-project/eamenaR#correspondances-between-concept-labels-and-uuids))
 
 * [mds-template.xlsx](mds/mds-template.xlsx):
 	- an editable XLSX file with the list of HP fields with their UUID and a "Yes" mark if these fields belong to the mds. This file is considered to be the authorative document for mds.

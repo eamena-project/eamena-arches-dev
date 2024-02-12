@@ -106,7 +106,7 @@ To batch the link update, the workflow is then to:
 
 `B` is ArchDAMS
 
-A reference number (sequential, from 1 to *n*) is attributed to each photograph. Here **4** in <https://apaame.arch.ox.ac.uk/pages/download.php?ref=4&size=scr&noattach=true>
+A reference number (sequential, from 1 to *n*) -- the ID of the resource[^2] -- is attributed to each photograph. Here **4** in <https://apaame.arch.ox.ac.uk/pages/download.php?ref=4&size=scr&noattach=true>
 
 <p align="center">
   <img alt="img-name" src="www/rs-ex3-APAAME.png" width="500">
@@ -114,6 +114,7 @@ A reference number (sequential, from 1 to *n*) is attributed to each photograph.
     <em>ArchDAMS Direct URL https://apaame.arch.ox.ac.uk/pages/download.php?ref=4&size=scr&noattach=true</em>
 </p>
 
+[^2]: see the RS documentation: https://www.resourcespace.com/knowledge-base/api/get_resource_path
 
 | Reference Number | APAAME ID |
 |----------|----------|

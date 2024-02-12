@@ -28,7 +28,7 @@ jobs:
         run: |
           git config user.name "zoometh"
           git config user.email "thomashuet7@gmail.com"
-          git add dev/data_quality/mds-template-readonly.tsv
+          git add dbs/database.eamena/data/reference_data/mds/mds-template-readonly.tsv
           git commit -m "Convert XLSX to TSV mds"
           git push
 

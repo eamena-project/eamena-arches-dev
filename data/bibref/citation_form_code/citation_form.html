@@ -1,0 +1,15 @@
+<!-- your_app_name/templates/citations.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Citations</title>
+</head>
+<body>
+    <h2>Add Citation</h2>
+    <form method="post" action="{% url 'citation_generator' %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

@@ -74,7 +74,7 @@ The correct link (ie, external link) is:
 <p align="center">
   <img alt="img-name" src="www/img-photo-flickrurl-ok-INFORMATION-0052511.png" width="400">
   <br>
-    <em>Flickr photo from its direct URL/external link</em>
+    <em>Flickr photo from its Direct URL/external link</em>
 </p>
 
 Looking in [this dataframe](https://docs.google.com/spreadsheets/d/1-shK3M3Pl5NANWWvGuSYTgjFNpJAyi-A6uf04a8WTkM/edit#gid=1837558986) (a sample of IR having Catalog ID recorded), there are different type of paths:
@@ -88,7 +88,7 @@ Looking in [this dataframe](https://docs.google.com/spreadsheets/d/1-shK3M3Pl5NA
 To batch the link update, the workflow is then to:
 
 1. In EAMENA: collect Information Resources UUIDs with their APAAME ID, store them in a dataframe (`A`)
-2. In ArchDAMS: collect APAAME ID and the external URL, store them in a dataframe (`B`)
+2. In ArchDAMS: collect APAAME ID and the Direct URL, store them in a dataframe (`B`)
 3. join the dataframe `A` and `B` on the APAAME ID
 4. update the EAMENA Postgres DB table with ArcDAMS external links
 
@@ -102,13 +102,29 @@ examples:
 
 2. `B` is ArchDAMS
 
-| external URL | APAAME ID |
+The Direct URL takes a sequential number attached to each photograph. Python example, a concatenation:
+
+```python
+rs_root = "https://apaame.arch.ox.ac.uk/pages/download.php?ref=" 
+rs_index = str(4)
+rs_options = "&size=scr&noattach=true"
+direct_url = rs_root + rs_index + rs_options
+```
+
+<p align="center">
+  <img alt="img-name" src="www/rs-ex3-APAAME.png" width="500">
+  <br>
+    <em>ArchDAMS Direct URL https://apaame.arch.ox.ac.uk/pages/download.php?ref=4&size=scr&noattach=true</em>
+</p>
+
+
+| Direct URL | APAAME ID |
 |----------|----------|
 | ??    |  APAAME_20000906_RHB-0018   |
 
 3. join
 
-| APAAME ID | IR UUID | external URL |
+| APAAME ID | IR UUID | Direct URL |
 |----------|----------|----------|
 | APAAME_20000906_RHB-0018   | c712066a-8094-11ea-a6a6-02e7594ce0a0   | ??   |
 

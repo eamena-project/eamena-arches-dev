@@ -94,7 +94,7 @@ To batch the link update, the workflow is then to:
 
 #### Steps
 
-1. Step 1
+1. **Step 1**
 
 `A` is EAMENA
 
@@ -102,7 +102,7 @@ To batch the link update, the workflow is then to:
 |----------|----------|
 | c712066a-8094-11ea-a6a6-02e7594ce0a0    |  APAAME_20000906_RHB-0018   |
 
-2. Step 2 <a id="wf-step-2"></a>
+2. **Step 2** <a id="wf-step-2"></a>
 
 `B` is ArchDAMS
 
@@ -132,7 +132,7 @@ direct_url = rs_root + rs_refnum + rs_options
 |----------|----------|
 | https://apaame.arch.ox.ac.uk/pages/download.php?ref=4&size=scr&noattach=true   |  APAAME_20000906_RHB-0018   |
 
-3. Step 3
+3. **Step 3**
 
 join
 
@@ -140,7 +140,7 @@ join
 |----------|----------|----------|
 | APAAME_20000906_RHB-0018   | c712066a-8094-11ea-a6a6-02e7594ce0a0   | https://apaame.arch.ox.ac.uk/pages/download.php?ref=4&size=scr&noattach=true |
 
-4. Step 4
+4. **Step 4**
 
 update the EAMENA Pg database
 
@@ -151,6 +151,7 @@ see [SQL queries](https://github.com/eamena-project/eamena-arches-dev/tree/main/
 NO: https://www.flickr.com/photos/apaame/4928802850/  
 NO: https://database.eamena.org/live.staticflickr.com/4118/4928802850_49ed2fdbcb_o_d.jpg  
 YES: https://live.staticflickr.com/4118/4928802850_fbab90b8ca_h.jpg%60  
+YES: https://apaame.arch.ox.ac.uk/pages/download.php?ref=4&size=scr&noattach=true 
 
 ## Photographs archives
 

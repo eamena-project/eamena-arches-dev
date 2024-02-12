@@ -92,24 +92,21 @@ To batch the link update, the workflow is then to:
 3. join the dataframe `A` and `B` on the APAAME ID
 4. update the EAMENA Postgres DB table with ArcDAMS external links
 
-examples:
+#### Steps
 
-1. `A` is EAMENA
+1. Step 1
+
+`A` is EAMENA
 
 | IR UUID | APAAME ID |
 |----------|----------|
 | c712066a-8094-11ea-a6a6-02e7594ce0a0    |  APAAME_20000906_RHB-0018   |
 
-2. `B` is ArchDAMS
+2. Step 2 <a id="wf-step-2"></a>
 
-The Direct URL takes a sequential number attached to each photograph. Python example, a concatenation:
+`B` is ArchDAMS
 
-```python
-rs_root = "https://apaame.arch.ox.ac.uk/pages/download.php?ref=" 
-rs_index = str(4)
-rs_options = "&size=scr&noattach=true"
-direct_url = rs_root + rs_index + rs_options
-```
+A reference number (sequential, from 1 to *n*) is attributed to each photograph. Here **4** in <https://apaame.arch.ox.ac.uk/pages/download.php?ref=4&size=scr&noattach=true>
 
 <p align="center">
   <img alt="img-name" src="www/rs-ex3-APAAME.png" width="500">
@@ -118,17 +115,34 @@ direct_url = rs_root + rs_index + rs_options
 </p>
 
 
+| Reference Number | APAAME ID |
+|----------|----------|
+| 4    |  APAAME_20000906_RHB-0018   |
+
+Then, the Direct URL is a concatenation:
+
+```python
+rs_root = "https://apaame.arch.ox.ac.uk/pages/download.php?ref=" 
+rs_refnum = str(4)
+rs_options = "&size=scr&noattach=true"
+direct_url = rs_root + rs_refnum + rs_options
+```
+
 | Direct URL | APAAME ID |
 |----------|----------|
-| ??    |  APAAME_20000906_RHB-0018   |
+| https://apaame.arch.ox.ac.uk/pages/download.php?ref=4&size=scr&noattach=true   |  APAAME_20000906_RHB-0018   |
 
-3. join
+3. Step 3
+
+join
 
 | APAAME ID | IR UUID | Direct URL |
 |----------|----------|----------|
-| APAAME_20000906_RHB-0018   | c712066a-8094-11ea-a6a6-02e7594ce0a0   | ??   |
+| APAAME_20000906_RHB-0018   | c712066a-8094-11ea-a6a6-02e7594ce0a0   | https://apaame.arch.ox.ac.uk/pages/download.php?ref=4&size=scr&noattach=true |
 
-4. update the EAMENA Pg database
+4. Step 4
+
+update the EAMENA Pg database
 
 see [SQL queries](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/postgres/queries#apaame-and-archdams)
 

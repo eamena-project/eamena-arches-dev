@@ -84,26 +84,24 @@ Looking in [this dataframe](https://docs.google.com/spreadsheets/d/1-shK3M3Pl5NA
 * `https://eamena-uploads-v2.s3.amazonaws.com/...` to the AWS S3 bucket (also): ⌐ APAAME
 
 ### Workflow
+> batch the update of APAAME links
 
-To batch the link update, the workflow is then to:
+The  workflow is in ~~this Jupyter NB~~ this [Python script](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/fhs-apaame-master-catalog_1.py)
 
-1. In EAMENA: collect Information Resources UUIDs with their APAAME ID, store them in a dataframe (`A`)
-2. In ArchDAMS: collect APAAME ID and the Direct URL, store them in a dataframe (`B`)
-3. join the dataframe `A` and `B` on the APAAME ID
-4. update the EAMENA Postgres DB table with ArcDAMS external links
+1. [Step 1](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/apaame#wf-step-1): in EAMENA, collect Information Resources UUIDs with their APAAME ID, store them in a dataframe (`A`)
+2. [Step 2](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/apaame#wf-step-2): in ArchDAMS, collect APAAME ID and the Direct URL, store them in a dataframe (`B`)
+3. [Step 3](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/apaame#wf-step-3): join the dataframe `A` and `B` on the APAAME ID
+4. [Step 4](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/apaame#wf-step-4): update the EAMENA Postgres DB table with ArcDAMS external links
 
-#### Steps
+1. **Step 1** <a id="wf-step-1"></a>
 
-The  workflow is in this Jupyter NB
-
-
-1. **Step 1**
-
-`A` is EAMENA. Collect all IR having a Flickr link, using this SQL statement
+`A` is EAMENA. Collect all IR having a Flickr link, using this [SQL statement](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/postgres/queries#23)
 
 | IR UUID | APAAME ID |
 |----------|----------|
 | c712066a-8094-11ea-a6a6-02e7594ce0a0    |  APAAME_20000906_RHB-0018   |
+
+gives this [eamena_fickr_paths](https://docs.google.com/spreadsheets/d/1gf27xtDZZKjjGOb0rUincZU56GW_LsRlWbPn-e3HpPs/edit?usp=sharing) table
 
 2. **Step 2** <a id="wf-step-2"></a>
 
@@ -146,15 +144,15 @@ See the [resource.csv](https://github.com/eamena-project/eamena-arches-dev/blob/
 
 see this [example of mapping table](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/resource.csv)
 
-3. **Step 3**
+3. **Step 3** <a id="wf-step-3"></a>
 
-join
+join APAAME resource.csv with EAMENA paths
 
 | APAAME ID | IR UUID | Direct URL |
 |----------|----------|----------|
 | APAAME_20000906_RHB-0018   | c712066a-8094-11ea-a6a6-02e7594ce0a0   | https://apaame.arch.ox.ac.uk/pages/download.php?ref=4&size=scr&noattach=true |
 
-4. **Step 4**
+4. **Step 4** <a id="wf-step-4"></a>
 
 update the EAMENA Pg database
 

@@ -1,6 +1,7 @@
 # APAAME archive
 > Aerial Photographic Archive for Archaeology in the Middle East archive
 
+Work in progress: [worflow](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/apaame#workflow) to update the EAMENA Information resources links from the Flickr archive to the new ArchDAMS platform
 
 ## EAMENA and APAAME
 
@@ -83,10 +84,10 @@ Looking in [this dataframe](https://docs.google.com/spreadsheets/d/1-shK3M3Pl5NA
 * `https://eamena-media.s3.amazonaws.com/files/...` to the AWS S3 bucket: ⌐ APAAME
 * `https://eamena-uploads-v2.s3.amazonaws.com/...` to the AWS S3 bucket (also): ⌐ APAAME
 
-### Workflow
+### Update IR-APAAME links
 > batch the update of APAAME links
 
-The  workflow is in ~~this Jupyter NB~~ this [Python script](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/fhs-apaame-master-catalog_1.py)
+The  workflow is in ~~this Jupyter NB~~ this [Python script](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/apaame2eamena_1.py)
 
 1. [Step 1](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/apaame#wf-step-1): in EAMENA, collect Information Resources UUIDs with their APAAME ID, store them in a dataframe (`A`)
 2. [Step 2](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/apaame#wf-step-2): in ArchDAMS, collect APAAME ID and the Direct URL, store them in a dataframe (`B`)

@@ -127,11 +127,20 @@ rs_root = "https://apaame.arch.ox.ac.uk/pages/download.php?ref="
 rs_refnum = str(4)
 rs_options = "&size=scr&noattach=true"
 direct_url = rs_root + rs_refnum + rs_options
+direct_url
 ```
+gives:
+
+```python
+https://apaame.arch.ox.ac.uk/pages/download.php?ref=4&size=scr&noattach=true 
+```
+
 
 | Direct URL | APAAME ID |
 |----------|----------|
 | https://apaame.arch.ox.ac.uk/pages/download.php?ref=4&size=scr&noattach=true   |  APAAME_20000906_RHB-0018   |
+
+see this [example of mapping table](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/resource.csv)
 
 3. **Step 3**
 

@@ -123,32 +123,15 @@ A reference number (sequential, from 1 to *n*) -- the ID of the resource[^2] -- 
 |----------|----------|
 | 4    |  APAAME_20000906_RHB-0018   |
 
-A sample of the mapping table is this [resource.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/resource.csv) file. Then, the Direct URL is a concatenation:
-
-```python
-rs_root = "https://apaame.arch.ox.ac.uk/pages/download.php?ref=" 
-rs_refnum = str(4)
-rs_options = "&size=scr&noattach=true"
-direct_url = rs_root + rs_refnum + rs_options
-direct_url
-```
-gives:
-
-```python
-https://apaame.arch.ox.ac.uk/pages/download.php?ref=4&size=scr&noattach=true 
-```
-
-See the [resource.csv](https://github.com/eamena-project/eamena-arches-dev/blob/9f8fc8d07fe186d6523459aa1edcd637a5bc6e99/projects/apaame/resource.csv#L5) file
+A sample of the mapping table is this [resource.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/resource.csv) file. Then, the Direct URL is a simple concatenation. For example, with the [reference number **4**](https://github.com/eamena-project/eamena-arches-dev/blob/9f8fc8d07fe186d6523459aa1edcd637a5bc6e99/projects/apaame/resource.csv#L5)
 
 | Direct URL | APAAME ID |
 |----------|----------|
 | https://apaame.arch.ox.ac.uk/pages/download.php?ref=4&size=scr&noattach=true   |  APAAME_20000906_RHB-0018   |
 
-see this [example of mapping table](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/resource.csv)
-
 3. **Step 3** <a id="wf-step-3"></a>
 
-join APAAME resource.csv with EAMENA paths
+join APAAME [resource.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/resource.csv) with [eamena_fickr_paths](https://docs.google.com/spreadsheets/d/1gf27xtDZZKjjGOb0rUincZU56GW_LsRlWbPn-e3HpPs/edit?usp=sharing)
 
 | APAAME ID | IR UUID | Direct URL |
 |----------|----------|----------|

@@ -94,6 +94,9 @@ To batch the link update, the workflow is then to:
 
 #### Steps
 
+The workflow is in this Jupyter NB
+
+
 1. **Step 1**
 
 `A` is EAMENA
@@ -120,7 +123,7 @@ A reference number (sequential, from 1 to *n*) -- the ID of the resource[^2] -- 
 |----------|----------|
 | 4    |  APAAME_20000906_RHB-0018   |
 
-Then, the Direct URL is a concatenation:
+A sample of the mapping table is this [resource.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/resource.csv) file. Then, the Direct URL is a concatenation:
 
 ```python
 rs_root = "https://apaame.arch.ox.ac.uk/pages/download.php?ref=" 
@@ -135,6 +138,7 @@ gives:
 https://apaame.arch.ox.ac.uk/pages/download.php?ref=4&size=scr&noattach=true 
 ```
 
+See the [resource.csv](https://github.com/eamena-project/eamena-arches-dev/blob/9f8fc8d07fe186d6523459aa1edcd637a5bc6e99/projects/apaame/resource.csv#L5) file
 
 | Direct URL | APAAME ID |
 |----------|----------|

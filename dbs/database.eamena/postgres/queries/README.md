@@ -29,11 +29,33 @@ SELECT COUNT(resourceinstanceid::text) FROM resource_instances
 WHERE graphid::text LIKE '34cfe98e-c2c0-11ea-9026-02e7594ce0a0'
 ```
 
+where:
+
+- `34cfe98e-c2c0-11ea-9026-02e7594ce0a0` is the UUID of the HP resource model, see [the RM](https://github.com/achp-project/prj-eamena-marea/blob/8e397ad1343cd7fb04e4ca8a50247a1e3a687cb2/resource_models/Heritage%20Place.json#L14)
+
+gives:
+
+- 207,409
+
 * AS
 
 ```
 https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&reportlink=false&precision=6&total=368511&resource-type-filter=%5B%7B%22graphid%22%3A%2234cfe98e-c2c0-11ea-9026-02e7594ce0a0%22%2C%22name%22%3A%22Heritage%20Place%22%2C%22inverted%22%3Afalse%7D%5D
 ```
+
+## Total number of IR
+
+```SQL
+SELECT COUNT(resourceinstanceid::text) FROM resource_instances
+WHERE graphid::text LIKE '35b99cb7-379a-11ea-9989-06f597a7d5ce'
+```
+
+where:
+- `35b99cb7-379a-11ea-9989-06f597a7d5ce'` is the UUID of the IR resource model, see [the RM](https://github.com/achp-project/prj-eamena-marea/blob/8e397ad1343cd7fb04e4ca8a50247a1e3a687cb2/resource_models/Information%20Resource.json#L27)
+
+gives:
+
+- 136,442
 
 ## All the data of a specific HP
 
@@ -334,6 +356,44 @@ gives:
 |00088a67-db92-4f89-b0fe-782244abab49 |INFORMATION-0144482 |JORDAN_45B-SQN_JordanValley_Run-10_10848 |https://eamena-uploads-v2.s3.amazonaws.com/JORDAN_45B-SQN_JordanValley_Run-10_10848.jpg |JORDAN_45B-SQN_JordanValley_Run-10_10848.jpg |
 |0008f5cc-2ab8-4edd-bd73-66535822d966 |INFORMATION-0092303 |APAAME_20090917_DLK-0212                 |https://live.staticflickr.com/2482/4192526976_b2b35c7ac0_o_d.jpg                        |4192526976_b2b35c7ac0_o_d.jpg                |
 |000b5730-5b56-4328-a892-7026eeb3801d |INFORMATION-0070199 |ASA/3/423                                |https://live.staticflickr.com/7780/17403206596_a73079d051_o_d.jpg 
+
+
+### 2.3
+
+Same as 2.2, but only Flickr URLs
+
+```SQL
+SELECT q1.ir_id, q1.information_id, q2.catalog_id, img_url
+FROM (
+    SELECT
+    resourceinstanceid AS ir_id,
+    tiledata -> '4c403a80-8a3d-11ea-a6a6-02e7594ce0a0' -> 'en' ->> 'value' AS information_id
+    FROM tiles
+  WHERE tiledata -> '4c403a80-8a3d-11ea-a6a6-02e7594ce0a0' -> 'en' ->> 'value' IS NOT NULL
+) q1
+INNER JOIN(
+  SELECT
+    resourceinstanceid AS ir_id,
+    tiledata -> '341f9905-5253-11ea-a3f7-02e7594ce0a0' -> 'en' ->> 'value' AS catalog_id
+    FROM tiles
+  WHERE tiledata -> '341f9905-5253-11ea-a3f7-02e7594ce0a0' -> 'en' ->> 'value' IS NOT NULL
+) q2
+ON q1.ir_id = q2.ir_id
+INNER JOIN(
+  SELECT
+    resourceinstanceid AS ir_id,
+    tiledata -> 'c712066a-8094-11ea-a6a6-02e7594ce0a0' #>> '{0, url}' AS img_url
+    FROM tiles
+  WHERE tiledata -> 'c712066a-8094-11ea-a6a6-02e7594ce0a0' #>> '{0, url}' IS NOT NULL
+  AND tiledata -> 'c712066a-8094-11ea-a6a6-02e7594ce0a0' #>> '{0, url}' LIKE 'https://live.staticflickr%'
+) q3
+ON q1.ir_id = q3.ir_id
+```
+
+where:
+* `4c403a80-8a3d-11ea-a6a6-02e7594ce0a0` is the "INFORMATION ID" field UUID ([here](https://github.com/eamena-project/eamena-arches-dev/blob/5584e36842825dfd8d60c5b368bf7186ab72a39e/dbs/database.eamena/data/reference_data/ir-uuids-readonly.tsv#L33))
+* `341f9905-5253-11ea-a3f7-02e7594ce0a0` is the "Catalogue ID" field UUID ([here](https://github.com/eamena-project/eamena-arches-dev/blob/5584e36842825dfd8d60c5b368bf7186ab72a39e/dbs/database.eamena/data/reference_data/ir-uuids-readonly.tsv#L13))
+* `c712066a-8094-11ea-a6a6-02e7594ce0a0` is the "File Upload" field UUID ([here](https://github.com/eamena-project/eamena-arches-dev/blob/a0d644aa376bfce54afa465974f74db821832f52/dbs/database.eamena/data/reference_data/ir-uuids-readonly.tsv#L64))
 
 # Other
 

@@ -94,12 +94,12 @@ To batch the link update, the workflow is then to:
 
 #### Steps
 
-The workflow is in this Jupyter NB
+The  workflow is in this Jupyter NB
 
 
 1. **Step 1**
 
-`A` is EAMENA
+`A` is EAMENA. Collect all IR having a Flickr link, using this SQL statement
 
 | IR UUID | APAAME ID |
 |----------|----------|

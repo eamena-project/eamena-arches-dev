@@ -1,7 +1,7 @@
 # APAAME archive
 > Aerial Photographic Archive for Archaeology in the Middle East archive
 
-Work in progress: [worflow](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/apaame#workflow) to update the EAMENA Information resources links from the Flickr archive to the new ArchDAMS platform
+Work in progress: [update EAMENA's Information Resources links to APAAME](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/apaame#update-ir-apaame-links) (from the Flickr archive to the new ArchDAMS platform)
 
 ## EAMENA and APAAME
 

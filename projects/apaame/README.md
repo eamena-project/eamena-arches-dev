@@ -93,6 +93,8 @@ The  workflow is in ~~this Jupyter NB~~ this [Python script](https://github.com/
 3. [Step 3](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/apaame#wf-step-3): join the dataframe `A` and `B` on the APAAME ID
 4. [Step 4](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/apaame#wf-step-4): update the EAMENA Postgres DB table with ArcDAMS external links
 
+---
+
 1. **Step 1** <a id="wf-step-1"></a>
 
 `A` is EAMENA. Collect all IR having a Flickr link, using this [SQL statement](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/postgres/queries#23)

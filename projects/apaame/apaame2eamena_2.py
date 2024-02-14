@@ -122,12 +122,13 @@ df_eamena.to_excel(fileout, index=False, engine='openpyxl')
 eamena_flickr_paths_loc_path = loc_path + "eamena_fickr_paths.csv"
 eamena_flickr_paths = pd.read_csv(eamena_flickr_paths_loc_path)
 # remove the file extension (`...splitext(x)[0]..`)
-resources['Original filename'] = resources['Original filename'].apply(lambda x: os.path.splitext(x)[0] if isinstance(x, str) else x)
+# resources['Original filename'] = resources['Original filename'].apply(lambda x: os.path.splitext(x)[0] if isinstance(x, str) else x)
+df_apaame['apaame_id'] = df_apaame['apaame_id'].apply(lambda x: os.path.splitext(x)[0] if isinstance(x, str) else x)
 
 # %%
 # eamena_fickr_paths.columns
 
-eamena_apaame_match = pd.merge(eamena_flickr_paths, resources, left_on=eamena_on, right_on=apaame_on, how='inner')
+eamena_apaame_match = pd.merge(eamena_flickr_paths, df_apaame, left_on=eamena_on, right_on='apaame_id', how='inner')
 # append an empty row at the end of the df for GitHub display purpose
 eamena_apaame_match.loc[len(eamena_apaame_match)] = np.nan
 fileout = loc_path + "eamena_apaame_match.csv"

@@ -1,3 +1,3 @@
-ir_id,information_id,catalog_id,img_url,Resource ID(s),Resource type,Status,Contributed by,Keywords - Recognised,Keywords - Landmark,Accessibility - Alt Text,Accessibility - Extended Description,Title,Caption,Keywords - Subject,Keywords - Emotion,Keywords - Event,Keywords - Other,Named person(s),Country,Date,Original filename,Extracted text,Credit,Notes,Camera make / model,Source,Document extract
-000117a1-b1e2-4e09-b676-124be29a05d4,INFORMATION-0033853,APAAME_20141020_RHB-0143,https://live.staticflickr.com/7569/15784162651_852ef747a0_o_d.jpg,8.0,Photo,Active,Thomas Huet,,,,,Mudawwara Northern Redoubt,"to:29.3295083333, 36.0189611111 (Mudawwara Northern Redoubt)",,,,MEGA-J:59264,,,2014-10-20 08:48,APAAME_20141020_RHB-0143,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ir_id,information_id,catalog_id,img_url,apaame_id,direct_url
+000117a1-b1e2-4e09-b676-124be29a05d4,INFORMATION-0033853,APAAME_20141020_RHB-0143,https://live.staticflickr.com/7569/15784162651_852ef747a0_o_d.jpg,APAAME_20141020_RHB-0143,https://apaame.arch.ox.ac.uk/pages/download.php?ref=8&size=scr&noattach=true
+,,,,,

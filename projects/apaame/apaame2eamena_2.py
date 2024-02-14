@@ -1,4 +1,6 @@
 
+# follow the steps of https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/apaame#update-ir-apaame-links to match EAMENA with APAAME
+
 #%%
 
 import pandas as pd
@@ -6,6 +8,7 @@ import psycopg2 as pg
 import sqlalchemy as sa
 from sqlalchemy import create_engine
 import json
+import numpy as np
 
 ## my PG credentials
 pg_creds = 'C:/Rprojects/eamena-arches-dev/credentials/pg_credentials.json'
@@ -122,6 +125,8 @@ resources['Original filename'] = resources['Original filename'].apply(lambda x: 
 # eamena_fickr_paths.columns
 
 eamena_apaame_match = pd.merge(eamena_flickr_paths, resources, left_on=eamena_on, right_on=apaame_on, how='inner')
+# add an empty row for a GitHub display purpose
+eamena_apaame_match.loc[len(eamena_apaame_match)] = np.nan
 fileout = loc_path + "eamena_apaame_match.csv"
 eamena_apaame_match.to_csv(fileout, index=False)
 

@@ -112,10 +112,43 @@ df_eamena.to_excel(fileout, index=False, engine='openpyxl')
 
 loc_path = "C:/Users/Thomas Huet/Desktop/APAAME/"
 resources_loc_path = loc_path + "resource.csv"
-eamena_fickr_paths_loc_path = loc_path + "eamena_fickr_paths.csv"
+eamena_flickr_paths_loc_path = loc_path + "eamena_fickr_paths.csv"
 resources = pd.read_csv(resources_loc_path)
-eamena_fickr_paths = pd.read_csv(eamena_fickr_paths_loc_path)
+eamena_flickr_paths = pd.read_csv(eamena_fickr_paths_loc_path)
+
 # %%
-eamena_fickr_paths.columns
+# eamena_fickr_paths.columns
+
+joined_df = pd.merge(eamena_flickr_paths, resources, left_on='catalog_id', right_on='field51', how='inner')
+
+
+# %%
+# convert DNG to JPG
+# see: https://technologytales.com/2016/06/08/batch-conversion-of-dng-files-to-other-file-types-with-the-linux-command-line/
+# see: C:\Rprojects\Rdev\gmm\marmotta\extract\extract_lithics_4.py
+
+import os
+import subprocess
+
+loc_path = "C:/Users/Thomas Huet/Desktop/APAAME/"
+
+img_name = 'APAAME_20141020_RHB-0143'
+imgin = img_name + '.dng'
+imgout = img_name + '.jpg'
+os.chdir(loc_path)
+# not working ... 
+cmd_to_jpg = "magick convert '%s' '%s'" % (imgin, imgout)
+# while this works from PS or CMD
+# magick convert "APAAME_20141020_RHB-0143.dng" "APAAME_20141020_RHB-0143.jpg"
+# os.system(cmd_to_jpg)
+subprocess.call(cmd_to_jpg)
+print("      ... DNG converted to JPG")
+
+# %%
+
+cmd = "git --version"
+returned_value = os.system(cmd)  # returns the exit code in unix
+print('returned value:', returned_value)  
+
 
 # %%

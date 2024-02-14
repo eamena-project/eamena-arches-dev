@@ -3,7 +3,7 @@
 .RData
 .Ruserdata
 ^secret/
-^credentials/
+credentials/
 functions/_*.py
 functions/Python/_*.py
 functions/_*.R

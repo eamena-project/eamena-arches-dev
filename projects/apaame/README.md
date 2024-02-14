@@ -41,11 +41,12 @@ In ArchDAMS. A reference number (sequential, from 1 to *n*) -- the ID of the res
 |----------|----------|
 | 4    |  APAAME_20000906_RHB-0018   |
 
-A sample of the mapping table is this [metadata_export_contributions2_20240214-12_30.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/metadata_export_contributions2_20240214-12_30.csv)[^3] file. Then, the Direct URL is a simple concatenation. For example, with the [reference number **4**](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/metadata_export_contributions2_20240214-12_30.csv#L6)
+A sample of the mapping table is this [metadata_export_contributions2_20240214-12_30.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/metadata_export_contributions2_20240214-12_30.csv)[^3] file. Then, the Direct URL is a simple concatenation. For example, with the [reference number **8**](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/metadata_export_contributions2_20240214-12_30.csv#L2)
 
 | Direct URL | APAAME ID |
 |----------|----------|
-| https://apaame.arch.ox.ac.uk/pages/download.php?ref=4&size=scr&noattach=true   |  APAAME_20000906_RHB-0018   |
+| https://apaame.arch.ox.ac.uk/pages/download.php?ref=8&size=scr&noattach=true
+   |  APAAME_20141020_RHB-0143   |
 
 [^3]: previously [resource.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/resource.csv)
 
@@ -55,7 +56,7 @@ Join APAAME [metadata_export_contributions2_20240214-12_30.csv](https://github.c
 
 | APAAME ID | IR UUID | Direct URL |
 |----------|----------|----------|
-| APAAME_20000906_RHB-0018   | c712066a-8094-11ea-a6a6-02e7594ce0a0   | https://apaame.arch.ox.ac.uk/pages/download.php?ref=4&size=scr&noattach=true |
+| APAAME_20141020_RHB-0143   | 000117a1-b1e2-4e09-b676-124be29a05d4	 | https://apaame.arch.ox.ac.uk/pages/download.php?ref=8&size=scr&noattach=true |
 
 The result is [eamena_apaame_match.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/eamena_apaame_match.csv). The match is on reference number **8** 
 

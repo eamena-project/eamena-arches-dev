@@ -59,9 +59,15 @@ Join APAAME [metadata_export_contributions2_20240214-12_30.csv](https://github.c
 |----------|----------|----------|
 | APAAME_20000906_RHB-0018   | c712066a-8094-11ea-a6a6-02e7594ce0a0   | https://apaame.arch.ox.ac.uk/pages/download.php?ref=4&size=scr&noattach=true |
 
+The result is [eamena_apaame_match.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/eamena_apaame_match.csv)
+
 4. **Step 4** <a id="wf-step-4"></a>
 
-update the EAMENA Pg database
+Update the EAMENA Pg database:
+
+- read the [eamena_apaame_match.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/eamena_apaame_match.csv) file, fields: `img_url`
+- find the Flickr `img_url` value in the DB (ex: `https://live.staticflickr.com/7569/15784162651_852ef747a0_o_d.jpg`)
+- replace the `img_url` value in Pg with ...
 
 see [SQL queries](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/postgres/queries#apaame-and-archdams)
 

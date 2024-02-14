@@ -3,6 +3,7 @@
 
 #%%
 
+import os
 import pandas as pd
 import psycopg2 as pg
 import sqlalchemy as sa
@@ -19,9 +20,11 @@ resources_loc_path = "https://raw.githubusercontent.com/eamena-project/eamena-ar
 resources = pd.read_csv(resources_loc_path)
 
 ## fieldnames
+# reference number in APAAME
+apaame_ref_field = "Resource ID(s)" # "ref"
 # to join EAMENA and APAAME tables
 eamena_on='catalog_id'
-apaame_on='Original filename'
+apaame_on='Original filename' # "field51"
 
 #%%
 # APAAME
@@ -38,14 +41,14 @@ for column in resources.columns:
 # split the path
 rs_root = "https://apaame.arch.ox.ac.uk/pages/download.php?ref=" 
 rs_options = "&size=scr&noattach=true"
-refs = resources["ref"].tolist()
+refs = resources[apaame_ref_field].tolist()
 direct_urls = list()
 for rs_refnum in refs:
   direct_url = rs_root + str(rs_refnum) + rs_options
   direct_urls.append(direct_url)
 # create the df
 df_apaame = pd.DataFrame({
-    'apaame_id': resources["field51"].tolist(),
+    'apaame_id': resources[apaame_on].tolist(),
     'direct_url': direct_urls
 })
 df_apaame
@@ -125,7 +128,7 @@ resources['Original filename'] = resources['Original filename'].apply(lambda x: 
 # eamena_fickr_paths.columns
 
 eamena_apaame_match = pd.merge(eamena_flickr_paths, resources, left_on=eamena_on, right_on=apaame_on, how='inner')
-# add an empty row for a GitHub display purpose
+# append an empty row at the end of the df for GitHub display purpose
 eamena_apaame_match.loc[len(eamena_apaame_match)] = np.nan
 fileout = loc_path + "eamena_apaame_match.csv"
 eamena_apaame_match.to_csv(fileout, index=False)

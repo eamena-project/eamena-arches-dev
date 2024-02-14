@@ -63,11 +63,11 @@ The result is [eamena_apaame_match.csv](https://github.com/eamena-project/eamena
 
 4. **Step 4** <a id="wf-step-4"></a>
 
-Update the EAMENA Pg database:
+Update the EAMENA Pg database using the [eamena_apaame_match.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/eamena_apaame_match.csv) file
 
-- read the [eamena_apaame_match.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/eamena_apaame_match.csv) file, fields: `img_url`
-- find the Flickr `img_url` value in the DB (ex: `https://live.staticflickr.com/7569/15784162651_852ef747a0_o_d.jpg`)
-- replace the `img_url` value in Pg with ...
+- find the Flickr `img_url` value in the DB (ex: `https://live.staticflickr.com/7569/15784162651_852ef747a0_o_d.jpg`) [table `tiles`?]
+
+- replace the `img_url` value in Pg with the corresponding `direct_url`
 
 see [SQL queries](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/postgres/queries#apaame-and-archdams)
 

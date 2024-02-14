@@ -7,14 +7,24 @@ import sqlalchemy as sa
 from sqlalchemy import create_engine
 import json
 
-# my PG credentials
+## my PG credentials
 pg_creds = 'C:/Rprojects/eamena-arches-dev/credentials/pg_credentials.json'
+
+## files
+loc_path = "C:/Users/Thomas Huet/Desktop/APAAME/"
+resources_loc_path = "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/projects/apaame/metadata_export_contributions2_20240214-12_30.csv"
+resources = pd.read_csv(resources_loc_path)
+
+## fieldnames
+# to join EAMENA and APAAME tables
+eamena_on='catalog_id'
+apaame_on='Original filename'
 
 #%%
 # APAAME
 # list colnames
 
-resources = pd.read_csv("https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/projects/apaame/resource.csv")
+# resources = pd.read_csv("https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/projects/apaame/resource.csv")
 for column in resources.columns:
     print(column)
     
@@ -40,7 +50,7 @@ df_apaame
 
 #%%
 # EAMENA
-# read credentials (secret) and connect
+# read credentials (secret) and connect the Pg DB
 
 with open(pg_creds, 'r') as file:
     db_config = json.load(file)
@@ -49,9 +59,7 @@ engine = create_engine(connection_str)
 
 #%%
 # EAMENA
-# SQL statement
-
-# params = ['%flickr%']
+# SQL statement to collect all IR having a Flickr URL
 
 sqll = """
 SELECT q1.ir_id, q1.information_id, q2.catalog_id, img_url --, img_name
@@ -83,8 +91,6 @@ ON q1.ir_id = q3.ir_id
 -- LIMIT 1295;
 """
 
-# print(sqll)
-
 #%%
 # EAMENA
 # SQL database
@@ -97,58 +103,28 @@ df_eamena.head()
 
 # %%
 # EAMENA
-# export
+# export SQL resut to XLSX or CSV
 
-loc_path = 'C:/Users/Thomas Huet/Desktop/APAAME/'
 df_eamena_filename = 'eamena_fickr_paths.xlsx'
 fileout = loc_path + df_eamena_filename
 # df_eamena.to_csv(fileout, index=False)
 df_eamena.to_excel(fileout, index=False, engine='openpyxl')
 
-
-
 # %%
-# TODO: join the 2 tables on EAMENA 'catalog_id' and APAAME 'field51'
+# Join the EAMENA and APAAME on common field (APAAME photograph ID, without its extension)
 
-loc_path = "C:/Users/Thomas Huet/Desktop/APAAME/"
-resources_loc_path = loc_path + "resource.csv"
 eamena_flickr_paths_loc_path = loc_path + "eamena_fickr_paths.csv"
-resources = pd.read_csv(resources_loc_path)
-eamena_flickr_paths = pd.read_csv(eamena_fickr_paths_loc_path)
+eamena_flickr_paths = pd.read_csv(eamena_flickr_paths_loc_path)
+# remove the file extension (`...splitext(x)[0]..`)
+resources['Original filename'] = resources['Original filename'].apply(lambda x: os.path.splitext(x)[0] if isinstance(x, str) else x)
 
 # %%
 # eamena_fickr_paths.columns
 
-joined_df = pd.merge(eamena_flickr_paths, resources, left_on='catalog_id', right_on='field51', how='inner')
+eamena_apaame_match = pd.merge(eamena_flickr_paths, resources, left_on=eamena_on, right_on=apaame_on, how='inner')
+fileout = loc_path + "eamena_apaame_match.csv"
+eamena_apaame_match.to_csv(fileout, index=False)
 
+#%%
+# TODO: update the DB with these results
 
-# %%
-# convert DNG to JPG
-# see: https://technologytales.com/2016/06/08/batch-conversion-of-dng-files-to-other-file-types-with-the-linux-command-line/
-# see: C:\Rprojects\Rdev\gmm\marmotta\extract\extract_lithics_4.py
-
-import os
-import subprocess
-
-loc_path = "C:/Users/Thomas Huet/Desktop/APAAME/"
-
-img_name = 'APAAME_20141020_RHB-0143'
-imgin = img_name + '.dng'
-imgout = img_name + '.jpg'
-os.chdir(loc_path)
-# not working ... 
-cmd_to_jpg = "magick convert '%s' '%s'" % (imgin, imgout)
-# while this works from PS or CMD
-# magick convert "APAAME_20141020_RHB-0143.dng" "APAAME_20141020_RHB-0143.jpg"
-# os.system(cmd_to_jpg)
-subprocess.call(cmd_to_jpg)
-print("      ... DNG converted to JPG")
-
-# %%
-
-cmd = "git --version"
-returned_value = os.system(cmd)  # returns the exit code in unix
-print('returned value:', returned_value)  
-
-
-# %%

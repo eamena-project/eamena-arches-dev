@@ -45,8 +45,7 @@ A sample of the mapping table is this [metadata_export_contributions2_20240214-1
 
 | Direct URL | APAAME ID |
 |----------|----------|
-| https://apaame.arch.ox.ac.uk/pages/download.php?ref=8&size=scr&noattach=true
-   |  APAAME_20141020_RHB-0143   |
+| https://apaame.arch.ox.ac.uk/pages/download.php?ref=8&size=scr&noattach=true |  APAAME_20141020_RHB-0143   |
 
 [^3]: previously [resource.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/resource.csv)
 
@@ -54,9 +53,9 @@ A sample of the mapping table is this [metadata_export_contributions2_20240214-1
 
 Join APAAME [metadata_export_contributions2_20240214-12_30.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/metadata_export_contributions2_20240214-12_30.csv) with [eamena_fickr_paths](https://docs.google.com/spreadsheets/d/1gf27xtDZZKjjGOb0rUincZU56GW_LsRlWbPn-e3HpPs/edit?usp=sharing)
 
-| APAAME ID | IR UUID | Direct URL |
-|----------|----------|----------|
-| APAAME_20141020_RHB-0143   | 000117a1-b1e2-4e09-b676-124be29a05d4	 | https://apaame.arch.ox.ac.uk/pages/download.php?ref=8&size=scr&noattach=true |
+| APAAME ID | Direct URL |
+|----------|----------|
+| APAAME_20141020_RHB-0143  | https://apaame.arch.ox.ac.uk/pages/download.php?ref=8&size=scr&noattach=true |
 
 The result is [eamena_apaame_match.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/eamena_apaame_match.csv). The match is on reference number **8** 
 

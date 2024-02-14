@@ -27,7 +27,7 @@ gives this [eamena_fickr_paths](https://docs.google.com/spreadsheets/d/1gf27xtDZ
 
 2. **Step 2** <a id="wf-step-2"></a>
 
-In ArchDAMS. A reference number (sequential, from 1 to *n*) -- the ID of the resource[^2] -- is attributed to each photograph. Here **4** in <https://apaame.arch.ox.ac.uk/pages/download.php?ref=4&size=scr&noattach=true>
+In ArchDAMS. Export photographs' metadata (CSV Export - metadata). A reference number (sequential, from 1 to *n*) -- the ID of the resource[^2] -- is attributed to each photograph. Here **4** in <https://apaame.arch.ox.ac.uk/pages/download.php?ref=4&size=scr&noattach=true>
 
 <p align="center">
   <img alt="img-name" src="www/rs-ex3-APAAME.png" width="500">

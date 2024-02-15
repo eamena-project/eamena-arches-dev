@@ -17,20 +17,24 @@ pg_creds = 'C:/Rprojects/eamena-arches-dev/credentials/pg_credentials.json'
 ## files
 loc_path = "C:/Users/Thomas Huet/Desktop/APAAME/"
 resources_loc_path = "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/projects/apaame/metadata_export_contributions2_20240214-12_30.csv"
-resources = pd.read_csv(resources_loc_path)
 
 ## fieldnames
 # reference number in APAAME
 apaame_ref_field = "Resource ID(s)" # "ref"
 # to join EAMENA and APAAME tables
-eamena_on='catalog_id'
-apaame_on='Original filename' # "field51"
+eamena_on = 'catalog_id'
+apaame_on = 'Original filename' # "field51"
+
+# column name in the SQL/ final df
+eamena_img_url = "img_url" 
+eamena_direct_url = "direct_url"
 
 #%%
 # APAAME
 # list colnames
 
 # resources = pd.read_csv("https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/projects/apaame/resource.csv")
+resources = pd.read_csv(resources_loc_path)
 for column in resources.columns:
     print(column)
     
@@ -136,4 +140,33 @@ eamena_apaame_match.to_csv(fileout, index=False)
 
 #%%
 # TODO: update the DB with 'eamena_apaame_match.csv' results
+
+filein = loc_path + "eamena_apaame_match.csv"
+df_matches = pd.read_csv(filein)
+df_matches = df_matches.dropna(how='any')
+for index, row in df_matches.iterrows():
+    img_url = row[eamena_img_url]
+    direct_url = row[eamena_direct_url]
+    # print(img_url)
+    # print(eamena_direct_url)
+    # to update IR
+    sqll_update = """
+    UPDATE tiles
+    SET tiledata = jsonb_set(tiledata, '{c712066a-8094-11ea-a6a6-02e7594ce0a0, 0, url}', '"%s"')
+    WHERE tiledata -> 'c712066a-8094-11ea-a6a6-02e7594ce0a0' #>> '{0, url}' LIKE '%s';
+    """ % (direct_url, img_url)
+    # sqll_update = """
+    # UPDATE tiles SET tiledata -> 'c712066a-8094-11ea-a6a6-02e7594ce0a0' #>> '{0, url}' = '%s'
+    # WHERE tiledata -> 'c712066a-8094-11ea-a6a6-02e7594ce0a0' #>> '{0, url}' LIKE '%s'
+    # """ % (eamena_direct_url, img_url)
+    print(sqll_update)
+
+# %%
+
+"https://live.staticflickr.com/7569/15784162651_852ef747a0_o_d.jpg"
+"https://apaame.arch.ox.ac.uk/pages/download.php?ref=8&size=scr&noattach=true"
+
+SELECT resourceinstanceid AS ir_id, tiledata -> 'c712066a-8094-11ea-a6a6-02e7594ce0a0' #>> '{0, url}' AS img_url
+FROM tiles
+WHERE tiledata -> 'c712066a-8094-11ea-a6a6-02e7594ce0a0' #>> '{0, url}' LIKE 'https://live.staticflickr.com/7569/15784162651_852ef747a0_o_d.jpg'
 

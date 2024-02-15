@@ -25,6 +25,8 @@ The core of the Python `citation-generator` function is currently hosted on [**G
 1. the GeoJSON URL is converted into a GeoJSON file and zipped;
 2. the file is uploaded to Zenodo 'eamena' community with its metadata, see [Zenodo](#zenodo) 
 
+The GitHub issue thread is [#39](https://github.com/eamena-project/eamena-arches-dev/issues/39)
+
 ## Zenodo
 
 Zenodo ['eamena' community](https://zenodo.org/communities/eamena) host the data (the GeoJSON file itself) and its [metadata](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bibref/README.md#metadata). 

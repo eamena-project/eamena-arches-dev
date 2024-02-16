@@ -22,11 +22,13 @@ geojson_data = requests.get(infile).json()
 #%%
 # create the map
 
-m = fo.Map(location=[28.5, 34.3], zoom_start=5)
+m = fo.Map(location=[26.5, 28.3], zoom_start=3)
 fo.GeoJson(
     geojson_data,  # Replace with the path to your GeoJSON file
     name='geojson'
 ).add_to(m)
+
+m
 
 #%%
 # save

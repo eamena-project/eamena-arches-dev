@@ -163,10 +163,13 @@ for index, row in df_matches.iterrows():
 
 # %%
 
-"https://live.staticflickr.com/7569/15784162651_852ef747a0_o_d.jpg"
-"https://apaame.arch.ox.ac.uk/pages/download.php?ref=8&size=scr&noattach=true"
+# https://database.eamena.org/report/
+# https://database.eamena.org/report/000117a1-b1e2-4e09-b676-124be29a05d4
 
-SELECT resourceinstanceid AS ir_id, tiledata -> 'c712066a-8094-11ea-a6a6-02e7594ce0a0' #>> '{0, url}' AS img_url
-FROM tiles
-WHERE tiledata -> 'c712066a-8094-11ea-a6a6-02e7594ce0a0' #>> '{0, url}' LIKE 'https://live.staticflickr.com/7569/15784162651_852ef747a0_o_d.jpg'
+# "https://live.staticflickr.com/7569/15784162651_852ef747a0_o_d.jpg"
+# "https://apaame.arch.ox.ac.uk/pages/download.php?ref=8&size=scr&noattach=true"
+
+# SELECT resourceinstanceid AS ir_id, tiledata -> 'c712066a-8094-11ea-a6a6-02e7594ce0a0' #>> '{0, url}' AS img_url
+# FROM tiles
+# WHERE tiledata -> 'c712066a-8094-11ea-a6a6-02e7594ce0a0' #>> '{0, url}' LIKE 'https://live.staticflickr.com/7569/15784162651_852ef747a0_o_d.jpg'
 

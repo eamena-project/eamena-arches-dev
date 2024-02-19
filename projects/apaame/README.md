@@ -23,6 +23,15 @@ Examples by decreasing number of photograhs for the 4<su>th</sup> main repos (�
 
 ### https://live.staticflickr.com
 
+|    | ir_id                                | information_id      | catalog_id               | img_url                                                           |
+|---:|:-------------------------------------|:--------------------|:-------------------------|:------------------------------------------------------------------|
+|  0 | 00012dab-00cf-4cf1-90b5-d09c5cf3c6d6 | INFORMATION-0090288 | APAAME_20091008_KRH-0062 | https://live.staticflickr.com/7559/15976540576_f78c5c5355_o_d.jpg |
+|  1 | 0002dce4-8a0b-4eb4-908f-92ec2eff8fa8 | INFORMATION-0101891 | APAAME_20100516_RHB-0082 | https://live.staticflickr.com/4013/4616248328_0610d38320_o_d.jpg  |
+|  2 | 00030cf8-6a42-46d8-9542-ba6c42b06772 | INFORMATION-0095691 | APAAME_20181017_RHB-0098 | https://live.staticflickr.com/1923/45408035381_012a36622f_o_d.jpg |
+|  ❌ | 000348ec-dd61-48bb-97be-6ca6677d5fbe | INFORMATION-0110777 | APAAME_20101021_KRH-0050 | https://live.staticflickr.com/1244/5135603365_88730e84ef_o_d.jpg  |
+|  ❌ | 00043464-0e2b-478b-b7fa-f957575bcf1e | INFORMATION-0075120 | APAAME_20170927_MND-0067 | https://live.staticflickr.com/4443/36914020933_9abbd87dbd_o_d.jpg |
+
+
 #### Known issues
 
 Currently in EAMENA, in the IR, under the menu 'File Upload', paths to images are wrong. For example, with INFORMATION-0052511[^1], we have currently:
@@ -98,23 +107,42 @@ The correct link (ie, external link) is:
     <em>Flickr photo from its Direct URL/external link</em>
 </p>
 
-### https:/eamena-uploads-v2.s3.amazonaws.com
+### https://eamena-uploads-v2.s3.amazonaws.com
 > AWS S3 bucket, ⌐ APAAME
 
-- ❌ INFORMATION-0138546  = https://database.eamena.org/report/0096c8be-6ff7-44be-89bc-9dc7019bedf6 = https:/eamena-uploads-v2.s3.amazonaws.com/files/EAMENA-20191008-PF-0274.jpg
-- ❌ INFORMATION-0133675 = https://database.eamena.org/report/009503a5-44e6-4eb7-b6fe-b5cdc9a3b95e = https:/eamena-uploads-v2.s3.amazonaws.com/EGYPT_113C_MATRUH_B5_2724.jpg
+|    | ir_id                                | information_id      | catalog_id                               | img_url                                                                                 |
+|---:|:-------------------------------------|:--------------------|:-----------------------------------------|:----------------------------------------------------------------------------------------|
+|  0 | 00088a67-db92-4f89-b0fe-782244abab49 | INFORMATION-0144482 | JORDAN_45B-SQN_JordanValley_Run-10_10848 | https://eamena-uploads-v2.s3.amazonaws.com/JORDAN_45B-SQN_JordanValley_Run-10_10848.jpg |
+|  1 | 00408a39-ea66-45e8-bc19-b6dac01fd547 | INFORMATION-0133262 | EGYPT_113C_MATRUH_A13_2056               | https://eamena-uploads-v2.s3.amazonaws.com/EGYPT_113C_MATRUH_A13_2056.jpg               |
+|  2 | 00602573-d948-41b7-a7db-ce0a43e81263 | INFORMATION-0133953 | EGYPT_113C_MATRUH_B11_2557               | https://eamena-uploads-v2.s3.amazonaws.com/EGYPT_113C_MATRUH_B11_2557.jpg               |
+| ❌ | 009503a5-44e6-4eb7-b6fe-b5cdc9a3b95e | INFORMATION-0133675 | EGYPT_113C_MATRUH_B5_2724                | https://eamena-uploads-v2.s3.amazonaws.com/EGYPT_113C_MATRUH_B5_2724.jpg                |
+| ❌ | 0096c8be-6ff7-44be-89bc-9dc7019bedf6 | INFORMATION-0138546 | EAMENA-20191008-PF-0274                  | https://eamena-uploads-v2.s3.amazonaws.com/files/EAMENA-20191008-PF-0274.jpg            |
 
-### https:/eamena-media.s3.amazonaws.com/files/
+
+
+### https://eamena-media.s3.amazonaws.com/files/
 > AWS S3 bucket, ⌐ APAAME
 
-- ❌ INFORMATION-0050835 = https://database.eamena.org/report/0268f4ce-b5c6-483c-843a-89df4e554d95 = https:/eamena-media.s3.amazonaws.com/files/PF_20170917_SmarJbail_00037.JPG
-- ❌ INFORMATION-0086786 = https://database.eamena.org/report/012d43ed-70a3-48ca-9169-4c16bd228287 = https:/eamena-media.s3.amazonaws.com/files/Lehun25Compressed.JPG
+|    | ir_id                                | information_id      | catalog_id                  | img_url                                                                     |
+|---:|:-------------------------------------|:--------------------|:----------------------------|:----------------------------------------------------------------------------|
+|  0 | 001e8ca1-6db8-494a-b647-10502adb07bb | INFORMATION-0049668 | A View of Petra             | https://eamena-media.s3.amazonaws.com/files/Petra_AZ.JPG                    |
+|  1 | 006f6e49-e224-4b9d-bf75-ed679f32b831 | INFORMATION-0049921 | MAA39920_019_IMG_4528-scr   | https://eamena-media.s3.amazonaws.com/files/MAA39920_019_IMG_4528-scr.jpg   |
+|  2 | 006f6e49-e224-4b9d-bf75-ed679f32b831 | INFORMATION-0049921 | Manar al-Athar 39920        | https://eamena-media.s3.amazonaws.com/files/MAA39920_019_IMG_4528-scr.jpg   |
+|  ❌ | 012d43ed-70a3-48ca-9169-4c16bd228287 | INFORMATION-0086786 | JW_20182302_Lehun_00025     | https://eamena-media.s3.amazonaws.com/files/Lehun25Compressed.JPG           |
+|  ❌ | 0268f4ce-b5c6-483c-843a-89df4e554d95 | INFORMATION-0050835 | PF_20170917_SmarJbail_00037 | https://eamena-media.s3.amazonaws.com/files/PF_20170917_SmarJbail_00037.JPG |
 
-### https:/eamena-media.s3.eu-west-2.amazonaws.com/uploadedfiles/
+
+### https://eamena-media.s3.eu-west-2.amazonaws.com/uploadedfiles/
 > AWS S3 bucket, ⌐ APAAME
 
-- ❌ INFORMATION-0144797 = https://database.eamena.org/report/2130fc3d-63f4-465c-8283-acf56c78d1d2 = https:/eamena-media.s3.eu-west-2.amazonaws.com/uploadedfiles/36671359_1207660499368407_9199987662209941504_o.jpg
-- ❌ INFORMATION-0104667 = https://database.eamena.org/report/0f7d56e4-df54-419f-b7ba-34f67d65bb14 = https:/eamena-media.s3.eu-west-2.amazonaws.com/uploadedfiles/4615505613_a30287b8d6_o.jpg
+|    | ir_id                                | information_id      | catalog_id               | img_url                                                                                                           |
+|---:|:-------------------------------------|:--------------------|:-------------------------|:------------------------------------------------------------------------------------------------------------------|
+|  0 | 024a72cb-575a-404a-b3ab-e8dd028e6513 | INFORMATION-0144919 | APAAME_20180215_RHB-0323 | https://eamena-media.s3.eu-west-2.amazonaws.com/uploadedfiles/50953259052_a00cf75618_o.jpg                        |
+|  1 | 07b8ecdd-21d3-44d4-b1f1-0f0271e29310 | INFORMATION-0104660 | APAAME_20100601_DLK-0413 | https://eamena-media.s3.eu-west-2.amazonaws.com/uploadedfiles/4907651170_11c6ef62d9_c.jpg                         |
+|  2 | 0999896c-d5f6-4ed6-9410-06b108e6397f | INFORMATION-0144920 | APAAME_20180215_RHB-0350 | https://eamena-media.s3.eu-west-2.amazonaws.com/uploadedfiles/50729348183_b255e5f50a_o.jpg                        |
+|  ❌ | 0f7d56e4-df54-419f-b7ba-34f67d65bb14 | INFORMATION-0104667 | APAAME_20100516_SES-0014 | https://eamena-media.s3.eu-west-2.amazonaws.com/uploadedfiles/4615505613_a30287b8d6_o.jpg                         |
+|  ❌ | 2130fc3d-63f4-465c-8283-acf56c78d1d2 | INFORMATION-0144797 | Unknown                  | https://eamena-media.s3.eu-west-2.amazonaws.com/uploadedfiles/36671359_1207660499368407_9199987662209941504_o.jpg |
+
 
 ## Update IR-APAAME links
 > Update EAMENA Information Resources and APAAME links, batch the update of APAAME links
@@ -192,16 +220,6 @@ see [SQL queries](https://github.com/eamena-project/eamena-arches-dev/tree/main/
 
 
 Looking in [this dataframe](https://docs.google.com/spreadsheets/d/1-shK3M3Pl5NANWWvGuSYTgjFNpJAyi-A6uf04a8WTkM/edit#gid=1837558986) (a sample of IR having Catalog ID recorded), there are different type of paths:
-
-
-
-
-* Notes
-
-NO: https://www.flickr.com/photos/apaame/4928802850/  
-NO: https://database.eamena.org/live.staticflickr.com/4118/4928802850_49ed2fdbcb_o_d.jpg  
-YES: https://live.staticflickr.com/4118/4928802850_fbab90b8ca_h.jpg%60  
-YES: https://apaame.arch.ox.ac.uk/pages/download.php?ref=4&size=scr&noattach=true 
 
 
 ### ArchDAMS server

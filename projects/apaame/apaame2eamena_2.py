@@ -95,7 +95,7 @@ INNER JOIN(
     -- tiledata -> 'c712066a-8094-11ea-a6a6-02e7594ce0a0' #>> '{0, name}' AS img_name
     FROM tiles
   WHERE tiledata -> 'c712066a-8094-11ea-a6a6-02e7594ce0a0' #>> '{0, url}' IS NOT NULL
-  AND tiledata -> 'c712066a-8094-11ea-a6a6-02e7594ce0a0' #>> '{0, url}' LIKE 'https://eamena-media.s3.eu-wes%'
+  AND tiledata -> 'c712066a-8094-11ea-a6a6-02e7594ce0a0' #>> '{0, url}' LIKE 'https://eamena-uploads-v2%'
   -- AND tiledata -> 'c712066a-8094-11ea-a6a6-02e7594ce0a0' #>> '{0, url}' LIKE 'https://live.staticflickr%'
 ) q3
 ON q1.ir_id = q3.ir_id
@@ -109,7 +109,7 @@ LIMIT 50;
 df_eamena = pd.read_sql_query(sa.text(sqll), engine)
 # df_eamena = pd.read_sql_query(sqll, engine)
 # len(df_eamena)
-df_eamena.head()
+print(df_eamena.head().to_markdown())
 
 #%%
 # counts by types of repo

@@ -3,6 +3,18 @@
 
 Work in progress: [update EAMENA's Information Resources (IR) links to APAAME](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/apaame#update-ir-apaame-links) (from the [Flickr archive](https://www.flickr.com/photos/apaame/collections) to the new [ArchDAMS platform](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/README.md#archdams-server))
 
+## Photographs conversion
+
+Convert DNG photographs to TIFF or JPG
+
+[NAS Server](#nas-server) -> AWS S3
+
+## Upload time
+
+* from "D:\APAAME Master Catalog\1997\1997-05-27" to the ArcDAMS server:
+  - 10 photographs * 28 Mb = 280 Mb | loading time = 3 min
+  - need to validate each photograph
+
 ## EAMENA IR links
 
 Grouped by types of repository (Flickr, AWS S3, etc.), totals of photographs are:
@@ -225,7 +237,7 @@ Looking in [this dataframe](https://docs.google.com/spreadsheets/d/1-shK3M3Pl5NA
 ### ArchDAMS server
 > APAAME Server(*work in progress*)
 
-ArchDAMS server, or APAAME server, is a QNAP NAS Server, hosting a customisation of ResourceSpace, a Digital Asset Management (DAM) system, named ArcDAMS.
+ArchDAMS server, or APAAME server, is a [NAS Server](#nas-server), hosting a customisation of ResourceSpace, a Digital Asset Management (DAM) system, named ArcDAMS.
 
 #### URL
 

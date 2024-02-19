@@ -25,7 +25,7 @@ df_filtered$Groups <- mapply(function(group, color) {
 
 dt_widget <- datatable(df_filtered[ , c("Groups"), drop=FALSE], escape = FALSE,
                        rownames = FALSE,
-                       options = list(pageLength = 25, autoWidth = TRUE))
+                       options = list(paging = FALSE, searching = FALSE, info = FALSE, autoWidth = TRUE))
 # dt_widget
 saveWidget(dt_widget, paste0(mds.path, '/field-to-tsv.html'), selfcontained = TRUE)
 

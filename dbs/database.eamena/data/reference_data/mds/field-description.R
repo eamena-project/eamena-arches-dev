@@ -19,4 +19,4 @@ dt_widget <- datatable(df_filtered[ , c("num", "Heritage Place field","descripti
     columns = c("Heritage Place field"),
     backgroundColor = styleEqual(df_filtered[["Heritage Place field"]], df_filtered$color)
   )
-saveWidget(dt_widget, paste0(mds.path, '/fields-description.html'), selfcontained = TRUE)
+saveWidget(dt_widget, paste0(mds.path, '/fields-description-1.html'), selfcontained = TRUE)

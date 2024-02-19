@@ -95,11 +95,12 @@ INNER JOIN(
     -- tiledata -> 'c712066a-8094-11ea-a6a6-02e7594ce0a0' #>> '{0, name}' AS img_name
     FROM tiles
   WHERE tiledata -> 'c712066a-8094-11ea-a6a6-02e7594ce0a0' #>> '{0, url}' IS NOT NULL
-  AND tiledata -> 'c712066a-8094-11ea-a6a6-02e7594ce0a0' #>> '{0, url}' LIKE 'https://eamena-uploads-v2%'
+  -- AND tiledata -> 'c712066a-8094-11ea-a6a6-02e7594ce0a0' #>> '{0, url}' LIKE 'https://eamena-media.s3.eu-west-2%'
   -- AND tiledata -> 'c712066a-8094-11ea-a6a6-02e7594ce0a0' #>> '{0, url}' LIKE 'https://live.staticflickr%'
+  AND tiledata -> 'c712066a-8094-11ea-a6a6-02e7594ce0a0' #>> '{0, url}' LIKE 'https://eamena-media.s3.eu-west-2.amazonaws.com/uploadedfiles/50729348183_b255e5f50a_o.jpg'
 ) q3
 ON q1.ir_id = q3.ir_id
-LIMIT 50;
+-- LIMIT 50;
 """
 
 #%%

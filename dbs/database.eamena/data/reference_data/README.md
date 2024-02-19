@@ -13,6 +13,17 @@ Fieldnames (ex: "Effect type") have UUIDs. To find these correspondances, check 
 
 - https://github.com/achp-project/prj-eamena-marea/blob/8e397ad1343cd7fb04e4ca8a50247a1e3a687cb2/resource_models/Heritage%20Place.json#L6530
 
+### Field descriptions
+
+Thinner cateories (`level3`) colored by groups
+
+[fields-description.html](https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/mds/fields-description.html)
+
+### Groups and field values
+
+Broad categories, or groups (`level1`), with colors and HTML links to value descriptions (see: [Indiviudal reference sheets](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bulk#individual-reference-sheets))
+
+[field-to-tsv.html](https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/mds/field-to-tsv.html)
 
 ### MDS
 > Minimum Data Standards. Completness of data

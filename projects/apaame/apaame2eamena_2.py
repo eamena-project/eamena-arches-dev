@@ -95,10 +95,11 @@ INNER JOIN(
     -- tiledata -> 'c712066a-8094-11ea-a6a6-02e7594ce0a0' #>> '{0, name}' AS img_name
     FROM tiles
   WHERE tiledata -> 'c712066a-8094-11ea-a6a6-02e7594ce0a0' #>> '{0, url}' IS NOT NULL
+  AND tiledata -> 'c712066a-8094-11ea-a6a6-02e7594ce0a0' #>> '{0, url}' LIKE 'https://eamena-media.s3.eu-wes%'
   -- AND tiledata -> 'c712066a-8094-11ea-a6a6-02e7594ce0a0' #>> '{0, url}' LIKE 'https://live.staticflickr%'
 ) q3
 ON q1.ir_id = q3.ir_id
--- LIMIT 50;
+LIMIT 50;
 """
 
 #%%
@@ -114,7 +115,7 @@ df_eamena.head()
 # counts by types of repo
 
 df_eamena_copy = df_eamena.copy(deep=True)
-df_eamena_copy['img_url'] = df_eamena_copy['img_url'].str.slice(0, 20)
+df_eamena_copy['img_url'] = df_eamena_copy['img_url'].str.slice(0, 30)
 img_url_counts = df_eamena_copy['img_url'].value_counts()
 img_url_counts_df = img_url_counts.reset_index()
 img_url_counts_df.columns = ['img_url', 'count']  # Rename columns to 'img_url' and 'count'

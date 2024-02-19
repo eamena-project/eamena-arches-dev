@@ -3,29 +3,9 @@
 
 Work in progress: [update EAMENA's Information Resources (IR) links to APAAME](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/apaame#update-ir-apaame-links) (from the [Flickr archive](https://www.flickr.com/photos/apaame/collections) to the new [ArchDAMS platform](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/README.md#archdams-server))
 
-## Update IR-APAAME links
-> batch the update of APAAME links
+## EAMENA IR links
 
-The aim is to embed previews of APAAME photographs (hosted on ArchDAMS) into EAMENA IRs using ArchDAMS Direct links (i.e. external links). The  workflow is in ~~this Jupyter NB~~ this [Python script](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/apaame2eamena_2.py)
-
-1. [Step 1](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/apaame#wf-step-1): in EAMENA, collect Information Resources UUIDs with their APAAME ID, store them in a dataframe.
-2. [Step 2](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/apaame#wf-step-2): in ArchDAMS, collect APAAME ID and the Direct URL, store them in a dataframe.
-3. [Step 3](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/apaame#wf-step-3): join the two previous dataframes on the APAAME ID
-4. [Step 4](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/apaame#wf-step-4): update the EAMENA Postgres DB table with ArcDAMS external links
-
----
-
-1. **Step 1** <a id="wf-step-1"></a>
-
-In EAMENA. Collect all IR having a Flickr link, using this [SQL statement](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/postgres/queries#23)
-
-| IR UUID | APAAME ID |
-|----------|----------|
-| c712066a-8094-11ea-a6a6-02e7594ce0a0    |  APAAME_20000906_RHB-0018   |
-
-gives this [eamena_fickr_paths](https://docs.google.com/spreadsheets/d/1gf27xtDZZKjjGOb0rUincZU56GW_LsRlWbPn-e3HpPs/edit?usp=sharing) table
-
-Grouped by types of repository (Flckr, AWS S3, etc.), totals of photographs are:
+Grouped by types of repository (Flickr, AWS S3, etc.), totals of photographs are:
 
 |    | img_url                        |   count |
 |---:|:-------------------------------|--------:|
@@ -39,58 +19,15 @@ Grouped by types of repository (Flckr, AWS S3, etc.), totals of photographs are:
 |  7 | /files/601bc682-2d7f-44af-9f23 |       1 |
 |  8 | /files/e102ac38-fbab-4ea8-b113 |       1 |
 
-2. **Step 2** <a id="wf-step-2"></a>
+* `https://live.staticflickr.com...` to the Fickr archive: APAAME only
+* `https://eamena-media.s3.amazonaws.com/files/...` to the AWS S3 bucket: ⌐ APAAME
+* `https://eamena-uploads-v2.s3.amazonaws.com/...` to the  (also): 
 
-In ArchDAMS. Export photographs' metadata (CSV Export - metadata). A reference number (sequential, from 1 to *n*) -- the ID of the resource[^2] -- is attributed to each photograph. Here **4** in <https://apaame.arch.ox.ac.uk/pages/download.php?ref=4&size=scr&noattach=true>
+Examples by decreasing number of photograhs (✅: displayed; ❌: not displayed)
 
-<p align="center">
-  <img alt="img-name" src="www/rs-ex3-APAAME.png" width="500">
-  <br>
-    <em>ArchDAMS Direct URL https://apaame.arch.ox.ac.uk/pages/download.php?ref=4&size=scr&noattach=true</em>
-</p>
+### https://live.staticflickr.com
 
-[^2]: see the RS documentation: https://www.resourcespace.com/knowledge-base/api/get_resource_path
-
-| Reference Number | APAAME ID |
-|----------|----------|
-| 4    |  APAAME_20000906_RHB-0018   |
-
-A sample of the mapping table is this [metadata_export_contributions2_20240214-12_30.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/metadata_export_contributions2_20240214-12_30.csv)[^3] file. Then, the Direct URL is a simple concatenation. For example, with the [reference number **8**](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/metadata_export_contributions2_20240214-12_30.csv#L2)
-
-| Direct URL | APAAME ID |
-|----------|----------|
-| https://apaame.arch.ox.ac.uk/pages/download.php?ref=8&size=scr&noattach=true |  APAAME_20141020_RHB-0143   |
-
-[^3]: previously [resource.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/resource.csv)
-
-3. **Step 3** <a id="wf-step-3"></a>
-
-Join APAAME [metadata_export_contributions2_20240214-12_30.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/metadata_export_contributions2_20240214-12_30.csv) with [eamena_fickr_paths](https://docs.google.com/spreadsheets/d/1gf27xtDZZKjjGOb0rUincZU56GW_LsRlWbPn-e3HpPs/edit?usp=sharing)
-
-| APAAME ID | Direct URL |
-|----------|----------|
-| APAAME_20141020_RHB-0143  | https://apaame.arch.ox.ac.uk/pages/download.php?ref=8&size=scr&noattach=true |
-
-The result is [eamena_apaame_match.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/eamena_apaame_match.csv). The match is on reference number **8** 
-
-<p align="center">
-  <img alt="img-name" src="www/rs-n8-APAAME.png" width="500">
-  <br>
-    <em>ArchDAMS Direct URL https://apaame.arch.ox.ac.uk/pages/download.php?ref=8&size=scr&noattach=true</em>
-</p>
-
-
-4. **Step 4** <a id="wf-step-4"></a>
-
-Update the EAMENA Pg database using the [eamena_apaame_match.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/eamena_apaame_match.csv) file. SQL  UPDATE in a Python loop.
-
-- find the Flickr `img_url` value in the DB (ex: `https://live.staticflickr.com/7569/15784162651_852ef747a0_o_d.jpg`) [table `tiles`?]
-
-- replace the `img_url` value in Pg with the corresponding `direct_url`
-
-see [SQL queries](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/postgres/queries#apaame-and-archdams)
-
-### Known issues
+#### Known issues
 
 Currently in EAMENA, in the IR, under the menu 'File Upload', paths to images are wrong. For example, with INFORMATION-0052511[^1], we have currently:
 
@@ -165,11 +102,100 @@ The correct link (ie, external link) is:
     <em>Flickr photo from its Direct URL/external link</em>
 </p>
 
+### https:/eamena-uploads-v2.s3.amazonaws.com
+> AWS S3 bucket, ⌐ APAAME
+
+- ❌ INFORMATION-0138546  = https://database.eamena.org/report/0096c8be-6ff7-44be-89bc-9dc7019bedf6 = https:/eamena-uploads-v2.s3.amazonaws.com/files/EAMENA-20191008-PF-0274.jpg
+- ❌ INFORMATION-0133675 = https://database.eamena.org/report/009503a5-44e6-4eb7-b6fe-b5cdc9a3b95e = https:/eamena-uploads-v2.s3.amazonaws.com/EGYPT_113C_MATRUH_B5_2724.jpg
+
+### https:/eamena-media.s3.amazonaws.com/files/
+
+- ❌ INFORMATION-0050835 = https://database.eamena.org/report/0268f4ce-b5c6-483c-843a-89df4e554d95 = https:/eamena-media.s3.amazonaws.com/files/PF_20170917_SmarJbail_00037.JPG
+- ❌ INFORMATION-0086786 = https://database.eamena.org/report/012d43ed-70a3-48ca-9169-4c16bd228287 = https:/eamena-media.s3.amazonaws.com/files/Lehun25Compressed.JPG
+
+### https:/eamena-media.s3.eu-west-2.amazonaws.com/uploadedfiles/
+
+- ❌ INFORMATION-0144797 = https://database.eamena.org/report/2130fc3d-63f4-465c-8283-acf56c78d1d2 = https:/eamena-media.s3.eu-west-2.amazonaws.com/uploadedfiles/36671359_1207660499368407_9199987662209941504_o.jpg
+- ❌ INFORMATION-0104667 = https://database.eamena.org/report/0f7d56e4-df54-419f-b7ba-34f67d65bb14 = https:/eamena-media.s3.eu-west-2.amazonaws.com/uploadedfiles/4615505613_a30287b8d6_o.jpg
+
+## Update IR-APAAME links
+> Update EAMENA Information Resources and APAAME links, batch the update of APAAME links
+
+The aim is to embed previews of APAAME photographs (hosted on ArchDAMS) into EAMENA IRs using ArchDAMS Direct links (i.e. external links). The  workflow is in ~~this Jupyter NB~~ this [Python script](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/apaame2eamena_2.py)
+
+1. [Step 1](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/apaame#wf-step-1): in EAMENA, collect Information Resources UUIDs with their APAAME ID, store them in a dataframe.
+2. [Step 2](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/apaame#wf-step-2): in ArchDAMS, collect APAAME ID and the Direct URL, store them in a dataframe.
+3. [Step 3](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/apaame#wf-step-3): join the two previous dataframes on the APAAME ID
+4. [Step 4](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/apaame#wf-step-4): update the EAMENA Postgres DB table with ArcDAMS external links
+
+---
+
+1. **Step 1** <a id="wf-step-1"></a>
+
+In EAMENA. Collect all IR having a Flickr link, using this [SQL statement](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/postgres/queries#23)
+
+| IR UUID | APAAME ID |
+|----------|----------|
+| c712066a-8094-11ea-a6a6-02e7594ce0a0    |  APAAME_20000906_RHB-0018   |
+
+gives this [eamena_fickr_paths](https://docs.google.com/spreadsheets/d/1gf27xtDZZKjjGOb0rUincZU56GW_LsRlWbPn-e3HpPs/edit?usp=sharing) table
+
+2. **Step 2** <a id="wf-step-2"></a>
+
+In ArchDAMS. Export photographs' metadata (CSV Export - metadata). A reference number (sequential, from 1 to *n*) -- the ID of the resource[^2] -- is attributed to each photograph. Here **4** in <https://apaame.arch.ox.ac.uk/pages/download.php?ref=4&size=scr&noattach=true>
+
+<p align="center">
+  <img alt="img-name" src="www/rs-ex3-APAAME.png" width="500">
+  <br>
+    <em>ArchDAMS Direct URL https://apaame.arch.ox.ac.uk/pages/download.php?ref=4&size=scr&noattach=true</em>
+</p>
+
+[^2]: see the RS documentation: https://www.resourcespace.com/knowledge-base/api/get_resource_path
+
+| Reference Number | APAAME ID |
+|----------|----------|
+| 4    |  APAAME_20000906_RHB-0018   |
+
+A sample of the mapping table is this [metadata_export_contributions2_20240214-12_30.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/metadata_export_contributions2_20240214-12_30.csv)[^3] file. Then, the Direct URL is a simple concatenation. For example, with the [reference number **8**](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/metadata_export_contributions2_20240214-12_30.csv#L2)
+
+| Direct URL | APAAME ID |
+|----------|----------|
+| https://apaame.arch.ox.ac.uk/pages/download.php?ref=8&size=scr&noattach=true |  APAAME_20141020_RHB-0143   |
+
+[^3]: previously [resource.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/resource.csv)
+
+3. **Step 3** <a id="wf-step-3"></a>
+
+Join APAAME [metadata_export_contributions2_20240214-12_30.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/metadata_export_contributions2_20240214-12_30.csv) with [eamena_fickr_paths](https://docs.google.com/spreadsheets/d/1gf27xtDZZKjjGOb0rUincZU56GW_LsRlWbPn-e3HpPs/edit?usp=sharing)
+
+| APAAME ID | Direct URL |
+|----------|----------|
+| APAAME_20141020_RHB-0143  | https://apaame.arch.ox.ac.uk/pages/download.php?ref=8&size=scr&noattach=true |
+
+The result is [eamena_apaame_match.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/eamena_apaame_match.csv). The match is on reference number **8** 
+
+<p align="center">
+  <img alt="img-name" src="www/rs-n8-APAAME.png" width="500">
+  <br>
+    <em>ArchDAMS Direct URL https://apaame.arch.ox.ac.uk/pages/download.php?ref=8&size=scr&noattach=true</em>
+</p>
+
+
+4. **Step 4** <a id="wf-step-4"></a>
+
+Update the EAMENA Pg database using the [eamena_apaame_match.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/eamena_apaame_match.csv) file. SQL  UPDATE in a Python loop.
+
+- find the Flickr `img_url` value in the DB (ex: `https://live.staticflickr.com/7569/15784162651_852ef747a0_o_d.jpg`) [table `tiles`?]
+
+- replace the `img_url` value in Pg with the corresponding `direct_url`
+
+see [SQL queries](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/postgres/queries#apaame-and-archdams)
+
+
+
 Looking in [this dataframe](https://docs.google.com/spreadsheets/d/1-shK3M3Pl5NANWWvGuSYTgjFNpJAyi-A6uf04a8WTkM/edit#gid=1837558986) (a sample of IR having Catalog ID recorded), there are different type of paths:
 
-* `https://live.staticflickr.com...` to the Fickr archive: APAAME only
-* `https://eamena-media.s3.amazonaws.com/files/...` to the AWS S3 bucket: ⌐ APAAME
-* `https://eamena-uploads-v2.s3.amazonaws.com/...` to the AWS S3 bucket (also): ⌐ APAAME
+
 
 
 * Notes

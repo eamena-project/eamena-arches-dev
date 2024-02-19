@@ -25,6 +25,20 @@ In EAMENA. Collect all IR having a Flickr link, using this [SQL statement](https
 
 gives this [eamena_fickr_paths](https://docs.google.com/spreadsheets/d/1gf27xtDZZKjjGOb0rUincZU56GW_LsRlWbPn-e3HpPs/edit?usp=sharing) table
 
+Grouped by types of repository (Flckr, AWS S3, etc.), totals of photographs are:
+
+|    | img_url                        |   count |
+|---:|:-------------------------------|--------:|
+|  0 | https://live.staticflickr.com/ |  116745 |
+|  1 | https://eamena-uploads-v2.s3.a |    2071 |
+|  2 | https://eamena-media.s3.amazon |     541 |
+|  3 | https://eamena-media.s3.eu-wes |      26 |
+|  4 | /files/b43a7f50-d532-11ec-b91a |       2 |
+|  5 | /files/8761035b-11fc-45ce-a4cb |       2 |
+|  6 | https://apaame.arch.ox.ac.uk/p |       1 |
+|  7 | /files/601bc682-2d7f-44af-9f23 |       1 |
+|  8 | /files/e102ac38-fbab-4ea8-b113 |       1 |
+
 2. **Step 2** <a id="wf-step-2"></a>
 
 In ArchDAMS. Export photographs' metadata (CSV Export - metadata). A reference number (sequential, from 1 to *n*) -- the ID of the resource[^2] -- is attributed to each photograph. Here **4** in <https://apaame.arch.ox.ac.uk/pages/download.php?ref=4&size=scr&noattach=true>

@@ -1,0 +1,2562 @@
+[
+  {
+    "@id": "http://prj-eamena-marea#d9abdfde-c6a3-11ea-a292-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Designation Event Timespan"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea91-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "General Description Type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea58-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Site Feature Interpretation Type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.ics.forth.gr/isl/CRMinf/I4_Proposition_Set"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfe9cb-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Archaeological Timespace"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea3c-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Material Class"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E57_Material"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea2e-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Assessment Summary"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea51-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Overall Archaeological Certainty Value "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.ics.forth.gr/isl/CRMinf/I6_Belief_Value"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea61-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Land Cover Assessment Date"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E50_Date"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#e265f832-f375-11ea-afe6-0a5a9a4f6ef7",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "FEATURE_ASSIGNMENT_INVESTIGATOR_NAME"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#ce842cdc-c2c7-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Geometry Qualifier"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea86-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Dimension Type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfe9b0-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Site Feature Form Type Belief"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.ics.forth.gr/isl/CRMinf/I2_Belief"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#38cff73a-c77b-11ea-a292-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Cultural Sub-period Certainty"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.ics.forth.gr/isl/CRMinf/I6_Belief_Value"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#5348cf6a-c2c5-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Geometry Location Observation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.ics.forth.gr/isl/CRMsci/S4_Observation"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea28-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Topography"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#38cff738-c77b-11ea-a292-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Cultural Period Certainty"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.ics.forth.gr/isl/CRMinf/I6_Belief_Value"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#b9643302-0407-11eb-a11c-0a5a9a4f6ef7",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "GE Imagery Acquisition Date"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E50_Date"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#cd8ff002-f375-11ea-afe6-0a5a9a4f6ef7",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "FUNCTION_INTERPRETATION_INFERENCE_MAKING_ACTOR_NAME"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea6d-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Address"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E45_Address"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#5348cf67-c2c5-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Geometric Place Expression"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.ics.forth.gr/isl/CRMgeo/SP5_Geometric_Place_Expression"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea65-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Disturbance Date From"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E61_Time_Primitive"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfe9ad-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Heritage Place Assignment "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea95-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Cadastral Reference"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E44_Place_Appellation"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea7c-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Measurement Source Type "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea3f-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Fetch Type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea34-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Information Resource"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#97a2c1fc-cb86-11ea-a292-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "SH Date to"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E50_Date"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea60-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Measurement Unit"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#d2e1ab96-cc05-11ea-a292-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Investigator Role Type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#d9abdfdb-c6a3-11ea-a292-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Designation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E30_Right"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfe998-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Marine Environment"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea7b-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Threat Cause Type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.ics.forth.gr/isl/CRMinf/I4_Proposition_Set"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#38cff73e-c77b-11ea-a292-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Date Inference Making Actor Name"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E41_Appellation"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea4d-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Assessment Activity Type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfe9e6-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Overall Site Morphology Type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfe9f8-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Site Feature Number Type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea7a-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Disturbance Date To "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E61_Time_Primitive"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea7f-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Disturbance Date Occurred On "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E61_Time_Primitive"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea1f-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Depth/Elevation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea9c-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Tidal Range"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#173ff15a-c5fb-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "BP Date To"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E50_Date"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea3d-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Disturbance Cause Certainty "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.ics.forth.gr/isl/CRMinf/I6_Belief_Value"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea72-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Disturbance Cause Assignment Assessor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E39_Actor"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#7deb8fcc-c6a5-11ea-a292-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Restricted Access Record Designation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfe9d4-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Recommendation Plan"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.ics.forth.gr/isl/CRMinf/I2_Belief"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea59-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Site Feature Form Type Certainty"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.ics.forth.gr/isl/CRMinf/I6_Belief_Value"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea71-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Measurement"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E16_Measurement"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfe9c2-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Disturbance Event"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E5_Event"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea5b-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Assessment Activity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E7_Activity"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea44-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Site Feature Interpretation Certainty"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.ics.forth.gr/isl/CRMinf/I6_Belief_Value"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea9b-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Datum Type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#d9abdfdf-c6a3-11ea-a292-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Designation To Date"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E61_Time_Primitive"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea9e-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Surficial Geology Type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea7d-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Heritage Place Function Certainty "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.ics.forth.gr/isl/CRMinf/I6_Belief_Value"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#5348cf6d-c2c5-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Spatial Coordinates Ref System"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.ics.forth.gr/isl/CRMgeo/SP4_Spatial_Coordinate_Reference_System"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea4c-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Disturbance Cause Belief"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.ics.forth.gr/isl/CRMinf/I2_Belief"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea3a-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Land Cover Assessment"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E14_Condition_Assessment"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea69-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Overall Site Shape Type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#e3cc8c5b-c772-11ea-a292-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Disturbance Date Occurred On "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E61_Time_Primitive"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#38cff73b-c77b-11ea-a292-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Cultural Period Type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.ics.forth.gr/isl/CRMinf/I4_Proposition_Set"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea8c-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Dimension "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea78-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Administrative Division "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E53_Place"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfe9fb-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Threat Inference Making"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.ics.forth.gr/isl/CRMsci/S5_Inference_Making"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#3d218500-c385-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Built Component"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E46_Section_Definition"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea43-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Country Type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea93-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Land Cover Type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#a5eb59b4-0406-11eb-a11c-0a5a9a4f6ef7",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Information Resource Acquisition Date"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E50_Date"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea42-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Maximum Depth/Min Elevation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E60_Number"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#e3cc8c5d-c772-11ea-a292-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Disturbance Date To "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E61_Time_Primitive"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#086e756c-cb86-11ea-a292-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "SH Date From"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E50_Date"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea76-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Threat Category"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.ics.forth.gr/isl/CRMinf/I4_Proposition_Set"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#bcd3a8ae-0404-11eb-a11c-0a5a9a4f6ef7",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Google Earth Assessment"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfe9b6-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Geography"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E53_Place"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea6b-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Construction Technique"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E12_Production"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea75-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Threat Inference Making Assessor Name - Actor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E41_Appellation"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfe9c5-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Material"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E57_Material"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfe9e9-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Site Feature Arrangement Type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea36-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Disturbance Cause Assignment Assessor Name - Actor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E41_Appellation"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfe9aa-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Damage State"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea22-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Surficial Geology"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea4a-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Heritage Place Function"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#affb15b2-f375-11ea-afe6-0a5a9a4f6ef7",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "DAMAGE_TREND_TYPE"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea6f-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Condition State"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfe9ce-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Damage Observation "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.ics.forth.gr/isl/CRMsci/S4_Observation"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea74-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Imagery Acquisition Date"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E50_Date"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea5d-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Grid ID"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E42_Identifier"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea92-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Disturbance Date Occurred Before"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E61_Time_Primitive"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea6c-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Archaeological To Date"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E61_Time_Primitive"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#651d5cc6-c5df-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Alternative Temporal Reference Systems"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.ics.forth.gr/isl/CRMgeo/SP11_Temporal_Reference_System"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfe9f2-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Measurements"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E16_Measurement"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea8e-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Damage Extent Type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea41-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Datum"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.ics.forth.gr/isl/CRMgeo/SP4_Spatial_Coordinate_Reference_System"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfe9b9-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Condition Assessment"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E14_Condition_Assessment"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea77-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "General Description"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E62_String"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfe9bc-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Environment Assessment"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfe9ec-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Related Geoarchaeology/Palaeolandscape"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.ics.forth.gr/isl/CRMgeo/SP2_Phenomenal_Place"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea64-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Recommendation Type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfe992-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "EAMENA ID"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E42_Identifier"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfe9d7-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Priority Assignment"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#3080eebe-c2c5-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Geometry"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E53_Place"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea38-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Wave Climate"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfe9e3-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Heritage Place Resource Instance"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E27_Site"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea81-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Assessment Activity Date"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E50_Date"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea63-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Threat Probability "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.ics.forth.gr/isl/CRMinf/I6_Belief_Value"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea83-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Archaeological From Date"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E61_Time_Primitive"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea8a-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Assessment Investigator - Actor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E39_Actor"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea9d-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Bedrock Geology Type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#e3cc8c5c-c772-11ea-a292-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Disturbance Date From"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E61_Time_Primitive"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea19-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Site Feature Shape Type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#b7314be2-c5fa-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "BP Date From"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E50_Date"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfe9a4-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Archaeological Certainty Observation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.ics.forth.gr/isl/CRMsci/S4_Observation"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#38cff73c-c77b-11ea-a292-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Cultural Sub-period Type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.ics.forth.gr/isl/CRMinf/I4_Proposition_Set"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfe9da-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Disturbance Event Timespan"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfe9dd-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Resource Name"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E41_Appellation"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea39-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Topography Type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea84-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Priority Type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea9a-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Site Feature Form Type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.ics.forth.gr/isl/CRMinf/I4_Proposition_Set"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea98-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Modern Country Territory"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E48_Place_Name"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea73-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Resource Orientation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfe9fe-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Site Feature Interpretation Belief"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.ics.forth.gr/isl/CRMinf/I2_Belief"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#e3cc8c57-c772-11ea-a292-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Disturbance Event Timespan"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea68-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Disturbance Cause Category Type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#41afc438-c5fb-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "AH Date From"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E50_Date"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#38cff737-c77b-11ea-a292-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Date Inference Making Actor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E39_Actor"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#5435f2ee-c5fb-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "AH Date To"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E50_Date"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea54-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Threat Inference Making Assessor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E39_Actor"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#d9abdfe0-c6a3-11ea-a292-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Designation From Date"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E61_Time_Primitive"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#38cff731-c77b-11ea-a292-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Cultural Sub-period Belief "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.ics.forth.gr/isl/CRMinf/I2_Belief"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea66-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Threat Belief"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.ics.forth.gr/isl/CRMinf/I2_Belief"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea2b-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Bedrock Geology"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfe99e-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Disturbance Cause Assignment"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea8d-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Datum Description/EPSG code"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea47-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Measurement Number"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E60_Number"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea90-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Effect Type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.ics.forth.gr/isl/CRMsci/S9_Property_Type"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#e3cc8c5a-c772-11ea-a292-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Disturbance Date Occurred Before"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E61_Time_Primitive"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea62-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Site Feature Interpretation Number Type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfe9ef-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Heritage Place Type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea79-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Disturbance Cause Type "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.ics.forth.gr/isl/CRMinf/I4_Proposition_Set"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfe9f5-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Overall Condition State Type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfe9c8-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Description Assignment"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea3b-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Heritage Place"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E27_Site"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfe9bf-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Estimated Damage Extent"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E16_Measurement"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea45-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Heritage Place Function Belief"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.ics.forth.gr/isl/CRMinf/I2_Belief"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea25-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Land Cover"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#5348cf6b-c2c5-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Location Certainty"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.ics.forth.gr/isl/CRMinf/I6_Belief_Value"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea37-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Depositional Process"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E5_Event"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea87-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Administrative Division Type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfe98f-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Resource Summary"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#38cff734-c77b-11ea-a292-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Cultural Period Belief"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.ics.forth.gr/isl/CRMinf/I2_Belief"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea1c-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Geology"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea5c-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Effect Certainty"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.ics.forth.gr/isl/CRMinf/I6_Belief_Value"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfe9b3-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Archaeological Assessment "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea0a-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Intervention Activity Type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea40-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Minimum Depth/Max Elevation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E60_Number"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea97-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Name Type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#5348cf6c-c2c5-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Geometry Extent Certainty"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.ics.forth.gr/isl/CRMinf/I6_Belief_Value"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea10-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Detailed Condition Assessments"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E14_Condition_Assessment"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea4e-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Material Type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E57_Material"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea13-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Site Feature Assignment"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment"
+      }
+    ]
+  },
+  {
+    "@id": "http://prj-eamena-marea#34cfea8f-c2c0-11ea-9026-02e7594ce0a0",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "Address Type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+      }
+    ]
+  }
+]

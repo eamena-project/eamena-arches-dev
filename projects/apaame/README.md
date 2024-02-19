@@ -19,11 +19,7 @@ Grouped by types of repository (Flickr, AWS S3, etc.), totals of photographs are
 |  7 | /files/601bc682-2d7f-44af-9f23 |       1 |
 |  8 | /files/e102ac38-fbab-4ea8-b113 |       1 |
 
-* `https://live.staticflickr.com...` to the Fickr archive: APAAME only
-* `https://eamena-media.s3.amazonaws.com/files/...` to the AWS S3 bucket: ⌐ APAAME
-* `https://eamena-uploads-v2.s3.amazonaws.com/...` to the  (also): 
-
-Examples by decreasing number of photograhs (✅: displayed; ❌: not displayed)
+Examples by decreasing number of photograhs for the 4<su>th</sup> main repos (✅: displayed; ❌: not displayed)
 
 ### https://live.staticflickr.com
 
@@ -109,11 +105,13 @@ The correct link (ie, external link) is:
 - ❌ INFORMATION-0133675 = https://database.eamena.org/report/009503a5-44e6-4eb7-b6fe-b5cdc9a3b95e = https:/eamena-uploads-v2.s3.amazonaws.com/EGYPT_113C_MATRUH_B5_2724.jpg
 
 ### https:/eamena-media.s3.amazonaws.com/files/
+> AWS S3 bucket, ⌐ APAAME
 
 - ❌ INFORMATION-0050835 = https://database.eamena.org/report/0268f4ce-b5c6-483c-843a-89df4e554d95 = https:/eamena-media.s3.amazonaws.com/files/PF_20170917_SmarJbail_00037.JPG
 - ❌ INFORMATION-0086786 = https://database.eamena.org/report/012d43ed-70a3-48ca-9169-4c16bd228287 = https:/eamena-media.s3.amazonaws.com/files/Lehun25Compressed.JPG
 
 ### https:/eamena-media.s3.eu-west-2.amazonaws.com/uploadedfiles/
+> AWS S3 bucket, ⌐ APAAME
 
 - ❌ INFORMATION-0144797 = https://database.eamena.org/report/2130fc3d-63f4-465c-8283-acf56c78d1d2 = https:/eamena-media.s3.eu-west-2.amazonaws.com/uploadedfiles/36671359_1207660499368407_9199987662209941504_o.jpg
 - ❌ INFORMATION-0104667 = https://database.eamena.org/report/0f7d56e4-df54-419f-b7ba-34f67d65bb14 = https:/eamena-media.s3.eu-west-2.amazonaws.com/uploadedfiles/4615505613_a30287b8d6_o.jpg

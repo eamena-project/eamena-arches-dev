@@ -12,7 +12,7 @@ mds.template <- paste0(mds.path, "mds-template.xlsx")
 df <- read_excel(mds.template, sheet = 1)
 df_filtered <- df[, c("level1", "color")]
 df_filtered$color <- sub("^(.{7}).*", "\\1", df_filtered$color)
-df_filtered$color <- paste0(df_filtered$color, "95")
+# df_filtered$color <- paste0(df_filtered$color, "95")
 df_filtered <- df_filtered[!duplicated(df_filtered), ]
 colnames(df_filtered)[colnames(df_filtered) == 'level1'] <- 'Groups'
 df_filtered$Groups <- stringr::str_to_title(df_filtered$Groups)

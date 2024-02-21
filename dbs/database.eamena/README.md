@@ -11,8 +11,10 @@ flowchart
   subgraph Arches v7
     subgraph EAMENA DB
       ea[(Eamena v4)];
-      subgraph reference data
+      subgraph reference-data
         idr1[ERD];
+        idr2[MDS];
+        idr3[Fields, groups<br>and values];
       end
     end
     subgraph internationalisation
@@ -52,6 +54,7 @@ flowchart
   ea -- GeoJSON URL --> idf1
   ea --- id5[eamenaR];
   ea --- internationalisation
+  ea --- reference-data
   ea <--- install
 
   click idr1 "https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data/reference_data" _blank

@@ -18,7 +18,7 @@ Fieldnames (ex: "Effect type") have UUIDs. To find these correspondances, check 
 Thinner cateories (`level3`) colored by groups: [[fields-description.html]((https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/mds/fields-description.html))]
 
 <p align="center">
-  <img alt="img-name" src="https://github.com/eamena-project/eamena-arches-dev/blob/main/www/arches-v7-hp-data-field-descriptions.png" width="1000">
+  <img alt="img-name" src="https://github.com/eamena-project/eamena-arches-dev/blob/main/www/arches-v7-hp-data-field-descriptions.png" width="600">
   <br>
     <em>Screenshot of the HTML dynamic/interactive table 'fields-description.html', with a search on 'Agricul' with field colored by groups and field descriptions</em>
 </p>
@@ -28,7 +28,7 @@ Thinner cateories (`level3`) colored by groups: [[fields-description.html]((http
 Broad categories, or groups (`level1`), with colors and HTML links to value descriptions ([Indiviudal reference sheets](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bulk#individual-reference-sheets)): [[field-to-tsv.html](https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/mds/field-to-tsv.html)]
 
 <p align="center">
-  <img alt="img-name" src="https://github.com/eamena-project/eamena-arches-dev/blob/main/www/arches-v7-hp-data-field-group-values-descriptions.png" width="1000">
+  <img alt="img-name" src="https://github.com/eamena-project/eamena-arches-dev/blob/main/www/arches-v7-hp-data-field-group-values-descriptions.png" width="600">
   <br>
     <em>Screenshot of the HTML dynamic/interactive table 'field-to-tsv.html', with colored groups and hyperlinks to the indiviudal reference sheets</em>
 </p>

@@ -61,7 +61,7 @@ Restart Apache
 Imported, with errors (ORPHANS)
 
 <p align="center">
-  <img src='https://raw.githubusercontent.com/zoometh/skos2excel/www/err-orphans.png' width = "500px">
+  <img src='https://raw.githubusercontent.com/zoometh/skos2excel/master/www/err-orphans.png' width = "500px">
   <br>
     <em>French, Arabic and English... but with orphans</em>
 </p>

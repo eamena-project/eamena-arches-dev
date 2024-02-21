@@ -7,7 +7,7 @@
 
 The template `mds-template-*` is the reference table for:
 - groups, fields and values descriptions
-- MDS
+- [MDS](#mds)
 - eamenaR mapping file `ids.csv` (see [eamenaR documentation](https://github.com/eamena-project/eamenaR#correspondances-between-concept-labels-and-uuids))
 
 * [mds-template.xlsx](mds/mds-template.xlsx):
@@ -43,7 +43,7 @@ Thinner cateories (`level3`) colored by groups: [[fields-description.html](https
 Broad categories, or groups (`level1`), with colors and HTML links to value descriptions ([Indiviudal reference sheets](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bulk#individual-reference-sheets)): [[field-to-tsv.html](https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/mds/field-to-tsv.html)]
 
 <p align="center">
-  <img alt="img-name" src="https://github.com/eamena-project/eamena-arches-dev/blob/main/www/arches-v7-hp-data-field-group-values-descriptions.png" width="350">
+  <img alt="img-name" src="https://github.com/eamena-project/eamena-arches-dev/blob/main/www/arches-v7-hp-data-field-group-values-descriptions.png" width="250">
   <br>
     <em>Screenshot of the HTML dynamic/interactive table 'field-to-tsv.html', with colored groups and hyperlinks to the indiviudal reference sheets</em>
 </p>

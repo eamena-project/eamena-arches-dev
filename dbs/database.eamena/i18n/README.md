@@ -3,7 +3,7 @@
 
 ## Convert thesauri
 
-Example for the EAMENA.xml file, and translation to French (`fr`), using the [skos2excel](https://github.com/ads04r/skos2excel tools)
+Example for the EAMENA.xml file, and translation to French (`fr`), using the [skos2excel](https://github.com/ads04r/skos2excel) tools
 
 1. Convert [EAMENA.xml](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/concepts/EAMENA.xml) to [EAMENA_fr.xlsx]() using the `skos2excel.py` script:
 

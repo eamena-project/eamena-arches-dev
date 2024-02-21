@@ -46,7 +46,7 @@ flowchart LR
   subgraph Google Colab
     idg1[citation_generator.ipynb] -- is mirrored --> idf2
   end
-  ea -- <a href='query#url'>GeoJSON URL</a> --> idf1
+  ea -- GeoJSON URL --> idf1
   ea --- id5[eamenaR];
   ea --- internationalisation
   ea <--- install

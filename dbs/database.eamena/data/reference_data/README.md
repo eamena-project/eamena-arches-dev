@@ -5,6 +5,21 @@
 
 ## Heritage Places
 
+The template `mds-template-*` is the reference table for:
+- groups, fields and values descriptions
+- MDS
+- eamenaR mapping file `ids.csv` (see [eamenaR documentation](https://github.com/eamena-project/eamenaR#correspondances-between-concept-labels-and-uuids))
+
+* [mds-template.xlsx](mds/mds-template.xlsx):
+	- an editable XLSX file with the list of HP fields with their UUID and a "Yes" mark if these fields belong to the mds. This file is considered to be the authorative document for mds.
+
+* [mds-template-readonly.tsv](mds/mds-template-readonly.tsv):
+	- a read-only TSV file with the list of HP fields with their UUID and a "Yes" mark if these fields belong to the mds. This files results from the automatic export of [mds-template.xlsx](mds/mds-template.xlsx), it will be overwrite each time 'mds-template.xlsx' is updated)
+
+**Level of aggregation**
+
+It means that fields, and field and field values (`level3`, the thinnest) can be aggregated and sum up into broader categories (`level2` and `level1`, the broadest). 
+
 ### UUIDs
 
 Fieldnames (ex: "Effect type") have UUIDs. To find these correspondances, check the `nodeid` in the RM. For example, the "Effect type" field has the UUID `34cfea90-c2c0-11ea-9026-02e7594ce0a0`, see:
@@ -23,7 +38,7 @@ Thinner cateories (`level3`) colored by groups: [[fields-description.html](https
     <em>Screenshot of the HTML dynamic/interactive table 'fields-description.html', with a search on 'Agricul' with field colored by groups and field descriptions</em>
 </p>
 
-### Groups and field values
+### Groups of fields and field values descriptions
 
 Broad categories, or groups (`level1`), with colors and HTML links to value descriptions ([Indiviudal reference sheets](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bulk#individual-reference-sheets)): [[field-to-tsv.html](https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/mds/field-to-tsv.html)]
 
@@ -36,24 +51,18 @@ Broad categories, or groups (`level1`), with colors and HTML links to value desc
 ### MDS
 > Minimum Data Standards. Completness of data
 
-Minimum Data Standards (MDS) of Heritage Places
+Minimum Data Standards (MDS) of Heritage Places. MDS fields in this HTML circular plot [[mds-reference.html](https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/mds/mds-reference.html)]
+
+<p align="center">
+  <img alt="img-name" src="https://github.com/eamena-project/eamena-arches-dev/blob/main/www/arches-v7-hp-data-mds-pie.png" width="600">
+  <br>
+    <em>A screenshot of the `mds_level.html` file showing the 98 fields of the Heritage Places with the MDS fields (highlighted, thumbs up) using the `mds-reference.ipynb` script</em>
+</p>
 
 #### Files
 
 ##### Templates
 
-The template `mds-template-*` is the reference table for the MDS, fieldnames' descriptions, and for the eamenaR mapping file `ids.csv` (see [eamenaR documentation](https://github.com/eamena-project/eamenaR#correspondances-between-concept-labels-and-uuids))
-
-* [mds-template.xlsx](mds/mds-template.xlsx):
-	- an editable XLSX file with the list of HP fields with their UUID and a "Yes" mark if these fields belong to the mds. This file is considered to be the authorative document for mds.
-
-* [mds-template-readonly.tsv](mds/mds-template-readonly.tsv):
-	- a read-ony TSV file with the list of HP fields with their UUID and a "Yes" mark if these fields belong to the mds. This files results from the automatic export of [mds-template.xlsx](mds/mds-template.xlsx), it will be overwrite each time 'mds-template.xlsx' is updated)
-
-
-**Level of aggregation**
-
-It means that fields, and field and field values (`level3`) can be aggregated and sum up into broader categories (`level1` and `level2`). 
 
 #### Scripts
 
@@ -72,15 +81,6 @@ It means that fields, and field and field values (`level3`) can be aggregated an
 </p>
 
 
-#### Interactivity
-
-MDS fields in this HTML circular plot ([here](https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/mds/mds-reference.html))
-
-<p align="center">
-  <img alt="img-name" src="https://github.com/eamena-project/eamena-arches-dev/blob/main/www/arches-v7-hp-data-mds-pie.png" width="600">
-  <br>
-    <em>A screenshot of the `mds_level.html` file showing the 98 fields of the Heritage Places with the MDS fields (highlighted, thumbs up) using the `mds-reference.ipynb` script</em>
-</p>
 
 The Entity-relationships diagram of HP with fieldnames and CIDOC-CRM entities and relationships ([here](https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/erd/EAMENA-erd.html))
 

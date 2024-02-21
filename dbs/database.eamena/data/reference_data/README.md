@@ -80,14 +80,15 @@ Minimum Data Standards (MDS) of Heritage Places. MDS fields in this HTML circula
     <em>A screenshot of the editable 'mds-template.xlsx'</em>
 </p>
 
+### ERD
+> Entity-relationships diagram
 
-
-The Entity-relationships diagram of HP with fieldnames and CIDOC-CRM entities and relationships ([here](https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/erd/EAMENA-erd.html))
+ERD of HP with fieldnames and CIDOC-CRM entities and relationships [[EAMENA-erd.html](https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/erd/EAMENA-erd.html)]
 
 <p align="center">
   <img alt="img-name" src="https://github.com/eamena-project/eamena-arches-dev/blob/main/www/arches-v7-hp-data-erd.png" width="650">
   <br>
-    <em>A screenshot of the `EAMENA-erd.html` file (detail) showing the 98 fields of the Heritage Places with the MDS fields (colored, thumbs up) using the `EAMENA-erd.ipynb` script</em>
+    <em>A screenshot of the Python `pyvis` ERD HTML file (detail) showing the 98 fields of the Heritage Places with the MDS fields (colored) using the coding from `EAMENA-erd.ipynb` or `EAMENA_spa.ipynb` scripts</em>
 </p>
 
 

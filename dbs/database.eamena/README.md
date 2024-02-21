@@ -11,8 +11,9 @@ flowchart
   subgraph Arches v7
     subgraph EAMENA DB
       ea[(Eamena v4)];
-      idr1[reference data];
-      ea --- idr1;
+      subgraph reference data
+        idr1[ERD];
+      end
     end
     subgraph internationalisation
       id6[ar];
@@ -53,6 +54,7 @@ flowchart
   ea --- internationalisation
   ea <--- install
 
+  click idr1 "https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data/reference_data" _blank
   click id6 "https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/internationalisation" _blank
   click id7 "https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/internationalisation" _blank
   click id8 "https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/install" _blank

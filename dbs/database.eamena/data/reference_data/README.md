@@ -15,7 +15,7 @@ Fieldnames (ex: "Effect type") have UUIDs. To find these correspondances, check 
 
 ### Field descriptions
 
-Thinner cateories (`level3`) colored by groups: [[fields-description.html]((https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/mds/fields-description.html))]
+Thinner cateories (`level3`) colored by groups: [[fields-description.html](https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/mds/fields-description.html)]
 
 <p align="center">
   <img alt="img-name" src="https://github.com/eamena-project/eamena-arches-dev/blob/main/www/arches-v7-hp-data-field-descriptions.png" width="600">

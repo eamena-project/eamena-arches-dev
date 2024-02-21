@@ -13,15 +13,15 @@ flowchart LR
     ea[(Eamena v4)]
     end
     subgraph internationalisation
-      id6[<a href='https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/internationalisation'>ar</a>];
-      id7[<a href='https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/internationalisation'>fr</a>];
+      id6[ar];
+      id7[fr];
     end 
     subgraph install
-      id8[<a href='https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/install'>install<br>upgrade<br>migrate</a>];
+      id8[install<br>upgrade<br>migrate];
     end 
   end
-  id3[<a href='https://github.com/eamena-project/eamena-arches-dev/tree/main/geoserver'>GeoServer</a>] --- ea;
-  id3 --- id4[<a href='https://github.com/eamena-project/eamena-arches-dev/tree/main/gis/qgis'>QGIS</a>];
+  id3[GeoServer] --- ea;
+  id3 --- id4[QGIS];
   subgraph local
     direction TB
     subgraph unformated data
@@ -37,21 +37,29 @@ flowchart LR
   subgraph eamena-functions
     direction LR
     subgraph functions
-      idf1[<a href='https://github.com/eamena-project/eamena-functions/blob/main/mds/mds.py'>mds.py</a>]
+      idf1[mds.py]
     end
     subgraph Jupyter NB
-      idf2[<a href='https://github.com/eamena-project/eamena-arches-dev/blob/main/dev/citations/citation_generator.ipynb'>citation_generator.ipynb</a>] -- read --> idf1
+      idf2[citation_generator.ipynb] -- read --> idf1
     end
   end
   subgraph Google Colab
-    idg1[<a href='https://colab.research.google.com/github/eamena-project/eamena-arches-dev/blob/main/dev/citations/citation_generator.ipynb'>citation_generator.ipynb</a>] -- is mirrored --> idf2
+    idg1[citation_generator.ipynb] -- is mirrored --> idf2
   end
   ea -- <a href='query#url'>GeoJSON URL</a> --> idf1
-  ea --- id5[<a href='https://github.com/eamena-project/eamenaR'>eamenaR</a>];
+  ea --- id5[eamenaR];
   ea --- internationalisation
   ea <--- install
 
-  click ea "https://google.com" _blank
+  click id6 "https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/internationalisation" _blank
+  click id7 "https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/internationalisation" _blank
+  click id8 "https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/install" _blank
+  click id3 "https://github.com/eamena-project/eamena-arches-dev/tree/main/geoserver" _blank
+  click id4 "https://github.com/eamena-project/eamena-arches-dev/tree/main/gis/qgis" _blank
+  click idf1 "https://github.com/eamena-project/eamena-functions/blob/main/mds/mds.py" _blank
+  click idf2 "https://github.com/eamena-project/eamena-arches-dev/blob/main/dev/citations/citation_generator.ipynb" _blank
+  click idg1 "https://colab.research.google.com/github/eamena-project/eamena-arches-dev/blob/main/dev/citations/citation_generator.ipynb" _blank
+  click id5 "https://github.com/eamena-project/eamenaR" _blank
 ```
 
 

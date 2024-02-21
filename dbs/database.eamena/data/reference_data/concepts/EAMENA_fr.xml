@@ -1,0 +1,1496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <skos:Concept rdf:about="https://database.eamena.org/a5743784-6bb1-3da1-9cab-2bf76d2c8300">
+    <skos:prefLabel xml:lang="ar">{"id": "a55e889f-519f-4201-958e-5cdb880d6c43", "value": "\u0645\u0633\u062d \u0639\u0644\u0649 \u0634\u0643\u0644 \u0642\u0637\u0627\u0639\u0627\u062a/\u0645\u0633\u062d \u0634\u0628\u0643\u064a"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="en-us">{"id": "7d5c799e-7392-46e2-83dc-6d5a4d49706f", "value": "Transect/Grid Survey"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "63c2f8dc-dcf5-4a12-bd8b-c5a3876ac65e", "value": "Enqu\u00eate par transect/grille"}</skos:prefLabel>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b">
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/aae10efb-bde2-4858-a7ae-63645a9745c7"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/6af02cae-8c41-4747-a209-895ec6ce6f50"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/0b0290ac-bedf-4e96-b84e-860607ffa94f"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/f7b28d41-c137-3427-8c0d-b31d5663c5f7"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/8b54f6aa-ffbc-3f86-9feb-6f70ed012f1d"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/c7959f06-604b-34db-946a-f703182f30ed"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/f6cad74a-a420-4df0-b727-82641945ab7c"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/1b045840-35b6-3dce-88fc-d741bed9858e"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/7796b081-b894-3dac-a0ac-57624353b184"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/dc984d0a-4651-42d9-80a9-f2e98271f890"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/9a84794c-b7cf-3100-a396-e92f95200192"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/2dbe003e-6034-3cf2-b30e-792fa3fb7b23"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/baf7a7b4-40db-384a-8bf6-f2c02bf2257a"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/e6e723a1-f0cb-3e37-acc8-349339ee8767"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/26e4a394-7888-3c0b-8365-c5dcd859b2c9"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/3a0cc979-3a93-48d5-93ee-f09c649b47ea"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/776ebf71-ba52-4a13-b121-6a5a6d601cbf"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/41070f4e-3ff6-4a0e-a76d-c20fa635806a"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/1d195b75-9839-49d3-ab1c-d73b67edf060"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/153986aa-0f80-4cb6-9f23-2c09bfec529d"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/1a1347be-508c-36de-81b3-9bbe1d73449e"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/8c02db37-aee5-354b-b8b6-fbb5580d0724"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/8415b71b-8825-4d94-ab91-9b7a45e7a3bf"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/943881f2-8292-391f-8c6d-bdf7710da20f"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/b48d0ef6-0e00-43bc-ba0a-6f9e31566252"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/13b02914-ecc6-3917-ab71-ed66cbac38aa"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/84d6db56-e334-38cb-b752-35a58e8c8d3d"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/31be4296-6d96-4160-a307-c3103b9b8d4d"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/f60a194c-7527-3a8d-baa6-73f21308b136"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/7ce1aef6-3d0d-3ff4-a4c8-2f6a73d1104e"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/4c55fe5a-bbbf-4671-9256-539797e33e09"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/c13a44f0-e5b1-3eb6-977f-63f77bf4c3a1"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/6d3f6a41-192c-3809-9666-6d0edd3040ed"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/df6a462b-58b6-3f64-b752-2f97b1be797b"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/9739dd82-f6b2-3014-8b06-2914a65551b6"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/ae5ec25f-481f-3535-bcdf-44ca90904558"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/4f322d9a-70cb-3d7a-b153-fdeb9b0c9441"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/1f19848e-53ee-3a3b-9a4c-58e112b0708c"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/39de8ba2-42f8-3951-acc7-23ea7c892d0c"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/15fe8175-b614-3712-a797-7dfeee254565"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/372f1e4f-45be-3601-9af5-377ef8b8863d"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/9c7d6ca8-4ae7-374b-a67b-78fee538e569"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/64a275f5-bc21-4f85-ac1d-772db055530a"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/ab6a0aa7-0a25-3876-bff4-1959da2f3caa"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/7b77070c-ca61-3048-85f7-90bca68ca582"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/20828586-9b8c-32c4-80ee-91795c6d766f"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/f76684ff-fb99-30f2-80aa-03ac00376b0e"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/fe0f50c1-0d37-34d7-8346-ab3a0ca4c2d0"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/ebfaaab7-dc28-31bb-ac9d-c9afe5f3bc36"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/6675ce95-2e56-4654-9051-84c7680de20e"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/1496b5b9-4baf-45ab-9328-8ae4d61a8b7d"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/16925504-a909-4ee4-a48d-f1712bbcd5c8"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/477baf2a-9609-383b-b722-d72215b626e7"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/1c16339f-d446-324f-8489-1ec4805d463a"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/c8747906-1059-343d-a105-0f38bd4a990a"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/f3fcae83-90d9-34a0-8499-d5b0e1be96ab"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/905f2e7b-67e8-3536-82f9-f814370d9c35"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/35c3c442-3c36-420c-8567-716796d50e50"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/521cd9e1-2e75-40ee-99dd-542961c059ce"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/1f1d7aeb-2d4f-4e75-a8e3-8a07192d7408"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/697c0612-9d8b-3bae-856c-6b399292a376"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/7e2d370a-6594-43e9-9b1e-1f66cca0592d"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/0b31e7ac-774b-442b-8aa8-b22e0dd2711e"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/41488800-6c00-30f2-b93f-785e38ab6251"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/c6a4313e-d9eb-4f66-9a41-07fcb4cc286f"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/d9f193bc-8e48-4e46-8071-7859567967f8"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/8b1e98fa-3026-3416-803f-75595c71f01c"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/8fb67101-7b50-3a1d-a6ca-e144534fac36"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/b3f771a5-5768-322f-a1c0-61b5b87e18c1"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/3b5c9ac7-5615-3de6-9e2d-4cd7ef7460e4"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/e8838000-0049-334e-afab-fcb6e662a1f3"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/e161dc35-ba6f-4613-ad16-0c1c820f2882"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/20670b04-a628-39ba-8f15-9e40e05aa046"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/dd2a74dd-0b00-4238-b13c-1d577f136cb8"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/b6ed542c-352a-48ed-99a1-6a6d5530afe2"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/b4185042-7027-3b54-94a5-ba2e8503cdd2"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/0165cec6-64dd-3265-952a-eaf2ab354b09"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/fe630707-e8a3-344a-ac2e-3dadab959e46"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/bac4305b-46c4-3b3a-b1bc-531233998461"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/61b10b0e-37cc-4caf-a4b0-9c655fae7c5b"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/2bcfba32-be3f-3ae7-bea1-d6a23ac6250b"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/1e2ceaa6-53cb-40f4-8a0c-37b2567338c6"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/a5cb1d29-0db9-3998-9f74-a44aff6db69f"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/2bda4f6a-0f32-35df-914a-3dd17a12f810"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/f2db1be1-fb40-4beb-9ba8-c45ac47222ef"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/17592da0-709a-3b6d-a035-37b882937711"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/7d75859d-1511-3124-8488-b219c57d87a9"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/f81a213d-2a51-3498-8b99-3bbad13e0983"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/10baaf9b-dc31-339a-9b95-da959633210e"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/bde8ff02-6403-40bf-b6dd-bcea36665b48"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/fde51603-cde5-4ef3-a316-666b85d54052"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/a9840b1f-94fd-3276-a760-e19d893f3d1d"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/16cb160e-7b31-4872-b2ca-6305ad311011"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/e0e8ade5-d46f-3fb3-ab5e-e57548a47bfd"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/9bfa3093-8828-3319-b2cc-f9eb609850a1"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/797cf4e8-b219-38f4-8c67-6f5366d34f49"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/26237a90-f5e2-4688-a43b-e8f06ed51b1c"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/a8b61f40-c09a-3ffb-a21a-d90146648221"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/b83c02a5-30ca-3ead-a130-18d8357d7731"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/e9d2551b-6ff6-3622-83e8-f8acbc5dbb10"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/ad935314-f9f6-485b-8090-4e2e598122f7"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/81afb305-9fde-3ecc-8af1-229bb20cc936"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/2d7579fe-875b-4c35-b4d6-34c4bcc004e3"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/8838b800-0d49-3c64-8a8d-6117cc41edf1"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/516d270a-f7be-49a2-a9ec-de1702f97ede"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/38fef049-4688-32fb-86b3-81f6b430a861"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/5d0080d4-6c43-33e5-8891-0cd48a662075"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/cba290e1-5fcc-3ec3-84e9-b627215a17fc"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/5ae8b876-c86a-34d3-bb8b-317ffecd0237"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/3d6bb4b5-2ad6-3e3f-bd8a-083209384118"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/7818b277-4f14-4948-9114-dd591f24d296"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/fa8e00d3-6bb1-4fdb-a28a-b40d0411cec5"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/38271c9f-491e-39e1-9a28-84ac514a86bf"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/26c7ccb5-4cef-4214-9f83-7069313e5c66"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/c70198a5-cbcd-48d2-b511-bd77471fe492"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/de739873-6d72-38bf-9dda-032d3ca58fa1"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/b8427ea9-35b9-363a-af0e-a868d9428597"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/b1a36cec-2f00-42a6-9247-015af2ead513"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/1ee7bfe7-3c45-3afc-aa32-b63676bdac90"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/71bc32c3-c135-3e69-895e-1ac74f7db25d"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/8491bd02-c513-3f5d-90c1-ec414ce3cc1f"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/a368f832-fdeb-427b-abe9-af246140fb9a"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/bf16ebb6-4c54-371d-b92e-1cf3810fd677"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/c25c6305-d791-3271-984b-0a04bb267f7a"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/7ad7226d-75b8-340f-8ff0-be3d22845c71"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/51c4ed4b-b809-4cc6-908e-fd4ca8b634ff"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/61ebf6d2-3a45-39d6-b891-7dc26ebc3b46"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/472b85a1-d2ae-3983-81a0-5c6341a93f5b"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/76a4e50e-bf34-377b-9dab-d1585ff258fd"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/4e78f73d-114f-4dd7-918d-3d43e0d3cb08"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/ac4877d4-14e4-3691-b69a-5f075e48109d"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/4a797e87-5655-40ab-ac90-6b584027a249"/>
+        <skos:hasTopConcept rdf:resource="https://database.eamena.org/c417bd3e-eedd-4741-aea3-d7fadd26e24a"/>
+        <dcterms:identifier xml:lang="en">{"id": "a6e7297e-bfdd-4e91-8df6-15834785f6e3", "value": "https://database.eamena.org/concepts/4a98075d-815f-327b-be0e-518b32f7623b"}</dcterms:identifier>
+        <dcterms:title xml:lang="en-us">{"id": "78a6ed1a-2c95-4859-8b3a-ad65a04f873e", "value": "EAMENA"}</dcterms:title>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+    <dcterms:identifier xml:lang="en">{"id": "a97e0142-3be1-48f6-947e-fb6201d0f809", "value": "https://database.eamena.org/concepts/a5743784-6bb1-3da1-9cab-2bf76d2c8300"}</dcterms:identifier>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/272f56ea-a778-391e-9a2c-1b154a69d75e">
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+    <skos:prefLabel xml:lang="en-us">{"id": "8c7b67e1-3fd1-49bf-a428-98eac7fbbeaf", "value": "Landscaping"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">{"id": "cc0315fa-9f44-4380-b7be-58728915ec5e", "value": "\u062a\u063a\u064a\u064a\u0631/\u062a\u0639\u062f\u064a\u0644 \u0645\u0639\u0627\u0644\u0645 \u0627\u0644\u0645\u0643\u0627\u0646"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "eaed5a9e-1374-495c-a3dd-77ea873f0182", "value": "Am\u00e9nagement paysager"}</skos:prefLabel>
+    <dcterms:identifier xml:lang="en">{"id": "078da3a7-d5ee-4854-be70-7d56032caa79", "value": "https://database.eamena.org/concepts/272f56ea-a778-391e-9a2c-1b154a69d75e"}</dcterms:identifier>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/063d4baf-9a82-3af5-876f-da3b5a2ba7e2">
+    <dcterms:identifier xml:lang="en">{"id": "ad130540-cc3b-464d-9d9d-f5f785351a05", "value": "https://database.eamena.org/concepts/063d4baf-9a82-3af5-876f-da3b5a2ba7e2"}</dcterms:identifier>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+    <skos:prefLabel xml:lang="en-us">{"id": "7bbdbd5a-8ef1-4691-a45e-38c99a701ded", "value": "Creative Commons (Attribution-NonCommercial) (CC BY-NC)"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "4866243b-516f-4cc7-aefa-d714348af7c9", "value": "Creative Commons (Paternit\u00e9 \u2013 Pas d'Utilisation Commerciale) (CC BY-NC)"}</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/b9605ab4-aba0-4030-819a-0ca38e75c87e">
+    <skos:prefLabel xml:lang="en-us">{"id": "bee665fb-d342-4f63-ba90-de36f6ad9adb", "value": "Epipalaeolithic (Levant/Mesopotamia)"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">{"id": "c59b8da1-473f-44fe-a829-431461281692", "value": "\u0627\u0644\u0639\u0635\u0631 \u0627\u0644\u062d\u062c\u0631\u064a \u0627\u0644\u0642\u062f\u064a\u0645 \u0627\u0644\u0623\u0648\u0633\u0637 (\u0627\u0644\u0634\u0627\u0645/ \u0628\u0644\u0627\u062f \u0627\u0644\u0631\u0627\u0641\u062f\u064a\u0646)"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "96c70666-9ccd-4707-9c9b-71aa2730094d", "value": "\u00c9pipal\u00e9olithique (Levant/M\u00e9sopotamie)"}</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+    <skos:scopeNote xml:lang="en-us">{"id": "75aae573-d402-4c42-8e87-38de5e8ad01b", "value": "-18000\t-10000"}</skos:scopeNote>
+    <dcterms:identifier xml:lang="en">{"id": "aa9ca873-5a3d-4356-a57c-1afffb3473f7", "value": "https://database.eamena.org/concepts/b9605ab4-aba0-4030-819a-0ca38e75c87e"}</dcterms:identifier>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/98d2e66b-ef4b-46c0-a7e6-3f37327cd61a">
+    <skos:prefLabel xml:lang="ar">{"id": "5eef4413-4c6b-4482-972c-e998f11cbd9c", "value": "\u0643\u0627\u0631\u0633\u062a\u064a\u0629 (\u0623\u062d\u062c\u0627\u0631 \u062c\u064a\u0631\u064a\u0629 \u0630\u0627\u062a \u0645\u062c\u0627\u0631 \u062c\u0648\u0641\u064a\u0629)"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="en-us">{"id": "b3444a08-2a39-40d2-a30c-bab42b591cd5", "value": "Karst"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "67491f78-f9d7-4405-bdff-ba0f9c467dfb", "value": "Karst"}</skos:prefLabel>
+    <dcterms:identifier xml:lang="en">{"id": "04caec25-ed00-4367-ac21-47515ba21240", "value": "https://database.eamena.org/concepts/98d2e66b-ef4b-46c0-a7e6-3f37327cd61a"}</dcterms:identifier>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/0a8fc794-b83e-4476-b8ca-77948d32429b">
+    <dcterms:identifier xml:lang="en">{"id": "4c426059-1631-457f-8d88-a7c2002aa6e5", "value": "https://database.eamena.org/concepts/0a8fc794-b83e-4476-b8ca-77948d32429b"}</dcterms:identifier>
+    <skos:prefLabel xml:lang="en-us">{"id": "2ab5ca93-dffc-49e9-ab91-18a906cfe36f", "value": "Coastal Cliff"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "a469f6a4-b71b-43e4-927e-74ffd3f62341", "value": "Falaise c\u00f4ti\u00e8re"}</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/61bde4a1-2489-36d7-befc-79673c03f50d">
+    <skos:prefLabel xml:lang="ar">{"id": "2de5ba88-7743-4098-bc9e-09e29c0f1918", "value": "\u062a\u0642\u0631\u064a\u0631 \u063a\u064a\u0631 \u0645\u0646\u0634\u0648\u0631"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="en-us">{"id": "7713f94f-3ef1-4fd3-ac53-b016c5d46839", "value": "Unpublished Report"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "c3f71924-060b-4364-b22e-13ddc49c3e87", "value": "Rapport non publi\u00e9"}</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+    <dcterms:identifier xml:lang="en">{"id": "1273c68c-a853-4b1f-bae4-eba324da6de0", "value": "https://database.eamena.org/concepts/61bde4a1-2489-36d7-befc-79673c03f50d"}</dcterms:identifier>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/7f42f5a2-7e6d-37f6-b0ad-fa7062890537">
+    <dcterms:identifier xml:lang="en">{"id": "b2ed7af8-0c23-4773-86e2-db41885df4ab", "value": "https://database.eamena.org/concepts/7f42f5a2-7e6d-37f6-b0ad-fa7062890537"}</dcterms:identifier>
+    <skos:prefLabel xml:lang="en-us">{"id": "523f78a2-272d-4341-9235-674e67051906", "value": "Colonnaded Street"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "221d7560-5e26-4257-b15f-7a01c7f1f2d2", "value": "Rue \u00e0 colonnades"}</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/518b257a-fd38-31f8-beae-efaf38412acc">
+    <skos:prefLabel xml:lang="ar">{"id": "715a3eac-514e-4100-ab11-0b61e6ec4817", "value": "\u0645\u062f\u0648\u0646\u0629 \u0623\u0644\u0643\u062a\u0631\u0648\u0646\u064a\u0629"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="en-us">{"id": "b7584657-9302-4af1-8934-d62a5bcb8f94", "value": "Blog"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "9dff7ba5-f3ef-4ea2-9b50-43765c1cddd5", "value": "Blog"}</skos:prefLabel>
+    <dcterms:identifier xml:lang="en">{"id": "ad2447ad-25f9-4afa-800c-a399d1e49b6a", "value": "https://database.eamena.org/concepts/518b257a-fd38-31f8-beae-efaf38412acc"}</dcterms:identifier>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/ddb523c9-ac5c-36f9-9b64-096e5c86f2ee">
+    <skos:prefLabel xml:lang="en-us">{"id": "1577221f-558e-45b2-ae44-8d01487dfb90", "value": "Differential GPS (DGPS)"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">{"id": "06e46f25-67b0-4992-a320-160c9557a84b", "value": " \u0646\u0638\u0645 \u0645\u0639\u0644\u0648\u0645\u0627\u062a \u062c\u063a\u0631\u0627\u0641\u064a\u0629 GPS \u062a\u0641\u0627\u0636\u0644\u064a (DGPS)"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "9a0a9d4f-ae36-4c2b-9679-09b51b9b4c4a", "value": "GPS diff\u00e9rentiel (DGPS)"}</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+    <skos:scopeNote xml:lang="en-us">{"id": "f05d1f7e-2c56-4d65-b3eb-7b1409efffd2", "value": "Differential GPS or DGPS provide improved location accuracy down to as little as 10cm locational error. Each DGPS uses a network of fixed ground-based reference stations to broadcast the difference between the positions indicated by the GPS satellite system and known fixed positions."}</skos:scopeNote>
+    <dcterms:identifier xml:lang="en">{"id": "a0e8815b-edec-4e70-9c49-a4993a13a622", "value": "https://database.eamena.org/concepts/ddb523c9-ac5c-36f9-9b64-096e5c86f2ee"}</dcterms:identifier>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/8772130f-6605-4a3a-8737-1348fe582c66">
+    <skos:prefLabel xml:lang="ar">{"id": "8099b47d-785d-4620-acbb-d9061f3459bb", "value": "\u0645\u0628\u0646\u0649/\u0647\u064a\u0643\u0644 \u0631\u0626\u064a\u0633"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="en-us">{"id": "0199254e-477e-4330-b844-89f4b7aca66a", "value": "Structure / Main Body"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "912a215e-3f39-453d-95af-65cf883dd119", "value": "Structure / Corps principal"}</skos:prefLabel>
+    <dcterms:identifier xml:lang="en">{"id": "46d40e9f-bc38-4337-8440-b2efe7367c83", "value": "https://database.eamena.org/concepts/8772130f-6605-4a3a-8737-1348fe582c66"}</dcterms:identifier>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/d95b0772-75cd-4878-8363-0aed370a10d3">
+    <skos:prefLabel xml:lang="en-us">{"id": "96493e33-ef3b-43ec-913d-358a2c61c26b", "value": "Bronze Age (Southern Iran)"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">{"id": "f1194b87-83c2-46e8-80b9-b6d2fda7d583", "value": "\u0627\u0644\u0639\u0635\u0631 \u0627\u0644\u0628\u0631\u0648\u0646\u0632\u064a (\u062c\u0646\u0648\u0628 \u0625\u064a\u0631\u0627\u0646)"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "6146b061-d58e-493e-a45d-eab9c5613e50", "value": "\u00c2ge du bronze (sud de l'Iran)"}</skos:prefLabel>
+    <skos:scopeNote xml:lang="en-us">{"id": "00933200-e9a3-4778-a889-922a691cc938", "value": "-2900\t-1000"}</skos:scopeNote>
+    <dcterms:identifier xml:lang="en">{"id": "ff5885f8-f34d-4320-92bb-03200e27348e", "value": "https://database.eamena.org/concepts/d95b0772-75cd-4878-8363-0aed370a10d3"}</dcterms:identifier>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/f06c6d0e-3f04-4045-9b5f-02931e7383b9">
+    <dcterms:identifier xml:lang="en">{"id": "010e3786-5985-4113-bb04-d6e553c79c7a", "value": "https://database.eamena.org/concepts/f06c6d0e-3f04-4045-9b5f-02931e7383b9"}</dcterms:identifier>
+    <dcterms:identifier xml:lang="en">{"id": "9dfd2426-c3d7-4b17-b3f7-2b3a7b15138a", "value": "https://database.eamena.org/concepts/f06c6d0e-3f04-4045-9b5f-02931e7383b9"}</dcterms:identifier>
+    <dcterms:identifier xml:lang="en">{"id": "092b249c-2fb7-498b-b1a6-3ea961734029", "value": "https://database.eamena.org/concepts/f06c6d0e-3f04-4045-9b5f-02931e7383b9"}</dcterms:identifier>
+    <dcterms:identifier xml:lang="en">{"id": "266abede-3a8a-4082-bf59-bcd28f2e3a53", "value": "https://database.eamena.org/concepts/f06c6d0e-3f04-4045-9b5f-02931e7383b9"}</dcterms:identifier>
+    <dcterms:identifier xml:lang="en">{"id": "09f43631-d87c-484d-b3c7-a21dd8e528d1", "value": "https://database.eamena.org/concepts/f06c6d0e-3f04-4045-9b5f-02931e7383b9"}</dcterms:identifier>
+    <dcterms:identifier xml:lang="en">{"id": "71238811-94cd-4850-af28-3ac4bffd102e", "value": "https://database.eamena.org/concepts/f06c6d0e-3f04-4045-9b5f-02931e7383b9"}</dcterms:identifier>
+    <dcterms:identifier xml:lang="en">{"id": "6ba2dc0a-0bfc-45b1-b347-092c74aac9fc", "value": "https://database.eamena.org/concepts/f06c6d0e-3f04-4045-9b5f-02931e7383b9"}</dcterms:identifier>
+    <skos:prefLabel xml:lang="en">{"id": "4b80d328-d474-4609-b0f3-2a423776e86b", "value": "Salvage Recording"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "93d87bc3-4f4d-4aaa-a1a8-2bfc7c9e21b3", "value": "Enregistrement de r\u00e9cup\u00e9ration"}</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/0bd866c2-949f-36b8-9018-2b1a179fbc0a">
+    <dcterms:identifier xml:lang="en">{"id": "45c062f5-5081-4968-bfea-990f16b6b638", "value": "https://database.eamena.org/concepts/0bd866c2-949f-36b8-9018-2b1a179fbc0a"}</dcterms:identifier>
+    <skos:prefLabel xml:lang="en-us">{"id": "a83057ad-2e62-45bb-9cd3-67fa24277b46", "value": "Creative Commons (Attribution-NoDerivs) (CC BY-ND)"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "cfb23377-9ce9-4a29-b75e-fe651bc0c26d", "value": "Creative Commons (Attribution-NoDerivs) (CC BY-ND)"}</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/88f7858c-8c10-3a81-87a3-1aba498f7e8f">
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+    <dcterms:identifier xml:lang="en">{"id": "b468a151-f4b0-4a88-b02e-f7820a1f4f1f", "value": "https://database.eamena.org/concepts/88f7858c-8c10-3a81-87a3-1aba498f7e8f"}</dcterms:identifier>
+    <skos:prefLabel xml:lang="ar">{"id": "9c114a14-0a78-4ab6-834f-aa437c661691", "value": "\u0645\u062e\u0637\u0637 (\u0623\u0641\u0642\u064a)"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="en-us">{"id": "975b0bd8-9aa8-455a-b78c-468b6392528e", "value": "Plan"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "149422fd-210b-4108-948f-ed7b5500bc7d", "value": "Plan"}</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/bea17415-14f7-4945-bfb9-d4e6a0f773d9">
+    <skos:prefLabel xml:lang="en-us">{"id": "760c1403-1f1e-496d-8d53-45af9722099f", "value": "Iron Age (Maghreb)"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">{"id": "038a2b25-947f-43fe-adfc-93a70e13e780", "value": "\u0627\u0644\u0639\u0635\u0631 \u0627\u0644\u062d\u062f\u064a\u062f\u064a (\u0627\u0644\u0645\u063a\u0631\u0628) "}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "8ac1b410-a6cd-48b7-ae7a-b2ef41e95120", "value": "\u00c2ge du Fer (Maghreb)"}</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+    <dcterms:identifier xml:lang="en">{"id": "c50a6aee-b4e1-401b-8535-56ab68d3d6fb", "value": "https://database.eamena.org/concepts/bea17415-14f7-4945-bfb9-d4e6a0f773d9"}</dcterms:identifier>
+    <skos:scopeNote xml:lang="en-us">{"id": "2f678967-ae47-4819-a0bc-13a8e10a496d", "value": "-1000\t-500"}</skos:scopeNote>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/4550d0f3-24c2-4ada-9fbe-52e5974db973">
+    <dcterms:identifier xml:lang="en">{"id": "929b85da-e031-4f0b-9c74-9cdcf91261f0", "value": "https://database.eamena.org/concepts/4550d0f3-24c2-4ada-9fbe-52e5974db973"}</dcterms:identifier>
+    <skos:scopeNote xml:lang="en-us">{"id": "19ed298a-437c-48bb-88a9-054dafdf7b1a", "value": "-3200\t-1500"}</skos:scopeNote>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+    <skos:prefLabel xml:lang="en-us">{"id": "711006ce-8d4d-4568-a5a7-470000dbaa7d", "value": "Bronze Age (Arabia)"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">{"id": "e9d51984-35ae-4ea7-8394-0a3c9b8c1c2f", "value": "\u0627\u0644\u0639\u0635\u0631 \u0627\u0644\u0628\u0631\u0648\u0646\u0632\u064a (\u0627\u0644\u062c\u0632\u064a\u0631\u0629 \u0627\u0644\u0639\u0631\u0628\u064a\u0629)"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "d19cbd28-1ad2-4177-9189-d19c45dbbd61", "value": "\u00c2ge du bronze (Arabie)"}</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/78027a5c-17dc-3b26-82e0-681a41e2360a">
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+    <skos:prefLabel xml:lang="ar">{"id": "8f9bd63b-3cee-4f90-91fe-c70b14924ae0", "value": "\u062a\u0642\u0627\u0633\u0645 \u0645\u062c\u0645\u0648\u0639\u0627\u062a \u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="en-us">{"id": "89c77b23-5a34-4419-8182-93fe77535761", "value": "Shared Dataset"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "f0cb5f1c-3220-445b-bc23-53c1646983c7", "value": "Ensemble de donn\u00e9es partag\u00e9"}</skos:prefLabel>
+    <dcterms:identifier xml:lang="en">{"id": "9f7f5f03-4cdc-45aa-bee9-af5dc2707b0d", "value": "https://database.eamena.org/concepts/78027a5c-17dc-3b26-82e0-681a41e2360a"}</dcterms:identifier>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/0917b020-d5dc-3d10-8c0f-4b15e4ed6700">
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+    <skos:prefLabel xml:lang="en-us">{"id": "050a4c3c-5d2b-4bb3-8660-9474c6b7a0b9", "value": "Theodolite/Dumpy Level"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">{"id": "c3ea4bed-ca04-4b28-8407-8db98af5a4ba", "value": "\u062c\u0647\u0627\u0632 \u062b\u064a\u0648\u062f\u0648\u0644\u064a\u062a \u0639\u0627\u062f\u064a/ \u062c\u0647\u0627\u0632 \u0642\u064a\u0627\u0633 \u0627\u0644\u0627\u0631\u062a\u0641\u0627\u0639\u0627\u062a"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "bef68503-5387-4527-85ea-941f411e3b5c", "value": "Th\u00e9odolite/Niveau Dumpy"}</skos:prefLabel>
+    <skos:scopeNote xml:lang="en-us">{"id": "08d79ce7-94ce-4941-bdc4-0aeb8134e59c", "value": "A non-electronic optical instrument for surveying and measurement of levels, distances, and slopes"}</skos:scopeNote>
+    <dcterms:identifier xml:lang="en">{"id": "85bb833f-07b2-47b9-86d4-c45cb0e0f8e0", "value": "https://database.eamena.org/concepts/0917b020-d5dc-3d10-8c0f-4b15e4ed6700"}</dcterms:identifier>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/d3a89d59-ea74-469a-b8ff-0d4417e827a0">
+    <dcterms:identifier xml:lang="en">{"id": "ace6df4b-6270-4f9c-87b7-9e7f9e3a6786", "value": "https://database.eamena.org/concepts/d3a89d59-ea74-469a-b8ff-0d4417e827a0"}</dcterms:identifier>
+    <dcterms:identifier xml:lang="en">{"id": "639b5149-c15c-45c6-b2bf-b666c7508192", "value": "https://database.eamena.org/concepts/d3a89d59-ea74-469a-b8ff-0d4417e827a0"}</dcterms:identifier>
+    <dcterms:identifier xml:lang="en">{"id": "5bd45929-3b68-4e48-a996-fa9c58d35ee6", "value": "https://database.eamena.org/concepts/d3a89d59-ea74-469a-b8ff-0d4417e827a0"}</dcterms:identifier>
+    <dcterms:identifier xml:lang="en">{"id": "ae6935fd-15ef-4634-b8dd-ec2c1c71bdeb", "value": "https://database.eamena.org/concepts/d3a89d59-ea74-469a-b8ff-0d4417e827a0"}</dcterms:identifier>
+    <dcterms:identifier xml:lang="en">{"id": "cfcdd057-55a9-4da3-90e3-1a131274e1c7", "value": "https://database.eamena.org/concepts/d3a89d59-ea74-469a-b8ff-0d4417e827a0"}</dcterms:identifier>
+    <dcterms:identifier xml:lang="en">{"id": "757ee91b-57e8-463d-8a08-103f8610f955", "value": "https://database.eamena.org/concepts/d3a89d59-ea74-469a-b8ff-0d4417e827a0"}</dcterms:identifier>
+    <dcterms:identifier xml:lang="en">{"id": "8d61b72d-264d-4b2b-8eec-1ceff400fc4f", "value": "https://database.eamena.org/concepts/d3a89d59-ea74-469a-b8ff-0d4417e827a0"}</dcterms:identifier>
+    <skos:prefLabel xml:lang="en">{"id": "606744b2-6dbd-49e4-95fa-f7bf51a1bddb", "value": "Reburial"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "cf253cb3-4ae6-4001-bd6e-f5503f13c9b4", "value": "R\u00e9inhumation"}</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/9ebd2f87-06bc-3db1-a92a-f3f96244707f">
+    <dcterms:identifier xml:lang="en">{"id": "a53582df-8172-433c-b946-2586f0e3e661", "value": "https://database.eamena.org/concepts/9ebd2f87-06bc-3db1-a92a-f3f96244707f"}</dcterms:identifier>
+    <skos:prefLabel xml:lang="en-us">{"id": "4623c45c-448a-48d3-ae31-307636f080f2", "value": "4150 BC"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "0d20c2ea-d560-4b57-97a1-c6c0e83f2778", "value": "4150 avant JC"}</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/5ca2f8a1-f58c-470e-9d5d-ee938561ebb5">
+    <skos:scopeNote xml:lang="en-us">{"id": "e84032cb-5869-499c-a62e-369213f0d0d7", "value": "-2900\t-2350"}</skos:scopeNote>
+    <skos:narrower rdf:resource="https://database.eamena.org/d09c53a2-0a37-4dd4-89ba-7272cef189cb"/>
+    <skos:narrower rdf:resource="https://database.eamena.org/10a52aee-295c-4f8a-9b6a-e8df07ac203c"/>
+    <skos:narrower rdf:resource="https://database.eamena.org/44bb8597-a4dd-4535-b468-9a01278df8ad"/>
+    <skos:prefLabel xml:lang="ar">{"id": "7ef11834-5644-4ad3-a0bb-5383236962ab", "value": "\u0627\u0644\u0639\u0635\u0631 \u0627\u0644\u0628\u0631\u0648\u0646\u0632\u064a\u060c \u0627\u0644\u0623\u0633\u0631\u0627\u062a \u0627\u0644\u0645\u0628\u0643\u0631\u0629 (\u062c\u0646\u0648\u0628 \u0628\u0644\u0627\u062f \u0627\u0644\u0631\u0627\u0641\u062f\u064a\u0646)"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="en-us">{"id": "ac028401-1e1e-4222-bcb6-f3e848f21b29", "value": "Bronze Age, Early Dynastic (Southern Mesopotamia)"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "b1d0d9e1-d137-46ff-86d5-844558a526b9", "value": "\u00c2ge du bronze, d\u00e9but dynastique (M\u00e9sopotamie du Sud)"}</skos:prefLabel>
+    <dcterms:identifier xml:lang="en">{"id": "99f1fbb8-dab8-4ed7-8145-c1cdc04c7fba", "value": "https://database.eamena.org/concepts/5ca2f8a1-f58c-470e-9d5d-ee938561ebb5"}</dcterms:identifier>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/06b60e38-bbf6-49d0-b371-cb2ff094d3ec">
+    <skos:scopeNote xml:lang="en-us">{"id": "59b5e6fa-a79e-4bfb-8b48-ec51d0355263", "value": "-160\t-50"}</skos:scopeNote>
+    <dcterms:identifier xml:lang="en">{"id": "e51ed822-66af-4d6c-ba71-36b6a1cbee9d", "value": "https://database.eamena.org/concepts/06b60e38-bbf6-49d0-b371-cb2ff094d3ec"}</dcterms:identifier>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+    <skos:prefLabel xml:lang="en-us">{"id": "93f757c5-53b5-49bd-90d0-75c3a949c04b", "value": "Hellenistic/Seleucid, Late (Levant/Mesopotamia)"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">{"id": "073759fa-0dbe-40ca-ba59-81b93a20fcec", "value": "\u0647\u0644\u0646\u0633\u062a\u064a/ \u0633\u064a\u0644\u0648\u0642\u064a\u060c \u0645\u062a\u0623\u062e\u0631 (\u0627\u0644\u0634\u0627\u0645/ \u0628\u0644\u0627\u062f \u0627\u0644\u0631\u0627\u0641\u062f\u064a\u0646)"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "41cfe55f-2795-4205-ac98-e3348ced9efe", "value": "Hell\u00e9nistique/S\u00e9l\u00e9ucide, Tardif (Levant/M\u00e9sopotamie)"}</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/1c849b1e-ed87-4937-87ec-026ebfe7ce44">
+    <skos:prefLabel xml:lang="ar">{"id": "ae1a233c-6f75-4f76-8d96-4682840eaf5c", "value": "\u0628\u0631\u062c/\u0645\u0626\u0630\u0646\u0629"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="en-us">{"id": "ec089b6c-a12d-4b71-94ce-6568e4632108", "value": "Tower / Minaret"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "aae957dc-1be2-4f01-a4b4-b6a7dbd49175", "value": "Tour / Minaret"}</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+    <dcterms:identifier xml:lang="en">{"id": "1748be56-b193-4ea9-bfbd-1f49af5410b0", "value": "https://database.eamena.org/concepts/1c849b1e-ed87-4937-87ec-026ebfe7ce44"}</dcterms:identifier>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/c989a7b9-559e-4923-8c67-f366fe44524f">
+    <skos:scopeNote xml:lang="en-us">{"id": "c9b152dd-2279-4e0e-bd21-40c77306f383", "value": "-14000000\t-18000"}</skos:scopeNote>
+    <skos:prefLabel xml:lang="ar">{"id": "945616d2-b776-4481-a80b-2859bb0be1d7", "value": "\u0627\u0644\u0639\u0635\u0631 \u0627\u0644\u062d\u062c\u0631\u064a \u0627\u0644\u0642\u062f\u064a\u0645 (\u0627\u0644\u0634\u0627\u0645/ \u0628\u0644\u0627\u062f \u0627\u0644\u0631\u0627\u0641\u062f\u064a\u0646/ \u0627\u0644\u062c\u0632\u064a\u0631\u0629 \u0627\u0644\u0639\u0631\u0628\u064a\u0629)"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="en-us">{"id": "083604cf-b76a-4b20-ac3f-af72d05d73ee", "value": "Palaeolithic (Levant/Mesopotamia/Arabia)"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "57bb1e23-ccbd-403c-9faa-c43b92d8b2bc", "value": "Pal\u00e9olithique (Levant/M\u00e9sopotamie/Arabie)"}</skos:prefLabel>
+    <dcterms:identifier xml:lang="en">{"id": "010a3d3a-9303-4c27-8e1c-12dacd3b1e4c", "value": "https://database.eamena.org/concepts/c989a7b9-559e-4923-8c67-f366fe44524f"}</dcterms:identifier>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/95ac6d80-2f7e-4f94-9ec4-f7aa9783d2e9">
+    <skos:scopeNote xml:lang="en-us">{"id": "8e193d49-f6e7-4bf6-9f2f-c2aad02b88df", "value": "-2400\t-2150"}</skos:scopeNote>
+    <skos:prefLabel xml:lang="en-us">{"id": "de6f3028-0e9b-4609-87fe-08a2b8d70a7f", "value": "Bronze Age, Akkadian (Southern Mesopotamia)"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">{"id": "50a86ccd-2c15-419b-9225-8838465a4d91", "value": "\u0627\u0644\u0639\u0635\u0631 \u0627\u0644\u0628\u0631\u0648\u0646\u0632\u064a\u060c \u0623\u0643\u062f\u064a\u0629 (\u062c\u0646\u0648\u0628 \u0628\u0644\u0627\u062f \u0627\u0644\u0631\u0627\u0641\u062f\u064a\u0646)"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "700d7b15-bcc6-4c3e-9d08-8b0bafb1c2c2", "value": "\u00c2ge du bronze, akkadien (M\u00e9sopotamie m\u00e9ridionale)"}</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+    <dcterms:identifier xml:lang="en">{"id": "ded92cef-5e5b-4015-89b4-4fe332e490e7", "value": "https://database.eamena.org/concepts/95ac6d80-2f7e-4f94-9ec4-f7aa9783d2e9"}</dcterms:identifier>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/8be1c44b-ff10-332c-aec6-f979797cdcb0">
+    <dcterms:identifier xml:lang="en">{"id": "fe1ebcbb-6d2b-4196-9d7c-834e6a54e830", "value": "https://database.eamena.org/concepts/8be1c44b-ff10-332c-aec6-f979797cdcb0"}</dcterms:identifier>
+    <skos:prefLabel xml:lang="ar">{"id": "4db85759-2814-47e3-a3b3-c25c212fb119", "value": "\u0646\u0635 \u0642\u062f\u064a\u0645"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="en-us">{"id": "ef97bde8-7b05-4e83-b841-d6c01c21acf0", "value": "Ancient Text"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "9adad397-1c5e-4a84-9298-8efb7183fc4d", "value": "Texte ancien"}</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/5fe15514-45b2-4036-8914-fa8491230d65">
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://database.eamena.org/1a00dd34-c582-4c2d-bc33-4482d0be0336">
+        <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+        <skos:scopeNote xml:lang="en-us">{"id": "e8c2d4ba-9930-40d0-863a-2933f91d72fe", "value": "-1600\t-1400"}</skos:scopeNote>
+        <skos:prefLabel xml:lang="ar">{"id": "c4016409-758e-4c96-a070-ed838dc3abfb", "value": "\u0627\u0644\u0639\u0635\u0631 \u0627\u0644\u0628\u0631\u0648\u0646\u0632\u064a \u0627\u0644\u0645\u062a\u0623\u062e\u0631 1 (\u0627\u0644\u0634\u0627\u0645)"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="en-us">{"id": "f202ef07-c22d-4222-9efc-169db8bbac0b", "value": "Late Bronze Age 1 (Levant)"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">{"id": "ec54387f-b479-4570-b22c-b45c8f6718dc", "value": "\u00c2ge du Bronze final 1 (Levant)"}</skos:prefLabel>
+        <dcterms:identifier xml:lang="en">{"id": "e20fae1e-7abf-4f37-901e-8cb858a79682", "value": "https://database.eamena.org/concepts/1a00dd34-c582-4c2d-bc33-4482d0be0336"}</dcterms:identifier>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower rdf:resource="https://database.eamena.org/cb1f7c9e-4dc5-4851-a862-1556e5c2aa44"/>
+    <dcterms:identifier xml:lang="en">{"id": "dfa5d2b8-3cb0-42c7-8570-4fbac83973d8", "value": "https://database.eamena.org/concepts/5fe15514-45b2-4036-8914-fa8491230d65"}</dcterms:identifier>
+    <skos:scopeNote xml:lang="en-us">{"id": "eae40020-303c-4cf5-8c07-381ad9f536bd", "value": "-1600\t-1200"}</skos:scopeNote>
+    <skos:prefLabel xml:lang="ar">{"id": "3f1f86b5-ff55-4ed8-847d-2490eb92f8fe", "value": "\u0627\u0644\u0639\u0635\u0631 \u0627\u0644\u0628\u0631\u0648\u0646\u0632\u064a \u0627\u0644\u0645\u062a\u0623\u062e\u0631 (\u0627\u0644\u0634\u0627\u0645)"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="en-us">{"id": "a1ec9962-a6ec-4b4b-9e8c-7bbea838ca0b", "value": "Late Bronze Age (Levant)"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "3794f608-660f-4e9c-b67b-a469b25ef241", "value": "\u00c2ge du Bronze final (Levant)"}</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/622da012-33f3-4ab2-a28b-5150e534f1e5">
+    <skos:prefLabel xml:lang="en-us">{"id": "d3890c40-4505-426a-9b5a-56770a59d68f", "value": "Steamship"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "5c0124bc-9dc4-47c2-b514-e59e59332357", "value": "Navire \u00e0 vapeur"}</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+    <dcterms:identifier xml:lang="en">{"id": "70d44b59-304d-4f4a-9836-5b0f63bbf4f8", "value": "https://database.eamena.org/concepts/622da012-33f3-4ab2-a28b-5150e534f1e5"}</dcterms:identifier>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/e2257468-dac2-405c-b0f3-b6c1d1cfa5b8">
+    <skos:prefLabel xml:lang="en-us">{"id": "d062c7c0-9db5-4452-b5ad-d65fec3e4aa7", "value": "Islamic, Late (Post-Abbasid) (Iraq)"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">{"id": "5a338f23-46e0-4989-9d81-acb320a000c5", "value": "\u0625\u0633\u0644\u0627\u0645\u064a\u060c \u0645\u062a\u0623\u062e\u0631 (\u0628\u0639\u062f \u0627\u0644\u0639\u0628\u0627\u0633\u064a) (\u0627\u0644\u0639\u0631\u0627\u0642)"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "21a3ecde-25c4-45bd-85f7-87b650181084", "value": "Islamique, tardif (post-abbasside) (Irak)"}</skos:prefLabel>
+    <dcterms:identifier xml:lang="en">{"id": "f8b7a395-cef9-4c35-ac94-1423049aca65", "value": "https://database.eamena.org/concepts/e2257468-dac2-405c-b0f3-b6c1d1cfa5b8"}</dcterms:identifier>
+    <skos:scopeNote xml:lang="en-us">{"id": "35bf5d96-9bcd-433e-bb48-a1b431b96544", "value": "1250\t1500"}</skos:scopeNote>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/59f266a3-b1b4-473f-80b6-fdf90d56e5f3">
+    <skos:prefLabel xml:lang="ar">{"id": "06125897-adbe-4c92-92c8-34719ab6beb2", "value": "\u0627\u0644\u0639\u0635\u0631 \u0627\u0644\u062d\u062c\u0631\u064a \u0627\u0644\u062d\u062f\u064a\u062b\u060c \u0645\u0628\u0643\u0631/ \u0628\u062f\u0648\u0646 \u062e\u0632\u0641/ \u0642\u0628\u0644 \u0627\u0644\u0641\u062e\u0627\u0631 (\u0648\u0633\u0637 \u0632\u0627\u063a\u0631\u0648\u0633/ \u062e\u0648\u0632\u0633\u062a\u0627\u0646\u060c \u0625\u064a\u0631\u0627\u0646)"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="en-us">{"id": "ccbf7f28-9bc6-4ab3-b88b-83b75609671c", "value": "Neolithic, Early/Aceramic/Pre-pottery (Central Zagros, Iran)"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "bee4c6da-e94c-43c5-8e1a-61f32e7e617c", "value": "N\u00e9olithique, ancien/ac\u00e9ramique/pr\u00e9-poterie (Zagros central, Iran)"}</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+    <skos:scopeNote xml:lang="en-us">{"id": "d10f7ce9-296a-4613-9ea6-a6ae9f2f5bea", "value": "-8500\t-7000"}</skos:scopeNote>
+    <dcterms:identifier xml:lang="en">{"id": "5335bcc6-d0be-4b20-a429-77f64897306a", "value": "https://database.eamena.org/concepts/59f266a3-b1b4-473f-80b6-fdf90d56e5f3"}</dcterms:identifier>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/cfa0ccfb-5fc3-4dbb-be38-9eb475bbbe1b">
+    <dcterms:identifier xml:lang="en">{"id": "e14c9e06-8f70-4e02-88b5-b0b589c39b19", "value": "https://database.eamena.org/concepts/cfa0ccfb-5fc3-4dbb-be38-9eb475bbbe1b"}</dcterms:identifier>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+    <skos:prefLabel xml:lang="en-us">{"id": "81fe78ae-f29b-4c51-9d21-12b8e0f07412", "value": "Dhow"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "ed24bead-a7a1-4b0b-b4d0-fef53e9ecd79", "value": "Boutre"}</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/1b5f0c7e-3d27-4f25-8a89-aabc9fb8c946">
+    <dcterms:identifier xml:lang="en">{"id": "ecb9035d-37f2-44c3-9477-7babaf17b50d", "value": "https://database.eamena.org/concepts/1b5f0c7e-3d27-4f25-8a89-aabc9fb8c946"}</dcterms:identifier>
+    <dcterms:identifier xml:lang="en">{"id": "40b7f263-97e6-4469-b314-c61b3043ea6b", "value": "https://database.eamena.org/concepts/1b5f0c7e-3d27-4f25-8a89-aabc9fb8c946"}</dcterms:identifier>
+    <dcterms:identifier xml:lang="en">{"id": "f0743b9f-0a64-4def-8b07-379aa1644148", "value": "https://database.eamena.org/concepts/1b5f0c7e-3d27-4f25-8a89-aabc9fb8c946"}</dcterms:identifier>
+    <dcterms:identifier xml:lang="en">{"id": "8938d40b-e09b-44d4-8904-758ca069521f", "value": "https://database.eamena.org/concepts/1b5f0c7e-3d27-4f25-8a89-aabc9fb8c946"}</dcterms:identifier>
+    <dcterms:identifier xml:lang="en">{"id": "1ac324d8-c913-445a-b3ef-c98ee18c6127", "value": "https://database.eamena.org/concepts/1b5f0c7e-3d27-4f25-8a89-aabc9fb8c946"}</dcterms:identifier>
+    <dcterms:identifier xml:lang="en">{"id": "155b0bbc-6a79-474f-89a5-2311a323aa5d", "value": "https://database.eamena.org/concepts/1b5f0c7e-3d27-4f25-8a89-aabc9fb8c946"}</dcterms:identifier>
+    <dcterms:identifier xml:lang="en">{"id": "7a08569e-fe75-4d7f-9cc4-8ff822a996fd", "value": "https://database.eamena.org/concepts/1b5f0c7e-3d27-4f25-8a89-aabc9fb8c946"}</dcterms:identifier>
+    <skos:prefLabel xml:lang="ar">{"id": "d53774a2-93bd-4a28-b599-a683a8598d3d", "value": "\u0646\u062e\u064a\u0644"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">{"id": "280345e4-b612-4dca-b412-c023d250fdec", "value": "Palm"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "8202bce8-0690-438f-a609-3d51649f0067", "value": "Palmier"}</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/20c5f4b1-e808-450c-a5bb-fe414de49ca8">
+    <skos:prefLabel xml:lang="ar">{"id": "a9d15755-9f9c-4d8b-a187-aa1b68a56a60", "value": "\u0627\u0644\u0639\u0635\u0631 \u0627\u0644\u062d\u062f\u064a\u062f\u064a \u0627\u0644\u0648\u0633\u064a\u0637 (\u0627\u0644\u062c\u0632\u064a\u0631\u0629 \u0627\u0644\u0639\u0631\u0628\u064a\u0629)"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="en-us">{"id": "4d210059-2c1b-49d0-9912-af3a932e4bd1", "value": "Middle Iron Age (Arabia)"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "3cd7d5f9-6e4f-4b62-a8eb-0ca4378f99f7", "value": "Moyen \u00c2ge du Fer (Arabie)"}</skos:prefLabel>
+    <dcterms:identifier xml:lang="en">{"id": "8daf8e57-a508-40c4-b141-4a1fd38a9fa4", "value": "https://database.eamena.org/concepts/20c5f4b1-e808-450c-a5bb-fe414de49ca8"}</dcterms:identifier>
+    <skos:scopeNote xml:lang="en-us">{"id": "7e523373-4871-4e01-83cd-1a49d11497b0", "value": "-1000\t-600"}</skos:scopeNote>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/686bd1cf-0e4f-418d-aff1-0e7713f306df">
+    <skos:prefLabel xml:lang="en-us">{"id": "50cc3f74-dd82-47a1-825b-6fc1833f744d", "value": "Every 6 Months"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">{"id": "39c5d268-848c-4bb1-ac5f-c71c44ec9126", "value": "\u0643\u0644 \u0633\u062a\u0629 \u0634\u0647\u0648\u0631"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "35d81d20-93b0-4573-996d-94819c68bd07", "value": "Tous les 6 mois"}</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+    <dcterms:identifier xml:lang="en">{"id": "eb762bcb-c9de-42ff-8c03-5cbe44df9a1c", "value": "https://database.eamena.org/concepts/686bd1cf-0e4f-418d-aff1-0e7713f306df"}</dcterms:identifier>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/f964dc06-0e4c-446d-82f8-e7931d47cf09">
+    <skos:prefLabel xml:lang="en">{"id": "5ec99016-1984-4006-8ee5-edaca978c1e8", "value": "Archaeological Monitoring"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "2a287c59-d2e0-4783-ac3f-3eff2264c31a", "value": "Surveillance arch\u00e9ologique"}</skos:prefLabel>
+    <dcterms:identifier xml:lang="en">{"id": "68ba25e4-a189-4ac0-9c5f-6fa7c45cca49", "value": "https://database.eamena.org/concepts/f964dc06-0e4c-446d-82f8-e7931d47cf09"}</dcterms:identifier>
+    <dcterms:identifier xml:lang="en">{"id": "14a96bd3-7b2e-4974-a54e-47ddd8fd98d0", "value": "https://database.eamena.org/concepts/f964dc06-0e4c-446d-82f8-e7931d47cf09"}</dcterms:identifier>
+    <dcterms:identifier xml:lang="en">{"id": "cb1d50fb-29e6-409d-bca4-99a97bae37f6", "value": "https://database.eamena.org/concepts/f964dc06-0e4c-446d-82f8-e7931d47cf09"}</dcterms:identifier>
+    <dcterms:identifier xml:lang="en">{"id": "9e63cd06-16fb-45b8-8937-fd154e1a629d", "value": "https://database.eamena.org/concepts/f964dc06-0e4c-446d-82f8-e7931d47cf09"}</dcterms:identifier>
+    <dcterms:identifier xml:lang="en">{"id": "5293551f-cf47-4530-bc28-23efaf13b945", "value": "https://database.eamena.org/concepts/f964dc06-0e4c-446d-82f8-e7931d47cf09"}</dcterms:identifier>
+    <dcterms:identifier xml:lang="en">{"id": "d513a6d3-afb8-46ce-8e0d-77d7e1a0ea1a", "value": "https://database.eamena.org/concepts/f964dc06-0e4c-446d-82f8-e7931d47cf09"}</dcterms:identifier>
+    <dcterms:identifier xml:lang="en">{"id": "a50f419e-9b58-4f42-b5d0-f046f5dc3968", "value": "https://database.eamena.org/concepts/f964dc06-0e4c-446d-82f8-e7931d47cf09"}</dcterms:identifier>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/83f2a63e-92d5-4d62-b239-927cf360190c">
+    <skos:prefLabel xml:lang="ar">{"id": "d925e3f6-57d4-4afd-bf13-59b8df3b12f1", "value": "\u0627\u0644\u0639\u0635\u0631 \u0627\u0644\u0628\u0631\u0648\u0646\u0632\u064a\u060c \u0634\u0648\u0634\u0627\u0646 5/ \u0639\u064a\u0644\u0627\u0645\u064a \u0642\u062f\u064a\u0645 2 (\u062e\u0648\u0632\u0633\u062a\u0627\u0646)"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="en-us">{"id": "3cbb71c2-4c99-436b-b4ae-782980e2d849", "value": "Bronze Age, Susa V/ Old Elamite II (Khuzestan)"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "0ade29fe-b3d6-4ee4-9779-de805682c582", "value": "\u00c2ge du bronze, Suse V/Ancien \u00c9lamite II (Khouzistan)"}</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+    <skos:scopeNote xml:lang="en-us">{"id": "a84c4216-c031-4e6e-b761-a2bae6d2005b", "value": "-2200\t-1800"}</skos:scopeNote>
+    <dcterms:identifier xml:lang="en">{"id": "236ff863-82ba-4579-b87f-64a2d38cbcf7", "value": "https://database.eamena.org/concepts/83f2a63e-92d5-4d62-b239-927cf360190c"}</dcterms:identifier>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/a6b0b039-ddc0-3ac3-94e0-2908dfa2a64b">
+    <dcterms:identifier xml:lang="en">{"id": "73f4eac4-6910-4214-85b3-7eba86f39019", "value": "https://database.eamena.org/concepts/a6b0b039-ddc0-3ac3-94e0-2908dfa2a64b"}</dcterms:identifier>
+    <skos:prefLabel xml:lang="en-us">{"id": "c2ca7108-fd20-41c8-aeda-1957fac5fe87", "value": "Topographic Survey"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">{"id": "eb9cb1d9-8531-41a6-ada7-1610420aee98", "value": "\u0645\u0633\u062d \u0637\u0648\u0628\u0648\u063a\u0631\u0627\u0641\u064a"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "ffbd421e-efaf-4822-a9da-a821f71739f3", "value": "Relev\u00e9 topographique"}</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/a12b1ef7-5ede-4325-9d38-9d05e3733ca6">
+    <dcterms:identifier xml:lang="en">{"id": "cb779b2a-9a8d-4f3e-ab85-c5388a905c4b", "value": "https://database.eamena.org/concepts/a12b1ef7-5ede-4325-9d38-9d05e3733ca6"}</dcterms:identifier>
+    <skos:prefLabel xml:lang="en-us">{"id": "fb1859c9-464d-4871-ad58-a4233a3c98b8", "value": "Iron Age, Pre-Achaemenid (Southeast Iran)"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">{"id": "d525c1a1-5d0c-44b6-9d02-bd620a4160f0", "value": "\u0627\u0644\u0639\u0635\u0631 \u0627\u0644\u062d\u062f\u064a\u062f\u064a\u060c \u0642\u0628\u0644 \u0627\u0644\u0623\u062e\u0645\u064a\u0646\u064a (\u062c\u0646\u0648\u0628 \u0634\u0631\u0642 \u0625\u064a\u0631\u0627\u0646)"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "36250247-4871-45f2-8baa-52b9dcbe1169", "value": "\u00c2ge du fer, pr\u00e9-ach\u00e9m\u00e9nide (sud-est de l'Iran)"}</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+    <skos:scopeNote xml:lang="en-us">{"id": "bd03c265-b45b-49f8-8008-d9fe85847e81", "value": "-650\t-500"}</skos:scopeNote>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/919d7288-1801-3182-899e-ed62213d189d">
+    <skos:prefLabel xml:lang="en-us">{"id": "45aa109e-fa83-42bb-ad91-e218fddbc54a", "value": "District Potential Contributor"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "b80e532c-9ca4-4fff-b8bd-e2ef408684c4", "value": "Contributeur potentiel du district"}</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+    <dcterms:identifier xml:lang="en">{"id": "404a77b8-7492-44f6-aeb8-e7e1509e4bf8", "value": "https://database.eamena.org/concepts/919d7288-1801-3182-899e-ed62213d189d"}</dcterms:identifier>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/5197f06c-992c-488c-a028-9d148301a0c1">
+    <dcterms:identifier xml:lang="en">{"id": "b92340cd-ee66-4119-bee6-4a78eb57c938", "value": "https://database.eamena.org/concepts/5197f06c-992c-488c-a028-9d148301a0c1"}</dcterms:identifier>
+    <dcterms:identifier xml:lang="en">{"id": "e4069f3b-4224-4714-835f-75a22e62f0bd", "value": "https://database.eamena.org/concepts/5197f06c-992c-488c-a028-9d148301a0c1"}</dcterms:identifier>
+    <dcterms:identifier xml:lang="en">{"id": "baa5d169-93c3-4261-8df3-f13644c22993", "value": "https://database.eamena.org/concepts/5197f06c-992c-488c-a028-9d148301a0c1"}</dcterms:identifier>
+    <dcterms:identifier xml:lang="en">{"id": "b1292637-6795-490c-9557-d7d4ba7a06ec", "value": "https://database.eamena.org/concepts/5197f06c-992c-488c-a028-9d148301a0c1"}</dcterms:identifier>
+    <dcterms:identifier xml:lang="en">{"id": "f62cb8df-20b6-46a0-9f52-aa9956287c88", "value": "https://database.eamena.org/concepts/5197f06c-992c-488c-a028-9d148301a0c1"}</dcterms:identifier>
+    <dcterms:identifier xml:lang="en">{"id": "e6ffd845-71dc-4013-8cb5-9e9a1be779d3", "value": "https://database.eamena.org/concepts/5197f06c-992c-488c-a028-9d148301a0c1"}</dcterms:identifier>
+    <dcterms:identifier xml:lang="en">{"id": "c8b08a20-9727-46a4-b500-41c6761199f2", "value": "https://database.eamena.org/concepts/5197f06c-992c-488c-a028-9d148301a0c1"}</dcterms:identifier>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+    <skos:prefLabel xml:lang="en">{"id": "5f1dd9f7-6c1e-4b20-8556-84e3328c1a1b", "value": "Renewal of Protective Coating"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "c8febc5a-e07d-41bb-949e-f0b71cf3078e", "value": "Renouvellement du rev\u00eatement protecteur"}</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/6fd0bf51-554c-4572-81ca-c6f25543c77f">
+    <skos:prefLabel xml:lang="ar">{"id": "06974ac2-0064-4c12-90d2-6c9cec31da1b", "value": "\u0627\u0644\u0639\u0635\u0631 \u0627\u0644\u0628\u0631\u0648\u0646\u0632\u064a (\u0634\u0645\u0627\u0644 \u063a\u0631\u0628 \u0625\u064a\u0631\u0627\u0646)"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="en-us">{"id": "58ea276d-45ff-401a-b266-3a4eac9aa1b2", "value": "Bronze Age (Northwest Iran)"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "6f14ab3f-81cf-4a18-b091-72f762e54deb", "value": "\u00c2ge du bronze (nord-ouest de l'Iran)"}</skos:prefLabel>
+    <dcterms:identifier xml:lang="en">{"id": "31fa0e6d-7c28-4dcb-bfaf-d00bbe033bbb", "value": "https://database.eamena.org/concepts/6fd0bf51-554c-4572-81ca-c6f25543c77f"}</dcterms:identifier>
+    <skos:scopeNote xml:lang="en-us">{"id": "3105e223-de4c-4bc8-b9d6-cc35a21043ad", "value": "-3100\t-1250"}</skos:scopeNote>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/5176c8f9-917e-3491-b037-32ea328fa0ee">
+    <skos:prefLabel xml:lang="ar">{"id": "604a1f54-87f2-44eb-901b-277d71aa7c5e", "value": "\u0644\u0627 \u064a\u0645\u0643\u0646 \u062a\u062d\u062f\u064a\u062f"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="en-us">{"id": "8d49ed30-f570-4167-adf7-de41c3f5899e", "value": "Not Applicable"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "c9853f8c-ed3e-41ce-bc20-39bdb5201461", "value": "N'est pas applicable"}</skos:prefLabel>
+    <dcterms:identifier xml:lang="en">{"id": "42c939f8-635a-4326-8427-b3f09579d77b", "value": "https://database.eamena.org/concepts/5176c8f9-917e-3491-b037-32ea328fa0ee"}</dcterms:identifier>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/5cdcc1dc-d5cd-47cc-92f8-92b02283fb4b">
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+    <skos:prefLabel xml:lang="en-us">{"id": "513214e4-d7ab-4374-841b-ea189c92ea9d", "value": "Bare"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">{"id": "a34ff023-e3c2-489a-84b1-7f0329646a63", "value": "\u062c\u0631\u062f\u0627\u0621"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "0605d17a-25f2-4719-aa29-182ed6986285", "value": "Nu"}</skos:prefLabel>
+    <dcterms:identifier xml:lang="en">{"id": "9318162e-9169-44ef-a1ea-92a385d3b3c5", "value": "https://database.eamena.org/concepts/5cdcc1dc-d5cd-47cc-92f8-92b02283fb4b"}</dcterms:identifier>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/d21f917c-8478-387e-a8ba-06c13bd71426">
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+    <skos:prefLabel xml:lang="en-us">{"id": "efad6dd3-b912-43d2-a5d7-88800a7a02de", "value": "8600 BC"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "a77267ae-66dc-4593-9078-6621e43eec6e", "value": "8600 avant JC"}</skos:prefLabel>
+    <dcterms:identifier xml:lang="en">{"id": "7bbc89eb-9fae-4071-88c8-75b4c6564a4f", "value": "https://database.eamena.org/concepts/d21f917c-8478-387e-a8ba-06c13bd71426"}</dcterms:identifier>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/de162918-56aa-48e6-ab8a-024934df0b91">
+    <skos:prefLabel xml:lang="ar">{"id": "26b4cc19-6fe7-4df9-820d-cbda40bf3a3c", "value": "\u0627\u0644\u0639\u0635\u0631 \u0627\u0644\u062d\u062c\u0631\u064a \u0627\u0644\u0642\u062f\u064a\u0645 \u0627\u0644\u0623\u0648\u0633\u0637\u060c \u0645\u0628\u0643\u0631 (\u0627\u0644\u0634\u0627\u0645/ \u0628\u0644\u0627\u062f \u0627\u0644\u0631\u0627\u0641\u062f\u064a\u0646)"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="en-us">{"id": "721a0dc7-c6eb-4722-881e-b436ace94ade", "value": "Epipalaeolithic, Early (Levant/Mesopotamia)"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "808aa0d1-6b48-48c0-801a-55205da95ee2", "value": "\u00c9pipal\u00e9olithique ancien (Levant/M\u00e9sopotamie)"}</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+    <skos:scopeNote xml:lang="en-us">{"id": "f5a38492-76a7-46f5-8977-2a3393cad0b2", "value": "-18000\t-12500"}</skos:scopeNote>
+    <dcterms:identifier xml:lang="en">{"id": "37d8f41b-9236-4428-907a-6336c354c78d", "value": "https://database.eamena.org/concepts/de162918-56aa-48e6-ab8a-024934df0b91"}</dcterms:identifier>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/7e66ee8c-6c65-4a8a-9e65-dae416fcdede">
+    <skos:scopeNote xml:lang="en-us">{"id": "d7bffc04-39c2-4b39-876f-8ed21ddd0c33", "value": "-800\t-550"}</skos:scopeNote>
+    <skos:prefLabel xml:lang="ar">{"id": "5979a47e-2421-4e95-881e-b801aef03f84", "value": "\u0627\u0644\u0639\u0635\u0631 \u0627\u0644\u062d\u062f\u064a\u062f\u064a 3/ \u0627\u0644\u0639\u0635\u0631 \u0627\u0644\u062d\u062f\u064a\u062f\u064a \u0627\u0644\u0645\u062a\u0623\u062e\u0631 (\u0634\u0645\u0627\u0644 \u0625\u064a\u0631\u0627\u0646)"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="en-us">{"id": "e8e73c9b-261b-4a40-8d62-a8e6005847ae", "value": "Iron Age III/Late Iron Age (Northern Iran)"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "b9f4d5d5-7817-4d7c-a124-e67538e4f019", "value": "\u00c2ge du fer III/fin de l'\u00e2ge du fer (nord de l'Iran)"}</skos:prefLabel>
+    <dcterms:identifier xml:lang="en">{"id": "8f4adc65-1253-44ae-8b63-63cfea206884", "value": "https://database.eamena.org/concepts/7e66ee8c-6c65-4a8a-9e65-dae416fcdede"}</dcterms:identifier>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/d7c81a8f-e1b1-4c2b-baef-5c6a54b3a642">
+    <skos:prefLabel xml:lang="en-us">{"id": "8eb62613-b0bd-4001-bf84-72ceea15e7c4", "value": "Palaeolithic, Middle (North Africa)"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">{"id": "6fef53d0-2032-4bee-84f0-92c81dfe8e37", "value": "\u0627\u0644\u0639\u0635\u0631 \u0627\u0644\u062d\u062c\u0631\u064a \u0627\u0644\u0642\u062f\u064a\u0645\u060c \u0645\u062a\u0648\u0633\u0637 (\u0634\u0645\u0627\u0644 \u0623\u0641\u0631\u064a\u0642\u064a\u0627)"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "85f061f2-b68a-432a-8026-d7aebee666bb", "value": "Pal\u00e9olithique moyen (Afrique du Nord)"}</skos:prefLabel>
+    <skos:scopeNote xml:lang="en-us">{"id": "538d9fa3-661a-48f6-ae2a-2450972b1622", "value": "-250000\t-70000"}</skos:scopeNote>
+    <dcterms:identifier xml:lang="en">{"id": "86591207-cff7-400a-b74a-6f8f9b7502eb", "value": "https://database.eamena.org/concepts/d7c81a8f-e1b1-4c2b-baef-5c6a54b3a642"}</dcterms:identifier>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/3f3b084e-6eca-370b-a705-2562fe276283">
+    <dcterms:identifier xml:lang="en">{"id": "47fb6eaa-4e70-4390-8fc9-81bb9ea0c46b", "value": "https://database.eamena.org/concepts/3f3b084e-6eca-370b-a705-2562fe276283"}</dcterms:identifier>
+    <skos:prefLabel xml:lang="en-us">{"id": "a04aca51-3873-489f-b514-08465506a423", "value": "Surface Cleaning"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">{"id": "35cfbd18-7143-4161-89c0-49671d5c75b9", "value": "\u062a\u0646\u0638\u064a\u0641 \u0627\u0644\u0633\u0637\u062d"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "e16104a0-38d2-4aa5-a7f1-324a703c8674", "value": "Nettoyage des surfaces"}</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/2b0508a2-7596-4455-b73a-07c4b455fa66">
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+    <skos:prefLabel xml:lang="ar">{"id": "239f4746-9b57-4dac-8d9b-93c57fae6f31", "value": "\u0627\u0644\u0639\u0635\u0631 \u0627\u0644\u062d\u062f\u064a\u062f\u064a \u0627\u0644\u0645\u0628\u0643\u0631 (\u0627\u0644\u062c\u0632\u064a\u0631\u0629 \u0627\u0644\u0639\u0631\u0628\u064a\u0629)"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="en-us">{"id": "fbff9f98-1a95-421e-af45-37fe8f4cae7e", "value": "Early Iron Age (Arabia)"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "a3713fa2-b4f4-46ed-94cd-4a39c9450324", "value": "Premier \u00e2ge du fer (Arabie)"}</skos:prefLabel>
+    <skos:scopeNote xml:lang="en-us">{"id": "b6ec33f0-e41c-4732-9206-5376d30b9f37", "value": "-1500\t-1000"}</skos:scopeNote>
+    <dcterms:identifier xml:lang="en">{"id": "e777c1a5-8f08-43fc-b1f9-b989a8323a7d", "value": "https://database.eamena.org/concepts/2b0508a2-7596-4455-b73a-07c4b455fa66"}</dcterms:identifier>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/80f06d47-0020-4cef-b308-257eb255bc2d">
+    <dcterms:identifier xml:lang="en">{"id": "7d146222-8800-4af1-a40d-e6959f80f847", "value": "https://database.eamena.org/concepts/80f06d47-0020-4cef-b308-257eb255bc2d"}</dcterms:identifier>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+    <skos:prefLabel xml:lang="ar">{"id": "69bedd38-8283-4cdb-a8b5-6cd22c3f28a9", "value": "\u0623\u062e\u0645\u064a\u0646\u064a/ \u0627\u0644\u0639\u0635\u0631 \u0627\u0644\u062d\u062f\u064a\u062f\u064a \"IV\" (\u062c\u0646\u0648\u0628 \u0634\u0631\u0642 \u0625\u064a\u0631\u0627\u0646)"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="en-us">{"id": "9e72b8e8-d2ca-4e0d-9d06-4518ae071276", "value": "Achaemenid/Iron Age IV (Iran)"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "5a24352e-5fad-423a-af31-bd81e63d855f", "value": "Ach\u00e9m\u00e9nide/\u00c2ge du Fer IV (Iran)"}</skos:prefLabel>
+    <skos:scopeNote xml:lang="en-us">{"id": "87176399-6378-4923-8007-80b998a4cf3f", "value": "-550\t-330"}</skos:scopeNote>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/2f080e63-ca3a-40f1-9205-b01fd80f099f">
+    <skos:prefLabel xml:lang="en-us">{"id": "c6afa0ce-1615-45bb-ad39-489d58d55abf", "value": "Mehrab"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">{"id": "9d7cab78-9f2f-4ba6-979a-978dac459c0d", "value": "\u0645\u062d\u0631\u0627\u0628"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "c866b38b-f36c-44f0-af52-1083c46d4669", "value": "Mehrab"}</skos:prefLabel>
+    <dcterms:identifier xml:lang="en">{"id": "ea8e6248-5609-46bf-a8f6-39ef962f0d75", "value": "https://database.eamena.org/concepts/2f080e63-ca3a-40f1-9205-b01fd80f099f"}</dcterms:identifier>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/eea3956d-406a-46b2-96c6-ebcbbf9f65b2">
+    <dcterms:identifier xml:lang="en">{"id": "b6af8f15-d2b5-426f-a791-3fc12ee577ee", "value": "https://database.eamena.org/concepts/eea3956d-406a-46b2-96c6-ebcbbf9f65b2"}</dcterms:identifier>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+    <skos:scopeNote xml:lang="en-us">{"id": "ce8fa491-0311-4066-9892-30d89a8cc3a5", "value": "-18000\t-8500"}</skos:scopeNote>
+    <skos:prefLabel xml:lang="en-us">{"id": "6c055b00-4dcc-4cd1-be31-d1c2d879eebe", "value": "Epipalaeolithic (Iran)"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">{"id": "fae1677c-74b4-4201-944f-b7ddc6f49883", "value": "\u0627\u0644\u0639\u0635\u0631 \u0627\u0644\u062d\u062c\u0631\u064a \u0627\u0644\u0642\u062f\u064a\u0645 \u0627\u0644\u0623\u0648\u0633\u0637 (\u0625\u064a\u0631\u0627\u0646)"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "9771663a-4681-4aa8-a228-af06bb611bc3", "value": "\u00c9pipal\u00e9olithique (Iran)"}</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/311b71ca-bfcb-48d0-9a97-9511a5861912">
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+    <skos:prefLabel xml:lang="ar">{"id": "f76f8bd5-6e9a-49ae-9fea-a159807af52e", "value": "\u0623\u0631\u0627\u0636 \u0631\u0637\u0628\u0629 - \u0645\u064a\u0627\u0647 \u0639\u0630\u0628\u0629"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="en-us">{"id": "8ebb9eef-2dcd-4237-93d7-afc7674db7b4", "value": "Freshwater Wetland"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "a66015ac-2b78-48e4-9910-cd10496f4804", "value": "Zone humide d\u2019eau douce"}</skos:prefLabel>
+    <dcterms:identifier xml:lang="en">{"id": "832a75c8-c374-440f-b5e4-305d458ddc86", "value": "https://database.eamena.org/concepts/311b71ca-bfcb-48d0-9a97-9511a5861912"}</dcterms:identifier>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/e3b1da78-628a-4c51-b7bc-43f28fdaa7ec">
+    <skos:prefLabel xml:lang="en-us">{"id": "7a0334e4-0253-4da9-b1e0-ff207e122ac7", "value": "Straw"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "68017e2b-e00e-48a6-bf8c-f54ed80b1df8", "value": "Paille"}</skos:prefLabel>
+    <dcterms:identifier xml:lang="en">{"id": "f800722a-6b3c-424a-86f8-df70890a4d43", "value": "https://database.eamena.org/concepts/e3b1da78-628a-4c51-b7bc-43f28fdaa7ec"}</dcterms:identifier>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/14baf964-f0ba-3c01-a362-d076933c88f4">
+    <dcterms:identifier xml:lang="en">{"id": "e94ab99a-307a-49ff-95c2-fbab81684015", "value": "https://database.eamena.org/concepts/14baf964-f0ba-3c01-a362-d076933c88f4"}</dcterms:identifier>
+    <skos:prefLabel xml:lang="en-us">{"id": "9dbd27af-f21e-4781-9463-46cabeb6d0ae", "value": "dunam"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">{"id": "049eb5f1-8722-4164-9a59-e8699fedc252", "value": "\u062f\u0648\u0646\u0645"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "6500bf07-2361-4288-afc7-adcfadf56ce0", "value": "dunam"}</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/75956525-d069-3438-8c5c-695283e77400">
+    <skos:prefLabel xml:lang="en-us">{"id": "5c24003f-1418-455b-98f9-fee8c6f2e269", "value": "Impact Assessment"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">{"id": "fc00e1a8-5e5f-42fd-bd00-77c22ea90c88", "value": "\u062a\u0642\u064a\u064a\u0645 \u0627\u0644\u062a\u0623\u062b\u064a\u0631"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "22dfa614-3faf-4d20-9b00-5278c93d6b3e", "value": "\u00c9valuation de l'impact"}</skos:prefLabel>
+    <dcterms:identifier xml:lang="en">{"id": "c96dbf41-3f7e-4f92-b6fe-763e14fd5a0d", "value": "https://database.eamena.org/concepts/75956525-d069-3438-8c5c-695283e77400"}</dcterms:identifier>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/6a2c0586-ec7f-4dee-954d-cc3853394da2">
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+    <dcterms:identifier xml:lang="en">{"id": "59804e39-d26d-4322-ba34-ca3bb101ef43", "value": "https://database.eamena.org/concepts/6a2c0586-ec7f-4dee-954d-cc3853394da2"}</dcterms:identifier>
+    <skos:prefLabel xml:lang="en-us">{"id": "85560d2a-9467-4072-90a2-648e47a96a22", "value": "Pilaster"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">{"id": "260b04c2-1c6c-4ec2-90bc-361e6e72a862", "value": "\u0639\u0645\u0648\u062f \u0645\u0636\u0644\u0639"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "a70419e2-3434-46d2-8387-6775f2f8b91a", "value": "Pilastre"}</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/4be7a907-be5a-33e2-bad7-97393ad34f83">
+    <dcterms:identifier xml:lang="en">{"id": "42a4fdaf-9794-41c9-a03e-935720c93624", "value": "https://database.eamena.org/concepts/4be7a907-be5a-33e2-bad7-97393ad34f83"}</dcterms:identifier>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+    <skos:prefLabel xml:lang="en-us">{"id": "58eba83d-1e6f-44e2-9a18-170d06b4cf2b", "value": "Funerary/Memorial"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">{"id": "21816468-eb3c-4409-b4d8-62fe0a194aff", "value": "\u062c\u0646\u0627\u0626\u0632\u064a/ \u062a\u0630\u0643\u0627\u0631\u064a"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "f399ecf3-1ebe-4583-bc67-e8907498fa17", "value": "Fun\u00e9raire/M\u00e9morial"}</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/e8783d2b-b195-36e6-988a-a3e9f57b3008">
+    <dcterms:identifier xml:lang="en">{"id": "6238d790-7529-4fef-ad46-824981319609", "value": "https://database.eamena.org/concepts/e8783d2b-b195-36e6-988a-a3e9f57b3008"}</dcterms:identifier>
+    <skos:prefLabel xml:lang="en-us">{"id": "f9604e1a-7b46-4346-a29d-ad348b5ff43f", "value": "Published Report"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">{"id": "32a8afe2-f881-4f00-b320-cdae15784e17", "value": "\u062a\u0642\u0631\u064a\u0631 \u0645\u0646\u0634\u0648\u0631"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "37a445c6-d921-430b-8eab-4962ec1cdc07", "value": "Rapport publi\u00e9"}</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/7154c1f6-fc64-475c-a679-b7044e82ae11">
+    <skos:scopeNote xml:lang="en-us">{"id": "17ef49df-72eb-4d0d-9cc4-346aa653d9ad", "value": "1500\t1900"}</skos:scopeNote>
+    <dcterms:identifier xml:lang="en">{"id": "bfed70f3-ee43-486b-83ab-b19d984baed9", "value": "https://database.eamena.org/concepts/7154c1f6-fc64-475c-a679-b7044e82ae11"}</dcterms:identifier>
+    <skos:prefLabel xml:lang="ar">{"id": "522497f2-b634-4888-b4d0-bd672b897800", "value": "\u0625\u0633\u0644\u0627\u0645\u064a\u060c \u0645\u062a\u0623\u062e\u0631 (\u0639\u062b\u0645\u0627\u0646\u064a) (\u0627\u0644\u0639\u0631\u0627\u0642)"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="en-us">{"id": "ba67be9a-2c27-4842-ac6e-325c1e015e52", "value": "Islamic, Late (Ottoman) (Iraq)"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "8a27640b-07d9-4206-9900-feb0eb92d372", "value": "Islamique, tardif (ottoman) (Irak)"}</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/bae8d86f-c479-4a8b-9c0c-aa63390fff84">
+    <skos:prefLabel xml:lang="en-us">{"id": "49b1b3a8-0acf-4246-a4fd-0c1b2f7a2636", "value": "Submarine"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "69e4c772-2b14-49c3-95a6-1ba337defd2f", "value": "Sous-marin"}</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+    <dcterms:identifier xml:lang="en">{"id": "e046e523-6c4f-4afe-9b36-462020d83187", "value": "https://database.eamena.org/concepts/bae8d86f-c479-4a8b-9c0c-aa63390fff84"}</dcterms:identifier>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/fafbbb8f-5a33-48c4-84b2-ecb6d307f7df">
+    <skos:prefLabel xml:lang="ar">{"id": "b0aa5221-5e91-422b-8560-1e519d87cbbe", "value": "\u0628\u062d\u064a\u0631\u064a"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="en-us">{"id": "1d95e7be-bf5b-4c65-8d61-5d6b826f78c6", "value": "Lacustrine"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "8df515a7-56e3-4794-9ec4-1c046133e025", "value": "Lacustre"}</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+    <dcterms:identifier xml:lang="en">{"id": "50262891-4b6d-40d9-ac24-e3a46aa73d89", "value": "https://database.eamena.org/concepts/fafbbb8f-5a33-48c4-84b2-ecb6d307f7df"}</dcterms:identifier>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/c093d051-7bf9-43b7-bdd8-3c1cf4c1a2d1">
+    <skos:prefLabel xml:lang="ar">{"id": "c3b76efe-3963-4eef-ac4d-8acb555bffaa", "value": "\u0627\u0644\u0639\u0635\u0631 \u0627\u0644\u0628\u0631\u0648\u0646\u0632\u064a\u060c \u0634\u0648\u0634\u0627\u0646 3/ \u0628\u0631\u0648\u062a\u0648 \u0625\u064a\u0644\u0627\u0645\u064a (\u062e\u0648\u0632\u0633\u062a\u0627\u0646)"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="en-us">{"id": "cd039b16-1c53-41ef-b9d9-3b69ab8ec618", "value": "Bronze Age, Susa III/Proto-Elamite (Khuzestan)"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "4d7d537e-14ff-4610-834e-631d5fa66e3b", "value": "\u00c2ge du bronze, Suse III/Proto-\u00c9lamite (Khouzistan)"}</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+    <skos:scopeNote xml:lang="en-us">{"id": "200024c4-25f0-414e-8d0c-9707425237fb", "value": "-3100\t-2675"}</skos:scopeNote>
+    <dcterms:identifier xml:lang="en">{"id": "cebc2c56-1471-43f9-8e3a-22393eca166d", "value": "https://database.eamena.org/concepts/c093d051-7bf9-43b7-bdd8-3c1cf4c1a2d1"}</dcterms:identifier>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/0ab1bb58-6fb1-3304-83c7-8eddafe25265">
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+    <dcterms:identifier xml:lang="en">{"id": "19dcf8c6-942e-40d6-bf5f-51b23c2d7c6a", "value": "https://database.eamena.org/concepts/0ab1bb58-6fb1-3304-83c7-8eddafe25265"}</dcterms:identifier>
+    <skos:prefLabel xml:lang="en-us">{"id": "277518e1-e691-4927-b9c9-92774f61de5a", "value": "Site Protection/Improving Security"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">{"id": "e424d7a2-76ab-43cc-8a89-d09dd807ca8d", "value": "\u062d\u0645\u0627\u064a\u0629 \u0627\u0644\u0645\u0648\u0642\u0639/ \u0627\u0644\u0627\u0631\u062a\u0642\u0627\u0621 \u0628\u0627\u0644\u062a\u0623\u0645\u064a\u0646"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "a0ec9896-043d-4c71-8121-8b63a5a786df", "value": "Protection du site/am\u00e9lioration de la s\u00e9curit\u00e9"}</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/7d123a26-a944-4af8-a7a8-f09fb1f771fc">
+    <skos:prefLabel xml:lang="en-us">{"id": "458305da-a962-46a8-8713-6fa643f87562", "value": "Warship"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "9a69ff95-3f9e-46f3-8574-52912d13d939", "value": "Navire de guerre"}</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+    <dcterms:identifier xml:lang="en">{"id": "dd1d2328-1424-4a67-ae0a-3c093dc31885", "value": "https://database.eamena.org/concepts/7d123a26-a944-4af8-a7a8-f09fb1f771fc"}</dcterms:identifier>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/650341ac-15f9-4884-98f2-0237a1157ab2">
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+    <dcterms:identifier xml:lang="en">{"id": "680ab704-6185-4fe9-82b6-e5e6446b67ab", "value": "https://database.eamena.org/concepts/650341ac-15f9-4884-98f2-0237a1157ab2"}</dcterms:identifier>
+    <skos:prefLabel xml:lang="en-us">{"id": "9466f869-3ea2-44f4-8e3f-39176ea3e1be", "value": "Canoe"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "61528ef9-a890-498b-93ba-874d3aab0a00", "value": "Cano\u00eb"}</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/4002e009-309c-386f-8f82-0a4eaed5d8fb">
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+    <skos:prefLabel xml:lang="en-us">{"id": "42b9542f-4678-457d-98f9-8235383bce1c", "value": "Definite"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">{"id": "8ace8a63-3089-4aad-9428-ffec952859b1", "value": "\u0645\u0624\u0643\u062f"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "956c9b7e-559d-47bb-bed6-2afd282f8753", "value": "Pr\u00e9cis"}</skos:prefLabel>
+    <dcterms:identifier xml:lang="en">{"id": "39a4c3b5-5a4d-4147-a318-710e9d8f4cff", "value": "https://database.eamena.org/concepts/4002e009-309c-386f-8f82-0a4eaed5d8fb"}</dcterms:identifier>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/35c3c442-3c36-420c-8567-716796d50e50">
+    <skos:narrower rdf:resource="https://database.eamena.org/1be78e53-3719-4f6a-83ed-8b1697e813be"/>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://database.eamena.org/3484cfb3-3afa-4553-bf3a-b67451e63c1e">
+        <dcterms:identifier xml:lang="en">{"id": "e18650bc-ac06-475c-9195-a396cf4b17cb", "value": "https://database.eamena.org/concepts/3484cfb3-3afa-4553-bf3a-b67451e63c1e"}</dcterms:identifier>
+        <dcterms:identifier xml:lang="en">{"id": "86a3b77c-b6c6-4fe4-a885-94fa406a881f", "value": "https://database.eamena.org/concepts/3484cfb3-3afa-4553-bf3a-b67451e63c1e"}</dcterms:identifier>
+        <dcterms:identifier xml:lang="en">{"id": "7c09cf7e-1097-42cf-9ebc-a6ab39c064f2", "value": "https://database.eamena.org/concepts/3484cfb3-3afa-4553-bf3a-b67451e63c1e"}</dcterms:identifier>
+        <dcterms:identifier xml:lang="en">{"id": "fa64af26-c5e8-4bbc-b3fb-0e7ea6d0573b", "value": "https://database.eamena.org/concepts/3484cfb3-3afa-4553-bf3a-b67451e63c1e"}</dcterms:identifier>
+        <dcterms:identifier xml:lang="en">{"id": "042a826b-5e53-47ea-a9bd-9b9f00bd80fb", "value": "https://database.eamena.org/concepts/3484cfb3-3afa-4553-bf3a-b67451e63c1e"}</dcterms:identifier>
+        <dcterms:identifier xml:lang="en">{"id": "857c69c4-3240-4774-8272-d24f5c61bac5", "value": "https://database.eamena.org/concepts/3484cfb3-3afa-4553-bf3a-b67451e63c1e"}</dcterms:identifier>
+        <dcterms:identifier xml:lang="en">{"id": "7ac99fe4-6e95-4f31-80d4-7508bbc8e7de", "value": "https://database.eamena.org/concepts/3484cfb3-3afa-4553-bf3a-b67451e63c1e"}</dcterms:identifier>
+        <skos:prefLabel xml:lang="ar">{"id": "a5c51d86-dc45-49d8-9867-6923c76ecff3", "value": "\u0634\u0631\u0642-\u063a\u0631\u0628"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">{"id": "f96198fa-6557-4118-a4ae-77bc4a7bf40e", "value": "East-West"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">{"id": "25aef769-2186-4de6-abb4-449b05d64cf1", "value": "Est Ouest"}</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://database.eamena.org/1b1d9aee-024a-4590-a5b1-b9586a2566c3">
+        <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+        <dcterms:identifier xml:lang="en">{"id": "90fbb423-4068-4a72-962b-70b3fb37f7e3", "value": "https://database.eamena.org/concepts/1b1d9aee-024a-4590-a5b1-b9586a2566c3"}</dcterms:identifier>
+        <dcterms:identifier xml:lang="en">{"id": "91b90c81-3578-4d01-8ebc-7c7b276b4459", "value": "https://database.eamena.org/concepts/1b1d9aee-024a-4590-a5b1-b9586a2566c3"}</dcterms:identifier>
+        <dcterms:identifier xml:lang="en">{"id": "cca30913-3cef-4f23-b5ab-d6251c09b726", "value": "https://database.eamena.org/concepts/1b1d9aee-024a-4590-a5b1-b9586a2566c3"}</dcterms:identifier>
+        <dcterms:identifier xml:lang="en">{"id": "c69a7da6-2d3e-4a31-a84d-2b2641e5dee3", "value": "https://database.eamena.org/concepts/1b1d9aee-024a-4590-a5b1-b9586a2566c3"}</dcterms:identifier>
+        <dcterms:identifier xml:lang="en">{"id": "44b38b68-206d-4dde-a1a9-650f351134c0", "value": "https://database.eamena.org/concepts/1b1d9aee-024a-4590-a5b1-b9586a2566c3"}</dcterms:identifier>
+        <dcterms:identifier xml:lang="en">{"id": "a09b5285-45e8-42b3-b061-ed9cddce1952", "value": "https://database.eamena.org/concepts/1b1d9aee-024a-4590-a5b1-b9586a2566c3"}</dcterms:identifier>
+        <dcterms:identifier xml:lang="en">{"id": "c6eca339-c182-4f5d-aadb-2e8840b18fd9", "value": "https://database.eamena.org/concepts/1b1d9aee-024a-4590-a5b1-b9586a2566c3"}</dcterms:identifier>
+        <skos:prefLabel xml:lang="ar">{"id": "3d6e4034-4f77-46d5-a5a2-f681facd1e0f", "value": "\u0634\u0645\u0627\u0644-\u062c\u0646\u0648\u0628"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">{"id": "88d462df-7cf7-42a1-8c86-ac9dbda372a6", "value": "North-South"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">{"id": "6b507c3b-9925-4dbd-896c-d26380e379b9", "value": "Nord Sud"}</skos:prefLabel>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://database.eamena.org/8bc35cd7-4f5c-4985-bce7-d6786a9071e2">
+        <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+        <skos:prefLabel xml:lang="en-us">{"id": "0f610e05-1945-490a-9bfa-ca62930db2ac", "value": "North"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">{"id": "b0c9d490-9891-4150-b166-7d9e62986806", "value": "\u0634\u0645\u0627\u0644"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">{"id": "d841736d-b2b7-4472-8e2f-96e88b43c237", "value": "Nord"}</skos:prefLabel>
+        <dcterms:identifier xml:lang="en">{"id": "9005681b-ab5b-4a78-ab7b-e4483ed51385", "value": "https://database.eamena.org/concepts/8bc35cd7-4f5c-4985-bce7-d6786a9071e2"}</dcterms:identifier>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://database.eamena.org/1a427b87-d3e3-45c3-91aa-64bb8f61bf71">
+        <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+        <dcterms:identifier xml:lang="en">{"id": "c9fb9427-1bfb-484b-8440-50de71bc7df7", "value": "https://database.eamena.org/concepts/1a427b87-d3e3-45c3-91aa-64bb8f61bf71"}</dcterms:identifier>
+        <skos:prefLabel xml:lang="en-us">{"id": "441f80d6-d4d4-49c9-ad3e-3734ff8e7574", "value": "South"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">{"id": "0bd8c861-0c6e-460c-ac29-c62eadb6574b", "value": "\u062c\u0646\u0648\u0628"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">{"id": "674879cd-3012-48c4-b1e0-ee16cb449e53", "value": "Sud"}</skos:prefLabel>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower rdf:resource="https://database.eamena.org/1fbdbe17-579d-4e3c-9a73-7595834cb429"/>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://database.eamena.org/f16296f2-7e5b-412e-8f49-804d4d816542">
+        <skos:prefLabel xml:lang="en-us">{"id": "f6ff7df6-3b6f-4a8e-92d3-88a87012d550", "value": "Not Applicable"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">{"id": "ed41b78c-34ce-435e-8419-b1d69292bcfc", "value": "\u0644\u0627 \u064a\u0645\u0643\u0646 \u062a\u062d\u062f\u064a\u062f\u0647"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">{"id": "2444c559-8296-4cb8-9073-15a67838c4ca", "value": "N'est pas applicable"}</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+        <dcterms:identifier xml:lang="en">{"id": "4bdd58f2-d355-49ad-8405-55dfd1114039", "value": "https://database.eamena.org/concepts/f16296f2-7e5b-412e-8f49-804d4d816542"}</dcterms:identifier>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower rdf:resource="https://database.eamena.org/6524329f-ccad-4b52-bc1b-a5da85bf87a1"/>
+    <skos:narrower rdf:resource="https://database.eamena.org/0a17f859-826a-4bc4-831c-f35849099fa5"/>
+    <skos:narrower rdf:resource="https://database.eamena.org/d15fdf01-06d3-414f-9c9a-1e06280cccc1"/>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://database.eamena.org/ab3dbf09-78c1-45d8-825e-89d782d30604">
+        <skos:prefLabel xml:lang="ar">{"id": "5d9dbfe2-33f9-453d-97a4-bd710530b6b4", "value": "\u0634\u0631\u0642"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="en-us">{"id": "c8c95361-c888-4d8f-a74c-fc9be56f432c", "value": "East"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">{"id": "194deffb-bc77-4085-aa23-230611fb06c8", "value": "Est"}</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+        <dcterms:identifier xml:lang="en">{"id": "934bebb0-9794-4e23-a687-287d2685164e", "value": "https://database.eamena.org/concepts/ab3dbf09-78c1-45d8-825e-89d782d30604"}</dcterms:identifier>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower rdf:resource="https://database.eamena.org/682f76ff-990b-4eed-9f91-f8a6275e5a7c"/>
+    <skos:narrower rdf:resource="https://database.eamena.org/7400d0ff-cafc-4a59-a9ca-bfcb2601aee0"/>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+    <skos:prefLabel xml:lang="en-us">{"id": "5f7a187d-fac6-4ac9-afda-3144c4239f49", "value": "Component Orientation"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "e4760182-6c08-4160-8c08-b908e4eb9d96", "value": "Orientation des composants"}</skos:prefLabel>
+    <dcterms:identifier xml:lang="en">{"id": "f27e9b4e-470c-4cb7-9ee9-a5e4ececfcea", "value": "https://database.eamena.org/concepts/35c3c442-3c36-420c-8567-716796d50e50"}</dcterms:identifier>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/e3c17854-b307-31eb-8f0e-7d668e89a78a">
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+    <skos:prefLabel xml:lang="en-us">{"id": "8860ec31-76c5-4806-8544-5e6b40640ae1", "value": "Definite"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">{"id": "279f1267-adc5-4589-82e3-e684b8b72b2a", "value": "\u0645\u0624\u0643\u062f"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "f04923a9-6fbf-4fd9-bad6-673d4ec86d3a", "value": "Pr\u00e9cis"}</skos:prefLabel>
+    <dcterms:identifier xml:lang="en">{"id": "9b01a61b-37dd-4540-9658-c66bf627653a", "value": "https://database.eamena.org/concepts/e3c17854-b307-31eb-8f0e-7d668e89a78a"}</dcterms:identifier>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/84d6db56-e334-38cb-b752-35a58e8c8d3d">
+    <dcterms:identifier xml:lang="en">{"id": "7efbe430-799e-4273-b5f6-b487e0addb88", "value": "https://database.eamena.org/concepts/84d6db56-e334-38cb-b752-35a58e8c8d3d"}</dcterms:identifier>
+    <skos:prefLabel xml:lang="en-us">{"id": "010f4d85-1d20-4558-bbd3-d8cd57a1991c", "value": "Activity Type"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "f5f2cfab-aae2-4949-b012-438dee43c919", "value": "Type d'activit\u00e9"}</skos:prefLabel>
+    <skos:narrower rdf:resource="https://database.eamena.org/3c7c928a-001a-316b-800b-238a795725f3"/>
+    <skos:narrower rdf:resource="https://database.eamena.org/ca393aca-2582-388e-84a9-85544b7f7bc2"/>
+    <skos:narrower rdf:resource="https://database.eamena.org/d84e2730-0634-386c-8227-56111f05cf22"/>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/d5915110-f292-30db-b0a1-f2ed50fcca56">
+    <skos:prefLabel xml:lang="en-us">{"id": "1c8d1e23-c72f-402e-942f-e708c7ed4f97", "value": "Maritime"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">{"id": "cae7816d-7579-4186-b66d-4bdca92bbcdc", "value": "\u0628\u062d\u0631\u064a"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "18af99c4-24f3-4960-9be7-707e0a1f6b1a", "value": "Maritime"}</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+    <dcterms:identifier xml:lang="en">{"id": "5c665360-77d5-4127-aff1-c274dc826a38", "value": "https://database.eamena.org/concepts/d5915110-f292-30db-b0a1-f2ed50fcca56"}</dcterms:identifier>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/481bd76d-9397-3002-a833-29c95699f8a7">
+    <skos:prefLabel xml:lang="en-us">{"id": "f635aa2f-6b00-4d7d-b215-33f6256b6350", "value": "Iraq"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">{"id": "e2050353-496c-41f2-bb65-0cab6f37fc48", "value": "\u0627\u0644\u0639\u0631\u0627\u0642"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "ce43ab92-0049-457a-a0e9-6ff6f7d40644", "value": "Irak"}</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+    <dcterms:identifier xml:lang="en">{"id": "f2b8a80e-88fc-4e3d-b0dc-b34d27197a7b", "value": "https://database.eamena.org/concepts/481bd76d-9397-3002-a833-29c95699f8a7"}</dcterms:identifier>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/0a774c7d-1c94-44ad-9081-b42721b1a579">
+    <dcterms:identifier xml:lang="en">{"id": "7bd12902-4d9e-40aa-a1fa-29ad6551eeac", "value": "https://database.eamena.org/concepts/0a774c7d-1c94-44ad-9081-b42721b1a579"}</dcterms:identifier>
+    <dcterms:identifier xml:lang="en">{"id": "90bef76d-efd3-46a7-a96d-de4c721cfdc1", "value": "https://database.eamena.org/concepts/0a774c7d-1c94-44ad-9081-b42721b1a579"}</dcterms:identifier>
+    <dcterms:identifier xml:lang="en">{"id": "0e446a86-e3df-4696-83d4-075cb6a24082", "value": "https://database.eamena.org/concepts/0a774c7d-1c94-44ad-9081-b42721b1a579"}</dcterms:identifier>
+    <dcterms:identifier xml:lang="en">{"id": "570cad4b-9e37-4b2d-9dfb-f1e9d022218b", "value": "https://database.eamena.org/concepts/0a774c7d-1c94-44ad-9081-b42721b1a579"}</dcterms:identifier>
+    <dcterms:identifier xml:lang="en">{"id": "b0509ae2-dd3f-4e0b-84fc-f83e4ad28000", "value": "https://database.eamena.org/concepts/0a774c7d-1c94-44ad-9081-b42721b1a579"}</dcterms:identifier>
+    <dcterms:identifier xml:lang="en">{"id": "475b4a99-d57a-4c66-866b-1ae4812f867b", "value": "https://database.eamena.org/concepts/0a774c7d-1c94-44ad-9081-b42721b1a579"}</dcterms:identifier>
+    <dcterms:identifier xml:lang="en">{"id": "ba20b695-d812-4382-be18-13b205eb34a5", "value": "https://database.eamena.org/concepts/0a774c7d-1c94-44ad-9081-b42721b1a579"}</dcterms:identifier>
+    <skos:prefLabel xml:lang="en">{"id": "50a5abc0-4312-4ba3-a716-e8054896018f", "value": "Other"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">{"id": "e67f6e9c-bea3-44cf-9e35-95dfe1e528db", "value": "\u0634\u064a\u0621 \u0623\u062e\u0631"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "f29ee532-1124-4389-9382-2c32cccb57f6", "value": "Autre"}</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/aa083fa5-1bd7-3f98-a9f8-6983675ce608">
+    <dcterms:identifier xml:lang="en">{"id": "0106d01e-16e6-4073-b6ae-4ea852a441aa", "value": "https://database.eamena.org/concepts/aa083fa5-1bd7-3f98-a9f8-6983675ce608"}</dcterms:identifier>
+    <skos:prefLabel xml:lang="ar">{"id": "fd60a33b-9e12-45a4-b733-a1799d52d1d0", "value": "\u064a\u0627\u0631\u062f\u0629"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="en-us">{"id": "237aaff8-bad1-4670-a54e-8fd089d1deb7", "value": "yards (yd)"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "620d69e5-2ecf-41fb-ad2a-c0c06c56ee4d", "value": "yards (yd)"}</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/36473530-308b-352d-a8a3-79e78c75fd10">
+    <skos:prefLabel xml:lang="en-us">{"id": "af7267e3-3492-4bfc-a92b-33d64c60c46e", "value": "Qatar"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">{"id": "130f338d-3d39-477d-b3e7-a0b5d8862f2b", "value": "\u0642\u0637\u0631"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "779cda4f-2654-4e0d-9c89-51d996a750b2", "value": "Qatar"}</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+    <dcterms:identifier xml:lang="en">{"id": "2099b125-561e-4021-825e-4df249b40141", "value": "https://database.eamena.org/concepts/36473530-308b-352d-a8a3-79e78c75fd10"}</dcterms:identifier>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/1830fde6-03c8-49be-aa13-53a81eaea76a">
+    <dcterms:identifier xml:lang="en">{"id": "3793d755-11a5-4337-913c-bf1c7d3a9cfb", "value": "https://database.eamena.org/concepts/1830fde6-03c8-49be-aa13-53a81eaea76a"}</dcterms:identifier>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+    <skos:prefLabel xml:lang="en-us">{"id": "d2a892e0-74d8-4999-a02b-467ba1a6ab66", "value": "MIS11"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "288b7e02-b362-4aaa-832b-221970392136", "value": "SIG11"}</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/ab6a0aa7-0a25-3876-bff4-1959da2f3caa">
+    <skos:narrower rdf:resource="https://database.eamena.org/3ae9feb8-ad55-33a6-9d55-53cc2f7b42da"/>
+    <skos:narrower rdf:resource="https://database.eamena.org/5db13c60-14e0-395a-b177-671342fab015"/>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://database.eamena.org/66457bbc-965b-36aa-8fff-de0a28b68f33">
+        <skos:prefLabel xml:lang="ar">{"id": "c6649cbf-8f4f-4590-9e1c-594043898050", "value": "\u0627\u0644\u0646\u0647\u0628/ \u0627\u0644\u0623\u0646\u0634\u0637\u0629 \u0627\u0644\u0645\u062e\u0627\u0644\u0641\u0629 \u0644\u0644\u0642\u0627\u0646\u0648\u0646"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="en-us">{"id": "600257ae-01e7-4b40-a43f-dbef041af925", "value": "Looting/Illegal Activities"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">{"id": "4e22600d-8c22-43d3-9cab-bd3f962f516b", "value": "Pillage/activit\u00e9s ill\u00e9gales"}</skos:prefLabel>
+        <dcterms:identifier xml:lang="en">{"id": "9eae68d0-4da7-40b0-b563-0b76c000a8c9", "value": "https://database.eamena.org/concepts/66457bbc-965b-36aa-8fff-de0a28b68f33"}</dcterms:identifier>
+        <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://database.eamena.org/8e602902-3c8a-3430-a7df-fff6df57db8b">
+        <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+        <skos:prefLabel xml:lang="en-us">{"id": "0920bbf7-7a82-4dfe-bfb7-496d18f010f6", "value": "Building and Development"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">{"id": "5532c828-d790-435b-9051-8b5f861e6432", "value": "\u0627\u0644\u0628\u0646\u0627\u0621 \u0648\u0627\u0644\u062a\u0637\u0648\u064a\u0631"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">{"id": "144f39cf-4e14-439e-8558-e2cf715dd521", "value": "Construction et d\u00e9veloppement"}</skos:prefLabel>
+        <dcterms:identifier xml:lang="en">{"id": "d4bf1500-a9cd-4d54-8c2b-f0fa617d573f", "value": "https://database.eamena.org/concepts/8e602902-3c8a-3430-a7df-fff6df57db8b"}</dcterms:identifier>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://database.eamena.org/aa6abdbd-6fd3-375e-ad0a-56aa1ff95971">
+        <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+        <dcterms:identifier xml:lang="en">{"id": "7753ffe8-b0fb-4e79-a602-23b1c553c97d", "value": "https://database.eamena.org/concepts/aa6abdbd-6fd3-375e-ad0a-56aa1ff95971"}</dcterms:identifier>
+        <skos:prefLabel xml:lang="en-us">{"id": "67496b31-25f0-4c18-855d-0921192571a0", "value": "Hunting/Fishing"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">{"id": "06a6b13a-545c-4c37-ab6c-87ce2c2e997d", "value": "\u0635\u064a\u062f \u0628\u0631\u064a/ \u0635\u064a\u062f \u0628\u062d\u0631\u064a"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">{"id": "1f41e9ab-e3da-4ca1-bb4c-40595daddf8d", "value": "Chasse/P\u00eache"}</skos:prefLabel>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://database.eamena.org/917aac6e-3995-36ed-93ad-259be697390f">
+        <skos:prefLabel xml:lang="ar">{"id": "d278aa3b-0a7b-4d7c-87ed-e0aa73cfb34c", "value": "\u062c\u0646\u0627\u0626\u0632\u064a/ \u062a\u0630\u0643\u0627\u0631\u064a"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="en-us">{"id": "323226a9-9fd0-4e0d-aa4f-eeb9b9708094", "value": "Funerary/Memorial"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">{"id": "d77de891-8611-4646-a823-f037d67074e6", "value": "Fun\u00e9raire/M\u00e9morial"}</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+        <dcterms:identifier xml:lang="en">{"id": "98215bee-2d4a-4233-a05c-e1e29275357e", "value": "https://database.eamena.org/concepts/917aac6e-3995-36ed-93ad-259be697390f"}</dcterms:identifier>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://database.eamena.org/a456b5cd-9658-3c94-8d50-b26c97d7cc4f">
+        <dcterms:identifier xml:lang="en">{"id": "d1a8288e-dc72-4080-ab09-a34d8c65868f", "value": "https://database.eamena.org/concepts/a456b5cd-9658-3c94-8d50-b26c97d7cc4f"}</dcterms:identifier>
+        <skos:prefLabel xml:lang="en-us">{"id": "44973c58-f329-433f-bdb5-f39be752bcfb", "value": "Religious Activities"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">{"id": "8f306266-3477-4180-8164-12528cf0c573", "value": "\u0623\u0646\u0634\u0637\u0629 \u062f\u064a\u0646\u064a\u0629"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">{"id": "cd86c084-f648-4bc3-8f33-3996c8d0a0aa", "value": "Activit\u00e9s religieuses"}</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower rdf:resource="https://database.eamena.org/2f0d55b5-a63e-33e2-9184-332b04f7583a"/>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://database.eamena.org/536e3948-5f36-3308-bd5e-d9b7fab50726">
+        <dcterms:identifier xml:lang="en">{"id": "2fca8e61-1045-4b8e-83bb-b7ed4841c731", "value": "https://database.eamena.org/concepts/536e3948-5f36-3308-bd5e-d9b7fab50726"}</dcterms:identifier>
+        <skos:prefLabel xml:lang="en-us">{"id": "7b8335f3-fc6c-4900-9f9a-d90b08f437d9", "value": "Archaeological"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">{"id": "08facd3d-c544-42fe-9bdd-123b56ae23a2", "value": "\u0623\u062b\u0631\u064a"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">{"id": "8b1ff1d1-e9ba-461c-8c91-962729623f40", "value": "Arch\u00e9ologique"}</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower rdf:resource="https://database.eamena.org/767e9467-3bc2-3f71-9427-0ace387bd843"/>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://database.eamena.org/61718bc9-33e2-33f8-8f7d-d2710026f91f">
+        <dcterms:identifier xml:lang="en">{"id": "7e194cea-0177-4308-a34a-4d2d04d72226", "value": "https://database.eamena.org/concepts/61718bc9-33e2-33f8-8f7d-d2710026f91f"}</dcterms:identifier>
+        <skos:prefLabel xml:lang="ar">{"id": "00ab84e9-2b46-4b9f-a3e7-ef196281029f", "value": "\u062f\u0641\u0627\u0639\u064a/ \u062a\u062d\u0635\u064a\u0646\u0627\u062a"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="en-us">{"id": "0f34f4bd-0118-4dc7-a1e9-e8f0fa6e758c", "value": "Defensive/Fortification"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">{"id": "8451b3cc-2f48-488e-b598-f16a0b365f97", "value": "D\u00e9fensive/Fortification"}</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower rdf:resource="https://database.eamena.org/d5915110-f292-30db-b0a1-f2ed50fcca56"/>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://database.eamena.org/eec7d801-0e69-36d4-8db3-c33aa97ea47f">
+        <dcterms:identifier xml:lang="en">{"id": "e85f6756-05e7-4315-b8bd-1cb8615c9785", "value": "https://database.eamena.org/concepts/eec7d801-0e69-36d4-8db3-c33aa97ea47f"}</dcterms:identifier>
+        <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+        <skos:prefLabel xml:lang="ar">{"id": "7fac016a-e69d-4140-a860-08d30dc03426", "value": "\u0633\u064a\u0627\u062d\u0629/ \u0646\u0634\u0627\u0637\u0627\u062a \u0632\u064a\u0627\u0631\u0629"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="en-us">{"id": "2bdb25d1-95a5-4248-a575-a06cac84dd07", "value": "Tourism/Visitor Activities"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">{"id": "05829d08-dc3c-40f8-bee1-d1444f740f50", "value": "Activit\u00e9s touristiques/visiteurs"}</skos:prefLabel>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://database.eamena.org/05c6983f-a103-3ac3-be1a-eecb8f8c9c8e">
+        <dcterms:identifier xml:lang="en">{"id": "5865b81d-002c-4117-af75-8ec3fa47653e", "value": "https://database.eamena.org/concepts/05c6983f-a103-3ac3-be1a-eecb8f8c9c8e"}</dcterms:identifier>
+        <skos:prefLabel xml:lang="en-us">{"id": "1ba58698-43bc-4c39-b29d-4d16e26d1919", "value": "Unknown"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">{"id": "8c3e01af-9e1f-4693-a60b-7d6a58cf478d", "value": "\u063a\u064a\u0631 \u0645\u062d\u062f\u062f"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">{"id": "43de39cb-b926-4ce2-a88a-ba4854131b36", "value": "Inconnu"}</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://database.eamena.org/a268096c-82e8-353d-942d-589db5d74cb7">
+        <dcterms:identifier xml:lang="en">{"id": "c781f196-ee48-4825-89e9-724d18a41160", "value": "https://database.eamena.org/concepts/a268096c-82e8-353d-942d-589db5d74cb7"}</dcterms:identifier>
+        <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+        <skos:prefLabel xml:lang="ar">{"id": "eec1d52e-d717-41fb-8224-8ea46daaa03d", "value": "\u0645\u064a\u0644 \u0645\u0631\u0628\u0639"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="en-us">{"id": "27c79f91-507a-4416-aa0d-8e16be31f781", "value": "square miles (mi2)"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">{"id": "e84267fa-0e12-4164-bc3b-b92a48fc9e77", "value": "milles carr\u00e9s (mi2)"}</skos:prefLabel>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower rdf:resource="https://database.eamena.org/a977c4e7-6a37-3a99-a798-68cb78b79b27"/>
+    <skos:narrower rdf:resource="https://database.eamena.org/aa083fa5-1bd7-3f98-a9f8-6983675ce608"/>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://database.eamena.org/13613cb9-7c69-3bbf-beef-302693523d18">
+        <dcterms:identifier xml:lang="en">{"id": "90b29bf6-2e58-4037-aefc-c923295b953d", "value": "https://database.eamena.org/concepts/13613cb9-7c69-3bbf-beef-302693523d18"}</dcterms:identifier>
+        <skos:prefLabel xml:lang="ar">{"id": "abd18afa-e90b-44b6-bf6f-114bdf48d3de", "value": "\u0641\u062f\u0627\u0646"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="en-us">{"id": "7b9944d5-cdab-4bb4-9ce1-ffb8e42d8867", "value": "acres (ac)"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">{"id": "b9c038d4-3536-4813-9871-83dc8139a89b", "value": "acres (acre)"}</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://database.eamena.org/b0016ae5-7d10-3d8b-aff8-7a6988e32e18">
+        <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+        <dcterms:identifier xml:lang="en">{"id": "0f0ede49-1754-40b1-8457-bf250335dc8b", "value": "https://database.eamena.org/concepts/b0016ae5-7d10-3d8b-aff8-7a6988e32e18"}</dcterms:identifier>
+        <skos:prefLabel xml:lang="en-us">{"id": "ab19d0ca-2ba1-4113-bda2-8f6c7ef94c28", "value": "hectares (ha)"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">{"id": "b6d07f3b-44ee-4bfc-ab09-bae5801b4824", "value": "\u0647\u0643\u062a\u0627\u0631"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">{"id": "35b2dcb3-0f55-4947-93fb-166deb8e3bd5", "value": "hectares (ha)"}</skos:prefLabel>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://database.eamena.org/ee65d82f-276c-30df-b7df-7b90dc4f32ce">
+        <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+        <skos:prefLabel xml:lang="en-us">{"id": "e65e4fda-d69f-42e6-8da0-772dc682eacc", "value": "pounds"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">{"id": "ebc590d2-bfef-427c-8a42-bf4ba89801fb", "value": "livres sterling"}</skos:prefLabel>
+        <dcterms:identifier xml:lang="en">{"id": "9186a093-f659-4a85-bb9e-98394fdd376f", "value": "https://database.eamena.org/concepts/ee65d82f-276c-30df-b7df-7b90dc4f32ce"}</dcterms:identifier>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://database.eamena.org/4c56a1eb-0bbe-3d82-a13f-6874a1610e23">
+        <skos:prefLabel xml:lang="en-us">{"id": "9fd7244d-f86c-42b3-bea2-bb128b8555d7", "value": "feet (ft)"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">{"id": "909a3312-8a44-41e2-b3d3-7377066f138b", "value": "\u0642\u062f\u0645"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">{"id": "ee86d280-1832-4515-afdf-daef9d890462", "value": "pieds (pi)"}</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+        <dcterms:identifier xml:lang="en">{"id": "e3e40358-5367-431d-855e-f20ab3680f5a", "value": "https://database.eamena.org/concepts/4c56a1eb-0bbe-3d82-a13f-6874a1610e23"}</dcterms:identifier>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower rdf:resource="https://database.eamena.org/30aabe4f-9a3d-38a1-b32c-8e2b3b685729"/>
+    <skos:narrower rdf:resource="https://database.eamena.org/ba1268c2-b72e-3af1-a6be-cf344944cd54"/>
+    <skos:narrower rdf:resource="https://database.eamena.org/c345da50-1317-3445-b5e2-287047345b4a"/>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://database.eamena.org/dd8f8204-882d-3ceb-a8eb-af2ea851a38b">
+        <skos:prefLabel xml:lang="en-us">{"id": "5ce507ed-65e6-4091-9c7a-f8010f36f3b2", "value": "Imperial"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">{"id": "18aea608-9135-412f-abc5-e11d6ed4a2e6", "value": "\u0627\u0644\u0642\u064a\u0627\u0633 \u0627\u0644\u0625\u0645\u0628\u0631\u0627\u0637\u0648\u0631\u064a"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">{"id": "5c77fa42-f4ef-4bb2-ae8f-a50bdd67872c", "value": "Imp\u00e9rial"}</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+        <dcterms:identifier xml:lang="en">{"id": "2d219929-8ffa-495e-9389-6064eac94245", "value": "https://database.eamena.org/concepts/dd8f8204-882d-3ceb-a8eb-af2ea851a38b"}</dcterms:identifier>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower rdf:resource="https://database.eamena.org/3214c3a6-d172-3d13-be39-63ed9972b568"/>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://database.eamena.org/c7a07b33-9b75-3ba6-9247-447629f823ae">
+        <dcterms:identifier xml:lang="en">{"id": "e4f469f0-20b0-4d20-816c-ac4a02e4e21b", "value": "https://database.eamena.org/concepts/c7a07b33-9b75-3ba6-9247-447629f823ae"}</dcterms:identifier>
+        <skos:prefLabel xml:lang="en-us">{"id": "5a16de93-ffc7-4cae-9ee7-0ee420a4621b", "value": "square feet (ft2)"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">{"id": "29776452-a220-4635-b667-9a3e5deb5b8a", "value": "\u0642\u062f\u0645 \u0645\u0631\u0628\u0639"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">{"id": "db43dd75-3728-4583-8b5d-7cfed69b9828", "value": "pieds carr\u00e9s (pi2)"}</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+      </skos:Concept>
+    </skos:narrower>
+    <dcterms:identifier xml:lang="en">{"id": "7b60a9c3-eebd-40db-96ce-ceeec21c3b5e", "value": "https://database.eamena.org/concepts/ab6a0aa7-0a25-3876-bff4-1959da2f3caa"}</dcterms:identifier>
+    <dcterms:identifier xml:lang="en">{"id": "21f0f2f1-c978-4b13-8875-88818597ff46", "value": "https://database.eamena.org/concepts/c13a44f0-e5b1-3eb6-977f-63f77bf4c3a1"}</dcterms:identifier>
+    <skos:prefLabel xml:lang="en-us">{"id": "fbc0e6f9-07bf-4b42-97b9-4648b7c02152", "value": "Unit Of Measurement"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "9bef6ece-49e4-473a-99e8-a578c7f69c4d", "value": "Unit\u00e9 de mesure"}</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/55ec8962-e0ef-4412-bcf9-0b46c5c2ad78">
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+    <skos:prefLabel xml:lang="ar">{"id": "4f89ec03-b4b9-40f3-bd82-d02b0739d32b", "value": "\u0645\u062f\u0645\u0631"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="en-us">{"id": "00fcc9dd-59f3-49c9-b20e-9f839164c117", "value": "Destroyed"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "b2287906-a989-4110-95b9-b651674637a1", "value": "D\u00e9truit"}</skos:prefLabel>
+    <dcterms:identifier xml:lang="en">{"id": "47443846-d747-44b7-b1b9-cafa5ce99e7b", "value": "https://database.eamena.org/concepts/55ec8962-e0ef-4412-bcf9-0b46c5c2ad78"}</dcterms:identifier>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/def695f9-5541-34ad-9b9a-27bd79fec102">
+    <skos:prefLabel xml:lang="ar">{"id": "7b8e8c1d-1dbd-4c93-b8f9-976f18c0b0aa", "value": "\u0636\u0626\u064a\u0644"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="en-us">{"id": "de06800d-8f84-487a-bb3a-d3881ac5e237", "value": "Negligible"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "9b19b3e5-1e96-41ea-a721-e219b019626d", "value": "N\u00e9gligeable"}</skos:prefLabel>
+    <dcterms:identifier xml:lang="en">{"id": "ccc44a6f-fe8c-474a-8f94-d169a3afd4ca", "value": "https://database.eamena.org/concepts/def695f9-5541-34ad-9b9a-27bd79fec102"}</dcterms:identifier>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/55c39320-82ec-31af-b3c9-f801c4c2d3e1">
+    <skos:prefLabel xml:lang="ar">{"id": "0eb22889-8ee1-4376-b98c-27180a3d225e", "value": "\u0645\u0648\u0631\u064a\u062a\u0627\u0646\u064a\u0627"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="en-us">{"id": "008a58f5-1af4-470d-a22c-2dda5f432598", "value": "Mauretania"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "5216ab02-d47c-4eb0-aaba-eb783c75c162", "value": "Maur\u00e9tanie"}</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+    <dcterms:identifier xml:lang="en">{"id": "f514632f-082b-45e2-ad73-1a36788f9202", "value": "https://database.eamena.org/concepts/55c39320-82ec-31af-b3c9-f801c4c2d3e1"}</dcterms:identifier>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/71333f2d-8f46-4fa4-be2f-e668db80b829">
+    <skos:prefLabel xml:lang="en-us">{"id": "0808081c-6e85-4f6e-a654-e3b5e899afb9", "value": "MIS14"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "e2beff3e-93de-4315-a27e-d286dfc4ef8f", "value": "MIS14"}</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+    <dcterms:identifier xml:lang="en">{"id": "b8bdaba7-62a6-4cb4-899c-27d70db19d58", "value": "https://database.eamena.org/concepts/71333f2d-8f46-4fa4-be2f-e668db80b829"}</dcterms:identifier>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/16925504-a909-4ee4-a48d-f1712bbcd5c8">
+    <skos:narrower rdf:resource="https://database.eamena.org/416d335b-5bfe-4413-a7ee-a488209a8751"/>
+    <skos:narrower rdf:resource="https://database.eamena.org/01d6294c-05d4-4f08-99b6-3a6d1782d9c1"/>
+    <skos:narrower rdf:resource="https://database.eamena.org/55ec8962-e0ef-4412-bcf9-0b46c5c2ad78"/>
+    <skos:narrower rdf:resource="https://database.eamena.org/b967b49e-9bc9-4e90-b016-5f966b3bea73"/>
+    <skos:narrower rdf:resource="https://database.eamena.org/85074ecd-e0f7-4d91-9b64-d9cc8ecbe5ad"/>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://database.eamena.org/e264ab06-5a80-4885-a721-78f4b4f4eb00">
+        <skos:prefLabel xml:lang="en-us">{"id": "db058d4f-0ecf-4262-a218-04df1805b570", "value": "Very Bad"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">{"id": "f55cfc7d-5afb-449e-a319-c62aeda78919", "value": "\u0633\u064a\u0626 \u062c\u062f\u0627\u064b"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">{"id": "c6832f5c-e598-41c0-93c6-25cb621ca254", "value": "Tr\u00e8s mauvais"}</skos:prefLabel>
+        <dcterms:identifier xml:lang="en">{"id": "2c7cce8c-ea7e-4f75-b013-987ba9118bfa", "value": "https://database.eamena.org/concepts/e264ab06-5a80-4885-a721-78f4b4f4eb00"}</dcterms:identifier>
+        <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+      </skos:Concept>
+    </skos:narrower>
+    <dcterms:identifier xml:lang="en">{"id": "eee09f51-d7e2-4c5b-87c2-d4b20fa018f2", "value": "https://database.eamena.org/concepts/16925504-a909-4ee4-a48d-f1712bbcd5c8"}</dcterms:identifier>
+    <skos:prefLabel xml:lang="en-us">{"id": "9d40252e-5825-44a5-8b52-6ee496588258", "value": "Overall Condition State"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "9f4950d6-a841-4deb-90c4-17422cc0a616", "value": "\u00c9tat de l'\u00e9tat g\u00e9n\u00e9ral"}</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/a368f832-fdeb-427b-abe9-af246140fb9a">
+    <skos:prefLabel xml:lang="en-us">{"id": "02f101c0-699f-43f2-a222-9f7182af5cba", "value": "Risk Level"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "25d9cb16-65a7-41eb-815a-b96f161abb3c", "value": "Niveau de risque"}</skos:prefLabel>
+    <skos:narrower rdf:resource="https://database.eamena.org/4f0f05ee-7309-4faa-89c1-461bbc562757"/>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://database.eamena.org/d8d245a3-ca65-4f5d-8fe8-6c328f9f74d2">
+        <skos:prefLabel xml:lang="en-us">{"id": "5db4b21b-28a7-4992-8b15-3cba83e28b9a", "value": "High"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">{"id": "b9eb31bf-0e32-4573-94fe-f4d2e57ca4ed", "value": "\u0639\u0627\u0644\u064a"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">{"id": "19e5867d-f744-4c8e-bc5e-e5292b7e3c36", "value": "Haut"}</skos:prefLabel>
+        <dcterms:identifier xml:lang="en">{"id": "e1a8a97c-baaa-49f1-bbbf-3bea06b8e980", "value": "https://database.eamena.org/concepts/d8d245a3-ca65-4f5d-8fe8-6c328f9f74d2"}</dcterms:identifier>
+        <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://database.eamena.org/a9efe628-1976-47bb-ba02-04a99b6a943f">
+        <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+        <dcterms:identifier xml:lang="en">{"id": "eaf6cf09-687e-4ee5-acd1-4b007150dbc9", "value": "https://database.eamena.org/concepts/a9efe628-1976-47bb-ba02-04a99b6a943f"}</dcterms:identifier>
+        <skos:prefLabel xml:lang="en-us">{"id": "d5fdfd0e-b5c1-4bc1-a74a-a9f7137d5e5b", "value": "Very High"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">{"id": "2bb8a29a-3f94-4ff4-af9d-8dbddf5f1116", "value": "\u0639\u0627\u0644\u064a \u062c\u062f\u0627\u064b"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">{"id": "66695399-64fe-4630-b2f0-fdeab88ffaf8", "value": "Tr\u00e8s haut"}</skos:prefLabel>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://database.eamena.org/b84a50a3-7133-45c0-9d5a-1400bd03e902">
+        <dcterms:identifier xml:lang="en">{"id": "c943db7e-2442-4237-8ee2-fa1bde568b85", "value": "https://database.eamena.org/concepts/b84a50a3-7133-45c0-9d5a-1400bd03e902"}</dcterms:identifier>
+        <dcterms:identifier xml:lang="en">{"id": "fcc3a980-e170-4650-ad06-d02a6754a5ef", "value": "https://database.eamena.org/concepts/b84a50a3-7133-45c0-9d5a-1400bd03e902"}</dcterms:identifier>
+        <dcterms:identifier xml:lang="en">{"id": "2302f5c0-02a0-49bc-9588-9f62a15f583a", "value": "https://database.eamena.org/concepts/b84a50a3-7133-45c0-9d5a-1400bd03e902"}</dcterms:identifier>
+        <dcterms:identifier xml:lang="en">{"id": "2567363c-b490-4f11-90aa-3319f47623c6", "value": "https://database.eamena.org/concepts/b84a50a3-7133-45c0-9d5a-1400bd03e902"}</dcterms:identifier>
+        <dcterms:identifier xml:lang="en">{"id": "32a61bcf-a273-4874-b0f6-bd005e1b4c2a", "value": "https://database.eamena.org/concepts/b84a50a3-7133-45c0-9d5a-1400bd03e902"}</dcterms:identifier>
+        <dcterms:identifier xml:lang="en">{"id": "9e33909e-73fd-4aa6-aead-6151bf38da03", "value": "https://database.eamena.org/concepts/b84a50a3-7133-45c0-9d5a-1400bd03e902"}</dcterms:identifier>
+        <dcterms:identifier xml:lang="en">{"id": "bd8faccb-ef87-43da-9c91-2645f670b96d", "value": "https://database.eamena.org/concepts/b84a50a3-7133-45c0-9d5a-1400bd03e902"}</dcterms:identifier>
+        <skos:prefLabel xml:lang="en">{"id": "d650e20f-85e6-43a7-90b7-54ceaf77ec3a", "value": "Unknown"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">{"id": "c66b99d8-e242-4f0b-bd6a-9d68470e4d7a", "value": "\u063a\u064a\u0631 \u0645\u062d\u062f\u062f"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">{"id": "6d78177d-743f-4dbd-b408-395c998b3cad", "value": "Inconnu"}</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://database.eamena.org/03d90e7e-747b-4131-b718-c01414e532aa">
+        <skos:prefLabel xml:lang="en-us">{"id": "56d60000-f504-42fb-ae76-eed8b416c537", "value": "Low"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">{"id": "353ba465-c7fd-4681-9539-00c06ba2dc87", "value": "\u0645\u0646\u062e\u0641\u0636"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">{"id": "bd55faa5-b722-4235-85bf-f1e3e1a1054f", "value": "Faible"}</skos:prefLabel>
+        <dcterms:identifier xml:lang="en">{"id": "42c3dfb5-ebcc-4b79-b567-8727c88179c6", "value": "https://database.eamena.org/concepts/03d90e7e-747b-4131-b718-c01414e532aa"}</dcterms:identifier>
+        <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://database.eamena.org/b5eb1f75-5fac-4837-9226-52200dfdbe21">
+        <skos:prefLabel xml:lang="en-us">{"id": "eebcdade-b3d0-4a04-98e4-9da15a49bb55", "value": "Urgent"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">{"id": "3bd3936f-0bd5-4e59-856a-07ac29d5bed2", "value": "\u0639\u0627\u062c\u0644"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">{"id": "1183b5a0-dc68-4c26-98bb-8aaf1b584ef2", "value": "Urgent"}</skos:prefLabel>
+        <dcterms:identifier xml:lang="en">{"id": "82d3d6c3-dae2-4648-936d-e89e135d24e4", "value": "https://database.eamena.org/concepts/b5eb1f75-5fac-4837-9226-52200dfdbe21"}</dcterms:identifier>
+        <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+      </skos:Concept>
+    </skos:narrower>
+    <dcterms:identifier xml:lang="en">{"id": "e0e146ee-44f4-4805-8153-20739aa27f9c", "value": "https://database.eamena.org/concepts/a368f832-fdeb-427b-abe9-af246140fb9a"}</dcterms:identifier>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+    <skos:scopeNote xml:lang="en-us">{"id": "106c0046-747e-4995-ba1b-5dd6858b54b1", "value": "Risk_Level.I4"}</skos:scopeNote>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/31be4296-6d96-4160-a307-c3103b9b8d4d">
+    <skos:narrower>
+      <skos:Concept rdf:about="https://database.eamena.org/e819f7d3-85bc-4f7a-8956-0b0b8b195cb9">
+        <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+        <skos:prefLabel xml:lang="en-us">{"id": "30e9cb3c-0cad-4add-9460-51310f5fa0c1", "value": "Yes"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">{"id": "7d1b95dc-4658-4416-9c2f-a25e4b7306bb", "value": "Oui"}</skos:prefLabel>
+        <dcterms:identifier xml:lang="en">{"id": "0e08efcf-8520-40b6-b61c-4a593730544a", "value": "https://database.eamena.org/concepts/e819f7d3-85bc-4f7a-8956-0b0b8b195cb9"}</dcterms:identifier>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower rdf:resource="https://database.eamena.org/ee3da27d-0188-4855-bda0-670b8f37310c"/>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+    <skos:prefLabel xml:lang="en-us">{"id": "ff75efcc-9016-4fd7-87fd-65ad29623038", "value": "Boolean"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "7b1f7125-eb1e-452a-a99c-f7f0c98069b9", "value": "Bool\u00e9en"}</skos:prefLabel>
+    <dcterms:identifier xml:lang="en">{"id": "c7ca4341-4d35-4d1f-a14a-ee38a79f9229", "value": "https://database.eamena.org/concepts/31be4296-6d96-4160-a307-c3103b9b8d4d"}</dcterms:identifier>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/3f6fa054-57d6-3aa8-9e4e-fa053bb8e1d9">
+    <skos:prefLabel xml:lang="en-us">{"id": "1f88d36d-284f-4514-8fdb-b144c50572fa", "value": "Bahrain"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">{"id": "d5118663-89ed-4cf8-8c99-392ee1a46d4a", "value": "\u0627\u0644\u0628\u062d\u0631\u064a\u0646"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "e0912fb9-12c7-4bc0-9388-7c3949e96278", "value": "Bahre\u00efn"}</skos:prefLabel>
+    <dcterms:identifier xml:lang="en">{"id": "7186c931-b767-45a6-a779-4a400acfa725", "value": "https://database.eamena.org/concepts/3f6fa054-57d6-3aa8-9e4e-fa053bb8e1d9"}</dcterms:identifier>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/0165cec6-64dd-3265-952a-eaf2ab354b09">
+    <skos:narrower>
+      <skos:Concept rdf:about="https://database.eamena.org/a6435004-665b-3fa1-8228-ca222308cefe">
+        <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+        <skos:prefLabel xml:lang="ar">{"id": "905f0c78-b7d0-45db-8a77-8b5ba9c1b2f8", "value": "\u0636\u0639\u064a\u0641"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="en-us">{"id": "c3c92878-b409-4b94-b4ce-bee89da2029e", "value": "Low"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">{"id": "e0a5e9cd-f4a4-47a0-9c4f-9e2dbfd410a3", "value": "Faible"}</skos:prefLabel>
+        <dcterms:identifier xml:lang="en">{"id": "e38657bf-9457-4054-b1f2-76486f697891", "value": "https://database.eamena.org/concepts/a6435004-665b-3fa1-8228-ca222308cefe"}</dcterms:identifier>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://database.eamena.org/12d30765-2e17-34f9-a4b1-ec9be6abef2e">
+        <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+        <skos:prefLabel xml:lang="en-us">{"id": "bdd3ac8b-05c0-4819-b7f6-20d1f2262024", "value": "Medium"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">{"id": "0a88f6e0-8f82-40c0-98f5-16a5ef4841ac", "value": "\u0645\u062a\u0648\u0633\u0637"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">{"id": "48993ecd-976d-466e-8466-7778f73fa03a", "value": "Moyen"}</skos:prefLabel>
+        <dcterms:identifier xml:lang="en">{"id": "ca0175ca-1689-4630-b558-5cc4823d9ef8", "value": "https://database.eamena.org/concepts/12d30765-2e17-34f9-a4b1-ec9be6abef2e"}</dcterms:identifier>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://database.eamena.org/6f1924cb-4235-306f-9c14-5896e0f694fa">
+        <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+        <skos:prefLabel xml:lang="ar">{"id": "5fededac-6722-421a-a927-7559984fe314", "value": "\u0639\u0627\u0644\u064a"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="en-us">{"id": "36a4b930-82e2-48fd-a0c0-7e7e2caa4d6c", "value": "High"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">{"id": "c0480114-66ff-4e14-8d66-6ec402fd7f53", "value": "Haut"}</skos:prefLabel>
+        <dcterms:identifier xml:lang="en">{"id": "1438ad6f-6498-48e0-a551-509b75708c05", "value": "https://database.eamena.org/concepts/6f1924cb-4235-306f-9c14-5896e0f694fa"}</dcterms:identifier>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://database.eamena.org/e6c39c9f-92eb-3f31-8672-3d5b48f5b512">
+        <skos:prefLabel xml:lang="en-us">{"id": "0ab58f9d-4057-4259-b62f-45c25370598b", "value": "Not Applicable"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">{"id": "22502901-4338-4c64-9e35-97fe03d721b3", "value": "\u0644\u0627 \u064a\u0645\u0643\u0646 \u062a\u062d\u062f\u064a\u062f\u0647"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">{"id": "f23a09e5-a7c1-463c-9c7d-847dc76741f7", "value": "N'est pas applicable"}</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+        <dcterms:identifier xml:lang="en">{"id": "c5354d45-936c-4a49-bb0b-7dc238c63999", "value": "https://database.eamena.org/concepts/e6c39c9f-92eb-3f31-8672-3d5b48f5b512"}</dcterms:identifier>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower rdf:resource="https://database.eamena.org/4002e009-309c-386f-8f82-0a4eaed5d8fb"/>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://database.eamena.org/0d82f968-9ada-385f-97f9-fd77ef7155b2">
+        <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+        <skos:prefLabel xml:lang="ar">{"id": "7ec68ee6-e24c-41cf-9aa3-ff3b48445937", "value": "\u0627\u0644\u0643\u0648\u064a\u062a"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="en-us">{"id": "32f4324b-8862-4719-af33-2ff0769e8dc5", "value": "Kuwait"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">{"id": "2e8e1ebc-c347-4c34-8f17-8f0a309448b3", "value": "Koweit"}</skos:prefLabel>
+        <dcterms:identifier xml:lang="en">{"id": "cc91511f-b76a-4ea5-ab39-097e1e767eb3", "value": "https://database.eamena.org/concepts/0d82f968-9ada-385f-97f9-fd77ef7155b2"}</dcterms:identifier>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://database.eamena.org/b371d37e-cbbc-42c3-86de-f80e4753a892">
+        <dcterms:identifier xml:lang="en">{"id": "fd53ea6c-93a4-420d-b6b4-5e8640585649", "value": "https://database.eamena.org/concepts/b371d37e-cbbc-42c3-86de-f80e4753a892"}</dcterms:identifier>
+        <skos:prefLabel xml:lang="en-us">{"id": "4fdc1521-25fc-4155-b47b-d511af25b0a8", "value": "Djibouti"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">{"id": "a70ba172-521f-452d-9f6c-221be724b33d", "value": "\u062c\u064a\u0628\u0648\u062a\u064a"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">{"id": "b7b2adb5-8a6e-4444-b5d2-6bec4300ae40", "value": "Djibouti"}</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://database.eamena.org/f0bbdbf7-3db5-3c79-8f12-4e246a18d940">
+        <dcterms:identifier xml:lang="en">{"id": "b14fa94e-0ad7-4115-97de-04d3a7ff07b7", "value": "https://database.eamena.org/concepts/f0bbdbf7-3db5-3c79-8f12-4e246a18d940"}</dcterms:identifier>
+        <skos:prefLabel xml:lang="en-us">{"id": "c08b6e33-a244-415b-8bb1-b1f0949fc581", "value": "Algeria"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">{"id": "0ad2903c-7141-45ba-805e-77771ee52d57", "value": "\u0627\u0644\u062c\u0632\u0627\u0626\u0631"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">{"id": "6fd02ab8-aa0c-45fc-affc-fd33a429a599", "value": "Alg\u00e9rie"}</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://database.eamena.org/4a31aa72-d96d-3238-a153-3298f12548c0">
+        <skos:prefLabel xml:lang="en-us">{"id": "ea757006-317d-45b8-b555-010f9eac8817", "value": "United Arab Emirates"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">{"id": "7d6f4fbd-3c75-4098-b4ee-6fc5a450af7a", "value": "\u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a \u0627\u0644\u0639\u0631\u0628\u064a\u0629 \u0627\u0644\u0645\u062a\u062d\u062f\u0629"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">{"id": "c35a62e8-6e87-4861-9f67-5598917c15c7", "value": "Emirats Arabes Unis"}</skos:prefLabel>
+        <dcterms:identifier xml:lang="en">{"id": "b2cbb499-a481-441b-9622-076ab50b24fd", "value": "https://database.eamena.org/concepts/4a31aa72-d96d-3238-a153-3298f12548c0"}</dcterms:identifier>
+        <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://database.eamena.org/3ed95778-2dee-3a29-a48f-1f2faf319f96">
+        <skos:prefLabel xml:lang="ar">{"id": "31dd3aaf-40ae-423b-ac00-7b71f3d9b919", "value": "\u0634\u064a\u0621 \u0623\u062e\u0631"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="en-us">{"id": "821dea7f-9b33-48fd-bdcb-a241059d9f6a", "value": "Other"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">{"id": "9ef38392-05c6-4668-a7b0-b23d1d283c9b", "value": "Autre"}</skos:prefLabel>
+        <skos:narrower rdf:resource="https://database.eamena.org/a08351fe-edc1-46ac-b430-b94d66c554f6"/>
+        <skos:narrower rdf:resource="https://database.eamena.org/cb83bbf5-9f90-3254-82cf-8d9f837e8751"/>
+        <dcterms:identifier xml:lang="en">{"id": "5617de90-dede-47fd-9d4f-1df6531dee35", "value": "https://database.eamena.org/concepts/3ed95778-2dee-3a29-a48f-1f2faf319f96"}</dcterms:identifier>
+        <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower rdf:resource="https://database.eamena.org/d9727116-c9fb-3cdd-8dc0-a09a83b94d88"/>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://database.eamena.org/7832887b-99b1-4c08-b3d3-879038a85d08">
+        <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+        <skos:prefLabel xml:lang="en-us">{"id": "0683d686-7ce0-4a97-9ad5-02439ca4d7cd", "value": "Eritrea"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">{"id": "8a6e6e9e-7478-403c-b0ff-caf099241742", "value": "\u0623\u0631\u062a\u064a\u0631\u064a\u0627"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">{"id": "2870f612-cb20-42cb-91c9-9b663a80d0bc", "value": "\u00c9rythr\u00e9e"}</skos:prefLabel>
+        <dcterms:identifier xml:lang="en">{"id": "66632f08-87b1-4e37-a837-288430950857", "value": "https://database.eamena.org/concepts/7832887b-99b1-4c08-b3d3-879038a85d08"}</dcterms:identifier>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower rdf:resource="https://database.eamena.org/55c39320-82ec-31af-b3c9-f801c4c2d3e1"/>
+    <skos:narrower rdf:resource="https://database.eamena.org/c00a8baa-01cc-385b-b902-5cf1db220b72"/>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://database.eamena.org/3ab92b04-9572-4ebb-954d-1c745cc831c5">
+        <dcterms:identifier xml:lang="en">{"id": "8bc6df34-ad97-4502-a6bf-a1db27b4f030", "value": "https://database.eamena.org/concepts/3ab92b04-9572-4ebb-954d-1c745cc831c5"}</dcterms:identifier>
+        <dcterms:identifier xml:lang="en">{"id": "25e6ca9d-8794-4498-8c37-eaaf16626a28", "value": "https://database.eamena.org/concepts/3ab92b04-9572-4ebb-954d-1c745cc831c5"}</dcterms:identifier>
+        <dcterms:identifier xml:lang="en">{"id": "6cb3efd6-17e4-4344-8bcf-c3fe3cbda914", "value": "https://database.eamena.org/concepts/3ab92b04-9572-4ebb-954d-1c745cc831c5"}</dcterms:identifier>
+        <dcterms:identifier xml:lang="en">{"id": "05a54dd0-a022-42d8-9fc6-8c9e1509e204", "value": "https://database.eamena.org/concepts/3ab92b04-9572-4ebb-954d-1c745cc831c5"}</dcterms:identifier>
+        <dcterms:identifier xml:lang="en">{"id": "7b06226f-40a0-44c0-8924-adf963408d23", "value": "https://database.eamena.org/concepts/3ab92b04-9572-4ebb-954d-1c745cc831c5"}</dcterms:identifier>
+        <dcterms:identifier xml:lang="en">{"id": "20c71154-618c-46c5-8975-36e75ebbee6c", "value": "https://database.eamena.org/concepts/3ab92b04-9572-4ebb-954d-1c745cc831c5"}</dcterms:identifier>
+        <dcterms:identifier xml:lang="en">{"id": "ac0fec9b-b17a-431e-ad07-ae0ae8dcf4f9", "value": "https://database.eamena.org/concepts/3ab92b04-9572-4ebb-954d-1c745cc831c5"}</dcterms:identifier>
+        <skos:prefLabel xml:lang="en">{"id": "4ed99706-2d90-449a-9a70-700fc5326fb1", "value": "Afghanistan"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">{"id": "0fd694fc-f5e5-4c31-b722-9e0f41ac29c1", "value": "\u0623\u0641\u063a\u0627\u0646\u0633\u062a\u0627\u0646"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">{"id": "e4191447-a27f-4655-968d-5501b8f5e2f0", "value": "Afghanistan"}</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://database.eamena.org/edc14e6a-2d99-3949-a72c-8a462c700edb">
+        <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+        <skos:prefLabel xml:lang="ar">{"id": "81494ba1-34a3-4e07-983d-099c636e20f2", "value": "\u0644\u064a\u0628\u064a\u0627"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="en-us">{"id": "049dda8d-9fd3-49a9-b31d-de825de40951", "value": "Libya"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">{"id": "3f208b8a-0963-482a-92e6-0a431b59923b", "value": "Libye"}</skos:prefLabel>
+        <dcterms:identifier xml:lang="en">{"id": "b0ae7eeb-42d9-4c16-8210-c2eeaff4eb4c", "value": "https://database.eamena.org/concepts/edc14e6a-2d99-3949-a72c-8a462c700edb"}</dcterms:identifier>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://database.eamena.org/40db4313-a3ba-3ce8-983a-9409d1fbdf92">
+        <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+        <dcterms:identifier xml:lang="en">{"id": "fff9f842-a6d3-4b3b-8f37-4b8dd114b48a", "value": "https://database.eamena.org/concepts/40db4313-a3ba-3ce8-983a-9409d1fbdf92"}</dcterms:identifier>
+        <skos:prefLabel xml:lang="en-us">{"id": "58b0fe44-feff-40d0-b031-abe9aab377b4", "value": "Tunisia"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">{"id": "7793d769-5541-4e17-8121-97c019226105", "value": "\u062a\u0648\u0646\u0633"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">{"id": "cbc6e97e-e65a-4717-a3c0-941a1d3f76bc", "value": "Tunisie"}</skos:prefLabel>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower rdf:resource="https://database.eamena.org/481bd76d-9397-3002-a833-29c95699f8a7"/>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://database.eamena.org/cd6a767a-fd48-3ed7-a069-86122b8d4c73">
+        <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+        <dcterms:identifier xml:lang="en">{"id": "10d1acd1-c559-4c38-880d-280131fd6ede", "value": "https://database.eamena.org/concepts/cd6a767a-fd48-3ed7-a069-86122b8d4c73"}</dcterms:identifier>
+        <skos:prefLabel xml:lang="ar">{"id": "599a7cb9-9bd5-42bf-aa25-0693ad8fb020", "value": "\u0627\u0644\u0633\u0639\u0648\u062f\u064a\u0629"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="en-us">{"id": "15db88c0-04a2-4c80-9973-076572711d7a", "value": "Saudi Arabia"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">{"id": "8b09d18d-9e01-4957-bd2d-abbe990aba8a", "value": "Arabie Saoudite"}</skos:prefLabel>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://database.eamena.org/e3eea174-d043-3154-aaa0-37d97ce09d94">
+        <dcterms:identifier xml:lang="en">{"id": "61bc6477-1459-4517-a8aa-d3934f8388c1", "value": "https://database.eamena.org/concepts/e3eea174-d043-3154-aaa0-37d97ce09d94"}</dcterms:identifier>
+        <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+        <skos:prefLabel xml:lang="ar">{"id": "d8d9c254-042a-430a-b80d-0e4a31bcfcc7", "value": "\u0627\u0644\u0645\u063a\u0631\u0628"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="en-us">{"id": "c1c479a9-6cd0-4586-b982-2d55fade27c9", "value": "Morocco"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">{"id": "584ccef4-98fd-491c-b02b-e5a2ba387a7d", "value": "Maroc"}</skos:prefLabel>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://database.eamena.org/7b83c7dc-5e13-3373-b2f4-12b7e24cd9ec">
+        <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+        <skos:prefLabel xml:lang="en-us">{"id": "5e6ba55f-e13d-4c6c-b30b-042e2f764650", "value": "Western Sahara"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">{"id": "33890240-d6cd-4d97-a204-584d5e4d5798", "value": "\u0627\u0644\u0635\u062d\u0631\u0627\u0621 \u0627\u0644\u063a\u0631\u0628\u064a\u0629"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">{"id": "3d2cb1a8-8dd3-4142-b92e-31ac3922d5b2", "value": "Sahara occidental"}</skos:prefLabel>
+        <dcterms:identifier xml:lang="en">{"id": "4ee89f59-223d-43fc-abd1-426d461c2388", "value": "https://database.eamena.org/concepts/7b83c7dc-5e13-3373-b2f4-12b7e24cd9ec"}</dcterms:identifier>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://database.eamena.org/c3d2f038-57d3-3f97-ab81-443fa5d50637">
+        <skos:prefLabel xml:lang="en-us">{"id": "4be2c4ce-df4a-4f9d-92e4-7f88c6fa6753", "value": "Egypt"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">{"id": "d3b9fcf3-8240-45bd-a571-d776f30bc51c", "value": "\u0645\u0635\u0631"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">{"id": "d7dbbd5b-0b0c-41a7-83f8-6799269be95c", "value": "Egypte"}</skos:prefLabel>
+        <dcterms:identifier xml:lang="en">{"id": "7abcb9ba-6a48-4367-b456-82cb734b5108", "value": "https://database.eamena.org/concepts/c3d2f038-57d3-3f97-ab81-443fa5d50637"}</dcterms:identifier>
+        <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://database.eamena.org/701e6c01-4511-321e-8f3e-904d80332a19">
+        <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+        <skos:prefLabel xml:lang="ar">{"id": "41b7a4b6-ac1b-4423-8748-8a74ba9370dd", "value": "\u0644\u0628\u0646\u0627\u0646"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="en-us">{"id": "e843c964-f37b-4185-b980-dd239458cefc", "value": "Lebanon"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">{"id": "1bcb2a96-f1ce-49cb-9269-669352506d42", "value": "Liban"}</skos:prefLabel>
+        <dcterms:identifier xml:lang="en">{"id": "daa3d74a-f41e-4ef7-b326-b5a828cf4f92", "value": "https://database.eamena.org/concepts/701e6c01-4511-321e-8f3e-904d80332a19"}</dcterms:identifier>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower rdf:resource="https://database.eamena.org/36473530-308b-352d-a8a3-79e78c75fd10"/>
+    <skos:narrower rdf:resource="https://database.eamena.org/997017e5-6722-4a3a-8a5a-5d5041e40d12"/>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://database.eamena.org/82f592f8-1257-329d-95a3-bb8a7c1c8b38">
+        <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+        <skos:prefLabel xml:lang="ar">{"id": "5654a738-3387-4894-b307-83d5ab4f3457", "value": "\u0625\u0633\u0631\u0627\u0626\u064a\u0644"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="en-us">{"id": "3a4bead6-c08d-4c1f-becc-9a3fdc8cfcf1", "value": "Israel"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">{"id": "23a81402-90a1-4994-a43d-81b3ac760573", "value": "Isra\u00ebl"}</skos:prefLabel>
+        <dcterms:identifier xml:lang="en">{"id": "4eceb7fc-f1d6-4a13-b849-bcc741151e6e", "value": "https://database.eamena.org/concepts/82f592f8-1257-329d-95a3-bb8a7c1c8b38"}</dcterms:identifier>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://database.eamena.org/adb93823-8ca5-4599-9a62-74a55e64a4de">
+        <skos:prefLabel xml:lang="ar">{"id": "49467ffd-48ff-422c-9484-2f993209cc28", "value": "\u0623\u062b\u064a\u0648\u0628\u064a\u0627"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="en-us">{"id": "48ed02ac-b2de-4c7e-bee4-cfef2b44c393", "value": "Ethiopia"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">{"id": "a14ea4f1-1373-43cd-ab5c-56afba86e862", "value": "Ethiopie"}</skos:prefLabel>
+        <dcterms:identifier xml:lang="en">{"id": "41c6794b-3789-4414-8284-febf3038a5f1", "value": "https://database.eamena.org/concepts/adb93823-8ca5-4599-9a62-74a55e64a4de"}</dcterms:identifier>
+        <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower rdf:resource="https://database.eamena.org/3f6fa054-57d6-3aa8-9e4e-fa053bb8e1d9"/>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://database.eamena.org/1caa1b5d-f083-3dcc-b81a-e5c454b24afb">
+        <skos:prefLabel xml:lang="ar">{"id": "6f2e8252-d01e-433b-aa0b-038c7e8c4616", "value": "\u0645\u0633\u0642\u0637 \u0648\u0639\u064f\u0645\u0627\u0646"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="en-us">{"id": "dc0cc94c-1d30-43e6-8d39-1c682ef6e31b", "value": "Oman"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">{"id": "22c44f99-869d-42ce-ba06-02b5bbbf4cc3", "value": "Oman"}</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+        <dcterms:identifier xml:lang="en">{"id": "644ee8e0-0e0c-47c8-9f70-9d17e05ba91c", "value": "https://database.eamena.org/concepts/1caa1b5d-f083-3dcc-b81a-e5c454b24afb"}</dcterms:identifier>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:prefLabel xml:lang="en-us">{"id": "e02391aa-a3e8-4959-8939-6f34ea385828", "value": "Disturbance Cause Certainty Type"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="en-us">{"id": "cd3d53c4-2e40-45da-b635-9f400567167b", "value": "Modern Country Territory"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "a79b8c17-0160-4346-b891-9e08517705ed", "value": "Territoire de pays moderne"}</skos:prefLabel>
+    <dcterms:identifier xml:lang="en">{"id": "fbab0c12-8146-4d3e-a58e-4431f4929823", "value": "https://database.eamena.org/concepts/0165cec6-64dd-3265-952a-eaf2ab354b09"}</dcterms:identifier>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/d6fdbeb9-ff41-3ebe-b7e2-992eba6d0759">
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+    <dcterms:identifier xml:lang="en">{"id": "d8681b28-b81b-4c9f-864d-78f762842126", "value": "https://database.eamena.org/concepts/d6fdbeb9-ff41-3ebe-b7e2-992eba6d0759"}</dcterms:identifier>
+    <skos:prefLabel xml:lang="en-us">{"id": "85d6eb0a-54ef-4dc4-b0bb-4ae91076e143", "value": "Setback from sidewalk"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "9fbbb8ca-d0c6-49e1-a5ec-dfb5e910fa8e", "value": "Retrait du trottoir"}</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/8d60c427-0e45-3f39-a333-0694cc989da6">
+    <skos:prefLabel xml:lang="ar">{"id": "1224216b-3655-4599-898e-7e14e3824677", "value": "\u0639\u0627\u0644\u064a"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="en-us">{"id": "433b0da1-8fee-44f8-9e8f-63703880ad07", "value": "High"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "ed809228-3a0c-4d38-be32-56ac0dc634c8", "value": "Haut"}</skos:prefLabel>
+    <dcterms:identifier xml:lang="en">{"id": "6caa1ee5-ba83-45ed-9001-5b74d3ebb110", "value": "https://database.eamena.org/concepts/8d60c427-0e45-3f39-a333-0694cc989da6"}</dcterms:identifier>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/466e034e-c664-4121-9cca-5deeacaa0b0d">
+    <dcterms:identifier xml:lang="en">{"id": "183b4ca9-a4c6-4058-9bb3-d73264e5d609", "value": "https://database.eamena.org/concepts/466e034e-c664-4121-9cca-5deeacaa0b0d"}</dcterms:identifier>
+    <skos:prefLabel xml:lang="en-us">{"id": "a41a5074-b585-4fd3-acef-6b988a3c82c4", "value": "MIS13"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "33047e6a-8a52-41fc-9665-189f91071b61", "value": "MIS13"}</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/dcf60d6e-4a92-327a-8323-af6379defe63">
+    <skos:prefLabel xml:lang="ar">{"id": "e5f0aa65-8c27-4c9d-9973-129605817e31", "value": "\u0645\u0624\u0643\u062f"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="en-us">{"id": "2a0b4a29-abb7-4454-be19-b887bc682b4a", "value": "Definite"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "a2c10522-6167-46a7-b98b-2f84c3d4f812", "value": "Pr\u00e9cis"}</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+    <dcterms:identifier xml:lang="en">{"id": "e9c959ee-d087-431e-b13d-25dc162feafd", "value": "https://database.eamena.org/concepts/dcf60d6e-4a92-327a-8323-af6379defe63"}</dcterms:identifier>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/e95e0e13-5034-3b66-92d9-518dbbf707e1">
+    <skos:prefLabel xml:lang="en-us">{"id": "466dcc2b-8715-49dc-9998-a412e9ab00a1", "value": "Attached 2 sides"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "27b3defe-05ed-4598-a056-7a55c634fcf2", "value": "Attach\u00e9 2 c\u00f4t\u00e9s"}</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+    <dcterms:identifier xml:lang="en">{"id": "0f765d7f-ed7a-4a53-bc52-493845fd8fdc", "value": "https://database.eamena.org/concepts/e95e0e13-5034-3b66-92d9-518dbbf707e1"}</dcterms:identifier>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/477baf2a-9609-383b-b722-d72215b626e7">
+    <skos:narrower rdf:resource="https://database.eamena.org/8d60c427-0e45-3f39-a333-0694cc989da6"/>
+    <skos:narrower rdf:resource="https://database.eamena.org/f4901b8a-96c9-3ac6-88b8-4e235699ecc2"/>
+    <skos:narrower rdf:resource="https://database.eamena.org/522ad589-33f1-3cfe-9c92-b7f93a2b41e3"/>
+    <skos:narrower rdf:resource="https://database.eamena.org/fea6197a-9acd-3c69-8c8c-fdb087f9f945"/>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://database.eamena.org/9c445386-93fe-33b5-98eb-800fe1db29a3">
+        <skos:prefLabel xml:lang="en-us">{"id": "fde26e1c-8236-444c-ad32-7682c348f159", "value": "Medium"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">{"id": "7d75fa00-db19-4ac7-a63b-709587ca0755", "value": "\u0645\u062a\u0648\u0633\u0637"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">{"id": "62017fea-207f-4855-8f9d-a5f411b07bb7", "value": "Moyen"}</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+        <dcterms:identifier xml:lang="en">{"id": "e3cb1be3-4616-4d09-8a01-4941debda2a1", "value": "https://database.eamena.org/concepts/9c445386-93fe-33b5-98eb-800fe1db29a3"}</dcterms:identifier>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+    <skos:prefLabel xml:lang="en-us">{"id": "850f4dc4-0a40-475f-bf22-5694a036c537", "value": "Site Size Certainty Type"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">{"id": "b136adff-da4e-4e23-95fc-65f7106069dd", "value": "\u0645\u062f\u0649 \u0627\u0644\u062a\u0623\u0643\u062f \u0645\u0646 \u0627\u0645\u062a\u062f\u0627\u062f \u0627\u0644\u0645\u0648\u0642\u0639 \u0645\u0646 \u0646\u0627\u062d\u064a\u0629 \u0647\u0646\u062f\u0633\u064a\u0629"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "25db0e51-6083-41c9-9b25-57b9cb5c437c", "value": "Type de certitude sur la taille du site"}</skos:prefLabel>
+    <dcterms:identifier xml:lang="en">{"id": "814d4da1-bef9-4c25-b566-516ac7fa1491", "value": "https://database.eamena.org/concepts/477baf2a-9609-383b-b722-d72215b626e7"}</dcterms:identifier>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/1cef9fac-b690-3057-8025-e886af23d979">
+    <skos:prefLabel xml:lang="ar">{"id": "739ed4e2-ae82-4e80-8b4d-e5970bb20fab", "value": "\u0644\u0627 \u064a\u0645\u0643\u0646 \u062a\u062d\u062f\u064a\u062f\u0647"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="en-us">{"id": "bb9d0530-6d11-437d-bff8-643418ac9bfb", "value": "Not Applicable"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "55c2544b-1925-4357-acb3-c420191890d1", "value": "N'est pas applicable"}</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+    <dcterms:identifier xml:lang="en">{"id": "0b0b92a9-4a37-4829-bf21-16d1ecbaa4b6", "value": "https://database.eamena.org/concepts/1cef9fac-b690-3057-8025-e886af23d979"}</dcterms:identifier>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/7ad7226d-75b8-340f-8ff0-be3d22845c71">
+    <skos:narrower rdf:resource="https://database.eamena.org/91197de2-01fb-30e4-a753-da7e788b3b6c"/>
+    <skos:narrower rdf:resource="https://database.eamena.org/f44110bd-c9c7-3e46-a00b-2ae132ba3415"/>
+    <skos:narrower rdf:resource="https://database.eamena.org/def695f9-5541-34ad-9b9a-27bd79fec102"/>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://database.eamena.org/f289e0f0-40e3-3340-b251-5d1896a64123">
+        <skos:prefLabel xml:lang="ar">{"id": "78520dbd-ec88-4312-9412-ffaa5b359fab", "value": "\u0639\u0627\u0644\u064a"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="en-us">{"id": "a349b879-9fe4-43ca-b0b5-d92d4a9a5974", "value": "High"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">{"id": "7c26053b-53a9-47ed-aa65-3206e495dd86", "value": "Haut"}</skos:prefLabel>
+        <dcterms:identifier xml:lang="en">{"id": "68b9c390-a56b-4fa9-8b85-08cef8d70a2b", "value": "https://database.eamena.org/concepts/f289e0f0-40e3-3340-b251-5d1896a64123"}</dcterms:identifier>
+        <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower rdf:resource="https://database.eamena.org/1cef9fac-b690-3057-8025-e886af23d979"/>
+    <skos:narrower rdf:resource="https://database.eamena.org/dcf60d6e-4a92-327a-8323-af6379defe63"/>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+    <skos:prefLabel xml:lang="en-us">{"id": "3da27e26-fe09-486c-9d62-895b2a99e6ce", "value": "Site Function Certainty Type"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "09a12e32-5691-43cf-8a39-e452adeb8fec", "value": "Type de certitude de fonction du site"}</skos:prefLabel>
+    <dcterms:identifier xml:lang="en">{"id": "f6077126-3899-41fd-8e79-be555a2ef0a9", "value": "https://database.eamena.org/concepts/7ad7226d-75b8-340f-8ff0-be3d22845c71"}</dcterms:identifier>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/de739873-6d72-38bf-9dda-032d3ca58fa1">
+    <skos:prefLabel xml:lang="en-us">{"id": "35398c59-03e2-49f5-be5b-482d035e4661", "value": "Setting Type"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "eceece03-42f7-43d6-8dc7-86210f651b1c", "value": "Type de r\u00e9glage"}</skos:prefLabel>
+    <skos:narrower rdf:resource="https://database.eamena.org/e95e0e13-5034-3b66-92d9-518dbbf707e1"/>
+    <skos:narrower rdf:resource="https://database.eamena.org/d6fdbeb9-ff41-3ebe-b7e2-992eba6d0759"/>
+    <skos:narrower rdf:resource="https://database.eamena.org/6a0ff228-7ccf-31db-993c-7e17d8bd1dac"/>
+    <skos:narrower rdf:resource="https://database.eamena.org/d4ebc207-6bad-31a7-a698-045d73fc5c99"/>
+    <skos:narrower rdf:resource="https://database.eamena.org/1d4b73b3-55fe-34f3-b4b1-7e965492826e"/>
+    <skos:narrower rdf:resource="https://database.eamena.org/4f9a6d70-2caf-3b4a-a653-7e299453b53c"/>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+    <dcterms:identifier xml:lang="en">{"id": "f8ee8e2d-fe0e-4fe5-b5bb-0eaccb45a32e", "value": "https://database.eamena.org/concepts/de739873-6d72-38bf-9dda-032d3ca58fa1"}</dcterms:identifier>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/06e7ea14-7ba3-4fd6-9fce-7ace3e586817">
+    <skos:prefLabel xml:lang="en-us">{"id": "47f74ee3-2c37-401c-8bd3-501150b0d767", "value": "Mesotidal (2-4m)"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">{"id": "79a6d25e-7748-4d5c-bf78-8a045ae99ede", "value": "\u0645\u062a\u0648\u0633\u0637 (4-2 \u0645\u062a\u0631)"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "403543e7-9271-40f5-b476-14fe2f4ccd7e", "value": "M\u00e9sotidal (2-4m)"}</skos:prefLabel>
+    <dcterms:identifier xml:lang="en">{"id": "db572f06-1f4a-4a7a-a967-e4e2335b7456", "value": "https://database.eamena.org/concepts/06e7ea14-7ba3-4fd6-9fce-7ace3e586817"}</dcterms:identifier>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/dd2a74dd-0b00-4238-b13c-1d577f136cb8">
+    <skos:narrower>
+      <skos:Concept rdf:about="https://database.eamena.org/1cdd2720-fa93-4015-b618-48309205a9d6">
+        <skos:prefLabel xml:lang="ar">{"id": "21a6e0e6-e179-4ab9-931d-176cce6c167d", "value": "\u0639\u0627\u0644 (4&gt; \u0645\u062a\u0631)"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="en-us">{"id": "f103608c-9bd5-4232-be26-258ab75b7466", "value": "Macrotidal (&gt;4m)"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">{"id": "9880544e-79f2-430c-9db6-4cc484b4f811", "value": "Macrotidal (&gt;4m)"}</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+        <dcterms:identifier xml:lang="en">{"id": "df0a02a6-4ca1-4597-998a-d9e3d87337c6", "value": "https://database.eamena.org/concepts/1cdd2720-fa93-4015-b618-48309205a9d6"}</dcterms:identifier>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower rdf:resource="https://database.eamena.org/06e7ea14-7ba3-4fd6-9fce-7ace3e586817"/>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://database.eamena.org/f34f025f-3974-40e1-b702-2f5173f506a6">
+        <skos:prefLabel xml:lang="en-us">{"id": "f3b22ddf-b0c6-4960-9d05-c7b5fe02c57f", "value": "MIS7"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">{"id": "6c2efd5e-0cf4-4804-aaf4-e6974e4b755b", "value": "MIS7"}</skos:prefLabel>
+        <dcterms:identifier xml:lang="en">{"id": "65bdea58-d8d3-451f-8dbe-d2ee33edc2d2", "value": "https://database.eamena.org/concepts/f34f025f-3974-40e1-b702-2f5173f506a6"}</dcterms:identifier>
+        <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://database.eamena.org/9a22c787-7b41-46bb-9df0-ce33a3ad44eb">
+        <skos:prefLabel xml:lang="en-us">{"id": "ed981bfb-da6d-41a4-8be8-91566dae2645", "value": "MIS18"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">{"id": "fdef35f8-4b9c-449c-b153-25f0ba63b9de", "value": "MIS18"}</skos:prefLabel>
+        <dcterms:identifier xml:lang="en">{"id": "a8d76f81-b0de-4057-9904-44f6cb07d738", "value": "https://database.eamena.org/concepts/9a22c787-7b41-46bb-9df0-ce33a3ad44eb"}</dcterms:identifier>
+        <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower rdf:resource="https://database.eamena.org/1830fde6-03c8-49be-aa13-53a81eaea76a"/>
+    <skos:narrower rdf:resource="https://database.eamena.org/19a3e5d3-32e3-4840-b931-2dd568856d6a"/>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://database.eamena.org/dc671b14-5bf3-4391-af0f-e166979b3a6a">
+        <skos:prefLabel xml:lang="en-us">{"id": "2d731c94-bfb8-475b-9fc9-635862fbe895", "value": "MIS12"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">{"id": "320b751f-3621-4b80-9c6c-fc609f1c1ab3", "value": "MIS12"}</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+        <dcterms:identifier xml:lang="en">{"id": "29fc90c4-31e0-4c18-8938-bfd34867e06e", "value": "https://database.eamena.org/concepts/dc671b14-5bf3-4391-af0f-e166979b3a6a"}</dcterms:identifier>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower rdf:resource="https://database.eamena.org/2371967c-d7f6-410d-b34b-ccd3b8ff00ba"/>
+    <skos:narrower rdf:resource="https://database.eamena.org/466e034e-c664-4121-9cca-5deeacaa0b0d"/>
+    <skos:narrower rdf:resource="https://database.eamena.org/71333f2d-8f46-4fa4-be2f-e668db80b829"/>
+    <dcterms:identifier xml:lang="en">{"id": "9279bab6-2864-477a-bfb9-c891df1c40a2", "value": "https://database.eamena.org/concepts/dd2a74dd-0b00-4238-b13c-1d577f136cb8"}</dcterms:identifier>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+    <skos:prefLabel xml:lang="en-us">{"id": "5105518a-e48d-4bbc-89ec-0d86f56a08c3", "value": "Marine Isotope Stages"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "212cf14f-40f2-4233-a35b-161b93c7172f", "value": "\u00c9tapes des isotopes marins"}</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/38fef049-4688-32fb-86b3-81f6b430a861">
+    <skos:narrower rdf:resource="https://database.eamena.org/469ddeee-dd80-432e-817b-7bbc4e8572cc"/>
+    <skos:narrower rdf:resource="https://database.eamena.org/b6b1f550-56db-4f32-80e3-c90a0e61a6cc"/>
+    <skos:narrower rdf:resource="https://database.eamena.org/e6416445-7a74-4cf5-8d26-8d15dbed16d3"/>
+    <skos:narrower rdf:resource="https://database.eamena.org/fe8cac7e-9c7f-4a25-91c1-f66882e1ca7e"/>
+    <skos:narrower rdf:resource="https://database.eamena.org/0a774c7d-1c94-44ad-9081-b42721b1a579"/>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+    <skos:prefLabel xml:lang="en-us">{"id": "83e900aa-4f46-4238-b143-ee9917fbcdea", "value": "Construction Material Type"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "db0a4785-da60-4c4e-91a6-f7529b3e2664", "value": "Type de mat\u00e9riau de construction"}</skos:prefLabel>
+    <dcterms:identifier xml:lang="en">{"id": "cffc5c7a-6d1d-4015-b3bf-9256a4a7ed4a", "value": "https://database.eamena.org/concepts/38fef049-4688-32fb-86b3-81f6b430a861"}</dcterms:identifier>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/4f322d9a-70cb-3d7a-b153-fdeb9b0c9441">
+    <dcterms:identifier xml:lang="en">{"id": "59e230c2-4230-4c8b-bef9-f45b4ef01112", "value": "https://database.eamena.org/concepts/4f322d9a-70cb-3d7a-b153-fdeb9b0c9441"}</dcterms:identifier>
+    <skos:narrower rdf:resource="https://database.eamena.org/63e7adcf-ff97-3f68-8934-e9ad9ca65ac8"/>
+    <skos:narrower rdf:resource="https://database.eamena.org/d2490ecd-1e88-36f0-acc9-2319bd2bdf12"/>
+    <skos:narrower rdf:resource="https://database.eamena.org/e3c17854-b307-31eb-8f0e-7d668e89a78a"/>
+    <skos:narrower>
+      <skos:Concept rdf:about="https://database.eamena.org/980eb019-ddba-381f-92a8-5e5bc377182e">
+        <dcterms:identifier xml:lang="en">{"id": "3d8bcf8b-c7ee-4253-bd3c-b7f2669f8c3d", "value": "https://database.eamena.org/concepts/980eb019-ddba-381f-92a8-5e5bc377182e"}</dcterms:identifier>
+        <skos:prefLabel xml:lang="ar">{"id": "1d14f528-fadf-405b-b154-70fe6e493e97", "value": "\u0644\u0627 \u064a\u0645\u0643\u0646 \u062a\u062d\u062f\u064a\u062f\u0647"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="en-us">{"id": "898e244b-ce18-4b30-a96b-681ee1b892bc", "value": "Not Applicable"}</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">{"id": "4f43531a-2956-47c6-8bce-7c26371291ab", "value": "N'est pas applicable"}</skos:prefLabel>
+        <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:prefLabel xml:lang="ar">{"id": "d256f115-2048-44f8-afbf-961898f62a58", "value": "\u0645\u062f\u0649 \u0627\u0644\u062a\u0623\u0643\u062f \u0645\u0646 \u0627\u0644\u0641\u062a\u0631\u0629 \u0627\u0644\u062d\u0636\u0627\u0631\u064a\u0629"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="en-us">{"id": "2701ee64-596a-4614-b7a2-667b5188eceb", "value": "Cultural Period Certainty Type"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "ea7c2084-8bbe-4220-89f4-5c64f511b2e2", "value": "Type de certitude de p\u00e9riode culturelle"}</skos:prefLabel>
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="https://database.eamena.org/cb83bbf5-9f90-3254-82cf-8d9f837e8751">
+    <skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+    <skos:prefLabel xml:lang="en-us">{"id": "5249470f-1da7-4389-b874-71710cb1e76a", "value": "Turkey"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="ar">{"id": "1c43d217-d991-440a-a9c7-b6380d393634", "value": "\u062a\u0631\u0643\u064a\u0627"}</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">{"id": "d27ba390-10a2-4fd4-bb74-0123dc2897e6", "value": "Turquie"}</skos:prefLabel>
+    <dcterms:identifier xml:lang="en">{"id": "52874be2-336a-4572-8deb-2d12c7640424", "value": "https://database.eamena.org/concepts/cb83bbf5-9f90-3254-82cf-8d9f837e8751"}</dcterms:identifier>
+  </skos:Concept>
+</rdf:RDF>

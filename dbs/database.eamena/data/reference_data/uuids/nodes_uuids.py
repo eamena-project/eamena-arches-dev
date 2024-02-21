@@ -1,5 +1,7 @@
 def nodes_uuids(rm = "https://raw.githubusercontent.com/eamena-project/eamena/master/eamena/pkg/graphs/resource_models/Heritage%20Place.json"):
-	# Collect nodes' names and UUIDs from resource models
+	######################################################
+	## Collect nodes' names and UUIDs from resource models
+	######################################################
 	import requests
 	import json
 	import pandas as pd

@@ -10,7 +10,7 @@
 flowchart
   subgraph Arches v7
     subgraph EAMENA DB
-    ea[(Eamena v4)]
+      ea[(Eamena v4)];
     end
     subgraph internationalisation
       id6[ar];

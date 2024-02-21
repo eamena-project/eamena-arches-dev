@@ -6,10 +6,62 @@
 
 ## Diagram
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.14.0/mermaid.min.js"></script>
+<h2>FlowChart</h2>
+<div class="mermaid">
+  graph LR
+  A -- text --> B --> Stackoverflow -- msg --> myLabel2
+  click Stackoverflow "https://stackoverflow.com/" "some desc when mouse hover" _blank
+  click myLabel2 "https://stackoverflow.com/" "some desc when mouse hover"
+</div>
+
+<h2>classDiagram</h2>
+<div class="mermaid">
+  %% https://github.com/mermaid-js/mermaid/blob/cbe3a9159db4d5e67d270fe701cd63de1510f6ee/docs/directives.md?plain=1#L10-L48
+  %%{init: {'theme': 'forest'}}%%
+  classDiagram
+    class myCls {
+      attr type
+      method()
+    }
+    %% ↓ must set: securityLevel=loose %% default para: clsID
+    click myCls call myFunc() "desc."
+
+    class myCls2
+    click myCls2 call myFunc('hello world') "desc."
+
+    class myClsUseLink {
+      +field1
+    }
+
+    link myClsUseLink "https://www.github.com" "This is a link"
+</div>
+
+<h2>Gantt</h2>
+<div class="mermaid">
+  gantt
+  dateFormat HH:mm
+  axisFormat %H:%M
+  try to click me : gotoSO, 19:00, 5min
+  %% click : debug, after gotoSO,  5min  --> error, click is "keyword"
+  clickMe : debug, after gotoSO,  5min
+  endNode : milestone, m, 20:00, 0min
+  click gotoSO href "https://stackoverflow.com/"
+  click debug call myFunc()
+  %% NOTE: not working on github
+</div>
+
+<script>
+  mermaid.initialize({
+    securityLevel: 'loose', // strict, loose, antiscript, sandbox // // https://github.com/mermaid-js/mermaid/blob/b141f24068e9c5f6979706383a29db6380ffdf31/docs/usage.md?plain=1#L114-L117
+  });
+
+  function myFunc(arg) {
+    console.log(arg)
+  }
+</script>
+
 ```mermaid
-mermaidAPI.initialize({
-    securityLevel: 'loose'
-});
 flowchart LR
   subgraph Arches v7
     subgraph EAMENA DB

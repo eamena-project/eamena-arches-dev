@@ -57,7 +57,9 @@ flowchart
   ea --- reference-data
   ea <--- install
 
-  click idr1 "https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data/reference_data" _blank
+  click idr1 "https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data/reference_data#erd" _blank
+  click idr2 "https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data/reference_data#mds" _blank
+  click idr3 "https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data/reference_data#groups-of-fields-fields-and-field-values-descriptions" _blank
   click id6 "https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/internationalisation" _blank
   click id7 "https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/internationalisation" _blank
   click id8 "https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/install" _blank

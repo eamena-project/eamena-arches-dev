@@ -7,7 +7,7 @@
 ## Diagram
 
 ```mermaid
-flowchart LR
+flowchart
   subgraph Arches v7
     subgraph EAMENA DB
     ea[(Eamena v4)]

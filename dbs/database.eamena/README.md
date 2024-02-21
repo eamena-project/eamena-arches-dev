@@ -29,7 +29,7 @@ flowchart LR
     end
     subgraph formated data
       direction TB
-      id9A -- Bulk Upload formatting --> id9B[<a href='https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bulk#readme'>BU</a>];
+      id9A -- Bulk Upload formatting --> id9B[BU];
       id9B -- Bulk Upload --> ea;
       ea -- Bulk Retrieve --> id9B;
     end
@@ -60,6 +60,7 @@ flowchart LR
   click idf2 "https://github.com/eamena-project/eamena-arches-dev/blob/main/dev/citations/citation_generator.ipynb" _blank
   click idg1 "https://colab.research.google.com/github/eamena-project/eamena-arches-dev/blob/main/dev/citations/citation_generator.ipynb" _blank
   click id5 "https://github.com/eamena-project/eamenaR" _blank
+  click id9B "https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bulk#readme" _blank
 ```
 
 

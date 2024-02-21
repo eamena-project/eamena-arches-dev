@@ -1,4 +1,72 @@
-# Internationalisation
+# i18n
+> Internationalisation
+
+## Convert thesauri
+
+Example for the EAMENA.xml file, and translation to French (`fr`), using the [skos2excel](https://github.com/ads04r/skos2excel tools)
+
+1. Convert [EAMENA.xml](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/concepts/EAMENA.xml) to [EAMENA_fr.xlsx]() using the `skos2excel.py` script:
+
+```sh
+py skos2excel.py ./data/EAMENA.xml ./data/EAMENA_fr.xlsx -lang fr -f xlsx 
+```
+
+2. Convert the [EAMENA_fr.xlsx]() concepts to [EAMENA_fr.xml](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/concepts/EAMENA_fr.xml) using the `excel2skos.py` script:
+
+```sh
+py excel2skos.py ./data/EAMENA_fr.xlsx ./data/EAMENA_fr.xml -b ./data/EAMENA.xml
+```
+
+3. On the DB (SSH):
+
+Change directory
+
+```sh
+cd /opt/arches/eamena/eamena/pkg/reference_data/concepts
+```
+
+Import from GitHub
+
+```sh
+wget https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/dbs/database.eamena/data/reference_data/concepts/EAMENA_fr.xml
+```
+
+Rename the old file and new file
+
+```sh
+sudo mv EAMENA.xml EAMENA_old.xml
+sudo mv EAMENA_fr.xml EAMENA.xml
+```
+
+activate ENV, and run `import_reference_data` ...
+
+```sh
+(ENV) root@ip-172-31-32-122:/opt/arches/eamena# python manage.py packages -o import_reference_data -s '/opt/arches/eamena/eamena/pkg/reference_data/concepts/EAMENA.xml'
+```
+
+... gives this message (ORPHANS)
+
+```
+operation: import_reference_data
+2024-02-21 03:21:17,255 arches.app.utils.skos WARNING  
+The SKOS file "EAMENA.xml" appears to have orphaned concepts.
+```
+
+Restart Apache
+
+```sh
+(ENV) root@ip-172-31-32-122:/opt/arches/eamena# sudo service apache2 restart
+```
+
+Imported, with errors (ORPHANS)
+
+<p align="center">
+  <img src='https://raw.githubusercontent.com/zoometh/skos2excel/www/err-orphans.png' width = "500px">
+  <br>
+    <em>French, Arabic and English... but with orphans</em>
+</p>
+
+
 
 ## Spotted errors
 

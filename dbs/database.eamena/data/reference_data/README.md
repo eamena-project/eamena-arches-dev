@@ -34,7 +34,7 @@ Thinner cateories (`level3`) colored by groups: [[fields-description.html](https
 
 **UUIDs**
 
-Run the Python function [nodes_uuids()]() on a RM to collect the UUIDs of the nodes
+Run the Python function [nodes_uuids()](uuids/nodes-uuids.py) on a RM to collect the UUIDs of the nodes
 
 ```Python
 df_nodes = nodes_uuids(rm = "https://raw.githubusercontent.com/eamena-project/eamena/master/eamena/pkg/graphs/resource_models/Heritage%20Place.json")
@@ -42,9 +42,9 @@ file_path = "C:/Rprojects/eamenaR/inst/extdata/ids_temp.csv"
 df_nodes.to_csv(file_path, sep=',', index=False)
 ```
 
-Gives this [ids_temp.csv]() file
+Gives this [ids_temp.csv](https://github.com/eamena-project/eamenaR/blob/main/inst/extdata/ids_temp.csv) file.
 
-Fieldnames (ex: "Effect type") have UUIDs. To find these correspondances, check the `nodeid` in the RM. For example, the "Effect type" field has the UUID `34cfea90-c2c0-11ea-9026-02e7594ce0a0` (see its [fieldname](https://github.com/achp-project/prj-eamena-marea/blob/8e397ad1343cd7fb04e4ca8a50247a1e3a687cb2/resource_models/Heritage%20Place.json#L2036) and [uuid](https://github.com/achp-project/prj-eamena-marea/blob/8e397ad1343cd7fb04e4ca8a50247a1e3a687cb2/resource_models/Heritage%20Place.json#L6530)).
+> **Note:** Fieldnames (ex: "Effect type") have UUIDs. To check these correspondances, check the `nodeid` in the RM. For example, the "Effect type" field has the UUID `34cfea90-c2c0-11ea-9026-02e7594ce0a0` (see its [fieldname](https://github.com/achp-project/prj-eamena-marea/blob/8e397ad1343cd7fb04e4ca8a50247a1e3a687cb2/resource_models/Heritage%20Place.json#L2036) and [uuid](https://github.com/achp-project/prj-eamena-marea/blob/8e397ad1343cd7fb04e4ca8a50247a1e3a687cb2/resource_models/Heritage%20Place.json#L6530)).
 
 #### Groups of fields and field values descriptions
 

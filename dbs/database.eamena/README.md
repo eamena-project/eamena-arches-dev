@@ -1,4 +1,5 @@
 # EAMENA DB
+> EAMENA v4 on Arches v7.4
 
 [reference data](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data/reference_data)
 
@@ -6,6 +7,9 @@
 ## Diagram
 
 ```mermaid
+mermaidAPI.initialize({
+    securityLevel: 'loose'
+});
 flowchart LR
   subgraph Arches v7
     subgraph EAMENA DB

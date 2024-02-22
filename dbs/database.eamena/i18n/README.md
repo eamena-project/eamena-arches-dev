@@ -41,7 +41,7 @@ sudo mv EAMENA_fr.xml EAMENA.xml
 activate ENV, and run `import_reference_data` ...
 
 ```sh
-(ENV) root@ip-172-31-32-122:/opt/arches/eamena# python manage.py packages -o import_reference_data -s '/opt/arches/eamena/eamena/pkg/reference_data/concepts/EAMENA.xml'
+python manage.py packages -o import_reference_data -s '/opt/arches/eamena/eamena/pkg/reference_data/concepts/EAMENA.xml'
 ```
 
 ... gives this message (ORPHANS)

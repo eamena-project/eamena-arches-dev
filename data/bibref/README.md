@@ -128,12 +128,13 @@ result (example):
 
 | Zenodo field | Description |
 |------|-------------|
+| `description` and `title` | accept Markdown syntax |
 | `contributors` | add keys `affiliation`, `orcid` |
 | `references` | add list of references, for ex: `["Doe J (2014). Title. Publisher. DOI", "Smith J (2014). Title. Publisher. DOI"]` |
 | `communities` | maybe Arches-based projects |
-| `locations` | mproblem, only accept point positions (not MBR)|
+| `locations` | problem, only accept point positions (not MBR)|
 
-
+Push on the Zenodo sandbox for the first tests.
 
 
 [^2]: the min and max of the EAMENA field "Assessment Activity Date"

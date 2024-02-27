@@ -101,15 +101,15 @@ graph TD
     G -->|Yes| I
     G -->|No| J{Industrial}
     I -->|Update| K[Farm]
-    I --> IZ(Medium Certainty)
+    K --> KZ(Medium Certainty)
     J -->|Yes| L
     J -->|No| M{Hydrological}
     L -->|Update| N[Press/Press Element]
-    L --> LZ(Medium Certainty)
+    N --> NZ(Medium Certainty)
     M -->|Yes| O
     M -->|No| P{Religious}
     O -->|Update| Q[Aqueduct]
-    O --> OZ(Medium Certainty)
+    Q --> QZ(Medium Certainty)
     P -->|Yes| R
     P -->|No| S{Defensive}
     R -->|Update| T[Church/Chapel]

@@ -6,6 +6,47 @@
 
 ### HP
 
+#### Mapping
+
+```mermaid
+graph TD
+    A[Start] --> B{Check Tomb, Mausoleum, or Bazina}
+    B -->|Yes| C[Funerary/Memorial]
+    B -->|No| D{Check Town or Village}
+    D -->|Yes| E[Domestic]
+    D -->|No| F{Check Farm Site}
+    F -->|Yes| G[Agricultural/Pastoral]
+    F -->|No| H{Check Press}
+    H -->|Yes| I[Industrial/Productive]
+    H -->|No| J{Check Aqueduct}
+    J -->|Yes| K[Hydrological]
+    J -->|No| L{Check Church}
+    L -->|Yes| M[Religious]
+    L -->|No| N{Check Roman Fort or Fort gasr}
+    N -->|Yes| O[Defensive/Fortification]
+    N -->|No| P[End]
+
+    C --> Q[Update bu with Funerary/Memorial Details]
+    E --> R[Update bu with Domestic Details]
+    G --> S[Update bu with Agricultural/Pastoral Details]
+    I --> T[Update bu with Industrial/Productive Details]
+    K --> U[Update bu with Hydrological Details]
+    M --> V[Update bu with Religious Details]
+    O --> W[Update bu with Defensive/Fortification Details]
+
+    Q --> X[Structure]
+    R --> X
+    S --> X
+    T --> X
+    U --> X
+    V --> X
+    W --> X
+    X --> Y[Update bu with Structure Type and Certainty]
+    Y --> P
+```
+
+#### URLs
+
 * Search URL (~7882 HP)
 
 https://database.eamena.org/search?paging-filter=4&tiles=true&format=tilecsv&reportlink=false&precision=6&total=7882&advanced-search=%5B%7B%22op%22%3A%22and%22%2C%2234cfe9dd-c2c0-11ea-9026-02e7594ce0a0%22%3A%7B%22op%22%3A%22~%22%2C%22lang%22%3A%22en%22%2C%22val%22%3A%22AAA%22%7D%2C%2234cfea97-c2c0-11ea-9026-02e7594ce0a0%22%3A%7B%22op%22%3A%22%22%2C%22val%22%3A%224bd93e89-2c7e-4e01-9c42-7119e16092f3%22%7D%7D%5D

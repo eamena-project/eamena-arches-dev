@@ -47,47 +47,43 @@ graph TD
 
 ```mermaid
 graph TD
-    A[Start] --> B{Check Tomb, Mausoleum, or Bazina}
-    B -->|Yes| C[Funerary/Memorial]
-    B -->|No| D{Check Town or Village}
-    D -->|Yes| E[Domestic]
-    D -->|No| F{Check Farm Site}
-    F -->|Yes| G[Agricultural/Pastoral]
-    F -->|No| H{Check Press}
-    H -->|Yes| I[Industrial/Productive]
-    H -->|No| J{Check Aqueduct}
-    J -->|Yes| K[Hydrological]
-    J -->|No| L{Check Church}
-    L -->|Yes| M[Religious]
-    L -->|No| N{Check Roman Fort or Fort gasr}
-    N -->|Yes| O[Defensive/Fortification]
-    N -->|No| Z{Check Roman, Byzantine, or RR}
-    Z -->|Yes| ZA[Classical/Protohistoric/Pre Islamic (North Africa)]
-    Z -->|No| ZB{Check Berber or BerberFor}
-    ZB -->|Yes| ZC[Unknown]
-    ZB -->|No| P[End]
-
-    C --> Q[Update bu with Funerary/Memorial Details]
-    E --> R[Update bu with Domestic Details]
-    G --> S[Update bu with Agricultural/Pastoral Details]
-    I --> T[Update bu with Industrial/Productive Details]
-    K --> U[Update bu with Hydrological Details]
-    M --> V[Update bu with Religious Details]
-    O --> W[Update bu with Defensive/Fortification Details]
-    ZA --> ZA1[Update bu with Classical/Protohistoric/Pre Islamic (North Africa) Details]
-    ZC --> ZC1[Update bu with Unknown Details]
-
-    Q --> X[Structure]
-    R --> X
-    S --> X
-    T --> X
-    U --> X
-    V --> X
-    W --> X
-    ZA1 --> X
-    ZC1 --> X
-    X --> Y[Update bu with Structure Type and Certainty]
-    Y --> P
+    A[Start] -->|Check Data| B{Funerary Conditions}
+    B -->|Yes| C[Set Funerary/Memorial]
+    B -->|No| D{Domestic Conditions}
+    C -->|Update| E[Medium Certainty, Tomb/Grave/Burial]
+    D -->|Yes| F[Set Domestic]
+    D -->|No| G{Agricultural Conditions}
+    F -->|Update| H[Medium Certainty, House/Dwelling]
+    G -->|Yes| I[Set Agricultural/Pastoral]
+    G -->|No| J{Industrial Conditions}
+    I -->|Update| K[Medium Certainty, Farm]
+    J -->|Yes| L[Set Industrial/Productive]
+    J -->|No| M{Hydrological Conditions}
+    L -->|Update| N[Medium Certainty, Press/Press Element]
+    M -->|Yes| O[Set Hydrological]
+    M -->|No| P{Religious Conditions}
+    O -->|Update| Q[Medium Certainty, Aqueduct]
+    P -->|Yes| R[Set Religious]
+    P -->|No| S{Defensive Conditions}
+    R -->|Update| T[Medium Certainty, Church/Chapel]
+    S -->|Yes| U[Set Defensive/Fortification]
+    S -->|No| V{Classical Conditions}
+    U -->|Update| W[Medium Certainty, Fort/Fortress/Castle]
+    V -->|Yes| X[Set Classical/Protohistoric/Pre-Islamic]
+    V -->|No| Y{Berber Conditions}
+    X -->|Update| Z[Possible Certainty]
+    Y -->|Yes| AA[Set Unknown]
+    Y -->|No| AB[End]
+    AA -->|Update| AC[Not Applicable Certainty]
+    E --> AB
+    H --> AB
+    K --> AB
+    N --> AB
+    Q --> AB
+    T --> AB
+    W --> AB
+    Z --> AB
+    AC --> AB
 ```
 
 

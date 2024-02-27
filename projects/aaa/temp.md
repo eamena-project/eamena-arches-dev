@@ -125,7 +125,6 @@ graph TD
 graph TD
     subgraph AAA
     A[Start] -->|Check Data| B{Funerary}
-	B -->|Yes| C
     B -->|No| D{Domestic}
 	D -->|Yes| F
 	D -->|No| G{Agricultural}
@@ -142,6 +141,7 @@ graph TD
 
     subgraph EAMENA
         subgraph subgraph1
+		B -->|Yes| C
         C[Funerary/Memorial]
         F[Domestic]
         I[Agricultural/Pastoral]

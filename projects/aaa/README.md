@@ -24,7 +24,11 @@ graph TD
     L -->|Yes| M[Religious]
     L -->|No| N{Check Roman Fort or Fort gasr}
     N -->|Yes| O[Defensive/Fortification]
-    N -->|No| P[End]
+    N -->|No| Z{Check Roman, Byzantine, or R.R}
+    Z -->|Yes| ZA[Classical/Protohistoric/Pre-Islamic (North Africa)]
+    Z -->|No| ZB{Check Berber or Berber.For}
+    ZB -->|Yes| ZC[Unknown]
+    ZB -->|No| P[End]
 
     C --> Q[Update bu with Funerary/Memorial Details]
     E --> R[Update bu with Domestic Details]
@@ -33,6 +37,8 @@ graph TD
     K --> U[Update bu with Hydrological Details]
     M --> V[Update bu with Religious Details]
     O --> W[Update bu with Defensive/Fortification Details]
+    ZA --> ZA1[Update bu with Classical/Protohistoric/Pre-Islamic (North Africa) Details]
+    ZC --> ZC1[Update bu with Unknown Details]
 
     Q --> X[Structure]
     R --> X
@@ -41,6 +47,8 @@ graph TD
     U --> X
     V --> X
     W --> X
+    ZA1 --> X
+    ZC1 --> X
     X --> Y[Update bu with Structure Type and Certainty]
     Y --> P
 ```

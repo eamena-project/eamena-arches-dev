@@ -126,28 +126,29 @@ graph TD
     subgraph AAA
     A[Start] -->|Check Data| B{Funerary}
     B -->|No| D{Domestic}
-	D -->|Yes| F
 	D -->|No| G{Agricultural}
-	G -->|Yes| I
+	
 	G -->|No| J{Industrial}
-	J -->|Yes| L
 	J -->|No| M{Hydrological}
-	M -->|Yes| O
 	M -->|No| P{Religious}
-	P -->|Yes| R
 	P -->|No| S{Defensive}
-	S -->|Yes| U
     end
 
     subgraph EAMENA
         subgraph subgraph1
 		B -->|Yes| C
         C[Funerary/Memorial]
+		D -->|Yes| F
         F[Domestic]
+		G -->|Yes| I
         I[Agricultural/Pastoral]
+		J -->|Yes| L
         L[Industrial/Productive]
+		M -->|Yes| O
         O[Hydrological]
+		P -->|Yes| R
         R[Religious]
+		S -->|Yes| U
         U[Defensive/Fortification]
         end
         subgraph subgraph2

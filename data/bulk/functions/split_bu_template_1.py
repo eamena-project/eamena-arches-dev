@@ -13,9 +13,7 @@ argp.add_argument('FileIn', metavar='file_in', type=str, help='The BU template t
 argp.add_argument('DirOut', metavar='dir_out', type=str, help='The folder path where to write the many TSV', default='')
 args = argp.parse_args()
 
-
 bu_url = "https://github.com/eamena-project/eamena-arches-dev/raw/main/data/bulk/templates/" + args.FileIn
-# bu_url = "https://github.com/eamena-project/eamena-arches-dev/raw/main/data/bulk/functions/" + "Bulk_Upload_template_231017_test.xlsx"
 bu_name = os.path.basename(bu_url)
 
 response = rq.get(bu_url)
@@ -32,7 +30,5 @@ output_dir = args.DirOut
 
 for sheet_name in xl.sheet_names:
     df = xl.parse(sheet_name)
-    # print(type(df))
     tsv_file = f"bu_{sheet_name}.tsv"
     df.to_csv(os.path.join(output_dir, tsv_file), sep="\t", index=False)
-# print(df)

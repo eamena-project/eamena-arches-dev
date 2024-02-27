@@ -1,5 +1,3 @@
-Flow chart between AAA values and EAMENA values for Heritage Places functions
-
 ```mermaid
 graph TD
     A[Start] -->|Check Data| B{Funerary}

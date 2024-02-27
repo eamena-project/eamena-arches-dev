@@ -123,8 +123,8 @@ graph TD
 
 ```mermaid
 graph TD
-    subgraph AAA
     A[Start] -->|Check Data| B{Funerary}
+    subgraph AAA
     B -->|No| D{Domestic}
 	D -->|No| G{Agricultural}
 	
@@ -135,7 +135,7 @@ graph TD
     end
 
     subgraph EAMENA
-        subgraph subgraph1
+        subgraph "Heritage Place Function"
 		B -->|Yes| C
         C[Funerary/Memorial]
 		D -->|Yes| F
@@ -151,7 +151,7 @@ graph TD
 		S -->|Yes| U
         U[Defensive/Fortification]
         end
-        subgraph subgraph2
+        subgraph "Site.Feature.Interpretation.Type"
         E[Tomb/Grave/Burial]
         H[House/Dwelling]
         K[Farm]
@@ -181,7 +181,7 @@ graph TD
         
         U --> W
         W --> WZ(Medium Certainty)
-        subgraph subgraph3
+        subgraph "Heritage Place Function"
         EZ(Medium Certainty)
         HZ(Medium Certainty)
         KZ(Medium Certainty)

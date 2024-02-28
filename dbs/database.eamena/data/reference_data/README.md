@@ -28,7 +28,7 @@ This indicates that fields, including field values (`level3`, the most detailed 
 
 ### Field descriptions
 
-Thinner categories (`level3`) colored by groups: [[fields-description.html](https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/mds/fields-description.html)]
+Thinner categories (`level3`) colored by groups: [[fields-description.html](https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/mds/fields-description.html)]
 
 <p align="center">
   <img alt="img-name" src="https://github.com/eamena-project/eamena-arches-dev/blob/main/www/arches-v7-hp-data-field-descriptions.png" width="600">

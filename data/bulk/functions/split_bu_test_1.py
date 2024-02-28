@@ -9,15 +9,17 @@ def split_and_save_tables(df, sheet_name, output_dir):
 	starts = df[df[df.columns[0]].astype(str).str.startswith('#')].index
 	# Add the end of the dataframe as a dummy end point for the last table
 	ends = starts[1:].tolist() + [len(df) + 1]
-	
+	os.makedirs(os.path.join(output_dir, sheet_name), exist_ok=True)
+
 	for start, end in zip(starts, ends):
 		table_df = df.iloc[start:end-1].copy()  # Extract table without the dummy end
 		table_title = table_df.iloc[0, 0].lstrip('#').strip().replace(' ', '_')
 		sheet_name = sheet_name.strip().replace(' ', '_')
 		# Adjust to handle empty or generic titles
 		table_name = f"{table_title}" if table_title else f"{sheet_name}_Table_{start}"
+		table_name = table_name.replace('/', '_') # to manage values like `Condition Assessment\Damage`
+
 		# tsv_file_path = os.path.join(output_dir, f"{table_name}.tsv")
-		os.makedirs(os.path.join(output_dir, sheet_name), exist_ok=True)
 		tsv_file_path = os.path.join(output_dir, sheet_name, f"{table_name}.tsv") 
 
 		table_df = table_df.iloc[1:] # rm the first row
@@ -37,6 +39,8 @@ def main(file_in, dir_out):
 		tmp_file_path = tmp_file.name
 
 	xl = pd.ExcelFile(tmp_file_path)
+
+	# print(xl.sheet_names)
 
 	for sheet_name in xl.sheet_names:
 		df = xl.parse(sheet_name)

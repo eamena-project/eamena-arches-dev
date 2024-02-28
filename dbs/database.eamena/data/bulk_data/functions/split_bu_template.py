@@ -27,7 +27,7 @@ def split_and_save_tables(df, sheet_name, output_dir, markdown_table):
 
 		# tsv_file_path = os.path.join(output_dir, f"{table_name}.tsv")
 		tsv_file_path = os.path.join(output_dir, sheet_name, f"{table_name}.tsv") 
-		table_df = table_df.iloc[1:] # rm the first row
+		# table_df = table_df.iloc[1:] # rm the first row
 		table_df.columns = [table_df.columns[0].lstrip('#')] + table_df.columns[1:].tolist()
 		# Save table to TSV
 		table_df.to_csv(tsv_file_path, sep='\t', index=False)
@@ -66,7 +66,7 @@ def main(file_in, dir_out):
 	# # will not read these worksheets
 	# excluded_ws = ["Heritage Place", "Heritage Place example", "Minimum Enhanced Data Standards", "Info Resource", "InfoRes - Imagery", "InfoRes - Cartography", "Person-Organization", "Grid Square", "Relationships", "Colour Coding", "Sheet1"]
 	included_ws =['Archaeological Assessment']
-	
+
 	for sheet_name in xl.sheet_names:
 		if sheet_name in included_ws:
 			print("* read: " + sheet_name)

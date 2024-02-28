@@ -28,7 +28,8 @@ def split_and_save_tables(df, sheet_name, output_dir, markdown_table):
 		# tsv_file_path = os.path.join(output_dir, f"{table_name}.tsv")
 		tsv_file_path = os.path.join(output_dir, sheet_name, f"{table_name}.tsv") 
 		# table_df = table_df.iloc[1:] # rm the first row
-		table_df.columns = [table_df.columns[0].lstrip('#')] + table_df.columns[1:].tolist()
+		# table_df.columns = [table_df.columns[0].lstrip('#')] + table_df.columns[1:].tolist()
+		table_df.iloc[0, 0] = table_df.iloc[0, 0].lstrip('#')
 		table_df.columns = table_df.iloc[0]
 		table_df = table_df.drop(table_df.index[0])
 		table_df = table_df.reset_index(drop=True)

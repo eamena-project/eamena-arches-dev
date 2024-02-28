@@ -11,7 +11,7 @@ def split_and_save_tables(df, sheet_name, output_dir):
 	ends = starts[1:].tolist() + [len(df) + 1]
 	sheet_name = sheet_name.strip().replace(' ', '_')
 	os.makedirs(os.path.join(output_dir, sheet_name), exist_ok=True)
-	root_values = "https://github.com/eamena-project/eamena-arches-dev/raw/main/dbs/database.eamena/data/reference_data/rm/hp/values"
+	root_values = "https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data/reference_data/rm/hp/values"
 
 
 	for start, end in zip(starts, ends):

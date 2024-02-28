@@ -28,10 +28,11 @@ def split_and_save_tables(df, sheet_name, output_dir):
 		table_df.columns = [table_df.columns[0].lstrip('#')] + table_df.columns[1:].tolist()
 		# Save table to TSV
 		table_df.to_csv(tsv_file_path, sep='\t', index=False)
+		table_name_tsv = table_name + ".tsv"
 		print(f"  - saved {tsv_file_path}")
 		print("\n")
-		print(sheet_name)
-		print(os.path.join(root_values, table_name))
+		print(sheet_name.replace('_', ' '))
+		print(os.path.join(root_values, table_name_tsv)
 		print("\n")
 
 def main(file_in, dir_out):

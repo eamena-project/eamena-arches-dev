@@ -9,12 +9,15 @@ def split_and_save_tables(df, sheet_name, output_dir):
 	starts = df[df[df.columns[0]].astype(str).str.startswith('#')].index
 	# Add the end of the dataframe as a dummy end point for the last table
 	ends = starts[1:].tolist() + [len(df) + 1]
+	sheet_name = sheet_name.strip().replace(' ', '_')
 	os.makedirs(os.path.join(output_dir, sheet_name), exist_ok=True)
+	root_values = "https://github.com/eamena-project/eamena-arches-dev/raw/main/dbs/database.eamena/data/reference_data/rm/hp/values"
+
 
 	for start, end in zip(starts, ends):
 		table_df = df.iloc[start:end-1].copy()  # Extract table without the dummy end
 		table_title = table_df.iloc[0, 0].lstrip('#').strip().replace(' ', '_')
-		sheet_name = sheet_name.strip().replace(' ', '_')
+		# sheet_name = sheet_name.strip().replace(' ', '_')
 		# Adjust to handle empty or generic titles
 		table_name = f"{table_title}" if table_title else f"{sheet_name}_Table_{start}"
 		table_name = table_name.replace('/', '_') # to manage values like `Condition Assessment\Damage`
@@ -26,8 +29,13 @@ def split_and_save_tables(df, sheet_name, output_dir):
 		# Save table to TSV
 		table_df.to_csv(tsv_file_path, sep='\t', index=False)
 		print(f"  - saved {tsv_file_path}")
+		print("\n")
+		print(sheet_name)
+		print(os.path.join(root_values, table_name))
+		print("\n")
 
 def main(file_in, dir_out):
+	# reads a BU template
 	bu_url = "https://github.com/eamena-project/eamena-arches-dev/raw/main/dbs/database.eamena/data/bulk_data/templates/" + file_in
 	response = rq.get(bu_url)
 
@@ -38,7 +46,7 @@ def main(file_in, dir_out):
 	xl = pd.ExcelFile(tmp_file_path)
 
 	for sheet_name in xl.sheet_names:
-		print("*read: " + sheet_name)
+		print("* read: " + sheet_name)
 		df = xl.parse(sheet_name)
 		split_and_save_tables(df, sheet_name, dir_out)
 	xl.close()

@@ -50,7 +50,7 @@ Gives this [ids_temp.csv](https://github.com/eamena-project/eamenaR/blob/main/in
 
 #### Groups of fields and field values descriptions
 
-Broad categories, or groups (`level1`), with colors and HTML links to value descriptions ([Indiviudal reference sheets](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bulk#individual-reference-sheets)): [[field-to-tsv.html](https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/mds/field-to-tsv.html)]
+Broad categories, or groups (`level1`), with colors and HTML links to value descriptions ([Indiviudal reference sheets](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bulk#individual-reference-sheets)): [[field-to-tsv.html](https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/mds/field-to-tsv.html)]
 
 <p align="center">
   <img alt="img-name" src="https://github.com/eamena-project/eamena-arches-dev/blob/main/www/arches-v7-hp-data-field-group-values-descriptions.png" width="250">
@@ -61,7 +61,7 @@ Broad categories, or groups (`level1`), with colors and HTML links to value desc
 ### MDS
 > Minimum Data Standards. Completness of data
 
-Minimum Data Standards (MDS) of Heritage Places. MDS fields in this HTML circular plot [[mds-reference.html](https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/mds/mds-reference.html)]
+Minimum Data Standards (MDS) of Heritage Places. MDS fields in this HTML circular plot [[mds-reference.html](https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/mds/mds-reference.html)]
 
 <p align="center">
   <img alt="img-name" src="https://github.com/eamena-project/eamena-arches-dev/blob/main/www/arches-v7-hp-data-mds-pie.png" width="600">

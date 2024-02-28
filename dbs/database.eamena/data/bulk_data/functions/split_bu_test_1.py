@@ -4,7 +4,7 @@ import pandas as pd
 import requests as rq
 import tempfile
 
-def split_and_save_tables(df, sheet_name, output_dir):
+def split_and_save_tables(df, sheet_name, output_dir, markdown_table):
 	# Identify start of new tables based on hashtag in the first column
 	starts = df[df[df.columns[0]].astype(str).str.startswith('#')].index
 	# Add the end of the dataframe as a dummy end point for the last table
@@ -12,7 +12,6 @@ def split_and_save_tables(df, sheet_name, output_dir):
 	sheet_name = sheet_name.strip().replace(' ', '_')
 	os.makedirs(os.path.join(output_dir, sheet_name), exist_ok=True)
 	root_values = "https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data/reference_data/rm/hp/values"
-
 
 	for start, end in zip(starts, ends):
 		table_df = df.iloc[start:end-1].copy()  # Extract table without the dummy end
@@ -30,15 +29,19 @@ def split_and_save_tables(df, sheet_name, output_dir):
 		table_df.to_csv(tsv_file_path, sep='\t', index=False)
 
 		table_name_tsv = table_name + ".tsv"
-		print(f"  - saved {tsv_file_path}")
-		print("\n")
+		# print(f"  - saved {tsv_file_path}")
+		# print("\n")
 		level1_txt = sheet_name.replace('_', ' ')
 		level1_url = os.path.join(root_values, sheet_name)
 		level3_txt = table_name.replace('_', ' ')
 		level3_url = os.path.join(root_values, sheet_name, table_name_tsv)
-		print(level1_txt + " : " + level1_url)
-		print(level3_txt + " : " + level3_url)
-		print("\n")
+		level1_link = f"[{level1_txt}]({level1_url})"
+		level3_link = f"[{level3_txt}]({level3_url})"
+		markdown_table += f"| {level1_link} | {level3_link} |\n"
+	return(markdown_table)
+		# print(level1_txt + " : " + level1_url)
+		# print(level3_txt + " : " + level3_url)
+		# print("\n")
 
 def main(file_in, dir_out):
 	# reads a BU template
@@ -49,14 +52,25 @@ def main(file_in, dir_out):
 		tmp_file.write(response.content)
 		tmp_file_path = tmp_file.name
 
+	markdown_table = ''
+
 	xl = pd.ExcelFile(tmp_file_path)
 
 	for sheet_name in xl.sheet_names:
 		print("* read: " + sheet_name)
 		df = xl.parse(sheet_name)
-		split_and_save_tables(df, sheet_name, dir_out)
+		markdown_table = markdown_table + split_and_save_tables(df, sheet_name, dir_out, markdown_table)
+
+	markdown_table = "| level1 | level3 |\n|--------|--------|\n" + markdown_table
+	# print(markdown_table)
+	outmd = os.path.join(dir_out, "README.md")
+	with open(outmd, "w") as file:
+		file.write(markdown_table)
 	xl.close()
 	os.remove(tmp_file_path)  # Clean up temporary file
+	# Md table
+	# markdown_table = create_markdown_table(data)
+
 
 if __name__ == "__main__":
 	argp = argparse.ArgumentParser()

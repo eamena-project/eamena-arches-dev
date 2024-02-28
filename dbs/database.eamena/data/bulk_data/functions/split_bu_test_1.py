@@ -32,9 +32,12 @@ def split_and_save_tables(df, sheet_name, output_dir, markdown_table):
 		# print(f"  - saved {tsv_file_path}")
 		# print("\n")
 		level1_txt = sheet_name.replace('_', ' ')
-		level1_url = os.path.join(root_values, sheet_name)
+		# level1_url = os.path.join(root_values, sheet_name)
+		level1_url = root_values + "/" + sheet_name
 		level3_txt = table_name.replace('_', ' ')
-		level3_url = os.path.join(root_values, sheet_name, table_name_tsv)
+		# level3_url = os.path.join(root_values, sheet_name, table_name_tsv)
+		level3_url = root_values + "/" + sheet_name + "/" + table_name_tsv
+		print(level1_url)
 		level1_link = f"[{level1_txt}]({level1_url})"
 		level3_link = f"[{level3_txt}]({level3_url})"
 		markdown_table += f"| {level1_link} | {level3_link} |\n"

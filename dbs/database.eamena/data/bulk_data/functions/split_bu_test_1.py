@@ -21,17 +21,14 @@ def split_and_save_tables(df, sheet_name, output_dir):
 
 		# tsv_file_path = os.path.join(output_dir, f"{table_name}.tsv")
 		tsv_file_path = os.path.join(output_dir, sheet_name, f"{table_name}.tsv") 
-
 		table_df = table_df.iloc[1:] # rm the first row
-		# print(table_df.iloc[0, 0])
 		table_df.columns = [table_df.columns[0].lstrip('#')] + table_df.columns[1:].tolist()
-		# table_df.iloc[0, 0] = table_df_.iloc[0, 0].replace('#', '') # rm the leading '#'
-		# Save table to TSV, omitting initial hashtag row if necessary
+		# Save table to TSV
 		table_df.to_csv(tsv_file_path, sep='\t', index=False)
-		print(f"Saved {tsv_file_path}")
+		print(f"  - saved {tsv_file_path}")
 
 def main(file_in, dir_out):
-	bu_url = "https://github.com/eamena-project/eamena-arches-dev/raw/main/data/bulk/templates/" + file_in
+	bu_url = "https://github.com/eamena-project/eamena-arches-dev/raw/main/dbs/database.eamena/data/bulk_data/templates/" + file_in
 	response = rq.get(bu_url)
 
 	with tempfile.NamedTemporaryFile(delete=False) as tmp_file:
@@ -40,9 +37,8 @@ def main(file_in, dir_out):
 
 	xl = pd.ExcelFile(tmp_file_path)
 
-	# print(xl.sheet_names)
-
 	for sheet_name in xl.sheet_names:
+		print("*read: " + sheet_name)
 		df = xl.parse(sheet_name)
 		split_and_save_tables(df, sheet_name, dir_out)
 	xl.close()

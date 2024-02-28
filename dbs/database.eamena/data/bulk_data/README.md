@@ -10,9 +10,9 @@ The last/updated version of the BU template is (first row of the table, not stri
 
 | Name 	| Host 	| URL 	|
 |------|------	|-----	|
-| Bulk_Upload_template_231017.xlsx | GitHub  | https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bulk/templates/Bulk_Upload_template_231017.xlsx |
-| ~~Bulk_Upload_template_221025.xlsx~~ | GitHub | https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bulk/templates/Bulk_Upload_template_221025.xlsx	|
-| ~~E61N30-13-Revised.xls~~ | GitHub | https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bulk/templates/E61N30-13-Revised.xlsx    	|
+| Bulk_Upload_template_231017.xlsx | GitHub  | https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/bulk_data/templates/Bulk_Upload_template_231017.xlsx |
+| ~~Bulk_Upload_template_221025.xlsx~~ | GitHub | https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/bulk_data/templates/Bulk_Upload_template_221025.xlsx	|
+| ~~E61N30-13-Revised.xls~~ | GitHub | https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/bulk_data/templates/E61N30-13-Revised.xlsx    	|
 | ~~34cfe98e-c2c0-11ea-9026-02e7594ce0a0.xlsx~~ | EAMENA DB | https://database.eamena.org/en/bulk-upload/templates/34cfe98e-c2c0-11ea-9026-02e7594ce0a0.xlsx    	|
 | ~~BUS_TemplateUpdate20072021.xlsx~~   	 | Google Drive	| https://drive.google.com/file/d/1KtZlCB_mdTOPxh1DpFdfeXddjJLTvF1k/view?usp=sharing    	|
 
@@ -20,7 +20,7 @@ The last/updated version of the BU template is (first row of the table, not stri
 
 ### Individual reference sheets
 
-To make it easier to reference and share controlled vocabularies, the numerous BU template sheets (XLSX) can be converted into TSV files that can be read on GitHub using the [split_bu_template.py](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bulk/functions/split_bu_template.py) function. For example:
+To make it easier to reference and share controlled vocabularies, the numerous BU template sheets (XLSX) can be converted into TSV files that can be read on GitHub using the [split_bu_template.py](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/bulk_data/functions/split_bu_template.py) function. For example:
 
 ```bash
 py split_bu_template.py "Bulk_Upload_template_231017.xlsx" "C:/Rprojects/eamena-arches-dev/data/bulk/templates/doc"
@@ -34,10 +34,10 @@ py split_bu_template.py "Bulk_Upload_template_231017.xlsx" "C:/Rprojects/eamena-
 
 
 
-Will create the many TSV located into the folder https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bulk/templates/doc: 
-* [bu_Archaeological Assessment](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bulk/templates/doc/bu_Archaeological%20Assessment.tsv)
-* [bu_Assessment Summary](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bulk/templates/doc/bu_Assessment%20Summary.tsv)
-* [bu_Built Component](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bulk/templates/doc/bu_Built%20Component.tsv)
+Will create the many TSV located into the folder https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data/bulk_data/templates/doc: 
+* [bu_Archaeological Assessment](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/bulk_data/templates/doc/bu_Archaeological%20Assessment.tsv)
+* [bu_Assessment Summary](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/bulk_data/templates/doc/bu_Assessment%20Summary.tsv)
+* [bu_Built Component](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/bulk_data/templates/doc/bu_Built%20Component.tsv)
 * ...
 
 <p align="center">
@@ -58,8 +58,8 @@ To recast structured data (source) to a BU format (target), see the [eamenaR](ht
 A BU append is necessarly a CSV file
 
 * Check one of these models:
-  - [caravanserail_outCSV2.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bulk/append/caravanserail_outCSV2.csv): Adding new geometries (Polygons) to HP (caravanserails). These geometries will be added to already existing geometries (Points).
-  - [bu_append_hp_grid_20240116.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bulk/append/bu_append_gs.csv). Append missing GS to HP 
+  - [caravanserail_outCSV2.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/bulk_data/append/caravanserail_outCSV2.csv): Adding new geometries (Polygons) to HP (caravanserails). These geometries will be added to already existing geometries (Points).
+  - [bu_append_hp_grid_20240116.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/bulk_data/append/bu_append_gs.csv). Append missing GS to HP 
 * Check the name of the fields in the reference data [mds-template-readonly.tsv](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/mds/mds-template-readonly.tsv) file  
 
 A mapping file (`.mapping`) will also be necessary, cf: https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data/mapping_files

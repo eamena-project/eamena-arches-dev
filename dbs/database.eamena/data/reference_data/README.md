@@ -5,8 +5,11 @@
 
 ## Heritage Places
 
-The template `mds-template-*` is the reference table for:
-- groups, fields and values descriptions
+* The last BU template is the reference table for:
+- value descriptions
+
+* The template `mds-template-*` is the reference table for:
+- groups of fields and fields descriptions
 - [MDS](#mds)
 - eamenaR mapping file `ids.csv` (see [eamenaR documentation](https://github.com/eamena-project/eamenaR#correspondances-between-concept-labels-and-uuids))
 

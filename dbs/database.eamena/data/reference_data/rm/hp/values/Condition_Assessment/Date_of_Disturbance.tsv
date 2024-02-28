@@ -1,0 +1,5 @@
+Condition Assessment	تقييم الحالة	Unnamed: 2	Unnamed: 3	Alternative suggested translation	MK Comments	Old Term replaced by AB or MK
+Occurred on	حدث في تاريخ	Event occurred on a specific date - in this case, enter the same date in both fields	واقعة حدثت في يوم تاريخ محدد، في هذه الحالة أدخل نفس التاريخ في المجالين			
+Occurred between	حدث في الفترة بين	Event occurred at some point between two dates - enter the date span	واقعة حدثت في فترة بين تاريخين محددين، أدخل التاريخين			
+		**If you want to indicate that an event has occurred after a certain date, you still choose 'Occurred between', enter the known date it happened after in the 'from' field and the date of data entry (i.e. today's date) in the 'to' field.	"إذا أردت أن تشير إلى أن واقعة حدثت بعد تاريخ محدد، فعليك أن تختار ""حدث في الفترة بين""، وأدخل التاريخ الذي تعرف أنها حدثت بعده في مجال ""من تاريخ"" وتاريخ إدخال المعلومات (مثلاً تاريخ اليوم) في مجال ""إلى تاريخ""."			
+Occurred before	حدث قبل 	Event occurred before a specific date. The 'from' field does not apply.	"واقعة حدثت قبل تاريخ محدد. في هذه الحالة، يكون مجال ""من تاريخ"" غير قابل للتطبيق"			

@@ -64,7 +64,7 @@ def main(file_in, dir_out):
 	xl = pd.ExcelFile(tmp_file_path)
 
 	# will not read these worksheets
-	excluded_ws = ["Info Resource", "InfoRes - Imagery", "InfoRes - Cartography", "Person-Organization", "Grid Square", "Relationships", "Colour Coding", "Sheet1"]
+	excluded_ws = ["Heritage Place", "Heritage Place example", "Minimum Enhanced Data Standards", "Info Resource", "InfoRes - Imagery", "InfoRes - Cartography", "Person-Organization", "Grid Square", "Relationships", "Colour Coding", "Sheet1"]
 
 	for sheet_name in xl.sheet_names:
 		if sheet_name not in excluded_ws:

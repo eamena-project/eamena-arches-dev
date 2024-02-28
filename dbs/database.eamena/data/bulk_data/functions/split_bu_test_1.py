@@ -32,7 +32,7 @@ def split_and_save_tables(df, sheet_name, output_dir):
 		print(f"  - saved {tsv_file_path}")
 		print("\n")
 		print(sheet_name.replace('_', ' '))
-		print(os.path.join(root_values, table_name_tsv)
+		print(os.path.join(root_values, table_name_tsv))
 		print("\n")
 
 def main(file_in, dir_out):

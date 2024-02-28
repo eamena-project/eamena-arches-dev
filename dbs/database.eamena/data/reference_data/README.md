@@ -44,7 +44,7 @@ Field value descriptions pertain to `level3` fields. They are listed in this fil
 py C:/Rprojects/eamena-arches-dev/dbs/database.eamena/data/bulk_data/functions/split_bu_template.py "../templates/Bulk_Upload_template_240228.xlsx" "C:/Rprojects/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/values"
 ```
 
-This script reads a BU template (ex: `Bulk_Upload_template_240227.xlsx`). 
+This script reads a BU template (ex: `Bulk_Upload_template_240228.xlsx`). 
 
 <p align="center">
   <img alt="img-name" src="https://github.com/eamena-project/eamena-arches-dev/blob/main/www/arches-v7-hp-data-values.png" width="600">

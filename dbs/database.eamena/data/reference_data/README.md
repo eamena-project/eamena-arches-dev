@@ -6,10 +6,10 @@
 ## Heritage Places
 > HP
 
-* HP reference data are here: https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data/reference_data/rm/hp
+* HP reference data is located here: https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data/reference_data/rm/hp
 
-* The last BU template is the reference table for:
-  - [value descriptions](#fields)
+* The latest BU template serves as the reference for:
+  - [field values descriptions](#fields)
 
 * The template `mds-template-*` is the reference table for:
   - groups of fields and fields descriptions
@@ -17,20 +17,18 @@
   - eamenaR mapping file `ids.csv` (see [eamenaR documentation](https://github.com/eamena-project/eamenaR#correspondances-between-concept-labels-and-uuids))
 
 * [mds-template.xlsx](mds/mds-template.xlsx):
-	- an editable XLSX file with the list of HP fields with their UUID and a "Yes" mark if these fields belong to the mds. This file is considered to be the authorative document for mds.
+	- an editable XLSX file with the list of HP fields with their UUID and a "Yes" mark if these fields belong to the mds. This file is considered the authoritative document for MDS.
 
 * [mds-template-readonly.tsv](mds/mds-template-readonly.tsv):
 	- a read-only TSV file with the list of HP fields with their UUID and a "Yes" mark if these fields belong to the mds. This files results from the automatic export of [mds-template.xlsx](mds/mds-template.xlsx), it will be overwrite each time 'mds-template.xlsx' is updated)
 
 **Level of aggregation**
 
-It means that fields, and field and field values (`level3`, the thinnest) can be aggregated and sum up into broader categories (`level2` and `level1`, the broadest). 
+This indicates that fields, including field values (`level3`, the most detailed level), can be aggregated into broader categories (`level2` and `level1`, the most general levels). 
 
-### Groups of fields, fields and field values descriptions
+### Field descriptions
 
-#### Fields
-
-Thinner cateories (`level3`) colored by groups: [[fields-description.html](https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/mds/fields-description.html)]
+Thinner categories (`level3`) colored by groups: [[fields-description.html](https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/mds/fields-description.html)]
 
 <p align="center">
   <img alt="img-name" src="https://github.com/eamena-project/eamena-arches-dev/blob/main/www/arches-v7-hp-data-field-descriptions.png" width="600">
@@ -38,37 +36,25 @@ Thinner cateories (`level3`) colored by groups: [[fields-description.html](https
     <em>Screenshot of the HTML dynamic/interactive table 'fields-description.html', with a search on 'Agricul' with field colored by groups and field descriptions</em>
 </p>
 
-Field values description are listed in this file: [[README.md](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data/reference_data/rm/hp/values#readme)]. The latter is generated through the [split_bu_template.py]() script
+### Field values descriptions
+
+Field value descriptions pertain to `level3` fields. They are listed in this file: [[README.md](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data/reference_data/rm/hp/values#readme)]. The latter is generated through the [split_bu_template.py]() script
 
 ```sh
-py C:/Rprojects/eamena-arches-dev/dbs/database.eamena/data/bulk_data/functions/split_bu_template.py "../templates/Bulk_Upload_template_240227.xlsx" "C:/Rprojects/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/values"
+py C:/Rprojects/eamena-arches-dev/dbs/database.eamena/data/bulk_data/functions/split_bu_template.py "../templates/Bulk_Upload_template_240228.xlsx" "C:/Rprojects/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/values"
 ```
 
-This script reads a BU template (ex: `Bulk_Upload_template_240227.xlsx`) and 
+This script reads a BU template (ex: `Bulk_Upload_template_240227.xlsx`). 
 
 <p align="center">
   <img alt="img-name" src="https://github.com/eamena-project/eamena-arches-dev/blob/main/www/arches-v7-hp-data-values.png" width="600">
   <br>
-    <em>Screenshot of 'Condition Assessment' worksheet of the BU template with `#` and empty rows markers to delimited fields descriptions</em>
+    <em>Screenshot of the BU template worksheet 'Condition Assessment'. The script which uses '#' and empty row markers to delineate field descriptions</em>
 </p>
 
+### Groups of fields descriptions
 
-##### UUIDs
-
-Run the Python function [nodes_uuids()](uuids/nodes_uuids.py) on a RM to collect the UUIDs of the nodes
-
-```Python
-df_nodes = nodes_uuids(rm = "https://raw.githubusercontent.com/eamena-project/eamena/master/eamena/pkg/graphs/resource_models/Heritage%20Place.json")
-file_path = "C:/Rprojects/eamenaR/inst/extdata/ids_temp.csv"
-df_nodes.to_csv(file_path, sep=',', index=False)
-```
-Gives this [ids_temp.csv](https://github.com/eamena-project/eamenaR/blob/main/inst/extdata/ids_temp.csv) file. Such a mapping table can be used in the [eamenaR package](https://github.com/eamena-project/eamenaR?tab=readme-ov-file#uuids-of-the-nodes)
-
-> **Note:** Fieldnames (ex: "Effect type") have UUIDs. To check these correspondances, check the `nodeid` in the RM. For example, the "Effect type" field has the UUID `34cfea90-c2c0-11ea-9026-02e7594ce0a0` (see its [fieldname](https://github.com/achp-project/prj-eamena-marea/blob/8e397ad1343cd7fb04e4ca8a50247a1e3a687cb2/resource_models/Heritage%20Place.json#L2036) and [uuid](https://github.com/achp-project/prj-eamena-marea/blob/8e397ad1343cd7fb04e4ca8a50247a1e3a687cb2/resource_models/Heritage%20Place.json#L6530)).
-
-#### Groups of fields and field values descriptions
-
-Broad categories, or groups (`level1`), with colors and HTML links to value descriptions ([Indiviudal reference sheets](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bulk#individual-reference-sheets)): [[field-to-tsv.html](https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/mds/field-to-tsv.html)]
+Fields (`level3`) are grouped in broader categories, or groups (`level1`). These groups are colored according to the MDS reference file, and HTML links are added to value descriptions ([Individual reference sheets](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bulk#individual-reference-sheets)): [[field-to-tsv.html](https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/mds/field-to-tsv.html)]
 
 <p align="center">
   <img alt="img-name" src="https://github.com/eamena-project/eamena-arches-dev/blob/main/www/arches-v7-hp-data-field-group-values-descriptions.png" width="250">
@@ -97,7 +83,7 @@ Minimum Data Standards (MDS) of Heritage Places. MDS fields in this HTML circula
 * [mds-reference.ipynb](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/mds/mds-reference.ipynb)
   - a Jupyter/Python document to run mds reference
 * [mds-assessment.ipynb](https://github.com/eamena-project/eamena-functions/blob/main/mds/mds.ipynb):
-	- a Jupyter/Python document to run mds assessement on heritage places
+	- a Jupyter/Python document to run mds assessment on heritage places
 * [convert_xlsx_to_tsv.py](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/mds/convert_xlsx_to_tsv.py):
 	- a Python simple script to convert 'mds-template.xlsx' into 'mds-template-readonly.tsv'. This script is run automatically, in a GitHub Action with [mds-to-tsv.yml](https://github.com/eamena-project/eamena-arches-dev/blob/main/.github/workflows/mds-to-tsv.yml), each time 'mds-template.xlsx' is updated.
 
@@ -120,9 +106,23 @@ ERD of HP with fieldnames and CIDOC-CRM entities and relationships [[EAMENA-erd.
 </p>
 
 
+## UUIDs
+
+Run the Python function [nodes_uuids()](uuids/nodes_uuids.py) on a RM to collect the UUIDs of the nodes
+
+```Python
+df_nodes = nodes_uuids(rm = "https://raw.githubusercontent.com/eamena-project/eamena/master/eamena/pkg/graphs/resource_models/Heritage%20Place.json")
+file_path = "C:/Rprojects/eamenaR/inst/extdata/ids_temp.csv"
+df_nodes.to_csv(file_path, sep=',', index=False)
+```
+Gives this [ids_temp.csv](https://github.com/eamena-project/eamenaR/blob/main/inst/extdata/ids_temp.csv) file. Such a mapping table can be used in the [eamenaR package](https://github.com/eamena-project/eamenaR?tab=readme-ov-file#uuids-of-the-nodes)
+
+> **Note:** Fieldnames (ex: "Effect type") have UUIDs. To check these correspondances, check the `nodeid` in the RM. For example, the "Effect type" field has the UUID `34cfea90-c2c0-11ea-9026-02e7594ce0a0` (see its [fieldname](https://github.com/achp-project/prj-eamena-marea/blob/8e397ad1343cd7fb04e4ca8a50247a1e3a687cb2/resource_models/Heritage%20Place.json#L2036) and [uuid](https://github.com/achp-project/prj-eamena-marea/blob/8e397ad1343cd7fb04e4ca8a50247a1e3a687cb2/resource_models/Heritage%20Place.json#L6530)).
+
+
 ## Other
 
-Check the completness of data. Python function to model the quality of HP with a radar diagram based on the groups appearing in the BU file (different levels of data agregation and summing):
+Check the completeness of data. Python function to model the quality of HP with a radar diagram based on the groups appearing in the BU file (different levels of data aggregation and summing):
 
 see: [template.xlsx](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/mds/template.xlsx)
 
@@ -222,7 +222,7 @@ res = cursor.execute(sqll)
 
 ## Information Resources
 
-field names' UUIDs are listed here: [ir-uuids-readonly.tsv](ir-uuids-readonly.tsv). The Pyton script that generate this file is [nodes_id.ipynb](nodes_id.ipynb)
+field names' UUIDs are listed here: [ir-uuids-readonly.tsv](ir-uuids-readonly.tsv). The Python script that generate this file is [nodes_id.ipynb](nodes_id.ipynb)
 
 ## Other
 

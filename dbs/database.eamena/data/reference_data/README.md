@@ -97,7 +97,7 @@ Minimum Data Standards (MDS) of Heritage Places. MDS fields in this HTML circula
 ### ERD
 > Entity-relationships diagram
 
-ERD of HP with fieldnames and CIDOC-CRM entities and relationships [[EAMENA-erd.html](https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/erd/EAMENA-erd.html)]
+ERD of HP with fieldnames and CIDOC-CRM entities and relationships [[EAMENA-erd.html](https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/erd/EAMENA-erd.html)]
 
 <p align="center">
   <img alt="img-name" src="https://github.com/eamena-project/eamena-arches-dev/blob/main/www/arches-v7-hp-data-erd.png" width="650">

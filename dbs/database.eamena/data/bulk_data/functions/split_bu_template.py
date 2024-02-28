@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# Split an XLSX template into separate sheets and convert each sheet into a TSV (Tab-Separated Values) 
+# Split an XLSX template into separate sheets, and tables from each separated sheet into into a TSV (Tab-Separated Values) 
 # By Thomas Huet, EAMENA project, University of Oxford
 
 import os
@@ -8,31 +8,81 @@ import pandas as pd
 import requests as rq
 import tempfile
 
-argp = argparse.ArgumentParser()
-argp.add_argument('FileIn', metavar='file_in', type=str, help='The BU template that will be exported in as many TSV files it has spreadsheets', default='Bulk_Upload_template_231017.xlsx')
-argp.add_argument('DirOut', metavar='dir_out', type=str, help='The folder path where to write the many TSV', default='')
-args = argp.parse_args()
+def split_and_save_tables(df, sheet_name, output_dir, markdown_table):
+	# Identify start of new tables based on hashtag in the first column
+	starts = df[df[df.columns[0]].astype(str).str.startswith('#')].index
+	# Add the end of the dataframe as a dummy end point for the last table
+	ends = starts[1:].tolist() + [len(df) + 1]
+	sheet_name = sheet_name.strip().replace(' ', '_')
+	os.makedirs(os.path.join(output_dir, sheet_name), exist_ok=True)
+	root_values = "https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data/reference_data/rm/hp/values"
 
+	for start, end in zip(starts, ends):
+		table_df = df.iloc[start:end-1].copy()  # Extract table without the dummy end
+		table_title = table_df.iloc[0, 0].lstrip('#').strip().replace(' ', '_')
+		# sheet_name = sheet_name.strip().replace(' ', '_')
+		# Adjust to handle empty or generic titles
+		table_name = f"{table_title}" if table_title else f"{sheet_name}_Table_{start}"
+		table_name = table_name.replace('/', '_') # to manage values like `Condition Assessment\Damage`
 
-bu_url = "https://github.com/eamena-project/eamena-arches-dev/raw/main/data/bulk/templates/" + args.FileIn
-# bu_url = "https://github.com/eamena-project/eamena-arches-dev/raw/main/data/bulk/functions/" + "Bulk_Upload_template_231017_test.xlsx"
-bu_name = os.path.basename(bu_url)
+		# tsv_file_path = os.path.join(output_dir, f"{table_name}.tsv")
+		tsv_file_path = os.path.join(output_dir, sheet_name, f"{table_name}.tsv") 
+		table_df = table_df.iloc[1:] # rm the first row
+		table_df.columns = [table_df.columns[0].lstrip('#')] + table_df.columns[1:].tolist()
+		# Save table to TSV
+		table_df.to_csv(tsv_file_path, sep='\t', index=False)
 
-response = rq.get(bu_url)
+		table_name_tsv = table_name + ".tsv"
+		# print(f"  - saved {tsv_file_path}")
+		# print("\n")
+		level1_txt = sheet_name.replace('_', ' ')
+		# level1_url = os.path.join(root_values, sheet_name)
+		level1_url = root_values + "/" + sheet_name
+		level3_txt = table_name.replace('_', ' ')
+		# level3_url = os.path.join(root_values, sheet_name, table_name_tsv)
+		level3_url = root_values + "/" + sheet_name + "/" + table_name_tsv
+		# print(level1_url)
+		level1_link = f"[{level1_txt}]({level1_url})"
+		level3_link = f"[{level3_txt}]({level3_url})"
+		markdown_table += f"| {level1_link} | {level3_link} |\n"
+	return(markdown_table)
+		# print(level1_txt + " : " + level1_url)
+		# print(level3_txt + " : " + level3_url)
+		# print("\n")
 
-temp_dir = tempfile.mkdtemp()
-temp_file_path = os.path.join(temp_dir, bu_name)
+def main(file_in, dir_out):
+	# reads a BU template
+	bu_url = "https://github.com/eamena-project/eamena-arches-dev/raw/main/dbs/database.eamena/data/bulk_data/templates/" + file_in
+	response = rq.get(bu_url)
 
-with open(temp_file_path, "wb") as f:
-    f.write(response.content)
+	with tempfile.NamedTemporaryFile(delete=False) as tmp_file:
+		tmp_file.write(response.content)
+		tmp_file_path = tmp_file.name
 
-xl = pd.ExcelFile(temp_file_path)
+	markdown_table = ''
 
-output_dir = args.DirOut
+	xl = pd.ExcelFile(tmp_file_path)
 
-for sheet_name in xl.sheet_names:
-    df = xl.parse(sheet_name)
-    # print(type(df))
-    tsv_file = f"bu_{sheet_name}.tsv"
-    df.to_csv(os.path.join(output_dir, tsv_file), sep="\t", index=False)
-# print(df)
+	for sheet_name in xl.sheet_names:
+		print("* read: " + sheet_name)
+		df = xl.parse(sheet_name)
+		markdown_table = markdown_table + split_and_save_tables(df, sheet_name, dir_out, markdown_table)
+
+	# add header and empty line
+	markdown_table = "| level1 | level3 |\n|--------|--------|\n" + markdown_table + "| | |\n"
+	# print(markdown_table)
+	outmd = os.path.join(dir_out, "README.md")
+	with open(outmd, "w") as file:
+		file.write(markdown_table)
+	xl.close()
+	os.remove(tmp_file_path)  # Clean up temporary file
+	# Md table
+	# markdown_table = create_markdown_table(data)
+
+if __name__ == "__main__":
+	argp = argparse.ArgumentParser()
+	argp.add_argument('FileIn', type=str, help='The BU template that will be exported in as many TSV files it has spreadsheets')
+	argp.add_argument('DirOut', type=str, help='The folder path where to write the many TSV')
+	args = argp.parse_args()
+	
+	main(args.FileIn, args.DirOut)

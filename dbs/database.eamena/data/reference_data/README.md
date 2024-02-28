@@ -4,14 +4,17 @@
 * [Information Resources](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data/reference_data#information-resources)
 
 ## Heritage Places
+> HP
+
+* HP reference data are here: https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data/reference_data/rm/hp
 
 * The last BU template is the reference table for:
-- value descriptions
+  - [value descriptions](#fields)
 
 * The template `mds-template-*` is the reference table for:
-- groups of fields and fields descriptions
-- [MDS](#mds)
-- eamenaR mapping file `ids.csv` (see [eamenaR documentation](https://github.com/eamena-project/eamenaR#correspondances-between-concept-labels-and-uuids))
+  - groups of fields and fields descriptions
+  - [MDS](#mds)
+  - eamenaR mapping file `ids.csv` (see [eamenaR documentation](https://github.com/eamena-project/eamenaR#correspondances-between-concept-labels-and-uuids))
 
 * [mds-template.xlsx](mds/mds-template.xlsx):
 	- an editable XLSX file with the list of HP fields with their UUID and a "Yes" mark if these fields belong to the mds. This file is considered to be the authorative document for mds.
@@ -34,6 +37,21 @@ Thinner cateories (`level3`) colored by groups: [[fields-description.html](https
   <br>
     <em>Screenshot of the HTML dynamic/interactive table 'fields-description.html', with a search on 'Agricul' with field colored by groups and field descriptions</em>
 </p>
+
+Field values description are listed in this file: [[README.md](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data/reference_data/rm/hp/values#readme)]. The latter is generated through the [split_bu_template.py]() script
+
+```sh
+py C:/Rprojects/eamena-arches-dev/dbs/database.eamena/data/bulk_data/functions/split_bu_template.py "../templates/Bulk_Upload_template_240227.xlsx" "C:/Rprojects/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/values"
+```
+
+This script reads a BU template (ex: `Bulk_Upload_template_240227.xlsx`) and 
+
+<p align="center">
+  <img alt="img-name" src="https://github.com/eamena-project/eamena-arches-dev/blob/main/www/arches-v7-hp-data-values.png" width="600">
+  <br>
+    <em>Screenshot of 'Condition Assessment' worksheet of the BU template with `#` and empty rows markers to delimited fields descriptions</em>
+</p>
+
 
 ##### UUIDs
 

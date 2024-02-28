@@ -63,10 +63,14 @@ def main(file_in, dir_out):
 
 	xl = pd.ExcelFile(tmp_file_path)
 
+	# will not read these worksheets
+	excluded_ws = list("Info Resource", "InfoRes - Imagery", "InfoRes - Cartography", "Person-Organization", "Grid Square", "Relationships", "Colour Coding", "Sheet1")
+
 	for sheet_name in xl.sheet_names:
-		print("* read: " + sheet_name)
-		df = xl.parse(sheet_name)
-		markdown_table = markdown_table + split_and_save_tables(df, sheet_name, dir_out, markdown_table)
+		if sheet_name not in excluded_ws:
+			print("* read: " + sheet_name)
+			df = xl.parse(sheet_name)
+			markdown_table = markdown_table + split_and_save_tables(df, sheet_name, dir_out, markdown_table)
 
 	# add header and empty line
 	markdown_table = "| level1 | level3 |\n|--------|--------|\n" + markdown_table + "| | |\n"

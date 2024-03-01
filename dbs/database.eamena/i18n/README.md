@@ -2,6 +2,7 @@
 > Internationalisation
 
 ## Convert thesauri
+> ⚠️ the `skos2excel.py` file should be run on Collections (`collections.xml`), not on thesauri
 
 Example for the EAMENA.xml file, and translation to French (`fr`), using the [skos2excel](https://github.com/ads04r/skos2excel) tools
 
@@ -108,5 +109,15 @@ These changes will be then proposed (Pull request) to Arches' source code
 </p>
 
 
-## Concepts
+## Other
+
+Agricultural:
+
+* Collections: https://github.com/eamena-project/eamena/blob/master/eamena/pkg/reference_data/collections/collections.xml#L2432
+* Concepts:
+
+<p align="center">
+  <img alt="img-name" src="../../../www/arches-ea-v4-data-ref-concepts-agricultural.png" width="1100">
+  <br>
+</p>
 

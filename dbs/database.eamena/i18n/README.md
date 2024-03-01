@@ -5,19 +5,23 @@
 
 Example for the EAMENA.xml file, and translation to French (`fr`), using the [skos2excel](https://github.com/ads04r/skos2excel) tools
 
-1. Convert [EAMENA.xml](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/concepts/EAMENA.xml) to [EAMENA_fr.xlsx]() using the `skos2excel.py` script:
+1. Convert [EAMENA.xml](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/concepts/EAMENA.xml) to [EAMENA_fr.xlsx](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/i18n/EAMENA_fr.xlsx) using the `skos2excel.py` script:
 
 ```sh
 py skos2excel.py ./data/EAMENA.xml ./data/EAMENA_fr.xlsx -lang fr -f xlsx 
 ```
 
-2. Convert the [EAMENA_fr.xlsx]() concepts to [EAMENA_fr.xml](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/concepts/EAMENA_fr.xml) using the `excel2skos.py` script:
+Proofreading of the automtic translation
+
+2. Convert (back) the [EAMENA_fr.xlsx](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/i18n/EAMENA_fr.xlsx) concepts to [EAMENA_fr.xml](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/concepts/EAMENA_fr.xml) using the `excel2skos.py` script:
 
 ```sh
 py excel2skos.py ./data/EAMENA_fr.xlsx ./data/EAMENA_fr.xml -b ./data/EAMENA.xml
 ```
 
-3. On the DB (SSH):
+3. On the DB 
+
+* SSH, backend:
 
 Change directory
 
@@ -58,6 +62,14 @@ Restart Apache
 (ENV) root@ip-172-31-32-122:/opt/arches/eamena# sudo service apache2 restart
 ```
 
+* frontend:
+
+RDM > Tools > Import Thesauri
+
+## Errors
+
+### Import errors
+
 Imported, with errors (ORPHANS)
 
 <p align="center">
@@ -66,9 +78,12 @@ Imported, with errors (ORPHANS)
     <em>French, Arabic and English... but with orphans</em>
 </p>
 
+### Delete errors
+
+RDM > Tools > Delete Thesauri doesn't work
 
 
-## Spotted errors
+### Translation errors
 
 There could have errors in the translations:
 

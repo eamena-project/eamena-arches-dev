@@ -8,6 +8,7 @@ title-slide-attributes:
     data-background-opacity: "0.4"
 format:
   revealjs: 
+    controls: true
     css: https://zoometh.github.io/thomashuet/css/quarto.css
     code-fold: true
     code-summary: "<small>Code</small>"

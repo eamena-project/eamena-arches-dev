@@ -42,38 +42,38 @@ TCP/IP | 8080 | ::/0
 ```
 Check your Java version, or even if Java is installed
 
-```
+```sh
 java -version
 ```
 
 If Java is not installed[^1], install it doing:
 
-```
+```sh
 sudo apt install default-jre
 ```
 
 create a geoserver/ folder and move in it
 
-```
+```sh
 mkdir geoserver
 cd geoserver
 ```
 
-download the binaries from https://geoserver.org
+download the binaries (Platform Independent Binary) from https://geoserver.org, for example[^2]
 
-```
+```sh
 wget https://sourceforge.net/projects/geoserver/files/GeoServer/2.22.1/geoserver-2.22.1-bin.zip
 ```
 
 unzip the geoserver
 
-```
+```sh
 unzip geoserver-2.22.1-bin.zip
 ```
 
 setup the environment variables
 
-```
+```sh
 ~~echo "export GEOSERVER_HOME=/Downloads/" >> ~/.profile~~
 echo "export GEOSERVER_HOME=/opt/arches/geoserver" >> ~/.profile
 . ~/.profile
@@ -81,19 +81,19 @@ echo "export GEOSERVER_HOME=/opt/arches/geoserver" >> ~/.profile
 
 change the ownership of the geoserver/ folder
 
-```
+```sh
 sudo chown -R root /opt/arches/geoserver
 ```
 
 go to the bin/ folder
 
-```
+```sh
 cd bin
 ```
 
 run the install shell script
 
-```
+```sh
 nohup sh startup.sh &
 ```
 
@@ -104,4 +104,6 @@ http://34.243.109.142:8080/geoserver
 ```
 
 [^1]: run `java -version`. If not installed, the message will be: `Command 'java' not found, ...`
+[^2]: more recent: `wget https://sourceforge.net/projects/geoserver/files/GeoServer/2.24.2/geoserver-2.24.2-bin.zip`
+
 

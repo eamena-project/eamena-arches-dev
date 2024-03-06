@@ -71,21 +71,20 @@ unzip the geoserver
 unzip geoserver-2.22.1-bin.zip
 ```
 
-setup the environment variables
+Add the parent folder of the GS in the environment variables, for example[^3]
 
 ```sh
-~~echo "export GEOSERVER_HOME=/Downloads/" >> ~/.profile~~
-echo "export GEOSERVER_HOME=/opt/arches/geoserver" >> ~/.profile
+echo "export GEOSERVER_HOME=/home/archesadmin/my_project/geoserver" >> ~/.profile
 . ~/.profile
 ```
 
-change the ownership of the geoserver/ folder
+change the ownership of the `geoserver/` folder if needed
 
 ```sh
-sudo chown -R root /opt/arches/geoserver
+sudo chown -R root /home/archesadmin/my_project/geoserver
 ```
 
-go to the bin/ folder
+go to the `bin/` folder
 
 ```sh
 cd bin
@@ -97,13 +96,32 @@ run the install shell script
 nohup sh startup.sh &
 ```
 
-# access the geoserver from its public IP
-http://34.243.109.142:8080/geoserver
-# username = admin
-# password = geoserver
-```
+access the GS from its public IP: http://34.243.109.142:8080/geoserver
+by default:
+ - username = `admin`
+ - password = `geoserver`
+
 
 [^1]: run `java -version`. If not installed, the message will be: `Command 'java' not found, ...`
 [^2]: more recent: `wget https://sourceforge.net/projects/geoserver/files/GeoServer/2.24.2/geoserver-2.24.2-bin.zip`
+[^3]: echo "export GEOSERVER_HOME=/opt/arches/geoserver" >> ~/.profile
+
+## Examples
+
+### Erbil Citadel
+
+* Map Sources
+
+![alt text](image.png)
 
 
+erbil-citadel
+
+{"type": "raster", "tiles": ["http://18.203.169.24:8080/geoserver/ows?bbox={bbox-epsg-3857}&format=image/png&service=WMS&version=1.3.0&request=GetMap&srs=EPSG:3857&width=256&height=256&layers=temp:Picture2_modified_clipped&transparent=true&tiled=true"], "tileSize": 256}
+
+* Map Layer
+
+![alt text](image-1.png)
+![alt text](image-2.png)
+
+[{"id": "erbil-citadel", "type": "raster", "source": "erbil-citadel"}]

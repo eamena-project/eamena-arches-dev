@@ -9,7 +9,13 @@ Convert DNG photographs to TIFF or JPG
 
 [NAS Server](#nas-server) -> AWS S3
 
-## Upload time
+## Upload
+
+Work in progress listed here (folder by folders): https://github.com/eamena-project/eamena-arches-dev/issues/47#issuecomment-2003698364
+
+(list created with the `fhs-apaame-master-catalog_*.py` script)
+
+### Upload time
 
 * from "D:\APAAME Master Catalog\1997\1997-05-27" to the ArcDAMS server:
   - 10 photographs * 28 Mb = 280 Mb | loading time = 3 min

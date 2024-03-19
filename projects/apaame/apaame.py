@@ -102,4 +102,86 @@ apaame_metadata()
 
 # %%
 
+# import os
 
+# # Path to the directory you want to scan
+# directory_path = 'D:/APAAME Master Catalog/1998/1998-05-12'
+
+# # Initialize an empty set to hold unique filenames without extension
+# unique_filenames = set()
+
+# # List all files in the directory
+# for filename in os.listdir(directory_path):
+# 	# Check if the file is not a TIF file
+# 	if not filename.lower().endswith(('.tif', '.tiff')):
+# 		# Remove the file extension and add to the set
+# 		unique_filename_without_extension = os.path.splitext(filename)[0]
+# 		unique_filenames.add(unique_filename_without_extension)
+
+# # Print the unique filenames
+# l = list()
+# for name in unique_filenames:
+# 	l.append(name)
+# l_sorted = sorted(l)
+
+# print(l_sorted)
+
+
+# %%
+
+def apaame_list_file2convert():
+
+	all_filenames = set()
+	expected_filenames = set()
+	not_expected_filenames = set()
+	ext_to_keep = ('.tif', '.tiff') #, '.jpg', '.jpeg')
+
+	all_items = os.listdir(directory_path)
+	files_only = [item for item in all_items if os.path.isfile(os.path.join(directory_path, item))]
+
+	# all files
+	for filename in files_only:
+		all_filenames.add(os.path.splitext(filename)[0])
+		# expected (TIFs, maybe JPG)
+		if filename.lower().endswith(ext_to_keep):
+			expected_filenames.add(os.path.splitext(filename)[0])
+		# not expected (not TIFs, maybe not JPG)
+		if not filename.lower().endswith(ext_to_keep):
+			not_expected_filenames.add(os.path.splitext(filename)[0])
+	# check the missing TIFFs
+	not_expected_filenames = set(not_expected_filenames) - set(expected_filenames)
+	not_expected_filenames_list = sorted(list(not_expected_filenames))
+
+
+	# print('\n'.join(not_expected_filenames_list))
+
+	# for not_expect in not_expected_filenames_list:
+	# 	print(not_expect)
+	# %%
+
+	import csv
+
+	matched_files = list()
+
+	for file in files_only:
+		# Get the full path of the file
+		# full_path = os.path.join(files_only, file)
+		base_name = os.path.splitext(file)[0]
+		# If the base name is in your list, store the full filename
+		if base_name in not_expected_filenames_list:
+			matched_files.append(file)
+
+	# Path to your TSV file, the last subfolder
+	root_path = "C:/Rprojects/eamena-arches-dev/projects/apaame/data"
+	outFile = root_path + "/" + os.path.basename(directory_path) + "_to_convert.tsv"
+	# tsv_file_path = os.path.basename(directory_path)
+
+	# Open the TSV file in append mode
+	with open(outFile, 'a', newline='') as file:
+		# Create a csv writer object for a TSV file
+		tsv_writer = csv.writer(file, delimiter='\t')
+		for element in matched_files:
+			tsv_writer.writerow([element])
+# for base_name, full_filename in matched_files.items():
+# 	print(f"{full_filename}")
+# %%

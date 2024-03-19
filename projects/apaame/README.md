@@ -312,6 +312,12 @@ The main folder `APAAME Master Catalog` has been copied in a external hardrive. 
 see the [TSV file](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/amc-fhs.tsv) or download the [XLSX file itself](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/amc-fhs.xlsx)
 
 
+### Other
+
+#### Errors during the upload
+
+![APAAME_19980506_DLK-0053.tif](image.png)
+
 ---
 
 # ~~Workflow~~

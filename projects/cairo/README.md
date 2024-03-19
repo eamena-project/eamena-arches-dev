@@ -55,7 +55,7 @@ Match the photographs metadata with the photographs themselves
 </p>
 
 <p align="center">
-  <img alt="img-name" src="./image-2.png" width="700">
+  <img alt="img-name" src="./image-2.png" width="500">
   <br>
     <em>Screenshot of the DSC_2643s.jpg photograph</em>
 </p>

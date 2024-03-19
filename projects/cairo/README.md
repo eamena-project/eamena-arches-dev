@@ -44,10 +44,26 @@ CoD records gather informations that will belong both to EAMENA Heritage Places 
 ## Photographs
 
 1. Importing each photograph as an Information Resource (IR)
+  - 
+
+Match the photographs metadata with the photographs themselves
+
+<p align="center">
+  <img alt="img-name" src="./image-1.png" width="700">
+  <br>
+    <em>Screenshot of the 'photo' table export (`photo.xlsx`) with the metadata of the photograph DSC_2643s.jpg highlighted</em>
+</p>
+
+<p align="center">
+  <img alt="img-name" src="./image-2.png" width="700">
+  <br>
+    <em>Screenshot of the DSC_2643s.jpg photograph</em>
+</p>
+
 
 * solution
 
-- ArchDAMS server?
+- Manar-al-Athar (ResourceSpace / ArchDAMS server)
 
 <*to be discussed*>
 

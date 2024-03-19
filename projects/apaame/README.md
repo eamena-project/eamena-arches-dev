@@ -316,6 +316,8 @@ see the [TSV file](https://github.com/eamena-project/eamena-arches-dev/blob/main
 
 #### Errors during the upload
 
+* credit
+
 ![APAAME_19980506_DLK-0053.tif](image.png)
 
 ---

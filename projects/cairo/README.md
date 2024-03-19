@@ -43,8 +43,7 @@ CoD records gather informations that will belong both to EAMENA Heritage Places 
 
 ## Photographs
 
-1. Importing each photograph as an Information Resource (IR)
-  - 
+### Metadata
 
 Match the photographs metadata with the photographs themselves
 
@@ -61,9 +60,14 @@ Match the photographs metadata with the photographs themselves
 </p>
 
 
-* solution
+### Hosting
 
 - Manar-al-Athar (ResourceSpace / ArchDAMS server)
+
+### TODO
+
+Importing each photograph as an Information Resource (IR)
+
 
 <*to be discussed*>
 

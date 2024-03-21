@@ -35,6 +35,42 @@ java -Dcantaloupe.config=./cantaloupe.properties -Xmx2g -jar cantaloupe-4.1.11.w
 apt install default-jre
 ```
 
+### Enable AWS inbound rules
+
+|            | Type       | Protocol | Port Range | Source          |
+|------------|------------|----------|------------|-----------------|
+| **Value**  | Custom TCP | TCP      | 8182       | Anywhere (0.0.0.0/0) |
+
+The current AWS security group is named `iiif`
+
+Access to http://52.50.27.140:8182/admin:
+
+Create an `images/` folder in `/opt/arches/cantaloupe`:
+
+```bash
+mkdir images
+```
+
+Update the `cantaloupe.properties` file to add the path to the images folder
+
+```
+FilesystemSource.BasicLookupStrategy.path_prefix = /opt/arches/cantaloupe/images
+```
+
+Add an image in this folder, for example `APAAME_19970527_DLK-0190-small.tif` (`C:\Rprojects\eamena-arches-dev\projects\apaame\sample\APAAME_19970527_DLK-0190-small.tif`)
+
+Access the **image** in the web browser:
+
+```
+http://52.50.27.140:8182/iiif/2/APAAME_19970527_DLK-0190-small.tif/full/full/0/default.jpg
+```
+
+Access the **info** in the web browser:
+
+```
+http://52.50.27.140:8182/iiif/2/APAAME_19970527_DLK-0190-small.tif/info.json
+```
+
 ## Arches-IIIF Related Frontend Setup
 
 There are 2 parts here:
@@ -69,9 +105,7 @@ There are 2 parts here:
 
 (Repeated demo steps with JPEG and PNG formats are mentioned multiple times with the same details.)
 
----
 
-This Markdown format provides a structured document that mirrors the content and organization of the original PDF, ready for use in Markdown-compatible platforms or documentation systems.
 # Other
 
 glitch with Arches (solved now): https://github.com/archesproject/arches/issues/8419

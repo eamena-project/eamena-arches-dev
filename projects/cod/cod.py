@@ -1,4 +1,7 @@
 
+## Read City of the Dead (cod) database tables
+
+
 #%% 
 # read the photograph metadata
 import os
@@ -10,7 +13,7 @@ from PIL import Image
 # %%
 
 ## read the database exported tables
-root_path = "C:/Rprojects/eamena-arches-dev/projects/cairo/"
+root_path = "C:/Rprojects/eamena-arches-dev/projects/cod/"
 db_path = root_path + "db_data/tables/"
 # records = units
 record_db_path = db_path + "records.xlsx"
@@ -73,8 +76,9 @@ for unit in units:
 					# change XPComment to Comment?
 					piexif.ImageIFD.XPComment: im_caption.encode('utf-16le'),
 					# change XPAuthor to Author?
-					piexif.ImageIFD.XPAuthor: im_title.encode('utf-16le'),
+					piexif.ImageIFD.XPAuthor: im_artis.encode('utf-16le'),
 					# Add Caption?
+					# Add coordinates from 'df_rec_metadata'
 				},
 				"Exif": {
 					# Add Exif tags if needed
@@ -82,6 +86,7 @@ for unit in units:
 			}
 			exif_bytes = piexif.dump(exif_dict)
 			# overwrite
+			# TODO: save with the highest resolution (if not, 1 MB -> 500 KB)
 			img.save(photo_path, exif=exif_bytes)
 			print(f"    => {photos[a_photo]} has been saved")
 			img.close()

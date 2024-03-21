@@ -314,6 +314,10 @@ see the [TSV file](https://github.com/eamena-project/eamena-arches-dev/blob/main
 
 ### Other
 
+* Filename once exported from RS
+
+![alt text](image-1.png)
+
 #### Errors during the upload
 
 * credit

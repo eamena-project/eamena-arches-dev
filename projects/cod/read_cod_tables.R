@@ -1,4 +1,4 @@
-## 
+## Read City of the Dead (cod) database tables
 
 library(openxlsx)
 library(dplyr)

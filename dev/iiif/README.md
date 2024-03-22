@@ -65,10 +65,22 @@ Access the **image** in the web browser:
 http://52.50.27.140:8182/iiif/2/APAAME_19970527_DLK-0190-small.tif/full/full/0/default.jpg
 ```
 
-Access the **info** in the web browser:
+Access the **info** (`info.json`) in the web browser:
 
 ```
 http://52.50.27.140:8182/iiif/2/APAAME_19970527_DLK-0190-small.tif/info.json
+```
+
+This `info.json `response can be mirrored through:
+
+|  viewer       | url       | 
+|------------|------------|
+| Leaflet-IIIF API  | http://mejackreed.github.io/Leaflet-IIIF/examples/?url=http://52.50.27.140:8182/iiif/2/APAAME_19970527_DLK-0190-small.tif/info.json |
+| OpenSeaDragon  | http://iiif.gdmrdigital.com/openseadragon/index.html?image=http://52.50.27.140:8182/iiif/2/APAAME_19970527_DLK-0190-small.tif/info.json |
+| UCD Image clipper | https://jbhoward-dublin.github.io/IIIF-imageManipulation/index.html?imageID=http://52.50.27.140:8182/iiif/2/APAAME_19970527_DLK-0190-small.tif/info.json |
+
+
+```
 ```
 
 ## Arches-IIIF Related Frontend Setup

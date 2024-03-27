@@ -213,3 +213,6 @@ gantt
     Arches v7.3 showcase               : a1, 2023-04-25, 1d
     Arches v7.3 public realease        : a1, 2023-05-09, 2023-10-01
 ```
+## Detailed workflow script
+
+For a very detailed workflow for cloning the EAMENA instance - used for the KRG2 clone and tested on WSL - see [this script](detailed_workflow_krg2.sh). 

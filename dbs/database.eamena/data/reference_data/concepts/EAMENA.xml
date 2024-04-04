@@ -11524,10 +11524,9 @@
 		<skos:prefLabel xml:lang="en-us">{"id": "5cf451c4-8961-448c-948d-4e76d99e6ca5", "value": "Fetch Type"}</skos:prefLabel>
 		<skos:narrower>
 			<skos:Concept rdf:about="https://database.eamena.org/8b6f61b1-2e54-4e11-b7e6-dec80ad4e108">
-				<skos:prefLabel xml:lang="en-us">{"id": "4aea65af-5ce3-4f66-b673-48f1ad148b23", "value": "Protected (
-					inf 10km)"}
+				<skos:prefLabel xml:lang="en-us">{"id": "4aea65af-5ce3-4f66-b673-48f1ad148b23", "value": "Protected (sup 10km)"}
 					</skos:prefLabel>
-					<skos:prefLabel xml:lang="ar">{"id": "1d41f570-7c99-446a-82d7-d1da4b9baaa9", "value": "\u0645\u062d\u0645\u064a >10 \u0645\u062a\u0631"}</skos:prefLabel>
+					<skos:prefLabel xml:lang="ar">{"id": "1d41f570-7c99-446a-82d7-d1da4b9baaa9", "value": "\u0645\u062d\u0645\u064a sup 10 \u0645\u062a\u0631"}</skos:prefLabel>
 					<skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
 					<dcterms:identifier xml:lang="en">{"id": "aa210966-2ba7-46d0-883c-56ca5e5b2019", "value": "https://database.eamena.org/concepts/8b6f61b1-2e54-4e11-b7e6-dec80ad4e108"}</dcterms:identifier>
 				</skos:Concept>
@@ -22484,8 +22483,7 @@
 					<skos:Concept rdf:about="https://database.eamena.org/ba4e8aee-5260-43df-b263-eaaf101bb849">
 						<skos:prefLabel xml:lang="ar">{"id": "0bca5f8e-298f-4884-b712-41284bce7c9f", "value": "\u0645\u0646\u062e\u0641\u0636 (2 inf \u0645\u062a\u0631)"}
 						</skos:prefLabel>
-						<skos:prefLabel xml:lang="en-us">{"id": "bd3c9d01-f276-43f5-98a3-23ec9f30b4a3", "value": "Microtidal (
-							inf 2m)"}
+						<skos:prefLabel xml:lang="en-us">{"id": "bd3c9d01-f276-43f5-98a3-23ec9f30b4a3", "value": "Microtidal (inf 2m)"}
 							</skos:prefLabel>
 							<dcterms:identifier xml:lang="en">{"id": "27076dee-64e8-4a1f-9a3c-461d793d7ed2", "value": "https://database.eamena.org/concepts/ba4e8aee-5260-43df-b263-eaaf101bb849"}</dcterms:identifier>
 							<skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>

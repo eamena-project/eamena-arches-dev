@@ -1,6 +1,6 @@
 # %%
 
-def collection_readonly(url='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/dbs/database.eamena/data/reference_data/concepts/EAMENA.xml', output_file_path='C:/Rprojects/eamena-arches-dev/dbs/database.eamena/data/reference_data/concepts/collection_readonly.tsv', export=True):
+def concepts_readonly(url='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/dbs/database.eamena/data/reference_data/concepts/EAMENA.xml', output_file_path='C:/Rprojects/eamena-arches-dev/dbs/database.eamena/data/reference_data/concepts/concepts_readonly.tsv', export=True):
     import requests
     from lxml import etree
     import json
@@ -32,6 +32,6 @@ def collection_readonly(url='https://raw.githubusercontent.com/eamena-project/ea
     else:
         return df
 
-df = collection_readonly()
+df = concepts_readonly()
 
 # %%

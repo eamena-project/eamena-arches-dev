@@ -11536,7 +11536,7 @@
 			<skos:narrower>
 				<skos:Concept rdf:about="https://database.eamena.org/911d872d-3242-402c-9228-e8d973276c2f">
 					<skos:prefLabel xml:lang="ar">{"id": "3ec6853f-9bd4-4c00-b77e-eb48b1082950", "value": "\u0645\u0643\u0634\u0648\u0641 
-						<100 \u0643\u0645"}
+						inf 100 \u0643\u0645"}
 						</skos:prefLabel>
 						<dcterms:identifier xml:lang="en">{"id": "128fd3c7-9a9c-4b06-a192-f1b5e4498347", "value": "https://database.eamena.org/concepts/911d872d-3242-402c-9228-e8d973276c2f"}</dcterms:identifier>
 						<skos:prefLabel xml:lang="en-us">{"id": "0706daa1-40bc-4386-8a1d-0b8709e8847e", "value": "Exposed (sup 100km)"}</skos:prefLabel>
@@ -15688,8 +15688,8 @@
 				<skos:scopeNote xml:lang="en">{"id": "938f36d1-6233-4ad7-a458-1fbffd237da1", "value": "CPF training 2023 Amman for Jordan actors"}</skos:scopeNote>
 			</skos:Concept>
 			<skos:Concept rdf:about="https://database.eamena.org/198576eb-26ca-471a-8cb0-2620e5c849a4">
-				<skos:prefLabel xml:lang="en-us">{"id": "c94edd97-fdea-4043-a35b-fd1cb387ba68", "value": "Upper & Late Pleistocene"}</skos:prefLabel>
-				<skos:prefLabel xml:lang="ar">{"id": "aad741b8-c2d5-49db-989f-12bc0867d419", "value": "\u0627\u0644\u0628\u0644\u0633\u062a\u0648\u0633\u064a\u0646 \u0627\u0644\u0639\u0644\u0648\u064a\u0649 & \u0627\u0644\u0645\u062a\u0623\u062e\u0631"}</skos:prefLabel>
+				<skos:prefLabel xml:lang="en-us">{"id": "c94edd97-fdea-4043-a35b-fd1cb387ba68", "value": "Upper and Late Pleistocene"}</skos:prefLabel>
+				<skos:prefLabel xml:lang="ar">{"id": "aad741b8-c2d5-49db-989f-12bc0867d419", "value": "\u0627\u0644\u0628\u0644\u0633\u062a\u0648\u0633\u064a\u0646 \u0627\u0644\u0639\u0644\u0648\u064a\u0649 and \u0627\u0644\u0645\u062a\u0623\u062e\u0631"}</skos:prefLabel>
 				<skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
 				<dcterms:identifier xml:lang="en">{"id": "fa8437bf-bdd9-49a0-b604-e1550207c2f9", "value": "https://database.eamena.org/concepts/198576eb-26ca-471a-8cb0-2620e5c849a4"}</dcterms:identifier>
 			</skos:Concept>
@@ -18504,8 +18504,8 @@
 			<skos:Concept rdf:about="https://database.eamena.org/a7b882a2-f26a-492d-babc-8a0bbf0e0444">
 				<dcterms:identifier xml:lang="en">{"id": "a01f01e7-2d31-429c-bf11-e12a81dd7dd8", "value": "https://database.eamena.org/concepts/a7b882a2-f26a-492d-babc-8a0bbf0e0444"}</dcterms:identifier>
 				<skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
-				<skos:prefLabel xml:lang="en-us">{"id": "ded66245-02b9-4e1b-a906-620ba5204fac", "value": "Upper & Late Holocene / Meghalayan"}</skos:prefLabel>
-				<skos:prefLabel xml:lang="ar">{"id": "f73fa52a-4fc2-4ddb-9967-ab71e954803c", "value": "\u0627\u0644\u0647\u0648\u0644\u0648\u0633\u064a\u0646 \u0627\u0644\u0639\u0644\u0648\u064a & \u0627\u0644\u0645\u062a\u0623\u062e\u0631/\u0627\u0644\u0645\u064a\u063a\u0627\u0644\u064a"}</skos:prefLabel>
+				<skos:prefLabel xml:lang="en-us">{"id": "ded66245-02b9-4e1b-a906-620ba5204fac", "value": "Upper and Late Holocene / Meghalayan"}</skos:prefLabel>
+				<skos:prefLabel xml:lang="ar">{"id": "f73fa52a-4fc2-4ddb-9967-ab71e954803c", "value": "\u0627\u0644\u0647\u0648\u0644\u0648\u0633\u064a\u0646 \u0627\u0644\u0639\u0644\u0648\u064a and \u0627\u0644\u0645\u062a\u0623\u062e\u0631/\u0627\u0644\u0645\u064a\u063a\u0627\u0644\u064a"}</skos:prefLabel>
 			</skos:Concept>
 			<skos:Concept rdf:about="https://database.eamena.org/d5fb4b1d-5440-302b-88dc-a04b6bfac724">
 				<skos:prefLabel xml:lang="en-us">{"id": "3875763f-6cf1-4762-a5e0-e5420a71f672", "value": "Domestic"}</skos:prefLabel>
@@ -19991,7 +19991,7 @@
 			<skos:Concept rdf:about="https://database.eamena.org/c59364a0-9c70-4a04-9552-b41fbaa1e0da">
 				<skos:prefLabel xml:lang="ar">{"id": "7bbf671c-608a-4f65-b0e8-fbebaf199850", "value": "\u062d\u0632\u0627\u0632 \u0648 \u0623\u0634\u0646\u0627\u062a/\u0646\u0628\u0627\u062a\u0627\u062a \u0645\u062a\u0646\u0627\u062b\u0631\u0629"}</skos:prefLabel>
 				<dcterms:identifier xml:lang="en">{"id": "42ed1e5b-8e8f-4ae2-a2d5-7bd4c0891368", "value": "https://database.eamena.org/concepts/c59364a0-9c70-4a04-9552-b41fbaa1e0da"}</dcterms:identifier>
-				<skos:prefLabel xml:lang="en-us">{"id": "59c25d37-d81f-4e11-b9e8-f279775f24ed", "value": "Lichen & Mosses/Sparse Vegetation"}</skos:prefLabel>
+				<skos:prefLabel xml:lang="en-us">{"id": "59c25d37-d81f-4e11-b9e8-f279775f24ed", "value": "Lichen and Mosses/Sparse Vegetation"}</skos:prefLabel>
 				<skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
 			</skos:Concept>
 			<skos:Concept rdf:about="https://database.eamena.org/b655b0e7-d543-3e20-9ed0-305f2ad61f68">
@@ -22600,7 +22600,7 @@
 						<skos:Concept rdf:about="https://database.eamena.org/edaccbe0-1e1c-4a89-ba75-bff3c8ccca47">
 							<dcterms:identifier xml:lang="en">{"id": "a2df5013-083f-4e62-9d90-087287b006dc", "value": "https://database.eamena.org/concepts/edaccbe0-1e1c-4a89-ba75-bff3c8ccca47"}</dcterms:identifier>
 							<skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
-							<skos:prefLabel xml:lang="en-us">{"id": "fa0d03e8-4e9d-4578-8f94-661745b78263", "value": "Lower & Early Holocene / Greenlandian"}</skos:prefLabel>
+							<skos:prefLabel xml:lang="en-us">{"id": "fa0d03e8-4e9d-4578-8f94-661745b78263", "value": "Lower and Early Holocene / Greenlandian"}</skos:prefLabel>
 							<skos:prefLabel xml:lang="ar">{"id": "b1ec9a59-f51d-45b1-b7de-40580993b3eb", "value": "\u0627\u0644\u0647\u0648\u0644\u0648\u0644\u0633\u064a\u0646 \u0627\u0644\u0623\u062f\u0646\u0649 \u0648\u0627\u0644\u0645\u0628\u0643\u0631 /\u063a\u0631\u064a\u0646 \u0644\u0627\u0646\u062f\u064a Greenlandian"}</skos:prefLabel>
 						</skos:Concept>
 					</skos:narrower>
@@ -22698,8 +22698,8 @@
 					<skos:prefLabel xml:lang="en-us">{"id": "5999f6b4-41d0-4f91-989e-cd46dd2e806e", "value": "Pleistocene"}</skos:prefLabel>
 					<skos:narrower>
 						<skos:Concept rdf:about="https://database.eamena.org/062282ed-202f-4384-8998-63a44d149529">
-							<skos:prefLabel xml:lang="ar">{"id": "9f07c7fe-5f79-4371-b3e7-117a432e14a9", "value": "\u0627\u0644\u0628\u0644\u064a\u0633\u062a\u0648\u0633\u0646 \u0627\u0644\u0623\u062f\u0646\u0649 & \u0627\u0644\u0645\u0628\u0643\u0631 /\u0627\u0644\u0643\u0627\u0644\u0627\u0628\u0631\u064a Calabrian"}</skos:prefLabel>
-							<skos:prefLabel xml:lang="en-us">{"id": "05629a44-adf0-407d-934f-1462876084e8", "value": "Lower & Early Pleistocene / Calabrian"}</skos:prefLabel>
+							<skos:prefLabel xml:lang="ar">{"id": "9f07c7fe-5f79-4371-b3e7-117a432e14a9", "value": "\u0627\u0644\u0628\u0644\u064a\u0633\u062a\u0648\u0633\u0646 \u0627\u0644\u0623\u062f\u0646\u0649 and \u0627\u0644\u0645\u0628\u0643\u0631 /\u0627\u0644\u0643\u0627\u0644\u0627\u0628\u0631\u064a Calabrian"}</skos:prefLabel>
+							<skos:prefLabel xml:lang="en-us">{"id": "05629a44-adf0-407d-934f-1462876084e8", "value": "Lower and Early Pleistocene / Calabrian"}</skos:prefLabel>
 							<dcterms:identifier xml:lang="en">{"id": "8772af77-d3ba-4e3f-b556-c396e30c8932", "value": "https://database.eamena.org/concepts/062282ed-202f-4384-8998-63a44d149529"}</dcterms:identifier>
 							<skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
 						</skos:Concept>
@@ -22717,8 +22717,8 @@
 					<skos:narrower>
 						<skos:Concept rdf:about="https://database.eamena.org/f8aeb34c-2075-44d6-83bd-3245562cdce2">
 							<dcterms:identifier xml:lang="en">{"id": "3f90b5cd-1d41-4253-b5b7-2d1d5a3c0ce6", "value": "https://database.eamena.org/concepts/f8aeb34c-2075-44d6-83bd-3245562cdce2"}</dcterms:identifier>
-							<skos:prefLabel xml:lang="en-us">{"id": "a48829dd-d0fc-4821-86ad-07a155f425a1", "value": "Lower & Early Pleistocene / Gelasian"}</skos:prefLabel>
-							<skos:prefLabel xml:lang="ar">{"id": "6a9824ea-60dc-40da-a21b-4648f90651a3", "value": "\u0627\u0644\u0628\u0644\u064a\u0633\u062a\u0648\u0633\u0646 \u0627\u0644\u0623\u062f\u0646\u0649 & \u0627\u0644\u0645\u0628\u0643\u0631 /\u0627\u0644\u062c\u064a\u0644\u0627\u0633\u064a Gelasian"}</skos:prefLabel>
+							<skos:prefLabel xml:lang="en-us">{"id": "a48829dd-d0fc-4821-86ad-07a155f425a1", "value": "Lower and Early Pleistocene / Gelasian"}</skos:prefLabel>
+							<skos:prefLabel xml:lang="ar">{"id": "6a9824ea-60dc-40da-a21b-4648f90651a3", "value": "\u0627\u0644\u0628\u0644\u064a\u0633\u062a\u0648\u0633\u0646 \u0627\u0644\u0623\u062f\u0646\u0649 and \u0627\u0644\u0645\u0628\u0643\u0631 /\u0627\u0644\u062c\u064a\u0644\u0627\u0633\u064a Gelasian"}</skos:prefLabel>
 							<skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
 						</skos:Concept>
 					</skos:narrower>
@@ -24808,8 +24808,8 @@
 					<skos:prefLabel xml:lang="ar">{"id": "7840da6e-f57d-4f84-9f18-310d412c0085", "value": "\u0645\u0635\u0631 \u0641\u064a \u0639\u0635\u0631 \u0627\u0644\u0623\u0633\u0631\u0627\u062a"}</skos:prefLabel>
 				</skos:Concept>
 				<skos:Concept rdf:about="https://database.eamena.org/14135f49-199d-32fb-9e3d-7c325cd9884e">
-					<skos:prefLabel xml:lang="en-us">{"id": "ee1fde93-e2ed-4160-9dab-22242a9a99d5", "value": "Black & White"}</skos:prefLabel>
-					<skos:prefLabel xml:lang="ar">{"id": "8bbdf6ba-e3f3-47ed-94d9-0db12f29659d", "value": "\u0623\u0633\u0648\u062f & \u0623\u0628\u064a\u0636"}</skos:prefLabel>
+					<skos:prefLabel xml:lang="en-us">{"id": "ee1fde93-e2ed-4160-9dab-22242a9a99d5", "value": "Black and White"}</skos:prefLabel>
+					<skos:prefLabel xml:lang="ar">{"id": "8bbdf6ba-e3f3-47ed-94d9-0db12f29659d", "value": "\u0623\u0633\u0648\u062f and \u0623\u0628\u064a\u0636"}</skos:prefLabel>
 					<dcterms:identifier xml:lang="en">{"id": "3cd81840-6571-4930-bcf4-94288a2a8d8c", "value": "https://database.eamena.org/concepts/14135f49-199d-32fb-9e3d-7c325cd9884e"}</dcterms:identifier>
 					<skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
 				</skos:Concept>

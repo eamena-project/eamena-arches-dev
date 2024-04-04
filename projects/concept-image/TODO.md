@@ -6,7 +6,7 @@ The idea is to illustrate the different HP assessment cases using visual documen
 <center>
 
 <img src = "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/arches-v7-hp-data-erd-img.png" width = "650">
-<em>
+<em>Detail of the HP entity-relationship diagram with a sample of photographs illustrating different threat cases</em>
 </center>
 
 The objective is :

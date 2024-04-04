@@ -22482,7 +22482,7 @@
 				</skos:narrower>
 				<skos:narrower>
 					<skos:Concept rdf:about="https://database.eamena.org/ba4e8aee-5260-43df-b263-eaaf101bb849">
-						<skos:prefLabel xml:lang="ar">{"id": "0bca5f8e-298f-4884-b712-41284bce7c9f", "value": "\u0645\u0646\u062e\u0641\u0636 (2< \u0645\u062a\u0631)"}
+						<skos:prefLabel xml:lang="ar">{"id": "0bca5f8e-298f-4884-b712-41284bce7c9f", "value": "\u0645\u0646\u062e\u0641\u0636 (2 sup \u0645\u062a\u0631)"}
 						</skos:prefLabel>
 						<skos:prefLabel xml:lang="en-us">{"id": "bd3c9d01-f276-43f5-98a3-23ec9f30b4a3", "value": "Microtidal (
 							<2m)"}

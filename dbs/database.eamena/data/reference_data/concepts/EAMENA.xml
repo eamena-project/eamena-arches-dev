@@ -11525,7 +11525,7 @@
 		<skos:narrower>
 			<skos:Concept rdf:about="https://database.eamena.org/8b6f61b1-2e54-4e11-b7e6-dec80ad4e108">
 				<skos:prefLabel xml:lang="en-us">{"id": "4aea65af-5ce3-4f66-b673-48f1ad148b23", "value": "Protected (
-					<10km)"}
+					inf 10km)"}
 					</skos:prefLabel>
 					<skos:prefLabel xml:lang="ar">{"id": "1d41f570-7c99-446a-82d7-d1da4b9baaa9", "value": "\u0645\u062d\u0645\u064a >10 \u0645\u062a\u0631"}</skos:prefLabel>
 					<skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
@@ -11539,7 +11539,7 @@
 						<100 \u0643\u0645"}
 						</skos:prefLabel>
 						<dcterms:identifier xml:lang="en">{"id": "128fd3c7-9a9c-4b06-a192-f1b5e4498347", "value": "https://database.eamena.org/concepts/911d872d-3242-402c-9228-e8d973276c2f"}</dcterms:identifier>
-						<skos:prefLabel xml:lang="en-us">{"id": "0706daa1-40bc-4386-8a1d-0b8709e8847e", "value": "Exposed (>100km)"}</skos:prefLabel>
+						<skos:prefLabel xml:lang="en-us">{"id": "0706daa1-40bc-4386-8a1d-0b8709e8847e", "value": "Exposed (sup 100km)"}</skos:prefLabel>
 						<skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
 					</skos:Concept>
 				</skos:narrower>

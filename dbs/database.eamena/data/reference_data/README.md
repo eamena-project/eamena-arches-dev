@@ -16,11 +16,11 @@
   - [MDS](#mds)
   - eamenaR mapping file `ids.csv` (see [eamenaR documentation](https://github.com/eamena-project/eamenaR#correspondances-between-concept-labels-and-uuids))
 
-* [mds-template.xlsx](mds/mds-template.xlsx):
+* [mds-template.xlsx](rm/hp/mds/mds-template.xlsx):
 	- an editable XLSX file with the list of HP fields with their UUID and a "Yes" mark if these fields belong to the mds. This file is considered the authoritative document for MDS.
 
-* [mds-template-readonly.tsv](mds/mds-template-readonly.tsv):
-	- a read-only TSV file with the list of HP fields with their UUID and a "Yes" mark if these fields belong to the mds. This files results from the automatic export of [mds-template.xlsx](mds/mds-template.xlsx), it will be overwrite each time 'mds-template.xlsx' is updated)
+* [mds-template-readonly.tsv](rm/hp/mds/mds-template-readonly.tsv):
+	- a read-only TSV file with the list of HP fields with their UUID and a "Yes" mark if these fields belong to the mds. This files results from the automatic export of [mds-template.xlsx](rm/hp/mds/mds-template.xlsx), it will be overwrite each time 'mds-template.xlsx' is updated)
 
 **Level of aggregation**
 

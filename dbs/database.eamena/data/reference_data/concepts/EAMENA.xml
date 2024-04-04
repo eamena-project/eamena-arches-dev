@@ -22482,10 +22482,10 @@
 				</skos:narrower>
 				<skos:narrower>
 					<skos:Concept rdf:about="https://database.eamena.org/ba4e8aee-5260-43df-b263-eaaf101bb849">
-						<skos:prefLabel xml:lang="ar">{"id": "0bca5f8e-298f-4884-b712-41284bce7c9f", "value": "\u0645\u0646\u062e\u0641\u0636 (2 sup \u0645\u062a\u0631)"}
+						<skos:prefLabel xml:lang="ar">{"id": "0bca5f8e-298f-4884-b712-41284bce7c9f", "value": "\u0645\u0646\u062e\u0641\u0636 (2 inf \u0645\u062a\u0631)"}
 						</skos:prefLabel>
 						<skos:prefLabel xml:lang="en-us">{"id": "bd3c9d01-f276-43f5-98a3-23ec9f30b4a3", "value": "Microtidal (
-							<2m)"}
+							inf 2m)"}
 							</skos:prefLabel>
 							<dcterms:identifier xml:lang="en">{"id": "27076dee-64e8-4a1f-9a3c-461d793d7ed2", "value": "https://database.eamena.org/concepts/ba4e8aee-5260-43df-b263-eaaf101bb849"}</dcterms:identifier>
 							<skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>

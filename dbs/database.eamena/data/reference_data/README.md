@@ -1,5 +1,7 @@
 # Reference Data
 
+Reference data covers: Resource Models (RM), Concepts, etc.
+
 * [Heritage Places](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data/reference_data#heritage-places)
 * [Information Resources](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data/reference_data#information-resources)
 
@@ -70,20 +72,6 @@ ERD of HP with fieldnames and CIDOC-CRM entities and relationships [[EAMENA-erd.
     <em>A screenshot of the Python `pyvis` ERD HTML file (detail) showing the 98 fields of the Heritage Places with the MDS fields (colored) using the coding from `EAMENA-erd.ipynb` or `EAMENA_spa.ipynb` scripts</em>
 </p>
 
-
-## UUIDs
-
-Run the Python function [nodes_uuids()](uuids/nodes_uuids.py) on a RM to collect the UUIDs of the nodes
-
-```Python
-df_nodes = nodes_uuids(rm = "https://raw.githubusercontent.com/eamena-project/eamena/master/eamena/pkg/graphs/resource_models/Heritage%20Place.json")
-file_path = "C:/Rprojects/eamenaR/inst/extdata/ids_temp.csv"
-df_nodes.to_csv(file_path, sep=',', index=False)
-```
-Gives this [ids_temp.csv](https://github.com/eamena-project/eamenaR/blob/main/inst/extdata/ids_temp.csv) file. Such a mapping table can be used in the [eamenaR package](https://github.com/eamena-project/eamenaR?tab=readme-ov-file#uuids-of-the-nodes)
-
-> **Note:** Fieldnames (ex: "Effect type") have UUIDs. To check these correspondances, check the `nodeid` in the RM. For example, the "Effect type" field has the UUID `34cfea90-c2c0-11ea-9026-02e7594ce0a0` (see its [fieldname](https://github.com/achp-project/prj-eamena-marea/blob/8e397ad1343cd7fb04e4ca8a50247a1e3a687cb2/resource_models/Heritage%20Place.json#L2036) and [uuid](https://github.com/achp-project/prj-eamena-marea/blob/8e397ad1343cd7fb04e4ca8a50247a1e3a687cb2/resource_models/Heritage%20Place.json#L6530)).
-
 ---
 
 * [mds-reference.ipynb](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/mds/mds-reference.ipynb)
@@ -100,7 +88,8 @@ Gives this [ids_temp.csv](https://github.com/eamena-project/eamenaR/blob/main/in
     <em>A screenshot of the editable 'mds-template.xlsx'</em>
 </p>
 
-## Values
+### Values
+> Field values
 
 Photographs give a visual documentation of field values [[concepts_images_graph.ipynb]](https://colab.research.google.com/github/eamena-project/eamena-data/blob/main/reference-data/concepts/heritage_places/concepts_images_graph.ipynb)
 
@@ -123,6 +112,30 @@ This script reads a BU template (ex: `Bulk_Upload_template_240228.xlsx`).
   <br>
     <em>Screenshot of the BU template worksheet 'Condition Assessment'. The script which uses '#' and empty row markers to delineate field descriptions</em>
 </p>
+
+
+
+## UUIDs
+
+Run the Python function [nodes_uuids()](uuids/nodes_uuids.py) on a RM (JSON) or a file of concepts (XML) to collect the UUIDs of the nodes
+
+* For RM (example)
+
+```Python
+df_nodes = nodes_uuids(choice = "rm", rm = "https://raw.githubusercontent.com/eamena-project/eamena/master/eamena/pkg/graphs/resource_models/Heritage%20Place.json")
+file_path = "C:/Rprojects/eamenaR/inst/extdata/ids_temp.csv"
+df_nodes.to_csv(file_path, sep=',', index=False)
+```
+Gives this [ids_temp.csv](https://github.com/eamena-project/eamenaR/blob/main/inst/extdata/ids_temp.csv) file. Such a mapping table can be used in the [eamenaR package](https://github.com/eamena-project/eamenaR?tab=readme-ov-file#uuids-of-the-nodes)
+
+* For concepts (example)
+ 
+```Python
+nodes_uuids(choice = "concept")
+```
+Gives the [concepts_readonly.tsv](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/concepts/concepts_readonly.tsv) listing
+
+> **Note:** Fieldnames (ex: "Effect type") have UUIDs. To check these correspondances, check the `nodeid` in the RM. For example, the "Effect type" field has the UUID `34cfea90-c2c0-11ea-9026-02e7594ce0a0` (see its [fieldname](https://github.com/achp-project/prj-eamena-marea/blob/8e397ad1343cd7fb04e4ca8a50247a1e3a687cb2/resource_models/Heritage%20Place.json#L2036) and [uuid](https://github.com/achp-project/prj-eamena-marea/blob/8e397ad1343cd7fb04e4ca8a50247a1e3a687cb2/resource_models/Heritage%20Place.json#L6530)).
 
 
 ## Other

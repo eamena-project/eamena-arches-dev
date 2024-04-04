@@ -8,6 +8,7 @@ The idea is to illustrate the different HP assessment cases using visual documen
 <img src = "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/arches-v7-hp-data-erd-img.png" width = "650">
 <em>Detail of the HP entity-relationship diagram with a sample of photographs illustrating different threat cases</em>
 </center>
+<br>
 
 The objective is :
 * to document particular cases with visual documentation having EAMENA and EXIF metadata (Author, Description, ..., EAMENA UUID, etc.).

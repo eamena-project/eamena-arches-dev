@@ -63,6 +63,8 @@ Restart Apache
 (ENV) root@ip-172-31-32-122:/opt/arches/eamena# sudo service apache2 restart
 ```
 
+Probable source of the issue: https://github.com/eamena-project/eamena/issues/1
+
 * frontend:
 
 RDM > Tools > Import Thesauri

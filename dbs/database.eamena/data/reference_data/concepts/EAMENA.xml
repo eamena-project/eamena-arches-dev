@@ -11534,8 +11534,7 @@
 			<skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
 			<skos:narrower>
 				<skos:Concept rdf:about="https://database.eamena.org/911d872d-3242-402c-9228-e8d973276c2f">
-					<skos:prefLabel xml:lang="ar">{"id": "3ec6853f-9bd4-4c00-b77e-eb48b1082950", "value": "\u0645\u0643\u0634\u0648\u0641 
-						inf 100 \u0643\u0645"}
+					<skos:prefLabel xml:lang="ar">{"id": "3ec6853f-9bd4-4c00-b77e-eb48b1082950", "value": "\u0645\u0643\u0634\u0648\u0641 sup 100 \u0643\u0645"}
 						</skos:prefLabel>
 						<dcterms:identifier xml:lang="en">{"id": "128fd3c7-9a9c-4b06-a192-f1b5e4498347", "value": "https://database.eamena.org/concepts/911d872d-3242-402c-9228-e8d973276c2f"}</dcterms:identifier>
 						<skos:prefLabel xml:lang="en-us">{"id": "0706daa1-40bc-4386-8a1d-0b8709e8847e", "value": "Exposed (sup 100km)"}</skos:prefLabel>

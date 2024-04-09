@@ -1,35 +1,33 @@
 
 #%%
 # match the content of an APAAME folder (ex: 1999-06-16/) with a list of metadata and highlight which files in the folder are absent in the RS. Useful for incomplete uploads
+# match the content of an APAAME folder (ex: 1999-06-16/) with a list of metadata (an XLSX file) and highlight which files in the folder are absent in the RS. Useful for incomplete uploads. Return the list of photo only existing in the folder
 
-# def match_rs_and_hardrive():
+def match_rs_and_hardrive(xlsx_path = "C:/Users/Letty Ten Harkel/Desktop/APAAME TODO/metadata_export_collection9_20240409-09_23.xlsx", folder_path = "D:/APAAME Master Catalog/1999/1999-06-16", photo_name_col = 'Original filename', verbose = True):
+    import os
+    import pandas as pd
+    # image_ext = list(".png", ".tif", ".tiff", ".jpg", ".jpeg")
 
-import os
-import pandas as pd
+    df = pd.read_excel(xlsx_path, engine='openpyxl')  
+    file_names = df[photo_name_col].tolist()  
+    file_names = [x for x in file_names if str(x) != 'nan']
+    # folder
+    folder_files = os.listdir(folder_path)
+    file_names = [name.strip().lower() for name in file_names]
+    # file_names = [name.strip() for name in file_names]
+    folder_files = [file.strip().lower() for file in folder_files]
+    # folder_files = [file.strip() for file in folder_files]
+    common_files = [file for file in file_names if file in folder_files]
+    unique_to_folder = [file for file in folder_files if file not in file_names]
+    if verbose:
+        print(f"{len(common_files)} files in RS and hard drive:", common_files)
+        print(f"{len(unique_to_folder)} files only in hard drive:", unique_to_folder)
+    # unique_to_folder = sorted(unique_to_folder)
+    unique_to_folder.sort()
+    return(unique_to_folder)
 
-# Load the Excel file
-xlsx_path = "D:/APAAME/inRS.xlsx"
-folder_path = "C:/Rprojects/eamena-arches-dev/projects/apaame/www"
-# image_ext = list(".png", ".tif", ".tiff", ".jpg", ".jpeg")
-
-df = pd.read_excel(xlsx_path, engine='openpyxl')  # Ensure you use the correct sheet name or index
-file_names = df['Original filename'].tolist()  # Replace 'column_name' with the name of your column
-file_names = [x for x in file_names if str(x) != 'nan']
-folder_files = os.listdir(folder_path)
-# Normalize file names if needed (like trimming spaces, converting to lower case)
-# file_names = [name.strip().lower() for name in file_names]
-file_names = [name.strip() for name in file_names]
-# folder_files = [file.strip().lower() for file in folder_files]
-folder_files = [file.strip() for file in folder_files]
-
-# Find common and unique files
-common_files = [file for file in file_names if file in folder_files]
-unique_to_folder = [file for file in folder_files if file not in file_names]
-if verbose:
-	print("Files in RS and hard drive:", common_files)
-	print("Files only in hard drive:", unique_to_folder)
-# return(unique_to_folder)
-
+to_upload = match_rs_and_hardrive()
+to_upload
 
 
 #%% 

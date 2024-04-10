@@ -44,7 +44,7 @@ On the DB:
 RDM > Tools > Import Thesauri > *select* `EAMENA_ckb.xml`
 
 <p align="center">
-  <img src='rdm-thesauri-import.png' width = "700px">
+  <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/rdm-thesauri-import.png' width = "700px">
   <br>
     <em>RDM import thesauri</em>
 </p>

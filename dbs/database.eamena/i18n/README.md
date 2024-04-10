@@ -3,6 +3,7 @@
 
 ## Convert thesauri
 > ⚠️ the `skos2excel.py` file should be run on Collections (`collections.xml`), not on thesauri
+> ⚠️ possible typo issues see [here](https://github.com/eamena-project/eamena/issues/1#issue-2225163630)
 
 Example for the EAMENA.xml file, and translation to French (`fr`), using the [skos2excel](https://github.com/ads04r/skos2excel) tools
 
@@ -12,13 +13,15 @@ Example for the EAMENA.xml file, and translation to French (`fr`), using the [sk
 py skos2excel.py ./data/EAMENA.xml ./data/EAMENA_fr.xlsx -lang fr -f xlsx 
 ```
 
-Proofreading of the automtic translation. 
+Proofreading of the automatic translation. 
 
 2. Convert (back) the [EAMENA_fr.xlsx](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/i18n/EAMENA_fr.xlsx) concepts to [EAMENA_fr.xml](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/concepts/EAMENA_fr.xml) using the `excel2skos.py` script:
 
 ```sh
 py excel2skos.py ./data/EAMENA_fr.xlsx ./data/EAMENA_fr.xml -b ./data/EAMENA.xml
 ```
+
+see also[^1]
 
 3. On the DB 
 
@@ -49,6 +52,30 @@ activate ENV, and run `import_reference_data` ...
 python manage.py packages -o import_reference_data -s '/opt/arches/eamena/eamena/pkg/reference_data/concepts/EAMENA.xml'
 ```
 
+Restart Apache
+
+```sh
+(ENV) root@ip-172-31-32-122:/opt/arches/eamena# sudo service apache2 restart
+```
+
+* frontend:
+
+RDM > Tools > Import Thesauri
+
+## Language switcher
+
+
+
+## Errors
+
+### Import errors
+
+On:
+
+```sh
+python manage.py packages -o import_reference_data -s '/opt/arches/eamena/eamena/pkg/reference_data/concepts/EAMENA.xml'
+```
+
 ... gives this message (ORPHANS)
 
 ```
@@ -57,21 +84,7 @@ operation: import_reference_data
 The SKOS file "EAMENA.xml" appears to have orphaned concepts.
 ```
 
-Restart Apache
-
-```sh
-(ENV) root@ip-172-31-32-122:/opt/arches/eamena# sudo service apache2 restart
-```
-
 Probable source of the issue: https://github.com/eamena-project/eamena/issues/1
-
-* frontend:
-
-RDM > Tools > Import Thesauri
-
-## Errors
-
-### Import errors
 
 Imported, with errors (ORPHANS)
 
@@ -122,4 +135,9 @@ Agricultural:
   <img alt="img-name" src="../../../www/arches-ea-v4-data-ref-concepts-agricultural.png" width="1100">
   <br>
 </p>
+
+---
+
+[^1]: ```py C:/Rprojects/skos2excel/skos2excel.py C:/Rprojects/eamena-arches-dev/dbs/database.eamena/data/reference_data/concepts/EAMENA.xml C:/Rprojects/eamena-arches-dev/dbs/database.eamena/data/reference_data/concepts/EAMENA_fr_2.xlsx -lang fr -f xlsx``` and  ```py C:/Rprojects/skos2excel/excel2skos.py C:/Rprojects/eamena-arches-dev/dbs/database.eamena/data/reference_data/concepts/EAMENA_fr_2.xlsx C:/Rprojects/eamena-arches-dev/dbs/database.eamena/data/reference_data/concepts/EAMENA_fr_2.xml -b C:/Rprojects/eamena-arches-dev/dbs/database.eamena/data/reference_data/concepts/EAMENA.xml```
+
 

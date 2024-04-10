@@ -7,28 +7,58 @@
 > ⚠️ the `skos2excel.py` file should be run on Collections (`collections.xml`), not on thesauri<br>
 > ⚠️ possible typo issues see [here](https://github.com/eamena-project/eamena/issues/1#issue-2225163630)
 
+Example of translation from English (`en`) to a target language (`ar`, `fr`, etc.), using the [skos2excel](https://github.com/zoometh/skos2excel) and [po2excel](https://github.com/zoometh/po2excel) tools
+
 | thesauri | menus |
 |----------|----------|
 | ![](https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/rdm-thesauri-eamena.png) | ![](https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-internationalisation-fr.png )|
-| with `skos2excel.py` | with [po2excel](https://github.com/zoometh/po2excel) |
-
-
+| with `skos2excel.py` | with `po2excel` |
 
 
 ### en -> ckb
 
-Example of translation to Central Kurdish (Sorani) (`ckb`), using the [skos2excel](https://github.com/zoometh/skos2excel) and [po2excel](https://github.com/zoometh/po2excel) tools
+Example of translation to Central Kurdish (Sorani) (`ckb`)
 
 #### thesauri
 
-Example for the EAMENA.xml file, and translation to Central Kurdish (Sorani) (`ckb`), using the [skos2excel](https://github.com/zoometh/skos2excel)
+Example for the EAMENA.xml file, and translation of the thesauri to Central Kurdish (Sorani) (`ckb`), using the [skos2excel.py](https://github.com/zoometh/skos2excel) script
 
-1. Convert [EAMENA.xml](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/concepts/EAMENA.xml) to [xxx.xlsx]() using the `skos2excel.py` script:
+1. Convert [EAMENA.xml](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/concepts/EAMENA.xml) to [xxx_ckb.xlsx]() using the `skos2excel.py` script:
 
 ```sh
-py skos2excel.py ./data/EAMENA.xml ./data/xxx.xlsx -lang ckb -f xlsx 
+py skos2excel.py ./data/EAMENA.xml ./data/xxx_ckb.xlsx -lang ckb -f xlsx 
 ```
 
+Proofreading of the automatic translation. 
+
+2. Convert (back) the [xxx_ckb.xlsx]() concepts to [xxx_ckb.xml]() using the `excel2skos.py` script:
+
+```sh
+py excel2skos.py ./data/xxx_ckb.xlsx ./data/EAMENA_ckb.xml -b ./data/EAMENA.xml
+```
+
+3. Import in the DB
+
+On the DB:
+
+RDM > Tools > Import Thesauri > *select* `EAMENA_ckb.xml`
+
+<p align="center">
+  <img src='rdm-thesauri-import.png' width = "700px">
+  <br>
+    <em>RDM import thesauri</em>
+</p>
+
+
+#### 'menus'
+
+Example for the EAMENA.xml file, and translation of the menus to Central Kurdish (Sorani) (`ckb`), using the [po2excel.py](https://github.com/zoometh/po2excel) script
+
+1. Convert [xxx.po](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/concepts/EAMENA.xml) to [xxx_ckb.xlsx]() using the `skos2excel.py` script:
+
+```sh
+py po2excel.py xxx.po xxx.xlsx --format xlsx
+```
 
 
 ### en -> fr

@@ -112,8 +112,9 @@ There could have errors in the translations:
 
 If you find any errors in the translations, please update these files:
 
-- Arabic: <a href='https://github.com/eamena-project/arches/blob/master/arches/locale/ar/LC_MESSAGES/django.po'>ar</a>
-- French: <a href='https://github.com/eamena-project/arches/blob/master/arches/locale/fr/LC_MESSAGES/django.po'>fr</a>
+- Arabic `ar`: <a href='https://github.com/eamena-project/arches/blob/master/arches/locale/ar/LC_MESSAGES/django.po'>ar</a>
+- French `fr`: <a href='https://github.com/eamena-project/arches/blob/master/arches/locale/fr/LC_MESSAGES/django.po'>fr</a>
+- Central Kurdish (Sorani) `ckb`: TODO
 
 These changes will be then proposed (Pull request) to Arches' source code
 

@@ -29,7 +29,7 @@ Example for the EAMENA.xml file, and translation of the thesauri to Central Kurd
 py skos2excel.py ./data/EAMENA.xml ./data/xxx_ckb.xlsx -lang ckb -f xlsx 
 ```
 
-Proofreading of the automatic translation. 
+✅ Proofreading of the XLSX automatic translation. 
 
 2. Convert (back) the [xxx_ckb.xlsx]() concepts to [xxx_ckb.xml]() using the `excel2skos.py` script:
 
@@ -54,12 +54,23 @@ RDM > Tools > Import Thesauri > *select* `EAMENA_ckb.xml`
 
 Example for the EAMENA.xml file, and translation of the menus to Central Kurdish (Sorani) (`ckb`), using the [po2excel.py](https://github.com/zoometh/po2excel) script
 
-1. Convert [xxx.po](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/concepts/EAMENA.xml) to [xxx_ckb.xlsx]() using the `skos2excel.py` script:
+1. Convert [django.po](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/i18n/data/django.po) to [django_ckb.xlsx]() using the `skos2excel.py` script:
 
 ```sh
-py po2excel.py xxx.po xxx.xlsx --format xlsx
+py po2excel.py django.po django_ckb.xlsx --format xlsx
 ```
 
+✅ Proofreading of the XLSX automatic translation. 
+
+2. Convert (back) the [django_ckb.xlsx]() concepts to [django_ckb.po]() using the `excel2po.py` script:
+
+```sh
+py excel2po.py django_ckb.xlsx django_ckb.po --base django.po
+```
+
+Rename `django_ckb.po` to `django.po`. Import `django_ckb.po` into the DB (`/opt/arches/ENV/lib/python3.8/site-packages/arches/locale`)
+
+see: `makemessages`
 
 ### en -> fr
 
@@ -194,6 +205,10 @@ Agricultural:
   <img alt="img-name" src="../../../www/arches-ea-v4-data-ref-concepts-agricultural.png" width="1100">
   <br>
 </p>
+
+## Documentation
+
+- Arches documentation - [localizing-arches](https://arches.readthedocs.io/en/stable/developing/advanced/localizing-arches/#localizing-arches)
 
 ---
 

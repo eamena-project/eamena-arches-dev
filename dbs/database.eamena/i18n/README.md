@@ -1,9 +1,37 @@
 # i18n
-> Internationalisation
+> Internationalisation (i18n) and localisation (l10n)
 
-## Convert thesauri
-> ⚠️ the `skos2excel.py` file should be run on Collections (`collections.xml`), not on thesauri
+
+
+## Convert thesauri and 'menus'
+> ⚠️ the `skos2excel.py` file should be run on Collections (`collections.xml`), not on thesauri<br>
 > ⚠️ possible typo issues see [here](https://github.com/eamena-project/eamena/issues/1#issue-2225163630)
+
+| thesauri | menus |
+|----------|----------|
+| ![](https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/rdm-thesauri-eamena.png) | ![](https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-internationalisation-fr.png )|
+| with `skos2excel.py` | with [po2excel](https://github.com/zoometh/po2excel) |
+
+
+
+
+### en -> ckb
+
+Example of translation to Central Kurdish (Sorani) (`ckb`), using the [skos2excel](https://github.com/zoometh/skos2excel) and [po2excel](https://github.com/zoometh/po2excel) tools
+
+#### thesauri
+
+Example for the EAMENA.xml file, and translation to Central Kurdish (Sorani) (`ckb`), using the [skos2excel](https://github.com/zoometh/skos2excel)
+
+1. Convert [EAMENA.xml](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/concepts/EAMENA.xml) to [xxx.xlsx]() using the `skos2excel.py` script:
+
+```sh
+py skos2excel.py ./data/EAMENA.xml ./data/xxx.xlsx -lang ckb -f xlsx 
+```
+
+
+
+### en -> fr
 
 Example for the EAMENA.xml file, and translation to French (`fr`), using the [skos2excel](https://github.com/ads04r/skos2excel) tools
 

@@ -13,6 +13,9 @@ Example of translation from English (`en`) to a target language (`ar`, `fr`, etc
 |----------|----------|
 | ![](https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/rdm-thesauri-eamena.png) | ![](https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-internationalisation-fr.png )|
 | with `skos2excel.py` | with `po2excel` |
+| base: `EAMEANA.xml` | base: `django.po` |
+
+The templates (so-called `base`) of these files are in the folder [bases/](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/i18n/data/bases)
 
 
 ### en -> ckb
@@ -31,17 +34,17 @@ py skos2excel.py ./data/EAMENA.xml ./data/xxx_ckb.xlsx -lang ckb -f xlsx
 
 ✅ Proofreading of the XLSX automatic translation. 
 
-2. Convert (back) the [kurdish_thesaurus.xlsx]() concepts to [kurdish_thesaurus.xml]() using the `excel2skos.py` script:
+2. Convert (back) the [kurdish_thesaurus.xlsx]() concepts to [EAMENA.xml]() using the `excel2skos.py` script:
 
 ```sh
-py C:/Rprojects/skos2excel/excel2skos.py C:/Rprojects/eamena-arches-dev/dbs/database.eamena/i18n/data/kurdish_thesaurus.xlsx C:/Rprojects/eamena-arches-dev/dbs/database.eamena/i18n/data/kurdish_thesaurus.xml --base C:/Rprojects/eamena-arches-dev/dbs/database.eamena/i18n/data/bases/EAMENA.xml
+py C:/Rprojects/skos2excel/excel2skos.py C:/Rprojects/eamena-arches-dev/dbs/database.eamena/i18n/data/ckb/kurdish_thesaurus.xlsx C:/Rprojects/eamena-arches-dev/dbs/database.eamena/i18n/data/EAMENA.xml --base C:/Rprojects/eamena-arches-dev/dbs/database.eamena/i18n/data/bases/EAMENA.xml
 ```
 
 3. Import in the DB
 
 On the DB:
 
-RDM > Tools > Import Thesauri > *select* `EAMENA_ckb.xml`
+RDM > Tools > Import Thesauri > *select* `EAMENA.xml`
 
 <p align="center">
   <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/rdm-thesauri-import.png' width = "700px">
@@ -62,15 +65,15 @@ py po2excel.py django.po django_ckb.xlsx --format xlsx
 
 ✅ Proofreading of the XLSX automatic translation. 
 
-2. Convert (back) the [django_ckb.xlsx]() concepts to [django_ckb.po]() using the `excel2po.py` script:
+2. Convert (back) the [kurdish_database_menu_terms.xlsx]() concepts to [django.po]() using the `excel2po.py` script:
 
 ```sh
-py excel2po.py django_ckb.xlsx django_ckb.po --base django.po
+py C:/Rprojects/po2excel/excel2po.py C:/Rprojects/eamena-arches-dev/dbs/database.eamena/i18n/data/ckb/kurdish_database_menu_terms.xlsx C:/Rprojects/eamena-arches-dev/dbs/database.eamena/i18n/data/ckb/django.po -lang ckb --base C:/Rprojects/eamena-arches-dev/dbs/database.eamena/i18n/data/bases/django.po
 ```
 
-Rename `django_ckb.po` to `django.po`. Import `django_ckb.po` into the DB (`/opt/arches/ENV/lib/python3.8/site-packages/arches/locale`)
+- ? Import `django_ckb.po` into the DB (`/opt/arches/ENV/lib/python3.8/site-packages/arches/locale`), see: `makemessages`
+- ? Import to transifex
 
-see: `makemessages`
 
 ### en -> fr
 

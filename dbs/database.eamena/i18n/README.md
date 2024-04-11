@@ -31,10 +31,10 @@ py skos2excel.py ./data/EAMENA.xml ./data/xxx_ckb.xlsx -lang ckb -f xlsx
 
 ✅ Proofreading of the XLSX automatic translation. 
 
-2. Convert (back) the [xxx_ckb.xlsx]() concepts to [xxx_ckb.xml]() using the `excel2skos.py` script:
+2. Convert (back) the [kurdish_thesaurus.xlsx]() concepts to [kurdish_thesaurus.xml]() using the `excel2skos.py` script:
 
 ```sh
-py excel2skos.py ./data/xxx_ckb.xlsx ./data/EAMENA_ckb.xml -b ./data/EAMENA.xml
+py C:/Rprojects/skos2excel/excel2skos.py C:/Rprojects/eamena-arches-dev/dbs/database.eamena/i18n/data/kurdish_thesaurus.xlsx C:/Rprojects/eamena-arches-dev/dbs/database.eamena/i18n/data/kurdish_thesaurus.xml --base C:/Rprojects/eamena-arches-dev/dbs/database.eamena/i18n/data/bases/EAMENA.xml
 ```
 
 3. Import in the DB

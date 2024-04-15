@@ -14,7 +14,8 @@
 
 ## Development
 
-* (*in progress*) emenar user (readonly user)
+* (*in progress*) emenar user (readonly user):
+	- https://github.com/eamena-project/eamena-arches-dev/blob/main/colab/connect-db.ipynb
 * (*in progress*) [citation-generator](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bibref#citation-generator)
 * (*in progress*) Internationalisation/localisation to French and Central Kurdish (Sorani) ([here](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/i18n#internationalisation))
 

@@ -238,7 +238,7 @@ service apache2 restart
 
 
 <p align="center">
-  <img alt="img-name" src="https://raw.githubusercontent.com/zoometh/skos2excel/master/www/arches-v7-i18n-django-lang.png" width="1100">
+  <img alt="img-name" src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-i18n-django-lang.png" width="1100">
   <br>
 </p>
 

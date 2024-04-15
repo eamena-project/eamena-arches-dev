@@ -98,6 +98,9 @@ py po2excel.py django.po django_ckb.xlsx --format xlsx
 py C:/Rprojects/po2excel/excel2po.py C:/Rprojects/eamena-arches-dev/dbs/database.eamena/i18n/data/ckb/kurdish_database_menu_terms.xlsx C:/Rprojects/eamena-arches-dev/dbs/database.eamena/i18n/data/ckb/django.po -lang ckb --base C:/Rprojects/eamena-arches-dev/dbs/database.eamena/i18n/data/bases/django.po
 ```
 
+3. Import in the DB and update the DB (see: messages import)
+
+
 
 ### en -> fr
 
@@ -158,8 +161,86 @@ Restart Apache
 
 RDM > Tools > Import Thesauri
 
-## Language switcher
+## Import messages
 
+
+```sh
+sudo su
+cd /opt/arches/
+source ENV/bin/activate
+```
+
+Create the new language folders, here `ckb`, and move in: 
+
+```sh
+mkdir /opt/arches/ENV/lib/python3.10/site-packages/arches/locale/ckb
+mkdir /opt/arches/ENV/lib/python3.10/site-packages/arches/locale/ckb/LC_MESSAGES
+cd /opt/arches/ENV/lib/python3.10/site-packages/arches/locale/ckb/LC_MESSAGES
+```
+
+Import the `django.po` in it `LC_MESSAGES/`:
+
+```sh
+wget https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/dbs/database.eamena/i18n/data/ckb/django.po
+```
+
+Convert the PO file (Portable Object) to a MO file (Machine Object)
+
+```sh
+msgfmt -o django.mo django.po
+```
+
+Change files ownerships and permissions
+
+```sh
+# files ownership
+chown arches:arches django.po
+chown arches:arches django.mo
+# files permissions
+chmod 755 djang*
+```
+
+Now to update the language switcher;
+
+1. Make sure the `settings.py` new language is registered (here, `ckb`):
+
+```py
+...
+LANGUAGES = [
+    ('en', _('English')),
+    ('ar', _('Arabic')),
+    ('ckb', _('Central Kurdish (Sorani)')),
+]
+...
+```
+
+2. Run `build_development`
+
+```sh
+cd /opt/arches/eamena/eamena/
+yarn build_development &
+```
+
+3. Run `collectstatic`
+
+```sh
+cd /opt/arches/eamena
+python manage.py collectstatic
+```
+
+4. Restart Apache2
+
+```sh
+service apache2 restart
+```
+
+5. Update or create the Django Admin / Languages
+
+
+<p align="center">
+  <img alt="img-name" src="https://raw.githubusercontent.com/zoometh/skos2excel/master/www/arches-v7-i18n-django-lang.png" width="1100">
+  <br>
+</p>
 
 
 

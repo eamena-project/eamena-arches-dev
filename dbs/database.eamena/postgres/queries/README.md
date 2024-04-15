@@ -19,6 +19,30 @@ Main correspondances between EAMENA Heritage Places fieldnames and field UUIDs a
 
 [APAAME dev](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/queries#apaame-and-archdams)
 
+## User permissions
+
+Create the `eamenar_temp` with a password and revokes all his pervious privileges
+
+```SQL
+REVOKE ALL PRIVILEGES ON ALL TABLES IN SCHEMA public FROM eamenar_temp;
+REVOKE ALL PRIVILEGES ON SCHEMA public FROM eamenar_temp;
+REVOKE ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA public FROM eamenar_temp;
+REVOKE ALL PRIVILEGES ON DATABASE eamena FROM eamenar_temp;
+```
+
+Grant a `SELECT` permission (i.e. read-only) on a specific view
+
+```SQL
+GRANT SELECT ON nb_hp_by_gs TO eamenar_temp;
+```
+
+Check the `eamenar_temp` user permissions
+
+```SQL
+SELECT table_catalog, table_schema, table_name, privilege_type
+FROM information_schema.table_privileges
+WHERE grantee = 'eamenar_temp'
+```
 
 ## Total number of HP
 

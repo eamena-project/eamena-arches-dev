@@ -73,7 +73,7 @@ These changes will be then proposed (Pull request) to Arches' source code
 
 Example of translation to Central Kurdish (Sorani) (`ckb`)
 
-#### thesauri
+#### Thesauri
 > ⚠️ possible typo issues with `EAMENA.xml` see [here](https://github.com/eamena-project/eamena/issues/1#issue-2225163630)
 
 Example for the EAMENA.xml file, and translation of the DB thesauri to Central Kurdish (Sorani) (`ckb`), using the [skos2excel.py](https://github.com/zoometh/skos2excel) script
@@ -92,18 +92,7 @@ py skos2excel.py ./data/EAMENA.xml ./data/xxx_ckb.xlsx -lang ckb -f xlsx
 py C:/Rprojects/skos2excel/excel2skos.py C:/Rprojects/eamena-arches-dev/dbs/database.eamena/i18n/data/ckb/kurdish_thesaurus.xlsx C:/Rprojects/eamena-arches-dev/dbs/database.eamena/i18n/data/EAMENA.xml --base C:/Rprojects/eamena-arches-dev/dbs/database.eamena/i18n/data/bases/EAMENA.xml
 ```
 
-4. Import in the DB
-
-On the DB:
-
-RDM > Tools > Import Thesauri > *select* `EAMENA.xml`
-
-<p align="center">
-  <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/rdm-thesauri-import.png' width = "500px">
-  <br>
-    <em>RDM import thesauri</em>
-</p>
-
+4. Import in the DB (see: [Import thesauri](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/i18n#import-thesauri))
 
 #### Messages
 
@@ -186,7 +175,22 @@ Restart Apache
 
 RDM > Tools > Import Thesauri
 
-## Import messages
+## Import in the DB
+
+### Import thesauri
+
+On the DB:
+
+RDM > Tools > Import Thesauri > *select* `EAMENA.xml`
+
+<p align="center">
+  <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/rdm-thesauri-import.png' width = "500px">
+  <br>
+    <em>RDM import thesauri</em>
+</p>
+
+
+### Import messages
 
 
 ```sh

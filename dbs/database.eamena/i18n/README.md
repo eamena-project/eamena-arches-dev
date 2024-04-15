@@ -12,8 +12,37 @@ Example of translation from English (`en`) to a target language (`ar`, `fr`, etc
 | with `skos2excel.py` | with `po2excel` |
 | base: `EAMEANA.xml` | base: `django.po` |
 
+### bases
+
 The templates (so-called `base`) of these files are in the folder [bases/](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/i18n/data/bases)
 
+* `EAMEANA.xml` (snippet)
+
+```XML
+...
+<skos:Concept rdf:about="https://database.eamena.org/89fab53f-ce9d-4c0b-8ef9-d01d2899ef97">
+<skos:prefLabel xml:lang="ar">{"id": "5264b031-4580-4a9c-91f2-be5d0b184da5", "value": "\u062e\u0648\u0631 \u0623\u0648 \u0645\u0635\u0628 \u0627\u0644\u0646\u0647\u0631"}</skos:prefLabel>
+<skos:inScheme rdf:resource="https://database.eamena.org/4a98075d-815f-327b-be0e-518b32f7623b"/>
+<skos:prefLabel xml:lang="en-us">{"id": "78fd12f7-000e-4f26-8861-360018aa40ee", "value": "Estuary"}</skos:prefLabel>
+<dcterms:identifier xml:lang="en">{"id": "046d03a4-e76e-4713-aaf9-546a9f344458", "value": "https://database.eamena.org/concepts/89fab53f-ce9d-4c0b-8ef9-d01d2899ef97"}</dcterms:identifier>
+</skos:Concept>
+</skos:narrower>
+...
+```
+
+* `django.po` (snippet)
+
+```Python
+...
+#: app/datatypes/datatypes.py:564
+#, python-brace-format
+msgid "{value} is an invalid date format"
+msgstr ""
+...
+```
+
+## l10n
+> Localisation
 
 ### en -> ckb
 
@@ -22,7 +51,7 @@ Example of translation to Central Kurdish (Sorani) (`ckb`)
 #### thesauri
 > ⚠️ possible typo issues with `EAMENA.xml` see [here](https://github.com/eamena-project/eamena/issues/1#issue-2225163630)
 
-Example for the EAMENA.xml file, and translation of the thesauri to Central Kurdish (Sorani) (`ckb`), using the [skos2excel.py](https://github.com/zoometh/skos2excel) script
+Example for the EAMENA.xml file, and translation of the DB thesauri to Central Kurdish (Sorani) (`ckb`), using the [skos2excel.py](https://github.com/zoometh/skos2excel) script
 
 1. Convert [EAMENA.xml](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/concepts/EAMENA.xml) to [xxx_ckb.xlsx]() using the `skos2excel.py` script:
 
@@ -69,12 +98,6 @@ py po2excel.py django.po django_ckb.xlsx --format xlsx
 py C:/Rprojects/po2excel/excel2po.py C:/Rprojects/eamena-arches-dev/dbs/database.eamena/i18n/data/ckb/kurdish_database_menu_terms.xlsx C:/Rprojects/eamena-arches-dev/dbs/database.eamena/i18n/data/ckb/django.po -lang ckb --base C:/Rprojects/eamena-arches-dev/dbs/database.eamena/i18n/data/bases/django.po
 ```
 
-
-## Language switcher
-
-
-
-## Examples
 
 ### en -> fr
 
@@ -134,6 +157,10 @@ Restart Apache
 * frontend:
 
 RDM > Tools > Import Thesauri
+
+## Language switcher
+
+
 
 
 ## Other

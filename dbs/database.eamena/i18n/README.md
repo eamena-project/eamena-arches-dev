@@ -46,8 +46,8 @@ msgstr ""
 There could have translations errors:
 
 <p align="center">
-  <img alt="img-name" src="../../../www/arches-v7-internationalisation-error-fr.png" width="500">
-  <img alt="img-name" src="../../../www/arches-v7-internationalisation-error-fr-1.png" width="500">
+  <img alt="img-name" src="../../../www/arches-v7-internationalisation-error-fr.png" width="450">
+  <img alt="img-name" src="../../../www/arches-v7-internationalisation-error-fr-1.png" width="450">
   <br>
     <em>The English `Close` [windows] has been incorrectly translated to `Proche` in French when the correct translation should be `Fermer`</em>
 </p>

@@ -8,9 +8,9 @@ Example of translation from English (`en`) to a target language (`ar`, `fr`, etc
 
 | thesauri | messages |
 |----------|----------|
+| Thesauri are controlled vocabularies describing the ressources | Messages are the texts displayed on the screen describing tabs, menus, etc., for navigation purposes |
 | ![](https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/rdm-thesauri-eamena.png) | ![](https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-internationalisation-fr.png )|
-| with `skos2excel.py` | with `po2excel` |
-| base: `EAMEANA.xml` | base: `django.po` |
+| translation with `skos2excel.py`, base: `EAMEANA.xml` | translation with `po2excel`, base: `django.po` |
 
 ### bases
 

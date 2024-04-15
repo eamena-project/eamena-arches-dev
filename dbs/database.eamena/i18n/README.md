@@ -3,13 +3,12 @@
 
 
 
-## Convert thesauri and 'menus'
-> ⚠️ the `skos2excel.py` file should be run on Collections (`collections.xml`), not on thesauri<br>
-> ⚠️ possible typo issues see [here](https://github.com/eamena-project/eamena/issues/1#issue-2225163630)
+## Convert thesauri and messages
+> ⚠️ possible typo issues with `EAMEANA.xml` see [here](https://github.com/eamena-project/eamena/issues/1#issue-2225163630)
 
 Example of translation from English (`en`) to a target language (`ar`, `fr`, etc.), using the [skos2excel](https://github.com/zoometh/skos2excel) and [po2excel](https://github.com/zoometh/po2excel) tools
 
-| thesauri | menus |
+| thesauri | messages |
 |----------|----------|
 | ![](https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/rdm-thesauri-eamena.png) | ![](https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-internationalisation-fr.png )|
 | with `skos2excel.py` | with `po2excel` |
@@ -53,9 +52,9 @@ RDM > Tools > Import Thesauri > *select* `EAMENA.xml`
 </p>
 
 
-#### 'menus'
+#### Messages
 
-Example for the EAMENA.xml file, and translation of the menus to Central Kurdish (Sorani) (`ckb`), using the [po2excel.py](https://github.com/zoometh/po2excel) script
+Example for the EAMENA.xml file, and translation of the messages to Central Kurdish (Sorani) (`ckb`), using the [po2excel.py](https://github.com/zoometh/po2excel) script
 
 1. Convert [django.po](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/i18n/data/django.po) to [django_ckb.xlsx]() using the `skos2excel.py` script:
 

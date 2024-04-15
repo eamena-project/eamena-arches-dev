@@ -2,9 +2,7 @@
 > Internationalisation (i18n) and localisation (l10n)
 
 
-
 ## Convert thesauri and messages
-> ⚠️ possible typo issues with `EAMEANA.xml` see [here](https://github.com/eamena-project/eamena/issues/1#issue-2225163630)
 
 Example of translation from English (`en`) to a target language (`ar`, `fr`, etc.), using the [skos2excel](https://github.com/zoometh/skos2excel) and [po2excel](https://github.com/zoometh/po2excel) tools
 
@@ -22,6 +20,7 @@ The templates (so-called `base`) of these files are in the folder [bases/](https
 Example of translation to Central Kurdish (Sorani) (`ckb`)
 
 #### thesauri
+> ⚠️ possible typo issues with `EAMENA.xml` see [here](https://github.com/eamena-project/eamena/issues/1#issue-2225163630)
 
 Example for the EAMENA.xml file, and translation of the thesauri to Central Kurdish (Sorani) (`ckb`), using the [skos2excel.py](https://github.com/zoometh/skos2excel) script
 
@@ -54,7 +53,7 @@ RDM > Tools > Import Thesauri > *select* `EAMENA.xml`
 
 #### Messages
 
-Example for the EAMENA.xml file, and translation of the messages to Central Kurdish (Sorani) (`ckb`), using the [po2excel.py](https://github.com/zoometh/po2excel) script
+Example for the EAMENA.xml file, and translation of the DB messages to Central Kurdish (Sorani) (`ckb`), using the [po2excel.py](https://github.com/zoometh/po2excel) script
 
 1. Convert [django.po](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/i18n/data/django.po) to [django_ckb.xlsx]() using the `skos2excel.py` script:
 
@@ -70,13 +69,16 @@ py po2excel.py django.po django_ckb.xlsx --format xlsx
 py C:/Rprojects/po2excel/excel2po.py C:/Rprojects/eamena-arches-dev/dbs/database.eamena/i18n/data/ckb/kurdish_database_menu_terms.xlsx C:/Rprojects/eamena-arches-dev/dbs/database.eamena/i18n/data/ckb/django.po -lang ckb --base C:/Rprojects/eamena-arches-dev/dbs/database.eamena/i18n/data/bases/django.po
 ```
 
-- ? Import `django_ckb.po` into the DB (`/opt/arches/ENV/lib/python3.8/site-packages/arches/locale`), see: `makemessages`
-- ? Import to transifex
 
+## Language switcher
+
+
+
+## Examples
 
 ### en -> fr
 
-Example for the EAMENA.xml file, and translation to French (`fr`), using the [skos2excel](https://github.com/ads04r/skos2excel) tools
+Example for the `EAMENA.xml` file, and translation to French (`fr`), using the [skos2excel](https://github.com/ads04r/skos2excel) tools
 
 1. Convert [EAMENA.xml](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/concepts/EAMENA.xml) to [EAMENA_fr.xlsx](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/i18n/EAMENA_fr.xlsx) (See the corresponding [TSV file](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/i18n/EAMENA_fr.tsv)) using the `skos2excel.py` script:
 
@@ -133,8 +135,25 @@ Restart Apache
 
 RDM > Tools > Import Thesauri
 
-## Language switcher
 
+## Other
+
+Agricultural:
+
+* Collections: https://github.com/eamena-project/eamena/blob/master/eamena/pkg/reference_data/collections/collections.xml#L2432
+* Concepts:
+
+<p align="center">
+  <img alt="img-name" src="../../../www/arches-ea-v4-data-ref-concepts-agricultural.png" width="1100">
+  <br>
+</p>
+
+- ? Import `django_ckb.po` into the DB (`/opt/arches/ENV/lib/python3.8/site-packages/arches/locale`), see: `makemessages`
+- ? Import to transifex
+
+## Documentation
+
+- Arches documentation - [localizing-arches](https://arches.readthedocs.io/en/stable/developing/advanced/localizing-arches/#localizing-arches)
 
 
 ## Errors
@@ -195,22 +214,6 @@ These changes will be then proposed (Pull request) to Arches' source code
     <em>Pull request to change <a href='https://github.com/archesproject/arches/blob/master/arches/locale/fr/LC_MESSAGES/django.po'>Arches French PO file content</a></em>
 </p>
 
-
-## Other
-
-Agricultural:
-
-* Collections: https://github.com/eamena-project/eamena/blob/master/eamena/pkg/reference_data/collections/collections.xml#L2432
-* Concepts:
-
-<p align="center">
-  <img alt="img-name" src="../../../www/arches-ea-v4-data-ref-concepts-agricultural.png" width="1100">
-  <br>
-</p>
-
-## Documentation
-
-- Arches documentation - [localizing-arches](https://arches.readthedocs.io/en/stable/developing/advanced/localizing-arches/#localizing-arches)
 
 ---
 

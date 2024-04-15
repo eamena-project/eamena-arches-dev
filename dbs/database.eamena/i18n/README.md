@@ -16,7 +16,7 @@ Example of translation from English (`en`) to a target language (`ar`, `fr`, etc
 
 The templates (so-called `base`) of these files are in the folder [bases/](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/i18n/data/bases)
 
-* `EAMEANA.xml` (snippet)
+* `EAMENA.xml` (snippet) listing `en-us` and `ar` languages (`en` is for internal purposes)
 
 ```XML
 ...
@@ -59,22 +59,22 @@ Example for the EAMENA.xml file, and translation of the DB thesauri to Central K
 py skos2excel.py ./data/EAMENA.xml ./data/xxx_ckb.xlsx -lang ckb -f xlsx 
 ```
 
-✅ Proofreading of the XLSX automatic translation. 
+2. Proofreading of the XLSX automatic translation. 
 
-2. Convert (back) the [kurdish_thesaurus.xlsx]() concepts to [EAMENA.xml]() using the `excel2skos.py` script:
+3. Convert (back) the [kurdish_thesaurus.xlsx]() concepts to [EAMENA.xml]() using the `excel2skos.py` script:
 
 ```sh
 py C:/Rprojects/skos2excel/excel2skos.py C:/Rprojects/eamena-arches-dev/dbs/database.eamena/i18n/data/ckb/kurdish_thesaurus.xlsx C:/Rprojects/eamena-arches-dev/dbs/database.eamena/i18n/data/EAMENA.xml --base C:/Rprojects/eamena-arches-dev/dbs/database.eamena/i18n/data/bases/EAMENA.xml
 ```
 
-3. Import in the DB
+4. Import in the DB
 
 On the DB:
 
 RDM > Tools > Import Thesauri > *select* `EAMENA.xml`
 
 <p align="center">
-  <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/rdm-thesauri-import.png' width = "700px">
+  <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/rdm-thesauri-import.png' width = "500px">
   <br>
     <em>RDM import thesauri</em>
 </p>
@@ -82,7 +82,7 @@ RDM > Tools > Import Thesauri > *select* `EAMENA.xml`
 
 #### Messages
 
-Example for the EAMENA.xml file, and translation of the DB messages to Central Kurdish (Sorani) (`ckb`), using the [po2excel.py](https://github.com/zoometh/po2excel) script
+Example for the `EAMENA.xml` file, and translation of the DB messages to Central Kurdish (Sorani) (`ckb`), using the [po2excel.py](https://github.com/zoometh/po2excel) script
 
 1. Convert [django.po](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/i18n/data/django.po) to [django_ckb.xlsx]() using the `skos2excel.py` script:
 
@@ -90,15 +90,15 @@ Example for the EAMENA.xml file, and translation of the DB messages to Central K
 py po2excel.py django.po django_ckb.xlsx --format xlsx
 ```
 
-✅ Proofreading of the XLSX automatic translation. 
+2. Proofreading of the XLSX automatic translation. 
 
-2. Convert (back) the [kurdish_database_menu_terms.xlsx]() concepts to [django.po]() using the `excel2po.py` script:
+3. Convert (back) the [kurdish_database_menu_terms.xlsx]() concepts to [django.po]() using the `excel2po.py` script:
 
 ```sh
 py C:/Rprojects/po2excel/excel2po.py C:/Rprojects/eamena-arches-dev/dbs/database.eamena/i18n/data/ckb/kurdish_database_menu_terms.xlsx C:/Rprojects/eamena-arches-dev/dbs/database.eamena/i18n/data/ckb/django.po -lang ckb --base C:/Rprojects/eamena-arches-dev/dbs/database.eamena/i18n/data/bases/django.po
 ```
 
-3. Import in the DB and update the DB (see: messages import)
+4. Import in the DB and update the DB (see: [Import messages](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/i18n#import-messages))
 
 
 

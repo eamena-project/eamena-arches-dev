@@ -12,6 +12,12 @@
 |[PeriodO](https://github.com/achp-project/cultural-heritage/tree/main/periodo-projects) | [APAAME](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/apaame)     |
 | | [Concept Images](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/concept-image)     |
 
+## Development
+
+* (*in progress*) emenar user (readonly user)
+* (*in progress*) [citation-generator](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bibref#citation-generator)
+* (*in progress*) Internationalisation/localisation to French and Central Kurdish (Sorani) ([here](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/i18n#internationalisation))
+
 ## News 🗞️
 
 * EA/APAAME "tight links" (*in progress*): linking the DB with the new ArchDAMS ResourceSpace-based server ([here](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/README.md#apaame-server))

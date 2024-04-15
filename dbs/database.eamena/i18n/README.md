@@ -12,7 +12,7 @@ Example of translation from English (`en`) to a target language (`ar`, `fr`, etc
 | ![](https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/rdm-thesauri-eamena.png) | ![](https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-internationalisation-fr.png )|
 | translation with `skos2excel.py`, base: `EAMEANA.xml` | translation with `po2excel`, base: `django.po` |
 
-### bases
+### Bases
 
 The templates (so-called `base`) of these files are in the folder [bases/](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/i18n/data/bases)
 
@@ -40,6 +40,31 @@ msgid "{value} is an invalid date format"
 msgstr ""
 ...
 ```
+
+### Translation errors
+
+There could have translations errors:
+
+<p align="center">
+  <img alt="img-name" src="../../../www/arches-v7-internationalisation-error-fr.png" width="500">
+  <img alt="img-name" src="../../../www/arches-v7-internationalisation-error-fr-1.png" width="500">
+  <br>
+    <em>The English `Close` [windows] has been incorrectly translated to `Proche` in French when the correct translation should be `Fermer`</em>
+</p>
+
+If you find any errors in the translations, please update these files:
+
+- Arabic `ar`: <a href='https://github.com/eamena-project/arches/blob/master/arches/locale/ar/LC_MESSAGES/django.po'>ar</a>
+- French `fr`: <a href='https://github.com/eamena-project/arches/blob/master/arches/locale/fr/LC_MESSAGES/django.po'>fr</a>
+- Central Kurdish (Sorani) `ckb`: TO BE UPDATED (once Arches has accepted [the Pull request](https://github.com/archesproject/arches/pull/10755))
+
+These changes will be then proposed (Pull request) to Arches' source code
+
+<p align="center">
+  <img alt="img-name" src="../../../www/arches-ea-github-pr.png" width="1100">
+  <br>
+    <em>Pull request to change <a href='https://github.com/archesproject/arches/blob/master/arches/locale/fr/LC_MESSAGES/django.po'>Arches French PO file content</a></em>
+</p>
 
 ## l10n
 > Localisation
@@ -297,30 +322,6 @@ Imported, with errors (ORPHANS)
 RDM > Tools > Delete Thesauri doesn't work
 
 
-### Translation errors
-
-There could have errors in the translations:
-
-<p align="center">
-  <img alt="img-name" src="../../../www/arches-v7-internationalisation-error-fr.png" width="500">
-  <img alt="img-name" src="../../../www/arches-v7-internationalisation-error-fr-1.png" width="500">
-  <br>
-    <em>The English `Close` [the windows] has been wrongly translated to `Proche` in French</em>
-</p>
-
-If you find any errors in the translations, please update these files:
-
-- Arabic `ar`: <a href='https://github.com/eamena-project/arches/blob/master/arches/locale/ar/LC_MESSAGES/django.po'>ar</a>
-- French `fr`: <a href='https://github.com/eamena-project/arches/blob/master/arches/locale/fr/LC_MESSAGES/django.po'>fr</a>
-- Central Kurdish (Sorani) `ckb`: TODO
-
-These changes will be then proposed (Pull request) to Arches' source code
-
-<p align="center">
-  <img alt="img-name" src="../../../www/arches-ea-github-pr.png" width="1100">
-  <br>
-    <em>Pull request to change <a href='https://github.com/archesproject/arches/blob/master/arches/locale/fr/LC_MESSAGES/django.po'>Arches French PO file content</a></em>
-</p>
 
 
 ---

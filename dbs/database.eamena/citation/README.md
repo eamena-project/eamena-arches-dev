@@ -137,6 +137,69 @@ result (example):
 Push on the Zenodo sandbox for the first tests.
 
 
+> Draft for the EAMENA website
+
+<h5 class="rtejustify" id="open-data">How to use our datasets and images</h5>
+
+<p>Images and datasets from the EAMENA Database are under the Creative Commons Attribution 4.0 International License <a href="http://creativecommons.org/licenses/by/4.0/" rel="license"><img alt="Creative Commons Licence" src="https://i.creativecommons.org/l/by/4.0/88x31.png" style="border-width:0" style='height: 20px;vertical-align: middle;'/></a></p>
+
+<h5 class="rtejustify" id="cite-data">How to cite an EAMENA dataset</h5>
+
+<p>To cite our database please use the following (examples):</p>
+
+<h6 class="rtejustify" id="cite-data-APA">APA</h6>
+EAMENA database. (2023). Sistan: part 1. Heritage Places [Data set]. Zenodo. https://doi.org/10.5072/zenodo.5847
+
+<h6 class="rtejustify" id="cite-data-Harvard">Harvard</h6>
+EAMENA database (2023) “Sistan: part 1. Heritage Places”. Zenodo. doi: 10.5072/zenodo.5847.
+
+<h6 class="rtejustify" id="open-data-BibTex">BibTex</h6>
+<pre><code data-trim id="awesomecpp">
+@dataset{eamena_database_2023_5847,
+  author       = {EAMENA database},
+  title        = {Sistan: part 1. Heritage Places},
+  month        = dec,
+  year         = 2023,
+  publisher    = {Zenodo},
+  doi          = {10.5072/zenodo.5847},
+  url          = {https://doi.org/10.5072/zenodo.5847}
+}
+</code></pre>
+
+<h5 class="rtejustify" id="publish-data">How to publish EAMENA data</h5>
+
+<p>A ‘citation-generator’ feature is being developed by EAMENA to create an option allowing the export of a dataset to Zenodo. By doing this, EAMENA contributors will be given a citable unique reference identifier (DOI) that can be referenced in a data or research paper. This workflow has currently been implemented in a Jupyter Notebook hosted on <a href="https://github.com/eamena-project/eamena-arches-dev/blob/main/dev/citations/citation_generator.ipynb">GitHub</a> and <a href="https://colab.research.google.com/github/eamena-project/eamena-arches-dev/blob/main/dev/citations/citation_generator.ipynb">Google Colab</a>.</p>
+
+<p style="text-align: center;">
+<img alt="citation-generator" src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/arches-v7-export-citation.png" width="500" style="border-width:0" /><br>
+<em>Future export mode in the EAMENA main window</em>
+</p>
+
+<p>The workflow will follow these steps:
+<ol>
+	<li>Create a Search URL in the database, selecting one resource model (Heritage Place, Grid Square, etc.) from the Resource Type menu under the search bar. This URL will comprise the exported dataset. Currently, only Heritage Places and Grid Squares are supported.</li>
+	<li>Select the 'citation' button.</li>
+	<li>Populate some dataset metadata fields:</li>
+	<ul>
+		<li>TITLE: Provide a name for the dataset (e.g. "Sistan Region Heritage Places Part 1")</li>
+		<li>DESCRIPTION: Enter a description of the dataset contents (e.g. "Heritage Places from the Sistan region maintained within the EAMENA database”).</li>
+		<li>FILENAME: Specify the file name to assign (e.g. "sistan_part1_hps").</li>
+	</ul>
+</ol>
+<p>The remaining metadata is extracted from the data itself.</p> 
+
+<p>An example exported dataset available on Zenodo can be seen here: <a href="https://sandbox.zenodo.org/records/5847">https://sandbox.zenodo.org/records/5847</a>.
+</p>
+
+<p style="text-align:center;">
+<a href="https://zenodo.org/communities/eamena" rel="license"><img alt="citation-generator" src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/zenodo-communities-eamena.png" width="500" style="border-width:0" /></a><br>
+<em>EAMENA datasets, GeoJSON files, will be hosted under Zenodo's `eamena` community (https://zenodo.org/communities/eamena) and referenced by DOI.</em>
+</p>
+
+
+
+---
+
 [^2]: the min and max of the EAMENA field "Assessment Activity Date"
 [^1]: All unique values from this EAMENA field. For example in a given GeoJSON export, the EAMENA field "Country Type" gathers these values: "Iran (Islamic Republic of)", "Afghanistan", "Islamic (Iran)"
 [^3]: constant: `isDescribedBy`: `https://zenodo.org/doi/10.5281/zenodo.10142706` refers to the Zenodo GitHub release of the refrence data (resource models, etc.), see: https://zenodo.org/doi/10.5281/zenodo.10142706

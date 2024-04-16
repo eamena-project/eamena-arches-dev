@@ -16,7 +16,7 @@
 
 * (*in progress*) `emenar_temp` user (readonly user) to query the DB backend:
 	- [eamenar-readonly.ipynb](https://colab.research.google.com/github/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/postgres/eamenar-readonly.ipynb)
-* (*in progress*) [citation-generator](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bibref#citation-generator)
+* (*in progress*) [citation-generator](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/citation)
 * (*in progress*) Internationalisation/localisation to French and Central Kurdish (Sorani) ([here](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/i18n#internationalisation))
 
 ## News 🗞️

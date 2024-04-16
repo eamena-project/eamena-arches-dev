@@ -94,6 +94,12 @@ http://52.50.27.140/api/search/export_results?paging-filter=1&tiles=true&format=
     <em></em>
 </p>
 
+<p align="center">
+  <img alt="img-name" src="doc/image-3.png" width="550">
+  <br>
+    <em></em>
+</p>
+
 
 ### TO DO 
 We could further integrate the code with Arches by adding an option here to prepopulate the GeoJSON Url option based upon the search results.

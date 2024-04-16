@@ -70,15 +70,29 @@ http://52.50.27.140/api/search/export_results?paging-filter=1&tiles=true&format=
 
 <a id="success-1"></a>
 
-<img width="600" alt="image" src="doc/image.png">
+* Run this in(http://52.50.27.140/citation:
+
+<p align="center">
+  <img alt="img-name" src="doc/image.png" width="450">
+  <br>
+    <em></em>
+</p>
 
 * The plugin says this is a success
 
-<img width="600" alt="image" src="doc/image-1.png">
+<p align="center">
+  <img alt="img-name" src="doc/image-1.png" width="450">
+  <br>
+    <em></em>
+</p>
 
 * But the dataset can not be found
 
-<img width="600" alt="image" src="doc/image-2.png">
+<p align="center">
+  <img alt="img-name" src="doc/image-2.png" width="450">
+  <br>
+    <em></em>
+</p>
 
 
 ### TO DO 

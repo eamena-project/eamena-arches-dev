@@ -70,10 +70,10 @@ http://52.50.27.140/api/search/export_results?paging-filter=1&tiles=true&format=
 
 <a id="success-1"></a>
 
-* Run this in(http://52.50.27.140/citation:
+* Run this in http://52.50.27.140/citation:
 
 <p align="center">
-  <img alt="img-name" src="doc/image.png" width="450">
+  <img alt="img-name" src="doc/image.png" width="650">
   <br>
     <em></em>
 </p>
@@ -89,7 +89,7 @@ http://52.50.27.140/api/search/export_results?paging-filter=1&tiles=true&format=
 * But the dataset can not be found
 
 <p align="center">
-  <img alt="img-name" src="doc/image-2.png" width="450">
+  <img alt="img-name" src="doc/image-2.png" width="550">
   <br>
     <em></em>
 </p>

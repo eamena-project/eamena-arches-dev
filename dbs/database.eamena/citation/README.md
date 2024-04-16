@@ -61,16 +61,24 @@ Other paths:
 
 ### Test
 
-On [EAtraining](http://52.50.27.140/)
+On [EAtraining](http://52.50.27.140/) for `Chuches in Palestine`
 
 * Search URL: `church` http://52.50.27.140/search?paging-filter=1&tiles=true&format=tilecsv&reportlink=false&precision=6&total=3574&term-filter=%5B%7B%22inverted%22%3Afalse%2C%22type%22%3A%22string%22%2C%22context%22%3A%22%22%2C%22context_label%22%3A%22%22%2C%22id%22%3A%22church%22%2C%22text%22%3A%22church%22%2C%22value%22%3A%22church%22%7D%5D&language=*
 
 * GeoJSON URL:
 http://52.50.27.140/api/search/export_results?paging-filter=1&tiles=true&format=geojson&reportlink=false&precision=6&total=29&term-filter=%5B%7B%22inverted%22%3Afalse%2C%22type%22%3A%22string%22%2C%22context%22%3A%22%22%2C%22context_label%22%3A%22%22%2C%22id%22%3A%22church%22%2C%22text%22%3A%22church%22%2C%22value%22%3A%22church%22%7D%5D&language=*&resource-type-filter=%5B%7B%22graphid%22%3A%2234cfe98e-c2c0-11ea-9026-02e7594ce0a0%22%2C%22name%22%3A%22Heritage%20Place%22%2C%22inverted%22%3Afalse%7D%5D
 
-![alt text](image.png)
+<a id="success-1"></a>
 
-![alt text](image-1.png)
+![alt text](doc/image.png)
+
+* The plugin says this is a success
+
+![alt text](doc/image-1.png)
+
+* But the dataset can not be found
+
+![alt text](doc/image-2.png)
 
 
 ### TO DO 

@@ -52,13 +52,13 @@ There could have translations errors:
     <em>The English `Close` [windows] has been incorrectly translated to `Proche` in French when the correct translation should be `Fermer`</em>
 </p>
 
-If you find any errors in the translations, please update these files:
+If you find any errors in the **translations messages**, please update these files:
 
 - Arabic `ar`: <a href='https://github.com/eamena-project/arches/blob/master/arches/locale/ar/LC_MESSAGES/django.po'>ar</a>
 - French `fr`: <a href='https://github.com/eamena-project/arches/blob/master/arches/locale/fr/LC_MESSAGES/django.po'>fr</a>
 - Central Kurdish (Sorani) `ckb`: <a href='https://github.com/eamena-project/arches/blob/master/arches/locale/fr/LC_MESSAGES/django.po'>ckb</a>[^2]
 
-These changes will be then proposed (Pull request) to Arches' source code
+These changes will be then proposed to Arches' source code via a Pull request
 
 <p align="center">
   <img alt="img-name" src="../../../www/arches-ea-github-pr.png" width="1100">

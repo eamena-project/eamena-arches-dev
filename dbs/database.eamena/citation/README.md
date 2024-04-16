@@ -37,9 +37,41 @@ Plugin for EAMENA v4/Arches v7.3 with the creation of a new form to publish data
   -  GeoJSON URL export
   -  Title
   -  Description
-<img width="733" alt="image" src="https://github.com/eamena-project/eamena-arches-dev/assets/41572010/8943e20f-9c22-4f94-87a3-c2df8c59d421">
+
+<img width="500" alt="image" src="https://github.com/eamena-project/eamena-arches-dev/assets/41572010/8943e20f-9c22-4f94-87a3-c2df8c59d421">
 
 The code uses a Django form to accept values from the user. It takes the GeoJSON url and writes the output to a json file on the server. The title and description are used to populate the `METADATA` object in `zenodo_publish.py`, which is used to the data publish to Zenodo. The code then deletes the json file from the server to save space. 
+
+### Paths
+
+* Zenodo location (currently the sandbox): /opt/arches/eamena/citations/zenodo_publish.py
+
+Other paths:
+
+```sh
+./eamena/citations
+./eamena/citations/zenodo_publish.py
+./eamena/citations/forms.py
+./eamena/citations/views.py
+./eamena/citations/templates
+./eamena/citations/templates/citation_form.html
+./eamena/citations/zenodo_calculate.py
+./eamena/citations/zip_file.py
+```
+
+### Test
+
+On [EAtraining](http://52.50.27.140/)
+
+* Search URL: `church` http://52.50.27.140/search?paging-filter=1&tiles=true&format=tilecsv&reportlink=false&precision=6&total=3574&term-filter=%5B%7B%22inverted%22%3Afalse%2C%22type%22%3A%22string%22%2C%22context%22%3A%22%22%2C%22context_label%22%3A%22%22%2C%22id%22%3A%22church%22%2C%22text%22%3A%22church%22%2C%22value%22%3A%22church%22%7D%5D&language=*
+
+* GeoJSON URL:
+http://52.50.27.140/api/search/export_results?paging-filter=1&tiles=true&format=geojson&reportlink=false&precision=6&total=29&term-filter=%5B%7B%22inverted%22%3Afalse%2C%22type%22%3A%22string%22%2C%22context%22%3A%22%22%2C%22context_label%22%3A%22%22%2C%22id%22%3A%22church%22%2C%22text%22%3A%22church%22%2C%22value%22%3A%22church%22%7D%5D&language=*&resource-type-filter=%5B%7B%22graphid%22%3A%2234cfe98e-c2c0-11ea-9026-02e7594ce0a0%22%2C%22name%22%3A%22Heritage%20Place%22%2C%22inverted%22%3Afalse%7D%5D
+
+![alt text](image.png)
+
+![alt text](image-1.png)
+
 
 ### TO DO 
 We could further integrate the code with Arches by adding an option here to prepopulate the GeoJSON Url option based upon the search results.
@@ -51,6 +83,11 @@ We could further integrate the code with Arches by adding an option here to prep
 Zenodo ['eamena' community](https://zenodo.org/communities/eamena) host the data (the GeoJSON file itself) and its [metadata](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bibref/README.md#metadata). 
 
 ℹ️ see for example the GitHub release of Ressource Models and collections ([here](https://zenodo.org/records/10142707))
+
+### Location
+
+There are two different Zenodo deposit: [Zenodo](https://zenodo.org/api/deposit/depositions) and [Zenodo Sanbox](https://sandbox.zenodo.org/api/deposit/depositions) for tests
+
 
 ### Metadata
 > proposed metadata schema/layout

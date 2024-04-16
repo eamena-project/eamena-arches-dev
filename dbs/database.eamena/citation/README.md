@@ -1,5 +1,5 @@
 # citation-generator
-> "How-to-cite" EAMENA database and datasets, Automate the generation of DOI and bibliographic references for the EAMENA sub-datasets 
+> "How-to-cite" EAMENA database and datasets, Automate the generation of DOI and bibliographic references for the EAMENA sub-datasets
 
 The aim is to allow EAMENA contributors (see [Contributor profile](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/users)) to easily publish EAMENA data subsets working with a GeoJSON URL only to create GeoJSON data, the user provide a GeoJSON URL ([search and GeoJSON URL examples](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/sistan#dataset), [how to export as GeoJSON](https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/arches-v7-search-resource-type.png)).
 
@@ -20,12 +20,17 @@ end
 classDef eamenaFunc fill:#e3c071;
 ```
 
-The core of the Python `citation-generator` function is currently hosted on [**Google Colab**](https://colab.research.google.com/github/eamena-project/eamena-arches-dev/blob/main/dev/citations/citation_generator.ipynb). During this workflow:
+The core of the Python `citation-generator` function is currently hosted on [**Google Colab**](https://colab.research.google.com/github/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/citation/citation_generator.ipynb). During this workflow:
 
 1. the GeoJSON URL is converted into a GeoJSON file and zipped;
 2. the file is uploaded to Zenodo 'eamena' community with its metadata, see [Zenodo](#zenodo) 
 
 The GitHub issue thread is [#39](https://github.com/eamena-project/eamena-arches-dev/issues/39)
+
+## Plugin
+> citation plugin, citation-generator plugin
+
+Plugin for EAMENA v4/Arches v7.3 
 
 ## Zenodo
 

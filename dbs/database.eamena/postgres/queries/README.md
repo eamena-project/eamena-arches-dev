@@ -21,7 +21,7 @@ Main correspondances between EAMENA Heritage Places fieldnames and field UUIDs a
 
 ## User permissions
 
-Create the `eamenar_temp` with a password and revokes all his pervious privileges
+Create the `eamenar_temp` with a password and revokes all his pervious privileges (see [Reuben's notes](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/postgres#creating-a-readonly-postgres-user))
 
 ```SQL
 REVOKE ALL PRIVILEGES ON ALL TABLES IN SCHEMA public FROM eamenar_temp;

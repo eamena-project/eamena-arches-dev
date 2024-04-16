@@ -56,7 +56,7 @@ If you find any errors in the translations, please update these files:
 
 - Arabic `ar`: <a href='https://github.com/eamena-project/arches/blob/master/arches/locale/ar/LC_MESSAGES/django.po'>ar</a>
 - French `fr`: <a href='https://github.com/eamena-project/arches/blob/master/arches/locale/fr/LC_MESSAGES/django.po'>fr</a>
-- Central Kurdish (Sorani) `ckb`: TO BE UPDATED (once Arches has accepted [the Pull request](https://github.com/archesproject/arches/pull/10755))
+- Central Kurdish (Sorani) `ckb`: <a href='https://github.com/eamena-project/arches/blob/master/arches/locale/fr/LC_MESSAGES/django.po'>ckb</a>[^2]
 
 These changes will be then proposed (Pull request) to Arches' source code
 
@@ -331,5 +331,6 @@ RDM > Tools > Delete Thesauri doesn't work
 ---
 
 [^1]: ```py C:/Rprojects/skos2excel/skos2excel.py C:/Rprojects/eamena-arches-dev/dbs/database.eamena/data/reference_data/concepts/EAMENA.xml C:/Rprojects/eamena-arches-dev/dbs/database.eamena/data/reference_data/concepts/EAMENA_fr_2.xlsx -lang fr -f xlsx``` and  ```py C:/Rprojects/skos2excel/excel2skos.py C:/Rprojects/eamena-arches-dev/dbs/database.eamena/data/reference_data/concepts/EAMENA_fr_2.xlsx C:/Rprojects/eamena-arches-dev/dbs/database.eamena/data/reference_data/concepts/EAMENA_fr_2.xml -b C:/Rprojects/eamena-arches-dev/dbs/database.eamena/data/reference_data/concepts/EAMENA.xml```
+[^2]: Submitted to Arches, see this [the Pull request](https://github.com/archesproject/arches/pull/10755)
 
 

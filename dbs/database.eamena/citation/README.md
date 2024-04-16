@@ -70,15 +70,15 @@ http://52.50.27.140/api/search/export_results?paging-filter=1&tiles=true&format=
 
 <a id="success-1"></a>
 
-![alt text](doc/image.png)
+<img width="600" alt="image" src="doc/image.png">
 
 * The plugin says this is a success
 
-![alt text](doc/image-1.png)
+<img width="600" alt="image" src="doc/image-1.png">
 
 * But the dataset can not be found
 
-![alt text](doc/image-2.png)
+<img width="600" alt="image" src="doc/image-2.png">
 
 
 ### TO DO 

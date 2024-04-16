@@ -30,7 +30,7 @@ The GitHub issue thread is [#39](https://github.com/eamena-project/eamena-arches
 ## Plugin
 > citation plugin, citation-generator plugin
 
-Plugin for EAMENA v4/Arches v7.3 with the creation of a new form to publish data to Zenodo
+Plugin for EAMENA v4/Arches v7.3 with the creation of a new form to publish data to Zenodo. The plugin code is hosted in the folder [citation_form_code/](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/citation/citation_form_code)
 
 - Added a new page at `/citations/`
 - It allows a user to input a:

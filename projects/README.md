@@ -6,3 +6,4 @@
 | PeriodO          	| [README](https://github.com/achp-project/cultural-heritage/blob/main/periodo-projects/README.md)     	|
 | Sistan          	| [README](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/sistan/README.md)     |
 | City of the Dead 	| [README](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/README.md)     |
+| Tel Rumeida		| [README](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/rumeida/README.md) |

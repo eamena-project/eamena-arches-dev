@@ -243,6 +243,13 @@ LANGUAGES = [
 ...
 ```
 
+For some languages, including ku-ckb, and additional line may need to be added the `settings.py` to make sure it is formatted as rtl instead of ltr.
+```
+LANGUAGES_BIDI = ["ku","ar"] # this forces rtl alignment
+
+```
+
+
 2. Run `build_development`
 
 ```sh

@@ -243,7 +243,7 @@ LANGUAGES = [
 ...
 ```
 
-For some languages, including ku-ckb, and additional line may need to be added the `settings.py` to make sure it is formatted as rtl instead of ltr.
+For some languages, including ku-ckb, and additional line may need to be added the `settings.py` to make sure it is formatted as RTL instead of LTR.
 ```
 LANGUAGES_BIDI = ["ku","ar"] # this forces rtl alignment
 

@@ -1,4 +1,5 @@
 # EAMENA, a framework for cultural heritage and archaeological data management
+> https://github.com/eamena-project/eamena-arches-dev/blob/main/talks/2024-jcaa/paper.md
 
 ## Introduction
 
@@ -13,20 +14,25 @@ The purpose was to map extansively the endangered cultural heritage in the Arabi
 
 
 <br>
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/arches-ea-stack.png" width="800px">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/arches-ea-stack.png" width="500px">
+<em> The Arches software stack </em>
 <br>
 
 
-**Arches** key features are its logics based on Python, from far the world-wide most used programming language (REF Tiobe) and JavaScript object notation (JSON-LD, GeoJSON, Postgres JSONB type) the current standard to exchange data over the web. Arches lies also on mature technologies (Postgres database, Django web-application framework, Apache server among other), various iso-standards (CIDOC-CRM, Dublin Core, SKOS, SPARQL endpoint, IIIF, EDTF, WGS84/OGC) and semantic web technologies (XML, RDF, etc.). From the version 7.3, Arches supports internationalisation (i18) and is currently located (l10n) in XXX different languages. In comparison to other open-source purpose-based content management systems such as Heurist and OpenAtlas, so far, Arches  garners  more GitHub contributions and has been also significantly more forked. Moreover, ongoing developments of Arches, such as Arches for Science (also known as DISCO), can also benefit archeosciences, including IIIF, CRMSci, etc, while Arches for HERs, due to be launched later this summer with Historic England will provide a new level of access to UK data. Arches stands then as a mature and major technology for cultural heritage management.
+**Arches** key features are its logics based on Python, from far the world-wide most used programming language (REF Tiobe) and JavaScript object notation (JSON-LD, GeoJSON, Postgres JSONB type) the current standard to exchange data over the web. Arches lies also on mature technologies (Postgres database, Django web-application framework, Apache server among other), various iso-standards (CIDOC-CRM, Dublin Core, SKOS, SPARQL endpoint, IIIF, EDTF, WGS84/OGC) and semantic web technologies (XML, RDF, etc.). From the version 7.3, Arches supports internationalisation (i18) and is currently located (l10n) in XXX different languages. 
 **Arches** ~ **EAMENA** EAMENA is the oldest university-based project grounded on Arches, since 2016, in comparison to sibling projects (MAHSA and MAEASaM at the University of Cambridge; CAAL at the University of London; MAPSS at the Max Planck Institute, etc.). As so, it gathered more experiences and has a leading role in working to mke this projects interoperable for exemple by  sharing the reference data of our projects (ontologies, data models, and thesauri in XML and JSON files) through a common GitHub organization (https://github.com/achp-project).
 **EAMENA** ~ **Arches** by providing the localisation in Arabic (`ar`), French (`fr`) and Central Kurdish (`cbk`).... The `citation generator` plugin was designed to help non-Western EAMENA contributors have a simple way to publish their research in Western peer-reviewed journals by following a path starting with data entry, Zenodo repository, LLM ~ data paper models, PCI recommendation and finally, publication of data paper and research paper.
 **EAMENA**. As already mentioned, remote sensing assessment has been the privilegied methodology, it can lead to a lot of uncertainties on the identification of sites (That's why EAMENA use conventionaly the term of heritage place instead of site), obviously not its spatial location (where) but more for its function (what) and chronology (when). These three fondemental dimensions of a phenomena [^1] are keys to work on historical process: the graph structure of EAMENA allows the recording of multiple interpretations for the same resource at the field level. For example, a heritage place can have two different geometries (a point for its geometric centre and a polygon for its perimeter or a line for its path) or different archaeological interpretations with different levels of confidence made by two or more contributors.
+The `emenaR` package, programmed in R -- the scripting language the most used by archaeologists (REF) -- offers a series of functions ...
 
 ## Case Study
 
 Caravanserais? https://colab.research.google.com/github/eamena-project/eamena-arches-dev/blob/main/spatial/gee/gee_clip_cvns.ipynb ?
 
 ## Discussion
+
+**Arches** In comparison to other open-source purpose-based content management systems such as Heurist and OpenAtlas, so far, Arches garners more GitHub contributions and has been also significantly more forked. Moreover, ongoing developments of Arches, such as Arches for Science (also known as DISCO), can also benefit archeosciences, including IIIF, CRMSci, etc, while Arches for HERs, due to be launched later this summer with Historic England will provide a new level of access to UK data. Arches stands then as a mature and major technology for cultural heritage management.
+
 
 ## Conclusion
 

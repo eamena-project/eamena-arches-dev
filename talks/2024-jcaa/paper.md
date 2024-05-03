@@ -24,6 +24,8 @@ The purpose was to map extansively the endangered cultural heritage in the Arabi
 
 ## Case Study
 
+Caravanserais? https://colab.research.google.com/github/eamena-project/eamena-arches-dev/blob/main/spatial/gee/gee_clip_cvns.ipynb ?
+
 ## Discussion
 
 ## Conclusion
@@ -32,6 +34,8 @@ The purpose was to map extansively the endangered cultural heritage in the Arabi
 ## aclass
 
 Kubernetes image
+
+Jupyter NB
 
 An Arches resource model is a structured data model designed for the Arches Platform. It encompasses the data structure (the entity-relationship model) and also includes the interface for entering data (forms) and generating reports for each resource model.4 
 

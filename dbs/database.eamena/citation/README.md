@@ -42,6 +42,8 @@ Plugin for EAMENA v4/Arches v7.3 with the creation of a new form to publish data
 
 The code uses a Django form to accept values from the user. It takes the GeoJSON url and writes the output to a json file on the server. The title and description are used to populate the `METADATA` object in `zenodo_publish.py`, which is used to the data publish to Zenodo. The code then deletes the json file from the server to save space. 
 
+A presentation of the plugin is available here: [presentation_citation_generator.ipynb](https://colab.research.google.com/github/eamena-project/eamena-arches-dev/blob/main/talks/2024-citation-generator/presentation_citation_generator.ipynb)
+
 ### Paths
 
 * Zenodo location (currently the sandbox): /opt/arches/eamena/citations/zenodo_publish.py
@@ -58,48 +60,6 @@ Other paths:
 ./eamena/citations/zenodo_calculate.py
 ./eamena/citations/zip_file.py
 ```
-
-### Test
-
-On [EAtraining](http://52.50.27.140/) for `Chuches in Palestine`
-
-* Search URL: `church` http://52.50.27.140/search?paging-filter=1&tiles=true&format=tilecsv&reportlink=false&precision=6&total=3574&term-filter=%5B%7B%22inverted%22%3Afalse%2C%22type%22%3A%22string%22%2C%22context%22%3A%22%22%2C%22context_label%22%3A%22%22%2C%22id%22%3A%22church%22%2C%22text%22%3A%22church%22%2C%22value%22%3A%22church%22%7D%5D&language=*
-
-* GeoJSON URL:
-http://52.50.27.140/api/search/export_results?paging-filter=1&tiles=true&format=geojson&reportlink=false&precision=6&total=29&term-filter=%5B%7B%22inverted%22%3Afalse%2C%22type%22%3A%22string%22%2C%22context%22%3A%22%22%2C%22context_label%22%3A%22%22%2C%22id%22%3A%22church%22%2C%22text%22%3A%22church%22%2C%22value%22%3A%22church%22%7D%5D&language=*&resource-type-filter=%5B%7B%22graphid%22%3A%2234cfe98e-c2c0-11ea-9026-02e7594ce0a0%22%2C%22name%22%3A%22Heritage%20Place%22%2C%22inverted%22%3Afalse%7D%5D
-
-<a id="success-1"></a>
-
-* Run this in http://52.50.27.140/citation:
-
-<p align="center">
-  <img alt="img-name" src="doc/image.png" width="650">
-  <br>
-    <em></em>
-</p>
-
-* The plugin says this is a success
-
-<p align="center">
-  <img alt="img-name" src="doc/image-1.png" width="450">
-  <br>
-    <em></em>
-</p>
-
-* But the dataset can not be found
-
-<p align="center">
-  <img alt="img-name" src="doc/image-2.png" width="550">
-  <br>
-    <em></em>
-</p>
-
-<p align="center">
-  <img alt="img-name" src="doc/image-3.png" width="550">
-  <br>
-    <em></em>
-</p>
-
 
 ### TO DO 
 We could further integrate the code with Arches by adding an option here to prepopulate the GeoJSON Url option based upon the search results.

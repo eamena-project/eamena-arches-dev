@@ -1,7 +1,7 @@
 # eamena-arches-dev  <img src="www/logo.png" width='80px' align="right"/>
 > development repository
 
-[EAMENA DB](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena)
+The [EAMENA DB](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena), different [talks](https://github.com/eamena-project/eamena-arches-dev/tree/main/talks)
 
 
 ## Projects

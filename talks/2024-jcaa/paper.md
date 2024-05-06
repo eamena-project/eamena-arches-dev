@@ -3,6 +3,8 @@
 
 ## Introduction
 
+Both the project EAMENA and the Arches software have been firstly thougth to be open. EAMENA first purpose is to gather and share cultural heriatge information about endandgered sites, Arches on the other hand is an a geoweb semantic-based information platform: it allows for example to open different windows (map layer, search bar, heritage place report, etc.) at the same time offering as many possibilties to navigate but also hinter the possibility of editing. Databases are useful for storing, sharing, etc. but are often not design in a purpose of creating new nowledge *as it* in archaeology and cultural heritage. Furthermore their management to search the data are less handy than XLSX sheet which constitute so far.
+
 ... deployed on the top of Arches
 
 Destruction of Palmyra in 2016 by ISIS.
@@ -27,7 +29,14 @@ The `emenaR` package, programmed in R -- the scripting language the most used by
 
 ## Case Study
 
-Caravanserais? https://colab.research.google.com/github/eamena-project/eamena-arches-dev/blob/main/spatial/gee/gee_clip_cvns.ipynb ?
+
+The EMANEA Search URL https://tinyurl.com/eamena-sistan [URL shortener] is the Sistan dataset published as a datapaper an hosted on Zenodo (REF). The dataset can been interoperate for example by [Python Jupyter NB](https://colab.research.google.com/github/eamena-project/eamena-arches-dev/blob/main/spatial/gee/gee_clip_cvns.ipynb) hosted on GitHub and displayed on Google Colab. 
+
+Sistan typology
+
+## Sustainability
+
+
 
 ## Discussion
 

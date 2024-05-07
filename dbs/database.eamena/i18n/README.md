@@ -279,6 +279,18 @@ service apache2 restart
 </p>
 
 
+## Hard written nodes
+
+
+So far in the EAMENA DB, Arabic translation of English are hard written
+
+<p align="center">
+
+![alt text](image.png)
+  <br>
+</p>
+
+
 
 ## Other
 

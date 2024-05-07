@@ -284,12 +284,12 @@ service apache2 restart
 
 So far in the EAMENA DB, Arabic translation of English are hard written
 
-<p align="center">
+| English | Arabic |
+|----------|----------|
+| ![alt text](image.png)    | ![alt text](image-1.png)   |
+| English (`en`) mode, EAMENA training instance    | Arabic (`ar`) mode, EAMENA training instance   |
 
-![alt text](image.png)
-  <br>
-</p>
-
+Since the `ar` appears in the language switcher ...
 
 
 ## Other

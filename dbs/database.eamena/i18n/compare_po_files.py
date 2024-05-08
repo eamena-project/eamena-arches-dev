@@ -3,17 +3,19 @@
 
 #%% 
 import polib
+import requests
 
 # Load PO files
-po_basis = "C:/Rprojects/eamena-arches-dev/dbs/database.eamena/i18n/data/bases/arches-70_djangopo_en.po" 
-# po_basis = "C:/Users/Thomas Huet/Downloads/django.po" 
-po_translated = "C:/Rprojects/arches/arches/locale/ckb/LC_MESSAGES/django.po"
+po_basis_path = "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/dbs/database.eamena/i18n/data/bases/arches-70_djangopo_en.po" 
+po_basis = requests.get(po_basis_path).text
+po_translated_path = "https://raw.githubusercontent.com/eamena-project/arches/master/arches/locale/ckb/LC_MESSAGES/django.po"
+po_translated = requests.get(po_translated_path).text
 po_differences = "C:/Rprojects/eamena-arches-dev/dbs/database.eamena/i18n/data/ckb/django_differences.po" 
 
 po_a = polib.pofile(po_basis)
 po_b = polib.pofile(po_translated)
 
-print(f"the PO base file has {len(po_a)} and the already translated PO file has {len(po_b)}")
+print(f"the PO base file has {len(po_a)} messages and the already translated PO file has {len(po_b)} messages")
 
 #%% 
 

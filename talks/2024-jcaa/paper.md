@@ -1,9 +1,10 @@
 # EAMENA, a framework for cultural heritage and archaeological data management
 > https://github.com/eamena-project/eamena-arches-dev/blob/main/talks/2024-jcaa/paper.md
 
+
 ## Introduction
 
-Both the project EAMENA and the Arches software have been firstly thougth to be open. EAMENA first purpose is to gather and share cultural heriatge information about endandgered sites, Arches on the other hand is an a geoweb semantic-based information platform: it allows for example to open different windows (map layer, search bar, heritage place report, etc.) at the same time offering as many possibilties to navigate but also hinter the possibility of editing. Databases are useful for storing, sharing, etc. but are often not design in a purpose of creating new nowledge *as it* in archaeology and cultural heritage. Furthermore their management to search the data are less handy than XLSX sheet which constitute so far.
+Both the project EAMENA and the Arches software have been firstly thougth to be open. EAMENA first purpose is to gather and share cultural heriatge information about endangered sites, Arches on the other hand is an a geoweb semantic-based information platform: it allows for example to open different windows (map layer, search bar, heritage place report, etc.) at the same time offering as many possibilties to navigate but also hinter the possibility of editing. Databases are useful for storing, sharing, etc. but are often not design in a purpose of creating new knowledge *as it* in archaeology and cultural heritage. Furthermore their management to search the data are less handy than XLSX sheet which constitute so far.
 
 ... deployed on the top of Arches
 
@@ -52,6 +53,8 @@ The EAMENA general-purposed typology can be modified to cover specifictions of H
 ## aclass
 
 Kubernetes image
+
+uses URL/UUID 
 
 Jupyter NB
 

@@ -30,7 +30,7 @@ The templates (so-called `base`) of these files are in the folder [bases/](https
 ...
 ```
 
-* `arches-70_djangopo_en.po` (snippet) directly downloaded from [Arches/Transifex](https://app.transifex.com/archesproject/arches-70/djangopo/) has 11,617 words and 1,553 strings to translate from `en` to a traget language (`fr`, `ar`, etc.)
+* [arches-70_djangopo_en.po](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/i18n/data/bases/arches-70_djangopo_en.po) directly downloaded from [Arches/Transifex](https://app.transifex.com/archesproject/arches-70/djangopo/) has 11,617 words and 1,553 strings to translate from `en` to a traget language (`fr`, `ar`, etc.). Here a snippet:
 
 ```Python
 ...

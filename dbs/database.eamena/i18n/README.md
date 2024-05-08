@@ -30,7 +30,7 @@ The templates (so-called `base`) of these files are in the folder [bases/](https
 ...
 ```
 
-* `django.po` (snippet)
+* `arches-70_djangopo_en.po` (snippet) directly downloaded from [Arches/Transifex](https://app.transifex.com/archesproject/arches-70/djangopo/) has 11,617 words and 1,553 strings to translate from `en` to a traget language (`fr`, `ar`, etc.)
 
 ```Python
 ...

@@ -1,14 +1,19 @@
-# EAMENA, a framework for cultural heritage and archaeological data management
+# Information systems for cultural heritage and archaeological data management. The example of the EAMENA project, a framework deployed on the top of Arches 
 > https://github.com/eamena-project/eamena-arches-dev/blob/main/talks/2024-jcaa/paper.md
+
+Historical objects, such an archaeological remain or a cultural heritage site, are always context-based at the cross-road of many dimensions: spatial, temporal, typologic, etc. Such contexts are highly multi-scalar (from the site to the 'scratch') and multi-paradigma (from aDNA to climate data, passing by 'chaine operatore') that are hard to manage. Furthurmore, historical objects come with metadata (ex: bibliographic references) and paradata (ex: information of the project framework) that, just like the data, also need to be linked one with another, easily findable, navigable and editable. 
 
 
 ## Introduction
 
 Both the project EAMENA and the Arches software have been firstly thougth to be open. EAMENA first purpose is to gather and share cultural heriatge information about endangered sites, Arches on the other hand is an a geoweb semantic-based information platform: it allows for example to open different windows (map layer, search bar, heritage place report, etc.) at the same time offering as many possibilties to navigate but also hinter the possibility of editing. Databases are useful for storing, sharing, etc. but are often not design in a purpose of creating new knowledge *as it* in archaeology and cultural heritage. Furthermore their management to search the data are less handy than XLSX sheet which constitute so far.
 
-... deployed on the top of Arches
+EAMENA, a framework for
+
+... 
 
 Destruction of Palmyra in 2016 by ISIS.
+
 The purpose was to map extansively the endangered cultural heritage in the Arabic speaking region, from Mauritania to Irak. And more recently covers Iran and Afghanistan. Identifying threats and causes of disturbances (Agricultural, Urbanist, etc.). To cover the scope of the project, and because of the difficulties to access field work (either for being in desertic remote areas and because of security issues) remote sensing has been the privilegied method to assess this cultural heritage. So far, EAMENA comprehensive surveys has led to the discovery of XXX new kites structures and 3 roman forts, among other.
 
 ## Design & Architecture

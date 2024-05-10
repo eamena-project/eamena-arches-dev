@@ -1,0 +1,1237 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-30 19:07-0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ckb\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: app/datatypes/datatypes.py:665
+msgid ""
+"Incorrect Extended Date Time Format. See "
+"http://www.loc.gov/standards/datetime/ for supported formats"
+msgstr ""
+
+#: app/datatypes/datatypes.py:1398
+msgid "File type not permitted"
+msgstr ""
+
+#: app/datatypes/datatypes.py:1440
+#, python-brace-format
+msgid "The file \"{0}\" does not exist in \"{1}\""
+msgstr ""
+
+#: app/datatypes/datatypes.py:1757
+#, python-brace-format
+msgid "No domain option found for option id {0}, in node conifg: {1}"
+msgstr ""
+
+#: app/etl_modules/base_import_module.py:33
+msgid "Delegating load reversal to Celery task"
+msgstr ""
+
+#: app/etl_modules/branch_csv_importer.py:218
+msgid "Legacy id(s) already exist. Legacy ids must be unique"
+msgstr ""
+
+#: app/etl_modules/branch_csv_importer.py:243
+#: app/etl_modules/import_single_csv.py:208
+msgid "Failed to complete load"
+msgstr ""
+
+#: app/etl_modules/branch_csv_importer.py:244
+#: app/etl_modules/import_single_csv.py:209
+msgid "Unable to insert record into staging table"
+msgstr ""
+
+#: app/etl_modules/branch_csv_importer.py:279
+msgid "Invalid excel file/zip specified"
+msgstr ""
+
+#: app/etl_modules/branch_csv_importer.py:280
+msgid "Upload a valid excel file"
+msgstr ""
+
+#: app/etl_modules/branch_csv_importer.py:307
+msgid "Unable to initialize load"
+msgstr ""
+
+#: app/etl_modules/branch_csv_importer.py:322
+#: app/etl_modules/import_single_csv.py:161
+msgid "Delegating load to Celery task"
+msgstr ""
+
+#: app/etl_modules/branch_csv_importer.py:326
+#: app/etl_modules/import_single_csv.py:165
+msgid "delegated_to_celery"
+msgstr ""
+
+#: app/etl_modules/branch_csv_importer.py:329
+#: app/etl_modules/import_single_csv.py:168
+msgid ""
+"Cannot start process. Unable to run process as a background task at this "
+"time."
+msgstr ""
+
+#: app/etl_modules/import_single_csv.py:104
+msgid "No csv file found"
+msgstr ""
+
+#: app/etl_modules/import_single_csv.py:105
+msgid "Upload a valid csv file"
+msgstr ""
+
+#: app/etl_modules/import_single_csv.py:143
+msgid "No valid node is selected"
+msgstr ""
+
+#: app/etl_modules/import_single_csv.py:145
+msgid "Only one column should be selected for id"
+msgstr ""
+
+#: app/functions/primary_descriptors.py:67
+#, python-brace-format
+msgid "Invalid nodegroupid, {0}, participating in descriptor function."
+msgstr ""
+
+#: app/models/graph.py:491
+#, python-brace-format
+msgid ""
+"Duplicate node alias: \"{0}\". All aliases must be unique in a resource "
+"model."
+msgstr ""
+
+#: app/models/graph.py:495
+#, python-brace-format
+msgid "Fail to save node \"{0}\"."
+msgstr ""
+
+#: app/models/graph.py:1707
+#, python-brace-format
+msgid "Another resource model already uses the slug '{self.slug}'"
+msgstr ""
+
+#: app/models/models.py:437
+msgid ""
+"This Model is currently unpublished and not available for instance creation."
+msgstr ""
+
+#: app/models/resource.py:785
+msgid "Published Model Error"
+msgstr ""
+
+#: app/models/resource.py:795
+msgid "Unpublished Model Error"
+msgstr ""
+
+#: app/tasks.py:213 app/tasks.py:235
+msgid "Completed"
+msgstr ""
+
+#: app/tasks.py:213 app/tasks.py:220 app/tasks.py:235 app/tasks.py:242
+msgid "Failed"
+msgstr ""
+
+#: app/tasks.py:214
+msgid "Branch Excel Import: {} [{}]"
+msgstr ""
+
+#: app/tasks.py:236
+msgid "Single CSV Import: {} [{}]"
+msgstr ""
+
+#: app/templates/base-manager.htm:274
+msgid "DEBUG"
+msgstr ""
+
+#: app/templates/base-manager.htm:323
+msgid "Profile"
+msgstr ""
+
+#: app/templates/base-manager.htm:411
+msgid "Logout"
+msgstr ""
+
+#: app/templates/help/profile-manager-help.htm:7
+msgid ""
+"The profile manager allows you to update your account information, such as "
+"your password, at any time."
+msgstr ""
+
+#: app/templates/index.htm:193
+msgid ""
+"Glarus thrust, Tectonic Area Sardona, Switzerland | Jonas Wagner "
+"https://www.flickr.com/photos/80225884@N06/ | Attribution 2.0 Generic (CC BY"
+" 2.0)"
+msgstr ""
+
+#: app/templates/javascript.htm:159
+msgid "Please contact your system administrator for more details."
+msgstr ""
+
+#: app/templates/javascript.htm:174
+msgid "Re-index"
+msgstr ""
+
+#: app/templates/javascript.htm:175
+msgid "Re-indexing"
+msgstr ""
+
+#: app/templates/javascript.htm:176
+msgid "Re-index Resources Now"
+msgstr ""
+
+#: app/templates/javascript.htm:183
+msgid "Add as new"
+msgstr ""
+
+#: app/templates/javascript.htm:187
+msgid "meters:"
+msgstr ""
+
+#: app/templates/javascript.htm:188
+msgid "feet:"
+msgstr ""
+
+#: app/templates/javascript.htm:192 app/templates/javascript.htm:540
+msgid "Select a Nodegroup"
+msgstr ""
+
+#: app/templates/javascript.htm:193
+msgid "No Relationships Added"
+msgstr ""
+
+#: app/templates/javascript.htm:197
+msgid ""
+"Arches keeps track of how resources are related. Click the 'related "
+"resources' link on a search result from the list on the left to see its "
+"relatives displayed in an interactive graph"
+msgstr ""
+
+#: app/templates/javascript.htm:200
+msgid "X Coordinate Placeholder"
+msgstr ""
+
+#: app/templates/javascript.htm:201
+msgid "Y Coordinate Placeholder"
+msgstr ""
+
+#: app/templates/javascript.htm:202
+msgid "Display as Greyscale"
+msgstr ""
+
+#: app/templates/javascript.htm:212
+msgid ""
+"Define access privileges for this instance. You may limit access to "
+"yourself, or select which user accounts and groups have permission to this "
+"resource."
+msgstr ""
+
+#: app/templates/javascript.htm:235
+msgid "Add new option"
+msgstr ""
+
+#: app/templates/javascript.htm:237
+msgid "Add GNU"
+msgstr ""
+
+#: app/templates/javascript.htm:240 app/templates/javascript.htm:545
+msgid "This is a new contribution by a provisional editor."
+msgstr ""
+
+#: app/templates/javascript.htm:244
+msgid "All Resources"
+msgstr ""
+
+#: app/templates/javascript.htm:245
+msgid "All Edits"
+msgstr ""
+
+#: app/templates/javascript.htm:250
+msgid "Sorry, you do not have access to this information"
+msgstr ""
+
+#: app/templates/javascript.htm:251
+msgid "No data added yet for"
+msgstr ""
+
+#: app/templates/javascript.htm:258
+msgid "Select a Node"
+msgstr ""
+
+#: app/templates/javascript.htm:259
+msgid "Select a Property"
+msgstr ""
+
+#: app/templates/javascript.htm:261
+msgid "Use date of data entry"
+msgstr ""
+
+#: app/templates/javascript.htm:262
+msgid "Check this to use the date of data entry as the default value."
+msgstr ""
+
+#: app/templates/javascript.htm:266
+msgid "Left-to-Right"
+msgstr ""
+
+#: app/templates/javascript.htm:267
+msgid "Right-to-Left"
+msgstr ""
+
+#: app/templates/javascript.htm:274
+msgid "not a valid EDTF format"
+msgstr ""
+
+#: app/templates/javascript.htm:282
+msgid ""
+"A time interval beginning sometime on February 1, 2004 and ending sometime "
+"in 2005. The start endpoint has calendar day precision and the end endpoint "
+"has calendar year precision"
+msgstr ""
+
+#: app/templates/javascript.htm:283
+msgid "[year][“-”][month][“-”][day]"
+msgstr ""
+
+#: app/templates/javascript.htm:285
+msgid "[year][“-”][month]"
+msgstr ""
+
+#: app/templates/javascript.htm:294
+msgid "Loading Time Wheel"
+msgstr ""
+
+#: app/templates/javascript.htm:296
+msgid ""
+"Click on a block to set a filter, double-click to zoom in, double-click "
+"center to zoom out"
+msgstr ""
+
+#: app/templates/javascript.htm:297
+msgid "Last 7 Days"
+msgstr ""
+
+#: app/templates/javascript.htm:298
+msgid "Last 30 Days"
+msgstr ""
+
+#: app/templates/javascript.htm:306
+msgid "Date Type"
+msgstr ""
+
+#: app/templates/javascript.htm:315
+msgid "view valid formats"
+msgstr ""
+
+#: app/templates/javascript.htm:319
+msgid "Increment Size"
+msgstr ""
+
+#: app/templates/javascript.htm:323
+msgid "Field Prefix"
+msgstr ""
+
+#: app/templates/javascript.htm:324
+msgid "suffix"
+msgstr ""
+
+#: app/templates/javascript.htm:325
+msgid "Field Suffix"
+msgstr ""
+
+#: app/templates/javascript.htm:331
+msgid "equals"
+msgstr ""
+
+#: app/templates/javascript.htm:332
+msgid "is not"
+msgstr ""
+
+#: app/templates/javascript.htm:333
+msgid "not"
+msgstr ""
+
+#: app/templates/javascript.htm:334
+msgid "like"
+msgstr ""
+
+#: app/templates/javascript.htm:335
+msgid "not like"
+msgstr ""
+
+#: app/templates/javascript.htm:336
+msgid "and"
+msgstr ""
+
+#: app/templates/javascript.htm:337
+msgid "or"
+msgstr ""
+
+#: app/templates/javascript.htm:338
+msgid "of"
+msgstr ""
+
+#: app/templates/javascript.htm:347
+msgid "Clear Filter"
+msgstr ""
+
+#: app/templates/javascript.htm:352
+msgid "Return"
+msgstr ""
+
+#: app/templates/javascript.htm:354
+msgid "html"
+msgstr ""
+
+#: app/templates/javascript.htm:360
+msgid "Arches Export"
+msgstr ""
+
+#: app/templates/javascript.htm:373
+msgid ""
+"With Advanced Search you can build more sophisticated search queries. Select"
+" the search facets you wish to query from the list on the right. Then enter "
+"your criteria to customize your search filters"
+msgstr ""
+
+#: app/templates/javascript.htm:380
+msgid "Coordinate Reference:"
+msgstr ""
+
+#: app/templates/javascript.htm:383
+msgid "No Email saved for User"
+msgstr ""
+
+#: app/templates/javascript.htm:384
+msgid "Drag GeoJSON or KML files here to add"
+msgstr ""
+
+#: app/templates/javascript.htm:387
+msgid "Enter Search String here"
+msgstr ""
+
+#: app/templates/javascript.htm:388
+msgid "View search string"
+msgstr ""
+
+#: app/templates/javascript.htm:391
+msgid "The Arches site administrator hasn't saved any searches yet."
+msgstr ""
+
+#: app/templates/javascript.htm:392
+msgid "searching"
+msgstr ""
+
+#: app/templates/javascript.htm:394
+msgid "Analyze"
+msgstr ""
+
+#: app/templates/javascript.htm:397
+msgid "close"
+msgstr ""
+
+#: app/templates/javascript.htm:405
+msgid "Panels"
+msgstr ""
+
+#: app/templates/javascript.htm:406
+msgid "Single Panel"
+msgstr ""
+
+#: app/templates/javascript.htm:407
+msgid "Double Panel"
+msgstr ""
+
+#: app/templates/javascript.htm:408
+msgid "Panel 1"
+msgstr ""
+
+#: app/templates/javascript.htm:409
+msgid "Panel 2"
+msgstr ""
+
+#: app/templates/javascript.htm:410
+msgid "Panel Layout"
+msgstr ""
+
+#: app/templates/javascript.htm:411
+msgid "Selected Panel Layout"
+msgstr ""
+
+#: app/templates/javascript.htm:437
+msgid "Preview"
+msgstr ""
+
+#: app/templates/javascript.htm:442
+msgid "Add a new feature"
+msgstr ""
+
+#: app/templates/javascript.htm:446
+msgid ""
+"Images formatted as .jpg, .png, .tiff files may be uploaded. Other formats "
+"will be ignored"
+msgstr ""
+
+#: app/templates/javascript.htm:457
+msgid "file(s) uploaded"
+msgstr ""
+
+#: app/templates/javascript.htm:458
+msgid "find a file"
+msgstr ""
+
+#: app/templates/javascript.htm:461
+msgid ""
+"You may upload as many documents as you wish, but the maximum size of any "
+"single file is"
+msgstr ""
+
+#: app/templates/javascript.htm:462
+msgid ""
+"You may upload as many photos as you wish, but the maximum size of any "
+"single file is 8MB."
+msgstr ""
+
+#: app/templates/javascript.htm:463
+msgid "Adding documents to this record is optional."
+msgstr ""
+
+#: app/templates/javascript.htm:464
+msgid "Adding photos to this record is optional."
+msgstr ""
+
+#: app/templates/javascript.htm:468
+msgid "Drag & Drop your photos onto this panel"
+msgstr ""
+
+#: app/templates/javascript.htm:471
+msgid "Show Gallery"
+msgstr ""
+
+#: app/templates/javascript.htm:472
+msgid "Hide Gallery"
+msgstr ""
+
+#: app/templates/javascript.htm:476
+msgid "Enter Manifest URL"
+msgstr ""
+
+#: app/templates/javascript.htm:477
+msgid "Select a manifest"
+msgstr ""
+
+#: app/templates/javascript.htm:478 app/templates/javascript.htm:669
+msgid "No manifest selected"
+msgstr ""
+
+#: app/templates/javascript.htm:480
+msgid "Loading manifest"
+msgstr ""
+
+#: app/templates/javascript.htm:481
+msgid "Error loading manifest"
+msgstr ""
+
+#: app/templates/javascript.htm:483
+msgid "Filter images"
+msgstr ""
+
+#: app/templates/javascript.htm:484
+msgid "Draw a"
+msgstr ""
+
+#: app/templates/javascript.htm:490
+msgid "Resource Instance Name"
+msgstr ""
+
+#: app/templates/javascript.htm:495
+msgid ""
+"Click the 'Details' link on a search result from the list on the left to "
+"view more information about a resource."
+msgstr ""
+
+#: app/templates/javascript.htm:497
+msgid "Has Relationship"
+msgstr ""
+
+#: app/templates/javascript.htm:499
+msgid "Related to"
+msgstr ""
+
+#: app/templates/javascript.htm:512
+msgid "Link Text (Optional)"
+msgstr ""
+
+#: app/templates/javascript.htm:513
+msgid "URL for link"
+msgstr ""
+
+#: app/templates/javascript.htm:514
+msgid "URL Link Color"
+msgstr ""
+
+#: app/templates/javascript.htm:522
+msgid ""
+"Check to limit the dropdown to only this widget's node rather than all nodes"
+" in the tile."
+msgstr ""
+
+#: app/templates/javascript.htm:523
+msgid "Show only the value of the selected node in the dropdown options"
+msgstr ""
+
+#: app/templates/javascript.htm:531
+msgid "Select Tab icon"
+msgstr ""
+
+#: app/templates/javascript.htm:536
+msgid "Select image nodes to include"
+msgstr ""
+
+#: app/templates/javascript.htm:539
+msgid "Select a resource model"
+msgstr ""
+
+#: app/templates/javascript.htm:542
+msgid "Choose a sibling card"
+msgstr ""
+
+#: app/templates/javascript.htm:548
+msgid "Find an address"
+msgstr ""
+
+#: app/templates/javascript.htm:554
+msgid "Longitude (x coordinate)"
+msgstr ""
+
+#: app/templates/javascript.htm:555
+msgid "Latitude (y coordinate)"
+msgstr ""
+
+#: app/templates/javascript.htm:557
+msgid "Zoom Level"
+msgstr ""
+
+#: app/templates/javascript.htm:581
+#, python-brace-format
+msgid ""
+"The cardinality of this card cannot be changed until you remove it from "
+"being grouped with the ${cardName} card.  Do you want to remove this card "
+"from being grouped with the ${cardName} card"
+msgstr ""
+
+#: app/templates/javascript.htm:582
+msgid "!! Referenced model does not exist -- Delete and select a new model !!"
+msgstr ""
+
+#: app/templates/javascript.htm:584
+msgid "Layer Icon"
+msgstr ""
+
+#: app/templates/javascript.htm:587
+msgid "Activated"
+msgstr ""
+
+#: app/templates/javascript.htm:591
+msgid "Layer Name"
+msgstr ""
+
+#: app/templates/javascript.htm:593
+msgid "Legend content"
+msgstr ""
+
+#: app/templates/javascript.htm:608
+msgid "Cluster Distance"
+msgstr ""
+
+#: app/templates/javascript.htm:609
+msgid "Cluster Max Zoom"
+msgstr ""
+
+#: app/templates/javascript.htm:610
+msgid "Cluster Min Points"
+msgstr ""
+
+#: app/templates/javascript.htm:611
+msgid "Vector Simplification"
+msgstr ""
+
+#: app/templates/javascript.htm:619
+msgid ""
+"Arches allows you to define relationships between resources so you can "
+"better understand the context and interplay between physical objects, "
+"events, activities, people and documents. Relating resources lets you build "
+"a network of relationships for your data objects."
+msgstr ""
+
+#: app/templates/javascript.htm:626
+msgid "resource relations"
+msgstr ""
+
+#: app/templates/javascript.htm:627
+msgid "'Select an Ontology Property'"
+msgstr ""
+
+#: app/templates/javascript.htm:670
+msgid "Service Title"
+msgstr ""
+
+#: app/templates/javascript.htm:671
+msgid "Service Description"
+msgstr ""
+
+#: app/templates/javascript.htm:672
+msgid "Metadata Label"
+msgstr ""
+
+#: app/templates/javascript.htm:673
+msgid "Metadata Value"
+msgstr ""
+
+#: app/templates/javascript.htm:674
+msgid "Image Caption"
+msgstr ""
+
+#: app/templates/javascript.htm:675
+msgid "Upload .csv or .zip File"
+msgstr ""
+
+#: app/templates/javascript.htm:676
+msgid "Drag & Drop your file onto this area to upload"
+msgstr ""
+
+#: app/templates/javascript.htm:677
+msgid "Select File"
+msgstr ""
+
+#: app/templates/javascript.htm:678 app/templates/javascript.htm:693
+msgid "Cancel File Import"
+msgstr ""
+
+#: app/templates/javascript.htm:679
+msgid ""
+"Use this workflow to upload a file with data that you want to use to create "
+"new data instances of a model."
+msgstr ""
+
+#: app/templates/javascript.htm:680
+msgid "Import Format: Single .csv file"
+msgstr ""
+
+#: app/templates/javascript.htm:681
+msgid "File Summary"
+msgstr ""
+
+#: app/templates/javascript.htm:682
+msgid "File name"
+msgstr ""
+
+#: app/templates/javascript.htm:683
+msgid "File size"
+msgstr ""
+
+#: app/templates/javascript.htm:684
+msgid "Number of rows"
+msgstr ""
+
+#: app/templates/javascript.htm:685
+msgid "Target Model"
+msgstr ""
+
+#: app/templates/javascript.htm:686
+msgid "Import Details"
+msgstr ""
+
+#: app/templates/javascript.htm:687
+msgid "Column names in the first row"
+msgstr ""
+
+#: app/templates/javascript.htm:688 app/templates/javascript.htm:762
+msgid "Use as an id"
+msgstr ""
+
+#: app/templates/javascript.htm:689
+msgid "Showing First"
+msgstr ""
+
+#: app/templates/javascript.htm:690
+msgid "Showing All"
+msgstr ""
+
+#: app/templates/javascript.htm:691
+msgid "Rows"
+msgstr ""
+
+#: app/templates/javascript.htm:692
+msgid "Import data"
+msgstr ""
+
+#: app/templates/javascript.htm:694
+msgid "Import Single CSV"
+msgstr ""
+
+#: app/templates/javascript.htm:695
+msgid "Target Resource"
+msgstr ""
+
+#: app/templates/javascript.htm:696
+msgid "Target Fields"
+msgstr ""
+
+#: app/templates/javascript.htm:697
+msgid "Download Templates"
+msgstr ""
+
+#: app/templates/javascript.htm:698
+msgid "Select Template"
+msgstr ""
+
+#: app/templates/javascript.htm:699
+msgid "Upload .zip File"
+msgstr ""
+
+#: app/templates/javascript.htm:700
+msgid "Upload Your .zip File"
+msgstr ""
+
+#: app/templates/javascript.htm:701
+msgid "Branch Excel"
+msgstr ""
+
+#: app/templates/javascript.htm:702
+msgid "File Upload Summary"
+msgstr ""
+
+#: app/templates/javascript.htm:703
+msgid "File"
+msgstr ""
+
+#: app/templates/javascript.htm:704
+msgid "Size"
+msgstr ""
+
+#: app/templates/javascript.htm:705
+#: app/templates/two_factor_authentication_reset.htm:42
+msgid "Submit"
+msgstr ""
+
+#: app/templates/javascript.htm:706
+msgid "File contents"
+msgstr ""
+
+#: app/templates/javascript.htm:707
+msgid "Import Branch Excel Summary"
+msgstr ""
+
+#: app/templates/javascript.htm:708
+msgid "Excel File"
+msgstr ""
+
+#: app/templates/javascript.htm:709
+msgid "Worksheets"
+msgstr ""
+
+#: app/templates/javascript.htm:710
+msgid "Tiles"
+msgstr ""
+
+#: app/templates/javascript.htm:713
+msgid "Filter Tasks"
+msgstr ""
+
+#: app/templates/javascript.htm:714
+msgid "Filter Modules"
+msgstr ""
+
+#: app/templates/javascript.htm:715
+msgid "Start"
+msgstr ""
+
+#: app/templates/javascript.htm:716
+msgid "Warning"
+msgstr ""
+
+#: app/templates/javascript.htm:717
+msgid "Are you sure you want to delete this load?"
+msgstr ""
+
+#: app/templates/javascript.htm:718
+msgid "undo import"
+msgstr ""
+
+#: app/templates/javascript.htm:719
+msgid "remove from history"
+msgstr ""
+
+#: app/templates/javascript.htm:720
+msgid "indexing"
+msgstr ""
+
+#: app/templates/javascript.htm:721
+msgid "completed"
+msgstr ""
+
+#: app/templates/javascript.htm:722
+msgid "failed"
+msgstr ""
+
+#: app/templates/javascript.htm:723
+msgid "running"
+msgstr ""
+
+#: app/templates/javascript.htm:724
+msgid "unloading"
+msgstr ""
+
+#: app/templates/javascript.htm:725
+msgid "unloaded"
+msgstr ""
+
+#: app/templates/javascript.htm:726
+msgid "Validation Errors"
+msgstr ""
+
+#: app/templates/javascript.htm:727
+msgid "No Error Found"
+msgstr ""
+
+#: app/templates/javascript.htm:728
+msgid "Loading data"
+msgstr ""
+
+#: app/templates/javascript.htm:729
+msgid "Loading status"
+msgstr ""
+
+#: app/templates/javascript.htm:730
+msgid "Loading started"
+msgstr ""
+
+#: app/templates/javascript.htm:731
+msgid "Loading ended"
+msgstr ""
+
+#: app/templates/javascript.htm:732
+msgid "Load duration"
+msgstr ""
+
+#: app/templates/javascript.htm:733
+msgid "Indexing ended"
+msgstr ""
+
+#: app/templates/javascript.htm:734
+msgid "Indexing duration"
+msgstr ""
+
+#: app/templates/javascript.htm:738
+msgid "It may be a proprietary format or there isn't a loader available yet"
+msgstr ""
+
+#: app/templates/javascript.htm:741
+msgid "loader"
+msgstr ""
+
+#: app/templates/javascript.htm:746
+msgid "optional"
+msgstr ""
+
+#: app/templates/javascript.htm:747
+msgid "Adding files to this record is"
+msgstr ""
+
+#: app/templates/javascript.htm:755
+msgid "File Renderer"
+msgstr ""
+
+#: app/templates/javascript.htm:758
+msgid "files selected"
+msgstr ""
+
+#: app/templates/login.htm:46
+msgid "Your account has been created. Please sign in."
+msgstr ""
+
+#: app/templates/two_factor_authentication_login.htm:19
+#: app/templates/views/user-profile-manager.htm:127
+#: app/templates/views/user-profile-manager.htm:238
+msgid "Two-Factor Authentication"
+msgstr ""
+
+#: app/templates/two_factor_authentication_login.htm:24
+msgid ""
+"Please enter the code from your external authentication application below."
+msgstr ""
+
+#: app/templates/two_factor_authentication_login.htm:63
+msgid "Authentication failed. Please try again."
+msgstr ""
+
+#: app/templates/two_factor_authentication_login.htm:71
+msgid "Need to reset two-factor authentication?"
+msgstr ""
+
+#: app/templates/two_factor_authentication_login.htm:81
+msgid ""
+"The administrator has required that all users enable two-factor "
+"authentication."
+msgstr ""
+
+#: app/templates/two_factor_authentication_login.htm:82
+msgid "Enable two-factor authentication via email"
+msgstr ""
+
+#: app/templates/two_factor_authentication_reset.htm:19
+msgid "Update Two-Factor Authentication"
+msgstr ""
+
+#: app/templates/two_factor_authentication_reset.htm:24
+msgid "Please enter an email address below."
+msgstr ""
+
+#: app/templates/two_factor_authentication_reset.htm:25
+msgid ""
+"If it is registered in our system it will receive instructions to update "
+"two-factor authentication."
+msgstr ""
+
+#: app/templates/two_factor_authentication_reset.htm:53
+msgid "Success!"
+msgstr ""
+
+#: app/templates/two_factor_authentication_reset.htm:57
+msgid "Email address:"
+msgstr ""
+
+#: app/templates/two_factor_authentication_reset.htm:65
+msgid ""
+"If this email address is registered, an email has been sent to it containing"
+" instructions to enable two-factor authentication."
+msgstr ""
+
+#: app/templates/two_factor_authentication_reset.htm:72
+#: app/templates/two_factor_authentication_settings.htm:161
+msgid "Click here to return to login page"
+msgstr ""
+
+#: app/templates/two_factor_authentication_settings.htm:22
+msgid "Two-Factor Authentication Settings"
+msgstr ""
+
+#: app/templates/two_factor_authentication_settings.htm:33
+msgid "This page will expire in 5 minutes."
+msgstr ""
+
+#: app/templates/two_factor_authentication_settings.htm:46
+msgid "Two-Factor Authentication:"
+msgstr ""
+
+#: app/templates/two_factor_authentication_settings.htm:49
+msgid "ENABLED"
+msgstr ""
+
+#: app/templates/two_factor_authentication_settings.htm:51
+msgid "DISABLED"
+msgstr ""
+
+#: app/templates/two_factor_authentication_settings.htm:71
+msgid "Generate a new shared secret key"
+msgstr ""
+
+#: app/templates/two_factor_authentication_settings.htm:73
+msgid "Enable two-factor authentication"
+msgstr ""
+
+#: app/templates/two_factor_authentication_settings.htm:80
+msgid "Scan the QR code below with your external authentication application."
+msgstr ""
+
+#: app/templates/two_factor_authentication_settings.htm:91
+msgid "Click here to generate data for manual entry."
+msgstr ""
+
+#: app/templates/two_factor_authentication_settings.htm:97
+msgid "Enter the data below into your external authentication application."
+msgstr ""
+
+#: app/templates/two_factor_authentication_settings.htm:105
+msgid "Issuer Name:"
+msgstr ""
+
+#: app/templates/two_factor_authentication_settings.htm:111
+msgid "Account Name:"
+msgstr ""
+
+#: app/templates/two_factor_authentication_settings.htm:117
+msgid "Secret Key:"
+msgstr ""
+
+#: app/templates/two_factor_authentication_settings.htm:123
+msgid "Algorithm Type:"
+msgstr ""
+
+#: app/templates/two_factor_authentication_settings.htm:126
+msgid "Time based"
+msgstr ""
+
+#: app/templates/two_factor_authentication_settings.htm:138
+msgid "Click here to generate QR code."
+msgstr ""
+
+#: app/templates/two_factor_authentication_settings.htm:152
+msgid ""
+"To disable two-factor authentication, please contact your administrator."
+msgstr ""
+
+#: app/templates/two_factor_authentication_settings.htm:156
+msgid "Disable two-factor authentication"
+msgstr ""
+
+#: app/templates/views/components/plugins/workflow.htm:24
+msgid "Complete"
+msgstr ""
+
+#: app/templates/views/components/plugins/workflow.htm:149
+msgid "Previous"
+msgstr ""
+
+#: app/templates/views/components/plugins/workflow.htm:199
+#: app/templates/views/components/plugins/workflow.htm:220
+#: app/templates/views/components/plugins/workflow.htm:242
+msgid "Next"
+msgstr ""
+
+#: app/templates/views/graph-designer.htm:55
+msgid "Resource:"
+msgstr ""
+
+#: app/templates/views/graph-designer.htm:63
+msgid ""
+"Warning! This will save the graph in its current state and make the Resource"
+" accessible to permissioned users."
+msgstr ""
+
+#: app/templates/views/graph-designer.htm:76
+msgid "Notes:"
+msgstr ""
+
+#: app/templates/views/graph-designer.htm:93
+msgid "Publish"
+msgstr ""
+
+#: app/templates/views/graph-designer.htm:167
+msgid "Unpublish Graph"
+msgstr ""
+
+#: app/templates/views/graph-designer.htm:173
+msgid "Publish Graph"
+msgstr ""
+
+#: app/templates/views/graph/graph-designer/card-configuration.htm:40
+#: app/templates/views/graph/graph-designer/card-configuration.htm:49
+msgid " "
+msgstr ""
+
+#: app/templates/views/graph/graph-designer/card-tree-permissions.htm:17
+#: app/templates/views/graph/graph-designer/card-tree.htm:17
+#: app/templates/views/graph/graph-designer/graph-tree.htm:20
+#: app/templates/views/resource/editor.htm:54
+msgid " Grid"
+msgstr ""
+
+#: app/templates/views/graph/graph-designer/node-form.htm:54
+msgid "Node Name Alias"
+msgstr ""
+
+#: app/templates/views/graph/graph-designer/node-form.htm:59
+msgid "Unique alias generated from this node\\"
+msgstr ""
+
+#: app/templates/views/graph/graph-designer/node-form.htm:60
+msgid "Use a custom node alias"
+msgstr ""
+
+#: app/templates/views/user-profile-manager.htm:256
+msgid "Click here to update Two-Factor Authentication settings via email"
+msgstr ""
+
+#: app/views/api.py:1307
+msgid "No nodegroup matching query parameters found."
+msgstr ""
+
+#: app/views/auth.py:132 app/views/auth.py:155 app/views/auth.py:212
+msgid "User signup has been disabled. Please contact your administrator."
+msgstr ""
+
+#: app/views/auth.py:308 app/views/auth.py:326
+msgid "Make sure to set your OAUTH_CLIENT_ID in settings.py"
+msgstr ""
+
+#: app/views/auth.py:372
+msgid "Update Two-Factor Authentication Settings"
+msgstr ""
+
+#: app/views/auth.py:374
+msgid "Click on link below to update your two-factor authentication settings."
+msgstr ""
+
+#: app/views/auth.py:376
+msgid ""
+"This link expires in 15 minutes. If you did not request this change,"
+"                         contact your Administrator immediately."
+msgstr ""
+
+#: app/views/auth.py:385
+msgid "Arches Two-Factor Authentication"
+msgstr ""
+
+#: app/views/auth.py:390
+msgid ""
+"There has been error sending an email to this address. Please contact your "
+"system administrator."
+msgstr ""
+
+#: app/views/graph.py:427
+msgid ""
+"If you want to change the datatype of an existing node.\n"
+"                    Delete and then re-create the node, or export the branch then edit the datatype and re-import the branch."
+msgstr ""
+
+#: app/views/resource.py:367
+msgid "Unable to delete. Please verify the model is not currently published."
+msgstr ""
+
+#: app/views/resource.py:966 app/views/resource.py:980 app/views/tile.py:151
+msgid "Unable to save. Please verify the model is not currently published."
+msgstr ""
+
+#: app/views/search.py:228
+#, python-brace-format
+msgid ""
+"Your search exceeds the {download_limit} instance download limit."
+"                  Anonymous users cannot run an export exceeding this limit."
+"                  Please sign in with your {app_name} account or refine your"
+" search"
+msgstr ""
+
+#: app/views/search.py:244
+#, python-brace-format
+msgid ""
+"{total} instances have been submitted for export.                     Click "
+"the Bell icon to check for a link to download your data"
+msgstr ""
+
+#: app/views/tile.py:124
+msgid "Unable to save. Please verify the model is currently unpublished."
+msgstr ""
+
+#: app/views/tile.py:154
+msgid "Unable to save."
+msgstr ""

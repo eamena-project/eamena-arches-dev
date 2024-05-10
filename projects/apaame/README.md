@@ -257,10 +257,19 @@ APAAME Server: https://apaame.arch.ox.ac.uk/
 | software 	| ResourceSpace   	|
 | hardware 	| QNAP NAS server 	|
 
-#### Struture
+#### File hierachical struture
 > Photographs 
 
 * By Country
+
+#### Metadata
+
+CSV metadata ('CSV Export - metadata', 'CSV Upload - metadata'). Metada CSV file are ordred in folders by dates and collections (ex: 240510-Jordan)
+
+|  folder   | file   |
+|-----------|-------------------|
+| 240510-Jordan 	| metadata_export_collection9_20240510-09_50.csv         	|
+
 
 #### Examples
 

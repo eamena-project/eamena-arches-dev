@@ -59,6 +59,8 @@ The EAMENA general-purposed typology can be modified to cover specifictions of H
 
 Kubernetes image
 
+GeoServer
+
 uses URL/UUID 
 
 Jupyter NB

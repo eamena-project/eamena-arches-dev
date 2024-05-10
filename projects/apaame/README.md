@@ -268,7 +268,7 @@ CSV metadata ('CSV Export - metadata', 'CSV Upload - metadata'). Metada CSV file
 
 |  folder   | file   |
 |-----------|-------------------|
-| 240510-Jordan 	| metadata_export_collection9_20240510-09_50.csv         	|
+| 240510-Jordan 	| [metadata_export_collection9_20240510-09_50.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/data/metadata/240510-Jordan/metadata_export_collection9_20240510-09_50.csv)         	|
 
 
 #### Examples

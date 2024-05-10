@@ -291,7 +291,23 @@ So far in the EAMENA DB, Arabic translation of English are hard written in the R
 
 See for example [Resource Summary](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/rm/hp/Heritage%20Place_with_hard_written_arabic.json#L87)
 
-Since the `ar` appears in the language switcher ...
+### Removing these hard written values
+
+Once the l10n in Arabic (`ar`) has been done, we can remove this Arabic hard written values directly in the `cards` Postgres table using this SQL statement:
+
+```postgres
+UPDATE cards
+SET name = jsonb_set(
+    name,
+    '{en}',
+    ('"' || split_part(name->>'en', ' /', 1) || '"')::jsonb
+)
+WHERE name ? 'en';
+```
+
+![alt text](image-2.png)
+
+❌ However, after an `apache restart` and a reindexing of ElasticSearch, the Arabic values continue to appear (!)
 
 
 ## Other

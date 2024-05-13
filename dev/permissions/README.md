@@ -21,7 +21,10 @@ Duplicate EAMENA card, change the configuration of the duplicated card permissio
 * ~~solution 1~~
     - duplicate the `eamena-default-card`  
     - rename the duplicate `eamena-permission-card`  
-(see https://community.archesproject.org/t/card-permission/1675?u=zoometh)
+
+* see
+	- the Card:https://github.com/search?q=repo%3Aeamena-project%2Feamena%20eamena-default-card&type=code
+	- Arches forum: https://community.archesproject.org/t/card-permission/1675?u=zoometh)
 
 ## Documentation
 

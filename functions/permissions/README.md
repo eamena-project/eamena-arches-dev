@@ -6,20 +6,12 @@ Built-in permissions, ring-fencing function
 EAMENA DB = 
 test DB = http://34.244.135.144/
 
-## Built-in permissions
 
-Natively, Arches allows:
-
-Arches Designer > Resource Model > Heritage Place > Permissions >   
-    - [EAMENA](https://database.eamena.org/en/graph_designer/34cfe98e-c2c0-11ea-9026-02e7594ce0a0)
-    - [test](http://34.244.135.144/graph_designer/34cfe98e-c2c0-11ea-9026-02e7594ce0a0)
 
 ### Card
 
-* ~~solution 1~~
-    - duplicate the `eamena-default-card`  
-    - rename the duplicate `eamena-permission-card`  
-(see https://community.archesproject.org/t/card-permission/1675?u=zoometh)
+
+
 ## Ring-fencing function
 
 The RF function is a bulk-application of instance-level permissions created by Knowlegde Intergation and Farallon (Reuben Osborne) delivered to EAMENA-Oxford the 9th March 2022. Its aim is to allow different user subgroups to access different resources. The idea of ring fencing was to protect and ‘ring fence’ certain datasets within the database, so only a specified/verified group of users would access that dataset.

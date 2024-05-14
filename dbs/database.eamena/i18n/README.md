@@ -284,14 +284,14 @@ service apache2 restart
 
 Context: the HP RM 
 
-So far in the EAMENA DB, Arabic translation of English are hard written in the Resource Models (RM). Here for the node 'Resource Summary' (`ar`: نوع المصدر) 
+So far in the EAMENA DB, Arabic translation of English are hard written in the Resource Models (RM). Here for the node 'Resource Summary' (`ar`: ملخص التقييم) 
 
 | English | Arabic |
 |----------|----------|
 | ![alt text](image.png)    | ![alt text](image-1.png)   |
 | English (`en`) mode, EAMENA training instance    | Arabic (`ar`) mode, EAMENA training instance   |
 
-See for example [Resource Summary](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/rm/hp/Heritage%20Place_with_hard_written_arabic.json#L87)
+See for example [Resource Summary](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/rm/hp/Heritage%20Place_with_hard_written_arabic.json#L86-L87)
 
 ### Removing these hard written values
 

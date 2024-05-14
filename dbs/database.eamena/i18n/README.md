@@ -314,10 +314,10 @@ WHERE name->>'en' LIKE '%Assessment Summary%'
 AND graphid::text = '34cfe98e-c2c0-11ea-9026-02e7594ce0a0'; -- the UUID of the HP RM
 ```
 
-2. If the `ar` exists: remove the hard written Arabic
+2. If the `ar` exists: remove the hard written Arabic after the `/` (in blue)
 
 <p align="center">
-  <img alt="img-name" src="image-4.png" width="700">
+  <img alt="img-name" src="image-4.png" width="500">
   <br>
 </p>
 

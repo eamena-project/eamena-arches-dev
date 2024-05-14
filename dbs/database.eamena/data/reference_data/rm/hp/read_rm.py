@@ -1,3 +1,5 @@
+# Read resource model
+
 #%% 
 # import
 
@@ -5,8 +7,8 @@ import json
 
 hp_concepts = "Heritage Place.json"
 f = open(hp_concepts)
-data = json.load(f)                                                             # convert in dict
-hp_conceptscollections = list(data.keys())                                      # list of the concept collections
+data = json.load(f)
+hp_conceptscollections = list(data.keys())
 nb = 0
 # sum all concepts
 for hp_conceptscollection in hp_conceptscollections:

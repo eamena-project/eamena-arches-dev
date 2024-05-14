@@ -280,7 +280,7 @@ service apache2 restart
 
 
 ## Hard written nodes
-
+> Hard written values in the Card resource model 
 
 So far in the EAMENA DB, Arabic translation of English are hard written in the Resource Models (RM)
 
@@ -304,8 +304,11 @@ SET name = jsonb_set(
 )
 WHERE name ? 'en';
 ```
+<p align="center">
+  <img alt="img-name" src="image-2.png" width="600">
+  <br>
+</p>
 
-![alt text](image-2.png)
 
 ❌ However, after an `apache restart` and a reindexing of ElasticSearch, the Arabic values continue to appear (!)
 

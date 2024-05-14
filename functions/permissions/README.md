@@ -1,34 +1,20 @@
-# Permissions 🔒
-
-bulk-application of instance-level permissions
-Built-in permissions, ring-fencing function
-
-EAMENA DB = 
-test DB = http://34.244.135.144/
-
-
-
-### Card
-
-
-
-## Ring-fencing function
+# Ring-fencing function
 
 The RF function is a bulk-application of instance-level permissions created by Knowlegde Intergation and Farallon (Reuben Osborne) delivered to EAMENA-Oxford the 9th March 2022. Its aim is to allow different user subgroups to access different resources. The idea of ring fencing was to protect and ‘ring fence’ certain datasets within the database, so only a specified/verified group of users would access that dataset.
 
 requested by Iraq, Syria and Lebanon
 
-### Disclaimer
+## Disclaimer
 
-#### Function behaviour
+### Function behaviour
 
 According to KI and Farallon: *"If an instance has permissions on it, it is not added to the layer. The reason is that checking permissions on instance in the layer would be very expensive. I was in favor of doing it anyway, but others thought the performance hit would be too much. So it was decided just to hide the instances in the map."*
 
-#### Affected resources
+### Affected resources
 
 The function will only apply the rules on newly created resources. To make the function work on pre-existing resrouces run the included `resave_all_resource` command.
 
-### Installation
+## Installation
 
 1. `.htm` 
 
@@ -93,7 +79,7 @@ bash script for function installation
 
 ---
 
-## Tests
+# Tests
 
 
 User: test_permission

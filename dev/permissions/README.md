@@ -3,7 +3,7 @@
 
 ## Aim
 
-Hide HP coordinates for Guest users
+1. Hide HP coordinates for Guest users
 
 ## IT solution
 

@@ -297,6 +297,32 @@ See for example [Resource Summary](https://github.com/eamena-project/eamena-arch
 
 In  the l10n in Arabic (`ar`) has been done, we can remove this Arabic hard written values
 
+#### in the Card designer
+> http://52.50.27.140/graph_designer/34cfe98e-c2c0-11ea-9026-02e7594ce0a0
+
+1. Check, in the Postgres DB, if the `ar` translation exists:
+
+<p align="center">
+  <img alt="img-name" src="image-3.png" width="700">
+  <br>
+</p>
+
+```SQL
+SELECT graphid, cardid, name
+FROM cards
+WHERE name->>'en' LIKE '%Assessment Summary%'
+AND graphid::text = '34cfe98e-c2c0-11ea-9026-02e7594ce0a0'; -- the UUID of the HP RM
+```
+
+2. If the `ar` exists: remove the hard written Arabic
+
+<p align="center">
+  <img alt="img-name" src="image-4.png" width="700">
+  <br>
+</p>
+
+3. iterate over each node
+
 #### in the PostgreSQL DB
 
 Remove the hard written values in the `cards` table, for the HP only, using this SQL statement:
@@ -309,9 +335,9 @@ SET name = jsonb_set(
     ('"' || split_part(name->>'en', ' /', 1) || '"')::jsonb
 )
 WHERE name ? 'en' 
-AND cardid::text = '34cfe98e-c2c0-11ea-9026-02e7594ce0a0'; -- the UUID of the HP RM
-
+AND graphid::text = '34cfe98e-c2c0-11ea-9026-02e7594ce0a0'; -- the UUID of the HP RM
 ```
+
 <p align="center">
   <img alt="img-name" src="image-2.png" width="700">
   <br>

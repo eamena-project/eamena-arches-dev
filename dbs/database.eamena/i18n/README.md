@@ -310,8 +310,11 @@ WHERE name ? 'en';
 </p>
 
 
-❌ However, after an `apache restart` and a reindexing of ElasticSearch, the Arabic values continue to appear (!)
-
+❌ However, the Arabic values continue to appear (!) after (not ordered):
+  - `apache restart`
+  - ElasticSearch reindexing, 
+  - `collectstatic`
+  - `build_development`
 
 ## Other
 

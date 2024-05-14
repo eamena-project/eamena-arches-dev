@@ -280,9 +280,11 @@ service apache2 restart
 
 
 ## Hard written nodes
-> Hard written values in the Card resource model 
+> Hard written values in the Card resource model *vs* Dynamic strings
 
-So far in the EAMENA DB, Arabic translation of English are hard written in the Resource Models (RM)
+Context: the HP RM 
+
+So far in the EAMENA DB, Arabic translation of English are hard written in the Resource Models (RM). Here for the node 'Resource Summary' (`ar`: نوع المصدر) 
 
 | English | Arabic |
 |----------|----------|
@@ -293,7 +295,7 @@ See for example [Resource Summary](https://github.com/eamena-project/eamena-arch
 
 ### Removing these hard written values
 
-Once the l10n in Arabic (`ar`) has been done, we can remove this Arabic hard written values directly in the `cards` Postgres table using this SQL statement:
+In  the l10n in Arabic (`ar`) has been done, we can remove this Arabic hard written values directly in the `cards` Postgres table using this SQL statement:
 
 ```postgres
 UPDATE cards
@@ -305,7 +307,7 @@ SET name = jsonb_set(
 WHERE name ? 'en';
 ```
 <p align="center">
-  <img alt="img-name" src="image-2.png" width="600">
+  <img alt="img-name" src="image-2.png" width="700">
   <br>
 </p>
 

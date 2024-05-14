@@ -293,9 +293,13 @@ So far in the EAMENA DB, Arabic translation of English are hard written in the R
 
 See for example [Resource Summary](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/rm/hp/Heritage%20Place_with_hard_written_arabic.json#L86-L87)
 
-### Removing these hard written values
+### Removing hard written values
 
-In  the l10n in Arabic (`ar`) has been done, we can remove this Arabic hard written values directly in the `cards` Postgres table using this SQL statement:
+In  the l10n in Arabic (`ar`) has been done, we can remove this Arabic hard written values
+
+#### in the PostgreSQL DB
+
+Remove the hard written values in the `cards` table, for the HP only, using this SQL statement:
 
 ```postgres
 UPDATE cards
@@ -304,19 +308,30 @@ SET name = jsonb_set(
     '{en}',
     ('"' || split_part(name->>'en', ' /', 1) || '"')::jsonb
 )
-WHERE name ? 'en';
+WHERE name ? 'en' 
+AND cardid::text = '34cfe98e-c2c0-11ea-9026-02e7594ce0a0'; -- the UUID of the HP RM
+
 ```
 <p align="center">
   <img alt="img-name" src="image-2.png" width="700">
   <br>
 </p>
 
+---
 
 ❌ However, the Arabic values continue to appear (!) after (not ordered):
   - `apache restart`
   - ElasticSearch reindexing, 
   - `collectstatic`
   - `build_development`
+
+#### in the RM
+
+see this [Python script](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/rm/hp/read_rm.py#L17-L35)
+
+❌ However, because there are already data linked with the HP RM, the former RM (with hard written node) can not be overwrite by the new one (without hard written values)
+
+
 
 ## Other
 

@@ -1,5 +1,5 @@
 # User Permissions
-> issue thread: [#11](https://github.com/achp-project/cultural-heritage/issues/11),Bulk-application of instance-level permissions, Built-in permissions, ...
+> Bulk-application of instance-level permissions, Built-in permissions, ...
 
 ## Aim
 
@@ -28,5 +28,6 @@ Duplicate EAMENA card, change the configuration of the duplicated card permissio
 
 ## Documentation
 
+* Issue thread: [#11](https://github.com/achp-project/cultural-heritage/issues/11)
 * Phil Carlisle (HE) is developping a new paradigm to handle Arches permissions at very different levels
 * [ring-fencing plugin](https://github.com/eamena-project/eamena-arches-dev/tree/main/functions/permissions)

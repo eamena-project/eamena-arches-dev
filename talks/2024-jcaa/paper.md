@@ -33,7 +33,7 @@ The purpose was to map extansively the endangered cultural heritage in the Arabi
 **EAMENA**. 
 
 ## Case Study
-
+> [kites](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/kites)
 
 The EMANEA Search URL https://tinyurl.com/eamena-sistan [URL shortener] is the Sistan dataset published as a datapaper an hosted on Zenodo (REF). The dataset can been interoperate for example by [Python Jupyter NB](https://github.com/eamena-project/eamena-arches-dev/blob/main/talks/2024-jcaa/read_zenodo.ipynb) hosted on GitHub and displayed on Google Colab. 
 

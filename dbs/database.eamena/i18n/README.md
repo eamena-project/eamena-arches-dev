@@ -343,7 +343,6 @@ AND graphid::text = '34cfe98e-c2c0-11ea-9026-02e7594ce0a0'; -- the UUID of the H
   <br>
 </p>
 
----
 
 ❌ However, the Arabic values continue to appear (!) after (not ordered):
   - `apache restart`

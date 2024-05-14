@@ -362,7 +362,12 @@ Imported, with errors (ORPHANS)
 
 RDM > Tools > Delete Thesauri doesn't work
 
+## Documentation
 
+### Reporting data in different languages
+> fall back languages
+
+[Arches forum](https://community.archesproject.org/t/arches-v7-x-internationalisation-reporting-data-in-different-languages/2100/3)
 
 
 ---

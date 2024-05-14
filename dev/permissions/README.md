@@ -35,3 +35,8 @@ Duplicate EAMENA card, change the configuration of the duplicated card permissio
 * Issue thread: [#11](https://github.com/achp-project/cultural-heritage/issues/11)
 * Phil Carlisle (HE) is developping a new paradigm to handle Arches permissions at very different levels
 * [ring-fencing plugin](https://github.com/eamena-project/eamena-arches-dev/tree/main/functions/permissions)
+
+### Reporting data in different languages
+> fall back languages
+
+[Arches forum](https://community.archesproject.org/t/arches-v7-x-internationalisation-reporting-data-in-different-languages/2100/3)

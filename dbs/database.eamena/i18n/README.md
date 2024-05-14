@@ -301,7 +301,7 @@ In  the l10n in Arabic (`ar`) has been done, we can remove this Arabic hard writ
 
 Remove the hard written values in the `cards` table, for the HP only, using this SQL statement:
 
-```postgres
+```SQL
 UPDATE cards
 SET name = jsonb_set(
     name,

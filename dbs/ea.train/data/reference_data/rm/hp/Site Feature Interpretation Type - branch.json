@@ -50,11 +50,29 @@
                     "name": null,
                     "ontologyproperty": null,
                     "rangenode_id": "518ffb82-12b6-11ef-a316-f3df69eec361"
+                },
+                {
+                    "description": null,
+                    "domainnode_id": "518ffb82-12b6-11ef-a316-f3df69eec361",
+                    "edgeid": "8f31dd10-829e-4463-9467-ee4fda19c7ae",
+                    "graph_id": "bf24c55e-c18d-4d64-8c6e-932eb9c66eb5",
+                    "name": null,
+                    "ontologyproperty": null,
+                    "rangenode_id": "ab87bf4a-12ba-11ef-a316-f3df69eec361"
+                },
+                {
+                    "description": null,
+                    "domainnode_id": "518ffb82-12b6-11ef-a316-f3df69eec361",
+                    "edgeid": "c570622d-8c0c-4327-aea5-6ae50b6d5f0c",
+                    "graph_id": "bf24c55e-c18d-4d64-8c6e-932eb9c66eb5",
+                    "name": null,
+                    "ontologyproperty": null,
+                    "rangenode_id": "7659a464-12c9-11ef-a316-f3df69eec361"
                 }
             ],
             "functions_x_graphs": [],
             "graphid": "bf24c55e-c18d-4d64-8c6e-932eb9c66eb5",
-            "iconclass": "",
+            "iconclass": "fa fa-bank",
             "is_editable": true,
             "isresource": false,
             "jsonldcontext": null,
@@ -93,9 +111,31 @@
                     "sortorder": 0
                 },
                 {
-                    "alias": "typology",
+                    "alias": "sub-typology",
                     "config": {
-                        "rdmCollection": "089dff3a-2175-4d9d-8967-21282b572ec9"
+                        "rdmCollection": null
+                    },
+                    "datatype": "semantic",
+                    "description": null,
+                    "exportable": false,
+                    "fieldname": null,
+                    "graph_id": "bf24c55e-c18d-4d64-8c6e-932eb9c66eb5",
+                    "hascustomalias": true,
+                    "is_collector": false,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Sub-Typology",
+                    "nodegroup_id": "362cd7de-12b6-11ef-a316-f3df69eec361",
+                    "nodeid": "518ffb82-12b6-11ef-a316-f3df69eec361",
+                    "ontologyclass": null,
+                    "parentproperty": null,
+                    "sortorder": 0
+                },
+                {
+                    "alias": "others",
+                    "config": {
+                        "rdmCollection": "7bb54d54-4803-4b92-9c3e-01899938cd99"
                     },
                     "datatype": "concept-list",
                     "description": null,
@@ -107,16 +147,44 @@
                     "isrequired": false,
                     "issearchable": true,
                     "istopnode": false,
-                    "name": "Typology",
+                    "name": "Others",
                     "nodegroup_id": "362cd7de-12b6-11ef-a316-f3df69eec361",
-                    "nodeid": "518ffb82-12b6-11ef-a316-f3df69eec361",
+                    "nodeid": "7659a464-12c9-11ef-a316-f3df69eec361",
+                    "ontologyclass": null,
+                    "parentproperty": null,
+                    "sortorder": 0
+                },
+                {
+                    "alias": "kites",
+                    "config": {
+                        "rdmCollection": "01a64364-a556-42ef-b942-4a5f83d80d28"
+                    },
+                    "datatype": "concept-list",
+                    "description": null,
+                    "exportable": false,
+                    "fieldname": null,
+                    "graph_id": "bf24c55e-c18d-4d64-8c6e-932eb9c66eb5",
+                    "hascustomalias": false,
+                    "is_collector": false,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Kites",
+                    "nodegroup_id": "362cd7de-12b6-11ef-a316-f3df69eec361",
+                    "nodeid": "ab87bf4a-12ba-11ef-a316-f3df69eec361",
                     "ontologyclass": null,
                     "parentproperty": null,
                     "sortorder": 0
                 }
             ],
             "ontology_id": null,
-            "publication": null,
+            "publication": {
+                "graph_id": "bf24c55e-c18d-4d64-8c6e-932eb9c66eb5",
+                "notes": null,
+                "publicationid": "1f7f995e-12ca-11ef-a316-f3df69eec361",
+                "published_time": "2024-05-15T09:47:59.292",
+                "user_id": 1
+            },
             "relatable_resource_model_ids": [],
             "resource_2_resource_constraints": [],
             "root": {

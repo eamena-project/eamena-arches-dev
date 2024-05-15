@@ -1,5 +1,5 @@
-# 24test
-> for KRG
+# EAtrain
+> 24test, ea.train, ...
 
 ## Customize the landing page
 

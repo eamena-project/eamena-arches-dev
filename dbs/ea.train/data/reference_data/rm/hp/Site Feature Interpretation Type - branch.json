@@ -48,7 +48,7 @@
                     "edgeid": "19154505-4d1b-4ca6-9d95-8f2960c942e2",
                     "graph_id": "bf24c55e-c18d-4d64-8c6e-932eb9c66eb5",
                     "name": null,
-                    "ontologyproperty": null,
+                    "ontologyproperty": "null",
                     "rangenode_id": "518ffb82-12b6-11ef-a316-f3df69eec361"
                 },
                 {
@@ -57,7 +57,7 @@
                     "edgeid": "8f31dd10-829e-4463-9467-ee4fda19c7ae",
                     "graph_id": "bf24c55e-c18d-4d64-8c6e-932eb9c66eb5",
                     "name": null,
-                    "ontologyproperty": null,
+                    "ontologyproperty": "null",
                     "rangenode_id": "ab87bf4a-12ba-11ef-a316-f3df69eec361"
                 },
                 {
@@ -66,7 +66,7 @@
                     "edgeid": "c570622d-8c0c-4327-aea5-6ae50b6d5f0c",
                     "graph_id": "bf24c55e-c18d-4d64-8c6e-932eb9c66eb5",
                     "name": null,
-                    "ontologyproperty": null,
+                    "ontologyproperty": "null",
                     "rangenode_id": "7659a464-12c9-11ef-a316-f3df69eec361"
                 }
             ],
@@ -106,7 +106,7 @@
                     "name": "Site Feature Interpretation Type",
                     "nodegroup_id": "362cd7de-12b6-11ef-a316-f3df69eec361",
                     "nodeid": "362cd7de-12b6-11ef-a316-f3df69eec361",
-                    "ontologyclass": null,
+                    "ontologyclass": "null",
                     "parentproperty": "",
                     "sortorder": 0
                 },
@@ -128,7 +128,7 @@
                     "name": "Sub-Typology",
                     "nodegroup_id": "362cd7de-12b6-11ef-a316-f3df69eec361",
                     "nodeid": "518ffb82-12b6-11ef-a316-f3df69eec361",
-                    "ontologyclass": null,
+                    "ontologyclass": "null",
                     "parentproperty": null,
                     "sortorder": 0
                 },
@@ -150,7 +150,7 @@
                     "name": "Others",
                     "nodegroup_id": "362cd7de-12b6-11ef-a316-f3df69eec361",
                     "nodeid": "7659a464-12c9-11ef-a316-f3df69eec361",
-                    "ontologyclass": null,
+                    "ontologyclass": "null",
                     "parentproperty": null,
                     "sortorder": 0
                 },
@@ -172,7 +172,7 @@
                     "name": "Kites",
                     "nodegroup_id": "362cd7de-12b6-11ef-a316-f3df69eec361",
                     "nodeid": "ab87bf4a-12ba-11ef-a316-f3df69eec361",
-                    "ontologyclass": null,
+                    "ontologyclass": "null",
                     "parentproperty": null,
                     "sortorder": 0
                 }
@@ -205,7 +205,7 @@
                 "name": "Site Feature Interpretation Type",
                 "nodegroup_id": "362cd7de-12b6-11ef-a316-f3df69eec361",
                 "nodeid": "362cd7de-12b6-11ef-a316-f3df69eec361",
-                "ontologyclass": null,
+                "ontologyclass": "null",
                 "sortorder": 0
             },
             "slug": null,

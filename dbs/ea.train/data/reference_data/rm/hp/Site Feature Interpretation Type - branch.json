@@ -129,7 +129,7 @@
                     "nodegroup_id": "362cd7de-12b6-11ef-a316-f3df69eec361",
                     "nodeid": "518ffb82-12b6-11ef-a316-f3df69eec361",
                     "ontologyclass": "null",
-                    "parentproperty": null,
+                    "parentproperty": "null",
                     "sortorder": 0
                 },
                 {
@@ -151,7 +151,7 @@
                     "nodegroup_id": "362cd7de-12b6-11ef-a316-f3df69eec361",
                     "nodeid": "7659a464-12c9-11ef-a316-f3df69eec361",
                     "ontologyclass": "null",
-                    "parentproperty": null,
+                    "parentproperty": "null",
                     "sortorder": 0
                 },
                 {
@@ -173,7 +173,7 @@
                     "nodegroup_id": "362cd7de-12b6-11ef-a316-f3df69eec361",
                     "nodeid": "ab87bf4a-12ba-11ef-a316-f3df69eec361",
                     "ontologyclass": "null",
-                    "parentproperty": null,
+                    "parentproperty": "null",
                     "sortorder": 0
                 }
             ],

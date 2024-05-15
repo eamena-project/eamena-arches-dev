@@ -1,6 +1,14 @@
 # Kites
 
-## 1 
+
+## RM - branches
+
+
+* https://colab.research.google.com/github/eamena-project/eamena-arches-dev/blob/main/dbs/ea.train/data/reference_data/rm/hp/erd-branch/EAtrain_erd_branch.ipynb
+* https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/ea.train/data/reference_data/rm/hp/erd-branch/EAtrain_erd_branch.ipynb
+
+
+## datasets 
 
 n = 400
 

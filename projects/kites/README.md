@@ -32,7 +32,16 @@ A branch has been created with these two collections
 
 This branch has been exported to GitHub: [Sub-typology-branch.json](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/ea.train/data/reference_data/rm/hp/Sub-typology-branch.json) and can be then processed as a RM with the graph display and attaching images to it
 
+see:
+
+<p align="center">
+
+[**EAtrain_erd_branch.ipynb**]
+
+</p>
+
 see also: 
+	- ERD [Jupyter NB](https://colab.research.google.com/github/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/rm/hp/erd/EAMENA-erd.ipynb)
 	- concept-image [Jupyter NB](https://colab.research.google.com/github/eamena-project/eamena-data/blob/main/reference-data/concepts/heritage_places/concepts_images_graph.ipynb) and [project](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/concept-image)
 
 * https://colab.research.google.com/github/eamena-project/eamena-arches-dev/blob/main/dbs/ea.train/data/reference_data/rm/hp/erd-branch/EAtrain_erd_branch.ipynb

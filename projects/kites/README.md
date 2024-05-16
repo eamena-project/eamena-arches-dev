@@ -1,7 +1,36 @@
 # Kites
 
+## Holocene paper
+> Michael Fradley et al., *Holocene*
+
 
 ## RM - branches
+
+A typology of kites has been created in the EAMENA training instance in the form of a branch
+
+<p align="center">
+  <img alt="img-name" src="image-3.png" width="500">
+  <br>
+    <em>**Kites** collection in the RDM</em>
+</p>
+
+At the same time, the value 'Kite' has been removed in the 'Site Feature Interpretation Type' collection which has been renamed 'Others'.
+
+<p align="center">
+  <img alt="img-name" src="image-2.png" width="500">
+  <br>
+    <em>**Others** collection in the RDM</em>
+</p>
+
+A branch has been created with these two collections
+
+<p align="center">
+  <img alt="img-name" src="image-4.png" width="500">
+  <br>
+    <em>**Others** collection in the RDM</em>
+</p>
+
+This branch has been exported to GitHub: [Sub-typology-branch.json](Sub-typology-branch.json) and can be then processed as a RM with the graph display and attaching images to it
 
 
 * https://colab.research.google.com/github/eamena-project/eamena-arches-dev/blob/main/dbs/ea.train/data/reference_data/rm/hp/erd-branch/EAtrain_erd_branch.ipynb

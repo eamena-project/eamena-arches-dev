@@ -57,6 +57,8 @@ The EAMENA general-purposed typology can be modified to cover specifictions of H
 
 ## aclass
 
+branch created on the CIDOC CRM v6.2
+
 Kubernetes image
 
 GeoServer

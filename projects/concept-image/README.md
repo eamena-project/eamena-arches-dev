@@ -4,7 +4,7 @@ Associate one image to a EAMENA concept to illustrate this latter (ex: Threat ty
 
 
 <p align="center">
-  <img alt="img-name" src="image.png" width="600">
+  <img alt="img-name" src="image.png" width="500">
   <br>
     <em>The threat `Agricultural/Pastoral` concept in the RDM</em>
 </p>
@@ -12,7 +12,7 @@ Associate one image to a EAMENA concept to illustrate this latter (ex: Threat ty
 The objective is to link the concept image UUID to the RM (ex: node Threat type) and display these images in a `pyvis` interactive graph
 
 <p align="center">
-  <img alt="img-name" src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/concepts_images_threat_type_agricole.png" width="500">
+  <img alt="img-name" src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/concepts_images_threat_type_agricole.png" width="600">
   <br>
     <em>A clear case of Agricultural/Pastoral (orchads) threat over cultural hertiage </em>
 </p>

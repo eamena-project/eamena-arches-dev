@@ -30,7 +30,7 @@ A branch has been created with these two collections
     <em><b>Others</b> collection in the RDM</em>
 </p>
 
-This branch has been exported to GitHub: [Sub-typology-branch.json](Sub-typology-branch.json) and can be then processed as a RM with the graph display and attaching images to it
+This branch has been exported to GitHub: [Sub-typology-branch.json](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/ea.train/data/reference_data/rm/hp/Sub-typology-branch.json) and can be then processed as a RM with the graph display and attaching images to it
 
 
 * https://colab.research.google.com/github/eamena-project/eamena-arches-dev/blob/main/dbs/ea.train/data/reference_data/rm/hp/erd-branch/EAtrain_erd_branch.ipynb

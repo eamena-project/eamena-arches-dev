@@ -1,8 +1,9 @@
 # Kites
 
 ## Holocene paper
-> Michael Fradley et al., *Holocene*
+> 
 
+The purpose is to extend the typology of heritage places without changing the current EAMENA graphs. We use the case of the kites dataset curated by [Michael Fradley et al., *Holocene*](https://journals.sagepub.com/doi/full/10.1177/09596836221114290).
 
 ## RM - branches
 
@@ -36,7 +37,7 @@ see:
 
 <p align="center">
 
-[**EAtrain_erd_branch.ipynb**]
+[**EAtrain_erd_branch.ipynb**](https://colab.research.google.com/github/eamena-project/eamena-arches-dev/blob/main/dbs/ea.train/data/reference_data/rm/hp/erd-branch/EAtrain_erd_branch.ipynb)
 
 </p>
 

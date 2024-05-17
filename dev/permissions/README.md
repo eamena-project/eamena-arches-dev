@@ -4,8 +4,15 @@
 ## Aim
 
 1. Hide HP coordinates for Guest users
+2. For a specific country, Syria, 3 different groups (NE Kurdish, Itlib, Baghdad regime) should be able to input data, but the other two groups should be not able to see the data of the third one (particularly: Person names and Condition Assessment)
 
 ## IT solution
+
+### QGIS/PostGRES
+> see W. Deadman
+
+A PostGRES DB having 3 different schemas is hosted online (AlwaysData) and accessed through QGIS. It allows 3 different groups to work on the same DB but in a siloed manner.
+
 
 ### Built-in
 
@@ -35,4 +42,5 @@ Duplicate EAMENA card, change the configuration of the duplicated card permissio
 * Issue thread: [#11](https://github.com/achp-project/cultural-heritage/issues/11)
 * Phil Carlisle (HE) is developping a new paradigm to handle Arches permissions at very different levels
 * [ring-fencing plugin](https://github.com/eamena-project/eamena-arches-dev/tree/main/functions/permissions)
+* [IT draft](doc/SyrianDB_KH_WD.pdf)
 

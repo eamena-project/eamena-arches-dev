@@ -4,6 +4,7 @@
 ## Aim
 
 1. Hide HP coordinates for Guest users
+2. Don't allow Guest users to be able to Export Search Results 
 2. For a specific country, Syria, 3 different groups (NE Kurdish, Itlib, Baghdad regime) should be able to input data, but the other two groups should be not able to see the data of the third one (particularly: Person names and Condition Assessment)
 
 ## IT solution
@@ -40,6 +41,11 @@ Duplicate EAMENA card, change the configuration of the duplicated card permissio
 ## Documentation
 
 * Issue thread: [#11](https://github.com/achp-project/cultural-heritage/issues/11)
+* Arches forum:
+  - https://community.archesproject.org/t/hiding-spatial-locations-in-the-report-template/1020
+  - https://community.archesproject.org/t/hide-places-coordinates-from-an-user-group-in-a-report-without-hiding-them-on-the-map/2042
+  - https://community.archesproject.org/t/guest-group-and-anonymous-user-permissions/2301/4
+
 * Phil Carlisle (HE) is developping a new paradigm to handle Arches permissions at very different levels
 * [ring-fencing plugin](https://github.com/eamena-project/eamena-arches-dev/tree/main/functions/permissions)
 * [IT draft](doc/SyrianDB_KH_WD.pdf)

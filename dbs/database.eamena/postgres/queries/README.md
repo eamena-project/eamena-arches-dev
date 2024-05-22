@@ -85,10 +85,10 @@ gives:
 
 ```SQL
 SELECT * FROM tiles 
-WHERE resourceinstanceid::text LIKE '45ea21b3-5434-442e-98ab-a83851611128'
+WHERE resourceinstanceid::text LIKE '8b5e0b67-d3b7-4ce3-8d23-807cf25e8244'
 ```
 
-Where `45ea21b3-5434-442e-98ab-a83851611128` is the UUID of a HP
+Where `8b5e0b67-d3b7-4ce3-8d23-807cf25e8244` is the UUID of a HP
 
 
 ## HP with Overall Site Condition
@@ -201,6 +201,69 @@ SELECT ids.ri, ids.ei, coords.x, coords.y FROM (
 	WHERE gr IS NOT NULL
 	) AS grd
 WHERE ids.ri = coords.ri AND grd.ri = coords.ri AND grd.ri = ids.ri
+```
+
+## HP date of creation
+
+List the HP created between 2022-12-31 and 2024-01-01 by member of the EAMENA Staff
+
+```SQL
+SELECT 
+    ids.ri, 
+    ids.ei, 
+    staff.teamname, 
+    coords.x, 
+    coords.y, 
+    created.cdate  
+FROM (
+    -- EAMENA ID
+    SELECT * 
+    FROM (
+        SELECT
+            resourceinstanceid::TEXT AS ri,
+            tiledata -> '34cfe992-c2c0-11ea-9026-02e7594ce0a0' -> 'en' #>> '{value}' AS ei
+        FROM tiles
+    ) AS x
+    WHERE ei IS NOT NULL
+) AS ids,
+(
+    -- team
+    SELECT * 
+    FROM (
+        SELECT
+            u.resourceinstanceid::TEXT AS ri,
+            m.value::text AS teamname
+        FROM tiles u
+        JOIN values m ON (u.tiledata -> 'd2e1ab96-cc05-11ea-a292-02e7594ce0a0'::text ->> 0 = m.valueid::text)
+    ) AS x
+    WHERE teamname IS NOT NULL
+) AS staff,
+(
+    -- coordinates
+    SELECT * 
+    FROM (
+        SELECT
+            resourceinstanceid::TEXT AS ri,
+            ST_X(ST_AsText(ST_Centroid(ST_GeomFromGeoJSON(tiledata -> '5348cf67-c2c5-11ea-9026-02e7594ce0a0' -> 'features' -> 0 -> 'geometry')))) AS x,
+            ST_Y(ST_AsText(ST_Centroid(ST_GeomFromGeoJSON(tiledata -> '5348cf67-c2c5-11ea-9026-02e7594ce0a0' -> 'features' -> 0 -> 'geometry')))) AS y
+        FROM tiles
+    ) AS x
+    WHERE x IS NOT NULL AND y IS NOT NULL
+) AS coords,
+(
+    -- date of creation
+    SELECT
+        resourceinstanceid::TEXT AS ri,
+        tiledata ->> '34cfea81-c2c0-11ea-9026-02e7594ce0a0'::text AS cdate
+    FROM tiles
+    WHERE tiledata ->> '34cfea81-c2c0-11ea-9026-02e7594ce0a0'::text > '%2022-12-31%'
+      AND tiledata ->> '34cfea81-c2c0-11ea-9026-02e7594ce0a0'::text < '%2024-01-01%'
+) AS created
+WHERE 
+    ids.ri = staff.ri 
+    AND ids.ri = coords.ri 
+    AND ids.ri = created.ri
+    AND staff.teamname LIKE '%EAMENA Project Staff%'
 ```
 
 # APAAME and ArchDAMS

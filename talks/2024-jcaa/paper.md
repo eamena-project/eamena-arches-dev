@@ -1,25 +1,27 @@
-# Information systems for cultural heritage and archaeological data management. The example of the EAMENA project, a framework deployed on the top of Arches 
+# Information systems for cultural heritage and archaeological data management. The example of the EAMENA a framework deployed on the top of Arches 
 > https://github.com/eamena-project/eamena-arches-dev/blob/main/talks/2024-jcaa/paper.md
-
-Historical objects, such an archaeological remain or a cultural heritage site, are always context-based at the cross-road of many dimensions: spatial, temporal, typologic, etc. Such contexts are highly multi-scalar (from the site to the 'scratch') and multi-paradigma (from aDNA to climate data, passing by 'chaine operatore') that are hard to manage. Furthurmore, historical objects come with metadata (ex: bibliographic references) and paradata (ex: information of the project framework) that, just like the data, also need to be linked one with another, easily findable, navigable and editable. 
-
 
 ## Introduction
 
-Both the project EAMENA and the Arches software have been firstly thougth to be open. EAMENA first purpose is to gather and share cultural heriatge information about endangered sites, Arches on the other hand is an a geoweb semantic-based information platform: it allows for example to open different windows (map layer, search bar, heritage place report, etc.) at the same time offering as many possibilties to navigate but also hinter the possibility of editing. Databases are useful for storing, sharing, etc. but are often not design in a purpose of creating new knowledge *as it* in archaeology and cultural heritage. Furthermore their management to search the data are less handy than XLSX sheet which constitute so far.
+Archaeological objects, like a cultural heritage site, are always context-based and at the cross-road of many dimensions: spatial, temporal, typologic, etc. Such contexts are highly multi-scalar (from the site to the use-wear, passing by the "monument") and multidisciplinar (from aDNA to climate data, passing by 'chaine operatoire') but has also to deal with uncertainity, metadata (ex: bibliographic references) and paradata (ex: information of the project framework). Pooling so many heterogeneous data together in a way that this data be easily findable, navigable and editable is a complex process. 
+Information system ...
+The EAMENA project (Endangered Archaeology in Middle East and North Africa) has build its information system on the top of the NoSQL Arches IT stack. This paper aims to present how a work/framework around EAMENA is made available by the IT chooses by Arches and how a collaborative development enhance to reusability of the archaeological data and methods. 
 
-EAMENA, a framework for
+## The EAMENA project background
 
-... 
+EAMENA project starts with the destruction of Palmyra in 2016 by ISIS. The purpose of the project was to map extansively the endangered inammovible cultural heritage in the Arabic speaking region, from Mauritania to Irak, identifying threats and causes of disturbances (Agricultural, Urbanist, etc.). 
 
-Destruction of Palmyra in 2016 by ISIS.
+![alt text](image.png)
 
-The purpose was to map extansively the endangered cultural heritage in the Arabic speaking region, from Mauritania to Irak. And more recently covers Iran and Afghanistan. Identifying threats and causes of disturbances (Agricultural, Urbanist, etc.). To cover the scope of the project, and because of the difficulties to access field work (either for being in desertic remote areas and because of security issues) remote sensing has been the privilegied method to assess this cultural heritage. So far, EAMENA comprehensive surveys has led to the discovery of XXX new kites structures and 3 roman forts, among other.
+This information aims to be released to a general audience, but also to alert national authorities on their endangered heritage. To cover the geographical scope of the project, and because of the difficulties to access field work (either for being in desertic remote areas and because of security issues) remote sensing has been the privilegied method to assess this cultural heritage (REF). 
+Cultural heritage assessment follows a methodology published over numerous support (YouTube videos, MOOC, PDF documents), along with numerous in-person and online training given in the MENA region. 
+The systematic remote sensing assessment has led to the recording of some > 200,000 heritage places, which some have already been published with a very different degree of agrrement with the international standards, but most of them are original heritage place that only EAMENA database gives access to. To highlight only these last years, EAMENA comprehensive surveys has led to the discovery of **354** new 'desert kites' hunting structures[^6] in northern Arabia and at least **3** roman forts in western Jordan[^7]. The latter dataset gathers heritage places distant for more than 80 km in straight line from any inhabited places. 
 
-## Design & Architecture
+## IT tools
 
-**EAMENA** platform is deployed on the top of the NoSQL **Arches** stack of open-source softwares. Arches serves as a semantic web-based purpose-built platform for inamovible cultural heritage management. 
+### Arches
 
+Arches is an open-source geoweb semantic-based information purpose-built platform for cultural heritage management created by the GCI and the WMF. Arches key features are its PostGRES database, one of the top five database management system (DBMS) with an increasing popularity[^3], among the open source software (OSS), it is the closest to the Oracle the world most popular DBMS; its logics based on Python, the world-wide most used programming language[^2] and JavaScript object notation (JSON-LD, GeoJSON, Postgres JSONB type) the current standard to exchange data over the web. Arches lies also on mature technologies (Django web-application framework, Apache server among other), and comes with various built-in iso-standards (CIDOC-CRM, Dublin Core, SKOS, IIIF, EDTF, WGS84/OGC[^4]) and semantic web technologies (XML, RDF, etc.). From the version 7.3, Arches supports internationalisation (i18) and is currently located (l10n) in 10 different languages[^5]. From the version 7.5, Arches support the so-called Arches application, Python package aligned with Django standards that allow fine-tuning of possibly any kind of workflow.Arches open-source and cutting-edge IT stack offers many improvements possibilities. Among the upcoming add-ons (version 8, scheduled in Dec 2024) one can mention the Lingo Arches application allowing you to manage reference data (vocabularies, thesauries, ontologies). Arches-based platform is currently employed at the national level for managing the National Heritage List for England (Historic England) and by many University-based project. 
 
 <br>
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/arches-ea-stack.png" width="500px">
@@ -27,8 +29,25 @@ The purpose was to map extansively the endangered cultural heritage in the Arabi
 <br>
 
 
-**Arches** key features are its logics based on Python, from far the world-wide most used programming language (REF Tiobe) and JavaScript object notation (JSON-LD, GeoJSON, Postgres JSONB type) the current standard to exchange data over the web. Arches lies also on mature technologies (Postgres database, Django web-application framework, Apache server among other), various iso-standards (CIDOC-CRM, Dublin Core, SKOS, SPARQL endpoint, IIIF, EDTF, WGS84/OGC) and semantic web technologies (XML, RDF, etc.). From the version 7.3, Arches supports internationalisation (i18) and is currently located (l10n) in XXX different languages. Lingo
-**Arches** ~ **EAMENA** EAMENA is the oldest university-based project grounded on Arches, since 2016, in comparison to sibling projects (MAHSA and MAEASaM at the University of Cambridge; CAAL at the University of London; MAPSS at the Max Planck Institute, etc.). As so, it gathered more experiences and has a leading role in working to mke this projects interoperable for exemple by  sharing the reference data of our projects (ontologies, data models, and thesauri in XML and JSON files) through a common GitHub organization (https://github.com/achp-project).
+### EAMENA 
+
+EAMENA is the oldest university-based project grounded on Arches, in comparison to sibling projects (MAHSA and MAEASaM at the University of Cambridge; CAAL at the University of London; MAPSS at the Max Planck Institute, etc.). As so, it gathered more experiences and has a leading role in working to make this projects interoperable for exemple by sharing the reference data of our projects (ontologies, data models, and thesauri in XML and JSON files) through a common GitHub organization (https://github.com/achp-project)
+
+
+... 
+
+
+
+## Design & Architecture
+
+**EAMENA** platform is deployed on  
+
+
+
+
+
+
+**Arches** ~ **EAMENA** .
 **EAMENA** ~ **Arches** by providing the localisation in Arabic (`ar`), French (`fr`) and Central Kurdish (`cbk`).... The `citation generator` plugin was designed to help non-Western EAMENA contributors have a simple way to publish their research in Western peer-reviewed journals by following a path starting with data entry, Zenodo repository, LLM ~ data paper models, PCI recommendation and finally, publication of data paper and research paper.
 **EAMENA**. 
 
@@ -75,6 +94,28 @@ The database incorporates controlled vocabulary. Glossaries are rooted in resour
 
 **EAMENA** ~ **Arches** Bulkupload plugin
 
+Both the project EAMENA and the Arches software have been firstly thougth to be open. EAMENA first purpose is to gather and share cultural heriatge information about endangered sites, : it allows for example to open different windows (map layer, search bar, heritage place report, etc.) at the same time offering as many possibilties to navigate but also hinter the possibility of editing. Databases are useful for storing, sharing, etc. but are often not design in a purpose of creating new knowledge *as it* in archaeology and cultural heritage. Furthermore their management to search the data are less handy than XLSX sheet which constitute so far.
+
+EAMENA, a framework for
+
+SPARQL endpoint, 
+
+LING: , integrating probably authorative data, such as the PeriodO time-space gazetteer
+
+And we can also mention the upcoming DISCO (aka, Arches for Science) which focuses on technical art review, includes tools for annotation, material sampling, instrument data retrieval and visualization, and image and data comparison.
+
+. More recently covers Iran and Afghanistan.
+
+A region largely marked by large desertic remote areas but also closed borders. 
+EAMENA Arches-based database, just like the entire EAMENA project has been largely founded by the Arcadia charitable fund
+
+
 ## Footnotes
 
 [^1]: Peuquet, D. J. (1994). It's about time: A conceptual framework for the representation of temporal dynamics in geographic information systems. Annals of the Association of american Geographers, 84(3), 441-461
+[^2]: TIOBE Index (2024), URL: https://www.tiobe.com/tiobe-index/, Acceded the 01/06/2024
+[^3]: DB-Engines Ranking - Trend Popularity (2024), URL: https://db-engines.com/en/ranking_trend, Acceded the 01/06/2024
+[^4]: CIDOC-CRM: ISO 21127; Dublin Core: ISO 15836-1:2017; SKOS: ISO 25964; IIIF: ISO 21127:2019; EDTF: ISO 8601; WGS84: ISO 19111
+[^5]: Arches GitHub, URL: https://github.com/archesproject/arches/tree/master/arches/locale, Acceded the 01/06/2024
+[^6]: Fradley, M., Simi, F., & Guagnin, M. (2022). Following the herds? A new distribution of hunting kites in Southwest Asia. The Holocene, 32(11), 1160-1172. https://doi.org/10.1177/09596836221114290
+[^7]: Fradley, M., Wilson, A., Finlayson, B., & Bewley, R. (2023). A lost campaign? New evidence of Roman temporary camps in northern Arabia. Antiquity, 97(393), e15. doi:10.15184/aqy.2023.50

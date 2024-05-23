@@ -11,7 +11,7 @@ The EAMENA project (Endangered Archaeology in Middle East and North Africa) has 
 
 EAMENA project starts with the destruction of Palmyra in 2016 by ISIS. The purpose of the project was to map extansively the endangered inammovible cultural heritage in the Arabic speaking region, from Mauritania to Irak, identifying threats and causes of disturbances (Agricultural, Urbanist, etc.). 
 
-![alt text](image.png)
+![](hps.png)
 
 This information aims to be released to a general audience, but also to alert national authorities on their endangered heritage. To cover the geographical scope of the project, and because of the difficulties to access field work (either for being in desertic remote areas and because of security issues) remote sensing has been the privilegied method to assess this cultural heritage (REF). 
 Cultural heritage assessment follows a methodology published over numerous support (YouTube videos, MOOC, PDF documents), along with numerous in-person and online training given in the MENA region. 

@@ -1,7 +1,7 @@
 # Creates an array of map showing the number of HP created by year
 
 library(eamenaR)
-source("R/ref_hps_1.R")
+source("C:/Rprojects/eamenaR/R/ref_hps_1.R")
 d <- hash::hash()
 db.con <- RPostgres::dbConnect(drv = RPostgres::Postgres(),
                                user = 'postgres',

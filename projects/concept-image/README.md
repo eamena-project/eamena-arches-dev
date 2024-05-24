@@ -19,4 +19,5 @@ The objective is to link the concept image UUID to the RM (ex: node Threat type)
 
 
 See: 
-* https://colab.research.google.com/github/eamena-project/eamena-data/blob/main/reference-data/concepts/heritage_places/concepts_images.ipynb
+* https://colab.research.google.com/github/eamena-project/eamena-data/blob/main/reference-data/concepts/heritage_places/concepts_images_graph.ipynb
+* ~~https://colab.research.google.com/github/eamena-project/eamena-data/blob/main/reference-data/concepts/heritage_places/concepts_images.ipynb~~

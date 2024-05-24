@@ -24,25 +24,28 @@ LIMIT '${nbmax}';
 
 d['AssInvestUUID'] <- DBI::dbGetQuery(db.con, sqll)
 d$AssInvestUUID$assinvestname <- NA
-
+verbose = T
 # find the human-readable name and add it in the df
 for(i in 1:nrow(d$AssInvestUUID)){
-  print(paste0("Read ", i))
+  if(verbose & (i %% 10 == 0)){
+    print(paste0("Read ", i))
+    print(paste0("   name: ", assinvestname))
+  }
   AssInvestUUID <- d$AssInvestUUID[i, "assinvestuuid"]
   nb <- d$AssInvestUUID[i, "nb"]
   sqll <- stringr::str_interp("
-SELECT tiledata -> 'e98e1cfe-c38b-11ea-9026-02e7594ce0a0' -> 'en' ->> 'value' as AssInvestName
-FROM tiles
-WHERE resourceinstanceid::text LIKE '%${AssInvestUUID}%'
-AND tiledata -> 'e98e1cfe-c38b-11ea-9026-02e7594ce0a0' -> 'en' ->> 'value' IS NOT NULL
-")
+  SELECT tiledata -> 'e98e1cfe-c38b-11ea-9026-02e7594ce0a0' -> 'en' ->> 'value' as AssInvestName
+  FROM tiles
+  WHERE resourceinstanceid::text LIKE '%${AssInvestUUID}%'
+  AND tiledata -> 'e98e1cfe-c38b-11ea-9026-02e7594ce0a0' -> 'en' ->> 'value' IS NOT NULL
+  ")
   assinvestname <- DBI::dbGetQuery(db.con, sqll)
-  print(paste0("   name: ", assinvestname))
   if(nrow(assinvestname) > 0){
     d$AssInvestUUID[i, "assinvestname"] <- assinvestname
   }
 }
 df <- d$AssInvestUUID[!is.na(d$AssInvestUUID$assinvestuuid), ] # rm NA
+df$assinvestname <- factor(df$assinvestname, levels = df$assinvestname, ordered = T)
 
 # this part directly comes from  geojson_stats.R
 blank_theme <- ggplot2::theme_minimal()+
@@ -54,7 +57,6 @@ blank_theme <- ggplot2::theme_minimal()+
     axis.ticks = ggplot2::element_blank(),
     plot.title = ggplot2::element_text(size=14, face="bold")
   )
-df$assinvestname <- factor(df$assinvestname, levels = df$assinvestname, ordered = T)
 gg <- ggplot2::ggplot(df, ggplot2::aes(x = assinvestname, y = nb)) +
   ggplot2::geom_bar(stat = "identity", fill = "lightblue") +
   blank_theme +

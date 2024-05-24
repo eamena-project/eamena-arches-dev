@@ -63,7 +63,7 @@ for(year in unique(sf_df$cdate)){
 margin <- ggplot2::theme(plot.margin = ggplot2::unit(c(.2, -.1, .2, -.1), "cm"))
 plots_with_margin <- lapply(lg, "+", margin)
 arranged_plots <- gridExtra::arrangeGrob(grobs = plots_with_margin, ncol = 3)
-title_grob <- grid::textGrob("Heritage places in the EAMENA database", gp = grid::gpar(fontsize = 20, fontface = "bold"))
+title_grob <- grid::textGrob("Heritage places in the EAMENA database by years", gp = grid::gpar(fontsize = 20, fontface = "bold"))
 subtitle_grob <- grid::textGrob(paste0("n = ", nrow(sf_df)), gp = grid::gpar(fontsize = 16))
 final_plot <- gridExtra::grid.arrange(
   arranged_plots,

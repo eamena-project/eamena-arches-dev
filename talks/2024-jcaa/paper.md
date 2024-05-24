@@ -12,7 +12,9 @@ The EAMENA project (Endangered Archaeology in Middle East and North Africa) has 
 The EAMENA project starts with the destruction of Palmyra in 2016 by ISIS. 
 
 <br>
+
 ![alt text](image-1.png)
+
 <em> Screenshot of the ERD of heritages places (detail) showing some of possible values for the field, or node 'Theart type'. On the bottom-left corner: photograph of the the destruction of the temple of Baal in Plamyra by ISIS. The complete ERD can be found here: https://colab.research.google.com/github/eamena-project/eamena-data/blob/main/reference-data/concepts/heritage_places/concepts_images_graph.ipynb</em>
 <br>
 

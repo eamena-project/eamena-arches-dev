@@ -7,7 +7,7 @@ d <- hash::hash()
 source("C:/Rprojects/eamena-arches-dev/credentials/pg_credentials.R") # the Pg connection (hidden pwd)
 
 # return the UUID of the Actors
-nbmax <- 50
+nbmax <- 250
 sqll <- stringr::str_interp("
 SELECT
 tiledata -> '34cfea8a-c2c0-11ea-9026-02e7594ce0a0' -> 0 ->> 'resourceId' AS AssInvestUUID,

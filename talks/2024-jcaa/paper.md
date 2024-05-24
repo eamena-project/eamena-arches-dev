@@ -3,13 +3,14 @@
 
 ## Introduction
 
-Archaeological objects, like a cultural heritage site, are always context-based and at the cross-road of many dimensions: spatial, temporal, typologic, etc. Such contexts are highly multi-scalar (from the site to the use-wear, passing by the "monument") and multidisciplinar (from aDNA to climate data, passing by 'chaine operatoire') but has also to deal with uncertainity, metadata (ex: bibliographic references) and paradata (ex: information of the project framework). Pooling so many heterogeneous data together in a way that this data be easily findable, navigable and editable is a complex process. 
-Information system ...
-The EAMENA project (Endangered Archaeology in Middle East and North Africa) has build its information system on the top of the NoSQL Arches IT stack. This paper aims to present how a work/framework around EAMENA is made available by the IT chooses by Arches and how a collaborative development enhance to reusability of the archaeological data and methods. 
+In archaeology such as any scientific field, reusability (and sometimes reproductibility) is the ultimate goal of the FAIR policies and the main reason of the DMP. With the 3rd revolution in Archaeology [^9] as expertise of archaeologists has significantly developed with the advent of information sciences, aDNA, radiocarbon, etc., it is likely a single archaeological project cannot exploit the full potential of the data it has produced. Therefore there is a need to make its data reusable to produce serendipity. 
+Archaeological objects, such as a ceramic or a cultural areas, are always context-based and at the cross-road of many dimensions: spatial, temporal, typologic, etc. Such objects are highly multi-scalar (from the site to the use-wear, passing by the "monument") and multidisciplinar (from aDNA to climate data, passing by 'chaine operatoire') but has also to deal with uncertainity, metadata (ex: bibliographic references) and paradata (ex: information of the project framework). Pooling so many heterogeneous data together in a way that this data be easily findable, navigable and editable is a complex process. Making such data reusable is a real challenge.
+Information systems such as databases for being to broad (large scope, small resoultion), or at the opposite too specialised (small scope, high resoultion), necessarly limit the capacity of capture the full potential of the information.
+We present here an information system, EAMENA, built on the top of a open-source geoweb semantic-based platform, Arches. This paper aims to present how a work/framework around EAMENA is made available by the IT chooses by Arches and how a collaborative development enhance to reusability of the archaeological data and methods. 
 
 ## The EAMENA project background
 
-The EAMENA project starts with the destruction of Palmyra in 2016 by ISIS. 
+The EAMENA project (Endangered Archaeology in Middle East and North Africa) starts with the destruction of Palmyra in 2016 by ISIS. 
 
 <br>
 
@@ -21,7 +22,13 @@ The EAMENA project starts with the destruction of Palmyra in 2016 by ISIS.
 
 The purpose of the project was a comprehensive mapping of the endangered inammovible cultural heritage in the Arabic speaking region, from Mauritania to Iran (extended in 2023 to Afghanistan) though remote sensing. Precisely, the objectives was to identify threats and causes of disturbances (Agricultural, Urbanist, etc.) over cultural heritage and archaeological sites in the Middle East and North Africa (MENA) region, namely Heritage Places.
 
-![](hps.png)
+<br>
+
+![alt text](hps.png)
+
+<em> Georgahical scope of the EAMENA project, from Mauritania to Afghanistan with the number of heritage places created by years. </em>
+<br>
+
 
 **Remote sensing** through satellite imagery offers three main insights: (i) since the MENA region has almost no forest cover, a large part of the built heritage is visible on the photographs, (ii) a significant number of heritage places are located in desertic remote areas that can be hardly accessed by land, (iii) the MENA region is regularly politically shattered and some areas remains unsecure for scholars to go on the ground. 
 The information provided by the project aims to be released to a general audience, to scholars, but also to inform national authorities. Data input comes from trained landscape archaeologists from our universities (Oxford, Leicester, Durham), and from our MENA colleagues. The data entry methodology is supported by a large body of training material (YouTube videos, MOOC, PDF documents) have been made publically available and thanks to the Cultural Protection Fund delivered by the British Council, numerous in-person and remote trainings have been delivered to our MENA colleagues (REF). 
@@ -32,7 +39,7 @@ The systematic remote sensing assessment, with contributions coming from XXX per
 
 ### Arches
 
-Arches is an open-source geoweb semantic-based information purpose-built platform for cultural heritage management created by the GCI and the WMF. It is a graph database where nodes composes the table-like fields (called 'resource models' in Arches, or 'graphs') and have semamtic relation relationships, using the CIDOC-CRM by default. Arches key features are its PostGRES database, one of the top five database management system (DBMS) with an increasing popularity[^3], among the open source software (OSS), it is the closest to the Oracle the world most popular DBMS; its logics based on Python, the world-wide most used programming language[^2] and JavaScript object notation (JSON-LD, GeoJSON, Postgres JSONB type) the current standard to exchange data over the web. Arches lies also on mature technologies (Django web-application framework, Apache server among other), and comes with various built-in iso-standards (CIDOC-CRM, Dublin Core, SKOS, IIIF, EDTF, WGS84/OGC[^4]) and semantic web technologies (XML, RDF, etc.). From the version 7.3, Arches supports internationalisation (i18) and is currently located (l10n) in 10 different languages[^5]. From the version 7.5, Arches support the so-called Arches application, Python package aligned with Django standards that allow fine-tuning of possibly any kind of workflow.Arches open-source and cutting-edge IT stack offers many improvements possibilities. Among the upcoming add-ons (version 8, scheduled in Dec 2024) one can mention the Lingo Arches application allowing you to manage reference data (vocabularies, thesauries, ontologies). Arches-based platform is currently employed at the national level for managing the National Heritage List for England (Historic England) and by many University-based project. 
+Arches is an open-source geoweb semantic-based information purpose-built platform for cultural heritage management created by the GCI and the WMF. It is a NoSQL graph database where nodes composes the table-like fields (called 'resource models' in Arches, or 'graphs') and have semamtic relation relationships, using the CIDOC-CRM by default. Arches is an IT stack where the key features are: its PostGRES database, one of the top five database management system (DBMS) with an increasing popularity[^3], among the open source software (OSS), it is the closest to the Oracle the world most popular DBMS; its logics based on Python, the world-wide most used programming language[^2] and JavaScript object notation (JSON-LD, GeoJSON, Postgres JSONB type) the current standard to exchange data over the web. Arches lies also on mature technologies (Django web-application framework, Apache server among other), and comes with various built-in iso-standards (CIDOC-CRM, Dublin Core, SKOS, IIIF, EDTF, WGS84/OGC[^4]) and semantic web technologies (XML, RDF, etc.). From the version 7.3, Arches supports internationalisation (i18) and is currently located (l10n) in 10 different languages[^5]. From the version 7.5, Arches support the so-called Arches application, Python package aligned with Django standards that allow fine-tuning of possibly any kind of workflow.Arches open-source and cutting-edge IT stack offers many improvements possibilities. Among the upcoming add-ons (version 8, scheduled in Dec 2024) one can mention the Lingo Arches application allowing you to manage reference data (vocabularies, thesauries, ontologies). Arches-based platform is currently employed at the national level for managing the National Heritage List for England (Historic England) and by many University-based project. 
 
 <br>
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/arches-ea-stack.png" width="500px">
@@ -42,12 +49,45 @@ Arches is an open-source geoweb semantic-based information purpose-built platfor
 
 ### EAMENA 
 
-EAMENA database (currently on Arches v7.3) counts some 215,000 heritage places among other resource models (Person/Organisation, Information Resources, etc., see REF) for a total of more than 380,000 records. 
+EAMENA database (currently on Arches v7.3) counts some 215,000 heritage places among other resource models (Person/Organisation, Information Resources, etc., see REF) for a total of more than 380,000 records. Its reference data, resource models and vocabularies, have been made public on the EAMENA GitHub in a form of an Arches package[^10]. As mentioned the EAMENA platform doesn't behave like a GIS that will allow any one to create a publishable map from a simple or advanced query. That is why, alonside with the development of the database, we created tools in the form of computer script to curate its data: preferentially with Python for the backend (data management) and R for a frontend (data anlysis). The `emenaR` package, programmed in R -- the scripting language the most used by archaeologists (REF) -- offers a series of functions to query the datastet. Python scripting has been mainly maintained in Jupyter Notebooks, hosted on the project GitHUb and mirrored on Google Colab. We can illustrate this workflow with the so-called 'Sistan dataset' published recently[^11]. This dataset was exported from the database to the 'eamena' Zenodo community using the `citation generator` plugin currently hosted in a Jupyter Notebook[^12]. The Sistan GeoJSON file can be retrieved and analysed with `emenaR` package, for example with the `geojson_map()` function
 
-EAMENA is the oldest university-based project grounded on Arches, in comparison to sibling projects (MAHSA and MAEASaM at the University of Cambridge; CAAL at the University of London; MAPSS at the Max Planck Institute, etc.[^8]). As so, it gathered more experiences and has a leading role in working to make this projects interoperable for exemple by sharing the reference data of our projects (ontologies, data models, and thesauri in XML and JSON files) through a common GitHub organization (https://github.com/achp-project).
+```R
+# creates one map for each Damage Extent Type value
+map.name <- "sistan_zenodo"
+all.g <- geojson_map(map.name = map.name,
+                     field.names = c("Damage Extent Type"),
+                     geojson.path = "https://doi.org/10.5281/zenodo.10375902",
+                     max.maps = 6,
+                     hp.color = "black",
+                     hp.color.bck = "grey",
+                     hp.size = 1.5)
+# and export as a PNG file
+margin <- ggplot2::theme(plot.margin = ggplot2::unit(c(0.2, 0.2, 0.2, 0.2), "cm"))
+ggplot2::ggsave(file = paste0("path/to/folder/", map.name, ".png"),
+                gridExtra::arrangeGrob(
+                  top = grid::textGrob("Damage Extent Type", gp = grid::gpar(fontsize = 14)),
+                  grobs = lapply(all.g, "+", margin), ncol = 3),
+                width = 18,
+                height = 12)
+```
+
+<br>
+<img src="sistan_zenodo.png" width="500px">
+<em> The Arches software stack </em>
+<br>
 
 
+EAMENA contribution to Arches (https://github.com/archesproject/arches) are mainly the localisation of Django messages in Arabic (`ar`) and French (`fr`) with an upcoming Central Kurdish (`cbk`)
 ... 
+
+
+## Reusability
+
+
+
+EAMENA is the oldest university-based project grounded on Arches, in comparison to sibling projects (MAHSA and MAEASaM at the University of Cambridge; CAAL at the University of London; MAPSS at the Max Planck Institute, etc.[^8]). As so, it gathered more experiences and has a leading role in working to make this projects interoperable for exemple by sharing the reference data of our projects (ontologies, data models, and thesauri in XML and JSON files) through a common GitHub organization (https://github.com/achp-project). EAMENA will be also one of the first Arches-based project to be warped-up with an expected end of its funding  by 2027. EAMENA is the oldest university-based project grounded on Arches, this situation leads directly to face the sustainability of the database over the long term.
+
+### Western routes for Middle Eastern data
 
 
 
@@ -61,7 +101,7 @@ EAMENA is the oldest university-based project grounded on Arches, in comparison 
 
 
 **Arches** ~ **EAMENA** .
-**EAMENA** ~ **Arches** by providing the localisation in Arabic (`ar`), French (`fr`) and Central Kurdish (`cbk`).... The `citation generator` plugin was designed to help non-Western EAMENA contributors have a simple way to publish their research in Western peer-reviewed journals by following a path starting with data entry, Zenodo repository, LLM ~ data paper models, PCI recommendation and finally, publication of data paper and research paper.
+**EAMENA** ~ **Arches** by providing the and .... The `citation generator` plugin was designed to help non-Western EAMENA contributors have a simple way to publish their research in Western peer-reviewed journals by following a path starting with data entry, Zenodo repository, LLM ~ data paper models, PCI recommendation and finally, publication of data paper and research paper.
 **EAMENA**. 
 
 ## Case Study
@@ -69,8 +109,10 @@ EAMENA is the oldest university-based project grounded on Arches, in comparison 
 
 The EMANEA Search URL https://tinyurl.com/eamena-sistan [URL shortener] is the Sistan dataset published as a datapaper an hosted on Zenodo (REF). The dataset can been interoperate for example by [Python Jupyter NB](https://github.com/eamena-project/eamena-arches-dev/blob/main/talks/2024-jcaa/read_zenodo.ipynb) hosted on GitHub and displayed on Google Colab. 
 
-As already mentioned, remote sensing assessment has been the privilegied methodology, it can lead to a lot of uncertainties on the identification of sites (That's why EAMENA use conventionaly the term of heritage place instead of site), obviously not its spatial location (where) but more for its function (what) and chronology (when). These three fondemental dimensions of a phenomena [^1] are keys to work on historical process: the graph structure of EAMENA allows the recording of multiple interpretations for the same resource at the field level. For example, a heritage place can have two different geometries (a point for its geometric centre and a polygon for its perimeter or a line for its path) or different archaeological interpretations with different levels of confidence made by two or more contributors. 
-The `emenaR` package, programmed in R -- the scripting language the most used by archaeologists (REF) -- offers a series of functions to query the datastet. 
+As already mentioned, remote sensing assessment has been the privilegied methodology, it can lead to a lot of uncertainties on the identification of sites (That's why EAMENA use conventionaly the term of heritage place instead of site), obviously not its spatial location (where) but more for its function (what) and chronology (when). The graph structure of the database allows the recording of multiple interpretations for the same resource at the field level. For example, a heritage place can have two different geometries (a point for its geometric centre and a polygon for its perimeter or a line for its path) or different archaeological interpretations with different levels of confidence made by two or more contributors
+
+ These  are keys to work on historical process: the graph structure of EAMENA allows the recording of multiple interpretations for the same resource at the field level. For example, a heritage place can have two different geometries (a point for its geometric centre and a polygon for its perimeter or a line for its path) or different archaeological interpretations with different levels of confidence made by two or more contributors. 
+
  
 
 The EAMENA general-purposed typology can be modified to cover specifictions of HP without compromising the entire data structure. Branches / Graph.
@@ -126,6 +168,8 @@ both  , and because of
 
 ML EAMENA for site detection, change detection, etc.
 
+to mention only the three fondemental dimensions of a phenomena (whe) [^1]
+
 ## Footnotes
 
 [^1]: Peuquet, D. J. (1994). It's about time: A conceptual framework for the representation of temporal dynamics in geographic information systems. Annals of the Association of american Geographers, 84(3), 441-461
@@ -136,3 +180,7 @@ ML EAMENA for site detection, change detection, etc.
 [^6]: Fradley, M., Simi, F., & Guagnin, M. (2022). Following the herds? A new distribution of hunting kites in Southwest Asia. The Holocene, 32(11), 1160-1172. https://doi.org/10.1177/09596836221114290
 [^7]: Fradley, M., Wilson, A., Finlayson, B., & Bewley, R. (2023). A lost campaign? New evidence of Roman temporary camps in northern Arabia. Antiquity, 97(393), e15. doi:10.15184/aqy.2023.50
 [^8]: MAHSA:  ; MAEASaM: ; CAAL: ; MAPSS: ;
+[^9]; Kristiansen, K. (2014). Towards a new paradigm? The third science revolution and its possible consequences in archaeology. Current Swedish Archaeology, 22(1), 11-34.
+[^10]: EAMENA Arches package, URL: https://github.com/eamena-project/eamena, Acceded the 01/06/2024. An Arches "package" is an external container for database definitions (graphs, concept schemes), custom extensions (including functions, widgets, datatypes) and even data (resources). Packages are installed into projects, and can be used to share schema between installations (see the Arches documentation, https://arches.readthedocs.io/en/stable/installing/installation/#load-a-package, Acceded the 01/06/2024)
+[^11]: Rouhani, B., Huet, T. (2024). Historical Landscape of Sistan in Iran and Afghanistan: EAMENA Dataset for Assessing Environmental Impact on Cultural Heritage. Journal of Open Archaeology Data, 12(), 3. https://doi.org/10.5334/joad.123
+[^12]: https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/citation/citation_generator.ipynb, Acceded the 01/06/2024.

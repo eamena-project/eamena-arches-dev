@@ -1,5 +1,8 @@
+# unloadNamespace('eamenaR')
+devtools::install_github("eamena-project/eamenaR")
+library(eamenaR)
+
 # Read a Zenodo file
-# works with geojson_map_1()
 map.name <- "sistan_zenodo"
 all.g <- geojson_map(map.name = map.name,
                      field.names = c("Damage Extent Type"),
@@ -15,3 +18,6 @@ ggplot2::ggsave(file = paste0("C:/Rprojects/eamena-arches-dev/talks/2024-jcaa/",
                   grobs = lapply(all.g, "+", margin), ncol = 3),
                 width = 18,
                 height = 12)
+geojson_stat(stat.name = "overall_cond",
+             stat = "stats",
+             field.names = c("Overall Condition State Type"))

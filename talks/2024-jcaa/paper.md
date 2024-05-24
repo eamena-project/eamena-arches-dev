@@ -73,12 +73,18 @@ ggplot2::ggsave(file = paste0("path/to/folder/", map.name, ".png"),
 
 <br>
 <img src="sistan_zenodo.png" width="500px">
-<em> The Arches software stack </em>
+<em> Damage Extent Type extents using the 'Sistan dataset' hosted on Zenodo using the eamenaR function geojson_map() </em>
 <br>
 
+As mentioned databases controled vocabularies are necessarly limited to a certain number of values which constitute a pragmatic option. When specialist want to go deeper in the specification of the objects they are assessing, they have to extend the descriptive vocabulary to capture the specificities of their studied object. Arches offers this option, based on graphs, where a 'branch' can be added to capture the specificity. For example, condisering the new desert kites discovered, the author specifies various types of kites[^6]. 
 
-EAMENA contribution to Arches (https://github.com/archesproject/arches) are mainly the localisation of Django messages in Arabic (`ar`) and French (`fr`) with an upcoming Central Kurdish (`cbk`)
-... 
+<br>
+<img src="image-2.png" width="500px">
+<em> Extension of the EAMENA Heritage Place resource model, or graph, with a new 'branch' to capture the different types of desert kites</em>
+<br>
+
+The 'branch' created has the same structure as the Heritage Place resource model[^13]. As such Arches resource models can be seen as an aggregation of branches that can be also shared between different projects
+
 
 
 ## Reusability
@@ -170,6 +176,9 @@ ML EAMENA for site detection, change detection, etc.
 
 to mention only the three fondemental dimensions of a phenomena (whe) [^1]
 
+EAMENA contribution to Arches (https://github.com/archesproject/arches) are mainly the localisation of Django messages in Arabic (`ar`) and French (`fr`) with an upcoming Central Kurdish (`cbk`)
+
+
 ## Footnotes
 
 [^1]: Peuquet, D. J. (1994). It's about time: A conceptual framework for the representation of temporal dynamics in geographic information systems. Annals of the Association of american Geographers, 84(3), 441-461
@@ -184,3 +193,4 @@ to mention only the three fondemental dimensions of a phenomena (whe) [^1]
 [^10]: EAMENA Arches package, URL: https://github.com/eamena-project/eamena, Acceded the 01/06/2024. An Arches "package" is an external container for database definitions (graphs, concept schemes), custom extensions (including functions, widgets, datatypes) and even data (resources). Packages are installed into projects, and can be used to share schema between installations (see the Arches documentation, https://arches.readthedocs.io/en/stable/installing/installation/#load-a-package, Acceded the 01/06/2024)
 [^11]: Rouhani, B., Huet, T. (2024). Historical Landscape of Sistan in Iran and Afghanistan: EAMENA Dataset for Assessing Environmental Impact on Cultural Heritage. Journal of Open Archaeology Data, 12(), 3. https://doi.org/10.5334/joad.123
 [^12]: https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/citation/citation_generator.ipynb, Acceded the 01/06/2024.
+[^13]: https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/ea.train/data/reference_data/rm/hp/Sub-typology-branch.json, Acceded the 01/06/2024. See also the Jupyter Notebook illustrating the workflow: https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/ea.train/data/reference_data/rm/hp/erd-branch/EAtrain_erd_branch.ipynb, Acceded the 01/06/2024.

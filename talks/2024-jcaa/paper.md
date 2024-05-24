@@ -9,13 +9,14 @@ The EAMENA project (Endangered Archaeology in Middle East and North Africa) has 
 
 ## The EAMENA project background
 
-EAMENA project starts with the destruction of Palmyra in 2016 by ISIS. The purpose of the project was to map extansively the endangered inammovible cultural heritage in the Arabic speaking region, from Mauritania to Irak, identifying threats and causes of disturbances (Agricultural, Urbanist, etc.). 
+EAMENA project starts with the destruction of Palmyra in 2016 by ISIS. The purpose of the project was a comprehensive mapping of the endangered inammovible cultural heritage in the Arabic speaking region, from Mauritania to Iran (extended in 2023 to Afghanistan) though remote sensing. Precisely, the objectives was to identify pre identifying threats and causes of disturbances (Agricultural, Urbanist, etc.) over cultural heritage and archaeological sites, namely Heritage Places.
 
 ![](hps.png)
 
-This information aims to be released to a general audience, but also to alert national authorities on their endangered heritage. To cover the geographical scope of the project, and because of the difficulties to access field work (either for being in desertic remote areas and because of security issues) remote sensing has been the privilegied method to assess this cultural heritage (REF). 
-Cultural heritage assessment follows a methodology published over numerous support (YouTube videos, MOOC, PDF documents), along with numerous in-person and online training given in the MENA region. 
-The systematic remote sensing assessment has led to the recording of some > 200,000 heritage places, which some have already been published with a very different degree of agrrement with the international standards, but most of them are original heritage place that only EAMENA database gives access to. To highlight only these last years, EAMENA comprehensive surveys has led to the discovery of **354** new 'desert kites' hunting structures[^6] in northern Arabia and at least **3** roman forts in western Jordan[^7]. The latter dataset gathers heritage places distant for more than 80 km in straight line from any inhabited places. 
+Remote sensing through satellite imagery offers three main insights: (i) since the MENA region has almost no forest cover, a large part of the built heritage is visible on the photographs, (ii) a significant number of heritage places are located desertic remote areas that can be hardly accessed by land, (iii) the MENA region is regularly politically shattered and some areas remains unsecure for scholars. 
+The information provided by the project aims to be released to a general audience, to scholars, but also to inform national authorities. Data input comes from trained landscape archaeologists from our universities (Oxford, Leicester, Durham), and from our MENA colleagues. Its methodology is supported by a large body of training material (YouTube videos, MOOC, PDF documents) have been made publically available and thanks to the Cultural Protection Fund delivered by the British Council, numerous in-person and remote trainings have been delivered to our MENA colleagues (REF). 
+The systematic remote sensing assessment, with contributions coming from XXX persons, has led to the recording of some > 200,000 heritage places.
+ which some have already been published with a very different degree of agrrement with the international standards, but most of them are original heritage place that only EAMENA database gives access to. To highlight only these last years, EAMENA comprehensive surveys has led to the discovery of **354** new 'desert kites' hunting structures[^6] in northern Arabia and at least **3** roman forts in western Jordan[^7]. The latter dataset gathers heritage places distant for more than 80 km in straight line from any inhabited places. 
 
 ## IT tools
 
@@ -109,6 +110,9 @@ And we can also mention the upcoming DISCO (aka, Arches for Science) which focus
 A region largely marked by large desertic remote areas but also closed borders. 
 EAMENA Arches-based database, just like the entire EAMENA project has been largely founded by the Arcadia charitable fund
 
+both  , and because of
+
+ML EAMENA for site detection, change detection, etc.
 
 ## Footnotes
 

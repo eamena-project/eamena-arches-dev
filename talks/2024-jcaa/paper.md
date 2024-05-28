@@ -4,19 +4,25 @@
 
 ## Introduction
 
-In Archaeology such as any scientific field, reusability (and sometimes reproductibility) is the ultimate goal of the FAIR policies and the main reason of the DMP. With the 3rd revolution in Archaeology [^9] as expertise of archaeologists has significantly developed with the advent of information sciences, aDNA, radiocarbon, etc., it is likely a single archaeological project cannot exploit the full potential of the data it has produced. Therefore there is a need to make its data reusable to produce serendipity. 
+Reusability (and sometimes reproductibility) is the ultimate goal of the FAIR policies and the main reason of the DMP. Among the social sciences, Archaeology, to be at the cross-road of so many scientific fields, With the 3rd revolution in Archaeology [^9] as expertise of archaeologists has significantly developed with the advent of information sciences, aDNA, radiocarbon, etc., it is likely a single archaeological project cannot exploit the full potential of the data it has produced. Therefore there is a need to make its data reusable to produce serendipity. 
 Archaeological objects, such as a ceramic or a cultural areas, are always context-based and at the cross-road of many dimensions: spatial, temporal, typologic, etc. Such objects are highly multi-scalar (from the site to the use-wear, passing by the "monument") and multidisciplinar (from aDNA to climate data, passing by 'chaine operatoire') but has also to deal with uncertainity, metadata (ex: bibliographic references) and paradata (ex: information of the project framework). Pooling so many heterogeneous data together in a way that this data be easily findable, navigable and editable is a complex process. Making such data reusable is a real challenge.
 Information systems such as databases for being to broad (large scope, small resoultion), or at the opposite too specialised (small scope, high resoultion), necessarly limit the capacity of capture the full potential of the information.
-We present here an information system, EAMENA, built on the top of a open-source geoweb semantic-based platform, Arches. This paper aims to present how a work/framework around EAMENA is made available by the IT chooses by Arches and how a collaborative development enhance to reusability of the archaeological data and methods. 
+We present here ongoing developments conducted under the EAMENA project around the IT stack Arches, an open-source geoweb semantic-based platform. Our aim is to present how IT developments can enhance both the reusability of pieces of software (i.e methods) and archaeological data. 
 
 ## Arches
 
-Arches is an open-source geoweb semantic-based information purpose-built platform for cultural heritage management created by the GCI and the WMF. It is a NoSQL graph database where nodes composes the table-like fields (called 'resource models' in Arches, or 'graphs') and have semamtic relation relationships, using the CIDOC-CRM by default. Arches is an IT stack where the key features are: its PostGRES database, one of the top five database management system (DBMS) with an increasing popularity[^3], among the open source software (OSS), it is the closest to the Oracle the world most popular DBMS; its logics based on Python, the world-wide most used programming language[^2] and JavaScript object notation (JSON-LD, GeoJSON, Postgres JSONB type) the current standard to exchange data over the web. Arches lies also on mature technologies (Django web-application framework, Apache server among other), and comes with various built-in iso-standards (CIDOC-CRM, Dublin Core, SKOS, IIIF, EDTF, WGS84/OGC[^4]) and semantic web technologies (XML, RDF, etc.). From the version 7.3, Arches supports internationalisation (i18) and is currently located (l10n) in 10 different languages[^5]. From the version 7.5, Arches support the so-called Arches application, Python package aligned with Django standards that allow fine-tuning of possibly any kind of workflow.Arches open-source and cutting-edge IT stack offers many improvements possibilities. Among the upcoming add-ons (version 8, scheduled in Dec 2024) one can mention the Lingo Arches application allowing you to manage reference data (vocabularies, thesauries, ontologies). Arches-based platform is currently employed at the national level for managing the National Heritage List for England (Historic England) and by many University-based project. 
+Arches is an open-source geoweb semantic-based information purpose-built platform for cultural heritage management created by the *Getty Conservation Institute* and the *World Monument Fund*. It is a NoSQL graph database where nodes composes the table-like fields (called 'resource models' in Arches, or 'graphs') and have semamtic relation relationships, using the CIDOC-CRM by default. Arches is an IT stack based on mature and state-of-art technologies. Its key features are: 
+- a PostgreSQL database, one of the top five database management system (DBMS) with an increasing popularity[^3], among the open source software (OSS), it is the closest to the Oracle the world most popular DBMS; 
+- logics based on Python programming language, the world-wide most used [^2];
+- Django web-application framework to manage interactions between the server and the web browser
+- data objects based on, or extending, JSON (JSON-LD, GeoJSON, Postgres JSONB type) the current standard to exchange data over the web
 
 <br>
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/arches-ea-stack.png" width="500px">
 <em> The Arches software stack </em>
 <br>
+
+Arches also comes with various built-in iso-standards (CIDOC-CRM, Dublin Core, SKOS, IIIF, EDTF, WGS84/OGC[^4]) and semantic web technologies (XML, RDF, etc.). From the version 7.3, Arches supports internationalisation (i18) and is currently located (l10n) in 10 different languages[^5]. From the version 7.5, Arches support the so-called 'Arches application', Python packages aligned with Django standards that allow fine-tuning of possibly any kind of workflow. Among the upcoming add-ons (version 8, scheduled in Dec 2024) one can mention the Lingo Arches application allowing you to manage reference data (vocabularies, thesauries, ontologies). 
 
 
 ## EAMENA 
@@ -33,7 +39,7 @@ The EAMENA project (Endangered Archaeology in Middle East and North Africa) star
 <br>
 
 
-The purpose of the project was a comprehensive mapping of the endangered inammovible cultural heritage in the Arabic speaking region, from Mauritania to Iran (extended in 2023 to Afghanistan) though remote sensing. Precisely, the objectives was to identify threats and causes of disturbances (Agricultural, Urbanist, etc.) over cultural heritage and archaeological sites in the Middle East and North Africa (MENA) region, namely Heritage Places.
+The purpose of the project was a comprehensive mapping of the endangered inammovible cultural heritage in the Arabic speaking region (Middle East and North Africa, or MENA region), from Mauritania to Iran (extended in 2023 to Afghanistan) though remote sensing. Precisely, the objectives was to identify threats and causes of disturbances (Agricultural, Urbanist, etc.) over cultural heritage and archaeological sites in the MENA region, namely Heritage Places.
 
 <br>
 
@@ -120,7 +126,7 @@ As already mentioned, remote sensing assessment has been the privilegied methodo
 
  These  are keys to work on historical process: the graph structure of EAMENA allows the recording of multiple interpretations for the same resource at the field level. For example, a heritage place can have two different geometries (a point for its geometric centre and a polygon for its perimeter or a line for its path) or different archaeological interpretations with different levels of confidence made by two or more contributors. 
 
- 
+ Arches-based platform is currently employed at the national level for managing the National Heritage List for England (Historic England) and by many University-based project. 
 
 The EAMENA general-purposed typology can be modified to cover specifictions of HP without compromising the entire data structure. Branches / Graph.
 

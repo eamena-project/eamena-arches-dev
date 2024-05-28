@@ -205,7 +205,7 @@ WHERE ids.ri = coords.ri AND grd.ri = coords.ri AND grd.ri = ids.ri
 
 ## HP date of creation
 
-List the HP created between 2022-12-31 and 2024-01-01 by member of the EAMENA Staff
+List the HP created between `2022-12-31` and `2024-01-01` by member of the `EAMENA Project Staff`
 
 ```SQL
 SELECT 

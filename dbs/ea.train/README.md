@@ -19,8 +19,6 @@ image caption: https://github.com/eamena-project/eamena-arches-dev/blob/da9d4efc
 
 ### Links
 
-<img>
-
 <p align="center">
   <img alt="img-name" src="../../www/arches-v5-landingpage-1.png" width="600">
   <br>

@@ -80,7 +80,7 @@ As mentioned databases controled vocabularies are necessarly limited to a certai
 
 <br>
 <img src="image-2.png" width="500px">
-<em> Extension of the EAMENA Heritage Place resource model, or graph, with a new 'branch' to capture the different types of desert kites</em>
+<em> Extension of the EAMENA Heritage Place resource model, or graph, with a new 'branch' to capture the different types of desert kites. The photographs represent possible values and are not part of the resource model but controled values (drop-down menus).</em>
 <br>
 
 The 'branch' created has the same structure as the Heritage Place resource model[^13]. As such Arches resource models can be seen as an aggregation of branches that can be also shared between different projects
@@ -189,7 +189,7 @@ EAMENA contribution to Arches (https://github.com/archesproject/arches) are main
 [^6]: Fradley, M., Simi, F., & Guagnin, M. (2022). Following the herds? A new distribution of hunting kites in Southwest Asia. The Holocene, 32(11), 1160-1172. https://doi.org/10.1177/09596836221114290
 [^7]: Fradley, M., Wilson, A., Finlayson, B., & Bewley, R. (2023). A lost campaign? New evidence of Roman temporary camps in northern Arabia. Antiquity, 97(393), e15. doi:10.15184/aqy.2023.50
 [^8]: MAHSA:  ; MAEASaM: ; CAAL: ; MAPSS: ;
-[^9]; Kristiansen, K. (2014). Towards a new paradigm? The third science revolution and its possible consequences in archaeology. Current Swedish Archaeology, 22(1), 11-34.
+[^9]: Kristiansen, K. (2014). Towards a new paradigm? The third science revolution and its possible consequences in archaeology. Current Swedish Archaeology, 22(1), 11-34.
 [^10]: EAMENA Arches package, URL: https://github.com/eamena-project/eamena, Acceded the 01/06/2024. An Arches "package" is an external container for database definitions (graphs, concept schemes), custom extensions (including functions, widgets, datatypes) and even data (resources). Packages are installed into projects, and can be used to share schema between installations (see the Arches documentation, https://arches.readthedocs.io/en/stable/installing/installation/#load-a-package, Acceded the 01/06/2024)
 [^11]: Rouhani, B., Huet, T. (2024). Historical Landscape of Sistan in Iran and Afghanistan: EAMENA Dataset for Assessing Environmental Impact on Cultural Heritage. Journal of Open Archaeology Data, 12(), 3. https://doi.org/10.5334/joad.123
 [^12]: https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/citation/citation_generator.ipynb, Acceded the 01/06/2024.

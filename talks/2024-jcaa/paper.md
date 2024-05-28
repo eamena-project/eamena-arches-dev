@@ -1,14 +1,27 @@
-# Information systems for cultural heritage and archaeological data management. The example of the EAMENA a framework deployed on the top of Arches 
+# Building on the top of Arches. Information systems for cultural heritage and archaeological data management and the example of the EAMENA
+> Information systems for cultural heritage and archaeological data management. The example of the EAMENA a framework deployed on the top of Arches 
 > https://github.com/eamena-project/eamena-arches-dev/blob/main/talks/2024-jcaa/paper.md
 
 ## Introduction
 
-In archaeology such as any scientific field, reusability (and sometimes reproductibility) is the ultimate goal of the FAIR policies and the main reason of the DMP. With the 3rd revolution in Archaeology [^9] as expertise of archaeologists has significantly developed with the advent of information sciences, aDNA, radiocarbon, etc., it is likely a single archaeological project cannot exploit the full potential of the data it has produced. Therefore there is a need to make its data reusable to produce serendipity. 
+In Archaeology such as any scientific field, reusability (and sometimes reproductibility) is the ultimate goal of the FAIR policies and the main reason of the DMP. With the 3rd revolution in Archaeology [^9] as expertise of archaeologists has significantly developed with the advent of information sciences, aDNA, radiocarbon, etc., it is likely a single archaeological project cannot exploit the full potential of the data it has produced. Therefore there is a need to make its data reusable to produce serendipity. 
 Archaeological objects, such as a ceramic or a cultural areas, are always context-based and at the cross-road of many dimensions: spatial, temporal, typologic, etc. Such objects are highly multi-scalar (from the site to the use-wear, passing by the "monument") and multidisciplinar (from aDNA to climate data, passing by 'chaine operatoire') but has also to deal with uncertainity, metadata (ex: bibliographic references) and paradata (ex: information of the project framework). Pooling so many heterogeneous data together in a way that this data be easily findable, navigable and editable is a complex process. Making such data reusable is a real challenge.
 Information systems such as databases for being to broad (large scope, small resoultion), or at the opposite too specialised (small scope, high resoultion), necessarly limit the capacity of capture the full potential of the information.
 We present here an information system, EAMENA, built on the top of a open-source geoweb semantic-based platform, Arches. This paper aims to present how a work/framework around EAMENA is made available by the IT chooses by Arches and how a collaborative development enhance to reusability of the archaeological data and methods. 
 
-## The EAMENA project background
+## Arches
+
+Arches is an open-source geoweb semantic-based information purpose-built platform for cultural heritage management created by the GCI and the WMF. It is a NoSQL graph database where nodes composes the table-like fields (called 'resource models' in Arches, or 'graphs') and have semamtic relation relationships, using the CIDOC-CRM by default. Arches is an IT stack where the key features are: its PostGRES database, one of the top five database management system (DBMS) with an increasing popularity[^3], among the open source software (OSS), it is the closest to the Oracle the world most popular DBMS; its logics based on Python, the world-wide most used programming language[^2] and JavaScript object notation (JSON-LD, GeoJSON, Postgres JSONB type) the current standard to exchange data over the web. Arches lies also on mature technologies (Django web-application framework, Apache server among other), and comes with various built-in iso-standards (CIDOC-CRM, Dublin Core, SKOS, IIIF, EDTF, WGS84/OGC[^4]) and semantic web technologies (XML, RDF, etc.). From the version 7.3, Arches supports internationalisation (i18) and is currently located (l10n) in 10 different languages[^5]. From the version 7.5, Arches support the so-called Arches application, Python package aligned with Django standards that allow fine-tuning of possibly any kind of workflow.Arches open-source and cutting-edge IT stack offers many improvements possibilities. Among the upcoming add-ons (version 8, scheduled in Dec 2024) one can mention the Lingo Arches application allowing you to manage reference data (vocabularies, thesauries, ontologies). Arches-based platform is currently employed at the national level for managing the National Heritage List for England (Historic England) and by many University-based project. 
+
+<br>
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/arches-ea-stack.png" width="500px">
+<em> The Arches software stack </em>
+<br>
+
+
+## EAMENA 
+
+### The project
 
 The EAMENA project (Endangered Archaeology in Middle East and North Africa) starts with the destruction of Palmyra in 2016 by ISIS. 
 
@@ -26,7 +39,7 @@ The purpose of the project was a comprehensive mapping of the endangered inammov
 
 ![alt text](hps.png)
 
-<em> Georgahical scope of the EAMENA project, from Mauritania to Afghanistan with the number of heritage places created by years. </em>
+<em> Georgahical scope of the EAMENA project, from Mauritania to Afghanistan (since xxx) with the number of heritage places created by years. </em>
 <br>
 
 
@@ -35,19 +48,7 @@ The information provided by the project aims to be released to a general audienc
 The systematic remote sensing assessment, with contributions coming from XXX persons, has led to the recording of some > 200,000 heritage places.
  which some have already been published with a very different degree of agrrement with the international standards, but most of them are original heritage place that only EAMENA database gives access to. To highlight only these last years, EAMENA comprehensive surveys has led to the discovery of **354** new 'desert kites' hunting structures[^6] in northern Arabia and at least **3** roman forts in western Jordan[^7]. The latter dataset gathers heritage places distant for more than 80 km in straight line from any inhabited places. 
 
-## IT tools
-
-### Arches
-
-Arches is an open-source geoweb semantic-based information purpose-built platform for cultural heritage management created by the GCI and the WMF. It is a NoSQL graph database where nodes composes the table-like fields (called 'resource models' in Arches, or 'graphs') and have semamtic relation relationships, using the CIDOC-CRM by default. Arches is an IT stack where the key features are: its PostGRES database, one of the top five database management system (DBMS) with an increasing popularity[^3], among the open source software (OSS), it is the closest to the Oracle the world most popular DBMS; its logics based on Python, the world-wide most used programming language[^2] and JavaScript object notation (JSON-LD, GeoJSON, Postgres JSONB type) the current standard to exchange data over the web. Arches lies also on mature technologies (Django web-application framework, Apache server among other), and comes with various built-in iso-standards (CIDOC-CRM, Dublin Core, SKOS, IIIF, EDTF, WGS84/OGC[^4]) and semantic web technologies (XML, RDF, etc.). From the version 7.3, Arches supports internationalisation (i18) and is currently located (l10n) in 10 different languages[^5]. From the version 7.5, Arches support the so-called Arches application, Python package aligned with Django standards that allow fine-tuning of possibly any kind of workflow.Arches open-source and cutting-edge IT stack offers many improvements possibilities. Among the upcoming add-ons (version 8, scheduled in Dec 2024) one can mention the Lingo Arches application allowing you to manage reference data (vocabularies, thesauries, ontologies). Arches-based platform is currently employed at the national level for managing the National Heritage List for England (Historic England) and by many University-based project. 
-
-<br>
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/arches-ea-stack.png" width="500px">
-<em> The Arches software stack </em>
-<br>
-
-
-### EAMENA 
+## IT
 
 EAMENA database (currently on Arches v7.3) counts some 215,000 heritage places among other resource models (Person/Organisation, Information Resources, etc., see REF) for a total of more than 380,000 records. Its reference data, resource models and vocabularies, have been made public on the EAMENA GitHub in a form of an Arches package[^10]. As mentioned the EAMENA platform doesn't behave like a GIS that will allow any one to create a publishable map from a simple or advanced query. That is why, alonside with the development of the database, we created tools in the form of computer script to curate its data: preferentially with Python for the backend (data management) and R for a frontend (data anlysis). The `emenaR` package, programmed in R -- the scripting language the most used by archaeologists (REF) -- offers a series of functions to query the datastet. Python scripting has been mainly maintained in Jupyter Notebooks, hosted on the project GitHUb and mirrored on Google Colab. We can illustrate this workflow with the so-called 'Sistan dataset' published recently[^11]. This dataset was exported from the database to the 'eamena' Zenodo community using the `citation generator` plugin currently hosted in a Jupyter Notebook[^12]. The Sistan GeoJSON file can be retrieved and analysed with `emenaR` package, for example with the `geojson_map()` function
 

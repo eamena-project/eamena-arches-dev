@@ -33,9 +33,9 @@ The EAMENA project (Endangered Archaeology in Middle East and North Africa), led
 
 <br>
 
-![alt text](image-1.png)
+![alt text](image-3.png)
 
-<em> Screenshot of the ERD of heritages places (detail) showing some of possible values for the field, or node 'Theart type'. On the bottom-left corner: photograph of the the destruction of the temple of Baal in Plamyra by ISIS. The complete ERD can be found here: https://colab.research.google.com/github/eamena-project/eamena-data/blob/main/reference-data/concepts/heritage_places/concepts_images_graph.ipynb</em>
+<em> Some of possible values for the field, or node, 'Theart type' in the EAMENA's Heritage Place resource model, or graph. On the top of the images appears the 'Theart type' values (ex: 'Agricultural/Pastoral') in this case: Arches concepts. On the bottom of the images appear their UUID (ex: 767e9467-3bc2-3f71-9427-0ace387bd843). These photograph, and their location in the Entities-Relations Diagram (ERD) can be found here: https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/concepts/EAMENA-erd-concepts.html</em>
 <br>
 
 

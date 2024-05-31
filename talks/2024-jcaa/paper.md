@@ -29,7 +29,7 @@ Arches also comes with various built-in iso-standards (CIDOC-CRM, Dublin Core, S
 
 ### The project
 
-The EAMENA project (Endangered Archaeology in Middle East and North Africa) starts with the destruction of Palmyra in 2016 by ISIS. 
+The EAMENA project (Endangered Archaeology in Middle East and North Africa), led by the University of Oxford in partnership with the universities of Durham and Leicester and funded by Arcadia since 2015. It starts with the destruction of Palmyra in 2016 by ISIS. 
 
 <br>
 
@@ -39,22 +39,25 @@ The EAMENA project (Endangered Archaeology in Middle East and North Africa) star
 <br>
 
 
-The purpose of the project was a comprehensive mapping of the endangered inammovible cultural heritage in the Arabic speaking region (Middle East and North Africa, or MENA region), from Mauritania to Iran (extended in 2023 to Afghanistan) though remote sensing. Precisely, the objectives was to identify threats and causes of disturbances (Agricultural, Urbanist, etc.) over cultural heritage and archaeological sites in the MENA region, namely Heritage Places. The EAMENA project, led by the University of Oxford in partnership with the universities of Durham and Leicester and funded by Arcadia since 2015.
+The purpose of the project was a comprehensive mapping of the endangered inammovible cultural heritage in the Arabic speaking region (Middle East and North Africa, or MENA region), from Mauritania to Iran (extended in 2023 to Afghanistan) though remote sensing. Precisely, the objectives was to identify threats and causes of disturbances (Agricultural, Urbanist, etc.) over cultural heritage and archaeological sites in the MENA region, namely Heritage Places. The information provided by the project aims to be released to a general audience, to scholars, but also to inform national authorities[^17]. 
 
 <br>
 
 ![alt text](hps.png)
 
-<em> Georgahical scope of the EAMENA project, from Mauritania to Afghanistan (since xxx) with the number of heritage places created by years. </em>
+<em> Georgahical scope of the EAMENA project, from Mauritania to Afghanistan (since xxx) with the number of heritage places created by years. EAMENA database (currently on Arches v7.3) counts some 215,000 heritage places among other resource models (Person/Organisation, Information Resources, etc., see REF) for a total of more than 380,000 records.</em>
 <br>
 
-Condisering the very large geographical scope of the project, assessing threats over cultural heritage through remote sensing has been the privilegied method. Remote sensing through offers three main insights: (i) since the MENA region has almost no forest cover, a large part of the built heritage is visible on the photographs, (ii) a significant number of heritage places are located in desertic remote areas that can be hardly accessed by land, (iii) the MENA region is regularly politically shattered and some areas remains unsecure for scholars to go on the ground. Platform like Google Earth offers free access to satellite imagery that can be completed by other image sets such as Sentinel, SPOT, Landsat, etc. (REF). The downsides of the remote sensing are obvious, when documenting an heritage place its spatial information is certain (i.e. its location) while its temporal and typological dimensions are very much uncertain (that's why EAMENA use conventionaly the term of heritage place instead of site). However the database graph structure allows the recording of multiple interpretations for the same resource. That way, a single heritage place can have two different assumptions on its function and dating with in both cases different levels of confidence made by two or more contributors.
-The information provided by the project aims to be released to a general audience, to scholars, but also to inform national authorities (REF Neom Paper). Data input comes from trained landscape archaeologists from our universities (Oxford, Leicester, Durham), and from our MENA colleagues. The data entry methodology is supported by a large body of training material (YouTube videos, MOOC[^14], digital documentation[^15]) have been made publically available and thanks to the Cultural Protection Fund delivered by the British Council, numerous in-person and remote trainings have been delivered to our MENA colleagues (REF). 
+Condisering the very large geographical scope of the project, assessing threats over cultural heritage through remote sensing has been the privilegied method. Remote sensing through offers three main insights: (i) since the MENA region has almost no forest cover, a large part of the built heritage is visible on the photographs, (ii) a significant number of heritage places are located in desertic remote areas that can be hardly accessed by land, (iii) the MENA region is regularly politically shattered and some areas remains unsecure for scholars to go on the ground. Platform like Google Earth offers free access to satellite imagery that can be completed by other image sets such as Sentinel, SPOT, Landsat, etc. or even historical aerial photographs[^16]. The downsides of the remote sensing are obvious, when documenting an heritage place its spatial information is certain (i.e. its location) while its temporal and typological dimensions are very much uncertain: that is what the concept of 'heritage place', more than 'site' is made for. To overcome this issue the database graph structure allows the recording of multiple interpretations for the same resource (here, 'heritage place'). In that way, a single heritage place can have two different assumptions on its function and dating with in both cases different levels of confidence made by two or more contributors.
+The information recorded in EAMENA has an important degree of reliability since it is quite hard to maintain a minimum standardisation when the database recieved contribution from more than 200 contributors and this despite a mature data entry methodology with statement on a minimal data standards [^11] supported by a large body of training material (YouTube videos, MOOC[^14], digital documentation[^15]), numerous in-person and remote trainings have been delivered to our MENA colleagues. This is why the EAMENA team is building IT tools to sample EAMENA sub-dataset carefully selected for being consistent with research question of cultural heritage management objective.
+
+
+
 The systematic remote sensing assessment, with contributions coming from more than 200 contributors, has led to the recording of some > 200,000 heritage places. Behind this figure we find very different types of record quality, some heritage places already published sometimes ith a very different degree of agrrement with the international standards, but most of them are original heritage place that only EAMENA database gives access to. To highlight only these last years, EAMENA comprehensive surveys has led to the discovery of **354** new 'desert kites' hunting structures[^6] in northern Arabia and at least **3** roman forts in western Jordan[^7]. The latter dataset gathers heritage places distant for more than 80 km in straight line from any inhabited places. 
 
 ## IT
 
-EAMENA database (currently on Arches v7.3) counts some 215,000 heritage places among other resource models (Person/Organisation, Information Resources, etc., see REF) for a total of more than 380,000 records. Its reference data, resource models and vocabularies, have been made public on the EAMENA GitHub in a form of an Arches package[^10]. As mentioned the EAMENA platform doesn't behave like a GIS that will allow any one to create a publishable map from a simple or advanced query. That is why, alonside with the development of the database, we created tools in the form of computer script to curate its data: preferentially with Python for the backend (data management) and R for a frontend (data anlysis). We can illustrate this workflow on how integrating IT develepment with the EAMENA database, from data management to data analysis, works by focusing on the so-called 'Sistan dataset' recently published[^11].
+ Its reference data, resource models and vocabularies, have been made public on the EAMENA GitHub in a form of an Arches package[^10]. As mentioned the EAMENA platform doesn't behave like a GIS that will allow any one to create a publishable map from a simple or advanced query. That is why, alonside with the development of the database, we created tools in the form of computer script to curate its data: preferentially with Python for the backend (data management) and R for a frontend (data anlysis). We can illustrate this workflow on how integrating IT develepment with the EAMENA database, from data management to data analysis, works by focusing on the so-called 'Sistan dataset' recently published[^11].
 
 ### Sistan dataset
 
@@ -153,7 +156,14 @@ The EAMENA general-purposed typology can be modified to cover specifictions of H
 ## Conclusion
 
 
+## Acknoledgement
+
+Arcadia
+available and thanks to the Cultural Protection Fund delivered by the British Council
+
 ## aclass
+
+Open access DB
 
 branch created on the CIDOC CRM v6.2
 
@@ -180,6 +190,8 @@ EAMENA, a framework for
 SPARQL endpoint, 
 
 LING: , integrating probably authorative data, such as the PeriodO time-space gazetteer
+
+APAAME archive
 
 And we can also mention the upcoming DISCO (aka, Arches for Science) which focuses on technical art review, includes tools for annotation, material sampling, instrument data retrieval and visualization, and image and data comparison.
 
@@ -214,3 +226,5 @@ EAMENA contribution to Arches (https://github.com/archesproject/arches) are main
 [^13]: https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/ea.train/data/reference_data/rm/hp/Sub-typology-branch.json, Acceded the 01/06/2024. See also the Jupyter Notebook illustrating the workflow: https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/ea.train/data/reference_data/rm/hp/erd-branch/EAtrain_erd_branch.ipynb, Acceded the 01/06/2024.
 [^14]: MOOC 1: https://eamena.org/mooc-1-endangered-archaeology-using-remote-sensing-to-protect-cultural-heritage and MOOC 2: https://eamena.org/mooc2-advanced-archaeological-remote-sensing-site-prospection-landscape-archaeology-and-heritage-pro, Acceded the 01/06/2024. 
 [^15]: https://eamena.org/cpf-training, Acceded the 01/06/2024.
+[^16]; Fradley, M. (2021). British inter-war aerial photogrammetric mapping in the MENA region: archives, access and research potential. Levant, 53(3), 336-346.
+[^17]; Fradley, M., & Gyngell, S. (2022). Landscapes of Mobility and Movement in North-West Arabia: A Remote Sensing Study of the Neom Impact Zone. Land, 11(11), 1941.

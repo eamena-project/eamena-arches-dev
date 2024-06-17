@@ -5,13 +5,13 @@ Miscellaneous and compendium of equivalent queries between Advanced Search and S
 
 * Abrevv.
 
-| Abrevv. | Full name |
-|----------|----------|
-| AS | EAMENA Advanced Search |
-| GS | Grid Squares |
-| HP | Heritage Place |
+| Abrevv.  | Full name              |
+|----------|------------------------|
+| AS       | EAMENA Advanced Search |
+| GS       | Grid Squares           |
+| HP       | Heritage Place         |
 
-* UUID and fiel names
+* UUID and field names
 
 Main correspondances between EAMENA Heritage Places fieldnames and field UUIDs are listed here: https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/mds/mds-template-readonly.tsv
 
@@ -44,7 +44,7 @@ FROM information_schema.table_privileges
 WHERE grantee = 'eamenar_temp'
 ```
 
-## Total number of HP
+## HP total number
 
 * SQL
 
@@ -67,7 +67,7 @@ gives:
 https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&reportlink=false&precision=6&total=368511&resource-type-filter=%5B%7B%22graphid%22%3A%2234cfe98e-c2c0-11ea-9026-02e7594ce0a0%22%2C%22name%22%3A%22Heritage%20Place%22%2C%22inverted%22%3Afalse%7D%5D
 ```
 
-## Total number of IR
+## IR total number
 
 ```SQL
 SELECT COUNT(resourceinstanceid::text) FROM resource_instances
@@ -75,13 +75,41 @@ WHERE graphid::text LIKE '35b99cb7-379a-11ea-9989-06f597a7d5ce'
 ```
 
 where:
-- `35b99cb7-379a-11ea-9989-06f597a7d5ce'` is the UUID of the IR resource model, see [the RM](https://github.com/achp-project/prj-eamena-marea/blob/8e397ad1343cd7fb04e4ca8a50247a1e3a687cb2/resource_models/Information%20Resource.json#L27)
+- `35b99cb7-379a-11ea-9989-06f597a7d5ce` is the UUID of the IR resource model, see [the RM](https://github.com/achp-project/prj-eamena-marea/blob/8e397ad1343cd7fb04e4ca8a50247a1e3a687cb2/resource_models/Information%20Resource.json#L27)
 
 gives:
 
 - 136,442
 
-## All the data of a specific HP
+## GS list all
+
+List all names of GS
+
+```SQL
+SELECT name ->> 'en' as grid_name FROM resource_instances
+WHERE graphid = '77d18973-7428-11ea-b4d0-02e7594ce0a0'
+```
+
+where:
+- `77d18973-7428-11ea-b4d0-02e7594ce0a0` is the UUID of the GS resource model
+
+gives:
+
+| grid_name|
+|----------|
+| E71N33-44|
+| E71N34-11|
+| E71N34-12|
+| E71N34-13|
+| E71N34-14|
+| E71N34-21|
+| E71N34-22|
+| E71N34-23|
+| E71N34-24|
+| ...      |
+
+
+## HP (one specifically) all data
 
 ```SQL
 SELECT * FROM tiles 
@@ -265,6 +293,17 @@ WHERE
     AND ids.ri = created.ri
     AND staff.teamname LIKE '%EAMENA Project Staff%'
 ```
+
+## GS geometry
+
+Geometry of a GS in GeoJSON format
+
+```SQL
+SELECT resourceinstanceid, ST_AsGeoJSON(geom) as geom FROM geojson_geometries
+WHERE resourceinstanceid = '028b45f3-cc4f-4bc6-9f30-d3bad8990181'
+```
+
+Where `028b45f3-cc4f-4bc6-9f30-d3bad8990181` is the UUID of the Grid Square `E63N37-41`
 
 # APAAME and ArchDAMS
 > IR 

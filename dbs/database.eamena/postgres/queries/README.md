@@ -139,16 +139,15 @@ NB: use `34cfea68-c2c0-11ea-9026-02e7594ce0a0` for Disturbance Cause Category Ty
 
 ## HP centroids
 
-
-* SQL
+On two coordinates `x` and `y`
 
 ```SQL
-SELECT ids.ri, ids.ei, coords.x, coords.y FROM (
+SELECT ids.ei, ids.ri, coords.x, coords.y FROM (
 -- EAMENA ID
 SELECT * FROM (
 SELECT
 resourceinstanceid::TEXT AS ri,
-tiledata ->> '34cfe992-c2c0-11ea-9026-02e7594ce0a0'::text as ei
+tiledata -> '34cfe992-c2c0-11ea-9026-02e7594ce0a0' -> 'en' ->> 'value'::text as ei
 FROM tiles
 ) AS x
 WHERE ei IS NOT NULL
@@ -167,6 +166,73 @@ WHERE x IS NOT NULL AND y IS NOT NULL
 WHERE ids.ri = coords.ri
 ORDER BY ei
 LIMIT 10
+```
+
+To add a spatial intersection (in Python):
+
+```py
+import geopandas as gpd
+from sqlalchemy import create_engine
+from shapely.geometry import shape
+import json
+
+# Define your PostgreSQL connection
+engine = create_engine('postgresql://username:password@host:port/database')
+
+# SQL query
+sql_query = """
+SELECT ids.ei, ids.ri, coords.x, coords.y FROM (
+    SELECT * FROM (
+        SELECT
+            resourceinstanceid::TEXT AS ri,
+            tiledata -> '34cfe992-c2c0-11ea-9026-02e7594ce0a0' -> 'en' ->> 'value'::text as ei
+        FROM tiles
+    ) AS x
+    WHERE ei IS NOT NULL
+) AS ids,
+(
+    SELECT * FROM (
+        SELECT
+            resourceinstanceid::TEXT AS ri,
+            ST_X(ST_Transform(ST_Centroid(ST_GeomFromGeoJSON(tiledata -> '5348cf67-c2c5-11ea-9026-02e7594ce0a0' -> 'features' -> 0 -> 'geometry')), 4326)) as x,
+            ST_Y(ST_Transform(ST_Centroid(ST_GeomFromGeoJSON(tiledata -> '5348cf67-c2c5-11ea-9026-02e7594ce0a0' -> 'features' -> 0 -> 'geometry')), 4326)) as y
+        FROM tiles
+    ) AS x
+    WHERE x IS NOT NULL AND y IS NOT NULL
+) AS coords
+WHERE ids.ri = coords.ri
+ORDER BY ei
+"""
+
+# Read SQL data into a GeoDataFrame
+gdf = gpd.GeoDataFrame.from_postgis(sql_query, engine, geom_col='geometry')
+
+# GeoJSON polygon
+polygon_geojson = {
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+                "coordinates": [[[34.58115928616775,28.12460188793169],[43.45801454898444,12.398724530483577],[46.72047379327836,13.121271035966771],[51.6243232529861,14.821968472599494],[56.999959148564216,17.20364581174897],[60.853970996220596,22.022673955976487],[56.211146063117894,26.532301969242127],[52.8697927254824,25.914303382236824],[48.560808129566084,29.625677970873184],[43.58672341106052,31.847704974792464],[40.631318620982796,33.00895790098886],[37.98703612572848,32.985443990043706],[36.11183008608492,31.92684643138392],[34.58115928616775,28.12460188793169]]],
+                "type": "Polygon"
+            }
+        }
+    ]
+}
+
+# Convert GeoJSON to GeoDataFrame
+polygon_gdf = gpd.GeoDataFrame.from_features(polygon_geojson['features'])
+
+# Perform spatial intersection
+result = gpd.sjoin(gdf, polygon_gdf, how="inner", op='intersects')
+
+# Convert result to GeoJSON
+result_geojson = result.to_json()
+
+# Print or use the result GeoJSON
+print(result_geojson)
 ```
 
 ## HP without GS

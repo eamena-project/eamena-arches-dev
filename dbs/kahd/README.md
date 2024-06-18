@@ -12,3 +12,5 @@
 2. Pull request [eamena-project/arches](https://github.com/eamena-project/arches) -> [archesproject/arches](https://github.com/archesproject/arches)
 	- [ckb/LC_MESSAGES](https://github.com/eamena-project/arches/tree/master/arches/locale/ckb/LC_MESSAGES)
 	- ⚠️ about [280 strings still have to be translated](https://github.com/archesproject/arches/pull/10755)
+
+

@@ -4,8 +4,8 @@
 
 | type | name| description | photo | related resources | coordinates |
 |----------|----------|----------|----------|----------|----------|
-| HP | `eamena_xxx`| Lorem Ipsum | ![](img/hp_eamena_xxx.png) | conatins `eamena_yyy` | 25.864722, 56.098333 |
-| BC | `eamena_yyy`| Lorem Ipsum | NaN | part of `eamena_xxx` | 25.864722, 56.098333 |
+| HP | `eamena_xxx`| Lorem Ipsum | ![](img/hp_eamena_xxx.png) | contains `eamena_yyy` | 25.864722, 56.098333 |
+| BC | `eamena_yyy`| Lorem Ipsum | NaN | is part of `eamena_xxx` | 25.864722, 56.098333 |
 
 HP: Heritage Place
 BC: Built Component

@@ -43,17 +43,18 @@ d$caravanserail_paths_profile
 
 Link CVNS one with another by doing:
 
-- Look at the map and identify HP related one with another
+- Look at the map and identify HP related one with another, for example, `78` and `2` (in this direction, = directed graph) 
 
 ![alt text](image-2.png)
 
-- Find equivalences btw ID and EAMENA ID. For example, n78 and n2 (in this direction, = directed graph), running `d$ids`
+- Find equivalences btw ID and EAMENA ID. , running `d$ids`
 
 | from                      | to                         |
 |---------------------------|----------------------------|
 | ![alt text](image-3.png)  | ![alt text](image-4.png)   |
 
-- Fill the [caravanserail_paths_1.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/talks/2024-aram/caravanserail_paths_1.csv) file, adding the correct 'route'
+
+- Fill the [caravanserail_paths_1.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/talks/2024-aram/caravanserail_paths_1.csv) file with the corresponding EAMENA ID (here: `EAMENA-0182058,EAMENA-0231535` ), adding the correct 'route' (blue = route 3 on the map)
 
 
 

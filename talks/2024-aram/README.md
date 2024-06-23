@@ -19,7 +19,9 @@ https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&rep
 
 ## Process
 
-### Paths
+### CVNS Paths
+
+R script [_run_2024-aram.R](https://github.com/eamena-project/eamena-arches-dev/blob/main/talks/2024-aram/_run_2024-aram.R)
 
 #### Map
 
@@ -29,21 +31,6 @@ d$caravanserail_paths_map
 
 ![alt text](image.png)
 
-* **TODO**
-
-Link HP one with another in . For example, n78 and n2 (directed)
-
-```R
-d$ids
-```
-
-![alt text](image-3.png)
-![alt text](image-4.png)
-
-
-
-![alt text](image-2.png)
-
 #### Profiles
 
 ```R
@@ -51,4 +38,28 @@ d$caravanserail_paths_profile
 ```
 
 ![alt text](image-1.png)
+
+#### TODO
+
+Link CVNS one with another by doing:
+
+- Look at the map and identify HP related one with another
+
+![alt text](image-2.png)
+
+- Find equivalences btw ID and EAMENA ID. For example, n78 and n2 (in this direction, = directed graph), running `d$ids`
+
+| from                      | to                         |
+|---------------------------|----------------------------|
+| ![alt text](image-3.png)  | ![alt text](image-4.png)   |
+
+- Fill the [caravanserail_paths_1.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/talks/2024-aram/caravanserail_paths_1.csv) file, adding the correct 'route'
+
+
+
+
+
+
+
+
 

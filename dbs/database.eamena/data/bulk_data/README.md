@@ -28,7 +28,7 @@ py split_bu_template.py "Bulk_Upload_template_231017.xlsx" "C:/Rprojects/eamena-
 ```
 
 <p align="center">
-  <img alt="img-name" src="../../www/bu-to-tsv.png" width="500">
+  <img alt="img-name" src="../../../../www/bu-to-tsv.png" width="500">
   <br>
     <em>The BU template is a set of different templates. In yellow, example of the BU template sheets that will be exported as TSV file</em>
 </p>

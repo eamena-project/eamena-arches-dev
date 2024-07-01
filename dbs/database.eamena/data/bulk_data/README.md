@@ -42,7 +42,7 @@ Will create the many TSV located into the folder https://github.com/eamena-proje
 * ...
 
 <p align="center">
-  <img alt="img-name" src="../../www/bu-to-tsv-ex1.png" width="700">
+  <img alt="img-name" src="../../../../www/bu-to-tsv-ex1.png" width="700">
   <br>
     <em>A search on 'Rol' in the <a href="https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bulk/templates/doc/bu_Person-Organization.tsv">bu_Person-Organization</a> file</em>
 </p>

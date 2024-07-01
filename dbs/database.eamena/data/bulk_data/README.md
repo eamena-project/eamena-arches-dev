@@ -1,6 +1,6 @@
 # Bulk Upload (BU) 
 
-Bulk upload is a process for uploading **many XLSX** files containing heritage places (HPs) data into the database without going through the graphical user interface (see [DB diagram, "local" subgraph](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena#diagram)): it speeds up data entry. 
+Bulk upload is a process for uploading **many HPs** data in one single XLSX file, and possibly **many XLSX** files, into the EAMENA database without going through the graphical user interface (see [DB diagram, "local" subgraph](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena#diagram)): it speeds up data entry. 
 
 ## Template file
 
@@ -18,6 +18,17 @@ The last/updated version of the BU template appears on the upper part of this ta
 | ~~BUS_TemplateUpdate20072021.xlsx~~   	 | Google Drive	| https://drive.google.com/file/d/1KtZlCB_mdTOPxh1DpFdfeXddjJLTvF1k/view?usp=sharing    	|
 
 </p>
+
+### How to fill an Heritage Place BU
+
+Explanations of the BU fields (ex: `Name Type`) are [**here**](https://eamena.org/advanced-use#rm-hp-fields) while explanation on possible values are within the different sheets (ex: `Alternative Reference`)
+
+<p align="center">
+  <img alt="img-name" src="../../../../www/bu-to-tsv.png" width="500">
+  <br>
+    <em>The BU template. In yellow, the different sheets where the dropdown values (ie. controled vocabularies) are coming from alongside value definitions</em>
+</p>
+
 
 ### Individual reference sheets
 
@@ -71,7 +82,7 @@ A mapping file (`.mapping`) will also be necessary, cf: https://github.com/eamen
 > ⚠️ This process is no longer in use ⚠️ ~~step-by-step BU procedure from the user-side~~
 
 <p align="center">
-  <img alt="img-name" src="../../www/folder-files.png" width="600">
+  <img alt="img-name" src="../../../../www/folder-files.png" width="600">
   <br>
     <em>The folder `2021-11-22-B-BIJAN` contains two XLSX files</em>
 </p>
@@ -100,7 +111,7 @@ Once the BU process has been completed, a resume can be displayed with a Python 
 
 
 <p align="center">
-  <img alt="img-name" src="../../www/json_summary.png" width="500">
+  <img alt="img-name" src="../../../../www/json_summary.png" width="500">
   <br>
     <em>screenshot of the JSON with URL</em>
 </p>
@@ -108,7 +119,7 @@ Once the BU process has been completed, a resume can be displayed with a Python 
 The URL opens the Resource Report
 
 <p align="center">
-  <img alt="img-name" src="../../www/json_summary_uuid.png" width="700">
+  <img alt="img-name" src="../../../../www/json_summary_uuid.png" width="700">
   <br>
     <em>screenshot of the Resource Report</em>
 </p>

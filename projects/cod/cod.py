@@ -1,5 +1,4 @@
 
-## Read City of the Dead (cod) database tables
 
 
 #%% 
@@ -10,10 +9,39 @@ import pandas as pd
 import piexif
 from PIL import Image
 
+root_path = "C:/Rprojects/eamena-arches-dev/projects/cod/"
+
+#%% 
+## photographs
+photo_im_path = root_path + "db_data/photos"
+# create a pandas mapping file
+df_im_map = pd.DataFrame({'unitnumber': [item.split("s_")[0] for item in os.listdir(photo_im_path)], 'directory': os.listdir(photo_im_path)})
+
+#%%
+## listing
+
+def list_files(root_dir):
+    data = []
+    for dirpath, dirnames, filenames in os.walk(root_dir):
+        for file in filenames:
+            file_path = os.path.join(dirpath, file)
+            size = os.path.getsize(file_path)
+            data.append({
+                "folder": os.path.basename(dirpath),
+                "filename": file,
+                "size (MB)": round(size/1000000, 1)
+            })
+    return pd.DataFrame(data)
+
+file_info_df = list_files(photo_im_path)
+print(file_info_df)
+
+file_info = file_info_df[(file_info_df["size (MB)"] > 0)]
+
 # %%
+## Read City of the Dead (cod) database tables
 
 ## read the database exported tables
-root_path = "C:/Rprojects/eamena-arches-dev/projects/cod/"
 db_path = root_path + "db_data/tables/"
 # records = units
 record_db_path = db_path + "records.xlsx"

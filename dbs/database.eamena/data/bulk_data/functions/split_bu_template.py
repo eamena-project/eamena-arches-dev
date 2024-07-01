@@ -69,7 +69,7 @@ def main(file_in, dir_out):
 
 	# # will not read these worksheets
 	# excluded_ws = ["Heritage Place", "Heritage Place example", "Minimum Enhanced Data Standards", "Info Resource", "InfoRes - Imagery", "InfoRes - Cartography", "Person-Organization", "Grid Square", "Relationships", "Colour Coding", "Sheet1"]
-	included_ws =['Archaeological Assessment', 'Condition Assessment']
+	included_ws =['Archaeological Assessment', 'Cultural Periods', 'Condition Assessment']
 
 	for sheet_name in xl.sheet_names:
 		if sheet_name in included_ws:

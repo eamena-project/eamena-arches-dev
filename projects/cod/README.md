@@ -19,13 +19,11 @@ Uploading an existing database into EAMENA v4
 
 ## Workflow
 
-* **export DBs tables to XLSX** 
+Export DBs tables to XLSX
 
-* **merge the XLSX from the two DBs, remove duplicates and export as CSV**
+### merge the XLSX from the two DBs, remove duplicates and export as CSV
 
-running the function `merge2dbs` of [cod.py](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/cod.py#L6)
-
-Tables are now in the [csv/](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/cod/business_data/csv) folder
+Running the function `merge2dbs` of [cod.py](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/cod.py#L6). Tables are now in the [csv/](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/cod/business_data/csv) folder
 
 - [DatingKind.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/business_data/csv/DatingKind.csv)
 - [Glossary.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/business_data/csv/Glossary.csv)

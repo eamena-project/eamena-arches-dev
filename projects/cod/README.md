@@ -5,20 +5,12 @@
 
 Uploading an existing database into EAMENA v4
 
-## CoD data
-
-<p align="center">
-  <img alt="img-name" src="./www/record-ex.png" width="600">
-  <br>
-    <em>Detail of a CoD's project record</em>
-</p>
-
 ## CoD databases
 
 | DB       | unitnumber | Column 3 | Column 4 |
 |----------|----------|----------|----------|
 | 2022-24_UnknownHeritage-N.accdb   | 1-9;53-68   | Data 3   | Data 4   |
-| 2022-24_UnknownHeritage-S.accdb   | Data 6   | Data 7   | Data 8   |
+| 2022-24_UnknownHeritage-S.accdb   | 10-52;69-91  | Data 7   | Data 8   |
 
 ## CoD field and value description
 
@@ -89,6 +81,7 @@ Match the photographs metadata with the photographs themselves
 ### Hosting
 
 On a ResourceSpace server: cityofthedead.arch.ox.ac.uk, see APAAME.
+
 
 ### TODO
 

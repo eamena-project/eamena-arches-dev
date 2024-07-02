@@ -17,23 +17,23 @@ Uploading an existing database into EAMENA v4
 * `unitnumber`: idem as `record` these are the Heritage Places
 * `features`: these are the Built Components
 
-### Access to XLSX
+## Workflow
 
-Microsoft Access DBs. Once exported the tables to XLSX are handled and their data re-organised using the [read_cod_tables.R](read_cod_tables.R) script
+* **export DBs tables to XLSX** 
 
-### XLSX to CSV
+* **merge the XLSX from the two DBs, remove duplicates and export as CSV**
 
-Running:
-
-```py
-data_in = "C:/Rprojects/eamena-arches-dev/projects/cod/db_data/tables/"
-path_out = "C:/Rprojects/eamena-arches-dev/projects/cod/business_data/csv/"
-xlsx2csv(data_in, path_out)
-```
+running the function `merge2dbs` of [cod.py](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/cod.py#L6)
 
 Tables are now in the [csv/](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/cod/business_data/csv) folder
 
-
+- [DatingKind.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/business_data/csv/DatingKind.csv)
+- [Glossary.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/business_data/csv/Glossary.csv)
+- [condition.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/business_data/csv/condition.csv)
+- [features.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/business_data/csv/features.csv)
+- [featuresnumbers.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/business_data/csv/featuresnumbers.csv)
+- [photos.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/business_data/csv/photos.csv)
+- [records.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/business_data/csv/records.csv)
 
 ## CoD to EAMENA
 

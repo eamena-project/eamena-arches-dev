@@ -58,6 +58,9 @@ Create a [Bulk Upload file](https://github.com/eamena-project/eamena-arches-dev/
     Screenshot of the BU template with the `General Description` field (free text) highlighted
 </p>
 
+### Append metadata to the photographs
+
+* GPS: function `addxy2photo` of [cod.py](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/cod.py#L94)
 
 ---
 

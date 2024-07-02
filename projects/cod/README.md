@@ -53,7 +53,7 @@ Merge the XLSX from the two DBs, remove duplicates and export as CSV by running 
 Create a [Bulk Upload file](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data/bulk_data#readme) for the `records` adding the `features` and the `photos` in the description field
 
 <p align="center">
-  <img alt="img-name" src="./image-2.png)" width="700">
+  <img alt="img-name" src="./image-2.png" width="700">
   <br>
     Screenshot of the BU template with the `General Description` field (free text) highlighted
 </p>

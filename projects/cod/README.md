@@ -26,7 +26,7 @@ Microsoft Access DBs. Once exported the tables to XLSX are handled and their dat
 
 ### XLSX to CSV
 
-Running 
+Running:
 
 ```py
 data_in = "C:/Rprojects/eamena-arches-dev/projects/cod/db_data/tables/"

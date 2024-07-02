@@ -1,6 +1,28 @@
 
 
 # %%
+# merge the tables of the 2 databases, and remve duplicated rows
+import os
+import pandas as pd
+
+# Paths to the Excel files
+data_in = "C:/Rprojects/eamena-arches-dev/projects/cod/db_data/tables/"
+data_in_N = data_in + "N/"
+data_in_S = data_in + "S/"
+path_out = "C:/Rprojects/eamena-arches-dev/projects/cod/business_data/csv/"
+xlsx_files = os.listdir(data_in_N)
+for xlsx_file in xlsx_files:
+	data_in_filename = os.path.splitext(xlsx_file)[0]
+	df1 = pd.read_excel(data_in_N + xlsx_file)
+	df2 = pd.read_excel(data_in_N + xlsx_file)
+	combined_df = pd.concat([df1, df2])
+	unique_df = combined_df.drop_duplicates()
+	csv_output_path = path_out + data_in_filename + '.csv'
+	unique_df.to_csv(csv_output_path, index=False)
+	print(f"The file {data_in_filename + '.csv'} has been created in {path_out}")
+
+
+# %%
 # convert all XLSX tables into CSV
 
 def xlsx2csv(data_in, path_out):
@@ -40,7 +62,7 @@ def xlsx2csv(data_in, path_out):
 
 # data_in = "C:/Rprojects/eamena-arches-dev/projects/cod/db_data/tables/221224PhotosBCKP.xlsx"
 data_in = "C:/Rprojects/eamena-arches-dev/projects/cod/db_data/tables/"
-path_out = "C:/Rprojects/eamena-arches-dev/projects/cod/db_data/csv/"
+path_out = "C:/Rprojects/eamena-arches-dev/projects/cod/business_data/csv/"
 xlsx2csv(data_in, path_out)
 
 

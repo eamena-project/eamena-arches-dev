@@ -7,10 +7,10 @@ Uploading an existing database into EAMENA v4
 
 ## CoD databases
 
-| DB       | unitnumber | Column 3 | Column 4 |
-|----------|----------|----------|----------|
-| 2022-24_UnknownHeritage-N.accdb   | 1-9;53-68   | Data 3   | Data 4   |
-| 2022-24_UnknownHeritage-S.accdb   | 10-52;69-91  | Data 7   | Data 8   |
+| DB       | unitnumber |
+|----------|----------|
+| 2022-24_UnknownHeritage-N.accdb   | 1-9;53-68   |
+| 2022-24_UnknownHeritage-S.accdb   | 10-52;69-91  |
 
 ### ERD
 
@@ -33,11 +33,11 @@ Export DBs tables to XLSX
 
 Merge the XLSX from the two DBs, remove duplicates and export as CSV by running the function `merge2dbs` of [cod.py](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/cod.py#L6). Tables are now in the [csv/](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/cod/business_data/csv) folder
 
-- [records.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/business_data/csv/records.csv) n = 91, `unitnumber` or `record`: equivalent to the EAMENA `Heritage Places`.
+- [records.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/business_data/csv/records.csv): n = 91, `unitnumber` or `record`: equivalent to the EAMENA `Heritage Places`.
 - [features.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/business_data/csv/features.csv): n = 91 rows (these are the `records`) but 16 groups of columns (here in color, the left column in grey is the `record` identifier)
 
 <p align="center">
-  <img alt="img-name" src="./image-1.png" width="500">
+  <img alt="img-name" src="./image-1.png" width="700">
   <br>
     `features` by `records` 
 </p>
@@ -47,6 +47,21 @@ Merge the XLSX from the two DBs, remove duplicates and export as CSV by running 
 - [DatingKind.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/business_data/csv/DatingKind.csv): the dating method
 - [Glossary.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/business_data/csv/Glossary.csv): a glossary
 - [condition.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/business_data/csv/condition.csv): condition of preservation
+
+### Create a BU
+
+Create a [Bulk Upload file](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data/bulk_data#readme) for the `records` adding the `features` and the `photos` in the description field
+
+<p align="center">
+  <img alt="img-name" src="./image-2.png)" width="700">
+  <br>
+    Screenshot of the BU template with the `General Description` field (free text) highlighted
+</p>
+
+
+---
+
+# Other
 
 ## CoD to EAMENA
 

@@ -17,8 +17,13 @@ Uploading an existing database into EAMENA v4
 
 | DB       | unitnumber | Column 3 | Column 4 |
 |----------|----------|----------|----------|
-| 240101_CemetRecording.accdb   | 5-7   | Data 3   | Data 4   |
-| 230720CemetRecordingSample.accdb   | Data 6   | Data 7   | Data 8   |
+| 2022-24_UnknownHeritage-N.accdb   | 1-9;53-68   | Data 3   | Data 4   |
+| 2022-24_UnknownHeritage-S.accdb   | Data 6   | Data 7   | Data 8   |
+
+## CoD field and value description
+
+* `unitnumber`: idem as `record` these are the Heritage Places
+* `features`: these are the Built Components
 
 ### Access to XLSX
 
@@ -36,10 +41,7 @@ xlsx2csv(data_in, path_out)
 
 Tables are now in the [csv/](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/cod/business_data/csv) folder
 
-## CoD field and value description
 
-* `unitnumber`: 
-* `features`: 
 
 ## CoD to EAMENA
 

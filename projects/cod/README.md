@@ -48,13 +48,13 @@ CoD records gather informations that will belong both to EAMENA Heritage Places 
 Match the photographs metadata with the photographs themselves
 
 <p align="center">
-  <img alt="img-name" src="./image-1.png" width="700">
+  <img alt="img-name" src="./www/image-1.png" width="700">
   <br>
     <em>Screenshot of the 'photo' table export (`photo.xlsx`) with the metadata of the photograph DSC_2643s.jpg highlighted</em>
 </p>
 
 <p align="center">
-  <img alt="img-name" src="./image-2.png" width="500">
+  <img alt="img-name" src="./www/image-2.png" width="500">
   <br>
     <em>Screenshot of the DSC_2643s.jpg photograph</em>
 </p>
@@ -62,11 +62,11 @@ Match the photographs metadata with the photographs themselves
 
 ### Hosting
 
-- Manar-al-Athar (ResourceSpace / ArchDAMS server)
+On a ResourceSpace server: cityofthedead.arch.ox.ac.uk, see APAAME.
 
 ### TODO
 
-Importing each photograph as an Information Resource (IR)
+- [ ] Importing each photograph as an Information Resource (IR)
 
 
 <*to be discussed*>

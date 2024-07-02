@@ -1,5 +1,48 @@
 
 
+# %%
+# convert all XLSX tables into CSV
+
+def xlsx2csv(data_in, path_out):
+	"""
+	Read an XLSX, or a folder of XLSX, and convert it/them into a CSV. The filenames would be the same.
+
+	:param data_in: A folder path or a file path
+	:param path_out: A folder path
+
+	"""
+	import os
+
+	if os.path.isdir(data_in):
+		print(f"Read the directory {data_in}")
+		all_files = os.listdir(data_in)
+		xlsx_files = [file for file in all_files if file.endswith('.xlsx')]
+		for xlsx_file in xlsx_files:
+			data_in_filename = os.path.splitext(xlsx_file)[0]
+			print(f"Read the XLSX file {data_in_filename}")
+			df = pd.read_excel(f"{data_in}/{xlsx_file}")
+			path_out_data = f"{path_out}/{data_in_filename}.csv"
+			df.to_csv(path_out_data, index=False)
+			print(f"The file {data_in_filename}.csv has been exported into {path_out}")
+	elif os.path.isfile(data_in):
+		if data_in.endswith('.xlsx'):
+			data_in_filename = os.path.basename(data_in)
+			data_in_filename = os.path.splitext(data_in_filename)[0]
+			# data_in_filename = os.path.splitext(data_in)[0]
+			print(f"Read the XLSX file {data_in_filename}")
+			df = pd.read_excel(data_in)
+			path_out_data = f"{path_out}/{data_in_filename}.csv"
+			df.to_csv(path_out_data, index=False)
+			print(f"The file {data_in_filename}.csv has been exported into {path_out}")
+	else:
+		print("It is neither a file nor a directory.")
+
+
+# data_in = "C:/Rprojects/eamena-arches-dev/projects/cod/db_data/tables/221224PhotosBCKP.xlsx"
+data_in = "C:/Rprojects/eamena-arches-dev/projects/cod/db_data/tables/"
+path_out = "C:/Rprojects/eamena-arches-dev/projects/cod/db_data/csv/"
+xlsx2csv(data_in, path_out)
+
 
 #%% 
 # read the photograph metadata
@@ -14,8 +57,12 @@ root_path = "C:/Rprojects/eamena-arches-dev/projects/cod/"
 #%% 
 ## photographs
 photo_im_path = root_path + "db_data/photos"
-# create a pandas mapping file
-df_im_map = pd.DataFrame({'unitnumber': [item.split("s_")[0] for item in os.listdir(photo_im_path)], 'directory': os.listdir(photo_im_path)})
+split_on = "s_" # all folder names are like: 88s_Ibrahim Mahmud/
+unitnumbers = [item.split(split_on)[0] for item in os.listdir(photo_im_path)]
+df_im_map = pd.DataFrame(
+						 {'unitnumber': unitnumbers, 
+						  'directory': os.listdir(photo_im_path)}
+						  )
 
 #%%
 ## listing
@@ -52,10 +99,12 @@ df_im_metadata = pd.read_excel(photo_db_path)
 # list the records = units from the metadata file
 units = list(df_im_metadata['unitnumber'].unique())
 
-## photographs
-photo_im_path = root_path + "db_data/photos"
-# create a pandas mapping file
-df_im_map = pd.DataFrame({'unitnumber': [item.split("s_")[0] for item in os.listdir(photo_im_path)], 'directory': os.listdir(photo_im_path)})
+# ## photographs
+# photo_im_path = root_path + "db_data/photos"
+# # create a pandas mapping file
+# df_im_map = pd.DataFrame(
+# 	{'unitnumber': [item.split("s_")[0] for item in os.listdir(photo_im_path)], 'directory': os.listdir(photo_im_path)}
+# 	)
 
 
 # %%

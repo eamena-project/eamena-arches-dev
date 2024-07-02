@@ -60,6 +60,8 @@ Create a [Bulk Upload file](https://github.com/eamena-project/eamena-arches-dev/
 
 ### Append metadata to the photographs
 
+See: [photos.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/business_data/csv/photos.csv)
+
 * GPS: function `addxy2photo` of [cod.py](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/cod.py#L94)
 
 ---

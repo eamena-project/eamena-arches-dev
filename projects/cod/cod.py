@@ -14,6 +14,7 @@ def merge2dbs(data_in_N, data_in_S, path_out):
 	"""
 	import os
 	import pandas as pd
+
 	xlsx_files = os.listdir(data_in_N)
 	for xlsx_file in xlsx_files:
 		data_in_filename = os.path.splitext(xlsx_file)[0]
@@ -66,14 +67,60 @@ def xlsx2csv(data_in, path_out):
 			path_out_data = f"{path_out}/{data_in_filename}.csv"
 			df.to_csv(path_out_data, index=False)
 			print(f"The file {data_in_filename}.csv has been exported into {path_out}")
-	else:
-		print("It is neither a file nor a directory.")
 
 
 # data_in = "C:/Rprojects/eamena-arches-dev/projects/cod/db_data/tables/221224PhotosBCKP.xlsx"
 data_in = "C:/Rprojects/eamena-arches-dev/projects/cod/db_data/tables/"
 path_out = "C:/Rprojects/eamena-arches-dev/projects/cod/business_data/csv/"
 xlsx2csv(data_in, path_out)
+
+
+#%%
+# EXIF metdata
+
+def convert_to_degrees(value):
+    """ 
+	Convert decimal degree to degrees, minutes, seconds tuple, formatted for EXIF. 
+	"""
+    degrees = int(value)
+    minutes = int((value - degrees) * 60)
+    seconds = (value - degrees - minutes / 60) * 3600
+    degrees = (degrees, 1)
+    minutes = (minutes, 1)
+    seconds = (int(seconds * 100), 100)  # More accurate second representation as rational
+    return degrees, minutes, seconds
+
+
+def addxy2photo(image_path, new_image_path, latitude, longitude):
+	# TODO: adapt to the dataset structure: find the decimal coordinates in the `records` table
+	"""
+	Append coordinates to the EXIF metdata of the photograph
+	
+	"""
+	from PIL import Image
+	import piexif
+
+	# image_path = 'path/to/your/image.jpg'
+	img = Image.open(image_path)
+	exif_dict = piexif.load(img.info['exif']) if 'exif' in img.info else {}
+	gps_latitude = convert_to_degrees(latitude)
+	gps_longitude = convert_to_degrees(abs(longitude))  # Longitude should be positive for EXIF
+	# GPS data according to EXIF spec
+	gps_ifd = {
+		piexif.GPSIFD.GPSLatitudeRef: 'N' if latitude >= 0 else 'S',
+		piexif.GPSIFD.GPSLatitude: gps_latitude,
+		piexif.GPSIFD.GPSLongitudeRef: 'E' if longitude >= 0 else 'W',
+		piexif.GPSIFD.GPSLongitude: gps_longitude,
+	}
+	exif_dict['GPS'] = gps_ifd
+	exif_bytes = piexif.dump(exif_dict)
+	# new_image_path = 'path/to/your/new_image.jpg'
+	img.save(new_image_path, "jpeg", exif=exif_bytes)
+	print("Image + coordinates saved")
+
+image_path = "C:/Rprojects/eamena-arches-dev/projects/cod/www/4171_sl_JDs.jpg"
+new_image_path = 'C:/Rprojects/eamena-arches-dev/projects/cod/www/4171_sl_JDs_with_coords.jpg'
+addxy2photo(image_path, new_image_path, latitude = 48.848270462241814, longitude = 2.41120456097722) # loc: Paris
 
 
 #%% 

@@ -79,19 +79,19 @@ xlsx2csv(data_in, path_out)
 # EXIF metdata
 
 def convert_to_degrees(value):
-    """ 
+	""" 
 	Convert decimal degree to degrees, minutes, seconds tuple, formatted for EXIF. 
 	"""
-    degrees = int(value)
-    minutes = int((value - degrees) * 60)
-    seconds = (value - degrees - minutes / 60) * 3600
-    degrees = (degrees, 1)
-    minutes = (minutes, 1)
-    seconds = (int(seconds * 100), 100)  # More accurate second representation as rational
-    return degrees, minutes, seconds
+	degrees = int(value)
+	minutes = int((value - degrees) * 60)
+	seconds = (value - degrees - minutes / 60) * 3600
+	degrees = (degrees, 1)
+	minutes = (minutes, 1)
+	seconds = (int(seconds * 100), 100)  # More accurate second representation as rational
+	return degrees, minutes, seconds
 
 
-def addxy2photo(image_path, new_image_path, latitude, longitude):
+def add_metadata_XY_to_photo(image_path, new_image_path, latitude, longitude):
 	# TODO: adapt to the dataset structure: find the decimal coordinates in the `records` table
 	"""
 	Append coordinates to the EXIF metdata of the photograph
@@ -120,134 +120,173 @@ def addxy2photo(image_path, new_image_path, latitude, longitude):
 
 image_path = "C:/Rprojects/eamena-arches-dev/projects/cod/www/4171_sl_JDs.jpg"
 new_image_path = 'C:/Rprojects/eamena-arches-dev/projects/cod/www/4171_sl_JDs_with_coords.jpg'
-addxy2photo(image_path, new_image_path, latitude = 48.848270462241814, longitude = 2.41120456097722) # loc: Paris
+add_metadata_XY_to_photo(image_path, new_image_path, latitude = 48.848270462241814, longitude = 2.41120456097722) # loc: Paris
 
-
-#%% 
-# read the photograph metadata
-import os
-import re
-import pandas as pd
-import piexif
-from PIL import Image
-
-root_path = "C:/Rprojects/eamena-arches-dev/projects/cod/"
-
-#%% 
-## photographs
-photo_im_path = root_path + "db_data/photos"
-split_on = "s_" # all folder names are like: 88s_Ibrahim Mahmud/
-unitnumbers = [item.split(split_on)[0] for item in os.listdir(photo_im_path)]
-df_im_map = pd.DataFrame(
-						 {'unitnumber': unitnumbers, 
-						  'directory': os.listdir(photo_im_path)}
-						  )
-
-#%%
-## listing
-
-def list_files(root_dir):
-    data = []
-    for dirpath, dirnames, filenames in os.walk(root_dir):
-        for file in filenames:
-            file_path = os.path.join(dirpath, file)
-            size = os.path.getsize(file_path)
-            data.append({
-                "folder": os.path.basename(dirpath),
-                "filename": file,
-                "size (MB)": round(size/1000000, 1)
-            })
-    return pd.DataFrame(data)
-
-file_info_df = list_files(photo_im_path)
-print(file_info_df)
-
-file_info = file_info_df[(file_info_df["size (MB)"] > 0)]
 
 # %%
 ## Read City of the Dead (cod) database tables
 
 ## read the database exported tables
-db_path = root_path + "db_data/tables/"
-# records = units
-record_db_path = db_path + "records.xlsx"
-df_rec_metadata = pd.read_excel(record_db_path)
-# photographs metadata
-photo_db_path = db_path + "photos.xlsx"
-df_im_metadata = pd.read_excel(photo_db_path)
-# list the records = units from the metadata file
-units = list(df_im_metadata['unitnumber'].unique())
+# db_path = root_path + "business_data/xlsx/"
+# # records = units
+# record_db_path = db_path + "records_NS.xlsx"
+# df_rec_metadata = pd.read_excel(record_db_path)
+# # photographs metadata
+# photo_db_path = db_path + "photos_NS.xlsx"
+# df_im_metadata = pd.read_excel(photo_db_path)
+# # list the records = units from the metadata file
+# units = list(df_im_metadata['unitnumber'].unique())
 
 # ## photographs
-# photo_im_path = root_path + "db_data/photos"
+# photo_im_path_in = root_path + "db_data/photos_in"
 # # create a pandas mapping file
 # df_im_map = pd.DataFrame(
-# 	{'unitnumber': [item.split("s_")[0] for item in os.listdir(photo_im_path)], 'directory': os.listdir(photo_im_path)}
+# 	{'unitnumber': [item.split("s_")[0] for item in os.listdir(photo_im_path_in)], 'directory': os.listdir(photo_im_path_in)}
 # 	)
 
 
 # %%
+def add_metadata_to_photo(root_path = "C:/Rprojects/eamena-arches-dev/projects/cod/", photos_in = "db_data/photos_in", photo_metadata = "business_data/xlsx/photos_NS.xlsx", records_in = "business_data/xlsx/records_NS.xlsx", photo_out = "db_data/photos_out", verbose = True):
+	"""
+	Append metadata into the photograph by reading other XLSX tables
 
-# loop over the units, match units and folders with photographs
-for unit in units:
-	print(f"*** read unit/record '{unit}' ***")
-	# add 0 if n < 10
-	if unit < 10:
-		unit_t = "0" + str(unit)
-	else:
-		unit_t = str(unit)
-	selected_unit = df_im_map[df_im_map['unitnumber'] == unit_t]
-	print(f"- directory: \n{selected_unit.to_markdown(index=False)}")
-	unit_folder = selected_unit.iloc[0,1]
-	photos = os.listdir(photo_im_path + '\\' + unit_folder)
-	print(f"- photos: \n{photos}")
-	print("\n")
-	# loop over photo, add metadata, save
-	for a_photo in range(len(photos)):
-		a_photo_OK = re.sub(r'.*?(DSC|IMG)', r'\1', photos[a_photo])
-		print(f"  + read photo: {photos[a_photo]} (ie {a_photo_OK})")
-		a_photo_metadata = df_im_metadata[df_im_metadata['filename'].str.lower() == a_photo_OK.lower()]
-		if len(a_photo_metadata) > 0:
-			print(f"    = photo metadata:")
-			print(a_photo_metadata.to_markdown(index=False))
-			print("\n")
-			cur_folder = selected_unit['directory'].iloc[0]
-			photo_path = photo_im_path + "\\" + cur_folder + "\\" + photos[a_photo]
-			print(f"    = write metadata")		
-			# Load the image
-			img = Image.open(photo_path)
-			# extract metadata from the table
-			im_descr = a_photo_metadata['description'].iloc[0]
-			im_artis = a_photo_metadata['takenby'].iloc[0]
-			im_title = df_rec_metadata[df_rec_metadata['ID'] == unit]["attribution"].iloc[0]
-			im_caption = im_title + ". " + im_descr
-			# Prepare EXIF data
-			# Note: '0th', 'Exif', and other IFDs are parts of the EXIF standard. You can add more fields as needed.
-			exif_dict = {
-				"0th": {
-					piexif.ImageIFD.ImageDescription: im_descr,
-					piexif.ImageIFD.Artist: im_artis,
-					# change XPTitle to Title?
-					piexif.ImageIFD.XPTitle: im_title.encode('utf-16le'),
-					# change XPComment to Comment?
-					piexif.ImageIFD.XPComment: im_caption.encode('utf-16le'),
-					# change XPAuthor to Author?
-					piexif.ImageIFD.XPAuthor: im_artis.encode('utf-16le'),
-					# Add Caption?
-					# Add coordinates from 'df_rec_metadata'
-				},
-				"Exif": {
-					# Add Exif tags if needed
-				}
-			}
-			exif_bytes = piexif.dump(exif_dict)
-			# overwrite
-			# TODO: save with the highest resolution (if not, 1 MB -> 500 KB)
-			img.save(photo_path, exif=exif_bytes)
-			print(f"    => {photos[a_photo]} has been saved")
-			img.close()
+	:param root_path: Root path of the project 
+	:param photos_in: Path to the folder where the photographs are stored
+	:param photo_metadata: Path to the file describing the photographs
+	:param records_in: Path to the file of the records (aka HP), useful for ????
+	:param photo_out: Path to the folder where the photographs with metdata will be stored
+	
+	"""
+	import re
+	from PIL import Image
+	import piexif
+	import os
+	import pandas as pd
+
+	# db_path = root_path + "business_data/xlsx/records_NS.xlsx"
+	record_db_path = root_path + records_in
+	df_rec_metadata = pd.read_excel(record_db_path)
+	# photographs metadata
+	photo_db_path = root_path + photo_metadata
+	df_im_metadata = pd.read_excel(photo_db_path)
+	# list the records = units from the metadata file
+	units = list(df_im_metadata['unitnumber'].unique())
+	photo_im_path_in = root_path + photos_in
+	photo_im_path_out = root_path + photo_out
+	# create a mapping table
+	split_on = "s_" # all folder names are like: 88s_Ibrahim Mahmud/
+	unitnumbers = [item.split(split_on)[0] for item in os.listdir(photo_im_path_in)]
+	df_im_map = pd.DataFrame(
+							{'unitnumber': unitnumbers, 
+							'directory': os.listdir(photo_im_path_in)}
+							)
+	# loop over the units, match units and folders with photographs
+	stop_nb = 0
+	for unit in units:
+		print(f"*** read unit/record/herita '{unit}' ***")
+		# add 0 if n < 10
+		if unit < 10:
+			unit_t = "0" + str(unit)
 		else:
-			print(f"    /!\ there are no metadata for {photos[a_photo]}")
+			unit_t = str(unit)
+		selected_unit = df_im_map[df_im_map['unitnumber'] == unit_t]
+		print(f"- directory: \n{selected_unit.to_markdown(index=False)}")
+		unit_folder = selected_unit.iloc[0,1]
+		photos = os.listdir(photo_im_path_in + '\\' + unit_folder)
+		print(f"- photos: \n{photos}")
 		print("\n")
+		# loop over photo, add metadata, save
+		for a_photo in range(len(photos)):
+			stop_nb += 1
+			if stop_nb > 3:
+				return("... Done ...")
+			a_photo_OK = re.sub(r'.*?(DSC|IMG)', r'\1', photos[a_photo])
+			print(f"  + read photo: {photos[a_photo]} (ie {a_photo_OK})")
+			a_photo_metadata = df_im_metadata[df_im_metadata['filename'].str.lower() == a_photo_OK.lower()]
+			if len(a_photo_metadata) > 0:
+				print(f"    = photo metadata:")
+				print(a_photo_metadata.to_markdown(index=False))
+				print("\n")
+				cur_folder = selected_unit['directory'].iloc[0]
+				photo_path_in = photo_im_path_in + "\\" + cur_folder + "\\" + photos[a_photo]
+				photo_path_out = photo_im_path_out + "\\" + cur_folder + "\\" + photos[a_photo]
+				print(f"    = write metadata")		
+				# Load the image
+				img = Image.open(photo_path_in)
+				size_img_in = os.path.getsize(photo_path_in)
+				size_img_in_MB = round(size_img_in/1000000, 1)
+				# extract metadata from the table
+				im_descr = a_photo_metadata['description'].iloc[0]
+				im_artis = a_photo_metadata['takenby'].iloc[0]
+				# match the row/record/heritage place
+				im_record_id = df_rec_metadata[df_rec_metadata['ID'] == unit]["ID"].iloc[0]
+				im_record_attribution = df_rec_metadata[df_rec_metadata['ID'] == unit]["attribution"].iloc[0]
+				# im_title = df_rec_metadata['ID'].iloc[0]
+				im_title = im_record_attribution + " (num CoD: " + str(im_record_id) + ")"
+				im_caption = im_title + ". " + im_descr
+				im_coord_N = df_rec_metadata[df_rec_metadata['ID'] == unit]["coordinateN"].iloc[0]
+				im_coord_E = df_rec_metadata[df_rec_metadata['ID'] == unit]["coordinateE"].iloc[0]
+				if verbose:
+					print('       im_descr: ' + im_descr)
+					print('       im_artis: ' + im_artis)
+					print('       im_title: ' + im_title)
+					print('       im_caption: ' + im_caption)
+					print('       im_coord_N: ' + str(im_coord_N))
+					print('       im_coord_E: ' + str(im_coord_E))
+				# prevent to rm former EXIF metadata
+				try:
+					exif_dict = piexif.load(img.info['exif'])
+				except KeyError:
+					exif_dict = {'0th': {}, 'Exif': {}, 'GPS': {}, '1st': {}, 'Interop': {}, 'thumbnail': None}
+				exif_dict['0th'][piexif.ImageIFD.ImageDescription] = im_descr.encode('utf-8')
+				exif_dict['0th'][piexif.ImageIFD.Artist] = im_artis.encode('utf-8')
+				exif_dict['0th'][piexif.ImageIFD.XPTitle] = im_title.encode('utf-8')
+				exif_dict['0th'][piexif.ImageIFD.XPComment] = im_caption.encode('utf-8')
+				exif_dict['0th'][piexif.ImageIFD.XPAuthor] = im_artis.encode('utf-8')
+				# TODO: append GPS
+				# add_metadata_XY_to_photo(image_path, new_image_path, latitude = im_coord_N, longitude = im_coord_E) # loc: Paris
+				gps_latitude = convert_to_degrees(im_coord_N)
+				gps_longitude = convert_to_degrees(abs(im_coord_E))  # Longitude should be positive for EXIF
+				# GPS data according to EXIF spec
+				gps_ifd = {
+					piexif.GPSIFD.GPSLatitudeRef: 'N' if im_coord_N >= 0 else 'S',
+					piexif.GPSIFD.GPSLatitude: gps_latitude,
+					piexif.GPSIFD.GPSLongitudeRef: 'E' if im_coord_E >= 0 else 'W',
+					piexif.GPSIFD.GPSLongitude: gps_longitude,
+				}
+				exif_dict['GPS'] = gps_ifd
+
+				# exif_dict = {
+				# 	"0th": {
+				# 		piexif.ImageIFD.ImageDescription: im_descr,
+				# 		piexif.ImageIFD.Artist: im_artis,
+				# 		# change XPTitle to Title?
+				# 		piexif.ImageIFD.XPTitle: im_title.encode('utf-16le'),
+				# 		# change XPComment to Comment?
+				# 		piexif.ImageIFD.XPComment: im_caption.encode('utf-16le'),
+				# 		# change XPAuthor to Author?
+				# 		piexif.ImageIFD.XPAuthor: im_artis.encode('utf-16le'),
+				# 		# Add Caption?
+				# 		# Add coordinates from 'df_rec_metadata'
+				# 	},
+				# }
+				exif_bytes = piexif.dump(exif_dict)
+				# overwrite
+				# TODO: save with the highest resolution (if not, 1 MB -> 500 KB)
+				original_dpi = img.info.get('dpi')
+				out_folder = photo_im_path_out + "\\" + cur_folder
+				if not os.path.exists(out_folder):
+					os.makedirs(out_folder)
+				img.save(photo_path_out, exif=exif_bytes, quality=95, dpi=original_dpi, optimize=True, progressive=True)
+				print(f"    => {photos[a_photo]} has been saved")
+				img.close()
+				size_img_out = os.path.getsize(photo_path_out)
+				size_img_out_MB = round(size_img_out/1000000, 1)
+				print(f"    image size (MB): {size_img_in_MB} => {size_img_out_MB}")
+			else:
+				print(f"    /!\ there are no metadata for {photos[a_photo]}")
+			print("\n")
+
+add_metadata_to_photo()
 
 # %%

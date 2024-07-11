@@ -1,0 +1,11 @@
+{
+"type": "FeatureCollection",
+"name": "closest_lines_1",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32640" } },
+"features": [
+{ "type": "Feature", "properties": { "cnv": "EAMENA-0231512", "qnt": "EAMENA-0240584", "dist": 15984.548698232576 }, "geometry": { "type": "LineString", "coordinates": [ [ 810022.570404429454356, 3904320.024367523845285, 1.0 ], [ 813259.365896381088533, 3919973.425021357834339, 1.0 ] ] } },
+{ "type": "Feature", "properties": { "cnv": "EAMENA-0231512", "qnt": "EAMENA-0240585", "dist": 16139.42371916927 }, "geometry": { "type": "LineString", "coordinates": [ [ 809571.476605011848733, 3904260.994574049953371, 1.0 ], [ 813259.365896381088533, 3919973.425021357834339, 1.0 ] ] } },
+{ "type": "Feature", "properties": { "cnv": "EAMENA-0231512", "qnt": "EAMENA-0240586", "dist": 15903.978736881956 }, "geometry": { "type": "LineString", "coordinates": [ [ 810235.511929793981835, 3904359.557888198643923, 1.0 ], [ 813259.365896381088533, 3919973.425021357834339, 1.0 ] ] } },
+{ "type": "Feature", "properties": { "cnv": "EAMENA-0192609", "qnt": "EAMENA-0240599", "dist": 13098.333931440611 }, "geometry": { "type": "LineString", "coordinates": [ [ 816928.072579208528623, 3903328.869879460893571, 1.0 ], [ 829815.708255054429173, 3905668.784080065786839, 1.0 ] ] } }
+]
+}

@@ -42,6 +42,14 @@ Merge the XLSX from the two DBs, remove duplicates and export as CSV by running 
     `features` by `records` 
 </p>
 
+converted to a long format
+
+<p align="center">
+  <img alt="img-name" src="./image-3.png" width="500">
+  <br>
+    `features` by `records` 
+</p>
+
 - [featuresnumbers.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/business_data/csv/featuresnumbers.csv): correspondances between `featureID` and litteral description of these features, 16 values. The latter are the `features`: equivalent to the EAMENA `Built Components`.
 - [photos.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/business_data/csv/photos.csv): some 1,935 photographs of the 91 `records`
 - [DatingKind.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/business_data/csv/DatingKind.csv): the dating method

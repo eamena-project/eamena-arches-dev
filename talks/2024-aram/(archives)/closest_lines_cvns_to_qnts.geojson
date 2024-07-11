@@ -1,0 +1,15 @@
+{
+"type": "FeatureCollection",
+"name": "closest_lines_cvns_to_qnts",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32640" } },
+"features": [
+{ "type": "Feature", "properties": { "cvn": "EAMENA-0231510", "qnt": "EAMENA-0253531", "dist": 3636.7689999716868 }, "geometry": { "type": "LineString", "coordinates": [ [ 846428.365516779012978, 4035151.548942813184112, 1.0 ], [ 843020.19113839790225, 4033882.519327043090016, 1.0 ] ] } },
+{ "type": "Feature", "properties": { "cvn": "EAMENA-0231535", "qnt": "EAMENA-0261913", "dist": 10817.939551163694 }, "geometry": { "type": "LineString", "coordinates": [ [ 98647.660455952107441, 3906567.691771186888218, 1.0 ], [ 109183.764365032606293, 3909020.920368299353868, 1.0 ] ] } },
+{ "type": "Feature", "properties": { "cvn": "EAMENA-0231536", "qnt": "EAMENA-0261914", "dist": 2041.8505028353065 }, "geometry": { "type": "LineString", "coordinates": [ [ 49793.999885173223447, 3921990.804727257695049, 1.0 ], [ 47879.847531895153224, 3922701.560834771953523, 1.0 ] ] } },
+{ "type": "Feature", "properties": { "cvn": "EAMENA-0194697", "qnt": "EAMENA-0257175", "dist": 12781.347394407112 }, "geometry": { "type": "LineString", "coordinates": [ [ 512887.591180349467322, 4015521.728576932102442, 1.0 ], [ 523791.779558762151282, 4008853.781589694786817, 1.0 ] ] } },
+{ "type": "Feature", "properties": { "cvn": "EAMENA-0194695", "qnt": "EAMENA-0253594", "dist": 1126.200176561149 }, "geometry": { "type": "LineString", "coordinates": [ [ 661966.005766172660515, 4007328.520840712822974, 1.0 ], [ 661414.089873972348869, 4006346.830621945671737, 1.0 ] ] } },
+{ "type": "Feature", "properties": { "cvn": "EAMENA-0194764", "qnt": "EAMENA-0257187", "dist": 123.25087137812528 }, "geometry": { "type": "LineString", "coordinates": [ [ 461010.482646604883485, 4024247.221805157139897, 1.0 ], [ 461093.69843176449649, 4024338.138857439626008, 1.0 ] ] } },
+{ "type": "Feature", "properties": { "cvn": "EAMENA-0194707", "qnt": "EAMENA-0257281", "dist": 403.23536073561468 }, "geometry": { "type": "LineString", "coordinates": [ [ 652204.071211690781638, 4088214.811638548970222, 1.0 ], [ 652452.42256929690484, 4088532.491287445183843, 1.0 ] ] } },
+{ "type": "Feature", "properties": { "cvn": "EAMENA-0194767", "qnt": "EAMENA-0257168", "dist": 394.03736210288241 }, "geometry": { "type": "LineString", "coordinates": [ [ 529623.440582482260652, 4006797.665597433689982, 1.0 ], [ 529983.658354933839291, 4006637.951480515301228, 1.0 ] ] } }
+]
+}

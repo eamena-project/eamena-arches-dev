@@ -15,16 +15,29 @@ Example of translation from English (`en`) to a target language (`ar`, `fr`, etc
 
 ### Messages
 
-![](https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-internationalisation-fr.png )
+<p align="center">
+  <img alt="img-name" src="../../../www/arches-v7-internationalisation-fr.png" width="450">
+  <br>
+    <em>Django messages for the navigation</em>
+</p>
 
 ### Thesauri
 
-![](https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/rdm-thesauri-eamena.png)
+<p align="center">
+  <img alt="img-name" src="../../../www/rdm-thesauri-eamena.png" width="450">
+  <br>
+    <em>Thesauri, or controlled vocabularies, are Arches concepts</em>
+</p>
 
 ### Resource Models
 > RM
 
-![](image-5.png)
+<p align="center">
+  <img alt="img-name" src="image-5.png" width="450">
+  <br>
+    <em>Heritage Place ressource model (RM)</em>
+</p>
+
 
 ## Bases
 

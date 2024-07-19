@@ -103,38 +103,54 @@ def rm_remove_arabic_hard_written(rm_file = "https://raw.githubusercontent.com/e
     response = requests.get(rm_file)
     data = response.json()
 
-    # Load data from the input JSON file
-    # with open(rm_file, 'r', encoding='utf-8') as file:
-    #     data = json.load(file)
-
-    # Loop through all graphs and their cards to modify the 'name' field
     for graph in data['graph']:
         for card in graph['cards']:
             if 'name' in card and card['name']:
-                # Use a regular expression to remove text after the '/' in the dictionary
+                # rm text after the '/' in the dictionary
                 card['name']['en'] = re.sub(r'/.*', '', card['name']['en']).strip()
 
-    # Write the updated data to a new JSON file
     outfile = outdir + "\\" + rm_file_out
     with open(outfile, 'w', encoding='utf-8') as file:
         json.dump(data, file, ensure_ascii=False, indent=4)
     print("Saved in " + outfile)
 
 
-def rm_to_xlsx():
+def rm_to_xlsx(rm_file = "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/dbs/database.eamena/i18n/data/bases/Heritage Place_without_hard_written_arabic.json", rm_file_out = 'Heritage Place_card_nodes.xlsx', outdir = None):
     """
-    Read a RM file, extract the 
+    Read a RM file, extract the 'en' values from the cards, export in an XLSX column
     
     """
-    pass
+    import os
+    import json
+    import re
+    import requests
+    from openpyxl import Workbook
 
+    wb = Workbook()
+    ws = wb.active
+
+    response = requests.get(rm_file)
+    data = response.json()
+
+    l = []
+    for graph in data['graph']:
+        for card in graph['cards']:
+            if 'name' in card and card['name']:
+                # rm text after the '/' in the dictionary
+                node = card['name']['en']
+                l.append(node)
+
+    # Write data to the first column
+    for index, value in enumerate(l, start=1):
+        ws.cell(row=index, column=1, value=value)
+    outfile = outdir + "\\" + rm_file_out
+    wb.save(outfile)
+    print("Saved in " + outfile)
+    
 # rm_read()
 import os
+# NB: le cwd ne marche pas pareil quand on run dans la fenetre interactive
 outdir = os.path.dirname(os.path.realpath(__file__))
-print(outdir)
-rm_remove_arabic_hard_written(outdir = outdir)
-
-# 
-
-# print()
-# print(os.getcwd())
+# print(outdir)
+# rm_remove_arabic_hard_written(outdir = outdir)
+rm_to_xlsx(outdir = outdir)

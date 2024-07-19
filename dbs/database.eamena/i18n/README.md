@@ -12,8 +12,10 @@ Example of translation from English (`en`) to a target language (`ar`, `fr`, etc
 | thesauri    | controlled vocabularies describing the ressources, i.e. Arches concepts                      | [skos2excel.py](https://github.com/zoometh/skos2excel) | [EAMENA.xml](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/i18n/data/bases/EAMENA.xml) |
 | rm          | Resource model of the Heritage Places                                   | [manage_i18n_files.py](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/i18n/manage_i18n_files.py) |  [Heritage Place_without_hard_written_arabic.json](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/i18n/data/bases/Heritage%20Place_without_hard_written_arabic.json) |
 
+Templates (so-called `base`) of these files are in the folder [bases/](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/i18n/data/bases)
 
 ### Messages
+> Django message
 
 <p align="center">
   <img alt="img-name" src="../../../www/arches-v7-internationalisation-fr.png" width="450">
@@ -21,29 +23,29 @@ Example of translation from English (`en`) to a target language (`ar`, `fr`, etc
     <em>Django messages for the navigation</em>
 </p>
 
+#### Base
+
+[arches-70_djangopo_en.po](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/i18n/data/bases/arches-70_djangopo_en.po) directly downloaded from [Arches/Transifex](https://app.transifex.com/archesproject/arches-70/djangopo/) has 11,617 words and 1,553 strings to translate from `en` to a traget language (`fr`, `ar`, etc.). Here a snippet:
+
+```Python
+...
+#: app/datatypes/datatypes.py:564
+#, python-brace-format
+msgid "{value} is an invalid date format"
+msgstr ""
+...
+```
+
 ### Thesauri
+> Arches concepts
 
 <p align="center">
   <img alt="img-name" src="../../../www/rdm-thesauri-eamena.png" width="450">
   <br>
-    <em>Thesauri, or controlled vocabularies, are Arches concepts</em>
+    <em>Thesauri, or controlled vocabularies</em>
 </p>
 
-### Resource Models
-> RM
-
-<p align="center">
-  <img alt="img-name" src="image-5.png" width="450">
-  <br>
-    <em>Heritage Place ressource model (RM)</em>
-</p>
-
-
-## Bases
-
-The templates (so-called `base`) of these files are in the folder [bases/](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/i18n/data/bases)
-
-### EAMENA.xml
+#### Base
 
 `EAMENA.xml` (snippet) listing `en-us` and `ar` languages (`en` is for internal purposes)
 
@@ -58,20 +60,18 @@ The templates (so-called `base`) of these files are in the folder [bases/](https
 </skos:narrower>
 ...
 ```
-### arches-70_djangopo_en.po
 
-[arches-70_djangopo_en.po](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/i18n/data/bases/arches-70_djangopo_en.po) directly downloaded from [Arches/Transifex](https://app.transifex.com/archesproject/arches-70/djangopo/) has 11,617 words and 1,553 strings to translate from `en` to a traget language (`fr`, `ar`, etc.). Here a snippet:
+### Resource Models
+> RM
 
-```Python
-...
-#: app/datatypes/datatypes.py:564
-#, python-brace-format
-msgid "{value} is an invalid date format"
-msgstr ""
-...
-```
+<p align="center">
+  <img alt="img-name" src="image-5.png" width="450">
+  <br>
+    <em>Heritage Place ressource model (RM)</em>
+</p>
 
-### Heritage Place_without_hard_written_arabic.json
+
+#### Base
 
 [Heritage Place_without_hard_written_arabic.json](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/i18n/data/bases/Heritage%20Place_without_hard_written_arabic.json) is the RM of the HP without hard written Arabic translation in the `en` key
 
@@ -81,31 +81,6 @@ msgstr ""
                         "en": "Geometries"
                     },
 ```
-
-## Translation errors
-
-There could have translations errors:
-
-<p align="center">
-  <img alt="img-name" src="../../../www/arches-v7-internationalisation-error-fr.png" width="450">
-  <img alt="img-name" src="../../../www/arches-v7-internationalisation-error-fr-1.png" width="450">
-  <br>
-    <em>The English `Close` [windows] has been incorrectly translated to `Proche` in French when the correct translation should be `Fermer`</em>
-</p>
-
-If you find any errors in the **translations messages**, please update these files:
-
-- Arabic `ar`: <a href='https://github.com/eamena-project/arches/blob/master/arches/locale/ar/LC_MESSAGES/django.po'>ar</a>
-- French `fr`: <a href='https://github.com/eamena-project/arches/blob/master/arches/locale/fr/LC_MESSAGES/django.po'>fr</a>
-- Central Kurdish (Sorani) `ckb`: <a href='https://github.com/eamena-project/arches/blob/master/arches/locale/ckb/LC_MESSAGES/django.po'>ckb</a>[^2]
-
-These changes will be then proposed to Arches' source code via a Pull request
-
-<p align="center">
-  <img alt="img-name" src="../../../www/arches-ea-github-pr.png" width="1100">
-  <br>
-    <em>Pull request to change <a href='https://github.com/archesproject/arches/blob/master/arches/locale/fr/LC_MESSAGES/django.po'>Arches French PO file content</a></em>
-</p>
 
 ## Localisation
 > l10n
@@ -397,7 +372,30 @@ see this [Python script](https://github.com/eamena-project/eamena-arches-dev/blo
 
 ❌ However, because there are already data linked with the HP RM, the former RM (with hard written node) can not be overwrite by the new one (without hard written values)
 
+## Translation errors
 
+There could have translations errors:
+
+<p align="center">
+  <img alt="img-name" src="../../../www/arches-v7-internationalisation-error-fr.png" width="450">
+  <img alt="img-name" src="../../../www/arches-v7-internationalisation-error-fr-1.png" width="450">
+  <br>
+    <em>The English `Close` [windows] has been incorrectly translated to `Proche` in French when the correct translation should be `Fermer`</em>
+</p>
+
+If you find any errors in the **translations messages**, please update these files:
+
+- Arabic `ar`: <a href='https://github.com/eamena-project/arches/blob/master/arches/locale/ar/LC_MESSAGES/django.po'>ar</a>
+- French `fr`: <a href='https://github.com/eamena-project/arches/blob/master/arches/locale/fr/LC_MESSAGES/django.po'>fr</a>
+- Central Kurdish (Sorani) `ckb`: <a href='https://github.com/eamena-project/arches/blob/master/arches/locale/ckb/LC_MESSAGES/django.po'>ckb</a>[^2]
+
+These changes will be then proposed to Arches' source code via a Pull request
+
+<p align="center">
+  <img alt="img-name" src="../../../www/arches-ea-github-pr.png" width="1100">
+  <br>
+    <em>Pull request to change <a href='https://github.com/archesproject/arches/blob/master/arches/locale/fr/LC_MESSAGES/django.po'>Arches French PO file content</a></em>
+</p>
 
 ## Other
 

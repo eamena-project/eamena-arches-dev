@@ -1,4 +1,6 @@
 
+# Series of functions to manage the i18n/l10n of Django messages (po_*.py), thesauri, and RM (rm_*.py)
+
 def po_empty_messages(po_file_path = "https://raw.githubusercontent.com/eamena-project/arches/master/arches/locale/ckb/LC_MESSAGES/django.po", po_empty_messages = "C:/Rprojects/eamena-arches-dev/dbs/database.eamena/i18n/data/ckb/django_empty_messages.po" ):
     
     import polib
@@ -19,12 +21,15 @@ def po_empty_messages(po_file_path = "https://raw.githubusercontent.com/eamena-p
     new_po.save(po_empty_messages)
 
 
-
 def po_compare2files(po_basis_path = "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/dbs/database.eamena/i18n/data/bases/arches-70_djangopo_en.po" 
 , po_translated_path = "https://raw.githubusercontent.com/eamena-project/arches/master/arches/locale/ckb/LC_MESSAGES/django.po", po_differences = "C:/Rprojects/eamena-arches-dev/dbs/database.eamena/i18n/data/ckb/django_differences.po" 
 ):
-    ## Compare 2 PO file to find sentences in A that are missing in B. Used for the `ckb` translation 
+    """
+    Compare 2 PO file to find sentences in A that are missing in B. Used for the `ckb` translation: running this script creates a new PO file that can be converted to an XLSX one with the po2excel.py script
 
+    example: po_empty_messages()
+
+    """
     import polib
     import requests
 
@@ -65,4 +70,55 @@ def po_compare2files(po_basis_path = "https://raw.githubusercontent.com/eamena-p
     print(f"PO file with differences saved to {po_differences}")
 
 
-po_empty_messages()
+def rm_read(rm_file = "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/dbs/database.eamena/i18n/data/bases/Heritage Place.json"):
+    """
+    Read resource model
+
+    """
+    import json
+    import requests
+
+    # hp_concepts = "Heritage Place.json"
+    # f = open(rm_file)
+    response = requests.get(rm_file)
+    f = response.text
+    # data = json.load(f)
+    # hp_conceptscollections = list(data.keys())
+    # nb = 0
+    # # sum all concepts (nodes?)
+    # for hp_conceptscollection in hp_conceptscollections:
+    #     nb = nb + len(data[hp_conceptscollection])
+    print(f[:100])
+
+def rm_remove_arabic_hard_written(rm_file = "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/dbs/database.eamena/i18n/data/bases/Heritage Place.json"):
+    """
+    Remove the Arabic hard written in the HP RM and export in a temp file
+
+    """
+    import json
+    import re
+
+    # Load data from the input JSON file
+    with open(rm_file, 'r', encoding='utf-8') as file:
+        data = json.load(file)
+
+    # Loop through all graphs and their cards to modify the 'name' field
+    for graph in data['graph']:
+        for card in graph['cards']:
+            if 'name' in card and card['name']:
+                # Use a regular expression to remove text after the '/'
+                card['name'] = re.sub(r'/.*', '', card['name']).strip()
+
+    # Write the updated data to a new JSON file
+    with open('temp/Heritage Place_without_hard_written_arabic.json', 'w', encoding='utf-8') as file:
+        json.dump(data, file, ensure_ascii=False, indent=4)
+
+
+def rm_to_xlsx():
+    """
+    Read a RM file, extract the 
+    
+    """
+    pass
+
+rm_read()

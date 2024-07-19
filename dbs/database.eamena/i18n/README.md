@@ -6,18 +6,11 @@
 
 Example of translation from English (`en`) to a target language (`ar`, `fr`, etc.), using the [skos2excel](https://github.com/zoometh/skos2excel) and [po2excel](https://github.com/zoometh/po2excel) tools
 
-| thesauri | messages | resource models
-|----------|----------|--------|
-| Thesauri are controlled vocabularies describing the ressources | Messages are the texts displayed on the screen describing tabs, menus, etc., for navigation purposes | ... |
-|  | |  |
-| translation with `skos2excel.py`, base: `EAMEANA.xml` | translation with `po2excel`, base: `django.po` | ... |
-
 | description | script                                                                  | base          |           |
 |-------------|-------------------------------------------------------------------------|---------------|-----------|
-| messages    | texts displayed on the screen describing tabs, menus, etc., for navigation purposes | po2excel     | django.po |
-| thesauri    | controlled vocabularies describing the ressources                       | skos2excel.py | EAMENA.xml |
-| rm          | ...                                                                     |               |           |
-``` &#8203;:citation[oaicite:0]{index=0}&#8203;
+| messages    | texts displayed on the screen describing tabs, menus, etc., for navigation purposes | [po2excel.py](https://github.com/zoometh/po2excel)     | [arches-70_djangopo_en.po](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/i18n/data/bases/arches-70_djangopo_en.po) |
+| thesauri    | controlled vocabularies describing the ressources                       | [skos2excel.py](https://github.com/zoometh/skos2excel) | [EAMENA.xml](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/i18n/data/bases/EAMENA.xml) |
+| rm          | ...                                                                     | [Heritage Place_without_hard_written_arabic.json](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/i18n/data/bases/Heritage%20Place_without_hard_written_arabic.json) |           |
 
 
 ### Messages

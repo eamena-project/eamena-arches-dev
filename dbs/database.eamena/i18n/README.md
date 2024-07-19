@@ -1,18 +1,39 @@
 # Internationalisation
->  i18n and localisation (l10n)
+>  Internationalisation (i18n) and localisation (l10n)
 
 
-## Convert thesauri and messages
+## Messages, thesauri and resource models
 
 Example of translation from English (`en`) to a target language (`ar`, `fr`, etc.), using the [skos2excel](https://github.com/zoometh/skos2excel) and [po2excel](https://github.com/zoometh/po2excel) tools
 
 | thesauri | messages | resource models
 |----------|----------|--------|
 | Thesauri are controlled vocabularies describing the ressources | Messages are the texts displayed on the screen describing tabs, menus, etc., for navigation purposes | ... |
-| ![](https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/rdm-thesauri-eamena.png) | ![](https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-internationalisation-fr.png )| ![](image-5.png) |
+|  | |  |
 | translation with `skos2excel.py`, base: `EAMEANA.xml` | translation with `po2excel`, base: `django.po` | ... |
 
-### Bases
+| description | script                                                                  | base          |           |
+|-------------|-------------------------------------------------------------------------|---------------|-----------|
+| messages    | texts displayed on the screen describing tabs, menus, etc., for navigation purposes | po2excel     | django.po |
+| thesauri    | controlled vocabularies describing the ressources                       | skos2excel.py | EAMENA.xml |
+| rm          | ...                                                                     |               |           |
+``` &#8203;:citation[oaicite:0]{index=0}&#8203;
+
+
+### Messages
+
+![](https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-internationalisation-fr.png )
+
+### Thesauri
+
+![](https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/rdm-thesauri-eamena.png)
+
+### Resource Models
+> RM
+
+![](image-5.png)
+
+## Bases
 
 The templates (so-called `base`) of these files are in the folder [bases/](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/i18n/data/bases)
 
@@ -41,7 +62,7 @@ msgstr ""
 ...
 ```
 
-### Translation errors
+## Translation errors
 
 There could have translations errors:
 

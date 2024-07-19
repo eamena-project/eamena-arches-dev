@@ -90,7 +90,7 @@ def rm_read(rm_file = "https://raw.githubusercontent.com/eamena-project/eamena-a
         nb = nb + len(data[hp_conceptscollection])
     print(n)
 
-def rm_remove_arabic_hard_written(rm_file = "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/dbs/database.eamena/i18n/data/bases/Heritage Place_with_hard_written_arabic.json", rm_file_out = 'Heritage Place_without_hard_written_arabic.json', outdir = None):
+def rm_remove_arabic_hard_written(rm_file = "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/dbs/database.eamena/i18n/data/bases/Information Resource.json", rm_file_out = 'Information Resource_without_arabic_hard_written.json', outdir = None):
     """
     Remove the Arabic hard written values that remain in the cards dictionnaries in the HP RM and export in a file
 
@@ -107,7 +107,10 @@ def rm_remove_arabic_hard_written(rm_file = "https://raw.githubusercontent.com/e
         for card in graph['cards']:
             if 'name' in card and card['name']:
                 # rm text after the '/' in the dictionary
-                card['name']['en'] = re.sub(r'/.*', '', card['name']['en']).strip()
+                if type(card['name']) == dict:
+                    card['name']['en'] = re.sub(r'/.*', '', card['name']['en']).strip()
+                else:
+                    card['name'] = re.sub(r'/.*', '', card['name']).strip()
 
     outfile = outdir + "\\" + rm_file_out
     with open(outfile, 'w', encoding='utf-8') as file:
@@ -136,11 +139,12 @@ def rm_to_xlsx(rm_file = "https://raw.githubusercontent.com/eamena-project/eamen
     for graph in data['graph']:
         for card in graph['cards']:
             if 'name' in card and card['name']:
-                # rm text after the '/' in the dictionary
-                node = card['name']['en']
+                if type(card['name']) == dict:
+                    node = card['name']['en']
+                else:
+                    node = card['name']
                 l.append(node)
 
-    # Write data to the first column
     for index, value in enumerate(l, start=1):
         ws.cell(row=index, column=1, value=value)
     outfile = outdir + "\\" + rm_file_out
@@ -151,6 +155,9 @@ def rm_to_xlsx(rm_file = "https://raw.githubusercontent.com/eamena-project/eamen
 import os
 # NB: le cwd ne marche pas pareil quand on run dans la fenetre interactive
 outdir = os.path.dirname(os.path.realpath(__file__))
-# print(outdir)
-# rm_remove_arabic_hard_written(outdir = outdir)
-rm_to_xlsx(outdir = outdir)
+# remove Arabic -------------------------------------------------------------------
+# rm_remove_arabic_hard_written(rm_file = "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/dbs/database.eamena/i18n/data/bases/Information Resource.json", rm_file_out = 'Information Resource_without_arabic_hard_written.json', outdir = outdir) # IR
+rm_remove_arabic_hard_written(rm_file = "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/dbs/database.eamena/i18n/data/bases/Person_Organization.json", rm_file_out = 'Person_Organization_without_arabic_hard_written.json', outdir = outdir) # P/O
+# to XLSX -------------------------------------------------------------------
+def rm_to_xlsx(rm_file = "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/dbs/database.eamena/i18n/data/bases/Information Resource_without_arabic_hard_written.json", rm_file_out = 'Information Resource_card_nodes.xlsx', outdir = None)
+# def rm_to_xlsx(rm_file = "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/dbs/database.eamena/i18n/data/bases/Person_Organization_without_arabic_hard_written.json", rm_file_out = 'Person_Organization_card_nodes.xlsx', outdir = None)

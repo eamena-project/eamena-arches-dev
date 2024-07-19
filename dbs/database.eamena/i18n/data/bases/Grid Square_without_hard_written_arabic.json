@@ -39,7 +39,7 @@
                     "helptitle": null,
                     "instructions": null,
                     "is_editable": false,
-                    "name": "Grid Square Identification / \u0647\u0648\u064a\u0629 \u0627\u0644\u0634\u0628\u0643\u0629",
+                    "name": "Grid Square Identification",
                     "nodegroup_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
                     "sortorder": null,
                     "visible": true
@@ -80,7 +80,7 @@
                     "helptitle": null,
                     "instructions": null,
                     "is_editable": false,
-                    "name": "Geometry Place Expression / \u0647\u0646\u062f\u0633\u0629 \u0627\u0644\u0634\u0628\u0643\u0629",
+                    "name": "Geometry Place Expression",
                     "nodegroup_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
                     "sortorder": null,
                     "visible": true
@@ -108,7 +108,7 @@
                                 "text": "Polygon"
                             }
                         ],
-                        "label": "Grid Square Geometry / \u0647\u0646\u062f\u0633\u0629 \u0627\u0644\u0634\u0628\u0643\u0629",
+                        "label": "Grid Square Geometry",
                         "maxZoom": 20,
                         "minZoom": null,
                         "overlayConfigs": [],
@@ -118,7 +118,7 @@
                         "zoom": 3
                     },
                     "id": "2be64231-ca97-11ea-a292-02e7594ce0a0",
-                    "label": "Grid Square Geometry / \u0647\u0646\u062f\u0633\u0629 \u0627\u0644\u0634\u0628\u0643\u0629",
+                    "label": "Grid Square Geometry",
                     "node_id": "7248e0d0-ca96-11ea-a292-02e7594ce0a0",
                     "sortorder": 0,
                     "visible": true,
@@ -128,14 +128,14 @@
                     "card_id": "b3628db2-742d-11ea-b4d0-02e7594ce0a0",
                     "config": {
                         "defaultValue": null,
-                        "label": "Grid Square / \u0627\u0644\u0634\u0628\u0643\u0629",
+                        "label": "Grid Square",
                         "maxLength": null,
                         "placeholder": "Enter Grid ID in the format E##N##-##",
                         "uneditable": false,
                         "width": "100%"
                     },
                     "id": "611e3251-742f-11ea-b4d0-02e7594ce0a0",
-                    "label": "Grid Square / \u0627\u0644\u0634\u0628\u0643\u0629",
+                    "label": "Grid Square",
                     "node_id": "b3628db0-742d-11ea-b4d0-02e7594ce0a0",
                     "sortorder": 0,
                     "visible": true,

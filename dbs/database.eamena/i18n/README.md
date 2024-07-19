@@ -30,7 +30,9 @@ Example of translation from English (`en`) to a target language (`ar`, `fr`, etc
 
 The templates (so-called `base`) of these files are in the folder [bases/](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/i18n/data/bases)
 
-* `EAMENA.xml` (snippet) listing `en-us` and `ar` languages (`en` is for internal purposes)
+### EAMENA.xml
+
+`EAMENA.xml` (snippet) listing `en-us` and `ar` languages (`en` is for internal purposes)
 
 ```XML
 ...
@@ -43,8 +45,9 @@ The templates (so-called `base`) of these files are in the folder [bases/](https
 </skos:narrower>
 ...
 ```
+### arches-70_djangopo_en.po
 
-* [arches-70_djangopo_en.po](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/i18n/data/bases/arches-70_djangopo_en.po) directly downloaded from [Arches/Transifex](https://app.transifex.com/archesproject/arches-70/djangopo/) has 11,617 words and 1,553 strings to translate from `en` to a traget language (`fr`, `ar`, etc.). Here a snippet:
+[arches-70_djangopo_en.po](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/i18n/data/bases/arches-70_djangopo_en.po) directly downloaded from [Arches/Transifex](https://app.transifex.com/archesproject/arches-70/djangopo/) has 11,617 words and 1,553 strings to translate from `en` to a traget language (`fr`, `ar`, etc.). Here a snippet:
 
 ```Python
 ...
@@ -53,6 +56,17 @@ The templates (so-called `base`) of these files are in the folder [bases/](https
 msgid "{value} is an invalid date format"
 msgstr ""
 ...
+```
+
+### Heritage Place_without_hard_written_arabic.json
+
+[Heritage Place_without_hard_written_arabic.json](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/i18n/data/bases/Heritage%20Place_without_hard_written_arabic.json) is the RM of the HP without hard written Arabic translation in the `en` key
+
+```JSON
+                    "name": {
+                        "ar": "أشكال هندسية",
+                        "en": "Geometries"
+                    },
 ```
 
 ## Translation errors

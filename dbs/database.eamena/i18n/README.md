@@ -3,8 +3,9 @@
 
 
 ## Messages, thesauri and resource models
+> Django messages, thesauri and RM
 
-Example of translation from English (`en`) to a target language (`ar`, `fr`, etc.), using the [skos2excel](https://github.com/zoometh/skos2excel) and [po2excel](https://github.com/zoometh/po2excel) tools
+The localisation (l10n) of the DB in different laguages (`fr`, `ar`, `ckb`, etc.) means translation these three DB features: messages, thesauri and resource models.
 
 | description | description                                                                  |   script        |    base       |
 |-------------|-------------------------------------------------------------------------|---------------|-----------|
@@ -84,6 +85,8 @@ msgstr ""
 
 ## Localisation
 > l10n
+
+Example of translation from English (`en`) to a target language (`ar`, `fr`, etc.), using the [skos2excel](https://github.com/zoometh/skos2excel) and [po2excel](https://github.com/zoometh/po2excel) tools
 
 ### en -> ckb
 

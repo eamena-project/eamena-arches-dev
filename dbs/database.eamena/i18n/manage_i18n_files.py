@@ -90,9 +90,9 @@ def rm_read(rm_file = "https://raw.githubusercontent.com/eamena-project/eamena-a
         nb = nb + len(data[hp_conceptscollection])
     print(n)
 
-def rm_remove_arabic_hard_written(rm_file = "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/dbs/database.eamena/i18n/data/bases/Heritage Place_with_hard_written_arabic.json", rm_file_out = 'Heritage Place_without_hard_written_arabic.json'):
+def rm_remove_arabic_hard_written(rm_file = "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/dbs/database.eamena/i18n/data/bases/Heritage Place_with_hard_written_arabic.json", rm_file_out = 'Heritage Place_without_hard_written_arabic.json', outdir = None):
     """
-    Remove the Arabic hard written in the HP RM and export in a temp file
+    Remove the Arabic hard written values that remain in the cards dictionnaries in the HP RM and export in a file
 
     """
     import os
@@ -111,11 +111,11 @@ def rm_remove_arabic_hard_written(rm_file = "https://raw.githubusercontent.com/e
     for graph in data['graph']:
         for card in graph['cards']:
             if 'name' in card and card['name']:
-                # Use a regular expression to remove text after the '/'
-                card['name'] = re.sub(r'/.*', '', card['name']).strip()
+                # Use a regular expression to remove text after the '/' in the dictionary
+                card['name']['en'] = re.sub(r'/.*', '', card['name']['en']).strip()
 
     # Write the updated data to a new JSON file
-    outfile = os.getcwd() + rm_file_out
+    outfile = outdir + "\\" + rm_file_out
     with open(outfile, 'w', encoding='utf-8') as file:
         json.dump(data, file, ensure_ascii=False, indent=4)
     print("Saved in " + outfile)
@@ -129,4 +129,12 @@ def rm_to_xlsx():
     pass
 
 # rm_read()
-rm_remove_arabic_hard_written()
+import os
+outdir = os.path.dirname(os.path.realpath(__file__))
+print(outdir)
+rm_remove_arabic_hard_written(outdir = outdir)
+
+# 
+
+# print()
+# print(os.getcwd())

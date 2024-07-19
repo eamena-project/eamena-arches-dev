@@ -81,26 +81,31 @@ def rm_read(rm_file = "https://raw.githubusercontent.com/eamena-project/eamena-a
     # hp_concepts = "Heritage Place.json"
     # f = open(rm_file)
     response = requests.get(rm_file)
-    f = response.text
+    data = response.json()
     # data = json.load(f)
-    # hp_conceptscollections = list(data.keys())
-    # nb = 0
-    # # sum all concepts (nodes?)
-    # for hp_conceptscollection in hp_conceptscollections:
-    #     nb = nb + len(data[hp_conceptscollection])
-    print(f[:100])
+    hp_conceptscollections = list(data.keys())
+    nb = 0
+    # sum all concepts (nodes?)
+    for hp_conceptscollection in hp_conceptscollections:
+        nb = nb + len(data[hp_conceptscollection])
+    print(n)
 
-def rm_remove_arabic_hard_written(rm_file = "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/dbs/database.eamena/i18n/data/bases/Heritage Place.json"):
+def rm_remove_arabic_hard_written(rm_file = "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/dbs/database.eamena/i18n/data/bases/Heritage Place_with_hard_written_arabic.json", rm_file_out = 'Heritage Place_without_hard_written_arabic.json'):
     """
     Remove the Arabic hard written in the HP RM and export in a temp file
 
     """
+    import os
     import json
     import re
+    import requests
+
+    response = requests.get(rm_file)
+    data = response.json()
 
     # Load data from the input JSON file
-    with open(rm_file, 'r', encoding='utf-8') as file:
-        data = json.load(file)
+    # with open(rm_file, 'r', encoding='utf-8') as file:
+    #     data = json.load(file)
 
     # Loop through all graphs and their cards to modify the 'name' field
     for graph in data['graph']:
@@ -110,8 +115,10 @@ def rm_remove_arabic_hard_written(rm_file = "https://raw.githubusercontent.com/e
                 card['name'] = re.sub(r'/.*', '', card['name']).strip()
 
     # Write the updated data to a new JSON file
-    with open('temp/Heritage Place_without_hard_written_arabic.json', 'w', encoding='utf-8') as file:
+    outfile = os.getcwd() + rm_file_out
+    with open(outfile, 'w', encoding='utf-8') as file:
         json.dump(data, file, ensure_ascii=False, indent=4)
+    print("Saved in " + outfile)
 
 
 def rm_to_xlsx():
@@ -121,4 +128,5 @@ def rm_to_xlsx():
     """
     pass
 
-rm_read()
+# rm_read()
+rm_remove_arabic_hard_written()

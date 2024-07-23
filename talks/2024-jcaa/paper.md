@@ -1,17 +1,35 @@
-# Building on the top of Arches. Information systems for cultural heritage and archaeological data management and the example of the EAMENA
+# Reusability and information systems for cultural heritage and archaeological data management. The EAMENA database built on the top of Arches.
+> Building on the top of Arches. Information systems for cultural heritage and archaeological data management and the example of EAMENA  
 > Information systems for cultural heritage and archaeological data management. The example of the EAMENA a framework deployed on the top of Arches 
 > https://github.com/eamena-project/eamena-arches-dev/blob/main/talks/2024-jcaa/paper.md
 
 ## Introduction
 
-Reusability (and sometimes reproductibility) is the ultimate goal of the FAIR policies and the main reason of the DMP. Among the social sciences, Archaeology, to be at the cross-road of so many scientific fields, With the 3rd revolution in Archaeology [^9] as expertise of archaeologists has significantly developed with the advent of information sciences, aDNA, radiocarbon, etc., it is likely a single archaeological project cannot exploit the full potential of the data it has produced. Therefore there is a need to make its data reusable to produce serendipity. 
-Archaeological objects, such as a ceramic or a cultural areas, are always context-based and at the cross-road of many dimensions: spatial, temporal, typologic, etc. Such objects are highly multi-scalar (from the site to the use-wear, passing by the "monument") and multidisciplinar (from aDNA to climate data, passing by 'chaine operatoire') but has also to deal with uncertainity, metadata (ex: bibliographic references) and paradata (ex: information of the project framework). Pooling so many heterogeneous data together in a way that this data be easily findable, navigable and editable is a complex process. Making such data reusable is a real challenge.
-Information systems such as databases for being to broad (large scope, small resoultion), or at the opposite too specialised (small scope, high resoultion), necessarly limit the capacity of capture the full potential of the information.
-We present here ongoing developments conducted under the EAMENA project around the IT stack Arches, an open-source geoweb semantic-based platform. Our aim is to present how IT developments can enhance both the reusability of pieces of software (i.e methods) and archaeological data. 
+ 
+Archaeology and cultural heritage, unlike natural sciences and mathematics, deal often with data at the cross-road of many disciplines, from rescue archaeology politicies to more scientific-based fields (aDNA, radiocarbon, etc.) passing by 'chaine operatoire' recovering, climate data, etc. Other difficulties come from the fact that archaeological objects, such as a ceramic or a cultural areas, are always context-based, highly multi-scalar, but has also to deal with uncertainity (uncomplete or missing data), metadata (ex: bibliographic references) and paradata (ex: information of the project framework) that can be, per se, subject of future historical studies (historiography).
+It is now assumed that a single archaeological or cultural heritage project cannot exploit the full potential of the data it has produced during its lifespan. Pooling so many heterogeneous data together in a way that this data be easily findable, navigable and editable is a complex process. Making such data reusable is a real challenge. Making its data FAIR is therefore key. 
+Information systems such as databases for being to broad (large scope, small resoultion), or at the opposite too specialised (small scope, high resoultion), necessarly limit the capacity of capture the full potential of the information. 
+We present here ongoing developments conducted under the EAMENA project around the IT stack Arches. Arches is one of the few state-of-art open-source software for cultural heritage management used by the EAMENA project, documentation project on endangered archaeology in the Middle East and North Africa region, led by the University of Oxford. Our aim is to present how IT developments can enhance both the reusability of pieces of software (i.e methods) and archaeological data.
+
+> Arches is  an open-source geoweb semantic-based platform. 
+> With the 3rd revolution in Archaeology [^9] as expertise of archaeologists has significantly developed with the advent of information sciences, aDNA, radiocarbon, etc., to produce serendipity. 
+> Archaeological objects, such as a ceramic or a cultural areas, are always context-based and at the cross-road of many dimensions: spatial, temporal, typologic, etc. Such objects are highly multi-scalar (from the site to the use-wear, passing by the "monument") and multidisciplinar (from aDNA to climate data, passing by 'chaine operatoire') but has also to deal with uncertainity, metadata (ex: bibliographic references) and paradata (ex: information of the project framework). 
+> Reusability (and sometimes reproductibility) is the ultimate goal of the FAIR policies and the main reason of the data management plan (DMP). 
+
+## Archaeological and Cultural Heritage data
+
+The common sense makes a difference between archaeology and the cultural heritage with a clear prevalence of the first on fondamental research, cutting edge methods (aDNA, isotops, etc.) and .... At the opposite, cultural heritage is often seen as a political usage (or misuse) of valorised archaeological and historical sites and artefacts. Whereas this distingo is real, there are no fundamental boundaries between archaeology and cultural heritage subject: over the time, an archaeological site can become a cultural heritage site and vice-versa. One can think of Hellenistic pilgrimage to Troya, ..., or more recently the deposit by Saddam Hussein of a brick in the Ur's ziggourat following a pluri-millenial tradition. In all these cases the status of this sites (Hellenistic Troya, Contemporaneous Ur) can be interpreted as a ..
+Archaeology tends to separate focuses on events, the so-called "archaeological events" (archaeological layers, node in the chaine operatoire, etc.) while cultural heritage 
+Only in appearence archaeology focuses on multi-stratified sites, and cultural heritage on heritage places. 
+
+In both cases these two disciplines tend to deal with palimpsestes. The remaining difference is that archaeology focuses more on the object itself trying to inform , and cultural heritage on the current social practices on this object. From what it follows that archaeological and cultural heritage data are fundamentaly the same and therefore should be managed in the same way. 
+
+that is what the concept of 'heritage place', more than 'site' is made for. 
+
 
 ## Arches
 
-Arches is an open-source geoweb semantic-based information purpose-built platform for cultural heritage management created by the *Getty Conservation Institute* and the *World Monument Fund*. It is a NoSQL graph database where nodes composes the table-like fields (called 'resource models' in Arches, or 'graphs') and have semamtic relation relationships, using the CIDOC-CRM by default. Arches is an IT stack based on mature and state-of-art technologies. Its key features are: 
+Arches is an open-source geoweb semantic-based information purpose-built platform for cultural heritage management created by the *Getty Conservation Institute* and the *World Monument Fund*. It is a graph database where nodes composes the table-like fields (called 'resource models' in Arches, or 'graphs') and have semamtic relation relationships, using the CIDOC-CRM ontology by default. Arches is an IT stack based on mature and state-of-art technologies. Its key features are: 
 - a PostgreSQL database, one of the top five database management system (DBMS) with an increasing popularity[^3], among the open source software (OSS), it is the closest to the Oracle the world most popular DBMS; 
 - logics based on Python programming language, the world-wide most used [^2];
 - Django web-application framework to manage interactions between the server and the web browser
@@ -29,7 +47,9 @@ Arches also comes with various built-in iso-standards (CIDOC-CRM, Dublin Core, S
 
 ### The project
 
-The EAMENA project (Endangered Archaeology in Middle East and North Africa), led by the University of Oxford in partnership with the universities of Durham and Leicester and funded by Arcadia since 2015. It starts with the destruction of Palmyra in 2016 by ISIS. 
+The EAMENA project (Endangered Archaeology in Middle East and North Africa), led by the University of Oxford in partnership with the universities of Durham and Leicester and funded by Arcadia since 2015 focuses on documenting endangered archaeology and cultural heritage. 
+
+The EAMENA project started with the destruction of Palmyra in 2016 by ISIS. 
 
 <br>
 
@@ -48,7 +68,13 @@ The purpose of the project was a comprehensive mapping of the endangered inammov
 <em> Georgahical scope of the EAMENA project, from Mauritania to Afghanistan (since xxx) with the number of heritage places created by years. EAMENA database (currently on Arches v7.3) counts some 215,000 heritage places among other resource models (Person/Organisation, Information Resources, etc., see REF) for a total of more than 380,000 records.</em>
 <br>
 
-Condisering the very large geographical scope of the project, assessing threats over cultural heritage through remote sensing has been the privilegied method. Remote sensing through offers three main insights: (i) since the MENA region has almost no forest cover, a large part of the built heritage is visible on the photographs, (ii) a significant number of heritage places are located in desertic remote areas that can be hardly accessed by land, (iii) the MENA region is regularly politically shattered and some areas remains unsecure for scholars to go on the ground. Platform like Google Earth offers free access to satellite imagery that can be completed by other image sets such as Sentinel, SPOT, Landsat, etc. or even historical aerial photographs[^16]. The downsides of the remote sensing are obvious, when documenting an heritage place its spatial information is certain (i.e. its location) while its temporal and typological dimensions are very much uncertain: that is what the concept of 'heritage place', more than 'site' is made for. To overcome this issue the database graph structure allows the recording of multiple interpretations for the same resource (here, 'heritage place'). In that way, a single heritage place can have two different assumptions on its function and dating with in both cases different levels of confidence made by two or more contributors.
+EAMENA focuses on the built heritage. And even if the project started because of the destruction of an iconic 'monument', the Bel Temple of Palmyra, the scope of the project encompasses any possible pre-WII human-made structures. 
+
+Condisering the very large geographical scope of the project, assessing threats over cultural heritage through remote sensing has been the privilegied method. Remote sensing through offers three main insights: (i) since the MENA region has almost no forest cover, a large part of the built heritage is visible on the photographs, (ii) a significant number of heritage places are located in desertic remote areas that can be hardly accessed by land, (iii) the MENA region is regularly politically shattered and some areas remains unsecure for scholars to go on the ground. Platform like Google Earth offers free access to satellite imagery that can be completed by other image sets such as Sentinel, SPOT, Landsat, etc. or even historical aerial photographs[^16]. 
+
+Remote sensing is a key tool of landscape archaeology, a word that seems to be coined for archaeological site such as Stonehenge and its surrondings (Tilley). Pedestrian and later aerial surveys have created the notion of palimpseste, already existing at the end of the 19th c. [^18].  
+
+The downsides of the remote sensing assessment are obvious, when documenting an heritage place its spatial information is certain (i.e. its location) while its temporal and typological dimensions are very much uncertain. To overcome this issue the database graph structure allows the recording of multiple interpretations for the same resource (here, 'heritage place'). In that way, a single heritage place can have two different assumptions on its function and dating with in both cases different levels of confidence made by two or more contributors.
 The information recorded in EAMENA has an important degree of reliability since it is quite hard to maintain a minimum standardisation when the database recieved contribution from more than 200 contributors and this despite a mature data entry methodology with statement on a minimal data standards [^11] supported by a large body of training material (YouTube videos, MOOC[^14], digital documentation[^15]), numerous in-person and remote trainings have been delivered to our MENA colleagues. This is why the EAMENA team is building IT tools to sample EAMENA sub-dataset carefully selected for being consistent with research question of cultural heritage management objective.
 
 
@@ -226,5 +252,6 @@ EAMENA contribution to Arches (https://github.com/archesproject/arches) are main
 [^13]: https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/ea.train/data/reference_data/rm/hp/Sub-typology-branch.json, Acceded the 01/06/2024. See also the Jupyter Notebook illustrating the workflow: https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/ea.train/data/reference_data/rm/hp/erd-branch/EAtrain_erd_branch.ipynb, Acceded the 01/06/2024.  
 [^14]: MOOC 1: https://eamena.org/mooc-1-endangered-archaeology-using-remote-sensing-to-protect-cultural-heritage and MOOC 2: https://eamena.org/mooc2-advanced-archaeological-remote-sensing-site-prospection-landscape-archaeology-and-heritage-pro, Acceded the 01/06/2024.   
 [^15]: https://eamena.org/cpf-training, Acceded the 01/06/2024.
-[^16]; Fradley, M. (2021). British inter-war aerial photogrammetric mapping in the MENA region: archives, access and research potential. Levant, 53(3), 336-346.  
-[^17]; Fradley, M., & Gyngell, S. (2022). Landscapes of Mobility and Movement in North-West Arabia: A Remote Sensing Study of the Neom Impact Zone. Land, 11(11), 1941.
+[^16]: Fradley, M. (2021). British inter-war aerial photogrammetric mapping in the MENA region: archives, access and research potential. Levant, 53(3), 336-346.  
+[^17]: Fradley, M., & Gyngell, S. (2022). Landscapes of Mobility and Movement in North-West Arabia: A Remote Sensing Study of the Neom Impact Zone. Land, 11(11), 1941.  
+[^18]: Maitland (1850-1906) dans Domesday Book and Beyond : Three Essays in the Early History of England (1897)  

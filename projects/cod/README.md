@@ -90,13 +90,17 @@ Create a [Bulk Upload file](https://github.com/eamena-project/eamena-arches-dev/
 | Poor/Ruin     | 31-60%              |
 | Ruin          | 61-90%              |
 
-
-
 ### Append metadata to the photographs
 
 See: [photos.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/business_data/csv/photos.csv)
 
 * GPS: function `add_metadata_XY_to_photo` of [cod.py](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/cod.py#L94)
+
+### TODO
+
+- [ ] Creating IR manually based on data recorded in the field `references` (file: `records.xlsx`)
+- [ ] Importing each photograph as an Information Resource (IR)
+- [ ] Hosting each photograph in a ResourceSpace server: <cityofthedead.arch.ox.ac.uk>, see APAAME
 
 ---
 
@@ -143,17 +147,6 @@ Match the photographs metadata with the photographs themselves
   <br>
     <em>Screenshot of the DSC_2643s.jpg photograph</em>
 </p>
-
-
-### Hosting
-
-On a ResourceSpace server: cityofthedead.arch.ox.ac.uk, see APAAME.
-
-
-### TODO
-
-- [ ] Importing each photograph as an Information Resource (IR)
-
 
 <*to be discussed*>
 

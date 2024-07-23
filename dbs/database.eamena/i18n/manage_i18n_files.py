@@ -144,10 +144,10 @@ def rm_to_xlsx(rm_file = "https://raw.githubusercontent.com/eamena-project/eamen
                 else:
                     node = card['name']
                 l.append(node)
-
+    print(len(l))
     for index, value in enumerate(l, start=1):
         ws.cell(row=index, column=1, value=value)
-    outfile = outdir + "\\" + rm_file_out
+    outfile = outdir + "\\rm_" + rm_file_out
     wb.save(outfile)
     print("Saved in " + outfile)
     
@@ -157,7 +157,7 @@ import os
 outdir = os.path.dirname(os.path.realpath(__file__))
 # remove Arabic -------------------------------------------------------------------
 # rm_remove_arabic_hard_written(rm_file = "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/dbs/database.eamena/i18n/data/bases/Information Resource.json", rm_file_out = 'Information Resource_without_arabic_hard_written.json', outdir = outdir) # IR
-rm_remove_arabic_hard_written(rm_file = "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/dbs/database.eamena/i18n/data/bases/Person_Organization.json", rm_file_out = 'Person_Organization_without_arabic_hard_written.json', outdir = outdir) # P/O
+# rm_remove_arabic_hard_written(rm_file = "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/dbs/database.eamena/i18n/data/bases/Person_Organization.json", rm_file_out = 'Person_Organization_without_arabic_hard_written.json', outdir = outdir) # P/O
 # to XLSX -------------------------------------------------------------------
-def rm_to_xlsx(rm_file = "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/dbs/database.eamena/i18n/data/bases/Information Resource_without_arabic_hard_written.json", rm_file_out = 'Information Resource_card_nodes.xlsx', outdir = None)
-# def rm_to_xlsx(rm_file = "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/dbs/database.eamena/i18n/data/bases/Person_Organization_without_arabic_hard_written.json", rm_file_out = 'Person_Organization_card_nodes.xlsx', outdir = None)
+# rm_to_xlsx(rm_file = "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/dbs/database.eamena/i18n/data/bases/Information Resource_without_arabic_hard_written.json", rm_file_out = 'Information Resource_card_nodes.xlsx', outdir = outdir)
+rm_to_xlsx(rm_file = "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/dbs/database.eamena/i18n/data/bases/Person_Organization_without_arabic_hard_written.json", rm_file_out = 'Person_Organization_card_nodes.xlsx', outdir = outdir)

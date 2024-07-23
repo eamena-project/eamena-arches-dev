@@ -1,6 +1,8 @@
 # City of the Dead
 > *aka* Cairo project, *aka* CoD, Unknown Heritage in the 'City of the Dead', DOCUMENTATION OF THE UNREGISTERED HERITAGE OF THE EASTERN CEMETERY IN CAIRO
 
+see [Issue #54](https://github.com/eamena-project/eamena-arches-dev/issues/54)
+
 ## Aims
 
 Uploading an existing database into EAMENA v4
@@ -65,6 +67,30 @@ Create a [Bulk Upload file](https://github.com/eamena-project/eamena-arches-dev/
   <br>
     Screenshot of the BU template with the `General Description` field (free text) highlighted
 </p>
+
+#### Mapping tables
+
+* Conditions
+
+| CoD           | EAMENA      |
+|---------------|-------------|
+| Fair          | Fair        |
+| Good          | Good        |
+| Poor          | Poor        |
+| Poor/Ruin     | Very Bad    |
+| Ruin          | Destroyed   |
+
+* Extent of damage
+
+| CoD           | EAMENA              |
+|---------------|---------------------|
+| Fair          | 1-10%               |
+| Good          | No Visible/Known    |
+| Poor          | 11-30%              |
+| Poor/Ruin     | 31-60%              |
+| Ruin          | 61-90%              |
+
+
 
 ### Append metadata to the photographs
 

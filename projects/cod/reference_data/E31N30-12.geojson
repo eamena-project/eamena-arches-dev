@@ -1,0 +1,23 @@
+{
+	"features": [
+	  {
+		"geometry": {
+		  "coordinates": [
+			[
+			  [31.25, 30],
+			  [31.25, 30.25],
+			  [31.5, 30.25],
+			  [31.5, 30],
+			  [31.25, 30]
+			]
+		  ],
+		  "type": "Polygon"
+		},
+		"properties": {
+		  "Grid ID": "E31N30-12"
+		},
+		"type": "Feature"
+	  }
+	],
+	"type": "FeatureCollection"
+  }

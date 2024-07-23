@@ -18,7 +18,7 @@ Arches is an open-source geoweb semantic-based information purpose-built platfor
 - data objects based on, or extending, JSON (JSON-LD, GeoJSON, Postgres JSONB type) the current standard to exchange data over the web
 
 <br>
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/arches-ea-stack.png" width="500px">
+<img src="../../www/arches-ea-stack.png" width="500px">
 <em> The Arches software stack </em>
 <br>
 
@@ -211,20 +211,20 @@ EAMENA contribution to Arches (https://github.com/archesproject/arches) are main
 
 ## Footnotes
 
-[^1]: Peuquet, D. J. (1994). It's about time: A conceptual framework for the representation of temporal dynamics in geographic information systems. Annals of the Association of american Geographers, 84(3), 441-461
-[^2]: TIOBE Index (2024), URL: https://www.tiobe.com/tiobe-index/, Acceded the 01/06/2024
+[^1]: Peuquet, D. J. (1994). It's about time: A conceptual framework for the representation of temporal dynamics in geographic information systems. Annals of the Association of american Geographers, 84(3), 441-461  
+[^2]: TIOBE Index (2024), URL: https://www.tiobe.com/tiobe-index/, Acceded the 01/06/2024  
 [^3]: DB-Engines Ranking - Trend Popularity (2024), URL: https://db-engines.com/en/ranking_trend, Acceded the 01/06/2024
-[^4]: CIDOC-CRM: ISO 21127; Dublin Core: ISO 15836-1:2017; SKOS: ISO 25964; IIIF: ISO 21127:2019; EDTF: ISO 8601; WGS84: ISO 19111
-[^5]: Arches GitHub, URL: https://github.com/archesproject/arches/tree/master/arches/locale, Acceded the 01/06/2024
-[^6]: Fradley, M., Simi, F., & Guagnin, M. (2022). Following the herds? A new distribution of hunting kites in Southwest Asia. The Holocene, 32(11), 1160-1172. https://doi.org/10.1177/09596836221114290
-[^7]: Fradley, M., Wilson, A., Finlayson, B., & Bewley, R. (2023). A lost campaign? New evidence of Roman temporary camps in northern Arabia. Antiquity, 97(393), e15. doi:10.15184/aqy.2023.50
-[^8]: MAHSA:  ; MAEASaM: ; CAAL: ; MAPSS: ;
-[^9]: Kristiansen, K. (2014). Towards a new paradigm? The third science revolution and its possible consequences in archaeology. Current Swedish Archaeology, 22(1), 11-34.
-[^10]: EAMENA Arches package, URL: https://github.com/eamena-project/eamena, Acceded the 01/06/2024. An Arches "package" is an external container for database definitions (graphs, concept schemes), custom extensions (including functions, widgets, datatypes) and even data (resources). Packages are installed into projects, and can be used to share schema between installations (see the Arches documentation, https://arches.readthedocs.io/en/stable/installing/installation/#load-a-package, Acceded the 01/06/2024)
-[^11]: Rouhani, B., Huet, T. (2024). Historical Landscape of Sistan in Iran and Afghanistan: EAMENA Dataset for Assessing Environmental Impact on Cultural Heritage. Journal of Open Archaeology Data, 12(), 3. https://doi.org/10.5334/joad.123
-[^12]: https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/citation/citation_generator.ipynb, Acceded the 01/06/2024.
-[^13]: https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/ea.train/data/reference_data/rm/hp/Sub-typology-branch.json, Acceded the 01/06/2024. See also the Jupyter Notebook illustrating the workflow: https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/ea.train/data/reference_data/rm/hp/erd-branch/EAtrain_erd_branch.ipynb, Acceded the 01/06/2024.
-[^14]: MOOC 1: https://eamena.org/mooc-1-endangered-archaeology-using-remote-sensing-to-protect-cultural-heritage and MOOC 2: https://eamena.org/mooc2-advanced-archaeological-remote-sensing-site-prospection-landscape-archaeology-and-heritage-pro, Acceded the 01/06/2024. 
+[^4]: CIDOC-CRM: ISO 21127; Dublin Core: ISO 15836-1:2017; SKOS: ISO 25964; IIIF: ISO 21127:2019; EDTF: ISO 8601; WGS84: ISO 19111  
+[^5]: Arches GitHub, URL: https://github.com/archesproject/arches/tree/master/arches/locale, Acceded the 01/06/2024  
+[^6]: Fradley, M., Simi, F., & Guagnin, M. (2022). Following the herds? A new distribution of hunting kites in Southwest Asia. The Holocene, 32(11), 1160-1172. https://doi.org/10.1177/09596836221114290  
+[^7]: Fradley, M., Wilson, A., Finlayson, B., & Bewley, R. (2023). A lost campaign? New evidence of Roman temporary camps in northern Arabia. Antiquity, 97(393), e15. doi:10.15184/aqy.2023.50  
+[^8]: MAHSA:  ; MAEASaM: ; CAAL: ; MAPSS: ;  
+[^9]: Kristiansen, K. (2014). Towards a new paradigm? The third science revolution and its possible consequences in archaeology. Current Swedish Archaeology, 22(1), 11-34.  
+[^10]: EAMENA Arches package, URL: https://github.com/eamena-project/eamena, Acceded the 01/06/2024. An Arches "package" is an external container for database definitions (graphs, concept schemes), custom extensions (including functions, widgets, datatypes) and even data (resources). Packages are installed into projects, and can be used to share schema between installations (see the Arches documentation, https://arches.readthedocs.io/en/stable/installing/installation/#load-a-package, Acceded the 01/06/2024)  
+[^11]: Rouhani, B., Huet, T. (2024). Historical Landscape of Sistan in Iran and Afghanistan: EAMENA Dataset for Assessing Environmental Impact on Cultural Heritage. Journal of Open Archaeology Data, 12(), 3. https://doi.org/10.5334/joad.123  
+[^12]: https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/citation/citation_generator.ipynb, Acceded the 01/06/2024.  
+[^13]: https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/ea.train/data/reference_data/rm/hp/Sub-typology-branch.json, Acceded the 01/06/2024. See also the Jupyter Notebook illustrating the workflow: https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/ea.train/data/reference_data/rm/hp/erd-branch/EAtrain_erd_branch.ipynb, Acceded the 01/06/2024.  
+[^14]: MOOC 1: https://eamena.org/mooc-1-endangered-archaeology-using-remote-sensing-to-protect-cultural-heritage and MOOC 2: https://eamena.org/mooc2-advanced-archaeological-remote-sensing-site-prospection-landscape-archaeology-and-heritage-pro, Acceded the 01/06/2024.   
 [^15]: https://eamena.org/cpf-training, Acceded the 01/06/2024.
-[^16]; Fradley, M. (2021). British inter-war aerial photogrammetric mapping in the MENA region: archives, access and research potential. Levant, 53(3), 336-346.
+[^16]; Fradley, M. (2021). British inter-war aerial photogrammetric mapping in the MENA region: archives, access and research potential. Levant, 53(3), 336-346.  
 [^17]; Fradley, M., & Gyngell, S. (2022). Landscapes of Mobility and Movement in North-West Arabia: A Remote Sensing Study of the Neom Impact Zone. Land, 11(11), 1941.

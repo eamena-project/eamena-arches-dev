@@ -1,7 +1,14 @@
 # City of the Dead
-> *aka* Cairo project, *aka* CoD, Unknown Heritage in the 'City of the Dead', DOCUMENTATION OF THE UNREGISTERED HERITAGE OF THE EASTERN CEMETERY IN CAIRO
+> *aka*: Cairo project, CoD, Eastern Cemetery, Qarafat Ash-Sharq, QRF0, Unknown Heritage in the 'City of the Dead', DOCUMENTATION OF THE UNREGISTERED HERITAGE OF THE EASTERN CEMETERY IN CAIRO, Unlisted historic monuments of the Eastern Cemetery, (the "Desert of the Mamluks") in Cairo, Egypt.
 
 see [Issue #54](https://github.com/eamena-project/eamena-arches-dev/issues/54)
+
+## Search URL
+
+
+
+
+# 
 
 ## Aims
 
@@ -68,7 +75,21 @@ Create a [Bulk Upload file](https://github.com/eamena-project/eamena-arches-dev/
     Screenshot of the BU template with the `General Description` field (free text) highlighted
 </p>
 
-#### Mapping tables
+#### Mapping tables and values
+
+* Resource Name
+
+Resource Name are usually the name of the desceased ('General Sa‘id Pasha Nasr') or the name of the deceased and the description of the tomb ('Funerary enclosure of inheritors of Basma Khatun'). When the desceased is unknown, the Resource Name is 'attribution Unknown'
+
+* General Description Type
+
+| CoD                | EAMENA                     |
+|--------------------|----------------------------|
+| conditiondetails   | Comments                   |
+| history            | General Description        |
+| specialfeatures    | Summary of Significance    |
+| description        | Architectural Description  |
+
 
 * Conditions
 
@@ -89,6 +110,28 @@ Create a [Bulk Upload file](https://github.com/eamena-project/eamena-arches-dev/
 | Poor          | 11-30%              |
 | Poor/Ruin     | 31-60%              |
 | Ruin          | 61-90%              |
+
+* Features
+
+| featureID | feature                                        |
+|-----------|------------------------------------------------|
+| 1         | Free-standing structure                        |
+| 2         | Walled enclosure                               |
+| 3         | Rooms by the perimeter wall                    |
+| 4         | Free-standing structure(s) inside the enclosure|
+| 5         | Garden layout                                  |
+| 6         | Sabil(s)                                       |
+| 7         | Wall-fountain(s)                               |
+| 8         | Canopy on columns/pillars                      |
+| 9         | Carved marble cenotaph(s)                      |
+| 10        | Decorated limestone tomb-markers               |
+| 11        | Decorated gateway                              |
+| 12        | Decorative door-leaves                         |
+| 13        | Decorative window grilles                      |
+| 14        | Decorative shutters                            |
+| 15        | Painted ceiling(s)                             |
+| 16        | Decorative paving(s)                           |
+
 
 ### Append metadata to the photographs
 

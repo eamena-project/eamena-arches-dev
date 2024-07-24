@@ -23,5 +23,5 @@ https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&rep
 	- Early Coptic/Byzantine (4th-7th CE)
 	- Coptic (7th Century-present)
 
-
+  
 

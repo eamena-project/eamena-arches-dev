@@ -21,14 +21,5 @@ https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&rep
 	- Early Coptic/Byzantine (4th-7th CE)
 	- Coptic (7th Century-present)
 
-## Notes
-
-### Dataset
-
-| type | name| description | photo | related resources | coordinates |
-|----------|----------|----------|----------|----------|----------|
-| HP | `eamena_xxx`| Lorem Ipsum | ![](img/hp_eamena_xxx.png) | contains `eamena_yyy` | 25.864722, 56.098333 |
-| BC | `eamena_yyy`| Lorem Ipsum | NaN | is part of `eamena_xxx` | 25.864722, 56.098333 |
-
 
 

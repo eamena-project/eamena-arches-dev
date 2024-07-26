@@ -20,8 +20,9 @@ https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&rep
 ## TODO
 
 - [ ] Add these periods to EAMENA:
-	- Early Coptic/Byzantine (4th-7th CE)
-	- Coptic (7th Century-present)
+	- Coptic (4th-present)
+		- Early Coptic/Byzantine (4th-7th CE)
+		- Coptic (7th Century-present)
 
   
 

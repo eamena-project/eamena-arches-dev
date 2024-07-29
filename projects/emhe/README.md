@@ -8,7 +8,7 @@ Issue: [#55](https://github.com/eamena-project/eamena-arches-dev/issues/55)
 ## Location
 
 <p align="center">
-  <img alt="img-name" src="./image-1.png" width="500">
+  <img alt="img-name" src="./image-1.png" width="600">
   <br>
     Egyptian Eastern Desert (blue rectangle) west of Hurghada (Red Sea)
 </p>
@@ -29,6 +29,8 @@ https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&rep
 </p>
 
 ## Cultural period mapping
+
+Equivalences between the Coptic periodisation and the EAMENA reference data (with links to PeriodO)
 
 | Coptic date   | Coptic period | EAMENA date | EAMENA period |
 |----------|----------|----------|----------|

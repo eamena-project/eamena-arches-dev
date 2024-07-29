@@ -23,7 +23,7 @@ Find HP `WN01`, `WN09`, ... by searching `NQT0` (NQT for Wadi Naqqat)
 https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&reportlink=false&precision=6&total=383284&language=*&term-filter=%5B%7B%22context%22%3A%22%22%2C%22context_label%22%3A%22Heritage%20Place%20-%20Resource%20Name%22%2C%22id%22%3A0%2C%22text%22%3A%22NQT0%22%2C%22type%22%3A%22term%22%2C%22value%22%3A%22NQT0%22%2C%22inverted%22%3Afalse%7D%5D
 ```
 <p align="center">
-  <img alt="img-name" src="./image.png" width="600">
+  <img alt="img-name" src="./image.png" width="700">
   <br>
     Search `NQT0` (2 heritage places on 01/08/2024)
 </p>

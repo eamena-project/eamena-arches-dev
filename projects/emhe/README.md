@@ -10,9 +10,10 @@ Issue: [#55](https://github.com/eamena-project/eamena-arches-dev/issues/55)
 <p align="center">
   <img alt="img-name" src="./image-1.png" width="500">
   <br>
-    Egyptian Eastern desert, see the GeoJSON file: <https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/emhe/data/roi.geojson>
+    Egyptian Eastern Desert (blue rectangle) west of Hurghada (Red Sea)
 </p>
 
+See the [GeoJSON file](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/emhe/data/roi.geojson)
 
 ## Search URL
 

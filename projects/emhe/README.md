@@ -5,6 +5,14 @@ Dataset for the ["Documenting Coptic Monastic Heritage" project](https://www.ff.
 
 Issue: [#55](https://github.com/eamena-project/eamena-arches-dev/issues/55)
 
+## Location
+
+<p align="center">
+  <img alt="img-name" src="./image-1.png" width="700">
+  <br>
+    Egyptian Eastern desert, see the GeoJSON file: <https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/emhe/data/roi.geojson>
+</p>
+
 
 ## Search URL
 

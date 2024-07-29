@@ -33,14 +33,18 @@ https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&rep
 | Coptic date   | Coptic period | EAMENA date | EAMENA period |
 |----------|----------|----------|----------|
 | 4th-7th CE| Early Coptic/Byzantine | 500 BC-640 CE | [Byzantine (Cyrenaica/Egypt)](https://client.perio.do/?page=period-view&backendID=web-https%3A%2F%2Fdata.perio.do%2F&authorityID=p0m64td&periodID=p0m64tdkbwr)|
-| 7th Century-present| Coptic| **640-1900** | **Islamic (North Africa)**|
+| 7th Century-present| Coptic| **640-1900** | [**Islamic (North Africa)**](https://client.perio.do/?page=period-view&backendID=web-https%3A%2F%2Fdata.perio.do%2F&authorityID=p0m64td&periodID=p0m64td5g67)|
 | 7th Century-present| Coptic| 640-900 CE | [Islamic, Early (Umayyad/Abbasid) (North Africa)](https://client.perio.do/?page=period-view&backendID=web-https%3A%2F%2Fdata.perio.do%2F&authorityID=p0m64td&periodID=p0m64tdd5n9)|
 | 7th Century-present| Coptic| 900-1200 CE| [Islamic, Middle (Fatimid/Zirid/Hammadid/Almoravid/Almohad) (North Africa)](https://client.perio.do/?page=period-view&backendID=web-https%3A%2F%2Fdata.perio.do%2F&authorityID=p0m64td&periodID=p0m64td6z7c)|
 | 7th Century-present| Coptic| 1200-1500 CE| [Islamic, Late (Ayyubid/Hafsid/Marinid/Zayyanid/Mamluk) (North Africa)](https://client.perio.do/?page=period-view&backendID=web-https%3A%2F%2Fdata.perio.do%2F&authorityID=p0m64td&periodID=p0m64tddbt3)|
 | 7th Century-present| Coptic| 1500-1900 CE| [Islamic, Late (Ottoman/Saadi/Wattasid/Alaouite/Colonial) (North Africa)](https://client.perio.do/?page=period-view&backendID=web-https%3A%2F%2Fdata.perio.do%2F&authorityID=p0m64td&periodID=p0m64tdnr6d)|
-| 7th Century-present| Coptic| **1900-Present**| **Contemporary Islamic (MENA)**|
-| 7th Century-present| Coptic| 1900-1950 CE| [Contemporary Islamic, Early 20th century (MENA)](https://client.perio.do/?page=period-view&backendID=web-https%3A%2F%2Fdata.perio.do%2F&authorityID=p0m64td&periodID=p0m64tdvprx)|
+| 7th Century-present| Coptic| **1900-Present**| [**Contemporary Islamic (MENA)**](https://client.perio.do/?page=period-view&backendID=web-https%3A%2F%2Fdata.perio.do%2F&authorityID=p0m64td&periodID=p0m64tdvprx)|
+| 7th Century-present| Coptic| 1900-1950 CE| Contemporary Islamic, Early 20th century (MENA)|
 | 7th Century-present| Coptic| 1950-Present| [Contemporary Islamic, Modern (MENA)](https://client.perio.do/?page=period-view&backendID=web-https%3A%2F%2Fdata.perio.do%2F&authorityID=p0m64td&periodID=p0m64td8zz2)|
+
+- **bolded**: Culture Period
+- regular: Culture Sub-Period
+- Contemporary Islamic, Early 20th century (MENA): missing in PeriodO
 
 
 ## Notes

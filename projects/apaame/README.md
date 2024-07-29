@@ -29,7 +29,12 @@ Work in progress listed here (folder by folders): https://github.com/eamena-proj
 ```HTML
 <img data-bind="attr: { src: src, alt: alt }" src="https://apaame.arch.ox.ac.uk/?r=48819&amp;k=784b31b1a2" alt="">
 ```
-<img data-bind="attr: { src: src, alt: alt }" src="https://apaame.arch.ox.ac.uk/?r=48819&amp;k=784b31b1a2" alt="">
+
+<p align="center">
+  <img alt="img-name" src="https://apaame.arch.ox.ac.uk/?r=48819&amp;k=784b31b1a2" width="1000">
+  <br>
+</p>
+
 
 
 ### Audit

@@ -22,6 +22,17 @@ Work in progress listed here (folder by folders): https://github.com/eamena-proj
   - need to validate each photograph
 
 ## EAMENA IR links
+> URL to images
+
+### Test
+
+```HTML
+<img data-bind="attr: { src: src, alt: alt }" src="https://apaame.arch.ox.ac.uk/?r=48819&amp;k=784b31b1a2" alt="">
+```
+<img data-bind="attr: { src: src, alt: alt }" src="https://apaame.arch.ox.ac.uk/?r=48819&amp;k=784b31b1a2" alt="">
+
+
+### Audit
 
 Grouped by types of repository (Flickr, AWS S3, etc.), totals of photographs are:
 
@@ -39,7 +50,7 @@ Grouped by types of repository (Flickr, AWS S3, etc.), totals of photographs are
 
 Examples by decreasing number of photograhs for the 4<su>th</sup> main repos (✅: displayed; ❌: not displayed)
 
-### https://live.staticflickr.com
+#### https://live.staticflickr.com
 
 |    | ir_id                                | information_id      | catalog_id               | img_url                                                           |
 |---:|:-------------------------------------|:--------------------|:-------------------------|:------------------------------------------------------------------|
@@ -50,7 +61,7 @@ Examples by decreasing number of photograhs for the 4<su>th</sup> main repos (�
 |  ❌ | 00043464-0e2b-478b-b7fa-f957575bcf1e | INFORMATION-0075120 | APAAME_20170927_MND-0067 | https://live.staticflickr.com/4443/36914020933_9abbd87dbd_o_d.jpg |
 
 
-#### Known issues
+##### Known issues
 
 Currently in EAMENA, in the IR, under the menu 'File Upload', paths to images are wrong. For example, with INFORMATION-0052511[^1], we have currently:
 
@@ -125,7 +136,7 @@ The correct link (ie, external link) is:
     <em>Flickr photo from its Direct URL/external link</em>
 </p>
 
-### https://eamena-uploads-v2.s3.amazonaws.com
+#### https://eamena-uploads-v2.s3.amazonaws.com
 > AWS S3 bucket, ⌐ APAAME
 
 |    | ir_id                                | information_id      | catalog_id                               | img_url                                                                                 |
@@ -138,7 +149,7 @@ The correct link (ie, external link) is:
 
 
 
-### https://eamena-media.s3.amazonaws.com/files/
+#### https://eamena-media.s3.amazonaws.com/files/
 > AWS S3 bucket, ⌐ APAAME
 
 |    | ir_id                                | information_id      | catalog_id                  | img_url                                                                     |
@@ -150,7 +161,7 @@ The correct link (ie, external link) is:
 |  ❌ | 0268f4ce-b5c6-483c-843a-89df4e554d95 | INFORMATION-0050835 | PF_20170917_SmarJbail_00037 | https://eamena-media.s3.amazonaws.com/files/PF_20170917_SmarJbail_00037.JPG |
 
 
-### https://eamena-media.s3.eu-west-2.amazonaws.com/uploadedfiles/
+#### https://eamena-media.s3.eu-west-2.amazonaws.com/uploadedfiles/
 > AWS S3 bucket, ⌐ APAAME
 
 |    | ir_id                                | information_id      | catalog_id               | img_url                                                                                                           |
@@ -162,7 +173,7 @@ The correct link (ie, external link) is:
 |  ❌ | 2130fc3d-63f4-465c-8283-acf56c78d1d2 | INFORMATION-0144797 | Unknown                  | https://eamena-media.s3.eu-west-2.amazonaws.com/uploadedfiles/36671359_1207660499368407_9199987662209941504_o.jpg |
 
 
-## Update IR-APAAME links
+### Update IR-APAAME links
 > Update EAMENA Information Resources and APAAME links, batch the update of APAAME links
 
 The aim is to embed previews of APAAME photographs (hosted on ArchDAMS) into EAMENA IRs using ArchDAMS Direct links (i.e. external links). The  workflow is in ~~this Jupyter NB~~ this [Python script](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/apaame2eamena_2.py)

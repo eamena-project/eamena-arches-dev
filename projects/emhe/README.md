@@ -35,7 +35,7 @@ Equivalences between the Coptic periodisation and the EAMENA reference data (wit
 | Coptic date   | Coptic period | EAMENA date | EAMENA period |
 |----------|----------|----------|----------|
 | 4th-7th CE| Early Coptic/Byzantine | 500 BC-640 CE | [Byzantine (Cyrenaica/Egypt)](https://client.perio.do/?page=period-view&backendID=web-https%3A%2F%2Fdata.perio.do%2F&authorityID=p0m64td&periodID=p0m64tdkbwr)|
-| 7th c.-present| Coptic| **640-1900** | [**Islamic (North Africa)**](https://client.perio.do/?page=period-view&backendID=web-https%3A%2F%2Fdata.perio.do%2F&authorityID=p0m64td&periodID=p0m64td5g67)|
+| 7th c.-present| Coptic| **640-1900 CE** | [**Islamic (North Africa)**](https://client.perio.do/?page=period-view&backendID=web-https%3A%2F%2Fdata.perio.do%2F&authorityID=p0m64td&periodID=p0m64td5g67)|
 | 7th c.-present| Coptic| 640-900 CE | [Islamic, Early (Umayyad/Abbasid) (North Africa)](https://client.perio.do/?page=period-view&backendID=web-https%3A%2F%2Fdata.perio.do%2F&authorityID=p0m64td&periodID=p0m64tdd5n9)|
 | 7th c.-present| Coptic| 900-1200 CE| [Islamic, Middle (Fatimid/Zirid/Hammadid/Almoravid/Almohad) (North Africa)](https://client.perio.do/?page=period-view&backendID=web-https%3A%2F%2Fdata.perio.do%2F&authorityID=p0m64td&periodID=p0m64td6z7c)|
 | 7th c.-present| Coptic| 1200-1500 CE| [Islamic, Late (Ayyubid/Hafsid/Marinid/Zayyanid/Mamluk) (North Africa)](https://client.perio.do/?page=period-view&backendID=web-https%3A%2F%2Fdata.perio.do%2F&authorityID=p0m64td&periodID=p0m64tddbt3)|

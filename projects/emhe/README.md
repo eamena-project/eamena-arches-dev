@@ -6,7 +6,6 @@ Dataset for the ["Documenting Coptic Monastic Heritage" project](https://www.ff.
 Issue: [#55](https://github.com/eamena-project/eamena-arches-dev/issues/55)
 
 
-
 ## Search URL
 
 Find HP `WN01`, `WN09`, ... by searching `NQT0` (NQT for Wadi Naqqat)

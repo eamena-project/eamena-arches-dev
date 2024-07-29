@@ -90,6 +90,13 @@ Resource Name are usually the name of the desceased ('General Sa‘id Pasha Nasr
 | specialfeatures    | Summary of Significance    |
 | description        | Architectural Description  |
 
+* Heritage Place Function
+
+| CoD                | EAMENA                     |
+|--------------------|----------------------------|
+| presentuse         | Heritage Place Function    |
+
+The CoD field `originaluse` hasn't been used
 
 * Conditions
 

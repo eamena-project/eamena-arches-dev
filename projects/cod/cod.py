@@ -31,7 +31,7 @@ data_in = "C:/Rprojects/eamena-arches-dev/projects/cod/db_data/tables/"
 data_in_N = data_in + "N/"
 data_in_S = data_in + "S/"
 path_out = "C:/Rprojects/eamena-arches-dev/projects/cod/business_data/csv/"
-merge2dbs(data_in_N, data_in_S, path_out)
+# merge2dbs(data_in_N, data_in_S, path_out)
 
 # %%
 # convert all XLSX tables into CSV
@@ -72,7 +72,7 @@ def xlsx2csv(data_in, path_out):
 # data_in = "C:/Rprojects/eamena-arches-dev/projects/cod/db_data/tables/221224PhotosBCKP.xlsx"
 data_in = "C:/Rprojects/eamena-arches-dev/projects/cod/db_data/tables/"
 path_out = "C:/Rprojects/eamena-arches-dev/projects/cod/business_data/csv/"
-xlsx2csv(data_in, path_out)
+# xlsx2csv(data_in, path_out)
 
 
 #%%
@@ -120,7 +120,7 @@ def add_metadata_XY_to_photo(image_path, new_image_path, latitude, longitude):
 
 image_path = "C:/Rprojects/eamena-arches-dev/projects/cod/www/4171_sl_JDs.jpg"
 new_image_path = 'C:/Rprojects/eamena-arches-dev/projects/cod/www/4171_sl_JDs_with_coords.jpg'
-add_metadata_XY_to_photo(image_path, new_image_path, latitude = 48.848270462241814, longitude = 2.41120456097722) # loc: Paris
+# add_metadata_XY_to_photo(image_path, new_image_path, latitude = 48.848270462241814, longitude = 2.41120456097722) # loc: Paris
 
 
 # %%
@@ -153,13 +153,15 @@ def add_metadata_to_photo(root_path = "C:/Rprojects/eamena-arches-dev/projects/c
 	:param root_path: Root path of the project 
 	:param photos_in: Path to the folder where the photographs are stored
 	:param photo_metadata: Path to the file describing the photographs
-	:param records_in: Path to the file of the records (aka HP), useful for ????
+	:param records_in: Path to the file of the records (aka HP), useful to collect data 
 	:param photo_out: Path to the folder where the photographs with metdata will be stored
 	
 	"""
 	import re
 	from PIL import Image
 	import piexif
+	# from libxmp import XMPFiles, consts
+	import subprocess
 	import os
 	import pandas as pd
 
@@ -184,9 +186,11 @@ def add_metadata_to_photo(root_path = "C:/Rprojects/eamena-arches-dev/projects/c
 	stop_nb = 0
 	for unit in units:
 		print(f"*** read unit/record/herita '{unit}' ***")
-		# add 0 if n < 10
+		# add 0 or 00 before to get the COD number
 		if unit < 10:
 			unit_t = "0" + str(unit)
+		# elif unit > 9:
+		# 	unit_t = "00" + str(unit)
 		else:
 			unit_t = str(unit)
 		selected_unit = df_im_map[df_im_map['unitnumber'] == unit_t]
@@ -218,19 +222,24 @@ def add_metadata_to_photo(root_path = "C:/Rprojects/eamena-arches-dev/projects/c
 				# extract metadata from the table
 				im_descr = a_photo_metadata['description'].iloc[0]
 				im_artis = a_photo_metadata['takenby'].iloc[0]
+				im_date = a_photo_metadata['datetaken'].iloc[0]
 				# match the row/record/heritage place
 				im_record_id = df_rec_metadata[df_rec_metadata['ID'] == unit]["ID"].iloc[0]
 				im_record_attribution = df_rec_metadata[df_rec_metadata['ID'] == unit]["attribution"].iloc[0]
 				# im_title = df_rec_metadata['ID'].iloc[0]
-				im_title = im_record_attribution + " (num CoD: " + str(im_record_id) + ")"
+				im_title = im_record_attribution + " (COD-" + str(im_record_id) + ")"
 				im_caption = im_title + ". " + im_descr
 				im_coord_N = df_rec_metadata[df_rec_metadata['ID'] == unit]["coordinateN"].iloc[0]
 				im_coord_E = df_rec_metadata[df_rec_metadata['ID'] == unit]["coordinateE"].iloc[0]
+				im_copyright = "Copyright, Archinos architecture, 2024. All rights reserved."
+				im_country = "Egypt"
 				if verbose:
 					print('       im_descr: ' + im_descr)
 					print('       im_artis: ' + im_artis)
 					print('       im_title: ' + im_title)
 					print('       im_caption: ' + im_caption)
+					print('       im_date: ' + im_date)
+					print('       im_copyright: ' + im_copyright)
 					print('       im_coord_N: ' + str(im_coord_N))
 					print('       im_coord_E: ' + str(im_coord_E))
 				# prevent to rm former EXIF metadata
@@ -240,10 +249,12 @@ def add_metadata_to_photo(root_path = "C:/Rprojects/eamena-arches-dev/projects/c
 					exif_dict = {'0th': {}, 'Exif': {}, 'GPS': {}, '1st': {}, 'Interop': {}, 'thumbnail': None}
 				exif_dict['0th'][piexif.ImageIFD.ImageDescription] = im_descr.encode('utf-8')
 				exif_dict['0th'][piexif.ImageIFD.Artist] = im_artis.encode('utf-8')
-				exif_dict['0th'][piexif.ImageIFD.XPTitle] = im_title.encode('utf-8')
-				exif_dict['0th'][piexif.ImageIFD.XPComment] = im_caption.encode('utf-8')
-				exif_dict['0th'][piexif.ImageIFD.XPAuthor] = im_artis.encode('utf-8')
-				# TODO: append GPS
+				# exif_dict['0th'][piexif.ImageIFD.XPTitle] = im_title.encode('utf-8')
+				# exif_dict['0th'][piexif.ImageIFD.XPComment] = im_caption.encode('utf-8')
+				# exif_dict['0th'][piexif.ImageIFD.XPAuthor] = im_artis.encode('utf-8')
+				exif_dict['0th'][piexif.ImageIFD.DateTime] = im_date.encode('utf-8')
+				exif_dict['0th'][piexif.ImageIFD.Copyright] = im_artis.encode('utf-8')
+				# exif_dict['0th'][piexif.ImageIFD.GPSDestCountry] = im_country.encode('utf-8')
 				# add_metadata_XY_to_photo(image_path, new_image_path, latitude = im_coord_N, longitude = im_coord_E) # loc: Paris
 				gps_latitude = convert_to_degrees(im_coord_N)
 				gps_longitude = convert_to_degrees(abs(im_coord_E))  # Longitude should be positive for EXIF
@@ -278,15 +289,74 @@ def add_metadata_to_photo(root_path = "C:/Rprojects/eamena-arches-dev/projects/c
 				if not os.path.exists(out_folder):
 					os.makedirs(out_folder)
 				img.save(photo_path_out, exif=exif_bytes, quality=95, dpi=original_dpi, optimize=True, progressive=True)
-				print(f"    => {photos[a_photo]} has been saved")
+				print(f"    => {photos[a_photo]} has been saved with EXIF metadata")
 				img.close()
 				size_img_out = os.path.getsize(photo_path_out)
 				size_img_out_MB = round(size_img_out/1000000, 1)
 				print(f"    image size (MB): {size_img_in_MB} => {size_img_out_MB}")
+				
+				# XMP Handling with exiftool
+				xmp_data = {
+					"XMP-dc:Title": "Your Title Here",
+					"XMP-dc:Description": "A brief description here."
+				}
+				# Convert XMP data to exiftool command arguments
+				xmp_args = []
+				for tag, value in xmp_data.items():
+					xmp_args.extend(['-' + tag + '=' + value])
+				print(photo_path_out)
+				cmd_exiftool = ['exiftool'] + xmp_args + ['-overwrite_original', photo_path_out]
+				print(cmd_exiftool)
+				subprocess.run("cd C:\exiftool")
+				subprocess.run("cd pwd")
+				subprocess.run(cmd_exiftool)
+				print(f"    => {photos[a_photo]} has been saved with XMP metadata")
 			else:
 				print(f"    /!\ there are no metadata for {photos[a_photo]}")
 			print("\n")
 
+
+
 add_metadata_to_photo()
 
 # %%
+
+# input_image_path = 'C:\Rprojects\eamena-arches-dev\projects\cod\db_data\photos_in\\02s_MuhTalaatHarb\\aDSC_1607s.JPG'
+
+# import piexif
+# from PIL import Image
+# import subprocess
+# import json
+
+# # Load an image
+# img = Image.open(input_image_path)
+
+# # EXIF Handling with piexif
+# exif_dict = piexif.load(img.info.get('exif', b''))
+# exif_dict['0th'][piexif.ImageIFD.Make] = u'Canon'.encode('utf-8')
+# exif_dict['0th'][piexif.ImageIFD.Model] = u'Canon EOS 80D'.encode('utf-8')
+# exif_bytes = piexif.dump(exif_dict)
+
+# # Save the image with new EXIF data
+# temp_filename = 'C:\Rprojects\eamena-arches-dev\projects\cod\db_data\photos_out\\aDSC_1607s.JPG
+# img.save(temp_filename, exif=exif_bytes)
+
+# # XMP Handling with exiftool
+# xmp_data = {
+#     "XMP-dc:Title": "Your Title Here",
+#     "XMP-dc:Description": "A brief description here."
+# }
+
+# # Convert XMP data to exiftool command arguments
+# xmp_args = []
+# for tag, value in xmp_data.items():
+#     xmp_args.extend(['-' + tag + '=' + value])
+
+# # Call exiftool to write XMP data
+# subprocess.run(['exiftool'] + xmp_args + ['-overwrite_original', temp_filename])
+
+# # Rename temp file if needed
+# final_filename = 'final_output_image.jpg'
+# subprocess.run(['mv', temp_filename, final_filename])
+
+# print("EXIF and XMP metadata updated successfully.")

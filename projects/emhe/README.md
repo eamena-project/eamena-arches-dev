@@ -1,11 +1,11 @@
 # EMHE
 > "Endangered Monastic Heritage in Egypt", *aka* NQT0, Wadi Naqqat
 
-Proof of concept/Pilot study for the ["Documenting Coptic Monastic Heritage" project](https://www.ff.uni-lj.si/en/news/documenting-coptic-monastic-heritage-project)
+Dataset for the ["Documenting Coptic Monastic Heritage" project](https://www.ff.uni-lj.si/en/news/documenting-coptic-monastic-heritage-project)
 
-* Relations between endangered Heritage Place (HP) and Built Component (BC) in EAMENA
-* Photograph archives on a ResourceSpace server
-* EAMENA ~ ResourceSpace links
+Issue: [#55](https://github.com/eamena-project/eamena-arches-dev/issues/55)
+
+
 
 ## Search URL
 
@@ -17,9 +17,32 @@ https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&rep
 
 ![alt text](image.png)
 
+## Cultural period mapping
+
+| Coptic date   | Coptic period | EAMENA date | EAMENA period |
+|----------|----------|----------|----------|
+| 4th-7th CE| Early Coptic/Byzantine | 500 BC-640 CE | Byzantine (Cyrenaica/Egypt)|
+| 7th Century-present| Coptic| **640-1900** | **Islamic (North Africa)**|
+| 7th Century-present| Coptic| 640-900 CE | Islamic, Early (Umayyad/Abbasid) (North Africa)|
+| 7th Century-present| Coptic| 900-1200 CE| Islamic, Middle (Fatimid/Zirid/Hammadid/Almoravid/Almohad) (North Africa)|
+| 7th Century-present| Coptic| 1200-1500 CE| Islamic, Late (Ayyubid/Hafsid/Marinid/Zayyanid/Mamluk) (North Africa)|
+| 7th Century-present| Coptic| 1500-1900 CE| Islamic, Late (Ottoman/Saadi/Wattasid/Alaouite/Colonial) (North Africa)|
+| 7th Century-present| Coptic| **1900-Present**| **Contemporary Islamic (MENA)**|
+| 7th Century-present| Coptic| 1900-1950 CE| Contemporary Islamic, Early 20th century (MENA)|
+| 7th Century-present| Coptic| 1950-Present| Contemporary Islamic, Modern (MENA)|
+
+
+
+
+## Notes
+
+* Relations between endangered Heritage Place (HP) and Built Component (BC) in EAMENA
+* Photograph archives on a ResourceSpace server
+* EAMENA ~ ResourceSpace links
+
 ## TODO
 
-- [ ] Add these periods to EAMENA:
+- [ ] Add these periods to EAMENA?:
 	- Coptic (4th-present)
 		- Early Coptic/Byzantine (4th-7th CE)
 		- Coptic (7th Century-present)

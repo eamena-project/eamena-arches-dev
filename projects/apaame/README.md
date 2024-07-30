@@ -24,6 +24,8 @@ Work in progress listed here (folder by folders): https://github.com/eamena-proj
 ### Update IR-APAAME links
 > Update EAMENA Information Resources and APAAME links, batch the update of APAAME links
 
+see: Issue [#56](https://github.com/eamena-project/eamena-arches-dev/issues/56)
+
 The aim is to embed previews of APAAME photographs (hosted on ArchDAMS) into EAMENA IRs using ArchDAMS Direct links (i.e. external links). The  workflow is in ~~this Jupyter NB~~ this [Python script](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/apaame2eamena_2.py)
 
 1. [Step 1](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/apaame#wf-step-1): in EAMENA, collect Information Resources UUIDs with their APAAME ID, store them in a dataframe.

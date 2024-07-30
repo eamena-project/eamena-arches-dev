@@ -57,10 +57,12 @@ Equivalences between the Coptic periodisation and the EAMENA reference data (wit
 
 ## TODO
 
-- [ ] Add these periods to EAMENA?:
-	- Coptic (4th-present)
-		- Early Coptic/Byzantine (4th-7th CE)
-		- Coptic (7th Century-present)
+- [ ] Link external images (Public URL), ex: `INFORMATION-0150090`
+
+- [ ] ~~Add these periods to EAMENA?~~:
+	- ~~Coptic (4th-present)~~
+		- ~~Early Coptic/Byzantine (4th-7th CE)~~
+		- ~~Coptic (7th Century-present)~~
 
   
 

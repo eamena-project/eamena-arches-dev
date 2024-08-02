@@ -81,6 +81,32 @@ gives:
 
 - 136,442
 
+## IR file upload update
+
+Check the file uploaded path
+
+```SQL
+SELECT tiledata -> 'c712066a-8094-11ea-a6a6-02e7594ce0a0' #>> '{0, url}' AS file_upload FROM tiles 
+WHERE tiledata -> 'c712066a-8094-11ea-a6a6-02e7594ce0a0' #>> '{0, url}' IS NOT NULL
+AND resourceinstanceid::text LIKE 'e17bca9d-77c5-4ec7-9ff7-971d4e1ee0b6';
+```
+
+Update it
+
+```SQL
+UPDATE tiles
+SET tiledata = jsonb_set(
+    tiledata,
+    '{c712066a-8094-11ea-a6a6-02e7594ce0a0,0,url}',
+--     '"https:///upload.wikimedia.org/wikipedia/commons/2/25/Cerberus-Blake.jpeg"', -- OK
+-- 	'"https:///cityofthedead.arch.ox.ac.uk/filestore/7_8e695b5462911fa/7scr_95445ce31a0802c.jpg"', -- OK
+	'"https:///cityofthedead.arch.ox.ac.uk/?c=9&k=dbeceb17a3"', -- not OK
+    false
+)
+WHERE tiledata -> 'c712066a-8094-11ea-a6a6-02e7594ce0a0' #>> '{0,url}' IS NOT NULL
+AND resourceinstanceid::text LIKE 'e17bca9d-77c5-4ec7-9ff7-971d4e1ee0b6';
+```
+
 ## GS list all
 
 List all names of GS

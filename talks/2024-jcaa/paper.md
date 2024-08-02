@@ -41,7 +41,10 @@ Arches is an open-source geoweb semantic-based information purpose-built platfor
 <br>
 
 Arches also comes with various built-in iso-standards (CIDOC-CRM, Dublin Core, SKOS, IIIF, EDTF, WGS84/OGC[^4]) and semantic web technologies (XML, RDF, etc.). From the version 7.3, Arches supports internationalisation (i18) and is currently located (l10n) in 10 different languages[^5]. From the version 7.5, Arches support the so-called 'Arches application', Python packages aligned with Django standards that allow fine-tuning of possibly any kind of workflow. Among the upcoming add-ons (version 8, scheduled in Dec 2024) one can mention the Lingo Arches application allowing you to manage reference data (vocabularies, thesauries, ontologies). Arches for Science
+componentization of Arches
+Arches is generic
 
+GCI, Historic England, Open Context -> Arches, ADS -> Arches, one Arches instance with over 18.10^9 resource (art objects) 
 
 ## EAMENA 
 

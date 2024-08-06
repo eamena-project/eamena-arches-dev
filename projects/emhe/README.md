@@ -1,11 +1,14 @@
 # EMHE
-> "Endangered Monastic Heritage in Egypt", *aka* NQT0, Wadi Naqqat
+> "Endangered Monastic Heritage in Egypt", *aka*
 
 Dataset for the ["Documenting Coptic Monastic Heritage" project](https://www.ff.uni-lj.si/en/news/documenting-coptic-monastic-heritage-project)
 
 Issue: [#55](https://github.com/eamena-project/eamena-arches-dev/issues/55)
 
-## Location
+##  NQT0
+> Wadi Naqqat
+
+### Location
 
 <p align="center">
   <img alt="img-name" src="./image-1.png" width="500">
@@ -13,9 +16,9 @@ Issue: [#55](https://github.com/eamena-project/eamena-arches-dev/issues/55)
     Egyptian Eastern Desert (blue rectangle) west of Hurghada (Red Sea) = EAMENA `E33N27-12`
 </p>
 
-See the [GeoJSON file](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/emhe/data/roi.geojson)
+See the [GeoJSON file](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/emhe/data/NQT0-roi.geojson)
 
-## Search URL
+### Search URL
 
 Find HP `WN01`, `WN09`, ... by searching `NQT0` (NQT for Wadi Naqqat)
 
@@ -27,6 +30,27 @@ https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&rep
   <br>
     Search `NQT0` (2 heritage places on 01/08/2024)
 </p>
+
+##  KRZ0
+> Wadi Kharaza
+
+### Location
+
+<p align="center">
+  <img alt="img-name" src="./image-1.png" width="500">
+  <br>
+    Egyptian Eastern Desert (blue rectangle) west of Hurghada (Red Sea) = EAMENA `E33N27-12`
+</p>
+
+See the [GeoJSON file](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/emhe/data/NQT0-roi.geojson)
+
+### Search URL
+
+Find HP `WN01`, `WN09`, ... by searching `NQT0` (NQT for Wadi Naqqat)
+
+```
+https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&reportlink=false&precision=6&total=383332&term-filter=%5B%7B%22context%22%3A%22%22%2C%22context_label%22%3A%22Heritage%20Place%20-%20Resource%20Name%22%2C%22id%22%3A0%2C%22text%22%3A%22NQT0%22%2C%22type%22%3A%22term%22%2C%22value%22%3A%22NQT0%22%2C%22inverted%22%3Afalse%7D%5D&language=*
+```
 
 ## Cultural period mapping
 

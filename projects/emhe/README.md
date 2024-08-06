@@ -37,20 +37,15 @@ https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&rep
 ### Location
 
 <p align="center">
-  <img alt="img-name" src="./image-1.png" width="500">
+  <img alt="img-name" src="./image-2.png" width="500">
   <br>
-    Egyptian Eastern Desert (blue rectangle) west of Hurghada (Red Sea) = EAMENA `E33N27-12`
 </p>
 
-See the [GeoJSON file](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/emhe/data/NQT0-roi.geojson)
+See the [GeoJSON file](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/emhe/data/KRZ0-roi.geojson)
 
 ### Search URL
 
-Find HP `WN01`, `WN09`, ... by searching `NQT0` (NQT for Wadi Naqqat)
-
-```
-https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&reportlink=false&precision=6&total=383332&term-filter=%5B%7B%22context%22%3A%22%22%2C%22context_label%22%3A%22Heritage%20Place%20-%20Resource%20Name%22%2C%22id%22%3A0%2C%22text%22%3A%22NQT0%22%2C%22type%22%3A%22term%22%2C%22value%22%3A%22NQT0%22%2C%22inverted%22%3Afalse%7D%5D&language=*
-```
+Find HP `WK01`, `WK02`, ... by searching `KRZ0` (NQT for Wadi Kharaza)
 
 ## Cultural period mapping
 

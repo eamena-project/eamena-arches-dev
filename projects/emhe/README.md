@@ -45,7 +45,7 @@ See the [GeoJSON file](https://github.com/eamena-project/eamena-arches-dev/blob/
 
 ### Search URL
 
-Find HP `WK01`, `WK02`, ... by searching `KRZ0` (NQT for Wadi Kharaza)
+Find HP `WK01`, `WK02`, ... by searching `KRZ0` (KRZ for Wadi Kharaza)
 
 ## Cultural period mapping
 

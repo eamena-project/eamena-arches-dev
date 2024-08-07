@@ -47,6 +47,8 @@ See the [GeoJSON file](https://github.com/eamena-project/eamena-arches-dev/blob/
 
 Find HP `WK01`, `WK02`, ... by searching `KRZ0` (KRZ for Wadi Kharaza)
 
+# Reference data
+
 ## Cultural period mapping
 
 Equivalences between the Coptic periodisation and the EAMENA reference data (with links to PeriodO)

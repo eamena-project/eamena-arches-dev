@@ -9,7 +9,7 @@
 * [Information Resources](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data/reference_data#information-resources)
 
 ### Heritage Places
-> HP
+> HP, HP Resource Model, HP RM
 
 * HP reference data is located here: https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data/reference_data/rm/hp
 
@@ -119,11 +119,17 @@ This script reads a BU template (ex: `Bulk_Upload_template_240228.xlsx`).
 
 
 ### Information Resources
-> IR
+> IR, IR Resource Model, IR RM
 
 field names' UUIDs are listed here: [ir-uuids-readonly.tsv](ir-uuids-readonly.tsv). The Python script that generate this file is [nodes_id.ipynb](nodes_id.ipynb)
 
 ## Grids
+
+<p align="center">
+  <img alt="img-name" src="image.png" width="650">
+  <br>
+    [EAMENA_Grid_contour.geojson](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/grids/EAMENA_Grid_contour.geojson)(screenshot, countour only) and EAMENA_Grid.geojson (with grid cells)
+</p>
 
 
 ## UUIDs

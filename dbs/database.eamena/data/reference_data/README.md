@@ -127,10 +127,9 @@ field names' UUIDs are listed here: [ir-uuids-readonly.tsv](ir-uuids-readonly.ts
 
 <p align="center">
   <img alt="img-name" src="image.png" width="650">
-  <br>
-    [EAMENA_Grid_contour.geojson](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/grids/EAMENA_Grid_contour.geojson)(screenshot, countour only) and EAMENA_Grid.geojson (with grid cells)
 </p>
 
+[EAMENA_Grid_contour.geojson](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/grids/EAMENA_Grid_contour.geojson) (screenshot, countour only) and EAMENA_Grid.geojson (with grid cells)
 
 ## UUIDs
 

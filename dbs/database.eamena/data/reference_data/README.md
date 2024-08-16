@@ -1,11 +1,14 @@
 # Reference Data
 
-Reference data covers: Resource Models (RM), Concepts, etc.
+**Reference data** includes Resource Models, Concepts, Grids, etc. This is all data provided a priori (≠ Business data)
+
+## Resource Models
+> RM
 
 * [Heritage Places](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data/reference_data#heritage-places)
 * [Information Resources](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data/reference_data#information-resources)
 
-## Heritage Places
+### Heritage Places
 > HP
 
 * HP reference data is located here: https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data/reference_data/rm/hp
@@ -28,9 +31,9 @@ Reference data covers: Resource Models (RM), Concepts, etc.
 
 This indicates that fields, including field values (`level3`, the most detailed level), can be aggregated into broader categories (`level2` and `level1`, the most general levels). 
 
-### Fields
+#### Fields
 
-#### Field descriptions
+##### Field descriptions
 
 Thinner categories (`level3`) colored by groups: [[fields-description.html](https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/mds/fields-description.html)]
 
@@ -40,7 +43,7 @@ Thinner categories (`level3`) colored by groups: [[fields-description.html](http
     <em>Screenshot of the HTML dynamic/interactive table 'fields-description.html', with a search on 'Agricul' with field colored by groups and field descriptions</em>
 </p>
 
-#### Groups of fields descriptions
+##### Groups of fields descriptions
 
 Fields (`level3`) are grouped in broader categories, or groups (`level1`). These groups are colored according to the MDS reference file, and HTML links are added to value descriptions ([Individual reference sheets](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bulk#individual-reference-sheets)): [[field-to-tsv.html](https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/mds/field-to-tsv.html)]
 
@@ -50,7 +53,7 @@ Fields (`level3`) are grouped in broader categories, or groups (`level1`). These
     <em>Screenshot of the HTML dynamic/interactive table 'field-to-tsv.html', with colored groups and hyperlinks to the indiviudal reference sheets</em>
 </p>
 
-#### MDS
+##### MDS
 > Minimum Data Standards. Completness of data
 
 Minimum Data Standards (MDS) of Heritage Places. MDS fields in this HTML circular plot [[mds-reference.html](https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/mds/mds-reference.html)]
@@ -61,7 +64,7 @@ Minimum Data Standards (MDS) of Heritage Places. MDS fields in this HTML circula
     <em>A screenshot of the `mds_level.html` file showing the 98 fields of the Heritage Places with the MDS fields (highlighted, thumbs up) using the `mds-reference.ipynb` script</em>
 </p>
 
-#### ERD
+##### ERD
 > Entity-relationships diagram
 
 ERD of HP with fieldnames and CIDOC-CRM entities and relationships [[EAMENA-erd.html](https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/erd/EAMENA-erd.html)]
@@ -88,7 +91,7 @@ ERD of HP with fieldnames and CIDOC-CRM entities and relationships [[EAMENA-erd.
     <em>A screenshot of the editable 'mds-template.xlsx'</em>
 </p>
 
-### Values
+##### Values
 > Field values
 
 Photographs give a visual documentation of field values [[concepts_images_graph.ipynb]](https://colab.research.google.com/github/eamena-project/eamena-data/blob/main/reference-data/concepts/heritage_places/concepts_images_graph.ipynb)
@@ -115,6 +118,14 @@ This script reads a BU template (ex: `Bulk_Upload_template_240228.xlsx`).
 
 
 
+### Information Resources
+> IR
+
+field names' UUIDs are listed here: [ir-uuids-readonly.tsv](ir-uuids-readonly.tsv). The Python script that generate this file is [nodes_id.ipynb](nodes_id.ipynb)
+
+## Grids
+
+
 ## UUIDs
 
 Run the Python function [nodes_uuids()](uuids/nodes_uuids.py) on a RM (JSON) or a file of concepts (XML) to collect the UUIDs of the nodes
@@ -138,7 +149,7 @@ Gives the [concepts_readonly.tsv](https://github.com/eamena-project/eamena-arche
 > **Note:** Fieldnames (ex: "Effect type") have UUIDs. To check these correspondances, check the `nodeid` in the RM. For example, the "Effect type" field has the UUID `34cfea90-c2c0-11ea-9026-02e7594ce0a0` (see its [fieldname](https://github.com/achp-project/prj-eamena-marea/blob/8e397ad1343cd7fb04e4ca8a50247a1e3a687cb2/resource_models/Heritage%20Place.json#L2036) and [uuid](https://github.com/achp-project/prj-eamena-marea/blob/8e397ad1343cd7fb04e4ca8a50247a1e3a687cb2/resource_models/Heritage%20Place.json#L6530)).
 
 
-## Other
+### Other
 
 Check the completeness of data. Python function to model the quality of HP with a radar diagram based on the groups appearing in the BU file (different levels of data aggregation and summing):
 
@@ -237,12 +248,6 @@ res = cursor.execute(sqll)
 * Generalised (in Python) in a loop
 
 4. Create a GUI in <https://colab.research.google.com/>, or equivalent, to let a user request on a UUID (HP's uuid, or BU's uuid)
-
-## Information Resources
-
-field names' UUIDs are listed here: [ir-uuids-readonly.tsv](ir-uuids-readonly.tsv). The Python script that generate this file is [nodes_id.ipynb](nodes_id.ipynb)
-
-## Other
 
 ~~https://github.com/eamena-project/eamena-arches-5-project/blob/master/eamena/statistics/hr_quality_rec.py~~
 

@@ -1,3 +1,5 @@
+## moved to https://github.com/eamena-project/eamena-functions/tree/main/reference_data/reference_data.py
+
 def nodes_uuids(choice = "rm", rm = "https://raw.githubusercontent.com/eamena-project/eamena/master/eamena/pkg/graphs/resource_models/Heritage%20Place.json", concept = "https://raw.githubusercontent.com/eamena-project/eamena/master/eamena/pkg/reference_data/concepts/EAMENA.xml", output_file_path='C:/Rprojects/eamena-arches-dev/dbs/database.eamena/data/reference_data/concepts/concepts_readonly.tsv', export=True):
 	# Creates pandas dataframes from RM (JSON files) and Concepts (XML files)
 	import requests
@@ -37,5 +39,3 @@ def nodes_uuids(choice = "rm", rm = "https://raw.githubusercontent.com/eamena-pr
 		else:
 			return df
 
-
-# %%

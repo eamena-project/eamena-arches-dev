@@ -2,6 +2,9 @@
 
 ![EAMENA-fields](EAMENA-fields.png)
 
+### ACHP
+
+* We already shared our reference data, see: https://colab.research.google.com/github/achp-project/cultural-heritage/blob/main/talks/2023-bhdc/rm_compar.ipynb
 
 ## Zenodo
 > tutorial
@@ -28,3 +31,5 @@ geojson_data = response.json()
 ```py
 geojson_data = zn.zenodo_read(file_url="https://zenodo.org/records/13329575/files/EAMENA_Grid_contour.geojson?download=1")
 ```
+
+## AAA

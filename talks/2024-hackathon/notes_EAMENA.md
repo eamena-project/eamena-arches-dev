@@ -1,6 +1,14 @@
+## Interop
+
 ## Reference data
 
 ![EAMENA-fields](EAMENA-fields.png)
+
+EAMENA : 27,585 Grid Squares of 
+
+### Collections
+
+![alt text](image.png)
 
 ### ACHP
 
@@ -33,3 +41,53 @@ geojson_data = zn.zenodo_read(file_url="https://zenodo.org/records/13329575/file
 ```
 
 ## AAA
+
+* Aim:
+
+## EAMNEA business data sample
+
+```json
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "buffer": {
+                    "width": 10,
+                    "unit": "m"
+                },
+                "inverted": false
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        [
+                            63,
+                            31
+                        ],
+                        [
+                            68,
+                            31
+                        ],
+                        [
+                            68,
+                            33
+                        ],
+                        [
+                            63,
+                            33
+                        ],
+                        [
+                            68,
+                            31
+                        ]
+                    ]
+                ],
+                "type": "Polygon"
+            }
+        }
+    ]
+}
+```
+

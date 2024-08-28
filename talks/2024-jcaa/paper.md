@@ -31,9 +31,9 @@ that is what the concept of 'heritage place', more than 'site' is made for.
 
 Arches is an open-source geoweb semantic-based information purpose-built platform for cultural heritage management created by the *Getty Conservation Institute* and the *World Monument Fund*. It is a graph database where nodes composes the table-like fields (called 'resource models' in Arches, or 'graphs') and have semamtic relation relationships, using the CIDOC-CRM ontology by default. Arches is an IT stack based on mature and state-of-art technologies. Its key features are, from the back-end to the front-end: 
 - a PostgreSQL database, one of the top five database management system (DBMS) with an increasing popularity[^3], among the open source software (OSS), it is the closest to the Oracle the world most popular DBMS; 
-- logics based on Python, the world-wide most used programming language[^2];
+- Logics based on Python, the world-wide most used programming language[^2];
 - Django web-application framework to manage interactions between the server and the web browser
-- data objects based on, or extending, JSON (JSON-LD, GeoJSON, Postgres JSONB type) the current standard to exchange data over the web
+- Data objects based on, or extending, JSON (JSON-LD, GeoJSON, Postgres JSONB type) the current standard to exchange data over the web
 
 <br>
 <img src="../../www/arches-ea-stack.png" width="500px">
@@ -79,8 +79,6 @@ Remote sensing is a key tool of landscape archaeology, a word that seems to be c
 
 The downsides of the remote sensing assessment are obvious, when documenting an heritage place its spatial information is certain (i.e. its location) while its temporal and typological dimensions are very much uncertain, even with a trained eye. To overcome this issue the database graph structure allows the recording of multiple interpretations for the same resource (here, 'heritage place'). In that way, a single heritage place can have two or more different assumptions on its function and dating with in both cases different levels of confidence made by two or more contributors.
 The information recorded in EAMENA has an important degree of reliability since it is quite hard to maintain a minimum standardisation when the database recieved contribution from more than 200 contributors and this despite a mature data entry methodology with statement on a minimal data standards [^11] supported by a large body of training material (YouTube videos, MOOC[^14], digital documentation[^15]), numerous in-person and remote trainings have been delivered to our MENA colleagues. This is why the EAMENA team is building IT tools to sample EAMENA sub-dataset carefully selected for being consistent with research question of cultural heritage management objective.
-
-
 
 The systematic remote sensing assessment, with contributions coming from more than 200 contributors, has led to the recording of some > 200,000 heritage places. Behind this figure we find very different types of record quality, some heritage places already published sometimes ith a very different degree of agrrement with the international standards, but most of them are original heritage place that only EAMENA database gives access to. To highlight only these last years, EAMENA comprehensive surveys has led to the discovery of **354** new 'desert kites' hunting structures[^6] in northern Arabia and at least **3** roman forts in western Jordan[^7]. The latter dataset gathers heritage places distant for more than 80 km in straight line from any inhabited places. 
 
@@ -139,8 +137,6 @@ The 'branch' created has the same structure as the Heritage Place resource model
 
 
 ## Reusability
-
-
 
 EAMENA is the oldest university-based project grounded on Arches, in comparison to sibling projects (MAHSA and MAEASaM at the University of Cambridge; CAAL at the University of London; MAPSS at the Max Planck Institute, etc.[^8]). As so, it gathered more experiences and has a leading role in working to make this projects interoperable for exemple by sharing the reference data of our projects (ontologies, data models, and thesauri in XML and JSON files) through a common GitHub organization (https://github.com/achp-project). EAMENA will be also one of the first Arches-based project to be warped-up with an expected end of its funding  by 2027. EAMENA is the oldest university-based project grounded on Arches, this situation leads directly to face the sustainability of the database over the long term.
 

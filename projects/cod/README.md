@@ -19,7 +19,7 @@ https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&rep
 ## Aims
 
 1. Uploading an existing database into EAMENA v4
-2. Hosting photographs on a ResourceSpace server
+2. Hosting photographs on a [RS server](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/dam)
 
 ## CoD databases
 
@@ -41,7 +41,7 @@ https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&rep
 * `unitnumber` or `record`: equivalent to the EAMENA `Heritage Places`
 * `features`: equivalent to the EAMENA `Built Components`
 
-## Workflow
+## Data workflow
 
 Export DBs tables to XLSX
 
@@ -157,13 +157,12 @@ See: [photos.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/
 
 - [ ] Creating IR manually based on data recorded in the field `references` (file: `records.xlsx`)
 - [ ] Importing each photograph as an Information Resource (IR)
-- [ ] Hosting each photograph in a ResourceSpace server: <cityofthedead.arch.ox.ac.uk>, see APAAME
 
 ---
 
 # Photographs
 
-* uploading photographs to RS: [#54 (comment)](https://github.com/eamena-project/eamena-arches-dev/issues/54#issuecomment-2324241985)
+* uploading photographs to a [RS](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/dam): [#54 (comment)](https://github.com/eamena-project/eamena-arches-dev/issues/54#issuecomment-2324241985)
 
 # Other
 

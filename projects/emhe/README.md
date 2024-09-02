@@ -47,6 +47,10 @@ See the [GeoJSON file](https://github.com/eamena-project/eamena-arches-dev/blob/
 
 Find HP `WK01`, `WK02`, ... by searching `KRZ0` (KRZ for Wadi Kharaza)
 
+```
+https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&reportlink=false&precision=6&total=383574&language=*&term-filter=%5B%7B%22context%22%3A%22%22%2C%22context_label%22%3A%22Heritage%20Place%20-%20Resource%20Name%22%2C%22id%22%3A0%2C%22text%22%3A%22KRZ0%22%2C%22type%22%3A%22term%22%2C%22value%22%3A%22KRZ0%22%2C%22inverted%22%3Afalse%7D%5D
+```
+
 # Reference data
 
 ## Cultural period mapping

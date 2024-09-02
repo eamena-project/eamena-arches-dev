@@ -6,7 +6,7 @@
 - how: ![EAMENA-zenodo-GS](EAMENA-zenodo-GS.png)
 
 - what: https://zenodo.org/records/13329575/files/EAMENA_Grid.geojson?download=1
-
+![alt text](image-1.png)
 
 ## Zenodo *vs* GitHub
 
@@ -23,5 +23,9 @@ geojson_data = response.json()
 ```py
 geojson_data = zn.zenodo_read(file_url="https://zenodo.org/records/13329575/files/EAMENA_Grid_contour.geojson?download=1")
 ```
+
+## other
+
+![alt text](image-2.png)
 
 

@@ -4,7 +4,7 @@
 see [Issue #54](https://github.com/eamena-project/eamena-arches-dev/issues/54)
 
 <p align="center">
-  <img alt="img-name" src="image-4.png" width="600">
+  <img alt="img-name" src="image-4.png" width="500">
   <br>
 </p>
 
@@ -160,6 +160,10 @@ See: [photos.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/
 - [ ] Hosting each photograph in a ResourceSpace server: <cityofthedead.arch.ox.ac.uk>, see APAAME
 
 ---
+
+# Photographs
+
+* uploading photographs to RS: [#54 (comment)](https://github.com/eamena-project/eamena-arches-dev/issues/54#issuecomment-2324241985)
 
 # Other
 

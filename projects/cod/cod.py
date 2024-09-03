@@ -146,7 +146,7 @@ new_image_path = 'C:/Rprojects/eamena-arches-dev/projects/cod/www/4171_sl_JDs_wi
 
 
 # %%
-def add_metadata_to_photo(root_path = "C:/Rprojects/eamena-arches-dev/projects/cod/", photos_in = "db_data/photos_in", photo_metadata = "business_data/xlsx/photos_NS.xlsx", records_in = "business_data/xlsx/records_NS.xlsx", photo_out = "db_data/photos_out", verbose = True):
+def add_metadata_to_photo(root_path = "C:/Rprojects/eamena-arches-dev/projects/cod/", photos_in = "db_data/photos_in", photo_metadata = "business_data/xlsx/photos_NS.xlsx", records_in = "business_data/xlsx/records_NS.xlsx", photo_out = "db_data/photos_out", exif_metadata=False, xmp_metadata=False, gps_metadata=False, verbose = True):
 	"""
 	Append metadata into the photograph by reading other XLSX tables
 
@@ -155,10 +155,12 @@ def add_metadata_to_photo(root_path = "C:/Rprojects/eamena-arches-dev/projects/c
 	:param photo_metadata: Path to the file describing the photographs
 	:param records_in: Path to the file of the records (aka HP), useful to collect data 
 	:param photo_out: Path to the folder where the photographs with metdata will be stored
+	:param xmp_metadata: Add XMP metadata if True
 	
 	"""
 	import re
 	from PIL import Image
+	from PIL import IptcImagePlugin
 	import piexif
 	# from libxmp import XMPFiles, consts
 	import subprocess
@@ -185,6 +187,9 @@ def add_metadata_to_photo(root_path = "C:/Rprojects/eamena-arches-dev/projects/c
 	# loop over the units, match units and folders with photographs
 	stop_nb = 0
 	for unit in units:
+		stop_nb += 1
+		if stop_nb > 1:
+			return("... Early stop - Done ...")
 		print(f"*** read unit/record/herita '{unit}' ***")
 		# add 0 or 00 before to get the COD number
 		if unit < 10:
@@ -201,9 +206,6 @@ def add_metadata_to_photo(root_path = "C:/Rprojects/eamena-arches-dev/projects/c
 		print("\n")
 		# loop over photo, add metadata, save
 		for a_photo in range(len(photos)):
-			stop_nb += 1
-			if stop_nb > 3:
-				return("... Done ...")
 			a_photo_OK = re.sub(r'.*?(DSC|IMG)', r'\1', photos[a_photo])
 			print(f"  + read photo: {photos[a_photo]} (ie {a_photo_OK})")
 			a_photo_metadata = df_im_metadata[df_im_metadata['filename'].str.lower() == a_photo_OK.lower()]
@@ -243,29 +245,38 @@ def add_metadata_to_photo(root_path = "C:/Rprojects/eamena-arches-dev/projects/c
 					print('       im_coord_N: ' + str(im_coord_N))
 					print('       im_coord_E: ' + str(im_coord_E))
 				# prevent to rm former EXIF metadata
+				# create dic
 				try:
 					exif_dict = piexif.load(img.info['exif'])
 				except KeyError:
 					exif_dict = {'0th': {}, 'Exif': {}, 'GPS': {}, '1st': {}, 'Interop': {}, 'thumbnail': None}
-				exif_dict['0th'][piexif.ImageIFD.ImageDescription] = im_descr.encode('utf-8')
-				exif_dict['0th'][piexif.ImageIFD.Artist] = im_artis.encode('utf-8')
-				# exif_dict['0th'][piexif.ImageIFD.XPTitle] = im_title.encode('utf-8')
-				# exif_dict['0th'][piexif.ImageIFD.XPComment] = im_caption.encode('utf-8')
-				# exif_dict['0th'][piexif.ImageIFD.XPAuthor] = im_artis.encode('utf-8')
-				exif_dict['0th'][piexif.ImageIFD.DateTime] = im_date.encode('utf-8')
-				exif_dict['0th'][piexif.ImageIFD.Copyright] = im_artis.encode('utf-8')
-				# exif_dict['0th'][piexif.ImageIFD.GPSDestCountry] = im_country.encode('utf-8')
-				# add_metadata_XY_to_photo(image_path, new_image_path, latitude = im_coord_N, longitude = im_coord_E) # loc: Paris
-				gps_latitude = convert_to_degrees(im_coord_N)
-				gps_longitude = convert_to_degrees(abs(im_coord_E))  # Longitude should be positive for EXIF
-				# GPS data according to EXIF spec
-				gps_ifd = {
-					piexif.GPSIFD.GPSLatitudeRef: 'N' if im_coord_N >= 0 else 'S',
-					piexif.GPSIFD.GPSLatitude: gps_latitude,
-					piexif.GPSIFD.GPSLongitudeRef: 'E' if im_coord_E >= 0 else 'W',
-					piexif.GPSIFD.GPSLongitude: gps_longitude,
-				}
-				exif_dict['GPS'] = gps_ifd
+				if exif_metadata:
+					if verbose:
+						print(f"EXIF metadata (without GPS)---")
+					exif_dict['0th'][piexif.ImageIFD.ImageDescription] = im_caption.encode('utf-8')
+					exif_dict['0th'][piexif.ImageIFD.Artist] = im_artis.encode('utf-8')
+					exif_dict['0th'][piexif.ImageIFD.XPTitle] = im_title.encode('utf-8')
+					exif_dict['0th'][piexif.ImageIFD.XPComment] = im_caption.encode('utf-8')
+					exif_dict['0th'][piexif.ImageIFD.XPAuthor] = im_artis.encode('utf-8')
+					exif_dict['0th'][piexif.ImageIFD.DateTime] = im_date.encode('utf-8')
+					exif_dict['0th'][piexif.ImageIFD.Copyright] = im_copyright.encode('utf-8')
+					# exif_dict['Exif'][piexif.ImageIFD.Artist] = im_artis.encode('utf-8')
+					# exif_dict['Exif'][piexif.ImageIFD.ImageDescription] = im_caption.encode('utf-8')
+					# exif_dict['0th'][piexif.ImageIFD.GPSDestCountry] = im_country.encode('utf-8')
+					# add_metadata_XY_to_photo(image_path, new_image_path, latitude = im_coord_N, longitude = im_coord_E) # loc: Paris
+				if gps_metadata:
+					if verbose:
+						print(f"GPS metadata ---")
+					gps_latitude = convert_to_degrees(im_coord_N)
+					gps_longitude = convert_to_degrees(abs(im_coord_E))  # Longitude should be positive for EXIF
+					# GPS data according to EXIF spec
+					gps_ifd = {
+						piexif.GPSIFD.GPSLatitudeRef: 'N' if im_coord_N >= 0 else 'S',
+						piexif.GPSIFD.GPSLatitude: gps_latitude,
+						piexif.GPSIFD.GPSLongitudeRef: 'E' if im_coord_E >= 0 else 'W',
+						piexif.GPSIFD.GPSLongitude: gps_longitude,
+					}
+					exif_dict['GPS'] = gps_ifd
 
 				# exif_dict = {
 				# 	"0th": {
@@ -289,37 +300,51 @@ def add_metadata_to_photo(root_path = "C:/Rprojects/eamena-arches-dev/projects/c
 				if not os.path.exists(out_folder):
 					os.makedirs(out_folder)
 				img.save(photo_path_out, exif=exif_bytes, quality=95, dpi=original_dpi, optimize=True, progressive=True)
-				print(f"    => {photos[a_photo]} has been saved with EXIF metadata")
+				if verbose:
+					print(f"    => {photos[a_photo]} has been saved with EXIF metadata")
 				img.close()
 				size_img_out = os.path.getsize(photo_path_out)
 				size_img_out_MB = round(size_img_out/1000000, 1)
-				print(f"    image size (MB): {size_img_in_MB} => {size_img_out_MB}")
-				
-				# XMP Handling with exiftool
-				xmp_data = {
-					"XMP-dc:Title": "Your Title Here",
-					"XMP-dc:Description": "A brief description here."
-				}
-				# Convert XMP data to exiftool command arguments
-				xmp_args = []
-				for tag, value in xmp_data.items():
-					xmp_args.extend(['-' + tag + '=' + value])
-				print(photo_path_out)
-				cmd_exiftool = ['exiftool'] + xmp_args + ['-overwrite_original', photo_path_out]
-				print(cmd_exiftool)
-				subprocess.run("cd C:\exiftool")
-				subprocess.run("cd pwd")
-				subprocess.run(cmd_exiftool)
-				print(f"    => {photos[a_photo]} has been saved with XMP metadata")
+				if verbose:
+					print(f"    image size (MB): {size_img_in_MB} => {size_img_out_MB}")
+				if xmp_metadata:
+					if verbose:
+						print(f"XMP metadata ---")
+					# XMP Handling with exiftool
+					xmp_data = {
+						"XMP-dc:Title": "Your Title Here",
+						"XMP-dc:Description": "A brief description here."
+					}
+					# Convert XMP data to exiftool command arguments
+					xmp_args = []
+					for tag, value in xmp_data.items():
+						xmp_args.extend(['-' + tag + '=' + value])
+					print(photo_path_out)
+					cmd_exiftool = ['exiftool'] + xmp_args + ['-overwrite_original', photo_path_out]
+					cmd_exiftool = f'C:\exiftool\exiftool {xmp_args} -overwrite_original "{photo_path_out}"'
+					print(cmd_exiftool)
+					# print("HERE")
+					# subprocess.run(r"cd C:/exiftool && dir", shell=True)
+					# subprocess.run("cd pwd", shell=True)
+
+					# subprocess.run(cmd_exiftool)
+
+					if verbose:
+						print(f"    => {photos[a_photo]} has been saved with XMP metadata")
 			else:
 				print(f"    /!\ there are no metadata for {photos[a_photo]}")
+			if not xmp_metadata and not exif_metadata and not gps_metadata:
+				if verbose:
+						print(f"    CREATE HERE A DF WITH THE IMAGE NAME AS A KEY")
 			print("\n")
 
 
-
-add_metadata_to_photo()
+# add_metadata_to_photo(gps_metadata=True)
+add_metadata_to_photo(gps_metadata=True, exif_metadata=True)
 
 # %%
+
+
 
 # input_image_path = 'C:\Rprojects\eamena-arches-dev\projects\cod\db_data\photos_in\\02s_MuhTalaatHarb\\aDSC_1607s.JPG'
 

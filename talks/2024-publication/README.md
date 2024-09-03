@@ -6,17 +6,13 @@ The EAMENA project, hosted by the School of Archaeology at Oxford, is dedicated 
 - *Responsibility*: We have developed a workflow and an IT plugin that facilitates the creation of referenced datasets, laying a foundational step for publishing data papers. 
 - *Ethical*: To address the ethical implications of inequity in academic publishing by enabling our partners in the Global South to publish their findings. The grant will help us invite one of our Jordanian partners to a workshop. The budget shortfall will be covered by EAMENA’s Cultural Protection Fund (CPF) budget for database training.
 
-## Fundings
-
-* *Social Sciences Division Fixed-Term Researchers Support Fund*, SSD, Universty of Oxford
-* Arcadia fund
-* CPF
+**Fundings**: *Social Sciences Division Fixed-Term Researchers Support Fund*, SSD, Universty of Oxford | Arcadia fund | CPF
 
 ## Workshop outlines
 
-1,5-day in-person and hybrid, Universty of Oxford, Oxford.
+2,5-days in-person and hybrid, Universty of Oxford, Oxford. Provisional days: Wed 27, Thu 28, Fri 29 November.
 
-### Day 1
+### Day 1 and 2
 > in-person
 
 * Hands on Bulk Upload:
@@ -28,12 +24,13 @@ The EAMENA project, hosted by the School of Archaeology at Oxford, is dedicated 
 		- citation-generator
 		- EAMENA Zenodo community
 
-### Day 2
+### Day 3
 > hybrid, morning only
 
 * presentation of the results (published datasets)
 * talks:
 	- academic inequalities, digital gap, etc. (Pr. Rebekah Lee, *to confirmed*)
+	- publishing from the Global South (an academic researcher from Jordan, *to confirmed*)
 	- publishing platform (PCI Archaeology) (Dr. Alain Queffelec, *to confirmed*)
 	- data papers, the Sistan dataset example (Dr. Bijan and Dr. Thomas)
 

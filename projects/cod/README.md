@@ -193,13 +193,13 @@ The CoD field `originaluse` hasn't been used
 Match the photographs metadata with the photographs themselves, using [cod.py](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/cod.py)
 
 <p align="center">
-  <img alt="img-name" src="./www/image-1.png" width="700">
+  <img alt="img-name" src="./www/image-1.png" width="800">
   <br>
     <em>Screenshot of the 'photo' table export (`photo.xlsx`) with the metadata of the photograph DSC_2643s.jpg highlighted</em>
 </p>
 
 <p align="center">
-  <img alt="img-name" src="./www/image-2.png" width="500">
+  <img alt="img-name" src="./www/image-2.png" width="400">
   <br>
     <em>Screenshot of the DSC_2643s.jpg photograph</em>
 </p>

@@ -215,7 +215,7 @@ See: [photos.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/
 <img alt="img-name" src="cod-photo-collection.png" width="500">
   <img alt="img-name" src="image-5.png" width="500">
   <br>
-    <em>Screenshot from the [COD ResourceSpace server](https://cityofthedead.arch.ox.ac.uk/), collection COD-001, photo DSC_7789s.JPG</em>
+  Screenshot from the [COD ResourceSpace server](https://cityofthedead.arch.ox.ac.uk/), collection COD-001, photo DSC_7789s.JPG
 </p>
 
 Field descriptions

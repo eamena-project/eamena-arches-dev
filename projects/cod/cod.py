@@ -146,7 +146,7 @@ new_image_path = 'C:/Rprojects/eamena-arches-dev/projects/cod/www/4171_sl_JDs_wi
 
 
 # %%
-def add_metadata_to_photo(root_path = "C:/Rprojects/eamena-arches-dev/projects/cod/", photos_in = "db_data/photos_in", photo_metadata = "business_data/xlsx/photos_NS.xlsx", records_in = "business_data/xlsx/records_NS.xlsx", photo_out = "db_data/photos_out", exif_metadata=False, xmp_metadata=False, gps_metadata=False, verbose = True):
+def add_metadata_to_photo(root_path = "C:/Rprojects/eamena-arches-dev/projects/cod/", photos_in = "db_data/photos_in", photo_metadata = "business_data/xlsx/photos_NS.xlsx", records_in = "business_data/xlsx/records_NS.xlsx", photo_out = "db_data/photos_out", exif_metadata=False, xmp_metadata=False, iptc_metadata=False, gps_metadata=False, verbose = True):
 	"""
 	Append metadata into the photograph by reading other XLSX tables
 
@@ -160,7 +160,8 @@ def add_metadata_to_photo(root_path = "C:/Rprojects/eamena-arches-dev/projects/c
 	"""
 	import re
 	from PIL import Image
-	from PIL import IptcImagePlugin
+	# from PIL import IptcImagePlugin
+	from iptcinfo3 import IPTCInfo
 	import piexif
 	# from libxmp import XMPFiles, consts
 	import subprocess
@@ -216,11 +217,6 @@ def add_metadata_to_photo(root_path = "C:/Rprojects/eamena-arches-dev/projects/c
 				cur_folder = selected_unit['directory'].iloc[0]
 				photo_path_in = photo_im_path_in + "\\" + cur_folder + "\\" + photos[a_photo]
 				photo_path_out = photo_im_path_out + "\\" + cur_folder + "\\" + photos[a_photo]
-				print(f"    = write metadata")		
-				# Load the image
-				img = Image.open(photo_path_in)
-				size_img_in = os.path.getsize(photo_path_in)
-				size_img_in_MB = round(size_img_in/1000000, 1)
 				# extract metadata from the table
 				im_descr = a_photo_metadata['description'].iloc[0]
 				im_artis = a_photo_metadata['takenby'].iloc[0]
@@ -244,8 +240,14 @@ def add_metadata_to_photo(root_path = "C:/Rprojects/eamena-arches-dev/projects/c
 					print('       im_copyright: ' + im_copyright)
 					print('       im_coord_N: ' + str(im_coord_N))
 					print('       im_coord_E: ' + str(im_coord_E))
+				print(f"    = write metadata")
+					# photo_path_in =  photo_path_out
 				# prevent to rm former EXIF metadata
 				# create dic
+				# Load the image
+				img = Image.open(photo_path_in)
+				size_img_in = os.path.getsize(photo_path_in)
+				size_img_in_MB = round(size_img_in/1000000, 1)
 				try:
 					exif_dict = piexif.load(img.info['exif'])
 				except KeyError:
@@ -264,6 +266,7 @@ def add_metadata_to_photo(root_path = "C:/Rprojects/eamena-arches-dev/projects/c
 					# exif_dict['Exif'][piexif.ImageIFD.ImageDescription] = im_caption.encode('utf-8')
 					# exif_dict['0th'][piexif.ImageIFD.GPSDestCountry] = im_country.encode('utf-8')
 					# add_metadata_XY_to_photo(image_path, new_image_path, latitude = im_coord_N, longitude = im_coord_E) # loc: Paris
+					# exif_dict['0th'][piexif.IptcIFD.Artist] = im_artis.encode('utf-8')
 				if gps_metadata:
 					if verbose:
 						print(f"GPS metadata ---")
@@ -331,16 +334,39 @@ def add_metadata_to_photo(root_path = "C:/Rprojects/eamena-arches-dev/projects/c
 
 					if verbose:
 						print(f"    => {photos[a_photo]} has been saved with XMP metadata")
+				if iptc_metadata:
+					if verbose:
+						# print(photo_path_out)
+						print(f"IPTC metadata ---")
+					info = IPTCInfo(photo_path_out, force=True)
+					info['caption/abstract'] = im_caption.encode('utf-8')
+					info['object name'] = im_title.encode('utf-8')
+					info['copyright notice'] = im_copyright.encode('utf-8')
+					info['credit'] = f'{im_artis} - {im_copyright}'
+					# my_artiste = im_artis.encode('utf-8')
+					# my_copyright = im_copyright.encode('utf-8')
+					# info['credit'] = f'{my_artiste} - {my_copyright}'
+					info['country/primary location name'] = "Egypt"
+					# exif_dict['0th'][piexif.ImageIFD.Artist] = im_artis.encode('utf-8')
+					# exif_dict['0th'][piexif.ImageIFD.XPTitle] = im_title.encode('utf-8')
+					# exif_dict['0th'][piexif.ImageIFD.XPComment] = im_caption.encode('utf-8')
+					# exif_dict['0th'][piexif.ImageIFD.XPAuthor] = im_artis.encode('utf-8')
+					# exif_dict['0th'][piexif.ImageIFD.DateTime] = im_date.encode('utf-8')
+					# exif_dict['0th'][piexif.ImageIFD.Copyright] = im_copyright.encode('utf-8')
+					info.save_as(photo_path_out)
 			else:
 				print(f"    /!\ there are no metadata for {photos[a_photo]}")
 			if not xmp_metadata and not exif_metadata and not gps_metadata:
 				if verbose:
 						print(f"    CREATE HERE A DF WITH THE IMAGE NAME AS A KEY")
 			print("\n")
+			# print(info.keys())
 
 
 # add_metadata_to_photo(gps_metadata=True)
-add_metadata_to_photo(gps_metadata=True, exif_metadata=True)
+# add_metadata_to_photo(gps_metadata=True, exif_metadata=True)
+add_metadata_to_photo(gps_metadata=True, iptc_metadata=True)
+
 
 # %%
 

@@ -17,21 +17,45 @@ Search for `QRF0`
 https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&reportlink=false&precision=6&total=383432&language=*&term-filter=%5B%7B%22context%22%3A%22%22%2C%22context_label%22%3A%22Heritage%20Place%20-%20Resource%20Name%22%2C%22id%22%3A0%2C%22text%22%3A%22QRF0%22%2C%22type%22%3A%22term%22%2C%22value%22%3A%22QRF0%22%2C%22inverted%22%3Afalse%7D%5D
 ```
 
-# CoD -> EAMENA
+# Import
+> CoD -> EAMENA
 
-## Aims
+CoD records gather informations that will belong both to EAMENA Heritage Places (HP, [example](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/business_data/hp.csv)) and EAMENA Built Components (BC, [example](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/business_data/bc.csv)). For each CoD record there is two kinds of data:
+
+1. Textual data
+2. Photographs
+
+**Aims**: 
 
 1. Uploading an existing database into EAMENA v4
 2. Hosting photographs on a [RS server](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/dam)
 
-## CoD databases
+## Data
+> Textual data
+
+* solution
+
+1. Values: Map CoD's values to those used in EAMENA (controled vocab), see for example [condition.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/reference_data/condition.csv)
+
+2. For a BU Upload (HP Fields): Map correspondances between CoD's project DB fieldnames with EAMENA field names, using the [mapping correspondance table](https://github.com/eamena-project/eamenaR#mapping-file) (fields: `cairo` and `cairo_type`)
+
+<p align="center">
+  <img alt="img-name" src="./www/mapping-ex.png" width="700">
+  <br>
+    <em>Alignement 'source' (columns `cairo` and `cairo_type`) and 'target'</em>
+</p>
+
+3. Run the [list_mapping_bu()](https://eamena-project.github.io/eamenaR/doc/list_mapping_bu) function
+
+
+### CoD databases
 
 | DB       | unitnumber |
 |----------|----------|
 | 2022-24_UnknownHeritage-N.accdb   | 1-9;53-68   |
 | 2022-24_UnknownHeritage-S.accdb   | 10-52;69-91  |
 
-### ERD
+#### ERD
 
 <p align="center">
   <img alt="img-name" src="./image.png" width="600">
@@ -39,16 +63,16 @@ https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&rep
     Entity-relationships diagram
 </p>
 
-## CoD field and value description
+### CoD field and value description
 
 * `unitnumber` or `record`: equivalent to the EAMENA `Heritage Places`
 * `features`: equivalent to the EAMENA `Built Components`
 
-## Data workflow
+### Data workflow
 
 Export DBs tables to XLSX
 
-### XLSX -> CSV
+#### XLSX -> CSV
 
 Merge the XLSX from the two DBs, remove duplicates and export as CSV by running the function `merge2dbs` of [cod.py](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/cod.py#L6). Tables are now in the [csv/](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/cod/business_data/csv) folder
 
@@ -75,7 +99,7 @@ converted to a long format
 - [Glossary.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/business_data/csv/Glossary.csv): a glossary
 - [condition.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/business_data/csv/condition.csv): condition of preservation
 
-### Create a BU
+#### Create a BU
 
 Create a [Bulk Upload file](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data/bulk_data#readme) for the `records` adding the `features` and the `photos` in the description field
 
@@ -85,7 +109,7 @@ Create a [Bulk Upload file](https://github.com/eamena-project/eamena-arches-dev/
     Screenshot of the BU template with the `General Description` field (free text) highlighted
 </p>
 
-#### Mapping tables and values
+##### Mapping tables and values
 
 * Resource Name
 
@@ -150,56 +174,23 @@ The CoD field `originaluse` hasn't been used
 | 16        | Decorative paving(s)                           |
 
 
-### Append metadata to the photographs
+#### Append metadata to the photographs
 
-![](cod-photo-collection.png)
 
-See: [photos.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/business_data/csv/photos.csv)
-
-* GPS: function `add_metadata_XY_to_photo` of [cod.py](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/cod.py#L94)
-
-### TODO
+#### TODO
 
 - [ ] Creating IR manually based on data recorded in the field `references` (file: `records.xlsx`)
 - [ ] Importing each photograph as an Information Resource (IR)
 
 ---
 
-# Photographs
+## Photographs
 
 * uploading photographs to a [RS](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/dam): [#54 (comment)](https://github.com/eamena-project/eamena-arches-dev/issues/54#issuecomment-2324241985)
 
-# Other
-
-## CoD to EAMENA
-
-CoD records gather informations that will belong both to EAMENA Heritage Places (HP, [example](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/business_data/hp.csv)) and EAMENA Built Components (BC, [example](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/business_data/bc.csv)). For each CoD record there is two kinds of data:
-
-1. Textual data
-2. Photographs
-
-## Textual data
-
-* solution
-
-1. Values: Map CoD's values to those used in EAMENA (controled vocab), see for example [condition.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/reference_data/condition.csv)
-
-2. For a BU Upload (HP Fields): Map correspondances between CoD's project DB fieldnames with EAMENA field names, using the [mapping correspondance table](https://github.com/eamena-project/eamenaR#mapping-file) (fields: `cairo` and `cairo_type`)
-
-<p align="center">
-  <img alt="img-name" src="./www/mapping-ex.png" width="700">
-  <br>
-    <em>Alignement 'source' (columns `cairo` and `cairo_type`) and 'target'</em>
-</p>
-
-3. Run the [list_mapping_bu()](https://eamena-project.github.io/eamenaR/doc/list_mapping_bu) function
-
-
-## Photographs
-
 ### Metadata
 
-Match the photographs metadata with the photographs themselves
+Match the photographs metadata with the photographs themselves, using [cod.py](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/cod.py)
 
 <p align="center">
   <img alt="img-name" src="./www/image-1.png" width="700">
@@ -213,7 +204,31 @@ Match the photographs metadata with the photographs themselves
     <em>Screenshot of the DSC_2643s.jpg photograph</em>
 </p>
 
-<*to be discussed*>
+See: [photos.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/business_data/csv/photos.csv)
+
+* GPS: function `add_metadata_XY_to_photo` of [cod.py](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/cod.py#L94)
 
 
+#### Imported 
 
+<p align="center">
+<img alt="img-name" src="cod-photo-collection.png" width="500">
+  <img alt="img-name" src="image-5.png" width="500">
+  <br>
+    <em>Screenshot from the [COD ResourceSpace server](https://cityofthedead.arch.ox.ac.uk/), collection COD-001, photo DSC_7789s.JPG</em>
+</p>
+
+Field descriptions
+
+| Field | Description |
+|----------|----------|
+| RESOURCE ID   | automatic/internal numbering  |
+| CONTRIBUTED BY   | name of the RS user account   |
+| Country   | constant. "Egypt"   |
+| Date   | date of the photograph   |
+| ORIGINAL FILENAME  | original filename of the photograph   |
+| CREDIT  | concatenation of the Author (`takenby`) of the image and the Copyright   |
+| CAMERA MAKE/MODEL  | the model of the camera   |
+| CAPTION  | concatenation of the Title (`attribution`) of the image, the EAMENA ID (ex: COD-001), the description (`description`)   |
+
+`takenby`, `attribution` and `description` are fields from the COD database (table 'photos')

@@ -213,12 +213,18 @@ See: [photos.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/
 
 <p align="center">
   <img alt="img-name" src="cod-photo-collection.png" width="1000"><br>
+  <br>
+  Screenshot from the [COD ResourceSpace server](https://cityofthedead.arch.ox.ac.uk/), collection COD-001.
+</p>
+
+#### Metadata field descriptions
+
+<p align="center">
   <img alt="img-name" src="image-5.png" width="1000">
   <br>
   Screenshot from the [COD ResourceSpace server](https://cityofthedead.arch.ox.ac.uk/), collection COD-001, photo DSC_7789s.JPG
 </p>
 
-* Metadata field descriptions
 
 | Field | Description |
 |----------|----------|

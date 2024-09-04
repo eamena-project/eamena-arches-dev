@@ -226,7 +226,7 @@ See: [photos.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/
 </p>
 
 
-| Field | Description |
+| Field    | Description |
 |----------|----------|
 | RESOURCE ID   | automatic/internal numbering  |
 | CONTRIBUTED BY   | name of the RS user account   |

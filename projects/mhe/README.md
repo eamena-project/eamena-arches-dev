@@ -1,5 +1,5 @@
-# EMHE
-> "Endangered Monastic Heritage in Egypt", *aka*
+# MHE
+> "Monastic Heritage in Egypt", *aka*
 
 Dataset for the ["Documenting Coptic Monastic Heritage" project](https://www.ff.uni-lj.si/en/news/documenting-coptic-monastic-heritage-project)
 

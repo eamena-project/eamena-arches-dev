@@ -6,6 +6,7 @@ see [Issue #54](https://github.com/eamena-project/eamena-arches-dev/issues/54)
 <p align="center">
   <img alt="img-name" src="image-4.png" width="500">
   <br>
+  <em> location of the 91 HPs in the Northern Cemetery, Cairo, Egypt</em>
 </p>
 
 ## Search URL
@@ -15,6 +16,8 @@ Search for `QRF0`
 ```
 https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&reportlink=false&precision=6&total=383432&language=*&term-filter=%5B%7B%22context%22%3A%22%22%2C%22context_label%22%3A%22Heritage%20Place%20-%20Resource%20Name%22%2C%22id%22%3A0%2C%22text%22%3A%22QRF0%22%2C%22type%22%3A%22term%22%2C%22value%22%3A%22QRF0%22%2C%22inverted%22%3Afalse%7D%5D
 ```
+
+# CoD -> EAMENA
 
 ## Aims
 
@@ -148,6 +151,8 @@ The CoD field `originaluse` hasn't been used
 
 
 ### Append metadata to the photographs
+
+![](cod-photo-collection.png)
 
 See: [photos.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/business_data/csv/photos.csv)
 

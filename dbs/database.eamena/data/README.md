@@ -44,7 +44,7 @@ py split_bu_template.py "Bulk_Upload_template_231017.xlsx" "C:/Rprojects/eamena-
 ```
 
 <p align="center">
-  <img alt="img-name" src="../../../../www/bu-to-tsv.png" width="500">
+  <img alt="img-name" src="../../../www/bu-to-tsv.png" width="500">
   <br>
 	<em>The BU template is a set of different templates. In yellow, example of the BU template sheets that will be exported as TSV file</em>
 </p>
@@ -58,7 +58,7 @@ Will create the many TSV located into the folder https://github.com/eamena-proje
 * ...
 
 <p align="center">
-  <img alt="img-name" src="../../../../www/bu-to-tsv-ex1.png" width="700">
+  <img alt="img-name" src="../../../www/bu-to-tsv-ex1.png" width="700">
   <br>
 	<em>A search on 'Rol' in the <a href="https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bulk/templates/doc/bu_Person-Organization.tsv">bu_Person-Organization</a> file</em>
 </p>
@@ -116,7 +116,7 @@ Once the BU process has been completed, a resume can be displayed with a Python 
 
 
 <p align="center">
-  <img alt="img-name" src="../../../../www/json_summary.png" width="500">
+  <img alt="img-name" src="../../../www/json_summary.png" width="500">
   <br>
 	<em>screenshot of the JSON with URL</em>
 </p>
@@ -124,7 +124,7 @@ Once the BU process has been completed, a resume can be displayed with a Python 
 The URL opens the Resource Report
 
 <p align="center">
-  <img alt="img-name" src="../../../../www/json_summary_uuid.png" width="700">
+  <img alt="img-name" src="../../../www/json_summary_uuid.png" width="700">
   <br>
 	<em>screenshot of the Resource Report</em>
 </p>
@@ -155,7 +155,7 @@ The Resource name can be search in the map database
 > ⚠️ This process is no longer in use ⚠️ ~~step-by-step BU procedure from the user-side~~
 
 <p align="center">
-  <img alt="img-name" src="../../../../www/folder-files.png" width="600">
+  <img alt="img-name" src="../../../www/folder-files.png" width="600">
   <br>
 	<em>The folder `2021-11-22-B-BIJAN` contains two XLSX files</em>
 </p>

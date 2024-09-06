@@ -151,9 +151,9 @@ the process is `import_business_data_relations -s 'path\to\relations_file'`
 
 * the [bu_append_hp_ir.relations](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/business_data_relations/bu_append_hp_ir.relations) file
 
-| resourceinstanceidfrom              | resourceinstanceidto                | relationshiptype                                     | datestarted | dateended | notes |
-|-------------------------------------|-------------------------------------|-------------------------------------------------------|-------------|-----------|-------|
-| a882affc-60cb-4dcb-a26c-c2721fd0797c | ecdc771c-ff31-42c7-9ec9-522e6302e6f0 | http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of |             |           |       |
+| resourceinstanceidfrom              | resourceinstanceidto                | relationshiptype                                     | 
+|-------------------------------------|-------------------------------------|------------------------------------------------------|
+| a882affc-60cb-4dcb-a26c-c2721fd0797c | ecdc771c-ff31-42c7-9ec9-522e6302e6f0 | http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of |
 
 
 # Reference data

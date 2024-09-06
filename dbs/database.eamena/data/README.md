@@ -149,12 +149,20 @@ the process is `import_business_data_relations -s 'path\to\relations_file'`
 
 #### examples
 
-* the [bu_append_hp_ir.relations](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/business_data_relations/bu_append_hp_ir.relations) file
+* the [res2res_hp_ir.relations](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/business_data_relations/res2res_hp_ir.relations) file
 
 | resourceinstanceidfrom              | resourceinstanceidto                | relationshiptype                                     | 
 |-------------------------------------|-------------------------------------|------------------------------------------------------|
 | a882affc-60cb-4dcb-a26c-c2721fd0797c | ecdc771c-ff31-42c7-9ec9-522e6302e6f0 | http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of |
 
+
+* the [res2res_hp_pers.relations](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/business_data_relations/res2res_hp_pers.relations) file
+
+| resourceinstanceidfrom              | resourceinstanceidto                | relationshiptype                               |
+|-------------------------------------|-------------------------------------|------------------------------------------------|
+| 1062dbf4-70a2-4b87-b0f1-0f459b6c301 | ecdc771c-ff31-42c7-9ec9-522e6302e6f0 | http://www.ics.forth.gr/isl/CRMdig/L33_has_maker |
+
+Where `1062dbf4-70a2-4b87-b0f1-0f459b6c301` is EAMENA-0264152 and `ecdc771c-ff31-42c7-9ec9-522e6302e6f0` is Martin Sterry
 
 # Reference data
 

@@ -94,7 +94,7 @@ The process is `import_business_data -s 'path\to\bu_append_file' -ow append`
 
 #### invalid fields
 
-Do not BU append these fields, the process is `import_business_data_relations -s 'path\to\relations_file'`
+Do not BU append these fields but choose relations-to-relations import
 
 | RM | field | format and description |
 |----|--------------|----------|
@@ -141,6 +141,20 @@ The Resource name can be search in the map database
 [^1]: `python /opt/arches/eamena/manage.py bu -o summary -s "filename.json" | json_pp`
 [^2]: Search: `"uuid" : "`, Replace by `"uuid" : "https://database.eamena.org/en/report/`
 
+## Relation-to-Relation
+
+### Import
+
+the process is `import_business_data_relations -s 'path\to\relations_file'`
+
+#### examples
+
+* the [bu_append_hp_ir.relations](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/business_data_relations/bu_append_hp_ir.relations) file
+
+| resourceinstanceidfrom              | resourceinstanceidto                | relationshiptype                                     | datestarted | dateended | notes |
+|-------------------------------------|-------------------------------------|-------------------------------------------------------|-------------|-----------|-------|
+| a882affc-60cb-4dcb-a26c-c2721fd0797c | ecdc771c-ff31-42c7-9ec9-522e6302e6f0 | http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of |             |           |       |
+
 
 # Reference data
 
@@ -150,8 +164,9 @@ The Resource name can be search in the map database
 
 ---
 
+# Others
 
-### ~~BU process~~
+## ~~BU process~~
 > ⚠️ This process is no longer in use ⚠️ ~~step-by-step BU procedure from the user-side~~
 
 <p align="center">

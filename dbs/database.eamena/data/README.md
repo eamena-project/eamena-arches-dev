@@ -141,7 +141,7 @@ The Resource name can be search in the map database
 [^1]: `python /opt/arches/eamena/manage.py bu -o summary -s "filename.json" | json_pp`
 [^2]: Search: `"uuid" : "`, Replace by `"uuid" : "https://database.eamena.org/en/report/`
 
-## Relation-to-Relation
+## Resource-to-Resource relationship
 
 ### Import
 

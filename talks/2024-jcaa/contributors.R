@@ -7,7 +7,7 @@ d <- hash::hash()
 source("C:/Rprojects/eamena-arches-dev/credentials/pg_credentials.R") # the Pg connection (hidden pwd)
 
 # return the UUID of the Actors
-nbmax <- 500
+nbmax <- 100 # 500
 sqll <- stringr::str_interp("
 SELECT
 tiledata -> '34cfea8a-c2c0-11ea-9026-02e7594ce0a0' -> 0 ->> 'resourceId' AS AssInvestUUID,
@@ -45,6 +45,7 @@ for(i in 1:nrow(d$AssInvestUUID)){
   }
 }
 df <- d$AssInvestUUID[!is.na(d$AssInvestUUID$assinvestuuid), ] # rm NA
+df <- df[!duplicated(df$assinvestname), ] # rm possible duplicates (TODO: add a suffix instead of rm)
 df$assinvestname <- factor(df$assinvestname, levels = df$assinvestname, ordered = T)
 
 # this part directly comes from  geojson_stats.R
@@ -60,6 +61,7 @@ blank_theme <- ggplot2::theme_minimal()+
 gg <- ggplot2::ggplot(df, ggplot2::aes(x = assinvestname, y = nb)) +
   ggplot2::geom_bar(stat = "identity", fill = "lightblue") +
   blank_theme +
+  ggplot2::geom_text(ggplot2::aes(label = nb), vjust = -0.5, color = "black") + # Adding text above bars
   ggplot2::labs(title = paste0("Names of the ", nbmax, " highest contributors in the EAMENA DB"),
                 # subtitle = my_subtitle,
                 caption = paste0("Data source: \n",
@@ -70,11 +72,12 @@ gg <- ggplot2::ggplot(df, ggplot2::aes(x = assinvestname, y = nb)) +
   ggplot2::scale_x_discrete(labels = function(x) stringr::str_wrap(x, width = 20)) +
   ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 45, vjust = 1, hjust = 1),
                  axis.title.y = ggplot2::element_text(angle = 90))
-#   ggplot2::theme(plot.margin = ggplot2::margin(0, 0, 1, 1, "cm"))
-# axis.title.y = ggplot2::element_blank()
+gg
+# #   ggplot2::theme(plot.margin = ggplot2::margin(0, 0, 1, 1, "cm"))
+# # axis.title.y = ggplot2::element_blank()
 ggplot2::ggsave(
-  file = "C:/Rprojects/eamena-arches-dev/talks/2024-jcaa/contrib.jpg",
+  file = "C:/Rprojects/eamena-arches-dev/talks/2024-jcaa/contrib_100.jpg",
   plot = gg,
-  height = 10, width = 19
+  height = 21, width = 29
 )
 

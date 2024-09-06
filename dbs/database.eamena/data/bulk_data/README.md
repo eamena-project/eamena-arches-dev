@@ -67,14 +67,42 @@ To recast structured data (source) to a BU format (target), see the [eamenaR](ht
 ## BU append
 > Append data to an already existing record
 
-A BU append is necessarly a CSV file
+A BU append is necessarly a CSV file. A mapping file (`.mapping`) is also necessary, cf: https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data/mapping_files, do not include Related Resources (see: [#57](https://github.com/eamena-project/eamena-arches-dev/issues/57)). **ResourceID** is the only required field.
 
-* Check one of these models:
+### validated fields
+
+| RM | field | format and description |
+|----|--------------|----------|
+| HP | **ResourceID**   | the UUID of the ressource  |
+| HP | Assessment Activity Date   | Date format `YYYY-MM-DD`   |
+| HP | Disturbance Cause Category Type |   |
+| HP | Disturbance Cause Type |   |
+| HP | Disturbance Cause Certainty |   |
+| HP | Disturbance Date From | Date format `YYYY-MM-DD` |
+| HP | Disturbance Date To | Date format `YYYY-MM-DD`  |
+| HP | Disturbance Date Occurred Before | Date format `YYYY-MM-DD`  |
+| HP | Disturbance Date Occurred On |  Date format `YYYY-MM-DD` |
+| HP | Disturbance Cause Assignment Assessor Name | Free text  |
+| HP | Grid ID | |
+
+### invalid fields
+
+Do not BU append these fields
+
+| RM | field | format and description |
+|----|--------------|----------|
+| HP | Assessment Investigator - Actor   | this is a *related resource*, will create an error  |
+
+
+
+### templates
+
+* Check one of these templates:
   - [caravanserail_outCSV2.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/bulk_data/append/caravanserail_outCSV2.csv): Adding new geometries (Polygons) to HP (caravanserails). These geometries will be added to already existing geometries (Points).
   - [bu_append_hp_grid_20240116.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/bulk_data/append/bu_append_gs.csv). Append missing GS to HP 
 * Check the name of the fields in the reference data [mds-template-readonly.tsv](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/mds/mds-template-readonly.tsv) file  
 
-A mapping file (`.mapping`) will also be necessary, cf: https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data/mapping_files
+
 
 
 

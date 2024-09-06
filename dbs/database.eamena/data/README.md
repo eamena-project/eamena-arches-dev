@@ -94,7 +94,7 @@ The process is `import_business_data -s 'path\to\bu_append_file' -ow append`
 
 #### invalid fields
 
-Do not BU append these fields but choose relations-to-relations import
+Do not BU append these fields but choose [Resource-to-Resource](#resource-to-resource-relationship) import
 
 | RM | field | format and description |
 |----|--------------|----------|

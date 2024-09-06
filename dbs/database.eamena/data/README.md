@@ -29,7 +29,7 @@ The last/updated version of the BU template appears on the upper part of this ta
 Explanations of the BU fields (ex: `Name Type`) are [**here**](https://eamena.org/advanced-use#rm-hp-fields) while explanation on possible values are within the different sheets (ex: `Alternative Reference`)
 
 <p align="center">
-  <img alt="img-name" src="../../../../www/bu-to-tsv.png" width="500">
+  <img alt="img-name" src="../../../www/bu-to-tsv.png" width="500">
   <br>
 	<em>The BU template. In yellow, the different sheets where the dropdown values (ie. controled vocabularies) are coming from alongside value definitions</em>
 </p>

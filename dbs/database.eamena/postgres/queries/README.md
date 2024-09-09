@@ -10,6 +10,7 @@ Miscellaneous and compendium SQL queries with their equivalent in the EAMENA DB 
 | AS       | EAMENA Advanced Search |
 | GS       | Grid Squares           |
 | HP       | Heritage Place         |
+| PO       | Person/Organisation    |
 
 * UUID and field names
 
@@ -323,7 +324,7 @@ WHERE
     AND staff.teamname LIKE '%EAMENA Project Staff%'
 ```
 
-### HP update 
+### HP r2r PO update
 
 Given this value in the Pg `tiles` table, field `tiledata` (jsonb), resulting from this SQL statement[^1]:
 
@@ -348,7 +349,7 @@ Given this value in the Pg `tiles` table, field `tiledata` (jsonb), resulting fr
 
 We aim 
 
-[^1]: `SELECT * FROM tiles WHERE resourceinstanceid::text LIKE '1062dbf4-70a2-4b87-b0f1-0f459b6c3016'` with `1062dbf4-70a2-4b87-b0f1-0f459b6c3016` the UUID of an HP
+[^1]: `SELECT * FROM tiles WHERE resourceinstanceid::text LIKE '1062dbf4-70a2-4b87-b0f1-0f459b6c3016'` with `1062dbf4-70a2-4b87-b0f1-0f459b6c3016` the UUID of an HP.
 
 ## GS
 

@@ -11,7 +11,7 @@ Filter data that have to be uploaded by BU append function and data that to be a
 
 ```mermaid
 flowchart
-  id3[BU_append_to_be_mapped] -- split --> id6[r2r];
+  id3[Data to append] -- split --> id6[r2r];
   id6 -- split --> id4[r2r append for IR];
   id6 -- split --> id5[r2r append for PO];
   id3 -- split --> id7[BU append];

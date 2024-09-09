@@ -23,6 +23,9 @@ flowchart
 
 ```
 
+* r2r: `python manage.py packages -o import_business_data_relations -s ...`
+* BU append: `python manage.py packages -o import_business_data -s ...`
+
 ## Bulk Upload
 > BU
 

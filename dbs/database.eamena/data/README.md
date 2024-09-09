@@ -14,7 +14,7 @@ flowchart
   id3[BU_append_to_be_mapped] -- splitted --> id6[r2r];
   id6 -- splitted --> id4[r2r append for IR];
   id6 -- splitted --> id5[r2r append for PO];
-  id3 -- splitted --> id6[BU append];
+  id3 -- splitted --> id7[BU append];
   
   click id3 "https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/bulk_data/append/bu_append_to_be_mapped.csv" _blank
   click id5 "https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/business_data_relations/res2res_hp_po.relations" _blank

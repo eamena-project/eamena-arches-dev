@@ -3,6 +3,15 @@
 
 Add new HP from a BU, or append new values in an existing HP, using the procedure BU append. The generic function to manage Business data using management functions.
 
+* Abrevv.
+
+| Abrevv.  | Full name              |
+|----------|------------------------|
+| HP       | Heritage Place         |
+| PO       | Person/Organisation    |
+| GS       | Grid Squares           |
+
+
 ## Management functions
 
 ### append_filter_data()

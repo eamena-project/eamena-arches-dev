@@ -26,6 +26,10 @@ flowchart
 * r2r: `python manage.py packages -o import_business_data_relations -s ...`
 * BU append: `python manage.py packages -o import_business_data -s ...`
 
+#### limits
+
+see: [#57](https://github.com/eamena-project/eamena-arches-dev/issues/57#issuecomment-2334212067) and following
+
 ## Bulk Upload
 > BU
 

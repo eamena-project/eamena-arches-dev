@@ -19,7 +19,9 @@ Main correspondances between EAMENA Heritage Places fieldnames and field UUIDs a
 
 [APAAME dev](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/queries#apaame-and-archdams)
 
-## User permissions
+## User
+
+### User permissions
 
 Create the `eamenar_temp` with a password and revokes all his pervious privileges (see [Reuben's notes](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/postgres#creating-a-readonly-postgres-user))
 
@@ -44,7 +46,9 @@ FROM information_schema.table_privileges
 WHERE grantee = 'eamenar_temp'
 ```
 
-## HP total number
+## HP
+
+### HP total number
 
 * SQL
 
@@ -67,101 +71,8 @@ gives:
 https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&reportlink=false&precision=6&total=368511&resource-type-filter=%5B%7B%22graphid%22%3A%2234cfe98e-c2c0-11ea-9026-02e7594ce0a0%22%2C%22name%22%3A%22Heritage%20Place%22%2C%22inverted%22%3Afalse%7D%5D
 ```
 
-## IR total number
 
-```SQL
-SELECT COUNT(resourceinstanceid::text) FROM resource_instances
-WHERE graphid::text LIKE '35b99cb7-379a-11ea-9989-06f597a7d5ce'
-```
-
-where:
-- `35b99cb7-379a-11ea-9989-06f597a7d5ce` is the UUID of the IR resource model, see [the RM](https://github.com/achp-project/prj-eamena-marea/blob/8e397ad1343cd7fb04e4ca8a50247a1e3a687cb2/resource_models/Information%20Resource.json#L27)
-
-gives:
-
-- 136,442
-
-## IR names and UUID
-
-
-```SQL
-SELECT resourceinstanceid::text as uuid, name ->> 'en' as ir_name FROM resource_instances
-WHERE graphid = '35b99cb7-379a-11ea-9989-06f597a7d5ce'
-LIMIT 10
-```
-
-Gives:
-
-| uuid                                   | ir_name              |
-|----------------------------------------|----------------------|
-| 16964a46-77cf-416e-84ac-77178e20c463   | INFORMATION-0077471  |
-| 7c9f5418-54f8-460e-b8fb-2744fd60d76b   | INFORMATION-0077496  |
-| 39a2e91e-3cff-477f-b328-373aba80d3ac   | INFORMATION-0077521  |
-| 4bb22222-9c02-477b-95cc-c0026491df66   | INFORMATION-0077547  |
-| ef9f646b-0a8f-482c-a4a5-a1460d2ea331   | INFORMATION-0077573  |
-| 12ff7f9d-28b7-44dd-a206-46f1334f3026   | INFORMATION-0077598  |
-| c7409065-42db-44dc-abaa-0db13e88e47f   | INFORMATION-0077623  |
-| 8274601f-8769-4503-948e-a6eed3aa9791   | INFORMATION-0077649  |
-| d54f992b-8cc9-43c3-a503-abca125aa658   | INFORMATION-0077675  |
-| 482c8349-5859-4d80-b1db-0ba0215e0050   | INFORMATION-0077700  |
-
-Where `35b99cb7-379a-11ea-9989-06f597a7d5ce` is the UUID of the IR resource model
-
-## IR file upload update
-
-Check the file uploaded path
-
-```SQL
-SELECT tiledata -> 'c712066a-8094-11ea-a6a6-02e7594ce0a0' #>> '{0, url}' AS file_upload FROM tiles 
-WHERE tiledata -> 'c712066a-8094-11ea-a6a6-02e7594ce0a0' #>> '{0, url}' IS NOT NULL
-AND resourceinstanceid::text LIKE 'e17bca9d-77c5-4ec7-9ff7-971d4e1ee0b6';
-```
-
-Update it
-
-```SQL
-UPDATE tiles
-SET tiledata = jsonb_set(
-    tiledata,
-    '{c712066a-8094-11ea-a6a6-02e7594ce0a0,0,url}',
---     '"https:///upload.wikimedia.org/wikipedia/commons/2/25/Cerberus-Blake.jpeg"', -- OK
--- 	'"https:///cityofthedead.arch.ox.ac.uk/filestore/7_8e695b5462911fa/7scr_95445ce31a0802c.jpg"', -- OK
-	'"https:///cityofthedead.arch.ox.ac.uk/?c=9&k=dbeceb17a3"', -- not OK
-    false
-)
-WHERE tiledata -> 'c712066a-8094-11ea-a6a6-02e7594ce0a0' #>> '{0,url}' IS NOT NULL
-AND resourceinstanceid::text LIKE 'e17bca9d-77c5-4ec7-9ff7-971d4e1ee0b6';
-```
-
-## GS list all
-
-List all names of GS
-
-```SQL
-SELECT name ->> 'en' as grid_name FROM resource_instances
-WHERE graphid = '77d18973-7428-11ea-b4d0-02e7594ce0a0'
-```
-
-where:
-- `77d18973-7428-11ea-b4d0-02e7594ce0a0` is the UUID of the GS resource model
-
-gives:
-
-| grid_name|
-|----------|
-| E71N33-44|
-| E71N34-11|
-| E71N34-12|
-| E71N34-13|
-| E71N34-14|
-| E71N34-21|
-| E71N34-22|
-| E71N34-23|
-| E71N34-24|
-| ...      |
-
-
-## HP (one specifically) all data
+### HP (one specifically) all data
 
 ```SQL
 SELECT * FROM tiles 
@@ -171,7 +82,7 @@ WHERE resourceinstanceid::text LIKE '8b5e0b67-d3b7-4ce3-8d23-807cf25e8244'
 Where `8b5e0b67-d3b7-4ce3-8d23-807cf25e8244` is the UUID of a HP
 
 
-## HP with Overall Site Condition
+### HP with Overall Site Condition
 > HP having a value in OSC
 
 * SQL 
@@ -189,7 +100,7 @@ https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&rep
 NB: use `34cfea68-c2c0-11ea-9026-02e7594ce0a0` for Disturbance Cause Category Type	
 
 
-## HP centroids
+### HP centroids
 
 On two coordinates `x` and `y`
 
@@ -287,7 +198,7 @@ result_geojson = result.to_json()
 print(result_geojson)
 ```
 
-## HP without GS
+### HP without GS
 
 * SQL
 
@@ -349,7 +260,7 @@ SELECT ids.ri, ids.ei, coords.x, coords.y FROM (
 WHERE ids.ri = coords.ri AND grd.ri = coords.ri AND grd.ri = ids.ri
 ```
 
-## HP date of creation
+### HP date of creation
 
 List the HP created between `2022-12-31` and `2024-01-01` by member of the `EAMENA Project Staff`
 
@@ -412,7 +323,64 @@ WHERE
     AND staff.teamname LIKE '%EAMENA Project Staff%'
 ```
 
-## GS geometry
+### HP update 
+
+Given this value in the Pg `tiles` table, field `tiledata` (jsonb), resulting from this SQL statement[^1]:
+
+```json
+{
+  "34cfea4d-c2c0-11ea-9026-02e7594ce0a0": "77c020f4-1580-441f-9e84-6e6bf89a8615",
+  "34cfea81-c2c0-11ea-9026-02e7594ce0a0": "2017-12-18T00:00:00.000-06:00",
+  "34cfea8a-c2c0-11ea-9026-02e7594ce0a0": [
+    {
+      "resourceId": "f8cf37fe-1d6b-4c96-a397-b5a3467c5dfe",
+      "ontologyProperty": "http://www.ics.forth.gr/isl/CRMdig/L33_has_maker",
+      "resourceXresourceId": "2ae7f8fe-80b0-478b-813c-496590eeecdb",
+      "inverseOntologyProperty": "http://www.ics.forth.gr/isl/CRMdig/L33i_is_maker_of"
+    }
+  ],
+  "bcd3a8ae-0404-11eb-a11c-0a5a9a4f6ef7": false,
+  "d2e1ab96-cc05-11ea-a292-02e7594ce0a0": [
+    "20b1a4e0-97e1-41f7-b519-124a7317266b"
+  ]
+}
+```
+
+We aim 
+
+[^1]: `SELECT * FROM tiles WHERE resourceinstanceid::text LIKE '1062dbf4-70a2-4b87-b0f1-0f459b6c3016'` with `1062dbf4-70a2-4b87-b0f1-0f459b6c3016` the UUID of an HP
+
+## GS
+
+### GS list all
+
+List all names of GS
+
+```SQL
+SELECT name ->> 'en' as grid_name FROM resource_instances
+WHERE graphid = '77d18973-7428-11ea-b4d0-02e7594ce0a0'
+```
+
+where:
+- `77d18973-7428-11ea-b4d0-02e7594ce0a0` is the UUID of the GS resource model
+
+gives:
+
+| grid_name|
+|----------|
+| E71N33-44|
+| E71N34-11|
+| E71N34-12|
+| E71N34-13|
+| E71N34-14|
+| E71N34-21|
+| E71N34-22|
+| E71N34-23|
+| E71N34-24|
+| ...      |
+
+
+### GS geometry
 
 Geometry of a GS in GeoJSON format
 
@@ -422,6 +390,75 @@ WHERE resourceinstanceid = '028b45f3-cc4f-4bc6-9f30-d3bad8990181'
 ```
 
 Where `028b45f3-cc4f-4bc6-9f30-d3bad8990181` is the UUID of the Grid Square `E63N37-41`
+
+## IR
+
+### IR total number
+
+```SQL
+SELECT COUNT(resourceinstanceid::text) FROM resource_instances
+WHERE graphid::text LIKE '35b99cb7-379a-11ea-9989-06f597a7d5ce'
+```
+
+where:
+- `35b99cb7-379a-11ea-9989-06f597a7d5ce` is the UUID of the IR resource model, see [the RM](https://github.com/achp-project/prj-eamena-marea/blob/8e397ad1343cd7fb04e4ca8a50247a1e3a687cb2/resource_models/Information%20Resource.json#L27)
+
+gives:
+
+- 136,442
+
+### IR names and UUID
+
+
+```SQL
+SELECT resourceinstanceid::text as uuid, name ->> 'en' as ir_name FROM resource_instances
+WHERE graphid = '35b99cb7-379a-11ea-9989-06f597a7d5ce'
+LIMIT 10
+```
+
+Gives:
+
+| uuid                                   | ir_name              |
+|----------------------------------------|----------------------|
+| 16964a46-77cf-416e-84ac-77178e20c463   | INFORMATION-0077471  |
+| 7c9f5418-54f8-460e-b8fb-2744fd60d76b   | INFORMATION-0077496  |
+| 39a2e91e-3cff-477f-b328-373aba80d3ac   | INFORMATION-0077521  |
+| 4bb22222-9c02-477b-95cc-c0026491df66   | INFORMATION-0077547  |
+| ef9f646b-0a8f-482c-a4a5-a1460d2ea331   | INFORMATION-0077573  |
+| 12ff7f9d-28b7-44dd-a206-46f1334f3026   | INFORMATION-0077598  |
+| c7409065-42db-44dc-abaa-0db13e88e47f   | INFORMATION-0077623  |
+| 8274601f-8769-4503-948e-a6eed3aa9791   | INFORMATION-0077649  |
+| d54f992b-8cc9-43c3-a503-abca125aa658   | INFORMATION-0077675  |
+| 482c8349-5859-4d80-b1db-0ba0215e0050   | INFORMATION-0077700  |
+
+Where `35b99cb7-379a-11ea-9989-06f597a7d5ce` is the UUID of the IR resource model
+
+### IR file upload update
+
+Check the file uploaded path
+
+```SQL
+SELECT tiledata -> 'c712066a-8094-11ea-a6a6-02e7594ce0a0' #>> '{0, url}' AS file_upload FROM tiles 
+WHERE tiledata -> 'c712066a-8094-11ea-a6a6-02e7594ce0a0' #>> '{0, url}' IS NOT NULL
+AND resourceinstanceid::text LIKE 'e17bca9d-77c5-4ec7-9ff7-971d4e1ee0b6';
+```
+
+Update it
+
+```SQL
+UPDATE tiles
+SET tiledata = jsonb_set(
+    tiledata,
+    '{c712066a-8094-11ea-a6a6-02e7594ce0a0,0,url}',
+--     '"https:///upload.wikimedia.org/wikipedia/commons/2/25/Cerberus-Blake.jpeg"', -- OK
+-- 	'"https:///cityofthedead.arch.ox.ac.uk/filestore/7_8e695b5462911fa/7scr_95445ce31a0802c.jpg"', -- OK
+	'"https:///cityofthedead.arch.ox.ac.uk/?c=9&k=dbeceb17a3"', -- not OK
+    false
+)
+WHERE tiledata -> 'c712066a-8094-11ea-a6a6-02e7594ce0a0' #>> '{0,url}' IS NOT NULL
+AND resourceinstanceid::text LIKE 'e17bca9d-77c5-4ec7-9ff7-971d4e1ee0b6';
+```
+
 
 # APAAME and ArchDAMS
 > IR 

@@ -12,11 +12,13 @@ Filter data that have to be uploaded by BU append function and data that to be a
 ```mermaid
 flowchart
   id3[BU_append_to_be_mapped] -- splitted --> r2r;
-  r2r -- splitted --> id4[IR];
-  r2r -- splitted --> id5[PO];
+  r2r -- splitted --> id4[r2r append for IR];
+  r2r -- splitted --> id5[r2r append for PO];
   id3 -- splitted --> id6[BU append];
   
-  click id3 "https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data/reference_data#erd" _blank
+  click id3 "https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/bulk_data/append/bu_append_to_be_mapped.csv" _blank
+  click id5 https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/business_data_relations/res2res_hp_po.relations  _blank
+  click id4 https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/business_data_relations/res2res_hp_ir.relations  _blank
 ```
 
 ## Bulk Upload

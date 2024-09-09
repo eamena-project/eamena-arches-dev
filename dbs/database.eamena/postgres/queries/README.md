@@ -325,8 +325,9 @@ WHERE
 ```
 
 ### HP r2r PO update
+> description
 
-Given this value in the Pg `tiles` table, field `tiledata` (jsonb), resulting from this SQL statement[^1]:
+Given this value in the Pg `tiles` table, field `tiledata` (jsonb), resulting from this [r2r update](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/business_data_relations/res2res_hp_po.relations) and diplayed by this SQL statement[^1]:
 
 ```json
 {
@@ -346,8 +347,6 @@ Given this value in the Pg `tiles` table, field `tiledata` (jsonb), resulting fr
   ]
 }
 ```
-
-We aim 
 
 [^1]: `SELECT * FROM tiles WHERE resourceinstanceid::text LIKE '1062dbf4-70a2-4b87-b0f1-0f459b6c3016'` with `1062dbf4-70a2-4b87-b0f1-0f459b6c3016` the UUID of an HP.
 

@@ -1,6 +1,6 @@
 # SQL and Advanced Search queries
 
-Miscellaneous and compendium of equivalent queries between Advanced Search and SQL queries for frontend and backend querying. These queries are too specific to be added to the [eamenaR](https://github.com/eamena-project/eamenaR) package
+Miscellaneous and compendium SQL queries with their equivalent in the EAMENA DB Advanced Search menu. These queries are too specific to be added to the [eamenaR](https://github.com/eamena-project/eamenaR) package, some are also linke to BU append and r2r processes.
 
 
 * Abrevv.

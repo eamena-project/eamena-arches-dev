@@ -81,6 +81,31 @@ gives:
 
 - 136,442
 
+## IR names and UUID
+
+
+```SQL
+SELECT resourceinstanceid::text as uuid, name ->> 'en' as ir_name FROM resource_instances
+WHERE graphid = '35b99cb7-379a-11ea-9989-06f597a7d5ce'
+LIMIT 10
+```
+
+Gives:
+
+| uuid                                   | ir_name              |
+|----------------------------------------|----------------------|
+| 16964a46-77cf-416e-84ac-77178e20c463   | INFORMATION-0077471  |
+| 7c9f5418-54f8-460e-b8fb-2744fd60d76b   | INFORMATION-0077496  |
+| 39a2e91e-3cff-477f-b328-373aba80d3ac   | INFORMATION-0077521  |
+| 4bb22222-9c02-477b-95cc-c0026491df66   | INFORMATION-0077547  |
+| ef9f646b-0a8f-482c-a4a5-a1460d2ea331   | INFORMATION-0077573  |
+| 12ff7f9d-28b7-44dd-a206-46f1334f3026   | INFORMATION-0077598  |
+| c7409065-42db-44dc-abaa-0db13e88e47f   | INFORMATION-0077623  |
+| 8274601f-8769-4503-948e-a6eed3aa9791   | INFORMATION-0077649  |
+| d54f992b-8cc9-43c3-a503-abca125aa658   | INFORMATION-0077675  |
+| 482c8349-5859-4d80-b1db-0ba0215e0050   | INFORMATION-0077700  |
+
+
 ## IR file upload update
 
 Check the file uploaded path

@@ -5,3 +5,5 @@ Heritage Place Function Certainty ,Related Geoarchaeology/Palaeolandscape,Site F
 => EAMENA-0264150 / 26894b8a-3895-4e17-a2ef-55b4c846b4e7
 => EAMENA-0264151 / 0fb8e12f-b1f4-4d35-8334-6ed16ebc764a
 => EAMENA-0264152 / 1062dbf4-70a2-4b87-b0f1-0f459b6c3016
+
+python manage.py packages -o import_business_data_relations -s ../data_temp/business_data_relations/res2res_hp_pers.relations

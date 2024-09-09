@@ -1,9 +1,11 @@
 
 # Business data
 
-* [GeoJSON URL to GeoJSON file](https://colab.research.google.com/github/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/business_data/geojsonUrl_to_geojsonFile.ipynb)
+Add new HP from a BU, or append new values in an existing HP, using the procedure BU append. The generic function to manage Business data is [append_filter_data()](https://github.com/eamena-project/eamena-functions/blob/ed4b489277b1d4045650c9cb0920ec99c7f5bd57/business_data.py#L5)
 
-## Bulk Upload (BU) 
+
+## Bulk Upload
+> BU
 
 Bulk upload is a process for uploading **many HPs** data in one single XLSX file, and possibly **many XLSX** files, into the EAMENA database without going through the graphical user interface (see [DB diagram, "local" subgraph](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena#diagram)): it speeds up data entry. 
 
@@ -142,27 +144,33 @@ The Resource name can be search in the map database
 [^2]: Search: `"uuid" : "`, Replace by `"uuid" : "https://database.eamena.org/en/report/`
 
 ## Resource-to-Resource relationship
+> res2res, r2r
+
+To update a r2r relationships, for example between an HP and a PO (field 'Assessment Investigator - Actor' in HP), or between an HP and a IR (field 'Information Resource Used' in IR).
 
 ### Import
 
-the process is `import_business_data_relations -s 'path\to\relations_file'`
+the process is `import_business_data_relations -s 'path\to\relations_file'` will add a new r2r relationship.
 
 #### examples
 
+
 * the [res2res_hp_ir.relations](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/business_data_relations/res2res_hp_ir.relations) file
 
-| resourceinstanceidfrom              | resourceinstanceidto                | relationshiptype                                     | 
-|-------------------------------------|-------------------------------------|------------------------------------------------------|
-| a882affc-60cb-4dcb-a26c-c2721fd0797c | ecdc771c-ff31-42c7-9ec9-522e6302e6f0 | http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of |
+| resourceinstanceidfrom              | resourceinstanceidto                | relationshiptype                                         | datestarted | dateended | notes |
+|-------------------------------------|-------------------------------------|----------------------------------------------------------|-------------|-----------|-------|
+| a882affc-60cb-4dcb-a26c-c2721fd0797c | ecdc771c-ff31-42c7-9ec9-522e6302e6f0 | http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of   |             |           |       |
 
+Where `a882affc-60cb-4dcb-a26c-c2721fd0797c` is an HP and `ecdc771c-ff31-42c7-9ec9-522e6302e6f0` is INFORMATION-0000052.
 
 * the [res2res_hp_pers.relations](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/business_data_relations/res2res_hp_pers.relations) file
 
-| resourceinstanceidfrom              | resourceinstanceidto                | relationshiptype                               |
-|-------------------------------------|-------------------------------------|------------------------------------------------|
-| 1062dbf4-70a2-4b87-b0f1-0f459b6c301 | ecdc771c-ff31-42c7-9ec9-522e6302e6f0 | http://www.ics.forth.gr/isl/CRMdig/L33_has_maker |
+| resourceinstanceidfrom              | resourceinstanceidto                | relationshiptype                                   | datestarted | dateended | notes |
+|-------------------------------------|-------------------------------------|----------------------------------------------------|-------------|-----------|-------|
+| 1062dbf4-70a2-4b87-b0f1-0f459b6c3016 | 5bc25761-cf35-4350-b0cd-002b8c813d64 | http://www.ics.forth.gr/isl/CRMdig/L33_has_maker   |             |           |       |
 
-Where `1062dbf4-70a2-4b87-b0f1-0f459b6c301` is EAMENA-0264152 and `ecdc771c-ff31-42c7-9ec9-522e6302e6f0` is Martin Sterry
+
+Where `1062dbf4-70a2-4b87-b0f1-0f459b6c3016` is EAMENA-0264152 and `5bc25761-cf35-4350-b0cd-002b8c813d64` is Martin Sterry.
 
 # Reference data
 
@@ -173,6 +181,8 @@ Where `1062dbf4-70a2-4b87-b0f1-0f459b6c301` is EAMENA-0264152 and `ecdc771c-ff31
 ---
 
 # Others
+
+* [GeoJSON URL to GeoJSON file](https://colab.research.google.com/github/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/business_data/geojsonUrl_to_geojsonFile.ipynb)
 
 ## ~~BU process~~
 > ⚠️ This process is no longer in use ⚠️ ~~step-by-step BU procedure from the user-side~~

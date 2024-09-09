@@ -3,7 +3,6 @@
 
 Add new HP from a BU, or append new values in an existing HP, using the procedure BU append. The generic function to manage Business data is [append_filter_data()](https://github.com/eamena-project/eamena-functions/blob/ed4b489277b1d4045650c9cb0920ec99c7f5bd57/business_data.py#L5)
 
-
 ## Bulk Upload
 > BU
 
@@ -163,7 +162,7 @@ the process is `import_business_data_relations -s 'path\to\relations_file'` will
 
 Where `a882affc-60cb-4dcb-a26c-c2721fd0797c` is an HP and `ecdc771c-ff31-42c7-9ec9-522e6302e6f0` is INFORMATION-0000052.
 
-* the [res2res_hp_pers.relations](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/business_data_relations/res2res_hp_pers.relations) file
+* the [res2res_hp_po.relations](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/business_data_relations/res2res_hp_po.relations) file
 
 | resourceinstanceidfrom              | resourceinstanceidto                | relationshiptype                                   | datestarted | dateended | notes |
 |-------------------------------------|-------------------------------------|----------------------------------------------------|-------------|-----------|-------|
@@ -183,6 +182,7 @@ Where `1062dbf4-70a2-4b87-b0f1-0f459b6c3016` is EAMENA-0264152 and `5bc25761-cf3
 # Others
 
 * [GeoJSON URL to GeoJSON file](https://colab.research.google.com/github/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/business_data/geojsonUrl_to_geojsonFile.ipynb)
+* SQL 
 
 ## ~~BU process~~
 > ⚠️ This process is no longer in use ⚠️ ~~step-by-step BU procedure from the user-side~~

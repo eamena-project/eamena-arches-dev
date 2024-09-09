@@ -105,6 +105,7 @@ Gives:
 | d54f992b-8cc9-43c3-a503-abca125aa658   | INFORMATION-0077675  |
 | 482c8349-5859-4d80-b1db-0ba0215e0050   | INFORMATION-0077700  |
 
+Where `35b99cb7-379a-11ea-9989-06f597a7d5ce` is the UUID of the IR resource model
 
 ## IR file upload update
 

@@ -167,13 +167,20 @@ def add_metadata_to_photo(root_path = "C:/Rprojects/eamena-arches-dev/projects/c
 	import subprocess
 	import os
 	import pandas as pd
+	import logging
 
+	# avoid the message 'Marker scan hit start of image data' to be printed
+	logging.getLogger("iptcinfo").setLevel(logging.ERROR)
+
+	photo_missed = []
 	# db_path = root_path + "business_data/xlsx/records_NS.xlsx"
 	record_db_path = root_path + records_in
 	df_rec_metadata = pd.read_excel(record_db_path)
 	# photographs metadata
 	photo_db_path = root_path + photo_metadata
 	df_im_metadata = pd.read_excel(photo_db_path)
+	# repacement to match the photo/folder labels
+	df_im_metadata['filename'] = df_im_metadata['filename'].apply(lambda x: re.sub(r'.*?(DSC|IMG)', r'\1', x))
 	# list the records = units from the metadata file
 	units = list(df_im_metadata['unitnumber'].unique())
 	photo_im_path_in = root_path + photos_in
@@ -187,11 +194,13 @@ def add_metadata_to_photo(root_path = "C:/Rprojects/eamena-arches-dev/projects/c
 							)
 	# loop over the units, match units and folders with photographs
 	stop_nb = 0
-	for unit in units:
+	# units.reverse()
+	for unit in units[50:]:
 		stop_nb += 1
-		if stop_nb > 1:
-			return("... Early stop - Done ...")
-		print(f"*** read unit/record/herita '{unit}' ***")
+		if stop_nb > 25:
+			print("... Early stop - Done ...")
+			return photo_missed
+		print(f"*** read unit/record/heritage '{unit}' ***")
 		# add 0 or 00 before to get the COD number
 		if unit < 10:
 			unit_t = "0" + str(unit)
@@ -200,20 +209,28 @@ def add_metadata_to_photo(root_path = "C:/Rprojects/eamena-arches-dev/projects/c
 		else:
 			unit_t = str(unit)
 		selected_unit = df_im_map[df_im_map['unitnumber'] == unit_t]
-		print(f"- directory: \n{selected_unit.to_markdown(index=False)}")
+		if verbose:
+			print(f"- directory: \n{selected_unit.to_markdown(index=False)}")
 		unit_folder = selected_unit.iloc[0,1]
 		photos = os.listdir(photo_im_path_in + '\\' + unit_folder)
-		print(f"- photos: \n{photos}")
-		print("\n")
+		# print(photos)
+		if verbose:
+			print(f"- photos: \n{photos}")
+			print("\n")
 		# loop over photo, add metadata, save
 		for a_photo in range(len(photos)):
 			a_photo_OK = re.sub(r'.*?(DSC|IMG)', r'\1', photos[a_photo])
-			print(f"  + read photo: {photos[a_photo]} (ie {a_photo_OK})")
+			# a_photo_OK = str(a_photo)
+			if verbose:
+				print(f"  + read photo: {photos[a_photo]} (ie {a_photo_OK})")
+			# a_photo_metadata = df_im_metadata[df_im_metadata['picture'].str.lower() == a_photo_OK.lower()]
 			a_photo_metadata = df_im_metadata[df_im_metadata['filename'].str.lower() == a_photo_OK.lower()]
+			# a_photo_metadata = re.sub(r'.*?(DSC|IMG)', r'\1', df_im_metadata[df_im_metadata['picture'].str.lower() == a_photo_OK.lower()]
 			if len(a_photo_metadata) > 0:
-				print(f"    = photo metadata:")
-				print(a_photo_metadata.to_markdown(index=False))
-				print("\n")
+				if verbose:
+					print(f"    = photo metadata:")
+					print(a_photo_metadata.to_markdown(index=False))
+					print("\n")
 				cur_folder = selected_unit['directory'].iloc[0]
 				photo_path_in = photo_im_path_in + "\\" + cur_folder + "\\" + photos[a_photo]
 				photo_path_out = photo_im_path_out + "\\" + cur_folder + "\\" + photos[a_photo]
@@ -225,7 +242,11 @@ def add_metadata_to_photo(root_path = "C:/Rprojects/eamena-arches-dev/projects/c
 				im_record_id = df_rec_metadata[df_rec_metadata['ID'] == unit]["ID"].iloc[0]
 				im_record_attribution = df_rec_metadata[df_rec_metadata['ID'] == unit]["attribution"].iloc[0]
 				# im_title = df_rec_metadata['ID'].iloc[0]
-				im_title = im_record_attribution + " (COD-" + str(im_record_id) + ")"
+				if im_record_id < 10:
+					im_record_id_t = "00" + str(im_record_id)
+				if im_record_id < 100 and im_record_id > 9:
+					im_record_id_t = "0" + str(im_record_id)
+				im_title = im_record_attribution + " (COD-" + str(im_record_id_t) + ")"
 				im_caption = im_title + ". " + im_descr
 				im_coord_N = df_rec_metadata[df_rec_metadata['ID'] == unit]["coordinateN"].iloc[0]
 				im_coord_E = df_rec_metadata[df_rec_metadata['ID'] == unit]["coordinateE"].iloc[0]
@@ -240,7 +261,8 @@ def add_metadata_to_photo(root_path = "C:/Rprojects/eamena-arches-dev/projects/c
 					print('       im_copyright: ' + im_copyright)
 					print('       im_coord_N: ' + str(im_coord_N))
 					print('       im_coord_E: ' + str(im_coord_E))
-				print(f"    = write metadata")
+				if verbose:
+					print(f"    = write metadata")
 					# photo_path_in =  photo_path_out
 				# prevent to rm former EXIF metadata
 				# create dic
@@ -355,18 +377,24 @@ def add_metadata_to_photo(root_path = "C:/Rprojects/eamena-arches-dev/projects/c
 					# exif_dict['0th'][piexif.ImageIFD.Copyright] = im_copyright.encode('utf-8')
 					info.save_as(photo_path_out)
 			else:
-				print(f"    /!\ there are no metadata for {photos[a_photo]}")
+				print(f"    /!\ No metadata available for {photos[a_photo]}")
+				print(f"        {a_photo_OK} not found in the metadata table")
+				photo_missed.append(a_photo_OK)
 			if not xmp_metadata and not exif_metadata and not gps_metadata:
 				if verbose:
 						print(f"    CREATE HERE A DF WITH THE IMAGE NAME AS A KEY")
-			print("\n")
+			if verbose:
+				print("\n")
 			# print(info.keys())
+	if verbose:
+		print("return the lis of unmatched photos and metdata")
+	return photo_missed
 
 
 # add_metadata_to_photo(gps_metadata=True)
 # add_metadata_to_photo(gps_metadata=True, exif_metadata=True)
-add_metadata_to_photo(gps_metadata=True, iptc_metadata=True)
-
+photo_missed = add_metadata_to_photo(gps_metadata=True, iptc_metadata=True, verbose=False)
+print("\n- [ ] ".join(photo_missed))
 
 # %%
 

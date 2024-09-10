@@ -108,12 +108,67 @@ Will create the many TSV located into the folder https://github.com/eamena-proje
 
 To recast structured data (source) to a BU format (target), see the [eamenaR](https://github.com/eamena-project/eamenaR#bu-mapping) package
 
+Be careful about the trailing spaces in the DB (in blue). These extra spaces have to be added in the BU file.
+
+![alt text](image.png)
+
 ### BU append
 > Append data to an already existing record
 
 A BU append is necessarly a CSV file. A mapping file (`.mapping`) is also necessary, cf: https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data/mapping_files, do not include Related Resources (see: [#57](https://github.com/eamena-project/eamena-arches-dev/issues/57)). **ResourceID** is the only required field.
 
 The process is `import_business_data -s 'path\to\bu_append_file' -ow append`
+
+#### Fields
+
+here are slight changes between the field names in the BU template and the field names in the BU append template. The latter is closer to what exists in the database, with many remaining extra trailing spaces and some longer field names
+
+| BU template                                      | BU append template                                       | changes                                                    |
+|--------------------------------------------------|----------------------------------------------------------|------------------------------------------------------------|
+| Assessment Investigator - Actor                  | Assessment Investigator - Actor                          |                                                            |
+| Investigator Role Type                            | Investigator Role Type                                   |                                                            |
+| Assessment Activity Type                          | Assessment Activity Type                                 |                                                            |
+| Assessment Activity Date                          | Assessment Activity Date                                 |                                                            |
+| GE Assessment(Yes/No)                             | GE Assessment(Yes/No)                                    |                                                            |
+| Resource Name                                     | Resource Name                                            |                                                            |
+| Name Type                                         | Name Type                                                |                                                            |
+| Heritage Place Type                               | Heritage Place Type                                      |                                                            |
+| Heritage Place Function                           | Heritage Place Function                                  |                                                            |
+| Heritage Place Function Certainty                 | Heritage Place Function Certainty                        | extra trailing space                                      |
+| Site Overall Shape Type                           | Overall Site Shape Type                                  | different field name                                      |
+| Overall Archaeological Certainty Value            | Overall Archaeological Certainty Value                   | extra trailing space                                      |
+| Overall Site Morphology Type                      | Overall Site Morphology Type                             |                                                            |
+| Cultural Period Type                              | Cultural Period Type                                     |                                                            |
+| Cultural Period Certainty                         | Cultural Period Certainty                                |                                                            |
+| Cultural Subperiod Type                           | Cultural Sub-period Type                                 | different field name                                      |
+| Cultural Subperiod Certainty                      | Cultural Sub-period Certainty                            | different field name                                      |
+| Date Inference Making Actor                       | Date Inference Making Actor Name                         | different field name                                      |
+| Site Feature Form Type                            | Site Feature Form Type                                   |                                                            |
+| Site Feature Form Type Certainty                  | Site Feature Form Type Certainty                         |                                                            |
+| Site Feature Shape Type                           | Site Feature Shape Type                                  |                                                            |
+| Site Feature Arrangement Type                     | Site Feature Arrangement Type                            |                                                            |
+| Site Feature Number Type                          | Site Feature Number Type                                 |                                                            |
+| Site Feature Interpretation Type                  | Site Feature Interpretation Type                         |                                                            |
+| Site Feature Interpretation Number                | Site Feature Interpretation Number Type                  | different field name                                      |
+| Site Feature Interpretation Certainty             | Site Feature Interpretation Certainty                     |                                                            |
+| Overall Condition State                           | Overall Condition State Type                             |                                                            |
+| Damage Extent Type                                | Damage Extent Type                                       |                                                            |
+| Disturbance Cause Category Type                   |                                                          |                                                            |
+| Disturbance Cause Type                            |                                                          |                                                            |
+| Disturbance Cause Certainty                       | Disturbance Cause Certainty                              | extra trailing space                                      |
+| Disturbance Date From                             |                                                          |                                                            |
+| Disturbance Date To                               | Disturbance Date To                                      | extra trailing space                                      |
+| Disturbance Date Occurred Before                  |                                                          |                                                            |
+| Disturbance Cause Assignment Assessor Name        | Disturbance Cause Assignment Assessor Name - Actor       | different field name                                      |
+| Effect Type                                       |                                                          |                                                            |
+| Effect Certainty                                  |                                                          |                                                            |
+| Threat Category                                   |                                                          |                                                            |
+| Threat Type                                       | Threat Cause Type                                        | different field name                                      |
+| Threat Probability                                | Threat Probability                                       | extra trailing space                                      |
+| Threat Inference Making Assessor Name             | Threat Inference Making Assessor Name - Actor            | different field name                                      |
+| Topography Type                                   |                                                          |                                                            |
+
+
 
 #### validated fields
 

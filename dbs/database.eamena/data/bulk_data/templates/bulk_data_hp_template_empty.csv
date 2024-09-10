@@ -1,9 +1,3 @@
 ResourceID,Assessment Investigator - Actor,Investigator Role Type,Assessment Activity Type,Assessment Activity Date,GE Assessment(Yes/No),Resource Name,Name Type,Heritage Place Type,Heritage Place Function,Heritage Place Function Certainty,Overall Site Shape Type,Overall Archaeological Certainty Value ,Overall Site Morphology Type,Cultural Period Type,Cultural Period Certainty,Cultural Sub-period Type,Cultural Sub-period Certainty,Date Inference Making Actor Name,Site Feature Form Type,Site Feature Form Type Certainty,Site Feature Shape Type,Site Feature Arrangement Type,Site Feature Number Type,Site Feature Interpretation Type ,Site Feature Interpretation Number Type,Site Feature Interpretation Certainty,Overall Condition State Type,Damage Extent Type,Disturbance Cause Category Type,Disturbance Cause Type,Disturbance Cause Certainty ,Disturbance Date From,Disturbance Date To ,Disturbance Date Occurred Before,Disturbance Cause Assignment Assessor Name - Actor,Effect Type,Effect Certainty,Threat Category,Threat Cause Type,Threat Probability ,Threat Inference Making Assessor Name - Actor,Topography Type
-41fadba6-9715-4533-823f-a65254f4fce8,,Academic Researcher,Literature Interpretation/Digitisation,2017-12-18,No,ABD001,Alternative Reference,Archaeological Site,Hydrological,High,Straight,High,Negative/Cut/Dug Feature,Iron Age (Maghreb),Possible,,,Fazzan Project,Pit/Shaft/Tunnel,High,Straight,Parallel,2 to 5,Qanat/Foggara,2 to 5,High,,,,,,,,,,,,,,,,
-41fadba6-9715-4533-823f-a65254f4fce8,,EAMENA Project Staff,Literature Interpretation/Digitisation,2017-12-18,No,,,,,,,,,Classical/Protohistoric/Pre-Islamic (North Africa),Possible,,,Fazzan Project,,,,,,,,,,,,,,,,,,,,,,,,
-41fadba6-9715-4533-823f-a65254f4fce8,,,,,,,,,,,,,,"Protohistoric, Early (Mauritania)",Possible,,,,,,,,,,,,,,,,,,,,,,,,,,,
-
-
-fe94704b-8803-41b2-8bfa-ae5abfd66bcd,,,,,,,,,,,,,,Iron Age (Maghreb),Possible,,,,,,,,,,,,,,,,,,,,,,,,,,,
-fe94704b-8803-41b2-8bfa-ae5abfd66bcd,,,,,,,,,,,,,,Classical/Protohistoric/Pre-Islamic (North Africa),Possible,,,,,,,,,,,,,,,,,,,,,,,,,,,
-fe94704b-8803-41b2-8bfa-ae5abfd66bcd,,,,,,,,,,,,,,,Classical/Protohistoric/Pre-Islamic (North Africa),Possible,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,Iron Age (Maghreb),Possible,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,Classical/Protohistoric/Pre-Islamic (North Africa),Possible,,,,,,,,,,,,,,,,,,,,,,,,,,,,

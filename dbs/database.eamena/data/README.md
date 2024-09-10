@@ -41,6 +41,10 @@ flowchart
 
 see: [#57](https://github.com/eamena-project/eamena-arches-dev/issues/57#issuecomment-2334212067) and following
 
+#### templates
+
+[bulk_data_hp_template.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/bulk_data/templates/bulk_data_hp_template.csv) or [bulk_data_hp_template_empty.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/bulk_data/templates/bulk_data_hp_template_empty.csv)
+
 ## Bulk Upload
 > BU
 
@@ -153,7 +157,7 @@ here are slight changes between the field names in the BU template and the field
 | Site Feature Interpretation Certainty             | Site Feature Interpretation Certainty                     |                                                            |
 | Overall Condition State                           | Overall Condition State Type                             |                                                            |
 | Damage Extent Type                                | Damage Extent Type                                       |                                                            |
-| Disturbance Cause Category Type                   |                                                          |                                                            |
+| Disturbance Cause Category Type                   |      Disturbance Cause Category Type                        |                                                            |
 | Disturbance Cause Type                            |                                                          |                                                            |
 | Disturbance Cause Certainty                       | Disturbance Cause Certainty                              | extra trailing space                                      |
 | Disturbance Date From                             |                                                          |                                                            |
@@ -168,7 +172,11 @@ here are slight changes between the field names in the BU template and the field
 | Threat Inference Making Assessor Name             | Threat Inference Making Assessor Name - Actor            | different field name                                      |
 | Topography Type                                   |                                                          |                                                            |
 
+Correct fieldnames are listed here (CSV layout). Those can be copied and placed as header in the [Data to append](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/bulk_data/append/bu_append_to_be_mapped.csv) file
 
+```
+ResourceID,	Assessment Investigator - Actor, Investigator Role Type,Assessment Activity Type,Assessment Activity Date,GE Assessment(Yes/No),Information Resource Used, Resource Name,Name Type,Heritage Place Type,Heritage Place Function,Heritage Place Function Certainty,Site Overall Shape Type,Overall Archaeological Certainty Value,Overall Site Morphology Type,Cultural Period Type,Cultural Period Certainty,Cultural Subperiod Type,Cultural Subperiod Certainty,Date Inference Making Actor Name,Site Feature Form Type,Site Feature Form Type Certainty,Site Feature Shape Type,Site Feature Arrangement Type,Site Feature Number Type,Site Feature Interpretation Type ,Site Feature Interpretation Number,Site Feature Interpretation Certainty,Overall Condition State,Damage Extent Type,Disturbance Cause Category Type,Disturbance Cause Type,Disturbance Cause Certainty,Disturbance Date From,Disturbance Date To,Disturbance Date Occurred Before,Disturbance Cause Assignment Assessor Name,Effect Type,Effect Certainty,Threat Category,Threat Type,Threat Probability,Threat Inference Making Assessor Name,Topography Type
+```
 
 #### validated fields
 

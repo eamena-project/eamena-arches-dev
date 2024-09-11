@@ -108,15 +108,6 @@ Will create the many TSV located into the folder https://github.com/eamena-proje
 </p>
 
 
-### Mapping
-> Create a BU from a structured file
-
-To recast structured data (source) to a BU format (target), see the [eamenaR](https://github.com/eamena-project/eamenaR#bu-mapping) package
-
-Be careful about the trailing spaces in the DB (in blue). These extra spaces have to be added in the BU file.
-
-![alt text](image.png)
-
 ### BU append
 > Append data to an already existing record
 
@@ -124,9 +115,24 @@ A BU append is necessarly a CSV file. A mapping file (`.mapping`) is also necess
 
 The process is `import_business_data -s 'path\to\bu_append_file' -ow append`
 
+---
+
+To create a BU from a structured file, or to recast structured data (source) to a BU format (target), see the [eamenaR](https://github.com/eamena-project/eamenaR#bu-mapping) package
+
+---
+
+
 #### Fields
 
-here are slight changes between the field names in the BU template and the field names in the BU append template. The latter is closer to what exists in the database, with many remaining extra trailing spaces and some longer field names
+There are slight changes between the fieldnames in the BU template and the field names in the BU append template. The latter is closer to what exists in the database, with many remaining extra trailing spaces and some longer field names
+
+<p align="center">
+  <img alt="img-name" src="image.png" width="400">
+  <img alt="img-name" src="image-1.png" width="400">
+  <br>
+	<em>Be careful about the trailing spaces in the DB (in blue). These extra spaces have to be added to some fieldnames in the BU file</em>
+</p>
+
 
 | BU template                                      | BU append template                                       | changes                                                    |
 |--------------------------------------------------|----------------------------------------------------------|------------------------------------------------------------|
@@ -176,8 +182,10 @@ here are slight changes between the field names in the BU template and the field
 Correct fieldnames are listed here (CSV layout). Those can be copied and placed as header in the [Data to append](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/bulk_data/append/bu_append_to_be_mapped.csv) file (remember to keep the trailing spaces, etc.)
 
 ```
-ResourceID,	Assessment Investigator - Actor, Investigator Role Type,Assessment Activity Type,Assessment Activity Date,GE Assessment(Yes/No),Information Resource Used, Resource Name,Name Type,Heritage Place Type,Heritage Place Function,Heritage Place Function Certainty ,Overall Site Shape Type,Overall Archaeological Certainty Value ,Overall Site Morphology Type,Cultural Period Type,Cultural Period Certainty,Cultural Subperiod Type,Cultural Subperiod Certainty,Date Inference Making Actor Name,Site Feature Form Type,Site Feature Form Type Certainty,Site Feature Shape Type,Site Feature Arrangement Type,Site Feature Number Type,Site Feature Interpretation Type,Site Feature Interpretation Number,Site Feature Interpretation Certainty,Overall Condition State,Damage Extent Type,Disturbance Cause Category Type,Disturbance Cause Type,Disturbance Cause Certainty,Disturbance Date From,Disturbance Date To,Disturbance Date Occurred Before,Disturbance Cause Assignment Assessor Name,Effect Type,Effect Certainty,Threat Category,Threat Type,Threat Probability,Threat Inference Making Assessor Name,Topography Type
+ResourceID, Assessment Investigator - Actor,Investigator Role Type,Assessment Activity Type,Assessment Activity Date,GE Assessment(Yes/No),Information Resource Used, Resource Name,Name Type,Heritage Place Type,Heritage Place Function,Heritage Place Function Certainty ,Overall Site Shape Type,Overall Archaeological Certainty Value ,Overall Site Morphology Type,Cultural Period Type,Cultural Period Certainty,Cultural Subperiod Type,Cultural Subperiod Certainty,Date Inference Making Actor Name,Site Feature Form Type,Site Feature Form Type Certainty,Site Feature Shape Type,Site Feature Arrangement Type,Site Feature Number Type,Site Feature Interpretation Type,Site Feature Interpretation Number,Site Feature Interpretation Certainty,Overall Condition State,Damage Extent Type,Disturbance Cause Category Type,Disturbance Cause Type,Disturbance Cause Certainty,Disturbance Date From,Disturbance Date To,Disturbance Date Occurred Before,Disturbance Cause Assignment Assessor Name,Effect Type,Effect Certainty,Threat Category,Threat Type,Threat Probability,Threat Inference Making Assessor Name,Topography Type
 ```
+
+The reference is hosted here (raw format): 
 
 #### validated fields
 

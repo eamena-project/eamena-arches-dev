@@ -8,6 +8,7 @@ Add new HP from a BU, or append new values in an existing HP, using the procedur
 | Abrevv.  | Full name              |
 |----------|------------------------|
 | HP       | Heritage Place         |
+| IR       | Information Resources  |
 | PO       | Person/Organisation    |
 | GS       | Grid Squares           |
 
@@ -109,7 +110,7 @@ Will create the many TSV located into the folder https://github.com/eamena-proje
 
 
 ## BU append
-> Append data to an already existing record
+> BU append, Append data to an already existing record
 
 A BU append is necessarly a CSV file. A mapping file (`.mapping`) is also necessary, cf: https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data/mapping_files, do not include Related Resources (see: [#57](https://github.com/eamena-project/eamena-arches-dev/issues/57)). **ResourceID** is the only required field.
 

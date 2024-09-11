@@ -195,9 +195,9 @@ def add_metadata_to_photo(root_path = "C:/Rprojects/eamena-arches-dev/projects/c
 	# loop over the units, match units and folders with photographs
 	stop_nb = 0
 	# units.reverse()
-	for unit in units[50:]:
+	for unit in units[52:]:
 		stop_nb += 1
-		if stop_nb > 25:
+		if stop_nb > 8:
 			print("... Early stop - Done ...")
 			return photo_missed
 		print(f"*** read unit/record/heritage '{unit}' ***")
@@ -220,7 +220,7 @@ def add_metadata_to_photo(root_path = "C:/Rprojects/eamena-arches-dev/projects/c
 		# loop over photo, add metadata, save
 		for a_photo in range(len(photos)):
 			a_photo_OK = re.sub(r'.*?(DSC|IMG)', r'\1', photos[a_photo])
-			# a_photo_OK = str(a_photo)
+			# a_photo_OK = str(photos[a_photo])
 			if verbose:
 				print(f"  + read photo: {photos[a_photo]} (ie {a_photo_OK})")
 			# a_photo_metadata = df_im_metadata[df_im_metadata['picture'].str.lower() == a_photo_OK.lower()]
@@ -270,10 +270,20 @@ def add_metadata_to_photo(root_path = "C:/Rprojects/eamena-arches-dev/projects/c
 				img = Image.open(photo_path_in)
 				size_img_in = os.path.getsize(photo_path_in)
 				size_img_in_MB = round(size_img_in/1000000, 1)
+				# test previous metadata
 				try:
 					exif_dict = piexif.load(img.info['exif'])
 				except KeyError:
+					if verbose:
+						print(f" -- Key Error: new exif_dict is created ")
 					exif_dict = {'0th': {}, 'Exif': {}, 'GPS': {}, '1st': {}, 'Interop': {}, 'thumbnail': None}
+				# test if thumbnail has a JPG start
+				thumbnail = exif_dict.get("thumbnail")
+				if thumbnail == b'':
+					print(f"      {photos[a_photo]}'s thumbnail is not in JPEG format or is corrupted, will be recreated")
+					exif_dict.pop("thumbnail", None) 
+					exif_dict['thumbnail'] = None
+				# write
 				if exif_metadata:
 					if verbose:
 						print(f"EXIF metadata (without GPS)---")
@@ -302,21 +312,7 @@ def add_metadata_to_photo(root_path = "C:/Rprojects/eamena-arches-dev/projects/c
 						piexif.GPSIFD.GPSLongitude: gps_longitude,
 					}
 					exif_dict['GPS'] = gps_ifd
-
-				# exif_dict = {
-				# 	"0th": {
-				# 		piexif.ImageIFD.ImageDescription: im_descr,
-				# 		piexif.ImageIFD.Artist: im_artis,
-				# 		# change XPTitle to Title?
-				# 		piexif.ImageIFD.XPTitle: im_title.encode('utf-16le'),
-				# 		# change XPComment to Comment?
-				# 		piexif.ImageIFD.XPComment: im_caption.encode('utf-16le'),
-				# 		# change XPAuthor to Author?
-				# 		piexif.ImageIFD.XPAuthor: im_artis.encode('utf-16le'),
-				# 		# Add Caption?
-				# 		# Add coordinates from 'df_rec_metadata'
-				# 	},
-				# }
+				# print(exif_dict.keys())
 				exif_bytes = piexif.dump(exif_dict)
 				# overwrite
 				# TODO: save with the highest resolution (if not, 1 MB -> 500 KB)
@@ -378,7 +374,7 @@ def add_metadata_to_photo(root_path = "C:/Rprojects/eamena-arches-dev/projects/c
 					info.save_as(photo_path_out)
 			else:
 				print(f"    /!\ No metadata available for {photos[a_photo]}")
-				print(f"        {a_photo_OK} not found in the metadata table")
+				print(f"        {a_photo_OK} not found in the metadata table {photo_metadata}")
 				photo_missed.append(a_photo_OK)
 			if not xmp_metadata and not exif_metadata and not gps_metadata:
 				if verbose:

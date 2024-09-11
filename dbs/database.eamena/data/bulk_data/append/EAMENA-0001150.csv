@@ -6,4 +6,10 @@ Heritage Place Function Certainty ,Related Geoarchaeology/Palaeolandscape,Site F
 => EAMENA-0264151 / 0fb8e12f-b1f4-4d35-8334-6ed16ebc764a
 => EAMENA-0264152 / 1062dbf4-70a2-4b87-b0f1-0f459b6c3016
 
-python manage.py packages -o import_business_data_relations -s ../data_temp/business_data_relations/res2res_hp_pers.relations
+python manage.py packages -o import_business_data_relations -s ../data_temp/business_data_relations/Fazzan_bu_append_martin_sterry.json
+
+Classical/Protohistoric/Pre-Islamic (North Africa) not uploaded
+
+Protohistoric, Early (Mauritania)
+
+364fb6a8-2733-4c38-a3e2-07bde00c2156,Academic Researcher,Literature Interpretation/Digitisation,2017-12-18,No,ABD00-Z,Alternative Reference,Archaeological Site,Hydrological,High,Straight,High,Negative/Cut/Dug Feature,South Arabian Period (Southern Arabia),Possible,,,Fazzan Project,Pit/Shaft/Tunnel,High,Straight,Parallel,2 to 5,Qanat/Foggara,2 to 5,High,,,,,,,,,,,,,,,,

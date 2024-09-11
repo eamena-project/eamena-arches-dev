@@ -108,7 +108,7 @@ Will create the many TSV located into the folder https://github.com/eamena-proje
 </p>
 
 
-### BU append
+## BU append
 > Append data to an already existing record
 
 A BU append is necessarly a CSV file. A mapping file (`.mapping`) is also necessary, cf: https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data/mapping_files, do not include Related Resources (see: [#57](https://github.com/eamena-project/eamena-arches-dev/issues/57)). **ResourceID** is the only required field.
@@ -121,8 +121,21 @@ To create a BU from a structured file, or to recast structured data (source) to 
 
 ---
 
+### Template files
+> BU append templates
 
-#### Fields
+The last/updated version of the BU template appears on the upper part of this table (first row of the table, not strikethrough):  
+  
+<p align="center">
+
+| Name 	| Host 	| URL 	| Description |
+|------|------	|-----	|------       |
+| Bulk_Append_template_240911.csv | GitHub  | https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/bulk_data/templates/Bulk_Append_template_240911.csv | |
+| ~~caravanserail_outCSV2.csv~~ | GitHub  | https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/bulk_data/append/caravanserail_outCSV2.csv | Adding new geometries (Polygons) to HP (caravanserails). These geometries will be added to already existing geometries (Points) |
+| ~~bu_append_hp_grid_20240116.csv~~ | GitHub  | https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/bulk_data/append/bu_append_gs.csv | Append missing GS to HP |
+
+
+### Fields
 
 There are slight changes between the fieldnames in the BU template and the field names in the BU append template. The latter is closer to what exists in the database, with many remaining extra trailing spaces and some longer field names
 
@@ -185,9 +198,9 @@ Correct fieldnames are listed here (CSV layout). Those can be copied and placed 
 ResourceID, Assessment Investigator - Actor,Investigator Role Type,Assessment Activity Type,Assessment Activity Date,GE Assessment(Yes/No),Information Resource Used, Resource Name,Name Type,Heritage Place Type,Heritage Place Function,Heritage Place Function Certainty ,Overall Site Shape Type,Overall Archaeological Certainty Value ,Overall Site Morphology Type,Cultural Period Type,Cultural Period Certainty,Cultural Subperiod Type,Cultural Subperiod Certainty,Date Inference Making Actor Name,Site Feature Form Type,Site Feature Form Type Certainty,Site Feature Shape Type,Site Feature Arrangement Type,Site Feature Number Type,Site Feature Interpretation Type,Site Feature Interpretation Number,Site Feature Interpretation Certainty,Overall Condition State,Damage Extent Type,Disturbance Cause Category Type,Disturbance Cause Type,Disturbance Cause Certainty,Disturbance Date From,Disturbance Date To,Disturbance Date Occurred Before,Disturbance Cause Assignment Assessor Name,Effect Type,Effect Certainty,Threat Category,Threat Type,Threat Probability,Threat Inference Making Assessor Name,Topography Type
 ```
 
-The reference is hosted here (raw format): 
+The reference is [hp-uuids.csv](https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/dbs/database.eamena/data/reference_data/rm/hp/hp-uuids.csv) (raw format), directly created from the RM. You can also check the name of the fields in the reference data [mds-template-readonly.tsv](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/mds/mds-template-readonly.tsv) file  
 
-#### validated fields
+### validated fields
 
 | RM | field | format and description |
 |----|--------------|----------|
@@ -203,7 +216,7 @@ The reference is hosted here (raw format):
 | HP | Disturbance Cause Assignment Assessor Name | Free text  |
 | HP | Grid ID | |
 
-#### invalid fields
+### invalid fields
 
 Do not BU append these fields but choose [Resource-to-Resource](#resource-to-resource-relationship) import
 
@@ -212,45 +225,8 @@ Do not BU append these fields but choose [Resource-to-Resource](#resource-to-res
 | HP | Assessment Investigator - Actor   | this is a *related resource*, will create an error  |
 
 
-#### templates
-> BU append templates
-
-* Check one of these templates:
-  - [caravanserail_outCSV2.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/bulk_data/append/caravanserail_outCSV2.csv): Adding new geometries (Polygons) to HP (caravanserails). These geometries will be added to already existing geometries (Points).
-  - [bu_append_hp_grid_20240116.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/bulk_data/append/bu_append_gs.csv). Append missing GS to HP 
-* Check the name of the fields in the reference data [mds-template-readonly.tsv](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/mds/mds-template-readonly.tsv) file  
-
-### BU summary
-> After a successfull BU, render a short summary for the user
-
-Once the BU process has been completed, a resume can be displayed with a Python command[^1]. The result is copied/pasted in a JSON file. A Search &Replace allows to convert the UUID into an URL[^2]
 
 
-<p align="center">
-  <img alt="img-name" src="../../../www/json_summary.png" width="500">
-  <br>
-	<em>screenshot of the JSON with URL</em>
-</p>
-
-The URL opens the Resource Report
-
-<p align="center">
-  <img alt="img-name" src="../../../www/json_summary_uuid.png" width="700">
-  <br>
-	<em>screenshot of the Resource Report</em>
-</p>
-
-The Resource name can be search in the map database
-
-<p align="center">
-  <img alt="img-name" src="../../www/json_summary_uuid_search.png" width="700">
-  <br>
-	<em>screenshot of the Resource Report</em>
-</p>
-
-
-[^1]: `python /opt/arches/eamena/manage.py bu -o summary -s "filename.json" | json_pp`
-[^2]: Search: `"uuid" : "`, Replace by `"uuid" : "https://database.eamena.org/en/report/`
 
 ## Resource-to-Resource relationship
 > res2res, r2r
@@ -319,3 +295,36 @@ Start by creating a root `examples/` folder on **your OneDrive**, or equivalent,
   - if you ask to, the DB Manager will send you a [BU summary](https://github.com/eamena-project/eamena-arches-dev/blob/main/output/bulk/BU.md#bu-summary) in the form of a JSON file named in the same way as your BU files with the suffix `-sum` (for `summary`), ex: [`E61N31-22-Bijan-rev-sum.json`](https://github.com/eamena-project/eamena-arches-dev/blob/main/output/bulk/examples/2021-11-21-Bijan/E61N31-21-Bijan-rev-sum.json)
 
 4. once you received the confirmation that your BU has been uploaded into the DB, **move your BU folder into an archive folder** 
+
+
+## BU summary
+> After a successfull BU, render a short summary for the user
+
+Once the BU process has been completed, a resume can be displayed with a Python command[^1]. The result is copied/pasted in a JSON file. A Search &Replace allows to convert the UUID into an URL[^2]
+
+
+<p align="center">
+  <img alt="img-name" src="../../../www/json_summary.png" width="500">
+  <br>
+	<em>screenshot of the JSON with URL</em>
+</p>
+
+The URL opens the Resource Report
+
+<p align="center">
+  <img alt="img-name" src="../../../www/json_summary_uuid.png" width="700">
+  <br>
+	<em>screenshot of the Resource Report</em>
+</p>
+
+The Resource name can be search in the map database
+
+<p align="center">
+  <img alt="img-name" src="../../www/json_summary_uuid_search.png" width="700">
+  <br>
+	<em>screenshot of the Resource Report</em>
+</p>
+
+
+[^1]: `python /opt/arches/eamena/manage.py bu -o summary -s "filename.json" | json_pp`
+[^2]: Search: `"uuid" : "`, Replace by `"uuid" : "https://database.eamena.org/en/report/`

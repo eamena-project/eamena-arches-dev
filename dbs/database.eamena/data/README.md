@@ -25,7 +25,7 @@ flowchart
   id6[r2r];
   id8[bu];
   end;
-  id3[Data upload <br>and append] -- run --> ide1;
+  id3[Data append] -- run --> ide1;
   id6 -- creates --> id4[r2r append for IR];
   id6 -- creates --> id5[r2r append for PO];
   id8 -- creates --> id7[BU append];

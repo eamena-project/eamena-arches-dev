@@ -23,7 +23,7 @@ Filter data that have to be uploaded by BU append function and data that to be a
 
 ```mermaid
 flowchart
-  id3[Data to append] -- split --> id6[r2r];
+  id3[Data upload <br>and append] -- split --> id6[r2r];
   id6 -- split --> id4[r2r append for IR];
   id6 -- split --> id5[r2r append for PO];
   id3 -- split --> id7[BU append];
@@ -49,7 +49,7 @@ see: [#57](https://github.com/eamena-project/eamena-arches-dev/issues/57#issueco
 ## Bulk Upload
 > BU
 
-Bulk upload is a process for uploading **many HPs** data in one single XLSX file, and possibly **many XLSX** files, into the EAMENA database without going through the graphical user interface (see [DB diagram, "local" subgraph](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena#diagram)): it speeds up data entry. 
+Bulk upload is a process for uploading **many HPs** data in one single XLSX file, and possibly **many XLSX** files, into the EAMENA database without going through the graphical user interface (see [DB diagram, "local" subgraph](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena#diagram)): it speeds up data entry. The BU process is handle by the Bulk-Uploader plugin in the EAMENA DB.
 
 ### Template files
 

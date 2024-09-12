@@ -1,4 +1,19 @@
 
+# %%
+
+
+# %%
+
+import requests
+
+geojson_url = "https://database.eamena.org/api/search/export_results?paging-filter=1&tiles=true&format=geojson&reportlink=false&precision=6&total=91&term-filter=%5B%7B%22inverted%22%3Afalse%2C%22type%22%3A%22string%22%2C%22context%22%3A%22%22%2C%22context_label%22%3A%22%22%2C%22id%22%3A%22QRF0%22%2C%22text%22%3A%22QRF0%22%2C%22value%22%3A%22QRF0%22%7D%5D&language=*&resource-type-filter=%5B%7B%22graphid%22%3A%2234cfe98e-c2c0-11ea-9026-02e7594ce0a0%22%2C%22name%22%3A%22Heritage%20Place%22%2C%22inverted%22%3Afalse%7D%5D"
+resp = requests.get(geojson_url)
+data = resp.json()
+for i in data['features'][0]['properties'].keys():
+	print(i)
+
+data['features'][0]['geometry']['coordinates'][0]
+
 
 # %%
 # 

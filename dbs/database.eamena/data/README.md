@@ -18,6 +18,25 @@ Add new HP from a BU, or append new values in an existing HP, using the procedur
 The generic function to manage Business data is [business_data.py](https://github.com/eamena-project/eamena-functions/blob/main/business_data.py) in the [eamena-functions](https://github.com/eamena-project/eamena-functions/) repo.
 
 
+
+```mermaid
+flowchart
+  subgraph ide1 [filter_business_data];
+  id6[r2r];
+  end;
+  id3[Data upload <br>and append] -- split --> id6[r2r];
+  id6 -- split --> id4[r2r append for IR];
+  id6 -- split --> id5[r2r append for PO];
+  id3 -- split --> id7[BU append];
+  
+  click id3 "https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/bulk_data/append/bu_append_to_be_mapped.csv" _blank
+  click id5 "https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/business_data_relations/res2res_hp_po.relations" _blank
+  click id4 "https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/business_data_relations/res2res_hp_ir.relations" _blank
+  click id7 "https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/bulk_data/append/Fazzan_bu_append.csv" _blank
+
+```
+
+
 ```mermaid
 flowchart
   id3[Data upload <br>and append] -- split --> id6[r2r];

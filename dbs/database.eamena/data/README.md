@@ -1,7 +1,7 @@
 
 # Business data
 
-Add new HP from a BU, or append new values in an existing HP, using the procedure BU append. 
+Add new HP from a BU, append new values in an existing HP, using templates and [functions](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#function). 
 
 * Abrevv.
 
@@ -114,7 +114,7 @@ see: [#57](https://github.com/eamena-project/eamena-arches-dev/issues/57#issueco
 
 
 
-## BU append
+### BU append
 > BU append, Append data to an already existing record
 
 A BU append is necessarly a CSV file. A mapping file (`.mapping`) is also necessary, cf: https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data/mapping_files, do not include Related Resources (see: [#57](https://github.com/eamena-project/eamena-arches-dev/issues/57)). **ResourceID** is the only required field.
@@ -127,7 +127,7 @@ To create a BU from a structured file, or to recast structured data (source) to 
 
 ---
 
-### Template files
+#### Template files
 > BU append templates
 
 The last/updated version of the BU template appears on the upper part of this table (first row of the table, not strikethrough):  
@@ -141,7 +141,7 @@ The last/updated version of the BU template appears on the upper part of this ta
 | ~~bu_append_hp_grid_20240116.csv~~ | GitHub  | https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/bulk_data/append/bu_append_gs.csv | Append missing GS to HP |
 
 
-### Fields
+#### Fields
 
 There are slight changes between the fieldnames in the BU template and the field names in the BU append template. The latter is closer to what exists in the database, with many remaining extra trailing spaces and some longer field names
 
@@ -206,7 +206,7 @@ ResourceID, Assessment Investigator - Actor,Investigator Role Type,Assessment Ac
 
 The reference is [hp-uuids.csv](https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/dbs/database.eamena/data/reference_data/rm/hp/hp-uuids.csv) (raw format), directly created from the RM. You can also check the name of the fields in the reference data [mds-template-readonly.tsv](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/mds/mds-template-readonly.tsv) file  
 
-### validated fields
+#### validated fields
 
 | RM | field | format and description |
 |----|--------------|----------|
@@ -222,7 +222,7 @@ The reference is [hp-uuids.csv](https://raw.githubusercontent.com/eamena-project
 | HP | Disturbance Cause Assignment Assessor Name | Free text  |
 | HP | Grid ID | |
 
-### invalid fields
+#### invalid fields
 
 Do not BU append these fields but choose [Resource-to-Resource](#resource-to-resource-relationship) import
 
@@ -231,17 +231,16 @@ Do not BU append these fields but choose [Resource-to-Resource](#resource-to-res
 | HP | Assessment Investigator - Actor   | this is a *related resource*, will create an error  |
 
 
-## r2r append
+### r2r append
 > res2res, r2r, resource-to-Resource relationship append
 
 To update a r2r relationships, for example between an HP and a PO (field 'Assessment Investigator - Actor' in HP), or between an HP and a IR (field 'Information Resource Used' in IR).
 
-### Import
+#### Import
 
 the process is `import_business_data_relations -s 'path\to\relations_file'` will add a new r2r relationship.
 
-#### examples
-
+##### Examples
 
 * the [res2res_hp_ir.relations](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/business_data_relations/res2res_hp_ir.relations) file
 
@@ -260,7 +259,7 @@ Where `a882affc-60cb-4dcb-a26c-c2721fd0797c` is an HP and `ecdc771c-ff31-42c7-9e
 
 Where `1062dbf4-70a2-4b87-b0f1-0f459b6c3016` is EAMENA-0264152 and `5bc25761-cf35-4350-b0cd-002b8c813d64` is Martin Sterry.
 
-## Function
+## Functions
 
 Python functions. The generic function to manage Business data is [business_data.py](https://github.com/eamena-project/eamena-functions/blob/main/business_data.py) in the [eamena-functions](https://github.com/eamena-project/eamena-functions/) repo.
 

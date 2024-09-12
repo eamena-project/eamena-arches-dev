@@ -3,16 +3,53 @@
 
 
 # %%
+# Creates a BU for Information Resources, grabbing the exact coordinates of the HP (IR and HP will ovelap), adding the HP COD identifier into the field 'Catalogue ID' of the IR, and filling IR with other constant data (Country, Grid ID, etc.)
 
 import requests
+import pandas as pd
+import re
 
+
+def geojson_to_wkt(geojson):
+    # Check if the GeoJSON type is 'Point'
+    if geojson['type'] == 'Point':
+        # Extract the coordinates and convert them to WKT format
+        coordinates = geojson['coordinates']
+        wkt = f"POINT ({coordinates[0]} {coordinates[1]})"
+        return wkt
+    else:
+        raise ValueError("The provided GeoJSON type is not a Point.")
+
+# GeoJSON URL of the 91 HP of the COD project
 geojson_url = "https://database.eamena.org/api/search/export_results?paging-filter=1&tiles=true&format=geojson&reportlink=false&precision=6&total=91&term-filter=%5B%7B%22inverted%22%3Afalse%2C%22type%22%3A%22string%22%2C%22context%22%3A%22%22%2C%22context_label%22%3A%22%22%2C%22id%22%3A%22QRF0%22%2C%22text%22%3A%22QRF0%22%2C%22value%22%3A%22QRF0%22%7D%5D&language=*&resource-type-filter=%5B%7B%22graphid%22%3A%2234cfe98e-c2c0-11ea-9026-02e7594ce0a0%22%2C%22name%22%3A%22Heritage%20Place%22%2C%22inverted%22%3Afalse%7D%5D"
 resp = requests.get(geojson_url)
 data = resp.json()
-for i in data['features'][0]['properties'].keys():
-	print(i)
+# l_geom_place_exp, l_country_type, l_grid_id, l_ir_type = [],[],[],[]
+pattern = r"(COD-\d+)"
+l_cod_number = []
+l_geom_place_exp = []
+# for i in data['features'][0]['properties'].keys():
+for i in range(len(data['features'])):
+	# COD number
+	name = data['features'][i]['properties']['Resource Name']
+	cod_number = re.search(pattern, name)
+	l_cod_number.append(cod_number.group(1))
+	# Geometric Place Expression
+	geom_place_exp = geojson_to_wkt(data['features'][i]['geometry'])
+	l_geom_place_exp.append(geom_place_exp)
+df = pd.DataFrame(
+  {'Catalogue ID': l_cod_number,
+  'Geometric Place Expression': l_geom_place_exp,
+  'Country Type': ['Egypt'] * len(l_geom_place_exp), #l_country_type,
+  'Grid ID': ['E31N30-12'] * len(l_geom_place_exp), #l_grid_id,
+  'Information Resource Type': ['Photograph'] * len(l_geom_place_exp), #l_ir_type
+  })
+df.to_csv("C:/Rprojects/eamena-arches-dev/projects/cod/business_data/bu_ir_cod.csv", index=False)
 
-data['features'][0]['geometry']['coordinates'][0]
+
+
+# data['features'][0]['geometry']# ['coordinates']
+# print(wkt_format)
 
 
 # %%

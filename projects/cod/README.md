@@ -238,3 +238,11 @@ See: [photos.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/
 | CAPTION  | concatenation of the Title (`attribution`) of the image, the EAMENA ID (ex: COD-001), the description (`description`)   |
 
 `takenby`, `attribution` and `description` are fields from the COD database (table 'photos')
+
+### HP and IR relattionships
+> HP <-> IR
+
+
+* EAMENA-0263792 (COD-001) <-> INFORMATION-0150093
+
+created manually.

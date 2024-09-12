@@ -21,7 +21,7 @@ The generic function to manage Business data is [business_data.py](https://githu
 
 ```mermaid
 flowchart
-  subgraph ide1 ['filter_business_data()'];
+  subgraph ide1 [filter_business_data];
   id6[r2r];
   id8[bu];
   end;

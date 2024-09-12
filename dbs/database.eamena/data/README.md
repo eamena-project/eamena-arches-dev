@@ -13,13 +13,10 @@ Add new HP from a BU, or append new values in an existing HP, using the procedur
 | GS       | Grid Squares           |
 
 
-## Management functions
+## Data upload and append
 
 The generic function to manage Business data is [business_data.py](https://github.com/eamena-project/eamena-functions/blob/main/business_data.py) in the [eamena-functions](https://github.com/eamena-project/eamena-functions/) repo.
 
-### append_filter_data()
-
-Filter data that have to be uploaded by BU append function and data that to be append by r2r functions, see [append_filter_data()](https://github.com/eamena-project/eamena-functions/blob/ed4b489277b1d4045650c9cb0920ec99c7f5bd57/business_data.py#L5).
 
 ```mermaid
 flowchart
@@ -45,6 +42,11 @@ see: [#57](https://github.com/eamena-project/eamena-arches-dev/issues/57#issueco
 #### templates
 
 [bulk_data_hp_template.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/bulk_data/templates/bulk_data_hp_template.csv) or [bulk_data_hp_template_empty.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/bulk_data/templates/bulk_data_hp_template_empty.csv)
+
+
+### filter_business_data()
+
+Filter data that have to be uploaded by BU append function and data that to be append by r2r functions, see [filter_business_data()](https://github.com/eamena-project/eamena-functions/blob/main/business_data.py#L5).
 
 ## Bulk Upload
 > BU

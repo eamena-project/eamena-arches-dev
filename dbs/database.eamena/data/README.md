@@ -23,8 +23,9 @@ The generic function to manage Business data is [business_data.py](https://githu
 flowchart
   subgraph ide1 [filter_business_data];
   id6[r2r];
+  id8[bu];
   end;
-  id3[Data upload <br>and append] -- filter_business_data --> id6[r2r];
+  id3[Data upload <br>and append] -- filter_business_data --> ide1;
   id3 -- filter_business_data --> id8[bu];
   id6 -- split --> id4[r2r append for IR];
   id6 -- split --> id5[r2r append for PO];

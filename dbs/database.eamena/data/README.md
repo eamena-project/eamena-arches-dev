@@ -30,6 +30,7 @@ flowchart
   id6 -- creates --> id5[r2r append for PO];
   id8 -- creates --> id7[BU append];
   
+  click ide1
   click id3 "https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/bulk_data/append/bu_append_to_be_mapped.csv" _blank
   click id5 "https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/business_data_relations/res2res_hp_po.relations" _blank
   click id4 "https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/business_data_relations/res2res_hp_ir.relations" _blank
@@ -49,9 +50,7 @@ see: [#57](https://github.com/eamena-project/eamena-arches-dev/issues/57#issueco
 [bulk_data_hp_template.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/bulk_data/templates/bulk_data_hp_template.csv) or [bulk_data_hp_template_empty.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/bulk_data/templates/bulk_data_hp_template_empty.csv)
 
 
-### filter_business_data()
 
-Filter data that have to be uploaded by BU append function and data that to be append by r2r functions, see [filter_business_data()](https://github.com/eamena-project/eamena-functions/blob/main/business_data.py#L5).
 
 ## Bulk Upload
 > BU
@@ -264,6 +263,12 @@ Where `a882affc-60cb-4dcb-a26c-c2721fd0797c` is an HP and `ecdc771c-ff31-42c7-9e
 
 
 Where `1062dbf4-70a2-4b87-b0f1-0f459b6c3016` is EAMENA-0264152 and `5bc25761-cf35-4350-b0cd-002b8c813d64` is Martin Sterry.
+
+## Function
+
+### filter_business_data()
+
+Filter data that have to be uploaded by BU append function and data that to be append by r2r functions, see [filter_business_data()](https://github.com/eamena-project/eamena-functions/blob/main/business_data.py#L5).
 
 # Reference data
 

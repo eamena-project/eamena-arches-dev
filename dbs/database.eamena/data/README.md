@@ -13,44 +13,6 @@ Add new HP from a BU, or append new values in an existing HP, using the procedur
 | GS       | Grid Squares           |
 
 
-## Data append
-
-Data append entails both the append of usual data, such as Alternative names, coordinates, etc., and related resources in a HP. The generic function to manage Business data is [business_data.py](https://github.com/eamena-project/eamena-functions/blob/main/business_data.py) in the [eamena-functions](https://github.com/eamena-project/eamena-functions/) repo.
-
-
-
-```mermaid
-flowchart
-  subgraph ide1 [filter_business_data];
-  id6[r2r];
-  id8[bu];
-  end;
-  id3[Data append] -- run --> ide1;
-  id6 -- creates --> id4[r2r append for IR];
-  id6 -- creates --> id5[r2r append for PO];
-  id8 -- creates --> id7[BU append];
-  
-  click ide1 https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#filter_business_data
-  click id3 "https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/bulk_data/append/bu_append_to_be_mapped.csv" _blank
-  click id5 "https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/business_data_relations/res2res_hp_po.relations" _blank
-  click id4 "https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/business_data_relations/res2res_hp_ir.relations" _blank
-  click id7 "https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/bulk_data/append/Fazzan_bu_append.csv" _blank
-
-```
-
-* r2r: `python manage.py packages -o import_business_data_relations -s ...`
-* BU append: `python manage.py packages -o import_business_data -s ...`
-
-#### limits
-
-see: [#57](https://github.com/eamena-project/eamena-arches-dev/issues/57#issuecomment-2334212067) and following
-
-#### templates
-
-[bulk_data_hp_template.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/bulk_data/templates/bulk_data_hp_template.csv) or [bulk_data_hp_template_empty.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/bulk_data/templates/bulk_data_hp_template_empty.csv)
-
-
-
 
 ## Bulk Upload
 > BU
@@ -113,6 +75,43 @@ Will create the many TSV located into the folder https://github.com/eamena-proje
   <br>
 	<em>A search on 'Rol' in the <a href="https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bulk/templates/doc/bu_Person-Organization.tsv">bu_Person-Organization</a> file</em>
 </p>
+
+
+## Data append
+
+Data append entails both the append of usual data ([BU append](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bu-append)), such as Alternative names, coordinates, etc., and related resources in a HP. It is different from [Bulk Upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload).
+
+```mermaid
+flowchart
+  subgraph ide1 [filter_business_data];
+  id6[r2r];
+  id8[bu];
+  end;
+  id3[Data append] -- run --> ide1;
+  id6 -- creates --> id4[r2r append for IR];
+  id6 -- creates --> id5[r2r append for PO];
+  id8 -- creates --> id7[BU append];
+  
+  click ide1 https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#filter_business_data
+  click id3 "https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/bulk_data/append/bu_append_to_be_mapped.csv" _blank
+  click id5 "https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/business_data_relations/res2res_hp_po.relations" _blank
+  click id4 "https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/business_data_relations/res2res_hp_ir.relations" _blank
+  click id7 "https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/bulk_data/append/Fazzan_bu_append.csv" _blank
+
+```
+
+* r2r: `python manage.py packages -o import_business_data_relations -s ...`
+* BU append: `python manage.py packages -o import_business_data -s ...`
+
+#### limits
+
+see: [#57](https://github.com/eamena-project/eamena-arches-dev/issues/57#issuecomment-2334212067) and following
+
+#### templates
+
+[bulk_data_hp_template.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/bulk_data/templates/bulk_data_hp_template.csv) or [bulk_data_hp_template_empty.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/bulk_data/templates/bulk_data_hp_template_empty.csv)
+
+
 
 
 ## BU append
@@ -232,11 +231,8 @@ Do not BU append these fields but choose [Resource-to-Resource](#resource-to-res
 | HP | Assessment Investigator - Actor   | this is a *related resource*, will create an error  |
 
 
-
-
-
-## Resource-to-Resource relationship
-> res2res, r2r
+## r2r append
+> res2res, r2r, resource-to-Resource relationship append
 
 To update a r2r relationships, for example between an HP and a PO (field 'Assessment Investigator - Actor' in HP), or between an HP and a IR (field 'Information Resource Used' in IR).
 
@@ -266,7 +262,7 @@ Where `1062dbf4-70a2-4b87-b0f1-0f459b6c3016` is EAMENA-0264152 and `5bc25761-cf3
 
 ## Function
 
-Python functions
+Python functions. The generic function to manage Business data is [business_data.py](https://github.com/eamena-project/eamena-functions/blob/main/business_data.py) in the [eamena-functions](https://github.com/eamena-project/eamena-functions/) repo.
 
 ### filter_business_data()
 

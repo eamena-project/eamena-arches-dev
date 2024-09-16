@@ -1,5 +1,5 @@
 # City of the Dead
-> *aka*: Cairo project, CoD, Eastern Cemetery, Qarafat Ash-Sharq, QRF0, Unknown Heritage in the 'City of the Dead', DOCUMENTATION OF THE UNREGISTERED HERITAGE OF THE EASTERN CEMETERY IN CAIRO, Unlisted historic monuments of the Eastern Cemetery, (the "Desert of the Mamluks") in Cairo, Egypt.
+> *aka*: Cairo project, COD, Eastern Cemetery, Qarafat Ash-Sharq, QRF0, Unknown Heritage in the 'City of the Dead', DOCUMENTATION OF THE UNREGISTERED HERITAGE OF THE EASTERN CEMETERY IN CAIRO, Unlisted historic monuments of the Eastern Cemetery, (the "Desert of the Mamluks") in Cairo, Egypt.
 
 see [Issue #54](https://github.com/eamena-project/eamena-arches-dev/issues/54)
 
@@ -243,8 +243,8 @@ See: [photos.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/
 > HP <-> IR
 
 
-- EAMENA-0263792 (COD-001) <-> INFORMATION-0150093 | created manually.
-- create the BU for IR, partly matching the HP for further links, using the function [create_ir_bu_from_hp()](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/cod.py). Output: [bu_ir_cod.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/business_data/bu_ir_cod.csv)
-- import bu_ir_cod.csv into EAMENA `/opt/arches/data_temp/business_data/`
-- run `python manage.py packages -o import_business_data -s ../data_temp/business_data/bu_ir_cod.csv -c ../data_temp/business_data/Information_Resource.mapping -ow overwrite`
-
+1. Create IR
+  - create the BU for IR, partly matching the HP for further links, using the function [create_ir_bu_from_hp()](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/cod.py). Output: [bu_ir_cod.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/business_data/bu_ir_cod.csv)
+- import [bu_ir_cod.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/business_data/bu_ir_cod.csv) into EAMENA `/opt/arches/data_temp/business_data/` and run `python manage.py packages -o import_business_data -s ../data_temp/business_data/bu_ir_cod.csv -c ../data_temp/business_data/Information_Resource.mapping -ow overwrite`
+2. Create related ressources HP <-> IR
+  - capture all the HR UUID by Seaching for 

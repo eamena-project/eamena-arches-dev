@@ -256,9 +256,10 @@ def add_metadata_to_photo(root_path = "C:/Rprojects/eamena-arches-dev/projects/c
 	# loop over the units, match units and folders with photographs
 	stop_nb = 0
 	# units.reverse()
-	for unit in units[52:]:
+	# for unit in units[63:]:
+	for unit in [65]:
 		stop_nb += 1
-		if stop_nb > 8:
+		if stop_nb > 1:
 			print("... Early stop - Done ...")
 			return photo_missed
 		print(f"*** read unit/record/heritage '{unit}' ***")

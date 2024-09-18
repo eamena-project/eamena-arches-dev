@@ -16,6 +16,14 @@ Host EA-training-instance
 
 ## Arches
 
+### Deployement
+
+- Docker deployement of Arches v7.6 (stable version)
+
+**doc**
+
+- https://github.com/Central-Asian-Archaeological-Landscapes/arches-via-docker/issues/1
+
 ### Citation
 > cf. https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bibref
 
@@ -73,16 +81,13 @@ see: https://community.archesproject.org/t/mapbox-cluster-grouping/1999/1
     <em>caption</em>
 </p>
 
-see: https://community.archesproject.org/t/reverse-geocoding-zoom-in-from-coordinates/1852
 
-### search by different type of coordinates
+For example, the [Mega-J](../www/megaj-search-coordinates.png) DB autorise the search by different type of coordinates
 
+**doc**
 
-<p align="center">
-  <img src="../www/megaj-search-coordinates.png" width="500">
-  <br>
-    <em>caption</em>
-</p>
+- https://community.archesproject.org/t/reverse-geocoding-zoom-in-from-coordinates/1852
+- https://community.archesproject.org/t/enable-reverse-geocoding-in-the-geocoding-box/2327/4
 
 ### Collect the coordinates
 
@@ -168,6 +173,8 @@ Restore the path of images
 example: Search INFORMATION-0104667
 
 ---
+
+
 
 ## Audit
 

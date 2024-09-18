@@ -4,9 +4,9 @@
 see [Issue #54](https://github.com/eamena-project/eamena-arches-dev/issues/54)
 
 <p align="center">
-  <img alt="img-name" src="image-4.png" width="500">
+  <img alt="img-name" src="image-6.png" width="500">
   <br>
-  <em> location of the 91 HPs in the Northern Cemetery, Cairo, Egypt</em>
+  <em>Location of the 91 Heritage Resources (in blue) overlaying the corresponding 91 Information Resources (in green) in the Northern Cemetery, Cairo, Egypt.</em>
 </p>
 
 ## Search URL
@@ -177,11 +177,6 @@ The CoD field `originaluse` hasn't been used
 #### Append metadata to the photographs
 
 
-#### TODO
-
-- [ ] Creating IR manually based on data recorded in the field `references` (file: `records.xlsx`)
-- [ ] Importing each photograph as an Information Resource (IR)
-
 ---
 
 ## Photographs
@@ -248,3 +243,9 @@ See: [photos.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/
 - import [bu_ir_cod.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/business_data/bu_ir_cod.csv) into EAMENA `/opt/arches/data_temp/business_data/` and run `python manage.py packages -o import_business_data -s ../data_temp/business_data/bu_ir_cod.csv -c ../data_temp/business_data/Information_Resource.mapping -ow overwrite`
 2. Create related ressources HP <-> IR
   - capture all the HR UUID by Seaching for 
+
+## Next steps
+
+- [ ] complete the missing metadata of the photgraphs (see [#54](https://github.com/eamena-project/eamena-arches-dev/issues/54#issuecomment-2338735126))
+- [ ] copy the direct URL of the RS photograph collections into the Information Resources.
+- [ ] ask Jeremy to lower the RS firewall, which is currently set to VPN access only, so that everyone can access the RS photographs.

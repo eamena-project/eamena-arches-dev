@@ -106,6 +106,7 @@ def xlsx2csv(data_in, path_out):
 
 	"""
 	import os
+	import pandas as pd
 
 	if os.path.isdir(data_in):
 		print(f"Read the directory {data_in}")

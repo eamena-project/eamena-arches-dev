@@ -15,6 +15,7 @@ The EAMENA project, hosted by the School of Archaeology at Oxford, is dedicated 
 > ~~Wed 27, Thu 28, Fri 29 November.~~
 > Wed 20 - Fri 22 Nov
 > Mon 2 - Wed 4 Dec
+> Wed 18 - Fri 20 Dec
 
 ### Day 1 and 2
 > in-person

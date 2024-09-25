@@ -11,7 +11,10 @@ The EAMENA project, hosted by the School of Archaeology at Oxford, is dedicated 
 
 ## Workshop outlines
 
-2,5-days in-person and hybrid, Universty of Oxford, Oxford. Provisional days: Wed 27, Thu 28, Fri 29 November.
+2,5-days in-person and hybrid, Universty of Oxford, Oxford. Provisional days: 
+> ~~Wed 27, Thu 28, Fri 29 November.~~
+> Wed 20 - Fri 22 Nov
+> Mon 2 - Wed 4 Dec
 
 ### Day 1 and 2
 > in-person

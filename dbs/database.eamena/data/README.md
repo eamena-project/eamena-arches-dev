@@ -1,3 +1,9 @@
+# EAMANA DB's Data
+
+[Reference Data](#reference-data), [Business data](#business-data)
+
+---
+
 # Reference Data
 
 **Reference data** includes Resource Models, Concepts, Grids, etc. This is all data provided a priori (≠ Business data)

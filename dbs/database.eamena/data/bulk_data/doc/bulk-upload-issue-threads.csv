@@ -1,99 +1,99 @@
-a,b,c,issue_titles,issue_descriptions
-HP,ASSESSMENT ACTIVITY,Assessment Investigator - Actor,Bulk Upload-HP-ASSESSMENT ACTIVITY-Assessment Investigator - Actor,"Description of issues with the Bulk Upload field '**Assessment Investigator - Actor**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,ASSESSMENT ACTIVITY,Investigator Role Type,Bulk Upload-HP-ASSESSMENT ACTIVITY-Investigator Role Type,"Description of issues with the Bulk Upload field '**Investigator Role Type**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,ASSESSMENT ACTIVITY,Assessment Activity Type,Bulk Upload-HP-ASSESSMENT ACTIVITY-Assessment Activity Type,"Description of issues with the Bulk Upload field '**Assessment Activity Type**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,ASSESSMENT ACTIVITY,Assessment Activity Date,Bulk Upload-HP-ASSESSMENT ACTIVITY-Assessment Activity Date,"Description of issues with the Bulk Upload field '**Assessment Activity Date**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,ASSESSMENT ACTIVITY,GE Assessment(Yes/No),Bulk Upload-HP-ASSESSMENT ACTIVITY-GE Assessment(Yes/No),"Description of issues with the Bulk Upload field '**GE Assessment(Yes/No)**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,ASSESSMENT ACTIVITY,GE Imagery Acquisition Date,Bulk Upload-HP-ASSESSMENT ACTIVITY-GE Imagery Acquisition Date,"Description of issues with the Bulk Upload field '**GE Imagery Acquisition Date**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,ASSESSMENT ACTIVITY,Information Resource Used,Bulk Upload-HP-ASSESSMENT ACTIVITY-Information Resource Used,"Description of issues with the Bulk Upload field '**Information Resource Used**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,ASSESSMENT ACTIVITY,Information Resource Acquisition Date,Bulk Upload-HP-ASSESSMENT ACTIVITY-Information Resource Acquisition Date,"Description of issues with the Bulk Upload field '**Information Resource Acquisition Date**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,RESOURCE NAME,Resource Name,Bulk Upload-HP-RESOURCE NAME-Resource Name,"Description of issues with the Bulk Upload field '**Resource Name**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,RESOURCE NAME,Name Type,Bulk Upload-HP-RESOURCE NAME-Name Type,"Description of issues with the Bulk Upload field '**Name Type**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,RESOURCE SUMMARY,Heritage Place Type,Bulk Upload-HP-RESOURCE SUMMARY-Heritage Place Type,"Description of issues with the Bulk Upload field '**Heritage Place Type**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,RESOURCE DESCRIPTION,General Description Type,Bulk Upload-HP-RESOURCE DESCRIPTION-General Description Type,"Description of issues with the Bulk Upload field '**General Description Type**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,RESOURCE DESCRIPTION,General Description,Bulk Upload-HP-RESOURCE DESCRIPTION-General Description,"Description of issues with the Bulk Upload field '**General Description**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,HERITAGE RESOURCE CLASSIFICATION,Heritage Place Function,Bulk Upload-HP-HERITAGE RESOURCE CLASSIFICATION-Heritage Place Function,"Description of issues with the Bulk Upload field '**Heritage Place Function**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,HERITAGE RESOURCE CLASSIFICATION,Heritage Place Function Certainty,Bulk Upload-HP-HERITAGE RESOURCE CLASSIFICATION-Heritage Place Function Certainty,"Description of issues with the Bulk Upload field '**Heritage Place Function Certainty**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,DESIGNATION,Designation,Bulk Upload-HP-DESIGNATION-Designation,"Description of issues with the Bulk Upload field '**Designation**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,DESIGNATION,Designation From Date,Bulk Upload-HP-DESIGNATION-Designation From Date,"Description of issues with the Bulk Upload field '**Designation From Date**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,DESIGNATION,Designation To Date,Bulk Upload-HP-DESIGNATION-Designation To Date,"Description of issues with the Bulk Upload field '**Designation To Date**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,GEOMETRIES,Geometric Place Expression,Bulk Upload-HP-GEOMETRIES-Geometric Place Expression,"Description of issues with the Bulk Upload field '**Geometric Place Expression**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,GEOMETRIES,Geometry Qualifier,Bulk Upload-HP-GEOMETRIES-Geometry Qualifier,"Description of issues with the Bulk Upload field '**Geometry Qualifier**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,GEOMETRIES,Site Location Certainty,Bulk Upload-HP-GEOMETRIES-Site Location Certainty,"Description of issues with the Bulk Upload field '**Site Location Certainty**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,GEOMETRIES,Geometry Extent Certainty,Bulk Upload-HP-GEOMETRIES-Geometry Extent Certainty,"Description of issues with the Bulk Upload field '**Geometry Extent Certainty**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,GEOGRAPHY,Site Overall Shape Type,Bulk Upload-HP-GEOGRAPHY-Site Overall Shape Type,"Description of issues with the Bulk Upload field '**Site Overall Shape Type**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,GEOGRAPHY,Grid ID,Bulk Upload-HP-GEOGRAPHY-Grid ID,"Description of issues with the Bulk Upload field '**Grid ID**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,GEOGRAPHY,Country Type,Bulk Upload-HP-GEOGRAPHY-Country Type,"Description of issues with the Bulk Upload field '**Country Type**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,GEOGRAPHY,Cadastral Reference,Bulk Upload-HP-GEOGRAPHY-Cadastral Reference,"Description of issues with the Bulk Upload field '**Cadastral Reference**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,GEOGRAPHY,Resource Orientation,Bulk Upload-HP-GEOGRAPHY-Resource Orientation,"Description of issues with the Bulk Upload field '**Resource Orientation**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,ADDRESS,Address,Bulk Upload-HP-ADDRESS-Address,"Description of issues with the Bulk Upload field '**Address**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,ADDRESS,Address Type,Bulk Upload-HP-ADDRESS-Address Type,"Description of issues with the Bulk Upload field '**Address Type**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,ADMINISTRATIVE SUBDIVISION,Administrative Subdivision,Bulk Upload-HP-ADMINISTRATIVE SUBDIVISION-Administrative Subdivision,"Description of issues with the Bulk Upload field '**Administrative Subdivision**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,ADMINISTRATIVE SUBDIVISION,Administrative Subdivision Type,Bulk Upload-HP-ADMINISTRATIVE SUBDIVISION-Administrative Subdivision Type,"Description of issues with the Bulk Upload field '**Administrative Subdivision Type**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,ARCHAEOLOGICAL ASSESSMENT,Overall Archaeological Certainty Value,Bulk Upload-HP-ARCHAEOLOGICAL ASSESSMENT-Overall Archaeological Certainty Value,"Description of issues with the Bulk Upload field '**Overall Archaeological Certainty Value**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,ARCHAEOLOGICAL ASSESSMENT,Overall Site Morphology Type,Bulk Upload-HP-ARCHAEOLOGICAL ASSESSMENT-Overall Site Morphology Type,"Description of issues with the Bulk Upload field '**Overall Site Morphology Type**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,PERIODIZATION,Cultural Period Type,Bulk Upload-HP-PERIODIZATION-Cultural Period Type,"Description of issues with the Bulk Upload field '**Cultural Period Type**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,PERIODIZATION,Cultural Period Certainty,Bulk Upload-HP-PERIODIZATION-Cultural Period Certainty,"Description of issues with the Bulk Upload field '**Cultural Period Certainty**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,PERIODIZATION,Cultural Subperiod Type,Bulk Upload-HP-PERIODIZATION-Cultural Subperiod Type,"Description of issues with the Bulk Upload field '**Cultural Subperiod Type**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,PERIODIZATION,Cultural Subperiod Certainty,Bulk Upload-HP-PERIODIZATION-Cultural Subperiod Certainty,"Description of issues with the Bulk Upload field '**Cultural Subperiod Certainty**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,PERIODIZATION,Date Inference Making Actor,Bulk Upload-HP-PERIODIZATION-Date Inference Making Actor,"Description of issues with the Bulk Upload field '**Date Inference Making Actor**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,ABSOLUTE CHRONOLOGY,Archaeological Date From (cal),Bulk Upload-HP-ABSOLUTE CHRONOLOGY-Archaeological Date From (cal),"Description of issues with the Bulk Upload field '**Archaeological Date From (cal)**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,ABSOLUTE CHRONOLOGY,Archaeological Date to (cal),Bulk Upload-HP-ABSOLUTE CHRONOLOGY-Archaeological Date to (cal),"Description of issues with the Bulk Upload field '**Archaeological Date to (cal)**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,ABSOLUTE CHRONOLOGY,BP Date From,Bulk Upload-HP-ABSOLUTE CHRONOLOGY-BP Date From,"Description of issues with the Bulk Upload field '**BP Date From**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,ABSOLUTE CHRONOLOGY,BP Date To,Bulk Upload-HP-ABSOLUTE CHRONOLOGY-BP Date To,"Description of issues with the Bulk Upload field '**BP Date To**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,ABSOLUTE CHRONOLOGY,AH Date From,Bulk Upload-HP-ABSOLUTE CHRONOLOGY-AH Date From,"Description of issues with the Bulk Upload field '**AH Date From**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,ABSOLUTE CHRONOLOGY,AH Date To,Bulk Upload-HP-ABSOLUTE CHRONOLOGY-AH Date To,"Description of issues with the Bulk Upload field '**AH Date To**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,ABSOLUTE CHRONOLOGY,SH Date From,Bulk Upload-HP-ABSOLUTE CHRONOLOGY-SH Date From,"Description of issues with the Bulk Upload field '**SH Date From**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,ABSOLUTE CHRONOLOGY,SH Date To,Bulk Upload-HP-ABSOLUTE CHRONOLOGY-SH Date To,"Description of issues with the Bulk Upload field '**SH Date To**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,SITE FEATURES and INTERPRETATIONS,Site Feature Form Type,Bulk Upload-HP-SITE FEATURES and INTERPRETATIONS-Site Feature Form Type,"Description of issues with the Bulk Upload field '**Site Feature Form Type**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,SITE FEATURES and INTERPRETATIONS,Site Feature Form Type Certainty,Bulk Upload-HP-SITE FEATURES and INTERPRETATIONS-Site Feature Form Type Certainty,"Description of issues with the Bulk Upload field '**Site Feature Form Type Certainty**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,SITE FEATURES and INTERPRETATIONS,Site Feature Shape Type,Bulk Upload-HP-SITE FEATURES and INTERPRETATIONS-Site Feature Shape Type,"Description of issues with the Bulk Upload field '**Site Feature Shape Type**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,SITE FEATURES and INTERPRETATIONS,Site Feature Arrangement Type,Bulk Upload-HP-SITE FEATURES and INTERPRETATIONS-Site Feature Arrangement Type,"Description of issues with the Bulk Upload field '**Site Feature Arrangement Type**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,SITE FEATURES and INTERPRETATIONS,Site Feature Number Type,Bulk Upload-HP-SITE FEATURES and INTERPRETATIONS-Site Feature Number Type,"Description of issues with the Bulk Upload field '**Site Feature Number Type**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,SITE FEATURES and INTERPRETATIONS,Site Feature Interpretation Type ,Bulk Upload-HP-SITE FEATURES and INTERPRETATIONS-Site Feature Interpretation Type ,"Description of issues with the Bulk Upload field '**Site Feature Interpretation Type **', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,SITE FEATURES and INTERPRETATIONS,Site Feature Interpretation Number,Bulk Upload-HP-SITE FEATURES and INTERPRETATIONS-Site Feature Interpretation Number,"Description of issues with the Bulk Upload field '**Site Feature Interpretation Number**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,SITE FEATURES and INTERPRETATIONS,Site Feature Interpretation Certainty,Bulk Upload-HP-SITE FEATURES and INTERPRETATIONS-Site Feature Interpretation Certainty,"Description of issues with the Bulk Upload field '**Site Feature Interpretation Certainty**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,SITE FEATURES and INTERPRETATIONS,Built Component Related Resource,Bulk Upload-HP-SITE FEATURES and INTERPRETATIONS-Built Component Related Resource,"Description of issues with the Bulk Upload field '**Built Component Related Resource**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,SITE FEATURES and INTERPRETATIONS,HP Related Resource,Bulk Upload-HP-SITE FEATURES and INTERPRETATIONS-HP Related Resource,"Description of issues with the Bulk Upload field '**HP Related Resource**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,MATERIAL,Material Class,Bulk Upload-HP-MATERIAL-Material Class,"Description of issues with the Bulk Upload field '**Material Class**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,MATERIAL,Material Type,Bulk Upload-HP-MATERIAL-Material Type,"Description of issues with the Bulk Upload field '**Material Type**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,MATERIAL,Construction Technique,Bulk Upload-HP-MATERIAL-Construction Technique,"Description of issues with the Bulk Upload field '**Construction Technique**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,MEASUREMENTS,Measurement Number,Bulk Upload-HP-MEASUREMENTS-Measurement Number,"Description of issues with the Bulk Upload field '**Measurement Number**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,MEASUREMENTS,Measurement Unit,Bulk Upload-HP-MEASUREMENTS-Measurement Unit,"Description of issues with the Bulk Upload field '**Measurement Unit**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,MEASUREMENTS,Dimension Type,Bulk Upload-HP-MEASUREMENTS-Dimension Type,"Description of issues with the Bulk Upload field '**Dimension Type**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,MEASUREMENTS,Measurement Source Type,Bulk Upload-HP-MEASUREMENTS-Measurement Source Type,"Description of issues with the Bulk Upload field '**Measurement Source Type**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,ARCHAEOLOGICAL ASSESSMENT,Related Geoarch/Palaeo,Bulk Upload-HP-ARCHAEOLOGICAL ASSESSMENT-Related Geoarch/Palaeo,"Description of issues with the Bulk Upload field '**Related Geoarch/Palaeo**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,CONDITION ASSESSMENT,Overall Condition State,Bulk Upload-HP-CONDITION ASSESSMENT-Overall Condition State,"Description of issues with the Bulk Upload field '**Overall Condition State**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,CONDITION ASSESSMENT,Damage Extent Type,Bulk Upload-HP-CONDITION ASSESSMENT-Damage Extent Type,"Description of issues with the Bulk Upload field '**Damage Extent Type**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,DISTURBANCES,Disturbance Cause Category Type,Bulk Upload-HP-DISTURBANCES-Disturbance Cause Category Type,"Description of issues with the Bulk Upload field '**Disturbance Cause Category Type**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,DISTURBANCES,Disturbance Cause Type,Bulk Upload-HP-DISTURBANCES-Disturbance Cause Type,"Description of issues with the Bulk Upload field '**Disturbance Cause Type**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,DISTURBANCES,Disturbance Cause Certainty,Bulk Upload-HP-DISTURBANCES-Disturbance Cause Certainty,"Description of issues with the Bulk Upload field '**Disturbance Cause Certainty**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,DISTURBANCES,Disturbance Date From,Bulk Upload-HP-DISTURBANCES-Disturbance Date From,"Description of issues with the Bulk Upload field '**Disturbance Date From**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,DISTURBANCES,Disturbance Date To,Bulk Upload-HP-DISTURBANCES-Disturbance Date To,"Description of issues with the Bulk Upload field '**Disturbance Date To**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,DISTURBANCES,Disturbance Date Occurred Before,Bulk Upload-HP-DISTURBANCES-Disturbance Date Occurred Before,"Description of issues with the Bulk Upload field '**Disturbance Date Occurred Before**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,DISTURBANCES,Disturbance Date Occurred On,Bulk Upload-HP-DISTURBANCES-Disturbance Date Occurred On,"Description of issues with the Bulk Upload field '**Disturbance Date Occurred On**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,DISTURBANCES,Disturbance Cause Assignment Assessor Name,Bulk Upload-HP-DISTURBANCES-Disturbance Cause Assignment Assessor Name,"Description of issues with the Bulk Upload field '**Disturbance Cause Assignment Assessor Name**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,DISTURBANCES,Effect Type,Bulk Upload-HP-DISTURBANCES-Effect Type,"Description of issues with the Bulk Upload field '**Effect Type**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,DISTURBANCES,Effect Certainty,Bulk Upload-HP-DISTURBANCES-Effect Certainty,"Description of issues with the Bulk Upload field '**Effect Certainty**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,THREATS,Threat Category,Bulk Upload-HP-THREATS-Threat Category,"Description of issues with the Bulk Upload field '**Threat Category**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,THREATS,Threat Type,Bulk Upload-HP-THREATS-Threat Type,"Description of issues with the Bulk Upload field '**Threat Type**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,THREATS,Threat Probability,Bulk Upload-HP-THREATS-Threat Probability,"Description of issues with the Bulk Upload field '**Threat Probability**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,THREATS,Threat Inference Making Assessor Name,Bulk Upload-HP-THREATS-Threat Inference Making Assessor Name,"Description of issues with the Bulk Upload field '**Threat Inference Making Assessor Name**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,RECOMMENDATION PLAN,Intervention Activity Type,Bulk Upload-HP-RECOMMENDATION PLAN-Intervention Activity Type,"Description of issues with the Bulk Upload field '**Intervention Activity Type**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,RECOMMENDATION PLAN,Recommendation Type,Bulk Upload-HP-RECOMMENDATION PLAN-Recommendation Type,"Description of issues with the Bulk Upload field '**Recommendation Type**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,RECOMMENDATION PLAN,Priority Type,Bulk Upload-HP-RECOMMENDATION PLAN-Priority Type,"Description of issues with the Bulk Upload field '**Priority Type**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,CONDITION ASSESSMENT,Related Detailed Condition Resource,Bulk Upload-HP-CONDITION ASSESSMENT-Related Detailed Condition Resource,"Description of issues with the Bulk Upload field '**Related Detailed Condition Resource**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,ENVIRONMENT ASSESSMENT,Topography Type,Bulk Upload-HP-ENVIRONMENT ASSESSMENT-Topography Type,"Description of issues with the Bulk Upload field '**Topography Type**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,LAND COVER,Land Cover Type,Bulk Upload-HP-LAND COVER-Land Cover Type,"Description of issues with the Bulk Upload field '**Land Cover Type**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,LAND COVER,Land Cover Assessment Date,Bulk Upload-HP-LAND COVER-Land Cover Assessment Date,"Description of issues with the Bulk Upload field '**Land Cover Assessment Date**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,SURFICIAL GEOLOGY,Surficial Geology Type,Bulk Upload-HP-SURFICIAL GEOLOGY-Surficial Geology Type,"Description of issues with the Bulk Upload field '**Surficial Geology Type**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,SURFICIAL GEOLOGY,Depositional Process,Bulk Upload-HP-SURFICIAL GEOLOGY-Depositional Process,"Description of issues with the Bulk Upload field '**Depositional Process**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,ENVIRONMENT ASSESSMENT,Bedrock Geology,Bulk Upload-HP-ENVIRONMENT ASSESSMENT-Bedrock Geology,"Description of issues with the Bulk Upload field '**Bedrock Geology**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,MARINE ENVIRONMENT,Fetch Type,Bulk Upload-HP-MARINE ENVIRONMENT-Fetch Type,"Description of issues with the Bulk Upload field '**Fetch Type**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,MARINE ENVIRONMENT,Wave Climate,Bulk Upload-HP-MARINE ENVIRONMENT-Wave Climate,"Description of issues with the Bulk Upload field '**Wave Climate**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,MARINE ENVIRONMENT,Tidal Energy,Bulk Upload-HP-MARINE ENVIRONMENT-Tidal Energy,"Description of issues with the Bulk Upload field '**Tidal Energy**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,DEPTH or ELEVATION,Minimum Depth/Max Elevation(m),Bulk Upload-HP-DEPTH or ELEVATION-Minimum Depth/Max Elevation(m),"Description of issues with the Bulk Upload field '**Minimum Depth/Max Elevation(m)**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,DEPTH or ELEVATION,Maximum Depth/Min Elevation(m),Bulk Upload-HP-DEPTH or ELEVATION-Maximum Depth/Min Elevation(m),"Description of issues with the Bulk Upload field '**Maximum Depth/Min Elevation(m)**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,DEPTH or ELEVATION,Datum Type,Bulk Upload-HP-DEPTH or ELEVATION-Datum Type,"Description of issues with the Bulk Upload field '**Datum Type**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,DEPTH or ELEVATION,Datum Description/EPSG code,Bulk Upload-HP-DEPTH or ELEVATION-Datum Description/EPSG code,"Description of issues with the Bulk Upload field '**Datum Description/EPSG code**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
-HP,ACCESS,Restricted Access Record Designation,Bulk Upload-HP-ACCESS-Restricted Access Record Designation,"Description of issues with the Bulk Upload field '**Restricted Access Record Designation**', see: [bulk-upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)"
+c,num_issue,
+Assessment Investigator - Actor,59,[#59](https://github.com/eamena-project/eamena-arches-dev/issues/59)
+Investigator Role Type,60,[#60](https://github.com/eamena-project/eamena-arches-dev/issues/60)
+Assessment Activity Type,61,[#61](https://github.com/eamena-project/eamena-arches-dev/issues/61)
+Assessment Activity Date,62,[#62](https://github.com/eamena-project/eamena-arches-dev/issues/62)
+GE Assessment(Yes/No),63,[#63](https://github.com/eamena-project/eamena-arches-dev/issues/63)
+GE Imagery Acquisition Date,64,[#64](https://github.com/eamena-project/eamena-arches-dev/issues/64)
+Information Resource Used,65,[#65](https://github.com/eamena-project/eamena-arches-dev/issues/65)
+Information Resource Acquisition Date,66,[#66](https://github.com/eamena-project/eamena-arches-dev/issues/66)
+Resource Name,67,[#67](https://github.com/eamena-project/eamena-arches-dev/issues/67)
+Name Type,68,[#68](https://github.com/eamena-project/eamena-arches-dev/issues/68)
+Heritage Place Type,69,[#69](https://github.com/eamena-project/eamena-arches-dev/issues/69)
+General Description Type,70,[#70](https://github.com/eamena-project/eamena-arches-dev/issues/70)
+General Description,71,[#71](https://github.com/eamena-project/eamena-arches-dev/issues/71)
+Heritage Place Function,72,[#72](https://github.com/eamena-project/eamena-arches-dev/issues/72)
+Heritage Place Function Certainty,73,[#73](https://github.com/eamena-project/eamena-arches-dev/issues/73)
+Designation,74,[#74](https://github.com/eamena-project/eamena-arches-dev/issues/74)
+Designation From Date,75,[#75](https://github.com/eamena-project/eamena-arches-dev/issues/75)
+Designation To Date,76,[#76](https://github.com/eamena-project/eamena-arches-dev/issues/76)
+Geometric Place Expression,77,[#77](https://github.com/eamena-project/eamena-arches-dev/issues/77)
+Geometry Qualifier,78,[#78](https://github.com/eamena-project/eamena-arches-dev/issues/78)
+Site Location Certainty,79,[#79](https://github.com/eamena-project/eamena-arches-dev/issues/79)
+Geometry Extent Certainty,80,[#80](https://github.com/eamena-project/eamena-arches-dev/issues/80)
+Site Overall Shape Type,81,[#81](https://github.com/eamena-project/eamena-arches-dev/issues/81)
+Grid ID,82,[#82](https://github.com/eamena-project/eamena-arches-dev/issues/82)
+Country Type,83,[#83](https://github.com/eamena-project/eamena-arches-dev/issues/83)
+Cadastral Reference,84,[#84](https://github.com/eamena-project/eamena-arches-dev/issues/84)
+Resource Orientation,85,[#85](https://github.com/eamena-project/eamena-arches-dev/issues/85)
+Address,86,[#86](https://github.com/eamena-project/eamena-arches-dev/issues/86)
+Address Type,87,[#87](https://github.com/eamena-project/eamena-arches-dev/issues/87)
+Administrative Subdivision,88,[#88](https://github.com/eamena-project/eamena-arches-dev/issues/88)
+Administrative Subdivision Type,89,[#89](https://github.com/eamena-project/eamena-arches-dev/issues/89)
+Overall Archaeological Certainty Value,90,[#90](https://github.com/eamena-project/eamena-arches-dev/issues/90)
+Overall Site Morphology Type,91,[#91](https://github.com/eamena-project/eamena-arches-dev/issues/91)
+Cultural Period Type,92,[#92](https://github.com/eamena-project/eamena-arches-dev/issues/92)
+Cultural Period Certainty,93,[#93](https://github.com/eamena-project/eamena-arches-dev/issues/93)
+Cultural Subperiod Type,94,[#94](https://github.com/eamena-project/eamena-arches-dev/issues/94)
+Cultural Subperiod Certainty,95,[#95](https://github.com/eamena-project/eamena-arches-dev/issues/95)
+Date Inference Making Actor,96,[#96](https://github.com/eamena-project/eamena-arches-dev/issues/96)
+Archaeological Date From (cal),97,[#97](https://github.com/eamena-project/eamena-arches-dev/issues/97)
+Archaeological Date to (cal),98,[#98](https://github.com/eamena-project/eamena-arches-dev/issues/98)
+BP Date From,99,[#99](https://github.com/eamena-project/eamena-arches-dev/issues/99)
+BP Date To,100,[#100](https://github.com/eamena-project/eamena-arches-dev/issues/100)
+AH Date From,101,[#101](https://github.com/eamena-project/eamena-arches-dev/issues/101)
+AH Date To,102,[#102](https://github.com/eamena-project/eamena-arches-dev/issues/102)
+SH Date From,103,[#103](https://github.com/eamena-project/eamena-arches-dev/issues/103)
+SH Date To,104,[#104](https://github.com/eamena-project/eamena-arches-dev/issues/104)
+Site Feature Form Type,105,[#105](https://github.com/eamena-project/eamena-arches-dev/issues/105)
+Site Feature Form Type Certainty,106,[#106](https://github.com/eamena-project/eamena-arches-dev/issues/106)
+Site Feature Shape Type,107,[#107](https://github.com/eamena-project/eamena-arches-dev/issues/107)
+Site Feature Arrangement Type,108,[#108](https://github.com/eamena-project/eamena-arches-dev/issues/108)
+Site Feature Number Type,109,[#109](https://github.com/eamena-project/eamena-arches-dev/issues/109)
+Site Feature Interpretation Type ,110,[#110](https://github.com/eamena-project/eamena-arches-dev/issues/110)
+Site Feature Interpretation Number,111,[#111](https://github.com/eamena-project/eamena-arches-dev/issues/111)
+Site Feature Interpretation Certainty,112,[#112](https://github.com/eamena-project/eamena-arches-dev/issues/112)
+Built Component Related Resource,113,[#113](https://github.com/eamena-project/eamena-arches-dev/issues/113)
+HP Related Resource,114,[#114](https://github.com/eamena-project/eamena-arches-dev/issues/114)
+Material Class,115,[#115](https://github.com/eamena-project/eamena-arches-dev/issues/115)
+Material Type,116,[#116](https://github.com/eamena-project/eamena-arches-dev/issues/116)
+Construction Technique,117,[#117](https://github.com/eamena-project/eamena-arches-dev/issues/117)
+Measurement Number,118,[#118](https://github.com/eamena-project/eamena-arches-dev/issues/118)
+Measurement Unit,119,[#119](https://github.com/eamena-project/eamena-arches-dev/issues/119)
+Dimension Type,120,[#120](https://github.com/eamena-project/eamena-arches-dev/issues/120)
+Measurement Source Type,121,[#121](https://github.com/eamena-project/eamena-arches-dev/issues/121)
+Related Geoarch/Palaeo,122,[#122](https://github.com/eamena-project/eamena-arches-dev/issues/122)
+Overall Condition State,123,[#123](https://github.com/eamena-project/eamena-arches-dev/issues/123)
+Damage Extent Type,124,[#124](https://github.com/eamena-project/eamena-arches-dev/issues/124)
+Disturbance Cause Category Type,125,[#125](https://github.com/eamena-project/eamena-arches-dev/issues/125)
+Disturbance Cause Type,126,[#126](https://github.com/eamena-project/eamena-arches-dev/issues/126)
+Disturbance Cause Certainty,127,[#127](https://github.com/eamena-project/eamena-arches-dev/issues/127)
+Disturbance Date From,128,[#128](https://github.com/eamena-project/eamena-arches-dev/issues/128)
+Disturbance Date To,129,[#129](https://github.com/eamena-project/eamena-arches-dev/issues/129)
+Disturbance Date Occurred Before,130,[#130](https://github.com/eamena-project/eamena-arches-dev/issues/130)
+Disturbance Date Occurred On,131,[#131](https://github.com/eamena-project/eamena-arches-dev/issues/131)
+Disturbance Cause Assignment Assessor Name,132,[#132](https://github.com/eamena-project/eamena-arches-dev/issues/132)
+Effect Type,133,[#133](https://github.com/eamena-project/eamena-arches-dev/issues/133)
+Effect Certainty,134,[#134](https://github.com/eamena-project/eamena-arches-dev/issues/134)
+Threat Category,135,[#135](https://github.com/eamena-project/eamena-arches-dev/issues/135)
+Threat Type,136,[#136](https://github.com/eamena-project/eamena-arches-dev/issues/136)
+Threat Probability,137,[#137](https://github.com/eamena-project/eamena-arches-dev/issues/137)
+Threat Inference Making Assessor Name,138,[#138](https://github.com/eamena-project/eamena-arches-dev/issues/138)
+Intervention Activity Type,139,[#139](https://github.com/eamena-project/eamena-arches-dev/issues/139)
+Recommendation Type,140,[#140](https://github.com/eamena-project/eamena-arches-dev/issues/140)
+Priority Type,141,[#141](https://github.com/eamena-project/eamena-arches-dev/issues/141)
+Related Detailed Condition Resource,142,[#142](https://github.com/eamena-project/eamena-arches-dev/issues/142)
+Topography Type,143,[#143](https://github.com/eamena-project/eamena-arches-dev/issues/143)
+Land Cover Type,144,[#144](https://github.com/eamena-project/eamena-arches-dev/issues/144)
+Land Cover Assessment Date,145,[#145](https://github.com/eamena-project/eamena-arches-dev/issues/145)
+Surficial Geology Type,146,[#146](https://github.com/eamena-project/eamena-arches-dev/issues/146)
+Depositional Process,147,[#147](https://github.com/eamena-project/eamena-arches-dev/issues/147)
+Bedrock Geology,148,[#148](https://github.com/eamena-project/eamena-arches-dev/issues/148)
+Fetch Type,149,[#149](https://github.com/eamena-project/eamena-arches-dev/issues/149)
+Wave Climate,150,[#150](https://github.com/eamena-project/eamena-arches-dev/issues/150)
+Tidal Energy,151,[#151](https://github.com/eamena-project/eamena-arches-dev/issues/151)
+Minimum Depth/Max Elevation(m),152,[#152](https://github.com/eamena-project/eamena-arches-dev/issues/152)
+Maximum Depth/Min Elevation(m),153,[#153](https://github.com/eamena-project/eamena-arches-dev/issues/153)
+Datum Type,154,[#154](https://github.com/eamena-project/eamena-arches-dev/issues/154)
+Datum Description/EPSG code,155,[#155](https://github.com/eamena-project/eamena-arches-dev/issues/155)
+Restricted Access Record Designation,156,[#156](https://github.com/eamena-project/eamena-arches-dev/issues/156)

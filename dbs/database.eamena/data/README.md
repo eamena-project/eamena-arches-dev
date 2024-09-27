@@ -51,7 +51,7 @@ Thinner categories (`level3`) colored by groups: [[fields-description.html](http
 
 | field                                     | GitHub issue |
 |-------------------------------------------|-----------|
-| Assessment Investigator - Actor           | [#59](#59)       |
+| Assessment Investigator - Actor           | [#59](https://github.com/eamena-project/eamena-arches-dev/issues/59)       |
 | Investigator Role Type                    | #60       |
 | Assessment Activity Type                  | #61       |
 | Assessment Activity Date                  | #62       |

@@ -49,6 +49,107 @@ Thinner categories (`level3`) colored by groups: [[fields-description.html](http
     <em>Screenshot of the HTML dynamic/interactive table 'fields-description.html', with a search on 'Agricul' with field colored by groups and field descriptions</em>
 </p>
 
+| field                                     | GitHub issue |
+|-------------------------------------------|-----------|
+| Assessment Investigator - Actor           | #59       |
+| Investigator Role Type                    | #60       |
+| Assessment Activity Type                  | #61       |
+| Assessment Activity Date                  | #62       |
+| GE Assessment(Yes/No)                     | #63       |
+| GE Imagery Acquisition Date               | #64       |
+| Information Resource Used                 | #65       |
+| Information Resource Acquisition Date     | #66       |
+| Resource Name                             | #67       |
+| Name Type                                 | #68       |
+| Heritage Place Type                       | #69       |
+| General Description Type                  | #70       |
+| General Description                       | #71       |
+| Heritage Place Function                   | #72       |
+| Heritage Place Function Certainty         | #73       |
+| Designation                               | #74       |
+| Designation From Date                     | #75       |
+| Designation To Date                       | #76       |
+| Geometric Place Expression                | #77       |
+| Geometry Qualifier                        | #78       |
+| Site Location Certainty                   | #79       |
+| Geometry Extent Certainty                 | #80       |
+| Site Overall Shape Type                   | #81       |
+| Grid ID                                   | #82       |
+| Country Type                              | #83       |
+| Cadastral Reference                       | #84       |
+| Resource Orientation                      | #85       |
+| Address                                   | #86       |
+| Address Type                              | #87       |
+| Administrative Subdivision                | #88       |
+| Administrative Subdivision Type           | #89       |
+| Overall Archaeological Certainty Value    | #90       |
+| Overall Site Morphology Type              | #91       |
+| Cultural Period Type                      | #92       |
+| Cultural Period Certainty                 | #93       |
+| Cultural Subperiod Type                   | #94       |
+| Cultural Subperiod Certainty              | #95       |
+| Date Inference Making Actor               | #96       |
+| Archaeological Date From (cal)            | #97       |
+| Archaeological Date to (cal)              | #98       |
+| BP Date From                              | #99       |
+| BP Date To                                | #100      |
+| AH Date From                              | #101      |
+| AH Date To                                | #102      |
+| SH Date From                              | #103      |
+| SH Date To                                | #104      |
+| Site Feature Form Type                    | #105      |
+| Site Feature Form Type Certainty          | #106      |
+| Site Feature Shape Type                   | #107      |
+| Site Feature Arrangement Type             | #108      |
+| Site Feature Number Type                  | #109      |
+| Site Feature Interpretation Type          | #110      |
+| Site Feature Interpretation Number        | #111      |
+| Site Feature Interpretation Certainty     | #112      |
+| Built Component Related Resource          | #113      |
+| HP Related Resource                       | #114      |
+| Material Class                            | #115      |
+| Material Type                             | #116      |
+| Construction Technique                     | #117      |
+| Measurement Number                        | #118      |
+| Measurement Unit                          | #119      |
+| Dimension Type                            | #120      |
+| Measurement Source Type                   | #121      |
+| Related Geoarch/Palaeo                    | #122      |
+| Overall Condition State                   | #123      |
+| Damage Extent Type                        | #124      |
+| Disturbance Cause Category Type           | #125      |
+| Disturbance Cause Type                    | #126      |
+| Disturbance Cause Certainty               | #127      |
+| Disturbance Date From                     | #128      |
+| Disturbance Date To                       | #129      |
+| Disturbance Date Occurred Before          | #130      |
+| Disturbance Date Occurred On              | #131      |
+| Disturbance Cause Assignment Assessor Name| #132      |
+| Effect Type                               | #133      |
+| Effect Certainty                          | #134      |
+| Threat Category                           | #135      |
+| Threat Type                               | #136      |
+| Threat Probability                        | #137      |
+| Threat Inference Making Assessor Name     | #138      |
+| Intervention Activity Type                | #139      |
+| Recommendation Type                       | #140      |
+| Priority Type                             | #141      |
+| Related Detailed Condition Resource       | #142      |
+| Topography Type                           | #143      |
+| Land Cover Type                           | #144      |
+| Land Cover Assessment Date                | #145      |
+| Surficial Geology Type                    | #146      |
+| Depositional Process                      | #147      |
+| Bedrock Geology                           | #148      |
+| Fetch Type                                | #149      |
+| Wave Climate                              | #150      |
+| Tidal Energy                              | #151      |
+| Minimum Depth/Max Elevation(m)            | #152      |
+| Maximum Depth/Min Elevation(m)            | #153      |
+| Datum Type                                | #154      |
+| Datum Description/EPSG code               | #155      |
+| Restricted Access Record Designation      | #156      |
+
 ##### Groups of fields descriptions
 
 Fields (`level3`) are grouped in broader categories, or groups (`level1`). These groups are colored according to the MDS reference file, and HTML links are added to value descriptions ([Individual reference sheets](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bulk#individual-reference-sheets)): [[field-to-tsv.html](https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/mds/field-to-tsv.html)]

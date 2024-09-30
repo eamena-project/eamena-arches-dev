@@ -8,7 +8,7 @@ import pandas as pd
 import requests as rq
 import tempfile
 
-def split_and_save_tables(df, sheet_name, output_dir, markdown_table, root_values = "https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data/reference_data/rm/hp/values"):
+def split_and_save_tables(df, sheet_name, output_dir, markdown_table, root_values = "https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data/reference_data/rm/hp/values", verbose=True):
 	"""
 	Read a BU template XLSX file and identify start of new tables based on hashtag (#) in the first column
 	"""
@@ -37,6 +37,8 @@ def split_and_save_tables(df, sheet_name, output_dir, markdown_table, root_value
 		table_df = table_df.reset_index(drop=True)
 		# Save table to TSV
 		table_df.to_csv(tsv_file_path, sep='\t', index=False)
+		if verbose:
+			print(f"{tsv_file_path} is saved")
 
 		table_name_tsv = table_name + ".tsv"
 		# print(f"  - saved {tsv_file_path}")

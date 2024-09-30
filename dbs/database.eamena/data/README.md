@@ -44,7 +44,7 @@ This indicates that fields, including field values (`level3`, the most detailed 
 Thinner categories (`level3`) colored by groups: [[fields-description.html](https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/mds/fields-description.html)]
 
 <p align="center">
-  <img alt="img-name" src="image-2.png" width="600">
+  <img alt="img-name" src="image-2.png" width="800">
   <br>
     <em>Screenshot of the HTML dynamic/interactive table 'fields-description.html', with a search on 'Agricul' with field colored by groups and field descriptions</em>
 </p>

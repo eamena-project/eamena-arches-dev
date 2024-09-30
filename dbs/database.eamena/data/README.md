@@ -1,6 +1,15 @@
 # EAMANA DB's Data
 
-[Reference Data](#reference-data), [Business data](#business-data)
+Either [Reference Data](#reference-data) and [Business data](#business-data)
+
+* Abrevv.
+
+| Abrevv.  | Full name              |
+|----------|------------------------|
+| HP       | Heritage Place         |
+| IR       | Information Resources  |
+| PO       | Person/Organisation    |
+| GS       | Grid Squares           |
 
 ---
 
@@ -135,8 +144,8 @@ field names' UUIDs are listed here: [ir-uuids-readonly.tsv](ir-uuids-readonly.ts
 
 
 <p align="center">
-  <img alt="img-name" src="image-4.png" width="600">
-  <img alt="img-name" src="image-3.png" width="600">
+  <img alt="img-name" src="image-4.png" width="500">
+  <img alt="img-name" src="image-3.png" width="500">
   <br>
     <em>Screenshots of the EAMENA_Grid_contour.geojson (countour only) and EAMENA_Grid.geojson (with grid cells) files</em>
 </p>
@@ -146,16 +155,6 @@ field names' UUIDs are listed here: [ir-uuids-readonly.tsv](ir-uuids-readonly.ts
 # Business data
 
 Add new HP from a BU ([BU Upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)), append new values ([BU append](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bu-append)) and related resources ([r2r append](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#r2r-append)) in an existing HP, using templates and [functions](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#function). 
-
-* Abrevv.
-
-| Abrevv.  | Full name              |
-|----------|------------------------|
-| HP       | Heritage Place         |
-| IR       | Information Resources  |
-| PO       | Person/Organisation    |
-| GS       | Grid Squares           |
-
 
 
 ## Bulk Upload

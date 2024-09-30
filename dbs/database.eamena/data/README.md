@@ -134,7 +134,14 @@ field names' UUIDs are listed here: [ir-uuids-readonly.tsv](ir-uuids-readonly.ts
 ## Grids
 
 
-[EAMENA_Grid_contour.geojson](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/grids/EAMENA_Grid_contour.geojson) (screenshot, countour only) and [EAMENA_Grid.geojson]((https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/grids/EAMENA_Grid.geojson)) (with grid cells)
+<p align="center">
+  <img alt="img-name" src="image-4.png" width="600">
+  <img alt="img-name" src="image-3.png" width="600">
+  <br>
+    <em>Screenshots of the EAMENA_Grid_contour.geojson (countour only) and EAMENA_Grid.geojson (with grid cells) files</em>
+</p>
+
+[EAMENA_Grid_contour.geojson](reference_data/grids/EAMENA_Grid_contour.geojson) (screenshot, countour only) and [EAMENA_Grid.geojson](reference_data/grids/EAMENA_Grid.geojson) (with grid cells)
 
 # Business data
 

@@ -54,7 +54,7 @@ This indicates that fields, including field values (`level3`, the most detailed 
 Thinner categories (`level3`) colored by groups: [[fields-description.html](https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/mds/fields-description.html)]
 
 <p align="center">
-  <img alt="img-name" src="image-2.png" width="1000">
+  <img alt="img-name" src="www/image-2.png" width="1000">
   <br>
     <em>Screenshot of the HTML dynamic/interactive table 'fields-description.html', with a search on 'Agricul' with field colored by groups and field descriptions</em>
 </p>
@@ -144,8 +144,8 @@ field names' UUIDs are listed here: [ir-uuids-readonly.tsv](ir-uuids-readonly.ts
 
 
 <p align="center">
-  <img alt="img-name" src="image-4.png" width="500">
-  <img alt="img-name" src="image-3.png" width="500">
+  <img alt="img-name" src="www/image-4.png" width="500">
+  <img alt="img-name" src="www/image-3.png" width="500">
   <br>
     <em>Screenshots of the EAMENA_Grid_contour.geojson (countour only) and EAMENA_Grid.geojson (with grid cells) files</em>
 </p>
@@ -289,8 +289,8 @@ The last/updated version of the BU template appears on the upper part of this ta
 There are slight changes between the fieldnames in the BU template and the field names in the BU append template. The latter is closer to what exists in the database, with many remaining extra trailing spaces and some longer field names
 
 <p align="center">
-  <img alt="img-name" src="image.png" width="400">
-  <img alt="img-name" src="image-1.png" width="400">
+  <img alt="img-name" src="www/image.png" width="400">
+  <img alt="img-name" src="www/image-1.png" width="400">
   <br>
 	<em>Be careful about the trailing spaces in the DB (in blue). These extra spaces have to be added to some fieldnames in the BU file</em>
 </p>

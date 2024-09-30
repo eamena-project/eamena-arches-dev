@@ -8,15 +8,17 @@ import pandas as pd
 import requests as rq
 import tempfile
 
-def split_and_save_tables(df, sheet_name, output_dir, markdown_table):
-	# Identify start of new tables based on hashtag in the first column
+def split_and_save_tables(df, sheet_name, output_dir, markdown_table, root_values = "https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data/reference_data/rm/hp/values"):
+	"""
+	Read a BU template XLSX file and identify start of new tables based on hashtag (#) in the first column
+	"""
+
 	starts = df[df[df.columns[0]].astype(str).str.startswith('#')].index
 	# Add the end of the dataframe as a dummy end point for the last table
 	ends = starts[1:].tolist() + [len(df) + 1]
 	sheet_name = sheet_name.strip().replace(' ', '_')
 	os.makedirs(os.path.join(output_dir, sheet_name), exist_ok=True)
-	root_values = "https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data/reference_data/rm/hp/values"
-
+	
 	for start, end in zip(starts, ends):
 		table_df = df.iloc[start:end-1].copy()  # Extract table without the dummy end
 		table_title = table_df.iloc[0, 0].lstrip('#').strip().replace(' ', '_')
@@ -90,6 +92,7 @@ def main(file_in, dir_out):
 	# markdown_table = create_markdown_table(data)
 
 if __name__ == "__main__":
+	# for example: py split_bu_template.py "Bulk_Upload_template_231017.xlsx" "C:/Rprojects/eamena-arches-dev/data/bulk/templates/doc"
 	argp = argparse.ArgumentParser()
 	argp.add_argument('FileIn', type=str, help='The BU template that will be exported in as many TSV files it has spreadsheets')
 	argp.add_argument('DirOut', type=str, help='The folder path where to write the many TSV')

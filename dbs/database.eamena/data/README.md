@@ -40,7 +40,7 @@ This indicates that fields, including field values (`level3`, the most detailed 
 #### Fields
 
 ##### Field descriptions
-> on [EAMENA website](https://eamena.org/advanced-use#rm-hp-fields)
+> on the [EAMENA website](https://eamena.org/advanced-use#rm-hp-fields)
 
 Thinner categories (`level3`) colored by groups: [[fields-description.html](https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/mds/fields-description.html)]
 
@@ -49,108 +49,6 @@ Thinner categories (`level3`) colored by groups: [[fields-description.html](http
   <br>
     <em>Screenshot of the HTML dynamic/interactive table 'fields-description.html', with a search on 'Agricul' with field colored by groups and field descriptions</em>
 </p>
-
-| Field                                     | GitHub Issue |
-|-------------------------------------------|--------------|
-| Assessment Investigator - Actor           | [#59](https://github.com/eamena-project/eamena-arches-dev/issues/59) |
-| Investigator Role Type                     | [#60](https://github.com/eamena-project/eamena-arches-dev/issues/60) |
-| Assessment Activity Type                   | [#61](https://github.com/eamena-project/eamena-arches-dev/issues/61) |
-| Assessment Activity Date                   | [#62](https://github.com/eamena-project/eamena-arches-dev/issues/62) |
-| GE Assessment(Yes/No)                      | [#63](https://github.com/eamena-project/eamena-arches-dev/issues/63) |
-| GE Imagery Acquisition Date                | [#64](https://github.com/eamena-project/eamena-arches-dev/issues/64) |
-| Information Resource Used                  | [#65](https://github.com/eamena-project/eamena-arches-dev/issues/65) |
-| Information Resource Acquisition Date      | [#66](https://github.com/eamena-project/eamena-arches-dev/issues/66) |
-| Resource Name                              | [#67](https://github.com/eamena-project/eamena-arches-dev/issues/67) |
-| Name Type                                  | [#68](https://github.com/eamena-project/eamena-arches-dev/issues/68) |
-| Heritage Place Type                        | [#69](https://github.com/eamena-project/eamena-arches-dev/issues/69) |
-| General Description Type                   | [#70](https://github.com/eamena-project/eamena-arches-dev/issues/70) |
-| General Description                        | [#71](https://github.com/eamena-project/eamena-arches-dev/issues/71) |
-| Heritage Place Function                    | [#72](https://github.com/eamena-project/eamena-arches-dev/issues/72) |
-| Heritage Place Function Certainty          | [#73](https://github.com/eamena-project/eamena-arches-dev/issues/73) |
-| Designation                                | [#74](https://github.com/eamena-project/eamena-arches-dev/issues/74) |
-| Designation From Date                      | [#75](https://github.com/eamena-project/eamena-arches-dev/issues/75) |
-| Designation To Date                        | [#76](https://github.com/eamena-project/eamena-arches-dev/issues/76) |
-| Geometric Place Expression                 | [#77](https://github.com/eamena-project/eamena-arches-dev/issues/77) |
-| Geometry Qualifier                         | [#78](https://github.com/eamena-project/eamena-arches-dev/issues/78) |
-| Site Location Certainty                    | [#79](https://github.com/eamena-project/eamena-arches-dev/issues/79) |
-| Geometry Extent Certainty                  | [#80](https://github.com/eamena-project/eamena-arches-dev/issues/80) |
-| Site Overall Shape Type                    | [#81](https://github.com/eamena-project/eamena-arches-dev/issues/81) |
-| Grid ID                                    | [#82](https://github.com/eamena-project/eamena-arches-dev/issues/82) |
-| Country Type                               | [#83](https://github.com/eamena-project/eamena-arches-dev/issues/83) |
-| Cadastral Reference                        | [#84](https://github.com/eamena-project/eamena-arches-dev/issues/84) |
-| Resource Orientation                       | [#85](https://github.com/eamena-project/eamena-arches-dev/issues/85) |
-| Address                                    | [#86](https://github.com/eamena-project/eamena-arches-dev/issues/86) |
-| Address Type                               | [#87](https://github.com/eamena-project/eamena-arches-dev/issues/87) |
-| Administrative Subdivision                 | [#88](https://github.com/eamena-project/eamena-arches-dev/issues/88) |
-| Administrative Subdivision Type            | [#89](https://github.com/eamena-project/eamena-arches-dev/issues/89) |
-| Overall Archaeological Certainty Value     | [#90](https://github.com/eamena-project/eamena-arches-dev/issues/90) |
-| Overall Site Morphology Type               | [#91](https://github.com/eamena-project/eamena-arches-dev/issues/91) |
-| Cultural Period Type                       | [#92](https://github.com/eamena-project/eamena-arches-dev/issues/92) |
-| Cultural Period Certainty                  | [#93](https://github.com/eamena-project/eamena-arches-dev/issues/93) |
-| Cultural Subperiod Type                    | [#94](https://github.com/eamena-project/eamena-arches-dev/issues/94) |
-| Cultural Subperiod Certainty               | [#95](https://github.com/eamena-project/eamena-arches-dev/issues/95) |
-| Date Inference Making Actor                | [#96](https://github.com/eamena-project/eamena-arches-dev/issues/96) |
-| Archaeological Date From (cal)             | [#97](https://github.com/eamena-project/eamena-arches-dev/issues/97) |
-| Archaeological Date to (cal)               | [#98](https://github.com/eamena-project/eamena-arches-dev/issues/98) |
-| BP Date From                               | [#99](https://github.com/eamena-project/eamena-arches-dev/issues/99) |
-| BP Date To                                 | [#100](https://github.com/eamena-project/eamena-arches-dev/issues/100) |
-| AH Date From                               | [#101](https://github.com/eamena-project/eamena-arches-dev/issues/101) |
-| AH Date To                                 | [#102](https://github.com/eamena-project/eamena-arches-dev/issues/102) |
-| SH Date From                               | [#103](https://github.com/eamena-project/eamena-arches-dev/issues/103) |
-| SH Date To                                 | [#104](https://github.com/eamena-project/eamena-arches-dev/issues/104) |
-| Site Feature Form Type                     | [#105](https://github.com/eamena-project/eamena-arches-dev/issues/105) |
-| Site Feature Form Type Certainty           | [#106](https://github.com/eamena-project/eamena-arches-dev/issues/106) |
-| Site Feature Shape Type                    | [#107](https://github.com/eamena-project/eamena-arches-dev/issues/107) |
-| Site Feature Arrangement Type              | [#108](https://github.com/eamena-project/eamena-arches-dev/issues/108) |
-| Site Feature Number Type                   | [#109](https://github.com/eamena-project/eamena-arches-dev/issues/109) |
-| Site Feature Interpretation Type           | [#110](https://github.com/eamena-project/eamena-arches-dev/issues/110) |
-| Site Feature Interpretation Number         | [#111](https://github.com/eamena-project/eamena-arches-dev/issues/111) |
-| Site Feature Interpretation Certainty      | [#112](https://github.com/eamena-project/eamena-arches-dev/issues/112) |
-| Built Component Related Resource           | [#113](https://github.com/eamena-project/eamena-arches-dev/issues/113) |
-| HP Related Resource                        | [#114](https://github.com/eamena-project/eamena-arches-dev/issues/114) |
-| Material Class                             | [#115](https://github.com/eamena-project/eamena-arches-dev/issues/115) |
-| Material Type                              | [#116](https://github.com/eamena-project/eamena-arches-dev/issues/116) |
-| Construction Technique                     | [#117](https://github.com/eamena-project/eamena-arches-dev/issues/117) |
-| Measurement Number                         | [#118](https://github.com/eamena-project/eamena-arches-dev/issues/118) |
-| Measurement Unit                           | [#119](https://github.com/eamena-project/eamena-arches-dev/issues/119) |
-| Dimension Type                             | [#120](https://github.com/eamena-project/eamena-arches-dev/issues/120) |
-| Measurement Source Type                    | [#121](https://github.com/eamena-project/eamena-arches-dev/issues/121) |
-| Related Geoarch/Palaeo                     | [#122](https://github.com/eamena-project/eamena-arches-dev/issues/122) |
-| Overall Condition State                    | [#123](https://github.com/eamena-project/eamena-arches-dev/issues/123) |
-| Damage Extent Type                         | [#124](https://github.com/eamena-project/eamena-arches-dev/issues/124) |
-| Disturbance Cause Category Type            | [#125](https://github.com/eamena-project/eamena-arches-dev/issues/125) |
-| Disturbance Cause Type                     | [#126](https://github.com/eamena-project/eamena-arches-dev/issues/126) |
-| Disturbance Cause Certainty                | [#127](https://github.com/eamena-project/eamena-arches-dev/issues/127) |
-| Disturbance Date From                      | [#128](https://github.com/eamena-project/eamena-arches-dev/issues/128) |
-| Disturbance Date To                        | [#129](https://github.com/eamena-project/eamena-arches-dev/issues/129) |
-| Disturbance Date Occurred Before           | [#130](https://github.com/eamena-project/eamena-arches-dev/issues/130) |
-| Disturbance Date Occurred On               | [#131](https://github.com/eamena-project/eamena-arches-dev/issues/131) |
-| Disturbance Cause Assignment Assessor Name | [#132](https://github.com/eamena-project/eamena-arches-dev/issues/132) |
-| Effect Type                                | [#133](https://github.com/eamena-project/eamena-arches-dev/issues/133) |
-| Effect Certainty                           | [#134](https://github.com/eamena-project/eamena-arches-dev/issues/134) |
-| Threat Category                            | [#135](https://github.com/eamena-project/eamena-arches-dev/issues/135) |
-| Threat Type                                | [#136](https://github.com/eamena-project/eamena-arches-dev/issues/136) |
-| Threat Probability                         | [#137](https://github.com/eamena-project/eamena-arches-dev/issues/137) |
-| Threat Inference Making Assessor Name      | [#138](https://github.com/eamena-project/eamena-arches-dev/issues/138) |
-| Intervention Activity Type                 | [#139](https://github.com/eamena-project/eamena-arches-dev/issues/139) |
-| Recommendation Type                        | [#140](https://github.com/eamena-project/eamena-arches-dev/issues/140) |
-| Priority Type                              | [#141](https://github.com/eamena-project/eamena-arches-dev/issues/141) |
-| Related Detailed Condition Resource        | [#142](https://github.com/eamena-project/eamena-arches-dev/issues/142) |
-| Topography Type                            | [#143](https://github.com/eamena-project/eamena-arches-dev/issues/143) |
-| Land Cover Type                            | [#144](https://github.com/eamena-project/eamena-arches-dev/issues/144) |
-| Land Cover Assessment Date                 | [#145](https://github.com/eamena-project/eamena-arches-dev/issues/145) |
-| Surficial Geology Type                      | [#146](https://github.com/eamena-project/eamena-arches-dev/issues/146) |
-| Depositional Process                        | [#147](https://github.com/eamena-project/eamena-arches-dev/issues/147) |
-| Bedrock Geology                             | [#148](https://github.com/eamena-project/eamena-arches-dev/issues/148) |
-| Fetch Type                                  | [#149](https://github.com/eamena-project/eamena-arches-dev/issues/149) |
-| Wave Climate                                | [#150](https://github.com/eamena-project/eamena-arches-dev/issues/150) |
-| Tidal Energy                                | [#151](https://github.com/eamena-project/eamena-arches-dev/issues/151) |
-| Minimum Depth/Max Elevation(m)              | [#152](https://github.com/eamena-project/eamena-arches-dev/issues/152) |
-| Maximum Depth/Min Elevation(m)              | [#153](https://github.com/eamena-project/eamena-arches-dev/issues/153) |
-| Datum Type                                  | [#154](https://github.com/eamena-project/eamena-arches-dev/issues/154) |
-| Datum Description/EPSG code                 | [#155](https://github.com/eamena-project/eamena-arches-dev/issues/155) |
-| Restricted Access Record Designation        | [#156](https://github.com/eamena-project/eamena-arches-dev/issues/156) |
-
 
 ##### Groups of fields descriptions
 

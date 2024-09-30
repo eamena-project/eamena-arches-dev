@@ -57,6 +57,9 @@ def split_and_save_tables(df, sheet_name, output_dir, markdown_table, root_value
 		# print("\n")
 
 def main(file_in, dir_out):
+	"""
+	Creates a README.md listing the group of fields (level1) and fields (level3), adding links.
+	"""
 	# reads a BU template
 	bu_url = "https://github.com/eamena-project/eamena-arches-dev/raw/main/dbs/database.eamena/data/bulk_data/templates/" + file_in
 	response = rq.get(bu_url)

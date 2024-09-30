@@ -196,7 +196,7 @@ Explanations of the BU fields (ex: `Name Type`) are [**here**](https://eamena.or
 To make it easier to reference and share controlled vocabularies, the numerous BU template sheets (XLSX) can be converted into TSV files that can be read on GitHub using the [split_bu_template.py](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/bulk_data/functions/split_bu_template.py) function. For example:
 
 ```bash
-py split_bu_template.py "Bulk_Upload_template_231017.xlsx" "C:/Rprojects/eamena-arches-dev/data/bulk/templates/doc"
+py split_bu_template.py "Bulk_Upload_template_240911.xlsx" "C:/Rprojects/eamena-arches-dev/dbs/database.eamena/data/bulk_data/templates/doc"
 ```
 
 <p align="center">
@@ -204,7 +204,6 @@ py split_bu_template.py "Bulk_Upload_template_231017.xlsx" "C:/Rprojects/eamena-
   <br>
 	<em>The BU template is a set of different templates. In yellow, example of the BU template sheets that will be exported as TSV file</em>
 </p>
-
 
 
 Will create the many TSV located into the folder https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data/bulk_data/templates/doc: 

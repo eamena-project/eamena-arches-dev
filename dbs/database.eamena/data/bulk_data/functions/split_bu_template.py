@@ -73,11 +73,11 @@ def main(file_in, dir_out):
 	xl = pd.ExcelFile(tmp_file_path)
 
 	# # will not read these worksheets
-	# excluded_ws = ["Heritage Place", "Heritage Place example", "Minimum Enhanced Data Standards", "Info Resource", "InfoRes - Imagery", "InfoRes - Cartography", "Person-Organization", "Grid Square", "Relationships", "Colour Coding", "Sheet1"]
-	included_ws =['Archaeological Assessment', 'Cultural Periods', 'Condition Assessment']
+	excluded_ws = ["Heritage Place", "_example_", "_mds_", "Info Resource", "InfoRes - Imagery", "InfoRes - Cartography", "Person-Organization", "Grid Square", "Relationships", "Colour Coding"]
+	# included_ws =['Archaeological Assessment', 'Cultural Periods', 'Condition Assessment'] # tests
 
 	for sheet_name in xl.sheet_names:
-		if sheet_name in included_ws:
+		if sheet_name not in excluded_ws:
 			print("* read: " + sheet_name)
 			df = xl.parse(sheet_name)
 			markdown_table = markdown_table + split_and_save_tables(df, sheet_name, dir_out, markdown_table)

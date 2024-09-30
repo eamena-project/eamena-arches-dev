@@ -40,6 +40,7 @@ This indicates that fields, including field values (`level3`, the most detailed 
 #### Fields
 
 ##### Field descriptions
+> on [EAMENA website](https://eamena.org/advanced-use#rm-hp-fields)
 
 Thinner categories (`level3`) colored by groups: [[fields-description.html](https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/mds/fields-description.html)]
 

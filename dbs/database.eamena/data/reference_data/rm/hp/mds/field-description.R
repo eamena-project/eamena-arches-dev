@@ -27,7 +27,13 @@ df_filtered$color <- sub("^(.{7}).*", "\\1", df_filtered$color)
 dt_widget <- datatable(df_filtered[ , c("num", "Heritage Place field", description.field), drop=FALSE],
                        escape = FALSE,
                        rownames = FALSE,
-                       options = list(pageLength = 25, autoWidth = TRUE)) %>%
+                       options = list(pageLength = 25, 
+                                      autoWidth = TRUE, 
+                                      initComplete = JS(
+                                        "function(settings, json) {",
+                                        "$(this.api().table().body()).css({'font-family': 'Arial'});",
+                                        "}"
+                                      ))) %>%
   formatStyle(
     columns = c("Heritage Place field"),
     backgroundColor = styleEqual(df_filtered[["Heritage Place field"]], df_filtered$color)

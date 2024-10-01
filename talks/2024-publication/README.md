@@ -10,12 +10,11 @@ The EAMENA project, hosted by the School of Archaeology at Oxford, is dedicated 
 **Fundings**: *Social Sciences Division Fixed-Term Researchers Support Fund*, SSD, Universty of Oxford | Arcadia fund | CPF
 
 ## Workshop outlines
+> see: https://docs.google.com/document/d/1fpDYv8SD60Xb8eouWdNABlNSoDYBMREenSrsU1bFzjA/edit
 
 2,5-days in-person and hybrid, Universty of Oxford, Oxford. Provisional days: 
-> ~~Wed 27, Thu 28, Fri 29 November.~~
-> Wed 20 - Fri 22 Nov
 > Mon 2 - Wed 4 Dec
-> Wed 18 - Fri 20 Dec
+
 
 ### Day 1 and 2
 > in-person
@@ -32,11 +31,4 @@ The EAMENA project, hosted by the School of Archaeology at Oxford, is dedicated 
 ### Day 3
 > hybrid, morning only
 
-* presentation of the results (published datasets)
-* talks:
-	- academic inequalities, digital gap, etc. (Pr. Rebekah Lee, *to confirmed*)
-	- publishing from the Global South (an academic researcher from Jordan, *to confirmed*)
-	- publishing platform (PCI Archaeology) (Dr. Alain Queffelec, *to confirmed*)
-	- data papers, the Sistan dataset example (Dr. Bijan and Dr. Thomas)
-
-
+* presentation of the results (published datasets) and talks

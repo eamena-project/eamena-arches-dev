@@ -4,7 +4,7 @@
 see [Issue #54](https://github.com/eamena-project/eamena-arches-dev/issues/54)
 
 <p align="center">
-  <img alt="img-name" src="image-6.png" width="500">
+  <img alt="img-name" src="img/image-6.png" width="500">
   <br>
   <em>Location of the 91 Heritage Resources (in blue) overlaying the corresponding 91 Information Resources (in green) in the Northern Cemetery, Cairo, Egypt.</em>
 </p>
@@ -40,7 +40,7 @@ CoD records gather informations that will belong both to EAMENA Heritage Places 
 2. For a BU Upload (HP Fields): Map correspondances between CoD's project DB fieldnames with EAMENA field names, using the [mapping correspondance table](https://github.com/eamena-project/eamenaR#mapping-file) (fields: `cairo` and `cairo_type`)
 
 <p align="center">
-  <img alt="img-name" src="./www/mapping-ex.png" width="700">
+  <img alt="img-name" src="./img/mapping-ex.png" width="700">
   <br>
     <em>Alignement 'source' (columns `cairo` and `cairo_type`) and 'target'</em>
 </p>
@@ -58,7 +58,7 @@ CoD records gather informations that will belong both to EAMENA Heritage Places 
 #### ERD
 
 <p align="center">
-  <img alt="img-name" src="./image.png" width="600">
+  <img alt="img-name" src="img/image-7.png" width="600">
   <br>
     Entity-relationships diagram
 </p>
@@ -80,7 +80,7 @@ Merge the XLSX from the two DBs, remove duplicates and export as CSV by running 
 - [features.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/business_data/csv/features.csv): n = 91 rows (these are the `records`) but 16 groups of columns (here in color, the left column in grey is the `record` identifier)
 
 <p align="center">
-  <img alt="img-name" src="./image-1.png" width="700">
+  <img alt="img-name" src="img/image-8.png" width="700">
   <br>
     `features` by `records` 
 </p>
@@ -88,7 +88,7 @@ Merge the XLSX from the two DBs, remove duplicates and export as CSV by running 
 converted to a long format
 
 <p align="center">
-  <img alt="img-name" src="./image-3.png" width="500">
+  <img alt="img-name" src="img/image-9.png" width="500">
   <br>
     `features` by `records` 
 </p>
@@ -104,7 +104,7 @@ converted to a long format
 Create a [Bulk Upload file](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data/bulk_data#readme) for the `records` adding the `features` and the `photos` in the description field
 
 <p align="center">
-  <img alt="img-name" src="./image-2.png" width="700">
+  <img alt="img-name" src="img/image-10.png" width="700">
   <br>
     Screenshot of the BU template with the `General Description` field (free text) highlighted
 </p>
@@ -188,13 +188,13 @@ The CoD field `originaluse` hasn't been used
 Match the photographs metadata with the photographs themselves, using [cod.py](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/cod.py)
 
 <p align="center">
-  <img alt="img-name" src="./www/image-1.png" width="800">
+  <img alt="img-name" src="img/image-1.png" width="800">
   <br>
     <em>Screenshot of the 'photo' table export (`photo.xlsx`) with the metadata of the photograph DSC_2643s.jpg highlighted</em>
 </p>
 
 <p align="center">
-  <img alt="img-name" src="./www/image-2.png" width="400">
+  <img alt="img-name" src="img/image-2.png" width="400">
   <br>
     <em>Screenshot of the DSC_2643s.jpg photograph</em>
 </p>
@@ -207,7 +207,7 @@ See: [photos.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/
 #### Imported 
 
 <p align="center">
-  <img alt="img-name" src="cod-photo-collection.png" width="1000"><br>
+  <img alt="img-name" src="img/cod-photo-collection.png" width="1000"><br>
   <br>
   Screenshot from the [COD ResourceSpace server](https://cityofthedead.arch.ox.ac.uk/), collection COD-001.
 </p>
@@ -215,7 +215,7 @@ See: [photos.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/
 #### Metadata field descriptions
 
 <p align="center">
-  <img alt="img-name" src="image-5.png" width="1000">
+  <img alt="img-name" src="img/image-5.png" width="1000">
   <br>
   Screenshot from the [COD ResourceSpace server](https://cityofthedead.arch.ox.ac.uk/), collection COD-001, photo DSC_7789s.JPG
 </p>

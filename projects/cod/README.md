@@ -7,7 +7,6 @@ see [Issue #54](https://github.com/eamena-project/eamena-arches-dev/issues/54)
   <img alt="img-name" src="img/image-6.png" width="500">
   <br>
   <em>Location of the 91 Heritage Resources (in blue) overlaying the corresponding 91 Information Resources (in green) in the Northern Cemetery, Cairo, Egypt.</em>
-</p>
 
 ## Search URL
 

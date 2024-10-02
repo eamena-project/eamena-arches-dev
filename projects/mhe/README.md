@@ -11,7 +11,7 @@ Issue: [#55](https://github.com/eamena-project/eamena-arches-dev/issues/55)
 ### Location
 
 <p align="center">
-  <img alt="img-name" src="./image-1.png" width="500">
+  <img alt="img-name" src="./img/image-1.png" width="500">
   <br>
     Egyptian Eastern Desert (blue rectangle) west of Hurghada (Red Sea) = EAMENA `E33N27-12`
 </p>
@@ -26,7 +26,7 @@ Find HP `WN01`, `WN09`, ... by searching `NQT0` (NQT for Wadi Naqqat)
 https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&reportlink=false&precision=6&total=383332&term-filter=%5B%7B%22context%22%3A%22%22%2C%22context_label%22%3A%22Heritage%20Place%20-%20Resource%20Name%22%2C%22id%22%3A0%2C%22text%22%3A%22NQT0%22%2C%22type%22%3A%22term%22%2C%22value%22%3A%22NQT0%22%2C%22inverted%22%3Afalse%7D%5D&language=*
 ```
 <p align="center">
-  <img alt="img-name" src="./image.png" width="700">
+  <img alt="img-name" src="./img/image.png" width="700">
   <br>
     Search `NQT0` (2 heritage places on 01/08/2024)
 </p>
@@ -37,7 +37,7 @@ https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&rep
 ### Location
 
 <p align="center">
-  <img alt="img-name" src="./image-2.png" width="500">
+  <img alt="img-name" src="./img/image-2.png" width="500">
   <br>
 </p>
 
@@ -60,6 +60,41 @@ https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&rep
 
 ##  JRF0
 > Wadi Mudjaref
+
+### Location
+
+### Search URL
+
+##  DAL0
+> Deir Abu Lifa
+
+### Location
+
+### Search URL
+
+##  DAL0
+> Deir Abu Lifa
+
+### Location
+
+### Search URL
+
+##  SYG0
+>  Qasr Sagha hermitage
+
+### Location
+
+### Search URL
+
+##  RYN0
+>  Wadi Rayan
+
+### Location
+
+### Search URL
+
+##  SLM0
+>  Deir es-Salam
 
 ### Location
 

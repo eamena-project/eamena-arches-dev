@@ -1,5 +1,5 @@
 # MHE
-> "Monastic Heritage in Egypt", *aka*
+> Monastic Heritage in Egypt, *aka* Endangered Monastic Heritage in Egypt
 
 Dataset for the ["Documenting Coptic Monastic Heritage" project](https://www.ff.uni-lj.si/en/news/documenting-coptic-monastic-heritage-project)
 Cluster of sites (ex: Wadi Naqqat) are tagged with the triconsonantal root (ex: n-q-ṭ, ن-ق-ط) and grouped in this document by Grid Squares.

@@ -84,8 +84,6 @@ https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&rep
 ###  JRF0
 > Wadi Mudjaref
 
-[GS](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/_gs/E32N28-34.geojson)
-
 #### Search URL
 
 ```

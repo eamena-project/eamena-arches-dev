@@ -11,7 +11,7 @@ Issue: [#55](https://github.com/eamena-project/eamena-arches-dev/issues/55)
 <p align="center">
   <img alt="img-name" src="./img/image-1.png" width="500">
   <br>
-    Egyptian Eastern Desert (blue rectangle) west of Hurghada (Red Sea) = EAMENA `E33N27-12`
+    Egyptian Eastern Desert (blue rectangle) west of Hurghada (Red Sea)
 </p>
 
 [GS](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/_gs/E33N27-12.geojson)
@@ -53,10 +53,12 @@ Find HP `WK01`, `WK02`, ... by searching `KRZ0` (KRZ for Wadi Kharaza)
 https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&reportlink=false&precision=6&total=383574&language=*&term-filter=%5B%7B%22context%22%3A%22%22%2C%22context_label%22%3A%22Heritage%20Place%20-%20Resource%20Name%22%2C%22id%22%3A0%2C%22text%22%3A%22KRZ0%22%2C%22type%22%3A%22term%22%2C%22value%22%3A%22KRZ0%22%2C%22inverted%22%3Afalse%7D%5D
 ```
 
-##  BKT0
-> Bir Bikheit
+## E32N29-12
 
-### Location
+[GS](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/_gs/E32N29-12.geojson)
+
+###  BKT0
+> Bir Bikheit
 
 ### Search URL
 
@@ -69,7 +71,7 @@ https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&rep
 
 [GS](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/_gs/E32N28-34.geojson)
 
-### Search URL
+#### Search URL
 
 ## E30N29-41
 

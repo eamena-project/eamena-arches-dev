@@ -6,10 +6,7 @@ Cluster of sites (ex: Wadi Naqqat) are tagged with the triconsonantal root (ex: 
 
 Issue: [#55](https://github.com/eamena-project/eamena-arches-dev/issues/55)
 
-##  NQT0
-> Wadi Naqqat
-
-### Location
+## E33N27-12
 
 <p align="center">
   <img alt="img-name" src="./img/image-1.png" width="500">
@@ -19,7 +16,11 @@ Issue: [#55](https://github.com/eamena-project/eamena-arches-dev/issues/55)
 
 [GS](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/_gs/E33N27-12.geojson)
 
-### Search URL
+
+###  NQT0
+> Wadi Naqqat
+
+#### Search URL
 
 Find HP `WN01`, `WN09`, ... by searching `NQT0` (NQT for Wadi Naqqat)
 
@@ -32,10 +33,7 @@ https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&rep
     Search `NQT0` (2 heritage places on 01/08/2024)
 </p>
 
-##  KRZ0
-> Wadi Kharaza
-
-### Location
+## E32N28-33
 
 <p align="center">
   <img alt="img-name" src="./img/image-2.png" width="500">
@@ -44,7 +42,10 @@ https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&rep
 
 [GS](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/_gs/E32N28-33.geojson)
 
-### Search URL
+###  KRZ0
+> Wadi Kharaza
+
+#### Search URL
 
 Find HP `WK01`, `WK02`, ... by searching `KRZ0` (KRZ for Wadi Kharaza)
 
@@ -59,10 +60,12 @@ https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&rep
 
 ### Search URL
 
-##  JRF0
-> Wadi Mudjaref
+## E32N28-34
 
-### Location
+[GS](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/_gs/E32N28-34.geojson)
+
+###  JRF0
+> Wadi Mudjaref
 
 [GS](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/_gs/E32N28-34.geojson)
 

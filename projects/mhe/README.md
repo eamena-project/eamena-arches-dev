@@ -2,6 +2,7 @@
 > "Monastic Heritage in Egypt", *aka*
 
 Dataset for the ["Documenting Coptic Monastic Heritage" project](https://www.ff.uni-lj.si/en/news/documenting-coptic-monastic-heritage-project)
+Cluster of sites (ex: Wadi Naqqat) are tagged with the triconsonantal root (ex: n-q-ṭ, ن-ق-ط) and grouped in this document by Grid Squares.
 
 Issue: [#55](https://github.com/eamena-project/eamena-arches-dev/issues/55)
 
@@ -16,7 +17,7 @@ Issue: [#55](https://github.com/eamena-project/eamena-arches-dev/issues/55)
     Egyptian Eastern Desert (blue rectangle) west of Hurghada (Red Sea) = EAMENA `E33N27-12`
 </p>
 
-See the [GeoJSON file](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/emhe/data/NQT0-roi.geojson)
+[GS](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/_gs/E33N27-12.geojson)
 
 ### Search URL
 
@@ -41,7 +42,7 @@ https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&rep
   <br>
 </p>
 
-See the [GeoJSON file](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/emhe/data/KRZ0-roi.geojson)
+[GS](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/_gs/E32N28-33.geojson)
 
 ### Search URL
 
@@ -63,42 +64,51 @@ https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&rep
 
 ### Location
 
+[GS](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/_gs/E32N28-34.geojson)
+
 ### Search URL
 
-##  DAL0
+## E30N29-41
+
+[GS](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/_gs/E30N29-41.geojson)
+
+###  DAL0
 > Deir Abu Lifa
 
-### Location
+#### Search URL
 
-### Search URL
-
-##  DAL0
-> Deir Abu Lifa
-
-### Location
-
-### Search URL
-
-##  SYG0
+###  SYG0
 >  Qasr Sagha hermitage
 
-### Location
+#### Search URL
 
-### Search URL
+## E30N29-12
 
-##  RYN0
+[GS](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/_gs/E30N29-12.geojson)
+
+###  RYN0
 >  Wadi Rayan
 
-### Location
+#### Search URL
 
-### Search URL
+## E30N29-14
 
-##  SLM0
+[GS](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/_gs/E30N29-12.geojson)
+
+###  SLM0
 >  Deir es-Salam
 
-### Location
+#### Search URL
 
-### Search URL
+
+## E30N29-22
+
+[GS](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/_gs/E30N29-22.geojson)
+
+### NQL0
+> Naqlun (Deir el Malak Gabriel)
+
+#### Search URL
 
 # Reference data
 

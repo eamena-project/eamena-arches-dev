@@ -36,7 +36,7 @@ https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&rep
 ## E32N28-33
 
 <p align="center">
-  <img alt="img-name" src="./img/image-2.png" width="500">
+  <img alt="img-name" src="./img/image-2.png" width="400">
   <br>
 </p>
 

@@ -55,7 +55,11 @@ https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&rep
 
 ## E32N29-12
 
-![alt text](img/image-3.png)
+<p align="center">
+  <img alt="img-name" src="./img/image-3.png" width="500">
+  <br>
+</p>
+
 
 [GS](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/_gs/E32N29-12.geojson)
 
@@ -64,9 +68,16 @@ https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&rep
 
 ### Search URL
 
+```
+https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&reportlink=false&precision=6&total=383724&language=*&term-filter=%5B%7B%22context%22%3A%22%22%2C%22context_label%22%3A%22Heritage%20Place%20-%20Resource%20Name%22%2C%22id%22%3A0%2C%22text%22%3A%22BKT0%22%2C%22type%22%3A%22term%22%2C%22value%22%3A%22BKT0%22%2C%22inverted%22%3Afalse%7D%5D
+```
+
 ## E32N28-34
 
-![alt text](img/image-4.png)
+<p align="center">
+  <img alt="img-name" src="./img/image-4.png" width="500">
+  <br>
+</p>
 
 [GS](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/_gs/E32N28-34.geojson)
 
@@ -77,9 +88,16 @@ https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&rep
 
 #### Search URL
 
+```
+https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&reportlink=false&precision=6&total=383723&language=*&term-filter=%5B%7B%22context%22%3A%22%22%2C%22context_label%22%3A%22Heritage%20Place%20-%20Resource%20Name%22%2C%22id%22%3A0%2C%22text%22%3A%22JRF0%22%2C%22type%22%3A%22term%22%2C%22value%22%3A%22JRF0%22%2C%22inverted%22%3Afalse%7D%5D
+```
+
 ## E30N29-41
 
-![alt text](img/image-5.png)
+<p align="center">
+  <img alt="img-name" src="./img/image-5.png" width="500">
+  <br>
+</p>
 
 [GS](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/_gs/E30N29-41.geojson)
 
@@ -88,14 +106,25 @@ https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&rep
 
 #### Search URL
 
+```
+https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&reportlink=false&precision=6&total=383724&language=*&term-filter=%5B%7B%22context%22%3A%22%22%2C%22context_label%22%3A%22Heritage%20Place%20-%20Resource%20Name%22%2C%22id%22%3A2%2C%22text%22%3A%22DAL0%22%2C%22type%22%3A%22term%22%2C%22value%22%3A%22DAL0%22%2C%22inverted%22%3Afalse%7D%5D
+```
+
 ###  SYG0
 >  Qasr Sagha hermitage
 
 #### Search URL
 
+```
+https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&reportlink=false&precision=6&total=383724&language=*&term-filter=%5B%7B%22context%22%3A%22%22%2C%22context_label%22%3A%22Heritage%20Place%20-%20Resource%20Name%22%2C%22id%22%3A0%2C%22text%22%3A%22SYG0%22%2C%22type%22%3A%22term%22%2C%22value%22%3A%22SYG0%22%2C%22inverted%22%3Afalse%7D%5D
+```
+
 ## E30N29-12
 
-![alt text](img/image-6.png)
+<p align="center">
+  <img alt="img-name" src="./img/image-6.png" width="500">
+  <br>
+</p>
 
 [GS](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/_gs/E30N29-12.geojson)
 
@@ -104,9 +133,16 @@ https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&rep
 
 #### Search URL
 
+```
+https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&reportlink=false&precision=6&total=383724&language=*&term-filter=%5B%7B%22context%22%3A%22%22%2C%22context_label%22%3A%22Heritage%20Place%20-%20Resource%20Name%22%2C%22id%22%3A0%2C%22text%22%3A%22RYN0%22%2C%22type%22%3A%22term%22%2C%22value%22%3A%22RYN0%22%2C%22inverted%22%3Afalse%7D%5D
+```
+
 ## E30N29-14
 
-![alt text](img/image-7.png)
+<p align="center">
+  <img alt="img-name" src="./img/image-7.png" width="500">
+  <br>
+</p>
 
 [GS](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/_gs/E30N29-14.geojson)
 
@@ -115,17 +151,28 @@ https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&rep
 
 #### Search URL
 
+```
+https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&reportlink=false&precision=6&total=383724&language=*&term-filter=%5B%7B%22context%22%3A%22%22%2C%22context_label%22%3A%22Heritage%20Place%20-%20Resource%20Name%22%2C%22id%22%3A0%2C%22text%22%3A%22SLM0%22%2C%22type%22%3A%22term%22%2C%22value%22%3A%22SLM0%22%2C%22inverted%22%3Afalse%7D%5D
+```
 
 ## E30N29-22
 
-![alt text](img/image-8.png)
+<p align="center">
+  <img alt="img-name" src="./img/image-8.png" width="500">
+  <br>
+</p>
 
 [GS](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/_gs/E30N29-22.geojson)
 
 ### NQL0
 > Naqlun (Deir el Malak Gabriel)
 
+
 #### Search URL
+
+```
+https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&reportlink=false&precision=6&total=383724&language=*&term-filter=%5B%7B%22context%22%3A%22%22%2C%22context_label%22%3A%22Heritage%20Place%20-%20Resource%20Name%22%2C%22id%22%3A0%2C%22text%22%3A%22NQL0%22%2C%22type%22%3A%22term%22%2C%22value%22%3A%22NQL0%22%2C%22inverted%22%3Afalse%7D%5D
+```
 
 # Reference data
 

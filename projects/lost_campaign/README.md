@@ -22,6 +22,8 @@ https://database.eamena.org/api/search/export_results?paging-filter=1&tiles=true
 
 See: https://zenodo.org/records/11067210
 
+![alt text](img/image-7.png)
+
 ### Maps
 
 ![alt text](img/image-2.png)

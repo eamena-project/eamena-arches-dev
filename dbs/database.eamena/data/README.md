@@ -56,8 +56,9 @@ Thinner categories (`level3`) colored by groups: [[fields-description.html](http
 <p align="center">
   <img alt="img-name" src="www/image-2.png" width="1000">
   <br>
-    <em>Screenshot of the HTML dynamic/interactive table 'fields-description.html', with a search on 'Agricul' with field colored by groups and field descriptions</em>
+    <em>Screenshot of the HTML dynamic/interactive table 'fields-description.html', with a search on 'Agricul' with field colored by groups and field descriptions. The 'is MDS' has the value 1 when this field is part of the Minimun Data Standards</em>
 </p>
+
 
 ##### Groups of fields descriptions
 
@@ -78,8 +79,6 @@ To read the Jupter NB output:
 
 <p align="center">
   <img alt="img-name" src="reference_data/rm/hp/mds/img/documentation_schema.png" width="800">
-  <br>
-    How to read the MDS assessment of an HP, see the list of field on the [EAMENA website](https://eamena.web.ox.ac.uk/advanced-use#rm-hp-fields)
 </p>
 
 MDS fields in this HTML circular plot [[mds-reference.html](https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/mds/mds-reference.html)]

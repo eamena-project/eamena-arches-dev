@@ -72,7 +72,17 @@ Fields (`level3`) are grouped in broader categories, or groups (`level1`). These
 ##### MDS
 > Minimum Data Standards. Completness of data, on the [EAMENA website](https://eamena.org/advanced-use#rm-hp-mds)
 
-Minimum Data Standards (MDS) of Heritage Places. MDS fields in this HTML circular plot [[mds-reference.html](https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/mds/mds-reference.html)]
+Minimum Data Standards (MDS) of Heritage Places. To check if your data complies with the MDS standard, you can test its GeoJSON URL in this Colab Jupyter NB: [XXXX]()
+
+To read the Jupter NB output:
+
+<p align="center">
+  <img alt="img-name" src="reference_data/rm/hp/mds/img/documentation_schema.png" width="600">
+  <br>
+    How to read the MDS assessment of an HP, see the list of field on the [EAMENA website](https://eamena.web.ox.ac.uk/advanced-use#rm-hp-fields)
+</p>
+
+MDS fields in this HTML circular plot [[mds-reference.html](https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/mds/mds-reference.html)]
 
 <p align="center">
   <img alt="img-name" src="https://github.com/eamena-project/eamena-arches-dev/blob/main/www/arches-v7-hp-data-mds-pie.png" width="600">

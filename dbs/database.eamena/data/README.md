@@ -77,7 +77,7 @@ Minimum Data Standards (MDS) of Heritage Places. To check if your data complies 
 To read the Jupter NB output:
 
 <p align="center">
-  <img alt="img-name" src="reference_data/rm/hp/mds/img/documentation_schema.png" width="600">
+  <img alt="img-name" src="reference_data/rm/hp/mds/img/documentation_schema.png" width="800">
   <br>
     How to read the MDS assessment of an HP, see the list of field on the [EAMENA website](https://eamena.web.ox.ac.uk/advanced-use#rm-hp-fields)
 </p>
@@ -85,7 +85,7 @@ To read the Jupter NB output:
 MDS fields in this HTML circular plot [[mds-reference.html](https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/mds/mds-reference.html)]
 
 <p align="center">
-  <img alt="img-name" src="https://github.com/eamena-project/eamena-arches-dev/blob/main/www/arches-v7-hp-data-mds-pie.png" width="600">
+  <img alt="img-name" src="https://github.com/eamena-project/eamena-arches-dev/blob/main/www/arches-v7-hp-data-mds-pie.png" width="500">
   <br>
     <em>A screenshot of the `mds_level.html` file showing the 98 fields of the Heritage Places with the MDS fields (highlighted, thumbs up) using the `mds-reference.ipynb` script</em>
 </p>

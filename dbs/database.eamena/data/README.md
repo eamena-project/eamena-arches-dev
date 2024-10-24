@@ -217,6 +217,15 @@ Will create the many TSV located into the folder https://github.com/eamena-proje
 	<em>A search on 'Rol' in the <a href="https://github.com/eamena-project/eamena-arches-dev/blob/main/data/bulk/templates/doc/bu_Person-Organization.tsv">bu_Person-Organization</a> file</em>
 </p>
 
+### Other
+
+For test (user permissions, etc.) and development purposes, a toy example of the BU is available here: [my_false_bu.xlsx](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/bulk_data/bu_files/my_false_bu.xlsx). This BU will create one HP in the middle of the Mediterranean and create been located using this Search URL:
+
+```
+https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&reportlink=false&precision=6&total=383891&term-filter=%5B%7B%22context%22%3A%22%22%2C%22context_label%22%3A%22Heritage%20Place%20-%20Resource%20Name%22%2C%22id%22%3A0%2C%22text%22%3A%22MyTestHP%22%2C%22type%22%3A%22term%22%2C%22value%22%3A%22MyTestHP%22%2C%22inverted%22%3Afalse%7D%5D&language=*
+```
+
+Or, more simply, searching for: `MyTestHP` in the search bar.
 
 ## Data append
 

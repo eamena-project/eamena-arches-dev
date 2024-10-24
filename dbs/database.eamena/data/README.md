@@ -1,6 +1,6 @@
 # EAMANA DB's Data
 
-Either [Reference Data](#reference-data) and [Business data](#business-data) ([BU upload](#bu-append), etc.)
+Either [Reference Data](#reference-data) and [Business data](#business-data) ([BU upload](#bulk-upload), [BU append](#bu-append), etc.)
 
 * Abrevv.
 

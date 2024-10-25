@@ -3,6 +3,7 @@
 ## Permissions
 > User Permissions, Bulk-application of instance-level permissions, Built-in permissions, ...
 
+
 ### Groups
 
 #### Arches native groups
@@ -13,7 +14,11 @@
 * Guest
 * Mobile Project Administrator
 * RDM Administrator
-* Resource Deleter
+
+###### Resource Deleter
+
+Chosen permissions:
+
 	```
 	-models | resource | Can add resource
 	-models | resource | Can change resource
@@ -24,7 +29,11 @@
 	-models | resource instance | Delete resource
 	-models | resource instance | Read resource
 	```
-* Resource Editor
+
+###### Resource Editor
+
+Chosen permissions:
+
 	```
 	-models | card | Can add tile
 	-models | card | Can change tile
@@ -43,13 +52,18 @@
 	-models | resource instance | Update resource
 	-models | resource instance | Read resource
 	```
-* Resource Reviewer
+
+###### Resource Reviewer
+
+Chosen permissions:
 
 	```
 	-models | node group | Delete
 	-models | node group | Create/Update
 	```
-* System Administrator
+###### System Administrator
+
+
 
 #### EAMENA former groups
 

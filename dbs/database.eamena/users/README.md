@@ -6,16 +6,32 @@
 
 ### Groups
 
+#### EAMENA groups
+
+Unless otherwise specified, these groups are set up in Django Admin/Groups (https://database.eamena.org/admin/auth/group/)
+
+| permission level | EA group name | Arches groups combination  | description  |
+|---|---|---|---|
+| 1 | Guest | Guest | same as Arches [Guest](#guest), max zoom = 10 (~town scale)[^3], cannot see: condition assessment[^1], ~~coordinates[^1]~~ |
+| 2 | Researcher | Researcher | same as Arches  [Guest](#guest), no edit, no add  |
+| 3 | Contributor | [Resource Editor](#resource-editor) + [Resource Reviewer](#resource-reviewer)  |  can create/edit but can't delete |
+| 4 | Staff | [Resource Editor](#resource-editor) + [Resource Reviewer](#resource-reviewer) + [Resource Deleter](#resource-deleter) + RDM Adinistrator + Application Administrator [^2] | cannot change Resource Models and System settings |
+| 5 | Sys Admin | * | = superuser |
+
 #### Arches native groups
 
 * Application Administrator
 * Crowdsource Editor
 * Graph Editor
-* Guest
 * Mobile Project Administrator
 * RDM Administrator
+* ...
+
+###### Guest
+> Arches Guest
 
 ###### Resource Deleter
+> Arches Resource Deleter
 
 Chosen permissions:
 
@@ -64,17 +80,6 @@ Chosen permissions:
 
 ###### System Administrator
 
-### EAMENA new groups
-
-Unless otherwise specified, these groups are set up in Django Admin/Groups (https://database.eamena.org/admin/auth/group/)
-
-| permission level | EA group name | Arches groups combination  | description  |
-|---|---|---|---|
-| 1 | Guest | Guest | same as Arches 'Guest', max zoom = 10 (~town scale)[^3], cannot see: condition assessment[^1], ~~coordinates[^1]~~ |
-| 2 | Researcher | Researcher | same as Arches 'Guest', no edit, no add  |
-| 3 | Contributor | [Resource Editor](#resource-editor) + [Resource Reviewer](#resource-reviewer)  |  can create/edit but can't delete |
-| 4 | Staff | [Resource Editor](#resource-editor) + [Resource Reviewer](#resource-reviewer) + [Resource Deleter](#resource-deleter) + RDM Adinistrator + Application Administrator [^2] | cannot change Resource Models and System settings |
-| 5 | Sys Admin | * | = superuser |
 
 ### EAMENA former groups
 

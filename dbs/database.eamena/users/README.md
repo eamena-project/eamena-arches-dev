@@ -22,6 +22,7 @@ Unless otherwise specified, these groups are set up in Django Admin/Groups (http
 > EAMENA database contributors permissions
 
 | Arches groups combination  | description  |
+|---|---|
 | [Resource Editor](#resource-editor) + [Resource Reviewer](#resource-reviewer)  |  ![alt text](image-1.png) |
 
 user example in Django Admin: `profile_contributor`
@@ -31,6 +32,7 @@ user example in Django Admin: `profile_contributor`
 > EAMENA Staff (Oxford, Leicester, Durham, etc.) permissions
 
 | Arches groups combination  | description  |
+|---|---|
 | [Resource Editor](#resource-editor) + [Resource Reviewer](#resource-reviewer) + [Resource Deleter](#resource-deleter) + RDM Adinistrator + Application Administrator [^2] | ![alt text](image.png) |
 
 user example in Django Admin: `profile_staff`

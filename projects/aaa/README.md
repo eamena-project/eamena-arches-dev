@@ -109,7 +109,7 @@ https://database.eamena.org/api/search/export_results?paging-filter=1&tiles=true
 <p align="center">
   <img alt="img-name" src="img/image-1.png" width="600">
   <br>
-  Grid Squares of the AAA
+  Grid Squares of the AAA: [gs_mbr.geojson](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/aaa/gs/gs_mbr.geojson)
 </p>
 
 ## Zenodo sandobx deposit

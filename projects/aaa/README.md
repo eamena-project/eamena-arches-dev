@@ -2,7 +2,7 @@
 > Atlas archéologique d'Algérie
 
 <p align="center">
-  <img alt="img-name" src="image.png" width="600">
+  <img alt="img-name" src="img/image.png" width="600">
   <br>
   The "Atlas archéologique d'Algérie".
 </p>

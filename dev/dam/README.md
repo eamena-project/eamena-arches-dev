@@ -53,4 +53,4 @@
 | CREDIT  | concatenation of the `Author` of the image and the `Copyright`   |
 | CAMERA MAKE/MODEL  | the model of the camera   |
 | CAPTION  | concatenation of the `Title` of the image, the EAMENA ID (ex: COD-001), and the description  |
-| Coordinates | see the cod.py file, function [add_metadata_xy_to_photo()](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/code/cod.py#L156) |
+| Coordinates | see the `cod.py` file, function [add_metadata_xy_to_photo()](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/code/cod.py#L156) |

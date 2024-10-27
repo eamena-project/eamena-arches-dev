@@ -170,7 +170,7 @@ These grids come from the Grid Square Ressource Model
   - managed in Google Earth but not yet uploaded in EAMENA
 
 <p align="center">
-  <img alt="img-name" src="../www/audit-data-0hp.png" width="400">
+  <img alt="img-name" src="../../../www/audit-data-0hp.png" width="400">
   <br>
     <em>'E32N29-23' grid square has been surveyed but doesn't have any Heritage places</em>
 </p>
@@ -193,7 +193,7 @@ here: https://github.com/eamena-project/eamena-arches-dev/blob/main/data/grids/d
 Grids are strored as a GeoJSON file here: https://github.com/eamena-project/eamena-arches-dev/blob/main/data/grids/EAMENA_Grid.geojson
 
 <p align="center">
-  <img alt="img-name" src="../www/arches-v7-grids-geojson.png" width="700">
+  <img alt="img-name" src="../../../www/arches-v7-grids-geojson.png" width="700">
   <br>
     <em>EAMENA v4 grids (GeoJSON)</em>
 </p>
@@ -205,7 +205,7 @@ Grids are strored as a GeoJSON file here: https://github.com/eamena-project/eame
 The QGIS project is here: https://github.com/eamena-project/eamena-arches-dev/blob/main/data/grids/grids_nb_hp.qgz. But you can also use the QGIS project associated with the GeoServer [projet_gesoserver.qgz](https://github.com/eamena-project/eamena-arches-dev/blob/main/gis/qgis/projet_gesoserver.qgz)
 
 <p align="center">
-  <img alt="img-name" src="../www/arches-v7-grids-qgis.png" width="700">
+  <img alt="img-name" src="../../../www/arches-v7-grids-qgis.png" width="700">
   <br>
     <em>Number of Heritage Places by EAMENA v4 grids (QGIS)</em>
 </p>
@@ -226,7 +226,7 @@ see the [QDGC folder](https://github.com/eamena-project/eamena-arches-dev/tree/m
 Use the R script [eamena-grid.R](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/grids/eamena-grid.R) to create an interactive web map like [this one](https://eamena-project.github.io/eamena-arches-dev/data/grids/grid_afghanistan)
 
 <p align="center">
-  <img alt="img-name" src="../www/arches-v7-grids-html.png" width="500">
+  <img alt="img-name" src="../../../www/arches-v7-grids-html.png" width="500">
   <br>
     <em>New grids for Afghanisthan (here in HTML)</em>
 </p>

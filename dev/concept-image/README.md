@@ -23,6 +23,7 @@ The objective is to link the concept image UUID to the RM (ex: node Threat type)
 * [GitHub thread #91](https://github.com/eamena-project/eamena-arches-dev/issues/91)
 * [fields](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/rm/hp/mds/mds-template-readonly.tsv) and [values](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/concepts/concepts_readonly.tsv) UUIDs
 * [Concepts with images](https://github.com/eamena-project/eamena-data?tab=readme-ov-file#concepts)
+* [Concepts in Google Colab](https://colab.research.google.com/drive/1qzKlquPN6c_6wzmSheujZ0mas9UzfRlg)
 * [COD GitHub project](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/cod#photographs)
 * [COD Resource Space server](https://cityofthedead.arch.ox.ac.uk/pages/collections_featured.php)
 

@@ -17,6 +17,10 @@ The objective is to link the concept image UUID to the RM (ex: node Threat type)
     <em>A clear case of Agricultural/Pastoral (orchads) threat over cultural hertiage </em>
 </p>
 
+## Images metadata
+
+* [COD GitHub project](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/cod#photographs)
+* [COD Resource Space server](https://cityofthedead.arch.ox.ac.uk/pages/collections_featured.php)
 
 See: 
 * https://colab.research.google.com/github/eamena-project/eamena-data/blob/main/reference-data/concepts/heritage_places/concepts_images_graph.ipynb

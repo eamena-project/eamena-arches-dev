@@ -73,7 +73,7 @@ Export DBs tables to XLSX
 
 #### XLSX -> CSV
 
-Merge the XLSX from the two DBs, remove duplicates and export as CSV by running the function `merge2dbs` of [cod.py](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/cod.py#L6). Tables are now in the [csv/](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/cod/business_data/csv) folder
+Merge the XLSX from the two DBs, remove duplicates and export as CSV by running the function `merge2dbs` of [cod.py](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/code/cod.py#L6). Tables are now in the [csv/](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/cod/business_data/csv) folder
 
 - [records.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/business_data/csv/records.csv): n = 91, `unitnumber` or `record`: equivalent to the EAMENA `Heritage Places`.
 - [features.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/business_data/csv/features.csv): n = 91 rows (these are the `records`) but 16 groups of columns (here in color, the left column in grey is the `record` identifier)
@@ -184,7 +184,7 @@ The CoD field `originaluse` hasn't been used
 
 ### Metadata
 
-Match the photographs metadata with the photographs themselves, using [cod.py](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/cod.py)
+Match the photographs metadata with the photographs themselves, using [cod.py](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/code/cod.py)
 
 <p align="center">
   <img alt="img-name" src="img/image-1.png" width="800">
@@ -200,7 +200,7 @@ Match the photographs metadata with the photographs themselves, using [cod.py](h
 
 See: [photos.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/business_data/csv/photos.csv)
 
-* GPS: function `add_metadata_XY_to_photo` of [cod.py](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/cod.py#L94)
+* GPS: function `add_metadata_XY_to_photo` of [cod.py](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/code/cod.py#L94)
 
 
 #### Imported 

@@ -158,7 +158,7 @@ field names' UUIDs are listed here: [ir-uuids-readonly.tsv](ir-uuids-readonly.ts
 These grids come from the Grid Square Ressource Model
 
 <p align="center">
-  <img alt="img-name" src="../www/arches-v7-grids-ea.png" width="700">
+  <img alt="img-name" src="../../../www/arches-v7-grids-ea.png" width="700">
   <br>
     <em>EAMENA v4 grids (in the database)</em>
 </p>

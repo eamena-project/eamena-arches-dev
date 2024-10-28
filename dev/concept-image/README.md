@@ -19,7 +19,7 @@ The objective is to link the concept image UUID to the RM (ex: node Threat type)
 
 ## Images metadata
 
-* [website 'hub']()
+* [website 'hub'](https://eamena.org/advanced-use#rm-hp-erd)
 * [GitHub thread #91](https://github.com/eamena-project/eamena-arches-dev/issues/91)
 * [fields](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/rm/hp/mds/mds-template-readonly.tsv) and [values](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/concepts/concepts_readonly.tsv) UUIDs
 * [Concepts with images](https://github.com/eamena-project/eamena-data?tab=readme-ov-file#concepts)

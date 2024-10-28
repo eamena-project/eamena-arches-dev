@@ -20,11 +20,11 @@ Iconic images (i.e. visual documentation) of particular cases of Threats, Distur
 
 | field | description |
 |----------|----------|
-| label_parent    | parent node name (ie field)  |
-| label    | concept name (ie value, or case) |
+| label_parent    | parent node name (ie [field labels](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/rm/hp/mds/mds-template-readonly.tsv))  |
+| label    | concept name (ie [value labels](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/concepts/concepts_readonly.tsv), or case) |
 | image    | image filename   |
-| uuid    | EAMENA UUID of this case (ie value, list: [concepts_readonly.tsv](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/concepts/concepts_readonly.tsv)) |
-| uuid_parent    | EAMENA UUID of the parent node (ie field, list: [mds-template-readonly.tsv](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/rm/hp/mds/mds-template-readonly.tsv))  |
+| uuid    | EAMENA UUID of this case (ie value, list: [value uuid](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/concepts/concepts_readonly.tsv)) |
+| uuid_parent    | EAMENA UUID of the parent node (ie field, list: [field uuid](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/rm/hp/mds/mds-template-readonly.tsv))  |
 
 <em>The list.tsv table</em>
 

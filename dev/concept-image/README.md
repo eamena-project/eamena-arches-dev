@@ -1,16 +1,16 @@
 # Iconic images for EAMENA Concepts
 
-Associate one image to an EAMENA concept to illustrate the latter (ex: Threat type = Agricultural/Pastoral). Insert the concept UUID to the image's metadata (ex: `767e9467-3bc2-3f71-9427-0ace387bd843`).
+Associate one image to an EAMENA concept to illustrate the latter (ex: Threat type = Agricultural/Pastoral).
 
 
 <p align="center">
   <img alt="img-name" src="image.png" width="500">
   <img alt="img-name" src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/concepts_images_threat_type_agricole.png" width="500">
   <br>
-    <em>The `Agricultural/Pastoral` threat concept in the RDM illustrated with a photograph showing  Agricultural/Pastoral (orchads) threat over cultural heritage </em>
+    <em>The `Agricultural/Pastoral` threat concept in the RDM illustrated with a photograph showing  Agricultural/Pastoral (orchads) threat over cultural heritage.</em>
 </p>
 
-The objective is to link the concept image UUID to the RM (ex: node Threat type) and display these images in a `pyvis` interactive graph
+The objective is to link the concept image UUID to the RM ex: Threat type = Agricultural/Pastoral, UUID: `767e9467-3bc2-3f71-9427-0ace387bd843`) and display these images as leafs in the Entity-Relationship Diagram of HPs (interactive graph)
 
 
 ## Images metadata

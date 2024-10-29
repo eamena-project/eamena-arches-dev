@@ -20,30 +20,42 @@ ref_hp_mds <- function(mds.template = "https://raw.githubusercontent.com/eamena-
                        mds.path = "C:/Rprojects/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/mds/",
                        mds.datatable.name = "fields-description.html",
                        verbose = TRUE){
-
+  
   # library(readxl)
   library(DT)
   # library(htmlwidgets)
-
-  # Download the file temporarily
-  temp_file <- tempfile(fileext = ".xlsx")
-  download.file(mds.template, destfile = temp_file, mode = "wb")
-  df <- readxl::read_excel(temp_file, sheet = 1)
+  if(grepl("https", mds.template)){
+    # 
+    if(verbose){
+      print(paste0("Read from GH"))
+    }
+    # Download the file temporarily
+    temp_file <- tempfile(fileext = ".xlsx")
+    download.file(mds.template, destfile = temp_file, mode = "wb")
+    df <- readxl::read_excel(temp_file, sheet = 1)
+  } else {
+    # read 
+    if(verbose){
+      print(paste0("Read local file"))
+    }
+    df <- readxl::read_excel(mds.template, sheet = 1)
+    
+  }
   df[["is MDS"]] <- NA
   df[grep("Yes", df[["Minimum Data Standard"]]), "is MDS"] <- "Yes"
-
+  
   # paths
   #
   # mds.path <- paste0(root.path, "")
   # #
   # mds.template <- paste0(mds.path, "mds-template.xlsx")
   # df <- read_excel(mds.template, sheet = 1)
-
-
+  
+  
   df$level1.url <- stringr::str_to_title(gsub(" ", "_", df$level1))
   df$level3.url <- stringr::str_to_title(gsub("//", "_", gsub(" ", "_", df$level3)))
   sort(df$level3.url)
-
+  
   description.field <- "description"
   df_filtered <- df[, c("num", "level1", "level2", "level3", "is MDS", description.field, "color")]
   colnames(df_filtered)[colnames(df_filtered) == 'level3'] <- 'Heritage Place field'
@@ -78,4 +90,4 @@ ref_hp_mds <- function(mds.template = "https://raw.githubusercontent.com/eamena-
   }
 }
 
-ref_hp_mds(mds.datatable.name = "fields-description.html")
+ref_hp_mds(mds.template = "C:/Rprojects/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/mds/mds-template.xlsx", mds.datatable.name = "fields-description.html")

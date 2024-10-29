@@ -145,6 +145,9 @@ def main(file_in, dir_out):
 
     markdown_table = "| level1 | level3 |\n|--------|--------|\n"
     xl = pd.ExcelFile(tmp_file_path)
+    # xl = pd.read_excel(tmp_file_path, engine='xlrd')
+    # print(tmp_file_path)
+    xl = pd.read_excel(tmp_file_path, engine='openpyxl')
     excluded_ws = ["Heritage Place", "_example_", "_mds_", "Info Resource", "InfoRes - Imagery", "InfoRes - Cartography", "Person-Organization", "Grid Square", "Relationships", "Colour Coding"]
 
     for sheet_name in xl.sheet_names:

@@ -251,9 +251,12 @@ The last/updated version of the BU template appears on the upper part of this ta
   
 <p align="center">
 
+
+
 | Name 	| Host 	| URL 	|
 |------|------	|-----	|
-| Bulk_Upload_template_240911.xlsx | [GitHub URL](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/bulk_data/templates/Bulk_Upload_template_240911.xlsx)  | [download file](https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/dbs/database.eamena/data/bulk_data/templates/Bulk_Upload_template_240911.xlsx) |
+| Bulk_Upload_template_241029.xlsx | [GitHub URL](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/bulk_data/templates/Bulk_Upload_template_241029.xlsx)  | [download file](https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/dbs/database.eamena/data/bulk_data/templates/Bulk_Upload_template_241029.xlsx) |
+| ~~Bulk_Upload_template_240911.xlsx~~ | [GitHub URL](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/bulk_data/templates/Bulk_Upload_template_240911.xlsx)  | [download file](https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/dbs/database.eamena/data/bulk_data/templates/Bulk_Upload_template_240911.xlsx) |
 | ~~Bulk_Upload_template_240701.xlsx~~ | [GitHub URL](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/bulk_data/templates/Bulk_Upload_template_240701.xlsx)  | [download file](https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/dbs/database.eamena/data/bulk_data/templates/Bulk_Upload_template_240701.xlsx) |
 | ~~Bulk_Upload_template_231017.xlsx~~ | [GitHub URL](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/bulk_data/templates/Bulk_Upload_template_231017.xlsx) | [download file](https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/dbs/database.eamena/data/bulk_data/templates/Bulk_Upload_template_231017.xlsx) | 
 | ~~Bulk_Upload_template_221025.xlsx~~ | [GitHub URL](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/bulk_data/templates/Bulk_Upload_template_221025.xlsx)	| [download file](https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/dbs/database.eamena/data/bulk_data/templates/Bulk_Upload_template_221025.xlsx) | 

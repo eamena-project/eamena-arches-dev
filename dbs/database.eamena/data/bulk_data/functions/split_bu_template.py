@@ -138,6 +138,11 @@ def split_and_save_tables(df, sheet_name, output_dir, root_values="https://githu
     return local_markdown_table
 
 def main(file_in, dir_out):
+    """
+
+    :param file_in: the name of the BU template file hosted on GitHub
+
+    """
     response = rq.get("https://github.com/eamena-project/eamena-arches-dev/raw/main/dbs/database.eamena/data/bulk_data/templates/" + file_in)
     with tempfile.NamedTemporaryFile(delete=False) as tmp_file:
         tmp_file.write(response.content)
@@ -146,12 +151,13 @@ def main(file_in, dir_out):
     markdown_table = "| level1 | level3 |\n|--------|--------|\n"
     xl = pd.ExcelFile(tmp_file_path)
     # xl = pd.read_excel(tmp_file_path, engine='xlrd')
-    # print(tmp_file_path)
-    xl = pd.read_excel(tmp_file_path, engine='openpyxl')
+    print(f"read {tmp_file_path}")
+    # xl = pd.read_excel(tmp_file_path, engine='openpyxl')
     excluded_ws = ["Heritage Place", "_example_", "_mds_", "Info Resource", "InfoRes - Imagery", "InfoRes - Cartography", "Person-Organization", "Grid Square", "Relationships", "Colour Coding"]
 
     for sheet_name in xl.sheet_names:
         if sheet_name not in excluded_ws:
+            print(sheet_name)
             df = xl.parse(sheet_name)
             markdown_table += split_and_save_tables(df, sheet_name, dir_out)  # Append the results of each sheet directly
 
@@ -159,7 +165,7 @@ def main(file_in, dir_out):
     outmd = os.path.join(dir_out, "README.md")
     with open(outmd, "w") as file:
         file.write(markdown_table)
-    print("README file exported")
+    print(f"README file exported in: {dir_out}")
     xl.close()
     os.remove(tmp_file_path)  # Clean up temporary file
 

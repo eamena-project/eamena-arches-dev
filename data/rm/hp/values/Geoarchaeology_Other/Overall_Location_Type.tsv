@@ -1,0 +1,4 @@
+Overall Location Type	نوع الموقع عمومًا	Definitions	التعريف			
+Data Extent	مدى البيانات	The mapped extent of the geoarchaeological evidence reflects the extent of the dataset available (e.g. box showing the extent of available geophysical survey data). 				
+Interpolated boundary	الحدود المستنبطة	The mapped extent of the geoarchaeological evidence has been interpolated outside the bounds of the available data (e.g. polygon showing the extent of a deposit which is interpolated from scattered individual cores).				
+Observed geoarchaeological boundary	حدود أثرية ملحوظة	The mapped extent of the geoarchaeological evidence reflects the extent of the evidence as observed from available data (e.g. polygon over a series of beach ridges visible on satellite images).				

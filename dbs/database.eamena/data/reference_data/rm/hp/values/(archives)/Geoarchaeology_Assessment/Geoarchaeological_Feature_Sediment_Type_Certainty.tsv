@@ -1,0 +1,7 @@
+Geoarchaeological Feature Sediment Type Certainty	مدى التأكد	Definitions	التعريف			
+Negligible	ضئيل	The investigator has considerable reason to doubt their identifications/interpretations. The evidence may also be contradicted by published sources/other geoscientific specialists or data		ضئيل	ok	تافه
+Low	ضعيف	The investigator has considerable reason to doubt their identifications/interpretations.  It is not confirmed by published sources/other geoscientific specialists or data				
+Medium	متوسط	The investigator has some reason to doubt their identifications/interpretations.  It is not confirmed by published sources/other geoscientific specialists or data				
+High	عالي	The investigator has little reason to doubt their identification, it may or may not be confirmed by published sources/other geoscientific specialists or data		عال	no	
+Definite	مؤكد	The investigator has no reason to doubt their identification and it is either confirmed  It is not confirmed by published sources/other geoscientific specialists or data				
+Not Applicable	لا يمكن تحديده	The investigator has entered 'No Visible/Known' or 'unknown' and certainty does not apply		لا يمكن تحديده	ok	غير قابل للتطبيق

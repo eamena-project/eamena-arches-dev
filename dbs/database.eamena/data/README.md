@@ -253,13 +253,14 @@ The last/updated version of the BU template appears on the upper part of this ta
 
 | Name 	| Host 	| URL 	|
 |------|------	|-----	|
-| Bulk_Upload_template_240911.xlsx | GitHub  | https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/bulk_data/templates/Bulk_Upload_template_240911.xlsx |
-| ~~Bulk_Upload_template_240701.xlsx~~ | GitHub  | https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/bulk_data/templates/Bulk_Upload_template_240701.xlsx |
-| ~~Bulk_Upload_template_231017.xlsx~~ | GitHub  | https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/bulk_data/templates/Bulk_Upload_template_231017.xlsx |
-| ~~Bulk_Upload_template_221025.xlsx~~ | GitHub | https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/bulk_data/templates/Bulk_Upload_template_221025.xlsx	|
-| ~~E61N30-13-Revised.xls~~ | GitHub | https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/bulk_data/templates/E61N30-13-Revised.xlsx    	|
-| ~~34cfe98e-c2c0-11ea-9026-02e7594ce0a0.xlsx~~ | EAMENA DB | https://database.eamena.org/en/bulk-upload/templates/34cfe98e-c2c0-11ea-9026-02e7594ce0a0.xlsx    	|
-| ~~BUS_TemplateUpdate20072021.xlsx~~   	 | Google Drive	| https://drive.google.com/file/d/1KtZlCB_mdTOPxh1DpFdfeXddjJLTvF1k/view?usp=sharing    	|
+| Bulk_Upload_template_240911.xlsx | [GitHub URL](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/bulk_data/templates/Bulk_Upload_template_240911.xlsx)  | [download file](https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/dbs/database.eamena/data/bulk_data/templates/Bulk_Upload_template_240911.xlsx) |
+| ~~Bulk_Upload_template_240701.xlsx~~ | [GitHub URL](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/bulk_data/templates/Bulk_Upload_template_240701.xlsx)  | [download file](https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/dbs/database.eamena/data/bulk_data/templates/Bulk_Upload_template_240701.xlsx) |
+| ~~Bulk_Upload_template_231017.xlsx~~ | [GitHub URL](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/bulk_data/templates/Bulk_Upload_template_231017.xlsx) | [download file](https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/dbs/database.eamena/data/bulk_data/templates/Bulk_Upload_template_231017.xlsx) | 
+| ~~Bulk_Upload_template_221025.xlsx~~ | [GitHub URL](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/bulk_data/templates/Bulk_Upload_template_221025.xlsx)	| [download file](https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/dbs/database.eamena/data/bulk_data/templates/Bulk_Upload_template_221025.xlsx) | 
+| ~~E61N30-13-Revised.xls~~ | [GitHub URL](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/bulk_data/templates/E61N30-13-Revised.xlsx)  | [download file](https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/dbs/database.eamena/data/bulk_data/templates/E61N30-13-Revised.xlsx) | 
+| ~~34cfe98e-c2c0-11ea-9026-02e7594ce0a0.xlsx~~ | [EAMENA DB URL](https://database.eamena.org/en/bulk-upload/templates/34cfe98e-c2c0-11ea-9026-02e7594ce0a0.xlsx) |     	|
+| ~~BUS_TemplateUpdate20072021.xlsx~~   	 | [Google Drive URL](https://drive.google.com/file/d/1KtZlCB_mdTOPxh1DpFdfeXddjJLTvF1k/view?usp=sharing)	|     	|
+
 
 </p>
 

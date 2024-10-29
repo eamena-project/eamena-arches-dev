@@ -188,13 +188,13 @@ https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&rep
 
 Organized by:
 
-Bibliotheca Alexandrina
+**Bibliotheca Alexandrina**
 
 In collaboration with: 
 
-University of Ljubljana; Institute for Monastic Studies and Contemplative Sciences, and the EAMENA project (University of Oxford,  University of Leicester, University of Durham)
+**University of Ljubljana; Institute for Monastic Studies and Contemplative Sciences, and the EAMENA project (University of Oxford,  University of Leicester, University of Durham)**
 
-### **Workshop Program**
+### Workshop Program
 
 **Main Presenters**:
 
@@ -209,7 +209,7 @@ University of Ljubljana; Institute for Monastic Studies and Contemplative Scienc
 
 ---
 
-#### **Day 1: Understanding Endangerment**
+#### Day 1: Understanding Endangerment
 
 **9:00 AM \- 10:30 AM: Session 1**
 
@@ -223,7 +223,7 @@ University of Ljubljana; Institute for Monastic Studies and Contemplative Scienc
 
   ---
 
-  #### **Day 2: Documenting Christian Heritage in Egypt**
+#### Day 2: Documenting Christian Heritage in Egypt
 
 **9:00 AM \- 10:30 AM: Session 3**
 
@@ -237,7 +237,7 @@ University of Ljubljana; Institute for Monastic Studies and Contemplative Scienc
 
   ---
 
-  #### **Day 3: Building a Comprehensive Photo Archive for Coptic Monastic Heritage**
+#### Day 3: Building a Comprehensive Photo Archive for Coptic Monastic Heritage
 
 **9:00 AM \- 10:30 AM: Session 5**
 

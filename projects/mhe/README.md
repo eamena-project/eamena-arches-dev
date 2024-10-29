@@ -214,7 +214,7 @@ In collaboration with:
 **9:00 AM \- 10:30 AM: Session 1**
 
 * **Part 1**: *Introduction to the “Documenting Coptic Monastic Heritage” Project* (Jan Ciglenečki)  
-* **Part 2**: *Identifying and Classifying Disturbances and Threats to Archaeological Heritage* *(EAMENA Project)* (Thomas Huet)
+* **Part 2**: *[Identifying and Classifying Disturbances and Threats to Archaeological Heritage](https://github.com/eamena-project/eamena-arches-dev/tree/main/talks/2024-dcmh#identifying-and-classifying-disturbances-and-threats-to-archaeological-heritage-eamena-project)* *(EAMENA Project)* (Thomas Huet)
 
 **11:00 AM \- 12:30 PM: Session 2**
 

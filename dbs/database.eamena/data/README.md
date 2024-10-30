@@ -66,10 +66,10 @@ Thinner categories (`level3`) colored by groups: [[fields-description.html](http
 Fields (`level3`) are grouped in broader categories, or groups (`level1`). These groups are colored according to the MDS reference file, and HTML links are added to value descriptions ([Individual reference sheets](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bulk#individual-reference-sheets)): [[field-to-tsv.html](https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/mds/field-to-tsv.html)]
 
 <p align="center">
-  <img alt="img-name" src="www/image-5.png" height="300">
-  <img alt="img-name" src="https://github.com/eamena-project/eamena-arches-dev/blob/main/www/arches-v7-hp-data-field-group-values-descriptions.png" height="300">
+  <img alt="img-name" src="www/image-5.png" height="250">
+  <img alt="img-name" src="https://github.com/eamena-project/eamena-arches-dev/blob/main/www/arches-v7-hp-data-field-group-values-descriptions.png" height="250">
   <br>
-    <em>Screenshot of the Heritage Place creation card in the DB (left) and the corresponding HTML dynamic/interactive table 'field-to-tsv.html', with colored groups and hyperlinks to the indiviudal reference sheets (right)</em>
+    <em>Screenshot of the Heritage Place creation card in the DB, main node groups (left) and the corresponding HTML dynamic/interactive table 'field-to-tsv.html', with colored groups and hyperlinks to the indiviudal reference sheets (right)</em>
 </p>
 
 ##### MDS

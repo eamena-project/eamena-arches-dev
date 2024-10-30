@@ -23,7 +23,7 @@ df_filtered$Groups <- mapply(function(group, color) {
   # sprintf("<a href='%s%s.tsv' target='_blank' style='font-size: 20px; font-family:arial; color:%s'>%s</a>", 
   #         base_url, gsub(" ", "_", group), color, stringr::str_to_upper(group))
   
-  sprintf("<a href='%s%s' target='_blank' style='font-size: 14px; font-family:arial; color:%s'>%s</a>", 
+  sprintf("<a href='%s%s' target='_blank' style='font-size: 16px; font-family:arial; color:%s'>%s</a>", 
           base_url, gsub(" ", "_", group), color, stringr::str_to_upper(group))
   
 }, df_filtered$Groups, df_filtered$color)

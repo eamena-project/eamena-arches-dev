@@ -41,8 +41,8 @@ flowchart
   id2 --> id3[ResourceSpace collection];
   
   click id1 "https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&reportlink=false&precision=6&total=383724&language=*&term-filter=%5B%7B%22context%22%3A%22%22%2C%22context_label%22%3A%22Heritage%20Place%20-%20Resource%20Name%22%2C%22id%22%3A2%2C%22text%22%3A%22DAL0%22%2C%22type%22%3A%22term%22%2C%22value%22%3A%22DAL0%22%2C%22inverted%22%3Afalse%7D%5D" _blank
-  click idr2 "https://database.eamena.org/report/cd4584b3-27c7-42da-a37d-88ae2278e012" _blank
-  click idr3 "https://cityofthedead.arch.ox.ac.uk/pages/search.php?search=%21collection114" _blank
+  click id2 "https://database.eamena.org/report/cd4584b3-27c7-42da-a37d-88ae2278e012" _blank
+  click id3 "https://cityofthedead.arch.ox.ac.uk/pages/search.php?search=%21collection114" _blank
 ```
 
 

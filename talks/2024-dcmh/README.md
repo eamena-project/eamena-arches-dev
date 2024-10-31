@@ -36,7 +36,7 @@ GS E30N29-41: the [GeoJSON file](https://github.com/eamena-project/eamena-arches
 
 
 ```mermaid
-flowchart
+flowchart LR
   id1[Heritage Places] <--> id2[Information Resource];
   id2 --> id3[ResourceSpace collection];
   

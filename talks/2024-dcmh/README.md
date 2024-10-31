@@ -23,8 +23,9 @@
   <img alt="img-name" src="img/image-1.png" width="500">
   <img alt="img-name" src="img/image-2.png" width="500">
   <br>
-  GS E30N29-41: [GeoJSON file](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/_gs/E30N29-41.geojson) / [EAMENA DB](https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&reportlink=false&precision=6&total=376144&term-filter=%5B%7B%22context%22%3A%22%22%2C%22context_label%22%3A%22Grid%20Square%20-%20Grid%20ID%22%2C%22id%22%3A0%2C%22text%22%3A%22E30N29-41%22%2C%22type%22%3A%22term%22%2C%22value%22%3A%22E30N29-41%22%2C%22inverted%22%3Afalse%7D%5D&language=*)
 </p>
+
+GS E30N29-41: the [GeoJSON file](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/_gs/E30N29-41.geojson) and in the [EAMENA DB](https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&reportlink=false&precision=6&total=376144&term-filter=%5B%7B%22context%22%3A%22%22%2C%22context_label%22%3A%22Grid%20Square%20-%20Grid%20ID%22%2C%22id%22%3A0%2C%22text%22%3A%22E30N29-41%22%2C%22type%22%3A%22term%22%2C%22value%22%3A%22E30N29-41%22%2C%22inverted%22%3Afalse%7D%5D&language=*)
 
 
 ```mermaid

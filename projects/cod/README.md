@@ -8,9 +8,17 @@ see [Issue #54](https://github.com/eamena-project/eamena-arches-dev/issues/54)
   <br>
   <em>Location of the 91 Heritage Resources (in blue) overlaying the corresponding 91 Information Resources (in green) in the Northern Cemetery, Cairo, Egypt.</em>
 
-## Search URL
+## Search URLs
+
+### HPs
 
 Search for `QRF0` (Qarafa, قَرَفَ)
+
+```
+https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&reportlink=false&precision=6&total=383432&language=*&term-filter=%5B%7B%22context%22%3A%22%22%2C%22context_label%22%3A%22Heritage%20Place%20-%20Resource%20Name%22%2C%22id%22%3A0%2C%22text%22%3A%22QRF0%22%2C%22type%22%3A%22term%22%2C%22value%22%3A%22QRF0%22%2C%22inverted%22%3Afalse%7D%5D
+```
+
+### IRs
 
 ```
 https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&reportlink=false&precision=6&total=383432&language=*&term-filter=%5B%7B%22context%22%3A%22%22%2C%22context_label%22%3A%22Heritage%20Place%20-%20Resource%20Name%22%2C%22id%22%3A0%2C%22text%22%3A%22QRF0%22%2C%22type%22%3A%22term%22%2C%22value%22%3A%22QRF0%22%2C%22inverted%22%3Afalse%7D%5D

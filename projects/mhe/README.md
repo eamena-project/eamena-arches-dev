@@ -108,12 +108,14 @@ https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&rep
   <br>
 </p>
 
-[GS](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/_gs/E30N29-41.geojson)
+GS: [GeoJSON file](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/_gs/E30N29-41.geojson) / [EAMENA DB](https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&reportlink=false&precision=6&total=376144&term-filter=%5B%7B%22context%22%3A%22%22%2C%22context_label%22%3A%22Grid%20Square%20-%20Grid%20ID%22%2C%22id%22%3A0%2C%22text%22%3A%22E30N29-41%22%2C%22type%22%3A%22term%22%2C%22value%22%3A%22E30N29-41%22%2C%22inverted%22%3Afalse%7D%5D&language=*)
 
 ####  DAL0
 > Deir Abu Lifa
 
 ##### Search URL
+
+Search for `DAL0` to retrieve all Abu Lifa Heritage Places, or `DAL01`, `DAL02`, etc., to find them individually.
 
 ```
 https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&reportlink=false&precision=6&total=383724&language=*&term-filter=%5B%7B%22context%22%3A%22%22%2C%22context_label%22%3A%22Heritage%20Place%20-%20Resource%20Name%22%2C%22id%22%3A2%2C%22text%22%3A%22DAL0%22%2C%22type%22%3A%22term%22%2C%22value%22%3A%22DAL0%22%2C%22inverted%22%3Afalse%7D%5D

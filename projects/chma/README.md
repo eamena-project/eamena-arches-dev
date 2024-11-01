@@ -188,6 +188,11 @@ https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&rep
 
 ## E32N22-43
 
+<p align="center">
+  <img alt="img-name" src="./img/image-9.png" width="500">
+  <br>
+</p>
+
 [GS](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/_gs/E32N22-43.geojson)
 
 ### SBA0

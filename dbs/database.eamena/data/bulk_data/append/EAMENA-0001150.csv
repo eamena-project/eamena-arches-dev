@@ -13,3 +13,10 @@ Classical/Protohistoric/Pre-Islamic (North Africa) not uploaded
 Protohistoric, Early (Mauritania)
 
 364fb6a8-2733-4c38-a3e2-07bde00c2156,Academic Researcher,Literature Interpretation/Digitisation,2017-12-18,No,ABD00-Z,Alternative Reference,Archaeological Site,Hydrological,High,Straight,High,Negative/Cut/Dug Feature,South Arabian Period (Southern Arabia),Possible,,,Fazzan Project,Pit/Shaft/Tunnel,High,Straight,Parallel,2 to 5,Qanat/Foggara,2 to 5,High,,,,,,,,,,,,,,,,
+
+fe94704b-8803-41b2-8bfa-ae5abfd66bcd
+python manage.py packages -o import_business_data -s ../data_temp/business_data/test.csv -c ../data_temp/business_data/Heritage_Place.mapping -ow append
+
+
+# change UUID for test purposes
+85654088-4faa-492c-8ecb-817209b8b962 -> fe94704b-8803-41b2-8bfa-ae5abfd66bcd

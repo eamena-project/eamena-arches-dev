@@ -186,72 +186,18 @@ https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&rep
 https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&reportlink=false&precision=6&total=383724&language=*&term-filter=%5B%7B%22context%22%3A%22%22%2C%22context_label%22%3A%22Heritage%20Place%20-%20Resource%20Name%22%2C%22id%22%3A0%2C%22text%22%3A%22NQL0%22%2C%22type%22%3A%22term%22%2C%22value%22%3A%22NQL0%22%2C%22inverted%22%3Afalse%7D%5D
 ```
 
-## DCMH
-> DOCUMENTING COPTIC MONASTIC HERITAGE, 11-13 November 2024, Bibliotheca Alexandrina, Alexandria, Egypt
+## E32N22-43
 
-Organized by:
+[GS](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/_gs/E32N22-43.geojson)
 
-**Bibliotheca Alexandrina**
+### SBA0
+> Wadi es-Sebua
 
-In collaboration with: 
+##### Search URL
 
-**University of Ljubljana; Institute for Monastic Studies and Contemplative Sciences, and the EAMENA project (University of Oxford,  University of Leicester, University of Durham)**
-
-### Workshop Program
-
-**Main Presenters**:
-
-* **Dr. Jan Ciglenečki** (University of Ljubljana; Institute for Monastic Studies and Contemplative Sciences)  
-* **Dr. Thomas Huet** (EAMENA project, School of Archaeology, University of Oxford)
-
-**Guest Speakers:**
-
-* **Dr. Bill Finlayson**  (EAMENA project, School of Archaeology, University of Oxford)   
-* **Dr. Michael Fradley**  (EAMENA project, School of Archaeology, University of Oxford)   
-* **Dr. Zeinab Hanafy** (Center for Coptic Studies, Bibliotheca Alexandrina)
-
----
-
-#### Day 1: Understanding Endangerment
-
-**9:00 AM \- 10:30 AM: Session 1**
-
-* **Part 1**: *Introduction to the “Documenting Coptic Monastic Heritage” Project* (Jan Ciglenečki)  
-* **Part 2**: *[Identifying and Classifying Disturbances and Threats to Archaeological Heritage](https://github.com/eamena-project/eamena-arches-dev/tree/main/talks/2024-dcmh#identifying-and-classifying-disturbances-and-threats-to-archaeological-heritage-eamena-project)* *(EAMENA Project)* (Thomas Huet)
-
-**11:00 AM \- 12:30 PM: Session 2**
-
-* **Part 1**: *Coptic Monastic Heritage Archive at the University of Ljubljana* (Jan Ciglenečki)  
-* **Part 2**: *The EAMENA Database as an IT Framework for a Photographic Archive* (Thomas Huet)
-
-  ---
-
-#### Day 2: Documenting Christian Heritage in Egypt
-
-**9:00 AM \- 10:30 AM: Session 3**
-
-* **Part 1**: *Documenting Monastic Heritage in the Eastern Desert: Insights from the ARCE project (2018-2019)* (Jan Ciglenečki)  
-* **Part 2**: *Case Study: Semi-Anchoretic Settlement in Wadi Naqqat as a Heritage Place within the EAMENA Database* (Thomas Huet)
-
-**11:00 AM \- 12:30 PM: Session 4**
-
-* **Part 1**: *Documenting Non-Monastic Christian Heritage across Egypt* (Jan Ciglenečki)  
-* **Part 2**: *Case Study: Coptic and Greek Orthodox Churches of Alexandria* (Zeinab Hanafy)
-
-  ---
-
-#### Day 3: Building a Comprehensive Photo Archive for Coptic Monastic Heritage
-
-**9:00 AM \- 10:30 AM: Session 5**
-
-* **Part 1**: *Towards the Largest Photo Archive of Coptic Monastic Heritage: Next Steps* (Jan Ciglenečki) (15 minutes)  
-* **Part 2**: *The Role of the EAMENA Project in Preserving Coptic Heritage* (Bill Finlayson, Michael Fradley – Online Session) (75 minutes)
-
-**11:00 AM \- 12:30 PM: Session 6**
-
-* **Part 1**: *How You Can Get Involved: Contributing to the Archive of Coptic Monastic Heritage and the EAMENA database* (Jan Ciglenečki, Thomas Huet)  
-* **Part 2**: *Final Remarks and Discussion* 
-
+```
+https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&reportlink=false&precision=6&total=376144&language=*&term-filter=%5B%7B%22context%22%3A%22%22%2C%22context_label%22%3A%22Heritage%20Place%20-%20Resource%20Name%22%2C%22id%22%3A0%2C%22text%22%3A%22SBA0%22%2C%22type%22%3A%22term%22%2C%22value%22%3A%22SBA0%22%2C%22inverted%22%3Afalse%7D%5D
+```
 
 ## Reference data
 

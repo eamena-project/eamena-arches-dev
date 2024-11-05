@@ -69,7 +69,7 @@ flowchart TD
     id2[University of Leicester]
     id3[University of Durham]
   end
-  id1 ---> id6[The Database]
+  id1 ---> id6[EAMENA Database]
   id2 ---> id6
   id3 ---> id6
   subgraph MA[MAREA]
@@ -112,7 +112,7 @@ January 2015<br>
 
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/threat-vandalism-mosul.png" height="300">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/threat-vandalism-mosul.png" height="320">
 
 </center>
 <div class="captiontext">'Terror in the Mosul Museum', published in 'The New Yorker', February 27, 2015</div>
@@ -146,7 +146,7 @@ January 2015<br>
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/threat-vandalism-baal-2016.png" height="320">
 
 </center>
-<div class="captiontext">Temple of Bel, Palmyra, Syria, year 2014 (above) and 2016 (below) &copy; Google Earth</div>
+<div class="captiontext">Temple of Bel, Palmyra, Syria, year 2014 (left) and 2016 (right) &copy; Google Earth</div>
 
 :::
 
@@ -155,9 +155,11 @@ January 2015<br>
 
 ### Funders
 
-<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo-arcadia.png' style='height: 40px;vertical-align: middle;'> Arcadia Fund, a charitable fund of Lisbet Rausing & Peter Baldwin
-
-<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo-british-council.png' style='height: 40px;vertical-align: middle;'> British Council Cultural Protection Fund
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo-arcadia.png' style='height: 60px;vertical-align: middle;'><br>
+Arcadia Fund <small>A charitable fund of Lisbet Rausing & Peter Baldwin</small>
+<br>
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo-british-council.png' style='height: 60px;vertical-align: middle;'><br>
+British Council Cultural Protection Fund
 
 :::
 
@@ -196,7 +198,7 @@ Middle East North Africa (MENA) region
 
 ::: {.column width="30%"}
 
-Paleolithic to World War II
+Paleolithic -- World War II
 
 :::
 
@@ -431,7 +433,7 @@ leaflet::leaflet() %>%
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-looting-1.png" height="300">
 
 </center>
-<div class="captiontext"> Deir Abu Lifa 1 (DAL01), Looting and Illegal Activities &copy;Jan Ciglenečki, Coptic Monastic Heritage Archive</div>
+<div class="captiontext"> Looting and Illegal Activities destroying Deir Abu Lifa 1, Fayoum, Egypt &copy;Jan Ciglenečki, Coptic Monastic Heritage Archive</div>
 
 :::
 
@@ -464,10 +466,9 @@ Destruction: iconoclasm, looting, etc.
 ## Disturbances and Threats (2/2)
 
 ```{=html}
-<iframe width="1000" height="420" src="https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/mds/fields-description.html"></iframe>
+<iframe width="1000" height="460" src="https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/mds/fields-description.html"></iframe>
 ```
 
-<div class="captiontext">see the table on the <a href="https://eamena.org/advanced-use#rm-hp-fields">EAMENA website</a></div>
 
 
 # Arches-based projects {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/23889489303_b3df7d8cef_o.jpg"}
@@ -631,7 +632,7 @@ eamenar::geojson_map_path(export.type = "profile")
 leaflet::leaflet() %>%
   leaflet::addProviderTiles(leaflet::providers$"Esri.WorldImagery", group = "Ortho") %>%
   leaflet::addProviderTiles(leaflet::providers$"OpenStreetMap", group = "OSM") %>%
-  leaflet::addMarkers(lng = 45.6491261, lat = 35.36001515088195, popup="Temple of Bel") %>%
+  leaflet::addMarkers(lng = 45.6491261, lat = 35.36001515088195, popup="Yasin Tepe") %>%
   leaflet::addLayersControl(
     baseGroups = c("Ortho", "OSM"),
     position = "topright") 

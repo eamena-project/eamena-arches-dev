@@ -55,9 +55,38 @@ library(dplyr)
 
 
 
-## EAMENA project history
+## EAMENA project presentation
 
 ::: {.panel-tabset}
+
+
+
+### Teams
+
+```{mermaid}
+flowchart LR
+  subgraph EAMENA
+    id1[University of Oxford]
+    id2[University of Leicester]
+    id3[University of Durham]
+  end
+  id1 ---> id6[The Database]
+  id2 ---> id6
+  id3 ---> id6
+  subgraph MAREA
+    id4[University of Southampton]
+    id5[Ulster University]
+  end
+  id4 ---> id6
+  id5 ---> id6
+
+  click id1 "https://www.ox.ac.uk/" _blank
+  click id2 "https://le.ac.uk/" _blank
+  click id3 "https://www.durham.ac.uk/" _blank
+  click id4 "https://www.southampton.ac.uk/" _blank
+  click id5 "https://www.ulster.ac.uk/" _blank
+```
+
 
 ### Birth date
 
@@ -166,14 +195,18 @@ Paleolithic to World War II
 
 :::
 
-### Teams
+### Database
 
 
 ### Funders
 
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo-arcadia.png' style='height: 40px;vertical-align: middle;'> Arcadia Fund, a charitable fund of Lisbet Rausing & Peter Baldwin
+
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo-british-council.png' style='height: 40px;vertical-align: middle;'> British Council Cultural Protection Fund
+
 :::
 
-## <span style="font-size:30px">Endangered Archaeology in Middle East and North Africa</span>
+## <span style="font-size:30px">Disturbances and Threats</span>
 
 ::: {.panel-tabset}
 

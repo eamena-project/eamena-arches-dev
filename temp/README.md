@@ -15,5 +15,5 @@ flowchart LR
   id4 ---> id6
   id5 ---> id6
 
-  click id1 "https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data/reference_data#erd" _blank
+  click id1 "https://www.ox.ac.uk/" _blank
 ```

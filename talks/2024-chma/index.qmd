@@ -33,7 +33,7 @@ format:
 
 
 
-# The project {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/23889489303_b3df7d8cef_o.jpg"}
+# The project {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/MAA44922_006_JMCK_428-036_pp.jpg"}
 
 ```{r, echo=FALSE, warning = F}
 library(rmarkdown)

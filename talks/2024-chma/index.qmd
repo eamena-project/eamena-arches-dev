@@ -43,12 +43,12 @@ library(ggplot2)
 library(dplyr)
 ```
 
-## <span style="font-size:30px">Endangered Archaeology in Middle East and North Africa (EAMENA)</span>
+## <span style="font-size:35px">Endangered Archaeology in Middle East and North Africa (EAMENA)</span>
 
 
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/threat-war-baalbeck.png" height="400">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/threat-war-baalbeck.png" height="430">
 
 </center>
 <div class="captiontext">Smoke billows from the site of an Israeli airstrike on the Lebanese city of Baalbeck in the Bekaa Valley [Issued on: 23/09/2024 - 09:04 Modified: 24/09/2024 - 04:58] © Nidal SOLH / AFP</div>
@@ -65,7 +65,8 @@ library(dplyr)
 
 ::: {.column width="30%"}
 
-January 2015 (project drafted in January 2014)
+January 2015<br>
+<small>project drafted in January 2014</small>
 
 :::
 
@@ -73,7 +74,7 @@ January 2015 (project drafted in January 2014)
 
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/threat-vandalism-mosul.png" height="400">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/threat-vandalism-mosul.png" height="300">
 
 </center>
 <div class="captiontext">'Terror in the Mosul Museum', published in 'The New Yorker', February 27, 2015</div>
@@ -90,8 +91,12 @@ January 2015 (project drafted in January 2014)
 
 ::: {.column width="30%"}
 
+<small>
+
 - Rapidly record and assess the status of the archaeological landscape (built heritage)
 - Provide access to the international community to a set of data on endangered heritage (Open Access)
+
+</small>
 
 :::
 
@@ -99,8 +104,8 @@ January 2015 (project drafted in January 2014)
 
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/threat-vandalism-baal-2014.png" height="200">
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/threat-vandalism-baal-2016.png" height="200">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/threat-vandalism-baal-2014.png" height="300">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/threat-vandalism-baal-2016.png" height="300">
 
 </center>
 <div class="captiontext">Temple of Bel, Palmyra, Syria, year 2014 (above) and 2016 (below) (c) Google Earth</div>
@@ -113,7 +118,28 @@ January 2015 (project drafted in January 2014)
   
 ### Geographical scope
 
+
+
+:::: {.columns}
+
+::: {.column width="30%"}
+
 Middle East North Africa (MENA) region
+
+:::
+
+::: {.column width="70%"}
+
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-grids-ea-ge.png" height="300">
+
+</center>
+<div class="captiontext">EAMENA Grid Squares projected on Google Earth</div>
+
+:::
+
+:::
 
 ### Temporal scope
 

@@ -54,7 +54,7 @@ library(dplyr)
 
 
 
-## EAMENA project presentation (1/2)
+## EAMENA project (1/2)
 
 ::: {.panel-tabset}
 
@@ -146,7 +146,7 @@ January 2015<br>
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/threat-vandalism-baal-2016.png" height="320">
 
 </center>
-<div class="captiontext">Temple of Bel, Palmyra, Syria, year 2014 (above) and 2016 (below) (c) Google Earth</div>
+<div class="captiontext">Temple of Bel, Palmyra, Syria, year 2014 (above) and 2016 (below) &copy; Google Earth</div>
 
 :::
 
@@ -161,7 +161,7 @@ January 2015<br>
 
 :::
 
-## EAMENA project presentation (2/2)
+## EAMENA project (2/2)
 
 ::: {.panel-tabset}
   
@@ -208,7 +208,7 @@ Paleolithic to World War II
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/ea-periodo-sup0AD.png" height="320">
 
 </center>
-<div class="captiontext">EAMENA periods (after 0 AD) (c) PeriodO</div>
+<div class="captiontext">EAMENA periods (after 0 AD) &copy; PeriodO</div>
 
 
 :::
@@ -227,6 +227,32 @@ Paleolithic to World War II
 
 
 :::
+
+
+## EAMENA database
+
+::: {.panel-tabset}
+
+### Open Access
+
+```{=html}
+<iframe width="500" height="500" src="https://CAA-France.github.io/website/diagrams/oarch_repo_user.html"></iframe>
+```
+
+Source: <a href="https://github.com/zackbatist/openarchaeo-collaboration" data-type="link" data-id="openarchaeo-collaboration" target="_blank" rel="noreferrer noopener">openarchaeo-collaboration</a>, published by Batist, Z.; Roe, J., 2024. Open archaeology, open source? ... <em>Internet Archaeology</em> 67. <a href="https://doi.org/10.11141/ia.67.13" data-type="link" data-id="10.11141/ia.67.13" target="_blank" rel="noreferrer noopener">10.11141/ia.67.13</a>
+
+### ACHP projects
+
+```{=html}
+<iframe width="500" height="500" src="https://achp-project.github.io/cultural-heritage/map-projects/arches-global-south.html"></iframe>
+```
+
+### Semantic Web
+
+
+
+:::
+
 
 ## Disturbances and Threats (1/2)
 
@@ -384,8 +410,10 @@ Destruction: iconoclasm, looting, etc.
 ## Disturbances and Threats (2/2)
 
 ```{=html}
-<iframe width="1000" height="500" src="https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/mds/fields-description.html"></iframe>
+<iframe width="1000" height="400" src="https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/mds/fields-description.html"></iframe>
 ```
+
+<div class="captiontext">see the table on the <a href="https://eamena.org/advanced-use#rm-hp-fields">EAMENA website</a></div>
 
 
 # Arches-based projects {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/23889489303_b3df7d8cef_o.jpg"}

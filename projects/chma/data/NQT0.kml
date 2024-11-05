@@ -1,0 +1,1244 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="NQT0" id="NQT0">
+	<SimpleField name="AH Date From" type="string"></SimpleField>
+	<SimpleField name="AH Date To" type="string"></SimpleField>
+	<SimpleField name="Address" type="string"></SimpleField>
+	<SimpleField name="Address Type" type="string"></SimpleField>
+	<SimpleField name="Administrative Division " type="string"></SimpleField>
+	<SimpleField name="Administrative Division Type" type="string"></SimpleField>
+	<SimpleField name="Archaeological From Date" type="string"></SimpleField>
+	<SimpleField name="Archaeological To Date" type="string"></SimpleField>
+	<SimpleField name="Assessment Activity Date" type="string"></SimpleField>
+	<SimpleField name="Assessment Activity Type" type="string"></SimpleField>
+	<SimpleField name="Assessment Investigator - Actor" type="string"></SimpleField>
+	<SimpleField name="BP Date From" type="string"></SimpleField>
+	<SimpleField name="BP Date To" type="string"></SimpleField>
+	<SimpleField name="Bedrock Geology Type" type="string"></SimpleField>
+	<SimpleField name="Built Component" type="string"></SimpleField>
+	<SimpleField name="Cadastral Reference" type="string"></SimpleField>
+	<SimpleField name="Construction Technique" type="string"></SimpleField>
+	<SimpleField name="Country Type" type="string"></SimpleField>
+	<SimpleField name="Cultural Period Certainty" type="string"></SimpleField>
+	<SimpleField name="Cultural Period Type" type="string"></SimpleField>
+	<SimpleField name="Cultural Sub-period Certainty" type="string"></SimpleField>
+	<SimpleField name="Cultural Sub-period Type" type="string"></SimpleField>
+	<SimpleField name="Damage Extent Type" type="string"></SimpleField>
+	<SimpleField name="Date Inference Making Actor Name" type="string"></SimpleField>
+	<SimpleField name="Datum Description/EPSG code" type="string"></SimpleField>
+	<SimpleField name="Datum Type" type="string"></SimpleField>
+	<SimpleField name="Depositional Process" type="string"></SimpleField>
+	<SimpleField name="Designation" type="string"></SimpleField>
+	<SimpleField name="Designation From Date" type="string"></SimpleField>
+	<SimpleField name="Designation To Date" type="string"></SimpleField>
+	<SimpleField name="Detailed Condition Assessments" type="string"></SimpleField>
+	<SimpleField name="Dimension Type" type="string"></SimpleField>
+	<SimpleField name="Disturbance Cause Assignment Assessor Name - Actor" type="string"></SimpleField>
+	<SimpleField name="Disturbance Cause Category Type" type="string"></SimpleField>
+	<SimpleField name="Disturbance Cause Certainty " type="string"></SimpleField>
+	<SimpleField name="Disturbance Cause Type " type="string"></SimpleField>
+	<SimpleField name="Disturbance Date From" type="string"></SimpleField>
+	<SimpleField name="Disturbance Date Occurred Before" type="string"></SimpleField>
+	<SimpleField name="Disturbance Date Occurred On " type="string"></SimpleField>
+	<SimpleField name="Disturbance Date To " type="string"></SimpleField>
+	<SimpleField name="EAMENA ID" type="string"></SimpleField>
+	<SimpleField name="Effect Certainty" type="string"></SimpleField>
+	<SimpleField name="Effect Type" type="string"></SimpleField>
+	<SimpleField name="Fetch Type" type="string"></SimpleField>
+	<SimpleField name="GE Imagery Acquisition Date" type="string"></SimpleField>
+	<SimpleField name="General Description" type="string"></SimpleField>
+	<SimpleField name="General Description Type" type="string"></SimpleField>
+	<SimpleField name="Geometry Extent Certainty" type="string"></SimpleField>
+	<SimpleField name="Geometry Qualifier" type="string"></SimpleField>
+	<SimpleField name="Google Earth Assessment" type="string"></SimpleField>
+	<SimpleField name="Grid ID" type="string"></SimpleField>
+	<SimpleField name="Heritage Place Function" type="string"></SimpleField>
+	<SimpleField name="Heritage Place Function Certainty " type="string"></SimpleField>
+	<SimpleField name="Heritage Place Resource Instance" type="string"></SimpleField>
+	<SimpleField name="Heritage Place Type" type="string"></SimpleField>
+	<SimpleField name="Imagery Acquisition Date" type="string"></SimpleField>
+	<SimpleField name="Information Resource" type="string"></SimpleField>
+	<SimpleField name="Information Resource Acquisition Date" type="string"></SimpleField>
+	<SimpleField name="Intervention Activity Type" type="string"></SimpleField>
+	<SimpleField name="Investigator Role Type" type="string"></SimpleField>
+	<SimpleField name="Land Cover Assessment Date" type="string"></SimpleField>
+	<SimpleField name="Land Cover Type" type="string"></SimpleField>
+	<SimpleField name="Location Certainty" type="string"></SimpleField>
+	<SimpleField name="Material Class" type="string"></SimpleField>
+	<SimpleField name="Material Type" type="string"></SimpleField>
+	<SimpleField name="Maximum Depth/Min Elevation" type="string"></SimpleField>
+	<SimpleField name="Measurement Number" type="string"></SimpleField>
+	<SimpleField name="Measurement Source Type " type="string"></SimpleField>
+	<SimpleField name="Measurement Unit" type="string"></SimpleField>
+	<SimpleField name="Minimum Depth/Max Elevation" type="string"></SimpleField>
+	<SimpleField name="Name Type" type="string"></SimpleField>
+	<SimpleField name="Overall Archaeological Certainty Value " type="string"></SimpleField>
+	<SimpleField name="Overall Condition State Type" type="string"></SimpleField>
+	<SimpleField name="Overall Site Morphology Type" type="string"></SimpleField>
+	<SimpleField name="Overall Site Shape Type" type="string"></SimpleField>
+	<SimpleField name="Priority Type" type="string"></SimpleField>
+	<SimpleField name="Recommendation Type" type="string"></SimpleField>
+	<SimpleField name="Related Geoarchaeology/Palaeolandscape" type="string"></SimpleField>
+	<SimpleField name="Resource Name" type="string"></SimpleField>
+	<SimpleField name="Resource Orientation" type="string"></SimpleField>
+	<SimpleField name="Restricted Access Record Designation" type="string"></SimpleField>
+	<SimpleField name="SH Date From" type="string"></SimpleField>
+	<SimpleField name="SH Date to" type="string"></SimpleField>
+	<SimpleField name="Site Feature Arrangement Type" type="string"></SimpleField>
+	<SimpleField name="Site Feature Form Type" type="string"></SimpleField>
+	<SimpleField name="Site Feature Form Type Certainty" type="string"></SimpleField>
+	<SimpleField name="Site Feature Interpretation Certainty" type="string"></SimpleField>
+	<SimpleField name="Site Feature Interpretation Number Type" type="string"></SimpleField>
+	<SimpleField name="Site Feature Interpretation Type" type="string"></SimpleField>
+	<SimpleField name="Site Feature Number Type" type="string"></SimpleField>
+	<SimpleField name="Site Feature Shape Type" type="string"></SimpleField>
+	<SimpleField name="Spatial Coordinates Ref System" type="string"></SimpleField>
+	<SimpleField name="Surficial Geology Type" type="string"></SimpleField>
+	<SimpleField name="Threat Category" type="string"></SimpleField>
+	<SimpleField name="Threat Cause Type" type="string"></SimpleField>
+	<SimpleField name="Threat Inference Making Assessor Name - Actor" type="string"></SimpleField>
+	<SimpleField name="Threat Probability " type="string"></SimpleField>
+	<SimpleField name="Tidal Range" type="string"></SimpleField>
+	<SimpleField name="Topography Type" type="string"></SimpleField>
+	<SimpleField name="Wave Climate" type="string"></SimpleField>
+</Schema>
+<Folder><name>NQT0</name>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#NQT0">
+		<SimpleData name="AH Date From">None</SimpleData>
+		<SimpleData name="AH Date To">None</SimpleData>
+		<SimpleData name="Administrative Division ">Red Sea Governorate</SimpleData>
+		<SimpleData name="Administrative Division Type"></SimpleData>
+		<SimpleData name="Archaeological From Date">0300</SimpleData>
+		<SimpleData name="Archaeological To Date">0599</SimpleData>
+		<SimpleData name="Assessment Activity Date">2018/07/23</SimpleData>
+		<SimpleData name="Assessment Activity Type">Field-based Assessment</SimpleData>
+		<SimpleData name="Assessment Investigator - Actor">Jan Ciglenečki</SimpleData>
+		<SimpleData name="BP Date From">None</SimpleData>
+		<SimpleData name="BP Date To">None</SimpleData>
+		<SimpleData name="Cadastral Reference">None</SimpleData>
+		<SimpleData name="Construction Technique">Masonry (Dry)</SimpleData>
+		<SimpleData name="Country Type">Egypt</SimpleData>
+		<SimpleData name="Cultural Period Certainty">Definite</SimpleData>
+		<SimpleData name="Cultural Period Type">Classical/Protohistoric/Pre-Islamic (North Africa)</SimpleData>
+		<SimpleData name="Damage Extent Type">91-100%</SimpleData>
+		<SimpleData name="Date Inference Making Actor Name">Jan Ciglenečki</SimpleData>
+		<SimpleData name="Disturbance Cause Assignment Assessor Name - Actor">Jan Ciglenečki, None</SimpleData>
+		<SimpleData name="Disturbance Cause Category Type">Tourism/Visitor Activities, Looting/Illegal Activities</SimpleData>
+		<SimpleData name="Disturbance Cause Certainty ">High, High</SimpleData>
+		<SimpleData name="Disturbance Cause Type ">Human Movement/Trampling, Unknown</SimpleData>
+		<SimpleData name="Disturbance Date From">None, None</SimpleData>
+		<SimpleData name="Disturbance Date Occurred Before">None, None</SimpleData>
+		<SimpleData name="Disturbance Date Occurred On ">None, None</SimpleData>
+		<SimpleData name="Disturbance Date To ">None, None</SimpleData>
+		<SimpleData name="EAMENA ID">EAMENA-0264245</SimpleData>
+		<SimpleData name="Effect Certainty">High, High</SimpleData>
+		<SimpleData name="Effect Type">Artefact Displacement, Collapse/Structural Damage</SimpleData>
+		<SimpleData name="General Description">Hermitage</SimpleData>
+		<SimpleData name="General Description Type">General Description</SimpleData>
+		<SimpleData name="Geometry Extent Certainty">Definite</SimpleData>
+		<SimpleData name="Geometry Qualifier">Center Point</SimpleData>
+		<SimpleData name="Google Earth Assessment">False</SimpleData>
+		<SimpleData name="Grid ID">E33N27-12</SimpleData>
+		<SimpleData name="Heritage Place Function">Domestic, Religious</SimpleData>
+		<SimpleData name="Heritage Place Function Certainty ">High, High</SimpleData>
+		<SimpleData name="Heritage Place Type">Archaeological Site</SimpleData>
+		<SimpleData name="Investigator Role Type">Academic Researcher</SimpleData>
+		<SimpleData name="Location Certainty">High</SimpleData>
+		<SimpleData name="Material Class">Stone</SimpleData>
+		<SimpleData name="Material Type">حجر (مشذب بعض الشيء)</SimpleData>
+		<SimpleData name="Name Type">Alternative Reference, Alternative Reference</SimpleData>
+		<SimpleData name="Overall Archaeological Certainty Value ">Definite</SimpleData>
+		<SimpleData name="Overall Condition State Type">Good</SimpleData>
+		<SimpleData name="Overall Site Morphology Type">Positive/Built Feature</SimpleData>
+		<SimpleData name="Overall Site Shape Type">Curvilinear</SimpleData>
+		<SimpleData name="Priority Type">Within 6 months to 1 year (Urgent)</SimpleData>
+		<SimpleData name="Recommendation Type">مسح أثري</SimpleData>
+		<SimpleData name="Resource Name">NQT0, WN14</SimpleData>
+		<SimpleData name="Resource Orientation">West</SimpleData>
+		<SimpleData name="SH Date From">None</SimpleData>
+		<SimpleData name="SH Date to">None</SimpleData>
+		<SimpleData name="Site Feature Arrangement Type">Isolated</SimpleData>
+		<SimpleData name="Site Feature Form Type">Structure</SimpleData>
+		<SimpleData name="Site Feature Form Type Certainty">Definite</SimpleData>
+		<SimpleData name="Site Feature Interpretation Certainty">High</SimpleData>
+		<SimpleData name="Site Feature Interpretation Number Type">1</SimpleData>
+		<SimpleData name="Site Feature Interpretation Type">House/Dwelling</SimpleData>
+		<SimpleData name="Site Feature Number Type">1</SimpleData>
+		<SimpleData name="Site Feature Shape Type">Curvilinear</SimpleData>
+		<SimpleData name="Spatial Coordinates Ref System">None</SimpleData>
+		<SimpleData name="Threat Category">Looting/Illegal Activities, Tourism/Visitor Activities</SimpleData>
+		<SimpleData name="Threat Cause Type">Theft/Unauthorised Removal of Objects, Human Movement/Trampling</SimpleData>
+		<SimpleData name="Threat Inference Making Assessor Name - Actor">Jan Ciglenečki, None</SimpleData>
+		<SimpleData name="Threat Probability ">Probable, Probable</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>33.283626,27.044537</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#NQT0">
+		<SimpleData name="AH Date From">None</SimpleData>
+		<SimpleData name="AH Date To">None</SimpleData>
+		<SimpleData name="Administrative Division ">Re Sea Governorate</SimpleData>
+		<SimpleData name="Administrative Division Type"></SimpleData>
+		<SimpleData name="Archaeological From Date">unknown</SimpleData>
+		<SimpleData name="Archaeological To Date">unknown</SimpleData>
+		<SimpleData name="Assessment Activity Date">2018/07/23</SimpleData>
+		<SimpleData name="Assessment Activity Type">Field-based Assessment</SimpleData>
+		<SimpleData name="Assessment Investigator - Actor">Jan Ciglenečki</SimpleData>
+		<SimpleData name="BP Date From">None</SimpleData>
+		<SimpleData name="BP Date To">None</SimpleData>
+		<SimpleData name="Cadastral Reference">None</SimpleData>
+		<SimpleData name="Construction Technique"></SimpleData>
+		<SimpleData name="Country Type">Egypt</SimpleData>
+		<SimpleData name="Cultural Period Certainty">Definite, Definite, Definite</SimpleData>
+		<SimpleData name="Cultural Period Type">Classical/Protohistoric/Pre-Islamic (North Africa), (إسلامي (شمال أفريقيا, Dynastic Egypt</SimpleData>
+		<SimpleData name="Damage Extent Type">61-90%</SimpleData>
+		<SimpleData name="Date Inference Making Actor Name">Jan Ciglenečki, None, None</SimpleData>
+		<SimpleData name="Disturbance Cause Assignment Assessor Name - Actor">Jan Ciglenečki, None</SimpleData>
+		<SimpleData name="Disturbance Cause Category Type">Vandalism, Tourism/Visitor Activities</SimpleData>
+		<SimpleData name="Disturbance Cause Certainty ">Definite, High</SimpleData>
+		<SimpleData name="Disturbance Cause Type ">Graffiti, Human Movement/Trampling</SimpleData>
+		<SimpleData name="Disturbance Date From">None, None</SimpleData>
+		<SimpleData name="Disturbance Date Occurred Before">None, None</SimpleData>
+		<SimpleData name="Disturbance Date Occurred On ">None, None</SimpleData>
+		<SimpleData name="Disturbance Date To ">None, None</SimpleData>
+		<SimpleData name="EAMENA ID">EAMENA-0264246</SimpleData>
+		<SimpleData name="Effect Certainty">Definite, Definite</SimpleData>
+		<SimpleData name="Effect Type">Surface Loss, Surface Loss</SimpleData>
+		<SimpleData name="General Description">Rock-art, boats, animals, Dipinti, crosses</SimpleData>
+		<SimpleData name="General Description Type">General Description, </SimpleData>
+		<SimpleData name="Geometry Extent Certainty">Definite</SimpleData>
+		<SimpleData name="Geometry Qualifier">Center Point</SimpleData>
+		<SimpleData name="Google Earth Assessment">False</SimpleData>
+		<SimpleData name="Grid ID">E33N27-12</SimpleData>
+		<SimpleData name="Heritage Place Function">Religious</SimpleData>
+		<SimpleData name="Heritage Place Function Certainty ">High</SimpleData>
+		<SimpleData name="Heritage Place Type">Archaeological Site</SimpleData>
+		<SimpleData name="Investigator Role Type">Academic Researcher</SimpleData>
+		<SimpleData name="Location Certainty">High</SimpleData>
+		<SimpleData name="Material Class">Stone</SimpleData>
+		<SimpleData name="Material Type"></SimpleData>
+		<SimpleData name="Name Type">Alternative Reference, Alternative Reference</SimpleData>
+		<SimpleData name="Overall Archaeological Certainty Value ">Definite</SimpleData>
+		<SimpleData name="Overall Condition State Type">Fair</SimpleData>
+		<SimpleData name="Overall Site Morphology Type">Surface Feature</SimpleData>
+		<SimpleData name="Overall Site Shape Type">Irregular</SimpleData>
+		<SimpleData name="Priority Type">Within 6 months to 1 year (Urgent)</SimpleData>
+		<SimpleData name="Recommendation Type">Photographic Recording</SimpleData>
+		<SimpleData name="Resource Name">NQT0, WN15</SimpleData>
+		<SimpleData name="Resource Orientation">Not Applicable</SimpleData>
+		<SimpleData name="SH Date From">None</SimpleData>
+		<SimpleData name="SH Date to">None</SimpleData>
+		<SimpleData name="Site Feature Arrangement Type">Isolated</SimpleData>
+		<SimpleData name="Site Feature Form Type">Modified Rock Surface</SimpleData>
+		<SimpleData name="Site Feature Form Type Certainty">Definite</SimpleData>
+		<SimpleData name="Site Feature Interpretation Certainty">Definite</SimpleData>
+		<SimpleData name="Site Feature Interpretation Number Type">1</SimpleData>
+		<SimpleData name="Site Feature Interpretation Type">Inscription/Rock Art/Relief</SimpleData>
+		<SimpleData name="Site Feature Number Type">1</SimpleData>
+		<SimpleData name="Site Feature Shape Type">Irregular</SimpleData>
+		<SimpleData name="Spatial Coordinates Ref System">None</SimpleData>
+		<SimpleData name="Threat Category">Tourism/Visitor Activities, Vandalism</SimpleData>
+		<SimpleData name="Threat Cause Type">Graffiti, Graffiti</SimpleData>
+		<SimpleData name="Threat Inference Making Assessor Name - Actor">Jan Ciglenečki, None</SimpleData>
+		<SimpleData name="Threat Probability ">Probable, Probable</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>33.279949,27.068005</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#NQT0">
+		<SimpleData name="AH Date From">None</SimpleData>
+		<SimpleData name="AH Date To">None</SimpleData>
+		<SimpleData name="Administrative Division ">Red Sea Governorate</SimpleData>
+		<SimpleData name="Administrative Division Type"></SimpleData>
+		<SimpleData name="Archaeological From Date">unknown</SimpleData>
+		<SimpleData name="Archaeological To Date">unknown</SimpleData>
+		<SimpleData name="Assessment Activity Date">2018/07/23</SimpleData>
+		<SimpleData name="Assessment Activity Type">Field-based Assessment</SimpleData>
+		<SimpleData name="Assessment Investigator - Actor">Jan Ciglenečki</SimpleData>
+		<SimpleData name="BP Date From">None</SimpleData>
+		<SimpleData name="BP Date To">None</SimpleData>
+		<SimpleData name="Cadastral Reference">None</SimpleData>
+		<SimpleData name="Construction Technique"></SimpleData>
+		<SimpleData name="Country Type">Egypt</SimpleData>
+		<SimpleData name="Cultural Period Certainty">Definite</SimpleData>
+		<SimpleData name="Cultural Period Type">Classical/Protohistoric/Pre-Islamic (North Africa)</SimpleData>
+		<SimpleData name="Damage Extent Type">61-90%</SimpleData>
+		<SimpleData name="Date Inference Making Actor Name">Jan Ciglenečki</SimpleData>
+		<SimpleData name="Disturbance Cause Assignment Assessor Name - Actor">Jan Ciglenečki</SimpleData>
+		<SimpleData name="Disturbance Cause Category Type">Tourism/Visitor Activities</SimpleData>
+		<SimpleData name="Disturbance Cause Certainty ">High</SimpleData>
+		<SimpleData name="Disturbance Cause Type ">Graffiti</SimpleData>
+		<SimpleData name="Disturbance Date From">None</SimpleData>
+		<SimpleData name="Disturbance Date Occurred Before">None</SimpleData>
+		<SimpleData name="Disturbance Date Occurred On ">None</SimpleData>
+		<SimpleData name="Disturbance Date To ">None</SimpleData>
+		<SimpleData name="EAMENA ID">EAMENA-0264247</SimpleData>
+		<SimpleData name="Effect Certainty">High</SimpleData>
+		<SimpleData name="Effect Type">Surface Loss</SimpleData>
+		<SimpleData name="General Description">Rock-art, Dipinti, crosses</SimpleData>
+		<SimpleData name="General Description Type">General Description, </SimpleData>
+		<SimpleData name="Geometry Extent Certainty">Definite</SimpleData>
+		<SimpleData name="Geometry Qualifier">Center Point</SimpleData>
+		<SimpleData name="Google Earth Assessment">False</SimpleData>
+		<SimpleData name="Grid ID">E33N27-12</SimpleData>
+		<SimpleData name="Heritage Place Function">Religious</SimpleData>
+		<SimpleData name="Heritage Place Function Certainty ">High</SimpleData>
+		<SimpleData name="Heritage Place Type">Archaeological Site</SimpleData>
+		<SimpleData name="Investigator Role Type">Academic Researcher</SimpleData>
+		<SimpleData name="Location Certainty">High</SimpleData>
+		<SimpleData name="Material Class">Stone</SimpleData>
+		<SimpleData name="Material Type"></SimpleData>
+		<SimpleData name="Name Type">Alternative Reference, Alternative Reference</SimpleData>
+		<SimpleData name="Overall Archaeological Certainty Value ">Definite</SimpleData>
+		<SimpleData name="Overall Condition State Type">Fair</SimpleData>
+		<SimpleData name="Overall Site Morphology Type">Surface Feature</SimpleData>
+		<SimpleData name="Overall Site Shape Type">Irregular</SimpleData>
+		<SimpleData name="Priority Type">Within 6 months to 1 year (Urgent)</SimpleData>
+		<SimpleData name="Recommendation Type">Photographic Recording</SimpleData>
+		<SimpleData name="Resource Name">NQT0, WN16</SimpleData>
+		<SimpleData name="Resource Orientation">Not Applicable</SimpleData>
+		<SimpleData name="SH Date From">None</SimpleData>
+		<SimpleData name="SH Date to">None</SimpleData>
+		<SimpleData name="Site Feature Arrangement Type">Isolated</SimpleData>
+		<SimpleData name="Site Feature Form Type">Modified Rock Surface</SimpleData>
+		<SimpleData name="Site Feature Form Type Certainty">Definite</SimpleData>
+		<SimpleData name="Site Feature Interpretation Certainty">Definite</SimpleData>
+		<SimpleData name="Site Feature Interpretation Number Type">1</SimpleData>
+		<SimpleData name="Site Feature Interpretation Type">Inscription/Rock Art/Relief</SimpleData>
+		<SimpleData name="Site Feature Number Type">1</SimpleData>
+		<SimpleData name="Site Feature Shape Type">Irregular</SimpleData>
+		<SimpleData name="Spatial Coordinates Ref System">None</SimpleData>
+		<SimpleData name="Threat Category">Tourism/Visitor Activities</SimpleData>
+		<SimpleData name="Threat Cause Type">Graffiti</SimpleData>
+		<SimpleData name="Threat Inference Making Assessor Name - Actor">Jan Ciglenečki</SimpleData>
+		<SimpleData name="Threat Probability ">Probable</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>33.280131,27.060947</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#NQT0">
+		<SimpleData name="AH Date From">None</SimpleData>
+		<SimpleData name="AH Date To">None</SimpleData>
+		<SimpleData name="Administrative Division ">Red Sea governorate</SimpleData>
+		<SimpleData name="Administrative Division Type"></SimpleData>
+		<SimpleData name="Archaeological From Date">0300</SimpleData>
+		<SimpleData name="Archaeological To Date">0599</SimpleData>
+		<SimpleData name="Assessment Activity Date">2018/07/21</SimpleData>
+		<SimpleData name="Assessment Activity Type">Field-based Assessment</SimpleData>
+		<SimpleData name="Assessment Investigator - Actor">Jan Ciglenečki</SimpleData>
+		<SimpleData name="BP Date From">None</SimpleData>
+		<SimpleData name="BP Date To">None</SimpleData>
+		<SimpleData name="Cadastral Reference">None</SimpleData>
+		<SimpleData name="Construction Technique">Masonry (Dry)</SimpleData>
+		<SimpleData name="Country Type">Egypt</SimpleData>
+		<SimpleData name="Cultural Period Certainty">Definite</SimpleData>
+		<SimpleData name="Cultural Period Type">العصر الكلاسيكي/ماقبل الأسلام (الشام/بلاد الرافدين/إيران/شمال اجزيرة العربية/</SimpleData>
+		<SimpleData name="Damage Extent Type">31-60%</SimpleData>
+		<SimpleData name="Date Inference Making Actor Name">Jan Ciglenečki</SimpleData>
+		<SimpleData name="Disturbance Cause Assignment Assessor Name - Actor">Jan Ciglenečki, None, None</SimpleData>
+		<SimpleData name="Disturbance Cause Category Type">Tourism/Visitor Activities, Looting/Illegal Activities, Natural</SimpleData>
+		<SimpleData name="Disturbance Cause Certainty ">High, High, Medium</SimpleData>
+		<SimpleData name="Disturbance Cause Type ">Human Movement/Trampling, Unknown, Water Action</SimpleData>
+		<SimpleData name="Disturbance Date From">None, None, None</SimpleData>
+		<SimpleData name="Disturbance Date Occurred Before">None, None, None</SimpleData>
+		<SimpleData name="Disturbance Date Occurred On ">None, None, None</SimpleData>
+		<SimpleData name="Disturbance Date To ">None, None, None</SimpleData>
+		<SimpleData name="EAMENA ID">EAMENA-0263786</SimpleData>
+		<SimpleData name="Effect Certainty">High, Definite, Medium</SimpleData>
+		<SimpleData name="Effect Type">Artefact Displacement, Collapse/Structural Damage, Water Damage</SimpleData>
+		<SimpleData name="General Description">Hermitage</SimpleData>
+		<SimpleData name="General Description Type">General Description</SimpleData>
+		<SimpleData name="Geometry Extent Certainty">Definite</SimpleData>
+		<SimpleData name="Geometry Qualifier">Center Point</SimpleData>
+		<SimpleData name="Google Earth Assessment">False</SimpleData>
+		<SimpleData name="Grid ID">E33N27-12</SimpleData>
+		<SimpleData name="Heritage Place Function">Religious, Domestic</SimpleData>
+		<SimpleData name="Heritage Place Function Certainty ">High, High</SimpleData>
+		<SimpleData name="Heritage Place Type">Archaeological Site</SimpleData>
+		<SimpleData name="Investigator Role Type">Academic Researcher</SimpleData>
+		<SimpleData name="Location Certainty">Definite</SimpleData>
+		<SimpleData name="Material Class">Stone</SimpleData>
+		<SimpleData name="Material Type">حجر (مشذب بعض الشيء)</SimpleData>
+		<SimpleData name="Name Type">Alternative Reference, Alternative Reference, Alternative Reference</SimpleData>
+		<SimpleData name="Overall Archaeological Certainty Value ">Definite</SimpleData>
+		<SimpleData name="Overall Condition State Type">Poor</SimpleData>
+		<SimpleData name="Overall Site Morphology Type">Positive/Built Feature</SimpleData>
+		<SimpleData name="Overall Site Shape Type">Rectangular/Square</SimpleData>
+		<SimpleData name="Priority Type">Within 6 months to 1 year (Urgent)</SimpleData>
+		<SimpleData name="Recommendation Type">مسح أثري</SimpleData>
+		<SimpleData name="Resource Name">WN08, NQT0, Wadi Naqqat</SimpleData>
+		<SimpleData name="Resource Orientation">North-West</SimpleData>
+		<SimpleData name="SH Date From">None</SimpleData>
+		<SimpleData name="SH Date to">None</SimpleData>
+		<SimpleData name="Site Feature Arrangement Type">Rectilinear</SimpleData>
+		<SimpleData name="Site Feature Form Type">Structure</SimpleData>
+		<SimpleData name="Site Feature Form Type Certainty">Definite</SimpleData>
+		<SimpleData name="Site Feature Interpretation Certainty">High</SimpleData>
+		<SimpleData name="Site Feature Interpretation Number Type">1</SimpleData>
+		<SimpleData name="Site Feature Interpretation Type">House/Dwelling</SimpleData>
+		<SimpleData name="Site Feature Number Type">1</SimpleData>
+		<SimpleData name="Site Feature Shape Type">Rectangular/Square</SimpleData>
+		<SimpleData name="Spatial Coordinates Ref System">None</SimpleData>
+		<SimpleData name="Threat Category">Tourism/Visitor Activities, Vandalism, Looting/Illegal Activities</SimpleData>
+		<SimpleData name="Threat Cause Type">Human Movement/Trampling, Human Movement/Trampling, Theft/Unauthorised Removal of Objects</SimpleData>
+		<SimpleData name="Threat Inference Making Assessor Name - Actor">Jan Ciglenečki, None, None</SimpleData>
+		<SimpleData name="Threat Probability ">Probable, Probable, Probable</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>33.285602,27.04473</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#NQT0">
+		<SimpleData name="AH Date From">None</SimpleData>
+		<SimpleData name="AH Date To">None</SimpleData>
+		<SimpleData name="Administrative Division ">Red Sea governorate</SimpleData>
+		<SimpleData name="Administrative Division Type"></SimpleData>
+		<SimpleData name="Archaeological From Date">0300</SimpleData>
+		<SimpleData name="Archaeological To Date">0599</SimpleData>
+		<SimpleData name="Assessment Activity Date">2018/07/21</SimpleData>
+		<SimpleData name="Assessment Activity Type">Field-based Assessment</SimpleData>
+		<SimpleData name="Assessment Investigator - Actor">Jan Ciglenečki</SimpleData>
+		<SimpleData name="BP Date From">None</SimpleData>
+		<SimpleData name="BP Date To">None</SimpleData>
+		<SimpleData name="Cadastral Reference">None</SimpleData>
+		<SimpleData name="Construction Technique">Masonry (Dry)</SimpleData>
+		<SimpleData name="Country Type">Egypt</SimpleData>
+		<SimpleData name="Cultural Period Certainty">Definite</SimpleData>
+		<SimpleData name="Cultural Period Type">العصر الكلاسيكي/ماقبل الأسلام (الشام/بلاد الرافدين/إيران/شمال اجزيرة العربية/</SimpleData>
+		<SimpleData name="Damage Extent Type">31-60%</SimpleData>
+		<SimpleData name="Date Inference Making Actor Name">Jan Ciglenečki</SimpleData>
+		<SimpleData name="Disturbance Cause Assignment Assessor Name - Actor">Jan Ciglenečki, None</SimpleData>
+		<SimpleData name="Disturbance Cause Category Type">Tourism/Visitor Activities, Looting/Illegal Activities</SimpleData>
+		<SimpleData name="Disturbance Cause Certainty ">High, High</SimpleData>
+		<SimpleData name="Disturbance Cause Type ">Human Movement/Trampling, Unknown</SimpleData>
+		<SimpleData name="Disturbance Date From">None, None</SimpleData>
+		<SimpleData name="Disturbance Date Occurred Before">None, None</SimpleData>
+		<SimpleData name="Disturbance Date Occurred On ">None, None</SimpleData>
+		<SimpleData name="Disturbance Date To ">None, None</SimpleData>
+		<SimpleData name="EAMENA ID">EAMENA-0263785</SimpleData>
+		<SimpleData name="Effect Certainty">High, Definite</SimpleData>
+		<SimpleData name="Effect Type">Artefact Displacement, Collapse/Structural Damage</SimpleData>
+		<SimpleData name="General Description">Hermitage</SimpleData>
+		<SimpleData name="General Description Type">General Description</SimpleData>
+		<SimpleData name="Geometry Extent Certainty">Definite</SimpleData>
+		<SimpleData name="Geometry Qualifier">Center Point</SimpleData>
+		<SimpleData name="Google Earth Assessment">False</SimpleData>
+		<SimpleData name="Grid ID">E33N27-12</SimpleData>
+		<SimpleData name="Heritage Place Function">Religious, Domestic</SimpleData>
+		<SimpleData name="Heritage Place Function Certainty ">High, High</SimpleData>
+		<SimpleData name="Heritage Place Type">Archaeological Site</SimpleData>
+		<SimpleData name="Investigator Role Type">Academic Researcher</SimpleData>
+		<SimpleData name="Location Certainty">High</SimpleData>
+		<SimpleData name="Material Class">Stone</SimpleData>
+		<SimpleData name="Material Type">حجر (مشذب بعض الشيء)</SimpleData>
+		<SimpleData name="Name Type">Alternative Reference, Alternative Reference, Alternative Reference</SimpleData>
+		<SimpleData name="Overall Archaeological Certainty Value ">Definite</SimpleData>
+		<SimpleData name="Overall Condition State Type">Poor</SimpleData>
+		<SimpleData name="Overall Site Morphology Type">Positive/Built Feature</SimpleData>
+		<SimpleData name="Overall Site Shape Type">Irregular</SimpleData>
+		<SimpleData name="Priority Type">Within 6 months to 1 year (Urgent)</SimpleData>
+		<SimpleData name="Recommendation Type">مسح أثري</SimpleData>
+		<SimpleData name="Resource Name">WN05, NQT0, Wadi Naqqat</SimpleData>
+		<SimpleData name="Resource Orientation">East</SimpleData>
+		<SimpleData name="SH Date From">None</SimpleData>
+		<SimpleData name="SH Date to">None</SimpleData>
+		<SimpleData name="Site Feature Arrangement Type">Unknown</SimpleData>
+		<SimpleData name="Site Feature Form Type">Structure</SimpleData>
+		<SimpleData name="Site Feature Form Type Certainty">Definite</SimpleData>
+		<SimpleData name="Site Feature Interpretation Certainty">High</SimpleData>
+		<SimpleData name="Site Feature Interpretation Number Type">1</SimpleData>
+		<SimpleData name="Site Feature Interpretation Type">House/Dwelling</SimpleData>
+		<SimpleData name="Site Feature Number Type">1</SimpleData>
+		<SimpleData name="Site Feature Shape Type">Irregular</SimpleData>
+		<SimpleData name="Spatial Coordinates Ref System">None</SimpleData>
+		<SimpleData name="Threat Category">Tourism/Visitor Activities, Vandalism, Looting/Illegal Activities</SimpleData>
+		<SimpleData name="Threat Cause Type">Human Movement/Trampling, Human Movement/Trampling, Theft/Unauthorised Removal of Objects</SimpleData>
+		<SimpleData name="Threat Inference Making Assessor Name - Actor">Jan Ciglenečki, None, None</SimpleData>
+		<SimpleData name="Threat Probability ">Probable, Probable, Probable</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>33.28476,27.045837</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#NQT0">
+		<SimpleData name="AH Date From">None</SimpleData>
+		<SimpleData name="AH Date To">None</SimpleData>
+		<SimpleData name="Administrative Division ">Red Sea governorate</SimpleData>
+		<SimpleData name="Administrative Division Type"></SimpleData>
+		<SimpleData name="Archaeological From Date">0300</SimpleData>
+		<SimpleData name="Archaeological To Date">0599</SimpleData>
+		<SimpleData name="Assessment Activity Date">2018/07/21</SimpleData>
+		<SimpleData name="Assessment Activity Type">Field-based Assessment</SimpleData>
+		<SimpleData name="Assessment Investigator - Actor">Jan Ciglenečki</SimpleData>
+		<SimpleData name="BP Date From">None</SimpleData>
+		<SimpleData name="BP Date To">None</SimpleData>
+		<SimpleData name="Cadastral Reference">None</SimpleData>
+		<SimpleData name="Construction Technique">Masonry (Dry)</SimpleData>
+		<SimpleData name="Country Type">Egypt</SimpleData>
+		<SimpleData name="Cultural Period Certainty">Definite</SimpleData>
+		<SimpleData name="Cultural Period Type">العصر الكلاسيكي/ماقبل الأسلام (الشام/بلاد الرافدين/إيران/شمال اجزيرة العربية/</SimpleData>
+		<SimpleData name="Damage Extent Type">61-90%</SimpleData>
+		<SimpleData name="Date Inference Making Actor Name">Jan Ciglenečki</SimpleData>
+		<SimpleData name="Disturbance Cause Assignment Assessor Name - Actor">Jan Ciglenečki, None</SimpleData>
+		<SimpleData name="Disturbance Cause Category Type">Tourism/Visitor Activities, Looting/Illegal Activities</SimpleData>
+		<SimpleData name="Disturbance Cause Certainty ">High, High</SimpleData>
+		<SimpleData name="Disturbance Cause Type ">Human Movement/Trampling, Unknown</SimpleData>
+		<SimpleData name="Disturbance Date From">None, None</SimpleData>
+		<SimpleData name="Disturbance Date Occurred Before">None, None</SimpleData>
+		<SimpleData name="Disturbance Date Occurred On ">None, None</SimpleData>
+		<SimpleData name="Disturbance Date To ">None, None</SimpleData>
+		<SimpleData name="EAMENA ID">EAMENA-0263788</SimpleData>
+		<SimpleData name="Effect Certainty">Definite, Definite</SimpleData>
+		<SimpleData name="Effect Type">Artefact Displacement, Collapse/Structural Damage</SimpleData>
+		<SimpleData name="General Description">Hermitage</SimpleData>
+		<SimpleData name="General Description Type">General Description</SimpleData>
+		<SimpleData name="Geometry Extent Certainty">Definite</SimpleData>
+		<SimpleData name="Geometry Qualifier">Center Point</SimpleData>
+		<SimpleData name="Google Earth Assessment">False</SimpleData>
+		<SimpleData name="Grid ID">E33N27-12</SimpleData>
+		<SimpleData name="Heritage Place Function">Religious, Domestic</SimpleData>
+		<SimpleData name="Heritage Place Function Certainty ">High, High</SimpleData>
+		<SimpleData name="Heritage Place Type">Archaeological Site</SimpleData>
+		<SimpleData name="Investigator Role Type">Academic Researcher</SimpleData>
+		<SimpleData name="Location Certainty">High</SimpleData>
+		<SimpleData name="Material Class">Stone</SimpleData>
+		<SimpleData name="Material Type">حجر (مشذب بعض الشيء)</SimpleData>
+		<SimpleData name="Name Type">Alternative Reference, Alternative Reference, Alternative Reference</SimpleData>
+		<SimpleData name="Overall Archaeological Certainty Value ">Definite</SimpleData>
+		<SimpleData name="Overall Condition State Type">Fair</SimpleData>
+		<SimpleData name="Overall Site Morphology Type">Positive/Built Feature</SimpleData>
+		<SimpleData name="Overall Site Shape Type">Rectangular/Square</SimpleData>
+		<SimpleData name="Priority Type">Within 6 months to 1 year (Urgent)</SimpleData>
+		<SimpleData name="Recommendation Type">مسح أثري</SimpleData>
+		<SimpleData name="Resource Name">WN07, NQT0, Wadi Naqqat</SimpleData>
+		<SimpleData name="Resource Orientation">North-West</SimpleData>
+		<SimpleData name="SH Date From">None</SimpleData>
+		<SimpleData name="SH Date to">None</SimpleData>
+		<SimpleData name="Site Feature Arrangement Type">Rectilinear</SimpleData>
+		<SimpleData name="Site Feature Form Type">Structure</SimpleData>
+		<SimpleData name="Site Feature Form Type Certainty">Definite</SimpleData>
+		<SimpleData name="Site Feature Interpretation Certainty">High</SimpleData>
+		<SimpleData name="Site Feature Interpretation Number Type">1</SimpleData>
+		<SimpleData name="Site Feature Interpretation Type">House/Dwelling</SimpleData>
+		<SimpleData name="Site Feature Number Type">1</SimpleData>
+		<SimpleData name="Site Feature Shape Type">Rectangular/Square</SimpleData>
+		<SimpleData name="Spatial Coordinates Ref System">None</SimpleData>
+		<SimpleData name="Threat Category">Tourism/Visitor Activities, Vandalism, Looting/Illegal Activities</SimpleData>
+		<SimpleData name="Threat Cause Type">Human Movement/Trampling, Human Movement/Trampling, Theft/Unauthorised Removal of Objects</SimpleData>
+		<SimpleData name="Threat Inference Making Assessor Name - Actor">Jan Ciglenečki, None, None</SimpleData>
+		<SimpleData name="Threat Probability ">Probable, Probable, Probable</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>33.286996,27.043078</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#NQT0">
+		<SimpleData name="AH Date From">None</SimpleData>
+		<SimpleData name="AH Date To">None</SimpleData>
+		<SimpleData name="Administrative Division ">Red Sea governorate</SimpleData>
+		<SimpleData name="Administrative Division Type"></SimpleData>
+		<SimpleData name="Archaeological From Date">0300</SimpleData>
+		<SimpleData name="Archaeological To Date">0599</SimpleData>
+		<SimpleData name="Assessment Activity Date">2018/07/21</SimpleData>
+		<SimpleData name="Assessment Activity Type">Field-based Assessment</SimpleData>
+		<SimpleData name="Assessment Investigator - Actor">Jan Ciglenečki</SimpleData>
+		<SimpleData name="BP Date From">None</SimpleData>
+		<SimpleData name="BP Date To">None</SimpleData>
+		<SimpleData name="Cadastral Reference">None</SimpleData>
+		<SimpleData name="Construction Technique">Masonry (Dry)</SimpleData>
+		<SimpleData name="Country Type">Egypt</SimpleData>
+		<SimpleData name="Cultural Period Certainty">Definite</SimpleData>
+		<SimpleData name="Cultural Period Type">العصر الكلاسيكي/ماقبل الأسلام (الشام/بلاد الرافدين/إيران/شمال اجزيرة العربية/</SimpleData>
+		<SimpleData name="Damage Extent Type">31-60%</SimpleData>
+		<SimpleData name="Date Inference Making Actor Name">Jan Ciglenečki</SimpleData>
+		<SimpleData name="Disturbance Cause Assignment Assessor Name - Actor">Jan Ciglenečki, None</SimpleData>
+		<SimpleData name="Disturbance Cause Category Type">Tourism/Visitor Activities, Looting/Illegal Activities</SimpleData>
+		<SimpleData name="Disturbance Cause Certainty ">High, High</SimpleData>
+		<SimpleData name="Disturbance Cause Type ">Human Movement/Trampling, Unknown</SimpleData>
+		<SimpleData name="Disturbance Date From">None, None</SimpleData>
+		<SimpleData name="Disturbance Date Occurred Before">None, None</SimpleData>
+		<SimpleData name="Disturbance Date Occurred On ">None, None</SimpleData>
+		<SimpleData name="Disturbance Date To ">None, None</SimpleData>
+		<SimpleData name="EAMENA ID">EAMENA-0263784</SimpleData>
+		<SimpleData name="Effect Certainty">High, Definite</SimpleData>
+		<SimpleData name="Effect Type">Artefact Displacement, Collapse/Structural Damage</SimpleData>
+		<SimpleData name="General Description">Hermitage</SimpleData>
+		<SimpleData name="General Description Type">General Description</SimpleData>
+		<SimpleData name="Geometry Extent Certainty">Definite</SimpleData>
+		<SimpleData name="Geometry Qualifier">Center Point</SimpleData>
+		<SimpleData name="Google Earth Assessment">False</SimpleData>
+		<SimpleData name="Grid ID">E33N27-12</SimpleData>
+		<SimpleData name="Heritage Place Function">Religious, Domestic</SimpleData>
+		<SimpleData name="Heritage Place Function Certainty ">High, High</SimpleData>
+		<SimpleData name="Heritage Place Type">Archaeological Site</SimpleData>
+		<SimpleData name="Investigator Role Type">Academic Researcher</SimpleData>
+		<SimpleData name="Location Certainty">Definite</SimpleData>
+		<SimpleData name="Material Class">Stone</SimpleData>
+		<SimpleData name="Material Type">حجر (مشذب بعض الشيء)</SimpleData>
+		<SimpleData name="Name Type">Alternative Reference, Alternative Reference, Alternative Reference</SimpleData>
+		<SimpleData name="Overall Archaeological Certainty Value ">Definite</SimpleData>
+		<SimpleData name="Overall Condition State Type">Poor</SimpleData>
+		<SimpleData name="Overall Site Morphology Type">Positive/Built Feature</SimpleData>
+		<SimpleData name="Overall Site Shape Type">Curvilinear</SimpleData>
+		<SimpleData name="Priority Type">Within 6 months to 1 year (Urgent)</SimpleData>
+		<SimpleData name="Recommendation Type">مسح أثري</SimpleData>
+		<SimpleData name="Resource Name">WN04, NQT0, Wadi Naqqat</SimpleData>
+		<SimpleData name="Resource Orientation">West</SimpleData>
+		<SimpleData name="SH Date From">None</SimpleData>
+		<SimpleData name="SH Date to">None</SimpleData>
+		<SimpleData name="Site Feature Arrangement Type">Unknown</SimpleData>
+		<SimpleData name="Site Feature Form Type">Structure</SimpleData>
+		<SimpleData name="Site Feature Form Type Certainty">Definite</SimpleData>
+		<SimpleData name="Site Feature Interpretation Certainty">High</SimpleData>
+		<SimpleData name="Site Feature Interpretation Number Type">1</SimpleData>
+		<SimpleData name="Site Feature Interpretation Type">House/Dwelling</SimpleData>
+		<SimpleData name="Site Feature Number Type">1</SimpleData>
+		<SimpleData name="Site Feature Shape Type">Curvilinear</SimpleData>
+		<SimpleData name="Spatial Coordinates Ref System">None</SimpleData>
+		<SimpleData name="Threat Category">Tourism/Visitor Activities, Vandalism, Looting/Illegal Activities</SimpleData>
+		<SimpleData name="Threat Cause Type">Human Movement/Trampling, Human Movement/Trampling, Theft/Unauthorised Removal of Objects</SimpleData>
+		<SimpleData name="Threat Inference Making Assessor Name - Actor">Jan Ciglenečki, None, None</SimpleData>
+		<SimpleData name="Threat Probability ">Probable, Probable, Probable</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>33.285968,27.046618</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#NQT0">
+		<SimpleData name="AH Date From">None</SimpleData>
+		<SimpleData name="AH Date To">None</SimpleData>
+		<SimpleData name="Administrative Division ">Red Sea governorate</SimpleData>
+		<SimpleData name="Administrative Division Type"></SimpleData>
+		<SimpleData name="Archaeological From Date">0300</SimpleData>
+		<SimpleData name="Archaeological To Date">0599</SimpleData>
+		<SimpleData name="Assessment Activity Date">2018/07/21</SimpleData>
+		<SimpleData name="Assessment Activity Type">Field-based Assessment</SimpleData>
+		<SimpleData name="Assessment Investigator - Actor">Jan Ciglenečki</SimpleData>
+		<SimpleData name="BP Date From">None</SimpleData>
+		<SimpleData name="BP Date To">None</SimpleData>
+		<SimpleData name="Cadastral Reference">None</SimpleData>
+		<SimpleData name="Construction Technique">Masonry (Dry)</SimpleData>
+		<SimpleData name="Country Type">Egypt</SimpleData>
+		<SimpleData name="Cultural Period Certainty">Definite</SimpleData>
+		<SimpleData name="Cultural Period Type">العصر الكلاسيكي/ماقبل الأسلام (الشام/بلاد الرافدين/إيران/شمال اجزيرة العربية/</SimpleData>
+		<SimpleData name="Damage Extent Type">31-60%</SimpleData>
+		<SimpleData name="Date Inference Making Actor Name">Jan Ciglenečki</SimpleData>
+		<SimpleData name="Disturbance Cause Assignment Assessor Name - Actor">Jan Ciglenečki, None</SimpleData>
+		<SimpleData name="Disturbance Cause Category Type">Tourism/Visitor Activities, Looting/Illegal Activities</SimpleData>
+		<SimpleData name="Disturbance Cause Certainty ">High, High</SimpleData>
+		<SimpleData name="Disturbance Cause Type ">Human Movement/Trampling, Unknown</SimpleData>
+		<SimpleData name="Disturbance Date From">None, None</SimpleData>
+		<SimpleData name="Disturbance Date Occurred Before">None, None</SimpleData>
+		<SimpleData name="Disturbance Date Occurred On ">None, None</SimpleData>
+		<SimpleData name="Disturbance Date To ">None, None</SimpleData>
+		<SimpleData name="EAMENA ID">EAMENA-0263787</SimpleData>
+		<SimpleData name="Effect Certainty">Definite, Definite</SimpleData>
+		<SimpleData name="Effect Type">Artefact Displacement, Collapse/Structural Damage</SimpleData>
+		<SimpleData name="General Description">Hermitage</SimpleData>
+		<SimpleData name="General Description Type">General Description</SimpleData>
+		<SimpleData name="Geometry Extent Certainty">Definite</SimpleData>
+		<SimpleData name="Geometry Qualifier">Center Point</SimpleData>
+		<SimpleData name="Google Earth Assessment">False</SimpleData>
+		<SimpleData name="Grid ID">E33N27-12</SimpleData>
+		<SimpleData name="Heritage Place Function">Religious, Domestic</SimpleData>
+		<SimpleData name="Heritage Place Function Certainty ">High, High</SimpleData>
+		<SimpleData name="Heritage Place Type">Archaeological Site</SimpleData>
+		<SimpleData name="Investigator Role Type">Academic Researcher</SimpleData>
+		<SimpleData name="Location Certainty">Definite</SimpleData>
+		<SimpleData name="Material Class">Stone</SimpleData>
+		<SimpleData name="Material Type">حجر (مشذب بعض الشيء)</SimpleData>
+		<SimpleData name="Name Type">Alternative Reference, Alternative Reference, Alternative Reference</SimpleData>
+		<SimpleData name="Overall Archaeological Certainty Value ">Definite</SimpleData>
+		<SimpleData name="Overall Condition State Type">Poor</SimpleData>
+		<SimpleData name="Overall Site Morphology Type">Positive/Built Feature</SimpleData>
+		<SimpleData name="Overall Site Shape Type">Rectangular/Square</SimpleData>
+		<SimpleData name="Priority Type">Within 6 months to 1 year (Urgent)</SimpleData>
+		<SimpleData name="Recommendation Type">مسح أثري</SimpleData>
+		<SimpleData name="Resource Name">WN06, NQT0, Wadi Naqqat</SimpleData>
+		<SimpleData name="Resource Orientation">East</SimpleData>
+		<SimpleData name="SH Date From">None</SimpleData>
+		<SimpleData name="SH Date to">None</SimpleData>
+		<SimpleData name="Site Feature Arrangement Type">Rectilinear</SimpleData>
+		<SimpleData name="Site Feature Form Type">Structure</SimpleData>
+		<SimpleData name="Site Feature Form Type Certainty">Definite</SimpleData>
+		<SimpleData name="Site Feature Interpretation Certainty">High</SimpleData>
+		<SimpleData name="Site Feature Interpretation Number Type">1</SimpleData>
+		<SimpleData name="Site Feature Interpretation Type">House/Dwelling</SimpleData>
+		<SimpleData name="Site Feature Number Type">1</SimpleData>
+		<SimpleData name="Site Feature Shape Type">Rectangular/Square</SimpleData>
+		<SimpleData name="Spatial Coordinates Ref System">None</SimpleData>
+		<SimpleData name="Threat Category">Tourism/Visitor Activities, Vandalism, Looting/Illegal Activities</SimpleData>
+		<SimpleData name="Threat Cause Type">Human Movement/Trampling, Human Movement/Trampling, Theft/Unauthorised Removal of Objects</SimpleData>
+		<SimpleData name="Threat Inference Making Assessor Name - Actor">Jan Ciglenečki, None, None</SimpleData>
+		<SimpleData name="Threat Probability ">Probable, Probable, Probable</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>33.287037,27.043213</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#NQT0">
+		<SimpleData name="AH Date From">None</SimpleData>
+		<SimpleData name="AH Date To">None</SimpleData>
+		<SimpleData name="Administrative Division ">Red Sea governorate</SimpleData>
+		<SimpleData name="Administrative Division Type"></SimpleData>
+		<SimpleData name="Archaeological From Date">0300</SimpleData>
+		<SimpleData name="Archaeological To Date">0599</SimpleData>
+		<SimpleData name="Assessment Activity Date">2018/07/21</SimpleData>
+		<SimpleData name="Assessment Activity Type">Field-based Assessment</SimpleData>
+		<SimpleData name="Assessment Investigator - Actor">Jan Ciglenečki</SimpleData>
+		<SimpleData name="BP Date From">None</SimpleData>
+		<SimpleData name="BP Date To">None</SimpleData>
+		<SimpleData name="Cadastral Reference">None</SimpleData>
+		<SimpleData name="Construction Technique">Masonry (Dry)</SimpleData>
+		<SimpleData name="Country Type">Egypt</SimpleData>
+		<SimpleData name="Cultural Period Certainty">Definite</SimpleData>
+		<SimpleData name="Cultural Period Type">العصر الكلاسيكي/ماقبل الأسلام (الشام/بلاد الرافدين/إيران/شمال اجزيرة العربية/</SimpleData>
+		<SimpleData name="Damage Extent Type">91-100%</SimpleData>
+		<SimpleData name="Date Inference Making Actor Name">Jan Ciglenečki</SimpleData>
+		<SimpleData name="Disturbance Cause Assignment Assessor Name - Actor">Jan Ciglenečki, None</SimpleData>
+		<SimpleData name="Disturbance Cause Category Type">Tourism/Visitor Activities, Looting/Illegal Activities</SimpleData>
+		<SimpleData name="Disturbance Cause Certainty ">High, High</SimpleData>
+		<SimpleData name="Disturbance Cause Type ">Human Movement/Trampling, Unknown</SimpleData>
+		<SimpleData name="Disturbance Date From">None, None</SimpleData>
+		<SimpleData name="Disturbance Date Occurred Before">None, None</SimpleData>
+		<SimpleData name="Disturbance Date Occurred On ">None, None</SimpleData>
+		<SimpleData name="Disturbance Date To ">None, None</SimpleData>
+		<SimpleData name="EAMENA ID">EAMENA-0263790</SimpleData>
+		<SimpleData name="Effect Certainty">High, High</SimpleData>
+		<SimpleData name="Effect Type">Artefact Displacement, Collapse/Structural Damage</SimpleData>
+		<SimpleData name="General Description">Hermitage</SimpleData>
+		<SimpleData name="General Description Type">General Description</SimpleData>
+		<SimpleData name="Geometry Extent Certainty">Definite</SimpleData>
+		<SimpleData name="Geometry Qualifier">Center Point</SimpleData>
+		<SimpleData name="Google Earth Assessment">False</SimpleData>
+		<SimpleData name="Grid ID">E33N27-12</SimpleData>
+		<SimpleData name="Heritage Place Function">Religious, Domestic</SimpleData>
+		<SimpleData name="Heritage Place Function Certainty ">High, High</SimpleData>
+		<SimpleData name="Heritage Place Type">Archaeological Site</SimpleData>
+		<SimpleData name="Investigator Role Type">Academic Researcher</SimpleData>
+		<SimpleData name="Location Certainty">High</SimpleData>
+		<SimpleData name="Material Class">Stone</SimpleData>
+		<SimpleData name="Material Type">حجر (مشذب بعض الشيء)</SimpleData>
+		<SimpleData name="Name Type">Alternative Reference, Alternative Reference, Alternative Reference</SimpleData>
+		<SimpleData name="Overall Archaeological Certainty Value ">Definite</SimpleData>
+		<SimpleData name="Overall Condition State Type">Good</SimpleData>
+		<SimpleData name="Overall Site Morphology Type">Surface Feature</SimpleData>
+		<SimpleData name="Overall Site Shape Type">Irregular</SimpleData>
+		<SimpleData name="Priority Type">Within 6 months to 1 year (Urgent)</SimpleData>
+		<SimpleData name="Recommendation Type">مسح أثري</SimpleData>
+		<SimpleData name="Resource Name">WN11, NQT0, Wadi Naqqat</SimpleData>
+		<SimpleData name="Resource Orientation">North</SimpleData>
+		<SimpleData name="SH Date From">None</SimpleData>
+		<SimpleData name="SH Date to">None</SimpleData>
+		<SimpleData name="Site Feature Arrangement Type">Unknown</SimpleData>
+		<SimpleData name="Site Feature Form Type">Structure</SimpleData>
+		<SimpleData name="Site Feature Form Type Certainty">Definite</SimpleData>
+		<SimpleData name="Site Feature Interpretation Certainty">High</SimpleData>
+		<SimpleData name="Site Feature Interpretation Number Type">1</SimpleData>
+		<SimpleData name="Site Feature Interpretation Type">House/Dwelling</SimpleData>
+		<SimpleData name="Site Feature Number Type">1</SimpleData>
+		<SimpleData name="Site Feature Shape Type">Irregular</SimpleData>
+		<SimpleData name="Spatial Coordinates Ref System">None</SimpleData>
+		<SimpleData name="Threat Category">Tourism/Visitor Activities, Vandalism, Looting/Illegal Activities</SimpleData>
+		<SimpleData name="Threat Cause Type">Human Movement/Trampling, Human Movement/Trampling, Theft/Unauthorised Removal of Objects</SimpleData>
+		<SimpleData name="Threat Inference Making Assessor Name - Actor">Jan Ciglenečki, None, None</SimpleData>
+		<SimpleData name="Threat Probability ">Probable, Probable, Probable</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>33.283812,27.046996</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#NQT0">
+		<SimpleData name="AH Date From">None</SimpleData>
+		<SimpleData name="AH Date To">None</SimpleData>
+		<SimpleData name="Administrative Division ">Red Sea governorate</SimpleData>
+		<SimpleData name="Administrative Division Type"></SimpleData>
+		<SimpleData name="Archaeological From Date">0300</SimpleData>
+		<SimpleData name="Archaeological To Date">0599</SimpleData>
+		<SimpleData name="Assessment Activity Date">2018/07/21</SimpleData>
+		<SimpleData name="Assessment Activity Type">Field-based Assessment</SimpleData>
+		<SimpleData name="Assessment Investigator - Actor">Jan Ciglenečki</SimpleData>
+		<SimpleData name="BP Date From">None</SimpleData>
+		<SimpleData name="BP Date To">None</SimpleData>
+		<SimpleData name="Cadastral Reference">None</SimpleData>
+		<SimpleData name="Construction Technique">Masonry (Dry)</SimpleData>
+		<SimpleData name="Country Type">Egypt</SimpleData>
+		<SimpleData name="Cultural Period Certainty">Definite</SimpleData>
+		<SimpleData name="Cultural Period Type">العصر الكلاسيكي/ماقبل الأسلام (الشام/بلاد الرافدين/إيران/شمال اجزيرة العربية/</SimpleData>
+		<SimpleData name="Damage Extent Type">91-100%</SimpleData>
+		<SimpleData name="Date Inference Making Actor Name">Jan Ciglenečki</SimpleData>
+		<SimpleData name="Disturbance Cause Assignment Assessor Name - Actor">Jan Ciglenečki</SimpleData>
+		<SimpleData name="Disturbance Cause Category Type">Looting/Illegal Activities</SimpleData>
+		<SimpleData name="Disturbance Cause Certainty ">High</SimpleData>
+		<SimpleData name="Disturbance Cause Type ">Unknown</SimpleData>
+		<SimpleData name="Disturbance Date From">None</SimpleData>
+		<SimpleData name="Disturbance Date Occurred Before">None</SimpleData>
+		<SimpleData name="Disturbance Date Occurred On ">None</SimpleData>
+		<SimpleData name="Disturbance Date To ">None</SimpleData>
+		<SimpleData name="EAMENA ID">EAMENA-0263789</SimpleData>
+		<SimpleData name="Effect Certainty">High</SimpleData>
+		<SimpleData name="Effect Type">Artefact Displacement</SimpleData>
+		<SimpleData name="General Description">Storage</SimpleData>
+		<SimpleData name="General Description Type">General Description</SimpleData>
+		<SimpleData name="Geometry Extent Certainty">Definite</SimpleData>
+		<SimpleData name="Geometry Qualifier">Center Point</SimpleData>
+		<SimpleData name="Google Earth Assessment">False</SimpleData>
+		<SimpleData name="Grid ID">E33N27-12</SimpleData>
+		<SimpleData name="Heritage Place Function">Unknown</SimpleData>
+		<SimpleData name="Heritage Place Function Certainty ">Medium</SimpleData>
+		<SimpleData name="Heritage Place Type">Archaeological Site</SimpleData>
+		<SimpleData name="Investigator Role Type">Academic Researcher</SimpleData>
+		<SimpleData name="Location Certainty">Definite</SimpleData>
+		<SimpleData name="Material Class">Stone</SimpleData>
+		<SimpleData name="Material Type">Stone (Cut)</SimpleData>
+		<SimpleData name="Name Type">Alternative Reference, Alternative Reference, Alternative Reference</SimpleData>
+		<SimpleData name="Overall Archaeological Certainty Value ">Definite</SimpleData>
+		<SimpleData name="Overall Condition State Type">Good</SimpleData>
+		<SimpleData name="Overall Site Morphology Type">Surface Feature</SimpleData>
+		<SimpleData name="Overall Site Shape Type">Irregular</SimpleData>
+		<SimpleData name="Priority Type">Within 6 months to 1 year (Urgent)</SimpleData>
+		<SimpleData name="Recommendation Type">مسح أثري</SimpleData>
+		<SimpleData name="Resource Name">WN10, NQT0, Wadi Naqqat</SimpleData>
+		<SimpleData name="Resource Orientation">West</SimpleData>
+		<SimpleData name="SH Date From">None</SimpleData>
+		<SimpleData name="SH Date to">None</SimpleData>
+		<SimpleData name="Site Feature Arrangement Type">Unknown</SimpleData>
+		<SimpleData name="Site Feature Form Type">Pit/Shaft/Tunnel</SimpleData>
+		<SimpleData name="Site Feature Form Type Certainty">Definite</SimpleData>
+		<SimpleData name="Site Feature Interpretation Certainty">Medium</SimpleData>
+		<SimpleData name="Site Feature Interpretation Number Type">1</SimpleData>
+		<SimpleData name="Site Feature Interpretation Type">Storage Facility</SimpleData>
+		<SimpleData name="Site Feature Number Type">1</SimpleData>
+		<SimpleData name="Site Feature Shape Type">Unknown</SimpleData>
+		<SimpleData name="Spatial Coordinates Ref System">None</SimpleData>
+		<SimpleData name="Threat Category">Looting/Illegal Activities</SimpleData>
+		<SimpleData name="Threat Cause Type">Theft/Unauthorised Removal of Objects</SimpleData>
+		<SimpleData name="Threat Inference Making Assessor Name - Actor">Jan Ciglenečki</SimpleData>
+		<SimpleData name="Threat Probability ">Probable</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>33.282946,27.045308</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#NQT0">
+		<SimpleData name="AH Date From">None</SimpleData>
+		<SimpleData name="AH Date To">None</SimpleData>
+		<SimpleData name="Administrative Division ">Red Sea governorate</SimpleData>
+		<SimpleData name="Administrative Division Type"></SimpleData>
+		<SimpleData name="Archaeological From Date">0300</SimpleData>
+		<SimpleData name="Archaeological To Date">0599</SimpleData>
+		<SimpleData name="Assessment Activity Date">2018/07/21</SimpleData>
+		<SimpleData name="Assessment Activity Type">Field-based Assessment</SimpleData>
+		<SimpleData name="Assessment Investigator - Actor">Jan Ciglenečki</SimpleData>
+		<SimpleData name="BP Date From">None</SimpleData>
+		<SimpleData name="BP Date To">None</SimpleData>
+		<SimpleData name="Cadastral Reference">None</SimpleData>
+		<SimpleData name="Construction Technique">Masonry (Dry)</SimpleData>
+		<SimpleData name="Country Type">Egypt</SimpleData>
+		<SimpleData name="Cultural Period Certainty">Definite</SimpleData>
+		<SimpleData name="Cultural Period Type">العصر الكلاسيكي/ماقبل الأسلام (الشام/بلاد الرافدين/إيران/شمال اجزيرة العربية/</SimpleData>
+		<SimpleData name="Damage Extent Type">61-90%</SimpleData>
+		<SimpleData name="Date Inference Making Actor Name">Jan Ciglenečki</SimpleData>
+		<SimpleData name="Disturbance Cause Assignment Assessor Name - Actor">Jan Ciglenečki, None</SimpleData>
+		<SimpleData name="Disturbance Cause Category Type">Tourism/Visitor Activities, Looting/Illegal Activities</SimpleData>
+		<SimpleData name="Disturbance Cause Certainty ">High, High</SimpleData>
+		<SimpleData name="Disturbance Cause Type ">Human Movement/Trampling, Unknown</SimpleData>
+		<SimpleData name="Disturbance Date From">None, None</SimpleData>
+		<SimpleData name="Disturbance Date Occurred Before">None, None</SimpleData>
+		<SimpleData name="Disturbance Date Occurred On ">None, None</SimpleData>
+		<SimpleData name="Disturbance Date To ">None, None</SimpleData>
+		<SimpleData name="EAMENA ID">EAMENA-0263781</SimpleData>
+		<SimpleData name="Effect Certainty">High, Definite</SimpleData>
+		<SimpleData name="Effect Type">Artefact Displacement, Collapse/Structural Damage</SimpleData>
+		<SimpleData name="General Description">Hermitage</SimpleData>
+		<SimpleData name="General Description Type">General Description</SimpleData>
+		<SimpleData name="Geometry Extent Certainty">Definite</SimpleData>
+		<SimpleData name="Geometry Qualifier">Center Point</SimpleData>
+		<SimpleData name="Google Earth Assessment">False</SimpleData>
+		<SimpleData name="Grid ID">E33N27-12</SimpleData>
+		<SimpleData name="Heritage Place Function">Religious, Domestic</SimpleData>
+		<SimpleData name="Heritage Place Function Certainty ">High, High</SimpleData>
+		<SimpleData name="Heritage Place Type">Archaeological Site</SimpleData>
+		<SimpleData name="Investigator Role Type">Academic Researcher</SimpleData>
+		<SimpleData name="Location Certainty">Definite</SimpleData>
+		<SimpleData name="Material Class">Stone</SimpleData>
+		<SimpleData name="Material Type">Stone (Cut)</SimpleData>
+		<SimpleData name="Name Type">Alternative Reference, Alternative Reference, Alternative Reference</SimpleData>
+		<SimpleData name="Overall Archaeological Certainty Value ">Definite</SimpleData>
+		<SimpleData name="Overall Condition State Type">Fair</SimpleData>
+		<SimpleData name="Overall Site Morphology Type">Positive/Built Feature</SimpleData>
+		<SimpleData name="Overall Site Shape Type">Rectangular/Square</SimpleData>
+		<SimpleData name="Priority Type">Within 6 months to 1 year (Urgent)</SimpleData>
+		<SimpleData name="Recommendation Type">مسح أثري</SimpleData>
+		<SimpleData name="Resource Name">WN09, NQT0, Wadi Naqqat</SimpleData>
+		<SimpleData name="Resource Orientation">North-East</SimpleData>
+		<SimpleData name="SH Date From">None</SimpleData>
+		<SimpleData name="SH Date to">None</SimpleData>
+		<SimpleData name="Site Feature Arrangement Type">Rectilinear</SimpleData>
+		<SimpleData name="Site Feature Form Type">Structure</SimpleData>
+		<SimpleData name="Site Feature Form Type Certainty">Definite</SimpleData>
+		<SimpleData name="Site Feature Interpretation Certainty">High</SimpleData>
+		<SimpleData name="Site Feature Interpretation Number Type">1</SimpleData>
+		<SimpleData name="Site Feature Interpretation Type">House/Dwelling</SimpleData>
+		<SimpleData name="Site Feature Number Type">1</SimpleData>
+		<SimpleData name="Site Feature Shape Type">Rectangular/Square</SimpleData>
+		<SimpleData name="Spatial Coordinates Ref System">None</SimpleData>
+		<SimpleData name="Threat Category">Tourism/Visitor Activities, Vandalism, Looting/Illegal Activities</SimpleData>
+		<SimpleData name="Threat Cause Type">Human Movement/Trampling, Human Movement/Trampling, Theft/Unauthorised Removal of Objects</SimpleData>
+		<SimpleData name="Threat Inference Making Assessor Name - Actor">Jan Ciglenečki, None, None</SimpleData>
+		<SimpleData name="Threat Probability ">Probable, Probable, Probable</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>33.28292,27.044669</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#NQT0">
+		<SimpleData name="AH Date From">None</SimpleData>
+		<SimpleData name="AH Date To">None</SimpleData>
+		<SimpleData name="Administrative Division ">Red Sea governorate</SimpleData>
+		<SimpleData name="Administrative Division Type"></SimpleData>
+		<SimpleData name="Archaeological From Date">0300</SimpleData>
+		<SimpleData name="Archaeological To Date">0599</SimpleData>
+		<SimpleData name="Assessment Activity Date">2018/07/21</SimpleData>
+		<SimpleData name="Assessment Activity Type">Field-based Assessment</SimpleData>
+		<SimpleData name="Assessment Investigator - Actor">Jan Ciglenečki</SimpleData>
+		<SimpleData name="BP Date From">None</SimpleData>
+		<SimpleData name="BP Date To">None</SimpleData>
+		<SimpleData name="Cadastral Reference"></SimpleData>
+		<SimpleData name="Construction Technique">Masonry (Dry)</SimpleData>
+		<SimpleData name="Country Type">Egypt</SimpleData>
+		<SimpleData name="Cultural Period Certainty">Definite</SimpleData>
+		<SimpleData name="Cultural Period Type">العصر الكلاسيكي/ماقبل الأسلام (الشام/بلاد الرافدين/إيران/شمال اجزيرة العربية/</SimpleData>
+		<SimpleData name="Damage Extent Type">61-90%</SimpleData>
+		<SimpleData name="Date Inference Making Actor Name">Jan Ciglenečki</SimpleData>
+		<SimpleData name="Disturbance Cause Assignment Assessor Name - Actor">Jan Ciglenečki, None</SimpleData>
+		<SimpleData name="Disturbance Cause Category Type">Tourism/Visitor Activities, Looting/Illegal Activities</SimpleData>
+		<SimpleData name="Disturbance Cause Certainty ">High, High</SimpleData>
+		<SimpleData name="Disturbance Cause Type ">Human Movement/Trampling, Unknown</SimpleData>
+		<SimpleData name="Disturbance Date From">None, None</SimpleData>
+		<SimpleData name="Disturbance Date Occurred Before">None, None</SimpleData>
+		<SimpleData name="Disturbance Date Occurred On ">None, None</SimpleData>
+		<SimpleData name="Disturbance Date To ">None, None</SimpleData>
+		<SimpleData name="EAMENA ID">EAMENA-0263783</SimpleData>
+		<SimpleData name="Effect Certainty">High, Definite</SimpleData>
+		<SimpleData name="Effect Type">Artefact Displacement, Collapse/Structural Damage</SimpleData>
+		<SimpleData name="General Description">Hermitage</SimpleData>
+		<SimpleData name="General Description Type">General Description</SimpleData>
+		<SimpleData name="Geometry Extent Certainty">Definite</SimpleData>
+		<SimpleData name="Geometry Qualifier">Center Point</SimpleData>
+		<SimpleData name="Google Earth Assessment">False</SimpleData>
+		<SimpleData name="Grid ID">E33N27-12</SimpleData>
+		<SimpleData name="Heritage Place Function">Religious, Domestic</SimpleData>
+		<SimpleData name="Heritage Place Function Certainty ">High, High</SimpleData>
+		<SimpleData name="Heritage Place Type">Archaeological Site</SimpleData>
+		<SimpleData name="Investigator Role Type">Academic Researcher</SimpleData>
+		<SimpleData name="Location Certainty">Definite</SimpleData>
+		<SimpleData name="Material Class">Stone</SimpleData>
+		<SimpleData name="Material Type">حجر (مشذب بعض الشيء)</SimpleData>
+		<SimpleData name="Name Type">Alternative Reference, Alternative Reference, Alternative Reference</SimpleData>
+		<SimpleData name="Overall Archaeological Certainty Value ">Definite</SimpleData>
+		<SimpleData name="Overall Condition State Type">Fair</SimpleData>
+		<SimpleData name="Overall Site Morphology Type">Positive/Built Feature</SimpleData>
+		<SimpleData name="Overall Site Shape Type">Rectangular/Square</SimpleData>
+		<SimpleData name="Priority Type">Within 6 months to 1 year (Urgent)</SimpleData>
+		<SimpleData name="Recommendation Type">مسح أثري</SimpleData>
+		<SimpleData name="Resource Name">WN03, NQT0, Wadi Naqqat</SimpleData>
+		<SimpleData name="Resource Orientation">North-East</SimpleData>
+		<SimpleData name="SH Date From">None</SimpleData>
+		<SimpleData name="SH Date to">None</SimpleData>
+		<SimpleData name="Site Feature Arrangement Type">Rectilinear</SimpleData>
+		<SimpleData name="Site Feature Form Type">Structure</SimpleData>
+		<SimpleData name="Site Feature Form Type Certainty">Definite</SimpleData>
+		<SimpleData name="Site Feature Interpretation Certainty">High</SimpleData>
+		<SimpleData name="Site Feature Interpretation Number Type">1</SimpleData>
+		<SimpleData name="Site Feature Interpretation Type">House/Dwelling</SimpleData>
+		<SimpleData name="Site Feature Number Type">1</SimpleData>
+		<SimpleData name="Site Feature Shape Type">Rectangular/Square</SimpleData>
+		<SimpleData name="Spatial Coordinates Ref System">None</SimpleData>
+		<SimpleData name="Threat Category">Tourism/Visitor Activities, Vandalism, Looting/Illegal Activities</SimpleData>
+		<SimpleData name="Threat Cause Type">Human Movement/Trampling, Human Movement/Trampling, Theft/Unauthorised Removal of Objects</SimpleData>
+		<SimpleData name="Threat Inference Making Assessor Name - Actor">Jan Ciglenečki, None, None</SimpleData>
+		<SimpleData name="Threat Probability ">Probable, Probable, Probable</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>33.286734,27.047069</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#NQT0">
+		<SimpleData name="AH Date From">None</SimpleData>
+		<SimpleData name="AH Date To">None</SimpleData>
+		<SimpleData name="Administrative Division ">Red Sea governorate</SimpleData>
+		<SimpleData name="Administrative Division Type"></SimpleData>
+		<SimpleData name="Archaeological From Date">0339</SimpleData>
+		<SimpleData name="Archaeological To Date">0599</SimpleData>
+		<SimpleData name="Assessment Activity Date">2018/07/21</SimpleData>
+		<SimpleData name="Assessment Activity Type">Field-based Assessment</SimpleData>
+		<SimpleData name="Assessment Investigator - Actor">Jan Ciglenečki</SimpleData>
+		<SimpleData name="BP Date From">None</SimpleData>
+		<SimpleData name="BP Date To">None</SimpleData>
+		<SimpleData name="Cadastral Reference">None</SimpleData>
+		<SimpleData name="Construction Technique">Masonry (Dry)</SimpleData>
+		<SimpleData name="Country Type">Egypt</SimpleData>
+		<SimpleData name="Cultural Period Certainty">Definite</SimpleData>
+		<SimpleData name="Cultural Period Type">Classical/Protohistoric/Pre-Islamic (North Africa)</SimpleData>
+		<SimpleData name="Damage Extent Type">91-100%</SimpleData>
+		<SimpleData name="Date Inference Making Actor Name">Jan Ciglenečki</SimpleData>
+		<SimpleData name="Disturbance Cause Assignment Assessor Name - Actor">Jan Ciglenečki, None</SimpleData>
+		<SimpleData name="Disturbance Cause Category Type">Tourism/Visitor Activities, Looting/Illegal Activities</SimpleData>
+		<SimpleData name="Disturbance Cause Certainty ">High, High</SimpleData>
+		<SimpleData name="Disturbance Cause Type ">Human Movement/Trampling, Unknown</SimpleData>
+		<SimpleData name="Disturbance Date From">None, None</SimpleData>
+		<SimpleData name="Disturbance Date Occurred Before">None, None</SimpleData>
+		<SimpleData name="Disturbance Date Occurred On ">None, None</SimpleData>
+		<SimpleData name="Disturbance Date To ">None, None</SimpleData>
+		<SimpleData name="EAMENA ID">EAMENA-0263780</SimpleData>
+		<SimpleData name="Effect Certainty">Definite, High</SimpleData>
+		<SimpleData name="Effect Type">Loss/Removal of Archaeological Material, Collapse/Structural Damage</SimpleData>
+		<SimpleData name="General Description">Church/Chapel</SimpleData>
+		<SimpleData name="General Description Type">General Description</SimpleData>
+		<SimpleData name="Geometry Extent Certainty">Definite</SimpleData>
+		<SimpleData name="Geometry Qualifier">Center Point</SimpleData>
+		<SimpleData name="Google Earth Assessment">False</SimpleData>
+		<SimpleData name="Grid ID">E33N27-12</SimpleData>
+		<SimpleData name="Heritage Place Function">Religious</SimpleData>
+		<SimpleData name="Heritage Place Function Certainty ">Definite</SimpleData>
+		<SimpleData name="Heritage Place Type">Archaeological Site</SimpleData>
+		<SimpleData name="Investigator Role Type">Academic Researcher</SimpleData>
+		<SimpleData name="Location Certainty">Definite</SimpleData>
+		<SimpleData name="Material Class">Stone</SimpleData>
+		<SimpleData name="Material Type">Stone (Cut)</SimpleData>
+		<SimpleData name="Name Type">Alternative Reference, Alternative Reference, Alternative Reference</SimpleData>
+		<SimpleData name="Overall Archaeological Certainty Value ">Definite</SimpleData>
+		<SimpleData name="Overall Condition State Type">Good</SimpleData>
+		<SimpleData name="Overall Site Morphology Type">Positive/Built Feature</SimpleData>
+		<SimpleData name="Overall Site Shape Type">Rectangular/Square</SimpleData>
+		<SimpleData name="Priority Type">Within 6 months to 1 year (Urgent)</SimpleData>
+		<SimpleData name="Recommendation Type">مسح أثري</SimpleData>
+		<SimpleData name="Resource Name">WN01, NQT0, Wadi Naqqat</SimpleData>
+		<SimpleData name="Resource Orientation">South-West</SimpleData>
+		<SimpleData name="SH Date From">None</SimpleData>
+		<SimpleData name="SH Date to">None</SimpleData>
+		<SimpleData name="Site Feature Arrangement Type">Rectilinear</SimpleData>
+		<SimpleData name="Site Feature Form Type">Structure</SimpleData>
+		<SimpleData name="Site Feature Form Type Certainty">Definite</SimpleData>
+		<SimpleData name="Site Feature Interpretation Certainty">High</SimpleData>
+		<SimpleData name="Site Feature Interpretation Number Type">1</SimpleData>
+		<SimpleData name="Site Feature Interpretation Type">Church/Chapel</SimpleData>
+		<SimpleData name="Site Feature Number Type">1</SimpleData>
+		<SimpleData name="Site Feature Shape Type">Rectangular/Square</SimpleData>
+		<SimpleData name="Spatial Coordinates Ref System">None</SimpleData>
+		<SimpleData name="Threat Category">Tourism/Visitor Activities, Vandalism</SimpleData>
+		<SimpleData name="Threat Cause Type">Human Movement/Trampling, Human Movement/Trampling</SimpleData>
+		<SimpleData name="Threat Inference Making Assessor Name - Actor">Jan Ciglenečki, None</SimpleData>
+		<SimpleData name="Threat Probability ">Probable, Probable</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>33.282485,27.050232</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#NQT0">
+		<SimpleData name="AH Date From">None</SimpleData>
+		<SimpleData name="AH Date To">None</SimpleData>
+		<SimpleData name="Administrative Division ">Red Sea governorate</SimpleData>
+		<SimpleData name="Administrative Division Type"></SimpleData>
+		<SimpleData name="Archaeological From Date">0300</SimpleData>
+		<SimpleData name="Archaeological To Date">0599</SimpleData>
+		<SimpleData name="Assessment Activity Date">2018/07/21</SimpleData>
+		<SimpleData name="Assessment Activity Type">Field-based Assessment</SimpleData>
+		<SimpleData name="Assessment Investigator - Actor">Jan Ciglenečki</SimpleData>
+		<SimpleData name="BP Date From">None</SimpleData>
+		<SimpleData name="BP Date To">None</SimpleData>
+		<SimpleData name="Cadastral Reference">None</SimpleData>
+		<SimpleData name="Construction Technique">Masonry (Dry)</SimpleData>
+		<SimpleData name="Country Type">Egypt</SimpleData>
+		<SimpleData name="Cultural Period Certainty">Definite</SimpleData>
+		<SimpleData name="Cultural Period Type">العصر الكلاسيكي/ماقبل الأسلام (الشام/بلاد الرافدين/إيران/شمال اجزيرة العربية/</SimpleData>
+		<SimpleData name="Damage Extent Type">61-90%</SimpleData>
+		<SimpleData name="Date Inference Making Actor Name">Jan Ciglenečki</SimpleData>
+		<SimpleData name="Disturbance Cause Assignment Assessor Name - Actor">Jan Ciglenečki, None</SimpleData>
+		<SimpleData name="Disturbance Cause Category Type">Tourism/Visitor Activities, Looting/Illegal Activities</SimpleData>
+		<SimpleData name="Disturbance Cause Certainty ">High, High</SimpleData>
+		<SimpleData name="Disturbance Cause Type ">Human Movement/Trampling, Unknown</SimpleData>
+		<SimpleData name="Disturbance Date From">None, None</SimpleData>
+		<SimpleData name="Disturbance Date Occurred Before">None, None</SimpleData>
+		<SimpleData name="Disturbance Date Occurred On ">None, None</SimpleData>
+		<SimpleData name="Disturbance Date To ">None, None</SimpleData>
+		<SimpleData name="EAMENA ID">EAMENA-0263782</SimpleData>
+		<SimpleData name="Effect Certainty">High, Definite</SimpleData>
+		<SimpleData name="Effect Type">Artefact Displacement, Collapse/Structural Damage</SimpleData>
+		<SimpleData name="General Description">Hermitage</SimpleData>
+		<SimpleData name="General Description Type">General Description</SimpleData>
+		<SimpleData name="Geometry Extent Certainty">Definite</SimpleData>
+		<SimpleData name="Geometry Qualifier">Center Point</SimpleData>
+		<SimpleData name="Google Earth Assessment">False</SimpleData>
+		<SimpleData name="Grid ID">E33N27-12</SimpleData>
+		<SimpleData name="Heritage Place Function">Religious, Domestic</SimpleData>
+		<SimpleData name="Heritage Place Function Certainty ">High, High</SimpleData>
+		<SimpleData name="Heritage Place Type">Archaeological Site</SimpleData>
+		<SimpleData name="Investigator Role Type">Academic Researcher</SimpleData>
+		<SimpleData name="Location Certainty">High</SimpleData>
+		<SimpleData name="Material Class">Stone</SimpleData>
+		<SimpleData name="Material Type">حجر (مشذب بعض الشيء)</SimpleData>
+		<SimpleData name="Name Type">Alternative Reference, Alternative Reference, Alternative Reference</SimpleData>
+		<SimpleData name="Overall Archaeological Certainty Value ">Definite</SimpleData>
+		<SimpleData name="Overall Condition State Type">Fair</SimpleData>
+		<SimpleData name="Overall Site Morphology Type">Positive/Built Feature</SimpleData>
+		<SimpleData name="Overall Site Shape Type">Rectangular/Square</SimpleData>
+		<SimpleData name="Priority Type">Within 6 months to 1 year (Urgent)</SimpleData>
+		<SimpleData name="Recommendation Type">مسح أثري</SimpleData>
+		<SimpleData name="Resource Name">WN02, NQT0, Wadi Naqqat</SimpleData>
+		<SimpleData name="Resource Orientation">South-West</SimpleData>
+		<SimpleData name="SH Date From">None</SimpleData>
+		<SimpleData name="SH Date to">None</SimpleData>
+		<SimpleData name="Site Feature Arrangement Type">Rectilinear</SimpleData>
+		<SimpleData name="Site Feature Form Type">Structure</SimpleData>
+		<SimpleData name="Site Feature Form Type Certainty">Definite</SimpleData>
+		<SimpleData name="Site Feature Interpretation Certainty">High</SimpleData>
+		<SimpleData name="Site Feature Interpretation Number Type">1</SimpleData>
+		<SimpleData name="Site Feature Interpretation Type">House/Dwelling</SimpleData>
+		<SimpleData name="Site Feature Number Type">1</SimpleData>
+		<SimpleData name="Site Feature Shape Type">Rectangular/Square</SimpleData>
+		<SimpleData name="Spatial Coordinates Ref System">None</SimpleData>
+		<SimpleData name="Threat Category">Tourism/Visitor Activities, Vandalism, Looting/Illegal Activities</SimpleData>
+		<SimpleData name="Threat Cause Type">Human Movement/Trampling, Human Movement/Trampling, Theft/Unauthorised Removal of Objects</SimpleData>
+		<SimpleData name="Threat Inference Making Assessor Name - Actor">Jan Ciglenečki, None, None</SimpleData>
+		<SimpleData name="Threat Probability ">Probable, Probable, Probable</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>33.284902,27.048682</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#NQT0">
+		<SimpleData name="AH Date From">None</SimpleData>
+		<SimpleData name="AH Date To">None</SimpleData>
+		<SimpleData name="Administrative Division ">Red Sea governorate</SimpleData>
+		<SimpleData name="Administrative Division Type"></SimpleData>
+		<SimpleData name="Archaeological From Date">0300</SimpleData>
+		<SimpleData name="Archaeological To Date">0599</SimpleData>
+		<SimpleData name="Assessment Activity Date">2018/07/21</SimpleData>
+		<SimpleData name="Assessment Activity Type">Field-based Assessment</SimpleData>
+		<SimpleData name="Assessment Investigator - Actor">Jan Ciglenečki</SimpleData>
+		<SimpleData name="BP Date From">None</SimpleData>
+		<SimpleData name="BP Date To">None</SimpleData>
+		<SimpleData name="Cadastral Reference">None</SimpleData>
+		<SimpleData name="Construction Technique">Masonry (Dry)</SimpleData>
+		<SimpleData name="Country Type">Egypt</SimpleData>
+		<SimpleData name="Cultural Period Certainty">Definite</SimpleData>
+		<SimpleData name="Cultural Period Type">العصر الكلاسيكي/ماقبل الأسلام (الشام/بلاد الرافدين/إيران/شمال اجزيرة العربية/</SimpleData>
+		<SimpleData name="Damage Extent Type">91-100%</SimpleData>
+		<SimpleData name="Date Inference Making Actor Name">Jan Ciglenečki</SimpleData>
+		<SimpleData name="Disturbance Cause Assignment Assessor Name - Actor">Jan Ciglenečki, None</SimpleData>
+		<SimpleData name="Disturbance Cause Category Type">Tourism/Visitor Activities, Looting/Illegal Activities</SimpleData>
+		<SimpleData name="Disturbance Cause Certainty ">High, High</SimpleData>
+		<SimpleData name="Disturbance Cause Type ">Human Movement/Trampling, Unknown</SimpleData>
+		<SimpleData name="Disturbance Date From">None, None</SimpleData>
+		<SimpleData name="Disturbance Date Occurred Before">None, None</SimpleData>
+		<SimpleData name="Disturbance Date Occurred On ">None, None</SimpleData>
+		<SimpleData name="Disturbance Date To ">None, None</SimpleData>
+		<SimpleData name="EAMENA ID">EAMENA-0263791</SimpleData>
+		<SimpleData name="Effect Certainty">High, High</SimpleData>
+		<SimpleData name="Effect Type">Artefact Displacement, Collapse/Structural Damage</SimpleData>
+		<SimpleData name="General Description">Hermitage</SimpleData>
+		<SimpleData name="General Description Type">General Description</SimpleData>
+		<SimpleData name="Geometry Extent Certainty">Definite</SimpleData>
+		<SimpleData name="Geometry Qualifier">Center Point</SimpleData>
+		<SimpleData name="Google Earth Assessment">False</SimpleData>
+		<SimpleData name="Grid ID">E33N27-12</SimpleData>
+		<SimpleData name="Heritage Place Function">Religious, Domestic</SimpleData>
+		<SimpleData name="Heritage Place Function Certainty ">High, High</SimpleData>
+		<SimpleData name="Heritage Place Type">Archaeological Site</SimpleData>
+		<SimpleData name="Investigator Role Type">Academic Researcher</SimpleData>
+		<SimpleData name="Location Certainty">High</SimpleData>
+		<SimpleData name="Material Class">Stone</SimpleData>
+		<SimpleData name="Material Type">حجر (مشذب بعض الشيء)</SimpleData>
+		<SimpleData name="Name Type">Alternative Reference, Alternative Reference, Alternative Reference</SimpleData>
+		<SimpleData name="Overall Archaeological Certainty Value ">Definite</SimpleData>
+		<SimpleData name="Overall Condition State Type">Good</SimpleData>
+		<SimpleData name="Overall Site Morphology Type">Positive/Built Feature</SimpleData>
+		<SimpleData name="Overall Site Shape Type">Rectangular/Square</SimpleData>
+		<SimpleData name="Priority Type">Within 6 months to 1 year (Urgent)</SimpleData>
+		<SimpleData name="Recommendation Type">مسح أثري</SimpleData>
+		<SimpleData name="Resource Name">WN12, NQT0, Wadi Naqqat</SimpleData>
+		<SimpleData name="Resource Orientation">East</SimpleData>
+		<SimpleData name="SH Date From">None</SimpleData>
+		<SimpleData name="SH Date to">None</SimpleData>
+		<SimpleData name="Site Feature Arrangement Type">Isolated</SimpleData>
+		<SimpleData name="Site Feature Form Type">Structure</SimpleData>
+		<SimpleData name="Site Feature Form Type Certainty">Definite</SimpleData>
+		<SimpleData name="Site Feature Interpretation Certainty">High</SimpleData>
+		<SimpleData name="Site Feature Interpretation Number Type">1</SimpleData>
+		<SimpleData name="Site Feature Interpretation Type">House/Dwelling</SimpleData>
+		<SimpleData name="Site Feature Number Type">1</SimpleData>
+		<SimpleData name="Site Feature Shape Type">Rectangular/Square</SimpleData>
+		<SimpleData name="Spatial Coordinates Ref System">None</SimpleData>
+		<SimpleData name="Threat Category">Tourism/Visitor Activities, Vandalism, Looting/Illegal Activities</SimpleData>
+		<SimpleData name="Threat Cause Type">Human Movement/Trampling, Human Movement/Trampling, Theft/Unauthorised Removal of Objects</SimpleData>
+		<SimpleData name="Threat Inference Making Assessor Name - Actor">Jan Ciglenečki, None, None</SimpleData>
+		<SimpleData name="Threat Probability ">Probable, Probable, Probable</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>33.284134,27.049208</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#NQT0">
+		<SimpleData name="AH Date From">None</SimpleData>
+		<SimpleData name="AH Date To">None</SimpleData>
+		<SimpleData name="Administrative Division ">Red Sea Governorate</SimpleData>
+		<SimpleData name="Administrative Division Type"></SimpleData>
+		<SimpleData name="Archaeological From Date">0300</SimpleData>
+		<SimpleData name="Archaeological To Date">0599</SimpleData>
+		<SimpleData name="Assessment Activity Date">2018/07/23</SimpleData>
+		<SimpleData name="Assessment Activity Type">Field-based Assessment</SimpleData>
+		<SimpleData name="Assessment Investigator - Actor">Jan Ciglenečki</SimpleData>
+		<SimpleData name="BP Date From">None</SimpleData>
+		<SimpleData name="BP Date To">None</SimpleData>
+		<SimpleData name="Cadastral Reference">None</SimpleData>
+		<SimpleData name="Construction Technique">Masonry (Dry)</SimpleData>
+		<SimpleData name="Country Type">Egypt</SimpleData>
+		<SimpleData name="Cultural Period Certainty">Definite</SimpleData>
+		<SimpleData name="Cultural Period Type">Classical/Protohistoric/Pre-Islamic (North Africa)</SimpleData>
+		<SimpleData name="Damage Extent Type">31-60%</SimpleData>
+		<SimpleData name="Date Inference Making Actor Name">Jan Ciglenečki</SimpleData>
+		<SimpleData name="Disturbance Cause Assignment Assessor Name - Actor">Jan Ciglenečki, None</SimpleData>
+		<SimpleData name="Disturbance Cause Category Type">Tourism/Visitor Activities, Looting/Illegal Activities</SimpleData>
+		<SimpleData name="Disturbance Cause Certainty ">High, High</SimpleData>
+		<SimpleData name="Disturbance Cause Type ">Human Movement/Trampling, Unknown</SimpleData>
+		<SimpleData name="Disturbance Date From">None, None</SimpleData>
+		<SimpleData name="Disturbance Date Occurred Before">None, None</SimpleData>
+		<SimpleData name="Disturbance Date Occurred On ">None, None</SimpleData>
+		<SimpleData name="Disturbance Date To ">None, None</SimpleData>
+		<SimpleData name="EAMENA ID">EAMENA-0264248</SimpleData>
+		<SimpleData name="Effect Certainty">High, </SimpleData>
+		<SimpleData name="Effect Type">Artefact Displacement, Collapse/Structural Damage</SimpleData>
+		<SimpleData name="General Description">Hermitage</SimpleData>
+		<SimpleData name="General Description Type">General Description</SimpleData>
+		<SimpleData name="Geometry Extent Certainty">Definite</SimpleData>
+		<SimpleData name="Geometry Qualifier">Center Point</SimpleData>
+		<SimpleData name="Google Earth Assessment">False</SimpleData>
+		<SimpleData name="Grid ID">E33N27-12</SimpleData>
+		<SimpleData name="Heritage Place Function">Religious</SimpleData>
+		<SimpleData name="Heritage Place Function Certainty ">High</SimpleData>
+		<SimpleData name="Heritage Place Type">Archaeological Site</SimpleData>
+		<SimpleData name="Investigator Role Type">Academic Researcher</SimpleData>
+		<SimpleData name="Location Certainty">High</SimpleData>
+		<SimpleData name="Material Class">Stone</SimpleData>
+		<SimpleData name="Material Type">حجر (مشذب بعض الشيء)</SimpleData>
+		<SimpleData name="Name Type">Alternative Reference, Alternative Reference, Alternative Reference</SimpleData>
+		<SimpleData name="Overall Archaeological Certainty Value ">Definite</SimpleData>
+		<SimpleData name="Overall Condition State Type">Poor</SimpleData>
+		<SimpleData name="Overall Site Morphology Type">Positive/Built Feature</SimpleData>
+		<SimpleData name="Overall Site Shape Type">Curvilinear</SimpleData>
+		<SimpleData name="Priority Type">Within 6 months to 1 year (Urgent)</SimpleData>
+		<SimpleData name="Recommendation Type">مسح أثري</SimpleData>
+		<SimpleData name="Resource Name">WN13, NQT0, Wadi Naqqat</SimpleData>
+		<SimpleData name="Resource Orientation">East</SimpleData>
+		<SimpleData name="SH Date From">None</SimpleData>
+		<SimpleData name="SH Date to">None</SimpleData>
+		<SimpleData name="Site Feature Arrangement Type">Isolated</SimpleData>
+		<SimpleData name="Site Feature Form Type">Structure</SimpleData>
+		<SimpleData name="Site Feature Form Type Certainty">Definite</SimpleData>
+		<SimpleData name="Site Feature Interpretation Certainty">Definite</SimpleData>
+		<SimpleData name="Site Feature Interpretation Number Type">1</SimpleData>
+		<SimpleData name="Site Feature Interpretation Type">House/Dwelling</SimpleData>
+		<SimpleData name="Site Feature Number Type">1</SimpleData>
+		<SimpleData name="Site Feature Shape Type">Curvilinear</SimpleData>
+		<SimpleData name="Spatial Coordinates Ref System">None</SimpleData>
+		<SimpleData name="Threat Category">Looting/Illegal Activities, Tourism/Visitor Activities</SimpleData>
+		<SimpleData name="Threat Cause Type">Theft/Unauthorised Removal of Objects, Human Movement/Trampling</SimpleData>
+		<SimpleData name="Threat Inference Making Assessor Name - Actor">Jan Ciglenečki, None</SimpleData>
+		<SimpleData name="Threat Probability ">Probable, Probable</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>33.283917,27.045869</coordinates></Point>
+  </Placemark>
+</Folder>
+</Document></kml>

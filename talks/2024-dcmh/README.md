@@ -1,17 +1,19 @@
-# DCMH
-> see the [DCMH program](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/chma#dcmh)
+# DOCUMENTING COPTIC MONASTIC HERITAGE 
+> 11-13 November 2024, Bibliotheca Alexandrina, Alexandria, Egypt. See the [CHMA project](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/chma)
 
+[dde](#3-6-1)
 
 ## Identifying and Classifying Disturbances and Threats to Archaeological Heritage (EAMENA Project)
-> Day 1, Part 2
+> Day 1, Session 1, Part 2, 10:45 AM - 11:30 PM
 
-* part 1: Presentation of the EAMENA project
-* part 2: Disturbances and Threats to Archaeological Heritage
+* section 1: Presentation of the EAMENA project
+* section 2: Disturbances and Threats to Archaeological Heritage
 
 <!-- <small><b><a href= 'https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/values/Archaeological_Assessment/Absolute_Chronology.html' target='_blank'>values</a><b><small>
 <small><b><a href= 'https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/values/Archaeological_Assessment/Absolute_Chronology.html' target='_blank'>values</a><b><small> -->
 
 ## The EAMENA Database as an IT Framework for a Photographic Archive
+> Day 1, Session 2, Part 2, 12:45 PM - 13:30 PM 
 
 Case study: [Deir Abu Lifa](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/mhe#dal0):
 
@@ -45,8 +47,15 @@ flowchart LR
   click id3 "https://cityofthedead.arch.ox.ac.uk/pages/search.php?search=%21collection114" _blank
 ```
 
-
 ## Case Study: Semi-Anchoretic Settlement in Wadi Naqqat as a Heritage Place within the EAMENA Database
+> Day 2, Session 3, Part 2, 10:45 AM - 11:30 PM
 
 ### Wadi Naqqat
 
+
+## Case Study: Coptic and Greek Orthodox Churches of Alexandria (+ Zeinab Hanafy, Jan Ciglenečki)
+> Day 2, Session 4, Part 2, 12:45 PM - 13:30 PM
+
+
+## How You Can Get Involved: Contributing to the Archive of Coptic Monastic Heritage and the EAMENA database (+ Jan Ciglenečki)
+> Day 3, Session 6, Part 1, 12:00 PM - 12:45 PM <a name="3-6-1"></a>

@@ -8,7 +8,7 @@ author:
         name: <span style="font-size:16pt">University of Oxford</span>
 title-slide-attributes:
     data-background-image: "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaDB-bck.png"
-    data-background-size: "115%"
+    data-background-size: "100%"
     data-background-opacity: "0.4"
 format:
   revealjs: 
@@ -131,8 +131,8 @@ January 2015<br>
 
 <small>
 
-- Rapidly record and assess the status of the archaeological landscape (built heritage)
-- Provide access to the international community to a set of data on endangered heritage (Open Access)
+- Rapidly assess the status of the archaeological landscape (built heritage)
+- Provide access to a set of data on endangered heritage (Open Access)
 
 </small>
 
@@ -168,7 +168,6 @@ January 2015<br>
 ### Geographical coverage
 
 
-
 :::: {.columns}
 
 ::: {.column width="30%"}
@@ -181,7 +180,7 @@ Middle East North Africa (MENA) region
 
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-grids-ea-ge.png" height="400">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-grids-ea-ge.png" height="320">
 
 </center>
 <div class="captiontext">EAMENA Grid Squares projected on Google Earth</div>
@@ -219,10 +218,10 @@ Paleolithic to World War II
 
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/geoserver-map-wfs-gs-nb-hp-2024.png" height="400">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/geoserver-map-wfs-gs-nb-hp-2024.png" height="320">
 
 </center>
-<div class="captiontext">EAMENA Heritage Places counts in 2023</div>
+<div class="captiontext">EAMENA Heritage Places counts in 2024</div>
 
 
 
@@ -236,19 +235,28 @@ Paleolithic to World War II
 ### Open Access
 
 ```{=html}
-<iframe width="500" height="500" src="https://CAA-France.github.io/website/diagrams/oarch_repo_user.html"></iframe>
+<div style="display: flex; justify-content: center;">
+  <iframe width="800" height="500" src="https://CAA-France.github.io/website/diagrams/oarch_repo_user.html"></iframe>
+</div>
 ```
 
-Source: <a href="https://github.com/zackbatist/openarchaeo-collaboration" data-type="link" data-id="openarchaeo-collaboration" target="_blank" rel="noreferrer noopener">openarchaeo-collaboration</a>, published by Batist, Z.; Roe, J., 2024. Open archaeology, open source? ... <em>Internet Archaeology</em> 67. <a href="https://doi.org/10.11141/ia.67.13" data-type="link" data-id="10.11141/ia.67.13" target="_blank" rel="noreferrer noopener">10.11141/ia.67.13</a>
+<div class="captiontext">Batist, Z.; Roe, J., 2024. Open archaeology, open source? Internet Archaeology  67. <a href="https://doi.org/10.11141/ia.67.13" data-type="link" data-id="10.11141/ia.67.13" target="_blank" rel="noreferrer noopener">10.11141/ia.67.13</a></div>
 
 ### ACHP projects
 
 ```{=html}
-<iframe width="500" height="500" src="https://achp-project.github.io/cultural-heritage/map-projects/arches-global-south.html"></iframe>
+<div style="display: flex; justify-content: center;">
+<embed src="https://achp-project.github.io/cultural-heritage/map-projects/arches-global-south.html" width="1400px" height="520px" />
+</div>
 ```
 
 ### Semantic Web
 
+```{=html}
+<div style="display: flex; justify-content: center;">
+<iframe width="800" height="500" src="https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/erd/EAMENA-erd-concepts.html"></iframe>
+</div>
+```
 
 
 :::
@@ -410,7 +418,7 @@ Destruction: iconoclasm, looting, etc.
 ## Disturbances and Threats (2/2)
 
 ```{=html}
-<iframe width="1000" height="400" src="https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/mds/fields-description.html"></iframe>
+<iframe width="1000" height="420" src="https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/mds/fields-description.html"></iframe>
 ```
 
 <div class="captiontext">see the table on the <a href="https://eamena.org/advanced-use#rm-hp-fields">EAMENA website</a></div>
@@ -744,7 +752,7 @@ leaflet::leaflet() %>%
 
 \
 
-<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo-arcadia.png' style='height: 40px;vertical-align: middle;'> Arcadia Fund, a charitable fund of Lisbet Rausing & Peter Baldwin
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo-arcadia.png' style='height: 40px;vertical-align: middle;'> Arcadia Fund <small> a charitable fund of Lisbet Rausing & Peter Baldwin </small>
 
 <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo-british-council.png' style='height: 40px;vertical-align: middle;'> British Council Cultural Protection Fund
 

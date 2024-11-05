@@ -7,18 +7,25 @@
     "text": "Endangered Archaeology in Middle East and North Africa (EAMENA)\n\n\n\n\nSmoke billows from the site of an Israeli airstrike on the Lebanese city of Baalbeck in the Bekaa Valley [Issued on: 23/09/2024 - 09:04 Modified: 24/09/2024 - 04:58] © Nidal SOLH / AFP"
   },
   {
-    "objectID": "index.html#eamena-project-presentation-12",
-    "href": "index.html#eamena-project-presentation-12",
+    "objectID": "index.html#eamena-project-12",
+    "href": "index.html#eamena-project-12",
     "title": "EAMENA",
-    "section": "EAMENA project presentation (1/2)",
-    "text": "EAMENA project presentation (1/2)\n\nTeamsBirth dateAimsFunders\n\n\n\n\n\n\n\nflowchart TD\n  subgraph EA[EAMENA]\n    id1[University of Oxford]\n    id2[University of Leicester]\n    id3[University of Durham]\n  end\n  id1 ---&gt; id6[The Database]\n  id2 ---&gt; id6\n  id3 ---&gt; id6\n  subgraph MA[MAREA]\n    id4[University of Southampton]\n    id5[Ulster University]\n  end\n  id4 ---&gt; id6\n  id5 ---&gt; id6\n  \n  style EA color:#f6d6d6\n  style MA color:#f6d6d6\n  \n  style id1 fill:#f6d6d6,stroke:#333,stroke-width:2px\n  style id2 fill:#f6d6d6,stroke:#333,stroke-width:2px\n  style id3 fill:#f6d6d6,stroke:#333,stroke-width:2px\n  style id4 fill:#f6d6d6,stroke:#333,stroke-width:2px\n  style id5 fill:#f6d6d6,stroke:#333,stroke-width:2px\n  \n  click id1 \"https://www.ox.ac.uk/\" _blank\n  click id2 \"https://le.ac.uk/\" _blank\n  click id3 \"https://www.durham.ac.uk/\" _blank\n  click id4 \"https://www.southampton.ac.uk/\" _blank\n  click id5 \"https://www.ulster.ac.uk/\" _blank\n\n\n\n\n\n\n\n\n\n\nJanuary 2015 project drafted in January 2014\n\n\n\n\n\n‘Terror in the Mosul Museum’, published in ‘The New Yorker’, February 27, 2015\n\n\n\n\n\n\n\n\n\nRapidly record and assess the status of the archaeological landscape (built heritage)\nProvide access to the international community to a set of data on endangered heritage (Open Access)\n\n\n\n\n \n\n\nTemple of Bel, Palmyra, Syria, year 2014 (above) and 2016 (below) (c) Google Earth\n\n\n\n\n\n Arcadia Fund, a charitable fund of Lisbet Rausing & Peter Baldwin\n British Council Cultural Protection Fund"
+    "section": "EAMENA project (1/2)",
+    "text": "EAMENA project (1/2)\n\nTeamsBirth dateAimsFunders\n\n\n\n\n\n\n\nflowchart TD\n  subgraph EA[EAMENA]\n    id1[University of Oxford]\n    id2[University of Leicester]\n    id3[University of Durham]\n  end\n  id1 ---&gt; id6[The Database]\n  id2 ---&gt; id6\n  id3 ---&gt; id6\n  subgraph MA[MAREA]\n    id4[University of Southampton]\n    id5[Ulster University]\n  end\n  id4 ---&gt; id6\n  id5 ---&gt; id6\n  \n  style EA color:#f6d6d6\n  style MA color:#f6d6d6\n  \n  style id1 fill:#f6d6d6,stroke:#333,stroke-width:2px\n  style id2 fill:#f6d6d6,stroke:#333,stroke-width:2px\n  style id3 fill:#f6d6d6,stroke:#333,stroke-width:2px\n  style id4 fill:#f6d6d6,stroke:#333,stroke-width:2px\n  style id5 fill:#f6d6d6,stroke:#333,stroke-width:2px\n  \n  click id1 \"https://www.ox.ac.uk/\" _blank\n  click id2 \"https://le.ac.uk/\" _blank\n  click id3 \"https://www.durham.ac.uk/\" _blank\n  click id4 \"https://www.southampton.ac.uk/\" _blank\n  click id5 \"https://www.ulster.ac.uk/\" _blank\n\n\n\n\n\n\n\n\n\n\nJanuary 2015 project drafted in January 2014\n\n\n\n\n\n‘Terror in the Mosul Museum’, published in ‘The New Yorker’, February 27, 2015\n\n\n\n\n\n\n\n\n\nRapidly assess the status of the archaeological landscape (built heritage)\nProvide access to a set of data on endangered heritage (Open Access)\n\n\n\n\n \n\n\nTemple of Bel, Palmyra, Syria, year 2014 (above) and 2016 (below) © Google Earth\n\n\n\n\n\n Arcadia Fund, a charitable fund of Lisbet Rausing & Peter Baldwin\n British Council Cultural Protection Fund"
   },
   {
-    "objectID": "index.html#eamena-project-presentation-22",
-    "href": "index.html#eamena-project-presentation-22",
+    "objectID": "index.html#eamena-project-22",
+    "href": "index.html#eamena-project-22",
     "title": "EAMENA",
-    "section": "EAMENA project presentation (2/2)",
-    "text": "EAMENA project presentation (2/2)\n\nGeographical coverageTemporal coverageDatabase\n\n\n\n\nMiddle East North Africa (MENA) region\n\n\n\n\n\nEAMENA Grid Squares projected on Google Earth\n\n\n\n\n\n\n\nPaleolithic to World War II\n\n\n\n\n\nEAMENA periods (after 0 AD) (c) PeriodO\n\n\n\n\n\n\n\n\n\nEAMENA Heritage Places counts in 2023"
+    "section": "EAMENA project (2/2)",
+    "text": "EAMENA project (2/2)\n\nGeographical coverageTemporal coverageDatabase\n\n\n\n\nMiddle East North Africa (MENA) region\n\n\n\n\n\nEAMENA Grid Squares projected on Google Earth\n\n\n\n\n\n\n\nPaleolithic to World War II\n\n\n\n\n\nEAMENA periods (after 0 AD) © PeriodO\n\n\n\n\n\n\n\n\n\nEAMENA Heritage Places counts in 2024"
+  },
+  {
+    "objectID": "index.html#eamena-database",
+    "href": "index.html#eamena-database",
+    "title": "EAMENA",
+    "section": "EAMENA database",
+    "text": "EAMENA database\n\nOpen AccessACHP projectsSemantic Web\n\n\n\n  \n\n\nBatist, Z.; Roe, J., 2024. Open archaeology, open source? Internet Archaeology 67. 10.11141/ia.67.13"
   },
   {
     "objectID": "index.html#disturbances-and-threats-12",
@@ -32,7 +39,7 @@
     "href": "index.html#disturbances-and-threats-22",
     "title": "EAMENA",
     "section": "Disturbances and Threats (2/2)",
-    "text": "Disturbances and Threats (2/2)"
+    "text": "Disturbances and Threats (2/2)\n\n\nsee the table on the EAMENA website"
   },
   {
     "objectID": "index.html#listed-projects",
@@ -88,6 +95,6 @@
     "href": "index.html#aknowledgments-contact",
     "title": "EAMENA",
     "section": "Aknowledgments & Contact",
-    "text": "Aknowledgments & Contact\n\n\n Arcadia Fund, a charitable fund of Lisbet Rausing & Peter Baldwin\n British Council Cultural Protection Fund\n\nEAMENA Project:   https://github.com/eamena-project +   https://github.com/archesproject,  http://eamena.arch.ox.ac.uk/\nPartners:  https://www.arch.ox.ac.uk/,  https://le.ac.uk/study/archaeology-ancient-history,  https://www.durham.ac.uk/departments/academic/archaeology/,  http://www.apaame.org/\n\n\n\n\n\nDOCUMENTING COPTIC MONASTIC HERITAGE  11-13 November 2024, Bibliotheca Alexandrina, Alexandria, Egypt"
+    "text": "Aknowledgments & Contact\n\n\n Arcadia Fund  a charitable fund of Lisbet Rausing & Peter Baldwin \n British Council Cultural Protection Fund\n\nEAMENA Project:   https://github.com/eamena-project +   https://github.com/archesproject,  http://eamena.arch.ox.ac.uk/\nPartners:  https://www.arch.ox.ac.uk/,  https://le.ac.uk/study/archaeology-ancient-history,  https://www.durham.ac.uk/departments/academic/archaeology/,  http://www.apaame.org/\n\n\n\n\n\nDOCUMENTING COPTIC MONASTIC HERITAGE  11-13 November 2024, Bibliotheca Alexandrina, Alexandria, Egypt"
   }
 ]

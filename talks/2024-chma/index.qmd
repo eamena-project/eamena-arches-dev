@@ -33,7 +33,7 @@ format:
 
 
 
-# The project {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/MAA44922_006_JMCK_428-036_pp.jpg"}
+# The project {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/MAA44922_006_JMCK_428-036_pp.jpg"}
 
 ```{r, echo=FALSE, warning = F}
 library(rmarkdown)
@@ -43,9 +43,32 @@ library(ggplot2)
 library(dplyr)
 ```
 
-## Project history
+## Endangered Archaeology in the Middle East and North Africa
 
-* 'Endangered Archaeology in the Middle East and North Africa' (EAMENA) project starts in January 2015
+
+:::: {.columns}
+
+::: {.column width="30%"}
+Endangered Archaeology in the Middle East and North Africa (EAMENA)
+:::
+
+::: {.column width="70%"}
+
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/threat-war-baalbeck.png" height="300">
+
+</center>
+<div class="captiontext">Smoke billows from the site of an Israeli airstrike on the Lebanese city of Baalbeck in the Bekaa Valley [Issued on: 23/09/2024 - 09:04 Modified: 24/09/2024 - 04:58] © Nidal SOLH / AFP</div>
+
+:::
+
+:::
+
+
+## EAMENA project history
+
+* Birth date: January 2015
 * Aims: 
   - Rapidly record and assess the status of the archaeological landscape (built heritage)
   - Provide access to the international community to a set of data on endangered heritage (Open Access)
@@ -206,7 +229,7 @@ Destruction: iconoclasm, looting, etc.
 :::
 
 
-# The database {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/23889489303_b3df7d8cef_o.jpg"}
+# The database {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/MAA44922_006_JMCK_428-036_pp.jpg"}
 
 ## Arches-powered platform
 

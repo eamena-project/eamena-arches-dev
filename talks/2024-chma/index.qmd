@@ -7,7 +7,7 @@ author:
       - id: uo
         name: <span style="font-size:16pt">University of Oxford</span>
 title-slide-attributes:
-    data-background-image: "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaDB-bck-1.png"
+    data-background-image: "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaDB-bck-2.png"
     data-background-size: "100%"
     data-background-opacity: "0.4"
 format:
@@ -218,7 +218,7 @@ Paleolithic to World War II
 
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/geoserver-map-wfs-gs-nb-hp-2024.png" height="320">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/geoserver-map-wfs-gs-nb-hp-2024.png" height="340">
 
 </center>
 <div class="captiontext">EAMENA Heritage Places counts in 2024</div>
@@ -234,13 +234,24 @@ Paleolithic to World War II
 
 ### Open Access
 
+:::: {.columns}
+
+::: {.column width="30%"}
+<div class="captiontext">Batist, Z.; Roe, J., 2024. Open archaeology, open source? Internet Archaeology  67. <a href="https://doi.org/10.11141/ia.67.13" data-type="link" data-id="10.11141/ia.67.13" target="_blank" rel="noreferrer noopener">10.11141/ia.67.13</a></div>
+:::
+
+::: {.column width="70%"}
+
 ```{=html}
 <div style="display: flex; justify-content: center;">
   <iframe width="800" height="500" src="https://CAA-France.github.io/website/diagrams/oarch_repo_user.html"></iframe>
 </div>
 ```
 
-<div class="captiontext">Batist, Z.; Roe, J., 2024. Open archaeology, open source? Internet Archaeology  67. <a href="https://doi.org/10.11141/ia.67.13" data-type="link" data-id="10.11141/ia.67.13" target="_blank" rel="noreferrer noopener">10.11141/ia.67.13</a></div>
+:::
+
+:::
+
 
 ### ACHP projects
 
@@ -399,6 +410,41 @@ leaflet::leaflet() %>%
   leaflet::addProviderTiles(leaflet::providers$"Esri.WorldImagery", group = "Ortho") %>%
   leaflet::addProviderTiles(leaflet::providers$"OpenStreetMap", group = "OSM") %>%
   leaflet::addMarkers(lng = 12.487980812351678, lat = 32.80763810717728, popup="Isis Temple in Sabratha") %>%
+  leaflet::addLayersControl(
+    baseGroups = c("Ortho", "OSM"),
+    position = "topright") 
+```
+
+
+:::
+
+::::
+
+### Looting
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-looting-1.png" height="300">
+
+</center>
+<div class="captiontext"> Deir Abu Lifa 1 (DAL01), Looting and Illegal Activities &copy;Jan Ciglenečki, Coptic Monastic Heritage Archive</div>
+
+:::
+
+::: {.column width="40%"}
+
+```{r}
+#| out-width: 400
+#| out-height: 400
+
+leaflet::leaflet() %>%
+  leaflet::addProviderTiles(leaflet::providers$"Esri.WorldImagery", group = "Ortho") %>%
+  leaflet::addProviderTiles(leaflet::providers$"OpenStreetMap", group = "OSM") %>%
+  leaflet::addMarkers(lng = 30.697174378033573, lat = 29.6170553267193, popup="Deir Abu Lifa 1") %>%
   leaflet::addLayersControl(
     baseGroups = c("Ortho", "OSM"),
     position = "topright") 

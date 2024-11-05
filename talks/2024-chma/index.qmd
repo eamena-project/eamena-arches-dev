@@ -7,7 +7,7 @@ author:
       - id: uo
         name: <span style="font-size:16pt">University of Oxford</span>
 title-slide-attributes:
-    data-background-image: "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaDB-bck.png"
+    data-background-image: "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaDB-bck-1.png"
     data-background-size: "100%"
     data-background-opacity: "0.4"
 format:

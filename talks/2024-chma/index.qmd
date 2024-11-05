@@ -1,6 +1,6 @@
 ---
 title: "EAMENA"
-subtitle: "**An Open Access Database for Endangered Archaeology and Cultural Heritage**"
+subtitle: "**Documenting Endangered Archaeology and Cultural Heritage**"
 author:
   - name: Thomas Huet
     affiliation: 
@@ -26,11 +26,10 @@ format:
     # reference-location: document
     footnotes-hover: true
     logo: https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-uni-oxford_.png
-    footer: "<b>DOCUMENTING COPTIC MONASTIC HERITAGE<b> <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo_black.png' style='height: 35px;vertical-align: middle;'> 11-13 November 2024, Bibliotheca Alexandrina, Alexandria, Egypt"
+    footer: "<b>DOCUMENTING COPTIC MONASTIC HERITAGE</b> <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo_black.png' style='height: 35px;vertical-align: middle;'> 11-13 November 2024, Bibliotheca Alexandrina, Alexandria, Egypt"
     margin: 0
     width: 1200
 ---
-
 
 
 # The project {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/MAA44922_006_JMCK_428-036_pp_caption.jpg"}
@@ -48,7 +47,7 @@ library(dplyr)
 
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/threat-war-baalbeck.png" height="430">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/threat-war-baalbeck.png" height="450">
 
 </center>
 <div class="captiontext">Smoke billows from the site of an Israeli airstrike on the Lebanese city of Baalbeck in the Bekaa Valley [Issued on: 23/09/2024 - 09:04 Modified: 24/09/2024 - 04:58] © Nidal SOLH / AFP</div>
@@ -143,8 +142,8 @@ January 2015<br>
 
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/threat-vandalism-baal-2014.png" height="300">
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/threat-vandalism-baal-2016.png" height="300">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/threat-vandalism-baal-2014.png" height="320">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/threat-vandalism-baal-2016.png" height="320">
 
 </center>
 <div class="captiontext">Temple of Bel, Palmyra, Syria, year 2014 (above) and 2016 (below) (c) Google Earth</div>
@@ -206,7 +205,7 @@ Paleolithic to World War II
 
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/ea-periodo-sup0AD.png" height="350">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/ea-periodo-sup0AD.png" height="320">
 
 </center>
 <div class="captiontext">EAMENA periods (after 0 AD) (c) PeriodO</div>
@@ -220,7 +219,7 @@ Paleolithic to World War II
 
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/geoserver-map-wfs-gs-nb-hp-2023.png" height="450">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/geoserver-map-wfs-gs-nb-hp-2024.png" height="400">
 
 </center>
 <div class="captiontext">EAMENA Heritage Places counts in 2023</div>
@@ -229,7 +228,7 @@ Paleolithic to World War II
 
 :::
 
-## Disturbances and Threats
+## Disturbances and Threats (1/2)
 
 ::: {.panel-tabset}
 
@@ -381,6 +380,12 @@ leaflet::leaflet() %>%
 ::: {.notes}
 Destruction: iconoclasm, looting, etc.
 :::
+
+## Disturbances and Threats (2/2)
+
+```{=html}
+<iframe width="1000" height="500" src="https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/mds/fields-description.html"></iframe>
+```
 
 
 # Arches-based projects {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/23889489303_b3df7d8cef_o.jpg"}

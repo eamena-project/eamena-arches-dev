@@ -1,0 +1,19 @@
+{
+  "hash": "be7b0a5cadee56e9ee7d07a30e3563ff",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"EAMENA\"\nsubtitle: \"**A massive and open data information system for endangered archaeology and cultural heritage**\"\nauthor: \"Bill Finlayson, Bijan Rouhani, Thomas Huet, Michael Fradley, Sayantani Neogi, Melisa Holloway, Andrew Wilson\"\ntitle-slide-attributes:\n    data-background-image: \"https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaDB-bck.png\"\n    data-background-size: \"80%\"\n    data-background-opacity: \"0.5\"\nformat:\n  revealjs: \n    css: https://zoometh.github.io/thomashuet/css/quarto.css\n    code-fold: true\n    code-summary: \"<small>Code</small>\"\n    slide-number: true\n    chalkboard: true\n    scrollable: true\n    preview-links: auto\n    reference-location: document\n    footnotes-hover: true\n    logo: https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-uni-oxford_.png\n    footer: \"<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo_black.png' style='height: 35px;vertical-align: middle;'> <https://github.com/eamena-project> GMPCA, Nice, 2023\"\n    margin: 0\n    width: 1200\n---\n\n::: {.cell}\n\n:::\n\n\n\n\n# Section {background-image=\"https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/lod-cidoc-palmyra.png\"}\n\n## XXX\n\n\n{{< video https://youtu.be/x9KTs5_CoNA?t=70 width=\"400\" height=\"300\" >}}\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-after-body": [
+        "\n<script>\n  // htmlwidgets need to know to resize themselves when slides are shown/hidden.\n  // Fire the \"slideenter\" event (handled by htmlwidgets.js) when the current\n  // slide changes (different for each slide format).\n  (function () {\n    // dispatch for htmlwidgets\n    function fireSlideEnter() {\n      const event = window.document.createEvent(\"Event\");\n      event.initEvent(\"slideenter\", true, true);\n      window.document.dispatchEvent(event);\n    }\n\n    function fireSlideChanged(previousSlide, currentSlide) {\n      fireSlideEnter();\n\n      // dispatch for shiny\n      if (window.jQuery) {\n        if (previousSlide) {\n          window.jQuery(previousSlide).trigger(\"hidden\");\n        }\n        if (currentSlide) {\n          window.jQuery(currentSlide).trigger(\"shown\");\n        }\n      }\n    }\n\n    // hookup for slidy\n    if (window.w3c_slidy) {\n      window.w3c_slidy.add_observer(function (slide_num) {\n        // slide_num starts at position 1\n        fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);\n      });\n    }\n\n  })();\n</script>\n\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

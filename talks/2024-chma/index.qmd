@@ -43,39 +43,85 @@ library(ggplot2)
 library(dplyr)
 ```
 
-## Endangered Archaeology in the Middle East and North Africa
+## <span style="font-size:30px">Endangered Archaeology in Middle East and North Africa (EAMENA)</span>
 
+
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/threat-war-baalbeck.png" height="400">
+
+</center>
+<div class="captiontext">Smoke billows from the site of an Israeli airstrike on the Lebanese city of Baalbeck in the Bekaa Valley [Issued on: 23/09/2024 - 09:04 Modified: 24/09/2024 - 04:58] © Nidal SOLH / AFP</div>
+
+
+
+## EAMENA project history
+
+::: {.panel-tabset}
+
+### Birth date
 
 :::: {.columns}
 
 ::: {.column width="30%"}
-Endangered Archaeology in the Middle East and North Africa (EAMENA)
+
+January 2015 (project drafted in January 2014)
+
 :::
 
 ::: {.column width="70%"}
 
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/threat-war-baalbeck.png" height="300">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/threat-vandalism-mosul.png" height="400">
 
 </center>
-<div class="captiontext">Smoke billows from the site of an Israeli airstrike on the Lebanese city of Baalbeck in the Bekaa Valley [Issued on: 23/09/2024 - 09:04 Modified: 24/09/2024 - 04:58] © Nidal SOLH / AFP</div>
+<div class="captiontext">'Terror in the Mosul Museum', published in 'The New Yorker', February 27, 2015</div>
 
 :::
 
 :::
 
 
-## EAMENA project history
 
-* Birth date: January 2015
-* Aims: 
-  - Rapidly record and assess the status of the archaeological landscape (built heritage)
-  - Provide access to the international community to a set of data on endangered heritage (Open Access)
-* Geographical scope: the Middle East North Africa (MENA) region
-* Temporal scope: Paleolithic to World War II
+### Aims
 
-## <span style="font-size:50px">Endangered Archaeology in Middle East and North Africa</span>
+:::: {.columns}
+
+::: {.column width="30%"}
+
+- Rapidly record and assess the status of the archaeological landscape (built heritage)
+- Provide access to the international community to a set of data on endangered heritage (Open Access)
+
+:::
+
+::: {.column width="70%"}
+
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/threat-vandalism-baal-2014.png" height="200">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/threat-vandalism-baal-2016.png" height="200">
+
+</center>
+<div class="captiontext">Temple of Bel, Palmyra, Syria, year 2014 (above) and 2016 (below) (c) Google Earth</div>
+
+:::
+
+:::
+
+
+  
+### Geographical scope
+
+Middle East North Africa (MENA) region
+
+### Temporal scope
+
+Paleolithic to World War II
+
+:::
+
+## <span style="font-size:30px">Endangered Archaeology in Middle East and North Africa</span>
 
 ::: {.panel-tabset}
 

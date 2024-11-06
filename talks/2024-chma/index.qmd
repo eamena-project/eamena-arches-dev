@@ -197,7 +197,7 @@ January 2015<br>
 ::: {.column width="33%"}
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-jordan-megaj.png" width="300">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-jordan-megaj.png" width="400">
 
 </center>
 <div class="captiontext">Middle East Geodatabase for Antiquities Jordan (MEGA Jordan), 2011-...</div>
@@ -207,7 +207,7 @@ January 2015<br>
 ::: {.column width="33%"}
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-jordan-masdar.png" width="300">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-jordan-masdar.png" width="400">
 
 </center>
 <div class="captiontext">Jordan Masdar (Arches v5), 2021-... </div>
@@ -287,13 +287,14 @@ leaflet::leaflet() %>%
 ::: {.column width="60%"}
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/project-overlap.png" height="320">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/projects-overlap.png" height="320">
 
 </center>
 <div class="captiontext">EAMENA and MAEASaM projects overlap in Southern Egypt / Northern Sudan</div>
 :::
 
 ::: {.column width="60%"}
+
 ```{r}
 library(dplyr)
 # df <- st_read(paste0(dirIn, "neonet-data-2023-10-22-select-aera.geojson"), quiet = T)
@@ -303,10 +304,10 @@ leaflet::leaflet(df, width = "600px", height = "400px") %>%
   leaflet::addTiles() %>%
   leaflet::addPolygons(popup = roi)# "<b>Hello World</b>")
 ```
+
 <div class="captiontext">Hala'ib triangle contested territories</div>
 
 :::
-
 
 :::
 
@@ -316,16 +317,17 @@ leaflet::leaflet(df, width = "600px", height = "400px") %>%
 
 :::: {.columns}
 
-::: {.column width="50%"}
+
+::: {.column width="60%"}
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/bu-mapping-out-templated-1.png" width="400">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/bu-mapping-out-templated-1.png" width="600">
 
 </center>
 <div class="captiontext">Bulk-Upload file (User side)</div>
 :::
 
-::: {.column width="50%"}
+::: {.column width="40%"}
 <center>
 
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/postgres-sql-hp-data-all.png" width="400">
@@ -355,8 +357,26 @@ British Council Cultural Protection Fund
 
 ### Typological
 
+:::: {.columns}
+
+::: {.column width="30%"}
+
 Built Heritage
 
+:::
+
+::: {.column width="70%"}
+
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/hp-type-structure.png" height="320">
+
+</center>
+<div class="captiontext">XXX &copy;Jan Ciglenečki, Coptic Monastic Heritage Archive</div>
+
+:::
+
+:::
 
   
 ### Spatial

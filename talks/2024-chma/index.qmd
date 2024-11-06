@@ -166,7 +166,7 @@ January 2015<br>
 <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/cpf-training.jpg' height="300">
 
 </center>
-<div class="captiontext">Cultural Protection Fund (CPF) training in Amman (Jordan), December 2021</div>
+<div class="captiontext">Database training, in Amman (Jordan), December 2021</div>
 :::
 
 ::: {.column width="50%"}
@@ -246,7 +246,45 @@ January 2015<br>
 
 ::::
 
-### XXX
+### Open Access
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-looting.jpg" height="300">
+
+</center>
+<div class="captiontext">Looting of the Assyrian site of Yasin Tepe (Sulaymaniyah, Iraq)</div>
+
+:::
+
+::: {.column width="40%"}
+
+```{r}
+#| out-width: 400
+#| out-height: 400
+
+leaflet::leaflet() %>%
+  leaflet::addProviderTiles(leaflet::providers$"Esri.WorldImagery", group = "Ortho") %>%
+  leaflet::addProviderTiles(leaflet::providers$"OpenStreetMap", group = "OSM") %>%
+  leaflet::addMarkers(lng = 45.6491261, lat = 35.36001515088195, popup="Temple of Bel") %>%
+  leaflet::addLayersControl(
+    baseGroups = c("Ortho", "OSM"),
+    position = "topright") 
+```
+
+:::
+
+::::
+
+### Closed Borders
+
+
+### IT
+
 
 :::
 
@@ -260,11 +298,17 @@ Arcadia Fund, A charitable fund of Lisbet Rausing & Peter Baldwin
 British Council Cultural Protection Fund
 
 
-## EAMENA project (2/2)
+## Coverage
 
 ::: {.panel-tabset}
+
+### Typological
+
+Built Heritage
+
+
   
-### Geographical coverage
+### Spatial
 
 
 :::: {.columns}
@@ -288,7 +332,7 @@ Middle East North Africa (MENA) region
 
 :::
 
-### Temporal coverage
+### Temporal
 
 
 :::: {.columns}
@@ -313,7 +357,9 @@ Paleolithic -- World War II
 
 :::
 
-### Database
+:::
+
+## Database
 
 <center>
 
@@ -321,10 +367,6 @@ Paleolithic -- World War II
 
 </center>
 <div class="captiontext">EAMENA Heritage Places counts in 2024</div>
-
-
-
-:::
 
 
 ## EAMENA database

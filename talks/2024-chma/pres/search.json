@@ -25,7 +25,7 @@
     "href": "index.html#limits",
     "title": "EAMENA",
     "section": "Limits",
-    "text": "Limits\n\nInstitutional ActorsOpen AccessClosed BordersIT\n\n\n\n\n\n\n\n\n“Protection of Syria’s Cultural Heritage in Times of Armed Conflict” e-learning course for Syrian cultural heritage professionals (ICOMOS - ICCROM)\n\n\n\n\nWeiss, Thomas G., et al. Cultural heritage and mass atrocities. Getty Publications, 2022\n\n\n\n\n\n\n\n\n\n\n\nLooting of the Assyrian site of Yasin Tepe (Sulaymaniyah, Iraq)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEAMENA and MAEASaM projects overlap in Southern Egypt and Northern Sudan\n\n\n\n\n\n\n\n\n\nHala’ib triangle contested territories\n\n\n\n\n\n\n\n\n\n\n\nBulk-Upload file (User side)\n\n\n\n\n\n\nBack-office database query (DB management)"
+    "text": "Limits\n\nInstitutional ActorsOpen AccessClosed BordersIT\n\n\n\n\n\n\n\n\n“Protection of Syria’s Cultural Heritage in Times of Armed Conflict” e-learning course for Syrian cultural heritage professionals (ICOMOS - ICCROM)\n\n\n\n\nWeiss, Thomas G., et al. Cultural heritage and mass atrocities. Getty Publications, 2022\n\n\n\n\n\n\n\n\n\n\n\nLooting of the Assyrian site of Yasin Tepe (Sulaymaniyah, Iraq)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEAMENA and MAEASaM projects overlap in Southern Egypt and Northern Sudan\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBulk-Upload file (User side)\n\n\n\n\n\n\nBack-office database query (DB management)"
   },
   {
     "objectID": "index.html#funders",
@@ -68,6 +68,20 @@
     "title": "EAMENA",
     "section": "Assessment",
     "text": "Assessment"
+  },
+  {
+    "objectID": "index.html#data-structure",
+    "href": "index.html#data-structure",
+    "title": "EAMENA",
+    "section": "Data Structure",
+    "text": "Data Structure\n\nGeneralitiesXXX\n\n\n\n\n\n\n\nflowchart LR\n  id1[Heritage&lt;br&gt;Places] &lt;--&gt; id2[Information&lt;br&gt;Resource];\n  id2 --&gt; id3[ResourceSpace&lt;br&gt;collection];\n  \n  click id1 \"https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&reportlink=false&precision=6&total=383724&language=*&term-filter=%5B%7B%22context%22%3A%22%22%2C%22context_label%22%3A%22Heritage%20Place%20-%20Resource%20Name%22%2C%22id%22%3A2%2C%22text%22%3A%22DAL0%22%2C%22type%22%3A%22term%22%2C%22value%22%3A%22DAL0%22%2C%22inverted%22%3Afalse%7D%5D\" _blank\n  click id2 \"https://database.eamena.org/report/cd4584b3-27c7-42da-a37d-88ae2278e012\" _blank\n  click id3 \"https://cityofthedead.arch.ox.ac.uk/pages/search.php?search=%21collection114\" _blank"
+  },
+  {
+    "objectID": "index.html#cases-study",
+    "href": "index.html#cases-study",
+    "title": "EAMENA",
+    "section": "Cases Study",
+    "text": "Cases Study\n\nDeir Abu Lifa\n\n\n\n\n\n\n\n\nLooting and Illegal Activities destroying Deir Abu Lifa 1, Fayoum, Egypt 🔗 link ©Jan Ciglenečki, Coptic Monastic Heritage Archive"
   },
   {
     "objectID": "index.html#footnotes",

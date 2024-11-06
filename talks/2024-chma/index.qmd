@@ -63,7 +63,7 @@ library(dplyr)
 
 :::: {.columns}
 
-::: {.column width="70%"}
+::: {.column width="60%"}
 
 ```{mermaid}
 flowchart LR
@@ -100,7 +100,7 @@ flowchart LR
 
 :::
 
-::: {.column width="30%"}
+::: {.column width="40%"}
 
 <small>
 
@@ -220,7 +220,7 @@ January 2015<br>
 ::: {.column width="33%"}
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-jordan-megaj.png" width="400">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-jordan-megaj.png" height="400">
 
 </center>
 <div class="captiontext">Middle East Geodatabase for Antiquities Jordan (MEGA Jordan), 2011-...</div>
@@ -230,7 +230,7 @@ January 2015<br>
 ::: {.column width="33%"}
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-jordan-masdar.png" width="400">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-jordan-masdar.png" height="400">
 
 </center>
 <div class="captiontext">Jordan Masdar (Arches v5), 2021-... </div>
@@ -305,9 +305,9 @@ leaflet::leaflet() %>%
 
 ### Closed Borders
 
-::: {.columns}
 
-::: {.column width="60%"}
+::: columns
+::: {.column width="50%"}
 
 <center>
 
@@ -318,7 +318,7 @@ leaflet::leaflet() %>%
 
 :::
 
-::: {.column width="60%"}
+::: {.column width="50%"}
 
 ```{r}
 library(dplyr)
@@ -330,9 +330,10 @@ leaflet::leaflet(df, width = "600px", height = "400px") %>%
   leaflet::addPolygons(popup = roi)# "<b>Hello World</b>")
 ```
 
-<div class="captiontext">Hala'ib triangle contested territories</div>
-
 :::
+:::
+
+::: notes
 
 :::
 
@@ -529,10 +530,10 @@ Adapted from <a href="https://github.com/zackbatist/openarchaeo-collaboration" d
 
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/dilbarjin-2016-09.jpeg" height="240">
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/dilbarjin-2019-09.jpeg" height="240">
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/dilbarjin-2021-02.jpeg" height="240">
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/dilbarjin-2022-06.jpeg" height="240">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/dilbarjin-2016-09.jpeg" height="250">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/dilbarjin-2019-09.jpeg" height="250">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/dilbarjin-2021-02.jpeg" height="250">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/dilbarjin-2022-06.jpeg" height="250">
 <div class="captiontext">Dilberjin Tepe, Afghanistan &copy; Iconem</div>
 
 </center>
@@ -739,6 +740,65 @@ Destruction: iconoclasm, looting, etc.
 # Photographic Archive {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/MAA44922_006_JMCK_428-036_pp_caption.jpg"}
 
 
+## Data Structure
+
+::: {.panel-tabset}
+
+### Generalities
+
+```{mermaid}
+flowchart LR
+  id1[Heritage<br>Places] <--> id2[Information<br>Resource];
+  id2 --> id3[ResourceSpace<br>collection];
+  
+  click id1 "https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&reportlink=false&precision=6&total=383724&language=*&term-filter=%5B%7B%22context%22%3A%22%22%2C%22context_label%22%3A%22Heritage%20Place%20-%20Resource%20Name%22%2C%22id%22%3A2%2C%22text%22%3A%22DAL0%22%2C%22type%22%3A%22term%22%2C%22value%22%3A%22DAL0%22%2C%22inverted%22%3Afalse%7D%5D" _blank
+  click id2 "https://database.eamena.org/report/cd4584b3-27c7-42da-a37d-88ae2278e012" _blank
+  click id3 "https://cityofthedead.arch.ox.ac.uk/pages/search.php?search=%21collection114" _blank
+```
+
+### XXX
+
+:::
+
+## Cases Study
+
+::: {.panel-tabset}
+
+
+### Deir Abu Lifa
+
+
+::: columns
+
+::: {.column width="50%"}
+
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-looting-1.png" height="300">
+
+</center>
+<div class="captiontext"> Looting and Illegal Activities destroying Deir Abu Lifa 1, Fayoum, Egypt <a href="https://cityofthedead.arch.ox.ac.uk/pages/view.php?search=%21collection115&k=&modal=&display=thumbs&order_by=collection&offset=0&per_page=48&archive=&sort=ASC&restypes=&recentdaylimit=&foredit=&noreload=true&access=&ref=2222#Header" target="_blank">🔗 link</a> &copy;Jan Ciglenečki, Coptic Monastic Heritage Archive</div>
+
+:::
+
+::: {.column width="50%"}
+
+```{r}
+library(dplyr)
+# df <- st_read(paste0(dirIn, "neonet-data-2023-10-22-select-aera.geojson"), quiet = T)
+df <- sf::st_read("https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/projects/_gs/E30N29-41.geojson", quiet = T)
+roi <- paste0('<a href="', "https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/_gs/E30N29-41.geojson", '" target="_blank">E30N29-41</a>')
+leaflet::leaflet(df, width = "600px", height = "400px") %>%
+  leaflet::addTiles() %>%
+  leaflet::addPolygons(popup = roi)# "<b>Hello World</b>")
+```
+
+:::
+
+:::
+
+
+:::
 
 # Useful links
 

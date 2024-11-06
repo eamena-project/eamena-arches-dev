@@ -11,25 +11,35 @@ Upload your data to your Zenodo account, and then submit your upload to the EAME
 
 1. Upload your data under your Zenodo account
 
-![alt text](image-1.png)
+<p align="center">
+  <img alt="img-name" src="image-1.png" width="700"><br>
+</p>
 
 2. On the right hand panel, choose: `+ Submit to community`
 
-![alt text](image-2.png)
+<p align="center">
+  <img alt="img-name" src="image-2.png" width="700"><br>
+</p>
 
 3. Select the `EAMENA` community
 
-![alt text](image-3.png)
+<p align="center">
+  <img alt="img-name" src="image-3.png" width="700"><br>
+</p>
 
 4. Allow the 'EAMENA database' curators to view and edit your data and metada 
 
-![alt text](image-4.png)
+<p align="center">
+  <img alt="img-name" src="image-4.png" width="700"><br>
+</p>
 
 * From the EAMENA Community side
 
-1. Accept request
+1. Accept the request
 
-![alt text](image-5.png)
+<p align="center">
+  <img alt="img-name" src="image-5.png" width="700"><br>
+</p>
 
 ## Contributions
 

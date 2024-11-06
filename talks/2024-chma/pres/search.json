@@ -42,11 +42,18 @@
     "text": "Coverage\n\nTypologicalSpatialTemporal\n\n\n\n\nBuilt Heritage\n\n\n\n\n\nXXX ©Jan Ciglenečki, Coptic Monastic Heritage Archive\n\n\n\n\n\n\n\nMiddle East North Africa (MENA) region\n\n\n\n\n\nEAMENA Grid Squares projected on Google Earth\n\n\n\n\n\n\n\nPaleolithic – World War II\n\n\n\n\n\nEAMENA periods (after 0 AD) © PeriodO"
   },
   {
-    "objectID": "index.html#database",
-    "href": "index.html#database",
+    "objectID": "index.html#database-system",
+    "href": "index.html#database-system",
     "title": "EAMENA",
-    "section": "Database",
-    "text": "Database\n\nArchesOpen AccessACHP projectsSemantic Web \n\n\n, open source semantic graph geoweb-based information platform for Cultural Heritage management developed by the Getty Conservation Institute (GCI) and the World Monument Fund (WMF) that natively integrates:\n\nCRMbase (CIDOC-CRM)1\nDublin Core Metadata Initiative (DCMI)2\nSimple Knowledge Organisation System (SKOS)3\nExtended Date/Time Format (EDTF)4\nWorld Geodetic System 1984 (WGS84)5\n\n\n\n\n\n\n\nBatist, Z.; Roe, J., 2024. Open archaeology, open source? Internet Archaeology 67. 10.11141/ia.67.13  Adapted from openarchaeo-collaboration. Graph of open archaeological GitHub repositories and connected users via contributions. Darker edges indicate a higher number of contributions. The color of the nodes indicates membership in the largest groups according to the method of edge betweenness without isolated nodes."
+    "section": "Database System",
+    "text": "Database System\n\nArchesOpen AccessProjectsSemantic Web \n\n\n, open source semantic graph geoweb-based information platform for Cultural Heritage management developed by the Getty Conservation Institute (GCI) and the World Monument Fund (WMF) that natively integrates:\n\nCRMbase (CIDOC-CRM)1\nDublin Core Metadata Initiative (DCMI)2\nSimple Knowledge Organisation System (SKOS)3\nExtended Date/Time Format (EDTF)4\nWorld Geodetic System 1984 (WGS84)5\n\n\n\n\n\n\n\nBatist, Z.; Roe, J., 2024. Open archaeology, open source? Internet Archaeology 67. 10.11141/ia.67.13  Adapted from openarchaeo-collaboration. Graph of open archaeological GitHub repositories and connected users via contributions. Darker edges indicate a higher number of contributions. The color of the nodes indicates membership in the largest groups according to the method of edge betweenness without isolated nodes."
+  },
+  {
+    "objectID": "index.html#eamena-database",
+    "href": "index.html#eamena-database",
+    "title": "EAMENA",
+    "section": "EAMENA Database",
+    "text": "EAMENA Database\n\nResource ModelsResource Models instancesData\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEAMENA Heritage Places counts in 2024"
   },
   {
     "objectID": "index.html#definition",
@@ -74,7 +81,7 @@
     "href": "index.html#data-structure",
     "title": "EAMENA",
     "section": "Data Structure",
-    "text": "Data Structure\n\nGeneralitiesXXX\n\n\n\n\n\n\n\nflowchart LR\n  id1[Heritage&lt;br&gt;Places] &lt;--&gt; id2[Information&lt;br&gt;Resource];\n  id2 --&gt; id3[ResourceSpace&lt;br&gt;collection];\n  \n  click id1 \"https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&reportlink=false&precision=6&total=383724&language=*&term-filter=%5B%7B%22context%22%3A%22%22%2C%22context_label%22%3A%22Heritage%20Place%20-%20Resource%20Name%22%2C%22id%22%3A2%2C%22text%22%3A%22DAL0%22%2C%22type%22%3A%22term%22%2C%22value%22%3A%22DAL0%22%2C%22inverted%22%3Afalse%7D%5D\" _blank\n  click id2 \"https://database.eamena.org/report/cd4584b3-27c7-42da-a37d-88ae2278e012\" _blank\n  click id3 \"https://cityofthedead.arch.ox.ac.uk/pages/search.php?search=%21collection114\" _blank"
+    "text": "Data Structure\n\nGeneralitiesXXX\n\n\n\n\n\n\n\n\nflowchart LR\n  id1[Heritage&lt;br&gt;Places] &lt;---&gt; id2[Information&lt;br&gt;Resource];\n  id2 &lt;---&gt; id3[ResourceSpace&lt;br&gt;collection];\n  \n  click id1 \"https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&reportlink=false&precision=6&total=383724&language=*&term-filter=%5B%7B%22context%22%3A%22%22%2C%22context_label%22%3A%22Heritage%20Place%20-%20Resource%20Name%22%2C%22id%22%3A2%2C%22text%22%3A%22DAL0%22%2C%22type%22%3A%22term%22%2C%22value%22%3A%22DAL0%22%2C%22inverted%22%3Afalse%7D%5D\" _blank\n  click id2 \"https://database.eamena.org/report/cd4584b3-27c7-42da-a37d-88ae2278e012\" _blank\n  click id3 \"https://cityofthedead.arch.ox.ac.uk/pages/search.php?search=%21collection114\" _blank"
   },
   {
     "objectID": "index.html#cases-study",

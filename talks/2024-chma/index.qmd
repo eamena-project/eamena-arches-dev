@@ -550,38 +550,39 @@ Adapted from <a href="https://github.com/zackbatist/openarchaeo-collaboration" d
 
 ::::
 
-### Resource Models instances
+### Instances
 
-:::: {.columns}
+<center>
 
-::: {.column width="25%"}
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/dal01-hp-map.png" height="300">
-:::
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/ea-resource-examples.png" height="400">
 
-::: {.column width="25%"}
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/dal01-ir-map.png" height="300">
-:::
+</center>
 
-::: {.column width="25%"}
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/dal01-ir-map.png" height="300">
-:::
-
-::: {.column width="25%"}
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/dal01-gs-map.png" height="300">
-:::
-
-
-::::
 
 ### Data
 
+
+:::: {.columns}
+
+::: {.column width="20%"}
+
+* 209,750 Heritage Places
+* 136,555 Information Resources
+* 2,150 Person-Organisation
+* 27,585 Grid Squares
+:::
+
+::: {.column width="80%"}
 <center>
 
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/geoserver-map-wfs-gs-nb-hp-2024.png" height="340">
 
 </center>
 <div class="captiontext">EAMENA Heritage Places counts in 2024</div>
+:::
 
+
+::::
 
 :::
 

@@ -282,8 +282,20 @@ leaflet::leaflet() %>%
 
 ### Closed Borders
 
+```{r}
+library(dplyr)
+# df <- st_read(paste0(dirIn, "neonet-data-2023-10-22-select-aera.geojson"), quiet = T)
+df <- sf::st_read("https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/talks/2024-chma/img/halaib-traingle.geojson", quiet = T)
+roi <- paste0('<a href="', "https://github.com/eamena-project/eamena-arches-dev/blob/main/talks/2024-chma/img/halaib-traingle.geojson", '" target="_blank">Hala\'ib triangle</a>')
+leaflet::leaflet(df, width = "700px", height = "450px") %>%
+  leaflet::addTiles() %>%
+  leaflet::addPolygons(popup = roi)# "<b>Hello World</b>")
+```
+
 
 ### IT
+
+
 
 
 :::

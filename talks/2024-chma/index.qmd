@@ -210,7 +210,7 @@ January 2015<br>
 ::: {.column width="33%"}
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-jordan-jadis.png" width="300">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-jordan-jadis.png" height="300">
 
 </center>
 <div class="captiontext">Jordan Antiquities Database Information System (JADIS) information system, 1990-95</div>
@@ -220,7 +220,7 @@ January 2015<br>
 ::: {.column width="33%"}
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-jordan-megaj.png" height="400">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-jordan-megaj.png" height="300">
 
 </center>
 <div class="captiontext">Middle East Geodatabase for Antiquities Jordan (MEGA Jordan), 2011-...</div>

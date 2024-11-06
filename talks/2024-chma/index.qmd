@@ -554,7 +554,7 @@ Adapted from <a href="https://github.com/zackbatist/openarchaeo-collaboration" d
 
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/ea-resource-examples.png" height="400">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/ea-resource-example.png" height="400">
 
 </center>
 
@@ -564,15 +564,19 @@ Adapted from <a href="https://github.com/zackbatist/openarchaeo-collaboration" d
 
 :::: {.columns}
 
-::: {.column width="20%"}
+::: {.column width="25%"}
+
+<small>
 
 * 209,750 Heritage Places
 * 136,555 Information Resources
 * 2,150 Person-Organisation
 * 27,585 Grid Squares
+
+</small>
 :::
 
-::: {.column width="80%"}
+::: {.column width="75%"}
 <center>
 
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/geoserver-map-wfs-gs-nb-hp-2024.png" height="340">

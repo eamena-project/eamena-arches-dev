@@ -3,7 +3,7 @@
 
 ## Zenodo
 
-Upload your data to your Zenodo account, and then submit your upload to the EAMENA Zenodo community
+Upload your data to your Zenodo account, and then submit your upload to the [EAMENA Zenodo community](https://zenodo.org/communities/eamena)
 
 ### Submit to the EAMENA community
 

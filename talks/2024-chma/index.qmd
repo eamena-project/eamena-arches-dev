@@ -61,8 +61,12 @@ library(dplyr)
 
 ### Institutions
 
+:::: {.columns}
+
+::: {.column width="70%"}
+
 ```{mermaid}
-flowchart TD
+flowchart LR
   subgraph EA[EAMENA]
     id1[University of Oxford]
     id2[University of Leicester]
@@ -93,6 +97,25 @@ flowchart TD
   click id4 "https://www.southampton.ac.uk/" _blank
   click id5 "https://www.ulster.ac.uk/" _blank
 ```
+
+:::
+
+::: {.column width="30%"}
+
+<small>
+
+* <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-oxford_.png' style='height: 35px;vertical-align: middle;'> <https://www.arch.ox.ac.uk/>
+* <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-leicester.png' style='height: 35px;vertical-align: middle;'> <https://le.ac.uk/study/archaeology-ancient-history>
+* <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-durham.png' style='height: 35px;vertical-align: middle;'> <https://www.durham.ac.uk/departments/academic/archaeology/>
+* <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/prj-apaame.png' style='height: 35px;vertical-align: middle;'> <http://www.apaame.org/>
+
+</small>
+
+:::
+
+:::
+
+
 
 
 
@@ -285,12 +308,14 @@ leaflet::leaflet() %>%
 ::: {.columns}
 
 ::: {.column width="60%"}
+
 <center>
 
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/projects-overlap.png" height="320">
 
 </center>
-<div class="captiontext">EAMENA and MAEASaM projects overlap in Southern Egypt / Northern Sudan</div>
+<div class="captiontext">EAMENA and MAEASaM projects overlap in Southern Egypt and Northern Sudan</div>
+
 :::
 
 ::: {.column width="60%"}
@@ -369,7 +394,7 @@ Built Heritage
 
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/hp-type-structure.png" height="320">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/hp-type-structure.png" height="350">
 
 </center>
 <div class="captiontext">XXX &copy;Jan Ciglenečki, Coptic Monastic Heritage Archive</div>
@@ -436,7 +461,7 @@ Paleolithic -- World War II
 
 ### Arches 
 
-<small><img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'>, open source semantic graph geoweb-based information platform for Cultural Heritage management developed by the Getty Conservation Institute (GCI) and the World Monument Fund (WMF) that natively integrates:
+<small><img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 30px;vertical-align: middle;'>, open source semantic graph geoweb-based information platform for Cultural Heritage management developed by the Getty Conservation Institute (GCI) and the World Monument Fund (WMF) that natively integrates:
 
 - CRMbase ([CIDOC-CRM](https://www.cidoc-crm.org/))[^21]
 - Dublin Core Metadata Initiative ([DCMI](https://www.dublincore.org/))[^2]
@@ -497,17 +522,21 @@ Adapted from <a href="https://github.com/zackbatist/openarchaeo-collaboration" d
 
 :::
 
-# Disturbances and Threats
+# Disturbances and Threats {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/MAA44922_006_JMCK_428-036_pp_caption.jpg"}
 
 
 ## Definition
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/dilbarjin-2016-09.jpeg" height="220">
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/dilbarjin-2019-09.jpeg" height="220">
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/dilbarjin-2021-02.jpeg" height="220">
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/dilbarjin-2022-06.jpeg" height="220">
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/dilbarjin-2016-09.jpeg" height="240">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/dilbarjin-2019-09.jpeg" height="240">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/dilbarjin-2021-02.jpeg" height="240">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/dilbarjin-2022-06.jpeg" height="240">
 <div class="captiontext">Dilberjin Tepe, Afghanistan &copy; Iconem</div>
-<br>
+
+</center>
+
 <b>Disturbances </b><u>caused at</u> & <b>Threats</b> as <u>future risks to</u> heritage places
 
 
@@ -659,40 +688,6 @@ leaflet::leaflet() %>%
 
 ::::
 
-### Looting NOT {data-visibility=hidden}
-
-:::: {.columns}
-
-::: {.column width="60%"}
-
-<center>
-
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-looting.jpg" height="300">
-
-</center>
-<div class="captiontext">Looting of the Assyrian site of Yasin Tepe (Sulaymaniyah, Iraq)</div>
-
-:::
-
-::: {.column width="40%"}
-
-```{r}
-#| out-width: 400
-#| out-height: 400
-
-leaflet::leaflet() %>%
-  leaflet::addProviderTiles(leaflet::providers$"Esri.WorldImagery", group = "Ortho") %>%
-  leaflet::addProviderTiles(leaflet::providers$"OpenStreetMap", group = "OSM") %>%
-  leaflet::addMarkers(lng = 45.6491261, lat = 35.36001515088195, popup="Yasin Tepe") %>%
-  leaflet::addLayersControl(
-    baseGroups = c("Ortho", "OSM"),
-    position = "topright") 
-```
-
-:::
-
-::::
-
 ### Looting
 
 :::: {.columns}
@@ -741,6 +736,10 @@ Destruction: iconoclasm, looting, etc.
 ```
 
 
+# Useful links
+
+* [CMHA project](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/chma#readme)
+* [CMHA tlak (this one)](https://github.com/eamena-project/eamena-arches-dev/tree/main/talks/2024-chma#readme)
 
 
 

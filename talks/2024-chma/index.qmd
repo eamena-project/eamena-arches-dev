@@ -736,10 +736,14 @@ Destruction: iconoclasm, looting, etc.
 ```
 
 
+# Photographic Archive {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/MAA44922_006_JMCK_428-036_pp_caption.jpg"}
+
+
+
 # Useful links
 
 * [CMHA project](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/chma#readme)
-* [CMHA tlak (this one)](https://github.com/eamena-project/eamena-arches-dev/tree/main/talks/2024-chma#readme)
+* [CMHA talk (this one)](https://github.com/eamena-project/eamena-arches-dev/tree/main/talks/2024-chma#readme)
 
 
 

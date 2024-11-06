@@ -1,5 +1,37 @@
 # citation-generator
-> "How-to-cite" EAMENA database and datasets, Automate the generation of DOI and bibliographic references for the EAMENA sub-datasets
+> "How-to-cite" EAMENA database and datasets, Automate the generation of DOI and bibliographic references for the EAMENA sub-datasets, Zenodo, etc.
+
+## Zenodo
+
+Upload your data to your Zenodo account, and then submit your upload to the EAMENA Zenodo community
+
+### Submit to the EAMENA community
+
+* From the Contributor side
+
+1. Upload your data under your Zenodo account
+
+![alt text](image-1.png)
+
+2. On the right hand panel, choose: `+ Submit to community`
+
+![alt text](image-2.png)
+
+3. Select the `EAMENA` community
+
+![alt text](image-3.png)
+
+4. Allow the 'EAMENA database' curators to view and edit your data and metada 
+
+![alt text](image-4.png)
+
+* From the EAMENA Community side
+
+1. Accept request
+
+![alt text](image-5.png)
+
+## Contributions
 
 The aim is to allow EAMENA contributors (see [Contributor profile](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/users)) to easily publish EAMENA data subsets working with a GeoJSON URL only to create GeoJSON data, the user provide a GeoJSON URL ([search and GeoJSON URL examples](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/sistan#dataset), [how to export as GeoJSON](https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/www/arches-v7-search-resource-type.png)).
 

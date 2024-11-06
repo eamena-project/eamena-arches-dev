@@ -210,7 +210,7 @@ Destruction: iconoclasm, looting, etc.
 
 ### CIDOC-CRM
 
-<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> natively integrates the CIDOC Conceptual Reference Model ([CIDOC-CRM](https://www.cidoc-crm.org/))
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> natively integrates the CIDOC Conceptual Reference Model ([CIDOC-CRM](https://www.cidoc-crm.org/))[^21]
 
 ```{=html}
 <embed src="https://eamena-project.github.io/eamena-arches-dev/data/lod/palmyra-cidoc-graph.html" width="1400px" height="600px" />

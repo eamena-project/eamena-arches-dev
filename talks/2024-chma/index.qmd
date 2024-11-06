@@ -187,7 +187,7 @@ January 2015<br>
 ::: {.column width="33%"}
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-jordan-jadis.png" height="300">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-jordan-jadis.png" width="300">
 
 </center>
 <div class="captiontext">Jordan Antiquities Database Information System (JADIS) information system, 1990-95</div>
@@ -197,7 +197,7 @@ January 2015<br>
 ::: {.column width="33%"}
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-jordan-megaj.png" height="300">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-jordan-megaj.png" width="300">
 
 </center>
 <div class="captiontext">Middle East Geodatabase for Antiquities Jordan (MEGA Jordan), 2011-...</div>
@@ -207,7 +207,7 @@ January 2015<br>
 ::: {.column width="33%"}
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-jordan-masdar.png" height="300">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-jordan-masdar.png" width="300">
 
 </center>
 <div class="captiontext">Jordan Masdar (Arches v5), 2021-... </div>
@@ -282,6 +282,18 @@ leaflet::leaflet() %>%
 
 ### Closed Borders
 
+::: {.columns}
+
+::: {.column width="60%"}
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/project-overlap.png" height="320">
+
+</center>
+<div class="captiontext">EAMENA and MAEASaM projects overlap in Southern Egypt / Northern Sudan</div>
+:::
+
+::: {.column width="60%"}
 ```{r}
 library(dplyr)
 # df <- st_read(paste0(dirIn, "neonet-data-2023-10-22-select-aera.geojson"), quiet = T)
@@ -291,6 +303,12 @@ leaflet::leaflet(df, width = "600px", height = "400px") %>%
   leaflet::addTiles() %>%
   leaflet::addPolygons(popup = roi)# "<b>Hello World</b>")
 ```
+<div class="captiontext">Hala'ib triangle contested territories</div>
+
+:::
+
+
+:::
 
 
 ### IT
@@ -298,20 +316,19 @@ leaflet::leaflet(df, width = "600px", height = "400px") %>%
 
 :::: {.columns}
 
-::: {.column width="60%"}
+::: {.column width="50%"}
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/bu-mapping-out-templated-1.png" height="300">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/bu-mapping-out-templated-1.png" width="400">
 
 </center>
 <div class="captiontext">Bulk-Upload file (User side)</div>
 :::
 
-::: {.column width="40%"}
-DB manager back-office
+::: {.column width="50%"}
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/postgres-sql-hp-data-all.png" height="300">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/postgres-sql-hp-data-all.png" width="400">
 
 </center>
 <div class="captiontext">Back-office database query (DB management)</div>
@@ -395,17 +412,25 @@ Paleolithic -- World War II
 
 ## Database
 
-<center>
-
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/geoserver-map-wfs-gs-nb-hp-2024.png" height="340">
-
-</center>
-<div class="captiontext">EAMENA Heritage Places counts in 2024</div>
-
-
-## EAMENA database
-
 ::: {.panel-tabset}
+
+### Arches 
+
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 40px;vertical-align: middle;'> is an open source **semantic graph** geoweb-based information platform for Cultural Heritage management developped by the Getty Conservation Institute (GCI) and the World Monument Fund (WMF). <br>
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 40px;vertical-align: middle;'> natively integrates:
+- CRMbase ([CIDOC-CRM](https://www.cidoc-crm.org/))[^21]
+- Dublin Core Metadata Initiative ([DCMI](https://www.dublincore.org/))[^2]
+- Simple Knowledge Organisation System ([SKOS](https://www.w3.org/2004/02/skos/))[^3]
+- Extended Date/Time Format ([EDTF](https://www.loc.gov/standards/datetime/))[^6]
+- World Geodetic System 1984 ([WGS84](https://www.w3.org/2003/01/geo/))[^7]
+
+
+[^21]: ISO 21127 <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/lod-crmbase.png' style='height: 35px;vertical-align: middle;'>
+[^2]: ISO 15836 <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/lod-iso-dublin.png' style='height: 35px;vertical-align: middle;'>
+[^3]: ISO 25964-1 <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/lod-iso-skos.png' style='height: 35px;vertical-align: middle;'>
+[^6]: ISO 8601-2
+[^7]: ISO 19111
+
 
 ### Open Access
 
@@ -440,7 +465,7 @@ Adapted from <a href="https://github.com/zackbatist/openarchaeo-collaboration" d
 </div>
 ```
 
-### Semantic Web
+### Semantic Web <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/semantic-web-logo.png' style='height: 35px;vertical-align: middle;'>
 
 ```{=html}
 <div style="display: flex; justify-content: center;">

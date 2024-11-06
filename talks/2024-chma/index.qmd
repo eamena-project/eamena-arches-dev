@@ -270,7 +270,7 @@ January 2015<br>
 leaflet::leaflet() %>%
   leaflet::addProviderTiles(leaflet::providers$"Esri.WorldImagery", group = "Ortho") %>%
   leaflet::addProviderTiles(leaflet::providers$"OpenStreetMap", group = "OSM") %>%
-  leaflet::addMarkers(lng = 45.6491261, lat = 35.36001515088195, popup="Temple of Bel") %>%
+  leaflet::addMarkers(lng = 45.6491261, lat = 35.36001515088195, popup="Yasin Tepe") %>%
   leaflet::addLayersControl(
     baseGroups = c("Ortho", "OSM"),
     position = "topright") 
@@ -287,7 +287,7 @@ library(dplyr)
 # df <- st_read(paste0(dirIn, "neonet-data-2023-10-22-select-aera.geojson"), quiet = T)
 df <- sf::st_read("https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/talks/2024-chma/img/halaib-traingle.geojson", quiet = T)
 roi <- paste0('<a href="', "https://github.com/eamena-project/eamena-arches-dev/blob/main/talks/2024-chma/img/halaib-traingle.geojson", '" target="_blank">Hala\'ib triangle</a>')
-leaflet::leaflet(df, width = "700px", height = "450px") %>%
+leaflet::leaflet(df, width = "600px", height = "400px") %>%
   leaflet::addTiles() %>%
   leaflet::addPolygons(popup = roi)# "<b>Hello World</b>")
 ```
@@ -296,6 +296,28 @@ leaflet::leaflet(df, width = "700px", height = "450px") %>%
 ### IT
 
 
+:::: {.columns}
+
+::: {.column width="60%"}
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/bu-mapping-out-templated-1.png" height="300">
+
+</center>
+<div class="captiontext">Bulk-Upload file (User side)</div>
+:::
+
+::: {.column width="40%"}
+DB manager back-office
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/postgres-sql-hp-data-all.png" height="300">
+
+</center>
+<div class="captiontext">Back-office database query (DB management)</div>
+:::
+
+::::
 
 
 :::

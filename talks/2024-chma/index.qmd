@@ -456,7 +456,7 @@ Paleolithic -- World War II
 
 :::
 
-## Database
+## Database System
 
 ::: {.panel-tabset}
 
@@ -504,7 +504,7 @@ Adapted from <a href="https://github.com/zackbatist/openarchaeo-collaboration" d
 :::
 
 
-### ACHP projects
+### Projects
 
 ```{=html}
 <div style="display: flex; justify-content: center;">
@@ -522,6 +522,69 @@ Adapted from <a href="https://github.com/zackbatist/openarchaeo-collaboration" d
 
 
 :::
+
+## EAMENA Database
+
+::: {.panel-tabset}
+
+### Resource Models
+
+:::: {.columns}
+
+::: {.column width="25%"}
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-ea-v4-rm-hp.png" height="300">
+:::
+
+::: {.column width="25%"}
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-ea-v4-rm-ir.png" height="300">
+:::
+
+::: {.column width="25%"}
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-ea-v4-rm-gs.png" height="300">
+:::
+
+::: {.column width="25%"}
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-ea-v4-rm-po.png" height="300">
+:::
+
+
+::::
+
+### Resource Models instances
+
+:::: {.columns}
+
+::: {.column width="25%"}
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-ea-v4-rm-hp.png" height="300">
+:::
+
+::: {.column width="25%"}
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-ea-v4-rm-ir.png" height="300">
+:::
+
+::: {.column width="25%"}
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-ea-v4-rm-gs.png" height="300">
+:::
+
+::: {.column width="25%"}
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-ea-v4-rm-po.png" height="300">
+:::
+
+
+::::
+
+### Data
+
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/geoserver-map-wfs-gs-nb-hp-2024.png" height="340">
+
+</center>
+<div class="captiontext">EAMENA Heritage Places counts in 2024</div>
+
+
+:::
+
 
 # Disturbances and Threats {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/MAA44922_006_JMCK_428-036_pp_caption.jpg"}
 
@@ -746,15 +809,35 @@ Destruction: iconoclasm, looting, etc.
 
 ### Generalities
 
+<center>
+
 ```{mermaid}
 flowchart LR
-  id1[Heritage<br>Places] <--> id2[Information<br>Resource];
-  id2 --> id3[ResourceSpace<br>collection];
+  id1[Heritage<br>Places] <---> id2[Information<br>Resource];
+  id2 <---> id3[ResourceSpace<br>collection];
   
   click id1 "https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&reportlink=false&precision=6&total=383724&language=*&term-filter=%5B%7B%22context%22%3A%22%22%2C%22context_label%22%3A%22Heritage%20Place%20-%20Resource%20Name%22%2C%22id%22%3A2%2C%22text%22%3A%22DAL0%22%2C%22type%22%3A%22term%22%2C%22value%22%3A%22DAL0%22%2C%22inverted%22%3Afalse%7D%5D" _blank
   click id2 "https://database.eamena.org/report/cd4584b3-27c7-42da-a37d-88ae2278e012" _blank
   click id3 "https://cityofthedead.arch.ox.ac.uk/pages/search.php?search=%21collection114" _blank
 ```
+
+</center>
+
+:::: {.columns}
+
+::: {.column width="33%"}
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-ea-v4-rm-hp.png" height="300">
+:::
+
+::: {.column width="33%"}
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-ea-v4-rm-ir.png" height="300">
+:::
+
+::: {.column width="33%"}
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-ea-v4-rm-ir.png" height="300">
+:::
+
+::::
 
 ### XXX
 

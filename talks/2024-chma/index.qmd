@@ -555,19 +555,19 @@ Adapted from <a href="https://github.com/zackbatist/openarchaeo-collaboration" d
 :::: {.columns}
 
 ::: {.column width="25%"}
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-ea-v4-rm-hp.png" height="300">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/dal01-hp-map.png" height="300">
 :::
 
 ::: {.column width="25%"}
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-ea-v4-rm-ir.png" height="300">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/dal01-ir-map.png" height="300">
 :::
 
 ::: {.column width="25%"}
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-ea-v4-rm-gs.png" height="300">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/dal01-ir-map.png" height="300">
 :::
 
 ::: {.column width="25%"}
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-ea-v4-rm-po.png" height="300">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/dal01-gs-map.png" height="300">
 :::
 
 

@@ -23,7 +23,7 @@ format:
       color: ['rgba(255, 0, 0, 0.3)'] # red
     scrollable: true
     preview-links: auto
-    # reference-location: document
+    reference-location: document
     footnotes-hover: true
     logo: https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-uni-oxford_.png
     footer: "<b>DOCUMENTING COPTIC MONASTIC HERITAGE</b> <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo_black.png' style='height: 35px;vertical-align: middle;'> 11-13 November 2024, Bibliotheca Alexandrina, Alexandria, Egypt"
@@ -436,14 +436,15 @@ Paleolithic -- World War II
 
 ### Arches 
 
-<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 40px;vertical-align: middle;'> is an open source **semantic graph** geoweb-based information platform for Cultural Heritage management developped by the Getty Conservation Institute (GCI) and the World Monument Fund (WMF). <br>
-<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 40px;vertical-align: middle;'> natively integrates:
+<small><img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'>, open source semantic graph geoweb-based information platform for Cultural Heritage management developed by the Getty Conservation Institute (GCI) and the World Monument Fund (WMF) that natively integrates:
+
 - CRMbase ([CIDOC-CRM](https://www.cidoc-crm.org/))[^21]
 - Dublin Core Metadata Initiative ([DCMI](https://www.dublincore.org/))[^2]
 - Simple Knowledge Organisation System ([SKOS](https://www.w3.org/2004/02/skos/))[^3]
 - Extended Date/Time Format ([EDTF](https://www.loc.gov/standards/datetime/))[^6]
 - World Geodetic System 1984 ([WGS84](https://www.w3.org/2003/01/geo/))[^7]
 
+</small>
 
 [^21]: ISO 21127 <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/lod-crmbase.png' style='height: 35px;vertical-align: middle;'>
 [^2]: ISO 15836 <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/lod-iso-dublin.png' style='height: 35px;vertical-align: middle;'>
@@ -499,12 +500,19 @@ Adapted from <a href="https://github.com/zackbatist/openarchaeo-collaboration" d
 # Disturbances and Threats
 
 
-## Disturbances/Threats definition
+## Definition
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/dilbarjin-2016-09.jpeg" height="220">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/dilbarjin-2019-09.jpeg" height="220">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/dilbarjin-2021-02.jpeg" height="220">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/dilbarjin-2022-06.jpeg" height="220">
+<div class="captiontext">Dilberjin Tepe, Afghanistan &copy; Iconem</div>
+<br>
+<b>Disturbances </b><u>caused at</u> & <b>Threats</b> as <u>future risks to</u> heritage places
 
 
 
-
-## Disturbances/Threats cases
+## Cases
 
 ::: {.panel-tabset}
 
@@ -651,6 +659,40 @@ leaflet::leaflet() %>%
 
 ::::
 
+### Looting NOT {data-visibility=hidden}
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-looting.jpg" height="300">
+
+</center>
+<div class="captiontext">Looting of the Assyrian site of Yasin Tepe (Sulaymaniyah, Iraq)</div>
+
+:::
+
+::: {.column width="40%"}
+
+```{r}
+#| out-width: 400
+#| out-height: 400
+
+leaflet::leaflet() %>%
+  leaflet::addProviderTiles(leaflet::providers$"Esri.WorldImagery", group = "Ortho") %>%
+  leaflet::addProviderTiles(leaflet::providers$"OpenStreetMap", group = "OSM") %>%
+  leaflet::addMarkers(lng = 45.6491261, lat = 35.36001515088195, popup="Yasin Tepe") %>%
+  leaflet::addLayersControl(
+    baseGroups = c("Ortho", "OSM"),
+    position = "topright") 
+```
+
+:::
+
+::::
+
 ### Looting
 
 :::: {.columns}
@@ -692,56 +734,14 @@ leaflet::leaflet() %>%
 Destruction: iconoclasm, looting, etc.
 :::
 
-## Disturbances/Threats assessment
+## Assessment
 
 ```{=html}
 <iframe width="1000" height="460" src="https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/mds/fields-description.html"></iframe>
 ```
 
 
-# Database Issues & Developments {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/23889489303_b3df7d8cef_o.jpg"} {data-visibility=hidden}
 
-## Disturbances and Threats {data-visibility=hidden}
-
-::: {.panel-tabset}
-
-### Looting
-
-:::: {.columns}
-
-::: {.column width="60%"}
-
-<center>
-
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-looting.jpg" height="300">
-
-</center>
-<div class="captiontext">Looting of the Assyrian site of Yasin Tepe (Sulaymaniyah, Iraq)</div>
-
-:::
-
-::: {.column width="40%"}
-
-```{r}
-#| out-width: 400
-#| out-height: 400
-
-leaflet::leaflet() %>%
-  leaflet::addProviderTiles(leaflet::providers$"Esri.WorldImagery", group = "Ortho") %>%
-  leaflet::addProviderTiles(leaflet::providers$"OpenStreetMap", group = "OSM") %>%
-  leaflet::addMarkers(lng = 45.6491261, lat = 35.36001515088195, popup="Yasin Tepe") %>%
-  leaflet::addLayersControl(
-    baseGroups = c("Ortho", "OSM"),
-    position = "topright") 
-```
-
-:::
-
-::::
-
-:::
-
-:::
 
 
 

@@ -11,90 +11,41 @@
     "href": "index.html#eamena-project-12",
     "title": "EAMENA",
     "section": "EAMENA project (1/2)",
-    "text": "EAMENA project (1/2)\n\nTeamsBirth dateAimsFunders\n\n\n\n\n\n\n\nflowchart TD\n  subgraph EA[EAMENA]\n    id1[University of Oxford]\n    id2[University of Leicester]\n    id3[University of Durham]\n  end\n  id1 ---&gt; id6[The Database]\n  id2 ---&gt; id6\n  id3 ---&gt; id6\n  subgraph MA[MAREA]\n    id4[University of Southampton]\n    id5[Ulster University]\n  end\n  id4 ---&gt; id6\n  id5 ---&gt; id6\n  \n  style EA color:#f6d6d6\n  style MA color:#f6d6d6\n  \n  style id1 fill:#f6d6d6,stroke:#333,stroke-width:2px\n  style id2 fill:#f6d6d6,stroke:#333,stroke-width:2px\n  style id3 fill:#f6d6d6,stroke:#333,stroke-width:2px\n  style id4 fill:#f6d6d6,stroke:#333,stroke-width:2px\n  style id5 fill:#f6d6d6,stroke:#333,stroke-width:2px\n  \n  click id1 \"https://www.ox.ac.uk/\" _blank\n  click id2 \"https://le.ac.uk/\" _blank\n  click id3 \"https://www.durham.ac.uk/\" _blank\n  click id4 \"https://www.southampton.ac.uk/\" _blank\n  click id5 \"https://www.ulster.ac.uk/\" _blank\n\n\n\n\n\n\n\n\n\n\nJanuary 2015 project drafted in January 2014\n\n\n\n\n\n‘Terror in the Mosul Museum’, published in ‘The New Yorker’, February 27, 2015\n\n\n\n\n\n\n\n\n\nRapidly assess the status of the archaeological landscape (built heritage)\nProvide access to a set of data on endangered heritage (Open Access)\n\n\n\n\n \n\n\nTemple of Bel, Palmyra, Syria, year 2014 (above) and 2016 (below) © Google Earth\n\n\n\n\n\n Arcadia Fund, a charitable fund of Lisbet Rausing & Peter Baldwin\n British Council Cultural Protection Fund"
+    "text": "EAMENA project (1/2)\n\nTeamsBirth dateAims (1/2)Aims (2/2)LimitsFunders\n\n\n\n\n\n\n\nflowchart TD\n  subgraph EA[EAMENA]\n    id1[University of Oxford]\n    id2[University of Leicester]\n    id3[University of Durham]\n  end\n  id1 ---&gt; id6[EAMENA Database]\n  id2 ---&gt; id6\n  id3 ---&gt; id6\n  subgraph MA[MAREA]\n    id4[University of Southampton]\n    id5[Ulster University]\n  end\n  id4 ---&gt; id6\n  id5 ---&gt; id6\n  \n  style EA color:#f6d6d6\n  style MA color:#f6d6d6\n  \n  style id1 fill:#f6d6d6,stroke:#333,stroke-width:2px\n  style id2 fill:#f6d6d6,stroke:#333,stroke-width:2px\n  style id3 fill:#f6d6d6,stroke:#333,stroke-width:2px\n  style id4 fill:#f6d6d6,stroke:#333,stroke-width:2px\n  style id5 fill:#f6d6d6,stroke:#333,stroke-width:2px\n  \n  click id1 \"https://www.ox.ac.uk/\" _blank\n  click id2 \"https://le.ac.uk/\" _blank\n  click id3 \"https://www.durham.ac.uk/\" _blank\n  click id4 \"https://www.southampton.ac.uk/\" _blank\n  click id5 \"https://www.ulster.ac.uk/\" _blank\n\n\n\n\n\n\n\n\n\n\nJanuary 2015 project drafted in January 2014\n\n\n\n\n\n‘Terror in the Mosul Museum’, published in ‘The New Yorker’, February 27, 2015\n\n\n\n\n\n\n\n\n\nRapidly assess the status of the archaeological landscape (built heritage)\nProvide access to a set of data on endangered heritage (Open Access)\n\n\n\n\n \n\n\nTemple of Bel, Palmyra, Syria, year 2014 (left) and 2016 (right) © Google Earth\n\n\n\n\n\n\n\n\n\n\n\nCultural Protection Fund (CPF) training in Amman (Jordan), December 2021\n\n\n\n\n\n\nJordan Masdar (Arches v5), created in 2021\n\n\n\n\n\n\n\n\n\n\n\n“Protection of Syria’s Cultural Heritage in Times of Armed Conflict” e-learning course for Syrian cultural heritage professionals (ICOMOS - ICCROM)\n\n\n\n\nWeiss, Thomas G., et al. Cultural heritage and mass atrocities. Getty Publications, 2022\n\n\n\n\n\n Arcadia Fund, A charitable fund of Lisbet Rausing & Peter Baldwin   British Council Cultural Protection Fund"
   },
   {
     "objectID": "index.html#eamena-project-22",
     "href": "index.html#eamena-project-22",
     "title": "EAMENA",
     "section": "EAMENA project (2/2)",
-    "text": "EAMENA project (2/2)\n\nGeographical coverageTemporal coverageDatabase\n\n\n\n\nMiddle East North Africa (MENA) region\n\n\n\n\n\nEAMENA Grid Squares projected on Google Earth\n\n\n\n\n\n\n\nPaleolithic to World War II\n\n\n\n\n\nEAMENA periods (after 0 AD) © PeriodO\n\n\n\n\n\n\n\n\n\nEAMENA Heritage Places counts in 2024"
+    "text": "EAMENA project (2/2)\n\nGeographical coverageTemporal coverageDatabase\n\n\n\n\nMiddle East North Africa (MENA) region\n\n\n\n\n\nEAMENA Grid Squares projected on Google Earth\n\n\n\n\n\n\n\nPaleolithic – World War II\n\n\n\n\n\nEAMENA periods (after 0 AD) © PeriodO\n\n\n\n\n\n\n\n\n\nEAMENA Heritage Places counts in 2024"
   },
   {
     "objectID": "index.html#eamena-database",
     "href": "index.html#eamena-database",
     "title": "EAMENA",
     "section": "EAMENA database",
-    "text": "EAMENA database\n\nOpen AccessACHP projectsSemantic Web\n\n\n\n\n\nBatist, Z.; Roe, J., 2024. Open archaeology, open source? Internet Archaeology 67. 10.11141/ia.67.13"
+    "text": "EAMENA database\n\nOpen AccessACHP projectsSemantic Web\n\n\n\n\n\nBatist, Z.; Roe, J., 2024. Open archaeology, open source? Internet Archaeology 67. 10.11141/ia.67.13  Adapted from openarchaeo-collaboration. Graph of open archaeological GitHub repositories and connected users via contributions. Darker edges indicate a higher number of contributions. The color of the nodes indicates membership in the largest groups according to the method of edge betweenness without isolated nodes."
   },
   {
-    "objectID": "index.html#disturbances-and-threats-12",
-    "href": "index.html#disturbances-and-threats-12",
+    "objectID": "index.html#disturbancesthreats-definition",
+    "href": "index.html#disturbancesthreats-definition",
     "title": "EAMENA",
-    "section": "Disturbances and Threats (1/2)",
-    "text": "Disturbances and Threats (1/2)\n\nWarAgricultureConstructionNaturalLooting\n\n\n\n\n\n\n\n\nDestruction of the Temple of Bel by ISIS on August 23, 2015 (Palmyra, Syria)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDevelopment of ploughed fields and orchards around and within an archaeological site (Udhma, Jordan)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRoad over a section of an exposed church excavation (Ma’in, Jordan) ©APAAME .\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe rising sea waters slowly washed away the Temple of Isis (Sabratha, Libya)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDeir Abu Lifa 1 (DAL01), Looting and Illegal Activities ©Jan Ciglenečki, Coptic Monastic Heritage Archive\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDestruction: iconoclasm, looting, etc."
+    "section": "Disturbances/Threats definition",
+    "text": "Disturbances/Threats definition"
   },
   {
-    "objectID": "index.html#disturbances-and-threats-22",
-    "href": "index.html#disturbances-and-threats-22",
+    "objectID": "index.html#disturbancesthreats-cases",
+    "href": "index.html#disturbancesthreats-cases",
     "title": "EAMENA",
-    "section": "Disturbances and Threats (2/2)",
-    "text": "Disturbances and Threats (2/2)\n\n\nsee the table on the EAMENA website"
+    "section": "Disturbances/Threats cases",
+    "text": "Disturbances/Threats cases\n\nWarAgricultureConstructionNaturalLooting\n\n\n\n\n\n\n\n\nDestruction of the Temple of Bel by ISIS on August 23, 2015 (Palmyra, Syria)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDevelopment of ploughed fields and orchards around and within an archaeological site (Udhma, Jordan)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRoad over a section of an exposed church excavation (Ma’in, Jordan) ©APAAME .\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe rising sea waters slowly washed away the Temple of Isis (Sabratha, Libya)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLooting and Illegal Activities destroying Deir Abu Lifa 1, Fayoum, Egypt ©Jan Ciglenečki, Coptic Monastic Heritage Archive\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDestruction: iconoclasm, looting, etc."
   },
   {
-    "objectID": "index.html#listed-projects",
-    "href": "index.html#listed-projects",
+    "objectID": "index.html#disturbancesthreats-assessment",
+    "href": "index.html#disturbancesthreats-assessment",
     "title": "EAMENA",
-    "section": "Listed projects",
-    "text": "Listed projects"
-  },
-  {
-    "objectID": "index.html#global-south",
-    "href": "index.html#global-south",
-    "title": "EAMENA",
-    "section": "Global South",
-    "text": "Global South"
-  },
-  {
-    "objectID": "index.html#historic-england",
-    "href": "index.html#historic-england",
-    "title": "EAMENA",
-    "section": " Historic England",
-    "text": "Historic England\n\n\n\n\nGeneral view of Stonehenge (Wiltshire, England) © Historic England J940231"
-  },
-  {
-    "objectID": "index.html#new-findings",
-    "href": "index.html#new-findings",
-    "title": "EAMENA",
-    "section": "New Findings",
-    "text": "New Findings\n\n\n\n\n\n\nFradley, M., Simi, F., & Guagnin, M. (2022) 🔗 link\n\n\n\n\n\n\nGlobalkites ANR funded project interactive map screenshot 🔗 link"
-  },
-  {
-    "objectID": "index.html#analysing",
-    "href": "index.html#analysing",
-    "title": "EAMENA",
-    "section": "Analysing",
-    "text": "Analysing\n\n\n\neamenar::geojson_map_path()\n\n\n\n\neamenar::geojson_map_path(export.type = \"profile\")"
-  },
-  {
-    "objectID": "index.html#issues",
-    "href": "index.html#issues",
-    "title": "EAMENA",
-    "section": "Issues",
-    "text": "Issues\n\nCoordinates & LootingInstitutional ActorsData & API SovereigntyData & API Sustainibility\n\n\n\n\n\n\n\n\nLooting of the Assyrian site of Yasin Tepe (Sulaymaniyah, Iraq)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n“Protection of Syria’s Cultural Heritage in Times of Armed Conflict” e-learning course for Syrian cultural heritage professionals (ICOMOS - ICCROM)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMiddle East Geodatabase for Antiquities Jordan (MEGA Jordan), created in 2011http://megajordan.org/\n\n\n\n\n\nJordan Masdar (Arches v5), created in 2021http://34.240.60.23/\n\n\n\n\n\nXXX (Arches v7), to be created in 2023\n\n\n\n\n\n\n\n\n & \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCollaborate =\n\n\n\n\nSharing\n\n\n\n\nand\n\n\n\n\nVersioning\n\n\n\n\n\n\n\nhttps://github.com/achp-project \n\n\n\n\n\n\n\n\n\nproject name\nproject url\n GitHub repository\nGitHub member names\n\n\n\n\nCAAL\nhttps://uclcaal.org\nhttps://github.com/achp-project/prj-caal\n@mnebbia, @BAPAlveyCHIC\n\n\nEAMENA\nhttp://eamena.arch.ox.ac.uk\nhttps://github.com/achp-project/prj-eamena-marea\n@zoometh\n\n\nMaESAM\nhttps://maeasam.org\n\n@razekmh, @manojlokare\n\n\nMAHSA\nhttps://www.mahsa.arch.cam.ac.uk\n\n@junaidjabbar01\n\n\nMAPHSA\nhttps://www.upf.edu/web/maphsa\n\n@jgregoriods\n\n\nMAPSS\nhttps://mapss.shh.mpg.de/info\nhttps://github.com/achp-project/prj-mapss\n@michaeltfisher\n\n\nMaREA\nhttps://marea.soton.ac.uk\nhttps://github.com/achp-project/prj-eamena-marea\n@ads04r"
-  },
-  {
-    "objectID": "index.html#developments",
-    "href": "index.html#developments",
-    "title": "EAMENA",
-    "section": "Developments",
-    "text": "Developments\n\nSoftwareProject\n\n\n\n\n\nEAMENA v4 ( v7)\n\n\n\nInternationalization (مرحبًا, bonjour, ہیلو, …), multi-language data import/export\n 3,  14,  8, …\n\n\n\n\n\n\n\nInternationalization of the EAMENA database - Arabic"
-  },
-  {
-    "objectID": "index.html#aknowledgments-contact",
-    "href": "index.html#aknowledgments-contact",
-    "title": "EAMENA",
-    "section": "Aknowledgments & Contact",
-    "text": "Aknowledgments & Contact\n\n\n Arcadia Fund  a charitable fund of Lisbet Rausing & Peter Baldwin \n British Council Cultural Protection Fund\n\nEAMENA Project:   https://github.com/eamena-project +   https://github.com/archesproject,  http://eamena.arch.ox.ac.uk/\nPartners:  https://www.arch.ox.ac.uk/,  https://le.ac.uk/study/archaeology-ancient-history,  https://www.durham.ac.uk/departments/academic/archaeology/,  http://www.apaame.org/\n\n\n\n\n\nDOCUMENTING COPTIC MONASTIC HERITAGE  11-13 November 2024, Bibliotheca Alexandrina, Alexandria, Egypt"
+    "section": "Disturbances/Threats assessment",
+    "text": "Disturbances/Threats assessment"
   }
 ]

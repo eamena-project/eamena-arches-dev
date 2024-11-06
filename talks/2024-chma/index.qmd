@@ -8,8 +8,8 @@ author:
         name: <span style="font-size:16pt">University of Oxford</span>
 title-slide-attributes:
     data-background-image: "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaDB-bck-2.png"
-    data-background-size: "100%"
-    data-background-opacity: "0.4"
+    data-background-size: "90%"
+    data-background-opacity: "0.7"
 format:
   revealjs: 
     css: https://zoometh.github.io/thomashuet/css/quarto.css
@@ -123,7 +123,7 @@ January 2015<br>
 
 
 
-### Aims
+### Aims (1/2)
 
 :::: {.columns}
 
@@ -152,12 +152,62 @@ January 2015<br>
 
 :::
 
+### Aims (2/2)
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+<center>
+
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/cpf-training.jpg' height="300">
+
+</center>
+<div class="captiontext">Cultural Protection Fund (CPF) training in Amman (Jordan), December 2021</div>
+:::
+
+::: {.column width="50%"}
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-jordan-masdar.png" height="300">
+
+</center>
+<div class="captiontext">Jordan Masdar (Arches v5), created in 2021 </div>
+:::
+
+:::
+
+### Limits
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/icomos-ch-protection-armed-conflict.jpg" height="300">
+
+</center>
+<div class="captiontext">"Protection of Syria’s Cultural Heritage in Times of Armed Conflict" e-learning course for Syrian cultural heritage professionals (ICOMOS - ICCROM)</div>
+
+:::
+
+::: {.column width="50%"}
+
+```{=html}
+<embed src="https://www.getty.edu/publications/cultural-heritage-mass-atrocities/" width="600px" height="300px" />
+```
+<div class="captiontext">Weiss, Thomas G., et al. Cultural heritage and mass atrocities. Getty Publications, 2022</div>
+:::
+
+::::
+
 
 ### Funders
 
 <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo-arcadia.png' style='height: 60px;vertical-align: middle;'><br>
-Arcadia Fund <small>A charitable fund of Lisbet Rausing & Peter Baldwin</small>
-<br>
+Arcadia Fund, A charitable fund of Lisbet Rausing & Peter Baldwin
+<br><br>
 <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo-british-council.png' style='height: 60px;vertical-align: middle;'><br>
 British Council Cultural Protection Fund
 
@@ -239,7 +289,11 @@ Paleolithic -- World War II
 :::: {.columns}
 
 ::: {.column width="30%"}
-<div class="captiontext">Batist, Z.; Roe, J., 2024. Open archaeology, open source? Internet Archaeology  67. <a href="https://doi.org/10.11141/ia.67.13" data-type="link" data-id="10.11141/ia.67.13" target="_blank" rel="noreferrer noopener">10.11141/ia.67.13</a></div>
+<div class="captiontext">
+Batist, Z.; Roe, J., 2024. Open archaeology, open source? Internet Archaeology  67. <a href="https://doi.org/10.11141/ia.67.13" data-type="link" data-id="10.11141/ia.67.13" target="_blank" rel="noreferrer noopener">10.11141/ia.67.13</a>
+<br><br><br>
+Adapted from <a href="https://github.com/zackbatist/openarchaeo-collaboration" data-type="link" data-id="openarchaeo-collaboration" target="_blank" rel="noreferrer noopener">openarchaeo-collaboration</a>. Graph of open archaeological GitHub repositories and connected users via contributions. Darker edges indicate a higher number of contributions. The color of the nodes indicates membership in the largest groups according to the method of edge betweenness without isolated nodes. 
+</div>
 :::
 
 ::: {.column width="70%"}
@@ -259,7 +313,7 @@ Paleolithic -- World War II
 
 ```{=html}
 <div style="display: flex; justify-content: center;">
-<embed src="https://achp-project.github.io/cultural-heritage/map-projects/arches-global-south.html" width="1400px" height="520px" />
+<embed src="https://achp-project.github.io/cultural-heritage/map-projects/arches-global-south.html" width="900px" height="450px" />
 </div>
 ```
 
@@ -267,15 +321,22 @@ Paleolithic -- World War II
 
 ```{=html}
 <div style="display: flex; justify-content: center;">
-<iframe width="800" height="500" src="https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/erd/EAMENA-erd-concepts.html"></iframe>
+<iframe width="800" height="450" src="https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/erd/EAMENA-erd-concepts.html"></iframe>
 </div>
 ```
 
 
 :::
 
+# Disturbances and Threats
 
-## Disturbances and Threats (1/2)
+
+## Disturbances/Threats definition
+
+
+
+
+## Disturbances/Threats cases
 
 ::: {.panel-tabset}
 
@@ -463,152 +524,20 @@ leaflet::leaflet() %>%
 Destruction: iconoclasm, looting, etc.
 :::
 
-## Disturbances and Threats (2/2)
+## Disturbances/Threats assessment
 
 ```{=html}
 <iframe width="1000" height="460" src="https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/mds/fields-description.html"></iframe>
 ```
 
 
+# Database Issues & Developments {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/23889489303_b3df7d8cef_o.jpg"} {data-visibility=hidden}
 
-# Arches-based projects {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/23889489303_b3df7d8cef_o.jpg"}
-
-## Listed projects
-
-```{=html}
-<embed src="https://www.archesproject.org/implementations-of-arches" width="1400px" height="520px" />
-```
-
-## Global South
-
-```{=html}
-<embed src="https://achp-project.github.io/cultural-heritage/map-projects/arches-global-south.html" width="1400px" height="520px" />
-```
-
-## <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-historic-england_.png' style='height: 50px;vertical-align: middle;'> Historic England  
-
-<center>
-
-<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-historic-england-stonehenge.jpg' style='height: 450px'>
- 
-
-</center>
-<div class="captiontext">General view of Stonehenge (Wiltshire, England) © Historic England J940231</div>
-
-# Research {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/23889489303_b3df7d8cef_o.jpg"}
-
-
-## New Findings
-
-:::: {.columns}
-
-::: {.column width="60%"}
-
-<center>
-
-<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/bib-3535-fradley.png' style='height: 450px'>
-</center>
-
-<div class="captiontext">Fradley, M., Simi, F., & Guagnin, M. (2022) [🔗 link](https://journals.sagepub.com/doi/full/10.1177/09596836221114290)</div>
-
-:::
-
-::: {.column width="40%"}
-
-<center>
-
-
-<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/prj-globalkites.png' style='height: 450px'>
-</center>
-
-<div class="captiontext">Globalkites ANR funded project interactive map screenshot [🔗 link](https://www.globalkites.fr/)</div>
-
-:::
-
-::::
-
-
-## New Findings {data-visibility=hidden}
-
-:::: {.columns}
-
-::: {.column width="60%"}
-
-```{=html}
-<embed src="http://shinyserver.cfs.unipi.it:3838/teach/stats/bib/BIB-3535-Kites.pdf" width="800px" height="450px" />
-```
-
-```{=html}
-<embed src="https://www.archaeology.org/news/10815-220908-desert-hunting-kites" width="800px" height="450px" />
-```
-
-```{=html}
-<embed src="https://journals.sagepub.com/doi/full/10.1177/09596836221114290" width="800px" height="450px" />
-```
-
-```{=html}
-<embed src="https://github.com/eamena-project/eamena-arches-dev/blob/main/talks/2023-gmpca/BIB-3535-Kites.pdf" width="800px" height="450px" />
-```
-
-
-<div class="captiontext">New desert kites in Eastern Arabia</div>
-
-:::
-
-::: {.column width="40%"}
-
-<center>
-
-<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/prj-globalkites.png' style='height: 450px'>
-</center>
-
-<div class="captiontext">Screenshot of the  [Globalkites](https://www.globalkites.fr/) ANR funded project interactive map</div>
-
-:::
-
-::::
-
-## Analysing
-
-:::: {.columns}
-
-::: {.column width="40%"}
-
-<center>
-
-```{.r}
-eamenar::geojson_map_path()
-```
-
-<img src="https://raw.githubusercontent.com/eamena-project/eamenaR/main/results/caravanserail_paths.png" height="450">
-
-</center>
-
-:::
-
-::: {.column width="60%"}
-
-<center>
-
-```{.r}
-eamenar::geojson_map_path(export.type = "profile")
-```
-
-<img src="https://raw.githubusercontent.com/eamena-project/eamenaR/main/results/map_path_profile.png" height="450">
-
-</center>
-
-:::
-
-::::
-
-# Database Issues & Developments {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/23889489303_b3df7d8cef_o.jpg"}
-
-## Issues
+## Disturbances and Threats {data-visibility=hidden}
 
 ::: {.panel-tabset}
 
-### <span class="tabsetheadertext">Coordinates & Looting</span>
+### Looting
 
 :::: {.columns}
 
@@ -642,176 +571,9 @@ leaflet::leaflet() %>%
 
 ::::
 
-
-### <span class="tabsetheadertext">Institutional Actors</span>
-
-:::: {.columns}
-
-::: {.column width="40%"}
-
-<center>
-
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/icomos-ch-protection-armed-conflict.jpg" height="300">
-
-</center>
-<div class="captiontext">"Protection of Syria’s Cultural Heritage in Times of Armed Conflict" e-learning course for Syrian cultural heritage professionals (ICOMOS - ICCROM)</div>
-
 :::
 
-::: {.column width="60%"}
-
-```{=html}
-<embed src="https://www.getty.edu/publications/cultural-heritage-mass-atrocities/" width="700px" height="420px" />
-```
-
 :::
-
-::::
-
-\
-\
-
-### <span class="tabsetheadertext">Data & API Sovereignty</span>
-
-<center>
-
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-megaj.png" height="300">
-
-</center>
-<div class="captiontext">Middle East Geodatabase for Antiquities Jordan (MEGA Jordan), created in 2011<http://megajordan.org/></div>
-
-
-<center>
-
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-jordan-masdar.png" height="300">
-
-</center>
-<div class="captiontext">Jordan Masdar (Arches v5), created in 2021<http://34.240.60.23/></div>
-
-
-<center>
-
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/img-petra.jpg" height="300">
-
-</center>
-<div class="captiontext">XXX (Arches v7), to be created in 2023</div>
-
-
-
-
-### <span class="tabsetheadertext">Data & API Sustainibility</span>
-
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-73oq{border-color:#000000;text-align:left;vertical-align:top}
-</style>
-<table class="tg">
-<thead>
-  <tr>
-    <td><img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png' style='height: 100px;vertical-align: middle;'> & <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-gitlab.png' style='height: 100px;vertical-align: middle;'></td>
-    <td><img src="https://raw.githubusercontent.com/achp-project/cultural-heritage/master/www/logo.png" height="200"></td>
-    <td></td>
-    <td><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/workflow-sharing-data.png" height="200"></td>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td><div class="captiontext">Collaborate = </div></td>
-    <td><div class="captiontext">Sharing</div></td>
-    <td><div class="captiontext">and</div></td>
-    <td><div class="captiontext">Versioning</div></td>
-  </tr>
-</tbody>
-</table>
-
-
-<div style="font-size:25px">
-<center>
-
-<https://github.com/achp-project>
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/prj-achp.png" height="200" style="filter: drop-shadow(5px 5px 5px #222);">
-
-</center>
-<div class="captiontext"></div>
-</div>
-
-<div style="font-size:25px">
-
-| project name | project url                       | <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png' style='height: 40px;vertical-align: middle;'> GitHub repository                                | GitHub member names     |
-|--------------|-----------------------------------|--------------------------------------------------|-------------------------|
-| CAAL         | <https://uclcaal.org>              | <https://github.com/achp-project/prj-caal>         | @mnebbia, @BAPAlveyCHIC |
-| EAMENA       | <http://eamena.arch.ox.ac.uk>      | <https://github.com/achp-project/prj-eamena-marea> | @zoometh                |
-| MaESAM       | <https://maeasam.org>              |                                                  | @razekmh, @manojlokare  |
-| MAHSA        | <https://www.mahsa.arch.cam.ac.uk> |                                                  | @junaidjabbar01         |
-| MAPHSA       | <https://www.upf.edu/web/maphsa>    |                                                  | @jgregoriods            |
-| MAPSS        | <https://mapss.shh.mpg.de/info>    | <https://github.com/achp-project/prj-mapss>        | @michaeltfisher         |
-| MaREA        | <https://marea.soton.ac.uk>        | <https://github.com/achp-project/prj-eamena-marea> | @ads04r                 |
-
-</div>
-
-:::
-
-## Developments
-
-::: {.panel-tabset}
-
-### Software
-
-::: {.columns}
-
-::: {.column width="30%"}
-
-<center>EAMENA v4 (<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> v7)</center>
-
-<div style="font-size:35px">
-* Internationalization (مرحبًا, *bonjour*, ہیلو, ...), multi-language data import/export
-* <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-django.png' style='height: 40px;vertical-align: middle;'> 3, <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-postgres.png' style='height: 50px;vertical-align: middle;'> 14, <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-elastic.png' style='height: 45px;vertical-align: middle;'> 8, ...
-</div>
-
-:::
-
-::: {.column width="70%"}
-
-<center>
-
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-ea-v4.png" height="450">
-
-</center>
-<div class="captiontext">Internationalization of the EAMENA database - Arabic</div>
-
-:::
-
-::::
-
-### Project
-
-:::
-
-
-# Conclusion {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/23889489303_b3df7d8cef_o.jpg"}
-
-
-## Aknowledgments & Contact
-
-\
-
-<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo-arcadia.png' style='height: 40px;vertical-align: middle;'> Arcadia Fund <small> a charitable fund of Lisbet Rausing & Peter Baldwin </small>
-
-<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo-british-council.png' style='height: 40px;vertical-align: middle;'> British Council Cultural Protection Fund
-
-
-<div style="font-size:35px">
-
-**EAMENA Project**: <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png' style='height: 40px;vertical-align: middle;'> <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo-eamena-gh-org.png' style='height: 40px;vertical-align: middle;'> <https://github.com/eamena-project> + <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png' style='height: 40px;vertical-align: middle;'> <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 40px;vertical-align: middle;'> <https://github.com/archesproject>, <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/website.png' style='height: 40px;vertical-align: middle;'> <http://eamena.arch.ox.ac.uk/>
-\
-**Partners**: <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-oxford_.png' style='height: 35px;vertical-align: middle;'> <https://www.arch.ox.ac.uk/>, <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-leicester.png' style='height: 35px;vertical-align: middle;'> <https://le.ac.uk/study/archaeology-ancient-history>, <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-durham.png' style='height: 35px;vertical-align: middle;'> <https://www.durham.ac.uk/departments/academic/archaeology/>, <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/prj-apaame.png' style='height: 35px;vertical-align: middle;'> <http://www.apaame.org/>
-
-</div>
-
 
 
 

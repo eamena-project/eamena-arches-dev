@@ -3,7 +3,7 @@ project:
   output-dir: pres
 
 website:
-  title: "EAMENA"
+  title: "EA-CMHA"
   favicon: img/inst-uni-oxford.png
   repo-url: https://github.com/quarto-dev/quarto-web
   page-footer:

@@ -1,7 +1,7 @@
 # CMHA
 > Coptic Monastic Heritage Archive, CMHArchive, Coptic Monastic Heritage in Egypt, *aka* Endangered Monastic Heritage in Egypt
 
-Dataset for the ["Documenting Coptic Monastic Heritage" project](https://www.ff.uni-lj.si/en/news/documenting-coptic-monastic-heritage-project), [datasets](#datasets), [workshop](#dcmh)
+Dataset for the ["Documenting Coptic Monastic Heritage" project](https://www.ff.uni-lj.si/en/news/documenting-coptic-monastic-heritage-project), [datasets](#datasets), [workshop](https://github.com/eamena-project/eamena-arches-dev/tree/main/talks/2024-chma)
 
 * Issue: [#55](https://github.com/eamena-project/eamena-arches-dev/issues/55)
 

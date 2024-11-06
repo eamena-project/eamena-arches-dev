@@ -54,13 +54,12 @@ library(dplyr)
 
 
 
-## EAMENA project (1/2)
+## Who we are
 
 ::: {.panel-tabset}
 
 
-
-### Teams
+### Institutions
 
 ```{mermaid}
 flowchart TD
@@ -121,9 +120,13 @@ January 2015<br>
 
 :::
 
+:::
 
+## Aims
 
-### Aims (1/2)
+::: {.panel-tabset}
+
+### Documenting
 
 :::: {.columns}
 
@@ -152,7 +155,7 @@ January 2015<br>
 
 :::
 
-### Aims (2/2)
+### Training
 
 :::: {.columns}
 
@@ -169,15 +172,56 @@ January 2015<br>
 ::: {.column width="50%"}
 <center>
 
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/data-lifecycle-collect-ground-training.png' height="300">
+
+</center>
+<div class="captiontext">Field assessment training, World Heritage Site of Um er-Rasas (Jordan)</div>
+:::
+
+:::
+
+### Leveraging
+
+:::: {.columns}
+
+::: {.column width="33%"}
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-jordan-jadis.png" height="300">
+
+</center>
+<div class="captiontext">Jordan Antiquities Database Information System (JADIS) information system, 1990-95</div>
+:::
+
+
+::: {.column width="33%"}
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-jordan-megaj.png" height="300">
+
+</center>
+<div class="captiontext">Middle East Geodatabase for Antiquities Jordan (MEGA Jordan), 2011-...</div>
+:::
+
+
+::: {.column width="33%"}
+<center>
+
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-jordan-masdar.png" height="300">
 
 </center>
-<div class="captiontext">Jordan Masdar (Arches v5), created in 2021 </div>
+<div class="captiontext">Jordan Masdar (Arches v5), 2021-... </div>
 :::
 
 :::
 
-### Limits
+:::
+
+## Limits
+
+::: {.panel-tabset}
+
+### Institutional Actors
 
 :::: {.columns}
 
@@ -195,15 +239,19 @@ January 2015<br>
 ::: {.column width="50%"}
 
 ```{=html}
-<embed src="https://www.getty.edu/publications/cultural-heritage-mass-atrocities/" width="600px" height="300px" />
+<embed src="https://www.getty.edu/publications/cultural-heritage-mass-atrocities/" width="600px" height="320px" />
 ```
 <div class="captiontext">Weiss, Thomas G., et al. Cultural heritage and mass atrocities. Getty Publications, 2022</div>
 :::
 
 ::::
 
+### XXX
 
-### Funders
+:::
+
+
+## Funders
 
 <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo-arcadia.png' style='height: 60px;vertical-align: middle;'><br>
 Arcadia Fund, A charitable fund of Lisbet Rausing & Peter Baldwin
@@ -211,7 +259,6 @@ Arcadia Fund, A charitable fund of Lisbet Rausing & Peter Baldwin
 <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo-british-council.png' style='height: 60px;vertical-align: middle;'><br>
 British Council Cultural Protection Fund
 
-:::
 
 ## EAMENA project (2/2)
 

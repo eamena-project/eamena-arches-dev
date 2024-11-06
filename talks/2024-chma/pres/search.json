@@ -7,11 +7,32 @@
     "text": "Endangered Archaeology in Middle East and North Africa (EAMENA)\n\n\n\n\nSmoke billows from the site of an Israeli airstrike on the Lebanese city of Baalbeck in the Bekaa Valley [Issued on: 23/09/2024 - 09:04 Modified: 24/09/2024 - 04:58] © Nidal SOLH / AFP"
   },
   {
-    "objectID": "index.html#eamena-project-12",
-    "href": "index.html#eamena-project-12",
+    "objectID": "index.html#who-we-are",
+    "href": "index.html#who-we-are",
     "title": "EAMENA",
-    "section": "EAMENA project (1/2)",
-    "text": "EAMENA project (1/2)\n\nTeamsBirth dateAims (1/2)Aims (2/2)LimitsFunders\n\n\n\n\n\n\n\nflowchart TD\n  subgraph EA[EAMENA]\n    id1[University of Oxford]\n    id2[University of Leicester]\n    id3[University of Durham]\n  end\n  id1 ---&gt; id6[EAMENA Database]\n  id2 ---&gt; id6\n  id3 ---&gt; id6\n  subgraph MA[MAREA]\n    id4[University of Southampton]\n    id5[Ulster University]\n  end\n  id4 ---&gt; id6\n  id5 ---&gt; id6\n  \n  style EA color:#f6d6d6\n  style MA color:#f6d6d6\n  \n  style id1 fill:#f6d6d6,stroke:#333,stroke-width:2px\n  style id2 fill:#f6d6d6,stroke:#333,stroke-width:2px\n  style id3 fill:#f6d6d6,stroke:#333,stroke-width:2px\n  style id4 fill:#f6d6d6,stroke:#333,stroke-width:2px\n  style id5 fill:#f6d6d6,stroke:#333,stroke-width:2px\n  \n  click id1 \"https://www.ox.ac.uk/\" _blank\n  click id2 \"https://le.ac.uk/\" _blank\n  click id3 \"https://www.durham.ac.uk/\" _blank\n  click id4 \"https://www.southampton.ac.uk/\" _blank\n  click id5 \"https://www.ulster.ac.uk/\" _blank\n\n\n\n\n\n\n\n\n\n\nJanuary 2015 project drafted in January 2014\n\n\n\n\n\n‘Terror in the Mosul Museum’, published in ‘The New Yorker’, February 27, 2015\n\n\n\n\n\n\n\n\n\nRapidly assess the status of the archaeological landscape (built heritage)\nProvide access to a set of data on endangered heritage (Open Access)\n\n\n\n\n \n\n\nTemple of Bel, Palmyra, Syria, year 2014 (left) and 2016 (right) © Google Earth\n\n\n\n\n\n\n\n\n\n\n\nCultural Protection Fund (CPF) training in Amman (Jordan), December 2021\n\n\n\n\n\n\nJordan Masdar (Arches v5), created in 2021\n\n\n\n\n\n\n\n\n\n\n\n“Protection of Syria’s Cultural Heritage in Times of Armed Conflict” e-learning course for Syrian cultural heritage professionals (ICOMOS - ICCROM)\n\n\n\n\nWeiss, Thomas G., et al. Cultural heritage and mass atrocities. Getty Publications, 2022\n\n\n\n\n\n Arcadia Fund, A charitable fund of Lisbet Rausing & Peter Baldwin   British Council Cultural Protection Fund"
+    "section": "Who we are",
+    "text": "Who we are\n\nInstitutionsBirth date\n\n\n\n\n\n\n\nflowchart TD\n  subgraph EA[EAMENA]\n    id1[University of Oxford]\n    id2[University of Leicester]\n    id3[University of Durham]\n  end\n  id1 ---&gt; id6[EAMENA Database]\n  id2 ---&gt; id6\n  id3 ---&gt; id6\n  subgraph MA[MAREA]\n    id4[University of Southampton]\n    id5[Ulster University]\n  end\n  id4 ---&gt; id6\n  id5 ---&gt; id6\n  \n  style EA color:#f6d6d6\n  style MA color:#f6d6d6\n  \n  style id1 fill:#f6d6d6,stroke:#333,stroke-width:2px\n  style id2 fill:#f6d6d6,stroke:#333,stroke-width:2px\n  style id3 fill:#f6d6d6,stroke:#333,stroke-width:2px\n  style id4 fill:#f6d6d6,stroke:#333,stroke-width:2px\n  style id5 fill:#f6d6d6,stroke:#333,stroke-width:2px\n  \n  click id1 \"https://www.ox.ac.uk/\" _blank\n  click id2 \"https://le.ac.uk/\" _blank\n  click id3 \"https://www.durham.ac.uk/\" _blank\n  click id4 \"https://www.southampton.ac.uk/\" _blank\n  click id5 \"https://www.ulster.ac.uk/\" _blank\n\n\n\n\n\n\n\n\n\n\nJanuary 2015 project drafted in January 2014\n\n\n\n\n\n‘Terror in the Mosul Museum’, published in ‘The New Yorker’, February 27, 2015"
+  },
+  {
+    "objectID": "index.html#aims",
+    "href": "index.html#aims",
+    "title": "EAMENA",
+    "section": "Aims",
+    "text": "Aims\n\nDocumentingTraining\n\n\n\n\n\n\nRapidly assess the status of the archaeological landscape (built heritage)\nProvide access to a set of data on endangered heritage (Open Access)\n\n\n\n\n \n\n\nTemple of Bel, Palmyra, Syria, year 2014 (left) and 2016 (right) © Google Earth\n\n\n\n\n\n\n\n\n\n\n\nCultural Protection Fund (CPF) training in Amman (Jordan), December 2021\n\n\n\n\n\n\nJordan Masdar (Arches v5), created in 2021"
+  },
+  {
+    "objectID": "index.html#limits",
+    "href": "index.html#limits",
+    "title": "EAMENA",
+    "section": "Limits",
+    "text": "Limits\n\nInstitutional ActorsXXX\n\n\n\n\n\n\n\n\n“Protection of Syria’s Cultural Heritage in Times of Armed Conflict” e-learning course for Syrian cultural heritage professionals (ICOMOS - ICCROM)\n\n\n\n\nWeiss, Thomas G., et al. Cultural heritage and mass atrocities. Getty Publications, 2022"
+  },
+  {
+    "objectID": "index.html#funders",
+    "href": "index.html#funders",
+    "title": "EAMENA",
+    "section": "Funders",
+    "text": "Funders\n Arcadia Fund, A charitable fund of Lisbet Rausing & Peter Baldwin   British Council Cultural Protection Fund"
   },
   {
     "objectID": "index.html#eamena-project-22",

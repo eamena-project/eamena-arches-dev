@@ -18,7 +18,14 @@
     "href": "index.html#aims",
     "title": "EAMENA",
     "section": "Aims",
-    "text": "Aims\n\nDocumentingTrainingLeveraging\n\n\n\n\n\n\nRapidly assess the status of the archaeological landscape (built heritage)\nProvide access to a set of data on endangered heritage (Open Access)\n\n\n\n\n \n\n\nTemple of Bel, Palmyra, Syria, year 2014 (left) and 2016 (right) © Google Earth\n\n\n\n\n\n\n\n\n\n\n\nDatabase training, in Amman (Jordan), December 2021\n\n\n\n\n\n\nField assessment training, World Heritage Site of Um er-Rasas (Jordan)\n\n\n\n\n\n\n\n\n\n\n\nJordan Antiquities Database Information System (JADIS) information system, 1990-95\n\n\n\n\n\n\nMiddle East Geodatabase for Antiquities Jordan (MEGA Jordan), 2011-…\n\n\n\n\n\n\nJordan Masdar (Arches v5), 2021-…"
+    "text": "Aims\n\nDocumentingTrainingLeveraging\n\n\n\n\n\n\nRapidly assess the status of the archaeological landscape (built heritage)\nProvide access to a set of data on endangered heritage (Open Access)\n\n\n\n\n \n\n\nTemple of Bel, Palmyra, Syria, year 2014 (left) and 2016 (right) © Google Earth\n\n\n\n\n\n\n\n\n\n\n\nDesk-based training, in Amman (Jordan), December 2021\n\n\n\n\n\n\nField assessment training, World Heritage Site of Um er-Rasas (Jordan)\n\n\n\n\n\n\n\n\n\n\n\nJordan Antiquities Database Information System (JADIS) information system, 1990-95\n\n\n\n\n\n\nMiddle East Geodatabase for Antiquities Jordan (MEGA Jordan), 2011-…\n\n\n\n\n\n\nJordan Masdar (Arches v5), 2021-…"
+  },
+  {
+    "objectID": "index.html#coverage",
+    "href": "index.html#coverage",
+    "title": "EAMENA",
+    "section": "Coverage",
+    "text": "Coverage\n\nTypologicalSpatialTemporal\n\n\n\n\nBuilt Heritage\n\n\n\n\n\nXXX ©Jan Ciglenečki, Coptic Monastic Heritage Archive\n\n\n\n\n\n\n\nMiddle East North Africa (MENA) region\n\n\n\n\n\nEAMENA Grid Squares projected on Google Earth\n\n\n\n\n\n\n\nPaleolithic – World War II\n\n\n\n\n\nEAMENA periods (after 0 AD) © PeriodO"
   },
   {
     "objectID": "index.html#limits",
@@ -35,25 +42,18 @@
     "text": "Funders\n Arcadia Fund, A charitable fund of Lisbet Rausing & Peter Baldwin   British Council Cultural Protection Fund"
   },
   {
-    "objectID": "index.html#coverage",
-    "href": "index.html#coverage",
-    "title": "EAMENA",
-    "section": "Coverage",
-    "text": "Coverage\n\nTypologicalSpatialTemporal\n\n\n\n\nBuilt Heritage\n\n\n\n\n\nXXX ©Jan Ciglenečki, Coptic Monastic Heritage Archive\n\n\n\n\n\n\n\nMiddle East North Africa (MENA) region\n\n\n\n\n\nEAMENA Grid Squares projected on Google Earth\n\n\n\n\n\n\n\nPaleolithic – World War II\n\n\n\n\n\nEAMENA periods (after 0 AD) © PeriodO"
-  },
-  {
     "objectID": "index.html#database-system",
     "href": "index.html#database-system",
     "title": "EAMENA",
     "section": "Database System",
-    "text": "Database System\n\nArchesOpen AccessProjectsSemantic Web \n\n\n, open source semantic graph geoweb-based information platform for Cultural Heritage management developed by the Getty Conservation Institute (GCI) and the World Monument Fund (WMF) that natively integrates:\n\nCRMbase (CIDOC-CRM)1\nDublin Core Metadata Initiative (DCMI)2\nSimple Knowledge Organisation System (SKOS)3\nExtended Date/Time Format (EDTF)4\nWorld Geodetic System 1984 (WGS84)5\n\n\n\n\n\n\n\nBatist, Z.; Roe, J., 2024. Open archaeology, open source? Internet Archaeology 67. 10.11141/ia.67.13  Adapted from openarchaeo-collaboration. Graph of open archaeological GitHub repositories and connected users via contributions. Darker edges indicate a higher number of contributions. The color of the nodes indicates membership in the largest groups according to the method of edge betweenness without isolated nodes."
+    "text": "Database System\n\nArchesOpen AccessProjectsSemantic Web \n\n\n, open source semantic graph geoweb-based information platform for Cultural Heritage management developed by the Getty Conservation Institute (GCI) and the World Monument Fund (WMF) that natively integrates:\n\nCRMbase (CIDOC-CRM)1\nDublin Core Metadata Initiative (DCMI)2\nSimple Knowledge Organisation System (SKOS)3\nExtended Date/Time Format (EDTF)4\nWorld Geodetic System 1984 (WGS84)5\n\n\n\n\n\n\n\nBatist, Z.; Roe, J., 2024. Open archaeology, open source? Internet Archaeology 67. 10.11141/ia.67.13\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\n\n\n\nEntity-Relations Diagram (ERD) of the EAMENA Heritage Place Resource Model with field names (nodes) colored according to their groups."
   },
   {
     "objectID": "index.html#eamena-database",
     "href": "index.html#eamena-database",
     "title": "EAMENA",
     "section": "EAMENA Database",
-    "text": "EAMENA Database\n\nResource ModelsInstancesData\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBusiness Data\n\n209,750 Heritage Places\n136,555 Information Resources\n2,150 Person-Organisation\n\nReference Data\n\n27,585 Grid Squares\n3,239 Concepts\n\n\n\n\n\n\n\n\nEAMENA Heritage Places counts in 2024"
+    "text": "EAMENA Database\n\nResource ModelsInstancesData\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nin blue: Heritage Places; in green:  Information Resources; in grey (grid): Grid Squares\n\n\n\n\n\n\n\n\n\n\n\n\n\nBusiness Data\n\n209,750 Heritage Places\n136,555 Information Resources\n2,150 Person-Organisation\n\nReference Data\n\n27,585 Grid Squares\n3,239 Concepts\n\n\n\n\n\n\n\n\nEAMENA Heritage Places counts in 2024"
   },
   {
     "objectID": "index.html#definition",

@@ -508,7 +508,7 @@ Batist, Z.; Roe, J., 2024. Open archaeology, open source? Internet Archaeology  
 
 ```{=html}
 <div style="display: flex; justify-content: center;">
-<embed src="https://achp-project.github.io/cultural-heritage/map-projects/arches-global-south.html" />
+<embed src="https://achp-project.github.io/cultural-heritage/map-projects/arches-global-south.html" width="900px"/>
 </div>
 ```
 
@@ -573,7 +573,9 @@ Entity-Relations Diagram (ERD) of the EAMENA Heritage Place Resource Model with 
 
 ::: {.column width="30%"}
 <div class="captiontext">
-in <span style="color:blue;">blue: </span>Heritage Places; in <span style="color:green;">green: </span> Information Resources; in <span style="color:grey;">grey (grid): </span>Grid Squares
+<span style="color:blue;">Blue: </span>Heritage Places<br>
+<span style="color:green;">Green: </span> Information Resources<br>
+<span style="color:darkgrey;">Grey (grid): </span>Grid Squares
 </div>
 :::
 
@@ -581,7 +583,7 @@ in <span style="color:blue;">blue: </span>Heritage Places; in <span style="color
 
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/ea-resource-example.png" height="350">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/ea-resource-example.png" height="400">
 
 </center>
 
@@ -596,9 +598,7 @@ in <span style="color:blue;">blue: </span>Heritage Places; in <span style="color
 :::: {.columns}
 
 ::: {.column width="25%"}
-
 <small>
-
 * Business Data
 
   - 209,750 Heritage Places
@@ -609,7 +609,6 @@ in <span style="color:blue;">blue: </span>Heritage Places; in <span style="color
 
   - 27,585 Grid Squares
   - 3,239 Concepts
-
 </small>
 :::
 
@@ -864,7 +863,7 @@ Destruction: iconoclasm, looting, etc.
 :::
 
 ::: {.column width="33%"}
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/ea-resource-examples.png" height="400">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/ea-resource-example.png" height="400">
 <div class="captiontext">ResourceSpace Server</div>
 :::
 
@@ -876,10 +875,11 @@ Destruction: iconoclasm, looting, etc.
 
 ::: {.column width="20%"}
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-ea-v4-rm-hp.png" height="200">
+<div class="captiontext">EAMENA-0264223 (Deir Abu Lifa 1, or DAL01)</div>
 :::
 
 ::: {.column width="80%"}
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/dal01-hp-map.png" height="300">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/dal01-hp-map.png" height="400">
 :::
 
 ::::
@@ -890,10 +890,11 @@ Destruction: iconoclasm, looting, etc.
 
 ::: {.column width="20%"}
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-ea-v4-rm-ir.png" height="200">
+<div class="captiontext">INFORMATION-0150280</div>
 :::
 
 ::: {.column width="80%"}
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/dal01-ir-map.png" height="300">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/dal01-ir-map.png" height="400">
 :::
 
 ::::
@@ -901,12 +902,28 @@ Destruction: iconoclasm, looting, etc.
 
 ### Related Resources
 
+
+
+:::: {.columns}
+
+::: {.column width="20%"}
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-ea-v4-rm-hp.png" height="120">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-ea-v4-rm-ir.png" height="120">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-ea-v4-rm-po.png" height="120">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-ea-v4-rm-gs.png" height="120">
+:::
+
+::: {.column width="80%"}
 <center>
 
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/dal01--relatedresources.png" height="350">
 <div class="captiontext">DAL01 related resources</div>
 
 </center>
+:::
+
+::::
+
 
 :::
 

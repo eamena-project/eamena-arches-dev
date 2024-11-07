@@ -466,11 +466,21 @@ British Council Cultural Protection Fund
 
 <small><img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 30px;vertical-align: middle;'>, open source semantic graph geoweb-based information platform for Cultural Heritage management developed by the Getty Conservation Institute (GCI) and the World Monument Fund (WMF) that natively integrates:
 
+:::: {.columns}
+
+::: {.column width="60%"}
 - CRMbase ([CIDOC-CRM](https://www.cidoc-crm.org/))[^21]
 - Dublin Core Metadata Initiative ([DCMI](https://www.dublincore.org/))[^2]
 - Simple Knowledge Organisation System ([SKOS](https://www.w3.org/2004/02/skos/))[^3]
 - Extended Date/Time Format ([EDTF](https://www.loc.gov/standards/datetime/))[^6]
 - World Geodetic System 1984 ([WGS84](https://www.w3.org/2003/01/geo/))[^7]
+:::
+
+::: {.column width="40%"}
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/dal01--relatedresources.png" height="370">
+:::
+
+::::
 
 </small>
 
@@ -854,8 +864,7 @@ Destruction: iconoclasm, looting, etc.
 :::: {.columns}
 
 ::: {.column width="50%"}
-<div class="captiontext">Record: Muhammad Tal'at Pasha Harb funerary enclosure (COD-002) &copy;Jaroslaw Dobrowolski, Archinos architecture</div>
-</div>
+<div class="captiontext">Record: Muhammad Tal'at Pasha Harb funerary enclosure (COD-002) &copy;Archinos architecture</div>
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/projects/cod/img/record-ex.png" width="500">
 :::
 

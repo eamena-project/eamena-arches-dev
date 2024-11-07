@@ -46,7 +46,7 @@
     "href": "index.html#database-system",
     "title": "EAMENA",
     "section": "Database System",
-    "text": "Database System\n\nArchesOpen AccessProjectsSemantic Web \n\n\n, open source semantic graph geoweb-based information platform for Cultural Heritage management developed by the Getty Conservation Institute (GCI) and the World Monument Fund (WMF) that natively integrates:\n\nCRMbase (CIDOC-CRM)1\nDublin Core Metadata Initiative (DCMI)2\nSimple Knowledge Organisation System (SKOS)3\nExtended Date/Time Format (EDTF)4\nWorld Geodetic System 1984 (WGS84)5\n\n\n\n\n\n\n\nBatist, Z.; Roe, J., 2024. Open archaeology, open source? Internet Archaeology 67. 10.11141/ia.67.13\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\n\n\n\nEntity-Relations Diagram (ERD) of the EAMENA Heritage Place Resource Model with field names (nodes) colored according to their groups."
+    "text": "Database System\n\nArchesOpen AccessProjectsSemantic Web \n\n\n, open source semantic graph geoweb-based information platform for Cultural Heritage management developed by the Getty Conservation Institute (GCI) and the World Monument Fund (WMF) that natively integrates:\n\n\n\nCRMbase (CIDOC-CRM)1\nDublin Core Metadata Initiative (DCMI)2\nSimple Knowledge Organisation System (SKOS)3\nExtended Date/Time Format (EDTF)4\nWorld Geodetic System 1984 (WGS84)5\n\n\n\n\n\n\n\n\n\n\n\nBatist, Z.; Roe, J., 2024. Open archaeology, open source? Internet Archaeology 67. 10.11141/ia.67.13\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\n\n\n\nEntity-Relations Diagram (ERD) of the EAMENA Heritage Place Resource Model with field names (nodes) colored according to their groups."
   },
   {
     "objectID": "index.html#eamena-database",
@@ -81,7 +81,7 @@
     "href": "index.html#data-structure",
     "title": "EAMENA",
     "section": "Data Structure",
-    "text": "Data Structure\n\nGeneralitiesHPIRRelated Resources\n\n\n\n\n\n\nHP\n\n\n\n\nIR\n\n\n\n\nResourceSpace Server\n\n\n\n\n\n\n\n\n\nEAMENA-0264223 (Deir Abu Lifa 1, or DAL01)\n\n\n\n\n\n\n\n\n\n\n\nINFORMATION-0150280\n\n\n\n\n\n\n\n\n\n \n\n\n\n\nEAMENA-0264223 (Deir Abu Lifa 1, or DAL01) related resources"
+    "text": "Data Structure\n\nGeneralitiesModelHPIRRelated Resources\n\n\n\n\n\nRecord: Muhammad Tal’at Pasha Harb funerary enclosure (COD-002) ©Archinos architecture\n\n\n\n\nPhoto: Al-Husayni Family Enclosure (COD-005) ©Jaroslaw Dobrowolski, Archinos architecture\n\n\n\n\n\n\n\n\n\n\nHeritage Places (HP)\n\n\n\n\nInformation Resources (IR)\n\n\n\n\nResourceSpace Server\n\n\n\n\n\n\n\n\n\nEAMENA-0264223 (Deir Abu Lifa 1, or DAL01)\n\n\n\n\n\n\n\n\n\n\n\nINFORMATION-0150280\n\n\n\n\n\n\n\n\n\n \n\n\n\n\nEAMENA-0264223 (Deir Abu Lifa 1, or DAL01) related resources"
   },
   {
     "objectID": "index.html#cases-study",

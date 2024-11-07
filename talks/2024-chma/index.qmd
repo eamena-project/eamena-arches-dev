@@ -661,148 +661,14 @@ Entity-Relations Diagram (ERD) of the EAMENA Heritage Place Resource Model with 
 
 ::: {.panel-tabset}
 
-### <span style="font-size:30px">War</span>
-
-
-:::: {.columns}
-
-::: {.column width="60%"}
+### <span style="font-size:30px">💯</span>
 
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-destruction.jpg" height="300">
+<img src="https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/Disturbance Cause Category Type 2024-1.jpg" height="350">
 
 </center>
-<div class="captiontext">Destruction of the Temple of Bel by ISIS on August 23, 2015 (Palmyra, Syria)</div>
-
-:::
-
-::: {.column width="40%"}
-
-```{r}
-#| out-width: 400
-#| out-height: 400
-
-leaflet::leaflet() %>%
-  leaflet::addProviderTiles(leaflet::providers$"Esri.WorldImagery", group = "Ortho") %>%
-  leaflet::addProviderTiles(leaflet::providers$"OpenStreetMap", group = "OSM") %>%
-  leaflet::addMarkers(lng = 38.2740283802469, lat = 34.54760862601158, popup="Temple of Bel") %>%
-  leaflet::addLayersControl(
-    baseGroups = c("Ortho", "OSM"),
-    position = "topright") 
-```
-
-
-:::
-
-::::
-
-### <span style="font-size:30px">Agriculture</span>
-
-:::: {.columns}
-
-::: {.column width="60%"}
-
-<center>
-
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-agricole.jpg" height="300">
-
-</center>
-<div class="captiontext"> Development of ploughed fields and orchards around and within  an archaeological site (Udhma, Jordan)</div>
-
-:::
-
-::: {.column width="40%"}
-
-```{r}
-#| out-width: 400
-#| out-height: 400
-
-leaflet::leaflet() %>%
-  leaflet::addProviderTiles(leaflet::providers$"Esri.WorldImagery", group = "Ortho") %>%
-  leaflet::addProviderTiles(leaflet::providers$"OpenStreetMap", group = "OSM") %>%
-  leaflet::addMarkers(lng = 35.87992, lat = 32.12974, popup="Udhma") %>%
-  leaflet::addLayersControl(
-    baseGroups = c("Ortho", "OSM"),
-    position = "topright") 
-```
-
-
-:::
-
-::::
-
-### <span style="font-size:30px">Construction</span>
-
-:::: {.columns}
-
-::: {.column width="60%"}
-
-<center>
-
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-urbanism.jpg" height="300">
-
-</center>
-<div class="captiontext">Road over a section of an exposed church excavation (Ma'in, Jordan) &copy;APAAME .</div>
-
-:::
-
-::: {.column width="40%"}
-
-
-```{r}
-#| out-width: 400
-#| out-height: 400
-
-leaflet::leaflet() %>%
-  leaflet::addProviderTiles(leaflet::providers$"Esri.WorldImagery", group = "Ortho") %>%
-  leaflet::addProviderTiles(leaflet::providers$"OpenStreetMap", group = "OSM") %>%
-  leaflet::addMarkers(lng = 35.73318, lat = 31.67979, popup="Church in Ma'in") %>%
-  leaflet::addLayersControl(
-    baseGroups = c("Ortho", "OSM"),
-    position = "topright") 
-```
-
-:::
-
-::::
-
-### <span style="font-size:30px">Infrastructure</span>
-
-:::: {.columns}
-
-::: {.column width="60%"}
-
-<center>
-
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-infrastructure.png" height="300">
-
-</center>
-<div class="captiontext">The trace of the TAPI pipeline will cross the top part of the qanat system (Kandahar, Afghanistan)</div>
-
-:::
-
-::: {.column width="40%"}
-
-
-```{r}
-#| out-width: 400
-#| out-height: 400
-
-leaflet::leaflet() %>%
-  leaflet::addProviderTiles(leaflet::providers$"Esri.WorldImagery", group = "Ortho") %>%
-  leaflet::addProviderTiles(leaflet::providers$"OpenStreetMap", group = "OSM") %>%
-  leaflet::addMarkers(lng = 65.833929765971, lat = 31.398548590582, popup="Qanat system") %>%
-  leaflet::addLayersControl(
-    baseGroups = c("Ortho", "OSM"),
-    position = "topright") 
-```
-
-
-:::
-
-::::
-
+<div class="captiontext">The 20 main causes of disturbance in the database with their total number of occurrences, 2024</div>
 
 
 ### <span style="font-size:30px">Natural</span>
@@ -841,6 +707,121 @@ leaflet::leaflet() %>%
 
 ::::
 
+
+
+### <span style="font-size:30px">Agriculture</span>
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-agricole.jpg" height="300">
+
+</center>
+<div class="captiontext"> Development of ploughed fields and orchards around and within  an archaeological site (Udhma, Jordan)</div>
+
+:::
+
+::: {.column width="40%"}
+
+```{r}
+#| out-width: 400
+#| out-height: 400
+
+leaflet::leaflet() %>%
+  leaflet::addProviderTiles(leaflet::providers$"Esri.WorldImagery", group = "Ortho") %>%
+  leaflet::addProviderTiles(leaflet::providers$"OpenStreetMap", group = "OSM") %>%
+  leaflet::addMarkers(lng = 35.87992, lat = 32.12974, popup="Udhma") %>%
+  leaflet::addLayersControl(
+    baseGroups = c("Ortho", "OSM"),
+    position = "topright") 
+```
+
+
+:::
+
+::::
+
+
+
+### <span style="font-size:30px">Infrastructure</span>
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-infrastructure.png" height="300">
+
+</center>
+<div class="captiontext">The trace of the TAPI pipeline will cross the top part of the qanat system (Kandahar, Afghanistan) *in* Rouhani, B. et al. (2024) <https://doi.org/10.5281/zenodo.13912379>
+</div>
+
+:::
+
+::: {.column width="40%"}
+
+
+```{r}
+#| out-width: 400
+#| out-height: 400
+
+leaflet::leaflet() %>%
+  leaflet::addProviderTiles(leaflet::providers$"Esri.WorldImagery", group = "Ortho") %>%
+  leaflet::addProviderTiles(leaflet::providers$"OpenStreetMap", group = "OSM") %>%
+  leaflet::addMarkers(lng = 65.833929765971, lat = 31.398548590582, popup="Qanat system") %>%
+  leaflet::addLayersControl(
+    baseGroups = c("Ortho", "OSM"),
+    position = "topright") 
+```
+
+
+:::
+
+::::
+
+
+### <span style="font-size:30px">Building</span>
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-urbanism.jpg" height="300">
+
+</center>
+<div class="captiontext">Road over a section of an exposed church excavation (Ma'in, Jordan) &copy;APAAME .</div>
+
+:::
+
+::: {.column width="40%"}
+
+
+```{r}
+#| out-width: 400
+#| out-height: 400
+
+leaflet::leaflet() %>%
+  leaflet::addProviderTiles(leaflet::providers$"Esri.WorldImagery", group = "Ortho") %>%
+  leaflet::addProviderTiles(leaflet::providers$"OpenStreetMap", group = "OSM") %>%
+  leaflet::addMarkers(lng = 35.73318, lat = 31.67979, popup="Church in Ma'in") %>%
+  leaflet::addLayersControl(
+    baseGroups = c("Ortho", "OSM"),
+    position = "topright") 
+```
+
+:::
+
+::::
+
+
+
+
 ### <span style="font-size:30px">Looting</span>
 
 :::: {.columns}
@@ -875,6 +856,44 @@ leaflet::leaflet() %>%
 :::
 
 ::::
+
+
+### <span style="font-size:30px">War</span>
+
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-destruction.jpg" height="300">
+
+</center>
+<div class="captiontext">Destruction of the Temple of Bel by ISIS on August 23, 2015 (Palmyra, Syria)</div>
+
+:::
+
+::: {.column width="40%"}
+
+```{r}
+#| out-width: 400
+#| out-height: 400
+
+leaflet::leaflet() %>%
+  leaflet::addProviderTiles(leaflet::providers$"Esri.WorldImagery", group = "Ortho") %>%
+  leaflet::addProviderTiles(leaflet::providers$"OpenStreetMap", group = "OSM") %>%
+  leaflet::addMarkers(lng = 38.2740283802469, lat = 34.54760862601158, popup="Temple of Bel") %>%
+  leaflet::addLayersControl(
+    baseGroups = c("Ortho", "OSM"),
+    position = "topright") 
+```
+
+
+:::
+
+::::
+
 
 :::
 

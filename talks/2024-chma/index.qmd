@@ -26,7 +26,7 @@ format:
     reference-location: document
     footnotes-hover: true
     logo: https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-uni-oxford_.png
-    footer: "<b>DOCUMENTING COPTIC MONASTIC HERITAGE</b> <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo_black.png' style='height: 35px;vertical-align: middle;'> 11-13 November 2024, Bibliotheca Alexandrina, Alexandria, Egypt"
+    footer: "<b>DOCUMENTING COPTIC MONASTIC HERITAGE</b> <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo_black.png' style='height: 30px;vertical-align: middle;'> 11-13 November 2024, Bibliotheca Alexandrina, Alexandria, Egypt"
     margin: 0
     width: 1200
 ---
@@ -850,20 +850,38 @@ Destruction: iconoclasm, looting, etc.
 
 ### Generalities
 
+
+:::: {.columns}
+
+::: {.column width="50%"}
+<div class="captiontext">Record: Muhammad Tal'at Pasha Harb funerary enclosure (COD-002) &copy;Jaroslaw Dobrowolski, Archinos architecture</div>
+</div>
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/projects/cod/img/record-ex.png" width="500">
+:::
+
+::: {.column width="50%"}
+<div class="captiontext">Photo: Al-Husayni Family Enclosure (COD-005) &copy;Jaroslaw Dobrowolski, Archinos architecture</div>
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/projects/cod/img/image-2.png" width="500">
+:::
+
+::::
+
+### Model
+
 :::: {.columns}
 
 ::: {.column width="33%"}
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-ea-v4-rm-hp.png" height="300">
-<div class="captiontext">HP</div>
+<div class="captiontext">Heritage Places (HP)</div>
 :::
 
 ::: {.column width="33%"}
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-ea-v4-rm-ir.png" height="300">
-<div class="captiontext">IR</div>
+<div class="captiontext">Information Resources (IR)</div>
 :::
 
 ::: {.column width="33%"}
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/ea-resource-example.png" height="400">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/resourcescape-cod-chma.png" height="300">
 <div class="captiontext">ResourceSpace Server</div>
 :::
 
@@ -903,21 +921,18 @@ Destruction: iconoclasm, looting, etc.
 ### Related Resources
 
 
-
 :::: {.columns}
 
-::: {.column width="20%"}
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-ea-v4-rm-hp.png" height="120">
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-ea-v4-rm-ir.png" height="120">
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-ea-v4-rm-po.png" height="120">
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-ea-v4-rm-gs.png" height="120">
+::: {.column width="25%"}
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-ea-v4-rm-hp.png" height="120"><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-ea-v4-rm-ir.png" height="120">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-ea-v4-rm-po.png" height="120"><img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-ea-v4-rm-gs.png" height="120">
 :::
 
-::: {.column width="80%"}
+::: {.column width="75%"}
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/dal01--relatedresources.png" height="350">
-<div class="captiontext">DAL01 related resources</div>
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/dal01--relatedresources.png" height="370">
+<div class="captiontext">EAMENA-0264223 (Deir Abu Lifa 1, or DAL01) related resources</div>
 
 </center>
 :::

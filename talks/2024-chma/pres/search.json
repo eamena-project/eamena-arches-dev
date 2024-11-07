@@ -53,7 +53,7 @@
     "href": "index.html#eamena-database",
     "title": "EAMENA",
     "section": "EAMENA Database",
-    "text": "EAMENA Database\n\nResource ModelsInstancesData\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n209,750 Heritage Places\n136,555 Information Resources\n2,150 Person-Organisation\n27,585 Grid Squares\n\n\n\n\n\n\n\nEAMENA Heritage Places counts in 2024"
+    "text": "EAMENA Database\n\nResource ModelsInstancesData\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBusiness Data\n\n209,750 Heritage Places\n136,555 Information Resources\n2,150 Person-Organisation\n\nReference Data\n\n27,585 Grid Squares\n3,239 Concepts\n\n\n\n\n\n\n\n\nEAMENA Heritage Places counts in 2024"
   },
   {
     "objectID": "index.html#definition",
@@ -81,7 +81,7 @@
     "href": "index.html#data-structure",
     "title": "EAMENA",
     "section": "Data Structure",
-    "text": "Data Structure\n\nGeneralitiesXXX\n\n\n\n\n\n\n\n\nflowchart LR\n  id1[Heritage&lt;br&gt;Places] &lt;---&gt; id2[Information&lt;br&gt;Resource];\n  id2 &lt;---&gt; id3[ResourceSpace&lt;br&gt;collection];\n  \n  click id1 \"https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&reportlink=false&precision=6&total=383724&language=*&term-filter=%5B%7B%22context%22%3A%22%22%2C%22context_label%22%3A%22Heritage%20Place%20-%20Resource%20Name%22%2C%22id%22%3A2%2C%22text%22%3A%22DAL0%22%2C%22type%22%3A%22term%22%2C%22value%22%3A%22DAL0%22%2C%22inverted%22%3Afalse%7D%5D\" _blank\n  click id2 \"https://database.eamena.org/report/cd4584b3-27c7-42da-a37d-88ae2278e012\" _blank\n  click id3 \"https://cityofthedead.arch.ox.ac.uk/pages/search.php?search=%21collection114\" _blank"
+    "text": "Data Structure\n\nGeneralitiesHPIRRelated Resources\n\n\n\n\n\n\nHP\n\n\n\n\nIR\n\n\n\n\nResourceSpace Server\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDAL01 related resources"
   },
   {
     "objectID": "index.html#cases-study",

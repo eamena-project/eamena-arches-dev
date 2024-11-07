@@ -18,7 +18,7 @@
 ## The EAMENA Database as an IT Framework for a Photographic Archive
 > Day 1, Session 2, Part 2, 12:45 PM - 13:30 PM | Photos <a name="1-2-2"></a>
 
-Case study: [Deir Abu Lifa](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/mhe#dal0):
+Case study: [Deir Abu Lifa](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/chma#dal0):
 
 ### Localisation
 

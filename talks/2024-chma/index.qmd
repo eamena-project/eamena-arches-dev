@@ -848,7 +848,7 @@ Destruction: iconoclasm, looting, etc.
 :::
 
 ::: {.column width="80%"}
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/dal01-hp-map.png" height="300">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/dal01-hp-map.png" height="300">
 :::
 
 ::::
@@ -862,7 +862,7 @@ Destruction: iconoclasm, looting, etc.
 :::
 
 ::: {.column width="80%"}
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/dal01-ir-map.png" height="300">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/dal01-ir-map.png" height="300">
 :::
 
 ::::

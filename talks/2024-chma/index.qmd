@@ -189,7 +189,7 @@ January 2015<br>
 <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/cpf-training.jpg' height="300">
 
 </center>
-<div class="captiontext">Database training, in Amman (Jordan), December 2021</div>
+<div class="captiontext">Desk-based training, in Amman (Jordan), December 2021</div>
 :::
 
 ::: {.column width="50%"}
@@ -234,6 +234,87 @@ January 2015<br>
 
 </center>
 <div class="captiontext">Jordan Masdar (Arches v5), 2021-... </div>
+:::
+
+:::
+
+:::
+
+
+
+## Coverage
+
+::: {.panel-tabset}
+
+### Typological
+
+:::: {.columns}
+
+::: {.column width="30%"}
+
+Built Heritage
+
+:::
+
+::: {.column width="70%"}
+
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/hp-type-structure.png" height="350">
+
+</center>
+<div class="captiontext">XXX &copy;Jan Ciglenečki, Coptic Monastic Heritage Archive</div>
+
+:::
+
+:::
+
+  
+### Spatial
+
+
+:::: {.columns}
+
+::: {.column width="30%"}
+
+Middle East North Africa (MENA) region
+
+:::
+
+::: {.column width="70%"}
+
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-grids-ea-ge.png" height="320">
+
+</center>
+<div class="captiontext">EAMENA Grid Squares projected on Google Earth</div>
+
+:::
+
+:::
+
+### Temporal
+
+
+:::: {.columns}
+
+::: {.column width="30%"}
+
+Paleolithic -- World War II
+
+:::
+
+::: {.column width="70%"}
+
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/ea-periodo-sup0AD.png" height="320">
+
+</center>
+<div class="captiontext">EAMENA periods (after 0 AD) &copy; PeriodO</div>
+
+
 :::
 
 :::
@@ -377,85 +458,6 @@ Arcadia Fund, A charitable fund of Lisbet Rausing & Peter Baldwin
 British Council Cultural Protection Fund
 
 
-## Coverage
-
-::: {.panel-tabset}
-
-### Typological
-
-:::: {.columns}
-
-::: {.column width="30%"}
-
-Built Heritage
-
-:::
-
-::: {.column width="70%"}
-
-<center>
-
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/hp-type-structure.png" height="350">
-
-</center>
-<div class="captiontext">XXX &copy;Jan Ciglenečki, Coptic Monastic Heritage Archive</div>
-
-:::
-
-:::
-
-  
-### Spatial
-
-
-:::: {.columns}
-
-::: {.column width="30%"}
-
-Middle East North Africa (MENA) region
-
-:::
-
-::: {.column width="70%"}
-
-<center>
-
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-v7-grids-ea-ge.png" height="320">
-
-</center>
-<div class="captiontext">EAMENA Grid Squares projected on Google Earth</div>
-
-:::
-
-:::
-
-### Temporal
-
-
-:::: {.columns}
-
-::: {.column width="30%"}
-
-Paleolithic -- World War II
-
-:::
-
-::: {.column width="70%"}
-
-<center>
-
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/ea-periodo-sup0AD.png" height="320">
-
-</center>
-<div class="captiontext">EAMENA periods (after 0 AD) &copy; PeriodO</div>
-
-
-:::
-
-:::
-
-:::
-
 ## Database System
 
 ::: {.panel-tabset}
@@ -483,19 +485,17 @@ Paleolithic -- World War II
 
 :::: {.columns}
 
-::: {.column width="30%"}
+::: {.column width="20%"}
 <div class="captiontext">
 Batist, Z.; Roe, J., 2024. Open archaeology, open source? Internet Archaeology  67. <a href="https://doi.org/10.11141/ia.67.13" data-type="link" data-id="10.11141/ia.67.13" target="_blank" rel="noreferrer noopener">10.11141/ia.67.13</a>
-<br><br><br>
-Adapted from <a href="https://github.com/zackbatist/openarchaeo-collaboration" data-type="link" data-id="openarchaeo-collaboration" target="_blank" rel="noreferrer noopener">openarchaeo-collaboration</a>. Graph of open archaeological GitHub repositories and connected users via contributions. Darker edges indicate a higher number of contributions. The color of the nodes indicates membership in the largest groups according to the method of edge betweenness without isolated nodes. 
 </div>
 :::
 
-::: {.column width="70%"}
+::: {.column width="80%"}
 
 ```{=html}
 <div style="display: flex; justify-content: center;">
-  <iframe width="800" height="500" src="https://CAA-France.github.io/website/diagrams/oarch_repo_user.html"></iframe>
+  <iframe width="600" height="450" src="https://CAA-France.github.io/website/diagrams/oarch_repo_user.html"></iframe>
 </div>
 ```
 
@@ -508,17 +508,32 @@ Adapted from <a href="https://github.com/zackbatist/openarchaeo-collaboration" d
 
 ```{=html}
 <div style="display: flex; justify-content: center;">
-<embed src="https://achp-project.github.io/cultural-heritage/map-projects/arches-global-south.html" width="900px" height="450px" />
+<embed src="https://achp-project.github.io/cultural-heritage/map-projects/arches-global-south.html" />
 </div>
 ```
 
 ### Semantic Web <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/semantic-web-logo.png' style='height: 35px;vertical-align: middle;'>
+
+
+:::: {.columns}
+
+::: {.column width="30%"}
+<div class="captiontext">
+Entity-Relations Diagram (ERD) of the EAMENA Heritage Place Resource Model with field names (nodes) colored according to their groups.
+</div>
+:::
+
+::: {.column width="70%"}
 
 ```{=html}
 <div style="display: flex; justify-content: center;">
 <iframe width="800" height="450" src="https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/erd/EAMENA-erd-concepts.html"></iframe>
 </div>
 ```
+
+:::
+
+:::
 
 
 :::
@@ -552,11 +567,27 @@ Adapted from <a href="https://github.com/zackbatist/openarchaeo-collaboration" d
 
 ### Instances
 
+
+
+:::: {.columns}
+
+::: {.column width="30%"}
+<div class="captiontext">
+in <span style="color:blue;">blue: </span>Heritage Places; in <span style="color:green;">green: </span> Information Resources; in <span style="color:grey;">grey (grid): </span>Grid Squares
+</div>
+:::
+
+::: {.column width="70%"}
+
 <center>
 
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/ea-resource-example.png" height="350">
 
 </center>
+
+:::
+
+:::
 
 
 ### Data
@@ -870,9 +901,12 @@ Destruction: iconoclasm, looting, etc.
 
 ### Related Resources
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/dal01--relatedresources.png" height="400">
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/dal01--relatedresources.png" height="350">
 <div class="captiontext">DAL01 related resources</div>
 
+</center>
 
 :::
 

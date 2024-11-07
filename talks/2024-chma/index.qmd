@@ -464,7 +464,7 @@ British Council Cultural Protection Fund
 
 ### Arches 
 
-<small><img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 30px;vertical-align: middle;'>, open source semantic graph geoweb-based information platform for Cultural Heritage management developed by the Getty Conservation Institute (GCI) and the World Monument Fund (WMF) that natively integrates:
+<small><img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 30px;vertical-align: middle;'>, open source semantic graph geoweb-based information platform for Cultural Heritage management developed by the Getty Conservation Institute ([GCI](https://www.getty.edu/conservation/)) and the World Monument Fund ([WMF](https://www.wmf.org/)) that natively integrates:
 
 :::: {.columns}
 
@@ -478,7 +478,7 @@ British Council Cultural Protection Fund
 :::
 
 ::: {.column width="40%"}
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/dal01--relatedresources-1.png" height="370">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/dal01--relatedresources-1.png" height="300">
 :::
 
 ::::
@@ -487,7 +487,7 @@ British Council Cultural Protection Fund
 
 [^21]: ISO 21127 <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/lod-crmbase.png' style='height: 35px;vertical-align: middle;'>
 [^2]: ISO 15836 <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/lod-iso-dublin.png' style='height: 35px;vertical-align: middle;'>
-[^3]: ISO 25964-1 <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/lod-iso-skos.png' style='height: 35px;vertical-align: middle;'>
+[^3]: ISO 25964-1 <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/lod-iso-skos.png' style='height: 32px;vertical-align: middle;'>
 [^6]: ISO 8601-2
 [^7]: ISO 19111
 
@@ -661,7 +661,7 @@ Entity-Relations Diagram (ERD) of the EAMENA Heritage Place Resource Model with 
 
 ::: {.panel-tabset}
 
-### War
+### <span style="font-size:30px">War</span>
 
 
 :::: {.columns}
@@ -697,7 +697,7 @@ leaflet::leaflet() %>%
 
 ::::
 
-### Agriculture
+### <span style="font-size:30px">Agriculture</span>
 
 :::: {.columns}
 
@@ -732,7 +732,7 @@ leaflet::leaflet() %>%
 
 ::::
 
-### Construction
+### <span style="font-size:30px">Construction</span>
 
 :::: {.columns}
 
@@ -767,8 +767,45 @@ leaflet::leaflet() %>%
 
 ::::
 
+### <span style="font-size:30px">Infrastructure</span>
 
-### Natural
+:::: {.columns}
+
+::: {.column width="60%"}
+
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-infrastructure.png" height="300">
+
+</center>
+<div class="captiontext">The trace of the TAPI pipeline will cross the top part of the qanat system (Kandahar, Afghanistan)</div>
+
+:::
+
+::: {.column width="40%"}
+
+
+```{r}
+#| out-width: 400
+#| out-height: 400
+
+leaflet::leaflet() %>%
+  leaflet::addProviderTiles(leaflet::providers$"Esri.WorldImagery", group = "Ortho") %>%
+  leaflet::addProviderTiles(leaflet::providers$"OpenStreetMap", group = "OSM") %>%
+  leaflet::addMarkers(lng = 65.833929765971, lat = 31.398548590582, popup="Qanat system") %>%
+  leaflet::addLayersControl(
+    baseGroups = c("Ortho", "OSM"),
+    position = "topright") 
+```
+
+
+:::
+
+::::
+
+
+
+### <span style="font-size:30px">Natural</span>
 
 :::: {.columns}
 
@@ -804,7 +841,7 @@ leaflet::leaflet() %>%
 
 ::::
 
-### Looting
+### <span style="font-size:30px">Looting</span>
 
 :::: {.columns}
 
@@ -949,12 +986,34 @@ Destruction: iconoclasm, looting, etc.
 
 ::::
 
-
 :::
 
 ## Cases Study
 
 ::: {.panel-tabset}
+
+
+### APAAME
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/data-lifecycle-collect-aerial-photo.png" width="500">
+
+
+
+### City of the Dead
+
+
+::: columns
+
+::: {.column width="50%"}
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/projects/cod/img/image-6.png" width="500">
+
+:::
+
+::: {.column width="50%"}
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/projects/cod/img/cod-photo-collection.png" width="500">
+:::
+
+:::
 
 
 ### Deir Abu Lifa

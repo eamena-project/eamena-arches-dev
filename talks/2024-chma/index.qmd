@@ -474,10 +474,11 @@ British Council Cultural Protection Fund
 - Simple Knowledge Organisation System ([SKOS](https://www.w3.org/2004/02/skos/))[^3]
 - Extended Date/Time Format ([EDTF](https://www.loc.gov/standards/datetime/))[^6]
 - World Geodetic System 1984 ([WGS84](https://www.w3.org/2003/01/geo/))[^7]
+- ...
 :::
 
 ::: {.column width="40%"}
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/dal01--relatedresources.png" height="370">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/dal01--relatedresources-1.png" height="370">
 :::
 
 ::::

@@ -63,41 +63,28 @@ library(dplyr)
 
 :::: {.columns}
 
-::: {.column width="60%"}
+::: {.column width="50%"}
 
 ```{mermaid}
-flowchart LR
-  id1["<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-oxford_.png' width='40' height='40'><br>University of Oxford"]
-  id2["<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-leicester.png' width='40' height='40'><br>University of Leicester"]
-  id3["<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-durham.png' width='40' height='40'><br>University of Durham"]
-  
-  id4["<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-southampton.png' width='40' height='40'><br>University of Southampton"]
-  id5["<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-ulster.png' width='40' height='40'><br>Ulster University"]
-  
-  id1 --> id6["EAMENA Database"]
-  id2 --> id6
-  id3 --> id6
-```
 
-```{mermaid}
 flowchart LR
   subgraph EA[EAMENA]
-    id1["<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-oxford_.png' width='40' height='40'><br>University of Oxford"]
-    id2["<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-leicester.png' width='40' height='40'><br>University of Leicester"]
-    id3["<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-durham.png' width='40' height='40'><br>University of Durham"]
+    id1["<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-oxford_.png' width='20'><br>University of Oxford"]
+    id2["<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-leicester.png' width='20'><br>University of Leicester"]
+    id3["<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-durham.png' width='20'><br>University of Durham"]
   end
-  id1 ---> id6["<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-eamena-logo.png' width='40' height='40'><br>EAMENA Database"]
+  id1 ---> id6["<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-eamena-logo.png' width='20'><br>EAMENA Database"]
   id2 ---> id6
   id3 ---> id6
   subgraph MA[MAREA]
-    id4["<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-southampton.png' width='40' height='40'><br>University of Southampton"]
-    id5["<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-ulster.png' width='40' height='40'><br>Ulster University"]
+    id4["<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-southampton.png' width='20'><br>University of Southampton"]
+    id5["<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-ulster.png' width='20'><br>Ulster University"]
   end
   id4 ---> id6
   id5 ---> id6
   
-  style EA color:#f6d6d6
-  style MA color:#f6d6d6
+  style EA fill:#ffffff,color:#000000
+  style MA fill:#ffffff,color:#000000
   
   style id1 fill:#f6d6d6,stroke:#333,stroke-width:2px
   style id2 fill:#f6d6d6,stroke:#333,stroke-width:2px
@@ -115,23 +102,11 @@ flowchart LR
 
 :::
 
-::: {.column width="40%"}
-
-<small>
-
-* <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-oxford_.png' style='height: 35px;vertical-align: middle;'> <https://www.arch.ox.ac.uk/>
-* <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-leicester.png' style='height: 35px;vertical-align: middle;'> <https://le.ac.uk/study/archaeology-ancient-history>
-* <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-durham.png' style='height: 35px;vertical-align: middle;'> <https://www.durham.ac.uk/departments/academic/archaeology/>
-
-</small>
+::: {.column width="50%"}
 
 :::
 
-:::
-
-
-
-
+::::
 
 ### Birth date
 
@@ -1026,16 +1001,16 @@ Destruction: iconoclasm, looting, etc.
 
 ::: columns
 
-::: {.column width="50%"}
+::: {.column width="60%"}
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/joad_bijan_huet24.png" height="370">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/joad_bijan_huet24.png" height="300">
 <div class="captiontext">From left to right: Hamun Lake in November 1976, June 1998, and July 2021. Images respectively from Landsat 2, Landsat 5, and Landsat 8, *in* Bijan and Huet, 2024, *Historical Landscape of Sistan in Iran and Afghanistan*, JOAD, [10.5334/joad.123 ](https://openarchaeologydata.metajnl.com/articles/10.5334/joad.123) </div>
 
 </center>
 :::
 
-::: {.column width="50%"}
+::: {.column width="40%"}
 
 ```{r}
 library(dplyr)
@@ -1088,7 +1063,8 @@ leaflet::leaflet(df, width = "600px", height = "400px") %>%
 ::: {.column width="40%"}
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/projects/cod/img/image-6.png" width="400">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/projects/cod/img/image-6.png" width="300">
+<div class="captiontext">Location of the 91 Heritage Resources (in blue) overlaying the corresponding 91 Information Resources (in green) in the Northern Cemetery, Cairo, Egypt.</div>
 
 </center>
 :::
@@ -1142,6 +1118,64 @@ leaflet::leaflet(df, width = "600px", height = "400px") %>%
 # Wadi Naqqat
 
 
+# Non-Coptic Heritage
+
+
+## City of the Dead
+
+::: {.panel-tabset}
+
+### 3<sup>rd</sup> part and published projects
+
+
+
+
+### Background
+
+
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo-arcadia.png' style='height: 60px;vertical-align: middle;'><br> Arcadia Fund
+
+### Alignment
+
+* [General Description Type](https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/values/Resource_Summary/General_Description_Type.html)
+
+| CoD                | EAMENA                     |
+|--------------------|----------------------------|
+| conditiondetails   | Comments                   |
+| history            | General Description        |
+| specialfeatures    | Summary of Significance    |
+| description        | Architectural Description  |
+
+* [Heritage Place Function](https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/values/Resource_Summary/Heritage_Place_Function.html)
+
+| CoD                | EAMENA                     |
+|--------------------|----------------------------|
+| presentuse         | Heritage Place Function    |
+
+The CoD field `originaluse` hasn't been used
+
+* [Conditions](https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/values/Condition_Assessment/Overall_Site_Condition.html)
+
+| CoD           | EAMENA      |
+|---------------|-------------|
+| Fair          | Fair        |
+| Good          | Good        |
+| Poor          | Poor        |
+| Poor/Ruin     | Very Bad    |
+| Ruin          | Destroyed   |
+
+* [Extent of damage](https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/values/Condition_Assessment/Damage_Disturbance_Extent.html)
+
+| CoD           | EAMENA              |
+|---------------|---------------------|
+| Fair          | 1-10%               |
+| Good          | No Visible/Known    |
+| Poor          | 11-30%              |
+| Poor/Ruin     | 31-60%              |
+| Ruin          | 61-90%              |
+
+
+:::
 
 # Useful links
 

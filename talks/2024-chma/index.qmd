@@ -1012,7 +1012,7 @@ Destruction: iconoclasm, looting, etc.
 
 ::: columns
 
-::: {.column width="60%"}
+::: {.column width="50%"}
 <center>
 
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/joad_bijan_huet24.png" height="370">
@@ -1021,20 +1021,18 @@ Destruction: iconoclasm, looting, etc.
 </center>
 :::
 
-::: {.column width="40%"}
+::: {.column width="50%"}
 
 ```{r}
-#| out-width: 400
-#| out-height: 400
-
-leaflet::leaflet() %>%
-  leaflet::addProviderTiles(leaflet::providers$"Esri.WorldImagery", group = "Ortho") %>%
-  leaflet::addProviderTiles(leaflet::providers$"OpenStreetMap", group = "OSM") %>%
-  leaflet::addMarkers(lng = 30.833333, lat = 61.666667, popup="Temple of Bel") %>%
-  leaflet::addLayersControl(
-    baseGroups = c("Ortho", "OSM"),
-    position = "topright") 
+library(dplyr)
+# df <- st_read(paste0(dirIn, "neonet-data-2023-10-22-select-aera.geojson"), quiet = T)
+df <- sf::st_read("https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/projects/sistan/hamun_lake.geojson", quiet = T)
+roi <- paste0('<a href="', "https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/_gs/E30N29-41.geojson", '" target="_blank">E30N29-41</a>')
+leaflet::leaflet(df, width = "600px", height = "400px") %>%
+  leaflet::addTiles() %>%
+  leaflet::addPolygons(popup = roi)# "<b>Hello World</b>")
 ```
+
 :::
 
 :::

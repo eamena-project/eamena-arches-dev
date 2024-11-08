@@ -82,16 +82,16 @@ flowchart LR
 ```{mermaid}
 flowchart LR
   subgraph EA[EAMENA]
-    id1[![University of Oxford](https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-oxford_.png)]
-    id2[University of Leicester]
-    id3[University of Durham]
+    id1["<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-oxford_.png' width='40' height='40'><br>University of Oxford"]
+    id2["<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-leicester.png' width='40' height='40'><br>University of Leicester"]
+    id3["<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-durham.png' width='40' height='40'><br>University of Durham"]
   end
-  id1 ---> id6[EAMENA Database]
+  id1 ---> id6["<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-eamena-logo.png' width='40' height='40'><br>EAMENA Database"]
   id2 ---> id6
   id3 ---> id6
   subgraph MA[MAREA]
-    id4[University of Southampton]
-    id5[Ulster University]
+    id4["<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-southampton.png' width='40' height='40'><br>University of Southampton"]
+    id5["<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-ulster.png' width='40' height='40'><br>Ulster University"]
   end
   id4 ---> id6
   id5 ---> id6
@@ -105,11 +105,12 @@ flowchart LR
   style id4 fill:#f6d6d6,stroke:#333,stroke-width:2px
   style id5 fill:#f6d6d6,stroke:#333,stroke-width:2px
   
-  click id1 "https://www.ox.ac.uk/" _blank
-  click id2 "https://le.ac.uk/" _blank
-  click id3 "https://www.durham.ac.uk/" _blank
+  click id1 "https://www.arch.ox.ac.uk/" _blank
+  click id2 "https://le.ac.uk/study/archaeology-ancient-history/" _blank
+  click id3 "https://www.durham.ac.uk/departments/academic/archaeology/" _blank
   click id4 "https://www.southampton.ac.uk/" _blank
   click id5 "https://www.ulster.ac.uk/" _blank
+  click id6 "https://eamena.org/database" _blank
 ```
 
 :::

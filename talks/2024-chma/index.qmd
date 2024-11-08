@@ -68,7 +68,7 @@ library(dplyr)
 ```{mermaid}
 flowchart LR
   subgraph EA[EAMENA]
-    id1[University of Oxford]
+    id1[![University of Oxford](https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-oxford_.png)]
     id2[University of Leicester]
     id3[University of Durham]
   end
@@ -107,7 +107,6 @@ flowchart LR
 * <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-oxford_.png' style='height: 35px;vertical-align: middle;'> <https://www.arch.ox.ac.uk/>
 * <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-leicester.png' style='height: 35px;vertical-align: middle;'> <https://le.ac.uk/study/archaeology-ancient-history>
 * <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-durham.png' style='height: 35px;vertical-align: middle;'> <https://www.durham.ac.uk/departments/academic/archaeology/>
-* <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/prj-apaame.png' style='height: 35px;vertical-align: middle;'> <http://www.apaame.org/>
 
 </small>
 
@@ -1027,7 +1026,7 @@ Destruction: iconoclasm, looting, etc.
 library(dplyr)
 # df <- st_read(paste0(dirIn, "neonet-data-2023-10-22-select-aera.geojson"), quiet = T)
 df <- sf::st_read("https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/projects/sistan/hamun_lake.geojson", quiet = T)
-roi <- paste0('<a href="', "https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/_gs/E30N29-41.geojson", '" target="_blank">E30N29-41</a>')
+roi <- paste0('<a href="', "https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/sistan/data/hamun_lake.geojson", '" target="_blank">Hamun Lake</a>')
 leaflet::leaflet(df, width = "600px", height = "400px") %>%
   leaflet::addTiles() %>%
   leaflet::addPolygons(popup = roi)# "<b>Hello World</b>")
@@ -1133,6 +1132,7 @@ leaflet::leaflet(df, width = "600px", height = "400px") %>%
 
 * [CMHA project](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/chma#readme)
 * [CMHA talk (this one)](https://github.com/eamena-project/eamena-arches-dev/tree/main/talks/2024-chma#readme)
+* <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/prj-apaame.png' style='height: 35px;vertical-align: middle;'> <http://www.apaame.org/>
 
 
 

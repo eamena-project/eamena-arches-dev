@@ -1005,7 +1005,7 @@ Destruction: iconoclasm, looting, etc.
 <center>
 
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/joad_bijan_huet24.png" height="300">
-<div class="captiontext">From left to right: Hamun Lake in November 1976, June 1998, and July 2021. Images respectively from Landsat 2, Landsat 5, and Landsat 8, *in* Bijan and Huet, 2024, *Historical Landscape of Sistan in Iran and Afghanistan*, JOAD, [10.5334/joad.123 ](https://openarchaeologydata.metajnl.com/articles/10.5334/joad.123) </div>
+<div class="captiontext">Left to right: Hamun Lake in 1976, 1998, and 2021 (&copy;USGS), *in* Bijan and Huet, 2024, *Historical Landscape of Sistan in Iran and Afghanistan*, JOAD, [10.5334/joad.123 ](https://openarchaeologydata.metajnl.com/articles/10.5334/joad.123),  </div>
 
 </center>
 :::
@@ -1128,7 +1128,7 @@ leaflet::leaflet(df, width = "600px", height = "400px") %>%
 ### 3<sup>rd</sup> part and published projects
 
 
-
+3rd-part-prj.png
 
 ### Background
 

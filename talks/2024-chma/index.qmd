@@ -310,6 +310,10 @@ Paleolithic -- World War II
 
 :::
 
+## 3<sup>rd</sup> part projects
+
+
+
 ## Limits
 
 ::: {.panel-tabset}
@@ -508,7 +512,7 @@ Batist, Z.; Roe, J., 2024. Open archaeology, open source? Internet Archaeology  
 
 ```{=html}
 <div style="display: flex; justify-content: center;">
-<embed src="https://achp-project.github.io/cultural-heritage/map-projects/arches-global-south.html" width="900px"/>
+<embed src="https://achp-project.github.io/cultural-heritage/map-projects/arches-global-south.html" width="900px" height="400px"/>
 </div>
 ```
 
@@ -597,22 +601,24 @@ Entity-Relations Diagram (ERD) of the EAMENA Heritage Place Resource Model with 
 
 :::: {.columns}
 
-::: {.column width="25%"}
+::: {.column width="30%"}
 <small>
-* Business Data
 
-  - 209,750 Heritage Places
-  - 136,555 Information Resources
-  - 2,150 Person-Organisation
+**Business Data**
+
+- 209,750 Heritage Places
+- 136,555 Information Resources
+- 2,150 Person-Organisation
   
-* Reference Data
+**Reference Data**
 
-  - 27,585 Grid Squares
-  - 3,239 Concepts
+- 27,585 Grid Squares
+- 3,239 Concepts
+  
 </small>
 :::
 
-::: {.column width="75%"}
+::: {.column width="70%"}
 <center>
 
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/geoserver-map-wfs-gs-nb-hp-2024.png" height="340">
@@ -642,7 +648,8 @@ Entity-Relations Diagram (ERD) of the EAMENA Heritage Place Resource Model with 
 
 </center>
 
-<b>Disturbances </b><u>caused at</u> & <b>Threats</b> as <u>future risks to</u> heritage places
+* has occured: <b>Disturbances</b> caused at heritage places
+* will occured (probably): <b>Threats</b> as future risks to heritage places
 
 
 
@@ -1114,6 +1121,8 @@ leaflet::leaflet(df, width = "600px", height = "400px") %>%
 ## Metadata
 
 
+## IIIF
+
 
 # Wadi Naqqat
 
@@ -1125,17 +1134,34 @@ leaflet::leaflet(df, width = "600px", height = "400px") %>%
 
 ::: {.panel-tabset}
 
-### 3<sup>rd</sup> part and published projects
-
-
-3rd-part-prj.png
 
 ### Background
 
 
 <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo-arcadia.png' style='height: 60px;vertical-align: middle;'><br> Arcadia Fund
 
-### Alignment
+### Alignment: fields
+
+::: columns
+
+::: {.column width="70%"}
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/projects/cod/img/image-7.png" height="300">
+<div class="captiontext">Entity-Relationship Diagram of the COD database &copy;Archinos</div>
+
+</center>
+:::
+
+::: {.column width="30%"}
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-ea-v4-rm-hp.png" height="300">
+:::
+:::
+
+
+::::
+
+### Alignment: values
 
 * [General Description Type](https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/values/Resource_Summary/General_Description_Type.html)
 
@@ -1152,7 +1178,6 @@ leaflet::leaflet(df, width = "600px", height = "400px") %>%
 |--------------------|----------------------------|
 | presentuse         | Heritage Place Function    |
 
-The CoD field `originaluse` hasn't been used
 
 * [Conditions](https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/values/Condition_Assessment/Overall_Site_Condition.html)
 
@@ -1174,6 +1199,32 @@ The CoD field `originaluse` hasn't been used
 | Poor/Ruin     | 31-60%              |
 | Ruin          | 61-90%              |
 
+
+:::
+
+# How You Can Get Involved
+
+## Case Study
+
+### Berketein
+
+::: columns
+
+::: {.column width="50%"}
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/3rd-part-prj-berketein.png" height="300">
+<div class="captiontext">Assessment of the Berketein Roman site, Jerash, Jordan &copy;EAMENA</div>
+
+</center>
+:::
+
+::: {.column width="50%"}
+{{< pdf img/berketein-report.pdf width=100% >}}
+:::
+
+
+::::
 
 :::
 

@@ -5,7 +5,7 @@ author:
   - name: Thomas Huet
     affiliation: 
       - id: uo
-        name: <span style="font-size:16pt">University of Oxford</span>
+        name: <span style="font-size:16pt">University of Oxford, School of Archaeology, EAMENA project</span>
 title-slide-attributes:
     data-background-image: "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/eamenaDB-bck-2.png"
     data-background-size: "90%"
@@ -120,7 +120,7 @@ MAREA project<br>
 
 ::::
 
-### Birth date
+### Date of birth
 
 :::: {.columns}
 
@@ -329,7 +329,7 @@ Paleolithic -- World War II
 ::: {.column width="60%"}
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/projects/cod/img/image-6.png" width="380">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/projects/cod/img/image-6.png" width="420">
 <div class="captiontext">Location of the 91 Heritage Resources (in <span style="color:blue;">blue </span>) and Information Resources (in <span style="color:green;">green</span>) in the Northern Cemetery, Cairo, Egypt.</div>
 
 </center>
@@ -1189,7 +1189,7 @@ leaflet::leaflet(df, width = "600px", height = "400px") %>%
 
 <center>
 
-<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/iiif-qasr-el-hallabat.png' style='height: 430px;'>
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/iiif-qasr-el-hallabat.png' style='height: 450px;'>
 <div class="captiontext">EAMENA International Image Interoperability Framework ([IIIF](https://iiif.io/))[^5] node (*in test*) of Qasr al-Hallabat, Zarqa, Jordan  &copy;APAAME</div>
 
 </center>
@@ -1250,17 +1250,17 @@ leaflet::leaflet(df, width = "600px", height = "400px") %>%
 
 ::: columns
 
-::: {.column width="70%"}
+::: {.column width="80%"}
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/projects/cod/img/image-7.png" height="350">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/projects/cod/img/image-7-1.png" height="400">
 <div class="captiontext">Entity-Relationship Diagram of the COD database &copy;Archinos</div>
 
 </center>
 :::
 
-::: {.column width="30%"}
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-ea-v4-rm-hp.png" height="300">
+::: {.column width="20%"}
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-ea-v4-rm-hp.png" height="200">
 :::
 
 :::

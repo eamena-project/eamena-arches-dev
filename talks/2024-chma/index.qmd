@@ -1157,7 +1157,7 @@ leaflet::leaflet(df, width = "600px", height = "400px") %>%
 
 ::: columns
 
-::: {.column width="50%"}
+::: {.column width="40%"}
 
 <center>
 
@@ -1168,10 +1168,10 @@ leaflet::leaflet(df, width = "600px", height = "400px") %>%
 
 :::
 
-::: {.column width="50%"}
+::: {.column width="60%"}
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/1df_2018_2003-metadata.png" height="300">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/1df_2018_2003_metadata.png" height="300">
 
 </center>
 <div class="captiontext">Wadi Naqqat 1 (WN01) metadata in the ResourceSpace server</div>
@@ -1182,29 +1182,15 @@ leaflet::leaflet(df, width = "600px", height = "400px") %>%
 
 ## IIIF
 
-<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> integrates 3<sup>rd</sup> part apps like the International Image Interoperability Framework ([IIIF](https://iiif.io/))[^5]
-
-:::: {.columns}
-
-::: {.column width="60%"}
 
 <center>
 
-<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/iiif-qasr-el-hallabat.png' style='height: 350px;'>
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/iiif-qasr-el-hallabat.png' style='height: 430px;'>
+<div class="captiontext">EAMENA International Image Interoperability Framework ([IIIF](https://iiif.io/))[^5] node (*in test*) of Qasr al-Hallabat, Zarqa, Jordan  &copy;APAAME</div>
 
 </center>
 
-:::
-
-::: {.column width="40%"}
-\
-
-<div class="captiontext">EAMENA IIIF node (in test) of Qasr al-Hallabat Umayyad castle <br> (Zarqa, Jordan)</div>
-
-:::
-
-::::
-
+[^5]: ISO 21127 <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/lod-iso-iiif.png' style='height: 35px;vertical-align: middle;'>
 
 # Wadi Naqqat
 
@@ -1223,14 +1209,12 @@ leaflet::leaflet(df, width = "600px", height = "400px") %>%
 
 ::: {.column width="40%"}
 <div class="captiontext">An endangered necropolis</div>
-<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/projects/cod/img/impact-news-apnews.png' style='height: 600px;vertical-align: middle;'>
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/projects/cod/img/impact-news-apnews.png' style='height: 400px;vertical-align: middle;'>
 :::
 
 ::: {.column width="40%"}
 <div class="captiontext">Archinos architecture</div>
-```{=html}
-<embed src="https://www.cuipcairo.org/en/directory/archinos-architecture" width="600px" height="320px" />
-```
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/projects/cod/img/3rd-part-projects-cod-archinos.png' style='height: 400px;vertical-align: middle;'>
 :::
 
 ::: {.column width="20%"}

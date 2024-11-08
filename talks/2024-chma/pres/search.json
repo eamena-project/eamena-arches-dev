@@ -11,7 +11,7 @@
     "href": "index.html#who-we-are",
     "title": "EAMENA",
     "section": "Who we are",
-    "text": "Who we are\n\nInstitutionsBirth date\n\n\n\n\n\n\n\n\n\nflowchart LR\n  subgraph EA[EAMENA]\n    id1[\"&lt;img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-oxford_.png' width='20'&gt;&lt;br&gt;University of Oxford\"]\n    id2[\"&lt;img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-leicester.png' width='20'&gt;&lt;br&gt;University of Leicester\"]\n    id3[\"&lt;img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-durham.png' width='20'&gt;&lt;br&gt;University of Durham\"]\n  end\n  id1 ---&gt; id6[\"&lt;img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-eamena-logo.png' width='20'&gt;&lt;br&gt;EAMENA Database\"]\n  id2 ---&gt; id6\n  id3 ---&gt; id6\n  subgraph MA[MAREA]\n    id4[\"&lt;img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-southampton.png' width='20'&gt;&lt;br&gt;University of Southampton\"]\n    id5[\"&lt;img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-ulster.png' width='20'&gt;&lt;br&gt;Ulster University\"]\n  end\n  id4 ---&gt; id6\n  id5 ---&gt; id6\n  \n  style EA fill:#ffffff,color:#000000\n  style MA fill:#ffffff,color:#000000\n  \n  style id1 fill:#f6d6d6,stroke:#333,stroke-width:2px\n  style id2 fill:#f6d6d6,stroke:#333,stroke-width:2px\n  style id3 fill:#f6d6d6,stroke:#333,stroke-width:2px\n  style id4 fill:#f6d6d6,stroke:#333,stroke-width:2px\n  style id5 fill:#f6d6d6,stroke:#333,stroke-width:2px\n  \n  click id1 \"https://www.arch.ox.ac.uk/\" _blank\n  click id2 \"https://le.ac.uk/study/archaeology-ancient-history/\" _blank\n  click id3 \"https://www.durham.ac.uk/departments/academic/archaeology/\" _blank\n  click id4 \"https://www.southampton.ac.uk/\" _blank\n  click id5 \"https://www.ulster.ac.uk/\" _blank\n  click id6 \"https://eamena.org/database\" _blank\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJanuary 2015 project drafted in January 2014\n\n\n\n\n\n‘Terror in the Mosul Museum’, published in ‘The New Yorker’, February 27, 2015"
+    "text": "Who we are\n\nInstitutionsBirth date\n\n\n\n\n\n\n\n\n\nflowchart LR\n  subgraph EA[EAMENA]\n    id1[\"&lt;img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-oxford_.png' width='20'&gt;&lt;br&gt;University of Oxford\"]\n    id2[\"&lt;img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-leicester.png' width='20'&gt;&lt;br&gt;University of Leicester\"]\n    id3[\"&lt;img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-durham.png' width='20'&gt;&lt;br&gt;University of Durham\"]\n  end\n  id1 ---&gt; id6[\"&lt;img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-eamena-logo.png' width='20'&gt;&lt;br&gt;EAMENA Database\"]\n  id2 ---&gt; id6\n  id3 ---&gt; id6\n  subgraph MA[MAREA]\n    id4[\"&lt;img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-southampton.png' width='20'&gt;&lt;br&gt;University of Southampton\"]\n    id5[\"&lt;img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-ulster.png' width='20'&gt;&lt;br&gt;Ulster University\"]\n  end\n  id4 ---&gt; id6\n  id5 ---&gt; id6\n  \n  style EA fill:#ffffff,color:#000000\n  style MA fill:#ffffff,color:#000000\n  \n  style id1 fill:#f6d6d6,stroke:#333,stroke-width:2px\n  style id2 fill:#f6d6d6,stroke:#333,stroke-width:2px\n  style id3 fill:#f6d6d6,stroke:#333,stroke-width:2px\n  style id4 fill:#f6d6d6,stroke:#333,stroke-width:2px\n  style id5 fill:#f6d6d6,stroke:#333,stroke-width:2px\n  \n  click id1 \"https://www.arch.ox.ac.uk/\" _blank\n  click id2 \"https://le.ac.uk/study/archaeology-ancient-history/\" _blank\n  click id3 \"https://www.durham.ac.uk/departments/academic/archaeology/\" _blank\n  click id4 \"https://www.southampton.ac.uk/\" _blank\n  click id5 \"https://www.ulster.ac.uk/\" _blank\n  click id6 \"https://eamena.org/database\" _blank\n\n\n\n\n\n\n\n\n\nEAMENA project\n\nMAREA project\n\n\n\n\n\n\nJanuary 2015 project drafted in January 2014\n\n\n\n\n\n‘Terror in the Mosul Museum’, published in ‘The New Yorker’, February 27, 2015"
   },
   {
     "objectID": "index.html#aims",
@@ -26,6 +26,13 @@
     "title": "EAMENA",
     "section": "Coverage",
     "text": "Coverage\n\nTypologicalSpatialTemporal\n\n\n\n\nBuilt Heritage\n\n\n\n\n\nWaddi Naqqat 1 ©Coptic Monastic Heritage Archive\n\n\n\n\n\n\n\nMiddle East North Africa (MENA) region\n\n\n\n\n\nEAMENA Grid Squares projected on Google Earth\n\n\n\n\n\n\n\nPaleolithic – World War II\n\n\n\n\n\nEAMENA periods (after 0 AD) © PeriodO"
+  },
+  {
+    "objectID": "index.html#rd-part-projects",
+    "href": "index.html#rd-part-projects",
+    "title": "EAMENA",
+    "section": "3rd part projects",
+    "text": "3rd part projects\n\n\n\n\n\nLocation of the 91 Heritage Resources (in blue) overlaying the corresponding 91 Information Resources (in green) in the Northern Cemetery, Cairo, Egypt.\n\n\n\n\n\nFunerary enclosure of Mustafa al-Babi al-Halabi (COD-001) ©Archinos architecture"
   },
   {
     "objectID": "index.html#limits",
@@ -53,14 +60,14 @@
     "href": "index.html#eamena-database",
     "title": "EAMENA",
     "section": "EAMENA Database",
-    "text": "EAMENA Database\n\nResource ModelsInstancesData\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBlue: Heritage Places Green:  Information Resources Grey (grid): Grid Squares\n\n\n\n\n\n\n\n\n\n\n\n * Business Data\n\n209,750 Heritage Places\n136,555 Information Resources\n2,150 Person-Organisation\nReference Data\n\n27,585 Grid Squares\n3,239 Concepts \n\n\n\n\n\n\n\nEAMENA Heritage Places counts in 2024"
+    "text": "EAMENA Database\n\nResource ModelsInstancesData\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBlue: Heritage Places Green:  Information Resources Grey (grid): Grid Squares\n\n\n\n\n\n\n\n\n\n\n\n\nBusiness Data\n\n209,750 Heritage Places\n136,555 Information Resources\n2,150 Person-Organisation\n\nReference Data\n\n27,585 Grid Squares\n3,239 Concepts\n\n\n\n\n\n\n\nEAMENA Heritage Places counts in 2024"
   },
   {
     "objectID": "index.html#definition",
     "href": "index.html#definition",
     "title": "EAMENA",
     "section": "Definition",
-    "text": "Definition\n\n   \n\nDilberjin Tepe, Afghanistan © Iconem\n\n\nDisturbances caused at & Threats as future risks to heritage places"
+    "text": "Definition\n\n   \n\nDilberjin Tepe, Afghanistan © Iconem\n\n\n\nhas occured: Disturbances caused at heritage places\nwill occured (probably): Threats as future risks to heritage places"
   },
   {
     "objectID": "index.html#cases",
@@ -109,7 +116,14 @@
     "href": "index.html#city-of-the-dead-1",
     "title": "EAMENA",
     "section": "City of the Dead",
-    "text": "City of the Dead\n\n3rd part and published projectsBackgroundAlignment\n\n\nDownload PDF file.\n\n\n\n\n\nAssessment of the Berketein Roman site, Jerash, Jordan\n\n\n\n\n  \n\n\n\n\n\n Arcadia Fund\n\n\n\nGeneral Description Type\n\n\n\n\nCoD\nEAMENA\n\n\n\n\nconditiondetails\nComments\n\n\nhistory\nGeneral Description\n\n\nspecialfeatures\nSummary of Significance\n\n\ndescription\nArchitectural Description\n\n\n\n\nHeritage Place Function\n\n\n\n\nCoD\nEAMENA\n\n\n\n\npresentuse\nHeritage Place Function\n\n\n\n\nConditions\n\n\n\n\nCoD\nEAMENA\n\n\n\n\nFair\nFair\n\n\nGood\nGood\n\n\nPoor\nPoor\n\n\nPoor/Ruin\nVery Bad\n\n\nRuin\nDestroyed\n\n\n\n\nExtent of damage\n\n\n\n\nCoD\nEAMENA\n\n\n\n\nFair\n1-10%\n\n\nGood\nNo Visible/Known\n\n\nPoor\n11-30%\n\n\nPoor/Ruin\n31-60%\n\n\nRuin\n61-90%"
+    "text": "City of the Dead\n\nBackgroundAlignment: fieldsAlignment: values\n\n\n Arcadia Fund\n\n\n\n\n\n\n\nEntity-Relationship Diagram of the COD database ©Archinos\n\n\n\n\n\n\n\n\n\nGeneral Description Type\n\n\n\n\nCoD\nEAMENA\n\n\n\n\nconditiondetails\nComments\n\n\nhistory\nGeneral Description\n\n\nspecialfeatures\nSummary of Significance\n\n\ndescription\nArchitectural Description\n\n\n\n\nHeritage Place Function\n\n\n\n\nCoD\nEAMENA\n\n\n\n\npresentuse\nHeritage Place Function\n\n\n\n\nConditions\n\n\n\n\nCoD\nEAMENA\n\n\n\n\nFair\nFair\n\n\nGood\nGood\n\n\nPoor\nPoor\n\n\nPoor/Ruin\nVery Bad\n\n\nRuin\nDestroyed\n\n\n\n\nExtent of damage\n\n\n\n\nCoD\nEAMENA\n\n\n\n\nFair\n1-10%\n\n\nGood\nNo Visible/Known\n\n\nPoor\n11-30%\n\n\nPoor/Ruin\n31-60%\n\n\nRuin\n61-90%"
+  },
+  {
+    "objectID": "index.html#case-study",
+    "href": "index.html#case-study",
+    "title": "EAMENA",
+    "section": "Case Study",
+    "text": "Case Study\nBerketein\n\n\n\n\n\nAssessment of the Berketein Roman site, Jerash, Jordan ©EAMENA\n\n\n\nDownload PDF file.\n\n\n:::"
   },
   {
     "objectID": "index.html#footnotes",

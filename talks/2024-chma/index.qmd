@@ -105,6 +105,19 @@ flowchart LR
 ::: {.column width="50%"}
 
 :::
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/ea-database-hp.png" height="320">
+
+</center>
+<div class="captiontext">EAMENA project</div>
+
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/ea-database-ga.png" height="320">
+
+</center>
+<div class="captiontext">MAREA project</div>
 
 ::::
 
@@ -312,7 +325,25 @@ Paleolithic -- World War II
 
 ## 3<sup>rd</sup> part projects
 
+:::: {.columns}
 
+::: {.column width="50%"}
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/projects/cod/img/image-6.png" width="300">
+<div class="captiontext">Location of the 91 Heritage Resources (in blue) overlaying the corresponding 91 Information Resources (in green) in the Northern Cemetery, Cairo, Egypt.</div>
+
+</center>
+:::
+
+::: {.column width="50%"}
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/projects/cod/img/4171_sl_JDs.png" width="700">
+<div class="captiontext">Funerary enclosure of Mustafa al-Babi al-Halabi (COD-001) &copy;Archinos architecture </div>
+
+
+:::
+
+::::
 
 ## Limits
 
@@ -1137,8 +1168,26 @@ leaflet::leaflet(df, width = "600px", height = "400px") %>%
 
 ### Background
 
+::: columns
 
-<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo-arcadia.png' style='height: 60px;vertical-align: middle;'><br> Arcadia Fund
+::: {.column width="33%"}
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo-arcadia.png' style='height: 60px;vertical-align: middle;'>
+<div class="captiontext">Endangered necropolis</div>
+:::
+
+::: {.column width="33%"}
+<div class="captiontext">Archinos architecture</div>
+=html: https://www.cuipcairo.org/en/directory/archinos-architecture
+:::
+
+::: {.column width="33%"}
+<div class="captiontext">Arcadia Fund</div>
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo-arcadia.png' style='height: 60px;vertical-align: middle;'>
+:::
+
+
+:::
+
 
 ### Alignment: fields
 
@@ -1156,12 +1205,13 @@ leaflet::leaflet(df, width = "600px", height = "400px") %>%
 ::: {.column width="30%"}
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-ea-v4-rm-hp.png" height="300">
 :::
+
 :::
 
 
-::::
-
 ### Alignment: values
+
+<small>
 
 * [General Description Type](https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/values/Resource_Summary/General_Description_Type.html)
 
@@ -1199,6 +1249,7 @@ leaflet::leaflet(df, width = "600px", height = "400px") %>%
 | Poor/Ruin     | 31-60%              |
 | Ruin          | 61-90%              |
 
+</small>
 
 :::
 

@@ -1207,18 +1207,18 @@ leaflet::leaflet(df, width = "600px", height = "400px") %>%
 
 ::: columns
 
-::: {.column width="40%"}
-<div class="captiontext">An endangered necropolis</div>
+::: {.column width="60%"}
+<div class="captiontext">Study: An endangered necropolis, Cairo, Egypt</div>
 <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/projects/cod/img/impact-news-apnews.png' style='height: 400px;vertical-align: middle;'>
 :::
 
-::: {.column width="40%"}
-<div class="captiontext">Archinos architecture</div>
-<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/projects/cod/img/3rd-part-projects-cod-archinos.png' style='height: 400px;vertical-align: middle;'>
+::: {.column width="20%"}
+<div class="captiontext">Actor: Archinos architecture</div>
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/projects/cod/img/3rd-part-projects-cod-archinos.png' style='height: 200px;vertical-align: middle;'>
 :::
 
 ::: {.column width="20%"}
-<div class="captiontext">Arcadia Fund</div>
+<div class="captiontext">Funder: Arcadia Fund</div>
 <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo-arcadia.png' style='height: 60px;vertical-align: middle;'>
 :::
 
@@ -1255,7 +1255,7 @@ leaflet::leaflet(df, width = "600px", height = "400px") %>%
 
 [General Description Type](https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/values/Resource_Summary/General_Description_Type.html)
 
-| CoD                | EAMENA                     |
+| COD                | EAMENA                     |
 |--------------------|----------------------------|
 | conditiondetails   | Comments                   |
 | history            | General Description        |
@@ -1264,7 +1264,7 @@ leaflet::leaflet(df, width = "600px", height = "400px") %>%
 
 [Heritage Place Function](https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/values/Resource_Summary/Heritage_Place_Function.html)
 
-| CoD                | EAMENA                     |
+| COD                | EAMENA                     |
 |--------------------|----------------------------|
 | presentuse         | Heritage Place Function    |
 
@@ -1277,7 +1277,7 @@ leaflet::leaflet(df, width = "600px", height = "400px") %>%
 
 [Conditions](https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/values/Condition_Assessment/Overall_Site_Condition.html)
 
-| CoD           | EAMENA      |
+| COD           | EAMENA      |
 |---------------|-------------|
 | Fair          | Fair        |
 | Good          | Good        |
@@ -1307,6 +1307,8 @@ leaflet::leaflet(df, width = "600px", height = "400px") %>%
 
 ## Case Study
 
+::: {.panel-tabset}
+
 ### Berketein
 
 ::: columns
@@ -1321,7 +1323,14 @@ leaflet::leaflet(df, width = "600px", height = "400px") %>%
 :::
 
 ::: {.column width="50%"}
-{{< pdf img/berketein-report.pdf width=100% >}}
+<!-- {{< pdf img/berketein-report.pdf width=100% >}} -->
+
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/3rd-part-prj-berketein-ea-db.png" height="300">
+<div class="captiontext">Assessment of the Berketein Roman site, Jerash, Jordan &copy;EAMENA</div>
+
+</center>
 :::
 
 

@@ -68,7 +68,7 @@ library(dplyr)
 ```{mermaid}
 
 flowchart LR
-  subgraph EA[EAMENA]
+  subgraph EA[EAMENA project]
     id1["<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-oxford_.png' width='20'><br>University of Oxford"]
     id2["<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-leicester.png' width='20'><br>University of Leicester"]
     id3["<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-durham.png' width='20'><br>University of Durham"]
@@ -76,7 +76,7 @@ flowchart LR
   id1 ---> id6["<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-eamena-logo.png' width='20'><br>EAMENA Database"]
   id2 ---> id6
   id3 ---> id6
-  subgraph MA[MAREA]
+  subgraph MA[MAREA project]
     id4["<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-southampton.png' width='20'><br>University of Southampton"]
     id5["<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-ulster.png' width='20'><br>Ulster University"]
   end
@@ -107,17 +107,15 @@ flowchart LR
 :::
 <center>
 
+EAMENA project<br>
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/ea-database-hp.png" height="320">
-
-</center>
-<div class="captiontext">EAMENA project</div>
 
 <center>
 
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/ea-database-ga.png" height="320">
 
+MAREA project<br>
 </center>
-<div class="captiontext">MAREA project</div>
 
 ::::
 
@@ -222,7 +220,7 @@ January 2015<br>
 ::: {.column width="33%"}
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-jordan-megaj.png" height="300">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-jordan-megaj.png" width="300">
 
 </center>
 <div class="captiontext">Middle East Geodatabase for Antiquities Jordan (MEGA Jordan), 2011-...</div>
@@ -232,7 +230,7 @@ January 2015<br>
 ::: {.column width="33%"}
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-jordan-masdar.png" height="400">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-jordan-masdar.png" width="300">
 
 </center>
 <div class="captiontext">Jordan Masdar (Arches v5), 2021-... </div>
@@ -330,14 +328,14 @@ Paleolithic -- World War II
 ::: {.column width="50%"}
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/projects/cod/img/image-6.png" width="300">
-<div class="captiontext">Location of the 91 Heritage Resources (in blue) overlaying the corresponding 91 Information Resources (in green) in the Northern Cemetery, Cairo, Egypt.</div>
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/projects/cod/img/image-6.png" width="350">
+<div class="captiontext">Location of the 91 Heritage Resources (in <span style="color:blue;">blue </span>) overlaying the corresponding 91 Information Resources (in <span style="color:green;">green </span>) in the Northern Cemetery, Cairo, Egypt.</div>
 
 </center>
 :::
 
 ::: {.column width="50%"}
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/projects/cod/img/4171_sl_JDs.png" width="700">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/projects/cod/img/4171_sl_JDs.jpg" width="500">
 <div class="captiontext">Funerary enclosure of Mustafa al-Babi al-Halabi (COD-001) &copy;Archinos architecture </div>
 
 
@@ -583,18 +581,23 @@ Entity-Relations Diagram (ERD) of the EAMENA Heritage Place Resource Model with 
 
 ::: {.column width="25%"}
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-ea-v4-rm-hp.png" height="300">
+<div class="captiontext">Heritage Places (HP)</div>
 :::
 
 ::: {.column width="25%"}
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-ea-v4-rm-ir.png" height="300">
+<div class="captiontext">Information Resources (IR)</div>
+
 :::
 
 ::: {.column width="25%"}
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-ea-v4-rm-gs.png" height="300">
+<div class="captiontext">Grid Squares (GS)</div>
 :::
 
 ::: {.column width="25%"}
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/arches-ea-v4-rm-po.png" height="300">
+<div class="captiontext">Person-Organisation (PO)</div>
 :::
 
 
@@ -945,12 +948,12 @@ Destruction: iconoclasm, looting, etc.
 :::: {.columns}
 
 ::: {.column width="50%"}
-<div class="captiontext">Record: Muhammad Tal'at Pasha Harb funerary enclosure (COD-002) &copy;Archinos architecture</div>
+<div class="captiontext"><span style="color:blue;">Records: </span>Muhammad Tal'at Pasha Harb funerary enclosure (COD-002) &copy;Archinos architecture</div>
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/projects/cod/img/record-ex.png" width="500">
 :::
 
 ::: {.column width="50%"}
-<div class="captiontext">Photo: Al-Husayni Family Enclosure (COD-005) &copy;Jaroslaw Dobrowolski, Archinos architecture</div>
+<div class="captiontext"><span style="color:blue;">Photos: </span>Al-Husayni Family Enclosure (COD-005) &copy;Jaroslaw Dobrowolski, Archinos architecture</div>
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/projects/cod/img/image-2.png" width="500">
 :::
 
@@ -1074,7 +1077,7 @@ leaflet::leaflet(df, width = "600px", height = "400px") %>%
 ::: {.column width="60%"}
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/data-lifecycle-collect-air-apaame.png" width="500">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/data-lifecycle-collect-air-apaame.png" width="550">
 <div class="captiontext">Desert Kites, Jordan &copy;APAAME</div>
 
 </center>
@@ -1102,7 +1105,7 @@ leaflet::leaflet(df, width = "600px", height = "400px") %>%
 <center>
 
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/projects/cod/img/image-6.png" width="300">
-<div class="captiontext">Location of the 91 Heritage Resources (in blue) overlaying the corresponding 91 Information Resources (in green) in the Northern Cemetery, Cairo, Egypt.</div>
+<div class="captiontext">Location of the 91 <span style="color:blue;">HP</span> and corresponding <span style="color:green;">IR</span>, Northern Cemetery, Cairo, Egypt.</div>
 
 </center>
 :::
@@ -1126,7 +1129,7 @@ leaflet::leaflet(df, width = "600px", height = "400px") %>%
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-looting-1.png" height="300">
 
 </center>
-<div class="captiontext"> Looting and Illegal Activities destroying Deir Abu Lifa 1, Fayoum, Egypt <a href="https://cityofthedead.arch.ox.ac.uk/pages/view.php?search=%21collection115&k=&modal=&display=thumbs&order_by=collection&offset=0&per_page=48&archive=&sort=ASC&restypes=&recentdaylimit=&foredit=&noreload=true&access=&ref=2222#Header" target="_blank">🔗 link</a> &copy;Jan Ciglenečki, Coptic Monastic Heritage Archive</div>
+<div class="captiontext"> Deir Abu Lifa 1 (DAL01), Fayoum, Egypt <a href="https://cityofthedead.arch.ox.ac.uk/pages/view.php?search=%21collection115&k=&modal=&display=thumbs&order_by=collection&offset=0&per_page=48&archive=&sort=ASC&restypes=&recentdaylimit=&foredit=&noreload=true&access=&ref=2222#Header" target="_blank">🔗 link</a> &copy;Jan Ciglenečki, Coptic Monastic Heritage Archive</div>
 
 :::
 
@@ -1152,6 +1155,8 @@ leaflet::leaflet(df, width = "600px", height = "400px") %>%
 ## Metadata
 
 
+
+
 ## IIIF
 
 
@@ -1170,21 +1175,22 @@ leaflet::leaflet(df, width = "600px", height = "400px") %>%
 
 ::: columns
 
-::: {.column width="33%"}
-<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo-arcadia.png' style='height: 60px;vertical-align: middle;'>
-<div class="captiontext">Endangered necropolis</div>
+::: {.column width="40%"}
+<div class="captiontext">An endangered necropolis</div>
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/projects/cod/img/impact-news-apnews.png' style='height: 60px;vertical-align: middle;'>
 :::
 
-::: {.column width="33%"}
+::: {.column width="40%"}
 <div class="captiontext">Archinos architecture</div>
-=html: https://www.cuipcairo.org/en/directory/archinos-architecture
+```{=html}
+<embed src="https://www.cuipcairo.org/en/directory/archinos-architecture" width="600px" height="320px" />
+```
 :::
 
-::: {.column width="33%"}
+::: {.column width="20%"}
 <div class="captiontext">Arcadia Fund</div>
 <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo-arcadia.png' style='height: 60px;vertical-align: middle;'>
 :::
-
 
 :::
 

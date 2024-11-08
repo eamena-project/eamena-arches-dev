@@ -67,6 +67,20 @@ library(dplyr)
 
 ```{mermaid}
 flowchart LR
+  id1["<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-oxford_.png' width='40' height='40'><br>University of Oxford"]
+  id2["<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-leicester.png' width='40' height='40'><br>University of Leicester"]
+  id3["<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-durham.png' width='40' height='40'><br>University of Durham"]
+  
+  id4["<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-southampton.png' width='40' height='40'><br>University of Southampton"]
+  id5["<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-ulster.png' width='40' height='40'><br>Ulster University"]
+  
+  id1 --> id6["EAMENA Database"]
+  id2 --> id6
+  id3 --> id6
+```
+
+```{mermaid}
+flowchart LR
   subgraph EA[EAMENA]
     id1[![University of Oxford](https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/inst-uni-oxford_.png)]
     id2[University of Leicester]
@@ -1025,7 +1039,7 @@ Destruction: iconoclasm, looting, etc.
 ```{r}
 library(dplyr)
 # df <- st_read(paste0(dirIn, "neonet-data-2023-10-22-select-aera.geojson"), quiet = T)
-df <- sf::st_read("https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/projects/sistan/hamun_lake.geojson", quiet = T)
+df <- sf::st_read("https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/projects/sistan/data/hamun_lake.geojson", quiet = T)
 roi <- paste0('<a href="', "https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/sistan/data/hamun_lake.geojson", '" target="_blank">Hamun Lake</a>')
 leaflet::leaflet(df, width = "600px", height = "400px") %>%
   leaflet::addTiles() %>%

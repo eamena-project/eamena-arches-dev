@@ -263,7 +263,7 @@ Built Heritage
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/hp-type-structure.png" height="350">
 
 </center>
-<div class="captiontext">XXX &copy;Jan Ciglenečki, Coptic Monastic Heritage Archive</div>
+<div class="captiontext">Waddi Naqqat 1 &copy;Coptic Monastic Heritage Archive</div>
 
 :::
 
@@ -820,8 +820,6 @@ leaflet::leaflet() %>%
 ::::
 
 
-
-
 ### <span style="font-size:30px">Looting</span>
 
 :::: {.columns}
@@ -830,10 +828,10 @@ leaflet::leaflet() %>%
 
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-looting-1.png" height="300">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-looting.jpg" height="300">
 
 </center>
-<div class="captiontext"> Looting and Illegal Activities destroying Deir Abu Lifa 1, Fayoum, Egypt &copy;Jan Ciglenečki, Coptic Monastic Heritage Archive</div>
+<div class="captiontext">Looting of the Assyrian site of Yasin Tepe (Sulaymaniyah, Iraq)</div>
 
 :::
 
@@ -846,12 +844,11 @@ leaflet::leaflet() %>%
 leaflet::leaflet() %>%
   leaflet::addProviderTiles(leaflet::providers$"Esri.WorldImagery", group = "Ortho") %>%
   leaflet::addProviderTiles(leaflet::providers$"OpenStreetMap", group = "OSM") %>%
-  leaflet::addMarkers(lng = 30.697174378033573, lat = 29.6170553267193, popup="Deir Abu Lifa 1") %>%
+  leaflet::addMarkers(lng = 45.6491261, lat = 35.36001515088195, popup="Temple of Bel") %>%
   leaflet::addLayersControl(
     baseGroups = c("Ortho", "OSM"),
     position = "topright") 
 ```
-
 
 :::
 
@@ -1011,10 +1008,63 @@ Destruction: iconoclasm, looting, etc.
 
 ::: {.panel-tabset}
 
+### Remote Sensing
+
+::: columns
+
+::: {.column width="60%"}
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/joad_bijan_huet24.png" height="370">
+<div class="captiontext">From left to right: Hamun Lake in November 1976, June 1998, and July 2021. Images respectively from Landsat 2, Landsat 5, and Landsat 8, *in* Bijan and Huet, 2024, *Historical Landscape of Sistan in Iran and Afghanistan*, JOAD, [10.5334/joad.123 ](https://openarchaeologydata.metajnl.com/articles/10.5334/joad.123) </div>
+
+</center>
+:::
+
+::: {.column width="40%"}
+
+```{r}
+#| out-width: 400
+#| out-height: 400
+
+leaflet::leaflet() %>%
+  leaflet::addProviderTiles(leaflet::providers$"Esri.WorldImagery", group = "Ortho") %>%
+  leaflet::addProviderTiles(leaflet::providers$"OpenStreetMap", group = "OSM") %>%
+  leaflet::addMarkers(lng = 30.833333, lat = 61.666667, popup="Temple of Bel") %>%
+  leaflet::addLayersControl(
+    baseGroups = c("Ortho", "OSM"),
+    position = "topright") 
+```
+:::
+
+:::
+
+
+
 
 ### APAAME
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/data-lifecycle-collect-aerial-photo.png" width="500">
+::: columns
+
+::: {.column width="60%"}
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/data-lifecycle-collect-air-apaame.png" width="500">
+<div class="captiontext">Desert Kites, Jordan &copy;APAAME</div>
+
+</center>
+:::
+
+::: {.column width="40%"}
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/data-lifecycle-collect-aerial-photo-apaame.png" width="350">
+<div class="captiontext">Aerial photographies from helicopter &copy;APAAME</div>
+
+</center>
+:::
+
+:::
 
 
 
@@ -1024,12 +1074,15 @@ Destruction: iconoclasm, looting, etc.
 ::: columns
 
 ::: {.column width="40%"}
+<center>
+
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/projects/cod/img/image-6.png" width="400">
 
+</center>
 :::
 
 ::: {.column width="60%"}
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/projects/cod/img/cod-photo-collection.png" width="500">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/projects/cod/img/cod-photo-collection.png" width="700">
 :::
 
 :::
@@ -1069,6 +1122,10 @@ leaflet::leaflet(df, width = "600px", height = "400px") %>%
 
 
 :::
+
+## Metadata
+
+
 
 # Wadi Naqqat
 

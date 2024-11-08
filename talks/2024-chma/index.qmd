@@ -32,7 +32,7 @@ format:
 ---
 
 
-# The project {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/MAA44922_006_JMCK_428-036_pp_caption.jpg"}
+# The project {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/3E0A2169.JPG"}
 
 ```{r, echo=FALSE, warning = F}
 library(rmarkdown)
@@ -326,18 +326,22 @@ Paleolithic -- World War II
 
 :::: {.columns}
 
-::: {.column width="50%"}
+::: {.column width="60%"}
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/projects/cod/img/image-6.png" width="350">
-<div class="captiontext">Location of the 91 Heritage Resources (in <span style="color:blue;">blue </span>) overlaying the corresponding 91 Information Resources (in <span style="color:green;">green </span>) in the Northern Cemetery, Cairo, Egypt.</div>
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/projects/cod/img/image-6.png" width="380">
+<div class="captiontext">Location of the 91 Heritage Resources (in <span style="color:blue;">blue </span>) and Information Resources (in <span style="color:green;">green</span>) in the Northern Cemetery, Cairo, Egypt.</div>
 
 </center>
 :::
 
-::: {.column width="50%"}
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/projects/cod/img/4171_sl_JDs.jpg" width="350">
+::: {.column width="40%"}
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/projects/cod/img/4171_sl_JDs.jpg" width="300">
 <div class="captiontext">Funerary enclosure of Mustafa al-Babi al-Halabi (COD-001) &copy;Archinos architecture </div>
+
+</center>
 
 
 :::
@@ -668,7 +672,7 @@ Entity-Relations Diagram (ERD) of the EAMENA Heritage Place Resource Model with 
 :::
 
 
-# Disturbances and Threats {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/MAA44922_006_JMCK_428-036_pp_caption.jpg"}
+# Disturbances and Threats {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/3E0A2169.JPG"}
 
 
 ## Definition
@@ -788,7 +792,7 @@ leaflet::leaflet() %>%
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/threat-infrastructure.png" height="300">
 
 </center>
-<div class="captiontext">The trace of the TAPI pipeline will cross the top part of the qanat system (Kandahar, Afghanistan) *in* Rouhani, B. et al. (2024) <https://doi.org/10.5281/zenodo.13912379>
+<div class="captiontext">The trace of the TAPI pipeline will cross the top part of the qanat system (Kandahar, Afghanistan) *in* Rouhani et al. (2024)  [zenodo.13912379](https://doi.org/10.5281/zenodo.13912379)
 </div>
 
 :::
@@ -936,7 +940,7 @@ Destruction: iconoclasm, looting, etc.
 ```
 
 
-# Photographic Archive {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/MAA44922_006_JMCK_428-036_pp_caption.jpg"}
+# Photographic Archive {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/3E0A2169.JPG"}
 
 
 ## Data Structure
@@ -949,12 +953,12 @@ Destruction: iconoclasm, looting, etc.
 :::: {.columns}
 
 ::: {.column width="50%"}
-<div class="captiontext"><span style="color:blue;">Records: </span>Muhammad Tal'at Pasha Harb funerary enclosure (COD-002) &copy;Archinos architecture</div>
+<div class="captiontext"><span style="color:black;">Records: </span>Muhammad Tal'at Pasha Harb funerary enclosure (COD-002) &copy;Archinos architecture</div>
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/projects/cod/img/record-ex.png" width="500">
 :::
 
 ::: {.column width="50%"}
-<div class="captiontext"><span style="color:blue;">Photos: </span>Al-Husayni Family Enclosure (COD-005) &copy;Jaroslaw Dobrowolski, Archinos architecture</div>
+<div class="captiontext"><span style="color:black;">Photos: </span>Al-Husayni Family Enclosure (COD-005) &copy;Jaroslaw Dobrowolski, Archinos architecture</div>
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/projects/cod/img/image-2.png" width="500">
 :::
 
@@ -1047,7 +1051,7 @@ Destruction: iconoclasm, looting, etc.
 <center>
 
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/joad_bijan_huet24.png" height="300">
-<div class="captiontext">Left to right: Hamun Lake in 1976, 1998, and 2021 (&copy;USGS), *in* Bijan and Huet, 2024, *Historical Landscape of Sistan in Iran and Afghanistan*, JOAD, [10.5334/joad.123 ](https://openarchaeologydata.metajnl.com/articles/10.5334/joad.123),  </div>
+<div class="captiontext">Left to right: Hamun Lake in 1976, 1998, and 2021 (&copy;USGS), *in* Rouhani and Huet (2024) [10.5334/joad.123 ](https://openarchaeologydata.metajnl.com/articles/10.5334/joad.123),  </div>
 
 </center>
 :::
@@ -1192,10 +1196,10 @@ leaflet::leaflet(df, width = "600px", height = "400px") %>%
 
 [^5]: ISO 21127 <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/lod-iso-iiif.png' style='height: 35px;vertical-align: middle;'>
 
-# Wadi Naqqat
+# Wadi Naqqat {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/3E0A2169.JPG"}
 
 
-# Non-Coptic Heritage
+# Non-Coptic Heritage {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/3E0A2169.JPG"}
 
 
 ## City of the Dead
@@ -1207,19 +1211,36 @@ leaflet::leaflet(df, width = "600px", height = "400px") %>%
 
 ::: columns
 
-::: {.column width="60%"}
-<div class="captiontext">Study: An endangered necropolis, Cairo, Egypt</div>
+::: {.column width="50%"}
+
+<center>
+
+<div class="captiontext"><span style="color:black;">Study</span>: An endangered necropolis, Cairo, Egypt</div>
 <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/projects/cod/img/impact-news-apnews.png' style='height: 400px;vertical-align: middle;'>
+
+</center>
+
 :::
 
-::: {.column width="20%"}
-<div class="captiontext">Actor: Archinos architecture</div>
+::: {.column width="25%"}
+
+<center>
+
+<div class="captiontext"><span style="color:black;">Actor</span>: Archinos architecture</div>
 <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/projects/cod/img/3rd-part-projects-cod-archinos.png' style='height: 200px;vertical-align: middle;'>
+
+</center>
+
 :::
 
-::: {.column width="20%"}
-<div class="captiontext">Funder: Arcadia Fund</div>
+::: {.column width="25%"}
+
+<center>
+
+<div class="captiontext"><span style="color:black;">Funder</span>: Arcadia Fund</div>
 <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/logo-arcadia.png' style='height: 60px;vertical-align: middle;'>
+
+</center>
 :::
 
 :::
@@ -1250,9 +1271,7 @@ leaflet::leaflet(df, width = "600px", height = "400px") %>%
 ::: columns
 
 ::: {.column width="50%"}
-
 <small>
-
 [General Description Type](https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/values/Resource_Summary/General_Description_Type.html)
 
 | COD                | EAMENA                     |
@@ -1272,9 +1291,7 @@ leaflet::leaflet(df, width = "600px", height = "400px") %>%
 :::
 
 ::: {.column width="50%"}
-
 <small>
-
 [Conditions](https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/values/Condition_Assessment/Overall_Site_Condition.html)
 
 | COD           | EAMENA      |
@@ -1303,7 +1320,7 @@ leaflet::leaflet(df, width = "600px", height = "400px") %>%
 
 :::
 
-# How You Can Get Involved
+# How You Can Get Involved {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/3E0A2169.JPG"}
 
 ## Case Study
 
@@ -1313,32 +1330,32 @@ leaflet::leaflet(df, width = "600px", height = "400px") %>%
 
 ::: columns
 
-::: {.column width="50%"}
+::: {.column width="40%"}
 <center>
 
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/3rd-part-prj-berketein.png" height="300">
-<div class="captiontext">Assessment of the Berketein Roman site, Jerash, Jordan &copy;EAMENA</div>
 
 </center>
 :::
 
-::: {.column width="50%"}
+::: {.column width="60%"}
 <!-- {{< pdf img/berketein-report.pdf width=100% >}} -->
 
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/3rd-part-prj-berketein-ea-db.png" height="300">
-<div class="captiontext">Assessment of the Berketein Roman site, Jerash, Jordan &copy;EAMENA</div>
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/3rd-part-prj-berketein-ea-db.png" height="350">
 
 </center>
 :::
 
-
 ::::
+
+<div class="captiontext">Assessment of the Berketein Roman site, Jerash, Jordan &copy;EAMENA</div>
+
 
 :::
 
-# Useful links
+# Useful links {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/3E0A2169.JPG"}
 
 * [CMHA project](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/chma#readme)
 * [CMHA talk (this one)](https://github.com/eamena-project/eamena-arches-dev/tree/main/talks/2024-chma#readme)

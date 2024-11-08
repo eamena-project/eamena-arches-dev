@@ -104,18 +104,19 @@ flowchart LR
 
 ::: {.column width="50%"}
 
-:::
 <center>
 
 EAMENA project<br>
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/ea-database-hp.png" height="320">
 
-<center>
-
+MAREA project<br>
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/ea-database-ga.png" height="320">
 
-MAREA project<br>
+
 </center>
+
+:::
+
 
 ::::
 
@@ -335,7 +336,7 @@ Paleolithic -- World War II
 :::
 
 ::: {.column width="50%"}
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/projects/cod/img/4171_sl_JDs.jpg" width="500">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/projects/cod/img/4171_sl_JDs.jpg" width="350">
 <div class="captiontext">Funerary enclosure of Mustafa al-Babi al-Halabi (COD-001) &copy;Archinos architecture </div>
 
 
@@ -1160,7 +1161,7 @@ leaflet::leaflet(df, width = "600px", height = "400px") %>%
 
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/1df_2018_2003" height="300">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/1df_2018_2003.jpg" height="300">
 
 </center>
 <div class="captiontext">Wadi Naqqat 1 (WN01). July 2018, Eastern desert, Egypt &copy;Jan Ciglenečki, Coptic Monastic Heritage Archive</div>
@@ -1170,7 +1171,7 @@ leaflet::leaflet(df, width = "600px", height = "400px") %>%
 ::: {.column width="50%"}
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/1df_2018_2003" height="300">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/1df_2018_2003-metadata.png" height="300">
 
 </center>
 <div class="captiontext">Wadi Naqqat 1 (WN01) metadata in the ResourceSpace server</div>
@@ -1179,12 +1180,7 @@ leaflet::leaflet(df, width = "600px", height = "400px") %>%
 :::
 
 
-:::
-
-
 ## IIIF
-
-### IIIF
 
 <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> integrates 3<sup>rd</sup> part apps like the International Image Interoperability Framework ([IIIF](https://iiif.io/))[^5]
 
@@ -1267,13 +1263,12 @@ leaflet::leaflet(df, width = "600px", height = "400px") %>%
 
 ### Alignment: values
 
-<small>
-
 ::: columns
 
 ::: {.column width="50%"}
 
 <small>
+
 [General Description Type](https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/values/Resource_Summary/General_Description_Type.html)
 
 | CoD                | EAMENA                     |
@@ -1293,6 +1288,7 @@ leaflet::leaflet(df, width = "600px", height = "400px") %>%
 :::
 
 ::: {.column width="50%"}
+
 <small>
 
 [Conditions](https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/values/Condition_Assessment/Overall_Site_Condition.html)
@@ -1320,6 +1316,8 @@ leaflet::leaflet(df, width = "600px", height = "400px") %>%
 :::
 
 ::::
+
+:::
 
 # How You Can Get Involved
 

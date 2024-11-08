@@ -1154,10 +1154,60 @@ leaflet::leaflet(df, width = "600px", height = "400px") %>%
 
 ## Metadata
 
+::: columns
 
+::: {.column width="50%"}
+
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/1df_2018_2003" height="300">
+
+</center>
+<div class="captiontext">Wadi Naqqat 1 (WN01). July 2018, Eastern desert, Egypt &copy;Jan Ciglenečki, Coptic Monastic Heritage Archive</div>
+
+:::
+
+::: {.column width="50%"}
+<center>
+
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/1df_2018_2003" height="300">
+
+</center>
+<div class="captiontext">Wadi Naqqat 1 (WN01) metadata in the ResourceSpace server</div>
+:::
+
+:::
+
+
+:::
 
 
 ## IIIF
+
+### IIIF
+
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/app-arches.png' style='height: 35px;vertical-align: middle;'> integrates 3<sup>rd</sup> part apps like the International Image Interoperability Framework ([IIIF](https://iiif.io/))[^5]
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+<center>
+
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/iiif-qasr-el-hallabat.png' style='height: 350px;'>
+
+</center>
+
+:::
+
+::: {.column width="40%"}
+\
+
+<div class="captiontext">EAMENA IIIF node (in test) of Qasr al-Hallabat Umayyad castle <br> (Zarqa, Jordan)</div>
+
+:::
+
+::::
 
 
 # Wadi Naqqat
@@ -1177,7 +1227,7 @@ leaflet::leaflet(df, width = "600px", height = "400px") %>%
 
 ::: {.column width="40%"}
 <div class="captiontext">An endangered necropolis</div>
-<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/projects/cod/img/impact-news-apnews.png' style='height: 60px;vertical-align: middle;'>
+<img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/projects/cod/img/impact-news-apnews.png' style='height: 600px;vertical-align: middle;'>
 :::
 
 ::: {.column width="40%"}
@@ -1202,7 +1252,7 @@ leaflet::leaflet(df, width = "600px", height = "400px") %>%
 ::: {.column width="70%"}
 <center>
 
-<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/projects/cod/img/image-7.png" height="300">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/projects/cod/img/image-7.png" height="350">
 <div class="captiontext">Entity-Relationship Diagram of the COD database &copy;Archinos</div>
 
 </center>
@@ -1219,7 +1269,12 @@ leaflet::leaflet(df, width = "600px", height = "400px") %>%
 
 <small>
 
-* [General Description Type](https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/values/Resource_Summary/General_Description_Type.html)
+::: columns
+
+::: {.column width="50%"}
+
+<small>
+[General Description Type](https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/values/Resource_Summary/General_Description_Type.html)
 
 | CoD                | EAMENA                     |
 |--------------------|----------------------------|
@@ -1228,14 +1283,19 @@ leaflet::leaflet(df, width = "600px", height = "400px") %>%
 | specialfeatures    | Summary of Significance    |
 | description        | Architectural Description  |
 
-* [Heritage Place Function](https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/values/Resource_Summary/Heritage_Place_Function.html)
+[Heritage Place Function](https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/values/Resource_Summary/Heritage_Place_Function.html)
 
 | CoD                | EAMENA                     |
 |--------------------|----------------------------|
 | presentuse         | Heritage Place Function    |
 
+</small>
+:::
 
-* [Conditions](https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/values/Condition_Assessment/Overall_Site_Condition.html)
+::: {.column width="50%"}
+<small>
+
+[Conditions](https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/values/Condition_Assessment/Overall_Site_Condition.html)
 
 | CoD           | EAMENA      |
 |---------------|-------------|
@@ -1245,7 +1305,7 @@ leaflet::leaflet(df, width = "600px", height = "400px") %>%
 | Poor/Ruin     | Very Bad    |
 | Ruin          | Destroyed   |
 
-* [Extent of damage](https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/values/Condition_Assessment/Damage_Disturbance_Extent.html)
+[Extent of damage](https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/values/Condition_Assessment/Damage_Disturbance_Extent.html)
 
 | CoD           | EAMENA              |
 |---------------|---------------------|
@@ -1258,6 +1318,8 @@ leaflet::leaflet(df, width = "600px", height = "400px") %>%
 </small>
 
 :::
+
+::::
 
 # How You Can Get Involved
 

@@ -138,7 +138,7 @@ January 2015<br>
 <img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/threat-vandalism-mosul.png" height="320">
 
 </center>
-<div class="captiontext">'Terror in the Mosul Museum', published in 'The New Yorker', February 27, 2015</div>
+<div class="captiontext">'Terror in the Mosul Museum', published by *The New Yorker*, February 27, 2015</div>
 
 :::
 
@@ -370,7 +370,7 @@ Paleolithic -- World War II
 ::: {.column width="50%"}
 
 ```{=html}
-<embed src="https://www.getty.edu/publications/cultural-heritage-mass-atrocities/" width="600px" height="320px" />
+<embed src="https://www.getty.edu/publications/cultural-heritage-mass-atrocities/" width="600px" height="340px" />
 ```
 <div class="captiontext">Weiss, Thomas G., et al. Cultural heritage and mass atrocities. Getty Publications, 2022</div>
 :::
@@ -1320,7 +1320,7 @@ leaflet::leaflet(df, width = "600px", height = "400px") %>%
 
 :::
 
-# How You Can Get Involved {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/3E0A2169.JPG"}
+# How to get involved? {background-image="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/talks/2024-chma/img/3E0A2169.JPG"}
 
 ## Case Study
 

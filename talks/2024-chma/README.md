@@ -6,6 +6,8 @@
 | [Disturbances](#1-1-2)  | [Wadi Naqqat](#2-3-2)  | [Contribute](#3-6-1)  |
 | [Photos](#1-2-2)  | [Church](#2-4-2)  |   |
 
+[Teams link](https://teams.microsoft.com/l/meetup-join/19%3ameeting_NTM5YWY3ZDgtNTRkZC00ZDM4LWI0MTAtNTJiNmZiZGU0NWEz%40thread.v2/0?context=%7b%22Tid%22%3a%22cc95de1b-97f5-4f93-b4ba-fe68b852cf91%22%2c%22Oid%22%3a%229dce33a8-66a7-403f-a2c6-95948cb855d0%22%7d)
+
 ## Identifying and Classifying Disturbances and Threats to Archaeological Heritage (EAMENA Project)
 > Day 1, Session 1, Part 2, 10:45 AM - 11:30 PM | Disturbances <a name="1-1-2"></a>
 

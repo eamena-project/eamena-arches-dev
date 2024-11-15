@@ -5,8 +5,9 @@ see [Issue #54](https://github.com/eamena-project/eamena-arches-dev/issues/54)
 
 <p align="center">
   <img alt="img-name" src="img/image-6.png" width="500">
-  <img alt="img-name" src="https://en.wikipedia.org/wiki/City_of_the_Dead_(Cairo)#/media/File:Cairo_qarafa_necropolis_map_-_version_1.jpg" width="500">
+  <img alt="img-name" src="img/Cairo_qarafa_necropolis_map_-_version_1.jpg" width="500">
   <br>
+  
   <em>Left hand side: location of the 91 Heritage Resources (in blue) overlaying the corresponding 91 Information Resources (in green) in the Northern Cemetery, Cairo, Egypt. Right hand side: localisation of the necropolis (c) wikipedia</em>
 
 [Map](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/cod/img/cod.geojson) | [Images](https://cityofthedead.arch.ox.ac.uk/pages/collections_featured.php)

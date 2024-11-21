@@ -7,7 +7,7 @@ Dataset for the ["Documenting Coptic Monastic Heritage" project](https://www.ff.
 
 ## Datasets
 
-Cluster of sites (ex: Wadi Naqqat) are tagged with the triconsonantal root (ex: n-q-ṭ, ن-ق-ط) and grouped in this document by Grid Squares.
+Cluster of sites (ex: [Wadi Naqqat](#nqt0)) are tagged with the triconsonantal root (ex: n-q-ṭ, ن-ق-ط) and grouped in this document by Grid Squares.
 
 ### E33N27-12
 

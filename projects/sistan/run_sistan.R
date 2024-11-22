@@ -82,8 +82,8 @@ p
 
 d <- hash::hash()
 db.con <- RPostgres::dbConnect(drv = RPostgres::Postgres(),
-                               user = 'postgres',
-                               password = 'postgis',
+                               user = NA,
+                               password = NA,
                                dbname = 'eamena',
                                host = 'ec2-54-155-109-226.eu-west-1.compute.amazonaws.com',
                                port = 5432)

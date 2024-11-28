@@ -3,57 +3,57 @@
 
 
 # %%
-# Creates a BU for Information Resources, grabbing the exact coordinates of the HP (IR and HP will ovelap), adding the HP COD identifier into the field 'Catalogue ID' of the IR, and filling IR with other constant data (Country, Grid ID, etc.)
+# # Creates a BU for Information Resources, grabbing the exact coordinates of the HP (IR and HP will ovelap), adding the HP COD identifier into the field 'Catalogue ID' of the IR, and filling IR with other constant data (Country, Grid ID, etc.)
 
-def geojson_to_wkt(geojson):
-    # Check if the GeoJSON type is 'Point'
-    if geojson['type'] == 'Point':
-        # Extract the coordinates and convert them to WKT format
-        coordinates = geojson['coordinates']
-        wkt = f"POINT ({coordinates[0]} {coordinates[1]})"
-        return wkt
-    else:
-        raise ValueError("The provided GeoJSON type is not a Point.")
+# def geojson_to_wkt(geojson):
+#     # Check if the GeoJSON type is 'Point'
+#     if geojson['type'] == 'Point':
+#         # Extract the coordinates and convert them to WKT format
+#         coordinates = geojson['coordinates']
+#         wkt = f"POINT ({coordinates[0]} {coordinates[1]})"
+#         return wkt
+#     else:
+#         raise ValueError("The provided GeoJSON type is not a Point.")
 
-def create_ir_bu_from_hp():
-# GeoJSON URL of the 91 HP of the COD project
-	import uuid
-	import requests
-	import pandas as pd
-	import re
+# def create_ir_bu_from_hp():
+# # GeoJSON URL of the 91 HP of the COD project
+# 	import uuid
+# 	import requests
+# 	import pandas as pd
+# 	import re
 
-	geojson_url = "https://database.eamena.org/api/search/export_results?paging-filter=1&tiles=true&format=geojson&reportlink=false&precision=6&total=91&term-filter=%5B%7B%22inverted%22%3Afalse%2C%22type%22%3A%22string%22%2C%22context%22%3A%22%22%2C%22context_label%22%3A%22%22%2C%22id%22%3A%22QRF0%22%2C%22text%22%3A%22QRF0%22%2C%22value%22%3A%22QRF0%22%7D%5D&language=*&resource-type-filter=%5B%7B%22graphid%22%3A%2234cfe98e-c2c0-11ea-9026-02e7594ce0a0%22%2C%22name%22%3A%22Heritage%20Place%22%2C%22inverted%22%3Afalse%7D%5D"
-	resp = requests.get(geojson_url)
-	data = resp.json()
-	# l_geom_place_exp, l_country_type, l_grid_id, l_ir_type = [],[],[],[]
-	pattern = r"(COD-\d+)"
-	l_reference_id = []
-	l_cod_number = []
-	l_geom_place_exp = []
-	# for i in data['features'][0]['properties'].keys():
-	for i in range(len(data['features'])):
-		# Reference ID (random UUID)
-		random_uuid = uuid.uuid4()
-		l_reference_id.append(random_uuid)
-		# COD number
-		name = data['features'][i]['properties']['Resource Name']
-		cod_number = re.search(pattern, name)
-		l_cod_number.append(cod_number.group(1))
-		# Geometric Place Expression
-		geom_place_exp = geojson_to_wkt(data['features'][i]['geometry'])
-		l_geom_place_exp.append(geom_place_exp)
-	df = pd.DataFrame(
-	{'ResourceID': l_reference_id,
-	'Catalogue ID': l_cod_number,
-	'Geometric Place Expression': l_geom_place_exp,
-	'Country Type': ['Egypt'] * len(l_geom_place_exp), 
-	# 'Grid ID': ['E31N30-12'] * len(l_geom_place_exp), # It should go into the related resources append
-	'Information Resource Type': ['Photograph'] * len(l_geom_place_exp), #l_ir_type
-	})
-	return df
+# 	geojson_url = "https://database.eamena.org/api/search/export_results?paging-filter=1&tiles=true&format=geojson&reportlink=false&precision=6&total=91&term-filter=%5B%7B%22inverted%22%3Afalse%2C%22type%22%3A%22string%22%2C%22context%22%3A%22%22%2C%22context_label%22%3A%22%22%2C%22id%22%3A%22QRF0%22%2C%22text%22%3A%22QRF0%22%2C%22value%22%3A%22QRF0%22%7D%5D&language=*&resource-type-filter=%5B%7B%22graphid%22%3A%2234cfe98e-c2c0-11ea-9026-02e7594ce0a0%22%2C%22name%22%3A%22Heritage%20Place%22%2C%22inverted%22%3Afalse%7D%5D"
+# 	resp = requests.get(geojson_url)
+# 	data = resp.json()
+# 	# l_geom_place_exp, l_country_type, l_grid_id, l_ir_type = [],[],[],[]
+# 	pattern = r"(COD-\d+)"
+# 	l_reference_id = []
+# 	l_cod_number = []
+# 	l_geom_place_exp = []
+# 	# for i in data['features'][0]['properties'].keys():
+# 	for i in range(len(data['features'])):
+# 		# Reference ID (random UUID)
+# 		random_uuid = uuid.uuid4()
+# 		l_reference_id.append(random_uuid)
+# 		# COD number
+# 		name = data['features'][i]['properties']['Resource Name']
+# 		cod_number = re.search(pattern, name)
+# 		l_cod_number.append(cod_number.group(1))
+# 		# Geometric Place Expression
+# 		geom_place_exp = geojson_to_wkt(data['features'][i]['geometry'])
+# 		l_geom_place_exp.append(geom_place_exp)
+# 	df = pd.DataFrame(
+# 	{'ResourceID': l_reference_id,
+# 	'Catalogue ID': l_cod_number,
+# 	'Geometric Place Expression': l_geom_place_exp,
+# 	'Country Type': ['Egypt'] * len(l_geom_place_exp), 
+# 	# 'Grid ID': ['E31N30-12'] * len(l_geom_place_exp), # It should go into the related resources append
+# 	'Information Resource Type': ['Photograph'] * len(l_geom_place_exp), #l_ir_type
+# 	})
+# 	return df
 
-df = create_ir_bu_from_hp()
-df.to_csv("C:/Rprojects/eamena-arches-dev/projects/cod/business_data/bu_ir_cod.csv", index=False)
+# df = create_ir_bu_from_hp()
+# df.to_csv("C:/Rprojects/eamena-arches-dev/projects/cod/business_data/bu_ir_cod.csv", index=False)
 
 
 
@@ -140,7 +140,7 @@ path_out = "C:/Rprojects/eamena-arches-dev/projects/cod/business_data/csv/"
 #%%
 # EXIF metdata
 
-def convert_to_degrees(value):
+def spat_convert_to_degrees(value):
 	""" 
 	Convert decimal degree to degrees, minutes, seconds tuple, formatted for EXIF. 
 	"""
@@ -151,12 +151,29 @@ def convert_to_degrees(value):
 	minutes = (minutes, 1)
 	seconds = (int(seconds * 100), 100)  # More accurate second representation as rational
 	return degrees, minutes, seconds
+	# """Convert decimal degrees to EXIF-compatible format."""
+	# from fractions import Fraction
+	# degrees = int(value)
+	# minutes = int((value - degrees) * 60)
+	# seconds = (value - degrees - minutes / 60) * 3600
+	# return (Fraction(degrees, 1), Fraction(minutes, 1), Fraction(int(seconds * 100), 100))
 
 
-def add_metadata_XY_to_photo(image_path, new_image_path, latitude, longitude):
+
+def ir_add_metadata_XY_to_photo(image_path, new_image_path, latitude, longitude):
 	# TODO: adapt to the dataset structure: find the decimal coordinates in the `records` table
 	"""
-	Append coordinates to the EXIF metdata of the photograph
+	
+	Append coordinates to the EXIF metdata of the photograph. However adding XY (GPS) coordinates will remove previous IPTC metdata.
+
+	:param image_path: path to the input image (without GPS coordinates) 
+	:param new_image_path: path to the output image (with GPS coordinates) 
+	:param latitude: latitude in decimal
+	:param longitude: longitude in decimal
+
+	>>> image_path = "C:/Rprojects/eamena-arches-dev/projects/cod/www/4171_sl_JDs.jpg"
+	>>> new_image_path = 'C:/Rprojects/eamena-arches-dev/projects/cod/www/4171_sl_JDs_with_coords.jpg'
+	>>> add_metadata_XY_to_photo(image_path, new_image_path, latitude = 48.848270462241814, longitude = 2.41120456097722) # loc: Paris
 	
 	"""
 	from PIL import Image
@@ -165,8 +182,8 @@ def add_metadata_XY_to_photo(image_path, new_image_path, latitude, longitude):
 	# image_path = 'path/to/your/image.jpg'
 	img = Image.open(image_path)
 	exif_dict = piexif.load(img.info['exif']) if 'exif' in img.info else {}
-	gps_latitude = convert_to_degrees(latitude)
-	gps_longitude = convert_to_degrees(abs(longitude))  # Longitude should be positive for EXIF
+	gps_latitude = spat_convert_to_degrees(latitude)
+	gps_longitude = spat_convert_to_degrees(abs(longitude))  # Longitude should be positive for EXIF
 	# GPS data according to EXIF spec
 	gps_ifd = {
 		piexif.GPSIFD.GPSLatitudeRef: 'N' if latitude >= 0 else 'S',
@@ -180,35 +197,8 @@ def add_metadata_XY_to_photo(image_path, new_image_path, latitude, longitude):
 	img.save(new_image_path, "jpeg", exif=exif_bytes)
 	print("Image + coordinates saved")
 
-image_path = "C:/Rprojects/eamena-arches-dev/projects/cod/www/4171_sl_JDs.jpg"
-new_image_path = 'C:/Rprojects/eamena-arches-dev/projects/cod/www/4171_sl_JDs_with_coords.jpg'
-# add_metadata_XY_to_photo(image_path, new_image_path, latitude = 48.848270462241814, longitude = 2.41120456097722) # loc: Paris
 
-
-# %%
-## Read City of the Dead (cod) database tables
-
-## read the database exported tables
-# db_path = root_path + "business_data/xlsx/"
-# # records = units
-# record_db_path = db_path + "records_NS.xlsx"
-# df_rec_metadata = pd.read_excel(record_db_path)
-# # photographs metadata
-# photo_db_path = db_path + "photos_NS.xlsx"
-# df_im_metadata = pd.read_excel(photo_db_path)
-# # list the records = units from the metadata file
-# units = list(df_im_metadata['unitnumber'].unique())
-
-# ## photographs
-# photo_im_path_in = root_path + "db_data/photos_in"
-# # create a pandas mapping file
-# df_im_map = pd.DataFrame(
-# 	{'unitnumber': [item.split("s_")[0] for item in os.listdir(photo_im_path_in)], 'directory': os.listdir(photo_im_path_in)}
-# 	)
-
-
-# %%
-def add_metadata_to_photo(root_path = "C:/Rprojects/eamena-arches-dev/projects/cod/", photos_in = "db_data/photos_in", photo_metadata = "business_data/xlsx/photos_NS.xlsx", records_in = "business_data/xlsx/records_NS.xlsx", photo_out = "db_data/photos_out", exif_metadata=False, xmp_metadata=False, iptc_metadata=False, gps_metadata=False, verbose = True):
+def ir_add_metadata_to_photo(root_path = "C:/Rprojects/eamena-arches-dev/projects/cod/", photos_in = "db_data/photos_in", photo_metadata = "business_data/xlsx/photos_NS.xlsx", records_in = "business_data/xlsx/records_NS.xlsx", photo_out = "db_data/photos_out", exif_metadata=False, xmp_metadata=False, iptc_metadata=False, gps_metadata=False, verbose = True):
 	"""
 	Append metadata into the photograph by reading other XLSX tables
 
@@ -219,6 +209,11 @@ def add_metadata_to_photo(root_path = "C:/Rprojects/eamena-arches-dev/projects/c
 	:param photo_out: Path to the folder where the photographs with metdata will be stored
 	:param xmp_metadata: Add XMP metadata if True
 	
+	>>> # add_metadata_to_photo(gps_metadata=True)
+	>>> # add_metadata_to_photo(gps_metadata=True, exif_metadata=True)
+	>>> photo_missed = ir_add_metadata_to_photo(gps_metadata=True, iptc_metadata=True, verbose=False)
+	>>> print("\n- [ ] ".join(photo_missed))
+
 	"""
 	import re
 	from PIL import Image
@@ -365,8 +360,8 @@ def add_metadata_to_photo(root_path = "C:/Rprojects/eamena-arches-dev/projects/c
 				if gps_metadata:
 					if verbose:
 						print(f"GPS metadata ---")
-					gps_latitude = convert_to_degrees(im_coord_N)
-					gps_longitude = convert_to_degrees(abs(im_coord_E))  # Longitude should be positive for EXIF
+					gps_latitude = spat_convert_to_degrees(im_coord_N)
+					gps_longitude = spat_convert_to_degrees(abs(im_coord_E))  # Longitude should be positive for EXIF
 					# GPS data according to EXIF spec
 					gps_ifd = {
 						piexif.GPSIFD.GPSLatitudeRef: 'N' if im_coord_N >= 0 else 'S',
@@ -450,10 +445,7 @@ def add_metadata_to_photo(root_path = "C:/Rprojects/eamena-arches-dev/projects/c
 	return photo_missed
 
 
-# add_metadata_to_photo(gps_metadata=True)
-# add_metadata_to_photo(gps_metadata=True, exif_metadata=True)
-photo_missed = add_metadata_to_photo(gps_metadata=True, iptc_metadata=True, verbose=False)
-print("\n- [ ] ".join(photo_missed))
+
 
 # %%
 

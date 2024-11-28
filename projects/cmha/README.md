@@ -5,6 +5,10 @@ Dataset for the ["Documenting Coptic Monastic Heritage" project](https://www.ff.
 
 * Issue: [#55](https://github.com/eamena-project/eamena-arches-dev/issues/55)
 
+## Publication
+
+Uses this Jupyter NB: [Waddi Naqqat data analysis](https://colab.research.google.com/drive/1NJGp1F7oNZvd23NalG3THCyCSh4aUzKh)
+
 ## Datasets
 
 Cluster of sites (ex: [Wadi Naqqat](#nqt0)) are tagged with the triconsonantal root (ex: n-q-ṭ, ن-ق-ط) and grouped in this document by Grid Squares.
@@ -187,7 +191,7 @@ https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&rep
 https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&reportlink=false&precision=6&total=383724&language=*&term-filter=%5B%7B%22context%22%3A%22%22%2C%22context_label%22%3A%22Heritage%20Place%20-%20Resource%20Name%22%2C%22id%22%3A0%2C%22text%22%3A%22NQL0%22%2C%22type%22%3A%22term%22%2C%22value%22%3A%22NQL0%22%2C%22inverted%22%3Afalse%7D%5D
 ```
 
-## E32N22-43
+### E32N22-43
 
 <p align="center">
   <img alt="img-name" src="./img/image-9.png" width="500">
@@ -196,10 +200,10 @@ https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&rep
 
 [GS](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/_gs/E32N22-43.geojson)
 
-### SBA0
+#### SBA0
 > Wadi es-Sebua
 
-##### Search URL
+###### Search URL
 
 ```
 https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&reportlink=false&precision=6&total=376144&language=*&term-filter=%5B%7B%22context%22%3A%22%22%2C%22context_label%22%3A%22Heritage%20Place%20-%20Resource%20Name%22%2C%22id%22%3A0%2C%22text%22%3A%22SBA0%22%2C%22type%22%3A%22term%22%2C%22value%22%3A%22SBA0%22%2C%22inverted%22%3Afalse%7D%5D

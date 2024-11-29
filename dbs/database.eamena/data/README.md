@@ -240,6 +240,16 @@ Use the R script [eamena-grid.R](https://github.com/eamena-project/eamena-arches
 
 Add new HP from a BU ([BU Upload](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bulk-upload)), append new values ([BU append](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#bu-append)) and related resources ([r2r append](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#r2r-append)) in an existing HP, using templates and [functions](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#function). 
 
+## Stats
+
+See the interactive window on GitHub [[eamena-stats](https://marea-project.github.io/eamena-stats/)]
+
+<p align="center">
+  <img alt="img-name" src="./image.png" width="500">
+  <br>
+    <em>New grids for Afghanisthan (here in HTML)</em>
+</p>
+
 
 ## Bulk Upload
 > BU

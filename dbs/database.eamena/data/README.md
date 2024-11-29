@@ -245,9 +245,9 @@ Add new HP from a BU ([BU Upload](https://github.com/eamena-project/eamena-arche
 See the interactive window on GitHub [[eamena-stats](https://marea-project.github.io/eamena-stats/)]
 
 <p align="center">
-  <img alt="img-name" src="./image.png" width="500">
+  <img alt="img-name" src="./image.png" width="700">
   <br>
-    <em>New grids for Afghanisthan (here in HTML)</em>
+    <em>Observable dashboard for EAMENA stats</em>
 </p>
 
 

@@ -62,16 +62,6 @@ The reference XLSX file [mds-template.xlsx](rm/hp/mds/mds-template.xlsx) is used
   <br>
     <em>A screenshot of the editable 'mds-template.xlsx'</em>
 </p>
-
-* [mds-template.xlsx](rm/hp/mds/mds-template.xlsx):
-  - an editable XLSX file with the list of HP fields with their UUID and a "Yes" mark if these fields belong to the mds. This file is considered the authoritative document for MDS.
-
-* [mds-template-readonly.tsv](rm/hp/mds/mds-template-readonly.tsv):
-  - a read-only TSV file with the list of HP fields with their UUID and a "Yes" mark if these fields belong to the mds. This files results from the automatic export of [mds-template.xlsx](rm/hp/mds/mds-template.xlsx), it will be overwrite each time 'mds-template.xlsx' is updated)
-
-* [convert_xlsx_to_tsv.py](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/mds/convert_xlsx_to_tsv.py):
-  - a Python simple script to convert 'mds-template.xlsx' into 'mds-template-readonly.tsv'. This script is run automatically, in a GitHub Action with [mds-to-tsv.yml](https://github.com/eamena-project/eamena-arches-dev/blob/main/.github/workflows/mds-to-tsv.yml), each time 'mds-template.xlsx' is updated.
-
 ##### Groups of fields descriptions
 
 Fields (`level3`) are grouped in broader categories, or groups (`level1`). These groups are colored according to the MDS reference file, and HTML links are added to value descriptions ([Individual reference sheets](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bulk#individual-reference-sheets)): [[field-to-tsv.html](https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/mds/field-to-tsv.html)]
@@ -90,6 +80,15 @@ Minimum Data Standards (MDS) of Heritage Places are listed in this dynamic table
 
 To check if your data complies with the MDS standard, you can test a GeoJSON URL in this GitHub hosted [Colab Jupyter NB](https://colab.research.google.com/github/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/rm/hp/mds/mds.ipynb).
 
+
+* [mds-template.xlsx](rm/hp/mds/mds-template.xlsx):
+  - an editable XLSX file with the list of HP fields with their UUID and a "Yes" mark if these fields belong to the mds. This file is considered the authoritative document for MDS.
+
+* [mds-template-readonly.tsv](rm/hp/mds/mds-template-readonly.tsv):
+  - a read-only TSV file with the list of HP fields with their UUID and a "Yes" mark if these fields belong to the mds. This files results from the automatic export of [mds-template.xlsx](rm/hp/mds/mds-template.xlsx), it will be overwrite each time [mds-template.xlsx](rm/hp/mds/mds-template.xlsx) is updated)
+
+* [convert_xlsx_to_tsv.py](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/mds/convert_xlsx_to_tsv.py):
+  - a Python simple script to convert [mds-template.xlsx](rm/hp/mds/mds-template.xlsx) into 'mds-template-readonly.tsv'. This script is run automatically, in a GitHub Action with [mds-to-tsv.yml](https://github.com/eamena-project/eamena-arches-dev/blob/main/.github/workflows/mds-to-tsv.yml), each time [mds-template.xlsx](rm/hp/mds/mds-template.xlsx) is updated.
 
 ##### ERD
 > Entity-relationships diagram, on the [EAMENA website](https://eamena.org/advanced-use#rm-hp-erd)

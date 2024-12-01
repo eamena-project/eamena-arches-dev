@@ -51,7 +51,7 @@ Thinner categories (`level3`) colored by groups: [[fields-description.html](http
 <p align="center">
   <img alt="img-name" src="www/image-2.png" width="1000">
   <br>
-    <em>Screenshot of the HTML dynamic/interactive table 'fields-description.html', with a search on 'Agricul' with field colored by groups and field descriptions. The 'is MDS' has the value 1 when this field is part of the Minimun Data Standards. Hyperlinks to controlled values (<b>values</b>) and field issues (issues)</em>
+    <em>Screenshot of the HTML dynamic/interactive table 'fields-description.html', with a search on 'Agricul' with field colored by groups and field descriptions. The 'is MDS' has the value 1 when this field is part of the Minimun Data Standards. Hyperlinks to controlled values (<b>values</b>) and field issues (issue)</em>
 </p>
 
 The reference XLSX file [mds-template.xlsx](rm/hp/mds/mds-template.xlsx) is used to store field descriptions, field groups, hyperlinks to field controlled values, hyperlinks to GitHub isuses, etc.

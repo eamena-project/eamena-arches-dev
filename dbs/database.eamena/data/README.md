@@ -37,12 +37,6 @@ Either [Reference Data](#reference-data) and [Business data](#business-data) ([B
   - [MDS](#mds)
   - eamenaR mapping file `ids.csv` (see [eamenaR documentation](https://github.com/eamena-project/eamenaR#correspondances-between-concept-labels-and-uuids))
 
-* [mds-template.xlsx](rm/hp/mds/mds-template.xlsx):
-  - an editable XLSX file with the list of HP fields with their UUID and a "Yes" mark if these fields belong to the mds. This file is considered the authoritative document for MDS.
-
-* [mds-template-readonly.tsv](rm/hp/mds/mds-template-readonly.tsv):
-  - a read-only TSV file with the list of HP fields with their UUID and a "Yes" mark if these fields belong to the mds. This files results from the automatic export of [mds-template.xlsx](rm/hp/mds/mds-template.xlsx), it will be overwrite each time 'mds-template.xlsx' is updated)
-
 **Level of aggregation**
 
 This indicates that fields, including field values (`level3`, the most detailed level), can be aggregated into broader categories (`level2` and `level1`, the most general levels). 
@@ -60,6 +54,23 @@ Thinner categories (`level3`) colored by groups: [[fields-description.html](http
     <em>Screenshot of the HTML dynamic/interactive table 'fields-description.html', with a search on 'Agricul' with field colored by groups and field descriptions. The 'is MDS' has the value 1 when this field is part of the Minimun Data Standards</em>
 </p>
 
+The reference XLSX file [mds-template.xlsx](rm/hp/mds/mds-template.xlsx) is used to store field descriptions, field groups, hyperlinks to field controlled values, hyperlinks to GitHub isuses, etc.
+
+
+<p align="center">
+  <img alt="img-name" src="https://github.com/eamena-project/eamena-arches-dev/blob/main/www/audit-data-mds-excel.png" width="1000">
+  <br>
+    <em>A screenshot of the editable 'mds-template.xlsx'</em>
+</p>
+
+* [mds-template.xlsx](rm/hp/mds/mds-template.xlsx):
+  - an editable XLSX file with the list of HP fields with their UUID and a "Yes" mark if these fields belong to the mds. This file is considered the authoritative document for MDS.
+
+* [mds-template-readonly.tsv](rm/hp/mds/mds-template-readonly.tsv):
+  - a read-only TSV file with the list of HP fields with their UUID and a "Yes" mark if these fields belong to the mds. This files results from the automatic export of [mds-template.xlsx](rm/hp/mds/mds-template.xlsx), it will be overwrite each time 'mds-template.xlsx' is updated)
+
+* [convert_xlsx_to_tsv.py](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/mds/convert_xlsx_to_tsv.py):
+  - a Python simple script to convert 'mds-template.xlsx' into 'mds-template-readonly.tsv'. This script is run automatically, in a GitHub Action with [mds-to-tsv.yml](https://github.com/eamena-project/eamena-arches-dev/blob/main/.github/workflows/mds-to-tsv.yml), each time 'mds-template.xlsx' is updated.
 
 ##### Groups of fields descriptions
 
@@ -98,15 +109,8 @@ ERD of HP with fieldnames and CIDOC-CRM entities and relationships [[EAMENA-erd.
   - a Jupyter/Python document to run mds reference
 * [mds-assessment.ipynb](https://github.com/eamena-project/eamena-functions/blob/main/mds/mds.ipynb):
   - a Jupyter/Python document to run mds assessment on heritage places
-* [convert_xlsx_to_tsv.py](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/mds/convert_xlsx_to_tsv.py):
-  - a Python simple script to convert 'mds-template.xlsx' into 'mds-template-readonly.tsv'. This script is run automatically, in a GitHub Action with [mds-to-tsv.yml](https://github.com/eamena-project/eamena-arches-dev/blob/main/.github/workflows/mds-to-tsv.yml), each time 'mds-template.xlsx' is updated.
 
 
-<p align="center">
-  <img alt="img-name" src="https://github.com/eamena-project/eamena-arches-dev/blob/main/www/audit-data-mds-excel.png" width="1000">
-  <br>
-    <em>A screenshot of the editable 'mds-template.xlsx'</em>
-</p>
 
 ##### Values
 > Field values

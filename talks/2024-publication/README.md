@@ -8,7 +8,12 @@
 | Towers    | TWR0   | https://database.eamena.org/search?paging-filter=1&tiles=true&format=tilecsv&reportlink=false&precision=6&total=376317&term-filter=%5B%7B%22context%22%3A%22%22%2C%22context_label%22%3A%22Heritage%20Place%20-%20Resource%20Name%22%2C%22id%22%3A0%2C%22text%22%3A%22TWR0%22%2C%22type%22%3A%22term%22%2C%22value%22%3A%22TWR0%22%2C%22inverted%22%3Afalse%7D%5D&language=*   | https://database.eamena.org/api/search/export_results?paging-filter=1&tiles=true&format=geojson&reportlink=false&precision=6&total=10&term-filter=%5B%7B%22context%22%3A%22%22%2C%22context_label%22%3A%22Heritage%20Place%20-%20Resource%20Name%22%2C%22id%22%3A0%2C%22text%22%3A%22TWR0%22%2C%22type%22%3A%22term%22%2C%22value%22%3A%22TWR0%22%2C%22inverted%22%3Afalse%7D%5D&language=*&resource-type-filter=%5B%7B%22graphid%22%3A%2234cfe98e-c2c0-11ea-9026-02e7594ce0a0%22%2C%22name%22%3A%22Heritage%20Place%22%2C%22inverted%22%3Afalse%7D%5D   |
 
 * test the copmpliance of the dataset with [Minimum Data Standard (MDS)](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data#mds): [Google Colab](https://colab.research.google.com/github/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/rm/hp/mds/mds.ipynb)
+* use the [citation plugin](https://database.eamena.org/citations/) on your GeoJSON URL to export your dataset into the Zenodo sandbox
 
+**Journal of Open Archaeology Data (JOAD)**
+
+* run the [JOAD data analysis](https://colab.research.google.com/drive/1NJGp1F7oNZvd23NalG3THCyCSh4aUzKh#scrollTo=rNRl_XNwG8bS) to create JOAD compliant outputs
+* use the [JOAD template](https://docs.google.com/document/d/1N51EofE0nHvHp3Nnyxi8fHnl8j6-8Q_Dv2Bq0wYwnFM/edit?tab=t.0) to draft your article.
 
 
 ## PADA workshop

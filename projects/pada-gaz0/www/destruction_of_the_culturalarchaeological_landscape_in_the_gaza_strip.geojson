@@ -1,0 +1,2299 @@
+{
+    "features": [
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        [
+                            34.466327,
+                            31.496125
+                        ],
+                        [
+                            34.467786,
+                            31.496637
+                        ],
+                        [
+                            34.468386,
+                            31.495777
+                        ],
+                        [
+                            34.46918,
+                            31.496235
+                        ],
+                        [
+                            34.470361,
+                            31.496948
+                        ],
+                        [
+                            34.471069,
+                            31.497259
+                        ],
+                        [
+                            34.472549,
+                            31.497515
+                        ],
+                        [
+                            34.473365,
+                            31.497662
+                        ],
+                        [
+                            34.473493,
+                            31.498009
+                        ],
+                        [
+                            34.472635,
+                            31.498851
+                        ],
+                        [
+                            34.473214,
+                            31.498942
+                        ],
+                        [
+                            34.474159,
+                            31.49865
+                        ],
+                        [
+                            34.476369,
+                            31.497698
+                        ],
+                        [
+                            34.477055,
+                            31.497387
+                        ],
+                        [
+                            34.478793,
+                            31.496985
+                        ],
+                        [
+                            34.479244,
+                            31.49693
+                        ],
+                        [
+                            34.480682,
+                            31.496802
+                        ],
+                        [
+                            34.482506,
+                            31.496363
+                        ],
+                        [
+                            34.482978,
+                            31.496747
+                        ],
+                        [
+                            34.48448,
+                            31.497881
+                        ],
+                        [
+                            34.48551,
+                            31.498961
+                        ],
+                        [
+                            34.485789,
+                            31.499253
+                        ],
+                        [
+                            34.484566,
+                            31.499802
+                        ],
+                        [
+                            34.483579,
+                            31.500315
+                        ],
+                        [
+                            34.482785,
+                            31.500808
+                        ],
+                        [
+                            34.482098,
+                            31.501357
+                        ],
+                        [
+                            34.481304,
+                            31.501742
+                        ],
+                        [
+                            34.480381,
+                            31.501778
+                        ],
+                        [
+                            34.479308,
+                            31.501815
+                        ],
+                        [
+                            34.478407,
+                            31.502364
+                        ],
+                        [
+                            34.47727,
+                            31.503059
+                        ],
+                        [
+                            34.475832,
+                            31.503754
+                        ],
+                        [
+                            34.474438,
+                            31.504486
+                        ],
+                        [
+                            34.473408,
+                            31.505016
+                        ],
+                        [
+                            34.472678,
+                            31.505949
+                        ],
+                        [
+                            34.471369,
+                            31.50659
+                        ],
+                        [
+                            34.470876,
+                            31.50701
+                        ],
+                        [
+                            34.471391,
+                            31.507724
+                        ],
+                        [
+                            34.471541,
+                            31.508694
+                        ],
+                        [
+                            34.470811,
+                            31.508712
+                        ],
+                        [
+                            34.469245,
+                            31.508895
+                        ],
+                        [
+                            34.468751,
+                            31.508913
+                        ],
+                        [
+                            34.467936,
+                            31.509297
+                        ],
+                        [
+                            34.467539,
+                            31.509371
+                        ],
+                        [
+                            34.46724,
+                            31.5093
+                        ],
+                        [
+                            34.467044,
+                            31.509304
+                        ],
+                        [
+                            34.466901,
+                            31.509252
+                        ],
+                        [
+                            34.466705,
+                            31.509199
+                        ],
+                        [
+                            34.466534,
+                            31.509333
+                        ],
+                        [
+                            34.466485,
+                            31.509398
+                        ],
+                        [
+                            34.466476,
+                            31.509985
+                        ],
+                        [
+                            34.46765,
+                            31.51041
+                        ],
+                        [
+                            34.466971,
+                            31.511689
+                        ],
+                        [
+                            34.465849,
+                            31.512434
+                        ],
+                        [
+                            34.464579,
+                            31.51115
+                        ],
+                        [
+                            34.463843,
+                            31.510908
+                        ],
+                        [
+                            34.463335,
+                            31.510548
+                        ],
+                        [
+                            34.462572,
+                            31.509756
+                        ],
+                        [
+                            34.461069,
+                            31.509114
+                        ],
+                        [
+                            34.460318,
+                            31.508639
+                        ],
+                        [
+                            34.459439,
+                            31.5082
+                        ],
+                        [
+                            34.459052,
+                            31.508145
+                        ],
+                        [
+                            34.457894,
+                            31.508785
+                        ],
+                        [
+                            34.457078,
+                            31.507907
+                        ],
+                        [
+                            34.45622,
+                            31.507084
+                        ],
+                        [
+                            34.455791,
+                            31.50659
+                        ],
+                        [
+                            34.454224,
+                            31.504943
+                        ],
+                        [
+                            34.45283,
+                            31.503846
+                        ],
+                        [
+                            34.452701,
+                            31.503626
+                        ],
+                        [
+                            34.45416,
+                            31.503077
+                        ],
+                        [
+                            34.456628,
+                            31.502327
+                        ],
+                        [
+                            34.45755,
+                            31.501961
+                        ],
+                        [
+                            34.457808,
+                            31.502199
+                        ],
+                        [
+                            34.458881,
+                            31.501687
+                        ],
+                        [
+                            34.460769,
+                            31.500223
+                        ],
+                        [
+                            34.460275,
+                            31.499711
+                        ],
+                        [
+                            34.459503,
+                            31.498979
+                        ],
+                        [
+                            34.458645,
+                            31.497771
+                        ],
+                        [
+                            34.458838,
+                            31.497113
+                        ],
+                        [
+                            34.466327,
+                            31.496125
+                        ]
+                    ]
+                ],
+                "type": "Polygon"
+            },
+            "properties": {
+                "AH Date From": null,
+                "AH Date To": null,
+                "Address": null,
+                "Address Type": null,
+                "Administrative Division ": null,
+                "Administrative Division Type": null,
+                "Archaeological From Date": null,
+                "Archaeological To Date": null,
+                "Assessment Activity Date": "2018-08-27, 2018-08-27, 2023-10-20",
+                "Assessment Activity Type": "Archaeological Assessment (Image Interpretation), Condition Assessment (Image Interpretation), Condition Assessment",
+                "Assessment Investigator - Actor": "Mohammad Jaradat, Mohammad Jaradat, Georgia Andreou",
+                "BP Date From": null,
+                "BP Date To": null,
+                "Bedrock Geology Type": null,
+                "Built Component": null,
+                "Cadastral Reference": "None",
+                "Construction Technique": null,
+                "Country Type": "Palestine, State of",
+                "Cultural Period Certainty": "Definite, Definite, Definite, Definite, Definite, Definite, Probable, Definite, Definite, Definite, Definite",
+                "Cultural Period Type": "Bronze Age (Levant), Classical/Pre-Islamic (Levant/Mesopotamia/Iran/Northern Arabia), Classical/Pre-Islamic (Levant/Mesopotamia/Iran/Northern Arabia), Islamic (Levant/Arabia), Classical/Pre-Islamic (Levant/Mesopotamia/Iran/Northern Arabia), Islamic (Levant/Arabia), Bronze Age (Southern Mesopotamia), Islamic (Levant/Arabia), Islamic (Levant/Arabia), Islamic (Levant/Arabia), Islamic (Levant/Arabia)",
+                "Cultural Sub-period Certainty": "Definite, Definite, Definite, Definite, Definite, Probable, Definite, Definite, Definite, Definite",
+                "Cultural Sub-period Type": "Post-Achaemenid/Hellenistic/Seleucid (Levant/Mesopotamia/Iran), Roman Imperial (Levant/Mesopotamia), Islamic, Early (Umayyad/Abbasid/Fatimid) (Levant/Arabia), Byzantine (Levant/Mesopotamia), Islamic, Early (Umayyad/Abbasid/Fatimid) (Levant/Arabia), Bronze Age, Middle Babylonian (Southern Mesopotamia), Islamic, Middle (Fatimid/Ayyubid/Crusader) (Levant/Arabia), Islamic, Middle (Fatimid/Ayyubid/Crusader) (Levant/Arabia), Islamic, Late (Mamluk/Rasulid) (Levant/Arabia), Islamic, Late (Ottoman) (Levant/Arabia)",
+                "Damage Extent Type": "31-60%, 31-60%",
+                "Date Inference Making Actor Name": "None, None, None, None, None, None, None, None, None, None, None",
+                "Datum Description/EPSG code": null,
+                "Datum Type": null,
+                "Depositional Process": null,
+                "Designation": "National Register",
+                "Designation From Date": "2023-11-20",
+                "Designation To Date": "None",
+                "Detailed Condition Assessments": null,
+                "Dimension Type": null,
+                "Disturbance Cause Assignment Assessor Name - Actor": "None, None, None, ",
+                "Disturbance Cause Category Type": "Infrastructure/Transport, Domestic Use, Domestic Use, Military/Armed Conflict, Military/Armed Conflict",
+                "Disturbance Cause Certainty ": "High, High, High, Definite",
+                "Disturbance Cause Type ": "Road/Track, Construction, Occupation/Continued Use, Demolition/Destruction",
+                "Disturbance Date From": "2004-01-01, 2004-01-01, 2004-01-01, 2023-10-08",
+                "Disturbance Date Occurred Before": "None, None, None, None",
+                "Disturbance Date Occurred On ": "None, None, None, None",
+                "Disturbance Date To ": "2018-01-01, 2018-01-01, 2018-01-01, None",
+                "EAMENA ID": "EAMENA-0186207",
+                "Effect Certainty": "High, High, High, High, High, High, High, High, High, Definite, Definite, Definite",
+                "Effect Type": "Covered, Compacting, Covered, Earth Displacement, Relocation of Archaeological Features, Structural Alteration, Collapse/Structural Damage, Relocation of Archaeological Features, Compacting, Collapse/Structural Damage, Alteration of Terrain, Loss/Removal of Archaeological Material",
+                "Fetch Type": null,
+                "GE Imagery Acquisition Date": null,
+                "General Description": "a803ef0c-822a-4fac-b7a2-bdd90d6f65fa, CPF Palestine Training, Extensive destruction due to aerial bombardment during the war.",
+                "General Description Type": "Old ArchesID, Comments, General Description",
+                "Geometry Extent Certainty": "High",
+                "Geometry Qualifier": "",
+                "Google Earth Assessment": "None, None, False",
+                "Grid ID": "E34N31-32",
+                "Heritage Place Function": "Hydrological, Industrial/Productive, Domestic, Agricultural/Pastoral, Public/Institutional, Funerary/Memorial, Trade/Commercial, Domestic, Domestic",
+                "Heritage Place Function Certainty ": "High, Definite, Definite, High, Definite, Definite, Definite, High, High",
+                "Heritage Place Resource Instance": null,
+                "Heritage Place Type": "Archaeological Site, Structural Heritage",
+                "Imagery Acquisition Date": null,
+                "Information Resource": null,
+                "Information Resource Acquisition Date": null,
+                "Intervention Activity Type": null,
+                "Investigator Role Type": "Government Authority/Staff, Government Authority/Staff, MarEA Project Staff",
+                "Land Cover Assessment Date": null,
+                "Land Cover Type": null,
+                "Location Certainty": "Definite",
+                "Material Class": null,
+                "Material Type": null,
+                "Maximum Depth/Min Elevation": null,
+                "Measurement Number": null,
+                "Measurement Source Type ": null,
+                "Measurement Unit": null,
+                "Minimum Depth/Max Elevation": null,
+                "Name Type": "Toponym, Toponym, Alternative Reference",
+                "Overall Archaeological Certainty Value ": "High",
+                "Overall Condition State Type": "Poor, Very Bad",
+                "Overall Site Morphology Type": "Positive/Built Feature, Negative/Cut/Dug Feature",
+                "Overall Site Shape Type": "Irregular",
+                "Priority Type": null,
+                "Recommendation Type": null,
+                "Related Geoarchaeology/Palaeolandscape": null,
+                "Resource Name": "Gaza Old City, \u063a\u0632\u0629 \u0627\u0644\u0628\u0644\u062f\u0629 \u0627\u0644\u0642\u062f\u064a\u0645\u0629, GAZ0",
+                "Resource Orientation": "",
+                "Restricted Access Record Designation": null,
+                "SH Date From": null,
+                "SH Date to": null,
+                "Site Feature Arrangement Type": "Dispersed, Adjoining, Adjoining, Adjoining, Isolated, Clustered",
+                "Site Feature Form Type": "Multi-Component, Pit/Shaft/Tunnel, Paved/Laid Surface, Structure, Large Mound, Structure",
+                "Site Feature Form Type Certainty": "High, Definite, Definite, Definite, Definite, Definite",
+                "Site Feature Interpretation Certainty": "High, Definite, High, Definite, Definite, High, High, Definite, High, High, Definite, Definite",
+                "Site Feature Interpretation Number Type": "Unknown, 1, 2 to 5, 2 to 5, 2 to 5, 2 to 5, 2 to 5, 2 to 5, 2 to 5, 500+, Unknown, 1",
+                "Site Feature Interpretation Type": "Building, Settlement/Habitation Site, Church/Chapel, Mosque/Imam/Marabout, Market/Commercial Unit, Government/Administrative Building, Temple/Sanctuary/Shrine, Cemetery, Mosque/Madrasa Complex, House/Dwelling, Road/Track, Tell",
+                "Site Feature Number Type": "Unknown, 500+, Unknown, 500+, 500+",
+                "Site Feature Shape Type": "Polygonal, Sub-rectangular, Rectangular/Square, Rectangular/Square, Sub-circular, Multiple",
+                "Spatial Coordinates Ref System": "",
+                "Surficial Geology Type": null,
+                "Threat Category": "Domestic Use, Infrastructure/Transport, Domestic Use, Tourism/Visitor Activities, Domestic Use, Domestic Use",
+                "Threat Cause Type": "Maintenance/Management Activities, Drilling, Occupation/Continued Use, Occupation/Continued Use, Construction, Demolition/Destruction",
+                "Threat Inference Making Assessor Name - Actor": "None, None, None, None, None, Mohammad Jaradat",
+                "Threat Probability ": "Probable, Probable, Planned, Planned, Probable, Probable",
+                "Tidal Range": null,
+                "Topography Type": "Plain/Plateau",
+                "Wave Climate": null
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        [
+                            34.454033,
+                            31.546743
+                        ],
+                        [
+                            34.44945,
+                            31.542029
+                        ],
+                        [
+                            34.45163,
+                            31.540185
+                        ],
+                        [
+                            34.453432,
+                            31.53881
+                        ],
+                        [
+                            34.454926,
+                            31.539966
+                        ],
+                        [
+                            34.456505,
+                            31.541195
+                        ],
+                        [
+                            34.455544,
+                            31.542146
+                        ],
+                        [
+                            34.457672,
+                            31.544618
+                        ],
+                        [
+                            34.454033,
+                            31.546743
+                        ]
+                    ]
+                ],
+                "type": "Polygon"
+            },
+            "properties": {
+                "AH Date From": null,
+                "AH Date To": null,
+                "Address": null,
+                "Address Type": null,
+                "Administrative Division ": null,
+                "Administrative Division Type": null,
+                "Archaeological From Date": null,
+                "Archaeological To Date": null,
+                "Assessment Activity Date": "2018-03-17, 2018-03-17, 2023-10-20",
+                "Assessment Activity Type": "Archaeological Assessment (Image Interpretation), Condition Assessment (Image Interpretation), Condition Assessment",
+                "Assessment Investigator - Actor": "Mohammad Jaradat, Mohammad Jaradat, Georgia Andreou",
+                "BP Date From": null,
+                "BP Date To": null,
+                "Bedrock Geology Type": null,
+                "Built Component": null,
+                "Cadastral Reference": "None",
+                "Construction Technique": null,
+                "Country Type": "Palestine, State of",
+                "Cultural Period Certainty": "Definite, Definite, Definite, Definite, Definite, Definite, Definite",
+                "Cultural Period Type": "Classical/Pre-Islamic (Levant/Mesopotamia/Iran/Northern Arabia), Bronze Age (Southern Mesopotamia), Iron Age (Levant/Mesopotamia), Islamic (Levant/Arabia), Classical/Pre-Islamic (Levant/Mesopotamia/Iran/Northern Arabia), Iron Age (Levant/Mesopotamia), Classical/Pre-Islamic (Levant/Mesopotamia/Iran/Northern Arabia)",
+                "Cultural Sub-period Certainty": "Definite, Definite, Definite, Definite, Definite, Definite, Definite",
+                "Cultural Sub-period Type": "Byzantine (Levant/Mesopotamia), Bronze Age, Old Babylonian (Southern Mesopotamia), Iron Age, Late (Northern Levant), Islamic, Early (Umayyad/Abbasid/Fatimid) (Levant/Arabia), Roman Imperial (Levant/Mesopotamia), Iron Age, Post-Assyrian/Achaemenid/Persian (Levant/Mesopotamia), Post-Achaemenid/Hellenistic/Seleucid (Levant/Mesopotamia/Iran)",
+                "Damage Extent Type": "31-60%, 61-90%, 11-30%",
+                "Date Inference Making Actor Name": "None, None, None, None, None, None, None",
+                "Datum Description/EPSG code": null,
+                "Datum Type": null,
+                "Depositional Process": null,
+                "Designation": null,
+                "Designation From Date": null,
+                "Designation To Date": null,
+                "Detailed Condition Assessments": "",
+                "Dimension Type": null,
+                "Disturbance Cause Assignment Assessor Name - Actor": "None, None, , ",
+                "Disturbance Cause Category Type": "Building and Development, Military/Armed Conflict, Military/Armed Conflict, Military/Armed Conflict",
+                "Disturbance Cause Certainty ": "Definite, High, Definite, Definite",
+                "Disturbance Cause Type ": "Construction, Occupation/Continued Use, Demolition/Destruction, Demolition/Destruction",
+                "Disturbance Date From": "1994-01-01, 2007-01-01, 2021-05-10, 2023-10-08",
+                "Disturbance Date Occurred Before": "None, None, None, None",
+                "Disturbance Date Occurred On ": "None, None, None, None",
+                "Disturbance Date To ": "2018-03-17, 2018-03-17, 2021-05-21, None",
+                "EAMENA ID": "EAMENA-0186596",
+                "Effect Certainty": "High, High, High, Definite, Definite, Definite, Definite, Definite, Definite, Definite",
+                "Effect Type": "Loss/Removal of Archaeological Material, Compacting, Collapse/Structural Damage, Alteration of Terrain, Collapse/Structural Damage, Surface Loss, Alteration of Terrain, Loss/Removal of Archaeological Material, Surface Loss, Visual Impact",
+                "Fetch Type": null,
+                "GE Imagery Acquisition Date": null,
+                "General Description": "e4e840be-20f9-4d7d-86fe-9191e51f695e, CPF Palestine Training",
+                "General Description Type": "Old ArchesID, Comments",
+                "Geometry Extent Certainty": "High",
+                "Geometry Qualifier": "",
+                "Google Earth Assessment": "None, None, False",
+                "Grid ID": "E34N31-32",
+                "Heritage Place Function": "Trade/Commercial, Maritime",
+                "Heritage Place Function Certainty ": "Definite, ",
+                "Heritage Place Resource Instance": null,
+                "Heritage Place Type": "Archaeological Site",
+                "Imagery Acquisition Date": null,
+                "Information Resource": null,
+                "Information Resource Acquisition Date": null,
+                "Intervention Activity Type": null,
+                "Investigator Role Type": "Government Authority/Staff, Government Authority/Staff, MarEA Project Staff",
+                "Land Cover Assessment Date": null,
+                "Land Cover Type": null,
+                "Location Certainty": "Definite",
+                "Material Class": null,
+                "Material Type": null,
+                "Maximum Depth/Min Elevation": null,
+                "Measurement Number": null,
+                "Measurement Source Type ": null,
+                "Measurement Unit": null,
+                "Minimum Depth/Max Elevation": null,
+                "Name Type": "Alternative Reference, Designation, Toponym, Toponym, Toponym, Alternative Reference",
+                "Overall Archaeological Certainty Value ": "Definite",
+                "Overall Condition State Type": "Poor",
+                "Overall Site Morphology Type": "Positive/Built Feature",
+                "Overall Site Shape Type": "Rectangular/Square",
+                "Priority Type": null,
+                "Recommendation Type": null,
+                "Related Geoarchaeology/Palaeolandscape": null,
+                "Resource Name": "Anthedon, Gaza Ancient port, Tida, al-Blakhiyah, \u0627\u0644\u0628\u0644\u0627\u062e\u064a\u0629, GAZ0",
+                "Resource Orientation": "",
+                "Restricted Access Record Designation": null,
+                "SH Date From": null,
+                "SH Date to": null,
+                "Site Feature Arrangement Type": "Adjoining, Adjoining, Adjoining",
+                "Site Feature Form Type": "Structure, Wall, Tower",
+                "Site Feature Form Type Certainty": "Definite, Definite, Definite",
+                "Site Feature Interpretation Certainty": "Definite",
+                "Site Feature Interpretation Number Type": "1",
+                "Site Feature Interpretation Type": "Port/Harbour",
+                "Site Feature Number Type": "11 to 20, 2 to 5, 1",
+                "Site Feature Shape Type": "Rectangular/Square, Straight, Rectangular/Square",
+                "Spatial Coordinates Ref System": "None",
+                "Surficial Geology Type": null,
+                "Threat Category": "Building and Development, Maritime, Military/Armed Conflict, Domestic Use",
+                "Threat Cause Type": "Construction, Flooding, Occupation/Continued Use, Human Movement/Trampling",
+                "Threat Inference Making Assessor Name - Actor": "None, None, None, Mohammad Jaradat",
+                "Threat Probability ": "Possible, Probable, Possible, Probable",
+                "Tidal Range": null,
+                "Topography Type": "Ocean/Sea Shore",
+                "Wave Climate": null
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        [
+                            34.366367,
+                            31.448012
+                        ],
+                        [
+                            34.365946,
+                            31.447675
+                        ],
+                        [
+                            34.365431,
+                            31.447118
+                        ],
+                        [
+                            34.364993,
+                            31.446642
+                        ],
+                        [
+                            34.365191,
+                            31.446562
+                        ],
+                        [
+                            34.366109,
+                            31.446298
+                        ],
+                        [
+                            34.366444,
+                            31.446657
+                        ],
+                        [
+                            34.366779,
+                            31.447052
+                        ],
+                        [
+                            34.367216,
+                            31.447528
+                        ],
+                        [
+                            34.36701,
+                            31.447638
+                        ],
+                        [
+                            34.366367,
+                            31.448012
+                        ]
+                    ]
+                ],
+                "type": "Polygon"
+            },
+            "properties": {
+                "AH Date From": null,
+                "AH Date To": null,
+                "Address": null,
+                "Address Type": null,
+                "Administrative Division ": null,
+                "Administrative Division Type": null,
+                "Archaeological From Date": null,
+                "Archaeological To Date": null,
+                "Assessment Activity Date": "2018-02-26, 2018-02-26",
+                "Assessment Activity Type": "Condition Assessment (Image Interpretation), Archaeological Assessment (Image Interpretation)",
+                "Assessment Investigator - Actor": "Mohammad Jaradat, Mohammad Jaradat",
+                "BP Date From": null,
+                "BP Date To": null,
+                "Bedrock Geology Type": null,
+                "Built Component": null,
+                "Cadastral Reference": "None",
+                "Construction Technique": null,
+                "Country Type": "Palestine, State of",
+                "Cultural Period Certainty": "Definite, Definite",
+                "Cultural Period Type": "Classical/Pre-Islamic (Levant/Mesopotamia/Iran/Northern Arabia), Islamic (Levant/Arabia)",
+                "Cultural Sub-period Certainty": "Definite, Definite",
+                "Cultural Sub-period Type": "Islamic, Early (Umayyad/Abbasid/Fatimid) (Levant/Arabia), Byzantine (Levant/Mesopotamia)",
+                "Damage Extent Type": "11-30%",
+                "Date Inference Making Actor Name": "None, None",
+                "Datum Description/EPSG code": null,
+                "Datum Type": null,
+                "Depositional Process": null,
+                "Designation": null,
+                "Designation From Date": null,
+                "Designation To Date": null,
+                "Detailed Condition Assessments": null,
+                "Dimension Type": null,
+                "Disturbance Cause Assignment Assessor Name - Actor": "None",
+                "Disturbance Cause Category Type": "Building and Development",
+                "Disturbance Cause Certainty ": "High",
+                "Disturbance Cause Type ": "Construction",
+                "Disturbance Date From": "2006-01-01",
+                "Disturbance Date Occurred Before": "None",
+                "Disturbance Date Occurred On ": "None",
+                "Disturbance Date To ": "2018-02-26",
+                "EAMENA ID": "EAMENA-0186222",
+                "Effect Certainty": "High, Medium, Low, High",
+                "Effect Type": "Loss/Removal of Archaeological Material, Compacting, Water Damage, Collapse/Structural Damage",
+                "Fetch Type": null,
+                "GE Imagery Acquisition Date": null,
+                "General Description": "ab768acd-0d1f-4521-a378-ab3e868b7e08, CPF Palestine Training",
+                "General Description Type": "Old ArchesID, Comments",
+                "Geometry Extent Certainty": "Definite",
+                "Geometry Qualifier": "",
+                "Google Earth Assessment": "None, None",
+                "Grid ID": "E34N31-14",
+                "Heritage Place Function": "Religious",
+                "Heritage Place Function Certainty ": "Definite",
+                "Heritage Place Resource Instance": null,
+                "Heritage Place Type": "Archaeological Site",
+                "Imagery Acquisition Date": null,
+                "Information Resource": null,
+                "Information Resource Acquisition Date": null,
+                "Intervention Activity Type": null,
+                "Investigator Role Type": "Government Authority/Staff, Government Authority/Staff",
+                "Land Cover Assessment Date": null,
+                "Land Cover Type": null,
+                "Location Certainty": "Definite",
+                "Material Class": null,
+                "Material Type": null,
+                "Maximum Depth/Min Elevation": null,
+                "Measurement Number": null,
+                "Measurement Source Type ": null,
+                "Measurement Unit": null,
+                "Minimum Depth/Max Elevation": null,
+                "Name Type": "Alternative Reference, Toponym, Toponym, Toponym, Alternative Reference",
+                "Overall Archaeological Certainty Value ": "Definite",
+                "Overall Condition State Type": "Fair",
+                "Overall Site Morphology Type": "Positive/Built Feature",
+                "Overall Site Shape Type": "Rectangular/Square",
+                "Priority Type": null,
+                "Recommendation Type": null,
+                "Related Geoarchaeology/Palaeolandscape": null,
+                "Resource Name": "(\u062a\u0644\u0629 \u0623\u0645 \u0639\u0627\u0645\u0631 (\u062f\u064a\u0631 \u0627\u0644\u0642\u062f\u064a\u0633 \u0647\u064a\u0644\u0627\u0631\u064a\u0648\u0646, Tell Umm 'Amer, The Monastery of Saint Hilarion, Umm et-Tut, GAZ0",
+                "Resource Orientation": "",
+                "Restricted Access Record Designation": null,
+                "SH Date From": null,
+                "SH Date to": null,
+                "Site Feature Arrangement Type": "Multiple",
+                "Site Feature Form Type": "Structure",
+                "Site Feature Form Type Certainty": "Definite",
+                "Site Feature Interpretation Certainty": "Definite, Definite",
+                "Site Feature Interpretation Number Type": "2 to 5, 1",
+                "Site Feature Interpretation Type": "Church/Chapel, Monastic Complex",
+                "Site Feature Number Type": "2 to 5",
+                "Site Feature Shape Type": "Rectangular/Square",
+                "Spatial Coordinates Ref System": "None",
+                "Surficial Geology Type": null,
+                "Threat Category": "Building and Development",
+                "Threat Cause Type": "Construction",
+                "Threat Inference Making Assessor Name - Actor": "None",
+                "Threat Probability ": "Probable",
+                "Tidal Range": null,
+                "Topography Type": "Plain/Plateau",
+                "Wave Climate": null
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        [
+                            34.405478,
+                            31.476447
+                        ],
+                        [
+                            34.405049,
+                            31.47652
+                        ],
+                        [
+                            34.404757,
+                            31.476264
+                        ],
+                        [
+                            34.404139,
+                            31.47592
+                        ],
+                        [
+                            34.40371,
+                            31.475707
+                        ],
+                        [
+                            34.403195,
+                            31.475546
+                        ],
+                        [
+                            34.402808,
+                            31.475217
+                        ],
+                        [
+                            34.402525,
+                            31.474917
+                        ],
+                        [
+                            34.402997,
+                            31.474463
+                        ],
+                        [
+                            34.403538,
+                            31.474016
+                        ],
+                        [
+                            34.404311,
+                            31.473445
+                        ],
+                        [
+                            34.404886,
+                            31.473021
+                        ],
+                        [
+                            34.405529,
+                            31.473497
+                        ],
+                        [
+                            34.40619,
+                            31.474221
+                        ],
+                        [
+                            34.406439,
+                            31.474609
+                        ],
+                        [
+                            34.406422,
+                            31.475197
+                        ],
+                        [
+                            34.40619,
+                            31.475824
+                        ],
+                        [
+                            34.405478,
+                            31.476447
+                        ]
+                    ]
+                ],
+                "type": "Polygon"
+            },
+            "properties": {
+                "AH Date From": null,
+                "AH Date To": null,
+                "Address": null,
+                "Address Type": null,
+                "Administrative Division ": null,
+                "Administrative Division Type": null,
+                "Archaeological From Date": null,
+                "Archaeological To Date": null,
+                "Assessment Activity Date": "2018-03-02, 2018-03-02",
+                "Assessment Activity Type": "Condition Assessment (Image Interpretation), Archaeological Assessment (Image Interpretation)",
+                "Assessment Investigator - Actor": "Mohammad Jaradat, Mohammad Jaradat",
+                "BP Date From": null,
+                "BP Date To": null,
+                "Bedrock Geology Type": null,
+                "Built Component": null,
+                "Cadastral Reference": "None",
+                "Construction Technique": null,
+                "Country Type": "Palestine, State of",
+                "Cultural Period Certainty": "Definite, Definite",
+                "Cultural Period Type": "Bronze Age (Levant), Bronze Age (Levant)",
+                "Cultural Sub-period Certainty": "Definite, Definite",
+                "Cultural Sub-period Type": "Middle Bronze Age (Levant), Early Bronze Age (Northern Levant)",
+                "Damage Extent Type": "31-60%",
+                "Date Inference Making Actor Name": "None, None",
+                "Datum Description/EPSG code": null,
+                "Datum Type": null,
+                "Depositional Process": null,
+                "Designation": null,
+                "Designation From Date": null,
+                "Designation To Date": null,
+                "Detailed Condition Assessments": null,
+                "Dimension Type": null,
+                "Disturbance Cause Assignment Assessor Name - Actor": "None, None",
+                "Disturbance Cause Category Type": "Public/Institutional Use, Public/Institutional Use",
+                "Disturbance Cause Certainty ": "Definite, Definite",
+                "Disturbance Cause Type ": "Demolition/Destruction, Clearance (Bulldozing/Levelling)",
+                "Disturbance Date From": "2016-01-01, 2016-01-01",
+                "Disturbance Date Occurred Before": "None, None",
+                "Disturbance Date Occurred On ": "None, None",
+                "Disturbance Date To ": "2017-01-01, 2017-01-01",
+                "EAMENA ID": "EAMENA-0187037",
+                "Effect Certainty": "High, High, High, High, High, High, Definite",
+                "Effect Type": "Loss/Removal of Archaeological Material, Relocation of Archaeological Features, Structural Alteration, Collapse/Structural Damage, Loss/Removal of Archaeological Material, Structural Alteration, Collapse/Structural Damage",
+                "Fetch Type": null,
+                "GE Imagery Acquisition Date": null,
+                "General Description": "3d175dfa-49f5-444b-aa66-ec824dc37069, CPF Palestine Training",
+                "General Description Type": "Old ArchesID, Comments",
+                "Geometry Extent Certainty": "Definite",
+                "Geometry Qualifier": "",
+                "Google Earth Assessment": "None, None",
+                "Grid ID": "E34N31-14",
+                "Heritage Place Function": "Defensive/Fortification, Maritime, Domestic",
+                "Heritage Place Function Certainty ": "Definite, Definite, Definite",
+                "Heritage Place Resource Instance": null,
+                "Heritage Place Type": "Archaeological Site",
+                "Imagery Acquisition Date": null,
+                "Information Resource": null,
+                "Information Resource Acquisition Date": null,
+                "Intervention Activity Type": null,
+                "Investigator Role Type": "Government Authority/Staff, Government Authority/Staff",
+                "Land Cover Assessment Date": null,
+                "Land Cover Type": null,
+                "Location Certainty": "Definite",
+                "Material Class": null,
+                "Material Type": null,
+                "Maximum Depth/Min Elevation": null,
+                "Measurement Number": null,
+                "Measurement Source Type ": null,
+                "Measurement Unit": null,
+                "Minimum Depth/Max Elevation": null,
+                "Name Type": "Toponym, Toponym, Alternative Reference",
+                "Overall Archaeological Certainty Value ": "Definite",
+                "Overall Condition State Type": "Destroyed",
+                "Overall Site Morphology Type": "Positive/Built Feature",
+                "Overall Site Shape Type": "Irregular",
+                "Priority Type": null,
+                "Recommendation Type": null,
+                "Related Geoarchaeology/Palaeolandscape": null,
+                "Resource Name": "Tell es-Sakan, \u062a\u0644 \u0627\u0644\u0633\u0643\u064e\u0646, GAZ0",
+                "Resource Orientation": "",
+                "Restricted Access Record Designation": null,
+                "SH Date From": null,
+                "SH Date to": null,
+                "Site Feature Arrangement Type": "Overlapping",
+                "Site Feature Form Type": "Large Mound",
+                "Site Feature Form Type Certainty": "Definite",
+                "Site Feature Interpretation Certainty": "Definite",
+                "Site Feature Interpretation Number Type": "1",
+                "Site Feature Interpretation Type": "Tell",
+                "Site Feature Number Type": "1",
+                "Site Feature Shape Type": "Irregular",
+                "Spatial Coordinates Ref System": "None",
+                "Surficial Geology Type": null,
+                "Threat Category": "Building and Development, Building and Development",
+                "Threat Cause Type": "Clearance (Bulldozing/Levelling), Construction",
+                "Threat Inference Making Assessor Name - Actor": "None, None",
+                "Threat Probability ": "Planned, Planned",
+                "Tidal Range": null,
+                "Topography Type": "Summit",
+                "Wave Climate": null
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        [
+                            34.407292,
+                            31.466328
+                        ],
+                        [
+                            34.40718,
+                            31.466533
+                        ],
+                        [
+                            34.40694,
+                            31.466915
+                        ],
+                        [
+                            34.405731,
+                            31.468012
+                        ],
+                        [
+                            34.404631,
+                            31.469314
+                        ],
+                        [
+                            34.402771,
+                            31.468268
+                        ],
+                        [
+                            34.401652,
+                            31.467458
+                        ],
+                        [
+                            34.401618,
+                            31.466781
+                        ],
+                        [
+                            34.402553,
+                            31.465927
+                        ],
+                        [
+                            34.403287,
+                            31.465255
+                        ],
+                        [
+                            34.406373,
+                            31.465984
+                        ],
+                        [
+                            34.407292,
+                            31.466328
+                        ]
+                    ]
+                ],
+                "type": "Polygon"
+            },
+            "properties": {
+                "AH Date From": null,
+                "AH Date To": null,
+                "Address": null,
+                "Address Type": null,
+                "Administrative Division ": null,
+                "Administrative Division Type": null,
+                "Archaeological From Date": null,
+                "Archaeological To Date": null,
+                "Assessment Activity Date": "2018-03-01, 2018-03-01",
+                "Assessment Activity Type": "Archaeological Assessment (Image Interpretation), Condition Assessment (Image Interpretation)",
+                "Assessment Investigator - Actor": "Mohammad Jaradat, Mohammad Jaradat",
+                "BP Date From": null,
+                "BP Date To": null,
+                "Bedrock Geology Type": null,
+                "Built Component": null,
+                "Cadastral Reference": "None",
+                "Construction Technique": null,
+                "Country Type": "Palestine, State of",
+                "Cultural Period Certainty": "Definite, Definite, Definite, Definite, Definite",
+                "Cultural Period Type": "Bronze Age (Levant), Bronze Age (Levant), Islamic (Levant/Arabia), Classical/Pre-Islamic (Levant/Mesopotamia/Iran/Northern Arabia), Islamic (Levant/Arabia)",
+                "Cultural Sub-period Certainty": "Definite, Definite, Definite, Definite, Definite",
+                "Cultural Sub-period Type": "Middle Bronze Age (Levant), Late Bronze Age (Levant), Islamic, Middle (Fatimid/Ayyubid/Crusader) (Levant/Arabia), Byzantine (Levant/Mesopotamia), Islamic, Middle (Fatimid/Ayyubid/Crusader) (Levant/Arabia)",
+                "Damage Extent Type": "11-30%",
+                "Date Inference Making Actor Name": "None, None, None, None, None",
+                "Datum Description/EPSG code": null,
+                "Datum Type": null,
+                "Depositional Process": null,
+                "Designation": null,
+                "Designation From Date": null,
+                "Designation To Date": null,
+                "Detailed Condition Assessments": null,
+                "Dimension Type": null,
+                "Disturbance Cause Assignment Assessor Name - Actor": "None, None",
+                "Disturbance Cause Category Type": "Agricultural/Pastoral, Domestic Use",
+                "Disturbance Cause Certainty ": "High, High",
+                "Disturbance Cause Type ": "Vegetation/Crops/Trees, Construction",
+                "Disturbance Date From": "1967-01-01, 2000-01-01",
+                "Disturbance Date Occurred Before": "None, None",
+                "Disturbance Date Occurred On ": "None, None",
+                "Disturbance Date To ": "2018-03-01, 2018-01-01",
+                "EAMENA ID": "EAMENA-0186224",
+                "Effect Certainty": "High, High, High, High, Medium, High, High, High",
+                "Effect Type": "Relocation of Archaeological Features, Structural Alteration, Collapse/Structural Damage, Loss/Removal of Archaeological Material, Collapse/Structural Damage, Compacting, Covered, Loss/Removal of Archaeological Material",
+                "Fetch Type": null,
+                "GE Imagery Acquisition Date": null,
+                "General Description": "ab974db8-81f3-4366-985a-17632de203c1, CPF Palestine Training",
+                "General Description Type": "Old ArchesID, Comments",
+                "Geometry Extent Certainty": "Definite",
+                "Geometry Qualifier": "",
+                "Google Earth Assessment": "None, None",
+                "Grid ID": "E34N31-14",
+                "Heritage Place Function": "Defensive/Fortification, Domestic",
+                "Heritage Place Function Certainty ": "High, Definite",
+                "Heritage Place Resource Instance": null,
+                "Heritage Place Type": "Archaeological Site",
+                "Imagery Acquisition Date": null,
+                "Information Resource": "INFORMATION-0050185",
+                "Information Resource Acquisition Date": "1883-01-01",
+                "Intervention Activity Type": null,
+                "Investigator Role Type": "Government Authority/Staff, Government Authority/Staff",
+                "Land Cover Assessment Date": null,
+                "Land Cover Type": null,
+                "Location Certainty": "High",
+                "Material Class": null,
+                "Material Type": null,
+                "Maximum Depth/Min Elevation": null,
+                "Measurement Number": null,
+                "Measurement Source Type ": null,
+                "Measurement Unit": null,
+                "Minimum Depth/Max Elevation": null,
+                "Name Type": "Designation, Designation, Toponym, Toponym, Toponym, Alternative Reference",
+                "Overall Archaeological Certainty Value ": "Definite",
+                "Overall Condition State Type": "Fair",
+                "Overall Site Morphology Type": "Positive/Built Feature",
+                "Overall Site Shape Type": "Rectangular/Square",
+                "Priority Type": null,
+                "Recommendation Type": null,
+                "Related Geoarchaeology/Palaeolandscape": null,
+                "Resource Name": "Bethaglaim, Tell al-'Ajjul, Tell el-Nekeiz, \u062a\u0644 \u0627\u0644\u0639\u062c\u0648\u0644, Tell el 'Ujul, GAZ0",
+                "Resource Orientation": "",
+                "Restricted Access Record Designation": null,
+                "SH Date From": null,
+                "SH Date to": null,
+                "Site Feature Arrangement Type": "Isolated, Overlapping, Adjoining",
+                "Site Feature Form Type": "Large Mound, Cave, Large Mound, Structure",
+                "Site Feature Form Type Certainty": "High, High, Definite, High",
+                "Site Feature Interpretation Certainty": "Definite, High",
+                "Site Feature Interpretation Number Type": "1, Unknown",
+                "Site Feature Interpretation Type": "Tell, House/Dwelling",
+                "Site Feature Number Type": "Unknown, 1, Unknown",
+                "Site Feature Shape Type": "Sub-circular, Unknown, Irregular, Rectangular/Square",
+                "Spatial Coordinates Ref System": "None",
+                "Surficial Geology Type": null,
+                "Threat Category": "Agricultural/Pastoral, Building and Development",
+                "Threat Cause Type": "Vegetation/Crops/Trees, Construction",
+                "Threat Inference Making Assessor Name - Actor": "None, None",
+                "Threat Probability ": "Probable, Possible",
+                "Tidal Range": null,
+                "Topography Type": "Plain/Plateau",
+                "Wave Climate": null
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        [
+                            34.219411,
+                            31.323319
+                        ],
+                        [
+                            34.219008,
+                            31.323136
+                        ],
+                        [
+                            34.219197,
+                            31.322755
+                        ],
+                        [
+                            34.219437,
+                            31.322329
+                        ],
+                        [
+                            34.219746,
+                            31.321801
+                        ],
+                        [
+                            34.220124,
+                            31.321948
+                        ],
+                        [
+                            34.219909,
+                            31.322469
+                        ],
+                        [
+                            34.219652,
+                            31.322923
+                        ],
+                        [
+                            34.219411,
+                            31.323319
+                        ]
+                    ]
+                ],
+                "type": "Polygon"
+            },
+            "properties": {
+                "AH Date From": null,
+                "AH Date To": null,
+                "Address": null,
+                "Address Type": null,
+                "Administrative Division ": null,
+                "Administrative Division Type": null,
+                "Archaeological From Date": null,
+                "Archaeological To Date": null,
+                "Assessment Activity Date": "2018-03-04, 2018-03-04",
+                "Assessment Activity Type": "Condition Assessment (Image Interpretation), Archaeological Assessment (Image Interpretation)",
+                "Assessment Investigator - Actor": "Mohammad Jaradat, Mohammad Jaradat",
+                "BP Date From": null,
+                "BP Date To": null,
+                "Bedrock Geology Type": null,
+                "Built Component": null,
+                "Cadastral Reference": "",
+                "Construction Technique": null,
+                "Country Type": "Palestine, State of",
+                "Cultural Period Certainty": "Definite, Definite, Definite",
+                "Cultural Period Type": "Classical/Pre-Islamic (Levant/Mesopotamia/Iran/Northern Arabia), Classical/Pre-Islamic (Levant/Mesopotamia/Iran/Northern Arabia), Iron Age (Levant/Mesopotamia)",
+                "Cultural Sub-period Certainty": "Definite, Definite, Definite",
+                "Cultural Sub-period Type": "Roman Imperial (Levant/Mesopotamia), Post-Achaemenid/Hellenistic/Seleucid (Levant/Mesopotamia/Iran), Iron Age (Southern Levant)",
+                "Damage Extent Type": "1-10%",
+                "Date Inference Making Actor Name": "None, None, None",
+                "Datum Description/EPSG code": null,
+                "Datum Type": null,
+                "Depositional Process": null,
+                "Designation": null,
+                "Designation From Date": null,
+                "Designation To Date": null,
+                "Detailed Condition Assessments": null,
+                "Dimension Type": null,
+                "Disturbance Cause Assignment Assessor Name - Actor": "None, None",
+                "Disturbance Cause Category Type": "Building and Development, Natural",
+                "Disturbance Cause Certainty ": "Medium, High",
+                "Disturbance Cause Type ": "Construction, Vegetation/Crops/Trees",
+                "Disturbance Date From": "1995-01-01, 1995-01-01",
+                "Disturbance Date Occurred Before": "None, None",
+                "Disturbance Date Occurred On ": "None, None",
+                "Disturbance Date To ": "2018-03-04, 2018-03-04",
+                "EAMENA ID": "EAMENA-0186773",
+                "Effect Certainty": "High, Medium, High, High",
+                "Effect Type": "Loss/Removal of Archaeological Material, Water Damage, Compacting, Covered",
+                "Fetch Type": null,
+                "GE Imagery Acquisition Date": null,
+                "General Description": "ff6e3518-5b23-4ac5-831e-fefeeea825fb, CPF Palestine Training",
+                "General Description Type": "Old ArchesID, Comments",
+                "Geometry Extent Certainty": "High",
+                "Geometry Qualifier": "",
+                "Google Earth Assessment": "None, None",
+                "Grid ID": "E34N31-13",
+                "Heritage Place Function": "Domestic, Defensive/Fortification",
+                "Heritage Place Function Certainty ": "Definite, High",
+                "Heritage Place Resource Instance": null,
+                "Heritage Place Type": "Archaeological Site",
+                "Imagery Acquisition Date": null,
+                "Information Resource": null,
+                "Information Resource Acquisition Date": null,
+                "Intervention Activity Type": null,
+                "Investigator Role Type": "Government Authority/Staff, Government Authority/Staff",
+                "Land Cover Assessment Date": null,
+                "Land Cover Type": null,
+                "Location Certainty": "Definite",
+                "Material Class": null,
+                "Material Type": null,
+                "Maximum Depth/Min Elevation": null,
+                "Measurement Number": null,
+                "Measurement Source Type ": null,
+                "Measurement Unit": null,
+                "Minimum Depth/Max Elevation": null,
+                "Name Type": "Toponym, Toponym, Alternative Reference",
+                "Overall Archaeological Certainty Value ": ", Definite, Definite",
+                "Overall Condition State Type": "Fair",
+                "Overall Site Morphology Type": "Positive/Built Feature",
+                "Overall Site Shape Type": "Rectangular/Square",
+                "Priority Type": null,
+                "Recommendation Type": null,
+                "Related Geoarchaeology/Palaeolandscape": null,
+                "Resource Name": "Tell Rafah, \u062a\u0644 \u0631\u0641\u062d, GAZ0",
+                "Resource Orientation": "Northeast-Southwest",
+                "Restricted Access Record Designation": null,
+                "SH Date From": null,
+                "SH Date to": null,
+                "Site Feature Arrangement Type": "Adjoining",
+                "Site Feature Form Type": "Large Mound, ",
+                "Site Feature Form Type Certainty": "Definite, ",
+                "Site Feature Interpretation Certainty": "Definite, Definite, High",
+                "Site Feature Interpretation Number Type": "1, 11 to 20, 11 to 20",
+                "Site Feature Interpretation Type": "Tell, Tell, Tell",
+                "Site Feature Number Type": "1",
+                "Site Feature Shape Type": "Rectangular/Square",
+                "Spatial Coordinates Ref System": "None",
+                "Surficial Geology Type": null,
+                "Threat Category": "Building and Development, Natural, Natural",
+                "Threat Cause Type": "Construction, Flooding, Coastal Erosion/Retreat",
+                "Threat Inference Making Assessor Name - Actor": "None, None, Andreou et al. 2022: Fig. 15",
+                "Threat Probability ": "Probable, Possible, Possible",
+                "Tidal Range": null,
+                "Topography Type": "Ocean/Sea Shore",
+                "Wave Climate": null
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        [
+                            34.305171,
+                            31.397591
+                        ],
+                        [
+                            34.305068,
+                            31.397664
+                        ],
+                        [
+                            34.304939,
+                            31.397576
+                        ],
+                        [
+                            34.304424,
+                            31.397224
+                        ],
+                        [
+                            34.303583,
+                            31.396653
+                        ],
+                        [
+                            34.303797,
+                            31.396426
+                        ],
+                        [
+                            34.304287,
+                            31.396032
+                        ],
+                        [
+                            34.304759,
+                            31.396391
+                        ],
+                        [
+                            34.305059,
+                            31.396616
+                        ],
+                        [
+                            34.305394,
+                            31.396939
+                        ],
+                        [
+                            34.305651,
+                            31.397217
+                        ],
+                        [
+                            34.305171,
+                            31.397591
+                        ]
+                    ]
+                ],
+                "type": "Polygon"
+            },
+            "properties": {
+                "AH Date From": null,
+                "AH Date To": null,
+                "Address": null,
+                "Address Type": null,
+                "Administrative Division ": null,
+                "Administrative Division Type": null,
+                "Archaeological From Date": null,
+                "Archaeological To Date": null,
+                "Assessment Activity Date": "2018-04-15, 2018-04-15",
+                "Assessment Activity Type": "Archaeological Assessment (Image Interpretation), Condition Assessment (Image Interpretation)",
+                "Assessment Investigator - Actor": "Mohammad Jaradat, Mohammad Jaradat",
+                "BP Date From": null,
+                "BP Date To": null,
+                "Bedrock Geology Type": null,
+                "Built Component": null,
+                "Cadastral Reference": "None",
+                "Construction Technique": null,
+                "Country Type": "Palestine, State of",
+                "Cultural Period Certainty": "Definite",
+                "Cultural Period Type": "Bronze Age (Levant)",
+                "Cultural Sub-period Certainty": null,
+                "Cultural Sub-period Type": null,
+                "Damage Extent Type": "11-30%",
+                "Date Inference Making Actor Name": "None",
+                "Datum Description/EPSG code": null,
+                "Datum Type": null,
+                "Depositional Process": null,
+                "Designation": null,
+                "Designation From Date": null,
+                "Designation To Date": null,
+                "Detailed Condition Assessments": null,
+                "Dimension Type": null,
+                "Disturbance Cause Assignment Assessor Name - Actor": "None, None",
+                "Disturbance Cause Category Type": "Building and Development, Building and Development",
+                "Disturbance Cause Certainty ": "High, Medium",
+                "Disturbance Cause Type ": "Road/Track, Construction",
+                "Disturbance Date From": "None, None",
+                "Disturbance Date Occurred Before": "2018-04-15, 2018-04-15",
+                "Disturbance Date Occurred On ": "None, None",
+                "Disturbance Date To ": "None, None",
+                "EAMENA ID": "EAMENA-0186313",
+                "Effect Certainty": "Medium, Medium",
+                "Effect Type": "Loss/Removal of Archaeological Material, Compacting",
+                "Fetch Type": null,
+                "GE Imagery Acquisition Date": null,
+                "General Description": "b8cf9f53-98e4-4ab7-9ff3-487070292a3d, CPF Palestine Training",
+                "General Description Type": "Old ArchesID, Comments",
+                "Geometry Extent Certainty": "Definite",
+                "Geometry Qualifier": "",
+                "Google Earth Assessment": "None, None",
+                "Grid ID": "E34N31-14",
+                "Heritage Place Function": "Maritime, Domestic",
+                "Heritage Place Function Certainty ": "Definite, Definite",
+                "Heritage Place Resource Instance": null,
+                "Heritage Place Type": "Archaeological Site",
+                "Imagery Acquisition Date": null,
+                "Information Resource": null,
+                "Information Resource Acquisition Date": null,
+                "Intervention Activity Type": null,
+                "Investigator Role Type": "Government Authority/Staff, Government Authority/Staff",
+                "Land Cover Assessment Date": null,
+                "Land Cover Type": null,
+                "Location Certainty": "Definite",
+                "Material Class": null,
+                "Material Type": null,
+                "Maximum Depth/Min Elevation": null,
+                "Measurement Number": null,
+                "Measurement Source Type ": null,
+                "Measurement Unit": null,
+                "Minimum Depth/Max Elevation": null,
+                "Name Type": "Toponym, Toponym, Alternative Reference",
+                "Overall Archaeological Certainty Value ": "Definite",
+                "Overall Condition State Type": "Fair",
+                "Overall Site Morphology Type": "Positive/Built Feature",
+                "Overall Site Shape Type": "Rectangular/Square",
+                "Priority Type": null,
+                "Recommendation Type": null,
+                "Related Geoarchaeology/Palaeolandscape": null,
+                "Resource Name": "Tell el-Qatifa, \u062a\u0644 \u0627\u0644\u0642\u0637\u064a\u0641\u0629, GAZ0",
+                "Resource Orientation": "",
+                "Restricted Access Record Designation": null,
+                "SH Date From": null,
+                "SH Date to": null,
+                "Site Feature Arrangement Type": "Adjoining, Adjoining",
+                "Site Feature Form Type": "Structure, Small Mound/Cairn",
+                "Site Feature Form Type Certainty": "Definite, Definite",
+                "Site Feature Interpretation Certainty": "High, Definite",
+                "Site Feature Interpretation Number Type": "Unknown, 1",
+                "Site Feature Interpretation Type": "House/Dwelling, Tell",
+                "Site Feature Number Type": "Unknown, 1",
+                "Site Feature Shape Type": "Straight, Rectangular/Square",
+                "Spatial Coordinates Ref System": "None",
+                "Surficial Geology Type": null,
+                "Threat Category": "Archaeological, Maritime, Building and Development",
+                "Threat Cause Type": "Excavation (Hand), Flooding, Construction",
+                "Threat Inference Making Assessor Name - Actor": "None, None, None",
+                "Threat Probability ": "Possible, Possible, Possible",
+                "Tidal Range": null,
+                "Topography Type": "Ocean/Sea Shore",
+                "Wave Climate": null
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    34.445085,
+                    31.53662
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "AH Date From": null,
+                "AH Date To": null,
+                "Address": null,
+                "Address Type": null,
+                "Administrative Division ": null,
+                "Administrative Division Type": null,
+                "Archaeological From Date": null,
+                "Archaeological To Date": null,
+                "Assessment Activity Date": "2018-08-15, 2018-08-15",
+                "Assessment Activity Type": "Condition Assessment (Image Interpretation), Archaeological Assessment (Image Interpretation)",
+                "Assessment Investigator - Actor": "Mohammad Jaradat, Mohammad Jaradat",
+                "BP Date From": null,
+                "BP Date To": null,
+                "Bedrock Geology Type": null,
+                "Built Component": null,
+                "Cadastral Reference": "None",
+                "Construction Technique": null,
+                "Country Type": "Palestine, State of",
+                "Cultural Period Certainty": "Not Applicable",
+                "Cultural Period Type": "Unknown",
+                "Cultural Sub-period Certainty": null,
+                "Cultural Sub-period Type": null,
+                "Damage Extent Type": "61-90%",
+                "Date Inference Making Actor Name": "None",
+                "Datum Description/EPSG code": null,
+                "Datum Type": null,
+                "Depositional Process": null,
+                "Designation": null,
+                "Designation From Date": null,
+                "Designation To Date": null,
+                "Detailed Condition Assessments": null,
+                "Dimension Type": null,
+                "Disturbance Cause Assignment Assessor Name - Actor": "None",
+                "Disturbance Cause Category Type": "Domestic Use",
+                "Disturbance Cause Certainty ": "High",
+                "Disturbance Cause Type ": "Construction",
+                "Disturbance Date From": "2004-01-01",
+                "Disturbance Date Occurred Before": "None",
+                "Disturbance Date Occurred On ": "None",
+                "Disturbance Date To ": "2018-01-01",
+                "EAMENA ID": "EAMENA-0187662",
+                "Effect Certainty": "High, High, High, High, High",
+                "Effect Type": "Loss/Removal of Archaeological Material, Covered, Earth Displacement, Relocation of Archaeological Features, Collapse/Structural Damage",
+                "Fetch Type": null,
+                "GE Imagery Acquisition Date": null,
+                "General Description": "94d702bb-226c-4066-bbb1-67793a943a1f, CPF Palestine Training",
+                "General Description Type": "Old ArchesID, Comments",
+                "Geometry Extent Certainty": "High",
+                "Geometry Qualifier": "",
+                "Google Earth Assessment": "None, None",
+                "Grid ID": "E34N31-32",
+                "Heritage Place Function": "Hunting/Fishing, Domestic",
+                "Heritage Place Function Certainty ": "High, High",
+                "Heritage Place Resource Instance": null,
+                "Heritage Place Type": "Archaeological Site",
+                "Imagery Acquisition Date": null,
+                "Information Resource": null,
+                "Information Resource Acquisition Date": null,
+                "Intervention Activity Type": null,
+                "Investigator Role Type": "Government Authority/Staff, Government Authority/Staff",
+                "Land Cover Assessment Date": null,
+                "Land Cover Type": null,
+                "Location Certainty": "Definite",
+                "Material Class": null,
+                "Material Type": null,
+                "Maximum Depth/Min Elevation": null,
+                "Measurement Number": null,
+                "Measurement Source Type ": null,
+                "Measurement Unit": null,
+                "Minimum Depth/Max Elevation": null,
+                "Name Type": "Toponym, Toponym, Alternative Reference",
+                "Overall Archaeological Certainty Value ": "High",
+                "Overall Condition State Type": "Destroyed",
+                "Overall Site Morphology Type": "Positive/Built Feature",
+                "Overall Site Shape Type": "Circular",
+                "Priority Type": null,
+                "Recommendation Type": null,
+                "Related Geoarchaeology/Palaeolandscape": null,
+                "Resource Name": "Tell Abu el-Hawa, \u062a\u0644 \u0623\u0628\u0648 \u0627\u0644\u0647\u0648\u0649, GAZ0",
+                "Resource Orientation": "",
+                "Restricted Access Record Designation": null,
+                "SH Date From": null,
+                "SH Date to": null,
+                "Site Feature Arrangement Type": "Discrete",
+                "Site Feature Form Type": "Large Mound",
+                "Site Feature Form Type Certainty": "High",
+                "Site Feature Interpretation Certainty": "Definite",
+                "Site Feature Interpretation Number Type": "1",
+                "Site Feature Interpretation Type": "Tell",
+                "Site Feature Number Type": "1",
+                "Site Feature Shape Type": "Circular",
+                "Spatial Coordinates Ref System": "None",
+                "Surficial Geology Type": null,
+                "Threat Category": "Domestic Use, Natural, Building and Development",
+                "Threat Cause Type": "Construction, Flooding, Demolition/Destruction",
+                "Threat Inference Making Assessor Name - Actor": "None, None, None",
+                "Threat Probability ": "Probable, Possible, Probable",
+                "Tidal Range": null,
+                "Topography Type": "Ocean/Sea Shore",
+                "Wave Climate": null
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    [
+                        34.376348,
+                        31.46475
+                    ],
+                    [
+                        34.375876,
+                        31.46432
+                    ],
+                    [
+                        34.37623,
+                        31.463871
+                    ],
+                    [
+                        34.376874,
+                        31.463954
+                    ],
+                    [
+                        34.377722,
+                        31.463899
+                    ],
+                    [
+                        34.378323,
+                        31.463853
+                    ],
+                    [
+                        34.37932,
+                        31.463761
+                    ],
+                    [
+                        34.379739,
+                        31.463432
+                    ],
+                    [
+                        34.380307,
+                        31.463533
+                    ],
+                    [
+                        34.380897,
+                        31.463807
+                    ],
+                    [
+                        34.381101,
+                        31.464045
+                    ],
+                    [
+                        34.381541,
+                        31.464274
+                    ],
+                    [
+                        34.381799,
+                        31.464612
+                    ],
+                    [
+                        34.382121,
+                        31.464869
+                    ],
+                    [
+                        34.382496,
+                        31.465097
+                    ],
+                    [
+                        34.38285,
+                        31.465262
+                    ],
+                    [
+                        34.383183,
+                        31.465372
+                    ],
+                    [
+                        34.383644,
+                        31.465665
+                    ],
+                    [
+                        34.383912,
+                        31.46561
+                    ],
+                    [
+                        34.384417,
+                        31.465711
+                    ],
+                    [
+                        34.384846,
+                        31.465738
+                    ],
+                    [
+                        34.385339,
+                        31.465793
+                    ],
+                    [
+                        34.386155,
+                        31.465903
+                    ],
+                    [
+                        34.387013,
+                        31.466067
+                    ],
+                    [
+                        34.387796,
+                        31.466113
+                    ],
+                    [
+                        34.388086,
+                        31.466177
+                    ],
+                    [
+                        34.388247,
+                        31.466113
+                    ],
+                    [
+                        34.388375,
+                        31.466086
+                    ],
+                    [
+                        34.388901,
+                        31.466067
+                    ],
+                    [
+                        34.389674,
+                        31.466058
+                    ],
+                    [
+                        34.390232,
+                        31.466058
+                    ],
+                    [
+                        34.390693,
+                        31.466177
+                    ],
+                    [
+                        34.391208,
+                        31.466241
+                    ],
+                    [
+                        34.391605,
+                        31.466159
+                    ],
+                    [
+                        34.392206,
+                        31.466095
+                    ],
+                    [
+                        34.392935,
+                        31.465985
+                    ],
+                    [
+                        34.393815,
+                        31.465839
+                    ],
+                    [
+                        34.39448,
+                        31.465802
+                    ],
+                    [
+                        34.394952,
+                        31.465784
+                    ],
+                    [
+                        34.395328,
+                        31.46583
+                    ],
+                    [
+                        34.395735,
+                        31.466067
+                    ],
+                    [
+                        34.396111,
+                        31.466168
+                    ],
+                    [
+                        34.396744,
+                        31.466333
+                    ],
+                    [
+                        34.397205,
+                        31.466461
+                    ],
+                    [
+                        34.397677,
+                        31.466498
+                    ],
+                    [
+                        34.397999,
+                        31.466461
+                    ],
+                    [
+                        34.398557,
+                        31.466159
+                    ],
+                    [
+                        34.399094,
+                        31.465793
+                    ],
+                    [
+                        34.399533,
+                        31.46507
+                    ],
+                    [
+                        34.399791,
+                        31.464439
+                    ],
+                    [
+                        34.399963,
+                        31.463414
+                    ],
+                    [
+                        34.39992,
+                        31.462251
+                    ],
+                    [
+                        34.400177,
+                        31.461309
+                    ],
+                    [
+                        34.40095,
+                        31.460384
+                    ],
+                    [
+                        34.401808,
+                        31.459725
+                    ],
+                    [
+                        34.402613,
+                        31.459149
+                    ],
+                    [
+                        34.403771,
+                        31.458865
+                    ],
+                    [
+                        34.405445,
+                        31.458636
+                    ],
+                    [
+                        34.406218,
+                        31.458499
+                    ],
+                    [
+                        34.407226,
+                        31.458344
+                    ],
+                    [
+                        34.408213,
+                        31.458289
+                    ],
+                    [
+                        34.409672,
+                        31.457913
+                    ],
+                    [
+                        34.410745,
+                        31.457685
+                    ],
+                    [
+                        34.411689,
+                        31.457401
+                    ],
+                    [
+                        34.412633,
+                        31.457209
+                    ],
+                    [
+                        34.413524,
+                        31.456687
+                    ],
+                    [
+                        34.414125,
+                        31.456065
+                    ],
+                    [
+                        34.414586,
+                        31.455543
+                    ],
+                    [
+                        34.414929,
+                        31.455058
+                    ],
+                    [
+                        34.414962,
+                        31.454591
+                    ],
+                    [
+                        34.414736,
+                        31.453905
+                    ],
+                    [
+                        34.414382,
+                        31.453145
+                    ],
+                    [
+                        34.414093,
+                        31.452459
+                    ],
+                    [
+                        34.413781,
+                        31.451974
+                    ],
+                    [
+                        34.413127,
+                        31.451534
+                    ],
+                    [
+                        34.41229,
+                        31.451251
+                    ],
+                    [
+                        34.411839,
+                        31.451132
+                    ],
+                    [
+                        34.411346,
+                        31.450967
+                    ],
+                    [
+                        34.411249,
+                        31.450692
+                    ],
+                    [
+                        34.411378,
+                        31.450317
+                    ],
+                    [
+                        34.411593,
+                        31.449841
+                    ],
+                    [
+                        34.411882,
+                        31.449301
+                    ],
+                    [
+                        34.412258,
+                        31.448596
+                    ],
+                    [
+                        34.412655,
+                        31.447992
+                    ],
+                    [
+                        34.41302,
+                        31.447361
+                    ],
+                    [
+                        34.413363,
+                        31.4465
+                    ],
+                    [
+                        34.41361,
+                        31.445905
+                    ],
+                    [
+                        34.413953,
+                        31.445255
+                    ],
+                    [
+                        34.414479,
+                        31.444633
+                    ],
+                    [
+                        34.414833,
+                        31.444249
+                    ],
+                    [
+                        34.415122,
+                        31.443699
+                    ],
+                    [
+                        34.415595,
+                        31.443114
+                    ],
+                    [
+                        34.415981,
+                        31.44272
+                    ],
+                    [
+                        34.416281,
+                        31.442217
+                    ],
+                    [
+                        34.416378,
+                        31.441924
+                    ],
+                    [
+                        34.416356,
+                        31.441667
+                    ],
+                    [
+                        34.416152,
+                        31.441356
+                    ],
+                    [
+                        34.415852,
+                        31.441081
+                    ],
+                    [
+                        34.415637,
+                        31.440853
+                    ],
+                    [
+                        34.415519,
+                        31.440587
+                    ],
+                    [
+                        34.415519,
+                        31.440294
+                    ],
+                    [
+                        34.415659,
+                        31.440029
+                    ],
+                    [
+                        34.416024,
+                        31.439599
+                    ],
+                    [
+                        34.416388,
+                        31.439351
+                    ],
+                    [
+                        34.416946,
+                        31.439058
+                    ],
+                    [
+                        34.41759,
+                        31.43861
+                    ],
+                    [
+                        34.418212,
+                        31.438216
+                    ],
+                    [
+                        34.418695,
+                        31.437685
+                    ],
+                    [
+                        34.419242,
+                        31.436981
+                    ],
+                    [
+                        34.419521,
+                        31.436505
+                    ],
+                    [
+                        34.419811,
+                        31.435855
+                    ],
+                    [
+                        34.41995,
+                        31.43526
+                    ],
+                    [
+                        34.419822,
+                        31.434976
+                    ],
+                    [
+                        34.419253,
+                        31.433996
+                    ],
+                    [
+                        34.41877,
+                        31.433703
+                    ],
+                    [
+                        34.418255,
+                        31.433438
+                    ],
+                    [
+                        34.417676,
+                        31.433191
+                    ],
+                    [
+                        34.417129,
+                        31.433191
+                    ],
+                    [
+                        34.41656,
+                        31.433255
+                    ],
+                    [
+                        34.416056,
+                        31.433383
+                    ],
+                    [
+                        34.41582,
+                        31.43341
+                    ],
+                    [
+                        34.415616,
+                        31.433255
+                    ],
+                    [
+                        34.415498,
+                        31.432889
+                    ],
+                    [
+                        34.415434,
+                        31.432449
+                    ],
+                    [
+                        34.41597,
+                        31.431808
+                    ],
+                    [
+                        34.416657,
+                        31.431369
+                    ],
+                    [
+                        34.417494,
+                        31.430948
+                    ],
+                    [
+                        34.41833,
+                        31.430746
+                    ],
+                    [
+                        34.41906,
+                        31.430399
+                    ],
+                    [
+                        34.420176,
+                        31.430216
+                    ],
+                    [
+                        34.421571,
+                        31.430069
+                    ],
+                    [
+                        34.422429,
+                        31.429941
+                    ],
+                    [
+                        34.42333,
+                        31.429721
+                    ],
+                    [
+                        34.424274,
+                        31.429355
+                    ],
+                    [
+                        34.424768,
+                        31.429318
+                    ],
+                    [
+                        34.425476,
+                        31.429135
+                    ],
+                    [
+                        34.425991,
+                        31.428842
+                    ],
+                    [
+                        34.42627,
+                        31.428439
+                    ],
+                    [
+                        34.42642,
+                        31.427982
+                    ],
+                    [
+                        34.426484,
+                        31.427616
+                    ],
+                    [
+                        34.426592,
+                        31.427249
+                    ],
+                    [
+                        34.426806,
+                        31.426847
+                    ],
+                    [
+                        34.4273,
+                        31.426096
+                    ]
+                ],
+                "type": "LineString"
+            },
+            "properties": {
+                "AH Date From": null,
+                "AH Date To": null,
+                "Address": null,
+                "Address Type": null,
+                "Administrative Division ": null,
+                "Administrative Division Type": null,
+                "Archaeological From Date": null,
+                "Archaeological To Date": null,
+                "Assessment Activity Date": "2018-08-19, 2018-08-19",
+                "Assessment Activity Type": "Condition Assessment (Image Interpretation), Archaeological Assessment (Image Interpretation)",
+                "Assessment Investigator - Actor": "Mohammad Jaradat, Mohammad Jaradat",
+                "BP Date From": null,
+                "BP Date To": null,
+                "Bedrock Geology Type": null,
+                "Built Component": null,
+                "Cadastral Reference": "None",
+                "Construction Technique": null,
+                "Country Type": "Palestine, State of",
+                "Cultural Period Certainty": "Definite",
+                "Cultural Period Type": "Neolithic (Levant/Mesopotamia)",
+                "Cultural Sub-period Certainty": "Definite",
+                "Cultural Sub-period Type": "Neolithic, Late/Ceramic/Pottery, Late (Levant/Mesopotamia)",
+                "Damage Extent Type": "11-30%",
+                "Date Inference Making Actor Name": "None",
+                "Datum Description/EPSG code": null,
+                "Datum Type": null,
+                "Depositional Process": null,
+                "Designation": null,
+                "Designation From Date": null,
+                "Designation To Date": null,
+                "Detailed Condition Assessments": null,
+                "Dimension Type": null,
+                "Disturbance Cause Assignment Assessor Name - Actor": "None, None, None",
+                "Disturbance Cause Category Type": "Natural, Infrastructure/Transport, Natural",
+                "Disturbance Cause Certainty ": "High, High, High",
+                "Disturbance Cause Type ": "Precipitation, Water Action, Road/Track",
+                "Disturbance Date From": "2004-01-01, 2004-01-01, 2004-01-01",
+                "Disturbance Date Occurred Before": "None, None, None",
+                "Disturbance Date Occurred On ": "None, None, None",
+                "Disturbance Date To ": "2018-01-01, 2018-01-01, 2018-01-01",
+                "EAMENA ID": "EAMENA-0186246",
+                "Effect Certainty": "High, High, High, Medium, High, High",
+                "Effect Type": "Covered, Earth Displacement, Erosion/Deterioration, Water Damage, Covered, Compacting",
+                "Fetch Type": null,
+                "GE Imagery Acquisition Date": null,
+                "General Description": "ae7fa92d-529f-4adc-b475-a2b1e5389093, CPF Palestine Training, 1. Historical frontier between the Egyptian empire to the south and the Canaan region to the north. 2.\u00a0Biodiversity 3.\u00a0Nominated on the World Heritage List as a natural site",
+                "General Description Type": "Old ArchesID, Comments, Summary of Significance",
+                "Geometry Extent Certainty": "High",
+                "Geometry Qualifier": "",
+                "Google Earth Assessment": "None, None",
+                "Grid ID": "E34N31-14",
+                "Heritage Place Function": "Hydrological",
+                "Heritage Place Function Certainty ": "High",
+                "Heritage Place Resource Instance": null,
+                "Heritage Place Type": "Archaeological Site",
+                "Imagery Acquisition Date": null,
+                "Information Resource": null,
+                "Information Resource Acquisition Date": null,
+                "Intervention Activity Type": null,
+                "Investigator Role Type": "Government Authority/Staff, Government Authority/Staff",
+                "Land Cover Assessment Date": null,
+                "Land Cover Type": null,
+                "Location Certainty": "Definite",
+                "Material Class": null,
+                "Material Type": null,
+                "Maximum Depth/Min Elevation": null,
+                "Measurement Number": null,
+                "Measurement Source Type ": null,
+                "Measurement Unit": null,
+                "Minimum Depth/Max Elevation": null,
+                "Name Type": "Toponym, Toponym, Alternative Reference",
+                "Overall Archaeological Certainty Value ": "High",
+                "Overall Condition State Type": "Fair",
+                "Overall Site Morphology Type": "Negative/Cut/Dug Feature, Positive/Built Feature",
+                "Overall Site Shape Type": "Winding",
+                "Priority Type": null,
+                "Recommendation Type": null,
+                "Related Geoarchaeology/Palaeolandscape": null,
+                "Resource Name": "Wadi Gaza, \u0648\u0627\u062f\u064a \u063a\u0632\u0629, GAZ0",
+                "Resource Orientation": "",
+                "Restricted Access Record Designation": null,
+                "SH Date From": null,
+                "SH Date to": null,
+                "Site Feature Arrangement Type": "Adjoining",
+                "Site Feature Form Type": "Ditch/Trench",
+                "Site Feature Form Type Certainty": "High",
+                "Site Feature Interpretation Certainty": "High, High",
+                "Site Feature Interpretation Number Type": "1, 1",
+                "Site Feature Interpretation Type": "Boundary/Barrier, Channel",
+                "Site Feature Number Type": "1",
+                "Site Feature Shape Type": "Winding",
+                "Spatial Coordinates Ref System": "None",
+                "Surficial Geology Type": null,
+                "Threat Category": "Domestic Use, Natural, Agricultural/Pastoral",
+                "Threat Cause Type": "Pollution, Precipitation, Vegetation/Crops/Trees",
+                "Threat Inference Making Assessor Name - Actor": "None, None, None",
+                "Threat Probability ": "Probable, Probable, Probable",
+                "Tidal Range": null,
+                "Topography Type": "Ocean/Sea Shore",
+                "Wave Climate": null
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    34.264227,
+                    31.261253
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "AH Date From": null,
+                "AH Date To": null,
+                "Address": null,
+                "Address Type": null,
+                "Administrative Division ": null,
+                "Administrative Division Type": null,
+                "Archaeological From Date": null,
+                "Archaeological To Date": null,
+                "Assessment Activity Date": "2018-08-22, 2018-08-22",
+                "Assessment Activity Type": "Condition Assessment (Image Interpretation), Archaeological Assessment (Image Interpretation)",
+                "Assessment Investigator - Actor": "Mohammad Jaradat, Mohammad Jaradat",
+                "BP Date From": null,
+                "BP Date To": null,
+                "Bedrock Geology Type": null,
+                "Built Component": null,
+                "Cadastral Reference": "None",
+                "Construction Technique": null,
+                "Country Type": "Palestine, State of",
+                "Cultural Period Certainty": "Not Applicable",
+                "Cultural Period Type": "Unknown",
+                "Cultural Sub-period Certainty": null,
+                "Cultural Sub-period Type": null,
+                "Damage Extent Type": "61-90%",
+                "Date Inference Making Actor Name": "None",
+                "Datum Description/EPSG code": null,
+                "Datum Type": null,
+                "Depositional Process": null,
+                "Designation": null,
+                "Designation From Date": null,
+                "Designation To Date": null,
+                "Detailed Condition Assessments": null,
+                "Dimension Type": null,
+                "Disturbance Cause Assignment Assessor Name - Actor": "None, None, None",
+                "Disturbance Cause Category Type": "Domestic Use, Domestic Use, Looting/Illegal Activities",
+                "Disturbance Cause Certainty ": "High, High, High",
+                "Disturbance Cause Type ": "Road/Track, Construction, Excavation (Hand)",
+                "Disturbance Date From": "2004-01-01, 2004-01-01, None",
+                "Disturbance Date Occurred Before": "None, None, None",
+                "Disturbance Date Occurred On ": "None, None, 2012-01-01",
+                "Disturbance Date To ": "2018-01-01, 2018-01-01, None",
+                "EAMENA ID": "EAMENA-0186892",
+                "Effect Certainty": "High, High, High, High, High, High, High, High",
+                "Effect Type": "Covered, Structural Alteration, Covered, Loss/Removal of Archaeological Material, Structural Alteration, Chemical Leaching, Loss/Removal of Archaeological Material, Artefact Displacement",
+                "Fetch Type": null,
+                "GE Imagery Acquisition Date": null,
+                "General Description": "CPF Palestine Training, 26d79838-29d7-4f7a-98d3-8dc9740e7553",
+                "General Description Type": "Comments, Old ArchesID",
+                "Geometry Extent Certainty": "High",
+                "Geometry Qualifier": "",
+                "Google Earth Assessment": "None, None",
+                "Grid ID": "E34N31-14",
+                "Heritage Place Function": "Domestic, Agricultural/Pastoral",
+                "Heritage Place Function Certainty ": "High, High",
+                "Heritage Place Resource Instance": null,
+                "Heritage Place Type": "Archaeological Site",
+                "Imagery Acquisition Date": null,
+                "Information Resource": null,
+                "Information Resource Acquisition Date": null,
+                "Intervention Activity Type": null,
+                "Investigator Role Type": "Government Authority/Staff, Government Authority/Staff",
+                "Land Cover Assessment Date": null,
+                "Land Cover Type": null,
+                "Location Certainty": "Definite",
+                "Material Class": null,
+                "Material Type": null,
+                "Maximum Depth/Min Elevation": null,
+                "Measurement Number": null,
+                "Measurement Source Type ": null,
+                "Measurement Unit": null,
+                "Minimum Depth/Max Elevation": null,
+                "Name Type": "Toponym, Toponym, Alternative Reference",
+                "Overall Archaeological Certainty Value ": "High",
+                "Overall Condition State Type": "Poor",
+                "Overall Site Morphology Type": "Positive/Built Feature",
+                "Overall Site Shape Type": "Sub-rectangular",
+                "Priority Type": null,
+                "Recommendation Type": null,
+                "Related Geoarchaeology/Palaeolandscape": null,
+                "Resource Name": "Khirbet Abu Qashta, \u062e\u0631\u0628\u0629 \u0623\u0628\u0648 \u0642\u0634\u0637\u0629, GAZ0",
+                "Resource Orientation": "",
+                "Restricted Access Record Designation": null,
+                "SH Date From": null,
+                "SH Date to": null,
+                "Site Feature Arrangement Type": "Adjoining, Adjoining",
+                "Site Feature Form Type": "Structure, Multi-Component",
+                "Site Feature Form Type Certainty": "High, High",
+                "Site Feature Interpretation Certainty": "High, High",
+                "Site Feature Interpretation Number Type": "Unknown, Unknown",
+                "Site Feature Interpretation Type": "Farm Building, House/Dwelling",
+                "Site Feature Number Type": "Unknown, 6 to 10",
+                "Site Feature Shape Type": "Rectangular/Square, Rectangular/Square",
+                "Spatial Coordinates Ref System": "",
+                "Surficial Geology Type": null,
+                "Threat Category": "Building and Development, Domestic Use",
+                "Threat Cause Type": "Construction, Demolition/Destruction",
+                "Threat Inference Making Assessor Name - Actor": "None, None",
+                "Threat Probability ": "Probable, Probable",
+                "Tidal Range": null,
+                "Topography Type": "Plain/Plateau",
+                "Wave Climate": null
+            },
+            "type": "Feature"
+        }
+    ],
+    "type": "FeatureCollection"
+}

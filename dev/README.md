@@ -45,6 +45,10 @@ see: https://community.archesproject.org/t/give-access-to-a-custom-postgresql-vi
 
 ---
 
+## Citation Plugin
+
+
+
 ## Spatial
 
 Development on Mapbox
@@ -178,7 +182,7 @@ example: Search INFORMATION-0104667
 
 ## Audit
 
-### Basic statistics
+### ~~Basic statistics~~
 
 Translate Ash's statistics https://mareastats.drashsmith.com/ from PHP to Python
 

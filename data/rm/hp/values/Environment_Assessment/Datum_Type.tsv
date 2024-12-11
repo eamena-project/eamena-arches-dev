@@ -1,9 +1,0 @@
-Datum Type	نوع الإحداثية	Definitions	تعريف			
-Biological Mean Sea Level	المتوسط البيولوجي لمنسوب سطح البحر	The elevation of the sea surface, represented by the boundary between the subtidal and intetidal zone, and measured based on the zonation of biological organisms 				
-Chart Datum	إحداثية خرائط	Datum used on nautical/hydrographic charts against which seabed depths are measured. Generally corresponds to a low water measurement such as Lowest Astronomical Tide				
-Mean High Water	متوسط ارتفاع المياه	The elevation of the sea surface, calculated as the average of a series of high water elevation measurements over time				
-Mean Low Water	متوسط انخفاض المياه	The elevation of the sea surface, calculated as the average of a series of low water elevation measurements over time				
-Mean Sea Level	متوسط منسوب سطح البحر	The elevation of the sea surface, calculated as the average of a series of sea surface elevation measurements over time, or if not available, the average between mean high and mean low water				
-Other	أخرى	Any other datum which does not fit into any of the above categories				
-Regional/Local Datum	إقليمية/إحداثية محلية	Vertical reference datum for a given country or region against which elevations are measured. Examples include Ordnance Datum (Newlyn) for  Great Britain, North American Vertical Datum 1988 for North America				
-Unknown	غير محدد	Unknown	غير معلوم	غير محدد		غير معلوم

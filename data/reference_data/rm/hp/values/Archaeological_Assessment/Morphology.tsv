@@ -3,5 +3,3 @@ Negative/Cut/Dug Feature	"سالب/قطع ""حفرة""/معلم محفور"	A fe
 Positive/Built Feature	 معلم/مبنى ظاهر فوق سطح الأرض	A feature which is built/constructed/upstanding from the surface	ملمح تم بناؤه، أوإقامته بحيث يبرز عن سطح الأرض	موجب/ معلم مُشيد	OK, but for low-medium user, not esay to understand, I would say: معلم/مبنى ظاهر فوق سطح الأرض	موجب/ معلم منشأ
 Surface Feature	ملمح سطحي	A feature which appears as surface marks and has no obvious dug or constructed/upstanding components	ملمح يظهر كعلامات سطحية ولا يبدو أن له مكونات أخرى سواء محفورة أو منشأة	"ظاهرة سطحية ""أفقية"""	No. 	
 Unknown	غير محدد	Unknown	غير معلوم	غير محدد	Yes	غير معلوم
-						
-Cultural Period	الفترة الحضارية	See 'Cultural Period Tab'				

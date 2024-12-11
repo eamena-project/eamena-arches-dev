@@ -27,3 +27,9 @@ The [EAMENA DB](https://github.com/eamena-project/eamena-arches-dev/tree/main/db
 * EA/Arches v7 training instance: [installation](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/install), etc.
 
 * [CPF training, Amman, Jordan - 18-22 June, 2023](https://github.com/eamena-project/eamena-arches-dev/tree/main/training#users--database-managers--sys-admins-training)
+
+## GitHup `eamena-arches-dev` structure
+
+| folder name | description |
+|-------------|-------------|
+|             |             |

@@ -9,7 +9,8 @@ contains , different [talks](https://github.com/eamena-project/eamena-arches-dev
 | folder name | description |
 |-------------|-------------|
 | [dbs](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs)   |  resources for [EAMENA DB](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena) and other databases           |
-| | |
+| [dev](https://github.com/eamena-project/eamena-arches-dev/tree/main/dev) | any test and development implying GH, coding, etc. |
+| [projects](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects) | 3rd part projects such as [caravanserails](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/caravanserail), [city of the deads](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/cod), etc. |
 
 ## Projects
 

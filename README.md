@@ -8,9 +8,14 @@ contains , different [talks](https://github.com/eamena-project/eamena-arches-dev
 
 | folder name | description |
 |-------------|-------------|
-| [dbs](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs)   |  resources for [EAMENA DB](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena) and other databases           |
+| [dbs](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs)   |  resources for [the main database](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena) and other DB           |
 | [dev](https://github.com/eamena-project/eamena-arches-dev/tree/main/dev) | any test and development implying GH, coding, etc. |
 | [projects](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects) | 3rd part projects such as [caravanserails](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/caravanserail), [city of the deads](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/cod), etc. |
+| [spatial](https://github.com/eamena-project/eamena-arches-dev/tree/main/spatial) | spatial related data and doc for EAMENA/QGIS related workflows, GeoServer, Arches basemaps, etc. | 
+| [talks](https://github.com/eamena-project/eamena-arches-dev/tree/main/talks) | talks and talk supports (mainly: Jupyter NB, R Quarto) | 
+| [training](https://github.com/eamena-project/eamena-arches-dev/tree/main/training) | training documentation (for example [2023 in Amman](https://github.com/eamena-project/eamena-arches-dev/tree/main/training#2023)) |
+| [www](https://github.com/eamena-project/eamena-arches-dev/tree/main/www) | images, charts, maps, etc. | 
+
 
 ## Projects
 

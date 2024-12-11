@@ -2,6 +2,7 @@
 .Rhistory
 .RData
 .Ruserdata
+(archives)/
 data/
 ^secret/
 credentials/

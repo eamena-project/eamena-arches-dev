@@ -18,9 +18,16 @@
 
 * workshop Publishing Archaeological DAta ([PADA](https://github.com/eamena-project/eamena-arches-dev/tree/main/talks/2024-publication#pada-workshop)), Mon 2 - Wed 4 Dec 2024, Oxford.
 
-* EA/APAAME "tight links" (*in progress*): linking the DB with the new ArchDAMS ResourceSpace-based server ([here](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/README.md#apaame-server))
-
 * EA/Arches v7 training instance: [installation](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/install), etc.
 
+* EAMENA is a [PeriodO authority](http://n2t.net/ark:/99152/p0m64td) and registered 235 periods 
+
+* EAMENA upgraded from Arches v5.2 to Arches v7.3
+
 * [CPF training, Amman, Jordan - 18-22 June, 2023](https://github.com/eamena-project/eamena-arches-dev/tree/main/training#users--database-managers--sys-admins-training)
+
+* EAMENA co-created the Arches Cultural Heritage Partners ([ACHP](https://github.com/achp-project)) GitHub organization 
+
+* The `eamena-oxford` GitHub organization is renamed `eamena-project`
+
 

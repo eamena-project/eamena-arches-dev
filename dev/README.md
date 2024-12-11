@@ -2,7 +2,8 @@
 
 Scheduled IT developments for the EAMENA DB and miscellaneous. Test on [EA training instance](https://github.com/eamena-project/eamena-arches-dev/tree/main/dev#instance-ea) or main database. All scripts will be moved to an another place once the dev part is acomplished.
 
-* (*in progress*) i18n/l10n to Central Kurdish (Sorani) ([here](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/kahd))
+* (*in progress*) i18n/l10n to Central Kurdish (Sorani) ([here](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/kahd)) nd [French](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/i18n#i18n))
+* (*in progress*) EAMENA/APAAME "tight links", linking the DB with the new ArchDAMS ResourceSpace-based server ([here](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/README.md#apaame-server)) 
 * (*in progress*) `emenar_temp` user (readonly user) to query the DB backend:
 	- [eamenar-readonly.ipynb](https://colab.research.google.com/github/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/postgres/eamenar-readonly.ipynb)
 * (*in progress*) [citation-generator](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/citation)

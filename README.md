@@ -1,4 +1,4 @@
-# eamena-arches-dev  <img src="www/logo.png" width='80px' align="right"/>
+# eamena-arches-dev  <img src="www/logo.png" width='60px' align="right"/>
 > development repository
 
 

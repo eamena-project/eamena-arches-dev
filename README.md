@@ -1,8 +1,15 @@
 # eamena-arches-dev  <img src="www/logo.png" width='80px' align="right"/>
 > development repository
 
-The [EAMENA DB](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena), different [talks](https://github.com/eamena-project/eamena-arches-dev/tree/main/talks)
+contains , different [talks](https://github.com/eamena-project/eamena-arches-dev/tree/main/talks)
 
+
+## GitHup `eamena-arches-dev` structure
+
+| folder name | description |
+|-------------|-------------|
+| [dbs](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs)   |  resources for [EAMENA DB](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena) and other databases           |
+| | |
 
 ## Projects
 
@@ -28,8 +35,3 @@ The [EAMENA DB](https://github.com/eamena-project/eamena-arches-dev/tree/main/db
 
 * [CPF training, Amman, Jordan - 18-22 June, 2023](https://github.com/eamena-project/eamena-arches-dev/tree/main/training#users--database-managers--sys-admins-training)
 
-## GitHup `eamena-arches-dev` structure
-
-| folder name | description |
-|-------------|-------------|
-|             |             |

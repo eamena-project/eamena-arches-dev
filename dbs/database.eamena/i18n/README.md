@@ -1,5 +1,7 @@
 # Internationalisation
->  Internationalisation (i18n) and localisation (l10n)
+>  Internationalisation (i18n) and localisation (l10n), `[\u0621-\u064A]+$`
+
+
 
 
 ## Messages, thesauri and resource models
@@ -66,7 +68,7 @@ msgstr ""
 > RM
 
 <p align="center">
-  <img alt="img-name" src="image-5.png" width="450">
+  <img alt="img-name" src="img/image-5.png" width="450">
   <br>
     <em>Heritage Place ressource model (RM)</em>
 </p>
@@ -307,7 +309,7 @@ So far in the EAMENA DB, Arabic translation of English are hard written in the R
 
 | English | Arabic |
 |----------|----------|
-| ![alt text](image.png)    | ![alt text](image-1.png)   |
+| ![alt text](img/image.png)    | ![alt text](img/image-1.png)   |
 | English (`en`) mode, EAMENA training instance    | Arabic (`ar`) mode, EAMENA training instance   |
 
 See for example [Resource Summary](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/rm/hp/Heritage%20Place_with_hard_written_arabic.json#L86-L87)
@@ -322,7 +324,7 @@ In  the l10n in Arabic (`ar`) has been done, we can remove this Arabic hard writ
 1. Check, in the Postgres DB, if the `ar` translation exists:
 
 <p align="center">
-  <img alt="img-name" src="image-3.png" width="700">
+  <img alt="img-name" src="img/image-3.png" width="700">
   <br>
 </p>
 
@@ -336,7 +338,7 @@ AND graphid::text = '34cfe98e-c2c0-11ea-9026-02e7594ce0a0'; -- the UUID of the H
 2. If the `ar` exists: remove the hard written Arabic after the `/` (in blue)
 
 <p align="center">
-  <img alt="img-name" src="image-4.png" width="500">
+  <img alt="img-name" src="img/image-4.png" width="500">
   <br>
 </p>
 
@@ -358,7 +360,7 @@ AND graphid::text = '34cfe98e-c2c0-11ea-9026-02e7594ce0a0'; -- the UUID of the H
 ```
 
 <p align="center">
-  <img alt="img-name" src="image-2.png" width="700">
+  <img alt="img-name" src="img/image-2.png" width="700">
   <br>
 </p>
 

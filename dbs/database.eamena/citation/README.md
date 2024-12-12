@@ -12,25 +12,25 @@ Upload your data to your Zenodo account, and then submit your upload to the [EAM
 1. Upload your data under your Zenodo account
 
 <p align="center">
-  <img alt="img-name" src="image-1.png" width="700"><br>
+  <img alt="img-name" src="img/image-1.png" width="700"><br>
 </p>
 
 2. On the right hand panel, choose: `+ Submit to community`
 
 <p align="center">
-  <img alt="img-name" src="image-2.png" width="700"><br>
+  <img alt="img-name" src="img/image-2.png" width="700"><br>
 </p>
 
 3. Select the `EAMENA` community
 
 <p align="center">
-  <img alt="img-name" src="image-3.png" width="700"><br>
+  <img alt="img-name" src="img/image-3.png" width="700"><br>
 </p>
 
 4. Allow the 'EAMENA database' curators to view and edit your data and metada 
 
 <p align="center">
-  <img alt="img-name" src="image-4.png" width="700"><br>
+  <img alt="img-name" src="img/image-4.png" width="700"><br>
 </p>
 
 * From the EAMENA Community side
@@ -38,7 +38,7 @@ Upload your data to your Zenodo account, and then submit your upload to the [EAM
 1. Accept the request
 
 <p align="center">
-  <img alt="img-name" src="image-5.png" width="700"><br>
+  <img alt="img-name" src="img/image-5.png" width="700"><br>
 </p>
 
 ## Contributions
@@ -82,7 +82,7 @@ Plugin for EAMENA v4/Arches v7.3 with the creation of a new form to publish data
 
 
 <p align="center">
-  <img alt="img-name" src="image.png" width="700"><br>
+  <img alt="img-name" src="img/image.png" width="700"><br>
   <em>Screenshot of the Arches citation plugin for Heritage Places developed by EAMENA and MaREA, showing the GeoJSON URL field and two free-text fields. The other metadata (authors, contributors, keywords, etc.) are calculated on the fly. Once the user clicks 'Submit,' a GeoJSON file is created and uploaded to Zenodo along with its metadata.</em>
 </p>
 

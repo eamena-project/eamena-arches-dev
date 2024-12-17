@@ -79,7 +79,7 @@ In ArchDAMS. Export photographs' metadata (CSV Export - metadata). A reference n
 |----------|----------|
 | 4    |  APAAME_20000906_RHB-0018   |
 
-A sample of the mapping table is this [metadata_export_contributions2_20240214-12_30.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/metadata_export_contributions2_20240214-12_30.csv)[^3] file. Then, the Direct URL is a simple concatenation. For example, with the [reference number **8**](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/metadata_export_contributions2_20240214-12_30.csv#L2)
+A sample of the mapping table is this [metadata_export_contributions2_20240214-12_30.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/metadata/metadata_export_contributions2_20240214-12_30.csv)[^3] file. Then, the Direct URL is a simple concatenation. For example, with the [reference number **8**](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/metadata/metadata_export_contributions2_20240214-12_30.csv#L2)
 
 | Direct URL | APAAME ID |
 |----------|----------|
@@ -89,7 +89,7 @@ A sample of the mapping table is this [metadata_export_contributions2_20240214-1
 
 3. **Step 3** <a id="wf-step-3"></a>
 
-Join APAAME [metadata_export_contributions2_20240214-12_30.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/metadata_export_contributions2_20240214-12_30.csv) with [eamena_fickr_paths](https://docs.google.com/spreadsheets/d/1gf27xtDZZKjjGOb0rUincZU56GW_LsRlWbPn-e3HpPs/edit?usp=sharing)
+Join APAAME [metadata_export_contributions2_20240214-12_30.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/metadata/metadata_export_contributions2_20240214-12_30.csv) with [eamena_fickr_paths](https://docs.google.com/spreadsheets/d/1gf27xtDZZKjjGOb0rUincZU56GW_LsRlWbPn-e3HpPs/edit?usp=sharing)
 
 | APAAME ID | Direct URL |
 |----------|----------|
@@ -139,7 +139,7 @@ APAAME Server: https://apaame.arch.ox.ac.uk/
 #### File hierachical struture
 > Photographs 
 
-* By Country
+* ~~By Country~~ to be discussed as APAAME is mostly on Jordan
 
 #### Metadata
 
@@ -147,7 +147,7 @@ CSV metadata ('CSV Export - metadata', 'CSV Upload - metadata'). Metada CSV file
 
 |  folder   | file   |
 |-----------|-------------------|
-| 240510-Jordan 	| [metadata_export_collection9_20240510-09_50.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/data/metadata/240510-Jordan/metadata_export_collection9_20240510-09_50.csv)         	|
+| 240510-Jordan 	| [metadata_export_collection9_20240510-09_50.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/data/metadata/metadata/240510-Jordan/metadata_export_collection9_20240510-09_50.csv)         	|
 
 
 #### Examples

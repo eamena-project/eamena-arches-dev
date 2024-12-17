@@ -1,6 +1,24 @@
 # APAAME archive
 > Aerial Photographic Archive for Archaeology in the Middle East archive
 
+## Task description
+
+```mermaid
+flowchart LR
+	id1[external hardrive]
+	id2[ResourceSpace Server]
+	id3[metadata management]
+
+  id1 -- upload photographs --> id2[The Database]
+  id2 -- download photograph metadata --> id3
+  id3 -- XLSX or Python processes --> id3
+  id3 -- upload updated photograph metadata --> id2
+
+  click id2 "https://apaame.arch.ox.ac.uk/" _blank
+```
+
+---
+
 Work in progress: [update EAMENA's Information Resources (IR) links to APAAME](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/apaame#update-ir-apaame-links) (from the [Flickr archive](https://www.flickr.com/photos/apaame/collections) to the new [ArchDAMS platform](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/README.md#archdams-server))  ... [metadata](#metadata)
 
 ## Photographs conversion
@@ -186,13 +204,13 @@ see the [TSV file](https://github.com/eamena-project/eamena-arches-dev/blob/main
 
 * Filename once exported from RS
 
-![alt text](image-1.png)
+![alt text](www/image-1.png)
 
 #### Errors during the upload
 
 * credit
 
-![APAAME_19980506_DLK-0053.tif](image.png)
+![APAAME_19980506_DLK-0053.tif](www/image.png)
 
 ---
 

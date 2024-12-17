@@ -7,7 +7,7 @@ Work in progress: [update EAMENA's Information Resources (IR) links to APAAME](h
 
 Convert DNG photographs to TIFF or JPG, see [#47](https://github.com/eamena-project/eamena-arches-dev/issues/47#issuecomment-2250362477)
 
-[NAS Server](#nas-server) -> AWS S3
+~~[NAS Server](#nas-server) -> AWS S3~~
 
 ## Upload
 

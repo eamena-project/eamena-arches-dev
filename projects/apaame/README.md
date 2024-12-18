@@ -42,7 +42,7 @@ Work in progress listed here (folder by folders): https://github.com/eamena-proj
 ### Update IR-APAAME links
 > Update EAMENA Information Resources and APAAME links, batch the update of APAAME links
 
-see: Issue [#56](https://github.com/eamena-project/eamena-arches-dev/issues/56)
+see: Issue [#56](https://github.com/eamena-project/eamena-arches-dev/issues/56), follow this [model](https://eamena-project.github.io/eamena-arches-dev/talks/2024-chma/pres/#/data-structure)
 
 The aim is to embed previews of APAAME photographs (hosted on ArchDAMS) into EAMENA IRs using ArchDAMS Direct links (i.e. external links). The  workflow is in ~~this Jupyter NB~~ this [Python script](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/apaame/apaame2eamena_2.py)
 

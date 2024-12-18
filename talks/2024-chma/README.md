@@ -1,6 +1,12 @@
 # DOCUMENTING COPTIC MONASTIC HERITAGE 
 > 11-13 November 2024, Bibliotheca Alexandrina, Alexandria, Egypt. See the [CMHA project](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/cmha)
 
+<center>
+
+[The presentation](https://eamena-project.github.io/eamena-arches-dev/talks/2024-chma/pres)
+
+</center>
+
 | Day 1 | Day 2   | Day 3  | 
 |---|---|---|
 | [Disturbances](#1-1-2)  | [Wadi Naqqat](#2-3-2)  | [Contribute](#3-6-1)  |

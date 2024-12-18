@@ -255,7 +255,7 @@ See: [photos.csv](https://github.com/eamena-project/eamena-arches-dev/blob/main/
 2. Create related ressources HP <-> IR
   - capture all the HR UUID by Seaching for 
 
-## Next steps
+## TODO
 
 - [ ] complete the missing metadata of the photgraphs (see [#54](https://github.com/eamena-project/eamena-arches-dev/issues/54#issuecomment-2338735126))
 - [ ] copy the direct URL of the RS photograph collections into the Information Resources.

@@ -3,9 +3,11 @@
 
 ## Task description
 
+From left to right
+
 ```mermaid
 flowchart LR
-	id1[external hardrive]
+	id1[external hardrives]
 	id2[ResourceSpace Server]
 	id3[metadata management]
 
@@ -29,9 +31,16 @@ Convert DNG photographs to TIFF or JPG, see [#47](https://github.com/eamena-proj
 
 ## Upload
 
-Work in progress listed here (folder by folders): https://github.com/eamena-project/eamena-arches-dev/issues/47#issuecomment-2003698364
+Work in progress listed here (folder by folders): https://github.com/eamena-project/eamena-arches-dev/issues/47#issuecomment-2003698364 [^5]
 
-(list created with the `fhs-apaame-master-catalog_*.py` script)
+<p align="center">
+  <img alt="img-name" src="www/external_hard_drives_250102.jpeg" width="500">
+  <br>
+    <em>The APAAME photohgraph archive, from 1997 to 2024, on two hard drives</em>
+</p>
+
+
+[^5]: list created with the `fhs-apaame-master-catalog_*.py` script)
 
 ### Upload time
 

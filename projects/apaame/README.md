@@ -34,9 +34,9 @@ Convert DNG photographs to TIFF or JPG, see [#47](https://github.com/eamena-proj
 Work in progress listed here (folder by folders): https://github.com/eamena-project/eamena-arches-dev/issues/47#issuecomment-2003698364 [^5]
 
 <p align="center">
-  <img alt="img-name" src="www/external_hard_drives_250102.jpeg" width="500">
+  <img alt="img-name" src="www/external_hard_drives_250102.jpeg" width="400">
   <br>
-    <em>The APAAME photohgraph archive, from 1997 to 2024, on two hard drives</em>
+    <em>The APAAME photohgraph archive, from 1997 to 2024, on two hard drives (SPR2, Oxford, 02/01/2025)</em>
 </p>
 
 

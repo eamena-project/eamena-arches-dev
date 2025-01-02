@@ -9,7 +9,7 @@ flowchart LR
 	id2[ResourceSpace Server]
 	id3[metadata management]
 
-  id1 -- upload photographs --> id2[The Database]
+  id1 -- upload photographs --> id2[ResourceSpace Server]
   id2 -- download photograph metadata --> id3
   id3 -- XLSX or Python processes --> id3
   id3 -- upload updated photograph metadata --> id2

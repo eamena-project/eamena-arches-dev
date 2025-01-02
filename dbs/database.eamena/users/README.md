@@ -142,7 +142,7 @@ Arches Designer > Resource Model > Heritage Place > Permissions >
 	- [EAMENA](https://database.eamena.org/graph_designer/34cfe98e-c2c0-11ea-9026-02e7594ce0a0)
 
 <p align="center">
-  <img alt="img-name" src="image.png" width="700">
+  <img alt="img-name" src="image.png" width="500">
   <br>
 </p>
 

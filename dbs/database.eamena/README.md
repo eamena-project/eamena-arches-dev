@@ -2,7 +2,7 @@
 > EAMENA v4 on Arches v7.4, `database.eamena.org`
 
 
-The `database.eamena` folder contains data on the online [database.eamena.org](https://database.eamena.org/) DB: [plugins dev and documentation](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/citation), [customization templates](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/custom), [data management processes](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data) and [reference data](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data/reference_data), 
+This `database.eamena` folder contains data on the online [database.eamena.org](https://database.eamena.org/) DB: [plugins dev and documentation](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/citation), [customization templates](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/custom), [data management processes](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data) and [reference data](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data/reference_data), 
 ) [internationalisation (i18n)](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/i18n), [installation guidelines](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/install), [postgres backend and queries](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/postgres), [users permission tiers](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/users).
 
 

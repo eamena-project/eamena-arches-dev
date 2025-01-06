@@ -136,13 +136,13 @@ python manage.py convert_json_57 -s /opt/arches/eamena/eamena/pkg/system_setting
 rm /opt/arches/eamena/eamena/pkg/system_settings/System_Settings.json
 mkdir /opt/arches/eamena/eamena/system_settings
 mv /opt/arches/eamena/eamena/pkg/system_settings/System_Settings_conv.json /opt/arches/eamena/eamena/system_settings/System_Settings.json
-rm /opt/arches/eamena/eamena/system_settings/pkg/System_Settings_conv.json
+rm /opt/arches/eamena/eamena/system_settings/pkg/system_settings/System_Settings_conv.json
 cp /opt/arches/eamena/eamena/system_settings/System_Settings.json /opt/arches/eamena/eamena/pkg/system_settings/System_Settings.json
-# this needs testing to make sure it works - choose Y for overwrite settings
+
 
 # === LOAD THE PACKAGE ===
 cd /opt/arches/eamena
-python manage.py packages -o load_package -s /opt/arches/eamena/eamena/pkg/ -db
+python manage.py packages -o load_package -s /opt/arches/eamena/eamena/pkg/ -db # CHOOSE N FOR REWRITE SETTINGS AS Y WILL CREATE A PROBLEMATIC JSON SETTINGS FILE CAUSING AN ERROR AT THE SETTINGS PAGE
 
 # === BUILD DEVELOPMENT FRONTEND ===
 cd /opt/arches/eamena/eamena

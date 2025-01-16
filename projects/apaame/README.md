@@ -46,7 +46,7 @@ Work in progress listed here (folder by folders): https://github.com/eamena-proj
 
 * from "D:\APAAME Master Catalog\1997\1997-05-27" to the ArcDAMS server:
   - 10 photographs * 28 Mb = 280 Mb | loading time = 3 min
-  - need to validate each photograph
+  - ~~need to validate each photograph~~
 
 ### Update IR-APAAME links
 > Update EAMENA Information Resources and APAAME links, batch the update of APAAME links

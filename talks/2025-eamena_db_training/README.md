@@ -18,4 +18,57 @@
 | ...  |  ... |
 | [arches](https://github.com/eamena-project/arches)  |  fork of https://github.com/archesproject/arches for PR |
 
-* follow this [workflow](https://github.com/eamena-project/eamena-arches-dev/tree/main/dev#workflow)
+## Data management
+
+### Reference data
+
+Follow this workflow for reference data
+
+```mermaid
+flowchart LR
+  subgraph GitHub
+  subgraph raw_data
+    A[XLSX file] --is read by--> B[Python or R<br>script];
+  end
+  subgraph dynamic_data
+    C[CSV or TSV<br>file];
+    D[Python or R<br>script];
+  end
+  raw_data --creates--> C;
+  C --is read by--> D
+  dynamic_data --creates--> E[HTML file]
+  raw_data --creates--> E[HTML file]
+  end
+  subgraph website
+    F[website]
+  end
+  E -- is read by --> F[HTML iframe]
+
+  click A "https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/rm/hp/mds/mds-template.xlsx" _blank
+  click B "https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/rm/hp/mds/ref_hp_field_description.R" _blank
+  click E "https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/mds/fields-description.html" _blank
+  click F "https://eamena.org/advanced-use#rm-hp-fields" _blank
+  
+```
+
+### Back-end programming
+
+
+```mermaid
+flowchart LR
+	A[Jupyter Notebook<br>with Inline code] ---> B[Jupyter Notebook<br>with Imported functions]
+	C[Python functions] -- is read by --> B
+  	subgraph GitHub
+		C;
+		E;
+  	end
+	C ---> D[Arches Plugin]
+	C ---> E[Python libraries]
+	E ---> F[Arches App]
+
+  click A "https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/rm/hp/mds/mds-template.xlsx" _blank
+  click B "https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/rm/hp/mds/ref_hp_field_description.R" _blank
+  click E "https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/mds/fields-description.html" _blank
+  click F "https://eamena.org/advanced-use#rm-hp-fields" _blank
+  
+```

@@ -65,7 +65,7 @@ flowchart LR
 		A;
 		B;
 	end
-	subgraph GitHub[eamena-functions]
+	subgraph GitHub[an <b>important</b> <a href='http://google.com'>link</a>]
 		C;
 		E;
   	end

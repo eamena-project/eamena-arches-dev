@@ -9,34 +9,6 @@ Scheduled IT developments for the EAMENA DB and miscellaneous. Test on [EA train
 * (*in progress*) [citation-generator](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/citation)
 * (*in progress*) i18n/l10n to French ([here](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/i18n#internationalisation))
 
-## Workflow
-
-```mermaid
-flowchart LR
-  subgraph GitHub
-  subgraph raw_data
-    A[XLSX file] --is read by--> B[Python or R<br>script];
-  end
-  subgraph dynamic_data
-    C[CSV or TSV<br>file];
-    D[Python or R<br>script];
-  end
-  raw_data --creates--> C;
-  C --is read by--> D
-  dynamic_data --creates--> E[HTML file]
-  raw_data --creates--> E[HTML file]
-  end
-  subgraph website
-    F[website]
-  end
-  E -- is read by --> F[HTML iframe]
-
-  click A "https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/rm/hp/mds/mds-template.xlsx" _blank
-  click B "https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/rm/hp/mds/ref_hp_field_description.R" _blank
-  click E "https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/mds/fields-description.html" _blank
-  click F "https://eamena.org/advanced-use#rm-hp-fields" _blank
-  
-```
 
 ## Instance
 

@@ -58,13 +58,13 @@ flowchart LR
 flowchart LR
 	A[Jupyter Notebook<br>with Inline code] ---> B[Jupyter Notebook<br>with Imported functions]
 	C[Python functions] -- is read by --> B
-  	subgraph GitHub
-		C;
-		E;
-  	end
 	C ---> D[Arches Plugin]
 	C ---> E[Python libraries]
 	E ---> F[Arches App]
+	subgraph GitHub
+		C;
+		E;
+  	end
 
   click A "https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/rm/hp/mds/mds-template.xlsx" _blank
   click B "https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/rm/hp/mds/ref_hp_field_description.R" _blank

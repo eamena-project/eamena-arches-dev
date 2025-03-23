@@ -1,10 +1,8 @@
-## Read the root directory of all exported TSV of the possible values for each field: https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data/reference_data/rm/hp/values. Enter the subfolders and convert TSV to HTML for interactivity purpose
-
 #' @name ref_hp_field_values
 #'
-#' @description
+#' @description Read the root directory of all exported TSV of the possible values for each field: https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data/reference_data/rm/hp/values. Enter the subfolders and convert TSV to HTML for interactivity purpose
 #'
-#' @param mds.template The XLSX file listing the HP fields, field descriptions, fields UUID in the DB, if these fields are part of the Minimum Data Standards (MDS), etc..
+#' @param mds.template The XLSX file listing the HP fields, field descriptions, fields UUID in the DB, if these fields are part of the Minimum Data Standards (MDS), etc.
 #' @param create.datatable If TRUE (default), will export an HTML datatable
 #' @param mds.datatable.name The name of the HTML datatable
 #' @param verbose if TRUE (Default), print messages.

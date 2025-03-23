@@ -1,8 +1,6 @@
-## Generates a DT table of field names and field description from 'mds-template.xlsx'
-#'
 #' @name ref_hp_mds 
 #'
-#' @description
+#' @description Generates a DT table of field names and field description from 'mds-template.xlsx'
 #'
 #' @param mds.template The XLSX file listing the HP fields, field descriptions, fields UUID in the DB, if these fields are part of the Minimum Data Standards (MDS), etc..
 #' @param create.datatable If TRUE (default), will export an HTML datatable
@@ -12,8 +10,13 @@
 #' @return An HTML datatable (sortable, searchable, etc.)
 #'
 #' @examples
+#' 
+#' # Create and save the datatable
+#' ref_hp_mds(mds.template = "C:/Rprojects/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/mds/mds-template.xlsx", mds.datatable.name = "fields-description.html")
 #'
-#'
+#' # Create and plot the datatable
+#' ref_hp_mds(mds.template = "C:/Rprojects/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/mds/mds-template.xlsx", create.datatable = FALSE)
+#' 
 #' @export
 ref_hp_mds <- function(mds.template = "https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/main/dbs/database.eamena/data/reference_data/rm/hp/mds/mds-template.xlsx",
                        create.datatable = TRUE,
@@ -89,5 +92,3 @@ ref_hp_mds <- function(mds.template = "https://raw.githubusercontent.com/eamena-
     return(dt_widget)
   }
 }
-
-ref_hp_mds(mds.template = "C:/Rprojects/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/mds/mds-template.xlsx", mds.datatable.name = "fields-description.html")

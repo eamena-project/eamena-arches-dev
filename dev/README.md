@@ -15,20 +15,24 @@ Scheduled IT developments for the EAMENA DB and miscellaneous. Test on [EA train
 flowchart LR
   subgraph GitHub
   subgraph raw_data
-    A[XLSX file] --is read by--> B[Python script];
+    A[XLSX file] --is read by--> B[Python or R<br>script];
   end
   subgraph dynamic_data
-    C[CSV file];
-    D[Python script];
+    C[CSV or TSV<br>file];
+    D[Python or R<br>script];
   end
-  raw_data --creates--> dynamic_data;
+  raw_data --creates--> C;
   C --is read by--> D
   dynamic_data --creates--> E[HTML file]
   end
   subgraph website
     F[website]
   end
-  E -- is read by --> F[website]
+  E -- is read by --> F[HTML iframe]
+
+  click A "https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/rm/hp/mds/mds-template.xlsx" _blank
+  click B "https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/rm/hp/mds/ref_hp_field_description.R" _blank
+  click E "https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/mds/fields-description.html" _blank
 ```
 
 

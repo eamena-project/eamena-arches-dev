@@ -24,6 +24,7 @@ flowchart LR
   raw_data --creates--> C;
   C --is read by--> D
   dynamic_data --creates--> E[HTML file]
+  raw_data --creates--> E[HTML file]
   end
   subgraph website
     F[website]

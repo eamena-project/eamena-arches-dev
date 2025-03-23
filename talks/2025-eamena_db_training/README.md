@@ -65,14 +65,13 @@ flowchart LR
 		A;
 		B;
 	end
-	subgraph GitHub[My Subgraph]
+	subgraph GitHub[eamena-functions]
 		C;
 		E;
   	end
 
-  click A "https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/rm/hp/mds/mds-template.xlsx" _blank
-  click B "https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/rm/hp/mds/ref_hp_field_description.R" _blank
-  click E "https://eamena-project.github.io/eamena-arches-dev/dbs/database.eamena/data/reference_data/rm/hp/mds/fields-description.html" _blank
-  click F "https://eamena.org/advanced-use#rm-hp-fields" _blank
+  click GitHub "https://github.com/eamena-project/eamena-functions" _blank
+  click D "https://database.eamena.org/citations/" _blank
+  click C "https://colab.research.google.com/github/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/citation/citation_generator.ipynb" _blank
   
 ```

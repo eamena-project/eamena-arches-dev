@@ -9,6 +9,28 @@ Scheduled IT developments for the EAMENA DB and miscellaneous. Test on [EA train
 * (*in progress*) [citation-generator](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/citation)
 * (*in progress*) i18n/l10n to French ([here](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/i18n#internationalisation))
 
+## Workflow
+
+```mermaid
+flowchart LR
+  subgraph GitHub
+  subgraph raw_data
+    A[XLSX file] --is read by--> B[Python script];
+  end
+  subgraph dynamic_data
+    C[CSV file];
+    D[Python script];
+  end
+  raw_data --creates--> dynamic_data;
+  C --is read by--> D
+  dynamic_data --creates--> E[HTML file]
+  end
+  subgraph website
+    F[website]
+  end
+  E -- is read by --> F[website]
+```
+
 
 ## Instance
 

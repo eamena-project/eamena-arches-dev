@@ -61,6 +61,10 @@ flowchart LR
 	C ---> D[Arches Plugin]
 	C ---> E[Python libraries]
 	E ---> F[Arches App]
+	subgraph Jupyter_Notebook
+		A;
+		B;
+	end
 	subgraph GitHub
 		C;
 		E;

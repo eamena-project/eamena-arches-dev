@@ -77,3 +77,5 @@ flowchart LR
   
   
 ```
+
+Start hosting your Jupyter Notebook on your Google Drive (easier to edit) and, when stable, move it to the EAMENA GitHub (eamena-arches-dev)

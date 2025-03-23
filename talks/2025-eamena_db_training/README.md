@@ -70,8 +70,10 @@ flowchart LR
 		E;
   	end
 
-  click GitHub "https://github.com/eamena-project/eamena-functions" _blank
+  click Jupyter_Notebook "https://github.com/eamena-project/eamena-functions" _blank
   click D "https://database.eamena.org/citations/" _blank
-  click C "https://colab.research.google.com/github/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/citation/citation_generator.ipynb" _blank
+  click B "https://colab.research.google.com/github/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/citation/citation_generator.ipynb" _blank
+  click C "https://github.com/eamena-project/eamena-functions/blob/main/zenodo/zenodo.py" _blank
+  
   
 ```

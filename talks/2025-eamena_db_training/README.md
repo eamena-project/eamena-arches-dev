@@ -65,7 +65,7 @@ flowchart LR
 		A;
 		B;
 	end
-	subgraph GitHub
+	subgraph GitHub[My Subgraph]
 		C;
 		E;
   	end

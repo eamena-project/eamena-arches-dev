@@ -17,3 +17,5 @@
 | [eamena-gee](https://github.com/eamena-project/eamena-gee)  |  development repository for GEE, AI/ML, etc. |
 | ...  |  ... |
 | [arches](https://github.com/eamena-project/arches)  |  fork of https://github.com/archesproject/arches for PR |
+
+* follow this [workflow](https://github.com/eamena-project/eamena-arches-dev/tree/main/dev#workflow)

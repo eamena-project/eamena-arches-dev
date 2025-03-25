@@ -79,3 +79,23 @@ flowchart LR
 ```
 
 Start hosting your Jupyter Notebook on your Google Drive (easier to edit) and, when stable, move it to the EAMENA GitHub (eamena-arches-dev)
+
+## Routine tasks
+> 18/10/23 to 03/01/25
+
+- WS preparation (PADA, hackathon)
+- Image: hosting settings (COD), loading (APAAME), development IIIF
+- GitHub dev
+- Zenodo dev
+- Arches dev (internationalisation, `ar` and `ckb`)
+- AWS dev, maintenance, budgets,
+- web dev
+- internal talks (metadata, citation plugin, GitHub)
+- BU uploads (for inexperimented users)
+- data mapping (AAA)
+- Geoserver dev
+- eamenaR package
+- IT monitoring (Arches and Coffee, SAP wg)
+- paper work: write (Sistan dataset), review
+- University responsabilities (OA steering group, resaerch project advisory board)
+- recieved trainings (IT Services, UniPisa), given trainings (Erbil, Amman, online, etc)

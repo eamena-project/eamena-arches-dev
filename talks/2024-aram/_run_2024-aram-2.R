@@ -1,11 +1,13 @@
+# devtools::install_github("eamena-project/eamenaR")
+
 library(eamenaR)
 library(sf)
 library(dplyr)
 library(units)
 
-
-rootDir <- "C:/Rprojects/eamena-arches-dev/talks/2024-aram/"
-rootDirOut <- "C:/Rprojects/eamena-arches-dev/talks/2024-aram/out/"
+root <- "C:/Users/TH282424/Rprojects/eamena-arches-dev/"
+rootDir <- paste0(root, "talks/2024-aram/")
+rootDirOut <- paste0(root, "talks/2024-aram/out/")
 cvns.qnts.file <- "cvns-qnts.geojson"
 CVNS.path <- paste0(rootDir, "caravanserail_paths_1.csv")
 # CVNS <- paste0(rootDir, "cvns_1.geojson")

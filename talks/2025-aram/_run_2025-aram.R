@@ -95,7 +95,7 @@ d$map
 ggplot2::ggsave(paste0(rootDirOut, "map_paths_ids.jpg"),
                 d$map,
                 width = 14, height = 11)
-write.csv2(d$ids,
+write.table(d$ids, paste0(rootDirOut, "caravanserais_id.tsv"), sep = "\t", row.names = FALSE)
 # st_write(d$paths, paste0(rootDirOut, "cvns_qnts_CVNS_paths.geojson"), append=FALSE)
 
 #############################

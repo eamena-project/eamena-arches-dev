@@ -92,16 +92,18 @@ d <- geojson_map_path(d = d,
                       lbl.size = 2.5,
                       map.name = "Khorasan caravanserais network")
 d$map
+# the map
 ggplot2::ggsave(paste0(rootDirOut, "map_paths_ids.jpg"),
                 d$map,
                 width = 14, height = 11)
+# the df
 write.table(d$ids, paste0(rootDirOut, "caravanserais_id.tsv"), sep = "\t", row.names = FALSE)
 # st_write(d$paths, paste0(rootDirOut, "cvns_qnts_CVNS_paths.geojson"), append=FALSE)
 
 #############################
 # boxplot distances btw CVN
 source("R/geojson_boxplot.R")
-source("R/geojson_map_path_1.R")
+source("R/geojson_map_path.R")
 source("R/geojson_format_path.R")
 source("R/geojson_stat.R")
 source("R/ref_routes.R")
@@ -109,7 +111,10 @@ gout <- geojson_boxplot(geojson.path = cvns.geojson,
                         by = "route",
                         csv.path = CVNS.path,
                         stat = "dist")
-ggplot2::ggsave(paste0(rootDirOut, "boxplot_distances.jpg"), gout, width = 7, height = 6)
+ggplot2::ggsave(paste0(rootDirOut, "boxplot_distances.jpg"),
+                gout,
+                width = 7,
+                height = 6)
 
 #############################
 # thematic map
@@ -157,6 +162,8 @@ lbl.dist.log <- "Distance (m), logarithmic scale"
 lbl.tit <- "Distance between caravanserais and their closest qanat (in meters)"
 lbl.capt <- paste0("Data source:", "cvns-qnts.geojson")
 
+subtit <- paste0("Khorasan caravanserais (n=", nrow(cvns.geojson),") and qanats (n=", nrow(qnts.geojson),")")
+
 # GGplot boxplot on distances
 my_theme <- list(
   ggplot2::theme(legend.position = "none",
@@ -196,12 +203,14 @@ gout <- ggplot2::ggplot(df.closest, ggplot2::aes(x = 0, y = dist)) +
   ggplot2::scale_colour_identity() +
   ggplot2::ylab(lbl.dist.log) +
   ggplot2::labs(title = paste0(lbl.tit),
-                subtitle = "Khorasan caravanserais and qanats, EAMENA database, July 2024",
+                subtitle = subtit,
                 caption = lbl.capt) +
   ggplot2::theme_bw() +
   my_theme
 gout
-ggsave(paste0(rootDirOut, "map_distances.jpg"), gout, width = 5, height = 6)
+ggplot2::ggsave(paste0(rootDirOut, "map_distances.jpg"),
+                gout,
+                width = 5, height = 7)
 
 #
 rounded <- 10

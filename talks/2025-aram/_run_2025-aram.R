@@ -79,7 +79,7 @@ ggplot2::ggsave(paste0(rootDirOut, "disturb-qnts.jpg"), gout, width = 9, height 
 
 #############################
 # x,y map
-source("R/geojson_map_path_1.R")
+source("R/geojson_map_path.R")
 source("R/geojson_format_path.R")
 source("R/geojson_stat.R")
 d <- hash::hash()
@@ -89,9 +89,13 @@ d <- geojson_map_path(d = d,
                       geojson.path = d[['cvns']],
                       csv.path = CVNS.path,
                       show.ids = TRUE,
-                      map.name = "caravanserail_paths")
-d$caravanserail_paths_map
-ggplot2::ggsave(paste0(rootDirOut, "map_paths_ids.jpg"), d$caravanserail_paths_map, width = 10, height = 8)
+                      lbl.size = 2.5,
+                      map.name = "Khorasan caravanserais network")
+d$map
+ggplot2::ggsave(paste0(rootDirOut, "map_paths_ids.jpg"),
+                d$map,
+                width = 14, height = 11)
+write.csv2(d$ids,
 # st_write(d$paths, paste0(rootDirOut, "cvns_qnts_CVNS_paths.geojson"), append=FALSE)
 
 #############################

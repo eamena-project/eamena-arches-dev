@@ -1,9 +1,15 @@
+# According to the search in the database:
+# all = 1039; caravan = 280; qanats = 794
+
 # devtools::install_github("eamena-project/eamenaR")
 
 # library(eamenaR)
 library(sf)
 library(dplyr)
 library(units)
+
+# GeoJSOn by geometry types:
+# geojson.by.geometry <- function()
 
 rootDir <- "C:/Users/TH282424/Rprojects/eamena-arches-dev/talks/2025-aram/"
 rootDirOut <- paste0(rootDir, "out/")
@@ -23,33 +29,48 @@ CVNS.path <- paste0(rootDir, "caravanserail_paths_1.csv")
 cvns.qnts.geojson <- sf::read_sf(paste0(rootDir, cvns.qnts.file))
 cvns.qnts.geojson <- cvns.qnts.geojson[, c("EAMENA ID", "Site Feature Interpretation Type", "Overall Condition State Type", "Disturbance Cause Category Type")]
 
-# remove duplicated
-cvns.qnts.geojson <- cvns.qnts.geojson %>%
-  distinct(`EAMENA ID`, .keep_all= TRUE)
-nrow(cvns.qnts.geojson)
+# # remove duplicated
+# cvns.qnts.geojson <- cvns.qnts.geojson %>%
+#   distinct(`EAMENA ID`, .keep_all= TRUE)
+# nrow(cvns.qnts.geojson)
 
 site.feat.interp <- cvns.qnts.geojson[["Site Feature Interpretation Type"]]
+
 cvns.geojson <- cvns.qnts.geojson[grep("Caravanserai/Khan", site.feat.interp), ]
 qnts.geojson <- cvns.qnts.geojson[grep("Qanat/Foggara", site.feat.interp), ]
 # cvns.geojson <- cvns.qnts.geojson[grep("Caravanserai/Khan", site.feat.interp), ]
 
+library(sf)
+library(dplyr)
+
+# Replace 'your_sf' with the name of your sf object
+qnts.geojson <- qnts.geojson %>%
+  mutate(geom_type = st_geometry_type(.)) %>%
+  group_by(`EAMENA ID`) %>%
+  arrange(desc(geom_type == "LINESTRING")) %>%  # Prioritize LINESTRING
+  slice(1) %>%  # Keep only the top-priority geometry per group
+  ungroup() %>%
+  select(-geom_type)  # Optional: remove helper column
+
+
 # CVNS
 # duplicated
-n_occur <- data.frame(table(cvns.geojson$`EAMENA ID`))
+# n_occur <- data.frame(table(cvns.geojson$`EAMENA ID`))
 # cvns.geojson <- cvns.geojson[cvns.geojson$`EAMENA ID` %in% n_occur$Var1[n_occur$Freq == 1],]
 
 cvns.geojson <- cvns.geojson[!sf::st_geometry_type(cvns.geojson) %in% c("POLYGON", "MULTIPOLYGON", "LINESTRING"), ]
 # nb of CVNS by geometries
-nrow(cvns.geojson[sf::st_geometry_type(cvns.geojson) == 'POINT', ])
-nrow(cvns.geojson[sf::st_geometry_type(cvns.geojson) == 'POLYGON', ])
+table(sf::st_geometry_type(cvns.geojson))
+
 
 # QNT
-qnts.geojson <- cvns.qnts.geojson[grep("Qanat/Foggara", site.feat.interp), ]
-# Lines
-qnts.geojson <- qnts.geojson[!sf::st_geometry_type(qnts.geojson) %in% c("POLYGON", "MULTIPOLYGON", "POINT"), ]
-# nb of qanats by geometries
-nrow(qnts.geojson[sf::st_geometry_type(qnts.geojson) == 'POINT', ])
-nrow(qnts.geojson[sf::st_geometry_type(qnts.geojson) == 'LINESTRING', ])
+# qnts.geojson <- cvns.qnts.geojson[grep("Qanat/Foggara", site.feat.interp), ]
+table(sf::st_geometry_type(qnts.geojson))
+# # Lines
+# qnts.geojson <- qnts.geojson[!sf::st_geometry_type(qnts.geojson) %in% c("POLYGON", "MULTIPOLYGON", "POINT"), ]
+# # nb of qanats by geometries
+# nrow(qnts.geojson[sf::st_geometry_type(qnts.geojson) == 'POINT', ])
+# nrow(qnts.geojson[sf::st_geometry_type(qnts.geojson) == 'LINESTRING', ])
 
 ### Overall Condition State Type #######################################
 # CVNS

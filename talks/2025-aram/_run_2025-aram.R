@@ -1,6 +1,6 @@
 # devtools::install_github("eamena-project/eamenaR")
 
-library(eamenaR)
+# library(eamenaR)
 library(sf)
 library(dplyr)
 library(units)
@@ -12,6 +12,7 @@ CVNS.path <- paste0(rootDir, "caravanserail_paths_1.csv")
 # CVNS <- paste0(rootDir, "cvns_1.geojson")
 
 
+
 #### Dataset curation ##################################
 # cvns.qnts.geojson <- sf::read_sf(paste0(rootDir, cvns.qnts.file))
 # selected fields
@@ -21,15 +22,34 @@ CVNS.path <- paste0(rootDir, "caravanserail_paths_1.csv")
 ### Conditions
 cvns.qnts.geojson <- sf::read_sf(paste0(rootDir, cvns.qnts.file))
 cvns.qnts.geojson <- cvns.qnts.geojson[, c("EAMENA ID", "Site Feature Interpretation Type", "Overall Condition State Type", "Disturbance Cause Category Type")]
+
+# remove duplicated
+cvns.qnts.geojson <- cvns.qnts.geojson %>%
+  distinct(`EAMENA ID`, .keep_all= TRUE)
+nrow(cvns.qnts.geojson)
+
 site.feat.interp <- cvns.qnts.geojson[["Site Feature Interpretation Type"]]
 cvns.geojson <- cvns.qnts.geojson[grep("Caravanserai/Khan", site.feat.interp), ]
 qnts.geojson <- cvns.qnts.geojson[grep("Qanat/Foggara", site.feat.interp), ]
-cvns.geojson <- cvns.qnts.geojson[grep("Caravanserai/Khan", site.feat.interp), ]
-# Points
+# cvns.geojson <- cvns.qnts.geojson[grep("Caravanserai/Khan", site.feat.interp), ]
+
+# CVNS
+# duplicated
+n_occur <- data.frame(table(cvns.geojson$`EAMENA ID`))
+# cvns.geojson <- cvns.geojson[cvns.geojson$`EAMENA ID` %in% n_occur$Var1[n_occur$Freq == 1],]
+
 cvns.geojson <- cvns.geojson[!sf::st_geometry_type(cvns.geojson) %in% c("POLYGON", "MULTIPOLYGON", "LINESTRING"), ]
+# nb of CVNS by geometries
+nrow(cvns.geojson[sf::st_geometry_type(cvns.geojson) == 'POINT', ])
+nrow(cvns.geojson[sf::st_geometry_type(cvns.geojson) == 'POLYGON', ])
+
+# QNT
 qnts.geojson <- cvns.qnts.geojson[grep("Qanat/Foggara", site.feat.interp), ]
 # Lines
 qnts.geojson <- qnts.geojson[!sf::st_geometry_type(qnts.geojson) %in% c("POLYGON", "MULTIPOLYGON", "POINT"), ]
+# nb of qanats by geometries
+nrow(qnts.geojson[sf::st_geometry_type(qnts.geojson) == 'POINT', ])
+nrow(qnts.geojson[sf::st_geometry_type(qnts.geojson) == 'LINESTRING', ])
 
 ### Overall Condition State Type #######################################
 # CVNS

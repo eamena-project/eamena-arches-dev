@@ -1,5 +1,3 @@
-# According to the search in the database:
-# all = 1039; caravan = 280; qanats = 794
 
 # devtools::install_github("eamena-project/eamenaR")
 
@@ -27,7 +25,13 @@ CVNS.path <- paste0(rootDir, "caravanserail_paths_1.csv")
 # site.feat.interp <- cvns.qnts.geojson[["Site Feature Interpretation Type"]]
 ### Conditions
 cvns.qnts.geojson <- sf::read_sf(paste0(rootDir, cvns.qnts.file))
-cvns.qnts.geojson <- cvns.qnts.geojson[, c("EAMENA ID", "Site Feature Interpretation Type", "Overall Condition State Type", "Disturbance Cause Category Type")]
+cvns.qnts.geojson <- cvns.qnts.geojson[, c("EAMENA ID",
+                                           "Site Feature Interpretation Type",
+                                           "Overall Condition State Type",
+                                           "Disturbance Cause Category Type",
+                                           "Dimension Type",
+                                           "Measurement Number",
+                                           "Measurement Unit")]
 
 # # remove duplicated
 # cvns.qnts.geojson <- cvns.qnts.geojson %>%
@@ -118,7 +122,7 @@ gout <- gout +
                 caption = paste0("Data source:", cvns.qnts.file))
 ggplot2::ggsave(paste0(rootDirOut, "disturb-qnts.jpg"), gout, width = 9, height = 6)
 
-#############################
+#######General map (with ID) ######################
 # x,y map
 source("R/geojson_map_path.R")
 source("R/geojson_format_path.R")
@@ -141,14 +145,17 @@ ggplot2::ggsave(paste0(rootDirOut, "map_paths_ids.jpg"),
 write.table(d$ids, paste0(rootDirOut, "caravanserais_id.tsv"), sep = "\t", row.names = FALSE)
 # st_write(d$paths, paste0(rootDirOut, "cvns_qnts_CVNS_paths.geojson"), append=FALSE)
 
-####################
-# boxplot on CVN areas
+######## boxplot on CVN areas #######################################
 source("R/geojson_boxplot.R")
-geojson_boxplot(geojson.path = cvns.geojson, stat = "area")
+gout <- geojson_boxplot(geojson.path = cvns.geojson,
+                        stat = "area",
+                        tit = "Distribution of caravanserais' areas")
+ggplot2::ggsave(paste0(rootDirOut, "boxplot_areas.jpg"),
+                gout,
+                width = 7,
+                height = 6)
 
-
-#############################
-# boxplot distances btw CVN
+######## boxplot distances btw CVN #######################################
 source("R/geojson_boxplot.R")
 source("R/geojson_map_path.R")
 source("R/geojson_format_path.R")
@@ -163,15 +170,15 @@ ggplot2::ggsave(paste0(rootDirOut, "boxplot_distances.jpg"),
                 width = 7,
                 height = 6)
 
-#############################
-# thematic map
+############# thematic map ################
+#
 geojson_map(map.name = "caravanserail",
             field.names = c("Damage Extent Type"),
             fig.width = 11,
             export.plot = T)
 
 
-#######################################
+############# clostest CVN-QNT ##########################
 # closest
 # cvns.qnts.geojson <- sf::read_sf(paste0(rootDir, cvns.qnts.file))
 # # selected fields
@@ -188,6 +195,14 @@ geojson_map(map.name = "caravanserail",
 unique(st_geometry_type(qnts.geojson)) # LINESTRING only
 unique(st_geometry_type(cvns.geojson)) # POINT only
 
+cvns.geojson <- cvns.geojson[, c("EAMENA ID",
+                                 "Site Feature Interpretation Type",
+                                 "Overall Condition State Type",
+                                 "Disturbance Cause Category Type")]
+qnts.geojson <- qnts.geojson[, c("EAMENA ID",
+                                 "Site Feature Interpretation Type",
+                                 "Overall Condition State Type",
+                                 "Disturbance Cause Category Type")]
 
 source(paste0(rootDir, "closest_HP1_to_HP2.R"))
 df.closest <- closest_HP1_to_HP2(cvns.geojson, qnts.geojson)
@@ -258,6 +273,8 @@ gout
 ggplot2::ggsave(paste0(rootDirOut, "map_distances.jpg"),
                 gout,
                 width = 5, height = 7)
+
+
 
 #
 rounded <- 10

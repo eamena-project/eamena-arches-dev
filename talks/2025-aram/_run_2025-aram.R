@@ -90,7 +90,7 @@ gout <- geojson_stat(geojson.path = qnts.geojson,
                      stat = "stats",
                      field.names = c("Overall Condition State Type"))
 gout <- gout +
-  ggplot2::labs(title = "Qanat/Foggar",
+  ggplot2::labs(title = "Qanat/Foggara",
                 subtitle = paste0("n = ", nrow(qnts.geojson)),
                 caption = paste0("Data source:", cvns.qnts.file))
 ggplot2::ggsave(paste0(rootDirOut, "cond-qnts.jpg"), gout, width = 6, height = 4)
@@ -113,7 +113,7 @@ gout <- geojson_stat(geojson.path = qnts.geojson,
                      field.names = c("Disturbance Cause Category Type"),
                      stat = "stats")
 gout <- gout +
-  ggplot2::labs(title = "Qanat/Foggar",
+  ggplot2::labs(title = "Qanat/Foggara",
                 subtitle = paste0("n = ", nrow(qnts.geojson)),
                 caption = paste0("Data source:", cvns.qnts.file))
 ggplot2::ggsave(paste0(rootDirOut, "disturb-qnts.jpg"), gout, width = 9, height = 6)
@@ -140,6 +140,12 @@ ggplot2::ggsave(paste0(rootDirOut, "map_paths_ids.jpg"),
 # the df
 write.table(d$ids, paste0(rootDirOut, "caravanserais_id.tsv"), sep = "\t", row.names = FALSE)
 # st_write(d$paths, paste0(rootDirOut, "cvns_qnts_CVNS_paths.geojson"), append=FALSE)
+
+####################
+# boxplot on CVN areas
+source("R/geojson_boxplot.R")
+geojson_boxplot(geojson.path = cvns.geojson, stat = "area")
+
 
 #############################
 # boxplot distances btw CVN

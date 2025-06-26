@@ -1,68 +1,76 @@
-
 import requests
 import json
 
+# CORRECTED: The 'communities' key has been added to ensure the dataset
+# is published to the 'eamena' community on Zenodo.
+METADATA_TEMPLATE = {
+    'metadata': {
+        'title': '',
+        'description': '',
+        'upload_type': 'dataset',
+        'license': 'cc-by',
+        'communities': [{'identifier': 'eamena'}],
+        'subjects': [{"term": "Cultural property", "identifier": "https://id.loc.gov/authorities/subjects/sh97000183.html", "scheme": "url"}],
+        'method': 'EAMENA data entry methodology',
+        'creators': [{'name': "EAMENA database", 'affiliation': "University of Oxford, University of Southampton"}],
+        'contributors': [],
+        'keywords': [],
+        'dates': {}
+    }
+}
 
-ACCESS_TOKEN = 'P9bPdbaMsFgU9vZcotRxXaJsqrYSUcszQ7x6ilQO4OEwW2B7LpBtR3tZMDG3' #'ZdGvXQUsnL592Cwo1NQjV6QVGahechZElPWYRbWEReKpxGBTEw5qlNfaVpxS'
-ZENODO_URL = 'https://sandbox.zenodo.org/api/deposit/depositions'
+def zenodo_publish(title, filename, description, zenodo_calculated_fields, zenodo_url, token):
+    """
+    Handles the entire publication process to Zenodo.
+    """
+    params, headers = {'access_token': token}, {"Content-Type": "application/json"}
+    
+    print(f"Attempting to create new deposition at: {zenodo_url}")
+    try:
+        r = requests.post(zenodo_url, params=params, json={}, headers=headers)
+        r.raise_for_status()
+        deposition_data = r.json()
+        deposition_id, bucket_url = deposition_data['id'], deposition_data["links"]["bucket"]
+        print(f"Successfully created deposition with ID: {deposition_id}")
+    except requests.exceptions.RequestException as e:
+        print(f"Error creating Zenodo deposition: {e}\nResponse: {e.response.text if e.response else 'N/A'}")
+        return None
 
-METADATA = {
-     'metadata': {
-         'title': '',
-         'description': '',
-         'upload_type': 'dataset',
-         'license': 'cc-by',
-         'subjects': [{"term": "Cultural property", "identifier": "https://id.loc.gov/authorities/subjects/sh97000183.html", "scheme": "url"}],
-         'method': 'EAMENA data entry methodology',
-         'creators': [{'name': "EAMENA database",
-                       'affiliation': "University of Oxford, University of Southampton"}],
-         'contributors': [],
-         'keywords': [],
-         'dates': {}
-        #  'communities': "[{'identifier': 'eamena'}]",
-        #  'related_identifiers': zn.zenodo_related_identifiers()
-     }
- }
+    print("Uploading data file to Zenodo...")
+    try:
+        with open(f"{filename}.zip", "rb") as fp:
+            r = requests.put(f"{bucket_url}/{filename}.zip", data=fp, params=params)
+            r.raise_for_status()
+        print("File upload successful.")
+    except Exception as e:
+        print(f"Error uploading file to Zenodo: {e}")
+        return None
 
-def create_zenodo_bucket(params): 
-    r = requests.post(ZENODO_URL,
-                    params=params,
-                    json={})
-        
-    deposition_id = r.json()['id']
-    bucket_url = r.json()["links"]["bucket"]
-    return deposition_id, bucket_url
+    print("Uploading metadata...")
+    # Use the corrected template
+    metadata = METADATA_TEMPLATE.copy()
+    metadata['metadata'].update({
+        'title': title,
+        'description': description,
+        'contributors': zenodo_calculated_fields[0],
+        'keywords': zenodo_calculated_fields[1],
+        'dates': zenodo_calculated_fields[2]
+    })
+    
+    try:
+        r = requests.put(f'{zenodo_url}/{deposition_id}', params=params, data=json.dumps(metadata), headers=headers)
+        r.raise_for_status()
+        print("Metadata upload successful.")
+    except requests.exceptions.RequestException as e:
+        print(f"Error uploading metadata: {e}\nResponse: {e.response.text if e.response else 'N/A'}")
+        return None
 
-def add_zenodo_data(bucket_url, params, filename):
-    zip_file_name = filename + ".zip"
-    with open(zip_file_name, "rb") as fp:
-        r = requests.put(
-            "%s/%s" % (bucket_url, zip_file_name),
-            data = fp,
-            params = params,
-        )
-
-def add_zenodo_metadata(deposition_id, params, metadata):
-    r = requests.put('%s/%s' % (ZENODO_URL, deposition_id),
-                    params = params,
-                    data = json.dumps(metadata))
-
-def zenodo_publish(title, filename, description, zenodo_calculated_fields):
-    params = {'access_token': ACCESS_TOKEN}
-    deposition_id, bucket_url = create_zenodo_bucket(params)
-    add_zenodo_data(bucket_url, params, filename)
-    METADATA['metadata']['title'] = title
-    METADATA['metadata']['description'] = description
-    METADATA['metadata']['contributors'] = zenodo_calculated_fields[0]
-    METADATA['metadata']['keywords'] = zenodo_calculated_fields[1]
-    METADATA['metadata']['dates'] = zenodo_calculated_fields[2]
-    add_zenodo_metadata(deposition_id, params, METADATA)
-    r = requests.post('%s/%s/actions/publish' % (ZENODO_URL, deposition_id),
-                        params={'access_token': ACCESS_TOKEN} )
-
-    r = requests.get(ZENODO_URL,
-                  params={'access_token': ACCESS_TOKEN})
-    print(r.json()[0]['links']['html'])
-    return r.json()[0]['links']['html']
-
-
+    print("Publishing deposition...")
+    try:
+        r = requests.post(f'{zenodo_url}/{deposition_id}/actions/publish', params=params)
+        r.raise_for_status()
+        print("Publication successful!")
+        return r.json()['links']['html']
+    except requests.exceptions.RequestException as e:
+        print(f"Error publishing deposition: {e}\nResponse: {e.response.text if e.response else 'N/A'}")
+        return None

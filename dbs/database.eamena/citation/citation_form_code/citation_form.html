@@ -1,15 +1,121 @@
-<!-- your_app_name/templates/citations.html -->
+{% comment %}
+    DEBUGGING STEP:
+    The line below is intentionally incorrect to force a Django error.
+    If you see a "TemplateSyntaxError: Invalid block tag" on your page,
+    it means you are editing the correct file.
+{% endcomment %}
+{% this_will_cause_an_error %}
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Citations</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zenodo Citation Publisher</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .form-field {
+            margin-bottom: 1.5rem;
+        }
+        .form-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: #374151; /* gray-700 */
+        }
+    </style>
 </head>
-<body>
-    <h2>Add Citation</h2>
-    <form method="post" action="{% url 'citation_generator' %}">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Submit</button>
-    </form>
+<body class="bg-gray-100">
+
+    <div class="container mx-auto px-4 py-8 md:py-12">
+        <div class="max-w-3xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden">
+            
+            <!-- Header Section -->
+            <div class="bg-gray-800 p-6 md:p-8">
+                <h1 class="text-3xl md:text-4xl font-bold text-white tracking-tight">Zenodo Citation Publisher</h1>
+                <p class="text-gray-300 mt-2">Create and publish datasets to Zenodo with ease.</p>
+            </div>
+
+            <!-- Form Section -->
+            <form method="post" class="p-6 md:p-8 space-y-6">
+                {% csrf_token %}
+
+                <!-- Title and Description Section -->
+                <div class="space-y-6">
+                    <div>
+                        <label for="{{ form.title.id_for_label }}" class="form-label">Title</label>
+                        {{ form.title }}
+                        {% if form.title.errors %}
+                            <div class="text-red-600 text-sm mt-1">{{ form.title.errors }}</div>
+                        {% endif %}
+                    </div>
+                    <div>
+                        <label for="{{ form.description.id_for_label }}" class="form-label">Description</label>
+                        {{ form.description }}
+                        {% if form.description.errors %}
+                            <div class="text-red-600 text-sm mt-1">{{ form.description.errors }}</div>
+                        {% endif %}
+                    </div>
+                </div>
+
+                <!-- GeoJSON Input Section -->
+                <div>
+                    <label for="{{ form.json_text.id_for_label }}" class="form-label">GeoJSON Content</label>
+                    {{ form.json_text }}
+                    {% if form.json_text.errors %}
+                        <div class="text-red-600 text-sm mt-1">{{ form.json_text.errors }}</div>
+                    {% endif %}
+                </div>
+                
+                <!-- Options Section -->
+                <div class="flex items-start">
+                    <div class="flex items-center h-5">
+                        {{ form.advanced }}
+                    </div>
+                    <div class="ml-3 text-sm">
+                        <label for="{{ form.advanced.id_for_label }}" class="font-medium text-gray-700">{{ form.advanced.label }}</label>
+                        <p class="text-gray-500">Includes maps and statistical charts in the final dataset.</p>
+                    </div>
+                </div>
+
+                <!-- Submission Button -->
+                <div class="pt-4 border-t border-gray-200">
+                    <button type="submit" class="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-lg shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-all transform hover:scale-105">
+                        <svg class="w-5 h-5 mr-2 -ml-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5m-13.5-9L12 3m0 0l4.5 4.5M12 3v13.5" />
+                        </svg>                          
+                        Publish to Zenodo
+                    </button>
+                </div>
+                
+                <!-- General Form Errors -->
+                {% if form.non_field_errors %}
+                    <div class="bg-red-50 border-l-4 border-red-400 p-4 mt-6">
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <svg class="h-5 w-5 text-red-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-sm text-red-700">
+                                    {{ form.non_field_errors }}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                {% endif %}
+
+            </form>
+        </div>
+        <footer class="text-center mt-8 text-gray-500 text-sm">
+            <p>EAMENA Database Project</p>
+        </footer>
+    </div>
+
 </body>
 </html>

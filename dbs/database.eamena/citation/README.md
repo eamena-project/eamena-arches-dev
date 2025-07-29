@@ -62,10 +62,24 @@ end
 classDef eamenaFunc fill:#e3c071;
 ```
 
-The core of the Python `citation-generator` function is currently hosted on [**Google Colab**](https://colab.research.google.com/github/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/citation/citation_generator.ipynb). During this workflow:
+> [!IMPORTANT]
+> The core of the Python `citation-generator` function is currently hosted on [**Google Colab**]~~(https://colab.research.google.com/github/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/citation/citation_generator.ipynb)~~. 
+> The core of the plugin is re-programmed to receive the GeoJSON instead of trying to fetch the GeoJSON throught the URL. `The previous method was causing 500 SERVER INTERNAL ERROR`. The plugin's code is available on the current repository. Another version of the plugin is hosted on Google Colab as an Jupyter Notebook at:(https://colab.research.google.com/drive/1lh1-Z2VFGn4LHTUE4UAdPuQ2zuX3VqFa)
 
-1. the GeoJSON URL is converted into a GeoJSON file and zipped;
+During this workflow:
+
+1. the GeoJSON URL is converted into a zip file;
 2. the file is uploaded to Zenodo 'eamena' community with its metadata, see [Zenodo](#zenodo) 
+
+<br/>
+
+> [!IMPORTANT]
+> In order to submit your GeoJSON code to EAMENA community on Zenodo, you must get in touch with the EAMENA Database manager to allow your submission by providing you access to the community. You can get in touch with the Database manager via email: `eamenadatabase@gmail.com`
+
+
+
+
+
 
 The GitHub issue thread is [#39](https://github.com/eamena-project/eamena-arches-dev/issues/39)
 
@@ -74,16 +88,18 @@ The GitHub issue thread is [#39](https://github.com/eamena-project/eamena-arches
 
 Plugin for EAMENA v4/Arches v7.3 with the creation of a new form to publish data to Zenodo. The plugin code is hosted in the folder [citation_form_code/](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/citation/citation_form_code)
 
-- Added a new page at `/citations/`
-- It allows a user to input a:
-  -  GeoJSON URL export
+To access and use our citation generator, simply go to the `/citations/` directory on our database: `https://database.eamena.org`.
+
+It allows a user to input a:
   -  Title
   -  Description
+  -  GeoJSON
+
 
 
 <p align="center">
-  <img alt="img-name" src="img/image.png" width="700"><br>
-  <em>Screenshot of the Arches citation plugin for Heritage Places developed by EAMENA and MaREA, showing the GeoJSON URL field and two free-text fields. The other metadata (authors, contributors, keywords, etc.) are calculated on the fly. Once the user clicks 'Submit,' a GeoJSON file is created and uploaded to Zenodo along with its metadata.</em>
+  <img alt="img-name" src="img/citation_img.png" width="500"><br>
+  <small>Screenshot of the Arches citation plugin for Heritage Places developed by EAMENA and MaREA, showing the GeoJSON URL field and two free-text fields. The other metadata (authors, contributors, keywords, etc.) are calculated on the fly. Once the user clicks 'Submit,' a GeoJSON file is created and uploaded to Zenodo along with its metadata. <u>Re-programmed and redesigned in June 2025</u> </small>
 </p>
 
 The code uses a Django form to accept values from the user. It takes the GeoJSON url and writes the output to a json file on the server. The title and description are used to populate the `METADATA` object in `zenodo_publish.py`, which is used to the data publish to Zenodo. The code then deletes the json file from the server to save space. 
